@@ -1089,7 +1089,7 @@ RUN apt-get update && apt-get install -y     ros-indigo-perception=1.1.5-0*     
 ## `ros:jade-ros-core`
 
 ```console
-$ docker pull ros@sha256:33e2c039b13c985011d53c049f52cf517bab7866218e73a64f95ce992b4a25f5
+$ docker pull ros@sha256:9966de75509c49ec9453a43e55424bfcc6285fc907c4da05ed118e535cd33f72
 ```
 
 -	Platforms:
@@ -1099,9 +1099,9 @@ $ docker pull ros@sha256:33e2c039b13c985011d53c049f52cf517bab7866218e73a64f95ce9
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **265.4 MB (265379251 bytes)**  
+-	Total Size: **265.4 MB (265378984 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b3a8bd3fe41bf148d448e745a1f02376ab8af51caf88e94da457cd3927c63b70`
+-	Image ID: `sha256:f58f18e255bdfede995ae2f59873c948ec74a56b0138b4dd236d90423ef56619`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -1134,13 +1134,13 @@ ENV LC_ALL=C.UTF-8
 RUN rosdep init     && rosdep update
 # Wed, 16 Aug 2017 00:43:52 GMT
 ENV ROS_DISTRO=jade
-# Wed, 16 Aug 2017 00:45:31 GMT
-RUN apt-get update && apt-get install -y     ros-jade-ros-core=1.2.0-0*     && rm -rf /var/lib/apt/lists/*
-# Wed, 16 Aug 2017 00:45:32 GMT
+# Mon, 11 Sep 2017 23:26:43 GMT
+RUN apt-get update && apt-get install -y     ros-jade-ros-core=1.2.1-0*     && rm -rf /var/lib/apt/lists/*
+# Mon, 11 Sep 2017 23:26:44 GMT
 COPY file:824303428ad16ae6296df253434e00a00126dc8404f740a8b885c9f61a2f5fcb in / 
-# Wed, 16 Aug 2017 00:45:32 GMT
+# Mon, 11 Sep 2017 23:26:44 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Wed, 16 Aug 2017 00:45:32 GMT
+# Mon, 11 Sep 2017 23:26:45 GMT
 CMD ["bash"]
 ```
 
@@ -1185,19 +1185,19 @@ CMD ["bash"]
 		Last Modified: Wed, 16 Aug 2017 01:34:42 GMT  
 		Size: 754.6 KB (754595 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea387232b64290f486216e303fd5dc49f4b6b2d23399ceee078b98e0261c56a7`  
-		Last Modified: Wed, 16 Aug 2017 01:39:09 GMT  
-		Size: 149.6 MB (149614695 bytes)  
+	-	`sha256:6cbdb27b4fdfbf769c6e9957bd3e5e3c319ad6e32a9c6a171195fc41c7608506`  
+		Last Modified: Mon, 11 Sep 2017 23:46:15 GMT  
+		Size: 149.6 MB (149614427 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:872165b2f7b5d771c0eafd69465910a2406fc7094d49f06fad6752bee7db0da8`  
-		Last Modified: Wed, 16 Aug 2017 01:38:28 GMT  
-		Size: 194.0 B  
+	-	`sha256:fa1733df0dad332d59a5600eb82374eaed907080e9b2f2523a8b9cfde6da5114`  
+		Last Modified: Mon, 11 Sep 2017 23:45:31 GMT  
+		Size: 195.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `ros:jade-ros-core-trusty`
 
 ```console
-$ docker pull ros@sha256:33e2c039b13c985011d53c049f52cf517bab7866218e73a64f95ce992b4a25f5
+$ docker pull ros@sha256:9966de75509c49ec9453a43e55424bfcc6285fc907c4da05ed118e535cd33f72
 ```
 
 -	Platforms:
@@ -1207,9 +1207,9 @@ $ docker pull ros@sha256:33e2c039b13c985011d53c049f52cf517bab7866218e73a64f95ce9
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **265.4 MB (265379251 bytes)**  
+-	Total Size: **265.4 MB (265378984 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b3a8bd3fe41bf148d448e745a1f02376ab8af51caf88e94da457cd3927c63b70`
+-	Image ID: `sha256:f58f18e255bdfede995ae2f59873c948ec74a56b0138b4dd236d90423ef56619`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -1242,13 +1242,13 @@ ENV LC_ALL=C.UTF-8
 RUN rosdep init     && rosdep update
 # Wed, 16 Aug 2017 00:43:52 GMT
 ENV ROS_DISTRO=jade
-# Wed, 16 Aug 2017 00:45:31 GMT
-RUN apt-get update && apt-get install -y     ros-jade-ros-core=1.2.0-0*     && rm -rf /var/lib/apt/lists/*
-# Wed, 16 Aug 2017 00:45:32 GMT
+# Mon, 11 Sep 2017 23:26:43 GMT
+RUN apt-get update && apt-get install -y     ros-jade-ros-core=1.2.1-0*     && rm -rf /var/lib/apt/lists/*
+# Mon, 11 Sep 2017 23:26:44 GMT
 COPY file:824303428ad16ae6296df253434e00a00126dc8404f740a8b885c9f61a2f5fcb in / 
-# Wed, 16 Aug 2017 00:45:32 GMT
+# Mon, 11 Sep 2017 23:26:44 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Wed, 16 Aug 2017 00:45:32 GMT
+# Mon, 11 Sep 2017 23:26:45 GMT
 CMD ["bash"]
 ```
 
@@ -1293,19 +1293,19 @@ CMD ["bash"]
 		Last Modified: Wed, 16 Aug 2017 01:34:42 GMT  
 		Size: 754.6 KB (754595 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea387232b64290f486216e303fd5dc49f4b6b2d23399ceee078b98e0261c56a7`  
-		Last Modified: Wed, 16 Aug 2017 01:39:09 GMT  
-		Size: 149.6 MB (149614695 bytes)  
+	-	`sha256:6cbdb27b4fdfbf769c6e9957bd3e5e3c319ad6e32a9c6a171195fc41c7608506`  
+		Last Modified: Mon, 11 Sep 2017 23:46:15 GMT  
+		Size: 149.6 MB (149614427 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:872165b2f7b5d771c0eafd69465910a2406fc7094d49f06fad6752bee7db0da8`  
-		Last Modified: Wed, 16 Aug 2017 01:38:28 GMT  
-		Size: 194.0 B  
+	-	`sha256:fa1733df0dad332d59a5600eb82374eaed907080e9b2f2523a8b9cfde6da5114`  
+		Last Modified: Mon, 11 Sep 2017 23:45:31 GMT  
+		Size: 195.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `ros:jade-ros-base`
 
 ```console
-$ docker pull ros@sha256:5afebdd7c365457c07fb4d9a0b334f88485b7a7aa8ed119c2a2154a9dfc43ba1
+$ docker pull ros@sha256:c6e26af8dc6b96b07c6faab2d408ed01f4df6f9854c9cb975e2b2ad65c2c8e4c
 ```
 
 -	Platforms:
@@ -1315,9 +1315,9 @@ $ docker pull ros@sha256:5afebdd7c365457c07fb4d9a0b334f88485b7a7aa8ed119c2a2154a
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **268.9 MB (268946261 bytes)**  
+-	Total Size: **268.9 MB (268946100 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:47296e4c3f3b4eb2524940b4c6a5f591645113c31d8b23e6d1799917b87efdf1`
+-	Image ID: `sha256:141bd7ce03fc6e1573396227666166eaeaa1a6cf887f92c09c202af3e0ae05d7`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -1350,16 +1350,16 @@ ENV LC_ALL=C.UTF-8
 RUN rosdep init     && rosdep update
 # Wed, 16 Aug 2017 00:43:52 GMT
 ENV ROS_DISTRO=jade
-# Wed, 16 Aug 2017 00:45:31 GMT
-RUN apt-get update && apt-get install -y     ros-jade-ros-core=1.2.0-0*     && rm -rf /var/lib/apt/lists/*
-# Wed, 16 Aug 2017 00:45:32 GMT
+# Mon, 11 Sep 2017 23:26:43 GMT
+RUN apt-get update && apt-get install -y     ros-jade-ros-core=1.2.1-0*     && rm -rf /var/lib/apt/lists/*
+# Mon, 11 Sep 2017 23:26:44 GMT
 COPY file:824303428ad16ae6296df253434e00a00126dc8404f740a8b885c9f61a2f5fcb in / 
-# Wed, 16 Aug 2017 00:45:32 GMT
+# Mon, 11 Sep 2017 23:26:44 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Wed, 16 Aug 2017 00:45:32 GMT
+# Mon, 11 Sep 2017 23:26:45 GMT
 CMD ["bash"]
-# Wed, 16 Aug 2017 00:46:03 GMT
-RUN apt-get update && apt-get install -y     ros-jade-ros-base=1.2.0-0*     && rm -rf /var/lib/apt/lists/*
+# Mon, 11 Sep 2017 23:33:22 GMT
+RUN apt-get update && apt-get install -y     ros-jade-ros-base=1.2.1-0*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
@@ -1403,23 +1403,23 @@ RUN apt-get update && apt-get install -y     ros-jade-ros-base=1.2.0-0*     && r
 		Last Modified: Wed, 16 Aug 2017 01:34:42 GMT  
 		Size: 754.6 KB (754595 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea387232b64290f486216e303fd5dc49f4b6b2d23399ceee078b98e0261c56a7`  
-		Last Modified: Wed, 16 Aug 2017 01:39:09 GMT  
-		Size: 149.6 MB (149614695 bytes)  
+	-	`sha256:6cbdb27b4fdfbf769c6e9957bd3e5e3c319ad6e32a9c6a171195fc41c7608506`  
+		Last Modified: Mon, 11 Sep 2017 23:46:15 GMT  
+		Size: 149.6 MB (149614427 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:872165b2f7b5d771c0eafd69465910a2406fc7094d49f06fad6752bee7db0da8`  
-		Last Modified: Wed, 16 Aug 2017 01:38:28 GMT  
-		Size: 194.0 B  
+	-	`sha256:fa1733df0dad332d59a5600eb82374eaed907080e9b2f2523a8b9cfde6da5114`  
+		Last Modified: Mon, 11 Sep 2017 23:45:31 GMT  
+		Size: 195.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ded8139afad57c4541df26bdfab2bee0f24c49df6cc2b2817337a94caf9c6028`  
-		Last Modified: Wed, 16 Aug 2017 01:39:28 GMT  
-		Size: 3.6 MB (3567010 bytes)  
+	-	`sha256:af90d835f8e28dca476289b22d7f8e6bb00b07f4fbd235252483187946d31b76`  
+		Last Modified: Mon, 11 Sep 2017 23:46:42 GMT  
+		Size: 3.6 MB (3567116 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `ros:jade-ros-base-trusty`
 
 ```console
-$ docker pull ros@sha256:5afebdd7c365457c07fb4d9a0b334f88485b7a7aa8ed119c2a2154a9dfc43ba1
+$ docker pull ros@sha256:c6e26af8dc6b96b07c6faab2d408ed01f4df6f9854c9cb975e2b2ad65c2c8e4c
 ```
 
 -	Platforms:
@@ -1429,9 +1429,9 @@ $ docker pull ros@sha256:5afebdd7c365457c07fb4d9a0b334f88485b7a7aa8ed119c2a2154a
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **268.9 MB (268946261 bytes)**  
+-	Total Size: **268.9 MB (268946100 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:47296e4c3f3b4eb2524940b4c6a5f591645113c31d8b23e6d1799917b87efdf1`
+-	Image ID: `sha256:141bd7ce03fc6e1573396227666166eaeaa1a6cf887f92c09c202af3e0ae05d7`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -1464,16 +1464,16 @@ ENV LC_ALL=C.UTF-8
 RUN rosdep init     && rosdep update
 # Wed, 16 Aug 2017 00:43:52 GMT
 ENV ROS_DISTRO=jade
-# Wed, 16 Aug 2017 00:45:31 GMT
-RUN apt-get update && apt-get install -y     ros-jade-ros-core=1.2.0-0*     && rm -rf /var/lib/apt/lists/*
-# Wed, 16 Aug 2017 00:45:32 GMT
+# Mon, 11 Sep 2017 23:26:43 GMT
+RUN apt-get update && apt-get install -y     ros-jade-ros-core=1.2.1-0*     && rm -rf /var/lib/apt/lists/*
+# Mon, 11 Sep 2017 23:26:44 GMT
 COPY file:824303428ad16ae6296df253434e00a00126dc8404f740a8b885c9f61a2f5fcb in / 
-# Wed, 16 Aug 2017 00:45:32 GMT
+# Mon, 11 Sep 2017 23:26:44 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Wed, 16 Aug 2017 00:45:32 GMT
+# Mon, 11 Sep 2017 23:26:45 GMT
 CMD ["bash"]
-# Wed, 16 Aug 2017 00:46:03 GMT
-RUN apt-get update && apt-get install -y     ros-jade-ros-base=1.2.0-0*     && rm -rf /var/lib/apt/lists/*
+# Mon, 11 Sep 2017 23:33:22 GMT
+RUN apt-get update && apt-get install -y     ros-jade-ros-base=1.2.1-0*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
@@ -1517,23 +1517,23 @@ RUN apt-get update && apt-get install -y     ros-jade-ros-base=1.2.0-0*     && r
 		Last Modified: Wed, 16 Aug 2017 01:34:42 GMT  
 		Size: 754.6 KB (754595 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea387232b64290f486216e303fd5dc49f4b6b2d23399ceee078b98e0261c56a7`  
-		Last Modified: Wed, 16 Aug 2017 01:39:09 GMT  
-		Size: 149.6 MB (149614695 bytes)  
+	-	`sha256:6cbdb27b4fdfbf769c6e9957bd3e5e3c319ad6e32a9c6a171195fc41c7608506`  
+		Last Modified: Mon, 11 Sep 2017 23:46:15 GMT  
+		Size: 149.6 MB (149614427 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:872165b2f7b5d771c0eafd69465910a2406fc7094d49f06fad6752bee7db0da8`  
-		Last Modified: Wed, 16 Aug 2017 01:38:28 GMT  
-		Size: 194.0 B  
+	-	`sha256:fa1733df0dad332d59a5600eb82374eaed907080e9b2f2523a8b9cfde6da5114`  
+		Last Modified: Mon, 11 Sep 2017 23:45:31 GMT  
+		Size: 195.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ded8139afad57c4541df26bdfab2bee0f24c49df6cc2b2817337a94caf9c6028`  
-		Last Modified: Wed, 16 Aug 2017 01:39:28 GMT  
-		Size: 3.6 MB (3567010 bytes)  
+	-	`sha256:af90d835f8e28dca476289b22d7f8e6bb00b07f4fbd235252483187946d31b76`  
+		Last Modified: Mon, 11 Sep 2017 23:46:42 GMT  
+		Size: 3.6 MB (3567116 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `ros:jade`
 
 ```console
-$ docker pull ros@sha256:5afebdd7c365457c07fb4d9a0b334f88485b7a7aa8ed119c2a2154a9dfc43ba1
+$ docker pull ros@sha256:c6e26af8dc6b96b07c6faab2d408ed01f4df6f9854c9cb975e2b2ad65c2c8e4c
 ```
 
 -	Platforms:
@@ -1543,9 +1543,9 @@ $ docker pull ros@sha256:5afebdd7c365457c07fb4d9a0b334f88485b7a7aa8ed119c2a2154a
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **268.9 MB (268946261 bytes)**  
+-	Total Size: **268.9 MB (268946100 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:47296e4c3f3b4eb2524940b4c6a5f591645113c31d8b23e6d1799917b87efdf1`
+-	Image ID: `sha256:141bd7ce03fc6e1573396227666166eaeaa1a6cf887f92c09c202af3e0ae05d7`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -1578,16 +1578,16 @@ ENV LC_ALL=C.UTF-8
 RUN rosdep init     && rosdep update
 # Wed, 16 Aug 2017 00:43:52 GMT
 ENV ROS_DISTRO=jade
-# Wed, 16 Aug 2017 00:45:31 GMT
-RUN apt-get update && apt-get install -y     ros-jade-ros-core=1.2.0-0*     && rm -rf /var/lib/apt/lists/*
-# Wed, 16 Aug 2017 00:45:32 GMT
+# Mon, 11 Sep 2017 23:26:43 GMT
+RUN apt-get update && apt-get install -y     ros-jade-ros-core=1.2.1-0*     && rm -rf /var/lib/apt/lists/*
+# Mon, 11 Sep 2017 23:26:44 GMT
 COPY file:824303428ad16ae6296df253434e00a00126dc8404f740a8b885c9f61a2f5fcb in / 
-# Wed, 16 Aug 2017 00:45:32 GMT
+# Mon, 11 Sep 2017 23:26:44 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Wed, 16 Aug 2017 00:45:32 GMT
+# Mon, 11 Sep 2017 23:26:45 GMT
 CMD ["bash"]
-# Wed, 16 Aug 2017 00:46:03 GMT
-RUN apt-get update && apt-get install -y     ros-jade-ros-base=1.2.0-0*     && rm -rf /var/lib/apt/lists/*
+# Mon, 11 Sep 2017 23:33:22 GMT
+RUN apt-get update && apt-get install -y     ros-jade-ros-base=1.2.1-0*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
@@ -1631,23 +1631,23 @@ RUN apt-get update && apt-get install -y     ros-jade-ros-base=1.2.0-0*     && r
 		Last Modified: Wed, 16 Aug 2017 01:34:42 GMT  
 		Size: 754.6 KB (754595 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea387232b64290f486216e303fd5dc49f4b6b2d23399ceee078b98e0261c56a7`  
-		Last Modified: Wed, 16 Aug 2017 01:39:09 GMT  
-		Size: 149.6 MB (149614695 bytes)  
+	-	`sha256:6cbdb27b4fdfbf769c6e9957bd3e5e3c319ad6e32a9c6a171195fc41c7608506`  
+		Last Modified: Mon, 11 Sep 2017 23:46:15 GMT  
+		Size: 149.6 MB (149614427 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:872165b2f7b5d771c0eafd69465910a2406fc7094d49f06fad6752bee7db0da8`  
-		Last Modified: Wed, 16 Aug 2017 01:38:28 GMT  
-		Size: 194.0 B  
+	-	`sha256:fa1733df0dad332d59a5600eb82374eaed907080e9b2f2523a8b9cfde6da5114`  
+		Last Modified: Mon, 11 Sep 2017 23:45:31 GMT  
+		Size: 195.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ded8139afad57c4541df26bdfab2bee0f24c49df6cc2b2817337a94caf9c6028`  
-		Last Modified: Wed, 16 Aug 2017 01:39:28 GMT  
-		Size: 3.6 MB (3567010 bytes)  
+	-	`sha256:af90d835f8e28dca476289b22d7f8e6bb00b07f4fbd235252483187946d31b76`  
+		Last Modified: Mon, 11 Sep 2017 23:46:42 GMT  
+		Size: 3.6 MB (3567116 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `ros:jade-robot`
 
 ```console
-$ docker pull ros@sha256:433a80fd74b9145b41e4814d1d5508825ae790249c6812647bf5596ed298aa7d
+$ docker pull ros@sha256:1a5eea4b8e08ab3e7828b79614e20fc1d7b10225fe8004711986f118dd3beee1
 ```
 
 -	Platforms:
@@ -1657,9 +1657,9 @@ $ docker pull ros@sha256:433a80fd74b9145b41e4814d1d5508825ae790249c6812647bf5596
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **330.2 MB (330198377 bytes)**  
+-	Total Size: **330.3 MB (330260812 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dd358962684a924c606014964126b53fe3ac862198c611868b6305a5cf5a27a5`
+-	Image ID: `sha256:aae12885c7798fe8b07b610d7b4a26577c29576b9259ba2eccccce819d833802`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -1692,18 +1692,18 @@ ENV LC_ALL=C.UTF-8
 RUN rosdep init     && rosdep update
 # Wed, 16 Aug 2017 00:43:52 GMT
 ENV ROS_DISTRO=jade
-# Wed, 16 Aug 2017 00:45:31 GMT
-RUN apt-get update && apt-get install -y     ros-jade-ros-core=1.2.0-0*     && rm -rf /var/lib/apt/lists/*
-# Wed, 16 Aug 2017 00:45:32 GMT
+# Mon, 11 Sep 2017 23:26:43 GMT
+RUN apt-get update && apt-get install -y     ros-jade-ros-core=1.2.1-0*     && rm -rf /var/lib/apt/lists/*
+# Mon, 11 Sep 2017 23:26:44 GMT
 COPY file:824303428ad16ae6296df253434e00a00126dc8404f740a8b885c9f61a2f5fcb in / 
-# Wed, 16 Aug 2017 00:45:32 GMT
+# Mon, 11 Sep 2017 23:26:44 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Wed, 16 Aug 2017 00:45:32 GMT
+# Mon, 11 Sep 2017 23:26:45 GMT
 CMD ["bash"]
-# Wed, 16 Aug 2017 00:46:03 GMT
-RUN apt-get update && apt-get install -y     ros-jade-ros-base=1.2.0-0*     && rm -rf /var/lib/apt/lists/*
-# Wed, 16 Aug 2017 00:46:56 GMT
-RUN apt-get update && apt-get install -y     ros-jade-robot=1.2.0-0*     && rm -rf /var/lib/apt/lists/*
+# Mon, 11 Sep 2017 23:33:22 GMT
+RUN apt-get update && apt-get install -y     ros-jade-ros-base=1.2.1-0*     && rm -rf /var/lib/apt/lists/*
+# Mon, 11 Sep 2017 23:34:47 GMT
+RUN apt-get update && apt-get install -y     ros-jade-robot=1.2.1-0*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
@@ -1747,27 +1747,27 @@ RUN apt-get update && apt-get install -y     ros-jade-robot=1.2.0-0*     && rm -
 		Last Modified: Wed, 16 Aug 2017 01:34:42 GMT  
 		Size: 754.6 KB (754595 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea387232b64290f486216e303fd5dc49f4b6b2d23399ceee078b98e0261c56a7`  
-		Last Modified: Wed, 16 Aug 2017 01:39:09 GMT  
-		Size: 149.6 MB (149614695 bytes)  
+	-	`sha256:6cbdb27b4fdfbf769c6e9957bd3e5e3c319ad6e32a9c6a171195fc41c7608506`  
+		Last Modified: Mon, 11 Sep 2017 23:46:15 GMT  
+		Size: 149.6 MB (149614427 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:872165b2f7b5d771c0eafd69465910a2406fc7094d49f06fad6752bee7db0da8`  
-		Last Modified: Wed, 16 Aug 2017 01:38:28 GMT  
-		Size: 194.0 B  
+	-	`sha256:fa1733df0dad332d59a5600eb82374eaed907080e9b2f2523a8b9cfde6da5114`  
+		Last Modified: Mon, 11 Sep 2017 23:45:31 GMT  
+		Size: 195.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ded8139afad57c4541df26bdfab2bee0f24c49df6cc2b2817337a94caf9c6028`  
-		Last Modified: Wed, 16 Aug 2017 01:39:28 GMT  
-		Size: 3.6 MB (3567010 bytes)  
+	-	`sha256:af90d835f8e28dca476289b22d7f8e6bb00b07f4fbd235252483187946d31b76`  
+		Last Modified: Mon, 11 Sep 2017 23:46:42 GMT  
+		Size: 3.6 MB (3567116 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:15f6611d9887757e8e539443f8bb1eef5f8c8d6530014cb8cba1e23a6aa41b51`  
-		Last Modified: Wed, 16 Aug 2017 01:40:10 GMT  
-		Size: 61.3 MB (61252116 bytes)  
+	-	`sha256:8564890f82ebd0ff403c60110043bbfa3201b5d81782558982ee6c067ad62cf4`  
+		Last Modified: Mon, 11 Sep 2017 23:47:35 GMT  
+		Size: 61.3 MB (61314712 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `ros:jade-robot-trusty`
 
 ```console
-$ docker pull ros@sha256:433a80fd74b9145b41e4814d1d5508825ae790249c6812647bf5596ed298aa7d
+$ docker pull ros@sha256:1a5eea4b8e08ab3e7828b79614e20fc1d7b10225fe8004711986f118dd3beee1
 ```
 
 -	Platforms:
@@ -1777,9 +1777,9 @@ $ docker pull ros@sha256:433a80fd74b9145b41e4814d1d5508825ae790249c6812647bf5596
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **330.2 MB (330198377 bytes)**  
+-	Total Size: **330.3 MB (330260812 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dd358962684a924c606014964126b53fe3ac862198c611868b6305a5cf5a27a5`
+-	Image ID: `sha256:aae12885c7798fe8b07b610d7b4a26577c29576b9259ba2eccccce819d833802`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -1812,18 +1812,18 @@ ENV LC_ALL=C.UTF-8
 RUN rosdep init     && rosdep update
 # Wed, 16 Aug 2017 00:43:52 GMT
 ENV ROS_DISTRO=jade
-# Wed, 16 Aug 2017 00:45:31 GMT
-RUN apt-get update && apt-get install -y     ros-jade-ros-core=1.2.0-0*     && rm -rf /var/lib/apt/lists/*
-# Wed, 16 Aug 2017 00:45:32 GMT
+# Mon, 11 Sep 2017 23:26:43 GMT
+RUN apt-get update && apt-get install -y     ros-jade-ros-core=1.2.1-0*     && rm -rf /var/lib/apt/lists/*
+# Mon, 11 Sep 2017 23:26:44 GMT
 COPY file:824303428ad16ae6296df253434e00a00126dc8404f740a8b885c9f61a2f5fcb in / 
-# Wed, 16 Aug 2017 00:45:32 GMT
+# Mon, 11 Sep 2017 23:26:44 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Wed, 16 Aug 2017 00:45:32 GMT
+# Mon, 11 Sep 2017 23:26:45 GMT
 CMD ["bash"]
-# Wed, 16 Aug 2017 00:46:03 GMT
-RUN apt-get update && apt-get install -y     ros-jade-ros-base=1.2.0-0*     && rm -rf /var/lib/apt/lists/*
-# Wed, 16 Aug 2017 00:46:56 GMT
-RUN apt-get update && apt-get install -y     ros-jade-robot=1.2.0-0*     && rm -rf /var/lib/apt/lists/*
+# Mon, 11 Sep 2017 23:33:22 GMT
+RUN apt-get update && apt-get install -y     ros-jade-ros-base=1.2.1-0*     && rm -rf /var/lib/apt/lists/*
+# Mon, 11 Sep 2017 23:34:47 GMT
+RUN apt-get update && apt-get install -y     ros-jade-robot=1.2.1-0*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
@@ -1867,27 +1867,27 @@ RUN apt-get update && apt-get install -y     ros-jade-robot=1.2.0-0*     && rm -
 		Last Modified: Wed, 16 Aug 2017 01:34:42 GMT  
 		Size: 754.6 KB (754595 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea387232b64290f486216e303fd5dc49f4b6b2d23399ceee078b98e0261c56a7`  
-		Last Modified: Wed, 16 Aug 2017 01:39:09 GMT  
-		Size: 149.6 MB (149614695 bytes)  
+	-	`sha256:6cbdb27b4fdfbf769c6e9957bd3e5e3c319ad6e32a9c6a171195fc41c7608506`  
+		Last Modified: Mon, 11 Sep 2017 23:46:15 GMT  
+		Size: 149.6 MB (149614427 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:872165b2f7b5d771c0eafd69465910a2406fc7094d49f06fad6752bee7db0da8`  
-		Last Modified: Wed, 16 Aug 2017 01:38:28 GMT  
-		Size: 194.0 B  
+	-	`sha256:fa1733df0dad332d59a5600eb82374eaed907080e9b2f2523a8b9cfde6da5114`  
+		Last Modified: Mon, 11 Sep 2017 23:45:31 GMT  
+		Size: 195.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ded8139afad57c4541df26bdfab2bee0f24c49df6cc2b2817337a94caf9c6028`  
-		Last Modified: Wed, 16 Aug 2017 01:39:28 GMT  
-		Size: 3.6 MB (3567010 bytes)  
+	-	`sha256:af90d835f8e28dca476289b22d7f8e6bb00b07f4fbd235252483187946d31b76`  
+		Last Modified: Mon, 11 Sep 2017 23:46:42 GMT  
+		Size: 3.6 MB (3567116 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:15f6611d9887757e8e539443f8bb1eef5f8c8d6530014cb8cba1e23a6aa41b51`  
-		Last Modified: Wed, 16 Aug 2017 01:40:10 GMT  
-		Size: 61.3 MB (61252116 bytes)  
+	-	`sha256:8564890f82ebd0ff403c60110043bbfa3201b5d81782558982ee6c067ad62cf4`  
+		Last Modified: Mon, 11 Sep 2017 23:47:35 GMT  
+		Size: 61.3 MB (61314712 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `ros:jade-perception`
 
 ```console
-$ docker pull ros@sha256:b8c32ce3791b44ae861c0a62e98339939938c5467a0f290deaeb1bd4b4d9a19d
+$ docker pull ros@sha256:ed044a1464ffe1be4ac578d021a0fbab75a9a1bb20767ed9ae51d7018626c04c
 ```
 
 -	Platforms:
@@ -1897,9 +1897,9 @@ $ docker pull ros@sha256:b8c32ce3791b44ae861c0a62e98339939938c5467a0f290deaeb1bd
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **532.5 MB (532488429 bytes)**  
+-	Total Size: **532.4 MB (532429145 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:653ae8d0da2c25df5152c3e3f875b015a91876771ada3d77bc44040914cf6938`
+-	Image ID: `sha256:4b7df84363e7ebfaf457900d2068ef50a3d66f151c8dcd2b4425c2b6bc513d68`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -1932,18 +1932,18 @@ ENV LC_ALL=C.UTF-8
 RUN rosdep init     && rosdep update
 # Wed, 16 Aug 2017 00:43:52 GMT
 ENV ROS_DISTRO=jade
-# Wed, 16 Aug 2017 00:45:31 GMT
-RUN apt-get update && apt-get install -y     ros-jade-ros-core=1.2.0-0*     && rm -rf /var/lib/apt/lists/*
-# Wed, 16 Aug 2017 00:45:32 GMT
+# Mon, 11 Sep 2017 23:26:43 GMT
+RUN apt-get update && apt-get install -y     ros-jade-ros-core=1.2.1-0*     && rm -rf /var/lib/apt/lists/*
+# Mon, 11 Sep 2017 23:26:44 GMT
 COPY file:824303428ad16ae6296df253434e00a00126dc8404f740a8b885c9f61a2f5fcb in / 
-# Wed, 16 Aug 2017 00:45:32 GMT
+# Mon, 11 Sep 2017 23:26:44 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Wed, 16 Aug 2017 00:45:32 GMT
+# Mon, 11 Sep 2017 23:26:45 GMT
 CMD ["bash"]
-# Wed, 16 Aug 2017 00:46:03 GMT
-RUN apt-get update && apt-get install -y     ros-jade-ros-base=1.2.0-0*     && rm -rf /var/lib/apt/lists/*
-# Wed, 16 Aug 2017 00:49:41 GMT
-RUN apt-get update && apt-get install -y     ros-jade-perception=1.2.0-0*     && rm -rf /var/lib/apt/lists/*
+# Mon, 11 Sep 2017 23:33:22 GMT
+RUN apt-get update && apt-get install -y     ros-jade-ros-base=1.2.1-0*     && rm -rf /var/lib/apt/lists/*
+# Mon, 11 Sep 2017 23:39:30 GMT
+RUN apt-get update && apt-get install -y     ros-jade-perception=1.2.1-0*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
@@ -1987,27 +1987,27 @@ RUN apt-get update && apt-get install -y     ros-jade-perception=1.2.0-0*     &&
 		Last Modified: Wed, 16 Aug 2017 01:34:42 GMT  
 		Size: 754.6 KB (754595 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea387232b64290f486216e303fd5dc49f4b6b2d23399ceee078b98e0261c56a7`  
-		Last Modified: Wed, 16 Aug 2017 01:39:09 GMT  
-		Size: 149.6 MB (149614695 bytes)  
+	-	`sha256:6cbdb27b4fdfbf769c6e9957bd3e5e3c319ad6e32a9c6a171195fc41c7608506`  
+		Last Modified: Mon, 11 Sep 2017 23:46:15 GMT  
+		Size: 149.6 MB (149614427 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:872165b2f7b5d771c0eafd69465910a2406fc7094d49f06fad6752bee7db0da8`  
-		Last Modified: Wed, 16 Aug 2017 01:38:28 GMT  
-		Size: 194.0 B  
+	-	`sha256:fa1733df0dad332d59a5600eb82374eaed907080e9b2f2523a8b9cfde6da5114`  
+		Last Modified: Mon, 11 Sep 2017 23:45:31 GMT  
+		Size: 195.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ded8139afad57c4541df26bdfab2bee0f24c49df6cc2b2817337a94caf9c6028`  
-		Last Modified: Wed, 16 Aug 2017 01:39:28 GMT  
-		Size: 3.6 MB (3567010 bytes)  
+	-	`sha256:af90d835f8e28dca476289b22d7f8e6bb00b07f4fbd235252483187946d31b76`  
+		Last Modified: Mon, 11 Sep 2017 23:46:42 GMT  
+		Size: 3.6 MB (3567116 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a0aef28616dedf93506d18ec196305644b7d146a658951f9359a1348864f03b`  
-		Last Modified: Wed, 16 Aug 2017 01:41:25 GMT  
-		Size: 263.5 MB (263542168 bytes)  
+	-	`sha256:a9c56333a6d26b17f47773c5bd7daa05c5d7978b030367133cea44cef467488b`  
+		Last Modified: Mon, 11 Sep 2017 23:49:03 GMT  
+		Size: 263.5 MB (263483045 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `ros:jade-perception-trusty`
 
 ```console
-$ docker pull ros@sha256:b8c32ce3791b44ae861c0a62e98339939938c5467a0f290deaeb1bd4b4d9a19d
+$ docker pull ros@sha256:ed044a1464ffe1be4ac578d021a0fbab75a9a1bb20767ed9ae51d7018626c04c
 ```
 
 -	Platforms:
@@ -2017,9 +2017,9 @@ $ docker pull ros@sha256:b8c32ce3791b44ae861c0a62e98339939938c5467a0f290deaeb1bd
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **532.5 MB (532488429 bytes)**  
+-	Total Size: **532.4 MB (532429145 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:653ae8d0da2c25df5152c3e3f875b015a91876771ada3d77bc44040914cf6938`
+-	Image ID: `sha256:4b7df84363e7ebfaf457900d2068ef50a3d66f151c8dcd2b4425c2b6bc513d68`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -2052,18 +2052,18 @@ ENV LC_ALL=C.UTF-8
 RUN rosdep init     && rosdep update
 # Wed, 16 Aug 2017 00:43:52 GMT
 ENV ROS_DISTRO=jade
-# Wed, 16 Aug 2017 00:45:31 GMT
-RUN apt-get update && apt-get install -y     ros-jade-ros-core=1.2.0-0*     && rm -rf /var/lib/apt/lists/*
-# Wed, 16 Aug 2017 00:45:32 GMT
+# Mon, 11 Sep 2017 23:26:43 GMT
+RUN apt-get update && apt-get install -y     ros-jade-ros-core=1.2.1-0*     && rm -rf /var/lib/apt/lists/*
+# Mon, 11 Sep 2017 23:26:44 GMT
 COPY file:824303428ad16ae6296df253434e00a00126dc8404f740a8b885c9f61a2f5fcb in / 
-# Wed, 16 Aug 2017 00:45:32 GMT
+# Mon, 11 Sep 2017 23:26:44 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Wed, 16 Aug 2017 00:45:32 GMT
+# Mon, 11 Sep 2017 23:26:45 GMT
 CMD ["bash"]
-# Wed, 16 Aug 2017 00:46:03 GMT
-RUN apt-get update && apt-get install -y     ros-jade-ros-base=1.2.0-0*     && rm -rf /var/lib/apt/lists/*
-# Wed, 16 Aug 2017 00:49:41 GMT
-RUN apt-get update && apt-get install -y     ros-jade-perception=1.2.0-0*     && rm -rf /var/lib/apt/lists/*
+# Mon, 11 Sep 2017 23:33:22 GMT
+RUN apt-get update && apt-get install -y     ros-jade-ros-base=1.2.1-0*     && rm -rf /var/lib/apt/lists/*
+# Mon, 11 Sep 2017 23:39:30 GMT
+RUN apt-get update && apt-get install -y     ros-jade-perception=1.2.1-0*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
@@ -2107,21 +2107,21 @@ RUN apt-get update && apt-get install -y     ros-jade-perception=1.2.0-0*     &&
 		Last Modified: Wed, 16 Aug 2017 01:34:42 GMT  
 		Size: 754.6 KB (754595 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea387232b64290f486216e303fd5dc49f4b6b2d23399ceee078b98e0261c56a7`  
-		Last Modified: Wed, 16 Aug 2017 01:39:09 GMT  
-		Size: 149.6 MB (149614695 bytes)  
+	-	`sha256:6cbdb27b4fdfbf769c6e9957bd3e5e3c319ad6e32a9c6a171195fc41c7608506`  
+		Last Modified: Mon, 11 Sep 2017 23:46:15 GMT  
+		Size: 149.6 MB (149614427 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:872165b2f7b5d771c0eafd69465910a2406fc7094d49f06fad6752bee7db0da8`  
-		Last Modified: Wed, 16 Aug 2017 01:38:28 GMT  
-		Size: 194.0 B  
+	-	`sha256:fa1733df0dad332d59a5600eb82374eaed907080e9b2f2523a8b9cfde6da5114`  
+		Last Modified: Mon, 11 Sep 2017 23:45:31 GMT  
+		Size: 195.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ded8139afad57c4541df26bdfab2bee0f24c49df6cc2b2817337a94caf9c6028`  
-		Last Modified: Wed, 16 Aug 2017 01:39:28 GMT  
-		Size: 3.6 MB (3567010 bytes)  
+	-	`sha256:af90d835f8e28dca476289b22d7f8e6bb00b07f4fbd235252483187946d31b76`  
+		Last Modified: Mon, 11 Sep 2017 23:46:42 GMT  
+		Size: 3.6 MB (3567116 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a0aef28616dedf93506d18ec196305644b7d146a658951f9359a1348864f03b`  
-		Last Modified: Wed, 16 Aug 2017 01:41:25 GMT  
-		Size: 263.5 MB (263542168 bytes)  
+	-	`sha256:a9c56333a6d26b17f47773c5bd7daa05c5d7978b030367133cea44cef467488b`  
+		Last Modified: Mon, 11 Sep 2017 23:49:03 GMT  
+		Size: 263.5 MB (263483045 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `ros:kinetic-ros-core`
