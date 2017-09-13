@@ -46,7 +46,7 @@ CMD ["/bin/bash"]
 ## `sourcemage:0.62`
 
 ```console
-$ docker pull sourcemage@sha256:22ae4c157ea23809c52e782539eb297fb0bcad8c2481d49d69457f34004b7f58
+$ docker pull sourcemage@sha256:ecf50cf4e18863fdc19116697ca1ad2068a049b8bafb8b4f086e7f1629182602
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -56,27 +56,27 @@ $ docker pull sourcemage@sha256:22ae4c157ea23809c52e782539eb297fb0bcad8c2481d49d
 ### `sourcemage:0.62` - linux; amd64
 
 ```console
-$ docker pull sourcemage@sha256:1cd76bb44b1594cbaaf357e4066ce37482d2e8ec5d0f1bc1516698d7cc5f7b20
+$ docker pull sourcemage@sha256:a4330efe83f1b05f8cf466107794600d456aa7ec4b7bd4dd7727eca376fe40f6
 ```
 
--	Docker Version: 1.12.3
+-	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **263.2 MB (263237695 bytes)**  
+-	Total Size: **263.2 MB (263244854 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8c0b093bdd2b940ebaff507b128294df4f50915d7b9944d2fb22c4ca3f41c22f`
+-	Image ID: `sha256:be4c961a79c9b5aeaba8749cb167bb77713e80907bba547a24f604c9ff61828d`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 30 Aug 2016 17:43:38 GMT
+# Wed, 13 Sep 2017 16:44:11 GMT
 MAINTAINER Vlad Glagolev <stealth@sourcemage.org>
-# Thu, 01 Dec 2016 19:52:09 GMT
+# Wed, 13 Sep 2017 16:44:40 GMT
 ADD file:74d3c8207fa10761cd33cb6a991c974a06fa6df0b9c8c22ff9d86a2656d393fc in / 
-# Thu, 01 Dec 2016 19:52:12 GMT
+# Wed, 13 Sep 2017 16:45:31 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:15f4e7c8f021a3016a23dfff241fa0770ee4bcd37bd65d12d9053ab489227ec5`  
-		Last Modified: Wed, 14 Jun 2017 22:49:30 GMT  
-		Size: 263.2 MB (263237695 bytes)  
+	-	`sha256:6edf3e7292afc51fcedf32a49630878d6d03747169ed247fdfce403f1823b93d`  
+		Last Modified: Wed, 13 Sep 2017 16:46:32 GMT  
+		Size: 263.2 MB (263244854 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

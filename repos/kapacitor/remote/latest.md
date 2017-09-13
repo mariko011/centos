@@ -1,50 +1,55 @@
 ## `kapacitor:latest`
 
 ```console
-$ docker pull kapacitor@sha256:81348a4c78ca76a2acd72e8629e4f206cb9c2c13af3dc4222f9117f2a97d032a
+$ docker pull kapacitor@sha256:3aa5dc5803dd81a24e8661ab2582f76bc2af608adf37c711f78ccb38dfe3389d
 ```
 
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
 
 ### `kapacitor:latest` - linux; amd64
 
--	Docker Version: 17.03.2-ce
+```console
+$ docker pull kapacitor@sha256:526c55fa87d6a24adf0e044d579a3ef1dbe8be5a2b6bd1ddc3a0cea5b8d2e7ad
+```
+
+-	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **102.6 MB (102635058 bytes)**  
+-	Total Size: **102.8 MB (102849840 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cff359003de97d06dfd391b8737e7acecd047b029faeefbe56d312965dfc8ce1`
+-	Image ID: `sha256:0e4dd50bf6e519aa61d7edeac452c4445cb334b725e852f73c51ed61d15f635b`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["kapacitord"]`
 
 ```dockerfile
-# Thu, 07 Sep 2017 23:04:40 GMT
+# Wed, 13 Sep 2017 08:40:43 GMT
 ADD file:d7333b3e0bc6479d2faed32e06d85f1975e5b23e13e75555aeed0f639770413b in / 
-# Thu, 07 Sep 2017 23:04:41 GMT
+# Wed, 13 Sep 2017 08:40:43 GMT
 CMD ["bash"]
-# Thu, 07 Sep 2017 23:20:18 GMT
+# Wed, 13 Sep 2017 12:32:42 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 07 Sep 2017 23:20:19 GMT
+# Wed, 13 Sep 2017 12:32:43 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Fri, 08 Sep 2017 07:44:24 GMT
+# Wed, 13 Sep 2017 15:13:12 GMT
 RUN DEBIAN_FRONTEND=noninteractive apt-get update &&     DEBIAN_FRONTEND=noninteractive apt-get install -y bash-completion &&     awk 'f{if(sub(/^#/,"",$0)==0){f=0}};/^# enable bash completion/{f=1};{print;}' /etc/bash.bashrc > /etc/bash.bashrc.new &&     mv /etc/bash.bashrc.new /etc/bash.bashrc
-# Fri, 08 Sep 2017 07:44:25 GMT
+# Wed, 13 Sep 2017 15:13:13 GMT
 RUN set -ex &&     for key in         05CE15085FC09D18E99EFB22684A14CF2582E0C5 ;     do         gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key" ||         gpg --keyserver pgp.mit.edu --recv-keys "$key" ||         gpg --keyserver keyserver.pgp.com --recv-keys "$key" ;     done
-# Fri, 08 Sep 2017 07:44:25 GMT
+# Wed, 13 Sep 2017 15:13:13 GMT
 ENV KAPACITOR_VERSION=1.3.3
-# Fri, 08 Sep 2017 07:44:33 GMT
+# Wed, 13 Sep 2017 15:13:16 GMT
 RUN wget -q https://dl.influxdata.com/kapacitor/releases/kapacitor_${KAPACITOR_VERSION}_amd64.deb.asc &&     wget -q https://dl.influxdata.com/kapacitor/releases/kapacitor_${KAPACITOR_VERSION}_amd64.deb &&     gpg --batch --verify kapacitor_${KAPACITOR_VERSION}_amd64.deb.asc kapacitor_${KAPACITOR_VERSION}_amd64.deb &&     dpkg -i kapacitor_${KAPACITOR_VERSION}_amd64.deb &&     rm -f kapacitor_${KAPACITOR_VERSION}_amd64.deb*
-# Fri, 08 Sep 2017 07:44:33 GMT
+# Wed, 13 Sep 2017 15:13:16 GMT
 COPY file:4046787774ea4c49703132e9dbc6fb3a19cb54632aa7032dd8379f12b56034d9 in /etc/kapacitor/kapacitor.conf 
-# Fri, 08 Sep 2017 07:44:34 GMT
+# Wed, 13 Sep 2017 15:13:17 GMT
 EXPOSE 9092/tcp
-# Fri, 08 Sep 2017 07:44:34 GMT
+# Wed, 13 Sep 2017 15:13:17 GMT
 VOLUME [/var/lib/kapacitor]
-# Fri, 08 Sep 2017 07:44:40 GMT
+# Wed, 13 Sep 2017 15:13:17 GMT
 COPY file:e5d90b0779cb7845ca3a7981c04a97fd959fea211a2ce19c8da8b949f9d9d04c in /entrypoint.sh 
-# Fri, 08 Sep 2017 07:44:40 GMT
+# Wed, 13 Sep 2017 15:13:17 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 08 Sep 2017 07:44:40 GMT
+# Wed, 13 Sep 2017 15:13:17 GMT
 CMD ["kapacitord"]
 ```
 
@@ -53,27 +58,27 @@ CMD ["kapacitord"]
 		Last Modified: Thu, 07 Sep 2017 23:11:06 GMT  
 		Size: 52.6 MB (52595547 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90f6d19ae3884936579f82aa8c7f23286d3070be2f628712fdf4ef9f93801272`  
-		Last Modified: Thu, 07 Sep 2017 23:54:45 GMT  
-		Size: 19.3 MB (19263450 bytes)  
+	-	`sha256:15a33158a1367c7c4103c89ae66e8f4fdec4ada6a39d4648cf254b32296d6668`  
+		Last Modified: Wed, 13 Sep 2017 12:54:21 GMT  
+		Size: 19.3 MB (19263717 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:207bf19d00edd134b7a1165286698402e8874f182bfd59e6df317db5ed17d6b5`  
-		Last Modified: Fri, 08 Sep 2017 19:42:27 GMT  
-		Size: 10.0 MB (10029460 bytes)  
+	-	`sha256:149ff426d5a875eea489968a9b7b35b3c001bb4c4996fbd2b87274f5dac526b4`  
+		Last Modified: Wed, 13 Sep 2017 15:14:31 GMT  
+		Size: 10.2 MB (10243970 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:156037ba8062e71c6e6dd693cc9b8ec91a6c2f1adb91e891bf5dd9f1d8f71899`  
-		Last Modified: Fri, 08 Sep 2017 19:42:27 GMT  
-		Size: 6.8 KB (6787 bytes)  
+	-	`sha256:066cc15394d88dc863f754607e0f69e4269af50ae284382136b7c09119a1d9f0`  
+		Last Modified: Wed, 13 Sep 2017 15:14:29 GMT  
+		Size: 6.8 KB (6794 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2c3ce1f103075dc2afde4303e07cea13389a4190dfc4dad36b74d84df4a79caf`  
-		Last Modified: Fri, 08 Sep 2017 19:42:31 GMT  
-		Size: 20.7 MB (20739361 bytes)  
+	-	`sha256:ee4a4ee882edf9fcaadd9b846a76ce3a79a95b2d0306416972026ebdfa05739c`  
+		Last Modified: Wed, 13 Sep 2017 15:14:34 GMT  
+		Size: 20.7 MB (20739356 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9eecf70aa6a64a4493224428fe76fc114545e5345108e512016f8708a20ad0d8`  
-		Last Modified: Fri, 08 Sep 2017 19:42:26 GMT  
-		Size: 223.0 B  
+	-	`sha256:60662ad799ba8a562da302a398ff7a2e22b40c3fc536079f49caee06ea275056`  
+		Last Modified: Wed, 13 Sep 2017 15:14:29 GMT  
+		Size: 224.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b9192cc4daab5dd9075027ff14a5741816f6ae6f32b3d13fcc355afe1d4c0cb2`  
-		Last Modified: Fri, 08 Sep 2017 19:42:26 GMT  
-		Size: 230.0 B  
+	-	`sha256:8f6d797d47aee9998ed51bca742e7486a7f437970bc358031c01a77fe40781e3`  
+		Last Modified: Wed, 13 Sep 2017 15:14:29 GMT  
+		Size: 232.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
