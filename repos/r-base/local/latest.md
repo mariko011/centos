@@ -231,10 +231,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris binutils=2.29-9
-'http://http.debian.net/debian/pool/main/b/binutils/binutils_2.29-9.dsc' binutils_2.29-9.dsc 5223 SHA256:1a8f39219174f094f334a270a33bb285d19766fc5334003b9e16443aafc9d962
-'http://http.debian.net/debian/pool/main/b/binutils/binutils_2.29.orig.tar.gz' binutils_2.29.orig.tar.gz 39180110 SHA256:f7ddc9a7ca91ea1397faeb049c502794cc3bedd09d61dd210c12ef668ff6ea9d
-'http://http.debian.net/debian/pool/main/b/binutils/binutils_2.29-9.diff.gz' binutils_2.29-9.diff.gz 269023 SHA256:ceaf3e6d9e84f6d3d43160566ce933bc17c6c6e50f1e6ded4d1e5c8060ea6fc4
+'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.29-9.dsc' binutils_2.29-9.dsc 5223 SHA256:1a8f39219174f094f334a270a33bb285d19766fc5334003b9e16443aafc9d962
+'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.29.orig.tar.gz' binutils_2.29.orig.tar.gz 39180110 SHA256:f7ddc9a7ca91ea1397faeb049c502794cc3bedd09d61dd210c12ef668ff6ea9d
+'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.29-9.diff.gz' binutils_2.29-9.diff.gz 269023 SHA256:ceaf3e6d9e84f6d3d43160566ce933bc17c6c6e50f1e6ded4d1e5c8060ea6fc4
 ```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/binutils/2.29-9/
+- https://sources.debian.net/src/binutils/2.29-9/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `boot=1.3-20-1`
 
@@ -950,19 +955,8 @@ Licenses: (parsed from: `/usr/share/doc/gcc-6-base/copyright`)
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-6=6.4.0-4
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.4.0-4.dsc' gcc-6_6.4.0-4.dsc 19534 SHA256:16c7843705037bc28f8d467b22b61436854c50ef8d843e429e98a8b9f6efdd38
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.4.0.orig.tar.gz' gcc-6_6.4.0.orig.tar.gz 81632257 SHA256:13220c723ddb7a69ff5690070b245886ac99afe5a31ee106ac36d6f013234a67
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.4.0-4.diff.gz' gcc-6_6.4.0-4.diff.gz 1660927 SHA256:9ed1c29094b1b7daaa031eed2fa5e5e0983328325daacb8a7d2e586e01a393b1
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gcc-6/6.4.0-4/
-- https://sources.debian.net/src/gcc-6/6.4.0-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gcc-7=7.2.0-4`
 
@@ -1004,10 +998,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris gcc-7=7.2.0-4
-'http://http.debian.net/debian/pool/main/g/gcc-7/gcc-7_7.2.0-4.dsc' gcc-7_7.2.0-4.dsc 26355 SHA256:9bfe017cf947d10e59d568cc2d399acb83b357cde443f54981fd24f15156de56
-'http://http.debian.net/debian/pool/main/g/gcc-7/gcc-7_7.2.0.orig.tar.gz' gcc-7_7.2.0.orig.tar.gz 70028185 SHA256:a1050ca96c2b931ad82da3caf2868cd68b95a62151ac9af53fbe9b69b6e9b651
-'http://http.debian.net/debian/pool/main/g/gcc-7/gcc-7_7.2.0-4.diff.gz' gcc-7_7.2.0-4.diff.gz 2987777 SHA256:d7bed60304980cd5a48a9dee41c6b740e986cb2b285048e8a13bd12a9371ffe3
+'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.2.0-4.dsc' gcc-7_7.2.0-4.dsc 26355 SHA256:9bfe017cf947d10e59d568cc2d399acb83b357cde443f54981fd24f15156de56
+'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.2.0.orig.tar.gz' gcc-7_7.2.0.orig.tar.gz 70028185 SHA256:a1050ca96c2b931ad82da3caf2868cd68b95a62151ac9af53fbe9b69b6e9b651
+'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.2.0-4.diff.gz' gcc-7_7.2.0-4.diff.gz 2987777 SHA256:d7bed60304980cd5a48a9dee41c6b740e986cb2b285048e8a13bd12a9371ffe3
 ```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/gcc-7/7.2.0-4/
+- https://sources.debian.net/src/gcc-7/7.2.0-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gcc-defaults=1.172`
 
@@ -2596,14 +2595,8 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-mgcv/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris mgcv=1.8-19-1
-'http://http.debian.net/debian/pool/main/m/mgcv/mgcv_1.8-19-1.dsc' mgcv_1.8-19-1.dsc 1643 SHA256:689adbbe09924d97a85f03fb9ce50f19d654f84d6204137542dcf7f22638d489
-'http://http.debian.net/debian/pool/main/m/mgcv/mgcv_1.8-19.orig.tar.gz' mgcv_1.8-19.orig.tar.gz 868165 SHA256:85b09939f6d3b5f8b845f8897fe7fdaffcdee3e2551f49cc31a8084623b6f7a3
-'http://http.debian.net/debian/pool/main/m/mgcv/mgcv_1.8-19-1.diff.gz' mgcv_1.8-19-1.diff.gz 5472 SHA256:864860a9e75f196bda3f51f506b2b08664ba0b11f843234e94fde557133535ff
-```
 
 ### `dpkg` source package: `mpclib3=1.0.3-1`
 
@@ -2644,10 +2637,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris mpfr4=3.1.6-1
-'http://http.debian.net/debian/pool/main/m/mpfr4/mpfr4_3.1.6-1.dsc' mpfr4_3.1.6-1.dsc 2004 SHA256:449a287fa9448826c591d87fe92b702e11e6e1cb7be88ef50f36dc7769c92c33
-'http://http.debian.net/debian/pool/main/m/mpfr4/mpfr4_3.1.6.orig.tar.xz' mpfr4_3.1.6.orig.tar.xz 1133672 SHA256:7a62ac1a04408614fccdc506e4844b10cf0ad2c2b1677097f8f35d3a1344a950
-'http://http.debian.net/debian/pool/main/m/mpfr4/mpfr4_3.1.6-1.debian.tar.xz' mpfr4_3.1.6-1.debian.tar.xz 9724 SHA256:1ce306a388ab312eb1c62f4c52dc468ae55d8205e124d19eb231ef7d42fc836a
+'http://deb.debian.org/debian/pool/main/m/mpfr4/mpfr4_3.1.6-1.dsc' mpfr4_3.1.6-1.dsc 2004 SHA256:449a287fa9448826c591d87fe92b702e11e6e1cb7be88ef50f36dc7769c92c33
+'http://deb.debian.org/debian/pool/main/m/mpfr4/mpfr4_3.1.6.orig.tar.xz' mpfr4_3.1.6.orig.tar.xz 1133672 SHA256:7a62ac1a04408614fccdc506e4844b10cf0ad2c2b1677097f8f35d3a1344a950
+'http://deb.debian.org/debian/pool/main/m/mpfr4/mpfr4_3.1.6-1.debian.tar.xz' mpfr4_3.1.6-1.debian.tar.xz 9724 SHA256:1ce306a388ab312eb1c62f4c52dc468ae55d8205e124d19eb231ef7d42fc836a
 ```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/mpfr4/3.1.6-1/
+- https://sources.debian.net/src/mpfr4/3.1.6-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ncurses=6.0+20170715-2`
 
@@ -2960,10 +2958,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris pango1.0=1.40.12-1
-'http://http.debian.net/debian/pool/main/p/pango1.0/pango1.0_1.40.12-1.dsc' pango1.0_1.40.12-1.dsc 3315 SHA256:21e17cb046cc0823eda025b5be6e88cb8acf00c2e5230699e3456f55e745265d
-'http://http.debian.net/debian/pool/main/p/pango1.0/pango1.0_1.40.12.orig.tar.xz' pango1.0_1.40.12.orig.tar.xz 856228 SHA256:75f1a9a8e4e2b28cbc078b50c1fa927ee4ded994d1ade97c5603e2d1f3161cfc
-'http://http.debian.net/debian/pool/main/p/pango1.0/pango1.0_1.40.12-1.debian.tar.xz' pango1.0_1.40.12-1.debian.tar.xz 27520 SHA256:54a1093a552551e5ae215c2664a4bf80e2b6d9646887d7384184974d72c469d1
+'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.40.12-1.dsc' pango1.0_1.40.12-1.dsc 3315 SHA256:21e17cb046cc0823eda025b5be6e88cb8acf00c2e5230699e3456f55e745265d
+'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.40.12.orig.tar.xz' pango1.0_1.40.12.orig.tar.xz 856228 SHA256:75f1a9a8e4e2b28cbc078b50c1fa927ee4ded994d1ade97c5603e2d1f3161cfc
+'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.40.12-1.debian.tar.xz' pango1.0_1.40.12-1.debian.tar.xz 27520 SHA256:54a1093a552551e5ae215c2664a4bf80e2b6d9646887d7384184974d72c469d1
 ```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/pango1.0/1.40.12-1/
+- https://sources.debian.net/src/pango1.0/1.40.12-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `patch=2.7.5-1`
 
