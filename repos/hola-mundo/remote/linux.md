@@ -1,13 +1,14 @@
 ## `hola-mundo:linux`
 
 ```console
-$ docker pull hola-mundo@sha256:b66cc660cb6f39dae5ec4b1fac3a31eaa105bf502c07557910c07b0804fa49bf
+$ docker pull hola-mundo@sha256:7fd0be8457f0c8bd913601f4375519514bc62c61e43d3d21fe386e8724d7bb9e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
 	-	linux; arm variant v7
+	-	linux; 386
 	-	linux; ppc64le
 	-	linux; s390x
 
@@ -61,6 +62,32 @@ CMD ["/hello"]
 	-	`sha256:1d69a72d83c49b6c1e649661b18acc0b5611253872c470d995ddd7862dc4029c`  
 		Last Modified: Thu, 10 Aug 2017 20:29:33 GMT  
 		Size: 1.0 KB (1001 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `hola-mundo:linux` - linux; 386
+
+```console
+$ docker pull hola-mundo@sha256:8b9e5ad2198eb6b8334f22aa789575cabbeb716c45031a5a441b64233c61c767
+```
+
+-	Docker Version: 17.03.1-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **312.1 KB (312114 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:2cd2ae56459ea22f29d875bbd749e469b52b8f5c1c41f417ad661759d5f8e089`
+-	Default Command: `["\/hello"]`
+
+```dockerfile
+# Wed, 09 Aug 2017 22:50:07 GMT
+COPY file:066aeb637bd2fbcba01644ba433ca763e23acc5b326b27d684ef28ddae257a59 in / 
+# Wed, 09 Aug 2017 22:50:07 GMT
+CMD ["/hello"]
+```
+
+-	Layers:
+	-	`sha256:f9fbeabc8a67c1d637cf6ee46612562a9d8bd9424142b08ff6aaa200fbe0341c`  
+		Last Modified: Wed, 09 Aug 2017 22:50:13 GMT  
+		Size: 312.1 KB (312114 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `hola-mundo:linux` - linux; ppc64le

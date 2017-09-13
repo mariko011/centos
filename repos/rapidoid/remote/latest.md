@@ -1,19 +1,24 @@
 ## `rapidoid:latest`
 
 ```console
-$ docker pull rapidoid@sha256:86dd7895f1b2612112b51593087bd7dbe27b21e38862a67f36d28f4252fe7a31
+$ docker pull rapidoid@sha256:e73148236ea6f19350545282ccb3f4ce03055e0c73415a37a5757b2aa484c706
 ```
 
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
 
 ### `rapidoid:latest` - linux; amd64
 
--	Docker Version: 17.03.2-ce
+```console
+$ docker pull rapidoid@sha256:1d17ccc9515525db39c5ef7190651b8c31c8357f08deeeb15e26e52f0212b61c
+```
+
+-	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **309.9 MB (309890781 bytes)**  
+-	Total Size: **310.1 MB (310125054 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9d78de3955b548314927ab31c96454c4c4d90c8b788bc7f067d26e1abb118d44`
+-	Image ID: `sha256:279832ef3d77215b0777b428b3b87f412275a2aba375fdf1a88b6855048d92bf`
 -	Entrypoint: `["\/opt\/entrypoint.sh"]`
 
 ```dockerfile
@@ -27,49 +32,49 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Thu, 07 Sep 2017 23:30:55 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 08 Sep 2017 08:55:13 GMT
+# Tue, 12 Sep 2017 23:51:30 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 08 Sep 2017 08:55:13 GMT
+# Tue, 12 Sep 2017 23:51:30 GMT
 ENV LANG=C.UTF-8
-# Fri, 08 Sep 2017 08:55:14 GMT
+# Tue, 12 Sep 2017 23:51:30 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Fri, 08 Sep 2017 08:55:15 GMT
+# Tue, 12 Sep 2017 23:51:31 GMT
 RUN ln -svT "/usr/lib/jvm/java-8-openjdk-$(dpkg --print-architecture)" /docker-java-home
-# Fri, 08 Sep 2017 08:55:15 GMT
+# Tue, 12 Sep 2017 23:51:31 GMT
 ENV JAVA_HOME=/docker-java-home
-# Fri, 08 Sep 2017 08:55:16 GMT
+# Tue, 12 Sep 2017 23:51:31 GMT
 ENV JAVA_VERSION=8u141
-# Fri, 08 Sep 2017 08:55:16 GMT
+# Tue, 12 Sep 2017 23:51:32 GMT
 ENV JAVA_DEBIAN_VERSION=8u141-b15-1~deb9u1
-# Fri, 08 Sep 2017 08:55:16 GMT
+# Tue, 12 Sep 2017 23:51:32 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1
-# Fri, 08 Sep 2017 08:56:26 GMT
+# Tue, 12 Sep 2017 23:52:24 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Fri, 08 Sep 2017 08:56:28 GMT
+# Tue, 12 Sep 2017 23:52:26 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Fri, 08 Sep 2017 09:54:35 GMT
+# Wed, 13 Sep 2017 18:56:14 GMT
 MAINTAINER Nikolche Mihajlovski
-# Fri, 08 Sep 2017 09:54:35 GMT
+# Wed, 13 Sep 2017 18:56:14 GMT
 ENV GPG_KEY=E306FEF548C686C23DC00242B9B08D8F616EF49C
-# Fri, 08 Sep 2017 09:54:36 GMT
+# Wed, 13 Sep 2017 18:56:14 GMT
 ENV RAPIDOID_JAR=/opt/rapidoid.jar
-# Fri, 08 Sep 2017 09:54:36 GMT
+# Wed, 13 Sep 2017 18:56:14 GMT
 ENV RAPIDOID_TMP=/tmp/rapidoid
-# Fri, 08 Sep 2017 09:54:36 GMT
+# Wed, 13 Sep 2017 18:56:15 GMT
 WORKDIR /opt
-# Fri, 08 Sep 2017 09:54:37 GMT
+# Wed, 13 Sep 2017 18:56:15 GMT
 EXPOSE 8888/tcp
-# Fri, 08 Sep 2017 09:54:37 GMT
+# Wed, 13 Sep 2017 18:56:15 GMT
 VOLUME [/data]
-# Fri, 08 Sep 2017 09:54:37 GMT
+# Wed, 13 Sep 2017 18:56:15 GMT
 ENV RAPIDOID_VERSION=5.4.4
-# Fri, 08 Sep 2017 09:54:37 GMT
+# Wed, 13 Sep 2017 18:56:15 GMT
 ENV RAPIDOID_URL=https://repo1.maven.org/maven2/org/rapidoid/rapidoid-platform/5.4.4/rapidoid-platform-5.4.4.jar
-# Fri, 08 Sep 2017 09:54:38 GMT
+# Wed, 13 Sep 2017 18:56:16 GMT
 COPY file:f62471c9cb58f8ee35db72795bbbe10cfd1ec927f04f29a88fe6a996f358af70 in /opt/ 
-# Mon, 11 Sep 2017 07:20:14 GMT
+# Wed, 13 Sep 2017 18:56:29 GMT
 RUN set -xe     && mkdir /app     && mkdir -p "$RAPIDOID_TMP" 	&& curl -SL "$RAPIDOID_URL" -o $RAPIDOID_JAR 	&& curl -SL "$RAPIDOID_URL.asc" -o $RAPIDOID_JAR.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys $GPG_KEY 	&& gpg --batch --verify $RAPIDOID_JAR.asc $RAPIDOID_JAR 	&& rm -r "$GNUPGHOME" 	&& rm "$RAPIDOID_JAR.asc"
-# Mon, 11 Sep 2017 07:20:14 GMT
+# Wed, 13 Sep 2017 18:56:29 GMT
 ENTRYPOINT ["/opt/entrypoint.sh"]
 ```
 
@@ -90,31 +95,31 @@ ENTRYPOINT ["/opt/entrypoint.sh"]
 		Last Modified: Thu, 07 Sep 2017 23:56:57 GMT  
 		Size: 50.0 MB (50015366 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f34a55a78629d1810896a463ad235a043bfb76771657326e7f12a5d6b5462711`  
-		Last Modified: Sat, 09 Sep 2017 00:34:34 GMT  
-		Size: 661.9 KB (661916 bytes)  
+	-	`sha256:7555d68a907cb72db9d53146f98f3e9b3307749d489eb4164d8a61dcabfaa350`  
+		Last Modified: Wed, 13 Sep 2017 00:03:32 GMT  
+		Size: 892.0 KB (892022 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a0608417860f2fbf351f5691f518ecedd1b5e0fbc6a09ff9df6fc4e9cbe1d617`  
-		Last Modified: Sat, 09 Sep 2017 00:34:33 GMT  
-		Size: 240.0 B  
+	-	`sha256:f52b31cfae59b51710e232f3800a26d72b2fbdf320893915633b1357df05cf20`  
+		Last Modified: Wed, 13 Sep 2017 00:03:31 GMT  
+		Size: 246.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:74ffb0683f1a94850d234bc16a57845dbbb8096706ac2f498cfa6227b5d34c88`  
-		Last Modified: Sat, 09 Sep 2017 00:34:33 GMT  
+	-	`sha256:a7eec7274b2f1435066818cfcc17a337aa6316a7392fbeab68531a9b9a049d22`  
+		Last Modified: Wed, 13 Sep 2017 00:03:31 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11ab86bd63bcf0ac2f592a1ea2e581af4508a5097bdfdde4a148d9c8ce57fbdf`  
-		Last Modified: Sat, 09 Sep 2017 00:35:14 GMT  
-		Size: 183.7 MB (183688010 bytes)  
+	-	`sha256:1fb549c32d650ecc18fd7eb1a7c6d0a457ff739ccf3fb3545a8fadc801cf3a55`  
+		Last Modified: Wed, 13 Sep 2017 00:04:13 GMT  
+		Size: 183.7 MB (183692118 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a0e8d28e95f8e809aafb72c4c445a45bb7f3d1f388754776e7e3abc9cd144048`  
-		Last Modified: Sat, 09 Sep 2017 00:34:34 GMT  
-		Size: 272.0 KB (271989 bytes)  
+	-	`sha256:175c1150f2d67959b0ef2039adbcb0d74bb71d92556dfc659e0a1faa7184862c`  
+		Last Modified: Wed, 13 Sep 2017 00:03:32 GMT  
+		Size: 272.0 KB (272039 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9b0672203dcae0d2b516a8b024863b558de4551d188958b000cf9173144239cb`  
-		Last Modified: Mon, 11 Sep 2017 07:20:26 GMT  
-		Size: 322.0 B  
+	-	`sha256:71b72c441ce1dbd92b8d8ac791757a103a9897d7969208957c121d8879d67ef4`  
+		Last Modified: Wed, 13 Sep 2017 18:56:37 GMT  
+		Size: 321.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c7054dd6bcdeb1d4ff321b068593e291366cc801c7aa38b9f05b4c5a42c3541d`  
-		Last Modified: Mon, 11 Sep 2017 07:20:28 GMT  
-		Size: 14.6 MB (14612734 bytes)  
+	-	`sha256:c25ba4590a40c1e9996ccfce9ef9a8431088994af54297c4ba06a29b12f8b3ba`  
+		Last Modified: Wed, 13 Sep 2017 18:56:38 GMT  
+		Size: 14.6 MB (14612738 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
