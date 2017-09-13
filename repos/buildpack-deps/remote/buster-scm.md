@@ -1,7 +1,7 @@
 ## `buildpack-deps:buster-scm`
 
 ```console
-$ docker pull buildpack-deps@sha256:024e2344b711abdd2c4eb2fc671ecb6b078f988b7cde110c1ef4f388d31ecd7e
+$ docker pull buildpack-deps@sha256:b8b00c7049a6577535f82a5eb133b0e07bcecf5f285b4a035e8577d0aee5cbba
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -61,14 +61,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercuri
 ### `buildpack-deps:buster-scm` - linux; arm variant v5
 
 ```console
-$ docker pull buildpack-deps@sha256:2022d7006dcdd572c1dc36c1135e5f720d21d433ef15f999ff153b1a62528627
+$ docker pull buildpack-deps@sha256:4991337437bb7ed05d37040dd2d231575bb22905e20eef593d298247d64de3ed
 ```
 
 -	Docker Version: 17.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **112.4 MB (112426779 bytes)**  
+-	Total Size: **108.3 MB (108258186 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d15e7626606fff074822401305522ee78d2c307b5a1d3283b98286ebb066095c`
+-	Image ID: `sha256:3ce3338010b2061e82fa096282343c04d36667203a0080d8af4911ba92c6fc7d`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -80,8 +80,8 @@ CMD ["bash"]
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 # Fri, 08 Sep 2017 21:10:09 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Fri, 08 Sep 2017 21:11:59 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
+# Wed, 13 Sep 2017 07:53:57 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
@@ -97,9 +97,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		m
 		Last Modified: Tue, 12 Sep 2017 04:08:24 GMT  
 		Size: 9.0 MB (8977937 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:934278d16aa28ff5b1322f8b0c9f52a1a84ed0e26026ea759dd87c8f19c1cf6b`  
-		Last Modified: Tue, 12 Sep 2017 04:09:19 GMT  
-		Size: 49.7 MB (49675823 bytes)  
+	-	`sha256:b77f86afaeeea531c9b3d018e0dabfad4b191dbe6cf029edb3ab12aca49c063e`  
+		Last Modified: Wed, 13 Sep 2017 08:23:23 GMT  
+		Size: 45.5 MB (45507230 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:buster-scm` - linux; arm variant v7
