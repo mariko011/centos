@@ -8,12 +8,13 @@
 ## `hello-seattle:linux`
 
 ```console
-$ docker pull hello-seattle@sha256:3d2a97fdd93b998f73c08d10bc6537991397bca63fd0c7ab03864500d95188b9
+$ docker pull hello-seattle@sha256:f62511e6c3f4702ecddcf8bdf97c7526365a7d2b5fbdfd6ef384abb26ead30ab
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
+	-	linux; arm variant v5
 	-	linux; arm variant v7
 
 ### `hello-seattle:linux` - linux; amd64
@@ -40,6 +41,32 @@ CMD ["/hello"]
 	-	`sha256:e793023fd1a11d73ceea3262aa5a7f7a700f8610be029f602d1cd4f166b67397`  
 		Last Modified: Wed, 13 Sep 2017 02:49:21 GMT  
 		Size: 990.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `hello-seattle:linux` - linux; arm variant v5
+
+```console
+$ docker pull hello-seattle@sha256:bf37610da3921bd46fb710347539f9f6ca481d22a54c6e4f0a1a7265893fe7a6
+```
+
+-	Docker Version: 17.06.0-ce-rc5
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **1.0 KB (1033 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:594fad3bfc744253526eda1ed8686b2cf3e3c5f4e344985f3963248c273a5a7a`
+-	Default Command: `["\/hello"]`
+
+```dockerfile
+# Fri, 23 Jun 2017 22:51:11 GMT
+COPY file:8a0c4a14b10d3c24e047dafc76b1cf1b434f4d73ba0eb0b029bf07b10f7d7332 in / 
+# Fri, 23 Jun 2017 22:51:12 GMT
+CMD ["/hello"]
+```
+
+-	Layers:
+	-	`sha256:d40992629f7744ab7da8b5f436e48646177bc9840d0f27c724a6708c8be96416`  
+		Last Modified: Fri, 23 Jun 2017 22:51:18 GMT  
+		Size: 1.0 KB (1033 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `hello-seattle:linux` - linux; arm variant v7
