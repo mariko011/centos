@@ -799,15 +799,8 @@ Licenses: (parsed from: `/usr/share/doc/libelf1/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris elfutils=0.166-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.166-2ubuntu1.dsc' elfutils_0.166-2ubuntu1.dsc 2538 SHA256:585ec84ab744cdf41bfc30e89b28bf9a0e549d9b90902021a8626be88515df5c
-'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.166.orig.tar.bz2' elfutils_0.166.orig.tar.bz2 6496225 SHA256:3c056914c8a438b210be0d790463b960fc79d234c3f05ce707cbff80e94cba30
-'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.166.orig.tar.bz2.asc' elfutils_0.166.orig.tar.bz2.asc 479 SHA256:81a30e6ed226960d76d7bdbf5b1a65751ce48cf39a209fa5b820932b64e9d18b
-'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.166-2ubuntu1.debian.tar.xz' elfutils_0.166-2ubuntu1.debian.tar.xz 39044 SHA256:ebfdbc4f354b1deaa16fb9d735bdfede611ceaae664767c631bd0e7229d1bb57
-```
 
 ### `dpkg` source package: `expat=2.2.3-1`
 
@@ -1137,14 +1130,8 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc
 
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.53.6-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.53.6-1ubuntu1.dsc' glib2.0_2.53.6-1ubuntu1.dsc 3430 SHA256:5839288adfbbfca82858b8ad2c9b59b2c95982edee3691424074f530a22ebad3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.53.6.orig.tar.xz' glib2.0_2.53.6.orig.tar.xz 7805744 SHA256:e01296a9119c09d2dccb37ad09f5eaa1e0c5570a473d8fed04fc759ace6fb6cc
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.53.6-1ubuntu1.debian.tar.xz' glib2.0_2.53.6-1ubuntu1.debian.tar.xz 74372 SHA256:f1dc4d933bb05f2408e6b5d620d66ac470ae0cb1eb6e4fcf7206b393742945e4
-```
 
 ### `dpkg` source package: `glibc=2.24-12ubuntu1`
 
@@ -2328,14 +2315,8 @@ Licenses: (parsed from: `/usr/share/doc/libsepol1/copyright`)
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libsepol=2.6-2
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsepol/libsepol_2.6-2.dsc' libsepol_2.6-2.dsc 1814 SHA256:197ddaf44a5139d7ca6c12ce6b29fca0589f72c59ac588a7fa39d11b2e65778a
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsepol/libsepol_2.6.orig.tar.gz' libsepol_2.6.orig.tar.gz 442549 SHA256:d856d6506054f52abeaa3543ea2f2344595a3dc05d0d873ed7f724f7a16b1874
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsepol/libsepol_2.6-2.debian.tar.xz' libsepol_2.6-2.debian.tar.xz 14320 SHA256:d7a1022d03eb53a8d30262e06f14f691e553b3db684ca0f3549cd17b93fb7465
-```
 
 ### `dpkg` source package: `libsigsegv=2.11-1`
 
@@ -2822,14 +2803,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libxslt=1.1.29-2.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxslt/libxslt_1.1.29-2.1.dsc' libxslt_1.1.29-2.1.dsc 2535 SHA256:8823c0cb209943fb1a3f6761b9a1b3c49c0348da3aa7a67ff9e09760c0976410
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxslt/libxslt_1.1.29.orig.tar.gz' libxslt_1.1.29.orig.tar.gz 3428524 SHA256:b5976e3857837e7617b29f2249ebb5eeac34e249208d31f1fbf7a6ba7a4090ce
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxslt/libxslt_1.1.29-2.1.debian.tar.xz' libxslt_1.1.29-2.1.debian.tar.xz 28548 SHA256:93ef76669dae1bdfdd5f60418e29ccda60c7b693b67d0da81e7d12ffb6d25085
-```
 
 ### `dpkg` source package: `libxt=1:1.1.5-1`
 
