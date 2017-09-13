@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:61951ae97c134c286e4aa208f7f52bb61269fddff09838b00d5e60347a53c65b`
-- Created: `2017-07-27T19:44:49.183601624Z`
+- Image ID: `sha256:eec5b2814b88c1325285153ea9fb557cfcd64c82e0da049903fed84d39e79208`
+- Created: `2017-09-08T08:20:41.559010506Z`
 - Virtual Size: ~ 85.15 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -483,20 +483,31 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/gcc-4.7/4.7.2-5/
 - https://sources.debian.net/src/gcc-4.7/4.7.2-5/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `gnupg=1.4.12-7+deb7u8`
+### `dpkg` source package: `gnupg=1.4.12-7+deb7u9`
 
 Binary Packages:
 
-- `gnupg=1.4.12-7+deb7u8`
-- `gpgv=1.4.12-7+deb7u8`
+- `gnupg=1.4.12-7+deb7u9`
+- `gpgv=1.4.12-7+deb7u9`
 
 Licenses: (parsed from: `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gpgv/copyright`)
 
 - `GPL-3`
 - `GPL-3+ with OpenSSL exception`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris gnupg=1.4.12-7+deb7u9
+'http://security.debian.org/pool/updates/main/g/gnupg/gnupg_1.4.12-7+deb7u9.dsc' gnupg_1.4.12-7+deb7u9.dsc 2338 SHA256:8613c9a227b3181870c4573a321787638153cb95cea2e031b908df4d5d0149f8
+'http://security.debian.org/pool/updates/main/g/gnupg/gnupg_1.4.12.orig.tar.gz' gnupg_1.4.12.orig.tar.gz 4939171 SHA256:bb94222fa263e55a5096fdc1c6cd60e9992602ce5067bc453a4ada77bb31e367
+'http://security.debian.org/pool/updates/main/g/gnupg/gnupg_1.4.12-7+deb7u9.debian.tar.gz' gnupg_1.4.12-7+deb7u9.debian.tar.gz 125126 SHA256:c1727f6f4f96c1f970ed3bf9be29c8f0f81cc428c4e0132a69889fa9c87bc38c
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/gnupg/1.4.12-7+deb7u9/
+- https://sources.debian.net/src/gnupg/1.4.12-7+deb7u9/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `grep=2.12-2`
 
