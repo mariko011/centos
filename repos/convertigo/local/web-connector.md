@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5c0cd778ff3f4c47f900662f814cc1332239a30a5a9629a756a84d79b02085ad`
-- Created: `2017-07-26T15:38:08.843449105Z`
-- Virtual Size: ~ 519.90 Mb  
+- Image ID: `sha256:a386a272cea55a4d66ede207f860a2e85123e4a6fa7a754b08057bf15c3631b0`
+- Created: `2017-09-08T00:02:27.083511998Z`
+- Virtual Size: ~ 519.86 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","--","/docker-entrypoint.sh"]`
@@ -1065,12 +1065,12 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/gmp/2:6.0.0+dfsg-6/
 - https://sources.debian.net/src/gmp/2:6.0.0+dfsg-6/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `gnupg=1.4.18-7+deb8u3`
+### `dpkg` source package: `gnupg=1.4.18-7+deb8u4`
 
 Binary Packages:
 
-- `gnupg=1.4.18-7+deb8u3`
-- `gpgv=1.4.18-7+deb8u3`
+- `gnupg=1.4.18-7+deb8u4`
+- `gpgv=1.4.18-7+deb8u4`
 
 Licenses: (parsed from: `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gpgv/copyright`)
 
@@ -1081,16 +1081,16 @@ Licenses: (parsed from: `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gpgv/c
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gnupg=1.4.18-7+deb8u3
-'http://deb.debian.org/debian/pool/main/g/gnupg/gnupg_1.4.18-7+deb8u3.dsc' gnupg_1.4.18-7+deb8u3.dsc 2432 SHA256:936c6e278b978f3edd24264940fca2f16d3c22c58437400578cdc7a9e6cb4148
-'http://deb.debian.org/debian/pool/main/g/gnupg/gnupg_1.4.18.orig.tar.gz' gnupg_1.4.18.orig.tar.gz 5047888 SHA256:10a8936b76ccadb98521535b5f41cc5b41b3c159a6c2915f062bd4dc8ac12d12
-'http://deb.debian.org/debian/pool/main/g/gnupg/gnupg_1.4.18-7+deb8u3.debian.tar.xz' gnupg_1.4.18-7+deb8u3.debian.tar.xz 301204 SHA256:2117df33f763efb2afbd9c154b6bfbf6a91c0ef1c1bee73357c03fd15f18605f
+$ apt-get source -qq --print-uris gnupg=1.4.18-7+deb8u4
+'http://security.debian.org/pool/updates/main/g/gnupg/gnupg_1.4.18-7+deb8u4.dsc' gnupg_1.4.18-7+deb8u4.dsc 2436 SHA256:41ec08af41cbeb7fba84969530ba9d54a2fde55165b7d5c576cb077272620bdb
+'http://security.debian.org/pool/updates/main/g/gnupg/gnupg_1.4.18.orig.tar.gz' gnupg_1.4.18.orig.tar.gz 5047888 SHA256:10a8936b76ccadb98521535b5f41cc5b41b3c159a6c2915f062bd4dc8ac12d12
+'http://security.debian.org/pool/updates/main/g/gnupg/gnupg_1.4.18-7+deb8u4.debian.tar.xz' gnupg_1.4.18-7+deb8u4.debian.tar.xz 302448 SHA256:09e6f60462c8f13aa3e0c2796996697cce1b3023a6034280196041a52bf5f0f2
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/gnupg/1.4.18-7+deb8u3/
-- https://sources.debian.net/src/gnupg/1.4.18-7+deb8u3/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/gnupg/1.4.18-7+deb8u4/
+- https://sources.debian.net/src/gnupg/1.4.18-7+deb8u4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gnutls28=3.3.8-6+deb8u7`
 
@@ -2383,11 +2383,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libxinerama/2:1.1.3-1/
 - https://sources.debian.net/src/libxinerama/2:1.1.3-1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `libxml2=2.9.1+dfsg1-5+deb8u4`
+### `dpkg` source package: `libxml2=2.9.1+dfsg1-5+deb8u5`
 
 Binary Packages:
 
-- `libxml2:amd64=2.9.1+dfsg1-5+deb8u4`
+- `libxml2:amd64=2.9.1+dfsg1-5+deb8u5`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2396,16 +2396,16 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libxml2=2.9.1+dfsg1-5+deb8u4
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.1+dfsg1-5+deb8u4.dsc' libxml2_2.9.1+dfsg1-5+deb8u4.dsc 2760 SHA256:23f9a9935227718fd2921abb484c129617325e1306d8525b3dcec1611df01096
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.1+dfsg1.orig.tar.gz' libxml2_2.9.1+dfsg1.orig.tar.gz 3793894 SHA256:f3ec5256412192f74833286c4490672500b232ed1c9195214db2c641df064a28
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.1+dfsg1-5+deb8u4.debian.tar.xz' libxml2_2.9.1+dfsg1-5+deb8u4.debian.tar.xz 66756 SHA256:cda8374910db4e2a06b2515123dbe0b714f7f647532dc305f03c2a094175e706
+$ apt-get source -qq --print-uris libxml2=2.9.1+dfsg1-5+deb8u5
+'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.9.1+dfsg1-5+deb8u5.dsc' libxml2_2.9.1+dfsg1-5+deb8u5.dsc 2760 SHA256:6fe2c4e997f1ed1520cbba4474513880a1e7450de57a0c86f73c4023396609fb
+'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.9.1+dfsg1.orig.tar.gz' libxml2_2.9.1+dfsg1.orig.tar.gz 3793894 SHA256:f3ec5256412192f74833286c4490672500b232ed1c9195214db2c641df064a28
+'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.9.1+dfsg1-5+deb8u5.debian.tar.xz' libxml2_2.9.1+dfsg1-5+deb8u5.debian.tar.xz 70784 SHA256:01247e1947e2b52c4ef0e227fdd501038aa0840b8c889c26b6503a2dcd85a5d3
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/libxml2/2.9.1+dfsg1-5+deb8u4/
-- https://sources.debian.net/src/libxml2/2.9.1+dfsg1-5+deb8u4/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libxml2/2.9.1+dfsg1-5+deb8u5/
+- https://sources.debian.net/src/libxml2/2.9.1+dfsg1-5+deb8u5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libxrandr=2:1.4.2-1`
 
