@@ -544,19 +544,8 @@ Licenses: (parsed from: `/usr/share/doc/gcc-6-base/copyright`)
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-6=6.4.0-4
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.4.0-4.dsc' gcc-6_6.4.0-4.dsc 19534 SHA256:16c7843705037bc28f8d467b22b61436854c50ef8d843e429e98a8b9f6efdd38
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.4.0.orig.tar.gz' gcc-6_6.4.0.orig.tar.gz 81632257 SHA256:13220c723ddb7a69ff5690070b245886ac99afe5a31ee106ac36d6f013234a67
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.4.0-4.diff.gz' gcc-6_6.4.0-4.diff.gz 1660927 SHA256:9ed1c29094b1b7daaa031eed2fa5e5e0983328325daacb8a7d2e586e01a393b1
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gcc-6/6.4.0-4/
-- https://sources.debian.net/src/gcc-6/6.4.0-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gcc-7=7.2.0-3`
 
@@ -575,19 +564,8 @@ Licenses: (parsed from: `/usr/share/doc/gcc-7-base/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-7=7.2.0-3
-'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.2.0-3.dsc' gcc-7_7.2.0-3.dsc 26355 SHA256:8ee75ae9f696c1077a7dd1e4f9672d56a62532345cd5a51ce636df8a442be8e9
-'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.2.0.orig.tar.gz' gcc-7_7.2.0.orig.tar.gz 70028185 SHA256:a1050ca96c2b931ad82da3caf2868cd68b95a62151ac9af53fbe9b69b6e9b651
-'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.2.0-3.diff.gz' gcc-7_7.2.0-3.diff.gz 2974422 SHA256:71357aa5b7959ea56e3c348d91fc0ec42fe1b83e668ea5d995a9100d2efdc2fd
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gcc-7/7.2.0-3/
-- https://sources.debian.net/src/gcc-7/7.2.0-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `glibc=2.24-17`
 
