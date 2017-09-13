@@ -2,12 +2,12 @@
 
 # Tags of `rapidoid`
 
--	[`rapidoid:5.4.4`](#rapidoid544)
--	[`rapidoid:5.4`](#rapidoid54)
 -	[`rapidoid:5`](#rapidoid5)
+-	[`rapidoid:5.4`](#rapidoid54)
+-	[`rapidoid:5.4.4`](#rapidoid544)
 -	[`rapidoid:latest`](#rapidoidlatest)
 
-## `rapidoid:5.4.4`
+## `rapidoid:5`
 
 ```console
 $ docker pull rapidoid@sha256:86dd7895f1b2612112b51593087bd7dbe27b21e38862a67f36d28f4252fe7a31
@@ -16,7 +16,7 @@ $ docker pull rapidoid@sha256:86dd7895f1b2612112b51593087bd7dbe27b21e38862a67f36
 -	Platforms:
 	-	linux; amd64
 
-### `rapidoid:5.4.4` - linux; amd64
+### `rapidoid:5` - linux; amd64
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
@@ -249,7 +249,7 @@ ENTRYPOINT ["/opt/entrypoint.sh"]
 		Size: 14.6 MB (14612734 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `rapidoid:5`
+## `rapidoid:5.4.4`
 
 ```console
 $ docker pull rapidoid@sha256:86dd7895f1b2612112b51593087bd7dbe27b21e38862a67f36d28f4252fe7a31
@@ -258,7 +258,7 @@ $ docker pull rapidoid@sha256:86dd7895f1b2612112b51593087bd7dbe27b21e38862a67f36
 -	Platforms:
 	-	linux; amd64
 
-### `rapidoid:5` - linux; amd64
+### `rapidoid:5.4.4` - linux; amd64
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`

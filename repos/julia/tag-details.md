@@ -2,12 +2,12 @@
 
 # Tags of `julia`
 
--	[`julia:0.6.0`](#julia060)
--	[`julia:0.6`](#julia06)
 -	[`julia:0`](#julia0)
+-	[`julia:0.6`](#julia06)
+-	[`julia:0.6.0`](#julia060)
 -	[`julia:latest`](#julialatest)
 
-## `julia:0.6.0`
+## `julia:0`
 
 ```console
 $ docker pull julia@sha256:878d7cfd13a94c032270fce057606bc7470feb1285415078054208c4cc4edb1b
@@ -19,7 +19,7 @@ $ docker pull julia@sha256:878d7cfd13a94c032270fce057606bc7470feb128541507805420
 	-	linux; arm variant v7
 	-	linux; 386
 
-### `julia:0.6.0` - linux; amd64
+### `julia:0` - linux; amd64
 
 ```console
 $ docker pull julia@sha256:83a2be2027897119231c954863f48dacd61ebbb531752ca3bb0b9b8dc39199e0
@@ -67,7 +67,7 @@ CMD ["julia"]
 		Size: 67.6 MB (67576055 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `julia:0.6.0` - linux; arm variant v7
+### `julia:0` - linux; arm variant v7
 
 ```console
 $ docker pull julia@sha256:06640f45554db608b43afaaebd3843d2bd0954f55be5f244440b76d5687b1d56
@@ -115,7 +115,7 @@ CMD ["julia"]
 		Size: 53.1 MB (53128617 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `julia:0.6.0` - linux; 386
+### `julia:0` - linux; 386
 
 ```console
 $ docker pull julia@sha256:65d567da151730351ae54a435f87690e199471b8878877d5a9fdd3dc1dac1572
@@ -319,7 +319,7 @@ CMD ["julia"]
 		Size: 65.7 MB (65651686 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `julia:0`
+## `julia:0.6.0`
 
 ```console
 $ docker pull julia@sha256:878d7cfd13a94c032270fce057606bc7470feb1285415078054208c4cc4edb1b
@@ -331,7 +331,7 @@ $ docker pull julia@sha256:878d7cfd13a94c032270fce057606bc7470feb128541507805420
 	-	linux; arm variant v7
 	-	linux; 386
 
-### `julia:0` - linux; amd64
+### `julia:0.6.0` - linux; amd64
 
 ```console
 $ docker pull julia@sha256:83a2be2027897119231c954863f48dacd61ebbb531752ca3bb0b9b8dc39199e0
@@ -379,7 +379,7 @@ CMD ["julia"]
 		Size: 67.6 MB (67576055 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `julia:0` - linux; arm variant v7
+### `julia:0.6.0` - linux; arm variant v7
 
 ```console
 $ docker pull julia@sha256:06640f45554db608b43afaaebd3843d2bd0954f55be5f244440b76d5687b1d56
@@ -427,7 +427,7 @@ CMD ["julia"]
 		Size: 53.1 MB (53128617 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `julia:0` - linux; 386
+### `julia:0.6.0` - linux; 386
 
 ```console
 $ docker pull julia@sha256:65d567da151730351ae54a435f87690e199471b8878877d5a9fdd3dc1dac1572

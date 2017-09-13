@@ -2,12 +2,12 @@
 
 # Tags of `haskell`
 
--	[`haskell:8.0.2`](#haskell802)
--	[`haskell:8.0`](#haskell80)
 -	[`haskell:8`](#haskell8)
+-	[`haskell:8.0`](#haskell80)
+-	[`haskell:8.0.2`](#haskell802)
 -	[`haskell:latest`](#haskelllatest)
 
-## `haskell:8.0.2`
+## `haskell:8`
 
 ```console
 $ docker pull haskell@sha256:6acc0d6eac7e6bd0e9847a6737349103a754b52220425af110e29e32de7971a3
@@ -17,7 +17,7 @@ $ docker pull haskell@sha256:6acc0d6eac7e6bd0e9847a6737349103a754b52220425af110e
 -	Platforms:
 	-	linux; amd64
 
-### `haskell:8.0.2` - linux; amd64
+### `haskell:8` - linux; amd64
 
 ```console
 $ docker pull haskell@sha256:794d0b251286b18fcf971024f6e47e17debcdb745a9c6b9c58e1d47a25c7cc00
@@ -103,7 +103,7 @@ CMD ["ghci"]
 		Size: 198.5 MB (198498663 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `haskell:8`
+## `haskell:8.0.2`
 
 ```console
 $ docker pull haskell@sha256:6acc0d6eac7e6bd0e9847a6737349103a754b52220425af110e29e32de7971a3
@@ -113,7 +113,7 @@ $ docker pull haskell@sha256:6acc0d6eac7e6bd0e9847a6737349103a754b52220425af110e
 -	Platforms:
 	-	linux; amd64
 
-### `haskell:8` - linux; amd64
+### `haskell:8.0.2` - linux; amd64
 
 ```console
 $ docker pull haskell@sha256:794d0b251286b18fcf971024f6e47e17debcdb745a9c6b9c58e1d47a25c7cc00

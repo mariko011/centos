@@ -2,12 +2,12 @@
 
 # Tags of `hylang`
 
--	[`hylang:0.13.0`](#hylang0130)
--	[`hylang:0.13`](#hylang013)
 -	[`hylang:0`](#hylang0)
+-	[`hylang:0.13`](#hylang013)
+-	[`hylang:0.13.0`](#hylang0130)
 -	[`hylang:latest`](#hylanglatest)
 
-## `hylang:0.13.0`
+## `hylang:0`
 
 ```console
 $ docker pull hylang@sha256:e387494429575f5452992b2bd44f4de05ee41fca97e0acb9cf437fcc32ca7a96
@@ -22,7 +22,7 @@ $ docker pull hylang@sha256:e387494429575f5452992b2bd44f4de05ee41fca97e0acb9cf43
 	-	linux; ppc64le
 	-	linux; s390x
 
-### `hylang:0.13.0` - linux; amd64
+### `hylang:0` - linux; amd64
 
 ```console
 $ docker pull hylang@sha256:20eb71165c01c0056d44dc627f26bafb55aeb06b3cdc0d195f61282e171b7540
@@ -120,7 +120,7 @@ CMD ["hy"]
 		Size: 2.5 MB (2466107 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `hylang:0.13.0` - linux; arm variant v7
+### `hylang:0` - linux; arm variant v7
 
 ```console
 $ docker pull hylang@sha256:b86e8ca1adca98a41318750f4f14a5c7118becf55be259f7c45f225157e5e8e9
@@ -218,7 +218,7 @@ CMD ["hy"]
 		Size: 2.5 MB (2465521 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `hylang:0.13.0` - linux; arm64 variant v8
+### `hylang:0` - linux; arm64 variant v8
 
 ```console
 $ docker pull hylang@sha256:6bcafcc8de3403cdb5fbcf76ce326b99f75369982959cbcbf0f23f1a70e3d57c
@@ -316,7 +316,7 @@ CMD ["hy"]
 		Size: 2.5 MB (2466445 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `hylang:0.13.0` - linux; 386
+### `hylang:0` - linux; 386
 
 ```console
 $ docker pull hylang@sha256:6dbcbf5bc0fbbace6471f11c3db683a898311fa2f0cb287c2326fe0dea59be75
@@ -414,7 +414,7 @@ CMD ["hy"]
 		Size: 2.5 MB (2463589 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `hylang:0.13.0` - linux; ppc64le
+### `hylang:0` - linux; ppc64le
 
 ```console
 $ docker pull hylang@sha256:b63f697b617e87ad2ff524156b256fb4a4bb6bac8bab8956d290a45ff272e8e2
@@ -512,7 +512,7 @@ CMD ["hy"]
 		Size: 2.5 MB (2466086 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `hylang:0.13.0` - linux; s390x
+### `hylang:0` - linux; s390x
 
 ```console
 $ docker pull hylang@sha256:93d848e1a83745fd3845158ccbd7a2e95fa0162a5696daf85baea0c19c6065c5
@@ -1213,7 +1213,7 @@ CMD ["hy"]
 		Size: 2.5 MB (2466280 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `hylang:0`
+## `hylang:0.13.0`
 
 ```console
 $ docker pull hylang@sha256:e387494429575f5452992b2bd44f4de05ee41fca97e0acb9cf437fcc32ca7a96
@@ -1228,7 +1228,7 @@ $ docker pull hylang@sha256:e387494429575f5452992b2bd44f4de05ee41fca97e0acb9cf43
 	-	linux; ppc64le
 	-	linux; s390x
 
-### `hylang:0` - linux; amd64
+### `hylang:0.13.0` - linux; amd64
 
 ```console
 $ docker pull hylang@sha256:20eb71165c01c0056d44dc627f26bafb55aeb06b3cdc0d195f61282e171b7540
@@ -1326,7 +1326,7 @@ CMD ["hy"]
 		Size: 2.5 MB (2466107 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `hylang:0` - linux; arm variant v7
+### `hylang:0.13.0` - linux; arm variant v7
 
 ```console
 $ docker pull hylang@sha256:b86e8ca1adca98a41318750f4f14a5c7118becf55be259f7c45f225157e5e8e9
@@ -1424,7 +1424,7 @@ CMD ["hy"]
 		Size: 2.5 MB (2465521 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `hylang:0` - linux; arm64 variant v8
+### `hylang:0.13.0` - linux; arm64 variant v8
 
 ```console
 $ docker pull hylang@sha256:6bcafcc8de3403cdb5fbcf76ce326b99f75369982959cbcbf0f23f1a70e3d57c
@@ -1522,7 +1522,7 @@ CMD ["hy"]
 		Size: 2.5 MB (2466445 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `hylang:0` - linux; 386
+### `hylang:0.13.0` - linux; 386
 
 ```console
 $ docker pull hylang@sha256:6dbcbf5bc0fbbace6471f11c3db683a898311fa2f0cb287c2326fe0dea59be75
@@ -1620,7 +1620,7 @@ CMD ["hy"]
 		Size: 2.5 MB (2463589 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `hylang:0` - linux; ppc64le
+### `hylang:0.13.0` - linux; ppc64le
 
 ```console
 $ docker pull hylang@sha256:b63f697b617e87ad2ff524156b256fb4a4bb6bac8bab8956d290a45ff272e8e2
@@ -1718,7 +1718,7 @@ CMD ["hy"]
 		Size: 2.5 MB (2466086 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `hylang:0` - linux; s390x
+### `hylang:0.13.0` - linux; s390x
 
 ```console
 $ docker pull hylang@sha256:93d848e1a83745fd3845158ccbd7a2e95fa0162a5696daf85baea0c19c6065c5

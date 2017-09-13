@@ -2,12 +2,12 @@
 
 # Tags of `rocket.chat`
 
--	[`rocket.chat:0.58.2`](#rocketchat0582)
--	[`rocket.chat:0.58`](#rocketchat058)
 -	[`rocket.chat:0`](#rocketchat0)
+-	[`rocket.chat:0.58`](#rocketchat058)
+-	[`rocket.chat:0.58.2`](#rocketchat0582)
 -	[`rocket.chat:latest`](#rocketchatlatest)
 
-## `rocket.chat:0.58.2`
+## `rocket.chat:0`
 
 ```console
 $ docker pull rocket.chat@sha256:b3f36e1c649b8ffed114df809e3d19b657b7396cdc78c2da0a8dc02a85b4d403
@@ -17,7 +17,7 @@ $ docker pull rocket.chat@sha256:b3f36e1c649b8ffed114df809e3d19b657b7396cdc78c2d
 -	Platforms:
 	-	linux; amd64
 
-### `rocket.chat:0.58.2` - linux; amd64
+### `rocket.chat:0` - linux; amd64
 
 ```console
 $ docker pull rocket.chat@sha256:76bfe8fe3073695138caef025d4a06f489cec7a733bdef45ef5e0b37028f7775
@@ -231,7 +231,7 @@ CMD ["node" "main.js"]
 		Size: 105.5 MB (105544846 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `rocket.chat:0`
+## `rocket.chat:0.58.2`
 
 ```console
 $ docker pull rocket.chat@sha256:b3f36e1c649b8ffed114df809e3d19b657b7396cdc78c2da0a8dc02a85b4d403
@@ -241,7 +241,7 @@ $ docker pull rocket.chat@sha256:b3f36e1c649b8ffed114df809e3d19b657b7396cdc78c2d
 -	Platforms:
 	-	linux; amd64
 
-### `rocket.chat:0` - linux; amd64
+### `rocket.chat:0.58.2` - linux; amd64
 
 ```console
 $ docker pull rocket.chat@sha256:76bfe8fe3073695138caef025d4a06f489cec7a733bdef45ef5e0b37028f7775

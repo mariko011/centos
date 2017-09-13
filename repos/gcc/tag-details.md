@@ -2,21 +2,21 @@
 
 # Tags of `gcc`
 
--	[`gcc:4.9.4`](#gcc494)
--	[`gcc:4.9`](#gcc49)
 -	[`gcc:4`](#gcc4)
--	[`gcc:5.4.0`](#gcc540)
--	[`gcc:5.4`](#gcc54)
+-	[`gcc:4.9`](#gcc49)
+-	[`gcc:4.9.4`](#gcc494)
 -	[`gcc:5`](#gcc5)
--	[`gcc:6.4.0`](#gcc640)
--	[`gcc:6.4`](#gcc64)
+-	[`gcc:5.4`](#gcc54)
+-	[`gcc:5.4.0`](#gcc540)
 -	[`gcc:6`](#gcc6)
--	[`gcc:7.2.0`](#gcc720)
--	[`gcc:7.2`](#gcc72)
+-	[`gcc:6.4`](#gcc64)
+-	[`gcc:6.4.0`](#gcc640)
 -	[`gcc:7`](#gcc7)
+-	[`gcc:7.2`](#gcc72)
+-	[`gcc:7.2.0`](#gcc720)
 -	[`gcc:latest`](#gcclatest)
 
-## `gcc:4.9.4`
+## `gcc:4`
 
 ```console
 $ docker pull gcc@sha256:4811f5c07a97226b83c01615c15145e564656ba15500c4076216e5d6ff82d9db
@@ -29,7 +29,7 @@ $ docker pull gcc@sha256:4811f5c07a97226b83c01615c15145e564656ba15500c4076216e5d
 	-	linux; ppc64le
 	-	linux; s390x
 
-### `gcc:4.9.4` - linux; amd64
+### `gcc:4` - linux; amd64
 
 ```console
 $ docker pull gcc@sha256:2dab9fb8a067c5c351fe17b9ed9b82f6f9b0bf667ffb8ae85ee8dba6340020e0
@@ -105,7 +105,7 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 		Size: 1.6 KB (1584 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `gcc:4.9.4` - linux; arm64 variant v8
+### `gcc:4` - linux; arm64 variant v8
 
 ```console
 $ docker pull gcc@sha256:ab52150093bffd580588e54a47f9b296b7a01fd8156280eda5e93578325288ad
@@ -181,7 +181,7 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 		Size: 1.7 KB (1653 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `gcc:4.9.4` - linux; ppc64le
+### `gcc:4` - linux; ppc64le
 
 ```console
 $ docker pull gcc@sha256:b14a60e2b11f29be7ced0f79d3b94aa21cf1d1f001164159b23036f0144490c9
@@ -257,7 +257,7 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 		Size: 1.6 KB (1613 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `gcc:4.9.4` - linux; s390x
+### `gcc:4` - linux; s390x
 
 ```console
 $ docker pull gcc@sha256:12468326d2646a82ad47d0d68219f433a0f8312fe56efc2c7f33a82ea4b109c7
@@ -650,7 +650,7 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 		Size: 1.6 KB (1606 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `gcc:4`
+## `gcc:4.9.4`
 
 ```console
 $ docker pull gcc@sha256:4811f5c07a97226b83c01615c15145e564656ba15500c4076216e5d6ff82d9db
@@ -663,7 +663,7 @@ $ docker pull gcc@sha256:4811f5c07a97226b83c01615c15145e564656ba15500c4076216e5d
 	-	linux; ppc64le
 	-	linux; s390x
 
-### `gcc:4` - linux; amd64
+### `gcc:4.9.4` - linux; amd64
 
 ```console
 $ docker pull gcc@sha256:2dab9fb8a067c5c351fe17b9ed9b82f6f9b0bf667ffb8ae85ee8dba6340020e0
@@ -739,7 +739,7 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 		Size: 1.6 KB (1584 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `gcc:4` - linux; arm64 variant v8
+### `gcc:4.9.4` - linux; arm64 variant v8
 
 ```console
 $ docker pull gcc@sha256:ab52150093bffd580588e54a47f9b296b7a01fd8156280eda5e93578325288ad
@@ -815,7 +815,7 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 		Size: 1.7 KB (1653 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `gcc:4` - linux; ppc64le
+### `gcc:4.9.4` - linux; ppc64le
 
 ```console
 $ docker pull gcc@sha256:b14a60e2b11f29be7ced0f79d3b94aa21cf1d1f001164159b23036f0144490c9
@@ -891,7 +891,7 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 		Size: 1.6 KB (1613 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `gcc:4` - linux; s390x
+### `gcc:4.9.4` - linux; s390x
 
 ```console
 $ docker pull gcc@sha256:12468326d2646a82ad47d0d68219f433a0f8312fe56efc2c7f33a82ea4b109c7
@@ -967,7 +967,7 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 		Size: 1.6 KB (1606 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `gcc:5.4.0`
+## `gcc:5`
 
 ```console
 $ docker pull gcc@sha256:d8d2e8ebf6a21ec5f44020c8308c7b64eb104a11adbd85f20c23144322b80270
@@ -980,7 +980,7 @@ $ docker pull gcc@sha256:d8d2e8ebf6a21ec5f44020c8308c7b64eb104a11adbd85f20c23144
 	-	linux; ppc64le
 	-	linux; s390x
 
-### `gcc:5.4.0` - linux; amd64
+### `gcc:5` - linux; amd64
 
 ```console
 $ docker pull gcc@sha256:6096a7785f17a2d87779dbc636b935dba9ffc8f5d9bbe5cc23d0991538e6025e
@@ -1056,7 +1056,7 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 		Size: 1.6 KB (1583 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `gcc:5.4.0` - linux; arm64 variant v8
+### `gcc:5` - linux; arm64 variant v8
 
 ```console
 $ docker pull gcc@sha256:773f3b3b5fd596cb39c3c9e52ec39e8416042fa6109f99ecce3f249fe5e372d0
@@ -1132,7 +1132,7 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 		Size: 1.7 KB (1661 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `gcc:5.4.0` - linux; ppc64le
+### `gcc:5` - linux; ppc64le
 
 ```console
 $ docker pull gcc@sha256:ed342eaa9cd48bc80113e2b121fa3334eda3ca561238f512fb59a2853e48b7cb
@@ -1208,7 +1208,7 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 		Size: 1.6 KB (1613 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `gcc:5.4.0` - linux; s390x
+### `gcc:5` - linux; s390x
 
 ```console
 $ docker pull gcc@sha256:5e8591db3e76b47a2f1745aaf857c3e68ffa0579858f4fcdc74a16622691e66c
@@ -1601,7 +1601,7 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 		Size: 1.6 KB (1606 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `gcc:5`
+## `gcc:5.4.0`
 
 ```console
 $ docker pull gcc@sha256:d8d2e8ebf6a21ec5f44020c8308c7b64eb104a11adbd85f20c23144322b80270
@@ -1614,7 +1614,7 @@ $ docker pull gcc@sha256:d8d2e8ebf6a21ec5f44020c8308c7b64eb104a11adbd85f20c23144
 	-	linux; ppc64le
 	-	linux; s390x
 
-### `gcc:5` - linux; amd64
+### `gcc:5.4.0` - linux; amd64
 
 ```console
 $ docker pull gcc@sha256:6096a7785f17a2d87779dbc636b935dba9ffc8f5d9bbe5cc23d0991538e6025e
@@ -1690,7 +1690,7 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 		Size: 1.6 KB (1583 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `gcc:5` - linux; arm64 variant v8
+### `gcc:5.4.0` - linux; arm64 variant v8
 
 ```console
 $ docker pull gcc@sha256:773f3b3b5fd596cb39c3c9e52ec39e8416042fa6109f99ecce3f249fe5e372d0
@@ -1766,7 +1766,7 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 		Size: 1.7 KB (1661 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `gcc:5` - linux; ppc64le
+### `gcc:5.4.0` - linux; ppc64le
 
 ```console
 $ docker pull gcc@sha256:ed342eaa9cd48bc80113e2b121fa3334eda3ca561238f512fb59a2853e48b7cb
@@ -1842,7 +1842,7 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 		Size: 1.6 KB (1613 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `gcc:5` - linux; s390x
+### `gcc:5.4.0` - linux; s390x
 
 ```console
 $ docker pull gcc@sha256:5e8591db3e76b47a2f1745aaf857c3e68ffa0579858f4fcdc74a16622691e66c
@@ -1918,7 +1918,7 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 		Size: 1.6 KB (1606 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `gcc:6.4.0`
+## `gcc:6`
 
 ```console
 $ docker pull gcc@sha256:c3f51981c0374dd559e26cbd47825fdeaaf75cd319e2b5049aed5cbf499c54ec
@@ -1931,7 +1931,7 @@ $ docker pull gcc@sha256:c3f51981c0374dd559e26cbd47825fdeaaf75cd319e2b5049aed5cb
 	-	linux; ppc64le
 	-	linux; s390x
 
-### `gcc:6.4.0` - linux; amd64
+### `gcc:6` - linux; amd64
 
 ```console
 $ docker pull gcc@sha256:9eda704eb63c34a1c7d10524b33b5d1e7b1eb66962777a5b16c16ed36e34de76
@@ -2007,7 +2007,7 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 		Size: 1.6 KB (1580 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `gcc:6.4.0` - linux; arm64 variant v8
+### `gcc:6` - linux; arm64 variant v8
 
 ```console
 $ docker pull gcc@sha256:3038209c7b7c58a318f04f9839245fc62a8e89a87e14dc0b04178f4df564365e
@@ -2083,7 +2083,7 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 		Size: 1.7 KB (1654 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `gcc:6.4.0` - linux; ppc64le
+### `gcc:6` - linux; ppc64le
 
 ```console
 $ docker pull gcc@sha256:1bb9593e63fab7bed867002acb8edc0549e712d91802df627ec200d656016e4b
@@ -2159,7 +2159,7 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 		Size: 1.6 KB (1610 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `gcc:6.4.0` - linux; s390x
+### `gcc:6` - linux; s390x
 
 ```console
 $ docker pull gcc@sha256:fb32f876792a3f14c5d76980f8f34411202b7220cb8b0ee03452f7458f814cab
@@ -2552,7 +2552,7 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 		Size: 1.6 KB (1608 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `gcc:6`
+## `gcc:6.4.0`
 
 ```console
 $ docker pull gcc@sha256:c3f51981c0374dd559e26cbd47825fdeaaf75cd319e2b5049aed5cbf499c54ec
@@ -2565,7 +2565,7 @@ $ docker pull gcc@sha256:c3f51981c0374dd559e26cbd47825fdeaaf75cd319e2b5049aed5cb
 	-	linux; ppc64le
 	-	linux; s390x
 
-### `gcc:6` - linux; amd64
+### `gcc:6.4.0` - linux; amd64
 
 ```console
 $ docker pull gcc@sha256:9eda704eb63c34a1c7d10524b33b5d1e7b1eb66962777a5b16c16ed36e34de76
@@ -2641,7 +2641,7 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 		Size: 1.6 KB (1580 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `gcc:6` - linux; arm64 variant v8
+### `gcc:6.4.0` - linux; arm64 variant v8
 
 ```console
 $ docker pull gcc@sha256:3038209c7b7c58a318f04f9839245fc62a8e89a87e14dc0b04178f4df564365e
@@ -2717,7 +2717,7 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 		Size: 1.7 KB (1654 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `gcc:6` - linux; ppc64le
+### `gcc:6.4.0` - linux; ppc64le
 
 ```console
 $ docker pull gcc@sha256:1bb9593e63fab7bed867002acb8edc0549e712d91802df627ec200d656016e4b
@@ -2793,7 +2793,7 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 		Size: 1.6 KB (1610 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `gcc:6` - linux; s390x
+### `gcc:6.4.0` - linux; s390x
 
 ```console
 $ docker pull gcc@sha256:fb32f876792a3f14c5d76980f8f34411202b7220cb8b0ee03452f7458f814cab
@@ -2869,7 +2869,7 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 		Size: 1.6 KB (1608 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `gcc:7.2.0`
+## `gcc:7`
 
 ```console
 $ docker pull gcc@sha256:1aae4058df46be76ec06b47ab3e30a4b81098d32c08ab5fd54431373368bcb88
@@ -2882,7 +2882,7 @@ $ docker pull gcc@sha256:1aae4058df46be76ec06b47ab3e30a4b81098d32c08ab5fd5443137
 	-	linux; ppc64le
 	-	linux; s390x
 
-### `gcc:7.2.0` - linux; amd64
+### `gcc:7` - linux; amd64
 
 ```console
 $ docker pull gcc@sha256:3b7bba82dd09bdf0c174e853fdfcce9572b8ea3953f15ef6dbe3ac7a9cfd30e1
@@ -2962,7 +2962,7 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 		Size: 2.2 KB (2151 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `gcc:7.2.0` - linux; arm64 variant v8
+### `gcc:7` - linux; arm64 variant v8
 
 ```console
 $ docker pull gcc@sha256:be27f90a756c326d3c98b61f7462391ebc6e8be1a7d3b0fcf2f48755f27ffbd3
@@ -3042,7 +3042,7 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 		Size: 2.2 KB (2218 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `gcc:7.2.0` - linux; ppc64le
+### `gcc:7` - linux; ppc64le
 
 ```console
 $ docker pull gcc@sha256:4de9b32e2b85c6b2b36c310d7195741e976f10dfb57c6d992fdfc7b60d978daf
@@ -3122,7 +3122,7 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 		Size: 2.2 KB (2175 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `gcc:7.2.0` - linux; s390x
+### `gcc:7` - linux; s390x
 
 ```console
 $ docker pull gcc@sha256:078b7d59237a91d8840b07ed54a250c407228081d2c027c7778d3dd2e1a19cda
@@ -3535,7 +3535,7 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 		Size: 2.2 KB (2166 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `gcc:7`
+## `gcc:7.2.0`
 
 ```console
 $ docker pull gcc@sha256:1aae4058df46be76ec06b47ab3e30a4b81098d32c08ab5fd54431373368bcb88
@@ -3548,7 +3548,7 @@ $ docker pull gcc@sha256:1aae4058df46be76ec06b47ab3e30a4b81098d32c08ab5fd5443137
 	-	linux; ppc64le
 	-	linux; s390x
 
-### `gcc:7` - linux; amd64
+### `gcc:7.2.0` - linux; amd64
 
 ```console
 $ docker pull gcc@sha256:3b7bba82dd09bdf0c174e853fdfcce9572b8ea3953f15ef6dbe3ac7a9cfd30e1
@@ -3628,7 +3628,7 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 		Size: 2.2 KB (2151 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `gcc:7` - linux; arm64 variant v8
+### `gcc:7.2.0` - linux; arm64 variant v8
 
 ```console
 $ docker pull gcc@sha256:be27f90a756c326d3c98b61f7462391ebc6e8be1a7d3b0fcf2f48755f27ffbd3
@@ -3708,7 +3708,7 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 		Size: 2.2 KB (2218 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `gcc:7` - linux; ppc64le
+### `gcc:7.2.0` - linux; ppc64le
 
 ```console
 $ docker pull gcc@sha256:4de9b32e2b85c6b2b36c310d7195741e976f10dfb57c6d992fdfc7b60d978daf
@@ -3788,7 +3788,7 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 		Size: 2.2 KB (2175 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `gcc:7` - linux; s390x
+### `gcc:7.2.0` - linux; s390x
 
 ```console
 $ docker pull gcc@sha256:078b7d59237a91d8840b07ed54a250c407228081d2c027c7778d3dd2e1a19cda

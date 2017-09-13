@@ -2,10 +2,10 @@
 
 # Tags of `clearlinux`
 
--	[`clearlinux:latest`](#clearlinuxlatest)
 -	[`clearlinux:base`](#clearlinuxbase)
+-	[`clearlinux:latest`](#clearlinuxlatest)
 
-## `clearlinux:latest`
+## `clearlinux:base`
 
 ```console
 $ docker pull clearlinux@sha256:72970f98da4723a04cdcabd5113238821eaa8fd1dafd6aebb2d0c3977cf595b3
@@ -15,7 +15,7 @@ $ docker pull clearlinux@sha256:72970f98da4723a04cdcabd5113238821eaa8fd1dafd6aeb
 -	Platforms:
 	-	linux; amd64
 
-### `clearlinux:latest` - linux; amd64
+### `clearlinux:base` - linux; amd64
 
 ```console
 $ docker pull clearlinux@sha256:66daa440b52299fd1c8a52ffd75a7c5180237c1aa90e6d2b616e9f460d45a2f2
@@ -43,7 +43,7 @@ CMD ["/bin/bash"]
 		Size: 25.8 MB (25793743 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `clearlinux:base`
+## `clearlinux:latest`
 
 ```console
 $ docker pull clearlinux@sha256:72970f98da4723a04cdcabd5113238821eaa8fd1dafd6aebb2d0c3977cf595b3
@@ -53,7 +53,7 @@ $ docker pull clearlinux@sha256:72970f98da4723a04cdcabd5113238821eaa8fd1dafd6aeb
 -	Platforms:
 	-	linux; amd64
 
-### `clearlinux:base` - linux; amd64
+### `clearlinux:latest` - linux; amd64
 
 ```console
 $ docker pull clearlinux@sha256:66daa440b52299fd1c8a52ffd75a7c5180237c1aa90e6d2b616e9f460d45a2f2

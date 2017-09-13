@@ -2,11 +2,11 @@
 
 # Tags of `mongo-express`
 
--	[`mongo-express:0.42.2`](#mongo-express0422)
 -	[`mongo-express:0.42`](#mongo-express042)
+-	[`mongo-express:0.42.2`](#mongo-express0422)
 -	[`mongo-express:latest`](#mongo-expresslatest)
 
-## `mongo-express:0.42.2`
+## `mongo-express:0.42`
 
 ```console
 $ docker pull mongo-express@sha256:36859225f7845f00532eff004d373866efaf22884e9ccca9613b1fe93bfba14d
@@ -15,7 +15,7 @@ $ docker pull mongo-express@sha256:36859225f7845f00532eff004d373866efaf22884e9cc
 -	Platforms:
 	-	linux; amd64
 
-### `mongo-express:0.42.2` - linux; amd64
+### `mongo-express:0.42` - linux; amd64
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
@@ -107,7 +107,7 @@ CMD ["tini" "--" "node" "app"]
 		Size: 2.7 KB (2705 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `mongo-express:0.42`
+## `mongo-express:0.42.2`
 
 ```console
 $ docker pull mongo-express@sha256:36859225f7845f00532eff004d373866efaf22884e9ccca9613b1fe93bfba14d
@@ -116,7 +116,7 @@ $ docker pull mongo-express@sha256:36859225f7845f00532eff004d373866efaf22884e9cc
 -	Platforms:
 	-	linux; amd64
 
-### `mongo-express:0.42` - linux; amd64
+### `mongo-express:0.42.2` - linux; amd64
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`

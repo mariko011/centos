@@ -2,14 +2,14 @@
 
 # Tags of `convertigo`
 
--	[`convertigo:7.4.6`](#convertigo746)
 -	[`convertigo:7.4`](#convertigo74)
+-	[`convertigo:7.4.6`](#convertigo746)
 -	[`convertigo:latest`](#convertigolatest)
--	[`convertigo:web-connector-7.4.6`](#convertigoweb-connector-746)
--	[`convertigo:web-connector-7.4`](#convertigoweb-connector-74)
 -	[`convertigo:web-connector`](#convertigoweb-connector)
+-	[`convertigo:web-connector-7.4`](#convertigoweb-connector-74)
+-	[`convertigo:web-connector-7.4.6`](#convertigoweb-connector-746)
 
-## `convertigo:7.4.6`
+## `convertigo:7.4`
 
 ```console
 $ docker pull convertigo@sha256:3b8d266ea7612ea5d2775edce0e012a77e68cefc4e90871fc2a6c87eb693471b
@@ -19,7 +19,7 @@ $ docker pull convertigo@sha256:3b8d266ea7612ea5d2775edce0e012a77e68cefc4e90871f
 -	Platforms:
 	-	linux; amd64
 
-### `convertigo:7.4.6` - linux; amd64
+### `convertigo:7.4` - linux; amd64
 
 ```console
 $ docker pull convertigo@sha256:229de1d0a037e88a33f9304e15ffe2b0e56a2831ee90e02a054b96f750b45b37
@@ -178,7 +178,7 @@ CMD ["convertigo"]
 		Size: 950.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `convertigo:7.4`
+## `convertigo:7.4.6`
 
 ```console
 $ docker pull convertigo@sha256:3b8d266ea7612ea5d2775edce0e012a77e68cefc4e90871fc2a6c87eb693471b
@@ -188,7 +188,7 @@ $ docker pull convertigo@sha256:3b8d266ea7612ea5d2775edce0e012a77e68cefc4e90871f
 -	Platforms:
 	-	linux; amd64
 
-### `convertigo:7.4` - linux; amd64
+### `convertigo:7.4.6` - linux; amd64
 
 ```console
 $ docker pull convertigo@sha256:229de1d0a037e88a33f9304e15ffe2b0e56a2831ee90e02a054b96f750b45b37
@@ -516,7 +516,7 @@ CMD ["convertigo"]
 		Size: 950.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `convertigo:web-connector-7.4.6`
+## `convertigo:web-connector`
 
 ```console
 $ docker pull convertigo@sha256:207e31dcc56202eab1afbe0cb48f399d3732df05ce99130ab30f26852bc275dc
@@ -526,7 +526,7 @@ $ docker pull convertigo@sha256:207e31dcc56202eab1afbe0cb48f399d3732df05ce99130a
 -	Platforms:
 	-	linux; amd64
 
-### `convertigo:web-connector-7.4.6` - linux; amd64
+### `convertigo:web-connector` - linux; amd64
 
 ```console
 $ docker pull convertigo@sha256:8cd21a21d39b259d00f283bf4faa3a7517b2d511a8ee31b57ce46a355e83b785
@@ -766,7 +766,7 @@ CMD ["convertigo"]
 		Size: 950.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `convertigo:web-connector`
+## `convertigo:web-connector-7.4.6`
 
 ```console
 $ docker pull convertigo@sha256:207e31dcc56202eab1afbe0cb48f399d3732df05ce99130ab30f26852bc275dc
@@ -776,7 +776,7 @@ $ docker pull convertigo@sha256:207e31dcc56202eab1afbe0cb48f399d3732df05ce99130a
 -	Platforms:
 	-	linux; amd64
 
-### `convertigo:web-connector` - linux; amd64
+### `convertigo:web-connector-7.4.6` - linux; amd64
 
 ```console
 $ docker pull convertigo@sha256:8cd21a21d39b259d00f283bf4faa3a7517b2d511a8ee31b57ce46a355e83b785

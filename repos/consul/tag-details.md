@@ -2,10 +2,10 @@
 
 # Tags of `consul`
 
--	[`consul:latest`](#consullatest)
 -	[`consul:0.9.3`](#consul093)
+-	[`consul:latest`](#consullatest)
 
-## `consul:latest`
+## `consul:0.9.3`
 
 ```console
 $ docker pull consul@sha256:a6a5620da1224ac1c6f8d8cfe3fa008e694b71b140007bfcc9e2d50696d3c50f
@@ -15,7 +15,7 @@ $ docker pull consul@sha256:a6a5620da1224ac1c6f8d8cfe3fa008e694b71b140007bfcc9e2
 -	Platforms:
 	-	linux; amd64
 
-### `consul:latest` - linux; amd64
+### `consul:0.9.3` - linux; amd64
 
 ```console
 $ docker pull consul@sha256:56b51a5ca23a1250de7f6e36d96aeeba3075ee4b7acca64a4e87ae4dfc1fa57d
@@ -86,7 +86,7 @@ CMD ["agent" "-dev" "-client" "0.0.0.0"]
 		Size: 1.6 KB (1639 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `consul:0.9.3`
+## `consul:latest`
 
 ```console
 $ docker pull consul@sha256:a6a5620da1224ac1c6f8d8cfe3fa008e694b71b140007bfcc9e2d50696d3c50f
@@ -96,7 +96,7 @@ $ docker pull consul@sha256:a6a5620da1224ac1c6f8d8cfe3fa008e694b71b140007bfcc9e2
 -	Platforms:
 	-	linux; amd64
 
-### `consul:0.9.3` - linux; amd64
+### `consul:latest` - linux; amd64
 
 ```console
 $ docker pull consul@sha256:56b51a5ca23a1250de7f6e36d96aeeba3075ee4b7acca64a4e87ae4dfc1fa57d

@@ -2,10 +2,10 @@
 
 # Tags of `kaazing-gateway`
 
--	[`kaazing-gateway:latest`](#kaazing-gatewaylatest)
 -	[`kaazing-gateway:5.6.0`](#kaazing-gateway560)
+-	[`kaazing-gateway:latest`](#kaazing-gatewaylatest)
 
-## `kaazing-gateway:latest`
+## `kaazing-gateway:5.6.0`
 
 ```console
 $ docker pull kaazing-gateway@sha256:96cad765db25a31822000bef4a3ebebc94ccfed7f126068c61f66b81815bee5d
@@ -15,7 +15,7 @@ $ docker pull kaazing-gateway@sha256:96cad765db25a31822000bef4a3ebebc94ccfed7f12
 -	Platforms:
 	-	linux; amd64
 
-### `kaazing-gateway:latest` - linux; amd64
+### `kaazing-gateway:5.6.0` - linux; amd64
 
 ```console
 $ docker pull kaazing-gateway@sha256:523b9d5c30b1e0892ba11e44197d49b7547ccd28a83b284cec3a311553f33b55
@@ -125,7 +125,7 @@ CMD ["gateway.start"]
 		Size: 17.1 MB (17126836 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `kaazing-gateway:5.6.0`
+## `kaazing-gateway:latest`
 
 ```console
 $ docker pull kaazing-gateway@sha256:96cad765db25a31822000bef4a3ebebc94ccfed7f126068c61f66b81815bee5d
@@ -135,7 +135,7 @@ $ docker pull kaazing-gateway@sha256:96cad765db25a31822000bef4a3ebebc94ccfed7f12
 -	Platforms:
 	-	linux; amd64
 
-### `kaazing-gateway:5.6.0` - linux; amd64
+### `kaazing-gateway:latest` - linux; amd64
 
 ```console
 $ docker pull kaazing-gateway@sha256:523b9d5c30b1e0892ba11e44197d49b7547ccd28a83b284cec3a311553f33b55

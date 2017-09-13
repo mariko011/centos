@@ -2,10 +2,10 @@
 
 # Tags of `crux`
 
--	[`crux:latest`](#cruxlatest)
 -	[`crux:3.1`](#crux31)
+-	[`crux:latest`](#cruxlatest)
 
-## `crux:latest`
+## `crux:3.1`
 
 ```console
 $ docker pull crux@sha256:1c54e5a8a03579f906a5fd2bb6443ad3cfa772183cf937cf48476e687f68d3c2
@@ -15,7 +15,7 @@ $ docker pull crux@sha256:1c54e5a8a03579f906a5fd2bb6443ad3cfa772183cf937cf48476e
 -	Platforms:
 	-	linux; amd64
 
-### `crux:latest` - linux; amd64
+### `crux:3.1` - linux; amd64
 
 ```console
 $ docker pull crux@sha256:c09d4868e929d304f92592e56cbf034f46159e59f43daeacbaa09acbef3d717b
@@ -43,7 +43,7 @@ CMD ["/bin/bash"]
 		Size: 124.4 MB (124446241 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `crux:3.1`
+## `crux:latest`
 
 ```console
 $ docker pull crux@sha256:1c54e5a8a03579f906a5fd2bb6443ad3cfa772183cf937cf48476e687f68d3c2
@@ -53,7 +53,7 @@ $ docker pull crux@sha256:1c54e5a8a03579f906a5fd2bb6443ad3cfa772183cf937cf48476e
 -	Platforms:
 	-	linux; amd64
 
-### `crux:3.1` - linux; amd64
+### `crux:latest` - linux; amd64
 
 ```console
 $ docker pull crux@sha256:c09d4868e929d304f92592e56cbf034f46159e59f43daeacbaa09acbef3d717b

@@ -2,12 +2,12 @@
 
 # Tags of `known`
 
--	[`known:0.9.2`](#known092)
--	[`known:0.9`](#known09)
 -	[`known:0`](#known0)
+-	[`known:0.9`](#known09)
+-	[`known:0.9.2`](#known092)
 -	[`known:latest`](#knownlatest)
 
-## `known:0.9.2`
+## `known:0`
 
 ```console
 $ docker pull known@sha256:ef87cd17655aa7ea47ad512777b551a3136b7f6b032f6245a21c8b3c23943452
@@ -17,7 +17,7 @@ $ docker pull known@sha256:ef87cd17655aa7ea47ad512777b551a3136b7f6b032f6245a21c8
 -	Platforms:
 	-	linux; amd64
 
-### `known:0.9.2` - linux; amd64
+### `known:0` - linux; amd64
 
 ```console
 $ docker pull known@sha256:72445764ec0e186ad5f533a409f9e3b2e5b229711f206497cfc8d6b3518e7986
@@ -333,7 +333,7 @@ CMD ["php-fpm"]
 		Size: 1.2 KB (1245 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `known:0`
+## `known:0.9.2`
 
 ```console
 $ docker pull known@sha256:ef87cd17655aa7ea47ad512777b551a3136b7f6b032f6245a21c8b3c23943452
@@ -343,7 +343,7 @@ $ docker pull known@sha256:ef87cd17655aa7ea47ad512777b551a3136b7f6b032f6245a21c8
 -	Platforms:
 	-	linux; amd64
 
-### `known:0` - linux; amd64
+### `known:0.9.2` - linux; amd64
 
 ```console
 $ docker pull known@sha256:72445764ec0e186ad5f533a409f9e3b2e5b229711f206497cfc8d6b3518e7986
