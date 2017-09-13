@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b526a0d3b25c732655e0ba7570d1168b8ae9d2baa7cd3608f3dc3d4fef96d52c`
-- Created: `2017-08-31T17:03:46.356568475Z`
+- Image ID: `sha256:bbb15ae68e44d0c3a3094a9035d06490b20cee819d727ab327a303df87d83e6e`
+- Created: `2017-09-13T04:48:50.02983575Z`
 - Virtual Size: ~ 1.46 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -98,9 +98,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris apparmor=2.10.95-0ubuntu2.6
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.6.dsc' apparmor_2.10.95-0ubuntu2.6.dsc 3252 SHA256:e04b41652174316c8d4117bdbff6dc5f2854efba18c6240a1120f0899949d5be
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95.orig.tar.gz' apparmor_2.10.95.orig.tar.gz 4502268 SHA256:3f659a599718f4a5e2a33140916715f574a5cb3634a6b9ed6d29f7b0617e4d1a
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.6.debian.tar.xz' apparmor_2.10.95-0ubuntu2.6.debian.tar.xz 96164 SHA256:9864f5ba71c069fa31e85af3a9fd771cef26e67a1ecc785b0c1464d33ae5bfb1
+'http://security.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.6.dsc' apparmor_2.10.95-0ubuntu2.6.dsc 3252 SHA256:e04b41652174316c8d4117bdbff6dc5f2854efba18c6240a1120f0899949d5be
+'http://security.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95.orig.tar.gz' apparmor_2.10.95.orig.tar.gz 4502268 SHA256:3f659a599718f4a5e2a33140916715f574a5cb3634a6b9ed6d29f7b0617e4d1a
+'http://security.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.6.debian.tar.xz' apparmor_2.10.95-0ubuntu2.6.debian.tar.xz 96164 SHA256:9864f5ba71c069fa31e85af3a9fd771cef26e67a1ecc785b0c1464d33ae5bfb1
 ```
 
 ### `dpkg` source package: `apt=1.2.24`
@@ -443,12 +443,12 @@ $ apt-get source -qq --print-uris cups-filters=1.8.3-2ubuntu3.1
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cups-filters/cups-filters_1.8.3-2ubuntu3.1.debian.tar.xz' cups-filters_1.8.3-2ubuntu3.1.debian.tar.xz 70652 SHA256:847528271cefc0210cae7a616067b65001a46e40e0f71bd4e8c9494b5c843878
 ```
 
-### `dpkg` source package: `cups=2.1.3-4`
+### `dpkg` source package: `cups=2.1.3-4ubuntu0.3`
 
 Binary Packages:
 
-- `libcups2:amd64=2.1.3-4`
-- `libcupsimage2:amd64=2.1.3-4`
+- `libcups2:amd64=2.1.3-4ubuntu0.3`
+- `libcupsimage2:amd64=2.1.3-4ubuntu0.3`
 
 Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`, `/usr/share/doc/libcupsimage2/copyright`)
 
@@ -462,10 +462,10 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris cups=2.1.3-4
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.1.3-4.dsc' cups_2.1.3-4.dsc 3433 SHA256:a8a85b1a815553fa025b6f7eabe1d3911273fe2f28fb2e852a632b455a16fba0
+$ apt-get source -qq --print-uris cups=2.1.3-4ubuntu0.3
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.1.3-4ubuntu0.3.dsc' cups_2.1.3-4ubuntu0.3.dsc 3391 SHA256:be76d80d3d02e78664619e3089de724f6e7ea9b28993fdcc9ba29654dd63a00a
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.1.3.orig.tar.bz2' cups_2.1.3.orig.tar.bz2 8832400 SHA256:36a70d43584aea2617da914b9331e23341c3501a8254c4d2eae9c11ec01fd4d3
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.1.3-4.debian.tar.xz' cups_2.1.3-4.debian.tar.xz 349252 SHA256:9e68b1eae835e3a928e5b22603d73d435d1154aee949e703461bb873ab8c1bbc
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.1.3-4ubuntu0.3.debian.tar.xz' cups_2.1.3-4ubuntu0.3.debian.tar.xz 347364 SHA256:6216fcfbe9b7b09ec11424b77444c220609b8425a6341bd860840800dc77a405
 ```
 
 ### `dpkg` source package: `dash=0.5.8-2.1ubuntu2`
@@ -1003,13 +1003,13 @@ $ apt-get source -qq --print-uris gdk-pixbuf=2.32.2-1ubuntu1.2
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.32.2-1ubuntu1.2.debian.tar.xz' gdk-pixbuf_2.32.2-1ubuntu1.2.debian.tar.xz 15152 SHA256:ccc3aa20de5ede571a57caecaaccb9c22efaf586da5c7befeff4083cc670b7a0
 ```
 
-### `dpkg` source package: `ghostscript=9.18~dfsg~0-0ubuntu2.6`
+### `dpkg` source package: `ghostscript=9.18~dfsg~0-0ubuntu2.7`
 
 Binary Packages:
 
-- `ghostscript=9.18~dfsg~0-0ubuntu2.6`
-- `libgs9:amd64=9.18~dfsg~0-0ubuntu2.6`
-- `libgs9-common=9.18~dfsg~0-0ubuntu2.6`
+- `ghostscript=9.18~dfsg~0-0ubuntu2.7`
+- `libgs9:amd64=9.18~dfsg~0-0ubuntu2.7`
+- `libgs9-common=9.18~dfsg~0-0ubuntu2.7`
 
 Licenses: (parsed from: `/usr/share/doc/ghostscript/copyright`, `/usr/share/doc/libgs9/copyright`, `/usr/share/doc/libgs9-common/copyright`)
 
@@ -1050,8 +1050,14 @@ Licenses: (parsed from: `/usr/share/doc/ghostscript/copyright`, `/usr/share/doc/
 - `icclib`
 - `other`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris ghostscript=9.18~dfsg~0-0ubuntu2.7
+'http://archive.ubuntu.com/ubuntu/pool/main/g/ghostscript/ghostscript_9.18~dfsg~0-0ubuntu2.7.dsc' ghostscript_9.18~dfsg~0-0ubuntu2.7.dsc 2889 SHA256:f364d62d663c0a86d43dd999e7a219cd559da971c307b4b04309176f1f6bc292
+'http://archive.ubuntu.com/ubuntu/pool/main/g/ghostscript/ghostscript_9.18~dfsg~0.orig.tar.bz2' ghostscript_9.18~dfsg~0.orig.tar.bz2 18274376 SHA256:b39e5d163e37e4c78b67380ada922c09ad65879f82e2322d1efbbf4ad1d7b814
+'http://archive.ubuntu.com/ubuntu/pool/main/g/ghostscript/ghostscript_9.18~dfsg~0-0ubuntu2.7.debian.tar.xz' ghostscript_9.18~dfsg~0-0ubuntu2.7.debian.tar.xz 111812 SHA256:7472563d35647f4206457582a64045b6233dcc7abb268bd6e0473ca562fa8b83
+```
 
 ### `dpkg` source package: `giflib=5.1.4-0.3~16.04`
 
@@ -1187,11 +1193,11 @@ $ apt-get source -qq --print-uris gnutls28=3.4.10-4ubuntu1.3
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.4.10-4ubuntu1.3.debian.tar.xz' gnutls28_3.4.10-4ubuntu1.3.debian.tar.xz 96112 SHA256:d3609837d6415df3bda609dc4c6eacf657f5e76c4a32cfab606e813ec2e18835
 ```
 
-### `dpkg` source package: `graphite2=1.3.6-1ubuntu1`
+### `dpkg` source package: `graphite2=1.3.10-0ubuntu0.16.04.1`
 
 Binary Packages:
 
-- `libgraphite2-3:amd64=1.3.6-1ubuntu1`
+- `libgraphite2-3:amd64=1.3.10-0ubuntu0.16.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libgraphite2-3/copyright`)
 
@@ -1208,10 +1214,10 @@ Licenses: (parsed from: `/usr/share/doc/libgraphite2-3/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris graphite2=1.3.6-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/graphite2/graphite2_1.3.6-1ubuntu1.dsc' graphite2_1.3.6-1ubuntu1.dsc 2196 SHA256:f50b031209603499aeefb66ec3f0a31e0516945bfb37a04f69c059c18815f251
-'http://archive.ubuntu.com/ubuntu/pool/main/g/graphite2/graphite2_1.3.6.orig.tar.gz' graphite2_1.3.6.orig.tar.gz 3881106 SHA256:475e7657ac606ed8805518031729c1273cf7d9d422169ac6f7882e01d832af75
-'http://archive.ubuntu.com/ubuntu/pool/main/g/graphite2/graphite2_1.3.6-1ubuntu1.debian.tar.xz' graphite2_1.3.6-1ubuntu1.debian.tar.xz 9920 SHA256:b02623e84af8d45e538b4419c71ad467f7fd34a3c1513b819791774b31aeb12e
+$ apt-get source -qq --print-uris graphite2=1.3.10-0ubuntu0.16.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/g/graphite2/graphite2_1.3.10-0ubuntu0.16.04.1.dsc' graphite2_1.3.10-0ubuntu0.16.04.1.dsc 2238 SHA256:a1bb1b86e8f56a790b9e1336f0c75a10f76d9a0f12c0bd0fc24c8a5709a6c4b1
+'http://archive.ubuntu.com/ubuntu/pool/main/g/graphite2/graphite2_1.3.10.orig.tar.gz' graphite2_1.3.10.orig.tar.gz 3889647 SHA256:90fde3b2f9ea95d68ffb19278d07d9b8a7efa5ba0e413bebcea802ce05cda1ae
+'http://archive.ubuntu.com/ubuntu/pool/main/g/graphite2/graphite2_1.3.10-0ubuntu0.16.04.1.debian.tar.xz' graphite2_1.3.10-0ubuntu0.16.04.1.debian.tar.xz 10016 SHA256:05b62d5770153e989fa452e6097fd201c538a97fdbbbc7a2034d89717f57e448
 ```
 
 ### `dpkg` source package: `grep=2.25-1~16.04.1`
