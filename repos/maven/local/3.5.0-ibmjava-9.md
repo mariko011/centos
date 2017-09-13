@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3130d99623770aa241029400bc657b1e50ee3547c74f097465de9f2c24e2f407`
-- Created: `2017-09-07T18:31:05.036110957Z`
-- Virtual Size: ~ 605.99 Mb  
+- Image ID: `sha256:23bd385c22b24077df431d697f3252970b7d0eb13f89603d1e0f6eb61ce5e5c2`
+- Created: `2017-09-13T01:49:00.383609365Z`
+- Virtual Size: ~ 606.55 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -74,9 +74,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris apparmor=2.10.95-0ubuntu2.6
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.6.dsc' apparmor_2.10.95-0ubuntu2.6.dsc 3252 SHA256:e04b41652174316c8d4117bdbff6dc5f2854efba18c6240a1120f0899949d5be
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95.orig.tar.gz' apparmor_2.10.95.orig.tar.gz 4502268 SHA256:3f659a599718f4a5e2a33140916715f574a5cb3634a6b9ed6d29f7b0617e4d1a
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.6.debian.tar.xz' apparmor_2.10.95-0ubuntu2.6.debian.tar.xz 96164 SHA256:9864f5ba71c069fa31e85af3a9fd771cef26e67a1ecc785b0c1464d33ae5bfb1
+'http://security.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.6.dsc' apparmor_2.10.95-0ubuntu2.6.dsc 3252 SHA256:e04b41652174316c8d4117bdbff6dc5f2854efba18c6240a1120f0899949d5be
+'http://security.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95.orig.tar.gz' apparmor_2.10.95.orig.tar.gz 4502268 SHA256:3f659a599718f4a5e2a33140916715f574a5cb3634a6b9ed6d29f7b0617e4d1a
+'http://security.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.6.debian.tar.xz' apparmor_2.10.95-0ubuntu2.6.debian.tar.xz 96164 SHA256:9864f5ba71c069fa31e85af3a9fd771cef26e67a1ecc785b0c1464d33ae5bfb1
 ```
 
 ### `dpkg` source package: `apt=1.2.24`
