@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7c5c91e49b502ddf96b62c7d7f1043a9d1bae0500efb01cf66dd81fe0c049525`
-- Created: `2017-09-06T17:09:27.061099181Z`
-- Virtual Size: ~ 133.41 Mb  
+- Image ID: `sha256:1184113466ff0525b7b77e81ab953e8d160b071ea01b6d7468c49766118e009a`
+- Created: `2017-09-12T21:57:09.784133608Z`
+- Virtual Size: ~ 134.19 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["swipl"]`
@@ -565,7 +565,7 @@ Binary Packages:
 - `libgcc1:amd64=1:6.3.0-18`
 - `libstdc++6:amd64=6.3.0-18`
 
-Licenses: (parsed from: `/usr/share/doc/gcc-6-base/copyright`)
+Licenses: (parsed from: `/usr/share/doc/gcc-6-base/copyright`, `/usr/share/doc/libgcc1/copyright`, `/usr/share/doc/libstdc++6/copyright`)
 
 - `Artistic`
 - `GFDL-1.2`
@@ -1058,11 +1058,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libffi/3.2.1-6/
 - https://sources.debian.net/src/libffi/3.2.1-6/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `libgcrypt20=1.7.6-2+deb9u1`
+### `dpkg` source package: `libgcrypt20=1.7.6-2+deb9u2`
 
 Binary Packages:
 
-- `libgcrypt20:amd64=1.7.6-2+deb9u1`
+- `libgcrypt20:amd64=1.7.6-2+deb9u2`
 
 Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 
@@ -1072,17 +1072,16 @@ Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libgcrypt20=1.7.6-2+deb9u1
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.7.6-2+deb9u1.dsc' libgcrypt20_1.7.6-2+deb9u1.dsc 2942 SHA256:b83c76db58ec1e27257df872e342d2045a476819549252e0ffeb03ed2cbe570c
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.7.6.orig.tar.bz2' libgcrypt20_1.7.6.orig.tar.bz2 2897695 SHA256:626aafee84af9d2ce253d2c143dc1c0902dda045780cc241f39970fc60be05bc
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.7.6.orig.tar.bz2.asc' libgcrypt20_1.7.6.orig.tar.bz2.asc 310 SHA256:91ad5a0efafb0edc63c083f733ce476b2a0da663aea5118126aa63825d314e00
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.7.6-2+deb9u1.debian.tar.xz' libgcrypt20_1.7.6-2+deb9u1.debian.tar.xz 30308 SHA256:df274675ca3dce4dcbf9ec58e75fdf279a492f4fc91aa2f2d52d368ee9c0ed82
+$ apt-get source -qq --print-uris libgcrypt20=1.7.6-2+deb9u2
+'http://security.debian.org/pool/updates/main/libg/libgcrypt20/libgcrypt20_1.7.6-2+deb9u2.dsc' libgcrypt20_1.7.6-2+deb9u2.dsc 2838 SHA256:ece58728d3b18510e0f0a699b5207c393f67e96e0e9cb3191eeb831f2b7d61c1
+'http://security.debian.org/pool/updates/main/libg/libgcrypt20/libgcrypt20_1.7.6.orig.tar.bz2' libgcrypt20_1.7.6.orig.tar.bz2 2897695 SHA256:626aafee84af9d2ce253d2c143dc1c0902dda045780cc241f39970fc60be05bc
+'http://security.debian.org/pool/updates/main/libg/libgcrypt20/libgcrypt20_1.7.6-2+deb9u2.debian.tar.xz' libgcrypt20_1.7.6-2+deb9u2.debian.tar.xz 32044 SHA256:190182723dd39b256cb03e0b74ad9c2047943fe53584c7794b2cec080d5e33e6
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/libgcrypt20/1.7.6-2+deb9u1/
-- https://sources.debian.net/src/libgcrypt20/1.7.6-2+deb9u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libgcrypt20/1.7.6-2+deb9u2/
+- https://sources.debian.net/src/libgcrypt20/1.7.6-2+deb9u2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libgpg-error=1.26-2`
 
@@ -1273,11 +1272,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libtool/2.4.6-2/
 - https://sources.debian.net/src/libtool/2.4.6-2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `libxml2=2.9.4+dfsg1-2.2`
+### `dpkg` source package: `libxml2=2.9.4+dfsg1-2.2+deb9u1`
 
 Binary Packages:
 
-- `libxml2:amd64=2.9.4+dfsg1-2.2`
+- `libxml2:amd64=2.9.4+dfsg1-2.2+deb9u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1286,16 +1285,16 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libxml2=2.9.4+dfsg1-2.2
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1-2.2.dsc' libxml2_2.9.4+dfsg1-2.2.dsc 2891 SHA256:748bf3236c22911a89bc3b50268626b9aafe4557114aad21684493e5dc30156c
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1.orig.tar.xz' libxml2_2.9.4+dfsg1.orig.tar.xz 2446412 SHA256:a74ad55e346aa0b2b41903e66d21f8f3d2a736b3f41e32496376861ab484184e
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1-2.2.debian.tar.xz' libxml2_2.9.4+dfsg1-2.2.debian.tar.xz 28936 SHA256:c038bba02a56164cef7728509ba3c8f1856018573769ee9ffcc48c565e90bdc9
+$ apt-get source -qq --print-uris libxml2=2.9.4+dfsg1-2.2+deb9u1
+'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.9.4+dfsg1-2.2+deb9u1.dsc' libxml2_2.9.4+dfsg1-2.2+deb9u1.dsc 3049 SHA256:9cd8802fa5c7a6c89a23c755b41f5e9a114f7e74c4b5aeb303516c1f298df87a
+'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.9.4+dfsg1.orig.tar.xz' libxml2_2.9.4+dfsg1.orig.tar.xz 2446412 SHA256:a74ad55e346aa0b2b41903e66d21f8f3d2a736b3f41e32496376861ab484184e
+'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.9.4+dfsg1-2.2+deb9u1.debian.tar.xz' libxml2_2.9.4+dfsg1-2.2+deb9u1.debian.tar.xz 33600 SHA256:6c9e6fed9d68a7992057e6153972d1582fc75ff3140f619ba9c0b024351c14e7
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/libxml2/2.9.4+dfsg1-2.2/
-- https://sources.debian.net/src/libxml2/2.9.4+dfsg1-2.2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libxml2/2.9.4+dfsg1-2.2+deb9u1/
+- https://sources.debian.net/src/libxml2/2.9.4+dfsg1-2.2+deb9u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lsb=9.20161125`
 
@@ -1371,11 +1370,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/lzo2/2.08-1.2/
 - https://sources.debian.net/src/lzo2/2.08-1.2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `mariadb-10.1=10.1.23-9+deb9u1`
+### `dpkg` source package: `mariadb-10.1=10.1.26-0+deb9u1`
 
 Binary Packages:
 
-- `libmariadbclient18:amd64=10.1.23-9+deb9u1`
+- `libmariadbclient18:amd64=10.1.26-0+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/libmariadbclient18/copyright`)
 
@@ -1402,16 +1401,16 @@ Licenses: (parsed from: `/usr/share/doc/libmariadbclient18/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris mariadb-10.1=10.1.23-9+deb9u1
-'http://deb.debian.org/debian/pool/main/m/mariadb-10.1/mariadb-10.1_10.1.23-9+deb9u1.dsc' mariadb-10.1_10.1.23-9+deb9u1.dsc 4268 SHA256:aa307c141e20facd0d4680870cdd5d8a3a190c576514c60e9460f069a80b42ce
-'http://deb.debian.org/debian/pool/main/m/mariadb-10.1/mariadb-10.1_10.1.23.orig.tar.gz' mariadb-10.1_10.1.23.orig.tar.gz 61772244 SHA256:54d8114e24bfa5e3ebdc7d69e071ad1471912847ea481b227d204f9d644300bf
-'http://deb.debian.org/debian/pool/main/m/mariadb-10.1/mariadb-10.1_10.1.23-9+deb9u1.debian.tar.xz' mariadb-10.1_10.1.23-9+deb9u1.debian.tar.xz 221684 SHA256:5705aff3ee8acebca298e3d87f30322dae6714f238162eb4e5266b64a43821cb
+$ apt-get source -qq --print-uris mariadb-10.1=10.1.26-0+deb9u1
+'http://security.debian.org/pool/updates/main/m/mariadb-10.1/mariadb-10.1_10.1.26-0+deb9u1.dsc' mariadb-10.1_10.1.26-0+deb9u1.dsc 4476 SHA256:f461d4adcf8934e9ab60ff913a381e421ae0dda403e54f36fcddcbfa1a32e142
+'http://security.debian.org/pool/updates/main/m/mariadb-10.1/mariadb-10.1_10.1.26.orig.tar.gz' mariadb-10.1_10.1.26.orig.tar.gz 61887132 SHA256:ba88b1cb9967dea2909938a34ba89373b162b0d83e5c98a0f1c94540156bf73d
+'http://security.debian.org/pool/updates/main/m/mariadb-10.1/mariadb-10.1_10.1.26-0+deb9u1.debian.tar.xz' mariadb-10.1_10.1.26-0+deb9u1.debian.tar.xz 226912 SHA256:3d90b4bc9201de408abcdb3b43e990c2010320fa97b358cecdc1a0203a21d1ec
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/mariadb-10.1/10.1.23-9+deb9u1/
-- https://sources.debian.net/src/mariadb-10.1/10.1.23-9+deb9u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/mariadb-10.1/10.1.26-0+deb9u1/
+- https://sources.debian.net/src/mariadb-10.1/10.1.26-0+deb9u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `mawk=1.3.3-17`
 
@@ -1684,9 +1683,35 @@ Binary Packages:
 
 - `perl-base=5.24.1-3+deb9u1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 
+- `Artistic`
+- `Artistic,`
+- `Artistic-2`
+- `BSD-3-clause`
+- `BSD-3-clause-GENERIC`
+- `BSD-3-clause-with-weird-numbering`
+- `BSD-4-clause-POWERDOG`
+- `BZIP`
+- `CC0-1.0`
+- `DONT-CHANGE-THE-GPL`
+- `Expat`
+- `GPL-1`
+- `GPL-1+`
+- `GPL-2`
+- `GPL-2+`
+- `GPL-3+-WITH-BISON-EXCEPTION`
+- `HSIEH-BSD`
+- `HSIEH-DERIVATIVE`
+- `LGPL-2.1`
+- `REGCOMP`
+- `REGCOMP,`
+- `RRA-KEEP-THIS-NOTICE`
+- `S2P`
+- `SDBM-PUBLIC-DOMAIN`
+- `TEXT-TABS`
+- `Unicode`
+- `ZLIB`
 
 Source:
 
