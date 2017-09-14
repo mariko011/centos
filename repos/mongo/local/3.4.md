@@ -1,10 +1,10 @@
-# `mongo:3.4.8`
+# `mongo:3.4.9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:917819fa18fdcfc3d2d2b5b845928a7c4d0046bbdeddd9b443eb2bbf73ad9aa1`
-- Created: `2017-09-08T08:09:26.32433691Z`
-- Virtual Size: ~ 359.16 Mb  
+- Image ID: `sha256:39f5c173b5d403baaf377eb0af4ad8b3db1952a18308b55d51fe56a7e67808e1`
+- Created: `2017-09-13T21:18:49.50794904Z`
+- Virtual Size: ~ 360.86 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,4 +16,4 @@
   - `MONGO_PACKAGE=mongodb-org`
   - `MONGO_REPO=repo.mongodb.org`
   - `MONGO_MAJOR=3.4`
-  - `MONGO_VERSION=3.4.8`
+  - `MONGO_VERSION=3.4.9`
