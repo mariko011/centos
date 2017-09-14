@@ -1,9 +1,9 @@
-# `hello-seattle:latest`
+# `hello-seattle:linux`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0089b734b973787b38d7129c02b5a06dad7fc402da6f682b2b89098d3231be7c`
-- Created: `2017-06-14T19:23:39.129944146Z`
+- Image ID: `sha256:4c64108f30a9038397781239a7394b4d2c95e6a0c3a7aa08d045f9c6b103ee40`
+- Created: `2017-09-13T02:49:15.85118625Z`
 - Virtual Size: ~ 1.86 Kb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
