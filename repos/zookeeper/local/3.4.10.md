@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:daf7547036e2676164219ee99ade68f31bc1a218911a1c35478714bc6db53aa1`
-- Created: `2017-07-22T04:58:58.918713291Z`
+- Image ID: `sha256:f2249a75c5d00931f32779e5593ac02700e07f1648e95137c3acab820575c701`
+- Created: `2017-09-14T07:50:48.217365849Z`
 - Virtual Size: ~ 143.11 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -23,4 +23,5 @@
   - `ZOO_TICK_TIME=2000`
   - `ZOO_INIT_LIMIT=5`
   - `ZOO_SYNC_LIMIT=2`
+  - `ZOO_MAX_CLIENT_CNXNS=60`
   - `ZOOCFGDIR=/conf`
