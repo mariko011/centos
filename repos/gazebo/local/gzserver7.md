@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d508c9f704384e9a3d7bdd7a91a08eff22124f76e69f232490fc92ac3621eb53`
-- Created: `2017-08-10T22:39:03.247436895Z`
+- Image ID: `sha256:13fe1ba7824c85364fc01b13c0c270e1a3cfd479c0ac4f347c59c60ab263ffe3`
+- Created: `2017-09-14T00:06:29.767768179Z`
 - Virtual Size: ~ 562.02 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -3173,18 +3173,24 @@ $ apt-get source -qq --print-uris lockfile-progs=0.1.17
 'http://archive.ubuntu.com/ubuntu/pool/main/l/lockfile-progs/lockfile-progs_0.1.17.tar.gz' lockfile-progs_0.1.17.tar.gz 14833 SHA256:03fb05d25499532f497775b1747b61fa6beebf12d3bcc951e125349ae166c511
 ```
 
-### `dpkg` source package: `logrotate=3.8.7-1ubuntu1.1`
+### `dpkg` source package: `logrotate=3.8.7-1ubuntu1.2`
 
 Binary Packages:
 
-- `logrotate=3.8.7-1ubuntu1.1`
+- `logrotate=3.8.7-1ubuntu1.2`
 
 Licenses: (parsed from: `/usr/share/doc/logrotate/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris logrotate=3.8.7-1ubuntu1.2
+'http://archive.ubuntu.com/ubuntu/pool/main/l/logrotate/logrotate_3.8.7-1ubuntu1.2.dsc' logrotate_3.8.7-1ubuntu1.2.dsc 1584 SHA256:c2a7a387c445ad37509b7ca2e294880bb1b2f421cded3d25cb834fa8c3c7bf0a
+'http://archive.ubuntu.com/ubuntu/pool/main/l/logrotate/logrotate_3.8.7.orig.tar.gz' logrotate_3.8.7.orig.tar.gz 58898 SHA256:f6ba691f40e30e640efa2752c1f9499a3f9738257660994de70a45fe00d12b64
+'http://archive.ubuntu.com/ubuntu/pool/main/l/logrotate/logrotate_3.8.7-1ubuntu1.2.debian.tar.xz' logrotate_3.8.7-1ubuntu1.2.debian.tar.xz 23476 SHA256:d878ce5b835026462a4dafcfc51eae8e429fa3f59f1c800d5098b1d4ffc73d95
+```
 
 ### `dpkg` source package: `lsb=4.1+Debian11ubuntu6.2`
 
@@ -3903,11 +3909,11 @@ $ apt-get source -qq --print-uris popt=1.16-8ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/popt/popt_1.16-8ubuntu1.debian.tar.gz' popt_1.16-8ubuntu1.debian.tar.gz 15563 SHA256:f56a14f2dd571a3f14f0d340d54e502b50ae5fcae3f9303b93d9cc0f20c8cf29
 ```
 
-### `dpkg` source package: `postgresql-9.3=9.3.17-0ubuntu0.14.04`
+### `dpkg` source package: `postgresql-9.3=9.3.18-0ubuntu0.14.04.1`
 
 Binary Packages:
 
-- `libpq5=9.3.17-0ubuntu0.14.04`
+- `libpq5=9.3.18-0ubuntu0.14.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 
@@ -3916,8 +3922,14 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 - `GPL-1`
 - `Tcl`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris postgresql-9.3=9.3.18-0ubuntu0.14.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.18-0ubuntu0.14.04.1.dsc' postgresql-9.3_9.3.18-0ubuntu0.14.04.1.dsc 3463 SHA256:91500b2c4f89a0884c1edf59edcd7f3bb3610b3d4bc96470f33e146c7f27b2a9
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.18.orig.tar.bz2' postgresql-9.3_9.3.18.orig.tar.bz2 17194269 SHA256:ad60d12a5a3dd0f6f5904c41b87e43eff49d3f74e45129fe52c5744366ff2fe0
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.18-0ubuntu0.14.04.1.debian.tar.gz' postgresql-9.3_9.3.18-0ubuntu0.14.04.1.debian.tar.gz 33642 SHA256:2786ae82db55203adae022dee359cd8e50c2c5ba6b46421d39cd5fa73b3c6811
+```
 
 ### `dpkg` source package: `procps=1:3.3.9-1ubuntu2.2`
 

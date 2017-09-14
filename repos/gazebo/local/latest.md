@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d07585ac2a02a72baa8c314e8ac951771b5ae1abf2493761be9995f3999068cf`
-- Created: `2017-08-10T22:51:04.973157693Z`
+- Image ID: `sha256:1e8d9a0cde1a5827dcd2331e59f8cdf820841d31afc42dc42e6f27363732b6c5`
+- Created: `2017-09-13T18:36:23.282671599Z`
 - Virtual Size: ~ 1.41 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -90,9 +90,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris apparmor=2.10.95-0ubuntu2.6
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.6.dsc' apparmor_2.10.95-0ubuntu2.6.dsc 3252 SHA256:e04b41652174316c8d4117bdbff6dc5f2854efba18c6240a1120f0899949d5be
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95.orig.tar.gz' apparmor_2.10.95.orig.tar.gz 4502268 SHA256:3f659a599718f4a5e2a33140916715f574a5cb3634a6b9ed6d29f7b0617e4d1a
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.6.debian.tar.xz' apparmor_2.10.95-0ubuntu2.6.debian.tar.xz 96164 SHA256:9864f5ba71c069fa31e85af3a9fd771cef26e67a1ecc785b0c1464d33ae5bfb1
+'http://security.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.6.dsc' apparmor_2.10.95-0ubuntu2.6.dsc 3252 SHA256:e04b41652174316c8d4117bdbff6dc5f2854efba18c6240a1120f0899949d5be
+'http://security.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95.orig.tar.gz' apparmor_2.10.95.orig.tar.gz 4502268 SHA256:3f659a599718f4a5e2a33140916715f574a5cb3634a6b9ed6d29f7b0617e4d1a
+'http://security.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.6.debian.tar.xz' apparmor_2.10.95-0ubuntu2.6.debian.tar.xz 96164 SHA256:9864f5ba71c069fa31e85af3a9fd771cef26e67a1ecc785b0c1464d33ae5bfb1
 ```
 
 ### `dpkg` source package: `apt=1.2.24`
@@ -639,11 +639,11 @@ $ apt-get source -qq --print-uris crystalhd=1:0.0~git20110715.fdd2f19-11build1
 'http://archive.ubuntu.com/ubuntu/pool/universe/c/crystalhd/crystalhd_0.0~git20110715.fdd2f19-11build1.debian.tar.xz' crystalhd_0.0~git20110715.fdd2f19-11build1.debian.tar.xz 15240 SHA256:646168058a9a41b20a392fe20f7a2a88caaa1a42fc3e002635c33f0cf129ed0f
 ```
 
-### `dpkg` source package: `cups=2.1.3-4`
+### `dpkg` source package: `cups=2.1.3-4ubuntu0.3`
 
 Binary Packages:
 
-- `libcups2:amd64=2.1.3-4`
+- `libcups2:amd64=2.1.3-4ubuntu0.3`
 
 Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 
@@ -657,10 +657,10 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris cups=2.1.3-4
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.1.3-4.dsc' cups_2.1.3-4.dsc 3433 SHA256:a8a85b1a815553fa025b6f7eabe1d3911273fe2f28fb2e852a632b455a16fba0
+$ apt-get source -qq --print-uris cups=2.1.3-4ubuntu0.3
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.1.3-4ubuntu0.3.dsc' cups_2.1.3-4ubuntu0.3.dsc 3391 SHA256:be76d80d3d02e78664619e3089de724f6e7ea9b28993fdcc9ba29654dd63a00a
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.1.3.orig.tar.bz2' cups_2.1.3.orig.tar.bz2 8832400 SHA256:36a70d43584aea2617da914b9331e23341c3501a8254c4d2eae9c11ec01fd4d3
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.1.3-4.debian.tar.xz' cups_2.1.3-4.debian.tar.xz 349252 SHA256:9e68b1eae835e3a928e5b22603d73d435d1154aee949e703461bb873ab8c1bbc
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.1.3-4ubuntu0.3.debian.tar.xz' cups_2.1.3-4ubuntu0.3.debian.tar.xz 347364 SHA256:6216fcfbe9b7b09ec11424b77444c220609b8425a6341bd860840800dc77a405
 ```
 
 ### `dpkg` source package: `curl=7.47.0-1ubuntu2.2`
@@ -1621,11 +1621,11 @@ $ apt-get source -qq --print-uris gnutls28=3.4.10-4ubuntu1.3
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.4.10-4ubuntu1.3.debian.tar.xz' gnutls28_3.4.10-4ubuntu1.3.debian.tar.xz 96112 SHA256:d3609837d6415df3bda609dc4c6eacf657f5e76c4a32cfab606e813ec2e18835
 ```
 
-### `dpkg` source package: `graphite2=1.3.6-1ubuntu1`
+### `dpkg` source package: `graphite2=1.3.10-0ubuntu0.16.04.1`
 
 Binary Packages:
 
-- `libgraphite2-3:amd64=1.3.6-1ubuntu1`
+- `libgraphite2-3:amd64=1.3.10-0ubuntu0.16.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libgraphite2-3/copyright`)
 
@@ -1642,10 +1642,10 @@ Licenses: (parsed from: `/usr/share/doc/libgraphite2-3/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris graphite2=1.3.6-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/graphite2/graphite2_1.3.6-1ubuntu1.dsc' graphite2_1.3.6-1ubuntu1.dsc 2196 SHA256:f50b031209603499aeefb66ec3f0a31e0516945bfb37a04f69c059c18815f251
-'http://archive.ubuntu.com/ubuntu/pool/main/g/graphite2/graphite2_1.3.6.orig.tar.gz' graphite2_1.3.6.orig.tar.gz 3881106 SHA256:475e7657ac606ed8805518031729c1273cf7d9d422169ac6f7882e01d832af75
-'http://archive.ubuntu.com/ubuntu/pool/main/g/graphite2/graphite2_1.3.6-1ubuntu1.debian.tar.xz' graphite2_1.3.6-1ubuntu1.debian.tar.xz 9920 SHA256:b02623e84af8d45e538b4419c71ad467f7fd34a3c1513b819791774b31aeb12e
+$ apt-get source -qq --print-uris graphite2=1.3.10-0ubuntu0.16.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/g/graphite2/graphite2_1.3.10-0ubuntu0.16.04.1.dsc' graphite2_1.3.10-0ubuntu0.16.04.1.dsc 2238 SHA256:a1bb1b86e8f56a790b9e1336f0c75a10f76d9a0f12c0bd0fc24c8a5709a6c4b1
+'http://archive.ubuntu.com/ubuntu/pool/main/g/graphite2/graphite2_1.3.10.orig.tar.gz' graphite2_1.3.10.orig.tar.gz 3889647 SHA256:90fde3b2f9ea95d68ffb19278d07d9b8a7efa5ba0e413bebcea802ce05cda1ae
+'http://archive.ubuntu.com/ubuntu/pool/main/g/graphite2/graphite2_1.3.10-0ubuntu0.16.04.1.debian.tar.xz' graphite2_1.3.10-0ubuntu0.16.04.1.debian.tar.xz 10016 SHA256:05b62d5770153e989fa452e6097fd201c538a97fdbbbc7a2034d89717f57e448
 ```
 
 ### `dpkg` source package: `grep=2.25-1~16.04.1`
@@ -4247,19 +4247,25 @@ $ apt-get source -qq --print-uris linux-atm=1:2.5.1-1.5
 'http://archive.ubuntu.com/ubuntu/pool/main/l/linux-atm/linux-atm_2.5.1-1.5.debian.tar.gz' linux-atm_2.5.1-1.5.debian.tar.gz 10723 SHA256:9b2325859b3fd008b588a3897e713f52137abae08d1f5a44f5661f45a87f4d29
 ```
 
-### `dpkg` source package: `linux=4.4.0-91.114`
+### `dpkg` source package: `linux=4.4.0-93.116`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.4.0-91.114`
+- `linux-libc-dev:amd64=4.4.0-93.116`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 - `redpine-signals`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=4.4.0-93.116
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-93.116.dsc' linux_4.4.0-93.116.dsc 9290 SHA256:50735e20e653ac5dcbf2a85c304bca47f806e33e9918bcf9929788a6dde5a9c0
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-93.116.diff.gz' linux_4.4.0-93.116.diff.gz 13176909 SHA256:439be00481fbaf209655c8b217180fee0c3b1bea964cc19624761b41c2403c84
+```
 
 ### `dpkg` source package: `llvm-toolchain-4.0=1:4.0-1ubuntu1~16.04.2`
 
@@ -5277,12 +5283,12 @@ $ apt-get source -qq --print-uris poppler=0.41.0-0ubuntu1.2
 'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.41.0-0ubuntu1.2.debian.tar.xz' poppler_0.41.0-0ubuntu1.2.debian.tar.xz 36276 SHA256:3ba5cca43c221b475fcabc138d07b198152d8f4db5281b82374e3bb8132c197b
 ```
 
-### `dpkg` source package: `postgresql-9.5=9.5.7-0ubuntu0.16.04`
+### `dpkg` source package: `postgresql-9.5=9.5.8-0ubuntu0.16.04.1`
 
 Binary Packages:
 
-- `libpq-dev=9.5.7-0ubuntu0.16.04`
-- `libpq5:amd64=9.5.7-0ubuntu0.16.04`
+- `libpq-dev=9.5.8-0ubuntu0.16.04.1`
+- `libpq5:amd64=9.5.8-0ubuntu0.16.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/libpq5/copyright`)
 
@@ -5293,8 +5299,14 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `Tcl`
 - `almost exclusively BSD`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris postgresql-9.5=9.5.8-0ubuntu0.16.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.8-0ubuntu0.16.04.1.dsc' postgresql-9.5_9.5.8-0ubuntu0.16.04.1.dsc 3657 SHA256:c77a666392c99ff7468427fa0d6c3f0e67aa045e77dbf08e996efe6315c19902
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.8.orig.tar.bz2' postgresql-9.5_9.5.8.orig.tar.bz2 18670910 SHA256:ade57068f134f36710fa953e1ef79185abd96572f8098741413132f79ed37202
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.8-0ubuntu0.16.04.1.debian.tar.xz' postgresql-9.5_9.5.8-0ubuntu0.16.04.1.debian.tar.xz 22924 SHA256:34729c8b7fc9be9bc46c504ecaef29ea57e07f4b1a262e21bcbabfdf5d709825
+```
 
 ### `dpkg` source package: `procps=2:3.3.10-4ubuntu2.3`
 
