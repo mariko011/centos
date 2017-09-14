@@ -1,7 +1,7 @@
 ## `telegraf:alpine`
 
 ```console
-$ docker pull telegraf@sha256:0b4abd38cf5f7ea04003f238f4cc54e1bd0611e1cefa6cb4043ff467f659fea8
+$ docker pull telegraf@sha256:c71c4179ec84f5aa21ac8ca76b272d67e84c9ca87f3dc2c6e3f5aacb9595534d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,37 +11,37 @@ $ docker pull telegraf@sha256:0b4abd38cf5f7ea04003f238f4cc54e1bd0611e1cefa6cb404
 ### `telegraf:alpine` - linux; amd64
 
 ```console
-$ docker pull telegraf@sha256:d4228f18594ffc6eb62830bbe8bbb2f0c7287ae78865a992b0b12afc12c6e788
+$ docker pull telegraf@sha256:3e7442997bc978076b6070a98c79b07e24867a238e8d7f362c4b4a249fd1c132
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **12.6 MB (12612570 bytes)**  
+-	Total Size: **12.6 MB (12612584 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:45c762007faa7d600adccda063099eae71c17150a05e4f6ce0145892312df2f8`
+-	Image ID: `sha256:d0dd1ecb06022d29fb8105be193810eac4ceddbae2727ec42e5332f1c2bc68dc`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["telegraf"]`
 
 ```dockerfile
-# Tue, 27 Jun 2017 18:39:21 GMT
+# Wed, 13 Sep 2017 14:32:20 GMT
 ADD file:9d67752278c0e5a1298cd2d6603ebaaab2aa342e27ddf191ee0fde138f82698c in / 
-# Tue, 27 Jun 2017 18:39:45 GMT
+# Wed, 13 Sep 2017 14:32:20 GMT
 CMD ["/bin/sh"]
-# Tue, 12 Sep 2017 22:29:24 GMT
+# Wed, 13 Sep 2017 15:12:34 GMT
 RUN echo 'hosts: files dns' >> /etc/nsswitch.conf
-# Wed, 13 Sep 2017 03:59:00 GMT
+# Thu, 14 Sep 2017 00:38:16 GMT
 RUN apk add --no-cache iputils ca-certificates net-snmp-tools &&     update-ca-certificates
-# Wed, 13 Sep 2017 03:59:18 GMT
+# Thu, 14 Sep 2017 00:38:38 GMT
 ENV TELEGRAF_VERSION=1.4.0
-# Wed, 13 Sep 2017 03:59:29 GMT
+# Thu, 14 Sep 2017 00:38:47 GMT
 RUN set -ex &&     apk add --no-cache --virtual .build-deps wget gnupg tar &&     for key in         05CE15085FC09D18E99EFB22684A14CF2582E0C5 ;     do         gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key" ||         gpg --keyserver pgp.mit.edu --recv-keys "$key" ||         gpg --keyserver keyserver.pgp.com --recv-keys "$key" ;     done &&     wget -q https://dl.influxdata.com/telegraf/releases/telegraf-${TELEGRAF_VERSION}-static_linux_amd64.tar.gz.asc &&     wget -q https://dl.influxdata.com/telegraf/releases/telegraf-${TELEGRAF_VERSION}-static_linux_amd64.tar.gz &&     gpg --batch --verify telegraf-${TELEGRAF_VERSION}-static_linux_amd64.tar.gz.asc telegraf-${TELEGRAF_VERSION}-static_linux_amd64.tar.gz &&     mkdir -p /usr/src /etc/telegraf &&     tar -C /usr/src -xzf telegraf-${TELEGRAF_VERSION}-static_linux_amd64.tar.gz &&     mv /usr/src/telegraf*/telegraf.conf /etc/telegraf/ &&     chmod +x /usr/src/telegraf*/* &&     cp -a /usr/src/telegraf*/* /usr/bin/ &&     rm -rf *.tar.gz* /usr/src /root/.gnupg &&     apk del .build-deps
-# Wed, 13 Sep 2017 03:59:29 GMT
+# Thu, 14 Sep 2017 00:38:47 GMT
 EXPOSE 8092/udp 8094/tcp 8125/udp
-# Wed, 13 Sep 2017 03:59:29 GMT
+# Thu, 14 Sep 2017 00:38:48 GMT
 COPY file:43e6828e001b57ab465cff8dfd3d30830289afe7ca5944b61641956bfe38cd1c in /entrypoint.sh 
-# Wed, 13 Sep 2017 03:59:29 GMT
+# Thu, 14 Sep 2017 00:38:48 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 13 Sep 2017 03:59:29 GMT
+# Thu, 14 Sep 2017 00:38:48 GMT
 CMD ["telegraf"]
 ```
 
@@ -50,19 +50,19 @@ CMD ["telegraf"]
 		Last Modified: Tue, 27 Jun 2017 18:48:47 GMT  
 		Size: 2.0 MB (1970271 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c58a333dbcf59b7d5f2d5d356a7965b59a0bcd1f9bf62e20ef52d9d04297f8dd`  
-		Last Modified: Tue, 12 Sep 2017 22:30:27 GMT  
+	-	`sha256:c6f86ea3a05bc091d3d70e7de3d61d06e961eaeb967c4e0c6060196f0dcdc42f`  
+		Last Modified: Wed, 13 Sep 2017 15:14:01 GMT  
 		Size: 154.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8f99f3b9853f31e5bd861c5b5bd987d9971cc70628bb3d1a14dfb0e9a6108916`  
-		Last Modified: Wed, 13 Sep 2017 03:59:52 GMT  
-		Size: 1.8 MB (1771338 bytes)  
+	-	`sha256:533d12625f92f18763be93f4384313958baa2423c942b99b5f0194914c66f724`  
+		Last Modified: Thu, 14 Sep 2017 00:39:13 GMT  
+		Size: 1.8 MB (1771344 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fa60e68e8ce33589d51e16d7e7ab4af593940c9defa000cd80953ad6be44ee75`  
-		Last Modified: Wed, 13 Sep 2017 04:00:21 GMT  
-		Size: 8.9 MB (8870625 bytes)  
+	-	`sha256:433f9e2525488f99cdae135fa28b934ed568893f17bf31aa2cf12f16d90e0be0`  
+		Last Modified: Thu, 14 Sep 2017 00:39:48 GMT  
+		Size: 8.9 MB (8870633 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c8900ccf5fa84909ae973bf2248ffcb285b2e1631dc11116b905790ff23320ce`  
-		Last Modified: Wed, 13 Sep 2017 04:00:19 GMT  
+	-	`sha256:c2836e75324d050888fbd9d716103c30db455708f4a0628aba03b5e832a8e95d`  
+		Last Modified: Thu, 14 Sep 2017 00:39:46 GMT  
 		Size: 182.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
