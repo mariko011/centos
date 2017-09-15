@@ -1,7 +1,7 @@
 ## `openjdk:9-jre`
 
 ```console
-$ docker pull openjdk@sha256:6d9133d27a76d7aeef4870f57db5a1082b144101f711050a6587178b1ecf4ea7
+$ docker pull openjdk@sha256:81ac6c6ee93a4632a428ce9c41e2095f4b97de9313dece4f1074fc2e472c83e5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -227,71 +227,71 @@ RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/m
 ### `openjdk:9-jre` - linux; arm64 variant v8
 
 ```console
-$ docker pull openjdk@sha256:e9753262a43f2d91411e69772d844e3210e40c5d018c274b1a306113019b1de5
+$ docker pull openjdk@sha256:913c4b15aef05fb68809e8ea292cb2b8204cd59dee138671cda590ae4450a9c9
 ```
 
 -	Docker Version: 17.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **309.8 MB (309763221 bytes)**  
+-	Total Size: **314.0 MB (314015030 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:337ab40b11d5ceabc11a3ddcf8252b54deff21cdbe073981ed219ba18ced9d64`
+-	Image ID: `sha256:3f41052d69c362e6091fa14ea01ededbdc37fa7a4efa51c322226549f8e9deff`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 24 Jul 2017 17:23:45 GMT
-ADD file:9317aca1096f5b4dd40c6e6341bb846fe7dff31a2229c363343fe76d70acd4de in / 
-# Mon, 24 Jul 2017 17:23:46 GMT
+# Fri, 08 Sep 2017 17:26:13 GMT
+ADD file:07d58ee9d0f6dd60b5363a18ab4766f32f94d4aaed3a1d6d4ff5a2d274f030c2 in / 
+# Fri, 08 Sep 2017 17:26:15 GMT
 CMD ["bash"]
-# Mon, 24 Jul 2017 18:08:30 GMT
+# Fri, 08 Sep 2017 18:43:03 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 18:08:55 GMT
+# Fri, 08 Sep 2017 18:43:36 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Mon, 24 Jul 2017 19:17:37 GMT
+# Thu, 14 Sep 2017 22:59:26 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 25 Aug 2017 22:54:58 GMT
+# Thu, 14 Sep 2017 22:59:27 GMT
 ENV LANG=C.UTF-8
-# Fri, 25 Aug 2017 22:55:00 GMT
+# Thu, 14 Sep 2017 22:59:29 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Fri, 25 Aug 2017 22:55:01 GMT
+# Thu, 14 Sep 2017 22:59:31 GMT
 RUN ln -svT "/usr/lib/jvm/java-9-openjdk-$(dpkg --print-architecture)" /docker-java-home
-# Fri, 25 Aug 2017 22:55:02 GMT
+# Thu, 14 Sep 2017 22:59:31 GMT
 ENV JAVA_HOME=/docker-java-home
-# Fri, 25 Aug 2017 22:55:03 GMT
+# Thu, 14 Sep 2017 22:59:32 GMT
 ENV JAVA_VERSION=9-b181
-# Fri, 25 Aug 2017 22:55:03 GMT
+# Thu, 14 Sep 2017 22:59:33 GMT
 ENV JAVA_DEBIAN_VERSION=9~b181-4
-# Sat, 09 Sep 2017 10:21:41 GMT
+# Thu, 14 Sep 2017 23:05:38 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y 		openjdk-9-jre="$JAVA_DEBIAN_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
 ```
 
 -	Layers:
-	-	`sha256:be32d72e9988cc03c70e3de89ab4318721b54bb6ef8c93f7b042b75f86ce16f3`  
-		Last Modified: Mon, 24 Jul 2017 17:28:59 GMT  
-		Size: 46.0 MB (45992125 bytes)  
+	-	`sha256:40921cc3e39e34244dca67570f52afe382187c080dd1ffbb5a684332f50dfb0b`  
+		Last Modified: Fri, 08 Sep 2017 17:38:43 GMT  
+		Size: 45.5 MB (45456006 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:307c6e75a1bce5cef5ecc23f9be5914c5adf0a4055d70c1dbe091989194d5a70`  
-		Last Modified: Mon, 24 Jul 2017 18:30:13 GMT  
-		Size: 7.7 MB (7685408 bytes)  
+	-	`sha256:ab25753b426e93de8898bc86b845e4a2c54f0e51ff39207233cefcb9698bd8a0`  
+		Last Modified: Thu, 14 Sep 2017 22:02:58 GMT  
+		Size: 7.7 MB (7718568 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1ab5b47544c16558ee7ce8dd26b7d10cfa66b1f9ffee8910fa2d6a2fd82aacb`  
-		Last Modified: Mon, 24 Jul 2017 18:30:12 GMT  
-		Size: 4.4 MB (4394652 bytes)  
+	-	`sha256:df6a516f99a504113fb527ca9ce47078516bce9217fa901fec580920345e89ce`  
+		Last Modified: Thu, 14 Sep 2017 22:02:58 GMT  
+		Size: 9.6 MB (9564313 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4d7236260a89a8edfc26e9954c0c236757b95c3b8ba348165e1cebd4b5cddc33`  
-		Last Modified: Mon, 24 Jul 2017 19:30:14 GMT  
-		Size: 836.6 KB (836587 bytes)  
+	-	`sha256:1d523bf7cee30ac513bddda7b0a3fdeab70fbbb592367651ff17c36d44269aa6`  
+		Last Modified: Thu, 14 Sep 2017 23:13:00 GMT  
+		Size: 842.8 KB (842772 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:235ca98784f1a1b6df1e7b64e9a27581e113cee3412546f1193f3ad529732157`  
-		Last Modified: Fri, 25 Aug 2017 23:04:14 GMT  
+	-	`sha256:c543f72f85e2e15dfbe853dbb342274254d8a174cdbb6aff4e78ee7bded7d34e`  
+		Last Modified: Thu, 14 Sep 2017 23:12:59 GMT  
 		Size: 247.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b1bcb61520f8b53cbe5a79ab972de19211949dd2435fc9cc3ca3bfc40c8ab68a`  
-		Last Modified: Fri, 25 Aug 2017 23:04:13 GMT  
-		Size: 131.0 B  
+	-	`sha256:78d0aea58148dd2dcf3a10c2cd9d80aa224dff286c00c3eb0eee314ab076ebdb`  
+		Last Modified: Thu, 14 Sep 2017 23:12:59 GMT  
+		Size: 132.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dcee19f414dcfd1e27df70cfc3aa17967adf28a4e2fafb4a42e80eddf99e8b73`  
-		Last Modified: Sat, 09 Sep 2017 10:26:55 GMT  
-		Size: 250.9 MB (250854071 bytes)  
+	-	`sha256:0dffc6affe68247414c84d3991999d9a1d878095d19153f9c640a3795e562589`  
+		Last Modified: Thu, 14 Sep 2017 23:14:03 GMT  
+		Size: 250.4 MB (250432992 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:9-jre` - linux; 386
