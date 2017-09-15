@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:07cc212bb8394e8722c821f18adc02f3d8e4524b5cf1f3e78135e94b127f26de`
-- Created: `2017-08-16T00:35:16.799402359Z`
-- Virtual Size: ~ 1.04 Gb  
+- Image ID: `sha256:0e5d3461128cbf334d69142e032397e7f99e74a1d0055147873735169efb9457`
+- Created: `2017-09-14T00:30:14.349433216Z`
+- Virtual Size: ~ 1.05 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/ros_entrypoint.sh"]`
@@ -540,20 +540,26 @@ $ apt-get source -qq --print-uris bzip2=1.0.6-5
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.6-5.debian.tar.bz2' bzip2_1.0.6-5.debian.tar.bz2 60984 SHA256:182c087bbd173bfcc2b0f4210c790a03f3d49876f6250213332832319b7b5758
 ```
 
-### `dpkg` source package: `bzr=2.6.0+bzr6593-1ubuntu1.5`
+### `dpkg` source package: `bzr=2.6.0+bzr6593-1ubuntu1.6`
 
 Binary Packages:
 
-- `bzr=2.6.0+bzr6593-1ubuntu1.5`
-- `python-bzrlib=2.6.0+bzr6593-1ubuntu1.5`
+- `bzr=2.6.0+bzr6593-1ubuntu1.6`
+- `python-bzrlib=2.6.0+bzr6593-1ubuntu1.6`
 
 Licenses: (parsed from: `/usr/share/doc/bzr/copyright`, `/usr/share/doc/python-bzrlib/copyright`)
 
 - `GPL-2`
 - `GPL-2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris bzr=2.6.0+bzr6593-1ubuntu1.6
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bzr/bzr_2.6.0+bzr6593-1ubuntu1.6.dsc' bzr_2.6.0+bzr6593-1ubuntu1.6.dsc 2584 SHA256:787e6a9bf0a79e8478c0d85f1e08473b33dc98354d70d52d51822d1c36a719d9
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bzr/bzr_2.6.0+bzr6593.orig.tar.gz' bzr_2.6.0+bzr6593.orig.tar.gz 10943579 SHA256:e5e0688ee271078435a36d3742ff6ca22f9e8b17a5fca66488e07cdeb36a2ab7
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bzr/bzr_2.6.0+bzr6593-1ubuntu1.6.debian.tar.gz' bzr_2.6.0+bzr6593-1ubuntu1.6.debian.tar.gz 53590 SHA256:f1602c6db3ae5f5ba6443a7710c9050631b50a0aa22f1cecce4128f9135d24f6
+```
 
 ### `dpkg` source package: `ca-certificates=20160104ubuntu0.14.04.1`
 
@@ -1620,11 +1626,11 @@ $ apt-get source -qq --print-uris gnutls26=2.12.23-12ubuntu2.8
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls26/gnutls26_2.12.23-12ubuntu2.8.debian.tar.gz' gnutls26_2.12.23-12ubuntu2.8.debian.tar.gz 46239 SHA256:ef65f4e762e93da0340f4977fabf264601fb55eeb8aa13c718ccc02751547c61
 ```
 
-### `dpkg` source package: `graphite2=1.3.6-1ubuntu0.14.04.1`
+### `dpkg` source package: `graphite2=1.3.10-0ubuntu0.14.04.1`
 
 Binary Packages:
 
-- `libgraphite2-3:amd64=1.3.6-1ubuntu0.14.04.1`
+- `libgraphite2-3:amd64=1.3.10-0ubuntu0.14.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libgraphite2-3/copyright`)
 
@@ -1638,8 +1644,14 @@ Licenses: (parsed from: `/usr/share/doc/libgraphite2-3/copyright`)
 - `MPL-1.1 | GPL-2 | LGPL-2.1`
 - `other`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris graphite2=1.3.10-0ubuntu0.14.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/g/graphite2/graphite2_1.3.10-0ubuntu0.14.04.1.dsc' graphite2_1.3.10-0ubuntu0.14.04.1.dsc 2240 SHA256:abdc6e64aa554ba8770925dd38d1c9489f07621c850e3dd8e604a35654505200
+'http://archive.ubuntu.com/ubuntu/pool/main/g/graphite2/graphite2_1.3.10.orig.tar.gz' graphite2_1.3.10.orig.tar.gz 3889647 SHA256:90fde3b2f9ea95d68ffb19278d07d9b8a7efa5ba0e413bebcea802ce05cda1ae
+'http://archive.ubuntu.com/ubuntu/pool/main/g/graphite2/graphite2_1.3.10-0ubuntu0.14.04.1.debian.tar.gz' graphite2_1.3.10-0ubuntu0.14.04.1.debian.tar.gz 9199 SHA256:894f547aeb3d06a3ea670f4ac226fa9c94919913895512d3dc9a9b590b9b9657
+```
 
 ### `dpkg` source package: `graphviz=2.36.0-0ubuntu3.2`
 
@@ -2530,11 +2542,11 @@ $ apt-get source -qq --print-uris libgcrypt11=1.5.3-2ubuntu4.5
 'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt11/libgcrypt11_1.5.3-2ubuntu4.5.debian.tar.gz' libgcrypt11_1.5.3-2ubuntu4.5.debian.tar.gz 37205 SHA256:405b37e0ed162d1da5773ec55fa87df1977bc6b1e0b68913b533ac389b9882e0
 ```
 
-### `dpkg` source package: `libgd2=2.1.0-3ubuntu0.7`
+### `dpkg` source package: `libgd2=2.1.0-3ubuntu0.8`
 
 Binary Packages:
 
-- `libgd3:amd64=2.1.0-3ubuntu0.7`
+- `libgd3:amd64=2.1.0-3ubuntu0.8`
 
 Licenses: (parsed from: `/usr/share/doc/libgd3/copyright`)
 
@@ -2550,8 +2562,14 @@ Licenses: (parsed from: `/usr/share/doc/libgd3/copyright`)
 - `WEBP`
 - `XFIG`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris libgd2=2.1.0-3ubuntu0.8
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.1.0-3ubuntu0.8.dsc' libgd2_2.1.0-3ubuntu0.8.dsc 2410 SHA256:dc96155fa0564476285c2b55b46c173605919962d37d06f27de261a6f5d4af7b
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.1.0.orig.tar.xz' libgd2_2.1.0.orig.tar.xz 2004304 SHA256:fa6665dfe3d898019671293c84d77067a3d2ede50884dbcb6df899d508370e5a
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.1.0-3ubuntu0.8.debian.tar.gz' libgd2_2.1.0-3ubuntu0.8.debian.tar.gz 92845 SHA256:5da31f8dc984f0e1b16d174df4fbdf7a6747d394dd90906c3e37b43303f6c639
+```
 
 ### `dpkg` source package: `libgpg-error=1.12-0.2ubuntu1`
 
@@ -3580,18 +3598,24 @@ $ apt-get source -qq --print-uris libyaml=0.1.4-3ubuntu3.1
 'http://archive.ubuntu.com/ubuntu/pool/main/liby/libyaml/libyaml_0.1.4-3ubuntu3.1.debian.tar.gz' libyaml_0.1.4-3ubuntu3.1.debian.tar.gz 6404 SHA256:816422e1c743180409aff9247f3a298c8f98260d91da29c7315ce8bd576d53c2
 ```
 
-### `dpkg` source package: `linux=3.13.0-128.177`
+### `dpkg` source package: `linux=3.13.0-129.178`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.13.0-128.177`
+- `linux-libc-dev:amd64=3.13.0-129.178`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=3.13.0-129.178
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-129.178.dsc' linux_3.13.0-129.178.dsc 8127 SHA256:8fd024067e072d2c2f7f72d7884128844764d2bccea7163a21177a465f39daa6
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0.orig.tar.gz' linux_3.13.0.orig.tar.gz 116419243 SHA256:073d6a589655031564407e349c86a316941fc26ef3444bb73a092b43a48347ec
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-129.178.diff.gz' linux_3.13.0-129.178.diff.gz 9456506 SHA256:742d74bfd64a1561f115441bd38f81f1e416a4bfaef1e147af4aec1b1b4e41a9
+```
 
 ### `dpkg` source package: `lksctp-tools=1.0.15+dfsg-1`
 
@@ -3680,18 +3704,24 @@ $ apt-get source -qq --print-uris log4cxx=0.10.0-1.2ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/universe/l/log4cxx/log4cxx_0.10.0-1.2ubuntu3.diff.gz' log4cxx_0.10.0-1.2ubuntu3.diff.gz 10078 SHA256:9429aca9c5ee12081a1195c8b6fc91f8a04abe8266ec61043f17ea5ad4012121
 ```
 
-### `dpkg` source package: `logrotate=3.8.7-1ubuntu1.1`
+### `dpkg` source package: `logrotate=3.8.7-1ubuntu1.2`
 
 Binary Packages:
 
-- `logrotate=3.8.7-1ubuntu1.1`
+- `logrotate=3.8.7-1ubuntu1.2`
 
 Licenses: (parsed from: `/usr/share/doc/logrotate/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris logrotate=3.8.7-1ubuntu1.2
+'http://archive.ubuntu.com/ubuntu/pool/main/l/logrotate/logrotate_3.8.7-1ubuntu1.2.dsc' logrotate_3.8.7-1ubuntu1.2.dsc 1584 SHA256:c2a7a387c445ad37509b7ca2e294880bb1b2f421cded3d25cb834fa8c3c7bf0a
+'http://archive.ubuntu.com/ubuntu/pool/main/l/logrotate/logrotate_3.8.7.orig.tar.gz' logrotate_3.8.7.orig.tar.gz 58898 SHA256:f6ba691f40e30e640efa2752c1f9499a3f9738257660994de70a45fe00d12b64
+'http://archive.ubuntu.com/ubuntu/pool/main/l/logrotate/logrotate_3.8.7-1ubuntu1.2.debian.tar.xz' logrotate_3.8.7-1ubuntu1.2.debian.tar.xz 23476 SHA256:d878ce5b835026462a4dafcfc51eae8e429fa3f59f1c800d5098b1d4ffc73d95
+```
 
 ### `dpkg` source package: `lsb=4.1+Debian11ubuntu6.2`
 
