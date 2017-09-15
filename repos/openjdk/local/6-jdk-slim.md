@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:84a68c7b6e65a5ced34e7e1e2998a82c7897e4b82c2a76a788e6e298afdf4735`
-- Created: `2017-09-08T08:43:33.105817085Z`
-- Virtual Size: ~ 246.59 Mb  
+- Image ID: `sha256:22a6de3490ab0b9029f8e4aa4df0ff1b15f0e0e68a20bf83569c0f294bf993da`
+- Created: `2017-09-14T04:06:29.608107421Z`
+- Virtual Size: ~ 247.18 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -3185,18 +3185,29 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/tcp-wrappers/7.6.q-24/
 - https://sources.debian.net/src/tcp-wrappers/7.6.q-24/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `tiff3=3.9.6-11+deb7u7`
+### `dpkg` source package: `tiff3=3.9.6-11+deb7u8`
 
 Binary Packages:
 
-- `libtiff4:amd64=3.9.6-11+deb7u7`
+- `libtiff4:amd64=3.9.6-11+deb7u8`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris tiff3=3.9.6-11+deb7u8
+'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6-11+deb7u8.dsc' tiff3_3.9.6-11+deb7u8.dsc 1946 SHA256:b4d0584595c6d56914242188c22097e3032a5bdc964fa13be03775aaf19aef1a
+'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6.orig.tar.gz' tiff3_3.9.6.orig.tar.gz 1454196 SHA256:0fba119156236074343a14afbd3a47907e3a5952c9c86102305d4eeb06ad6833
+'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6-11+deb7u8.debian.tar.gz' tiff3_3.9.6-11+deb7u8.debian.tar.gz 48768 SHA256:e3991b5039e7e8c0833ac7f646b116278bb9196f7107ce85d4a98ced2e1e7092
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/tiff3/3.9.6-11+deb7u8/
+- https://sources.debian.net/src/tiff3/3.9.6-11+deb7u8/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ttf-dejavu=2.33-3`
 

@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3afe05459ce217f92f5a49f114d2138d35b088424e9b3d41a276d47337c7f967`
-- Created: `2017-09-08T08:53:12.838256131Z`
-- Virtual Size: ~ 332.49 Mb  
+- Image ID: `sha256:8a47da12a6605dfcdd8a22c80b2c10ebe68eb1529346b64d933a8cc5a8a0dc13`
+- Created: `2017-09-14T04:13:36.324290025Z`
+- Virtual Size: ~ 333.27 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -291,14 +291,14 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/bash/4.3-11+deb8u1/
 - https://sources.debian.net/src/bash/4.3-11+deb8u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `bind9=1:9.9.5.dfsg-9+deb8u13`
+### `dpkg` source package: `bind9=1:9.9.5.dfsg-9+deb8u14`
 
 Binary Packages:
 
-- `libdns-export100=1:9.9.5.dfsg-9+deb8u13`
-- `libirs-export91=1:9.9.5.dfsg-9+deb8u13`
-- `libisc-export95=1:9.9.5.dfsg-9+deb8u13`
-- `libisccfg-export90=1:9.9.5.dfsg-9+deb8u13`
+- `libdns-export100=1:9.9.5.dfsg-9+deb8u14`
+- `libirs-export91=1:9.9.5.dfsg-9+deb8u14`
+- `libisc-export95=1:9.9.5.dfsg-9+deb8u14`
+- `libisccfg-export90=1:9.9.5.dfsg-9+deb8u14`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -307,16 +307,16 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris bind9=1:9.9.5.dfsg-9+deb8u13
-'http://security.debian.org/pool/updates/main/b/bind9/bind9_9.9.5.dfsg-9+deb8u13.dsc' bind9_9.9.5.dfsg-9+deb8u13.dsc 3120 SHA256:a38e2a7cb786a3a6161feca3cf6d7e9f2f733f6cc3540e4b6a2b679ef0e8c01e
-'http://security.debian.org/pool/updates/main/b/bind9/bind9_9.9.5.dfsg.orig.tar.gz' bind9_9.9.5.dfsg.orig.tar.gz 7877309 SHA256:8108e01d5b501642d986beae7dfff9650b5bf54d87677275a8aaf4f0bcb008e6
-'http://security.debian.org/pool/updates/main/b/bind9/bind9_9.9.5.dfsg-9+deb8u13.diff.gz' bind9_9.9.5.dfsg-9+deb8u13.diff.gz 134768 SHA256:322344a5653a70da3496249d5c07735723a0cd44fac791a0d4958e06015393f0
+$ apt-get source -qq --print-uris bind9=1:9.9.5.dfsg-9+deb8u14
+'http://deb.debian.org/debian/pool/main/b/bind9/bind9_9.9.5.dfsg-9+deb8u14.dsc' bind9_9.9.5.dfsg-9+deb8u14.dsc 3595 SHA256:a11c0a3a8bd41a82fcf31495343925cd7261399ffbe9614804b1f8e906f57037
+'http://deb.debian.org/debian/pool/main/b/bind9/bind9_9.9.5.dfsg.orig.tar.gz' bind9_9.9.5.dfsg.orig.tar.gz 7877309 SHA256:8108e01d5b501642d986beae7dfff9650b5bf54d87677275a8aaf4f0bcb008e6
+'http://deb.debian.org/debian/pool/main/b/bind9/bind9_9.9.5.dfsg-9+deb8u14.diff.gz' bind9_9.9.5.dfsg-9+deb8u14.diff.gz 137337 SHA256:bb74d47b8297b4b35a6b22673c48be40d79186298d6efd174af54445faaed3d9
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/bind9/1:9.9.5.dfsg-9+deb8u13/
-- https://sources.debian.net/src/bind9/1:9.9.5.dfsg-9+deb8u13/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/bind9/1:9.9.5.dfsg-9+deb8u14/
+- https://sources.debian.net/src/bind9/1:9.9.5.dfsg-9+deb8u14/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `bzip2=1.0.6-7`
 
