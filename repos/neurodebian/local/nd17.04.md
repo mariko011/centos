@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9de8454ce31c202b11e67c30271a3da559a7271da17dbb260f19dc5326534e94`
-- Created: `2017-07-20T20:13:05.282987775Z`
-- Virtual Size: ~ 100.75 Mb  
+- Image ID: `sha256:82f624d9bd32b46051d4887b414cb2c8d72474ed5b82d0bf4154e09d3f08f721`
+- Created: `2017-09-14T00:22:29.583991805Z`
+- Virtual Size: ~ 102.83 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -51,12 +51,12 @@ $ apt-get source -qq --print-uris adduser=3.113+nmu3ubuntu5
 'http://archive.ubuntu.com/ubuntu/pool/main/a/adduser/adduser_3.113+nmu3ubuntu5.tar.gz' adduser_3.113+nmu3ubuntu5.tar.gz 362722 SHA256:03221563714d853cda454deabbd6eb87c41fbc87509e929828f8b670560f129f
 ```
 
-### `dpkg` source package: `apt=1.4`
+### `dpkg` source package: `apt=1.4.6~17.04.1`
 
 Binary Packages:
 
-- `apt=1.4`
-- `libapt-pkg5.0:amd64=1.4`
+- `apt=1.4.6~17.04.1`
+- `libapt-pkg5.0:amd64=1.4.6~17.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg5.0/copyright`)
 
@@ -66,9 +66,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apt=1.4
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.4.dsc' apt_1.4.dsc 2541 SHA256:ae69ca34d14062b676e005de2415de2236c0b38c03496675d86f5ee725a3fcaa
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.4.tar.xz' apt_1.4.tar.xz 2076104 SHA256:933cc255e7d053d93a08ccd0e027d762a8a621e4f2ec0977b0b326893da163fc
+$ apt-get source -qq --print-uris apt=1.4.6~17.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.4.6~17.04.1.dsc' apt_1.4.6~17.04.1.dsc 2581 SHA256:968a0b69e28dcabdaf592e74d7588f66f3b63fe33a641e037552a1a346607026
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.4.6~17.04.1.tar.xz' apt_1.4.6~17.04.1.tar.xz 2084592 SHA256:033527cfbf583576117e03f5c36e77746e09334e9cd38efb06117b45cc2b9626
 ```
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
@@ -506,11 +506,11 @@ $ apt-get source -qq --print-uris gnupg2=2.1.15-1ubuntu7
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.1.15-1ubuntu7.debian.tar.bz2' gnupg2_2.1.15-1ubuntu7.debian.tar.bz2 42251 SHA256:7dcf650aae0f890a60f4bb5fc2b39cbaee5633d6a10bcf3147ce78d8d76727f6
 ```
 
-### `dpkg` source package: `gnutls28=3.5.6-4ubuntu4.1`
+### `dpkg` source package: `gnutls28=3.5.6-4ubuntu4.2`
 
 Binary Packages:
 
-- `libgnutls30:amd64=3.5.6-4ubuntu4.1`
+- `libgnutls30:amd64=3.5.6-4ubuntu4.2`
 
 Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 
@@ -527,11 +527,11 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gnutls28=3.5.6-4ubuntu4.1
-'http://security.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.6-4ubuntu4.1.dsc' gnutls28_3.5.6-4ubuntu4.1.dsc 3271 SHA256:7fa6af7c75aa1a40416c6605ab1ba27c8cb68d54862d9f074e2cb2bd76501ef1
-'http://security.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.6.orig.tar.xz' gnutls28_3.5.6.orig.tar.xz 7087388 SHA256:6338b715bf31c758606ffa489c7f87ee1beab947114fbd2ffefd73170a8c6b9a
-'http://security.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.6.orig.tar.xz.asc' gnutls28_3.5.6.orig.tar.xz.asc 287 SHA256:64a5adbe0671d31f5c59b1244f4febb7b86b30e5669c64c6818d50538ab6d983
-'http://security.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.6-4ubuntu4.1.debian.tar.xz' gnutls28_3.5.6-4ubuntu4.1.debian.tar.xz 121092 SHA256:24aad1bd79f6d50cf5a89e102dd5e59ddc757bbabef568197cc257f224673a26
+$ apt-get source -qq --print-uris gnutls28=3.5.6-4ubuntu4.2
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.6-4ubuntu4.2.dsc' gnutls28_3.5.6-4ubuntu4.2.dsc 3271 SHA256:1810551d24a461cabba58ee3d7cb4564acc49a578ecb9db19d606bc645f895a3
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.6.orig.tar.xz' gnutls28_3.5.6.orig.tar.xz 7087388 SHA256:6338b715bf31c758606ffa489c7f87ee1beab947114fbd2ffefd73170a8c6b9a
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.6.orig.tar.xz.asc' gnutls28_3.5.6.orig.tar.xz.asc 287 SHA256:64a5adbe0671d31f5c59b1244f4febb7b86b30e5669c64c6818d50538ab6d983
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.6-4ubuntu4.2.debian.tar.xz' gnutls28_3.5.6-4ubuntu4.2.debian.tar.xz 121500 SHA256:0bcd18a8d1d3137b51989e810b720581f5dbb10e593a94e7acddf4bea19964a9
 ```
 
 ### `dpkg` source package: `grep=2.27-2`
@@ -718,15 +718,8 @@ Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 - `GPL-2`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libgcrypt20=1.7.6-1ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.7.6-1ubuntu0.1.dsc' libgcrypt20_1.7.6-1ubuntu0.1.dsc 3015 SHA256:17e75d3d71ff654209263e249d407e7076fdac6b3907f5f06757220438ab85b9
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.7.6.orig.tar.bz2' libgcrypt20_1.7.6.orig.tar.bz2 2897695 SHA256:626aafee84af9d2ce253d2c143dc1c0902dda045780cc241f39970fc60be05bc
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.7.6.orig.tar.bz2.asc' libgcrypt20_1.7.6.orig.tar.bz2.asc 310 SHA256:91ad5a0efafb0edc63c083f733ce476b2a0da663aea5118126aa63825d314e00
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.7.6-1ubuntu0.1.debian.tar.xz' libgcrypt20_1.7.6-1ubuntu0.1.debian.tar.xz 35136 SHA256:93ba6df55eae0a8687a7c381141caae4430e23df98a7e3d9450a9b137623b03a
-```
 
 ### `dpkg` source package: `libgpg-error=1.26-2`
 
