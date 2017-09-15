@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bde41be8de8c35ad1b156965a0506f6326129009729b07ab1bf210da335a93e7`
-- Created: `2017-07-20T17:16:26.648698576Z`
-- Virtual Size: ~ 93.08 Mb  
+- Image ID: `sha256:f83b3efab60e2246f32341e1eae310d082a3a39d54951d581ffde88f4fc1733a`
+- Created: `2017-09-13T23:26:35.415466892Z`
+- Virtual Size: ~ 94.71 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -51,12 +51,12 @@ $ apt-get source -qq --print-uris adduser=3.113+nmu3ubuntu5
 'http://archive.ubuntu.com/ubuntu/pool/main/a/adduser/adduser_3.113+nmu3ubuntu5.tar.gz' adduser_3.113+nmu3ubuntu5.tar.gz 362722 SHA256:03221563714d853cda454deabbd6eb87c41fbc87509e929828f8b670560f129f
 ```
 
-### `dpkg` source package: `apt=1.4`
+### `dpkg` source package: `apt=1.4.6~17.04.1`
 
 Binary Packages:
 
-- `apt=1.4`
-- `libapt-pkg5.0:amd64=1.4`
+- `apt=1.4.6~17.04.1`
+- `libapt-pkg5.0:amd64=1.4.6~17.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg5.0/copyright`)
 
@@ -66,9 +66,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apt=1.4
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.4.dsc' apt_1.4.dsc 2541 SHA256:ae69ca34d14062b676e005de2415de2236c0b38c03496675d86f5ee725a3fcaa
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.4.tar.xz' apt_1.4.tar.xz 2076104 SHA256:933cc255e7d053d93a08ccd0e027d762a8a621e4f2ec0977b0b326893da163fc
+$ apt-get source -qq --print-uris apt=1.4.6~17.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.4.6~17.04.1.dsc' apt_1.4.6~17.04.1.dsc 2581 SHA256:968a0b69e28dcabdaf592e74d7588f66f3b63fe33a641e037552a1a346607026
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.4.6~17.04.1.tar.xz' apt_1.4.6~17.04.1.tar.xz 2084592 SHA256:033527cfbf583576117e03f5c36e77746e09334e9cd38efb06117b45cc2b9626
 ```
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
@@ -599,15 +599,8 @@ Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 - `GPL-2`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libgcrypt20=1.7.6-1ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.7.6-1ubuntu0.1.dsc' libgcrypt20_1.7.6-1ubuntu0.1.dsc 3015 SHA256:17e75d3d71ff654209263e249d407e7076fdac6b3907f5f06757220438ab85b9
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.7.6.orig.tar.bz2' libgcrypt20_1.7.6.orig.tar.bz2 2897695 SHA256:626aafee84af9d2ce253d2c143dc1c0902dda045780cc241f39970fc60be05bc
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.7.6.orig.tar.bz2.asc' libgcrypt20_1.7.6.orig.tar.bz2.asc 310 SHA256:91ad5a0efafb0edc63c083f733ce476b2a0da663aea5118126aa63825d314e00
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.7.6-1ubuntu0.1.debian.tar.xz' libgcrypt20_1.7.6-1ubuntu0.1.debian.tar.xz 35136 SHA256:93ba6df55eae0a8687a7c381141caae4430e23df98a7e3d9450a9b137623b03a
-```
 
 ### `dpkg` source package: `libgpg-error=1.26-2`
 

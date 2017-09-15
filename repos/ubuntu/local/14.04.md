@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c69811d4e9931740c0a490f74fafb566bb520b945f6e62cab96f6faecd750b95`
-- Created: `2017-08-10T20:13:27.423849176Z`
+- Image ID: `sha256:dea1945146b96542e6e20642830c78df702d524a113605a906397db1db022703`
+- Created: `2017-09-13T23:26:23.127186526Z`
 - Virtual Size: ~ 188.00 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1567,18 +1567,24 @@ $ apt-get source -qq --print-uris lockfile-progs=0.1.17
 'http://archive.ubuntu.com/ubuntu/pool/main/l/lockfile-progs/lockfile-progs_0.1.17.tar.gz' lockfile-progs_0.1.17.tar.gz 14833 SHA256:03fb05d25499532f497775b1747b61fa6beebf12d3bcc951e125349ae166c511
 ```
 
-### `dpkg` source package: `logrotate=3.8.7-1ubuntu1.1`
+### `dpkg` source package: `logrotate=3.8.7-1ubuntu1.2`
 
 Binary Packages:
 
-- `logrotate=3.8.7-1ubuntu1.1`
+- `logrotate=3.8.7-1ubuntu1.2`
 
 Licenses: (parsed from: `/usr/share/doc/logrotate/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris logrotate=3.8.7-1ubuntu1.2
+'http://archive.ubuntu.com/ubuntu/pool/main/l/logrotate/logrotate_3.8.7-1ubuntu1.2.dsc' logrotate_3.8.7-1ubuntu1.2.dsc 1584 SHA256:c2a7a387c445ad37509b7ca2e294880bb1b2f421cded3d25cb834fa8c3c7bf0a
+'http://archive.ubuntu.com/ubuntu/pool/main/l/logrotate/logrotate_3.8.7.orig.tar.gz' logrotate_3.8.7.orig.tar.gz 58898 SHA256:f6ba691f40e30e640efa2752c1f9499a3f9738257660994de70a45fe00d12b64
+'http://archive.ubuntu.com/ubuntu/pool/main/l/logrotate/logrotate_3.8.7-1ubuntu1.2.debian.tar.xz' logrotate_3.8.7-1ubuntu1.2.debian.tar.xz 23476 SHA256:d878ce5b835026462a4dafcfc51eae8e429fa3f59f1c800d5098b1d4ffc73d95
+```
 
 ### `dpkg` source package: `lsb=4.1+Debian11ubuntu6.2`
 
