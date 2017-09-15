@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:89a7234735afbf557d03e19953f6ed053a2294267d5611e9f05b3ac0b3c41359`
-- Created: `2017-09-11T16:15:07.379525992Z`
-- Virtual Size: ~ 346.84 Mb  
+- Image ID: `sha256:e902a83b5c04f7b466c35c476b50aa15576ad56085b2086c6fe4f32237c9c86b`
+- Created: `2017-09-14T07:08:23.461650061Z`
+- Virtual Size: ~ 347.50 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -3269,18 +3269,29 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/tcp-wrappers/7.6.q-24/
 - https://sources.debian.net/src/tcp-wrappers/7.6.q-24/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `tiff3=3.9.6-11+deb7u7`
+### `dpkg` source package: `tiff3=3.9.6-11+deb7u8`
 
 Binary Packages:
 
-- `libtiff4:amd64=3.9.6-11+deb7u7`
+- `libtiff4:amd64=3.9.6-11+deb7u8`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris tiff3=3.9.6-11+deb7u8
+'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6-11+deb7u8.dsc' tiff3_3.9.6-11+deb7u8.dsc 1946 SHA256:b4d0584595c6d56914242188c22097e3032a5bdc964fa13be03775aaf19aef1a
+'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6.orig.tar.gz' tiff3_3.9.6.orig.tar.gz 1454196 SHA256:0fba119156236074343a14afbd3a47907e3a5952c9c86102305d4eeb06ad6833
+'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6-11+deb7u8.debian.tar.gz' tiff3_3.9.6-11+deb7u8.debian.tar.gz 48768 SHA256:e3991b5039e7e8c0833ac7f646b116278bb9196f7107ce85d4a98ced2e1e7092
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/tiff3/3.9.6-11+deb7u8/
+- https://sources.debian.net/src/tiff3/3.9.6-11+deb7u8/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ttf-dejavu=2.33-3`
 
