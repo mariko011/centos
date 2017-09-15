@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7d5208561c930fa9e059d0c0009150b2c4918bf534899e18c561448fad2192f5`
-- Created: `2017-09-08T07:23:07.500034081Z`
-- Virtual Size: ~ 533.62 Mb  
+- Image ID: `sha256:8ef374358812df5dae5d8f184bb687f6b672de7ca149dda524a1337641eb5420`
+- Created: `2017-09-14T23:52:01.56838261Z`
+- Virtual Size: ~ 535.21 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["python2"]`
@@ -4061,20 +4061,31 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/tcltk-defaults/8.5.0-2.1/
 - https://sources.debian.net/src/tcltk-defaults/8.5.0-2.1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `tiff3=3.9.6-11+deb7u7`
+### `dpkg` source package: `tiff3=3.9.6-11+deb7u8`
 
 Binary Packages:
 
-- `libtiff4:amd64=3.9.6-11+deb7u7`
-- `libtiff4-dev=3.9.6-11+deb7u7`
-- `libtiffxx0c2:amd64=3.9.6-11+deb7u7`
+- `libtiff4:amd64=3.9.6-11+deb7u8`
+- `libtiff4-dev=3.9.6-11+deb7u8`
+- `libtiffxx0c2:amd64=3.9.6-11+deb7u8`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris tiff3=3.9.6-11+deb7u8
+'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6-11+deb7u8.dsc' tiff3_3.9.6-11+deb7u8.dsc 1946 SHA256:b4d0584595c6d56914242188c22097e3032a5bdc964fa13be03775aaf19aef1a
+'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6.orig.tar.gz' tiff3_3.9.6.orig.tar.gz 1454196 SHA256:0fba119156236074343a14afbd3a47907e3a5952c9c86102305d4eeb06ad6833
+'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6-11+deb7u8.debian.tar.gz' tiff3_3.9.6-11+deb7u8.debian.tar.gz 48768 SHA256:e3991b5039e7e8c0833ac7f646b116278bb9196f7107ce85d4a98ced2e1e7092
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/tiff3/3.9.6-11+deb7u8/
+- https://sources.debian.net/src/tiff3/3.9.6-11+deb7u8/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `tk8.5=8.5.11-2`
 
