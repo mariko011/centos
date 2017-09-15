@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0f118a7695f9955159c08a63c35db6fb818ab0ce74cf6fe3a454e608efea7c72`
-- Created: `2017-09-11T15:37:12.056306621Z`
-- Virtual Size: ~ 810.07 Mb  
+- Image ID: `sha256:7b8e864de8646ec2988051eba476dd71cbecdc8d61011ca1f10c2649a87280f6`
+- Created: `2017-09-14T06:32:53.236046166Z`
+- Virtual Size: ~ 811.79 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/bin/tini","--","/usr/local/bin/jenkins.sh"]`
