@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:27bb52fa7066b4094b8913b1a31c6a790e771c022eba6780eb360b0ceb1282a1`
-- Created: `2017-08-10T21:17:54.139101941Z`
+- Image ID: `sha256:32961d35d5b70d811c15cdfc63c0d8b6306ef54b0d2d8d7dedd6c5de21608b00`
+- Created: `2017-09-13T13:47:38.267427298Z`
 - Virtual Size: ~ 199.28 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -98,9 +98,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris apparmor=2.10.95-0ubuntu2.6
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.6.dsc' apparmor_2.10.95-0ubuntu2.6.dsc 3252 SHA256:e04b41652174316c8d4117bdbff6dc5f2854efba18c6240a1120f0899949d5be
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95.orig.tar.gz' apparmor_2.10.95.orig.tar.gz 4502268 SHA256:3f659a599718f4a5e2a33140916715f574a5cb3634a6b9ed6d29f7b0617e4d1a
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.6.debian.tar.xz' apparmor_2.10.95-0ubuntu2.6.debian.tar.xz 96164 SHA256:9864f5ba71c069fa31e85af3a9fd771cef26e67a1ecc785b0c1464d33ae5bfb1
+'http://security.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.6.dsc' apparmor_2.10.95-0ubuntu2.6.dsc 3252 SHA256:e04b41652174316c8d4117bdbff6dc5f2854efba18c6240a1120f0899949d5be
+'http://security.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95.orig.tar.gz' apparmor_2.10.95.orig.tar.gz 4502268 SHA256:3f659a599718f4a5e2a33140916715f574a5cb3634a6b9ed6d29f7b0617e4d1a
+'http://security.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.6.debian.tar.xz' apparmor_2.10.95-0ubuntu2.6.debian.tar.xz 96164 SHA256:9864f5ba71c069fa31e85af3a9fd771cef26e67a1ecc785b0c1464d33ae5bfb1
 ```
 
 ### `dpkg` source package: `apt=1.2.24`
@@ -1132,18 +1132,24 @@ $ apt-get source -qq --print-uris linux-atm=1:2.5.1-1.5
 'http://archive.ubuntu.com/ubuntu/pool/main/l/linux-atm/linux-atm_2.5.1-1.5.debian.tar.gz' linux-atm_2.5.1-1.5.debian.tar.gz 10723 SHA256:9b2325859b3fd008b588a3897e713f52137abae08d1f5a44f5661f45a87f4d29
 ```
 
-### `dpkg` source package: `logrotate=3.8.7-2ubuntu2.16.04.1`
+### `dpkg` source package: `logrotate=3.8.7-2ubuntu2.16.04.2`
 
 Binary Packages:
 
-- `logrotate=3.8.7-2ubuntu2.16.04.1`
+- `logrotate=3.8.7-2ubuntu2.16.04.2`
 
 Licenses: (parsed from: `/usr/share/doc/logrotate/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris logrotate=3.8.7-2ubuntu2.16.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/l/logrotate/logrotate_3.8.7-2ubuntu2.16.04.2.dsc' logrotate_3.8.7-2ubuntu2.16.04.2.dsc 1608 SHA256:94c7b55210d8e7a59b3918f6530299049260badc573a8c5f13743a27fb68fefc
+'http://archive.ubuntu.com/ubuntu/pool/main/l/logrotate/logrotate_3.8.7.orig.tar.gz' logrotate_3.8.7.orig.tar.gz 58898 SHA256:f6ba691f40e30e640efa2752c1f9499a3f9738257660994de70a45fe00d12b64
+'http://archive.ubuntu.com/ubuntu/pool/main/l/logrotate/logrotate_3.8.7-2ubuntu2.16.04.2.debian.tar.xz' logrotate_3.8.7-2ubuntu2.16.04.2.debian.tar.xz 24132 SHA256:cb050069a37c50cfbe46673b7f0a2dc0b5b8364c8af5c5cc9ded2fe761753645
+```
 
 ### `dpkg` source package: `lsb=9.20160110ubuntu0.2`
 
