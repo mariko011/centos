@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a15e82d2bbddedcd0c0e99865889d40c2c0c698525df68c7323809597f9e4866`
-- Created: `2017-09-07T16:46:45.611359791Z`
+- Image ID: `sha256:7bdc3f933d97ff62ae084499721080b72e6b10250f003b95833d78efdb8e82d3`
+- Created: `2017-09-13T14:57:32.343039437Z`
 - Virtual Size: ~ 433.29 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -73,9 +73,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris apparmor=2.10.95-0ubuntu2.6
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.6.dsc' apparmor_2.10.95-0ubuntu2.6.dsc 3252 SHA256:e04b41652174316c8d4117bdbff6dc5f2854efba18c6240a1120f0899949d5be
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95.orig.tar.gz' apparmor_2.10.95.orig.tar.gz 4502268 SHA256:3f659a599718f4a5e2a33140916715f574a5cb3634a6b9ed6d29f7b0617e4d1a
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.6.debian.tar.xz' apparmor_2.10.95-0ubuntu2.6.debian.tar.xz 96164 SHA256:9864f5ba71c069fa31e85af3a9fd771cef26e67a1ecc785b0c1464d33ae5bfb1
+'http://security.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.6.dsc' apparmor_2.10.95-0ubuntu2.6.dsc 3252 SHA256:e04b41652174316c8d4117bdbff6dc5f2854efba18c6240a1120f0899949d5be
+'http://security.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95.orig.tar.gz' apparmor_2.10.95.orig.tar.gz 4502268 SHA256:3f659a599718f4a5e2a33140916715f574a5cb3634a6b9ed6d29f7b0617e4d1a
+'http://security.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.6.debian.tar.xz' apparmor_2.10.95-0ubuntu2.6.debian.tar.xz 96164 SHA256:9864f5ba71c069fa31e85af3a9fd771cef26e67a1ecc785b0c1464d33ae5bfb1
 ```
 
 ### `dpkg` source package: `apt=1.2.24`
@@ -352,11 +352,11 @@ $ apt-get source -qq --print-uris cryptsetup=2:1.6.6-5ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cryptsetup/cryptsetup_1.6.6-5ubuntu2.debian.tar.xz' cryptsetup_1.6.6-5ubuntu2.debian.tar.xz 91088 SHA256:11dd7ecd756bec8c19342f82cccc3634e620d506daa425716879456fabb49c76
 ```
 
-### `dpkg` source package: `cups=2.1.3-4`
+### `dpkg` source package: `cups=2.1.3-4ubuntu0.3`
 
 Binary Packages:
 
-- `libcups2:amd64=2.1.3-4`
+- `libcups2:amd64=2.1.3-4ubuntu0.3`
 
 Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 
@@ -370,10 +370,10 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris cups=2.1.3-4
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.1.3-4.dsc' cups_2.1.3-4.dsc 3433 SHA256:a8a85b1a815553fa025b6f7eabe1d3911273fe2f28fb2e852a632b455a16fba0
+$ apt-get source -qq --print-uris cups=2.1.3-4ubuntu0.3
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.1.3-4ubuntu0.3.dsc' cups_2.1.3-4ubuntu0.3.dsc 3391 SHA256:be76d80d3d02e78664619e3089de724f6e7ea9b28993fdcc9ba29654dd63a00a
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.1.3.orig.tar.bz2' cups_2.1.3.orig.tar.bz2 8832400 SHA256:36a70d43584aea2617da914b9331e23341c3501a8254c4d2eae9c11ec01fd4d3
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.1.3-4.debian.tar.xz' cups_2.1.3-4.debian.tar.xz 349252 SHA256:9e68b1eae835e3a928e5b22603d73d435d1154aee949e703461bb873ab8c1bbc
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.1.3-4ubuntu0.3.debian.tar.xz' cups_2.1.3-4ubuntu0.3.debian.tar.xz 347364 SHA256:6216fcfbe9b7b09ec11424b77444c220609b8425a6341bd860840800dc77a405
 ```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-14build1`
@@ -2254,12 +2254,12 @@ $ apt-get source -qq --print-uris perl=5.22.1-9
 'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.22.1-9.debian.tar.xz' perl_5.22.1-9.debian.tar.xz 148292 SHA256:3368488e1d56e9ff69556a2e75cc50858414147afcf5d72f91dbfd71fb5d9127
 ```
 
-### `dpkg` source package: `postgresql-9.5=9.5.7-0ubuntu0.16.04`
+### `dpkg` source package: `postgresql-9.5=9.5.8-0ubuntu0.16.04.1`
 
 Binary Packages:
 
-- `libpq5:amd64=9.5.7-0ubuntu0.16.04`
-- `postgresql-client-9.5=9.5.7-0ubuntu0.16.04`
+- `libpq5:amd64=9.5.8-0ubuntu0.16.04.1`
+- `postgresql-client-9.5=9.5.8-0ubuntu0.16.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postgresql-client-9.5/copyright`)
 
@@ -2270,8 +2270,14 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postg
 - `Tcl`
 - `almost exclusively BSD`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris postgresql-9.5=9.5.8-0ubuntu0.16.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.8-0ubuntu0.16.04.1.dsc' postgresql-9.5_9.5.8-0ubuntu0.16.04.1.dsc 3657 SHA256:c77a666392c99ff7468427fa0d6c3f0e67aa045e77dbf08e996efe6315c19902
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.8.orig.tar.bz2' postgresql-9.5_9.5.8.orig.tar.bz2 18670910 SHA256:ade57068f134f36710fa953e1ef79185abd96572f8098741413132f79ed37202
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.8-0ubuntu0.16.04.1.debian.tar.xz' postgresql-9.5_9.5.8-0ubuntu0.16.04.1.debian.tar.xz 22924 SHA256:34729c8b7fc9be9bc46c504ecaef29ea57e07f4b1a262e21bcbabfdf5d709825
+```
 
 ### `dpkg` source package: `postgresql-common=173`
 
