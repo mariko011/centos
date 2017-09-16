@@ -2,14 +2,15 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1184113466ff0525b7b77e81ab953e8d160b071ea01b6d7468c49766118e009a`
-- Created: `2017-09-12T21:57:09.784133608Z`
-- Virtual Size: ~ 134.19 Mb  
+- Image ID: `sha256:04ba25ea612793e78526f21f481ed6c56080483f65182715c05021aea7a6524a`
+- Created: `2017-09-13T21:30:23.263043132Z`
+- Virtual Size: ~ 134.22 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["swipl"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+  - `LANG=C.UTF-8`
 
 ## `dpkg` (`.deb`-based packages)
 
