@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:957c5a23c15b4bea78f3e1ca205f6b3520c862537d6f295396c3ba2b0199874e`
-- Created: `2017-09-12T20:52:30.027171618Z`
+- Image ID: `sha256:ac53d4ccb56ff76e32f430cd5216ab7a6cf92c566f8d986f0ee4dfdde2e33ddb`
+- Created: `2017-09-13T20:47:30.326978346Z`
 - Virtual Size: ~ 508.42 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -4016,20 +4016,31 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/tar/1.26+dfsg-0.1+deb7u1/
 - https://sources.debian.net/src/tar/1.26+dfsg-0.1+deb7u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `tiff3=3.9.6-11+deb7u7`
+### `dpkg` source package: `tiff3=3.9.6-11+deb7u8`
 
 Binary Packages:
 
-- `libtiff4:amd64=3.9.6-11+deb7u7`
-- `libtiff4-dev=3.9.6-11+deb7u7`
-- `libtiffxx0c2:amd64=3.9.6-11+deb7u7`
+- `libtiff4:amd64=3.9.6-11+deb7u8`
+- `libtiff4-dev=3.9.6-11+deb7u8`
+- `libtiffxx0c2:amd64=3.9.6-11+deb7u8`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris tiff3=3.9.6-11+deb7u8
+'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6-11+deb7u8.dsc' tiff3_3.9.6-11+deb7u8.dsc 1946 SHA256:b4d0584595c6d56914242188c22097e3032a5bdc964fa13be03775aaf19aef1a
+'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6.orig.tar.gz' tiff3_3.9.6.orig.tar.gz 1454196 SHA256:0fba119156236074343a14afbd3a47907e3a5952c9c86102305d4eeb06ad6833
+'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6-11+deb7u8.debian.tar.gz' tiff3_3.9.6-11+deb7u8.debian.tar.gz 48768 SHA256:e3991b5039e7e8c0833ac7f646b116278bb9196f7107ce85d4a98ced2e1e7092
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/tiff3/3.9.6-11+deb7u8/
+- https://sources.debian.net/src/tiff3/3.9.6-11+deb7u8/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ttf-dejavu=2.33-3`
 
