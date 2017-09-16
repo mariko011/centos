@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a53ca84cc65f1adf3b91853f4b0b7fd88d7676b7c27b81ce980e216212b5f687`
-- Created: `2017-09-12T17:53:33.680652191Z`
+- Image ID: `sha256:73bc098f8b0e16d0f4e7135b8cb904919128b14021ec1b4f32dd2accf0c2ad43`
+- Created: `2017-09-13T12:32:15.073189968Z`
 - Virtual Size: ~ 1.23 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1514,22 +1514,22 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/gnome-icon-theme/3.12.0-2/
 - https://sources.debian.net/src/gnome-icon-theme/3.12.0-2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `gnupg2=2.1.23-2`
+### `dpkg` source package: `gnupg2=2.2.0-3`
 
 Binary Packages:
 
-- `dirmngr=2.1.23-2`
-- `gnupg=2.1.23-2`
-- `gnupg-l10n=2.1.23-2`
-- `gnupg-utils=2.1.23-2`
-- `gnupg2=2.1.23-2`
-- `gpg=2.1.23-2`
-- `gpg-agent=2.1.23-2`
-- `gpg-wks-client=2.1.23-2`
-- `gpg-wks-server=2.1.23-2`
-- `gpgconf=2.1.23-2`
-- `gpgsm=2.1.23-2`
-- `gpgv=2.1.23-2`
+- `dirmngr=2.2.0-3`
+- `gnupg=2.2.0-3`
+- `gnupg-l10n=2.2.0-3`
+- `gnupg-utils=2.2.0-3`
+- `gnupg2=2.2.0-3`
+- `gpg=2.2.0-3`
+- `gpg-agent=2.2.0-3`
+- `gpg-wks-client=2.2.0-3`
+- `gpg-wks-server=2.2.0-3`
+- `gpgconf=2.2.0-3`
+- `gpgsm=2.2.0-3`
+- `gpgv=2.2.0-3`
 
 Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gnupg-l10n/copyright`, `/usr/share/doc/gnupg-utils/copyright`, `/usr/share/doc/gnupg2/copyright`, `/usr/share/doc/gpg/copyright`, `/usr/share/doc/gpg-agent/copyright`, `/usr/share/doc/gpg-wks-client/copyright`, `/usr/share/doc/gpg-wks-server/copyright`, `/usr/share/doc/gpgconf/copyright`, `/usr/share/doc/gpgsm/copyright`, `/usr/share/doc/gpgv/copyright`)
 
@@ -1548,17 +1548,17 @@ Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnup
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gnupg2=2.1.23-2
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.1.23-2.dsc' gnupg2_2.1.23-2.dsc 3704 SHA256:23f0ab6faca55f743db686ab13cdb3bbffa1a12599ded866b233bf6744a7f115
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.1.23.orig.tar.bz2' gnupg2_2.1.23.orig.tar.bz2 6526734 SHA256:a94476391595e9351f219188767a9d6ea128e83be5ed3226a7890f49aa2d0d77
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.1.23.orig.tar.bz2.asc' gnupg2_2.1.23.orig.tar.bz2.asc 310 SHA256:bcfc4377c90d22587740715a78f2359c1817be162b8836df312fa41ba68a614f
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.1.23-2.debian.tar.bz2' gnupg2_2.1.23-2.debian.tar.bz2 58168 SHA256:51cbd9974e4437b52b392508f27a36e7cef3ccdae4d1937bf2bba8476a92ed27
+$ apt-get source -qq --print-uris gnupg2=2.2.0-3
+'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.0-3.dsc' gnupg2_2.2.0-3.dsc 3694 SHA256:4507382a487b956475de33c89b88919a8d18b0493ece253f7030840fa1330c14
+'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.0.orig.tar.bz2' gnupg2_2.2.0.orig.tar.bz2 6532475 SHA256:d4514a0be0f7a1ff263193330019eb4b53c82f0f5e230af3c14df371271a45e6
+'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.0.orig.tar.bz2.asc' gnupg2_2.2.0.orig.tar.bz2.asc 310 SHA256:5b0987f858326090d3f6729de5b2032231318e5ff522be8a6fb8a4a98ade7f1a
+'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.0-3.debian.tar.bz2' gnupg2_2.2.0-3.debian.tar.bz2 62895 SHA256:c905bc2260aca57af70fc98e35ed7eb7d99d02e0568398af21f2ca06ded0f3d9
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/gnupg2/2.1.23-2/
-- https://sources.debian.net/src/gnupg2/2.1.23-2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/gnupg2/2.2.0-3/
+- https://sources.debian.net/src/gnupg2/2.2.0-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gnutls28=3.5.15-2`
 
@@ -2924,19 +2924,8 @@ Licenses: (parsed from: `/usr/share/doc/libsemanage-common/copyright`, `/usr/sha
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libsemanage=2.6-2
-'http://deb.debian.org/debian/pool/main/libs/libsemanage/libsemanage_2.6-2.dsc' libsemanage_2.6-2.dsc 2338 SHA256:2806bf3591dc7eb4c80d647a9e65df13d03657cfa6e049de1035165e0d8484d0
-'http://deb.debian.org/debian/pool/main/libs/libsemanage/libsemanage_2.6.orig.tar.gz' libsemanage_2.6.orig.tar.gz 155897 SHA256:4f81541047290b751f2ffb926fcd381c186f22db18d9fe671b0b4a6a54e8cfce
-'http://deb.debian.org/debian/pool/main/libs/libsemanage/libsemanage_2.6-2.debian.tar.xz' libsemanage_2.6-2.debian.tar.xz 17088 SHA256:3d1c4c5ea5d4f27a521b64ba3fc499c8b662257ffec773706501f466032db8cf
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libsemanage/2.6-2/
-- https://sources.debian.net/src/libsemanage/2.6-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libsepol=2.6-2`
 
@@ -3975,11 +3964,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/mpdecimal/2.4.2-1/
 - https://sources.debian.net/src/mpdecimal/2.4.2-1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `mpfr4=3.1.6~rc1-1`
+### `dpkg` source package: `mpfr4=3.1.6-1`
 
 Binary Packages:
 
-- `libmpfr4:amd64=3.1.6~rc1-1`
+- `libmpfr4:amd64=3.1.6-1`
 
 Licenses: (parsed from: `/usr/share/doc/libmpfr4/copyright`)
 
@@ -3989,16 +3978,16 @@ Licenses: (parsed from: `/usr/share/doc/libmpfr4/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris mpfr4=3.1.6~rc1-1
-'http://deb.debian.org/debian/pool/main/m/mpfr4/mpfr4_3.1.6~rc1-1.dsc' mpfr4_3.1.6~rc1-1.dsc 2032 SHA256:bb1f473853e4791df5d62b0f3f663c8617791d64f17b09692130b0203f021221
-'http://deb.debian.org/debian/pool/main/m/mpfr4/mpfr4_3.1.6~rc1.orig.tar.xz' mpfr4_3.1.6~rc1.orig.tar.xz 1134020 SHA256:df943ffd58a46280599d83ce7583d83829d23e9c38b5d37244eec310d6c9bcf6
-'http://deb.debian.org/debian/pool/main/m/mpfr4/mpfr4_3.1.6~rc1-1.debian.tar.xz' mpfr4_3.1.6~rc1-1.debian.tar.xz 9696 SHA256:41f529605b5de32e3e1cde9798d0c95460e4f80b347176c8114fe1a74d2335da
+$ apt-get source -qq --print-uris mpfr4=3.1.6-1
+'http://deb.debian.org/debian/pool/main/m/mpfr4/mpfr4_3.1.6-1.dsc' mpfr4_3.1.6-1.dsc 2004 SHA256:449a287fa9448826c591d87fe92b702e11e6e1cb7be88ef50f36dc7769c92c33
+'http://deb.debian.org/debian/pool/main/m/mpfr4/mpfr4_3.1.6.orig.tar.xz' mpfr4_3.1.6.orig.tar.xz 1133672 SHA256:7a62ac1a04408614fccdc506e4844b10cf0ad2c2b1677097f8f35d3a1344a950
+'http://deb.debian.org/debian/pool/main/m/mpfr4/mpfr4_3.1.6-1.debian.tar.xz' mpfr4_3.1.6-1.debian.tar.xz 9724 SHA256:1ce306a388ab312eb1c62f4c52dc468ae55d8205e124d19eb231ef7d42fc836a
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/mpfr4/3.1.6~rc1-1/
-- https://sources.debian.net/src/mpfr4/3.1.6~rc1-1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/mpfr4/3.1.6-1/
+- https://sources.debian.net/src/mpfr4/3.1.6-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `mysql-defaults=1.0.3`
 
@@ -4557,19 +4546,8 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.26/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris perl=5.26.0-5
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.26.0-5.dsc' perl_5.26.0-5.dsc 2369 SHA256:31d355b9a7a1cd49ea5cee2a1419c0030ca809a6bf9cfbfd996bac3426fc3b9d
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.26.0.orig.tar.xz' perl_5.26.0.orig.tar.xz 11961692 SHA256:9bf2e3d0d72aad77865c3bdbc20d3b576d769c5c255c4ceb30fdb9335266bf55
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.26.0-5.debian.tar.xz' perl_5.26.0-5.debian.tar.xz 159684 SHA256:52dd745532e04ceb30d1b24497e783c59f0c719b029d9395f2a7a7abc46db959
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/perl/5.26.0-5/
-- https://sources.debian.net/src/perl/5.26.0-5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `pinentry=1.0.0-2`
 

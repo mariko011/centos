@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:efb9fbcfbf1ef6eaf145ca41a3043c6eb577f8ea354f4def0be2a9d23fec8a6d`
-- Created: `2017-09-12T17:50:08.737685155Z`
-- Virtual Size: ~ 268.67 Mb  
+- Image ID: `sha256:bd6081802020e6adcad237ad1024af3ad0c29fc740b502f4c4812ac772b263eb`
+- Created: `2017-09-13T12:30:21.660832288Z`
+- Virtual Size: ~ 270.36 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -355,32 +355,15 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/coreutils/8.26-3/
 - https://sources.debian.net/src/coreutils/8.26-3/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `curl=7.55.0-1`
-
-Binary Packages:
-
-- `curl=7.55.0-1`
-- `libcurl3:amd64=7.55.0-1`
-
-Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`)
-
-- `BSD-3-Clause`
-- `BSD-4-Clause`
-- `ISC`
-- `curl`
-- `other`
-- `public-domain`
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
-
-
 ### `dpkg` source package: `curl=7.55.1-1`
 
 Binary Packages:
 
+- `curl=7.55.1-1`
+- `libcurl3:amd64=7.55.1-1`
 - `libcurl3-gnutls:amd64=7.55.1-1`
 
-Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`)
+Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`)
 
 - `BSD-3-Clause`
 - `BSD-4-Clause`
@@ -885,22 +868,22 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/gmp/2:6.1.2+dfsg-1/
 - https://sources.debian.net/src/gmp/2:6.1.2+dfsg-1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `gnupg2=2.1.23-2`
+### `dpkg` source package: `gnupg2=2.2.0-3`
 
 Binary Packages:
 
-- `dirmngr=2.1.23-2`
-- `gnupg=2.1.23-2`
-- `gnupg-l10n=2.1.23-2`
-- `gnupg-utils=2.1.23-2`
-- `gnupg2=2.1.23-2`
-- `gpg=2.1.23-2`
-- `gpg-agent=2.1.23-2`
-- `gpg-wks-client=2.1.23-2`
-- `gpg-wks-server=2.1.23-2`
-- `gpgconf=2.1.23-2`
-- `gpgsm=2.1.23-2`
-- `gpgv=2.1.23-2`
+- `dirmngr=2.2.0-3`
+- `gnupg=2.2.0-3`
+- `gnupg-l10n=2.2.0-3`
+- `gnupg-utils=2.2.0-3`
+- `gnupg2=2.2.0-3`
+- `gpg=2.2.0-3`
+- `gpg-agent=2.2.0-3`
+- `gpg-wks-client=2.2.0-3`
+- `gpg-wks-server=2.2.0-3`
+- `gpgconf=2.2.0-3`
+- `gpgsm=2.2.0-3`
+- `gpgv=2.2.0-3`
 
 Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gnupg-l10n/copyright`, `/usr/share/doc/gnupg-utils/copyright`, `/usr/share/doc/gnupg2/copyright`, `/usr/share/doc/gpg/copyright`, `/usr/share/doc/gpg-agent/copyright`, `/usr/share/doc/gpg-wks-client/copyright`, `/usr/share/doc/gpg-wks-server/copyright`, `/usr/share/doc/gpgconf/copyright`, `/usr/share/doc/gpgsm/copyright`, `/usr/share/doc/gpgv/copyright`)
 
@@ -919,17 +902,17 @@ Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnup
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gnupg2=2.1.23-2
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.1.23-2.dsc' gnupg2_2.1.23-2.dsc 3704 SHA256:23f0ab6faca55f743db686ab13cdb3bbffa1a12599ded866b233bf6744a7f115
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.1.23.orig.tar.bz2' gnupg2_2.1.23.orig.tar.bz2 6526734 SHA256:a94476391595e9351f219188767a9d6ea128e83be5ed3226a7890f49aa2d0d77
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.1.23.orig.tar.bz2.asc' gnupg2_2.1.23.orig.tar.bz2.asc 310 SHA256:bcfc4377c90d22587740715a78f2359c1817be162b8836df312fa41ba68a614f
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.1.23-2.debian.tar.bz2' gnupg2_2.1.23-2.debian.tar.bz2 58168 SHA256:51cbd9974e4437b52b392508f27a36e7cef3ccdae4d1937bf2bba8476a92ed27
+$ apt-get source -qq --print-uris gnupg2=2.2.0-3
+'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.0-3.dsc' gnupg2_2.2.0-3.dsc 3694 SHA256:4507382a487b956475de33c89b88919a8d18b0493ece253f7030840fa1330c14
+'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.0.orig.tar.bz2' gnupg2_2.2.0.orig.tar.bz2 6532475 SHA256:d4514a0be0f7a1ff263193330019eb4b53c82f0f5e230af3c14df371271a45e6
+'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.0.orig.tar.bz2.asc' gnupg2_2.2.0.orig.tar.bz2.asc 310 SHA256:5b0987f858326090d3f6729de5b2032231318e5ff522be8a6fb8a4a98ade7f1a
+'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.0-3.debian.tar.bz2' gnupg2_2.2.0-3.debian.tar.bz2 62895 SHA256:c905bc2260aca57af70fc98e35ed7eb7d99d02e0568398af21f2ca06ded0f3d9
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/gnupg2/2.1.23-2/
-- https://sources.debian.net/src/gnupg2/2.1.23-2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/gnupg2/2.2.0-3/
+- https://sources.debian.net/src/gnupg2/2.2.0-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gnutls28=3.5.15-2`
 
@@ -1537,19 +1520,8 @@ Licenses: (parsed from: `/usr/share/doc/libsemanage-common/copyright`, `/usr/sha
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libsemanage=2.6-2
-'http://deb.debian.org/debian/pool/main/libs/libsemanage/libsemanage_2.6-2.dsc' libsemanage_2.6-2.dsc 2338 SHA256:2806bf3591dc7eb4c80d647a9e65df13d03657cfa6e049de1035165e0d8484d0
-'http://deb.debian.org/debian/pool/main/libs/libsemanage/libsemanage_2.6.orig.tar.gz' libsemanage_2.6.orig.tar.gz 155897 SHA256:4f81541047290b751f2ffb926fcd381c186f22db18d9fe671b0b4a6a54e8cfce
-'http://deb.debian.org/debian/pool/main/libs/libsemanage/libsemanage_2.6-2.debian.tar.xz' libsemanage_2.6-2.debian.tar.xz 17088 SHA256:3d1c4c5ea5d4f27a521b64ba3fc499c8b662257ffec773706501f466032db8cf
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libsemanage/2.6-2/
-- https://sources.debian.net/src/libsemanage/2.6-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libsepol=2.6-2`
 
@@ -2201,19 +2173,8 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.26/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris perl=5.26.0-5
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.26.0-5.dsc' perl_5.26.0-5.dsc 2369 SHA256:31d355b9a7a1cd49ea5cee2a1419c0030ca809a6bf9cfbfd996bac3426fc3b9d
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.26.0.orig.tar.xz' perl_5.26.0.orig.tar.xz 11961692 SHA256:9bf2e3d0d72aad77865c3bdbc20d3b576d769c5c255c4ceb30fdb9335266bf55
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.26.0-5.debian.tar.xz' perl_5.26.0-5.debian.tar.xz 159684 SHA256:52dd745532e04ceb30d1b24497e783c59f0c719b029d9395f2a7a7abc46db959
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/perl/5.26.0-5/
-- https://sources.debian.net/src/perl/5.26.0-5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `pinentry=1.0.0-2`
 

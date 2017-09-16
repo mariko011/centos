@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e4054fcf23e63901d445d949e5668f353d8481504ed5c582aea97c1c0e5904f0`
-- Created: `2017-08-28T23:43:03.422728433Z`
-- Virtual Size: ~ 552.09 Mb  
+- Image ID: `sha256:403822063b63dd132e0aea6771958b363756b400f17511abb487813120d801b5`
+- Created: `2017-09-13T23:54:29.34061447Z`
+- Virtual Size: ~ 552.13 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -390,20 +390,26 @@ $ apt-get source -qq --print-uris bzip2=1.0.6-5
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.6-5.debian.tar.bz2' bzip2_1.0.6-5.debian.tar.bz2 60984 SHA256:182c087bbd173bfcc2b0f4210c790a03f3d49876f6250213332832319b7b5758
 ```
 
-### `dpkg` source package: `bzr=2.6.0+bzr6593-1ubuntu1.5`
+### `dpkg` source package: `bzr=2.6.0+bzr6593-1ubuntu1.6`
 
 Binary Packages:
 
-- `bzr=2.6.0+bzr6593-1ubuntu1.5`
-- `python-bzrlib=2.6.0+bzr6593-1ubuntu1.5`
+- `bzr=2.6.0+bzr6593-1ubuntu1.6`
+- `python-bzrlib=2.6.0+bzr6593-1ubuntu1.6`
 
 Licenses: (parsed from: `/usr/share/doc/bzr/copyright`, `/usr/share/doc/python-bzrlib/copyright`)
 
 - `GPL-2`
 - `GPL-2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris bzr=2.6.0+bzr6593-1ubuntu1.6
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bzr/bzr_2.6.0+bzr6593-1ubuntu1.6.dsc' bzr_2.6.0+bzr6593-1ubuntu1.6.dsc 2584 SHA256:787e6a9bf0a79e8478c0d85f1e08473b33dc98354d70d52d51822d1c36a719d9
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bzr/bzr_2.6.0+bzr6593.orig.tar.gz' bzr_2.6.0+bzr6593.orig.tar.gz 10943579 SHA256:e5e0688ee271078435a36d3742ff6ca22f9e8b17a5fca66488e07cdeb36a2ab7
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bzr/bzr_2.6.0+bzr6593-1ubuntu1.6.debian.tar.gz' bzr_2.6.0+bzr6593-1ubuntu1.6.debian.tar.gz 53590 SHA256:f1602c6db3ae5f5ba6443a7710c9050631b50a0aa22f1cecce4128f9135d24f6
+```
 
 ### `dpkg` source package: `ca-certificates=20160104ubuntu0.14.04.1`
 
@@ -1249,12 +1255,12 @@ $ apt-get source -qq --print-uris geoip=1.6.0-1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/geoip/geoip_1.6.0-1.debian.tar.gz' geoip_1.6.0-1.debian.tar.gz 16861 SHA256:47e5eaff3de44e6d1bef6923a257fe12127a577a22962fe52592540971af993d
 ```
 
-### `dpkg` source package: `git=1:1.9.1-1ubuntu0.5`
+### `dpkg` source package: `git=1:1.9.1-1ubuntu0.6`
 
 Binary Packages:
 
-- `git=1:1.9.1-1ubuntu0.5`
-- `git-man=1:1.9.1-1ubuntu0.5`
+- `git=1:1.9.1-1ubuntu0.6`
+- `git-man=1:1.9.1-1ubuntu0.6`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -1277,8 +1283,14 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris git=1:1.9.1-1ubuntu0.6
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_1.9.1-1ubuntu0.6.dsc' git_1.9.1-1ubuntu0.6.dsc 2794 SHA256:6adb9c38a2dc2ffccb6320d383d3b03756ee7368bc99c17ff4bb67d276ac3b25
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_1.9.1.orig.tar.xz' git_1.9.1.orig.tar.xz 3384080 SHA256:f962fbce8c049f94ece1d1845cba1528c13ff82de7cc8d23cddb3d0c93c3a77b
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_1.9.1-1ubuntu0.6.debian.tar.gz' git_1.9.1-1ubuntu0.6.debian.tar.gz 624161 SHA256:e33a2018c50ebe35aacbe53605708791534cfceeaab33e57898879181978b340
+```
 
 ### `dpkg` source package: `glib2.0=2.40.2-0ubuntu1`
 
@@ -2342,11 +2354,11 @@ $ apt-get source -qq --print-uris libgcrypt11=1.5.3-2ubuntu4.5
 'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt11/libgcrypt11_1.5.3-2ubuntu4.5.debian.tar.gz' libgcrypt11_1.5.3-2ubuntu4.5.debian.tar.gz 37205 SHA256:405b37e0ed162d1da5773ec55fa87df1977bc6b1e0b68913b533ac389b9882e0
 ```
 
-### `dpkg` source package: `libgd2=2.1.0-3ubuntu0.7`
+### `dpkg` source package: `libgd2=2.1.0-3ubuntu0.8`
 
 Binary Packages:
 
-- `libgd3:amd64=2.1.0-3ubuntu0.7`
+- `libgd3:amd64=2.1.0-3ubuntu0.8`
 
 Licenses: (parsed from: `/usr/share/doc/libgd3/copyright`)
 
@@ -2362,8 +2374,14 @@ Licenses: (parsed from: `/usr/share/doc/libgd3/copyright`)
 - `WEBP`
 - `XFIG`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris libgd2=2.1.0-3ubuntu0.8
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.1.0-3ubuntu0.8.dsc' libgd2_2.1.0-3ubuntu0.8.dsc 2410 SHA256:dc96155fa0564476285c2b55b46c173605919962d37d06f27de261a6f5d4af7b
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.1.0.orig.tar.xz' libgd2_2.1.0.orig.tar.xz 2004304 SHA256:fa6665dfe3d898019671293c84d77067a3d2ede50884dbcb6df899d508370e5a
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.1.0-3ubuntu0.8.debian.tar.gz' libgd2_2.1.0-3ubuntu0.8.debian.tar.gz 92845 SHA256:5da31f8dc984f0e1b16d174df4fbdf7a6747d394dd90906c3e37b43303f6c639
+```
 
 ### `dpkg` source package: `libgpg-error=1.12-0.2ubuntu1`
 
@@ -3453,18 +3471,24 @@ $ apt-get source -qq --print-uris lockfile-progs=0.1.17
 'http://archive.ubuntu.com/ubuntu/pool/main/l/lockfile-progs/lockfile-progs_0.1.17.tar.gz' lockfile-progs_0.1.17.tar.gz 14833 SHA256:03fb05d25499532f497775b1747b61fa6beebf12d3bcc951e125349ae166c511
 ```
 
-### `dpkg` source package: `logrotate=3.8.7-1ubuntu1.1`
+### `dpkg` source package: `logrotate=3.8.7-1ubuntu1.2`
 
 Binary Packages:
 
-- `logrotate=3.8.7-1ubuntu1.1`
+- `logrotate=3.8.7-1ubuntu1.2`
 
 Licenses: (parsed from: `/usr/share/doc/logrotate/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris logrotate=3.8.7-1ubuntu1.2
+'http://archive.ubuntu.com/ubuntu/pool/main/l/logrotate/logrotate_3.8.7-1ubuntu1.2.dsc' logrotate_3.8.7-1ubuntu1.2.dsc 1584 SHA256:c2a7a387c445ad37509b7ca2e294880bb1b2f421cded3d25cb834fa8c3c7bf0a
+'http://archive.ubuntu.com/ubuntu/pool/main/l/logrotate/logrotate_3.8.7.orig.tar.gz' logrotate_3.8.7.orig.tar.gz 58898 SHA256:f6ba691f40e30e640efa2752c1f9499a3f9738257660994de70a45fe00d12b64
+'http://archive.ubuntu.com/ubuntu/pool/main/l/logrotate/logrotate_3.8.7-1ubuntu1.2.debian.tar.xz' logrotate_3.8.7-1ubuntu1.2.debian.tar.xz 23476 SHA256:d878ce5b835026462a4dafcfc51eae8e429fa3f59f1c800d5098b1d4ffc73d95
+```
 
 ### `dpkg` source package: `lsb=4.1+Debian11ubuntu6.2`
 
@@ -4562,12 +4586,12 @@ $ apt-get source -qq --print-uris sqlite3=3.8.2-1ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.8.2-1ubuntu2.1.debian.tar.gz' sqlite3_3.8.2-1ubuntu2.1.debian.tar.gz 24599 SHA256:80bc6b9e2c4e5b064507b9a03df4f3f786c7246831ad5d5309cdc178ceacfb26
 ```
 
-### `dpkg` source package: `subversion=1.8.8-1ubuntu3.2`
+### `dpkg` source package: `subversion=1.8.8-1ubuntu3.3`
 
 Binary Packages:
 
-- `libsvn1:amd64=1.8.8-1ubuntu3.2`
-- `subversion=1.8.8-1ubuntu3.2`
+- `libsvn1:amd64=1.8.8-1ubuntu3.3`
+- `subversion=1.8.8-1ubuntu3.3`
 
 Licenses: (parsed from: `/usr/share/doc/libsvn1/copyright`, `/usr/share/doc/subversion/copyright`)
 
@@ -4575,8 +4599,14 @@ Licenses: (parsed from: `/usr/share/doc/libsvn1/copyright`, `/usr/share/doc/subv
 - `GPL-2`
 - `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris subversion=1.8.8-1ubuntu3.3
+'http://archive.ubuntu.com/ubuntu/pool/main/s/subversion/subversion_1.8.8-1ubuntu3.3.dsc' subversion_1.8.8-1ubuntu3.3.dsc 3067 SHA256:9627c2d6ac7363438a862e58feb60944defd76289cb50962f0c25c1ecd8b0abb
+'http://archive.ubuntu.com/ubuntu/pool/main/s/subversion/subversion_1.8.8.orig.tar.gz' subversion_1.8.8.orig.tar.gz 9233509 SHA256:a8c398d518cdeb1daa97d74447cc8a3150f43bbee4de0c71d4fe0c86df841bc2
+'http://archive.ubuntu.com/ubuntu/pool/main/s/subversion/subversion_1.8.8-1ubuntu3.3.diff.gz' subversion_1.8.8-1ubuntu3.3.diff.gz 306703 SHA256:6145f26ea7324a1f946bfd1e3bc6523a96ad1767a90087255a3ae8338b2f2896
+```
 
 ### `dpkg` source package: `sudo=1.8.9p5-1ubuntu1.4`
 

@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c1cad1fe178492523eec627ae34daa0daf384416bacba59d485ba2a544547b31`
-- Created: `2017-08-28T23:45:29.332772941Z`
-- Virtual Size: ~ 640.53 Mb  
+- Image ID: `sha256:1595604d95d3883b781f020660090786f52f51abbd48782152270fd626a01a87`
+- Created: `2017-09-13T12:46:40.906694166Z`
+- Virtual Size: ~ 641.09 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -392,20 +392,26 @@ $ apt-get source -qq --print-uris bzip2=1.0.6-8
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.6-8.debian.tar.bz2' bzip2_1.0.6-8.debian.tar.bz2 59494 SHA256:60fe87fd3942c385e5921786255a27daf9a962ebc7301a60dfd8d1e1a5c8ce78
 ```
 
-### `dpkg` source package: `bzr=2.7.0-2ubuntu3`
+### `dpkg` source package: `bzr=2.7.0-2ubuntu3.1`
 
 Binary Packages:
 
-- `bzr=2.7.0-2ubuntu3`
-- `python-bzrlib=2.7.0-2ubuntu3`
+- `bzr=2.7.0-2ubuntu3.1`
+- `python-bzrlib=2.7.0-2ubuntu3.1`
 
 Licenses: (parsed from: `/usr/share/doc/bzr/copyright`, `/usr/share/doc/python-bzrlib/copyright`)
 
 - `GPL-2`
 - `GPL-2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris bzr=2.7.0-2ubuntu3.1
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bzr/bzr_2.7.0-2ubuntu3.1.dsc' bzr_2.7.0-2ubuntu3.1.dsc 2669 SHA256:f0edd85fd866a668052d147f08d0a3b6cc31b872e56d8e8f999ac29a228e7877
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bzr/bzr_2.7.0.orig.tar.gz' bzr_2.7.0.orig.tar.gz 10944322 SHA256:5204369dc80e5738d7f4f5db5920e010cc5cb89097cf165462685ab70d9ab00b
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bzr/bzr_2.7.0-2ubuntu3.1.debian.tar.xz' bzr_2.7.0-2ubuntu3.1.debian.tar.xz 42660 SHA256:7336e2ffc7f1f3a36d76c781f96076df4f81d140904163bb57f64f2a802f965b
+```
 
 ### `dpkg` source package: `ca-certificates=20160104ubuntu1`
 
@@ -525,11 +531,11 @@ $ apt-get source -qq --print-uris cryptsetup=2:1.6.6-5ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cryptsetup/cryptsetup_1.6.6-5ubuntu2.debian.tar.xz' cryptsetup_1.6.6-5ubuntu2.debian.tar.xz 91088 SHA256:11dd7ecd756bec8c19342f82cccc3634e620d506daa425716879456fabb49c76
 ```
 
-### `dpkg` source package: `cups=2.1.3-4`
+### `dpkg` source package: `cups=2.1.3-4ubuntu0.3`
 
 Binary Packages:
 
-- `libcups2:amd64=2.1.3-4`
+- `libcups2:amd64=2.1.3-4ubuntu0.3`
 
 Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 
@@ -543,10 +549,10 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris cups=2.1.3-4
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.1.3-4.dsc' cups_2.1.3-4.dsc 3433 SHA256:a8a85b1a815553fa025b6f7eabe1d3911273fe2f28fb2e852a632b455a16fba0
+$ apt-get source -qq --print-uris cups=2.1.3-4ubuntu0.3
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.1.3-4ubuntu0.3.dsc' cups_2.1.3-4ubuntu0.3.dsc 3391 SHA256:be76d80d3d02e78664619e3089de724f6e7ea9b28993fdcc9ba29654dd63a00a
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.1.3.orig.tar.bz2' cups_2.1.3.orig.tar.bz2 8832400 SHA256:36a70d43584aea2617da914b9331e23341c3501a8254c4d2eae9c11ec01fd4d3
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.1.3-4.debian.tar.xz' cups_2.1.3-4.debian.tar.xz 349252 SHA256:9e68b1eae835e3a928e5b22603d73d435d1154aee949e703461bb873ab8c1bbc
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.1.3-4ubuntu0.3.debian.tar.xz' cups_2.1.3-4ubuntu0.3.debian.tar.xz 347364 SHA256:6216fcfbe9b7b09ec11424b77444c220609b8425a6341bd860840800dc77a405
 ```
 
 ### `dpkg` source package: `curl=7.47.0-1ubuntu2.2`
@@ -1151,12 +1157,12 @@ $ apt-get source -qq --print-uris geoip=1.6.9-1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/geoip/geoip_1.6.9-1.debian.tar.xz' geoip_1.6.9-1.debian.tar.xz 21976 SHA256:064fb6d010a30782cf0e1167a8d69f998ade5ae6af28e56d743cca2252534a20
 ```
 
-### `dpkg` source package: `git=1:2.7.4-0ubuntu1.1`
+### `dpkg` source package: `git=1:2.7.4-0ubuntu1.2`
 
 Binary Packages:
 
-- `git=1:2.7.4-0ubuntu1.1`
-- `git-man=1:2.7.4-0ubuntu1.1`
+- `git=1:2.7.4-0ubuntu1.2`
+- `git-man=1:2.7.4-0ubuntu1.2`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -1179,8 +1185,14 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris git=1:2.7.4-0ubuntu1.2
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.7.4-0ubuntu1.2.dsc' git_2.7.4-0ubuntu1.2.dsc 2883 SHA256:1a05b529d3a8cfc1258eb01008eaed4098e9df667579453912358f23c4f7d1c2
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.7.4.orig.tar.xz' git_2.7.4.orig.tar.xz 3909636 SHA256:dee574defbe05ec7356a0842ddbda51315926f2fa7e39c2539f2c3dcc52e457b
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.7.4-0ubuntu1.2.debian.tar.xz' git_2.7.4-0ubuntu1.2.debian.tar.xz 505420 SHA256:2fe8e4ff9cdad29adb13017765a1c3f6c8c9bfb043861abb0b9f3c396f0c2c54
+```
 
 ### `dpkg` source package: `glib2.0=2.48.2-0ubuntu1`
 
@@ -2040,11 +2052,11 @@ $ apt-get source -qq --print-uris libgcrypt20=1.6.5-2ubuntu0.3
 'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.6.5-2ubuntu0.3.debian.tar.xz' libgcrypt20_1.6.5-2ubuntu0.3.debian.tar.xz 36472 SHA256:3c29fc316e9067088cd6954a2b4c55e7955829362be9c10e09fa33b5e94f2f6c
 ```
 
-### `dpkg` source package: `libgd2=2.1.1-4ubuntu0.16.04.7`
+### `dpkg` source package: `libgd2=2.1.1-4ubuntu0.16.04.8`
 
 Binary Packages:
 
-- `libgd3:amd64=2.1.1-4ubuntu0.16.04.7`
+- `libgd3:amd64=2.1.1-4ubuntu0.16.04.8`
 
 Licenses: (parsed from: `/usr/share/doc/libgd3/copyright`)
 
@@ -2060,8 +2072,14 @@ Licenses: (parsed from: `/usr/share/doc/libgd3/copyright`)
 - `WEBP`
 - `XFIG`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris libgd2=2.1.1-4ubuntu0.16.04.8
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.1.1-4ubuntu0.16.04.8.dsc' libgd2_2.1.1-4ubuntu0.16.04.8.dsc 2332 SHA256:be59a38a63028dbd88c26c3b0ff4a4c3da51968efc2308467691c6275f0a4c19
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.1.1.orig.tar.gz' libgd2_2.1.1.orig.tar.gz 2033791 SHA256:a68c69d2fe3eaab9db63b1c4d391dd549c26d3b47bfba484d5ed2d433c55d4d8
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.1.1-4ubuntu0.16.04.8.debian.tar.xz' libgd2_2.1.1-4ubuntu0.16.04.8.debian.tar.xz 56956 SHA256:18057e5ee3dba1cc9411651064e0d5467f9ec831cf92b45a0395f1b9d94abc06
+```
 
 ### `dpkg` source package: `libgpg-error=1.21-2ubuntu1`
 
@@ -3784,12 +3802,12 @@ $ apt-get source -qq --print-uris sqlite3=3.11.0-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.11.0-1ubuntu1.debian.tar.xz' sqlite3_3.11.0-1ubuntu1.debian.tar.xz 16272 SHA256:b81ff12e88d62abc111b609b7aed3571bc1ce902d097058ad1d53fb18076098d
 ```
 
-### `dpkg` source package: `subversion=1.9.3-2ubuntu1`
+### `dpkg` source package: `subversion=1.9.3-2ubuntu1.1`
 
 Binary Packages:
 
-- `libsvn1:amd64=1.9.3-2ubuntu1`
-- `subversion=1.9.3-2ubuntu1`
+- `libsvn1:amd64=1.9.3-2ubuntu1.1`
+- `subversion=1.9.3-2ubuntu1.1`
 
 Licenses: (parsed from: `/usr/share/doc/libsvn1/copyright`, `/usr/share/doc/subversion/copyright`)
 
@@ -3800,10 +3818,10 @@ Licenses: (parsed from: `/usr/share/doc/libsvn1/copyright`, `/usr/share/doc/subv
 Source:
 
 ```console
-$ apt-get source -qq --print-uris subversion=1.9.3-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/subversion/subversion_1.9.3-2ubuntu1.dsc' subversion_1.9.3-2ubuntu1.dsc 3265 SHA256:c676811422fedd524608fc657df05fc9e0d9cdd6a1bd4f209f429476b832c2f0
+$ apt-get source -qq --print-uris subversion=1.9.3-2ubuntu1.1
+'http://archive.ubuntu.com/ubuntu/pool/main/s/subversion/subversion_1.9.3-2ubuntu1.1.dsc' subversion_1.9.3-2ubuntu1.1.dsc 3273 SHA256:eb2f59f1a17be16de1094ac1bf9e961eb65dbc55d20f22bdf0c26bf9e181b8ab
 'http://archive.ubuntu.com/ubuntu/pool/main/s/subversion/subversion_1.9.3.orig.tar.gz' subversion_1.9.3.orig.tar.gz 10600934 SHA256:74cd21d2f8a2a54e4dbd2389fe1605a19dbda8ba88ffc4bb0edc9a66e143cc93
-'http://archive.ubuntu.com/ubuntu/pool/main/s/subversion/subversion_1.9.3-2ubuntu1.diff.gz' subversion_1.9.3-2ubuntu1.diff.gz 2428266 SHA256:5abd3b260a156c1a15a5203a5097ad557740a3056577e48c0b66f4f74c145a69
+'http://archive.ubuntu.com/ubuntu/pool/main/s/subversion/subversion_1.9.3-2ubuntu1.1.diff.gz' subversion_1.9.3-2ubuntu1.1.diff.gz 2432375 SHA256:43ea0c91f14ddee823b7e661e3dec6eaa4eab55d0c9f69c22df4584e8392bbd6
 ```
 
 ### `dpkg` source package: `systemd=229-4ubuntu19`
