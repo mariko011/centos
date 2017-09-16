@@ -1,10 +1,10 @@
-# `solr:6.6.0-alpine`
+# `solr:6.6.1-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:719afae41619cad886935ee501c97b1c83b9d4865c51c423a3a0b5e99d9d2296`
-- Created: `2017-09-13T04:57:23.755382929Z`
-- Virtual Size: ~ 263.52 Mb  
+- Image ID: `sha256:527efeaad6362d3b9ca9d3ec10ce81928f8337058fa47079471ab845764a2602`
+- Created: `2017-09-15T20:00:05.288027197Z`
+- Virtual Size: ~ 263.70 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,7 +17,9 @@
   - `JAVA_ALPINE_VERSION=8.131.11-r2`
   - `SOLR_USER=solr`
   - `SOLR_UID=8983`
-  - `SOLR_VERSION=6.6.0`
-  - `SOLR_URL=https://archive.apache.org/dist/lucene/solr/6.6.0/solr-6.6.0.tgz`
-  - `SOLR_SHA256=6b1d1ed0b74aef320633b40a38a790477e00d75b56b9cdc578533235315ffa1e`
-  - `SOLR_KEYS=2085660D9C1FCCACC4A479A3BF160FF14992A24C`
+  - `SOLR_GROUP=solr`
+  - `SOLR_GID=8983`
+  - `SOLR_VERSION=6.6.1`
+  - `SOLR_URL=https://archive.apache.org/dist/lucene/solr/6.6.1/solr-6.6.1.tgz`
+  - `SOLR_SHA256=6572370027fc78f2d9fa2d694705868a4e86254278974d0b48eed41ea3feff1c`
+  - `SOLR_KEYS=D84A760EFB229AC156D5082ECDDE30C37F3DE8DA`
