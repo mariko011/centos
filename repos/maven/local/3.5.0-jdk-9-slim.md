@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8340d9411d343fd3d3383500d9a021dc1b7b8e45dd04404d598143e10f685607`
-- Created: `2017-09-13T01:48:08.526684927Z`
+- Image ID: `sha256:0001f722fb4447c53a213484d98844cc71ac7d5054129c3752407ff8326e4809`
+- Created: `2017-09-14T05:10:14.371291951Z`
 - Virtual Size: ~ 390.19 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -225,18 +225,8 @@ Licenses: (parsed from: `/usr/share/doc/base-passwd/copyright`)
 - `GPL-2`
 - `PD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris base-passwd=3.5.43
-'http://deb.debian.org/debian/pool/main/b/base-passwd/base-passwd_3.5.43.dsc' base-passwd_3.5.43.dsc 1749 SHA256:174a03d0df0d0f36cc186592e36472339632de094d60f9fcab370e1101a2430d
-'http://deb.debian.org/debian/pool/main/b/base-passwd/base-passwd_3.5.43.tar.xz' base-passwd_3.5.43.tar.xz 52596 SHA256:7768d10e2c08469cc81342e391e059f0426afdb6eb74a3102beef59ac45ab994
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/base-passwd/3.5.43/
-- https://sources.debian.net/src/base-passwd/3.5.43/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `bash=4.4-5`
 
@@ -397,19 +387,8 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 - `LGPL-2.0 with AOSDL exception`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris cups=2.2.4-6
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.4-6.dsc' cups_2.2.4-6.dsc 3158 SHA256:a2c9b3c8b2a448f2579126671183bad9180630554bc59b59ebaad70ada97f586
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.4.orig.tar.gz' cups_2.2.4.orig.tar.gz 9984475 SHA256:596d4db72651c335469ae5f37b0da72ac9f97d73e30838d787065f559dea98cc
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.4-6.debian.tar.xz' cups_2.2.4-6.debian.tar.xz 352024 SHA256:f8a8d0151983b5514f6433115b720022dd731fc78ad68594e2802d7d43cb32b8
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/cups/2.2.4-6/
-- https://sources.debian.net/src/cups/2.2.4-6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `curl=7.55.1-1`
 
@@ -2243,19 +2222,8 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris perl=5.26.0-7
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.26.0-7.dsc' perl_5.26.0-7.dsc 2316 SHA256:01dbadf24433a8ba13674d857e941e14a32c05dc589e69114594888a372449ea
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.26.0.orig.tar.xz' perl_5.26.0.orig.tar.xz 11961692 SHA256:9bf2e3d0d72aad77865c3bdbc20d3b576d769c5c255c4ceb30fdb9335266bf55
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.26.0-7.debian.tar.xz' perl_5.26.0-7.debian.tar.xz 159872 SHA256:e09a84b297609e49c793bbd9851d98438dff31f4ce4da0f43982f73cfca51018
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/perl/5.26.0-7/
-- https://sources.debian.net/src/perl/5.26.0-7/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `publicsuffix=20170809.0951-1`
 

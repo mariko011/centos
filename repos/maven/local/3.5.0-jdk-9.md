@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d5f21160453014fc784f22ef4584af2e41e8420d6cdbe67e12b976c083accf60`
-- Created: `2017-09-13T01:48:14.671815725Z`
-- Virtual Size: ~ 885.96 Mb  
+- Image ID: `sha256:6b270364ca158399dd250c6084e215fe66728cb135e2f7521b3593d8541d750d`
+- Created: `2017-09-14T05:09:48.025128723Z`
+- Virtual Size: ~ 892.37 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -88,19 +88,8 @@ Licenses: (parsed from: `/usr/share/doc/adwaita-icon-theme/copyright`)
 - `GPL-unspecified`
 - `LGPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris adwaita-icon-theme=3.25.91-1
-'http://deb.debian.org/debian/pool/main/a/adwaita-icon-theme/adwaita-icon-theme_3.25.91-1.dsc' adwaita-icon-theme_3.25.91-1.dsc 2262 SHA256:0a7b251741b27f489ac4c61942136e9ca9aa99e5f929e9ee43237f55de39f6bf
-'http://deb.debian.org/debian/pool/main/a/adwaita-icon-theme/adwaita-icon-theme_3.25.91.orig.tar.xz' adwaita-icon-theme_3.25.91.orig.tar.xz 20758856 SHA256:d64193c8f3f9e98bca0275cc384aa23d3ae493cd1a5228ac7d2016a2ee48f99b
-'http://deb.debian.org/debian/pool/main/a/adwaita-icon-theme/adwaita-icon-theme_3.25.91-1.debian.tar.xz' adwaita-icon-theme_3.25.91-1.debian.tar.xz 27560 SHA256:a621c2aeae0673fa3cda9ae47fe903d5b659b9063d2c146c8d45467a6a4b9354
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/adwaita-icon-theme/3.25.91-1/
-- https://sources.debian.net/src/adwaita-icon-theme/3.25.91-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `alsa-lib=1.1.3-5`
 
@@ -423,18 +412,8 @@ Licenses: (parsed from: `/usr/share/doc/base-passwd/copyright`)
 - `GPL-2`
 - `PD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris base-passwd=3.5.43
-'http://deb.debian.org/debian/pool/main/b/base-passwd/base-passwd_3.5.43.dsc' base-passwd_3.5.43.dsc 1749 SHA256:174a03d0df0d0f36cc186592e36472339632de094d60f9fcab370e1101a2430d
-'http://deb.debian.org/debian/pool/main/b/base-passwd/base-passwd_3.5.43.tar.xz' base-passwd_3.5.43.tar.xz 52596 SHA256:7768d10e2c08469cc81342e391e059f0426afdb6eb74a3102beef59ac45ab994
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/base-passwd/3.5.43/
-- https://sources.debian.net/src/base-passwd/3.5.43/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `bash=4.4-5`
 
@@ -648,19 +627,8 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 - `LGPL-2.0 with AOSDL exception`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris cups=2.2.4-6
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.4-6.dsc' cups_2.2.4-6.dsc 3158 SHA256:a2c9b3c8b2a448f2579126671183bad9180630554bc59b59ebaad70ada97f586
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.4.orig.tar.gz' cups_2.2.4.orig.tar.gz 9984475 SHA256:596d4db72651c335469ae5f37b0da72ac9f97d73e30838d787065f559dea98cc
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.4-6.debian.tar.xz' cups_2.2.4-6.debian.tar.xz 352024 SHA256:f8a8d0151983b5514f6433115b720022dd731fc78ad68594e2802d7d43cb32b8
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/cups/2.2.4-6/
-- https://sources.debian.net/src/cups/2.2.4-6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `curl=7.55.1-1`
 
@@ -1355,21 +1323,32 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/git/1:2.14.1-3/
 - https://sources.debian.net/src/git/1:2.14.1-3/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `glib-networking=2.53.90-1`
+### `dpkg` source package: `glib-networking=2.54.0-1`
 
 Binary Packages:
 
-- `glib-networking:amd64=2.53.90-1`
-- `glib-networking-common=2.53.90-1`
-- `glib-networking-services=2.53.90-1`
+- `glib-networking:amd64=2.54.0-1`
+- `glib-networking-common=2.54.0-1`
+- `glib-networking-services=2.54.0-1`
 
 Licenses: (parsed from: `/usr/share/doc/glib-networking/copyright`, `/usr/share/doc/glib-networking-common/copyright`, `/usr/share/doc/glib-networking-services/copyright`)
 
 - `LGPL-2+`
 - `LGPL-2.1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris glib-networking=2.54.0-1
+'http://deb.debian.org/debian/pool/main/g/glib-networking/glib-networking_2.54.0-1.dsc' glib-networking_2.54.0-1.dsc 2536 SHA256:33ef77260603b8030e8b7cf054dc3da70b74f24df2b366294b070ed793428583
+'http://deb.debian.org/debian/pool/main/g/glib-networking/glib-networking_2.54.0.orig.tar.xz' glib-networking_2.54.0.orig.tar.xz 439996 SHA256:5961b3779080b72314b373ff5d4790eb7e41b75ca91816ad7a81ef32922f7096
+'http://deb.debian.org/debian/pool/main/g/glib-networking/glib-networking_2.54.0-1.debian.tar.xz' glib-networking_2.54.0-1.debian.tar.xz 7332 SHA256:41188febcf77c91c748c15d75ec07807637a5525c1bc1444632b3ef49c7e96b4
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/glib-networking/2.54.0-1/
+- https://sources.debian.net/src/glib-networking/2.54.0-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `glib2.0=2.54.0-1`
 
@@ -1474,22 +1453,22 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/gnome-icon-theme/3.12.0-2/
 - https://sources.debian.net/src/gnome-icon-theme/3.12.0-2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `gnupg2=2.2.0-1`
+### `dpkg` source package: `gnupg2=2.2.0-3`
 
 Binary Packages:
 
-- `dirmngr=2.2.0-1`
-- `gnupg=2.2.0-1`
-- `gnupg-l10n=2.2.0-1`
-- `gnupg-utils=2.2.0-1`
-- `gnupg2=2.2.0-1`
-- `gpg=2.2.0-1`
-- `gpg-agent=2.2.0-1`
-- `gpg-wks-client=2.2.0-1`
-- `gpg-wks-server=2.2.0-1`
-- `gpgconf=2.2.0-1`
-- `gpgsm=2.2.0-1`
-- `gpgv=2.2.0-1`
+- `dirmngr=2.2.0-3`
+- `gnupg=2.2.0-3`
+- `gnupg-l10n=2.2.0-3`
+- `gnupg-utils=2.2.0-3`
+- `gnupg2=2.2.0-3`
+- `gpg=2.2.0-3`
+- `gpg-agent=2.2.0-3`
+- `gpg-wks-client=2.2.0-3`
+- `gpg-wks-server=2.2.0-3`
+- `gpgconf=2.2.0-3`
+- `gpgsm=2.2.0-3`
+- `gpgv=2.2.0-3`
 
 Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gnupg-l10n/copyright`, `/usr/share/doc/gnupg-utils/copyright`, `/usr/share/doc/gnupg2/copyright`, `/usr/share/doc/gpg/copyright`, `/usr/share/doc/gpg-agent/copyright`, `/usr/share/doc/gpg-wks-client/copyright`, `/usr/share/doc/gpg-wks-server/copyright`, `/usr/share/doc/gpgconf/copyright`, `/usr/share/doc/gpgsm/copyright`, `/usr/share/doc/gpgv/copyright`)
 
@@ -1505,8 +1484,20 @@ Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnup
 - `TinySCHEME`
 - `permissive`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris gnupg2=2.2.0-3
+'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.0-3.dsc' gnupg2_2.2.0-3.dsc 3694 SHA256:4507382a487b956475de33c89b88919a8d18b0493ece253f7030840fa1330c14
+'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.0.orig.tar.bz2' gnupg2_2.2.0.orig.tar.bz2 6532475 SHA256:d4514a0be0f7a1ff263193330019eb4b53c82f0f5e230af3c14df371271a45e6
+'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.0.orig.tar.bz2.asc' gnupg2_2.2.0.orig.tar.bz2.asc 310 SHA256:5b0987f858326090d3f6729de5b2032231318e5ff522be8a6fb8a4a98ade7f1a
+'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.0-3.debian.tar.bz2' gnupg2_2.2.0-3.debian.tar.bz2 62895 SHA256:c905bc2260aca57af70fc98e35ed7eb7d99d02e0568398af21f2ca06ded0f3d9
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/gnupg2/2.2.0-3/
+- https://sources.debian.net/src/gnupg2/2.2.0-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gnutls28=3.5.15-2`
 
@@ -1609,19 +1600,8 @@ Licenses: (parsed from: `/usr/share/doc/gsettings-desktop-schemas/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gsettings-desktop-schemas=3.24.0-2
-'http://deb.debian.org/debian/pool/main/g/gsettings-desktop-schemas/gsettings-desktop-schemas_3.24.0-2.dsc' gsettings-desktop-schemas_3.24.0-2.dsc 2217 SHA256:84ba3dcaee049b89b1cb3dcd64c71b3535004e1c49c6141d7cd13cde74f01d90
-'http://deb.debian.org/debian/pool/main/g/gsettings-desktop-schemas/gsettings-desktop-schemas_3.24.0.orig.tar.xz' gsettings-desktop-schemas_3.24.0.orig.tar.xz 620780 SHA256:f6573a3f661d22ff8a001cc2421d8647717f1c0e697e342d03c6102f29bbbb90
-'http://deb.debian.org/debian/pool/main/g/gsettings-desktop-schemas/gsettings-desktop-schemas_3.24.0-2.debian.tar.xz' gsettings-desktop-schemas_3.24.0-2.debian.tar.xz 4512 SHA256:0852b210bfe691da98d36b09c10d13ae62803f476a2449e3f4ecf3a4b41a40e0
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gsettings-desktop-schemas/3.24.0-2/
-- https://sources.debian.net/src/gsettings-desktop-schemas/3.24.0-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gtk+2.0=2.24.31-2`
 
@@ -1869,19 +1849,8 @@ Licenses: (parsed from: `/usr/share/doc/iproute2/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris iproute2=4.9.0-1
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.9.0-1.dsc' iproute2_4.9.0-1.dsc 2397 SHA256:30ead60a56ff3d3a2ba61079790292952d66b5a74b1685133b7a69ef14a82e2e
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.9.0.orig.tar.xz' iproute2_4.9.0.orig.tar.xz 613032 SHA256:c0f30f043f7767cc1b2cd2197b08d4e9b2392c95823fabe30bbce308c30116c4
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.9.0-1.debian.tar.xz' iproute2_4.9.0-1.debian.tar.xz 26752 SHA256:1926348d3c8c9e90f7826f5d409d5dc17a2cbf5d247206f1bc4b9a584c672be2
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/iproute2/4.9.0-1/
-- https://sources.debian.net/src/iproute2/4.9.0-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `java-atk-wrapper=0.33.3-13`
 
@@ -2650,19 +2619,30 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libproxy/0.4.14-3/
 - https://sources.debian.net/src/libproxy/0.4.14-3/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `libpsl=0.18.0-2`
+### `dpkg` source package: `libpsl=0.18.0-4`
 
 Binary Packages:
 
-- `libpsl5:amd64=0.18.0-2`
+- `libpsl5:amd64=0.18.0-4`
 
 Licenses: (parsed from: `/usr/share/doc/libpsl5/copyright`)
 
 - `Chromium`
 - `MIT`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris libpsl=0.18.0-4
+'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.18.0-4.dsc' libpsl_0.18.0-4.dsc 2190 SHA256:b62d3ad4472795fa8a81fcdc938aae7e8fa542835873c730463b280931abae75
+'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.18.0.orig.tar.gz' libpsl_0.18.0.orig.tar.gz 10330130 SHA256:29d76f49fe58f36a23d8eeb863e545767ab6ebbddb3356fc63af9728739edb3f
+'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.18.0-4.debian.tar.xz' libpsl_0.18.0-4.debian.tar.xz 9240 SHA256:d46f48e6b9ed75702b13d1e8d9c39c0898f8f76c956e430a71ee4fbecff09138
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/libpsl/0.18.0-4/
+- https://sources.debian.net/src/libpsl/0.18.0-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libpthread-stubs=0.3-4`
 
@@ -4251,14 +4231,14 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/pcsc-lite/1.8.22-1/
 - https://sources.debian.net/src/pcsc-lite/1.8.22-1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `perl=5.26.0-7`
+### `dpkg` source package: `perl=5.26.0-8`
 
 Binary Packages:
 
-- `libperl5.26:amd64=5.26.0-7`
-- `perl=5.26.0-7`
-- `perl-base=5.26.0-7`
-- `perl-modules-5.26=5.26.0-7`
+- `libperl5.26:amd64=5.26.0-8`
+- `perl=5.26.0-8`
+- `perl-base=5.26.0-8`
+- `perl-modules-5.26=5.26.0-8`
 
 Licenses: (parsed from: `/usr/share/doc/libperl5.26/copyright`, `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-base/copyright`, `/usr/share/doc/perl-modules-5.26/copyright`)
 
@@ -4293,16 +4273,16 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.26/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris perl=5.26.0-7
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.26.0-7.dsc' perl_5.26.0-7.dsc 2316 SHA256:01dbadf24433a8ba13674d857e941e14a32c05dc589e69114594888a372449ea
+$ apt-get source -qq --print-uris perl=5.26.0-8
+'http://deb.debian.org/debian/pool/main/p/perl/perl_5.26.0-8.dsc' perl_5.26.0-8.dsc 2369 SHA256:14287efb9981734a2e15c3508b91e1fd3ca1342e9fc6f49c37ed00acd757aece
 'http://deb.debian.org/debian/pool/main/p/perl/perl_5.26.0.orig.tar.xz' perl_5.26.0.orig.tar.xz 11961692 SHA256:9bf2e3d0d72aad77865c3bdbc20d3b576d769c5c255c4ceb30fdb9335266bf55
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.26.0-7.debian.tar.xz' perl_5.26.0-7.debian.tar.xz 159872 SHA256:e09a84b297609e49c793bbd9851d98438dff31f4ce4da0f43982f73cfca51018
+'http://deb.debian.org/debian/pool/main/p/perl/perl_5.26.0-8.debian.tar.xz' perl_5.26.0-8.debian.tar.xz 159896 SHA256:e6c7f4b6a5790f5909c007d3efe4dcb1f6c6b41da95e4f7ea74748bfb7e198d1
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/perl/5.26.0-7/
-- https://sources.debian.net/src/perl/5.26.0-7/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/perl/5.26.0-8/
+- https://sources.debian.net/src/perl/5.26.0-8/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `pinentry=1.0.0-2`
 
