@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:cb84d13bc41bf6dd2aeff5d9c222c718e0ff4c0028d6edb2b4a0fcb386ce78e7`
-- Created: `2017-09-12T23:30:43.751181745Z`
-- Virtual Size: ~ 58.81 Mb  
+- Image ID: `sha256:7a89904f40c78cd7f6c7abe7dfe32fd304d8218dd8fe744bc10afc6492126772`
+- Created: `2017-09-15T01:59:21.635325178Z`
+- Virtual Size: ~ 58.43 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint.sh","docker-php-entrypoint"]`
