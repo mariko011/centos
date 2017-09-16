@@ -1,9 +1,9 @@
-# `hola-mundo:latest`
+# `hola-mundo:linux`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f8d0d25f0b815a7faf6234a6c5f2c8722d7f9565f419d36d11fc526f10c0e8e5`
-- Created: `2017-06-14T19:32:03.586159151Z`
+- Image ID: `sha256:c16ea1adbce75a8f5d59319a71e9b104db652251179621701d0382fd0c9d7d23`
+- Created: `2017-09-13T13:51:17.552666589Z`
 - Virtual Size: ~ 1.86 Kb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
