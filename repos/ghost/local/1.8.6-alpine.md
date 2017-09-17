@@ -1,9 +1,9 @@
-# `ghost:1.8.5-alpine`
+# `ghost:1.8.6-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a325efabfaaff52696c869bba3ac9b036b9c9d7b27413fe33cdb6d9970e93c04`
-- Created: `2017-09-13T21:14:54.947594334Z`
+- Image ID: `sha256:2eaf068b3a984defe8a4116ee0bf3586c1581d025499a258fdfc8ae92d9cdfd6`
+- Created: `2017-09-15T00:41:53.904136981Z`
 - Virtual Size: ~ 435.31 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -16,6 +16,6 @@
   - `YARN_VERSION=0.27.5`
   - `NODE_ENV=production`
   - `GHOST_CLI_VERSION=1.1.1`
-  - `GHOST_VERSION=1.8.5`
+  - `GHOST_VERSION=1.8.6`
   - `GHOST_INSTALL=/var/lib/ghost`
   - `GHOST_CONTENT=/var/lib/ghost/content`
