@@ -1,7 +1,7 @@
 ## `fedora:rawhide`
 
 ```console
-$ docker pull fedora@sha256:2af9bb9662cb165681a99fb7e5360c8d9916131d22e15d7323b9b281d3628466
+$ docker pull fedora@sha256:0d50719f21a25bfe0c52e161b59f2db58ca85ffb154012b992870e498a5868bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -41,28 +41,28 @@ ADD file:f4cf1133bce090ed8a757785a7a4558831107d76b7b2ff3e393220ce8c31d9fd in /
 ### `fedora:rawhide` - linux; arm variant v7
 
 ```console
-$ docker pull fedora@sha256:df00c1cbf047db1f601b2a60bd394ae085be156b7cf14552e5c4fac6910c98a6
+$ docker pull fedora@sha256:c300256b94311b8751df8eaf3a764a17f58ad15bb15ef3abe1422275226252c5
 ```
 
--	Docker Version: 17.06.0-ce-rc5
+-	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **76.8 MB (76824877 bytes)**  
+-	Total Size: **76.6 MB (76638330 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8b13b05d22766d95c017716b593304b8f75d929d17547a51154f4fb1e15f0412`
+-	Image ID: `sha256:422b8a885cef36f1cca2a15b85e001346579130cfe36ebf1fd3ea18a82c63669`
 
 ```dockerfile
 # Thu, 29 Jun 2017 19:58:33 GMT
 MAINTAINER [Adam Miller <maxamillion@fedoraproject.org>] [Patrick Uiterwijk <patrick@puiterwijk.org>]
-# Thu, 20 Jul 2017 19:52:46 GMT
-ENV DISTTAG=f27container FGC=f27 FBR=f27
-# Thu, 20 Jul 2017 19:53:41 GMT
-ADD file:9c22000dda330f746ae2f63ed1081dd6a58226e2c20be9e4d8f6ee3fe2d46b3c in / 
+# Mon, 18 Sep 2017 22:33:18 GMT
+ENV DISTTAG=f28container FGC=f28 FBR=f28
+# Mon, 18 Sep 2017 22:34:42 GMT
+ADD file:ce3817ccd2fcbf788071ba4185d6a2c18f6e015a1eddf9a0fbc33000d9d38470 in / 
 ```
 
 -	Layers:
-	-	`sha256:6dbfe7c060edfa7f8cb2a75b6f155edfd62cb0041b7db241c7191e42f9a0a9b1`  
-		Last Modified: Tue, 11 Jul 2017 21:17:18 GMT  
-		Size: 76.8 MB (76824877 bytes)  
+	-	`sha256:954bae51a277e6d89030909c5d79d7accff09a793a7cbb0c58c921fa57288c90`  
+		Last Modified: Mon, 18 Sep 2017 22:37:45 GMT  
+		Size: 76.6 MB (76638330 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `fedora:rawhide` - linux; arm64 variant v8

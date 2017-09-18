@@ -1,7 +1,7 @@
 ## `erlang:17-slim`
 
 ```console
-$ docker pull erlang@sha256:90653380fc436c906ff946d857bc6e5dd265f6ffa3c99c9f97a6e621cec3ea7c
+$ docker pull erlang@sha256:d457de45aa75af62b2fe89af3ac2edb33c5b3ee21add02b4e3d5351156e66225
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -87,14 +87,14 @@ CMD ["erl"]
 ### `erlang:17-slim` - linux; 386
 
 ```console
-$ docker pull erlang@sha256:552cd1b9b6fc6de1c05c153eb6c4738d137cf103384e4e460f749622326e66bb
+$ docker pull erlang@sha256:50dd8ee79d5bcb9dc8e02bf8fa7695f617577def26fb7e8face7c3950e1e4e68
 ```
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **121.2 MB (121211857 bytes)**  
+-	Total Size: **121.2 MB (121211902 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ed020d37b06bcac312070da21ad646809a57b0552a56541b08ec4efefe82bf42`
+-	Image ID: `sha256:24fdfc185514469d8e51575b1c757773ba0ad131d417e8fa5d3d5ccb3cbaaa58`
 -	Default Command: `["erl"]`
 
 ```dockerfile
@@ -104,9 +104,9 @@ ADD file:e02edf114d3ee3a58b6c6729d41261abc361f69333d3b08c7c730572fd6c1874 in /
 CMD ["bash"]
 # Fri, 08 Sep 2017 14:42:50 GMT
 ENV OTP_VERSION=17.5.6.9
-# Fri, 08 Sep 2017 14:52:41 GMT
-RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-$OTP_VERSION.tar.gz" 	&& OTP_DOWNLOAD_SHA256="387c612d1bc5ffbc68db7d05c3655804b310facc8bad921a3e0f3391970bc522" 	&& runtimeDeps=' 		libodbc1 		libssl1.0.0 	' 	&& buildDeps=' 		curl 		ca-certificates 		autoconf 		dpkg-dev 		gcc 		make 		libncurses-dev 		unixodbc-dev 		libssl-dev 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256 otp-src.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/otp-src 	&& tar -xzf otp-src.tar.gz -C /usr/src/otp-src --strip-components=1 	&& rm otp-src.tar.gz 	&& cd /usr/src/otp-src 	&& ./otp_build autoconf 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure --build="$gnuArch" 	&& make -j$(nproc) 	&& make install 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/otp-src /var/lib/apt/lists/*
-# Fri, 08 Sep 2017 14:53:40 GMT
+# Mon, 18 Sep 2017 21:58:30 GMT
+RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-$OTP_VERSION.tar.gz" 	&& OTP_DOWNLOAD_SHA256="70d9d0a08969f4c51c78088f8c6b7da22a4806b1fd258a9fff1408f56553f378" 	&& runtimeDeps=' 		libodbc1 		libssl1.0.0 	' 	&& buildDeps=' 		curl 		ca-certificates 		autoconf 		dpkg-dev 		gcc 		make 		libncurses-dev 		unixodbc-dev 		libssl-dev 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256 otp-src.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/otp-src 	&& tar -xzf otp-src.tar.gz -C /usr/src/otp-src --strip-components=1 	&& rm otp-src.tar.gz 	&& cd /usr/src/otp-src 	&& ./otp_build autoconf 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure --build="$gnuArch" 	&& make -j$(nproc) 	&& make install 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/otp-src /var/lib/apt/lists/*
+# Mon, 18 Sep 2017 21:58:30 GMT
 CMD ["erl"]
 ```
 
@@ -115,9 +115,9 @@ CMD ["erl"]
 		Last Modified: Fri, 08 Sep 2017 13:22:33 GMT  
 		Size: 52.8 MB (52773126 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:490cec50a1dd69b125dc578c3df90915aa8cfbe7a67f119eff3d03e5702caab2`  
-		Last Modified: Fri, 08 Sep 2017 14:58:44 GMT  
-		Size: 68.4 MB (68438731 bytes)  
+	-	`sha256:a70b43f283580e259dd783a6c1702bdc7234437791f83214feb5a60933949e42`  
+		Last Modified: Mon, 18 Sep 2017 22:06:29 GMT  
+		Size: 68.4 MB (68438776 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:17-slim` - linux; ppc64le
