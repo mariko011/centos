@@ -1,10 +1,10 @@
-# `python:2.7.13-jessie`
+# `python:2.7.14-jessie`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ac9424878b8f933c128f13db1ae04f8861e1f2bd2c63c91afa99e1fb48ea6320`
-- Created: `2017-09-14T23:45:11.176117917Z`
-- Virtual Size: ~ 679.03 Mb  
+- Image ID: `sha256:26bddf7dbe1b074069009c2f4812104c9f3e07359172f454e776682effce859a`
+- Created: `2017-09-18T20:48:36.39087732Z`
+- Virtual Size: ~ 679.37 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["python2"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF`
-  - `PYTHON_VERSION=2.7.13`
+  - `PYTHON_VERSION=2.7.14`
   - `PYTHON_PIP_VERSION=9.0.1`
 
 ## `dpkg` (`.deb`-based packages)

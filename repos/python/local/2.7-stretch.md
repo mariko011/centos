@@ -1,10 +1,10 @@
-# `python:2.7.13-stretch`
+# `python:2.7.14-stretch`
 
 ## Docker Metadata
 
-- Image ID: `sha256:bba6e7af776e1a81c5995fb902ccdb3969093a69b8d556f8a4049d997f769a95`
-- Created: `2017-09-14T23:42:07.993301329Z`
-- Virtual Size: ~ 898.42 Mb  
+- Image ID: `sha256:9836bd4b596e8d71c5780f207b91dfd8e978383cdb9a4f1f161e6d3751ef9ebc`
+- Created: `2017-09-18T20:46:32.907383696Z`
+- Virtual Size: ~ 898.71 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["python2"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF`
-  - `PYTHON_VERSION=2.7.13`
+  - `PYTHON_VERSION=2.7.14`
   - `PYTHON_PIP_VERSION=9.0.1`
 
 ## `dpkg` (`.deb`-based packages)

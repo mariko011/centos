@@ -1,10 +1,10 @@
-# `python:2.7.13-slim`
+# `python:2.7.14-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:426d65ab9a72926651b4084aea8c59ba53565e792a8e4097d32c7eee4d6922bc`
-- Created: `2017-09-14T23:49:44.171878819Z`
-- Virtual Size: ~ 183.26 Mb  
+- Image ID: `sha256:8b88f06b72d7a6a2c44f0f33cdb3dc4a6b0d48ff9c64a2cc194e271d64e1a21e`
+- Created: `2017-09-18T20:51:26.385714485Z`
+- Virtual Size: ~ 183.60 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["python2"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF`
-  - `PYTHON_VERSION=2.7.13`
+  - `PYTHON_VERSION=2.7.14`
   - `PYTHON_PIP_VERSION=9.0.1`
 
 ## `dpkg` (`.deb`-based packages)
