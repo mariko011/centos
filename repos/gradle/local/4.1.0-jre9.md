@@ -1085,19 +1085,8 @@ Licenses: (parsed from: `/usr/share/doc/gcc-6-base/copyright`)
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-6=6.4.0-5
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.4.0-5.dsc' gcc-6_6.4.0-5.dsc 19534 SHA256:c9018e5c78d34172d3aa4750cfe2db7b1dc7bfadb7660a631445d0c268473801
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.4.0.orig.tar.gz' gcc-6_6.4.0.orig.tar.gz 81632257 SHA256:13220c723ddb7a69ff5690070b245886ac99afe5a31ee106ac36d6f013234a67
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.4.0-5.diff.gz' gcc-6_6.4.0-5.diff.gz 1679758 SHA256:f6636a86782e7a27975aab68b55bfa088906f36bfa1d10ec69245fb27685501b
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gcc-6/6.4.0-5/
-- https://sources.debian.net/src/gcc-6/6.4.0-5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gcc-7=7.2.0-4`
 
@@ -1116,19 +1105,8 @@ Licenses: (parsed from: `/usr/share/doc/gcc-7-base/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-7=7.2.0-4
-'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.2.0-4.dsc' gcc-7_7.2.0-4.dsc 26355 SHA256:9bfe017cf947d10e59d568cc2d399acb83b357cde443f54981fd24f15156de56
-'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.2.0.orig.tar.gz' gcc-7_7.2.0.orig.tar.gz 70028185 SHA256:a1050ca96c2b931ad82da3caf2868cd68b95a62151ac9af53fbe9b69b6e9b651
-'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.2.0-4.diff.gz' gcc-7_7.2.0-4.diff.gz 2987777 SHA256:d7bed60304980cd5a48a9dee41c6b740e986cb2b285048e8a13bd12a9371ffe3
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gcc-7/7.2.0-4/
-- https://sources.debian.net/src/gcc-7/7.2.0-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gdk-pixbuf=2.36.5-4`
 
@@ -3078,19 +3056,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libxkbcommon=0.7.1-1
-'http://deb.debian.org/debian/pool/main/libx/libxkbcommon/libxkbcommon_0.7.1-1.dsc' libxkbcommon_0.7.1-1.dsc 2368 SHA256:8a8fe80e34e9df75b8e47ee92e60737e569a377f5407ed93c3652136bb30edec
-'http://deb.debian.org/debian/pool/main/libx/libxkbcommon/libxkbcommon_0.7.1.orig.tar.gz' libxkbcommon_0.7.1.orig.tar.gz 977667 SHA256:db941b54113b24003dadbf671505194d67e513b54006df9350b8697442af0ad9
-'http://deb.debian.org/debian/pool/main/libx/libxkbcommon/libxkbcommon_0.7.1-1.diff.gz' libxkbcommon_0.7.1-1.diff.gz 31970 SHA256:b649208b2c9e15de3a8c66d89eb570861e6b9776a1145e55944b34309ec28636
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libxkbcommon/0.7.1-1/
-- https://sources.debian.net/src/libxkbcommon/0.7.1-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libxml2=2.9.4+dfsg1-4`
 
@@ -3514,19 +3481,8 @@ Licenses: (parsed from: `/usr/share/doc/libegl-mesa0/copyright`, `/usr/share/doc
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris mesa=17.2.0-2
-'http://deb.debian.org/debian/pool/main/m/mesa/mesa_17.2.0-2.dsc' mesa_17.2.0-2.dsc 4869 SHA256:a34c32139de59d446bf5ea7e4a676e02430d6bc87f4b30ddf3bb86c2b33c70c3
-'http://deb.debian.org/debian/pool/main/m/mesa/mesa_17.2.0.orig.tar.gz' mesa_17.2.0.orig.tar.gz 17717892 SHA256:9484ad96b4bb6cda5bbf1aef52dfa35183dc21aa6258a2991c245996c2fdaf85
-'http://deb.debian.org/debian/pool/main/m/mesa/mesa_17.2.0-2.diff.gz' mesa_17.2.0-2.diff.gz 117247 SHA256:c4dee213c7efe971722c041755c48e212e5629906883d76f8ace4b8c33c447ea
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/mesa/17.2.0-2/
-- https://sources.debian.net/src/mesa/17.2.0-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ncurses=6.0+20170902-1`
 
