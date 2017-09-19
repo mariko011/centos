@@ -10,6 +10,7 @@
 -	[`vault:0.8.0`](#vault080)
 -	[`vault:0.8.1`](#vault081)
 -	[`vault:0.8.2`](#vault082)
+-	[`vault:0.8.3`](#vault083)
 -	[`vault:latest`](#vaultlatest)
 
 ## `vault:0.6.4`
@@ -627,6 +628,10 @@ CMD ["server" "-dev"]
 		Last Modified: Wed, 13 Sep 2017 16:35:13 GMT  
 		Size: 1.8 KB (1776 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `vault:0.8.3`
+
+**does not exist** (yet?)
 
 ## `vault:latest`
 
