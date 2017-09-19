@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4c00384b1f174c3b98345a0763a102cb4b54dc043470e4bb0f5c5ea4791c0d16`
-- Created: `2017-09-14T01:02:49.487380226Z`
+- Image ID: `sha256:82bb720ea03434887f389fe9301292b550fcf87289d61fa048a0e73a8042b451`
+- Created: `2017-09-19T00:32:03.536145404Z`
 - Virtual Size: ~ 1.18 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -85,11 +85,11 @@ $ apt-get source -qq --print-uris adwaita-icon-theme=3.18.0-2ubuntu3.1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/adwaita-icon-theme/adwaita-icon-theme_3.18.0-2ubuntu3.1.debian.tar.xz' adwaita-icon-theme_3.18.0-2ubuntu3.1.debian.tar.xz 30116 SHA256:58dcb7954dce99a78a57075de51407690fa021a56720235ec42da6802c766859
 ```
 
-### `dpkg` source package: `apparmor=2.10.95-0ubuntu2.6`
+### `dpkg` source package: `apparmor=2.10.95-0ubuntu2.7`
 
 Binary Packages:
 
-- `libapparmor1:amd64=2.10.95-0ubuntu2.6`
+- `libapparmor1:amd64=2.10.95-0ubuntu2.7`
 
 Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 
@@ -102,10 +102,10 @@ Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apparmor=2.10.95-0ubuntu2.6
-'http://security.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.6.dsc' apparmor_2.10.95-0ubuntu2.6.dsc 3252 SHA256:e04b41652174316c8d4117bdbff6dc5f2854efba18c6240a1120f0899949d5be
-'http://security.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95.orig.tar.gz' apparmor_2.10.95.orig.tar.gz 4502268 SHA256:3f659a599718f4a5e2a33140916715f574a5cb3634a6b9ed6d29f7b0617e4d1a
-'http://security.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.6.debian.tar.xz' apparmor_2.10.95-0ubuntu2.6.debian.tar.xz 96164 SHA256:9864f5ba71c069fa31e85af3a9fd771cef26e67a1ecc785b0c1464d33ae5bfb1
+$ apt-get source -qq --print-uris apparmor=2.10.95-0ubuntu2.7
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.7.dsc' apparmor_2.10.95-0ubuntu2.7.dsc 3270 SHA256:543c8ace2b6f643b5c610aee11e458c25c9fd9ea9d03828825e2256106bd0209
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95.orig.tar.gz' apparmor_2.10.95.orig.tar.gz 4502268 SHA256:3f659a599718f4a5e2a33140916715f574a5cb3634a6b9ed6d29f7b0617e4d1a
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.7.debian.tar.xz' apparmor_2.10.95-0ubuntu2.7.debian.tar.xz 96024 SHA256:313c8f2dfe4708ab826a9d863b6cb14378c43f111bfc59c8aa9700963ed0c596
 ```
 
 ### `dpkg` source package: `apr-util=1.5.4-1build1`
@@ -781,11 +781,11 @@ $ apt-get source -qq --print-uris coreutils=8.25-2ubuntu3~16.04
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.25-2ubuntu3~16.04.debian.tar.xz' coreutils_8.25-2ubuntu3~16.04.debian.tar.xz 28336 SHA256:f6fd913f2b0b08df9109308dfd1202b06060e130b8e6bf94daad32e86a3937cf
 ```
 
-### `dpkg` source package: `cryptsetup=2:1.6.6-5ubuntu2`
+### `dpkg` source package: `cryptsetup=2:1.6.6-5ubuntu2.1`
 
 Binary Packages:
 
-- `libcryptsetup4:amd64=2:1.6.6-5ubuntu2`
+- `libcryptsetup4:amd64=2:1.6.6-5ubuntu2.1`
 
 Licenses: (parsed from: `/usr/share/doc/libcryptsetup4/copyright`)
 
@@ -795,10 +795,10 @@ Licenses: (parsed from: `/usr/share/doc/libcryptsetup4/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris cryptsetup=2:1.6.6-5ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cryptsetup/cryptsetup_1.6.6-5ubuntu2.dsc' cryptsetup_1.6.6-5ubuntu2.dsc 2660 SHA256:e6d4fabb8f079cdf11639666f1e04f0bc06c44f5cc132c5b60b6f63dc7b4af69
+$ apt-get source -qq --print-uris cryptsetup=2:1.6.6-5ubuntu2.1
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cryptsetup/cryptsetup_1.6.6-5ubuntu2.1.dsc' cryptsetup_1.6.6-5ubuntu2.1.dsc 2650 SHA256:138cdb723928fcef0b15e427e2ee56511587751c7d63defe902f4e6daaff5e2e
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cryptsetup/cryptsetup_1.6.6.orig.tar.xz' cryptsetup_1.6.6.orig.tar.xz 1145940 SHA256:2d2ce28e4e1137dd599d87884b62ef6dbf14fd7848b2a2bf7d61cf125fbd8e6f
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cryptsetup/cryptsetup_1.6.6-5ubuntu2.debian.tar.xz' cryptsetup_1.6.6-5ubuntu2.debian.tar.xz 91088 SHA256:11dd7ecd756bec8c19342f82cccc3634e620d506daa425716879456fabb49c76
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cryptsetup/cryptsetup_1.6.6-5ubuntu2.1.debian.tar.xz' cryptsetup_1.6.6-5ubuntu2.1.debian.tar.xz 91808 SHA256:0979ff24a2c4ecc5471a017b286cd7a4ccc497e72854b02aadc21465dcce96e4
 ```
 
 ### `dpkg` source package: `cups=2.1.3-4ubuntu0.3`
@@ -1463,12 +1463,12 @@ $ apt-get source -qq --print-uris gdbm=1.8.3-13.1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdbm/gdbm_1.8.3-13.1.debian.tar.xz' gdbm_1.8.3-13.1.debian.tar.xz 14748 SHA256:251401e1f5210226f384e936b1b7ea1df40119a918d9f3dbf48b2e51d4df8983
 ```
 
-### `dpkg` source package: `gdk-pixbuf=2.32.2-1ubuntu1.2`
+### `dpkg` source package: `gdk-pixbuf=2.32.2-1ubuntu1.3`
 
 Binary Packages:
 
-- `libgdk-pixbuf2.0-0:amd64=2.32.2-1ubuntu1.2`
-- `libgdk-pixbuf2.0-common=2.32.2-1ubuntu1.2`
+- `libgdk-pixbuf2.0-0:amd64=2.32.2-1ubuntu1.3`
+- `libgdk-pixbuf2.0-common=2.32.2-1ubuntu1.3`
 
 Licenses: (parsed from: `/usr/share/doc/libgdk-pixbuf2.0-0/copyright`, `/usr/share/doc/libgdk-pixbuf2.0-common/copyright`)
 
@@ -1478,10 +1478,10 @@ Licenses: (parsed from: `/usr/share/doc/libgdk-pixbuf2.0-0/copyright`, `/usr/sha
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gdk-pixbuf=2.32.2-1ubuntu1.2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.32.2-1ubuntu1.2.dsc' gdk-pixbuf_2.32.2-1ubuntu1.2.dsc 2896 SHA256:349ac29ab0a63011a7c3ca2755330622d7b1787fdda9873c1a33becc03857536
+$ apt-get source -qq --print-uris gdk-pixbuf=2.32.2-1ubuntu1.3
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.32.2-1ubuntu1.3.dsc' gdk-pixbuf_2.32.2-1ubuntu1.3.dsc 2896 SHA256:24cffa69727e297919b5dec8d631a739142549b4ba61d20b1f45a376984c82b3
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.32.2.orig.tar.xz' gdk-pixbuf_2.32.2.orig.tar.xz 2429268 SHA256:d3ab06fc123b13effed4c27c77cebdfad2173ff20628d82c397b7660ae926145
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.32.2-1ubuntu1.2.debian.tar.xz' gdk-pixbuf_2.32.2-1ubuntu1.2.debian.tar.xz 15152 SHA256:ccc3aa20de5ede571a57caecaaccb9c22efaf586da5c7befeff4083cc670b7a0
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.32.2-1ubuntu1.3.debian.tar.xz' gdk-pixbuf_2.32.2-1ubuntu1.3.debian.tar.xz 17324 SHA256:5dcb40fbf186756e36ecdf77ff9c6b49ed5f9663f69b842368f024c060fb92fc
 ```
 
 ### `dpkg` source package: `git=1:2.7.4-0ubuntu1.2`
@@ -3526,14 +3526,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.3+dfsg1-1ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.3+dfsg1-1ubuntu0.2.dsc' libxml2_2.9.3+dfsg1-1ubuntu0.2.dsc 2758 SHA256:e8de9013a0db37d6b9fd8f8bb6d63f748eb0667d00db37ea1ef537c48343c4c5
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.3+dfsg1.orig.tar.xz' libxml2_2.9.3+dfsg1.orig.tar.xz 2475440 SHA256:d6b7686fa12c70dd9ce7c7d97c84471b5afed1c176538df8c670754d8c206079
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.3+dfsg1-1ubuntu0.2.debian.tar.xz' libxml2_2.9.3+dfsg1-1ubuntu0.2.debian.tar.xz 50044 SHA256:989e0016af824d5423810fd79e81ef5e373703d459a48dd52b4dfa2a97fc0ef3
-```
 
 ### `dpkg` source package: `libxpm=1:3.5.11-1ubuntu0.16.04.1`
 
@@ -3669,11 +3663,11 @@ $ apt-get source -qq --print-uris libyaml=0.1.6-3
 'http://archive.ubuntu.com/ubuntu/pool/main/liby/libyaml/libyaml_0.1.6-3.debian.tar.xz' libyaml_0.1.6-3.debian.tar.xz 4268 SHA256:fd567e6918903833e5c4f1f87254c550eca07c2bba1ccbe6031da33243cf4297
 ```
 
-### `dpkg` source package: `linux=4.4.0-93.116`
+### `dpkg` source package: `linux=4.4.0-96.119`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.4.0-93.116`
+- `linux-libc-dev:amd64=4.4.0-96.119`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -3683,10 +3677,10 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=4.4.0-93.116
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-93.116.dsc' linux_4.4.0-93.116.dsc 9290 SHA256:50735e20e653ac5dcbf2a85c304bca47f806e33e9918bcf9929788a6dde5a9c0
+$ apt-get source -qq --print-uris linux=4.4.0-96.119
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-96.119.dsc' linux_4.4.0-96.119.dsc 9617 SHA256:beea331cb76576f30fccc2254a340a33a166246dd8f3962c9b9aacd6b07c7135
 'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-93.116.diff.gz' linux_4.4.0-93.116.diff.gz 13176909 SHA256:439be00481fbaf209655c8b217180fee0c3b1bea964cc19624761b41c2403c84
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-96.119.diff.gz' linux_4.4.0-96.119.diff.gz 13602301 SHA256:fb6eafe7811ff26621c96f89d9df63f4127efcb01387e8d7b366798175d27143
 ```
 
 ### `dpkg` source package: `lksctp-tools=1.0.16+dfsg-3`
@@ -5149,14 +5143,14 @@ $ apt-get source -qq --print-uris python3-defaults=3.5.1-3
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.5.1-3.tar.gz' python3-defaults_3.5.1-3.tar.gz 924115 SHA256:8d1284430b77775d4cea62a33b0685e0523b8dfa2ebcc092d382af5cb5b4f237
 ```
 
-### `dpkg` source package: `python3.5=3.5.2-2ubuntu0~16.04.1`
+### `dpkg` source package: `python3.5=3.5.2-2ubuntu0~16.04.2`
 
 Binary Packages:
 
-- `libpython3.5-minimal:amd64=3.5.2-2ubuntu0~16.04.1`
-- `libpython3.5-stdlib:amd64=3.5.2-2ubuntu0~16.04.1`
-- `python3.5=3.5.2-2ubuntu0~16.04.1`
-- `python3.5-minimal=3.5.2-2ubuntu0~16.04.1`
+- `libpython3.5-minimal:amd64=3.5.2-2ubuntu0~16.04.2`
+- `libpython3.5-stdlib:amd64=3.5.2-2ubuntu0~16.04.2`
+- `python3.5=3.5.2-2ubuntu0~16.04.2`
+- `python3.5-minimal=3.5.2-2ubuntu0~16.04.2`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.5-minimal/copyright`, `/usr/share/doc/libpython3.5-stdlib/copyright`, `/usr/share/doc/python3.5/copyright`, `/usr/share/doc/python3.5-minimal/copyright`)
 
@@ -5190,10 +5184,10 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.5-minimal/copyright`, `/usr/s
 Source:
 
 ```console
-$ apt-get source -qq --print-uris python3.5=3.5.2-2ubuntu0~16.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.5/python3.5_3.5.2-2ubuntu0~16.04.1.dsc' python3.5_3.5.2-2ubuntu0~16.04.1.dsc 3373 SHA256:68ab412bb150c639f1c154b20d9bf4b2c5cb9b5d1391e35ec75dd15898a8ba3d
+$ apt-get source -qq --print-uris python3.5=3.5.2-2ubuntu0~16.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.5/python3.5_3.5.2-2ubuntu0~16.04.2.dsc' python3.5_3.5.2-2ubuntu0~16.04.2.dsc 3027 SHA256:604cdbd5df6c314a604e14eb47f64017afa45aa697358e643e4ba4834468ff58
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.5/python3.5_3.5.2.orig.tar.xz' python3.5_3.5.2.orig.tar.xz 15222676 SHA256:0010f56100b9b74259ebcd5d4b295a32324b58b517403a10d1a2aa7cb22bca40
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.5/python3.5_3.5.2-2ubuntu0~16.04.1.debian.tar.xz' python3.5_3.5.2-2ubuntu0~16.04.1.debian.tar.xz 213232 SHA256:5cd0737e430b7ca9d41026b3599024f64eb4b7d77d0cfc24ba20853d267af2c5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.5/python3.5_3.5.2-2ubuntu0~16.04.2.debian.tar.xz' python3.5_3.5.2-2ubuntu0~16.04.2.debian.tar.xz 215592 SHA256:a2ad9c1fdfbb5c03c35ca54384a8ca6081e5d3ca886c8c7532ee51029393e729
 ```
 
 ### `dpkg` source package: `pyyaml=3.11-3build1`
