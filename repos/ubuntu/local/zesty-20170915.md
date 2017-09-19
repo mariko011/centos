@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f83b3efab60e2246f32341e1eae310d082a3a39d54951d581ffde88f4fc1733a`
-- Created: `2017-09-13T23:26:35.415466892Z`
-- Virtual Size: ~ 94.71 Mb  
+- Image ID: `sha256:6ca5545cc1efa0f860bf7d518d45132d1919b713b328ef2d7e61db76c4707047`
+- Created: `2017-09-18T23:31:52.941088244Z`
+- Virtual Size: ~ 94.72 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -588,19 +588,26 @@ $ apt-get source -qq --print-uris libcap-ng=0.7.7-3
 'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap-ng/libcap-ng_0.7.7-3.debian.tar.xz' libcap-ng_0.7.7-3.debian.tar.xz 5248 SHA256:b7a0846dbd0451903bcbbe3a2696341f4e6000ebd64bed259c7fbf9dfc818363
 ```
 
-### `dpkg` source package: `libgcrypt20=1.7.6-1ubuntu0.1`
+### `dpkg` source package: `libgcrypt20=1.7.6-1ubuntu0.2`
 
 Binary Packages:
 
-- `libgcrypt20:amd64=1.7.6-1ubuntu0.1`
+- `libgcrypt20:amd64=1.7.6-1ubuntu0.2`
 
 Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 
 - `GPL-2`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris libgcrypt20=1.7.6-1ubuntu0.2
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.7.6-1ubuntu0.2.dsc' libgcrypt20_1.7.6-1ubuntu0.2.dsc 3015 SHA256:490fcb30c0fa9745db4e5ffb8389092d1122569c2a5c015ad40740bf16185cb6
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.7.6.orig.tar.bz2' libgcrypt20_1.7.6.orig.tar.bz2 2897695 SHA256:626aafee84af9d2ce253d2c143dc1c0902dda045780cc241f39970fc60be05bc
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.7.6.orig.tar.bz2.asc' libgcrypt20_1.7.6.orig.tar.bz2.asc 310 SHA256:91ad5a0efafb0edc63c083f733ce476b2a0da663aea5118126aa63825d314e00
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.7.6-1ubuntu0.2.debian.tar.xz' libgcrypt20_1.7.6-1ubuntu0.2.debian.tar.xz 36820 SHA256:0846e36c67571bcad19cc5c4aa54ac1fae668f5d7d1e56fe667afb20dce2bf6e
+```
 
 ### `dpkg` source package: `libgpg-error=1.26-2`
 
