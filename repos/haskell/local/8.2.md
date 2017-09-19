@@ -1,15 +1,15 @@
-# `haskell:8.0.2`
+# `haskell:8.2.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4c6e8ef1491674cccd86ad02d8060ce5452454f2c66a711e4b5cb6d8c7d33cdd`
-- Created: `2017-09-13T01:36:30.498910073Z`
-- Virtual Size: ~ 961.09 Mb  
+- Image ID: `sha256:dc71b77b476ee13d153f424a4a5eec96003e1087a02b708e5fac38db38fd65d4`
+- Created: `2017-09-19T01:35:52.391588986Z`
+- Virtual Size: ~ 1.05 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["ghci"]`
 - Environment:
-  - `PATH=/root/.cabal/bin:/root/.local/bin:/opt/cabal/1.24/bin:/opt/ghc/8.0.2/bin:/opt/happy/1.19.5/bin:/opt/alex/3.1.7/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+  - `PATH=/root/.cabal/bin:/root/.local/bin:/opt/cabal/2.0/bin:/opt/ghc/8.2.1/bin:/opt/happy/1.19.5/bin:/opt/alex/3.1.7/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
 
 ## `dpkg` (`.deb`-based packages)
@@ -334,22 +334,22 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/ca-certificates/20141019+deb8u3/
 - https://sources.debian.net/src/ca-certificates/20141019+deb8u3/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `cabal-install-1.24=1.24.0.2+git20161208.0.c5ebf12-3~14.04`
+### `dpkg` source package: `cabal-install-2.0=2.0+git20170802.0.41a4ef1-4~14.04`
 
 Binary Packages:
 
-- `cabal-install-1.24=1.24.0.2+git20161208.0.c5ebf12-3~14.04`
+- `cabal-install-2.0=2.0+git20170802.0.41a4ef1-4~14.04`
 
-Licenses: (parsed from: `/usr/share/doc/cabal-install-1.24/copyright`)
+Licenses: (parsed from: `/usr/share/doc/cabal-install-2.0/copyright`)
 
 - `BSD-3-Clause`
 
 Source:
 
 ```console
-$ apt-get source -qq --print-uris cabal-install-1.24=1.24.0.2+git20161208.0.c5ebf12-3~14.04
-'http://ppa.launchpad.net/hvr/ghc/ubuntu/pool/main/c/cabal-install-1.24/cabal-install-1.24_1.24.0.2+git20161208.0.c5ebf12-3~14.04.tar.xz' cabal-install-1.24_1.24.0.2+git20161208.0.c5ebf12-3~14.04.tar.xz 1301948 SHA256:fe8ca178e4da3a1bacddb7aef5be791ff67c3eb485bb8570da22a17fbd740d9c
-'http://ppa.launchpad.net/hvr/ghc/ubuntu/pool/main/c/cabal-install-1.24/cabal-install-1.24_1.24.0.2+git20161208.0.c5ebf12-3~14.04.dsc' cabal-install-1.24_1.24.0.2+git20161208.0.c5ebf12-3~14.04.dsc 1665 SHA256:3ab1ec4bf052ee8bc6df718ffc0da1cd0e6c77bd820ccd81e81ee61b9716b2d9
+$ apt-get source -qq --print-uris cabal-install-2.0=2.0+git20170802.0.41a4ef1-4~14.04
+'http://ppa.launchpad.net/hvr/ghc/ubuntu/pool/main/c/cabal-install-2.0/cabal-install-2.0_2.0+git20170802.0.41a4ef1-4~14.04.tar.xz' cabal-install-2.0_2.0+git20170802.0.41a4ef1-4~14.04.tar.xz 1520592 SHA256:d60e5a2ef25fe345a25f953fda468866bfc78de23ee7c32b1d7da3365ba58789
+'http://ppa.launchpad.net/hvr/ghc/ubuntu/pool/main/c/cabal-install-2.0/cabal-install-2.0_2.0+git20170802.0.41a4ef1-4~14.04.dsc' cabal-install-2.0_2.0+git20170802.0.41a4ef1-4~14.04.dsc 1639 SHA256:3531a49a1d1c331c3a8ec4f002ab10912184c791fd161f46236c4e096fb526d5
 ```
 
 ### `dpkg` source package: `cdebconf=0.192`
@@ -898,23 +898,23 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/geoip/1.6.2-4/
 - https://sources.debian.net/src/geoip/1.6.2-4/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `ghc-8.0.2=8.0.2-13.1~14.04`
+### `dpkg` source package: `ghc-8.2.1=8.2.1-2~14.04`
 
 Binary Packages:
 
-- `ghc-8.0.2=8.0.2-13.1~14.04`
+- `ghc-8.2.1=8.2.1-2~14.04`
 
-Licenses: (parsed from: `/usr/share/doc/ghc-8.0.2/copyright`)
+Licenses: (parsed from: `/usr/share/doc/ghc-8.2.1/copyright`)
 
 - `BSD-3-Clause`
 
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ghc-8.0.2=8.0.2-13.1~14.04
-'http://ppa.launchpad.net/hvr/ghc/ubuntu/pool/main/g/ghc-8.0.2/ghc-8.0.2_8.0.2.orig.tar.xz' ghc-8.0.2_8.0.2.orig.tar.xz 10576700 SHA256:0205b11fb405e89d38387075187a9bc920d4427a06cdfd799d598b3361338525
-'http://ppa.launchpad.net/hvr/ghc/ubuntu/pool/main/g/ghc-8.0.2/ghc-8.0.2_8.0.2-13.1~14.04.debian.tar.xz' ghc-8.0.2_8.0.2-13.1~14.04.debian.tar.xz 4876 SHA256:ce46dd17a1ac7ea3721069e0c511a3e8b76e37807f80055a320d66d0fedce436
-'http://ppa.launchpad.net/hvr/ghc/ubuntu/pool/main/g/ghc-8.0.2/ghc-8.0.2_8.0.2-13.1~14.04.dsc' ghc-8.0.2_8.0.2-13.1~14.04.dsc 2095 SHA256:99a3b9f5498a554893ec2a316987d6ce802d27842c035a56c7e3d5c6886df47a
+$ apt-get source -qq --print-uris ghc-8.2.1=8.2.1-2~14.04
+'http://ppa.launchpad.net/hvr/ghc/ubuntu/pool/main/g/ghc-8.2.1/ghc-8.2.1_8.2.1.orig.tar.xz' ghc-8.2.1_8.2.1.orig.tar.xz 10570048 SHA256:63ebc1c57072af46dbaf9a9af652078bf9f44dc552d354150e5636fec30af2be
+'http://ppa.launchpad.net/hvr/ghc/ubuntu/pool/main/g/ghc-8.2.1/ghc-8.2.1_8.2.1-2~14.04.debian.tar.xz' ghc-8.2.1_8.2.1-2~14.04.debian.tar.xz 4896 SHA256:6a05d4bf5a89bfd51f96c6ed048444730976923e6bbbd5211cf742a19a10150a
+'http://ppa.launchpad.net/hvr/ghc/ubuntu/pool/main/g/ghc-8.2.1/ghc-8.2.1_8.2.1-2~14.04.dsc' ghc-8.2.1_8.2.1-2~14.04.dsc 2082 SHA256:46200f00bd6507924270dc9dfae1a41517aa3a80eea8baf1117208757b3523c8
 ```
 
 ### `dpkg` source package: `git=1:2.1.4-2.1+deb8u4`
