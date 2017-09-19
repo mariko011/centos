@@ -1,7 +1,7 @@
 ## `erlang:17-slim`
 
 ```console
-$ docker pull erlang@sha256:d457de45aa75af62b2fe89af3ac2edb33c5b3ee21add02b4e3d5351156e66225
+$ docker pull erlang@sha256:7c4ffa29ea6e600ae31669b5b491f2c0560b0f09a1311ebe7c59fe69d22ad529
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -51,14 +51,14 @@ CMD ["erl"]
 ### `erlang:17-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull erlang@sha256:d0ca970e0fc33c392fea43b52bdaf729c83c17794f18e123b420cdb4519c2a5d
+$ docker pull erlang@sha256:66f913729fcd23c80d237ea1a968ea1f36aa32180d12e2530192fde7323eda7a
 ```
 
 -	Docker Version: 17.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **111.5 MB (111533896 bytes)**  
+-	Total Size: **111.5 MB (111532464 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:abb448e02f270aef08bbe1095a62a586313f1a1acab4d03a133181b5880f3059`
+-	Image ID: `sha256:4df48692bcb591323f7be3f7aa850ab5af7628026328ec23a2a5adec68cdc543`
 -	Default Command: `["erl"]`
 
 ```dockerfile
@@ -68,9 +68,9 @@ ADD file:9f576a63a5e03994904e585c35fbeef6a2c96c41d8f696705c033f3ca69b6a2b in /
 CMD ["bash"]
 # Fri, 08 Sep 2017 20:18:36 GMT
 ENV OTP_VERSION=17.5.6.9
-# Fri, 08 Sep 2017 20:39:11 GMT
-RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-$OTP_VERSION.tar.gz" 	&& OTP_DOWNLOAD_SHA256="387c612d1bc5ffbc68db7d05c3655804b310facc8bad921a3e0f3391970bc522" 	&& runtimeDeps=' 		libodbc1 		libssl1.0.0 	' 	&& buildDeps=' 		curl 		ca-certificates 		autoconf 		dpkg-dev 		gcc 		make 		libncurses-dev 		unixodbc-dev 		libssl-dev 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256 otp-src.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/otp-src 	&& tar -xzf otp-src.tar.gz -C /usr/src/otp-src --strip-components=1 	&& rm otp-src.tar.gz 	&& cd /usr/src/otp-src 	&& ./otp_build autoconf 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure --build="$gnuArch" 	&& make -j$(nproc) 	&& make install 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/otp-src /var/lib/apt/lists/*
-# Fri, 08 Sep 2017 20:39:13 GMT
+# Tue, 19 Sep 2017 02:50:56 GMT
+RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-$OTP_VERSION.tar.gz" 	&& OTP_DOWNLOAD_SHA256="70d9d0a08969f4c51c78088f8c6b7da22a4806b1fd258a9fff1408f56553f378" 	&& runtimeDeps=' 		libodbc1 		libssl1.0.0 	' 	&& buildDeps=' 		curl 		ca-certificates 		autoconf 		dpkg-dev 		gcc 		make 		libncurses-dev 		unixodbc-dev 		libssl-dev 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256 otp-src.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/otp-src 	&& tar -xzf otp-src.tar.gz -C /usr/src/otp-src --strip-components=1 	&& rm otp-src.tar.gz 	&& cd /usr/src/otp-src 	&& ./otp_build autoconf 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure --build="$gnuArch" 	&& make -j$(nproc) 	&& make install 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/otp-src /var/lib/apt/lists/*
+# Tue, 19 Sep 2017 02:50:57 GMT
 CMD ["erl"]
 ```
 
@@ -79,9 +79,9 @@ CMD ["erl"]
 		Last Modified: Fri, 08 Sep 2017 17:34:56 GMT  
 		Size: 49.9 MB (49929457 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f9937c064478e1fa4f24f21f49f9c6ee8b916ed752c81b4903464583d0cd1cfa`  
-		Last Modified: Fri, 08 Sep 2017 20:44:26 GMT  
-		Size: 61.6 MB (61604439 bytes)  
+	-	`sha256:60742a469a3579700016bc1828fe44a7b0a5487805bce1daccca0ec4b7162f7e`  
+		Last Modified: Tue, 19 Sep 2017 02:59:11 GMT  
+		Size: 61.6 MB (61603007 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:17-slim` - linux; 386
