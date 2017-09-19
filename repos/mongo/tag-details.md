@@ -5,23 +5,34 @@
 -	[`mongo:3`](#mongo3)
 -	[`mongo:3.0`](#mongo30)
 -	[`mongo:3.0.15`](#mongo3015)
+-	[`mongo:3.0.15-wheezy`](#mongo3015-wheezy)
 -	[`mongo:3.0.15-windowsservercore`](#mongo3015-windowsservercore)
+-	[`mongo:3.0-wheezy`](#mongo30-wheezy)
 -	[`mongo:3.0-windowsservercore`](#mongo30-windowsservercore)
 -	[`mongo:3.2`](#mongo32)
 -	[`mongo:3.2.16`](#mongo3216)
+-	[`mongo:3.2.16-jessie`](#mongo3216-jessie)
 -	[`mongo:3.2.16-windowsservercore`](#mongo3216-windowsservercore)
+-	[`mongo:3.2-jessie`](#mongo32-jessie)
 -	[`mongo:3.2-windowsservercore`](#mongo32-windowsservercore)
 -	[`mongo:3.4`](#mongo34)
 -	[`mongo:3.4.9`](#mongo349)
+-	[`mongo:3.4.9-jessie`](#mongo349-jessie)
 -	[`mongo:3.4.9-windowsservercore`](#mongo349-windowsservercore)
+-	[`mongo:3.4-jessie`](#mongo34-jessie)
 -	[`mongo:3.4-windowsservercore`](#mongo34-windowsservercore)
 -	[`mongo:3.5`](#mongo35)
 -	[`mongo:3.5.13`](#mongo3513)
+-	[`mongo:3.5.13-jessie`](#mongo3513-jessie)
 -	[`mongo:3.5.13-windowsservercore`](#mongo3513-windowsservercore)
+-	[`mongo:3.5-jessie`](#mongo35-jessie)
 -	[`mongo:3.5-windowsservercore`](#mongo35-windowsservercore)
+-	[`mongo:3-jessie`](#mongo3-jessie)
 -	[`mongo:3-windowsservercore`](#mongo3-windowsservercore)
+-	[`mongo:jessie`](#mongojessie)
 -	[`mongo:latest`](#mongolatest)
 -	[`mongo:unstable`](#mongounstable)
+-	[`mongo:unstable-jessie`](#mongounstable-jessie)
 -	[`mongo:unstable-windowsservercore`](#mongounstable-windowsservercore)
 -	[`mongo:windowsservercore`](#mongowindowsservercore)
 
@@ -394,6 +405,10 @@ CMD ["mongod"]
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `mongo:3.0.15-wheezy`
+
+**does not exist** (yet?)
+
 ## `mongo:3.0.15-windowsservercore`
 
 ```console
@@ -480,6 +495,10 @@ CMD ["mongod"]
 		Last Modified: Fri, 15 Sep 2017 16:45:26 GMT  
 		Size: 1.2 KB (1231 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `mongo:3.0-wheezy`
+
+**does not exist** (yet?)
 
 ## `mongo:3.0-windowsservercore`
 
@@ -806,6 +825,10 @@ CMD ["mongod"]
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `mongo:3.2.16-jessie`
+
+**does not exist** (yet?)
+
 ## `mongo:3.2.16-windowsservercore`
 
 ```console
@@ -892,6 +915,10 @@ CMD ["mongod"]
 		Last Modified: Fri, 15 Sep 2017 16:45:57 GMT  
 		Size: 1.2 KB (1218 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `mongo:3.2-jessie`
+
+**does not exist** (yet?)
 
 ## `mongo:3.2-windowsservercore`
 
@@ -1218,6 +1245,10 @@ CMD ["mongod"]
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `mongo:3.4.9-jessie`
+
+**does not exist** (yet?)
+
 ## `mongo:3.4.9-windowsservercore`
 
 ```console
@@ -1304,6 +1335,10 @@ CMD ["mongod"]
 		Last Modified: Fri, 15 Sep 2017 16:46:25 GMT  
 		Size: 1.2 KB (1218 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `mongo:3.4-jessie`
+
+**does not exist** (yet?)
 
 ## `mongo:3.4-windowsservercore`
 
@@ -1618,6 +1653,10 @@ CMD ["mongod" "--bind_ip_all"]
 		Size: 3.2 KB (3175 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `mongo:3.5.13-jessie`
+
+**does not exist** (yet?)
+
 ## `mongo:3.5.13-windowsservercore`
 
 ```console
@@ -1704,6 +1743,10 @@ CMD ["mongod" "--bind_ip_all"]
 		Last Modified: Fri, 15 Sep 2017 16:46:58 GMT  
 		Size: 1.2 KB (1218 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `mongo:3.5-jessie`
+
+**does not exist** (yet?)
 
 ## `mongo:3.5-windowsservercore`
 
@@ -1792,6 +1835,10 @@ CMD ["mongod" "--bind_ip_all"]
 		Size: 1.2 KB (1218 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `mongo:3-jessie`
+
+**does not exist** (yet?)
+
 ## `mongo:3-windowsservercore`
 
 ```console
@@ -1878,6 +1925,10 @@ CMD ["mongod"]
 		Last Modified: Fri, 15 Sep 2017 16:46:25 GMT  
 		Size: 1.2 KB (1218 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `mongo:jessie`
+
+**does not exist** (yet?)
 
 ## `mongo:latest`
 
@@ -2110,6 +2161,10 @@ CMD ["mongod" "--bind_ip_all"]
 		Last Modified: Wed, 13 Sep 2017 21:21:35 GMT  
 		Size: 3.2 KB (3175 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `mongo:unstable-jessie`
+
+**does not exist** (yet?)
 
 ## `mongo:unstable-windowsservercore`
 
