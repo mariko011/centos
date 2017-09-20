@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bbb15ae68e44d0c3a3094a9035d06490b20cee819d727ab327a303df87d83e6e`
-- Created: `2017-09-13T04:48:50.02983575Z`
+- Image ID: `sha256:dd754192c99a8ea488e7e1d810951cf5d5a9cd92d62175084f4df347697a9a2f`
+- Created: `2017-09-19T00:27:20.235340795Z`
 - Virtual Size: ~ 1.46 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -80,11 +80,11 @@ $ apt-get source -qq --print-uris alsa-lib=1.1.0-0ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/alsa-lib_1.1.0-0ubuntu1.debian.tar.xz' alsa-lib_1.1.0-0ubuntu1.debian.tar.xz 53828 SHA256:216445e0a62424c36080e4ef7eca6ad5c4bfe12f1258e52c1d98e53d212efac3
 ```
 
-### `dpkg` source package: `apparmor=2.10.95-0ubuntu2.6`
+### `dpkg` source package: `apparmor=2.10.95-0ubuntu2.7`
 
 Binary Packages:
 
-- `libapparmor1:amd64=2.10.95-0ubuntu2.6`
+- `libapparmor1:amd64=2.10.95-0ubuntu2.7`
 
 Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 
@@ -97,10 +97,10 @@ Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apparmor=2.10.95-0ubuntu2.6
-'http://security.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.6.dsc' apparmor_2.10.95-0ubuntu2.6.dsc 3252 SHA256:e04b41652174316c8d4117bdbff6dc5f2854efba18c6240a1120f0899949d5be
-'http://security.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95.orig.tar.gz' apparmor_2.10.95.orig.tar.gz 4502268 SHA256:3f659a599718f4a5e2a33140916715f574a5cb3634a6b9ed6d29f7b0617e4d1a
-'http://security.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.6.debian.tar.xz' apparmor_2.10.95-0ubuntu2.6.debian.tar.xz 96164 SHA256:9864f5ba71c069fa31e85af3a9fd771cef26e67a1ecc785b0c1464d33ae5bfb1
+$ apt-get source -qq --print-uris apparmor=2.10.95-0ubuntu2.7
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.7.dsc' apparmor_2.10.95-0ubuntu2.7.dsc 3270 SHA256:543c8ace2b6f643b5c610aee11e458c25c9fd9ea9d03828825e2256106bd0209
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95.orig.tar.gz' apparmor_2.10.95.orig.tar.gz 4502268 SHA256:3f659a599718f4a5e2a33140916715f574a5cb3634a6b9ed6d29f7b0617e4d1a
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.7.debian.tar.xz' apparmor_2.10.95-0ubuntu2.7.debian.tar.xz 96024 SHA256:313c8f2dfe4708ab826a9d863b6cb14378c43f111bfc59c8aa9700963ed0c596
 ```
 
 ### `dpkg` source package: `apt=1.2.24`
@@ -376,11 +376,11 @@ $ apt-get source -qq --print-uris coreutils=8.25-2ubuntu3~16.04
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.25-2ubuntu3~16.04.debian.tar.xz' coreutils_8.25-2ubuntu3~16.04.debian.tar.xz 28336 SHA256:f6fd913f2b0b08df9109308dfd1202b06060e130b8e6bf94daad32e86a3937cf
 ```
 
-### `dpkg` source package: `cryptsetup=2:1.6.6-5ubuntu2`
+### `dpkg` source package: `cryptsetup=2:1.6.6-5ubuntu2.1`
 
 Binary Packages:
 
-- `libcryptsetup4:amd64=2:1.6.6-5ubuntu2`
+- `libcryptsetup4:amd64=2:1.6.6-5ubuntu2.1`
 
 Licenses: (parsed from: `/usr/share/doc/libcryptsetup4/copyright`)
 
@@ -390,10 +390,10 @@ Licenses: (parsed from: `/usr/share/doc/libcryptsetup4/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris cryptsetup=2:1.6.6-5ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cryptsetup/cryptsetup_1.6.6-5ubuntu2.dsc' cryptsetup_1.6.6-5ubuntu2.dsc 2660 SHA256:e6d4fabb8f079cdf11639666f1e04f0bc06c44f5cc132c5b60b6f63dc7b4af69
+$ apt-get source -qq --print-uris cryptsetup=2:1.6.6-5ubuntu2.1
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cryptsetup/cryptsetup_1.6.6-5ubuntu2.1.dsc' cryptsetup_1.6.6-5ubuntu2.1.dsc 2650 SHA256:138cdb723928fcef0b15e427e2ee56511587751c7d63defe902f4e6daaff5e2e
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cryptsetup/cryptsetup_1.6.6.orig.tar.xz' cryptsetup_1.6.6.orig.tar.xz 1145940 SHA256:2d2ce28e4e1137dd599d87884b62ef6dbf14fd7848b2a2bf7d61cf125fbd8e6f
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cryptsetup/cryptsetup_1.6.6-5ubuntu2.debian.tar.xz' cryptsetup_1.6.6-5ubuntu2.debian.tar.xz 91088 SHA256:11dd7ecd756bec8c19342f82cccc3634e620d506daa425716879456fabb49c76
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cryptsetup/cryptsetup_1.6.6-5ubuntu2.1.debian.tar.xz' cryptsetup_1.6.6-5ubuntu2.1.debian.tar.xz 91808 SHA256:0979ff24a2c4ecc5471a017b286cd7a4ccc497e72854b02aadc21465dcce96e4
 ```
 
 ### `dpkg` source package: `crystalhd=1:0.0~git20110715.fdd2f19-11build1`
@@ -982,12 +982,12 @@ $ apt-get source -qq --print-uris gccgo-6=6.0.1-0ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gccgo-6/gccgo-6_6.0.1-0ubuntu1.diff.gz' gccgo-6_6.0.1-0ubuntu1.diff.gz 633954 SHA256:839eea6c2d23670f09b642864ff61e3097b47391cb508a5997538750ff8678f6
 ```
 
-### `dpkg` source package: `gdk-pixbuf=2.32.2-1ubuntu1.2`
+### `dpkg` source package: `gdk-pixbuf=2.32.2-1ubuntu1.3`
 
 Binary Packages:
 
-- `libgdk-pixbuf2.0-0:amd64=2.32.2-1ubuntu1.2`
-- `libgdk-pixbuf2.0-common=2.32.2-1ubuntu1.2`
+- `libgdk-pixbuf2.0-0:amd64=2.32.2-1ubuntu1.3`
+- `libgdk-pixbuf2.0-common=2.32.2-1ubuntu1.3`
 
 Licenses: (parsed from: `/usr/share/doc/libgdk-pixbuf2.0-0/copyright`, `/usr/share/doc/libgdk-pixbuf2.0-common/copyright`)
 
@@ -997,10 +997,10 @@ Licenses: (parsed from: `/usr/share/doc/libgdk-pixbuf2.0-0/copyright`, `/usr/sha
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gdk-pixbuf=2.32.2-1ubuntu1.2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.32.2-1ubuntu1.2.dsc' gdk-pixbuf_2.32.2-1ubuntu1.2.dsc 2896 SHA256:349ac29ab0a63011a7c3ca2755330622d7b1787fdda9873c1a33becc03857536
+$ apt-get source -qq --print-uris gdk-pixbuf=2.32.2-1ubuntu1.3
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.32.2-1ubuntu1.3.dsc' gdk-pixbuf_2.32.2-1ubuntu1.3.dsc 2896 SHA256:24cffa69727e297919b5dec8d631a739142549b4ba61d20b1f45a376984c82b3
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.32.2.orig.tar.xz' gdk-pixbuf_2.32.2.orig.tar.xz 2429268 SHA256:d3ab06fc123b13effed4c27c77cebdfad2173ff20628d82c397b7660ae926145
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.32.2-1ubuntu1.2.debian.tar.xz' gdk-pixbuf_2.32.2-1ubuntu1.2.debian.tar.xz 15152 SHA256:ccc3aa20de5ede571a57caecaaccb9c22efaf586da5c7befeff4083cc670b7a0
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.32.2-1ubuntu1.3.debian.tar.xz' gdk-pixbuf_2.32.2-1ubuntu1.3.debian.tar.xz 17324 SHA256:5dcb40fbf186756e36ecdf77ff9c6b49ed5f9663f69b842368f024c060fb92fc
 ```
 
 ### `dpkg` source package: `ghostscript=9.18~dfsg~0-0ubuntu2.7`
@@ -3253,14 +3253,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.3+dfsg1-1ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.3+dfsg1-1ubuntu0.2.dsc' libxml2_2.9.3+dfsg1-1ubuntu0.2.dsc 2758 SHA256:e8de9013a0db37d6b9fd8f8bb6d63f748eb0667d00db37ea1ef537c48343c4c5
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.3+dfsg1.orig.tar.xz' libxml2_2.9.3+dfsg1.orig.tar.xz 2475440 SHA256:d6b7686fa12c70dd9ce7c7d97c84471b5afed1c176538df8c670754d8c206079
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.3+dfsg1-1ubuntu0.2.debian.tar.xz' libxml2_2.9.3+dfsg1-1ubuntu0.2.debian.tar.xz 50044 SHA256:989e0016af824d5423810fd79e81ef5e373703d459a48dd52b4dfa2a97fc0ef3
-```
 
 ### `dpkg` source package: `libxrandr=2:1.5.0-1`
 
