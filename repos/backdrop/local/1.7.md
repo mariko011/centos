@@ -107,19 +107,8 @@ Licenses: (parsed from: `/usr/share/doc/apache2/copyright`, `/usr/share/doc/apac
 - `PCRE`
 - `Zeus`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apache2=2.4.10-10+deb8u10
-'http://security.debian.org/pool/updates/main/a/apache2/apache2_2.4.10-10+deb8u10.dsc' apache2_2.4.10-10+deb8u10.dsc 3281 SHA256:818e2cea2c65448a89b1d51bbbb3c69c100f044894fa19d7065744cad5f3db85
-'http://security.debian.org/pool/updates/main/a/apache2/apache2_2.4.10.orig.tar.bz2' apache2_2.4.10.orig.tar.bz2 5031834 SHA256:176c4dac1a745f07b7b91e7f4fd48f9c48049fa6f088efe758d61d9738669c6a
-'http://security.debian.org/pool/updates/main/a/apache2/apache2_2.4.10-10+deb8u10.debian.tar.xz' apache2_2.4.10-10+deb8u10.debian.tar.xz 558192 SHA256:7d722793f3436428ce87e5d67f5755c6d627f9fac50272cba86e77759edaa63c
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/apache2/2.4.10-10+deb8u10/
-- https://sources.debian.net/src/apache2/2.4.10-10+deb8u10/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `apr-util=1.5.4-1`
 
