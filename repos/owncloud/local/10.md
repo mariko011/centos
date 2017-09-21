@@ -1,10 +1,10 @@
-# `owncloud:10.0.2-apache`
+# `owncloud:10.0.3-apache`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1548aa4b12ccf275f3be199836b201416431a44e63fb413f814d71041e539cf9`
-- Created: `2017-09-15T02:31:06.391377033Z`
-- Virtual Size: ~ 588.72 Mb  
+- Image ID: `sha256:f9ff00d56a059c45bcbc6e793e68923c1a8d8ae0d7f2b47b277866b2b134f0ff`
+- Created: `2017-09-19T20:05:04.259829608Z`
+- Virtual Size: ~ 596.71 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -26,7 +26,7 @@
   - `PHP_ASC_URL=https://secure.php.net/get/php-7.0.23.tar.xz.asc/from/this/mirror`
   - `PHP_SHA256=8e526e3551a58e00c8055fa4a72804aa1bd3ee1c0411b25bf1504cc4992609df`
   - `PHP_MD5=`
-  - `OWNCLOUD_VERSION=10.0.2`
+  - `OWNCLOUD_VERSION=10.0.3`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -106,19 +106,8 @@ Licenses: (parsed from: `/usr/share/doc/apache2/copyright`, `/usr/share/doc/apac
 - `PCRE`
 - `Zeus`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apache2=2.4.10-10+deb8u10
-'http://security.debian.org/pool/updates/main/a/apache2/apache2_2.4.10-10+deb8u10.dsc' apache2_2.4.10-10+deb8u10.dsc 3281 SHA256:818e2cea2c65448a89b1d51bbbb3c69c100f044894fa19d7065744cad5f3db85
-'http://security.debian.org/pool/updates/main/a/apache2/apache2_2.4.10.orig.tar.bz2' apache2_2.4.10.orig.tar.bz2 5031834 SHA256:176c4dac1a745f07b7b91e7f4fd48f9c48049fa6f088efe758d61d9738669c6a
-'http://security.debian.org/pool/updates/main/a/apache2/apache2_2.4.10-10+deb8u10.debian.tar.xz' apache2_2.4.10-10+deb8u10.debian.tar.xz 558192 SHA256:7d722793f3436428ce87e5d67f5755c6d627f9fac50272cba86e77759edaa63c
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/apache2/2.4.10-10+deb8u10/
-- https://sources.debian.net/src/apache2/2.4.10-10+deb8u10/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `apr-util=1.5.4-1`
 
@@ -2106,19 +2095,8 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris linux=3.16.43-2+deb8u3
-'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.43-2+deb8u3.dsc' linux_3.16.43-2+deb8u3.dsc 140764 SHA256:2d060194a96785cd0b49366834362c5165457300c5c6256e7717252016b6f7c6
-'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.43.orig.tar.xz' linux_3.16.43.orig.tar.xz 81815520 SHA256:77fc86010339c04736799d4f2e19adc1623c440583e7eae09e4b76b63c4edd8f
-'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.43-2+deb8u3.debian.tar.xz' linux_3.16.43-2+deb8u3.debian.tar.xz 3192332 SHA256:84549e68dfb964343c0ca6f9b648000b536c0f4156096e73fe471e9392026eda
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/linux/3.16.43-2+deb8u3/
-- https://sources.debian.net/src/linux/3.16.43-2+deb8u3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lsb=4.1+Debian13+nmu1`
 
