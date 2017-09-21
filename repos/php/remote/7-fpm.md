@@ -1,7 +1,7 @@
 ## `php:7-fpm`
 
 ```console
-$ docker pull php@sha256:dd8ac9eb4686eee912a34891b44a609fb934b7e826e7c4b834d0547ed95d5ccd
+$ docker pull php@sha256:83290d7e27a781f3b9a0df65221f8d6dd1aaa21209735c4aa0f1db2f219b9952
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16,14 +16,14 @@ $ docker pull php@sha256:dd8ac9eb4686eee912a34891b44a609fb934b7e826e7c4b834d0547
 ### `php:7-fpm` - linux; amd64
 
 ```console
-$ docker pull php@sha256:cdc55a8fe79096efe759e5b6f77bafcbbde64560847e617628993312a899cc32
+$ docker pull php@sha256:92e2dd0ba2b531383f52f3b94b643ff584041da097239c124fc9d10512a27dd6
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **160.9 MB (160909750 bytes)**  
+-	Total Size: **160.9 MB (160909802 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9b44e8b4c8b628ebcff9270f3ba25c33f6651b4a7267d4d162e341999cba9448`
+-	Image ID: `sha256:ef5e0d5be0a012d67391686410efffbe98b8235e122d0ab2f944b1c8a25d2f65`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -62,17 +62,17 @@ RUN set -xe; 		fetchDeps=' 		wget 	'; 	if ! command -v gpg > /dev/null; then 		f
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
 # Fri, 15 Sep 2017 00:16:20 GMT
 RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)" 	&& if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$debMultiarch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
-# Fri, 15 Sep 2017 00:16:23 GMT
-COPY multi:1401feee8064a06ad514519ec870939c946ecfdf381c82a90cb2035486938ee9 in /usr/local/bin/ 
-# Fri, 15 Sep 2017 00:16:23 GMT
+# Thu, 21 Sep 2017 20:08:27 GMT
+COPY multi:3a3ce8aa3891c64454909e9f8257446a1817abe660b49a7baaa26f28bfdc444d in /usr/local/bin/ 
+# Thu, 21 Sep 2017 20:08:27 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Fri, 15 Sep 2017 00:16:23 GMT
+# Thu, 21 Sep 2017 20:08:28 GMT
 WORKDIR /var/www/html
-# Fri, 15 Sep 2017 00:16:24 GMT
+# Thu, 21 Sep 2017 20:08:28 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = [::]:9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Fri, 15 Sep 2017 00:16:24 GMT
+# Thu, 21 Sep 2017 20:08:28 GMT
 EXPOSE 9000/tcp
-# Fri, 15 Sep 2017 00:16:24 GMT
+# Thu, 21 Sep 2017 20:08:29 GMT
 CMD ["php-fpm"]
 ```
 
@@ -101,17 +101,17 @@ CMD ["php-fpm"]
 		Last Modified: Fri, 15 Sep 2017 01:36:15 GMT  
 		Size: 13.3 MB (13312728 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:186e5cc170339b7dcc17e98b1d01bf54a3481fe559d9bf3949fa863ef46eb028`  
-		Last Modified: Fri, 15 Sep 2017 01:36:12 GMT  
-		Size: 2.1 KB (2124 bytes)  
+	-	`sha256:aed0d15265cd3faa01965b320c1fada1b3a26dfde9cf4ed71b845ec7f945a70d`  
+		Last Modified: Thu, 21 Sep 2017 20:16:37 GMT  
+		Size: 2.2 KB (2172 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8b2d3322d40f8940605f78c528f85e151b0de184135f6c69ab577fc9f48c190c`  
-		Last Modified: Fri, 15 Sep 2017 01:36:12 GMT  
-		Size: 130.0 B  
+	-	`sha256:44aace7e1e87529336b504c2f1baae49aeb3a9b8f3a0fdc96640fe6ac80ac467`  
+		Last Modified: Thu, 21 Sep 2017 20:16:38 GMT  
+		Size: 129.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8be0765e22c1bafd6858fa0c151d69dfe7fed90046556f61080feffd848ac9a4`  
-		Last Modified: Fri, 15 Sep 2017 01:36:12 GMT  
-		Size: 7.7 KB (7684 bytes)  
+	-	`sha256:2de2c8cc661eabb865ba47a57c0665f17b3c1fa5e44602ba53fe224d9966e869`  
+		Last Modified: Thu, 21 Sep 2017 20:16:38 GMT  
+		Size: 7.7 KB (7689 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `php:7-fpm` - linux; arm variant v7
