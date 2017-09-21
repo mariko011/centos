@@ -1,4 +1,4 @@
-# `mongo:3.4.9`
+# `mongo:3.4.9-jessie`
 
 ## Docker Metadata
 
