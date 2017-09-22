@@ -151,14 +151,8 @@ Licenses: (parsed from: `/usr/share/doc/libatk1.0-0/copyright`, `/usr/share/doc/
 
 - `LGPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris atk1.0=2.25.90-0ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/atk1.0/atk1.0_2.25.90-0ubuntu1.dsc' atk1.0_2.25.90-0ubuntu1.dsc 2833 SHA256:f68d6615a9fa90cd68520d0cc579693de5ce2106db14dd8173b47ba400c14624
-'http://archive.ubuntu.com/ubuntu/pool/main/a/atk1.0/atk1.0_2.25.90.orig.tar.xz' atk1.0_2.25.90.orig.tar.xz 710264 SHA256:22d54c0ee7930c5906ab7d98e8711276edd2297c83bfd250ce471ff5e23e6094
-'http://archive.ubuntu.com/ubuntu/pool/main/a/atk1.0/atk1.0_2.25.90-0ubuntu1.debian.tar.xz' atk1.0_2.25.90-0ubuntu1.debian.tar.xz 10732 SHA256:ac09e694c57a9930058de5a241848b258cd59e5e3ac1c2cd237e2bf6cbe82885
-```
 
 ### `dpkg` source package: `attr=1:2.4.47-2build1`
 
@@ -374,14 +368,8 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris binutils=2.29-10ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.29-10ubuntu1.dsc' binutils_2.29-10ubuntu1.dsc 6196 SHA256:37d561513679ecc902a21ca2e3ad4a2492248686848090f0f9a7eb48900b327a
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.29.orig.tar.gz' binutils_2.29.orig.tar.gz 38885604 SHA256:172e8c89472cf52712fd23a9f14e9bca6182727fb45b0f8f482652a83d5a11b4
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.29-10ubuntu1.diff.gz' binutils_2.29-10ubuntu1.diff.gz 289038 SHA256:6ed8d12b82c189c669dbc9cd1dfe26a2531b1cb5271e12e7f8a2fb4a90a86e21
-```
 
 ### `dpkg` source package: `bzip2=1.0.6-8.1`
 
@@ -830,14 +818,8 @@ Licenses: (parsed from: `/usr/share/doc/libelf1/copyright`)
 - `GPL-3`
 - `LGPL-`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris elfutils=0.170-0ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.170-0ubuntu2.dsc' elfutils_0.170-0ubuntu2.dsc 2313 SHA256:35438684b7b5bc12854d563f0396fdb68dabb20ae3ef1a3cfa6f40f06751caa4
-'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.170.orig.tar.bz2' elfutils_0.170.orig.tar.bz2 8358001 SHA256:1f844775576b79bdc9f9c717a50058d08620323c1e935458223a12f249c9e066
-'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.170-0ubuntu2.debian.tar.xz' elfutils_0.170-0ubuntu2.debian.tar.xz 37484 SHA256:59a08780279c95df8d552593d63c474b44a1cca7267d93df25e5c125bfdabdaf
-```
 
 ### `dpkg` source package: `expat=2.2.3-1`
 
@@ -1045,14 +1027,8 @@ Licenses: (parsed from: `/usr/share/doc/cpp-7/copyright`, `/usr/share/doc/g++-7/
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-7=7.2.0-3ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.2.0-3ubuntu1.dsc' gcc-7_7.2.0-3ubuntu1.dsc 30453 SHA256:91d08bd66636de64f36a32f453a4e155e4ee841f95bd4ecda061405394731cda
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.2.0.orig.tar.gz' gcc-7_7.2.0.orig.tar.gz 73406637 SHA256:aa50238ecb3a1ae463739e0ff5d31bb2fdf4e339456403bd58b765f57f237aa3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.2.0-3ubuntu1.diff.gz' gcc-7_7.2.0-3ubuntu1.diff.gz 2832695 SHA256:6dd25ff286e9f0a2cf8815cbdc439db0092183d5ed1702daacf36bb85ded1e75
-```
 
 ### `dpkg` source package: `gcc-defaults=1.173ubuntu1`
 
@@ -1108,14 +1084,8 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-gdkpixbuf-2.0/copyright`, `/usr/s
 - `GPL-2`
 - `LGPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gdk-pixbuf=2.36.5-3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.36.5-3.dsc' gdk-pixbuf_2.36.5-3.dsc 2894 SHA256:0838fe3c6882e3204b8536c4f377a3e88d5c29d885a209cd5e545470c8826542
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.36.5.orig.tar.xz' gdk-pixbuf_2.36.5.orig.tar.xz 5165640 SHA256:7ace06170291a1f21771552768bace072ecdea9bd4a02f7658939b9a314c40fc
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.36.5-3.debian.tar.xz' gdk-pixbuf_2.36.5-3.debian.tar.xz 14384 SHA256:209ea2dadbf91e77f5b18c1133357398253247555d9e035f4114cb7b08480888
-```
 
 ### `dpkg` source package: `geoip=1.6.11-2`
 
@@ -1191,14 +1161,8 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc
 
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.53.6-1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.53.6-1ubuntu2.dsc' glib2.0_2.53.6-1ubuntu2.dsc 2790 SHA256:b6d768fc2f3465e3502e9f0b8f8cf41676042007a711c3d4d0597a78da274b67
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.53.6.orig.tar.xz' glib2.0_2.53.6.orig.tar.xz 7805744 SHA256:e01296a9119c09d2dccb37ad09f5eaa1e0c5570a473d8fed04fc759ace6fb6cc
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.53.6-1ubuntu2.debian.tar.xz' glib2.0_2.53.6-1ubuntu2.debian.tar.xz 74400 SHA256:a0ccc29a4501da00dcf4c1e5d3773069d6db7a864e4bf13ff19441424d538c89
-```
 
 ### `dpkg` source package: `glibc=2.24-12ubuntu1`
 
@@ -1215,14 +1179,8 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris glibc=2.24-12ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.24-12ubuntu1.dsc' glibc_2.24-12ubuntu1.dsc 8815 SHA256:27fc26940669211cbc91e1d1c7c28bb54ff0f11f86ff6c63129f9bb86720512a
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.24.orig.tar.xz' glibc_2.24.orig.tar.xz 13921912 SHA256:ed71e8afd2b270f7947a2cea2457a31e1ca4fac08e2731d80edd7ec1730ec84f
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.24-12ubuntu1.debian.tar.xz' glibc_2.24-12ubuntu1.debian.tar.xz 1074048 SHA256:0025d241194fa6d02398394c80bf5c9616bed9ea55184dcb1dcc5a2ff6128f8a
-```
 
 ### `dpkg` source package: `gmp=2:6.1.2+dfsg-1`
 
@@ -1320,14 +1278,8 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-freedesktop/copyright`, `/usr/sha
 - `LGPL-2+`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gobject-introspection=1.53.2-4
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gobject-introspection/gobject-introspection_1.53.2-4.dsc' gobject-introspection_1.53.2-4.dsc 2968 SHA256:bd682c7ed532dedbfe915f8c343047badf75e9b86b72769699b187bfbc05bd14
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gobject-introspection/gobject-introspection_1.53.2.orig.tar.xz' gobject-introspection_1.53.2.orig.tar.xz 1390204 SHA256:7c2122a3423bf7b284374c4883844b4eb25741f6d9d3326ab55f7869b43a80f4
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gobject-introspection/gobject-introspection_1.53.2-4.debian.tar.xz' gobject-introspection_1.53.2-4.debian.tar.xz 20724 SHA256:633cce00310e3549bb2ebb114c50278363b7155cbee9cfb5c141048be0ab3784
-```
 
 ### `dpkg` source package: `graphite2=1.3.10-2`
 
@@ -1442,14 +1394,8 @@ Licenses: (parsed from: `/usr/share/doc/gtk-update-icon-cache/copyright`)
 - `LGPL-2.1+`
 - `other`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gtk+3.0=3.22.19-0ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+3.0/gtk+3.0_3.22.19-0ubuntu1.dsc' gtk+3.0_3.22.19-0ubuntu1.dsc 4182 SHA256:20d8911786c379fa2662505422de3b06a66acba5a21922ae50557356761112fc
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+3.0/gtk+3.0_3.22.19.orig.tar.xz' gtk+3.0_3.22.19.orig.tar.xz 18841024 SHA256:9883d3ca5244f9b3168ce660e87d52900e141d0f7147dea0640bdd6fe8e5166c
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+3.0/gtk+3.0_3.22.19-0ubuntu1.debian.tar.xz' gtk+3.0_3.22.19-0ubuntu1.debian.tar.xz 176988 SHA256:7d61c61d61c5c75711098fdcbdb7b421023acc6baab74c99ab56d3728f0ef1ac
-```
 
 ### `dpkg` source package: `gzip=1.6-5ubuntu1`
 
@@ -1526,14 +1472,8 @@ Licenses: (parsed from: `/usr/share/doc/hicolor-icon-theme/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris hicolor-icon-theme=0.15-1
-'http://archive.ubuntu.com/ubuntu/pool/main/h/hicolor-icon-theme/hicolor-icon-theme_0.15-1.dsc' hicolor-icon-theme_0.15-1.dsc 1588 SHA256:14450b4a0230793c4ba07d8aa87c657bdae60ae440f211fc693fdeb9fc3420d0
-'http://archive.ubuntu.com/ubuntu/pool/main/h/hicolor-icon-theme/hicolor-icon-theme_0.15.orig.tar.xz' hicolor-icon-theme_0.15.orig.tar.xz 51056 SHA256:9cc45ac3318c31212ea2d8cb99e64020732393ee7630fa6c1810af5f987033cc
-'http://archive.ubuntu.com/ubuntu/pool/main/h/hicolor-icon-theme/hicolor-icon-theme_0.15-1.debian.tar.xz' hicolor-icon-theme_0.15-1.debian.tar.xz 3524 SHA256:e11a79b49ba145e0c6985288abdf99447e4ff98bbb105eff82b402b55b99e0e2
-```
 
 ### `dpkg` source package: `hostname=3.18`
 
@@ -2071,15 +2011,8 @@ Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 - `GPL-2`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libgcrypt20=1.7.8-2
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.7.8-2.dsc' libgcrypt20_1.7.8-2.dsc 2914 SHA256:50756aa88fe20558993c3d73e1f611e28ec78daab7b4e61a0ac0efdbd3da910d
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.7.8.orig.tar.bz2' libgcrypt20_1.7.8.orig.tar.bz2 2897853 SHA256:948276ea47e6ba0244f36a17b51dcdd52cfd1e664b0a1ac3bc82134fb6cec199
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.7.8.orig.tar.bz2.asc' libgcrypt20_1.7.8.orig.tar.bz2.asc 310 SHA256:7785a7b8f861b8742f64c27a08de8aa27cb6f22af8884e5252602051544085db
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.7.8-2.debian.tar.xz' libgcrypt20_1.7.8-2.debian.tar.xz 26620 SHA256:7ddf57bcb8a1eb78d89af15dc138e4016ebca49ea8b78049ea4c71a8bb4cd31b
-```
 
 ### `dpkg` source package: `libgd2=2.2.5-2ubuntu1`
 
@@ -2101,14 +2034,8 @@ Licenses: (parsed from: `/usr/share/doc/libgd3/copyright`)
 - `WEBP`
 - `XFIG`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libgd2=2.2.5-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.2.5-2ubuntu1.dsc' libgd2_2.2.5-2ubuntu1.dsc 2238 SHA256:01bdeb8d59edf4adf35a74d2bf894cc100cd363bd6bfdc9aef069a0861f83537
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.2.5.orig.tar.gz' libgd2_2.2.5.orig.tar.gz 3326856 SHA256:150e6952af874bbccb33cf0f87288b41a8fd54f0ce4cff914ef90a80ef9d0162
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.2.5-2ubuntu1.debian.tar.xz' libgd2_2.2.5-2ubuntu1.debian.tar.xz 25836 SHA256:cb98b10a38ee6f436d8acbec3a405db5192707ed502d2377fcda87cfd050c294
-```
 
 ### `dpkg` source package: `libgpg-error=1.27-3`
 
@@ -2215,14 +2142,8 @@ Licenses: (parsed from: `/usr/share/doc/libjpeg-turbo8/copyright`, `/usr/share/d
 - `JPEG`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libjpeg-turbo=1.5.2-0ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/libj/libjpeg-turbo/libjpeg-turbo_1.5.2-0ubuntu1.dsc' libjpeg-turbo_1.5.2-0ubuntu1.dsc 2345 SHA256:405f8bfd8305e987fff95aba7fd9001d75427f8e6937996a4c1fe55b4af7c1ef
-'http://archive.ubuntu.com/ubuntu/pool/main/libj/libjpeg-turbo/libjpeg-turbo_1.5.2.orig.tar.gz' libjpeg-turbo_1.5.2.orig.tar.gz 1657235 SHA256:9098943b270388727ae61de82adec73cf9f0dbb240b3bc8b172595ebf405b528
-'http://archive.ubuntu.com/ubuntu/pool/main/libj/libjpeg-turbo/libjpeg-turbo_1.5.2-0ubuntu1.debian.tar.xz' libjpeg-turbo_1.5.2-0ubuntu1.debian.tar.xz 24056 SHA256:f6300090f3645de5b60ba315aca0a990ad99ef6f88b86e44753f55b3d65b2b38
-```
 
 ### `dpkg` source package: `libjpeg8-empty=8c-2ubuntu8`
 
@@ -2304,14 +2225,8 @@ Licenses: (parsed from: `/usr/share/doc/libpng-dev/copyright`, `/usr/share/doc/l
 - `libpng`
 - `libpng OR Apache-2.0 OR BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.32-1
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.32-1.dsc' libpng1.6_1.6.32-1.dsc 2188 SHA256:8a15cc205f1b564e7be8199dd7d7350e867f50d459ee42b6cb30533c278c8d30
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.32.orig.tar.xz' libpng1.6_1.6.32.orig.tar.xz 997136 SHA256:c918c3113de74a692f0a1526ce881dc26067763eb3915c57ef3a0f7b6886f59b
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.32-1.debian.tar.xz' libpng1.6_1.6.32-1.debian.tar.xz 23244 SHA256:47ae700a63793361b9cb0f23c547c29b2776625f8c846957e9b6842a29ed8fe8
-```
 
 ### `dpkg` source package: `libpsl=0.18.0-2`
 
@@ -2388,14 +2303,8 @@ Licenses: (parsed from: `/usr/share/doc/libselinux1/copyright`)
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libselinux=2.6-3build2
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_2.6-3build2.dsc' libselinux_2.6-3build2.dsc 2580 SHA256:c9483bfb777ac226c17105e46c5a5323cdd3507ef126516f5a2d4e1a5e375857
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_2.6.orig.tar.gz' libselinux_2.6.orig.tar.gz 203119 SHA256:4ea2dde50665c202253ba5caac7738370ea0337c47b251ba981c60d24e1a118a
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_2.6-3build2.debian.tar.xz' libselinux_2.6-3build2.debian.tar.xz 24516 SHA256:426c4d23045e29e69ec7b723406a2e4564e8bc69b2f90df3dd8742b6aa7ea2ff
-```
 
 ### `dpkg` source package: `libsemanage=2.6-2build2`
 
@@ -2409,14 +2318,8 @@ Licenses: (parsed from: `/usr/share/doc/libsemanage-common/copyright`, `/usr/sha
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libsemanage=2.6-2build2
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsemanage/libsemanage_2.6-2build2.dsc' libsemanage_2.6-2build2.dsc 2669 SHA256:0cccdd21d8d1d6a333c452828135e063599b8f89e8d8ad9ed998cea5c80802c7
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsemanage/libsemanage_2.6.orig.tar.gz' libsemanage_2.6.orig.tar.gz 155897 SHA256:4f81541047290b751f2ffb926fcd381c186f22db18d9fe671b0b4a6a54e8cfce
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsemanage/libsemanage_2.6-2build2.debian.tar.xz' libsemanage_2.6-2build2.debian.tar.xz 17216 SHA256:788a8007268cb37a304c63914785f310022c77d75ef9327c0439cda6da942087
-```
 
 ### `dpkg` source package: `libsepol=2.7-1`
 
@@ -2983,14 +2886,8 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris linux=4.12.0-13.14
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.12.0-13.14.dsc' linux_4.12.0-13.14.dsc 6053 SHA256:5c01d9fe34467b395dcb8874fca3393acc8b7e4553b6e8b73a1e05de0a01fd0c
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.12.0.orig.tar.gz' linux_4.12.0.orig.tar.gz 151882917 SHA256:540232262061143c288b22bdda80937323b2689d4c8e9b873405a78c54d030f1
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.12.0-13.14.diff.gz' linux_4.12.0-13.14.diff.gz 6701395 SHA256:3f774d6eb9f5099a18f2ebb80cd268dc9cc82c4a48512027c468f0e1189238cf
-```
 
 ### `dpkg` source package: `lsb=9.20160110ubuntu5`
 
@@ -3122,14 +3019,8 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris mercurial=4.0-1
-'http://archive.ubuntu.com/ubuntu/pool/universe/m/mercurial/mercurial_4.0-1.dsc' mercurial_4.0-1.dsc 2364 SHA256:ff0e5c095bc7968180186caae755a7db258d474fc3cec759c2043ca53770db0f
-'http://archive.ubuntu.com/ubuntu/pool/universe/m/mercurial/mercurial_4.0.orig.tar.gz' mercurial_4.0.orig.tar.gz 4850316 SHA256:24be080745230840f214d93e9f9fb4e25510f9abbbec2e56fab18543fedc43a7
-'http://archive.ubuntu.com/ubuntu/pool/universe/m/mercurial/mercurial_4.0-1.debian.tar.xz' mercurial_4.0-1.debian.tar.xz 95148 SHA256:2ebf7404aec85e37a751950678b12df1a6fd7c3b7fa405e87673cb4eaabdf2b8
-```
 
 ### `dpkg` source package: `mime-support=3.60ubuntu1`
 
@@ -3484,14 +3375,8 @@ Licenses: (parsed from: `/usr/share/doc/libpango-1.0-0/copyright`, `/usr/share/d
 - `LGPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris pango1.0=1.40.11-1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/pango1.0_1.40.11-1.dsc' pango1.0_1.40.11-1.dsc 3289 SHA256:4cec44d3c1c6df349fa1fdb0a68f96bb9da1bf5f26ba76abd48e43c5132117ed
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/pango1.0_1.40.11.orig.tar.xz' pango1.0_1.40.11.orig.tar.xz 854372 SHA256:5b11140590e632739e4151cae06b8116160d59e22bf36a3ccd5df76d1cf0383e
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/pango1.0_1.40.11-1.debian.tar.xz' pango1.0_1.40.11-1.debian.tar.xz 28116 SHA256:5a82fb58cd002cacaa21cadd8ff8414cc505a37da6c47ec1f96fd80aa260e47e
-```
 
 ### `dpkg` source package: `patch=2.7.5-1build1`
 
@@ -3809,14 +3694,8 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.6-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris python3.6=3.6.2-3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.6/python3.6_3.6.2-3.dsc' python3.6_3.6.2-3.dsc 3351 SHA256:cf480ba0cffea536d11f45ec2bba1c0fe721f0486540a613d8a6fc8ab0e8914a
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.6/python3.6_3.6.2.orig.tar.xz' python3.6_3.6.2.orig.tar.xz 16907204 SHA256:9229773be41ed144370f47f0f626a1579931f5a390f1e8e3853174d52edd64a9
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.6/python3.6_3.6.2-3.debian.tar.xz' python3.6_3.6.2-3.debian.tar.xz 202444 SHA256:8b263d6600d084aa4aa3e9519504d43b490b13500c19d1ad171904cf368acd72
-```
 
 ### `dpkg` source package: `readline=7.0-0ubuntu2`
 
