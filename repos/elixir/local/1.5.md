@@ -2,17 +2,17 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c203cae569a70c39430c8e40070175195669a7daec3225933cacb7e3d47ca9e8`
-- Created: `2017-09-13T10:32:21.543920948Z`
-- Virtual Size: ~ 886.51 Mb  
+- Image ID: `sha256:99275bfdda5860fa6bf3f28d506d7f58dd4cbcbd3332fba7dac81c494fdfb934`
+- Created: `2017-09-19T18:19:52.731867018Z`
+- Virtual Size: ~ 887.52 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["iex"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `OTP_VERSION=20.0.4`
+  - `OTP_VERSION=20.0.5`
   - `REBAR_VERSION=2.6.4`
-  - `REBAR3_VERSION=3.4.3`
+  - `REBAR3_VERSION=3.4.4`
   - `ELIXIR_VERSION=v1.5.1`
   - `LANG=C.UTF-8`
 
@@ -3839,19 +3839,8 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris linux=3.16.43-2+deb8u3
-'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.43-2+deb8u3.dsc' linux_3.16.43-2+deb8u3.dsc 140764 SHA256:2d060194a96785cd0b49366834362c5165457300c5c6256e7717252016b6f7c6
-'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.43.orig.tar.xz' linux_3.16.43.orig.tar.xz 81815520 SHA256:77fc86010339c04736799d4f2e19adc1623c440583e7eae09e4b76b63c4edd8f
-'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.43-2+deb8u3.debian.tar.xz' linux_3.16.43-2+deb8u3.debian.tar.xz 3192332 SHA256:84549e68dfb964343c0ca6f9b648000b536c0f4156096e73fe471e9392026eda
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/linux/3.16.43-2+deb8u3/
-- https://sources.debian.net/src/linux/3.16.43-2+deb8u3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lksctp-tools=1.0.16+dfsg-2`
 
