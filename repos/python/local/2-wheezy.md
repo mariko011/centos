@@ -1089,19 +1089,8 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-gdkpixbuf-2.0/copyright`, `/usr/s
 - `GPL-2`
 - `LGPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gdk-pixbuf=2.26.1-1+deb7u5
-'http://security.debian.org/pool/updates/main/g/gdk-pixbuf/gdk-pixbuf_2.26.1-1+deb7u5.dsc' gdk-pixbuf_2.26.1-1+deb7u5.dsc 2786 SHA256:7e3052df1b03a41aa568b13804f171d531915d34fec7430cf05fc87b16e9271b
-'http://security.debian.org/pool/updates/main/g/gdk-pixbuf/gdk-pixbuf_2.26.1.orig.tar.xz' gdk-pixbuf_2.26.1.orig.tar.xz 1167608 SHA256:a60af12b58d9cc15ba4c680c6730ce5d38e8d664af1d575a379385b94b4ec7ba
-'http://security.debian.org/pool/updates/main/g/gdk-pixbuf/gdk-pixbuf_2.26.1-1+deb7u5.debian.tar.gz' gdk-pixbuf_2.26.1-1+deb7u5.debian.tar.gz 17967 SHA256:3d411161ed161596c9139e134bf25cd97efaa14fd252a9658e65866459c39a66
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gdk-pixbuf/2.26.1-1+deb7u5/
-- https://sources.debian.net/src/gdk-pixbuf/2.26.1-1+deb7u5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `geoip=1.4.8+dfsg-3`
 
@@ -2044,19 +2033,8 @@ Licenses: (parsed from: `/usr/share/doc/libgd2-noxpm/copyright`)
 - `HPND`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libgd2=2.0.36~rc1~dfsg-6.1+deb7u9
-'http://security.debian.org/pool/updates/main/libg/libgd2/libgd2_2.0.36~rc1~dfsg-6.1+deb7u9.dsc' libgd2_2.0.36~rc1~dfsg-6.1+deb7u9.dsc 2584 SHA256:2c51b503b7f8922eca3c54ca4014232e2374890542d7c86246ce2ec2f62cfc55
-'http://security.debian.org/pool/updates/main/libg/libgd2/libgd2_2.0.36~rc1~dfsg.orig.tar.gz' libgd2_2.0.36~rc1~dfsg.orig.tar.gz 761899 SHA256:919df21310ad4a8b6155df01411138110589cc6c50b1bc414dc62aebb0a7f41a
-'http://security.debian.org/pool/updates/main/libg/libgd2/libgd2_2.0.36~rc1~dfsg-6.1+deb7u9.debian.tar.gz' libgd2_2.0.36~rc1~dfsg-6.1+deb7u9.debian.tar.gz 33376 SHA256:4ce81e76c532979e0ce540c0729187999e79424203d64c821b7fd82e1a4627f8
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libgd2/2.0.36~rc1~dfsg-6.1+deb7u9/
-- https://sources.debian.net/src/libgd2/2.0.36~rc1~dfsg-6.1+deb7u9/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libgpg-error=1.10-3.1`
 
