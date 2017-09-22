@@ -1,10 +1,10 @@
-# `wordpress:4.8.1-php7.1-fpm`
+# `wordpress:4.8.2-php7.1-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:56c4e88c0ded114feb12b10d857a8d36a458eeffcbdc7f4f46eb0bdf770533f2`
-- Created: `2017-09-15T02:07:16.81286118Z`
-- Virtual Size: ~ 413.36 Mb  
+- Image ID: `sha256:692f1a3ec5b90ce876434e8522ae9addbc9454977d0d67a4ab681024030facff`
+- Created: `2017-09-21T21:20:21.879615842Z`
+- Virtual Size: ~ 413.37 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -23,8 +23,8 @@
   - `PHP_ASC_URL=https://secure.php.net/get/php-7.1.9.tar.xz.asc/from/this/mirror`
   - `PHP_SHA256=ec9ca348dd51f19a84dc5d33acfff1fba1f977300604bdac08ed46ae2c281e8c`
   - `PHP_MD5=`
-  - `WORDPRESS_VERSION=4.8.1`
-  - `WORDPRESS_SHA1=5376cf41403ae26d51ca55c32666ef68b10e35a4`
+  - `WORDPRESS_VERSION=4.8.2`
+  - `WORDPRESS_SHA1=a99115b3b6d6d7a1eb6c5617d4e8e704ed50f450`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1864,19 +1864,8 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris linux=3.16.43-2+deb8u3
-'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.43-2+deb8u3.dsc' linux_3.16.43-2+deb8u3.dsc 140764 SHA256:2d060194a96785cd0b49366834362c5165457300c5c6256e7717252016b6f7c6
-'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.43.orig.tar.xz' linux_3.16.43.orig.tar.xz 81815520 SHA256:77fc86010339c04736799d4f2e19adc1623c440583e7eae09e4b76b63c4edd8f
-'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.43-2+deb8u3.debian.tar.xz' linux_3.16.43-2+deb8u3.debian.tar.xz 3192332 SHA256:84549e68dfb964343c0ca6f9b648000b536c0f4156096e73fe471e9392026eda
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/linux/3.16.43-2+deb8u3/
-- https://sources.debian.net/src/linux/3.16.43-2+deb8u3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lsb=4.1+Debian13+nmu1`
 
