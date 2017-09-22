@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:81fe4135569f40d87fc185ab5e318efd121cab3ce6f44d02076f580efa5083be`
-- Created: `2017-09-15T20:56:40.711712334Z`
+- Image ID: `sha256:303348534814ec2689a48e1a7ce3cdaa7235e7dcb5527bd7e9c8e17e7fcfc400`
+- Created: `2017-09-21T20:08:00.512209306Z`
 - Virtual Size: ~ 354.53 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1614,19 +1614,8 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris linux=4.9.30-2+deb9u3
-'http://security.debian.org/pool/updates/main/l/linux/linux_4.9.30-2+deb9u3.dsc' linux_4.9.30-2+deb9u3.dsc 123291 SHA256:f0314677ff16908f08dca68651c310bd2ae92ac6449ef2b0fcdb18a6750f3387
-'http://security.debian.org/pool/updates/main/l/linux/linux_4.9.30.orig.tar.xz' linux_4.9.30.orig.tar.xz 94471128 SHA256:4a5afc3589825f514c5908e8421e81695648dad62357343494c3dd07edb29306
-'http://security.debian.org/pool/updates/main/l/linux/linux_4.9.30-2+deb9u3.debian.tar.xz' linux_4.9.30-2+deb9u3.debian.tar.xz 3061100 SHA256:80e070be2e76dbc601de552dad4ece87e5a8d26d61648a2948a94d6e2cc90cef
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/linux/4.9.30-2+deb9u3/
-- https://sources.debian.net/src/linux/4.9.30-2+deb9u3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lsb=9.20161125`
 
