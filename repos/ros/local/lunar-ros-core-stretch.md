@@ -2704,19 +2704,8 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris linux=4.9.30-2+deb9u3
-'http://security.debian.org/pool/updates/main/l/linux/linux_4.9.30-2+deb9u3.dsc' linux_4.9.30-2+deb9u3.dsc 123291 SHA256:f0314677ff16908f08dca68651c310bd2ae92ac6449ef2b0fcdb18a6750f3387
-'http://security.debian.org/pool/updates/main/l/linux/linux_4.9.30.orig.tar.xz' linux_4.9.30.orig.tar.xz 94471128 SHA256:4a5afc3589825f514c5908e8421e81695648dad62357343494c3dd07edb29306
-'http://security.debian.org/pool/updates/main/l/linux/linux_4.9.30-2+deb9u3.debian.tar.xz' linux_4.9.30-2+deb9u3.debian.tar.xz 3061100 SHA256:80e070be2e76dbc601de552dad4ece87e5a8d26d61648a2948a94d6e2cc90cef
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/linux/4.9.30-2+deb9u3/
-- https://sources.debian.net/src/linux/4.9.30-2+deb9u3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lksctp-tools=1.0.17+dfsg-1`
 
