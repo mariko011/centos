@@ -424,14 +424,8 @@ Licenses: (parsed from: `/usr/share/doc/gcc-7-base/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-7=7.2.0-3ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.2.0-3ubuntu1.dsc' gcc-7_7.2.0-3ubuntu1.dsc 30453 SHA256:91d08bd66636de64f36a32f453a4e155e4ee841f95bd4ecda061405394731cda
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.2.0.orig.tar.gz' gcc-7_7.2.0.orig.tar.gz 73406637 SHA256:aa50238ecb3a1ae463739e0ff5d31bb2fdf4e339456403bd58b765f57f237aa3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.2.0-3ubuntu1.diff.gz' gcc-7_7.2.0-3ubuntu1.diff.gz 2832695 SHA256:6dd25ff286e9f0a2cf8815cbdc439db0092183d5ed1702daacf36bb85ded1e75
-```
 
 ### `dpkg` source package: `glibc=2.24-12ubuntu1`
 
@@ -445,14 +439,8 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris glibc=2.24-12ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.24-12ubuntu1.dsc' glibc_2.24-12ubuntu1.dsc 8815 SHA256:27fc26940669211cbc91e1d1c7c28bb54ff0f11f86ff6c63129f9bb86720512a
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.24.orig.tar.xz' glibc_2.24.orig.tar.xz 13921912 SHA256:ed71e8afd2b270f7947a2cea2457a31e1ca4fac08e2731d80edd7ec1730ec84f
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.24-12ubuntu1.debian.tar.xz' glibc_2.24-12ubuntu1.debian.tar.xz 1074048 SHA256:0025d241194fa6d02398394c80bf5c9616bed9ea55184dcb1dcc5a2ff6128f8a
-```
 
 ### `dpkg` source package: `gmp=2:6.1.2+dfsg-1`
 
@@ -718,15 +706,8 @@ Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 - `GPL-2`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libgcrypt20=1.7.8-2
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.7.8-2.dsc' libgcrypt20_1.7.8-2.dsc 2914 SHA256:50756aa88fe20558993c3d73e1f611e28ec78daab7b4e61a0ac0efdbd3da910d
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.7.8.orig.tar.bz2' libgcrypt20_1.7.8.orig.tar.bz2 2897853 SHA256:948276ea47e6ba0244f36a17b51dcdd52cfd1e664b0a1ac3bc82134fb6cec199
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.7.8.orig.tar.bz2.asc' libgcrypt20_1.7.8.orig.tar.bz2.asc 310 SHA256:7785a7b8f861b8742f64c27a08de8aa27cb6f22af8884e5252602051544085db
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.7.8-2.debian.tar.xz' libgcrypt20_1.7.8-2.debian.tar.xz 26620 SHA256:7ddf57bcb8a1eb78d89af15dc138e4016ebca49ea8b78049ea4c71a8bb4cd31b
-```
 
 ### `dpkg` source package: `libgpg-error=1.27-3`
 
@@ -809,14 +790,8 @@ Licenses: (parsed from: `/usr/share/doc/libselinux1/copyright`)
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libselinux=2.6-3build2
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_2.6-3build2.dsc' libselinux_2.6-3build2.dsc 2580 SHA256:c9483bfb777ac226c17105e46c5a5323cdd3507ef126516f5a2d4e1a5e375857
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_2.6.orig.tar.gz' libselinux_2.6.orig.tar.gz 203119 SHA256:4ea2dde50665c202253ba5caac7738370ea0337c47b251ba981c60d24e1a118a
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_2.6-3build2.debian.tar.xz' libselinux_2.6-3build2.debian.tar.xz 24516 SHA256:426c4d23045e29e69ec7b723406a2e4564e8bc69b2f90df3dd8742b6aa7ea2ff
-```
 
 ### `dpkg` source package: `libsemanage=2.6-2build2`
 
@@ -830,14 +805,8 @@ Licenses: (parsed from: `/usr/share/doc/libsemanage-common/copyright`, `/usr/sha
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libsemanage=2.6-2build2
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsemanage/libsemanage_2.6-2build2.dsc' libsemanage_2.6-2build2.dsc 2669 SHA256:0cccdd21d8d1d6a333c452828135e063599b8f89e8d8ad9ed998cea5c80802c7
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsemanage/libsemanage_2.6.orig.tar.gz' libsemanage_2.6.orig.tar.gz 155897 SHA256:4f81541047290b751f2ffb926fcd381c186f22db18d9fe671b0b4a6a54e8cfce
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsemanage/libsemanage_2.6-2build2.debian.tar.xz' libsemanage_2.6-2build2.debian.tar.xz 17216 SHA256:788a8007268cb37a304c63914785f310022c77d75ef9327c0439cda6da942087
-```
 
 ### `dpkg` source package: `libsepol=2.7-1`
 
