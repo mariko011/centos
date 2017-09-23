@@ -130,19 +130,8 @@ Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apparmor=2.11.0-10
-'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.11.0-10.dsc' apparmor_2.11.0-10.dsc 3161 SHA256:e34e24b3b6782ec18888eb2aff2c9edcd7f5c514ef8a55b4abebb156ff2420ef
-'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.11.0.orig.tar.gz' apparmor_2.11.0.orig.tar.gz 5013297 SHA256:b1c489ea11e7771b8e6b181532cafbf9ebe6603e3cb00e2558f21b7a5bdd739a
-'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.11.0-10.debian.tar.xz' apparmor_2.11.0-10.debian.tar.xz 87580 SHA256:3ac68659310ec08a8ca6f3465ef5dc7c0ef2ff0f1050b0c7b5016d76dfe40b69
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/apparmor/2.11.0-10/
-- https://sources.debian.net/src/apparmor/2.11.0-10/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `apr-util=1.6.0-2`
 
@@ -1439,20 +1428,8 @@ Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.2.0-3
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.0-3.dsc' gnupg2_2.2.0-3.dsc 3694 SHA256:4507382a487b956475de33c89b88919a8d18b0493ece253f7030840fa1330c14
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.0.orig.tar.bz2' gnupg2_2.2.0.orig.tar.bz2 6532475 SHA256:d4514a0be0f7a1ff263193330019eb4b53c82f0f5e230af3c14df371271a45e6
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.0.orig.tar.bz2.asc' gnupg2_2.2.0.orig.tar.bz2.asc 310 SHA256:5b0987f858326090d3f6729de5b2032231318e5ff522be8a6fb8a4a98ade7f1a
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.0-3.debian.tar.bz2' gnupg2_2.2.0-3.debian.tar.bz2 62895 SHA256:c905bc2260aca57af70fc98e35ed7eb7d99d02e0568398af21f2ca06ded0f3d9
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gnupg2/2.2.0-3/
-- https://sources.debian.net/src/gnupg2/2.2.0-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gnutls28=3.5.15-2`
 
@@ -3710,19 +3687,8 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.25.0-1
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.25.0-1.dsc' nghttp2_1.25.0-1.dsc 2310 SHA256:5ec7657d3862251b9dbb30be84be58f4ece7ddb7c2670c63b98c2ae1e4185524
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.25.0.orig.tar.bz2' nghttp2_1.25.0.orig.tar.bz2 1836964 SHA256:045825f779e07131360fa2b6c4ced812d6d10e8f1c9b92f2a9b114c6cdcc1e24
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.25.0-1.debian.tar.xz' nghttp2_1.25.0-1.debian.tar.xz 12008 SHA256:487ef633d4358e25f2ec49291a4b0b3d7d9d386976236a6ddb138b9ad501747f
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/nghttp2/1.25.0-1/
-- https://sources.debian.net/src/nghttp2/1.25.0-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `nspr=2:4.16-1`
 
@@ -4188,18 +4154,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris python-defaults=2.7.13-2
-'http://deb.debian.org/debian/pool/main/p/python-defaults/python-defaults_2.7.13-2.dsc' python-defaults_2.7.13-2.dsc 2677 SHA256:80d5452cde16052caa5b9c3880ed067c3d4f2e60485a56947531a6650f6e7d94
-'http://deb.debian.org/debian/pool/main/p/python-defaults/python-defaults_2.7.13-2.tar.gz' python-defaults_2.7.13-2.tar.gz 273915 SHA256:aa376f54a9b2ca59b6f051ce0b4320d95ef60f114f90d98a90e510c3968b416a
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/python-defaults/2.7.13-2/
-- https://sources.debian.net/src/python-defaults/2.7.13-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `python2.7=2.7.14~rc1-3`
 
@@ -4229,19 +4185,8 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/s
 - `implied`
 - `see above, some license as Python`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris python2.7=2.7.14~rc1-3
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.14~rc1-3.dsc' python2.7_2.7.14~rc1-3.dsc 3395 SHA256:b4033855155abf0255bffb955b06ef0b305dea067a94fae0259c79f24a06d28c
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.14~rc1.orig.tar.gz' python2.7_2.7.14~rc1.orig.tar.gz 17002056 SHA256:4d1ca11c5451e1b7cafcabc2003cf80fb3745bac45ba51c39b855b0011a27408
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.14~rc1-3.diff.gz' python2.7_2.7.14~rc1-3.diff.gz 286110 SHA256:a503fd9621b55a00cbcf7e79fd60f005a7b53ba490d7afdc7aaf81983f8b8770
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/python2.7/2.7.14~rc1-3/
-- https://sources.debian.net/src/python2.7/2.7.14~rc1-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `readline=7.0-3`
 
@@ -4528,19 +4473,8 @@ Licenses: (parsed from: `/usr/share/doc/sysvinit-utils/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris sysvinit=2.88dsf-59.9
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_2.88dsf-59.9.dsc' sysvinit_2.88dsf-59.9.dsc 2123 SHA256:a943edeac16668d3e55583daa4033ad46469e84ffad014e0e2007d9c3167e63d
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_2.88dsf.orig.tar.gz' sysvinit_2.88dsf.orig.tar.gz 125330 SHA256:b016f937958d2809a020d407e1287bdc09abf1d44efaa96530e2ea57f544f4e8
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_2.88dsf-59.9.debian.tar.xz' sysvinit_2.88dsf-59.9.debian.tar.xz 132584 SHA256:fbd5c085680d896ec6ee1c5a55ae2d8a5a6b9fd5a7ec1e13010dace24fdbcd5c
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/sysvinit/2.88dsf-59.9/
-- https://sources.debian.net/src/sysvinit/2.88dsf-59.9/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `tar=1.29b-2`
 
