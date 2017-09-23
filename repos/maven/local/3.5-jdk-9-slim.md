@@ -82,19 +82,8 @@ Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apparmor=2.11.0-10
-'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.11.0-10.dsc' apparmor_2.11.0-10.dsc 3161 SHA256:e34e24b3b6782ec18888eb2aff2c9edcd7f5c514ef8a55b4abebb156ff2420ef
-'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.11.0.orig.tar.gz' apparmor_2.11.0.orig.tar.gz 5013297 SHA256:b1c489ea11e7771b8e6b181532cafbf9ebe6603e3cb00e2558f21b7a5bdd739a
-'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.11.0-10.debian.tar.xz' apparmor_2.11.0-10.debian.tar.xz 87580 SHA256:3ac68659310ec08a8ca6f3465ef5dc7c0ef2ff0f1050b0c7b5016d76dfe40b69
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/apparmor/2.11.0-10/
-- https://sources.debian.net/src/apparmor/2.11.0-10/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `apt=1.5~rc1`
 
@@ -1890,19 +1879,8 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.25.0-1
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.25.0-1.dsc' nghttp2_1.25.0-1.dsc 2310 SHA256:5ec7657d3862251b9dbb30be84be58f4ece7ddb7c2670c63b98c2ae1e4185524
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.25.0.orig.tar.bz2' nghttp2_1.25.0.orig.tar.bz2 1836964 SHA256:045825f779e07131360fa2b6c4ced812d6d10e8f1c9b92f2a9b114c6cdcc1e24
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.25.0-1.debian.tar.xz' nghttp2_1.25.0-1.debian.tar.xz 12008 SHA256:487ef633d4358e25f2ec49291a4b0b3d7d9d386976236a6ddb138b9ad501747f
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/nghttp2/1.25.0-1/
-- https://sources.debian.net/src/nghttp2/1.25.0-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `nspr=2:4.16-1`
 
@@ -2214,19 +2192,8 @@ Licenses: (parsed from: `/usr/share/doc/publicsuffix/copyright`)
 - `CC0`
 - `MPL-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris publicsuffix=20170809.0951-1
-'http://deb.debian.org/debian/pool/main/p/publicsuffix/publicsuffix_20170809.0951-1.dsc' publicsuffix_20170809.0951-1.dsc 1976 SHA256:82576b6fd74eb4f6ef95dcf119e4c5499a0b3d1b3a17005bae42c30ebdfefff5
-'http://deb.debian.org/debian/pool/main/p/publicsuffix/publicsuffix_20170809.0951.orig.tar.gz' publicsuffix_20170809.0951.orig.tar.gz 82919 SHA256:4ab8b57a1b52f47e6b447a75f0dd5792f6d638e27af99b66dd46eb7bd2b8325a
-'http://deb.debian.org/debian/pool/main/p/publicsuffix/publicsuffix_20170809.0951-1.debian.tar.xz' publicsuffix_20170809.0951-1.debian.tar.xz 14012 SHA256:07bdf2ea1304ea4dc79a4321ee08195f04e4ed882c8c1267a8ad7bc2fcc718eb
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/publicsuffix/20170809.0951-1/
-- https://sources.debian.net/src/publicsuffix/20170809.0951-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `rtmpdump=2.4+20151223.gitfa8646d.1-1`
 
