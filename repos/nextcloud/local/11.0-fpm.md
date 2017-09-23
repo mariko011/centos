@@ -1,10 +1,10 @@
-# `nextcloud:11.0.4-fpm`
+# `nextcloud:11.0.5-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:682e2aa1d1b93f4596a2ed0c28aa08790e1b7f2d9cd82edd53cad6571a064c87`
-- Created: `2017-09-15T02:28:37.315674454Z`
-- Virtual Size: ~ 624.72 Mb  
+- Image ID: `sha256:eb65e6b311d787cf41fdd58840695d92f6ea06247a04f411b14f3551f76e27f8`
+- Created: `2017-09-21T21:20:17.411932259Z`
+- Virtual Size: ~ 626.06 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -23,7 +23,7 @@
   - `PHP_ASC_URL=https://secure.php.net/get/php-7.1.9.tar.xz.asc/from/this/mirror`
   - `PHP_SHA256=ec9ca348dd51f19a84dc5d33acfff1fba1f977300604bdac08ed46ae2c281e8c`
   - `PHP_MD5=`
-  - `NEXTCLOUD_VERSION=11.0.4`
+  - `NEXTCLOUD_VERSION=11.0.5`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1988,19 +1988,8 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris linux=3.16.43-2+deb8u3
-'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.43-2+deb8u3.dsc' linux_3.16.43-2+deb8u3.dsc 140764 SHA256:2d060194a96785cd0b49366834362c5165457300c5c6256e7717252016b6f7c6
-'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.43.orig.tar.xz' linux_3.16.43.orig.tar.xz 81815520 SHA256:77fc86010339c04736799d4f2e19adc1623c440583e7eae09e4b76b63c4edd8f
-'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.43-2+deb8u3.debian.tar.xz' linux_3.16.43-2+deb8u3.debian.tar.xz 3192332 SHA256:84549e68dfb964343c0ca6f9b648000b536c0f4156096e73fe471e9392026eda
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/linux/3.16.43-2+deb8u3/
-- https://sources.debian.net/src/linux/3.16.43-2+deb8u3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lsb=4.1+Debian13+nmu1`
 
