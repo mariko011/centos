@@ -250,18 +250,8 @@ Licenses: (parsed from: `/usr/share/doc/build-essential/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris build-essential=12.3
-'http://deb.debian.org/debian/pool/main/b/build-essential/build-essential_12.3.dsc' build-essential_12.3.dsc 2006 SHA256:adca29326774aed32258df68bbbe757485f38d50e4a47ea39542ff4540a1cf47
-'http://deb.debian.org/debian/pool/main/b/build-essential/build-essential_12.3.tar.gz' build-essential_12.3.tar.gz 65664 SHA256:baab0f0cadb984ad49958f74504b175fbc665f8f69aaa102c35c7e9b0fdf92d5
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/build-essential/12.3/
-- https://sources.debian.net/src/build-essential/12.3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `bzip2=1.0.6-8.1`
 
@@ -978,18 +968,8 @@ Licenses: (parsed from: `/usr/share/doc/cpp/copyright`, `/usr/share/doc/g++/copy
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-defaults=1.172
-'http://deb.debian.org/debian/pool/main/g/gcc-defaults/gcc-defaults_1.172.dsc' gcc-defaults_1.172.dsc 13298 SHA256:365920b8138af30852d88292f6d048a0782398ed28fe890754842f89bd7b18c2
-'http://deb.debian.org/debian/pool/main/g/gcc-defaults/gcc-defaults_1.172.tar.gz' gcc-defaults_1.172.tar.gz 70267 SHA256:0000e88e5cfdc38f270d6d410483a85231c366fe741c759b2dad105800f568e3
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gcc-defaults/1.172/
-- https://sources.debian.net/src/gcc-defaults/1.172/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gdbm=1.8.3-14`
 
@@ -2491,14 +2471,8 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-mgcv/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris mgcv=1.8-20-1
-'http://http.debian.net/debian/pool/main/m/mgcv/mgcv_1.8-20-1.dsc' mgcv_1.8-20-1.dsc 1643 SHA256:d69dc6390447b8a8ad3f916b7959fffa8f75029a3d27e2aae4da9d0115cb1584
-'http://http.debian.net/debian/pool/main/m/mgcv/mgcv_1.8-20.orig.tar.gz' mgcv_1.8-20.orig.tar.gz 870390 SHA256:a31f99db3e4eb6887e376801b4910a6a240614f3961d8bbe4785d60bcd6483e5
-'http://http.debian.net/debian/pool/main/m/mgcv/mgcv_1.8-20-1.diff.gz' mgcv_1.8-20-1.diff.gz 5353 SHA256:3203fbeee9b095ec51fb48340df08618ec51b4ce4f37ae71b077d1baed8c55f1
-```
 
 ### `dpkg` source package: `mpclib3=1.0.3-2`
 
@@ -2647,19 +2621,8 @@ Licenses: (parsed from: `/usr/share/doc/libhogweed4/copyright`, `/usr/share/doc/
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris nettle=3.3-1
-'http://deb.debian.org/debian/pool/main/n/nettle/nettle_3.3-1.dsc' nettle_3.3-1.dsc 2043 SHA256:3336bc6e8e5b1acad66afa97a05f934e4d758c614fd468d5650b5a38049f1161
-'http://deb.debian.org/debian/pool/main/n/nettle/nettle_3.3.orig.tar.gz' nettle_3.3.orig.tar.gz 1887927 SHA256:46942627d5d0ca11720fec18d81fc38f7ef837ea4197c1f630e71ce0d470b11e
-'http://deb.debian.org/debian/pool/main/n/nettle/nettle_3.3-1.debian.tar.xz' nettle_3.3-1.debian.tar.xz 19428 SHA256:42fef549318af6cfdf76336eb348501d09454a1d873a84f66440b9a791a0ff1b
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/nettle/3.3-1/
-- https://sources.debian.net/src/nettle/3.3-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `nghttp2=1.25.0-1`
 
