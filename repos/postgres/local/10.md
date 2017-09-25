@@ -2468,14 +2468,8 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postg
 - `nagaysau-ishii`
 - `rijndael`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris postgresql-10=10~beta4-1.pgdg90+1
-'http://apt.postgresql.org/pub/repos/apt/pool/10/p/postgresql-10/postgresql-10_10~beta4-1.pgdg90+1.dsc' postgresql-10_10~beta4-1.pgdg90+1.dsc 2709 SHA256:8d1dd95493159a1a35b995cb267a46c45a1423703b0e7a25904882e2b5361f90
-'http://apt.postgresql.org/pub/repos/apt/pool/10/p/postgresql-10/postgresql-10_10~beta4.orig.tar.bz2' postgresql-10_10~beta4.orig.tar.bz2 20024694 SHA256:e70ffa84d439033533279ccb3ae7beaa0278585b2b176a767bcd0cbddb1252d2
-'http://apt.postgresql.org/pub/repos/apt/pool/10/p/postgresql-10/postgresql-10_10~beta4-1.pgdg90+1.debian.tar.xz' postgresql-10_10~beta4-1.pgdg90+1.debian.tar.xz 17180 SHA256:bd872245e161a98e4114b177e8a37757a086943b4e1dfad058a6c4c6e98b95e8
-```
 
 ### `dpkg` source package: `postgresql-common=184.pgdg90+1`
 
@@ -2489,13 +2483,8 @@ Licenses: (parsed from: `/usr/share/doc/postgresql-client-common/copyright`, `/u
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris postgresql-common=184.pgdg90+1
-'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-common/postgresql-common_184.pgdg90+1.dsc' postgresql-common_184.pgdg90+1.dsc 1492 SHA256:84732b3eced9b49176d35313e56ecb8cecfa36662e1debce8924adff7650c897
-'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-common/postgresql-common_184.pgdg90+1.tar.xz' postgresql-common_184.pgdg90+1.tar.xz 205524 SHA256:d3a550822c5191d2b2043f7e3bb93d2ccf23f90e4f39b564f6ac5109b29bd39e
-```
 
 ### `dpkg` source package: `procps=2:3.3.12-3`
 
