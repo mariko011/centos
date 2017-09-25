@@ -1,10 +1,10 @@
-# `docker:17.09.0-ce-rc2`
+# `docker:17.09.0-ce-rc3`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2a8d1086e2058b3177e874fbf2842df9ead1a57a4ffcaf0c453731ff9f043bba`
-- Created: `2017-09-15T14:51:46.138669735Z`
-- Virtual Size: ~ 99.80 Mb  
+- Image ID: `sha256:8e00cef02fc58f70eb68e1f5f8ddfa2a66195b5402edde6228072c57d17ff9b7`
+- Created: `2017-09-21T22:06:33.579121277Z`
+- Virtual Size: ~ 99.81 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -12,4 +12,4 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `DOCKER_CHANNEL=test`
-  - `DOCKER_VERSION=17.09.0-ce-rc2`
+  - `DOCKER_VERSION=17.09.0-ce-rc3`
