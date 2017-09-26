@@ -647,20 +647,8 @@ Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnup
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.2.0-3
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.0-3.dsc' gnupg2_2.2.0-3.dsc 3694 SHA256:4507382a487b956475de33c89b88919a8d18b0493ece253f7030840fa1330c14
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.0.orig.tar.bz2' gnupg2_2.2.0.orig.tar.bz2 6532475 SHA256:d4514a0be0f7a1ff263193330019eb4b53c82f0f5e230af3c14df371271a45e6
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.0.orig.tar.bz2.asc' gnupg2_2.2.0.orig.tar.bz2.asc 310 SHA256:5b0987f858326090d3f6729de5b2032231318e5ff522be8a6fb8a4a98ade7f1a
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.0-3.debian.tar.bz2' gnupg2_2.2.0-3.debian.tar.bz2 62895 SHA256:c905bc2260aca57af70fc98e35ed7eb7d99d02e0568398af21f2ca06ded0f3d9
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gnupg2/2.2.0-3/
-- https://sources.debian.net/src/gnupg2/2.2.0-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gnutls28=3.5.15-2`
 
