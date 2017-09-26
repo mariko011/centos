@@ -1,7 +1,7 @@
 ## `gradle:jdk7`
 
 ```console
-$ docker pull gradle@sha256:e45827390528185a4a2b3bf3c7b9a3ebb3b95aae2d2a02e7cab7a8b66457d854
+$ docker pull gradle@sha256:31510f6ccf2a2e0afe3c1fcf239a6264913712654083163e10242685f7edb2c1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull gradle@sha256:e45827390528185a4a2b3bf3c7b9a3ebb3b95aae2d2a02e7cab7
 ### `gradle:jdk7` - linux; amd64
 
 ```console
-$ docker pull gradle@sha256:8737dcff5e06a1c8669d05bb6a6c733b5f124e45a6a86d3d831d6aeff13149c4
+$ docker pull gradle@sha256:1f16f1109823eafbfc8a8e969e895a2d58cb0bed34ac8ef72b06841bf3a47f2f
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **312.3 MB (312262086 bytes)**  
+-	Total Size: **315.9 MB (315894264 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:481453319a328c2f22ca0b8897b1f1a7463cc32f690857d5d40ff69fe75b2ea7`
+-	Image ID: `sha256:43096bf4b43a049ac51777def9f71f1174ede422c48aaf053e54618b89e21316`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
@@ -52,21 +52,21 @@ RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/m
 CMD ["gradle"]
 # Thu, 14 Sep 2017 06:23:35 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Thu, 14 Sep 2017 06:23:35 GMT
-ENV GRADLE_VERSION=4.1
-# Thu, 14 Sep 2017 06:23:35 GMT
-ARG GRADLE_DOWNLOAD_SHA256=d55dfa9cfb5a3da86a1c9e75bb0b9507f9a8c8c100793ccec7beb6e259f9ed43
-# Thu, 14 Sep 2017 06:23:42 GMT
-# ARGS: GRADLE_DOWNLOAD_SHA256=d55dfa9cfb5a3da86a1c9e75bb0b9507f9a8c8c100793ccec7beb6e259f9ed43
-RUN set -o errexit -o nounset 	&& echo "Downloading Gradle" 	&& wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip" 		&& echo "Checking download hash" 	&& echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check - 		&& echo "Installing Gradle" 	&& unzip gradle.zip 	&& rm gradle.zip 	&& mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/" 	&& ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle 		&& echo "Adding gradle user and group" 	&& groupadd --system --gid 1000 gradle 	&& useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle 	&& mkdir /home/gradle/.gradle 	&& chown --recursive gradle:gradle /home/gradle 		&& echo "Symlinking root Gradle cache to gradle Gradle cache"  	&& ln -s /home/gradle/.gradle /root/.gradle
-# Thu, 14 Sep 2017 06:23:42 GMT
+# Tue, 26 Sep 2017 17:29:33 GMT
+ENV GRADLE_VERSION=4.2
+# Tue, 26 Sep 2017 17:29:33 GMT
+ARG GRADLE_DOWNLOAD_SHA256=515dd63d32e55a9c05667809c5e40a947529de3054444ad274b3b75af5582eae
+# Tue, 26 Sep 2017 17:29:37 GMT
+# ARGS: GRADLE_DOWNLOAD_SHA256=515dd63d32e55a9c05667809c5e40a947529de3054444ad274b3b75af5582eae
+RUN set -o errexit -o nounset 	&& echo "Downloading Gradle" 	&& wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip" 		&& echo "Checking download hash" 	&& echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check - 		&& echo "Installing Gradle" 	&& unzip gradle.zip 	&& rm gradle.zip 	&& mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/" 	&& ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle 		&& echo "Adding gradle user and group" 	&& groupadd --system --gid 1000 gradle 	&& useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle 	&& mkdir /home/gradle/.gradle 	&& chown --recursive gradle:gradle /home/gradle 		&& echo "Symlinking root Gradle cache to gradle Gradle cache" 	&& ln -s /home/gradle/.gradle /root/.gradle
+# Tue, 26 Sep 2017 17:29:38 GMT
 USER [gradle]
-# Thu, 14 Sep 2017 06:23:42 GMT
+# Tue, 26 Sep 2017 17:29:38 GMT
 VOLUME [/home/gradle/.gradle]
-# Thu, 14 Sep 2017 06:23:42 GMT
+# Tue, 26 Sep 2017 17:29:38 GMT
 WORKDIR /home/gradle
-# Thu, 14 Sep 2017 06:23:48 GMT
-# ARGS: GRADLE_DOWNLOAD_SHA256=d55dfa9cfb5a3da86a1c9e75bb0b9507f9a8c8c100793ccec7beb6e259f9ed43
+# Tue, 26 Sep 2017 17:29:42 GMT
+# ARGS: GRADLE_DOWNLOAD_SHA256=515dd63d32e55a9c05667809c5e40a947529de3054444ad274b3b75af5582eae
 RUN set -o errexit -o nounset 	&& echo "Testing Gradle installation" 	&& gradle --version
 ```
 
@@ -99,11 +99,11 @@ RUN set -o errexit -o nounset 	&& echo "Testing Gradle installation" 	&& gradle 
 		Last Modified: Thu, 14 Sep 2017 04:49:30 GMT  
 		Size: 128.9 MB (128902314 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8f5256b70b8977fc53aaf59bd7a94bcdd4fe99f629e53d880474df65ffa3ed5`  
-		Last Modified: Thu, 14 Sep 2017 06:26:24 GMT  
-		Size: 67.4 MB (67443520 bytes)  
+	-	`sha256:570dd4b1ad19871363f9bff57335fb066ed04164f87e42cd59138a88c37c3054`  
+		Last Modified: Tue, 26 Sep 2017 17:33:09 GMT  
+		Size: 71.1 MB (71075698 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d9b06b0298eb84d6fe934eda28c5d6bf1f55e4cc734ee928302251ac3c817a6`  
-		Last Modified: Thu, 14 Sep 2017 06:26:21 GMT  
+	-	`sha256:ce3af7e28c3ef1ea77812ae3dbd4ce837b81f60aa328818378b62ef7b867d32b`  
+		Last Modified: Tue, 26 Sep 2017 17:33:00 GMT  
 		Size: 139.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
