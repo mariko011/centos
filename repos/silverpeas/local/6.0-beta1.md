@@ -4126,14 +4126,8 @@ Licenses: (parsed from: `/usr/share/doc/libpulse0/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris pulseaudio=1:8.0-0ubuntu3.3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pulseaudio/pulseaudio_8.0-0ubuntu3.3.dsc' pulseaudio_8.0-0ubuntu3.3.dsc 3611 SHA256:4ea46f2b2d171d868857606974e08c8ca4460790fba0e0961320e223e3aa66d5
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pulseaudio/pulseaudio_8.0.orig.tar.xz' pulseaudio_8.0.orig.tar.xz 1517656 SHA256:690eefe28633466cfd1ab9d85ebfa9376f6b622deec6bfee5091ac9737cd1989
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pulseaudio/pulseaudio_8.0-0ubuntu3.3.debian.tar.xz' pulseaudio_8.0-0ubuntu3.3.debian.tar.xz 147992 SHA256:9fbd17f55e9ec30811bb0b8e771a94733a8f6f0bfce8e32c59237968cf599b6a
-```
 
 ### `dpkg` source package: `readline6=6.3-8ubuntu2`
 
