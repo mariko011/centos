@@ -1,10 +1,10 @@
-# `jetty:9.4.6-alpine`
+# `jetty:9.4.7-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:624fcd27f693aebd06249ae4baadbbaad9dab83ddbf58a57e755c5bc5f7278a8`
-- Created: `2017-09-14T06:34:45.523402674Z`
-- Virtual Size: ~ 90.81 Mb  
+- Image ID: `sha256:222474a285e55f4a1ee2f3cb4bcaa396f539f43fac1bd871e1d1f187a68e430b`
+- Created: `2017-09-27T17:33:00.575333913Z`
+- Virtual Size: ~ 90.86 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -16,8 +16,8 @@
   - `JAVA_VERSION=8u131`
   - `JAVA_ALPINE_VERSION=8.131.11-r2`
   - `JETTY_HOME=/usr/local/jetty`
-  - `JETTY_VERSION=9.4.6.v20170531`
-  - `JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/9.4.6.v20170531/jetty-home-9.4.6.v20170531.tar.gz`
+  - `JETTY_VERSION=9.4.7.v20170914`
+  - `JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/9.4.7.v20170914/jetty-home-9.4.7.v20170914.tar.gz`
   - `JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	FBA2B18D238AB852DF95745C76157BDF03D0DCD6 	5C9579B3DB2E506429319AAEF33B071B29559E1E`
   - `JETTY_BASE=/var/lib/jetty`
   - `TMPDIR=/tmp/jetty`
