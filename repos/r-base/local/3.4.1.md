@@ -1163,19 +1163,8 @@ Licenses: (parsed from: `/usr/share/doc/libgraphite2-3/copyright`)
 - `MPL-1.1 | GPL-2 | LGPL-2.1`
 - `other`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris graphite2=1.3.10-2
-'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.10-2.dsc' graphite2_1.3.10-2.dsc 2160 SHA256:f1ef7bcf647a4079f249441881136e35f660200d01d1f2c1fe0107e3590d8a95
-'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.10.orig.tar.gz' graphite2_1.3.10.orig.tar.gz 3889647 SHA256:90fde3b2f9ea95d68ffb19278d07d9b8a7efa5ba0e413bebcea802ce05cda1ae
-'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.10-2.debian.tar.xz' graphite2_1.3.10-2.debian.tar.xz 10440 SHA256:b6f2b7cfe53661117a39d94b1af2b91738207ace933e05878e0dd870582df84e
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/graphite2/1.3.10-2/
-- https://sources.debian.net/src/graphite2/1.3.10-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `grep=3.1-2`
 
@@ -1510,10 +1499,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris lapack=3.7.1-3
-'http://http.debian.net/debian/pool/main/l/lapack/lapack_3.7.1-3.dsc' lapack_3.7.1-3.dsc 2804 SHA256:9c862947eceda7f5d81cdd7ae4bdfbe9106e4bae827fc353433c94516a47a539
-'http://http.debian.net/debian/pool/main/l/lapack/lapack_3.7.1.orig.tar.gz' lapack_3.7.1.orig.tar.gz 9137261 SHA256:f6c53fd9f56932f3ddb3d5e24c1c07e4cd9b3b08e7f89de9c867125eecc9a1c8
-'http://http.debian.net/debian/pool/main/l/lapack/lapack_3.7.1-3.debian.tar.xz' lapack_3.7.1-3.debian.tar.xz 20752 SHA256:90a46e98d4f5dbeb7a2d1c48438c1d4db17ac0b8bdc7ae9ff4dbce97571fe3a0
+'http://deb.debian.org/debian/pool/main/l/lapack/lapack_3.7.1-3.dsc' lapack_3.7.1-3.dsc 2804 SHA256:9c862947eceda7f5d81cdd7ae4bdfbe9106e4bae827fc353433c94516a47a539
+'http://deb.debian.org/debian/pool/main/l/lapack/lapack_3.7.1.orig.tar.gz' lapack_3.7.1.orig.tar.gz 9137261 SHA256:f6c53fd9f56932f3ddb3d5e24c1c07e4cd9b3b08e7f89de9c867125eecc9a1c8
+'http://deb.debian.org/debian/pool/main/l/lapack/lapack_3.7.1-3.debian.tar.xz' lapack_3.7.1-3.debian.tar.xz 20752 SHA256:90a46e98d4f5dbeb7a2d1c48438c1d4db17ac0b8bdc7ae9ff4dbce97571fe3a0
 ```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/lapack/3.7.1-3/
+- https://sources.debian.net/src/lapack/3.7.1-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lattice=0.20-35-1`
 
@@ -1873,15 +1867,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libpng1.6=1.6.32-1
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.32-1.dsc' libpng1.6_1.6.32-1.dsc 2188 SHA256:8a15cc205f1b564e7be8199dd7d7350e867f50d459ee42b6cb30533c278c8d30
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.32.orig.tar.xz' libpng1.6_1.6.32.orig.tar.xz 997136 SHA256:c918c3113de74a692f0a1526ce881dc26067763eb3915c57ef3a0f7b6886f59b
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.32-1.debian.tar.xz' libpng1.6_1.6.32-1.debian.tar.xz 23244 SHA256:47ae700a63793361b9cb0f23c547c29b2776625f8c846957e9b6842a29ed8fe8
+'http://http.debian.net/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.32-1.dsc' libpng1.6_1.6.32-1.dsc 2188 SHA256:8a15cc205f1b564e7be8199dd7d7350e867f50d459ee42b6cb30533c278c8d30
+'http://http.debian.net/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.32.orig.tar.xz' libpng1.6_1.6.32.orig.tar.xz 997136 SHA256:c918c3113de74a692f0a1526ce881dc26067763eb3915c57ef3a0f7b6886f59b
+'http://http.debian.net/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.32-1.debian.tar.xz' libpng1.6_1.6.32-1.debian.tar.xz 23244 SHA256:47ae700a63793361b9cb0f23c547c29b2776625f8c846957e9b6842a29ed8fe8
 ```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libpng1.6/1.6.32-1/
-- https://sources.debian.net/src/libpng1.6/1.6.32-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libpsl=0.18.0-2`
 
@@ -2327,15 +2316,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris linux=4.12.12-2
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.12.12-2.dsc' linux_4.12.12-2.dsc 124913 SHA256:119c8a2a15e7a2c446df5de2e09c46bd0e64753de89eb58ad9326c8403aedb26
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.12.12.orig.tar.xz' linux_4.12.12.orig.tar.xz 100222740 SHA256:851b24ad550e4bfc18cb07e2ee0e4d137b81027c7a7906c69f8d250086ccea11
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.12.12-2.debian.tar.xz' linux_4.12.12-2.debian.tar.xz 948192 SHA256:e9126612af88d39c982f0a4e985b6f0483dfe318e170c091476fec8e15289841
+'http://http.debian.net/debian/pool/main/l/linux/linux_4.12.12-2.dsc' linux_4.12.12-2.dsc 124913 SHA256:119c8a2a15e7a2c446df5de2e09c46bd0e64753de89eb58ad9326c8403aedb26
+'http://http.debian.net/debian/pool/main/l/linux/linux_4.12.12.orig.tar.xz' linux_4.12.12.orig.tar.xz 100222740 SHA256:851b24ad550e4bfc18cb07e2ee0e4d137b81027c7a7906c69f8d250086ccea11
+'http://http.debian.net/debian/pool/main/l/linux/linux_4.12.12-2.debian.tar.xz' linux_4.12.12-2.debian.tar.xz 948192 SHA256:e9126612af88d39c982f0a4e985b6f0483dfe318e170c091476fec8e15289841
 ```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/linux/4.12.12-2/
-- https://sources.debian.net/src/linux/4.12.12-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `littler=0.3.2-1`
 
@@ -2640,19 +2624,8 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.25.0-1
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.25.0-1.dsc' nghttp2_1.25.0-1.dsc 2310 SHA256:5ec7657d3862251b9dbb30be84be58f4ece7ddb7c2670c63b98c2ae1e4185524
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.25.0.orig.tar.bz2' nghttp2_1.25.0.orig.tar.bz2 1836964 SHA256:045825f779e07131360fa2b6c4ced812d6d10e8f1c9b92f2a9b114c6cdcc1e24
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.25.0-1.debian.tar.xz' nghttp2_1.25.0-1.debian.tar.xz 12008 SHA256:487ef633d4358e25f2ec49291a4b0b3d7d9d386976236a6ddb138b9ad501747f
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/nghttp2/1.25.0-1/
-- https://sources.debian.net/src/nghttp2/1.25.0-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `nlme=3.1.131-3`
 
@@ -3004,14 +2977,8 @@ Licenses: (parsed from: `/usr/share/doc/r-base/copyright`, `/usr/share/doc/r-bas
 - `LGPL-2.1`
 - `LGPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris r-base=3.4.1-2
-'http://http.debian.net/debian/pool/main/r/r-base/r-base_3.4.1-2.dsc' r-base_3.4.1-2.dsc 2832 SHA256:df5edc22cb58265f6b0bcd65c7c12c5c3bc3eafdd421756dc76ad0d919db50fd
-'http://http.debian.net/debian/pool/main/r/r-base/r-base_3.4.1.orig.tar.gz' r-base_3.4.1.orig.tar.gz 30200109 SHA256:02b1135d15ea969a3582caeb95594a05e830a6debcdb5b85ed2d5836a6a3fc78
-'http://http.debian.net/debian/pool/main/r/r-base/r-base_3.4.1-2.debian.tar.xz' r-base_3.4.1-2.debian.tar.xz 86404 SHA256:daa11610459e0f8635bd0e2dfd59e2ee87090328a3600e7e9ba31c48713c37db
-```
 
 ### `dpkg` source package: `r-cran-class=7.3-14-2`
 
