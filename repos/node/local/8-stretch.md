@@ -1,18 +1,18 @@
-# `node:8.5.0-stretch`
+# `node:8.6.0-stretch`
 
 ## Docker Metadata
 
-- Image ID: `sha256:977e1e3f932d9afafd69fded6616d64cb2eebed7bfb94e33c6c69fa081f7276f`
-- Created: `2017-09-14T18:06:34.367108705Z`
-- Virtual Size: ~ 888.58 Mb  
+- Image ID: `sha256:79bbdf17ea9bd430e0b91a2c476010289ccccbbeb3792d8a4c4c52a4cd2f2346`
+- Created: `2017-09-27T00:27:18.775304322Z`
+- Virtual Size: ~ 888.72 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `NPM_CONFIG_LOGLEVEL=info`
-  - `NODE_VERSION=8.5.0`
-  - `YARN_VERSION=1.0.2`
+  - `NODE_VERSION=8.6.0`
+  - `YARN_VERSION=1.1.0`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1421,19 +1421,8 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris git=1:2.11.0-3+deb9u1
-'http://security.debian.org/pool/updates/main/g/git/git_2.11.0-3+deb9u1.dsc' git_2.11.0-3+deb9u1.dsc 2901 SHA256:1b2244ce374d402ae6c4389be8e19d7189bc075f7790798dc8159901a4684a36
-'http://security.debian.org/pool/updates/main/g/git/git_2.11.0.orig.tar.xz' git_2.11.0.orig.tar.xz 4197984 SHA256:7e7e8d69d494892373b87007674be5820a4bc1ef596a0117d03ea3169119fd0b
-'http://security.debian.org/pool/updates/main/g/git/git_2.11.0-3+deb9u1.debian.tar.xz' git_2.11.0-3+deb9u1.debian.tar.xz 523448 SHA256:c6f95ed3a3a1804c1ee17e554d42c1a0203d16dd9a30647a798128e9f242cc3b
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/git/1:2.11.0-3+deb9u1/
-- https://sources.debian.net/src/git/1:2.11.0-3+deb9u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `glib2.0=2.50.3-2`
 
