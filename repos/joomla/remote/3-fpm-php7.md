@@ -1,7 +1,7 @@
 ## `joomla:3-fpm-php7`
 
 ```console
-$ docker pull joomla@sha256:f34167543c4e52be227e16caffc9957f18f7a8789817e7adb1bc5e38e05d0a14
+$ docker pull joomla@sha256:8a563e6db839d4be465a555e2467be39f9b7f7b147bbd5b60338187f01d6f5ea
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull joomla@sha256:f34167543c4e52be227e16caffc9957f18f7a8789817e7adb1bc
 ### `joomla:3-fpm-php7` - linux; amd64
 
 ```console
-$ docker pull joomla@sha256:d201600d78c0cf1542be7d57b7fff6b394fbc89cd6bad886cfdf8d8206087296
+$ docker pull joomla@sha256:424281455ad7356bb030afbee1531a41ca51390f3b20f98fab6280db64b4da1d
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **172.5 MB (172524130 bytes)**  
+-	Total Size: **172.8 MB (172834192 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:102e84d5fa165f035f4c5f0ab6c4e8be0933190339801a3ea032e5e37d62829e`
+-	Image ID: `sha256:dd824da02f27b1579bb6a87d32b2a4f6a7e7bc2dea7954b70131613068368b8f`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -83,19 +83,19 @@ RUN docker-php-ext-install mcrypt
 RUN docker-php-ext-install zip
 # Thu, 21 Sep 2017 21:04:31 GMT
 VOLUME [/var/www/html]
-# Thu, 21 Sep 2017 21:04:31 GMT
-ENV JOOMLA_VERSION=3.7.5
-# Thu, 21 Sep 2017 21:04:31 GMT
-ENV JOOMLA_SHA1=4a8ba6c70265879cf5c77bcc1b3a0fe9620ba02a
-# Thu, 21 Sep 2017 21:04:37 GMT
+# Wed, 27 Sep 2017 17:32:22 GMT
+ENV JOOMLA_VERSION=3.8.0
+# Wed, 27 Sep 2017 17:32:23 GMT
+ENV JOOMLA_SHA1=e15cfee1b31fe65b1c5038d605478404be9f64e2
+# Wed, 27 Sep 2017 17:32:28 GMT
 RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.zip 	&& echo "$JOOMLA_SHA1 *joomla.zip" | sha1sum -c - 	&& mkdir /usr/src/joomla 	&& unzip joomla.zip -d /usr/src/joomla 	&& rm joomla.zip 	&& chown -R www-data:www-data /usr/src/joomla
-# Thu, 21 Sep 2017 21:04:38 GMT
-COPY file:27ca5c0b8509d6681e80aa6cd05b2e2e68da2f59fb0ee7fa2aa581f55d362b6d in /entrypoint.sh 
-# Thu, 21 Sep 2017 21:04:38 GMT
+# Wed, 27 Sep 2017 17:32:29 GMT
+COPY file:3deca947777d335aa9a31ee948536cf75b09cc04e0c7d202b443732a0f66cc0b in /entrypoint.sh 
+# Wed, 27 Sep 2017 17:32:29 GMT
 COPY file:7328ebe063e26f7b7716dfd8778bb7d46b90702ea38b23b9147ba2fd837ac2c1 in /makedb.php 
-# Thu, 21 Sep 2017 21:04:38 GMT
+# Wed, 27 Sep 2017 17:32:29 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Thu, 21 Sep 2017 21:04:38 GMT
+# Wed, 27 Sep 2017 17:32:30 GMT
 CMD ["php-fpm"]
 ```
 
@@ -152,15 +152,15 @@ CMD ["php-fpm"]
 		Last Modified: Thu, 21 Sep 2017 21:05:45 GMT  
 		Size: 72.8 KB (72768 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:67fb9da4609b5271573967bfa207794042c7e792a614fae669d910fec1b965de`  
-		Last Modified: Thu, 21 Sep 2017 21:05:48 GMT  
-		Size: 9.1 MB (9098980 bytes)  
+	-	`sha256:4e35462a88c0c464cab01cc16eef65f0ce2abd65b809dad55c2a9fdaf8450a19`  
+		Last Modified: Wed, 27 Sep 2017 17:34:57 GMT  
+		Size: 9.4 MB (9409012 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:533e554f3a5e55f9475bea674726a6b0266312289aa32241246201b25571da97`  
-		Last Modified: Thu, 21 Sep 2017 21:05:45 GMT  
-		Size: 1.2 KB (1151 bytes)  
+	-	`sha256:b1e1c6d1c5e2446da88f0f456a96ff5c8554ea360b36a6321d23f01bd0b27664`  
+		Last Modified: Wed, 27 Sep 2017 17:34:55 GMT  
+		Size: 1.2 KB (1182 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c498d4f6ba6bdd0fac8c5942e2e72d0f0c9fbebd449f05fda39bd31f0002b5db`  
-		Last Modified: Thu, 21 Sep 2017 21:05:45 GMT  
-		Size: 614.0 B  
+	-	`sha256:903176ef569ef5b5db58f505c69d2137c3fca7e56e5f5279cc845f28c89b6a41`  
+		Last Modified: Wed, 27 Sep 2017 17:34:55 GMT  
+		Size: 613.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
