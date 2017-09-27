@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:549dc096c70bd62804b6a06b9093d9bee8a0c416f1b94758184b5908f8b8abbc`
-- Created: `2017-09-19T01:47:30.799759607Z`
-- Virtual Size: ~ 124.47 Mb  
+- Image ID: `sha256:888b1cf3f00326a0dafdf00500ea8be23632192278fbedd2a9821a736051c011`
+- Created: `2017-09-26T00:49:08.571435352Z`
+- Virtual Size: ~ 124.48 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -14,7 +14,9 @@
   - `GOSU_VERSION=1.10`
   - `RABBITMQ_LOGS=-`
   - `RABBITMQ_SASL_LOGS=-`
+  - `RABBITMQ_GPG_KEY=0A9AF2115F4687BD29803A206B73A36E6026DFCA`
   - `RABBITMQ_VERSION=3.6.12`
+  - `RABBITMQ_GITHUB_TAG=rabbitmq_v3_6_12`
   - `RABBITMQ_DEBIAN_VERSION=3.6.12-1`
   - `HOME=/var/lib/rabbitmq`
 
@@ -1676,14 +1678,8 @@ Licenses: (parsed from: `/usr/share/doc/rabbitmq-server/copyright`)
 - `MIT`
 - `MPL-1.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris rabbitmq-server=3.6.12-1
-'http://www.rabbitmq.com/debian/pool/main/r/rabbitmq-server/rabbitmq-server_3.6.12-1.dsc' rabbitmq-server_3.6.12-1.dsc 2081 SHA256:7be8276742e2e4461f1f2b3c7ac520434e6b8a0775dbf67d250a04e31f547603
-'http://www.rabbitmq.com/debian/pool/main/r/rabbitmq-server/rabbitmq-server_3.6.12.orig.tar.xz' rabbitmq-server_3.6.12.orig.tar.xz 1437948 SHA256:c8e5a8ed5aae6167aa0050f41bd9f26d50eb16efd8abd1a1b0b01fcbccb458b9
-'http://www.rabbitmq.com/debian/pool/main/r/rabbitmq-server/rabbitmq-server_3.6.12-1.debian.tar.xz' rabbitmq-server_3.6.12-1.debian.tar.xz 6720 SHA256:17beaa9c0ecdea408d1de0595b1d945619067d6134f1950c6f78bfea73899a08
-```
 
 ### `dpkg` source package: `readline=7.0-3`
 

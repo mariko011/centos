@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:13b2dfbee270903da4079f96285ae051f0048612809e74a45333db41eb6b4662`
-- Created: `2017-09-19T01:48:11.375532856Z`
+- Image ID: `sha256:28ad6a427b57481717491c946711fe3333106db89cceeb5b0c6cc631caf47b1e`
+- Created: `2017-09-26T00:49:43.099547165Z`
 - Virtual Size: ~ 38.70 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -14,6 +14,7 @@
   - `RABBITMQ_LOGS=-`
   - `RABBITMQ_SASL_LOGS=-`
   - `RABBITMQ_HOME=/opt/rabbitmq`
-  - `GPG_KEY=0A9AF2115F4687BD29803A206B73A36E6026DFCA`
+  - `RABBITMQ_GPG_KEY=0A9AF2115F4687BD29803A206B73A36E6026DFCA`
   - `RABBITMQ_VERSION=3.6.12`
+  - `RABBITMQ_GITHUB_TAG=rabbitmq_v3_6_12`
   - `HOME=/var/lib/rabbitmq`
