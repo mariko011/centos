@@ -1,12 +1,13 @@
 ## `clojure:boot`
 
 ```console
-$ docker pull clojure@sha256:3ca5a33e05f4c8dc562b60af742e4410f27aac4bf6bf0ce3952e70b7a8679eb8
+$ docker pull clojure@sha256:3c95ead98ef16560f0e36db909f763a880967b9417c3c93e5d81a51669f75568
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
+	-	linux; arm variant v5
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -119,6 +120,114 @@ RUN boot
 	-	`sha256:505237adee5ac7e5182dc43821f08be11f9492a1a410e7acd4761576e93aada4`  
 		Last Modified: Thu, 14 Sep 2017 06:18:41 GMT  
 		Size: 33.4 MB (33410534 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `clojure:boot` - linux; arm variant v5
+
+```console
+$ docker pull clojure@sha256:1adae4b26d5cd860d525805bef09d7478de5fce8c948845553f02f3d4d520eb6
+```
+
+-	Docker Version: 17.06.0-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **295.5 MB (295476293 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:e613c15ea66057079d9a8fce9c0443ad9ce0dfccdd310bc5f0dcd14065b75d0a`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Wed, 27 Sep 2017 14:26:13 GMT
+ADD file:111ccf88fc474ec03491c012baa75d4f4b3b6d08391bb86364b9fabdf3b57d3e in / 
+# Wed, 27 Sep 2017 14:26:13 GMT
+CMD ["bash"]
+# Wed, 27 Sep 2017 14:53:07 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
+# Wed, 27 Sep 2017 14:53:18 GMT
+RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
+# Wed, 27 Sep 2017 14:53:51 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
+# Wed, 27 Sep 2017 15:18:25 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
+# Wed, 27 Sep 2017 15:18:25 GMT
+ENV LANG=C.UTF-8
+# Wed, 27 Sep 2017 15:18:26 GMT
+RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
+# Wed, 27 Sep 2017 15:18:27 GMT
+RUN ln -svT "/usr/lib/jvm/java-8-openjdk-$(dpkg --print-architecture)" /docker-java-home
+# Wed, 27 Sep 2017 15:18:27 GMT
+ENV JAVA_HOME=/docker-java-home
+# Wed, 27 Sep 2017 15:18:27 GMT
+ENV JAVA_VERSION=8u141
+# Wed, 27 Sep 2017 15:18:27 GMT
+ENV JAVA_DEBIAN_VERSION=8u141-b15-1~deb9u1
+# Wed, 27 Sep 2017 15:18:27 GMT
+ENV CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1
+# Wed, 27 Sep 2017 15:19:38 GMT
+RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
+# Wed, 27 Sep 2017 15:19:44 GMT
+RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
+# Wed, 27 Sep 2017 16:05:53 GMT
+MAINTAINER Wes Morgan <wesmorgan@icloud.com>
+# Wed, 27 Sep 2017 16:05:53 GMT
+ENV BOOT_VERSION=2.7.2
+# Wed, 27 Sep 2017 16:05:53 GMT
+ENV BOOT_INSTALL=/usr/local/bin/
+# Wed, 27 Sep 2017 16:05:54 GMT
+WORKDIR /tmp
+# Wed, 27 Sep 2017 16:05:55 GMT
+RUN mkdir -p $BOOT_INSTALL   && wget -q https://github.com/boot-clj/boot-bin/releases/download/2.7.2/boot.sh   && echo "Comparing installer checksum..."   && echo "f717ef381f2863a4cad47bf0dcc61e923b3d2afb *boot.sh" | sha1sum -c -   && mv boot.sh $BOOT_INSTALL/boot   && chmod 0755 $BOOT_INSTALL/boot
+# Wed, 27 Sep 2017 16:05:55 GMT
+ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
+# Wed, 27 Sep 2017 16:05:55 GMT
+ENV BOOT_AS_ROOT=yes
+# Wed, 27 Sep 2017 16:09:00 GMT
+RUN boot
+```
+
+-	Layers:
+	-	`sha256:ec26d49abcad5bd85bc79fcb9d95e4eeb09e21e9759bbbe4229ef9a39f88c6b8`  
+		Last Modified: Wed, 27 Sep 2017 14:31:19 GMT  
+		Size: 43.8 MB (43813593 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:61c3de8383501dec27f7ba7879836ff8251f59b21d5dbfef9185768d139778c7`  
+		Last Modified: Wed, 27 Sep 2017 15:04:58 GMT  
+		Size: 10.2 MB (10201423 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1cf1d369a2e9d7203bd26ddc36279bddd26c6eaba7565a5a4891b1e654bfeb28`  
+		Last Modified: Wed, 27 Sep 2017 15:04:56 GMT  
+		Size: 4.5 MB (4450668 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:62e87f23d497fb186ccb5a22de838e3694de0c73a7c0cb05459d43c643864247`  
+		Last Modified: Wed, 27 Sep 2017 15:05:20 GMT  
+		Size: 50.1 MB (50070722 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:12dbedb6c051beda28d6e3b6aff430de67e23db3b3aa2a76791498e3eeca4717`  
+		Last Modified: Wed, 27 Sep 2017 15:32:01 GMT  
+		Size: 884.4 KB (884385 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2a6bd0522b768a2c20c7a3aa8b4188538ac827de24ecdd69a25af1294f1bf793`  
+		Last Modified: Wed, 27 Sep 2017 15:32:01 GMT  
+		Size: 248.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:34a322fe98df4e3cb5605ae9bf6d13ccbbed8797cdd700bf30f3611101b1907a`  
+		Last Modified: Wed, 27 Sep 2017 15:32:01 GMT  
+		Size: 131.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b427c9b2353922d0723bbda3c223edec36207c5f3f23dc51808e7bd864af2b74`  
+		Last Modified: Wed, 27 Sep 2017 15:32:41 GMT  
+		Size: 152.4 MB (152365365 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ba81b8974faa540fedd0b41413644694e135298c75405db45e4859e588917fe2`  
+		Last Modified: Wed, 27 Sep 2017 15:32:01 GMT  
+		Size: 272.2 KB (272194 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:590338db5fcf9bdb6f59d8bd89d5b8b373a0796cf4d2fbc316703b8721f4cc3b`  
+		Last Modified: Wed, 27 Sep 2017 16:09:34 GMT  
+		Size: 6.9 KB (6897 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:687bde7a703aef8fd03bd8ad532f199f021526b1b1aa0a00c1590befb8c507ae`  
+		Last Modified: Wed, 27 Sep 2017 16:09:39 GMT  
+		Size: 33.4 MB (33410667 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `clojure:boot` - linux; arm variant v7
