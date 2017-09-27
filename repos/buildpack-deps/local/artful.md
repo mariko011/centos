@@ -132,13 +132,8 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apt=1.5~rc4
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.5~rc4.dsc' apt_1.5~rc4.dsc 2615 SHA256:ff0d6410f6f03204e8d97c4aa09531617760e84636e1faca895f893c7e4ef864
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.5~rc4.tar.xz' apt_1.5~rc4.tar.xz 2094792 SHA256:7aa5d0d66888c1bad4f2346d0ae59f8670206a899fa44278b269b18a0ce3be81
-```
 
 ### `dpkg` source package: `atk1.0=2.25.90-0ubuntu1`
 
@@ -530,9 +525,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris cups=2.2.4-7
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.2.4-7.dsc' cups_2.2.4-7.dsc 3158 SHA256:13ef6546cc78bc77f4205267901de5256ce6090108ce82e262c9c10fabc87eea
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.2.4-7ubuntu2.dsc' cups_2.2.4-7ubuntu2.dsc 2688 SHA256:c47b45e2e484cdd335e26af457e70f59c5e9ba7de4228782d4f4ed15253f41e3
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.2.4.orig.tar.gz' cups_2.2.4.orig.tar.gz 9984475 SHA256:596d4db72651c335469ae5f37b0da72ac9f97d73e30838d787065f559dea98cc
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.2.4-7.debian.tar.xz' cups_2.2.4-7.debian.tar.xz 356900 SHA256:d742242d92c594d9ed1c71ef4bb95c0831cfbfd9cf3d40af078c01034b5dadfb
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.2.4-7ubuntu2.debian.tar.xz' cups_2.2.4-7ubuntu2.debian.tar.xz 356980 SHA256:a8615926687505a9bdd68f30fc71dd5fac59d462a75e1a7387cd650c47fd5e92
 ```
 
 ### `dpkg` source package: `curl=7.55.0-1ubuntu2`
@@ -3600,13 +3595,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris python-defaults=2.7.13-2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-defaults/python-defaults_2.7.13-2.dsc' python-defaults_2.7.13-2.dsc 2677 SHA256:80d5452cde16052caa5b9c3880ed067c3d4f2e60485a56947531a6650f6e7d94
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-defaults/python-defaults_2.7.13-2.tar.gz' python-defaults_2.7.13-2.tar.gz 273915 SHA256:aa376f54a9b2ca59b6f051ce0b4320d95ef60f114f90d98a90e510c3968b416a
-```
 
 ### `dpkg` source package: `python2.7=2.7.14-2ubuntu1`
 
@@ -3636,14 +3626,8 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/s
 - `implied`
 - `see above, some license as Python`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris python2.7=2.7.14-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.14-2ubuntu1.dsc' python2.7_2.7.14-2ubuntu1.dsc 3424 SHA256:53af6c8bc500b3ab422a2a3296ca17d2e70ac0459c08240a0d58fefa4dc1ad1c
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.14.orig.tar.gz' python2.7_2.7.14.orig.tar.gz 17176758 SHA256:304c9b202ea6fbd0a4a8e0ad3733715fbd4749f2204a9173a58ec53c32ea73e8
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.14-2ubuntu1.diff.gz' python2.7_2.7.14-2ubuntu1.diff.gz 285422 SHA256:ab105f5901c92b2ebff6d6a575fcf3a750aaf6d2c228d4e3fca00b5082edd7a4
-```
 
 ### `dpkg` source package: `python3-defaults=3.6.1-0ubuntu3`
 
@@ -3657,13 +3641,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris python3-defaults=3.6.1-0ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.6.1-0ubuntu3.dsc' python3-defaults_3.6.1-0ubuntu3.dsc 2841 SHA256:d913c340340c715de909c1ac78e7224f81009f45c0a4f88a9a865706784bf3e0
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.6.1-0ubuntu3.tar.gz' python3-defaults_3.6.1-0ubuntu3.tar.gz 129634 SHA256:05b01fbfc724437dc6f83be33e73ca0912c4702deedb31cd02ad3901295cc585
-```
 
 ### `dpkg` source package: `python3.6=3.6.2-3`
 

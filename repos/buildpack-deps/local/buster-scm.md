@@ -867,20 +867,8 @@ Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnup
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.2.0-3
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.0-3.dsc' gnupg2_2.2.0-3.dsc 3694 SHA256:4507382a487b956475de33c89b88919a8d18b0493ece253f7030840fa1330c14
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.0.orig.tar.bz2' gnupg2_2.2.0.orig.tar.bz2 6532475 SHA256:d4514a0be0f7a1ff263193330019eb4b53c82f0f5e230af3c14df371271a45e6
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.0.orig.tar.bz2.asc' gnupg2_2.2.0.orig.tar.bz2.asc 310 SHA256:5b0987f858326090d3f6729de5b2032231318e5ff522be8a6fb8a4a98ade7f1a
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.0-3.debian.tar.bz2' gnupg2_2.2.0-3.debian.tar.bz2 62895 SHA256:c905bc2260aca57af70fc98e35ed7eb7d99d02e0568398af21f2ca06ded0f3d9
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gnupg2/2.2.0-3/
-- https://sources.debian.net/src/gnupg2/2.2.0-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gnutls28=3.5.15-2`
 
@@ -1643,19 +1631,8 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris mercurial=4.0-1
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_4.0-1.dsc' mercurial_4.0-1.dsc 2364 SHA256:ff0e5c095bc7968180186caae755a7db258d474fc3cec759c2043ca53770db0f
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_4.0.orig.tar.gz' mercurial_4.0.orig.tar.gz 4850316 SHA256:24be080745230840f214d93e9f9fb4e25510f9abbbec2e56fab18543fedc43a7
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_4.0-1.debian.tar.xz' mercurial_4.0-1.debian.tar.xz 95148 SHA256:2ebf7404aec85e37a751950678b12df1a6fd7c3b7fa405e87673cb4eaabdf2b8
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/mercurial/4.0-1/
-- https://sources.debian.net/src/mercurial/4.0-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `mime-support=3.60`
 
@@ -1796,19 +1773,8 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.25.0-1
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.25.0-1.dsc' nghttp2_1.25.0-1.dsc 2310 SHA256:5ec7657d3862251b9dbb30be84be58f4ece7ddb7c2670c63b98c2ae1e4185524
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.25.0.orig.tar.bz2' nghttp2_1.25.0.orig.tar.bz2 1836964 SHA256:045825f779e07131360fa2b6c4ced812d6d10e8f1c9b92f2a9b114c6cdcc1e24
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.25.0-1.debian.tar.xz' nghttp2_1.25.0-1.debian.tar.xz 12008 SHA256:487ef633d4358e25f2ec49291a4b0b3d7d9d386976236a6ddb138b9ad501747f
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/nghttp2/1.25.0-1/
-- https://sources.debian.net/src/nghttp2/1.25.0-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `npth=1.5-2`
 

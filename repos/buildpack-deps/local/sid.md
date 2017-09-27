@@ -1323,19 +1323,8 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris git=1:2.14.1-3
-'http://deb.debian.org/debian/pool/main/g/git/git_2.14.1-3.dsc' git_2.14.1-3.dsc 2845 SHA256:012f442388c4dca441a67fa2aed5bebd885cb3227c1c84a5efcef63187d56be2
-'http://deb.debian.org/debian/pool/main/g/git/git_2.14.1.orig.tar.xz' git_2.14.1.orig.tar.xz 4791876 SHA256:6f724c6d0e9e13114ab35db6f67e1b2c1934b641e89366e6a0e37618231f2cc6
-'http://deb.debian.org/debian/pool/main/g/git/git_2.14.1-3.debian.tar.xz' git_2.14.1-3.debian.tar.xz 544476 SHA256:33a82a1eae762a0a0723d2a39745307b834960de76bd0d87360dd65aa9e4f06d
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/git/1:2.14.1-3/
-- https://sources.debian.net/src/git/1:2.14.1-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `glib2.0=2.54.0-1`
 
@@ -4011,19 +4000,8 @@ Licenses: (parsed from: `/usr/share/doc/libopenjp2-7/copyright`, `/usr/share/doc
 - `ZLIB`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openjpeg2=2.1.2-1.3
-'http://deb.debian.org/debian/pool/main/o/openjpeg2/openjpeg2_2.1.2-1.3.dsc' openjpeg2_2.1.2-1.3.dsc 2769 SHA256:00866b7cc9cabfcd90e0d4dea23ecd8e5feed25a5eb011525e16fe37a1e2d028
-'http://deb.debian.org/debian/pool/main/o/openjpeg2/openjpeg2_2.1.2.orig.tar.gz' openjpeg2_2.1.2.orig.tar.gz 1987071 SHA256:4ce77b6ef538ef090d9bde1d5eeff8b3069ab56c4906f083475517c2c023dfa7
-'http://deb.debian.org/debian/pool/main/o/openjpeg2/openjpeg2_2.1.2-1.3.debian.tar.xz' openjpeg2_2.1.2-1.3.debian.tar.xz 21928 SHA256:bf78fc959d8813db1e0c13d42bd328cd549f2e62b59ebd37d484bd6762ce650c
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/openjpeg2/2.1.2-1.3/
-- https://sources.debian.net/src/openjpeg2/2.1.2-1.3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openldap=2.4.45+dfsg-1`
 
@@ -4877,19 +4855,8 @@ Licenses: (parsed from: `/usr/share/doc/sysvinit-utils/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris sysvinit=2.88dsf-59.9
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_2.88dsf-59.9.dsc' sysvinit_2.88dsf-59.9.dsc 2123 SHA256:a943edeac16668d3e55583daa4033ad46469e84ffad014e0e2007d9c3167e63d
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_2.88dsf.orig.tar.gz' sysvinit_2.88dsf.orig.tar.gz 125330 SHA256:b016f937958d2809a020d407e1287bdc09abf1d44efaa96530e2ea57f544f4e8
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_2.88dsf-59.9.debian.tar.xz' sysvinit_2.88dsf-59.9.debian.tar.xz 132584 SHA256:fbd5c085680d896ec6ee1c5a55ae2d8a5a6b9fd5a7ec1e13010dace24fdbcd5c
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/sysvinit/2.88dsf-59.9/
-- https://sources.debian.net/src/sysvinit/2.88dsf-59.9/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `tar=1.29b-2`
 

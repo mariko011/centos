@@ -1459,20 +1459,8 @@ Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnup
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.2.0-3
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.0-3.dsc' gnupg2_2.2.0-3.dsc 3694 SHA256:4507382a487b956475de33c89b88919a8d18b0493ece253f7030840fa1330c14
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.0.orig.tar.bz2' gnupg2_2.2.0.orig.tar.bz2 6532475 SHA256:d4514a0be0f7a1ff263193330019eb4b53c82f0f5e230af3c14df371271a45e6
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.0.orig.tar.bz2.asc' gnupg2_2.2.0.orig.tar.bz2.asc 310 SHA256:5b0987f858326090d3f6729de5b2032231318e5ff522be8a6fb8a4a98ade7f1a
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.0-3.debian.tar.bz2' gnupg2_2.2.0-3.debian.tar.bz2 62895 SHA256:c905bc2260aca57af70fc98e35ed7eb7d99d02e0568398af21f2ca06ded0f3d9
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gnupg2/2.2.0-3/
-- https://sources.debian.net/src/gnupg2/2.2.0-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gnutls28=3.5.15-2`
 
@@ -1545,19 +1533,8 @@ Licenses: (parsed from: `/usr/share/doc/libgraphite2-3/copyright`)
 - `MPL-1.1 | GPL-2 | LGPL-2.1`
 - `other`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris graphite2=1.3.10-2
-'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.10-2.dsc' graphite2_1.3.10-2.dsc 2160 SHA256:f1ef7bcf647a4079f249441881136e35f660200d01d1f2c1fe0107e3590d8a95
-'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.10.orig.tar.gz' graphite2_1.3.10.orig.tar.gz 3889647 SHA256:90fde3b2f9ea95d68ffb19278d07d9b8a7efa5ba0e413bebcea802ce05cda1ae
-'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.10-2.debian.tar.xz' graphite2_1.3.10-2.debian.tar.xz 10440 SHA256:b6f2b7cfe53661117a39d94b1af2b91738207ace933e05878e0dd870582df84e
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/graphite2/1.3.10-2/
-- https://sources.debian.net/src/graphite2/1.3.10-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `graphviz=2.38.0-17`
 
@@ -1579,19 +1556,8 @@ Licenses: (parsed from: `/usr/share/doc/libcdt5/copyright`, `/usr/share/doc/libc
 - `X/MIT`
 - `zlib-style`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris graphviz=2.38.0-17
-'http://deb.debian.org/debian/pool/main/g/graphviz/graphviz_2.38.0-17.dsc' graphviz_2.38.0-17.dsc 3254 SHA256:b0d550ee44e60e11fd745311ffea52017389a6066b6193ba015caa7022a901ef
-'http://deb.debian.org/debian/pool/main/g/graphviz/graphviz_2.38.0.orig.tar.gz' graphviz_2.38.0.orig.tar.gz 25848858 SHA256:81aa238d9d4a010afa73a9d2a704fc3221c731e1e06577c2ab3496bdef67859e
-'http://deb.debian.org/debian/pool/main/g/graphviz/graphviz_2.38.0-17.debian.tar.xz' graphviz_2.38.0-17.debian.tar.xz 43356 SHA256:858d8a6109797ddf1ce8a5bac0b96bc4cec53593a303ce61809bb40021f6b1be
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/graphviz/2.38.0-17/
-- https://sources.debian.net/src/graphviz/2.38.0-17/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `grep=3.1-2`
 
@@ -2653,19 +2619,8 @@ Licenses: (parsed from: `/usr/share/doc/libpng-dev/copyright`, `/usr/share/doc/l
 - `libpng`
 - `libpng OR Apache-2.0 OR BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.32-1
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.32-1.dsc' libpng1.6_1.6.32-1.dsc 2188 SHA256:8a15cc205f1b564e7be8199dd7d7350e867f50d459ee42b6cb30533c278c8d30
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.32.orig.tar.xz' libpng1.6_1.6.32.orig.tar.xz 997136 SHA256:c918c3113de74a692f0a1526ce881dc26067763eb3915c57ef3a0f7b6886f59b
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.32-1.debian.tar.xz' libpng1.6_1.6.32-1.debian.tar.xz 23244 SHA256:47ae700a63793361b9cb0f23c547c29b2776625f8c846957e9b6842a29ed8fe8
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libpng1.6/1.6.32-1/
-- https://sources.debian.net/src/libpng1.6/1.6.32-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libpsl=0.18.0-2`
 
@@ -3713,19 +3668,8 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris mercurial=4.0-1
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_4.0-1.dsc' mercurial_4.0-1.dsc 2364 SHA256:ff0e5c095bc7968180186caae755a7db258d474fc3cec759c2043ca53770db0f
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_4.0.orig.tar.gz' mercurial_4.0.orig.tar.gz 4850316 SHA256:24be080745230840f214d93e9f9fb4e25510f9abbbec2e56fab18543fedc43a7
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_4.0-1.debian.tar.xz' mercurial_4.0-1.debian.tar.xz 95148 SHA256:2ebf7404aec85e37a751950678b12df1a6fd7c3b7fa405e87673cb4eaabdf2b8
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/mercurial/4.0-1/
-- https://sources.debian.net/src/mercurial/4.0-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `mime-support=3.60`
 
@@ -3957,19 +3901,8 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.25.0-1
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.25.0-1.dsc' nghttp2_1.25.0-1.dsc 2310 SHA256:5ec7657d3862251b9dbb30be84be58f4ece7ddb7c2670c63b98c2ae1e4185524
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.25.0.orig.tar.bz2' nghttp2_1.25.0.orig.tar.bz2 1836964 SHA256:045825f779e07131360fa2b6c4ced812d6d10e8f1c9b92f2a9b114c6cdcc1e24
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.25.0-1.debian.tar.xz' nghttp2_1.25.0-1.debian.tar.xz 12008 SHA256:487ef633d4358e25f2ec49291a4b0b3d7d9d386976236a6ddb138b9ad501747f
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/nghttp2/1.25.0-1/
-- https://sources.debian.net/src/nghttp2/1.25.0-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `npth=1.5-2`
 

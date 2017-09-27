@@ -63,13 +63,8 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apt=1.5~rc4
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.5~rc4.dsc' apt_1.5~rc4.dsc 2615 SHA256:ff0d6410f6f03204e8d97c4aa09531617760e84636e1faca895f893c7e4ef864
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.5~rc4.tar.xz' apt_1.5~rc4.tar.xz 2094792 SHA256:7aa5d0d66888c1bad4f2346d0ae59f8670206a899fa44278b269b18a0ce3be81
-```
 
 ### `dpkg` source package: `attr=1:2.4.47-2build1`
 
