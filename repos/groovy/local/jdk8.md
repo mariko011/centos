@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:aadea5898bd8edadec1f091b35f4d56173137d8f8f7bb008890b71f484d32695`
-- Created: `2017-09-15T14:47:09.000401906Z`
-- Virtual Size: ~ 781.15 Mb  
+- Image ID: `sha256:3fa8b94a1fbf9889bec1f6264d3be5427463590cbc8f4d9bd2e844608db9e21a`
+- Created: `2017-09-26T17:46:29.647447945Z`
+- Virtual Size: ~ 781.13 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["groovysh"]`
@@ -16,7 +16,7 @@
   - `JAVA_DEBIAN_VERSION=8u141-b15-1~deb9u1`
   - `CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1`
   - `GROOVY_HOME=/opt/groovy`
-  - `GROOVY_VERSION=2.4.12`
+  - `GROOVY_VERSION=2.4.11`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1377,19 +1377,8 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris git=1:2.11.0-3+deb9u1
-'http://security.debian.org/pool/updates/main/g/git/git_2.11.0-3+deb9u1.dsc' git_2.11.0-3+deb9u1.dsc 2901 SHA256:1b2244ce374d402ae6c4389be8e19d7189bc075f7790798dc8159901a4684a36
-'http://security.debian.org/pool/updates/main/g/git/git_2.11.0.orig.tar.xz' git_2.11.0.orig.tar.xz 4197984 SHA256:7e7e8d69d494892373b87007674be5820a4bc1ef596a0117d03ea3169119fd0b
-'http://security.debian.org/pool/updates/main/g/git/git_2.11.0-3+deb9u1.debian.tar.xz' git_2.11.0-3+deb9u1.debian.tar.xz 523448 SHA256:c6f95ed3a3a1804c1ee17e554d42c1a0203d16dd9a30647a798128e9f242cc3b
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/git/1:2.11.0-3+deb9u1/
-- https://sources.debian.net/src/git/1:2.11.0-3+deb9u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `glib-networking=2.50.0-1`
 

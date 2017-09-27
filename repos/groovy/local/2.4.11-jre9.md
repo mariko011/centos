@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9a1fbad7d5428cc984a17ce48093907ad3fef642b55bbe51c4254f623e3e8220`
-- Created: `2017-09-15T00:23:39.332568795Z`
-- Virtual Size: ~ 768.80 Mb  
+- Image ID: `sha256:17b13e7c51e1e99ab582a8e5da6e8bb4e046e0c7671c98cce9a2947e74b39c70`
+- Created: `2017-09-26T17:33:20.583678598Z`
+- Virtual Size: ~ 769.60 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["groovysh"]`
@@ -15,7 +15,7 @@
   - `JAVA_VERSION=9-b181`
   - `JAVA_DEBIAN_VERSION=9~b181-4`
   - `GROOVY_HOME=/opt/groovy`
-  - `GROOVY_VERSION=2.4.12`
+  - `GROOVY_VERSION=2.4.11`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1267,11 +1267,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/gnome-icon-theme/3.12.0-2/
 - https://sources.debian.net/src/gnome-icon-theme/3.12.0-2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `gnupg2=2.2.0-3`
+### `dpkg` source package: `gnupg2=2.2.1-1`
 
 Binary Packages:
 
-- `gpgv=2.2.0-3`
+- `gpgv=2.2.1-1`
 
 Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 
@@ -1287,8 +1287,20 @@ Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 - `TinySCHEME`
 - `permissive`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris gnupg2=2.2.1-1
+'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.1-1.dsc' gnupg2_2.2.1-1.dsc 3694 SHA256:a2355816056caf214b34c2fef6b30813c89ee3adddde0c7c599e81cfb1b0e510
+'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.1.orig.tar.bz2' gnupg2_2.2.1.orig.tar.bz2 6537959 SHA256:34d70cd65b9c95f3f2f90a9f5c1e0b6a0fe039a8d685e2d66d69c33d1cbf62fb
+'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.1.orig.tar.bz2.asc' gnupg2_2.2.1.orig.tar.bz2.asc 310 SHA256:ca8e0be202fd6b66e7ccb4366af5fc4a432a60c7d42a89552b707f2cd7ccc8c6
+'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.1-1.debian.tar.bz2' gnupg2_2.2.1-1.debian.tar.bz2 62875 SHA256:3a91d58d3236e166d78df9660007f4f4706375fa1ceb01b26346b16309c4d47c
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/gnupg2/2.2.1-1/
+- https://sources.debian.net/src/gnupg2/2.2.1-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gnutls28=3.5.15-2`
 

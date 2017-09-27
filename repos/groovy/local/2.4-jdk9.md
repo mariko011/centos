@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e7740dab806d42a8d0a98a780027c7b257178b493d75aca24a469e8d44e4273c`
-- Created: `2017-09-15T00:23:06.991974451Z`
-- Virtual Size: ~ 925.11 Mb  
+- Image ID: `sha256:0285f47e7710fbd299e603b300d52b31b416ba23b98a37e3782077ff020be194`
+- Created: `2017-09-26T17:32:54.183306125Z`
+- Virtual Size: ~ 925.90 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["groovysh"]`
@@ -15,7 +15,7 @@
   - `JAVA_VERSION=9-b181`
   - `JAVA_DEBIAN_VERSION=9~b181-4`
   - `GROOVY_HOME=/opt/groovy`
-  - `GROOVY_VERSION=2.4.12`
+  - `GROOVY_VERSION=2.4.11`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1264,19 +1264,8 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris git=1:2.14.1-3
-'http://deb.debian.org/debian/pool/main/g/git/git_2.14.1-3.dsc' git_2.14.1-3.dsc 2845 SHA256:012f442388c4dca441a67fa2aed5bebd885cb3227c1c84a5efcef63187d56be2
-'http://deb.debian.org/debian/pool/main/g/git/git_2.14.1.orig.tar.xz' git_2.14.1.orig.tar.xz 4791876 SHA256:6f724c6d0e9e13114ab35db6f67e1b2c1934b641e89366e6a0e37618231f2cc6
-'http://deb.debian.org/debian/pool/main/g/git/git_2.14.1-3.debian.tar.xz' git_2.14.1-3.debian.tar.xz 544476 SHA256:33a82a1eae762a0a0723d2a39745307b834960de76bd0d87360dd65aa9e4f06d
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/git/1:2.14.1-3/
-- https://sources.debian.net/src/git/1:2.14.1-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `glib-networking=2.54.0-1`
 
@@ -1408,11 +1397,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/gnome-icon-theme/3.12.0-2/
 - https://sources.debian.net/src/gnome-icon-theme/3.12.0-2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `gnupg2=2.2.0-3`
+### `dpkg` source package: `gnupg2=2.2.1-1`
 
 Binary Packages:
 
-- `gpgv=2.2.0-3`
+- `gpgv=2.2.1-1`
 
 Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 
@@ -1428,8 +1417,20 @@ Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 - `TinySCHEME`
 - `permissive`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris gnupg2=2.2.1-1
+'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.1-1.dsc' gnupg2_2.2.1-1.dsc 3694 SHA256:a2355816056caf214b34c2fef6b30813c89ee3adddde0c7c599e81cfb1b0e510
+'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.1.orig.tar.bz2' gnupg2_2.2.1.orig.tar.bz2 6537959 SHA256:34d70cd65b9c95f3f2f90a9f5c1e0b6a0fe039a8d685e2d66d69c33d1cbf62fb
+'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.1.orig.tar.bz2.asc' gnupg2_2.2.1.orig.tar.bz2.asc 310 SHA256:ca8e0be202fd6b66e7ccb4366af5fc4a432a60c7d42a89552b707f2cd7ccc8c6
+'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.1-1.debian.tar.bz2' gnupg2_2.2.1-1.debian.tar.bz2 62875 SHA256:3a91d58d3236e166d78df9660007f4f4706375fa1ceb01b26346b16309c4d47c
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/gnupg2/2.2.1-1/
+- https://sources.debian.net/src/gnupg2/2.2.1-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gnutls28=3.5.15-2`
 
