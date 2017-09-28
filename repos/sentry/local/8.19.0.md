@@ -844,19 +844,8 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris git=1:2.1.4-2.1+deb8u4
-'http://security.debian.org/pool/updates/main/g/git/git_2.1.4-2.1+deb8u4.dsc' git_2.1.4-2.1+deb8u4.dsc 2803 SHA256:a1fd74ba02143befafcf19106a593154faa0be6cc55626feea0462c8383b528d
-'http://security.debian.org/pool/updates/main/g/git/git_2.1.4.orig.tar.xz' git_2.1.4.orig.tar.xz 3544804 SHA256:a04968b9b10cbcb31a7054aa3a0d11ac47c83556ecd270ddef1987df5d3d053e
-'http://security.debian.org/pool/updates/main/g/git/git_2.1.4-2.1+deb8u4.debian.tar.xz' git_2.1.4-2.1+deb8u4.debian.tar.xz 477096 SHA256:5b4605339b7eab5d565ca269a8e519b2e3e2fa4a7e62327212080ef2aa3bb4e8
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/git/1:2.1.4-2.1+deb8u4/
-- https://sources.debian.net/src/git/1:2.1.4-2.1+deb8u4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `glibc=2.19-18+deb8u10`
 
