@@ -1,9 +1,9 @@
-# `docker:17.09.0-ce-rc3`
+# `docker:17.09.0-ce`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8e00cef02fc58f70eb68e1f5f8ddfa2a66195b5402edde6228072c57d17ff9b7`
-- Created: `2017-09-21T22:06:33.579121277Z`
+- Image ID: `sha256:6f114d6c63208eabe25ee9639004a9afd2a3e3bd7e523ac08f5894e1d6b5c916`
+- Created: `2017-09-27T20:50:33.678760735Z`
 - Virtual Size: ~ 99.81 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,5 +11,5 @@
 - Command: `["sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `DOCKER_CHANNEL=test`
-  - `DOCKER_VERSION=17.09.0-ce-rc3`
+  - `DOCKER_CHANNEL=stable`
+  - `DOCKER_VERSION=17.09.0-ce`
