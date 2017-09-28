@@ -103,10 +103,13 @@ for src in "${sortedSources[@]}"; do
 		done
 	else
 		echo
-		echo '**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)'
-		echo '  If source is available (seen below), check the contents of `debian/copyright` within it.'
+		echo '**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  '
+		echo 'If source is available (seen below), check the contents of `debian/copyright` within it.'
 		echo
 	fi
+
+	sourcesUrl="https://sources.debian.net/src/${src//=//}/"
+	snapshotUrl="http://snapshot.debian.org/package/${src//=//}/"
 
 	aptSourceArgs=( apt-get source -qq --print-uris "$src" )
 	if aptSource="$("${aptSourceArgs[@]}" 2>/dev/null)" && [ -n "$aptSource" ]; then
@@ -121,15 +124,23 @@ for src in "${sortedSources[@]}"; do
 			*.debian.org/*)
 				# _probably_ Debian -- let's link to sources.debian.net too
 				echo
-				echo 'Likely also available for browsing at:'
+				echo 'Other potentially useful URLs:'
 				echo
-				echo '- https://sources.debian.net/src/'"${src//=//}"'/'
-				echo '- https://sources.debian.net/src/'"${src//=//}"'/debian/copyright (for direct copyright/license information)'
+				echo '- '"$sourcesUrl"' (for browsing the source)'
+				echo '- '"$sourcesUrl"'debian/copyright/ (for direct copyright/license information)'
+				echo '- '"$snapshotUrl"' (for access to the source package after it no longer exists in the archive)'
 				;;
 		esac
 	else
 		echo
-		echo '**WARNING:** unable to find source (`apt-get source` failed or returned no results)!'
+		echo '**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  '
+		echo 'This is *usually* due to a new package version being released and the old version being removed.'
 		echo
+		if wget --quiet --spider -O /dev/null -o /dev/null "$snapshotUrl"; then
+			echo 'The source package *may* still be available for download from:'
+			echo
+			echo "- $snapshotUrl"
+			echo
+		fi
 	fi
 done
