@@ -1,10 +1,11 @@
-FROM debian:jessie
+FROM debian:stretch-slim
 
 # add "apt-transport-https" for images whose "/etc/apt/sources.list" uses "https"
 RUN apt-get update \
 	&& apt-get install -y --no-install-recommends \
 		apt-transport-https \
 		ca-certificates \
+		wget \
 	&& rm -rf /var/lib/apt/lists/*
 
 COPY .local-scripts/*.sh /usr/local/bin/
