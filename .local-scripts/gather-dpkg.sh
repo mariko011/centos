@@ -86,8 +86,15 @@ for src in "${sortedSources[@]}"; do
 	done
 	if [ "${#licenses[@]}" -gt 0 ]; then
 		IFS=$'\n'
-		licenses=( $(echo "${licenses[*]}" | sed -r -e 's/ (and|or) /\n/g' -e 's/[.]+$//' | sort -u) )
+		licenses=( $(
+			echo "${licenses[*]}" \
+				| sed -r \
+					-e 's/ (and|or) /\n/g' \
+					-e 's/[.,]+$//' \
+				| sort -u
+		) )
 		unset IFS
+
 		echo
 		echo 'Licenses: (parsed from: `'"$(join '`, `' "${licenseFiles[@]}")"'`)'
 		echo
