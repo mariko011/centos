@@ -468,8 +468,8 @@ Binary Packages:
 
 - `libdebconfclient0:amd64=0.213ubuntu1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -636,8 +636,8 @@ Binary Packages:
 - `libdb5.3:amd64=5.3.28-12`
 - `libdb5.3-dev=5.3.28-12`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -846,8 +846,8 @@ Binary Packages:
 - `libexpat1:amd64=2.2.0-2ubuntu0.1`
 - `libexpat1-dev:amd64=2.2.0-2ubuntu0.1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -951,8 +951,8 @@ Binary Packages:
 - `libfontconfig1:amd64=2.11.94-0ubuntu2`
 - `libfontconfig1-dev:amd64=2.11.94-0ubuntu2`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -1502,8 +1502,8 @@ Binary Packages:
 - `libroken18-heimdal:amd64=7.1.0+dfsg-9ubuntu1.1`
 - `libwind0-heimdal:amd64=7.1.0+dfsg-9ubuntu1.1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -1580,8 +1580,8 @@ Binary Packages:
 - `libicu-dev=57.1-5ubuntu0.1`
 - `libicu57:amd64=57.1-5ubuntu0.1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -1920,8 +1920,8 @@ Binary Packages:
 
 - `libedit2:amd64=3.1-20160903-3`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -1966,8 +1966,8 @@ Binary Packages:
 - `libevent-openssl-2.0-5:amd64=2.0.21-stable-3`
 - `libevent-pthreads-2.0-5:amd64=2.0.21-stable-3`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2100,8 +2100,8 @@ Binary Packages:
 - `libice-dev:amd64=2:1.0.9-1`
 - `libice6:amd64=2:1.0.9-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2299,8 +2299,8 @@ Binary Packages:
 
 - `libpthread-stubs0-dev:amd64=0.3-4`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2424,8 +2424,8 @@ Binary Packages:
 - `libsm-dev:amd64=2:1.2.2-1`
 - `libsm6:amd64=2:1.2.2-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2584,8 +2584,8 @@ Binary Packages:
 - `libx11-data=2:1.6.4-3`
 - `libx11-dev:amd64=2:1.6.4-3`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2604,8 +2604,8 @@ Binary Packages:
 - `libxau-dev:amd64=1:1.0.8-1`
 - `libxau6:amd64=1:1.0.8-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2628,8 +2628,8 @@ Binary Packages:
 - `libxcb1:amd64=1.11.1-1ubuntu1`
 - `libxcb1-dev:amd64=1.11.1-1ubuntu1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2647,8 +2647,8 @@ Binary Packages:
 
 - `libxcomposite1:amd64=1:0.4.4-2`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2666,8 +2666,8 @@ Binary Packages:
 
 - `libxcursor1:amd64=1:1.1.14-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2685,8 +2685,8 @@ Binary Packages:
 
 - `libxdamage1:amd64=1:1.1.4-2`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2705,8 +2705,8 @@ Binary Packages:
 - `libxdmcp-dev:amd64=1:1.1.2-1.1`
 - `libxdmcp6:amd64=1:1.1.2-1.1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2725,8 +2725,8 @@ Binary Packages:
 - `libxext-dev:amd64=2:1.3.3-1`
 - `libxext6:amd64=2:1.3.3-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2744,8 +2744,8 @@ Binary Packages:
 
 - `libxfixes3:amd64=1:5.0.3-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2763,8 +2763,8 @@ Binary Packages:
 
 - `libxi6:amd64=2:1.7.9-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2782,8 +2782,8 @@ Binary Packages:
 
 - `libxinerama1:amd64=2:1.1.3-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2802,8 +2802,8 @@ Binary Packages:
 - `libxml2:amd64=2.9.4+dfsg1-2.2`
 - `libxml2-dev:amd64=2.9.4+dfsg1-2.2`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2821,8 +2821,8 @@ Binary Packages:
 
 - `libxpm4:amd64=1:3.5.12-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2840,8 +2840,8 @@ Binary Packages:
 
 - `libxrandr2:amd64=2:1.5.1-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2860,8 +2860,8 @@ Binary Packages:
 - `libxrender-dev:amd64=1:0.9.10-1`
 - `libxrender1:amd64=1:0.9.10-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2880,8 +2880,8 @@ Binary Packages:
 - `libxslt1-dev:amd64=1.1.29-2ubuntu0.1`
 - `libxslt1.1:amd64=1.1.29-2ubuntu0.1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2900,8 +2900,8 @@ Binary Packages:
 - `libxt-dev:amd64=1:1.1.5-1`
 - `libxt6:amd64=1:1.1.5-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -3235,8 +3235,8 @@ Binary Packages:
 - `ncurses-base=6.0+20160625-1ubuntu1`
 - `ncurses-bin=6.0+20160625-1ubuntu1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -3327,8 +3327,8 @@ Binary Packages:
 - `libldap-2.4-2:amd64=2.4.44+dfsg-3ubuntu2.1`
 - `libldap-common=2.4.44+dfsg-3ubuntu2.1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -3375,8 +3375,8 @@ Binary Packages:
 - `libssl1.0.0:amd64=1.0.2g-1ubuntu11.2`
 - `openssl=1.0.2g-1ubuntu11.2`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -3485,8 +3485,8 @@ Binary Packages:
 - `libpcre32-3:amd64=2:8.39-3`
 - `libpcrecpp0v5:amd64=2:8.39-3`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -3576,8 +3576,8 @@ Binary Packages:
 - `libpixman-1-0:amd64=0.34.0-1`
 - `libpixman-1-dev=0.34.0-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -3636,9 +3636,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris postgresql-9.6=9.6.4-0ubuntu0.17.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.4-0ubuntu0.17.04.1.dsc' postgresql-9.6_9.6.4-0ubuntu0.17.04.1.dsc 3791 SHA256:976fd4e03d7eb18656f9670ca9a853e6610a0220794c7bb4c2477433c57a72b5
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.4.orig.tar.bz2' postgresql-9.6_9.6.4.orig.tar.bz2 19566875 SHA256:2b3ab16d82e21cead54c08b95ce3ac480696944a68603b6c11b3205b7376ce13
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.4-0ubuntu0.17.04.1.debian.tar.xz' postgresql-9.6_9.6.4-0ubuntu0.17.04.1.debian.tar.xz 21120 SHA256:1bb1b35c8eb85ccafbbbbbb1aa0b83640ec34b4b71db22e56b6c41ab7b81347f
+'http://security.ubuntu.com/ubuntu/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.4-0ubuntu0.17.04.1.dsc' postgresql-9.6_9.6.4-0ubuntu0.17.04.1.dsc 3791 SHA256:976fd4e03d7eb18656f9670ca9a853e6610a0220794c7bb4c2477433c57a72b5
+'http://security.ubuntu.com/ubuntu/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.4.orig.tar.bz2' postgresql-9.6_9.6.4.orig.tar.bz2 19566875 SHA256:2b3ab16d82e21cead54c08b95ce3ac480696944a68603b6c11b3205b7376ce13
+'http://security.ubuntu.com/ubuntu/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.4-0ubuntu0.17.04.1.debian.tar.xz' postgresql-9.6_9.6.4-0ubuntu0.17.04.1.debian.tar.xz 21120 SHA256:1bb1b35c8eb85ccafbbbbbb1aa0b83640ec34b4b71db22e56b6c41ab7b81347f
 ```
 
 ### `dpkg` source package: `procps=2:3.3.12-1ubuntu2`
@@ -3674,8 +3674,8 @@ Binary Packages:
 - `python=2.7.13-2`
 - `python-minimal=2.7.13-2`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -3731,8 +3731,8 @@ Binary Packages:
 - `python3=3.5.3-1`
 - `python3-minimal=3.5.3-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -3781,14 +3781,9 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.5-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.5=3.5.3-1ubuntu0~17.04.0
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.5/python3.5_3.5.3-1ubuntu0~17.04.0.dsc' python3.5_3.5.3-1ubuntu0~17.04.0.dsc 3117 SHA256:22cd6b08cdf76df6f956b24c24cdec5b302aa610bcedd41241ffe9b6a37dc792
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.5/python3.5_3.5.3.orig.tar.xz' python3.5_3.5.3.orig.tar.xz 15213396 SHA256:eefe2ad6575855423ab630f5b51a8ef6e5556f774584c06beab4926f930ddbb0
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.5/python3.5_3.5.3-1ubuntu0~17.04.0.debian.tar.xz' python3.5_3.5.3-1ubuntu0~17.04.0.debian.tar.xz 221732 SHA256:23c333b76003c973116ac836227b1ccd73387ccb1737e896f75755ad27e070a3
-```
 
 ### `dpkg` source package: `readline=7.0-0ubuntu2`
 
@@ -3881,7 +3876,12 @@ Licenses: (parsed from: `/usr/share/doc/libserf-1-1/copyright`)
 - `Apache-2.0`
 - `Zlib`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/serf/1.3.9-1/
 
 
 ### `dpkg` source package: `shadow=1:4.2-3.2ubuntu1.17.04.2`
@@ -4220,8 +4220,8 @@ Binary Packages:
 
 - `x11proto-core-dev=7.0.31-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -4239,8 +4239,8 @@ Binary Packages:
 
 - `x11proto-input-dev=2.3.2-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -4258,8 +4258,8 @@ Binary Packages:
 
 - `x11proto-kb-dev=1.0.7-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -4277,8 +4277,8 @@ Binary Packages:
 
 - `x11proto-render-dev=2:0.11.1-2`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -4296,8 +4296,8 @@ Binary Packages:
 
 - `x11proto-xext-dev=7.3.0-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -4315,8 +4315,8 @@ Binary Packages:
 
 - `xorg-sgml-doctools=1:1.11-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -4352,8 +4352,8 @@ Binary Packages:
 
 - `xtrans-dev=1.3.5-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -4408,8 +4408,8 @@ Binary Packages:
 - `zlib1g:amd64=1:1.2.11.dfsg-0ubuntu1`
 - `zlib1g-dev:amd64=1:1.2.11.dfsg-0ubuntu1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
