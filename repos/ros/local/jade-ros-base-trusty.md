@@ -304,8 +304,8 @@ Binary Packages:
 
 - `libblas3=1.2.20110419-7`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -372,8 +372,8 @@ Binary Packages:
 - `libboost-tools-dev=1.54.0.1ubuntu1`
 - `libboost-wave-dev:amd64=1.54.0.1ubuntu1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -395,8 +395,8 @@ Binary Packages:
 - `libboost-mpi1.54-dev=1.54.0-4ubuntu3.1`
 - `libboost-mpi1.54.0=1.54.0-4ubuntu3.1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -459,8 +459,8 @@ Binary Packages:
 - `libboost1.54-dev=1.54.0-4ubuntu3.1`
 - `libboost1.54-tools-dev=1.54.0-4ubuntu3.1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -578,8 +578,8 @@ Binary Packages:
 
 - `libdebconfclient0:amd64=0.187ubuntu1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -867,8 +867,8 @@ Binary Packages:
 
 - `libdb5.3:amd64=5.3.28-3ubuntu3`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -1090,7 +1090,8 @@ Licenses: (parsed from: `/usr/share/doc/python-empy/copyright`)
 - `GPL`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `expat=2.1.0-4ubuntu1.4`
@@ -1100,8 +1101,8 @@ Binary Packages:
 - `libexpat1:amd64=2.1.0-4ubuntu1.4`
 - `libexpat1-dev:amd64=2.1.0-4ubuntu1.4`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -1161,8 +1162,8 @@ Binary Packages:
 - `fontconfig-config=2.11.0-0ubuntu4.2`
 - `libfontconfig1:amd64=2.11.0-0ubuntu4.2`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -1348,7 +1349,8 @@ Licenses: (parsed from: `/usr/share/doc/libgdk-pixbuf2.0-0/copyright`, `/usr/sha
 - `GPL-2`
 - `LGPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `git=1:1.9.1-1ubuntu0.6`
@@ -1643,8 +1645,8 @@ Binary Packages:
 - `libroken18-heimdal:amd64=1.6~git20131207+dfsg-1ubuntu1.2`
 - `libwind0-heimdal:amd64=1.6~git20131207+dfsg-1ubuntu1.2`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -1703,8 +1705,8 @@ Binary Packages:
 - `libicu-dev:amd64=52.1-3ubuntu0.6`
 - `libicu52:amd64=52.1-3ubuntu0.6`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -1876,11 +1878,12 @@ Binary Packages:
 
 - `libjasper1:amd64=1.900.1-14ubuntu3.4`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `jbigkit=2.0-2ubuntu4.1`
@@ -2061,8 +2064,8 @@ Binary Packages:
 
 - `liblapack3=3.5.0-2ubuntu1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2120,8 +2123,8 @@ Binary Packages:
 
 - `libarchive13:amd64=3.1.2-7ubuntu2.4`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2158,8 +2161,8 @@ Binary Packages:
 
 - `libbsd0:amd64=0.6.0-2ubuntu1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2220,8 +2223,8 @@ Binary Packages:
 
 - `libdrm2:amd64=2.4.67-1ubuntu0.14.04.2`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2875,8 +2878,8 @@ Binary Packages:
 - `libx11-6:amd64=2:1.6.2-1ubuntu2`
 - `libx11-data=2:1.6.2-1ubuntu2`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2894,8 +2897,8 @@ Binary Packages:
 
 - `libxau6:amd64=1:1.0.8-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2915,8 +2918,8 @@ Binary Packages:
 - `libxcb-shm0:amd64=1.10-2ubuntu1`
 - `libxcb1:amd64=1.10-2ubuntu1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2934,8 +2937,8 @@ Binary Packages:
 
 - `libxcomposite1:amd64=1:0.4.4-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2953,8 +2956,8 @@ Binary Packages:
 
 - `libxcursor1:amd64=1:1.1.14-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2972,8 +2975,8 @@ Binary Packages:
 
 - `libxdamage1:amd64=1:1.1.4-1ubuntu1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2991,8 +2994,8 @@ Binary Packages:
 
 - `libxdmcp6:amd64=1:1.1.1-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -3010,8 +3013,8 @@ Binary Packages:
 
 - `libxext6:amd64=2:1.3.2-1ubuntu0.0.14.04.1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -3029,8 +3032,8 @@ Binary Packages:
 
 - `libxfixes3:amd64=1:5.0.1-1ubuntu1.1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -3048,8 +3051,8 @@ Binary Packages:
 
 - `libxi6:amd64=2:1.7.1.901-1ubuntu1.1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -3067,8 +3070,8 @@ Binary Packages:
 
 - `libxinerama1:amd64=2:1.1.3-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -3087,11 +3090,12 @@ Binary Packages:
 - `libxml2:amd64=2.9.1+dfsg1-3ubuntu4.9`
 - `libxml2-dev:amd64=2.9.1+dfsg1-3ubuntu4.9`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `libxrandr=2:1.5.0-1~trusty1`
@@ -3100,8 +3104,8 @@ Binary Packages:
 
 - `libxrandr2:amd64=2:1.5.0-1~trusty1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -3119,8 +3123,8 @@ Binary Packages:
 
 - `libxrender1:amd64=1:0.9.8-1build0.14.04.1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -3138,8 +3142,8 @@ Binary Packages:
 
 - `libyaml-0-2:amd64=0.1.4-3ubuntu3.1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -3161,7 +3165,8 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `lksctp-tools=1.0.15+dfsg-1`
@@ -3586,8 +3591,8 @@ Binary Packages:
 - `ncurses-base=5.9+20140118-1ubuntu1`
 - `ncurses-bin=5.9+20140118-1ubuntu1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -3662,8 +3667,8 @@ Binary Packages:
 
 - `python-netifaces=0.8-3build1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -3751,8 +3756,8 @@ Binary Packages:
 
 - `ntpdate=1:4.2.6.p5+dfsg-3ubuntu2.14.04.12`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -3810,8 +3815,8 @@ Binary Packages:
 - `libldap-2.4-2:amd64=2.4.31-1+nmu2ubuntu8.4`
 - `libldap2-dev:amd64=2.4.31-1+nmu2ubuntu8.4`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -3854,8 +3859,8 @@ Binary Packages:
 - `libssl1.0.0:amd64=1.0.1f-1ubuntu2.22`
 - `openssl=1.0.1f-1ubuntu2.22`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -3958,8 +3963,8 @@ Binary Packages:
 - `libpci-dev=1:3.2.1-1ubuntu5.1`
 - `libpci3:amd64=1:3.2.1-1ubuntu5.1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -3979,8 +3984,8 @@ Binary Packages:
 - `libpcre3-dev:amd64=1:8.31-2ubuntu2.3`
 - `libpcrecpp0:amd64=1:8.31-2ubuntu2.3`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -4062,8 +4067,8 @@ Binary Packages:
 
 - `libpixman-1-0:amd64=0.30.2-2ubuntu1.1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -4131,8 +4136,8 @@ Binary Packages:
 - `libpocoxml9=1.3.6p1-4`
 - `libpocozip9=1.3.6p1-4`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -4183,9 +4188,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris postgresql-9.3=9.3.18-0ubuntu0.14.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.18-0ubuntu0.14.04.1.dsc' postgresql-9.3_9.3.18-0ubuntu0.14.04.1.dsc 3463 SHA256:91500b2c4f89a0884c1edf59edcd7f3bb3610b3d4bc96470f33e146c7f27b2a9
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.18.orig.tar.bz2' postgresql-9.3_9.3.18.orig.tar.bz2 17194269 SHA256:ad60d12a5a3dd0f6f5904c41b87e43eff49d3f74e45129fe52c5744366ff2fe0
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.18-0ubuntu0.14.04.1.debian.tar.gz' postgresql-9.3_9.3.18-0ubuntu0.14.04.1.debian.tar.gz 33642 SHA256:2786ae82db55203adae022dee359cd8e50c2c5ba6b46421d39cd5fa73b3c6811
+'http://security.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.18-0ubuntu0.14.04.1.dsc' postgresql-9.3_9.3.18-0ubuntu0.14.04.1.dsc 3463 SHA256:91500b2c4f89a0884c1edf59edcd7f3bb3610b3d4bc96470f33e146c7f27b2a9
+'http://security.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.18.orig.tar.bz2' postgresql-9.3_9.3.18.orig.tar.bz2 17194269 SHA256:ad60d12a5a3dd0f6f5904c41b87e43eff49d3f74e45129fe52c5744366ff2fe0
+'http://security.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.18-0ubuntu0.14.04.1.debian.tar.gz' postgresql-9.3_9.3.18-0ubuntu0.14.04.1.debian.tar.gz 33642 SHA256:2786ae82db55203adae022dee359cd8e50c2c5ba6b46421d39cd5fa73b3c6811
 ```
 
 ### `dpkg` source package: `procps=1:3.3.9-1ubuntu2.2`
@@ -4235,8 +4240,8 @@ Binary Packages:
 
 - `python-catkin-pkg-modules=0.3.6-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -4254,8 +4259,8 @@ Binary Packages:
 
 - `python-catkin-pkg=0.3.6-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -4293,8 +4298,8 @@ Binary Packages:
 
 - `python-dateutil=1.5+dfsg-1ubuntu1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -4316,8 +4321,8 @@ Binary Packages:
 - `python-dev=2.7.5-5ubuntu3`
 - `python-minimal=2.7.5-5ubuntu3`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -4395,8 +4400,8 @@ Binary Packages:
 
 - `python-rosdep=0.11.8-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -4414,8 +4419,8 @@ Binary Packages:
 
 - `python-rosdistro-modules=0.6.2-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -4433,8 +4438,8 @@ Binary Packages:
 
 - `python-rosdistro=0.6.2-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -4452,8 +4457,8 @@ Binary Packages:
 
 - `python-rosinstall=0.7.8-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -4471,18 +4476,13 @@ Binary Packages:
 
 - `python-rospkg-modules=1.1.2-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-rospkg-modules=1.1.2-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg-modules/python-rospkg-modules_1.1.2-1.dsc' python-rospkg-modules_1.1.2-1.dsc 949 SHA256:b65ecb24057c244c53a057795019e869cb6927bfdb48b0355f8bf7488a653edd
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg-modules/python-rospkg-modules_1.1.2.orig.tar.gz' python-rospkg-modules_1.1.2.orig.tar.gz 38411 SHA256:eb74477c7fb2f5ef437dcec8f78f69ffab7f39995b3bc008127a1c770691025a
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg-modules/python-rospkg-modules_1.1.2-1.debian.tar.xz' python-rospkg-modules_1.1.2-1.debian.tar.xz 1124 SHA256:5e4dac09b109bf9fe685df9ac818cfd0e93001797d768f6ed0f5bd67951934a1
-```
 
 ### `dpkg` source package: `python-rospkg=1.1.2-1`
 
@@ -4490,18 +4490,13 @@ Binary Packages:
 
 - `python-rospkg=1.1.2-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-rospkg=1.1.2-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg/python-rospkg_1.1.2-1.dsc' python-rospkg_1.1.2-1.dsc 881 SHA256:0fed71f6ab6698c18e71f90db0b7f47cc866d8b90a5c0e338dfd92c038fed510
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg/python-rospkg_1.1.2.orig.tar.gz' python-rospkg_1.1.2.orig.tar.gz 18035 SHA256:ddd3b217f86b9ca5641a2cc73337f2d6ce52d69f814ada8ed917b575ab022a74
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg/python-rospkg_1.1.2-1.debian.tar.xz' python-rospkg_1.1.2-1.debian.tar.xz 1096 SHA256:958b749a96af524e5bfac806268be219f9e4b34e3d186970b043ecffcdeacd48
-```
 
 ### `dpkg` source package: `python-setuptools=3.3-1ubuntu2`
 
@@ -4510,8 +4505,8 @@ Binary Packages:
 - `python-pkg-resources=3.3-1ubuntu2`
 - `python-setuptools=3.3-1ubuntu2`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -4529,8 +4524,8 @@ Binary Packages:
 
 - `python-vcstools=0.1.39-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -4548,8 +4543,8 @@ Binary Packages:
 
 - `python-wstool=0.1.13-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -4601,8 +4596,8 @@ Binary Packages:
 - `python3=3.4.0-0ubuntu2`
 - `python3-minimal=3.4.0-0ubuntu2`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -4657,8 +4652,8 @@ Binary Packages:
 
 - `python-yaml=3.10-4ubuntu0.1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -4715,11 +4710,12 @@ Binary Packages:
 
 - `ros-jade-actionlib-msgs=1.12.5-0trusty-20170613-233918-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-actionlib=1.11.9-0trusty-20170614-011109-0800`
@@ -4728,11 +4724,12 @@ Binary Packages:
 
 - `ros-jade-actionlib=1.11.9-0trusty-20170614-011109-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-bond-core=1.7.19-0trusty-20170614-002512-0800`
@@ -4741,11 +4738,12 @@ Binary Packages:
 
 - `ros-jade-bond-core=1.7.19-0trusty-20170614-002512-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-bond=1.7.19-0trusty-20170613-234127-0800`
@@ -4754,11 +4752,12 @@ Binary Packages:
 
 - `ros-jade-bond=1.7.19-0trusty-20170613-234127-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-bondcpp=1.7.19-0trusty-20170614-002014-0800`
@@ -4767,11 +4766,12 @@ Binary Packages:
 
 - `ros-jade-bondcpp=1.7.19-0trusty-20170614-002014-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-bondpy=1.7.19-0trusty-20170614-002006-0800`
@@ -4780,11 +4780,12 @@ Binary Packages:
 
 - `ros-jade-bondpy=1.7.19-0trusty-20170614-002006-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-catkin=0.6.19-0trusty-20170310-184122-0800`
@@ -4793,11 +4794,12 @@ Binary Packages:
 
 - `ros-jade-catkin=0.6.19-0trusty-20170310-184122-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-class-loader=0.3.6-0trusty-20170310-224549-0800`
@@ -4806,11 +4808,12 @@ Binary Packages:
 
 - `ros-jade-class-loader=0.3.6-0trusty-20170310-224549-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-cmake-modules=0.4.1-0trusty-20170310-224026-0800`
@@ -4819,11 +4822,12 @@ Binary Packages:
 
 - `ros-jade-cmake-modules=0.4.1-0trusty-20170310-224026-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-common-msgs=1.12.5-0trusty-20170614-000041-0800`
@@ -4832,11 +4836,12 @@ Binary Packages:
 
 - `ros-jade-common-msgs=1.12.5-0trusty-20170614-000041-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-cpp-common=0.5.8-0trusty-20170310-190901-0800`
@@ -4845,11 +4850,12 @@ Binary Packages:
 
 - `ros-jade-cpp-common=0.5.8-0trusty-20170310-190901-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-diagnostic-msgs=1.12.5-0trusty-20170613-234127-0800`
@@ -4858,11 +4864,12 @@ Binary Packages:
 
 - `ros-jade-diagnostic-msgs=1.12.5-0trusty-20170613-234127-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-dynamic-reconfigure=1.5.48-0trusty-20170614-011448-0800`
@@ -4871,11 +4878,12 @@ Binary Packages:
 
 - `ros-jade-dynamic-reconfigure=1.5.48-0trusty-20170614-011448-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-gencpp=0.5.5-0trusty-20170310-223510-0800`
@@ -4884,11 +4892,12 @@ Binary Packages:
 
 - `ros-jade-gencpp=0.5.5-0trusty-20170310-223510-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-geneus=2.2.6-0trusty-20170613-225147-0800`
@@ -4897,11 +4906,12 @@ Binary Packages:
 
 - `ros-jade-geneus=2.2.6-0trusty-20170613-225147-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-genlisp=0.4.15-0trusty-20170310-223535-0800`
@@ -4910,11 +4920,12 @@ Binary Packages:
 
 - `ros-jade-genlisp=0.4.15-0trusty-20170310-223535-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-genmsg=0.5.8-0trusty-20170310-191028-0800`
@@ -4923,11 +4934,12 @@ Binary Packages:
 
 - `ros-jade-genmsg=0.5.8-0trusty-20170310-191028-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-genpy=0.5.10-0trusty-20170310-223549-0800`
@@ -4936,11 +4948,12 @@ Binary Packages:
 
 - `ros-jade-genpy=0.5.10-0trusty-20170310-223549-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-geometry-msgs=1.12.5-0trusty-20170613-234035-0800`
@@ -4949,11 +4962,12 @@ Binary Packages:
 
 - `ros-jade-geometry-msgs=1.12.5-0trusty-20170613-234035-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-message-filters=1.11.21-0trusty-20170614-004345-0800`
@@ -4962,11 +4976,12 @@ Binary Packages:
 
 - `ros-jade-message-filters=1.11.21-0trusty-20170614-004345-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-message-generation=0.3.0-0trusty-20170613-231254-0800`
@@ -4975,11 +4990,12 @@ Binary Packages:
 
 - `ros-jade-message-generation=0.3.0-0trusty-20170613-231254-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-message-runtime=0.4.12-0trusty-20170310-224006-0800`
@@ -4988,11 +5004,12 @@ Binary Packages:
 
 - `ros-jade-message-runtime=0.4.12-0trusty-20170310-224006-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-mk=1.12.8-0trusty-20170613-235046-0800`
@@ -5001,11 +5018,12 @@ Binary Packages:
 
 - `ros-jade-mk=1.12.8-0trusty-20170613-235046-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-nav-msgs=1.12.5-0trusty-20170613-234624-0800`
@@ -5014,11 +5032,12 @@ Binary Packages:
 
 - `ros-jade-nav-msgs=1.12.5-0trusty-20170613-234624-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-nodelet-core=1.9.10-0trusty-20170614-023843-0800`
@@ -5027,11 +5046,12 @@ Binary Packages:
 
 - `ros-jade-nodelet-core=1.9.10-0trusty-20170614-023843-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-nodelet-topic-tools=1.9.10-0trusty-20170614-022725-0800`
@@ -5040,11 +5060,12 @@ Binary Packages:
 
 - `ros-jade-nodelet-topic-tools=1.9.10-0trusty-20170614-022725-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-nodelet=1.9.10-0trusty-20170614-002417-0800`
@@ -5053,11 +5074,12 @@ Binary Packages:
 
 - `ros-jade-nodelet=1.9.10-0trusty-20170614-002417-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-pluginlib=1.10.5-0trusty-20170614-000542-0800`
@@ -5066,11 +5088,12 @@ Binary Packages:
 
 - `ros-jade-pluginlib=1.10.5-0trusty-20170614-000542-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-ros-base=1.2.1-0trusty-20170714-104030-0800`
@@ -5079,11 +5102,12 @@ Binary Packages:
 
 - `ros-jade-ros-base=1.2.1-0trusty-20170714-104030-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-ros-comm=1.11.21-0trusty-20170714-103514-0800`
@@ -5092,11 +5116,12 @@ Binary Packages:
 
 - `ros-jade-ros-comm=1.11.21-0trusty-20170714-103514-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-ros-core=1.2.1-0trusty-20170714-103833-0800`
@@ -5105,11 +5130,12 @@ Binary Packages:
 
 - `ros-jade-ros-core=1.2.1-0trusty-20170714-103833-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-ros=1.12.8-0trusty-20170613-235724-0800`
@@ -5118,11 +5144,12 @@ Binary Packages:
 
 - `ros-jade-ros=1.12.8-0trusty-20170613-235724-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-rosbag-migration-rule=1.0.0-0trusty-20170311-005725-0800`
@@ -5131,11 +5158,12 @@ Binary Packages:
 
 - `ros-jade-rosbag-migration-rule=1.0.0-0trusty-20170311-005725-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-rosbag-storage=1.11.21-0trusty-20170310-231150-0800`
@@ -5144,11 +5172,12 @@ Binary Packages:
 
 - `ros-jade-rosbag-storage=1.11.21-0trusty-20170310-231150-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-rosbag=1.11.21-0trusty-20170614-004356-0800`
@@ -5157,11 +5186,12 @@ Binary Packages:
 
 - `ros-jade-rosbag=1.11.21-0trusty-20170614-004356-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-rosbash=1.12.8-0trusty-20170310-191259-0800`
@@ -5170,11 +5200,12 @@ Binary Packages:
 
 - `ros-jade-rosbash=1.12.8-0trusty-20170310-191259-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-rosboost-cfg=1.12.8-0trusty-20170310-191241-0800`
@@ -5183,11 +5214,12 @@ Binary Packages:
 
 - `ros-jade-rosboost-cfg=1.12.8-0trusty-20170310-191241-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-rosbuild=1.12.8-0trusty-20170613-231838-0800`
@@ -5196,11 +5228,12 @@ Binary Packages:
 
 - `ros-jade-rosbuild=1.12.8-0trusty-20170613-231838-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-rosclean=1.12.8-0trusty-20170310-191257-0800`
@@ -5209,11 +5242,12 @@ Binary Packages:
 
 - `ros-jade-rosclean=1.12.8-0trusty-20170310-191257-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-rosconsole-bridge=0.4.4-0trusty-20170614-000625-0800`
@@ -5222,11 +5256,12 @@ Binary Packages:
 
 - `ros-jade-rosconsole-bridge=0.4.4-0trusty-20170614-000625-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-rosconsole=1.11.21-0trusty-20170613-235108-0800`
@@ -5235,11 +5270,12 @@ Binary Packages:
 
 - `ros-jade-rosconsole=1.11.21-0trusty-20170613-235108-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-roscpp-core=0.5.8-0trusty-20170310-193326-0800`
@@ -5248,11 +5284,12 @@ Binary Packages:
 
 - `ros-jade-roscpp-core=0.5.8-0trusty-20170310-193326-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-roscpp-serialization=0.5.8-0trusty-20170310-192714-0800`
@@ -5261,11 +5298,12 @@ Binary Packages:
 
 - `ros-jade-roscpp-serialization=0.5.8-0trusty-20170310-192714-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-roscpp-traits=0.5.8-0trusty-20170310-192200-0800`
@@ -5274,11 +5312,12 @@ Binary Packages:
 
 - `ros-jade-roscpp-traits=0.5.8-0trusty-20170310-192200-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-roscpp=1.11.21-0trusty-20170613-235605-0800`
@@ -5287,11 +5326,12 @@ Binary Packages:
 
 - `ros-jade-roscpp=1.11.21-0trusty-20170613-235605-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-roscreate=1.12.8-0trusty-20170310-191539-0800`
@@ -5300,11 +5340,12 @@ Binary Packages:
 
 - `ros-jade-roscreate=1.12.8-0trusty-20170310-191539-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-rosgraph-msgs=1.11.2-0trusty-20170613-234343-0800`
@@ -5313,11 +5354,12 @@ Binary Packages:
 
 - `ros-jade-rosgraph-msgs=1.11.2-0trusty-20170613-234343-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-rosgraph=1.11.21-0trusty-20170310-191549-0800`
@@ -5326,11 +5368,12 @@ Binary Packages:
 
 - `ros-jade-rosgraph=1.11.21-0trusty-20170310-191549-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-roslang=1.12.8-0trusty-20170310-191520-0800`
@@ -5339,11 +5382,12 @@ Binary Packages:
 
 - `ros-jade-roslang=1.12.8-0trusty-20170310-191520-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-roslaunch=1.11.21-0trusty-20170614-002431-0800`
@@ -5352,11 +5396,12 @@ Binary Packages:
 
 - `ros-jade-roslaunch=1.11.21-0trusty-20170614-002431-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-roslib=1.12.8-0trusty-20170310-224940-0800`
@@ -5365,11 +5410,12 @@ Binary Packages:
 
 - `ros-jade-roslib=1.12.8-0trusty-20170310-224940-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-roslisp=1.9.21-0trusty-20170714-102603-0800`
@@ -5378,11 +5424,12 @@ Binary Packages:
 
 - `ros-jade-roslisp=1.9.21-0trusty-20170714-102603-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-roslz4=1.11.21-0trusty-20170310-225947-0800`
@@ -5391,11 +5438,12 @@ Binary Packages:
 
 - `ros-jade-roslz4=1.11.21-0trusty-20170310-225947-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-rosmake=1.12.8-0trusty-20170310-191540-0800`
@@ -5404,11 +5452,12 @@ Binary Packages:
 
 - `ros-jade-rosmake=1.12.8-0trusty-20170310-191540-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-rosmaster=1.11.21-0trusty-20170310-192045-0800`
@@ -5417,11 +5466,12 @@ Binary Packages:
 
 - `ros-jade-rosmaster=1.11.21-0trusty-20170310-192045-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-rosmsg=1.11.21-0trusty-20170614-011059-0800`
@@ -5430,11 +5480,12 @@ Binary Packages:
 
 - `ros-jade-rosmsg=1.11.21-0trusty-20170614-011059-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-rosnode=1.11.21-0trusty-20170614-010724-0800`
@@ -5443,11 +5494,12 @@ Binary Packages:
 
 - `ros-jade-rosnode=1.11.21-0trusty-20170614-010724-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-rosout=1.11.21-0trusty-20170614-002050-0800`
@@ -5456,11 +5508,12 @@ Binary Packages:
 
 - `ros-jade-rosout=1.11.21-0trusty-20170614-002050-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-rospack=2.3.3-0trusty-20170310-224354-0800`
@@ -5469,11 +5522,12 @@ Binary Packages:
 
 - `ros-jade-rospack=2.3.3-0trusty-20170310-224354-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-rosparam=1.11.21-0trusty-20170310-192304-0800`
@@ -5482,11 +5536,12 @@ Binary Packages:
 
 - `ros-jade-rosparam=1.11.21-0trusty-20170310-192304-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-rospy=1.11.21-0trusty-20170614-000853-0800`
@@ -5495,11 +5550,12 @@ Binary Packages:
 
 - `ros-jade-rospy=1.11.21-0trusty-20170614-000853-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-rosservice=1.11.21-0trusty-20170614-011301-0800`
@@ -5508,11 +5564,12 @@ Binary Packages:
 
 - `ros-jade-rosservice=1.11.21-0trusty-20170614-011301-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-rostest=1.11.21-0trusty-20170614-003123-0800`
@@ -5521,11 +5578,12 @@ Binary Packages:
 
 - `ros-jade-rostest=1.11.21-0trusty-20170614-003123-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-rostime=0.5.8-0trusty-20170310-191446-0800`
@@ -5534,11 +5592,12 @@ Binary Packages:
 
 - `ros-jade-rostime=0.5.8-0trusty-20170310-191446-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-rostopic=1.11.21-0trusty-20170614-010236-0800`
@@ -5547,11 +5606,12 @@ Binary Packages:
 
 - `ros-jade-rostopic=1.11.21-0trusty-20170614-010236-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-rosunit=1.12.8-0trusty-20170310-225553-0800`
@@ -5560,11 +5620,12 @@ Binary Packages:
 
 - `ros-jade-rosunit=1.12.8-0trusty-20170310-225553-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-roswtf=1.11.21-0trusty-20170614-011458-0800`
@@ -5573,11 +5634,12 @@ Binary Packages:
 
 - `ros-jade-roswtf=1.11.21-0trusty-20170614-011458-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-sensor-msgs=1.12.5-0trusty-20170613-234807-0800`
@@ -5586,11 +5648,12 @@ Binary Packages:
 
 - `ros-jade-sensor-msgs=1.12.5-0trusty-20170613-234807-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-shape-msgs=1.12.5-0trusty-20170613-234807-0800`
@@ -5599,11 +5662,12 @@ Binary Packages:
 
 - `ros-jade-shape-msgs=1.12.5-0trusty-20170613-234807-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-smclib=1.7.19-0trusty-20170406-135402-0800`
@@ -5612,11 +5676,12 @@ Binary Packages:
 
 - `ros-jade-smclib=1.7.19-0trusty-20170406-135402-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-std-msgs=0.5.10-0trusty-20170613-231815-0800`
@@ -5625,11 +5690,12 @@ Binary Packages:
 
 - `ros-jade-std-msgs=0.5.10-0trusty-20170613-231815-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-std-srvs=1.11.2-0trusty-20170613-234405-0800`
@@ -5638,11 +5704,12 @@ Binary Packages:
 
 - `ros-jade-std-srvs=1.11.2-0trusty-20170613-234405-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-stereo-msgs=1.12.5-0trusty-20170613-235624-0800`
@@ -5651,11 +5718,12 @@ Binary Packages:
 
 - `ros-jade-stereo-msgs=1.12.5-0trusty-20170613-235624-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-topic-tools=1.11.21-0trusty-20170614-003543-0800`
@@ -5664,11 +5732,12 @@ Binary Packages:
 
 - `ros-jade-topic-tools=1.11.21-0trusty-20170614-003543-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-trajectory-msgs=1.12.5-0trusty-20170613-234817-0800`
@@ -5677,11 +5746,12 @@ Binary Packages:
 
 - `ros-jade-trajectory-msgs=1.12.5-0trusty-20170613-234817-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-visualization-msgs=1.12.5-0trusty-20170613-234829-0800`
@@ -5690,11 +5760,12 @@ Binary Packages:
 
 - `ros-jade-visualization-msgs=1.12.5-0trusty-20170613-234829-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-jade-xmlrpcpp=1.11.21-0trusty-20170310-191603-0800`
@@ -5703,11 +5774,12 @@ Binary Packages:
 
 - `ros-jade-xmlrpcpp=1.11.21-0trusty-20170310-191603-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `rsyslog=7.4.4-1ubuntu2.7`
@@ -5760,8 +5832,8 @@ Binary Packages:
 
 - `sbcl=2:1.1.14-2`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -5957,8 +6029,8 @@ Binary Packages:
 
 - `sudo=1.8.9p5-1ubuntu1.4`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -6042,8 +6114,8 @@ Binary Packages:
 
 - `libtiff5:amd64=4.0.3-7ubuntu0.7`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -6100,8 +6172,8 @@ Binary Packages:
 
 - `tzdata=2016j-0ubuntu0.14.04`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -6303,8 +6375,8 @@ Binary Packages:
 
 - `xkb-data=2.10.1-1ubuntu1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -6374,8 +6446,8 @@ Binary Packages:
 - `zlib1g:amd64=1:1.2.8.dfsg-1ubuntu1`
 - `zlib1g-dev:amd64=1:1.2.8.dfsg-1ubuntu1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:

@@ -329,8 +329,8 @@ Binary Packages:
 
 - `libblas3=1.2.20110419-7`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -397,8 +397,8 @@ Binary Packages:
 - `libboost-tools-dev=1.54.0.1ubuntu1`
 - `libboost-wave-dev:amd64=1.54.0.1ubuntu1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -420,8 +420,8 @@ Binary Packages:
 - `libboost-mpi1.54-dev=1.54.0-4ubuntu3.1`
 - `libboost-mpi1.54.0=1.54.0-4ubuntu3.1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -484,8 +484,8 @@ Binary Packages:
 - `libboost1.54-dev=1.54.0-4ubuntu3.1`
 - `libboost1.54-tools-dev=1.54.0-4ubuntu3.1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -503,8 +503,8 @@ Binary Packages:
 
 - `bsdmainutils=9.0.5ubuntu1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -642,8 +642,8 @@ Binary Packages:
 
 - `libdebconfclient0:amd64=0.187ubuntu1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -932,8 +932,8 @@ Binary Packages:
 
 - `libdb5.3:amd64=5.3.28-3ubuntu3`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -1224,7 +1224,8 @@ Licenses: (parsed from: `/usr/share/doc/python-empy/copyright`)
 - `GPL`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `expat=2.1.0-4ubuntu1.4`
@@ -1234,8 +1235,8 @@ Binary Packages:
 - `libexpat1:amd64=2.1.0-4ubuntu1.4`
 - `libexpat1-dev:amd64=2.1.0-4ubuntu1.4`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -1337,8 +1338,8 @@ Binary Packages:
 - `libfontconfig1:amd64=2.11.0-0ubuntu4.2`
 - `libfontconfig1-dev=2.11.0-0ubuntu4.2`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -1569,7 +1570,8 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-gdkpixbuf-2.0/copyright`, `/usr/s
 - `GPL-2`
 - `LGPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `gettext=0.18.3.1-1ubuntu3`
@@ -2047,8 +2049,8 @@ Binary Packages:
 
 - `libhdf5-7:amd64=1.8.11-5ubuntu7`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2074,8 +2076,8 @@ Binary Packages:
 - `libroken18-heimdal:amd64=1.6~git20131207+dfsg-1ubuntu1.2`
 - `libwind0-heimdal:amd64=1.6~git20131207+dfsg-1ubuntu1.2`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2134,8 +2136,8 @@ Binary Packages:
 - `libicu-dev:amd64=52.1-3ubuntu0.6`
 - `libicu52:amd64=52.1-3ubuntu0.6`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2172,8 +2174,8 @@ Binary Packages:
 - `libilmbase-dev=1.0.1-6ubuntu1`
 - `libilmbase6:amd64=1.0.1-6ubuntu1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2366,11 +2368,12 @@ Binary Packages:
 - `libjasper-dev=1.900.1-14ubuntu3.4`
 - `libjasper1:amd64=1.900.1-14ubuntu3.4`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `jbigkit=2.0-2ubuntu4.1`
@@ -2580,8 +2583,8 @@ Binary Packages:
 
 - `liblapack3=3.5.0-2ubuntu1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2702,8 +2705,8 @@ Binary Packages:
 
 - `libarchive13:amd64=3.1.2-7ubuntu2.4`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2776,8 +2779,8 @@ Binary Packages:
 
 - `libbsd0:amd64=0.6.0-2ubuntu1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2883,8 +2886,8 @@ Binary Packages:
 - `libdrm-radeon1:amd64=2.4.67-1ubuntu0.14.04.2`
 - `libdrm2:amd64=2.4.67-1ubuntu0.14.04.2`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -3000,8 +3003,8 @@ Binary Packages:
 
 - `libfontenc1:amd64=1:1.1.2-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -3110,8 +3113,8 @@ Binary Packages:
 
 - `libgsm1:amd64=1.0.13-4`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -3150,8 +3153,8 @@ Binary Packages:
 - `libice-dev:amd64=2:1.0.8-2`
 - `libice6:amd64=2:1.0.8-2`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -3320,8 +3323,8 @@ Binary Packages:
 
 - `libmail-sendmail-perl=0.79.16-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -3381,8 +3384,8 @@ Binary Packages:
 - `libogg-dev:amd64=1.3.1-1ubuntu1`
 - `libogg0:amd64=1.3.1-1ubuntu1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -3482,8 +3485,8 @@ Binary Packages:
 
 - `libpthread-stubs0-dev:amd64=0.3-4`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -3585,8 +3588,8 @@ Binary Packages:
 - `libsm-dev:amd64=2:1.2.1-2`
 - `libsm6:amd64=2:1.2.1-2`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -3774,8 +3777,8 @@ Binary Packages:
 - `libtheora-dev:amd64=1.1.1+dfsg.1-3.2`
 - `libtheora0:amd64=1.1.1+dfsg.1-3.2`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -3948,8 +3951,8 @@ Binary Packages:
 - `libvorbis0a:amd64=1.3.2-1.3ubuntu1`
 - `libvorbisenc2:amd64=1.3.2-1.3ubuntu1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -3992,8 +3995,8 @@ Binary Packages:
 - `libx11-xcb-dev:amd64=2:1.6.2-1ubuntu2`
 - `libx11-xcb1:amd64=2:1.6.2-1ubuntu2`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -4012,8 +4015,8 @@ Binary Packages:
 - `libxau-dev:amd64=1:1.0.8-1`
 - `libxau6:amd64=1:1.0.8-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -4031,8 +4034,8 @@ Binary Packages:
 
 - `libxaw7:amd64=2:1.0.12-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -4071,8 +4074,8 @@ Binary Packages:
 - `libxcb1:amd64=1.10-2ubuntu1`
 - `libxcb1-dev:amd64=1.10-2ubuntu1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -4091,8 +4094,8 @@ Binary Packages:
 - `libxcomposite-dev=1:0.4.4-1`
 - `libxcomposite1:amd64=1:0.4.4-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -4111,8 +4114,8 @@ Binary Packages:
 - `libxcursor-dev:amd64=1:1.1.14-1`
 - `libxcursor1:amd64=1:1.1.14-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -4131,8 +4134,8 @@ Binary Packages:
 - `libxdamage-dev:amd64=1:1.1.4-1ubuntu1`
 - `libxdamage1:amd64=1:1.1.4-1ubuntu1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -4151,8 +4154,8 @@ Binary Packages:
 - `libxdmcp-dev:amd64=1:1.1.1-1`
 - `libxdmcp6:amd64=1:1.1.1-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -4171,8 +4174,8 @@ Binary Packages:
 - `libxext-dev:amd64=2:1.3.2-1ubuntu0.0.14.04.1`
 - `libxext6:amd64=2:1.3.2-1ubuntu0.0.14.04.1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -4191,8 +4194,8 @@ Binary Packages:
 - `libxfixes-dev:amd64=1:5.0.1-1ubuntu1.1`
 - `libxfixes3:amd64=1:5.0.1-1ubuntu1.1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -4211,8 +4214,8 @@ Binary Packages:
 - `libxi-dev=2:1.7.1.901-1ubuntu1.1`
 - `libxi6:amd64=2:1.7.1.901-1ubuntu1.1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -4231,8 +4234,8 @@ Binary Packages:
 - `libxinerama-dev:amd64=2:1.1.3-1`
 - `libxinerama1:amd64=2:1.1.3-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -4252,11 +4255,12 @@ Binary Packages:
 - `libxml2-dev:amd64=2.9.1+dfsg1-3ubuntu4.9`
 - `libxml2-utils=2.9.1+dfsg1-3ubuntu4.9`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `libxmu=2:1.1.1-1`
@@ -4266,8 +4270,8 @@ Binary Packages:
 - `libxmu6:amd64=2:1.1.1-1`
 - `libxmuu1:amd64=2:1.1.1-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -4285,8 +4289,8 @@ Binary Packages:
 
 - `libxpm4:amd64=1:3.5.10-1ubuntu0.1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -4305,8 +4309,8 @@ Binary Packages:
 - `libxrandr-dev:amd64=2:1.5.0-1~trusty1`
 - `libxrandr2:amd64=2:1.5.0-1~trusty1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -4325,8 +4329,8 @@ Binary Packages:
 - `libxrender-dev:amd64=1:0.9.8-1build0.14.04.1`
 - `libxrender1:amd64=1:0.9.8-1build0.14.04.1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -4345,8 +4349,8 @@ Binary Packages:
 - `libxshmfence-dev:amd64=1.1-2`
 - `libxshmfence1:amd64=1.1-2`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -4364,8 +4368,8 @@ Binary Packages:
 
 - `libxslt1.1:amd64=1.1.28-2ubuntu0.1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -4384,8 +4388,8 @@ Binary Packages:
 - `libxss-dev:amd64=1:1.2.2-1`
 - `libxss1:amd64=1:1.2.2-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -4404,8 +4408,8 @@ Binary Packages:
 - `libxt-dev:amd64=1:1.1.4-1`
 - `libxt6:amd64=1:1.1.4-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -4423,8 +4427,8 @@ Binary Packages:
 
 - `libxtst6:amd64=2:1.2.2-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -4442,8 +4446,8 @@ Binary Packages:
 
 - `libxv1:amd64=2:1.0.10-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -4461,8 +4465,8 @@ Binary Packages:
 
 - `libxxf86dga1:amd64=2:1.1.4-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -4481,8 +4485,8 @@ Binary Packages:
 - `libxxf86vm-dev:amd64=1:1.1.3-1`
 - `libxxf86vm1:amd64=1:1.1.3-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -4500,8 +4504,8 @@ Binary Packages:
 
 - `libyaml-0-2:amd64=0.1.4-3ubuntu3.1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -4523,7 +4527,8 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `lksctp-tools=1.0.15+dfsg-1`
@@ -4557,8 +4562,8 @@ Binary Packages:
 
 - `libllvm3.4:amd64=1:3.4-1ubuntu3`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -5014,8 +5019,8 @@ Binary Packages:
 
 - `libaudio2:amd64=1.9.4-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -5037,8 +5042,8 @@ Binary Packages:
 - `ncurses-base=5.9+20140118-1ubuntu1`
 - `ncurses-bin=5.9+20140118-1ubuntu1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -5117,8 +5122,8 @@ Binary Packages:
 - `libnetcdfc7=1:4.1.3-7ubuntu2`
 - `libnetcdff5=1:4.1.3-7ubuntu2`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -5136,8 +5141,8 @@ Binary Packages:
 
 - `python-netifaces=0.8-3build1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -5225,8 +5230,8 @@ Binary Packages:
 
 - `ntpdate=1:4.2.6.p5+dfsg-3ubuntu2.14.04.12`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -5326,8 +5331,8 @@ Binary Packages:
 - `opencv-data=2.4.8+dfsg1-2ubuntu1`
 - `python-opencv=2.4.8+dfsg1-2ubuntu1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -5346,8 +5351,8 @@ Binary Packages:
 - `libopenexr-dev=1.6.1-7ubuntu1`
 - `libopenexr6:amd64=1.6.1-7ubuntu1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -5385,8 +5390,8 @@ Binary Packages:
 - `libldap-2.4-2:amd64=2.4.31-1+nmu2ubuntu8.4`
 - `libldap2-dev:amd64=2.4.31-1+nmu2ubuntu8.4`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -5479,8 +5484,8 @@ Binary Packages:
 - `libssl1.0.0:amd64=1.0.1f-1ubuntu2.22`
 - `openssl=1.0.1f-1ubuntu2.22`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -5498,8 +5503,8 @@ Binary Packages:
 
 - `libopus0=1.1-0ubuntu1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -5517,8 +5522,8 @@ Binary Packages:
 
 - `liborc-0.4-0:amd64=1:0.4.18-1ubuntu1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -5662,8 +5667,8 @@ Binary Packages:
 - `libpci-dev=1:3.2.1-1ubuntu5.1`
 - `libpci3:amd64=1:3.2.1-1ubuntu5.1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -5742,8 +5747,8 @@ Binary Packages:
 - `libpcre3-dev:amd64=1:8.31-2ubuntu2.3`
 - `libpcrecpp0:amd64=1:8.31-2ubuntu2.3`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -5826,8 +5831,8 @@ Binary Packages:
 - `libpixman-1-0:amd64=0.30.2-2ubuntu1.1`
 - `libpixman-1-dev=0.30.2-2ubuntu1.1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -5913,8 +5918,8 @@ Binary Packages:
 - `libpocoxml9=1.3.6p1-4`
 - `libpocozip9=1.3.6p1-4`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -5965,9 +5970,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris postgresql-9.3=9.3.18-0ubuntu0.14.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.18-0ubuntu0.14.04.1.dsc' postgresql-9.3_9.3.18-0ubuntu0.14.04.1.dsc 3463 SHA256:91500b2c4f89a0884c1edf59edcd7f3bb3610b3d4bc96470f33e146c7f27b2a9
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.18.orig.tar.bz2' postgresql-9.3_9.3.18.orig.tar.bz2 17194269 SHA256:ad60d12a5a3dd0f6f5904c41b87e43eff49d3f74e45129fe52c5744366ff2fe0
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.18-0ubuntu0.14.04.1.debian.tar.gz' postgresql-9.3_9.3.18-0ubuntu0.14.04.1.debian.tar.gz 33642 SHA256:2786ae82db55203adae022dee359cd8e50c2c5ba6b46421d39cd5fa73b3c6811
+'http://security.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.18-0ubuntu0.14.04.1.dsc' postgresql-9.3_9.3.18-0ubuntu0.14.04.1.dsc 3463 SHA256:91500b2c4f89a0884c1edf59edcd7f3bb3610b3d4bc96470f33e146c7f27b2a9
+'http://security.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.18.orig.tar.bz2' postgresql-9.3_9.3.18.orig.tar.bz2 17194269 SHA256:ad60d12a5a3dd0f6f5904c41b87e43eff49d3f74e45129fe52c5744366ff2fe0
+'http://security.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.18-0ubuntu0.14.04.1.debian.tar.gz' postgresql-9.3_9.3.18-0ubuntu0.14.04.1.debian.tar.gz 33642 SHA256:2786ae82db55203adae022dee359cd8e50c2c5ba6b46421d39cd5fa73b3c6811
 ```
 
 ### `dpkg` source package: `procps=1:3.3.9-1ubuntu2.2`
@@ -6017,8 +6022,8 @@ Binary Packages:
 
 - `python-catkin-pkg-modules=0.3.6-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -6036,8 +6041,8 @@ Binary Packages:
 
 - `python-catkin-pkg=0.3.6-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -6075,8 +6080,8 @@ Binary Packages:
 
 - `python-dateutil=1.5+dfsg-1ubuntu1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -6098,8 +6103,8 @@ Binary Packages:
 - `python-dev=2.7.5-5ubuntu3`
 - `python-minimal=2.7.5-5ubuntu3`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -6177,8 +6182,8 @@ Binary Packages:
 
 - `python-rosdep=0.11.8-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -6196,8 +6201,8 @@ Binary Packages:
 
 - `python-rosdistro-modules=0.6.2-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -6215,8 +6220,8 @@ Binary Packages:
 
 - `python-rosdistro=0.6.2-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -6234,8 +6239,8 @@ Binary Packages:
 
 - `python-rosinstall=0.7.8-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -6253,18 +6258,13 @@ Binary Packages:
 
 - `python-rospkg-modules=1.1.2-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-rospkg-modules=1.1.2-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg-modules/python-rospkg-modules_1.1.2-1.dsc' python-rospkg-modules_1.1.2-1.dsc 949 SHA256:b65ecb24057c244c53a057795019e869cb6927bfdb48b0355f8bf7488a653edd
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg-modules/python-rospkg-modules_1.1.2.orig.tar.gz' python-rospkg-modules_1.1.2.orig.tar.gz 38411 SHA256:eb74477c7fb2f5ef437dcec8f78f69ffab7f39995b3bc008127a1c770691025a
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg-modules/python-rospkg-modules_1.1.2-1.debian.tar.xz' python-rospkg-modules_1.1.2-1.debian.tar.xz 1124 SHA256:5e4dac09b109bf9fe685df9ac818cfd0e93001797d768f6ed0f5bd67951934a1
-```
 
 ### `dpkg` source package: `python-rospkg=1.1.2-1`
 
@@ -6272,18 +6272,13 @@ Binary Packages:
 
 - `python-rospkg=1.1.2-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-rospkg=1.1.2-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg/python-rospkg_1.1.2-1.dsc' python-rospkg_1.1.2-1.dsc 881 SHA256:0fed71f6ab6698c18e71f90db0b7f47cc866d8b90a5c0e338dfd92c038fed510
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg/python-rospkg_1.1.2.orig.tar.gz' python-rospkg_1.1.2.orig.tar.gz 18035 SHA256:ddd3b217f86b9ca5641a2cc73337f2d6ce52d69f814ada8ed917b575ab022a74
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg/python-rospkg_1.1.2-1.debian.tar.xz' python-rospkg_1.1.2-1.debian.tar.xz 1096 SHA256:958b749a96af524e5bfac806268be219f9e4b34e3d186970b043ecffcdeacd48
-```
 
 ### `dpkg` source package: `python-setuptools=3.3-1ubuntu2`
 
@@ -6292,8 +6287,8 @@ Binary Packages:
 - `python-pkg-resources=3.3-1ubuntu2`
 - `python-setuptools=3.3-1ubuntu2`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -6329,8 +6324,8 @@ Binary Packages:
 
 - `python-vcstools=0.1.39-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -6348,8 +6343,8 @@ Binary Packages:
 
 - `python-wstool=0.1.13-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -6401,8 +6396,8 @@ Binary Packages:
 - `python3=3.4.0-0ubuntu2`
 - `python3-minimal=3.4.0-0ubuntu2`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -6457,8 +6452,8 @@ Binary Packages:
 
 - `python-yaml=3.10-4ubuntu0.1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -6638,11 +6633,12 @@ Binary Packages:
 
 - `ros-indigo-actionlib-msgs=1.11.9-0trusty-20170313-063739-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-actionlib=1.11.9-0trusty-20170406-174022-0800`
@@ -6651,11 +6647,12 @@ Binary Packages:
 
 - `ros-indigo-actionlib=1.11.9-0trusty-20170406-174022-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-angles=1.9.11-0trusty-20170415-160110-0800`
@@ -6664,11 +6661,12 @@ Binary Packages:
 
 - `ros-indigo-angles=1.9.11-0trusty-20170415-160110-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-bond-core=1.7.19-0trusty-20170406-175714-0800`
@@ -6677,11 +6675,12 @@ Binary Packages:
 
 - `ros-indigo-bond-core=1.7.19-0trusty-20170406-175714-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-bond=1.7.19-0trusty-20170406-174039-0800`
@@ -6690,11 +6689,12 @@ Binary Packages:
 
 - `ros-indigo-bond=1.7.19-0trusty-20170406-174039-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-bondcpp=1.7.19-0trusty-20170406-174616-0800`
@@ -6703,11 +6703,12 @@ Binary Packages:
 
 - `ros-indigo-bondcpp=1.7.19-0trusty-20170406-174616-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-bondpy=1.7.19-0trusty-20170406-174826-0800`
@@ -6716,11 +6717,12 @@ Binary Packages:
 
 - `ros-indigo-bondpy=1.7.19-0trusty-20170406-174826-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-camera-calibration-parsers=1.11.12-0trusty-20170313-085846-0700`
@@ -6729,11 +6731,12 @@ Binary Packages:
 
 - `ros-indigo-camera-calibration-parsers=1.11.12-0trusty-20170313-085846-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-camera-calibration=1.12.20-0trusty-20170430-112919-0800`
@@ -6742,11 +6745,12 @@ Binary Packages:
 
 - `ros-indigo-camera-calibration=1.12.20-0trusty-20170430-112919-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-camera-info-manager=1.11.12-0trusty-20170406-190728-0800`
@@ -6755,11 +6759,12 @@ Binary Packages:
 
 - `ros-indigo-camera-info-manager=1.11.12-0trusty-20170406-190728-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-catkin=0.6.19-0trusty-20170312-153241-0700`
@@ -6768,11 +6773,12 @@ Binary Packages:
 
 - `ros-indigo-catkin=0.6.19-0trusty-20170312-153241-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-class-loader=0.3.6-0trusty-20161025-193258-0700`
@@ -6781,11 +6787,12 @@ Binary Packages:
 
 - `ros-indigo-class-loader=0.3.6-0trusty-20161025-193258-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-cmake-modules=0.3.3-0trusty-20160321-180456-0700`
@@ -6794,11 +6801,12 @@ Binary Packages:
 
 - `ros-indigo-cmake-modules=0.3.3-0trusty-20160321-180456-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-common-msgs=1.11.9-0trusty-20170313-092727-0700`
@@ -6807,11 +6815,12 @@ Binary Packages:
 
 - `ros-indigo-common-msgs=1.11.9-0trusty-20170313-092727-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-compressed-depth-image-transport=1.9.5-0trusty-20170407-123952-0800`
@@ -6820,11 +6829,12 @@ Binary Packages:
 
 - `ros-indigo-compressed-depth-image-transport=1.9.5-0trusty-20170407-123952-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-compressed-image-transport=1.9.5-0trusty-20170407-124011-0800`
@@ -6833,11 +6843,12 @@ Binary Packages:
 
 - `ros-indigo-compressed-image-transport=1.9.5-0trusty-20170407-124011-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-cpp-common=0.5.8-0trusty-20170312-160318-0700`
@@ -6846,11 +6857,12 @@ Binary Packages:
 
 - `ros-indigo-cpp-common=0.5.8-0trusty-20170312-160318-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-cv-bridge=1.11.15-0trusty-20170313-092637-0700`
@@ -6859,11 +6871,12 @@ Binary Packages:
 
 - `ros-indigo-cv-bridge=1.11.15-0trusty-20170313-092637-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-depth-image-proc=1.12.20-0trusty-20170727-225600-0800`
@@ -6872,11 +6885,12 @@ Binary Packages:
 
 - `ros-indigo-depth-image-proc=1.12.20-0trusty-20170727-225600-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-diagnostic-msgs=1.11.9-0trusty-20170313-064055-0700`
@@ -6885,11 +6899,12 @@ Binary Packages:
 
 - `ros-indigo-diagnostic-msgs=1.11.9-0trusty-20170313-064055-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-dynamic-reconfigure=1.5.48-0trusty-20170407-120602-0800`
@@ -6898,11 +6913,12 @@ Binary Packages:
 
 - `ros-indigo-dynamic-reconfigure=1.5.48-0trusty-20170407-120602-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-eigen-conversions=1.11.9-0trusty-20170727-223410-0800`
@@ -6911,11 +6927,12 @@ Binary Packages:
 
 - `ros-indigo-eigen-conversions=1.11.9-0trusty-20170727-223410-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-filters=1.7.5-0trusty-20170406-182105-0800`
@@ -6924,11 +6941,12 @@ Binary Packages:
 
 - `ros-indigo-filters=1.7.5-0trusty-20170406-182105-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-gencpp=0.5.5-0trusty-20170313-035456-0700`
@@ -6937,11 +6955,12 @@ Binary Packages:
 
 - `ros-indigo-gencpp=0.5.5-0trusty-20170313-035456-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-genlisp=0.4.15-0trusty-20170313-035526-0700`
@@ -6950,11 +6969,12 @@ Binary Packages:
 
 - `ros-indigo-genlisp=0.4.15-0trusty-20170313-035526-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-genmsg=0.5.8-0trusty-20170312-155348-0700`
@@ -6963,11 +6983,12 @@ Binary Packages:
 
 - `ros-indigo-genmsg=0.5.8-0trusty-20170312-155348-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-genpy=0.5.10-0trusty-20170313-035748-0700`
@@ -6976,11 +6997,12 @@ Binary Packages:
 
 - `ros-indigo-genpy=0.5.10-0trusty-20170313-035748-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-geometry-msgs=1.11.9-0trusty-20170313-064143-0700`
@@ -6989,11 +7011,12 @@ Binary Packages:
 
 - `ros-indigo-geometry-msgs=1.11.9-0trusty-20170313-064143-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-image-common=1.11.12-0trusty-20170406-191519-0800`
@@ -7002,11 +7025,12 @@ Binary Packages:
 
 - `ros-indigo-image-common=1.11.12-0trusty-20170406-191519-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-image-geometry=1.11.15-0trusty-20170313-085203-0700`
@@ -7015,11 +7039,12 @@ Binary Packages:
 
 - `ros-indigo-image-geometry=1.11.15-0trusty-20170313-085203-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-image-pipeline=1.12.20-0trusty-20170728-015918-0800`
@@ -7028,11 +7053,12 @@ Binary Packages:
 
 - `ros-indigo-image-pipeline=1.12.20-0trusty-20170728-015918-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-image-proc=1.12.20-0trusty-20170430-133053-0800`
@@ -7041,11 +7067,12 @@ Binary Packages:
 
 - `ros-indigo-image-proc=1.12.20-0trusty-20170430-133053-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-image-publisher=1.12.20-0trusty-20170430-133046-0800`
@@ -7054,11 +7081,12 @@ Binary Packages:
 
 - `ros-indigo-image-publisher=1.12.20-0trusty-20170430-133046-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-image-rotate=1.12.20-0trusty-20170727-225813-0800`
@@ -7067,11 +7095,12 @@ Binary Packages:
 
 - `ros-indigo-image-rotate=1.12.20-0trusty-20170727-225813-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-image-transport-plugins=1.9.5-0trusty-20170407-133304-0800`
@@ -7080,11 +7109,12 @@ Binary Packages:
 
 - `ros-indigo-image-transport-plugins=1.9.5-0trusty-20170407-133304-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-image-transport=1.11.12-0trusty-20170406-181910-0800`
@@ -7093,11 +7123,12 @@ Binary Packages:
 
 - `ros-indigo-image-transport=1.11.12-0trusty-20170406-181910-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-image-view=1.12.20-0trusty-20170430-112450-0800`
@@ -7106,11 +7137,12 @@ Binary Packages:
 
 - `ros-indigo-image-view=1.12.20-0trusty-20170430-112450-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-laser-assembler=1.7.3-0trusty-20170728-012830-0800`
@@ -7119,11 +7151,12 @@ Binary Packages:
 
 - `ros-indigo-laser-assembler=1.7.3-0trusty-20170728-012830-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-laser-filters=1.8.3-1trusty-20170728-012848-0800`
@@ -7132,11 +7165,12 @@ Binary Packages:
 
 - `ros-indigo-laser-filters=1.8.3-1trusty-20170728-012848-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-laser-geometry=1.6.4-0trusty-20170728-012329-0800`
@@ -7145,11 +7179,12 @@ Binary Packages:
 
 - `ros-indigo-laser-geometry=1.6.4-0trusty-20170728-012329-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-laser-pipeline=1.6.1-0trusty-20170728-031941-0800`
@@ -7158,11 +7193,12 @@ Binary Packages:
 
 - `ros-indigo-laser-pipeline=1.6.1-0trusty-20170728-031941-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-message-filters=1.11.21-0trusty-20170313-093017-0700`
@@ -7171,11 +7207,12 @@ Binary Packages:
 
 - `ros-indigo-message-filters=1.11.21-0trusty-20170313-093017-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-message-generation=0.2.10-0trusty-20170313-050448-0700`
@@ -7184,11 +7221,12 @@ Binary Packages:
 
 - `ros-indigo-message-generation=0.2.10-0trusty-20170313-050448-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-message-runtime=0.4.12-0trusty-20170313-053614-0700`
@@ -7197,11 +7235,12 @@ Binary Packages:
 
 - `ros-indigo-message-runtime=0.4.12-0trusty-20170313-053614-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-mk=1.11.14-0trusty-20170313-063251-0700`
@@ -7210,11 +7249,12 @@ Binary Packages:
 
 - `ros-indigo-mk=1.11.14-0trusty-20170313-063251-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-nav-msgs=1.11.9-0trusty-20170313-071702-0700`
@@ -7223,11 +7263,12 @@ Binary Packages:
 
 - `ros-indigo-nav-msgs=1.11.9-0trusty-20170313-071702-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-nodelet-core=1.9.10-0trusty-20170407-140800-0800`
@@ -7236,11 +7277,12 @@ Binary Packages:
 
 - `ros-indigo-nodelet-core=1.9.10-0trusty-20170407-140800-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-nodelet-topic-tools=1.9.10-0trusty-20170407-125546-0800`
@@ -7249,11 +7291,12 @@ Binary Packages:
 
 - `ros-indigo-nodelet-topic-tools=1.9.10-0trusty-20170407-125546-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-nodelet=1.9.10-0trusty-20170406-175728-0800`
@@ -7262,11 +7305,12 @@ Binary Packages:
 
 - `ros-indigo-nodelet=1.9.10-0trusty-20170406-175728-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-orocos-kdl=1.3.1-0trusty-20170313-050546-0700`
@@ -7279,7 +7323,8 @@ Licenses: (parsed from: `/usr/share/doc/ros-indigo-orocos-kdl/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-pcl-conversions=0.2.1-0trusty-20170313-090426-0700`
@@ -7288,11 +7333,12 @@ Binary Packages:
 
 - `ros-indigo-pcl-conversions=0.2.1-0trusty-20170313-090426-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-pcl-msgs=0.2.0-0trusty-20170313-085320-0700`
@@ -7301,11 +7347,12 @@ Binary Packages:
 
 - `ros-indigo-pcl-msgs=0.2.0-0trusty-20170313-085320-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-pcl-ros=1.2.7-0trusty-20170728-011511-0800`
@@ -7314,11 +7361,12 @@ Binary Packages:
 
 - `ros-indigo-pcl-ros=1.2.7-0trusty-20170728-011511-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-perception-pcl=1.2.7-0trusty-20170728-020233-0800`
@@ -7327,11 +7375,12 @@ Binary Packages:
 
 - `ros-indigo-perception-pcl=1.2.7-0trusty-20170728-020233-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-perception=1.1.5-0trusty-20170728-034452-0800`
@@ -7340,11 +7389,12 @@ Binary Packages:
 
 - `ros-indigo-perception=1.1.5-0trusty-20170728-034452-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-pluginlib=1.10.5-0trusty-20170406-174138-0800`
@@ -7353,11 +7403,12 @@ Binary Packages:
 
 - `ros-indigo-pluginlib=1.10.5-0trusty-20170406-174138-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-pointcloud-to-laserscan=1.3.1-0trusty-20170728-005746-0800`
@@ -7366,11 +7417,12 @@ Binary Packages:
 
 - `ros-indigo-pointcloud-to-laserscan=1.3.1-0trusty-20170728-005746-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-polled-camera=1.11.12-0trusty-20170406-190749-0800`
@@ -7379,11 +7431,12 @@ Binary Packages:
 
 - `ros-indigo-polled-camera=1.11.12-0trusty-20170406-190749-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-python-orocos-kdl=1.3.1-0trusty-20170313-050933-0700`
@@ -7392,11 +7445,12 @@ Binary Packages:
 
 - `ros-indigo-python-orocos-kdl=1.3.1-0trusty-20170313-050933-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-ros-base=1.1.5-0trusty-20170714-104221-0800`
@@ -7405,11 +7459,12 @@ Binary Packages:
 
 - `ros-indigo-ros-base=1.1.5-0trusty-20170714-104221-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-ros-comm=1.11.21-0trusty-20170714-102737-0800`
@@ -7418,11 +7473,12 @@ Binary Packages:
 
 - `ros-indigo-ros-comm=1.11.21-0trusty-20170714-102737-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-ros-core=1.1.5-0trusty-20170714-103836-0800`
@@ -7431,11 +7487,12 @@ Binary Packages:
 
 - `ros-indigo-ros-core=1.1.5-0trusty-20170714-103836-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-ros=1.11.14-0trusty-20170313-063544-0700`
@@ -7444,11 +7501,12 @@ Binary Packages:
 
 - `ros-indigo-ros=1.11.14-0trusty-20170313-063544-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-rosbag-migration-rule=1.0.0-0trusty-20160321-174600-0700`
@@ -7457,11 +7515,12 @@ Binary Packages:
 
 - `ros-indigo-rosbag-migration-rule=1.0.0-0trusty-20160321-174600-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-rosbag-storage=1.11.21-0trusty-20170313-084632-0700`
@@ -7470,11 +7529,12 @@ Binary Packages:
 
 - `ros-indigo-rosbag-storage=1.11.21-0trusty-20170313-084632-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-rosbag=1.11.21-0trusty-20170313-094750-0700`
@@ -7483,11 +7543,12 @@ Binary Packages:
 
 - `ros-indigo-rosbag=1.11.21-0trusty-20170313-094750-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-rosbash=1.11.14-0trusty-20170312-160331-0700`
@@ -7496,11 +7557,12 @@ Binary Packages:
 
 - `ros-indigo-rosbash=1.11.14-0trusty-20170312-160331-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-rosboost-cfg=1.11.14-0trusty-20170312-160958-0700`
@@ -7509,11 +7571,12 @@ Binary Packages:
 
 - `ros-indigo-rosboost-cfg=1.11.14-0trusty-20170312-160958-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-rosbuild=1.11.14-0trusty-20170313-061126-0700`
@@ -7522,11 +7585,12 @@ Binary Packages:
 
 - `ros-indigo-rosbuild=1.11.14-0trusty-20170313-061126-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-rosclean=1.11.14-0trusty-20170312-160356-0700`
@@ -7535,11 +7599,12 @@ Binary Packages:
 
 - `ros-indigo-rosclean=1.11.14-0trusty-20170312-160356-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-rosconsole-bridge=0.4.4-0trusty-20170313-084707-0700`
@@ -7548,11 +7613,12 @@ Binary Packages:
 
 - `ros-indigo-rosconsole-bridge=0.4.4-0trusty-20170313-084707-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-rosconsole=1.11.21-0trusty-20170313-063307-0700`
@@ -7561,11 +7627,12 @@ Binary Packages:
 
 - `ros-indigo-rosconsole=1.11.21-0trusty-20170313-063307-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-roscpp-core=0.5.8-0trusty-20170313-053657-0700`
@@ -7574,11 +7641,12 @@ Binary Packages:
 
 - `ros-indigo-roscpp-core=0.5.8-0trusty-20170313-053657-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-roscpp-serialization=0.5.8-0trusty-20170313-050949-0700`
@@ -7587,11 +7655,12 @@ Binary Packages:
 
 - `ros-indigo-roscpp-serialization=0.5.8-0trusty-20170313-050949-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-roscpp-traits=0.5.8-0trusty-20170312-162039-0700`
@@ -7600,11 +7669,12 @@ Binary Packages:
 
 - `ros-indigo-roscpp-traits=0.5.8-0trusty-20170312-162039-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-roscpp=1.11.21-0trusty-20170313-084908-0700`
@@ -7613,11 +7683,12 @@ Binary Packages:
 
 - `ros-indigo-roscpp=1.11.21-0trusty-20170313-084908-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-roscreate=1.11.14-0trusty-20170312-161026-0700`
@@ -7626,11 +7697,12 @@ Binary Packages:
 
 - `ros-indigo-roscreate=1.11.14-0trusty-20170312-161026-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-rosgraph-msgs=1.11.2-0trusty-20170313-084650-0700`
@@ -7639,11 +7711,12 @@ Binary Packages:
 
 - `ros-indigo-rosgraph-msgs=1.11.2-0trusty-20170313-084650-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-rosgraph=1.11.21-0trusty-20170312-161056-0700`
@@ -7652,11 +7725,12 @@ Binary Packages:
 
 - `ros-indigo-rosgraph=1.11.21-0trusty-20170312-161056-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-roslang=1.11.14-0trusty-20170313-051004-0700`
@@ -7665,11 +7739,12 @@ Binary Packages:
 
 - `ros-indigo-roslang=1.11.14-0trusty-20170313-051004-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-roslaunch=1.11.21-0trusty-20170313-091638-0700`
@@ -7678,11 +7753,12 @@ Binary Packages:
 
 - `ros-indigo-roslaunch=1.11.21-0trusty-20170313-091638-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-roslib=1.11.14-0trusty-20170313-053725-0700`
@@ -7691,11 +7767,12 @@ Binary Packages:
 
 - `ros-indigo-roslib=1.11.14-0trusty-20170313-053725-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-roslisp=1.9.21-0trusty-20170714-101350-0800`
@@ -7704,11 +7781,12 @@ Binary Packages:
 
 - `ros-indigo-roslisp=1.9.21-0trusty-20170714-101350-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-roslz4=1.11.21-0trusty-20170313-063341-0700`
@@ -7717,11 +7795,12 @@ Binary Packages:
 
 - `ros-indigo-roslz4=1.11.21-0trusty-20170313-063341-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-rosmake=1.11.14-0trusty-20170312-161158-0700`
@@ -7730,11 +7809,12 @@ Binary Packages:
 
 - `ros-indigo-rosmake=1.11.14-0trusty-20170312-161158-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-rosmaster=1.11.21-0trusty-20170312-161840-0700`
@@ -7743,11 +7823,12 @@ Binary Packages:
 
 - `ros-indigo-rosmaster=1.11.21-0trusty-20170312-161840-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-rosmsg=1.11.21-0trusty-20170313-095354-0700`
@@ -7756,11 +7837,12 @@ Binary Packages:
 
 - `ros-indigo-rosmsg=1.11.21-0trusty-20170313-095354-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-rosnode=1.11.21-0trusty-20170313-095955-0700`
@@ -7769,11 +7851,12 @@ Binary Packages:
 
 - `ros-indigo-rosnode=1.11.21-0trusty-20170313-095955-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-rosout=1.11.21-0trusty-20170313-090624-0700`
@@ -7782,11 +7865,12 @@ Binary Packages:
 
 - `ros-indigo-rosout=1.11.21-0trusty-20170313-090624-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-rospack=2.2.8-0trusty-20170313-051000-0700`
@@ -7795,11 +7879,12 @@ Binary Packages:
 
 - `ros-indigo-rospack=2.2.8-0trusty-20170313-051000-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-rosparam=1.11.21-0trusty-20170312-161630-0700`
@@ -7808,11 +7893,12 @@ Binary Packages:
 
 - `ros-indigo-rosparam=1.11.21-0trusty-20170312-161630-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-rospy=1.11.21-0trusty-20170313-090637-0700`
@@ -7821,11 +7907,12 @@ Binary Packages:
 
 - `ros-indigo-rospy=1.11.21-0trusty-20170313-090637-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-rosservice=1.11.21-0trusty-20170313-095602-0700`
@@ -7834,11 +7921,12 @@ Binary Packages:
 
 - `ros-indigo-rosservice=1.11.21-0trusty-20170313-095602-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-rostest=1.11.21-0trusty-20170313-092212-0700`
@@ -7847,11 +7935,12 @@ Binary Packages:
 
 - `ros-indigo-rostest=1.11.21-0trusty-20170313-092212-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-rostime=0.5.8-0trusty-20170312-161216-0700`
@@ -7860,11 +7949,12 @@ Binary Packages:
 
 - `ros-indigo-rostime=0.5.8-0trusty-20170312-161216-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-rostopic=1.11.21-0trusty-20170313-095354-0700`
@@ -7873,11 +7963,12 @@ Binary Packages:
 
 - `ros-indigo-rostopic=1.11.21-0trusty-20170313-095354-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-rosunit=1.11.14-0trusty-20170313-061134-0700`
@@ -7886,11 +7977,12 @@ Binary Packages:
 
 - `ros-indigo-rosunit=1.11.14-0trusty-20170313-061134-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-roswtf=1.11.21-0trusty-20170313-104756-0700`
@@ -7899,11 +7991,12 @@ Binary Packages:
 
 - `ros-indigo-roswtf=1.11.21-0trusty-20170313-104756-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-sensor-msgs=1.11.9-0trusty-20170313-084826-0700`
@@ -7912,11 +8005,12 @@ Binary Packages:
 
 - `ros-indigo-sensor-msgs=1.11.9-0trusty-20170313-084826-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-shape-msgs=1.11.9-0trusty-20170313-084827-0700`
@@ -7925,11 +8019,12 @@ Binary Packages:
 
 - `ros-indigo-shape-msgs=1.11.9-0trusty-20170313-084827-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-smclib=1.7.19-0trusty-20170406-174143-0800`
@@ -7938,11 +8033,12 @@ Binary Packages:
 
 - `ros-indigo-smclib=1.7.19-0trusty-20170406-174143-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-std-msgs=0.5.10-0trusty-20170313-063501-0700`
@@ -7951,11 +8047,12 @@ Binary Packages:
 
 - `ros-indigo-std-msgs=0.5.10-0trusty-20170313-063501-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-std-srvs=1.11.2-0trusty-20170313-063554-0700`
@@ -7964,11 +8061,12 @@ Binary Packages:
 
 - `ros-indigo-std-srvs=1.11.2-0trusty-20170313-063554-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-stereo-image-proc=1.12.20-0trusty-20170430-133910-0800`
@@ -7977,11 +8075,12 @@ Binary Packages:
 
 - `ros-indigo-stereo-image-proc=1.12.20-0trusty-20170430-133910-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-stereo-msgs=1.11.9-0trusty-20170313-085731-0700`
@@ -7990,11 +8089,12 @@ Binary Packages:
 
 - `ros-indigo-stereo-msgs=1.11.9-0trusty-20170313-085731-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-tf2-geometry-msgs=0.5.16-0trusty-20170727-225317-0800`
@@ -8003,11 +8103,12 @@ Binary Packages:
 
 - `ros-indigo-tf2-geometry-msgs=0.5.16-0trusty-20170727-225317-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-tf2-msgs=0.5.16-0trusty-20170727-174124-0800`
@@ -8016,11 +8117,12 @@ Binary Packages:
 
 - `ros-indigo-tf2-msgs=0.5.16-0trusty-20170727-174124-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-tf2-py=0.5.16-0trusty-20170727-224402-0800`
@@ -8029,11 +8131,12 @@ Binary Packages:
 
 - `ros-indigo-tf2-py=0.5.16-0trusty-20170727-224402-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-tf2-ros=0.5.16-0trusty-20170727-224753-0800`
@@ -8042,11 +8145,12 @@ Binary Packages:
 
 - `ros-indigo-tf2-ros=0.5.16-0trusty-20170727-224753-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-tf2-sensor-msgs=0.5.16-0trusty-20170727-225346-0800`
@@ -8055,11 +8159,12 @@ Binary Packages:
 
 - `ros-indigo-tf2-sensor-msgs=0.5.16-0trusty-20170727-225346-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-tf2=0.5.16-0trusty-20170727-223424-0800`
@@ -8068,11 +8173,12 @@ Binary Packages:
 
 - `ros-indigo-tf2=0.5.16-0trusty-20170727-223424-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-tf=1.11.9-0trusty-20170727-225357-0800`
@@ -8081,11 +8187,12 @@ Binary Packages:
 
 - `ros-indigo-tf=1.11.9-0trusty-20170727-225357-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-theora-image-transport=1.9.5-0trusty-20170407-124218-0800`
@@ -8094,11 +8201,12 @@ Binary Packages:
 
 - `ros-indigo-theora-image-transport=1.9.5-0trusty-20170407-124218-0800`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-topic-tools=1.11.21-0trusty-20170313-094252-0700`
@@ -8107,11 +8215,12 @@ Binary Packages:
 
 - `ros-indigo-topic-tools=1.11.21-0trusty-20170313-094252-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-trajectory-msgs=1.11.9-0trusty-20170313-091815-0700`
@@ -8120,11 +8229,12 @@ Binary Packages:
 
 - `ros-indigo-trajectory-msgs=1.11.9-0trusty-20170313-091815-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-vision-opencv=1.11.15-0trusty-20170313-094521-0700`
@@ -8133,11 +8243,12 @@ Binary Packages:
 
 - `ros-indigo-vision-opencv=1.11.15-0trusty-20170313-094521-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-visualization-msgs=1.11.9-0trusty-20170313-092241-0700`
@@ -8146,11 +8257,12 @@ Binary Packages:
 
 - `ros-indigo-visualization-msgs=1.11.9-0trusty-20170313-092241-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `ros-indigo-xmlrpcpp=1.11.21-0trusty-20170312-161337-0700`
@@ -8159,11 +8271,12 @@ Binary Packages:
 
 - `ros-indigo-xmlrpcpp=1.11.21-0trusty-20170312-161337-0700`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `rsyslog=7.4.4-1ubuntu2.7`
@@ -8235,8 +8348,8 @@ Binary Packages:
 
 - `sbcl=2:1.1.14-2`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -8429,8 +8542,8 @@ Binary Packages:
 
 - `libspeex1:amd64=1.2~rc1.1-1ubuntu1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -8493,8 +8606,8 @@ Binary Packages:
 
 - `sudo=1.8.9p5-1ubuntu1.4`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -8599,8 +8712,8 @@ Binary Packages:
 - `tcl8.6=8.6.1-4ubuntu1`
 - `tcl8.6-dev:amd64=8.6.1-4ubuntu1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -8620,8 +8733,8 @@ Binary Packages:
 - `libtiff5-dev:amd64=4.0.3-7ubuntu0.7`
 - `libtiffxx5:amd64=4.0.3-7ubuntu0.7`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -8661,8 +8774,8 @@ Binary Packages:
 - `tk8.6=8.6.1-3ubuntu2`
 - `tk8.6-dev:amd64=8.6.1-3ubuntu2`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -8699,8 +8812,8 @@ Binary Packages:
 
 - `tzdata=2016j-0ubuntu0.14.04`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -8932,8 +9045,8 @@ Binary Packages:
 - `python-vtk=5.8.0-14.1ubuntu3`
 - `tcl-vtk=5.8.0-14.1ubuntu3`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -8951,8 +9064,8 @@ Binary Packages:
 
 - `x11-utils=7.7+1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -8969,8 +9082,8 @@ Binary Packages:
 
 - `x11proto-composite-dev=1:0.4.2-2`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -8988,8 +9101,8 @@ Binary Packages:
 
 - `x11proto-core-dev=7.0.26-1~ubuntu2`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -9007,8 +9120,8 @@ Binary Packages:
 
 - `x11proto-damage-dev=1:1.2.1-2`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -9026,8 +9139,8 @@ Binary Packages:
 
 - `x11proto-dri2-dev=2.8-2`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -9045,8 +9158,8 @@ Binary Packages:
 
 - `x11proto-fixes-dev=1:5.0-2ubuntu2`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -9064,8 +9177,8 @@ Binary Packages:
 
 - `x11proto-gl-dev=1.4.17-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -9083,8 +9196,8 @@ Binary Packages:
 
 - `x11proto-input-dev=2.3-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -9102,8 +9215,8 @@ Binary Packages:
 
 - `x11proto-kb-dev=1.0.6-2`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -9121,8 +9234,8 @@ Binary Packages:
 
 - `x11proto-randr-dev=1.5.0-1~trusty2`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -9140,8 +9253,8 @@ Binary Packages:
 
 - `x11proto-render-dev=2:0.11.1-2`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -9159,8 +9272,8 @@ Binary Packages:
 
 - `x11proto-scrnsaver-dev=1.2.2-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -9178,8 +9291,8 @@ Binary Packages:
 
 - `x11proto-xext-dev=7.3.0-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -9197,8 +9310,8 @@ Binary Packages:
 
 - `x11proto-xf86vidmode-dev=2.3.1-2`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -9216,8 +9329,8 @@ Binary Packages:
 
 - `x11proto-xinerama-dev=1.2.1-2`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -9262,8 +9375,8 @@ Binary Packages:
 
 - `xbitmaps=1.1.1-2`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -9282,8 +9395,8 @@ Binary Packages:
 - `libxft-dev=2.3.1-2`
 - `libxft2:amd64=2.3.1-2`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -9301,8 +9414,8 @@ Binary Packages:
 
 - `xkb-data=2.10.1-1ubuntu1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -9338,8 +9451,8 @@ Binary Packages:
 
 - `xorg-sgml-doctools=1:1.11-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -9375,8 +9488,8 @@ Binary Packages:
 
 - `xterm=297-1ubuntu1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -9394,8 +9507,8 @@ Binary Packages:
 
 - `xtrans-dev=1.3.5-1~ubuntu14.04.2`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -9493,8 +9606,8 @@ Binary Packages:
 - `zlib1g:amd64=1:1.2.8.dfsg-1ubuntu1`
 - `zlib1g-dev:amd64=1:1.2.8.dfsg-1ubuntu1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
