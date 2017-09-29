@@ -37,10 +37,11 @@ $ apt-get source -qq --print-uris acl=2.2.51-8
 'http://deb.debian.org/debian/pool/main/a/acl/acl_2.2.51-8.debian.tar.bz2' acl_2.2.51-8.debian.tar.bz2 7936 SHA256:082d863c576315480370bb485fd0dd4c0c043bc1f46a8fe01f5badce296975dc
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/acl/2.2.51-8/
-- https://sources.debian.net/src/acl/2.2.51-8/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/acl/2.2.51-8/ (for browsing the source)
+- https://sources.debian.net/src/acl/2.2.51-8/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/acl/2.2.51-8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `adduser=3.113+nmu3`
 
@@ -60,10 +61,11 @@ $ apt-get source -qq --print-uris adduser=3.113+nmu3
 'http://deb.debian.org/debian/pool/main/a/adduser/adduser_3.113+nmu3.tar.gz' adduser_3.113+nmu3.tar.gz 342554 SHA256:02682be3f51f3e732121f20a3e4922bb8bef15cfacb8767fc250a01d09502122
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/adduser/3.113+nmu3/
-- https://sources.debian.net/src/adduser/3.113+nmu3/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/adduser/3.113+nmu3/ (for browsing the source)
+- https://sources.debian.net/src/adduser/3.113+nmu3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/adduser/3.113+nmu3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `alsa-lib=1.0.25-4`
 
@@ -84,10 +86,11 @@ $ apt-get source -qq --print-uris alsa-lib=1.0.25-4
 'http://deb.debian.org/debian/pool/main/a/alsa-lib/alsa-lib_1.0.25-4.debian.tar.bz2' alsa-lib_1.0.25-4.debian.tar.bz2 42056 SHA256:148e7f5ce31b28df30d57f3b5d87d4ded0634930889bf015fa9121c596c362df
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/alsa-lib/1.0.25-4/
-- https://sources.debian.net/src/alsa-lib/1.0.25-4/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/alsa-lib/1.0.25-4/ (for browsing the source)
+- https://sources.debian.net/src/alsa-lib/1.0.25-4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/alsa-lib/1.0.25-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apt=0.9.7.9+deb7u7`
 
@@ -109,10 +112,11 @@ $ apt-get source -qq --print-uris apt=0.9.7.9+deb7u7
 'http://deb.debian.org/debian/pool/main/a/apt/apt_0.9.7.9+deb7u7.tar.gz' apt_0.9.7.9+deb7u7.tar.gz 3239065 SHA256:16816387711ee428d94a940bd3223fb7149c39666dd1cdc9633fbfbbe8933cb8
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/apt/0.9.7.9+deb7u7/
-- https://sources.debian.net/src/apt/0.9.7.9+deb7u7/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/apt/0.9.7.9+deb7u7/ (for browsing the source)
+- https://sources.debian.net/src/apt/0.9.7.9+deb7u7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/apt/0.9.7.9+deb7u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `atk1.0=2.4.0-2`
 
@@ -134,10 +138,11 @@ $ apt-get source -qq --print-uris atk1.0=2.4.0-2
 'http://deb.debian.org/debian/pool/main/a/atk1.0/atk1.0_2.4.0-2.debian.tar.gz' atk1.0_2.4.0-2.debian.tar.gz 10127 SHA256:34868897c403c68881ec0f3a7d6db4393dbfc76b9cd782044a99a8cdd2f73336
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/atk1.0/2.4.0-2/
-- https://sources.debian.net/src/atk1.0/2.4.0-2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/atk1.0/2.4.0-2/ (for browsing the source)
+- https://sources.debian.net/src/atk1.0/2.4.0-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/atk1.0/2.4.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.4.46-8`
 
@@ -159,10 +164,11 @@ $ apt-get source -qq --print-uris attr=1:2.4.46-8
 'http://deb.debian.org/debian/pool/main/a/attr/attr_2.4.46-8.debian.tar.bz2' attr_2.4.46-8.debian.tar.bz2 7280 SHA256:099dfae5b30cfe74ea5018ef701e567de876880a6b8ce2ca2576f11bdfe2826c
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/attr/1:2.4.46-8/
-- https://sources.debian.net/src/attr/1:2.4.46-8/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/attr/1:2.4.46-8/ (for browsing the source)
+- https://sources.debian.net/src/attr/1:2.4.46-8/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/attr/1:2.4.46-8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `avahi=0.6.31-2`
 
@@ -187,10 +193,11 @@ $ apt-get source -qq --print-uris avahi=0.6.31-2
 'http://deb.debian.org/debian/pool/main/a/avahi/avahi_0.6.31-2.debian.tar.gz' avahi_0.6.31-2.debian.tar.gz 32448 SHA256:56893eb777aaa4f00f7d8893b61120e7558885d1d9ced20642204e530705ded9
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/avahi/0.6.31-2/
-- https://sources.debian.net/src/avahi/0.6.31-2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/avahi/0.6.31-2/ (for browsing the source)
+- https://sources.debian.net/src/avahi/0.6.31-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/avahi/0.6.31-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-files=7.1wheezy11`
 
@@ -210,10 +217,11 @@ $ apt-get source -qq --print-uris base-files=7.1wheezy11
 'http://deb.debian.org/debian/pool/main/b/base-files/base-files_7.1wheezy11.tar.xz' base-files_7.1wheezy11.tar.xz 51488 SHA256:03dd7ec60789c9838f2697cf20e9faa2863372e972d5aa5a98150c71a3eabaed
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/base-files/7.1wheezy11/
-- https://sources.debian.net/src/base-files/7.1wheezy11/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/base-files/7.1wheezy11/ (for browsing the source)
+- https://sources.debian.net/src/base-files/7.1wheezy11/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/base-files/7.1wheezy11/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.5.26`
 
@@ -234,10 +242,11 @@ $ apt-get source -qq --print-uris base-passwd=3.5.26
 'http://deb.debian.org/debian/pool/main/b/base-passwd/base-passwd_3.5.26.tar.gz' base-passwd_3.5.26.tar.gz 77858 SHA256:258a78317aa563143d10375c6e1e63a60898e503887f00fffd70b6b297c1b429
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/base-passwd/3.5.26/
-- https://sources.debian.net/src/base-passwd/3.5.26/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/base-passwd/3.5.26/ (for browsing the source)
+- https://sources.debian.net/src/base-passwd/3.5.26/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/base-passwd/3.5.26/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `bash=4.2+dfsg-0.1+deb7u4`
 
@@ -258,10 +267,11 @@ $ apt-get source -qq --print-uris bash=4.2+dfsg-0.1+deb7u4
 'http://security.debian.org/pool/updates/main/b/bash/bash_4.2+dfsg-0.1+deb7u4.diff.gz' bash_4.2+dfsg-0.1+deb7u4.diff.gz 92229 SHA256:935bfaf7f9542de61fd97328006f0d59b729292bd453e36e8c9d302dc5129e11
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/bash/4.2+dfsg-0.1+deb7u4/
-- https://sources.debian.net/src/bash/4.2+dfsg-0.1+deb7u4/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/bash/4.2+dfsg-0.1+deb7u4/ (for browsing the source)
+- https://sources.debian.net/src/bash/4.2+dfsg-0.1+deb7u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/bash/4.2+dfsg-0.1+deb7u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `bzip2=1.0.6-4`
 
@@ -283,10 +293,11 @@ $ apt-get source -qq --print-uris bzip2=1.0.6-4
 'http://deb.debian.org/debian/pool/main/b/bzip2/bzip2_1.0.6-4.debian.tar.bz2' bzip2_1.0.6-4.debian.tar.bz2 60821 SHA256:87cf84fbef058d13c32f065e63caa9c705c9e029e29babb9f8266674ba6814b2
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/bzip2/1.0.6-4/
-- https://sources.debian.net/src/bzip2/1.0.6-4/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/bzip2/1.0.6-4/ (for browsing the source)
+- https://sources.debian.net/src/bzip2/1.0.6-4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/bzip2/1.0.6-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ca-certificates-java=20121112+nmu2`
 
@@ -306,10 +317,11 @@ $ apt-get source -qq --print-uris ca-certificates-java=20121112+nmu2
 'http://deb.debian.org/debian/pool/main/c/ca-certificates-java/ca-certificates-java_20121112+nmu2.tar.gz' ca-certificates-java_20121112+nmu2.tar.gz 10981 SHA256:2665261dd43365bf3238f4d83d9b3a33552f0b6d7a66b06e1247772c85484e0a
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/ca-certificates-java/20121112+nmu2/
-- https://sources.debian.net/src/ca-certificates-java/20121112+nmu2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/ca-certificates-java/20121112+nmu2/ (for browsing the source)
+- https://sources.debian.net/src/ca-certificates-java/20121112+nmu2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ca-certificates-java/20121112+nmu2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ca-certificates=20130119+deb7u1`
 
@@ -329,10 +341,11 @@ $ apt-get source -qq --print-uris ca-certificates=20130119+deb7u1
 'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20130119+deb7u1.tar.gz' ca-certificates_20130119+deb7u1.tar.gz 366422 SHA256:58c8269f7fb7fce80fbabffc6fa636430580cffc7e2fd19df4e235ac3e6c34b6
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/ca-certificates/20130119+deb7u1/
-- https://sources.debian.net/src/ca-certificates/20130119+deb7u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/ca-certificates/20130119+deb7u1/ (for browsing the source)
+- https://sources.debian.net/src/ca-certificates/20130119+deb7u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ca-certificates/20130119+deb7u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cairo=1.12.2-3+deb7u1`
 
@@ -353,10 +366,11 @@ $ apt-get source -qq --print-uris cairo=1.12.2-3+deb7u1
 'http://security.debian.org/pool/updates/main/c/cairo/cairo_1.12.2-3+deb7u1.debian.tar.gz' cairo_1.12.2-3+deb7u1.debian.tar.gz 36579 SHA256:cc84faa0d160ec8d00dd42d90b1998c72f12dace179ee40c1beff4948fbe98e7
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/cairo/1.12.2-3+deb7u1/
-- https://sources.debian.net/src/cairo/1.12.2-3+deb7u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/cairo/1.12.2-3+deb7u1/ (for browsing the source)
+- https://sources.debian.net/src/cairo/1.12.2-3+deb7u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/cairo/1.12.2-3+deb7u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `coreutils=8.13-3.5`
 
@@ -377,10 +391,11 @@ $ apt-get source -qq --print-uris coreutils=8.13-3.5
 'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_8.13-3.5.diff.gz' coreutils_8.13-3.5.diff.gz 1228098 SHA256:f5c1ab9b8be1364cfad3a422f8f351c016412a691c9a30117bc265654acfaf8e
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/coreutils/8.13-3.5/
-- https://sources.debian.net/src/coreutils/8.13-3.5/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/coreutils/8.13-3.5/ (for browsing the source)
+- https://sources.debian.net/src/coreutils/8.13-3.5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/coreutils/8.13-3.5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cups=1.5.3-5+deb7u6`
 
@@ -403,10 +418,11 @@ $ apt-get source -qq --print-uris cups=1.5.3-5+deb7u6
 'http://deb.debian.org/debian/pool/main/c/cups/cups_1.5.3-5+deb7u6.debian.tar.gz' cups_1.5.3-5+deb7u6.debian.tar.gz 379647 SHA256:757b3fe68a9056d2cbf74f6dba33d613674f004ddc37415c37a419459889ff13
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/cups/1.5.3-5+deb7u6/
-- https://sources.debian.net/src/cups/1.5.3-5+deb7u6/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/cups/1.5.3-5+deb7u6/ (for browsing the source)
+- https://sources.debian.net/src/cups/1.5.3-5+deb7u6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/cups/1.5.3-5+deb7u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `curl=7.26.0-1+wheezy20`
 
@@ -431,10 +447,11 @@ $ apt-get source -qq --print-uris curl=7.26.0-1+wheezy20
 'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0-1+wheezy20.debian.tar.gz' curl_7.26.0-1+wheezy20.debian.tar.gz 65696 SHA256:3076bc913216c2144b5d76859ccb7335b43ca4db1ac43a752131fe291755e55d
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/curl/7.26.0-1+wheezy20/
-- https://sources.debian.net/src/curl/7.26.0-1+wheezy20/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/curl/7.26.0-1+wheezy20/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.26.0-1+wheezy20/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.26.0-1+wheezy20/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.25.dfsg1-6+deb7u1`
 
@@ -460,10 +477,11 @@ $ apt-get source -qq --print-uris cyrus-sasl2=2.1.25.dfsg1-6+deb7u1
 'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.25.dfsg1-6+deb7u1.debian.tar.gz' cyrus-sasl2_2.1.25.dfsg1-6+deb7u1.debian.tar.gz 106970 SHA256:0ea7d1f7c1c4daafb94548e9aecf0952cff918313f0bbee0ad394ca0354b14b7
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/cyrus-sasl2/2.1.25.dfsg1-6+deb7u1/
-- https://sources.debian.net/src/cyrus-sasl2/2.1.25.dfsg1-6+deb7u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/cyrus-sasl2/2.1.25.dfsg1-6+deb7u1/ (for browsing the source)
+- https://sources.debian.net/src/cyrus-sasl2/2.1.25.dfsg1-6+deb7u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/cyrus-sasl2/2.1.25.dfsg1-6+deb7u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `dash=0.5.7-3`
 
@@ -484,10 +502,11 @@ $ apt-get source -qq --print-uris dash=0.5.7-3
 'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.7-3.diff.gz' dash_0.5.7-3.diff.gz 41631 SHA256:ee6aa93c49487e699286347ee5709efdfd7e040b02c85b467e629bb457cdfee7
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/dash/0.5.7-3/
-- https://sources.debian.net/src/dash/0.5.7-3/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/dash/0.5.7-3/ (for browsing the source)
+- https://sources.debian.net/src/dash/0.5.7-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/dash/0.5.7-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `db=5.1.29-5`
 
@@ -495,8 +514,8 @@ Binary Packages:
 
 - `libdb5.1:amd64=5.1.29-5`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -508,10 +527,11 @@ $ apt-get source -qq --print-uris db=5.1.29-5
 'http://deb.debian.org/debian/pool/main/d/db/db_5.1.29-5.debian.tar.gz' db_5.1.29-5.debian.tar.gz 28733 SHA256:7cefa9a9e779b8b3e7432c8f39c4317aa7b6eac9f70703ed0b85f8d9a96d3af9
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/db/5.1.29-5/
-- https://sources.debian.net/src/db/5.1.29-5/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/db/5.1.29-5/ (for browsing the source)
+- https://sources.debian.net/src/db/5.1.29-5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/db/5.1.29-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `dbus=1.6.8-1+deb7u6`
 
@@ -533,10 +553,11 @@ $ apt-get source -qq --print-uris dbus=1.6.8-1+deb7u6
 'http://deb.debian.org/debian/pool/main/d/dbus/dbus_1.6.8-1+deb7u6.debian.tar.xz' dbus_1.6.8-1+deb7u6.debian.tar.xz 50124 SHA256:50fe614aa01f750af2c9848ed62dc22576c8203f8750b167fdb1698ce7a6eed9
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/dbus/1.6.8-1+deb7u6/
-- https://sources.debian.net/src/dbus/1.6.8-1+deb7u6/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/dbus/1.6.8-1+deb7u6/ (for browsing the source)
+- https://sources.debian.net/src/dbus/1.6.8-1+deb7u6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/dbus/1.6.8-1+deb7u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debconf=1.5.49`
 
@@ -557,10 +578,11 @@ $ apt-get source -qq --print-uris debconf=1.5.49
 'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.49.tar.gz' debconf_1.5.49.tar.gz 1003721 SHA256:1e8d900c90b99390ea738fb4ce85ae0d0c2e45c1936b0979e34563c6baffc8aa
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/debconf/1.5.49/
-- https://sources.debian.net/src/debconf/1.5.49/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/debconf/1.5.49/ (for browsing the source)
+- https://sources.debian.net/src/debconf/1.5.49/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/debconf/1.5.49/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debian-archive-keyring=2014.3~deb7u1`
 
@@ -580,10 +602,11 @@ $ apt-get source -qq --print-uris debian-archive-keyring=2014.3~deb7u1
 'http://deb.debian.org/debian/pool/main/d/debian-archive-keyring/debian-archive-keyring_2014.3~deb7u1.tar.gz' debian-archive-keyring_2014.3~deb7u1.tar.gz 64165 SHA256:d92f5a8d6d891bc109c48c1f777974eaaa372b2e760fd3006e4c5a96f5f01a01
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/debian-archive-keyring/2014.3~deb7u1/
-- https://sources.debian.net/src/debian-archive-keyring/2014.3~deb7u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/debian-archive-keyring/2014.3~deb7u1/ (for browsing the source)
+- https://sources.debian.net/src/debian-archive-keyring/2014.3~deb7u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/debian-archive-keyring/2014.3~deb7u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debianutils=4.3.2`
 
@@ -603,10 +626,11 @@ $ apt-get source -qq --print-uris debianutils=4.3.2
 'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_4.3.2.tar.gz' debianutils_4.3.2.tar.gz 201772 SHA256:0062d774306a6acc34d3b855a5c4eeb845653b0cd34dbb5c13aa00b4ecb8af22
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/debianutils/4.3.2/
-- https://sources.debian.net/src/debianutils/4.3.2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/debianutils/4.3.2/ (for browsing the source)
+- https://sources.debian.net/src/debianutils/4.3.2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/debianutils/4.3.2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `diffutils=1:3.2-6`
 
@@ -628,10 +652,11 @@ $ apt-get source -qq --print-uris diffutils=1:3.2-6
 'http://deb.debian.org/debian/pool/main/d/diffutils/diffutils_3.2-6.debian.tar.gz' diffutils_3.2-6.debian.tar.gz 8485 SHA256:42bd0f09a9de4472574a96af946157f23425cc156b9dc515627a5263757ac9cf
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/diffutils/1:3.2-6/
-- https://sources.debian.net/src/diffutils/1:3.2-6/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/diffutils/1:3.2-6/ (for browsing the source)
+- https://sources.debian.net/src/diffutils/1:3.2-6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/diffutils/1:3.2-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `dpkg=1.16.18`
 
@@ -651,10 +676,11 @@ $ apt-get source -qq --print-uris dpkg=1.16.18
 'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.16.18.tar.xz' dpkg_1.16.18.tar.xz 3806456 SHA256:fac74a25615d60eab5d4a324c0edbbb2af3e603f6095ae5aae0ab2a99955e808
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/dpkg/1.16.18/
-- https://sources.debian.net/src/dpkg/1.16.18/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/dpkg/1.16.18/ (for browsing the source)
+- https://sources.debian.net/src/dpkg/1.16.18/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/dpkg/1.16.18/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `e2fsprogs=1.42.5-1.1+deb7u1`
 
@@ -679,10 +705,11 @@ $ apt-get source -qq --print-uris e2fsprogs=1.42.5-1.1+deb7u1
 'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.42.5-1.1+deb7u1.debian.tar.gz' e2fsprogs_1.42.5-1.1+deb7u1.debian.tar.gz 73764 SHA256:2d4acd9945effdf9649c69405fadea8c1a89bee04e1c4ff3745acffb9aa74412
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/e2fsprogs/1.42.5-1.1+deb7u1/
-- https://sources.debian.net/src/e2fsprogs/1.42.5-1.1+deb7u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/e2fsprogs/1.42.5-1.1+deb7u1/ (for browsing the source)
+- https://sources.debian.net/src/e2fsprogs/1.42.5-1.1+deb7u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/e2fsprogs/1.42.5-1.1+deb7u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `eglibc=2.13-38+deb7u12`
 
@@ -706,10 +733,11 @@ $ apt-get source -qq --print-uris eglibc=2.13-38+deb7u12
 'http://security.debian.org/pool/updates/main/e/eglibc/eglibc_2.13-38+deb7u12.diff.gz' eglibc_2.13-38+deb7u12.diff.gz 2054928 SHA256:e791980fd3e69d904b847daa159bd52f1ecfeecc482bd4f7d5257893c9954fa8
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/eglibc/2.13-38+deb7u12/
-- https://sources.debian.net/src/eglibc/2.13-38+deb7u12/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/eglibc/2.13-38+deb7u12/ (for browsing the source)
+- https://sources.debian.net/src/eglibc/2.13-38+deb7u12/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/eglibc/2.13-38+deb7u12/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `expat=2.1.0-1+deb7u5`
 
@@ -717,8 +745,8 @@ Binary Packages:
 
 - `libexpat1:amd64=2.1.0-1+deb7u5`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -730,10 +758,11 @@ $ apt-get source -qq --print-uris expat=2.1.0-1+deb7u5
 'http://security.debian.org/pool/updates/main/e/expat/expat_2.1.0-1+deb7u5.debian.tar.gz' expat_2.1.0-1+deb7u5.debian.tar.gz 20362 SHA256:e809d6fc1fc250d716f610541c30ae2669ada9fb943f4243f15eac85185ee661
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/expat/2.1.0-1+deb7u5/
-- https://sources.debian.net/src/expat/2.1.0-1+deb7u5/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/expat/2.1.0-1+deb7u5/ (for browsing the source)
+- https://sources.debian.net/src/expat/2.1.0-1+deb7u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/expat/2.1.0-1+deb7u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `findutils=4.4.2-4`
 
@@ -755,10 +784,11 @@ $ apt-get source -qq --print-uris findutils=4.4.2-4
 'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.4.2-4.debian.tar.gz' findutils_4.4.2-4.debian.tar.gz 21825 SHA256:3f947a07efa663af4eb7ab46f30562552ed17cf63d2fb2a67b90770dcf459b93
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/findutils/4.4.2-4/
-- https://sources.debian.net/src/findutils/4.4.2-4/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/findutils/4.4.2-4/ (for browsing the source)
+- https://sources.debian.net/src/findutils/4.4.2-4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/findutils/4.4.2-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `flac=1.2.1-6+deb7u1`
 
@@ -780,10 +810,11 @@ $ apt-get source -qq --print-uris flac=1.2.1-6+deb7u1
 'http://deb.debian.org/debian/pool/main/f/flac/flac_1.2.1-6+deb7u1.diff.gz' flac_1.2.1-6+deb7u1.diff.gz 17154 SHA256:f3675442023ef698369e0f164b6b1ba7ea0674c5ba2490e9ea530178297ad6ee
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/flac/1.2.1-6+deb7u1/
-- https://sources.debian.net/src/flac/1.2.1-6+deb7u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/flac/1.2.1-6+deb7u1/ (for browsing the source)
+- https://sources.debian.net/src/flac/1.2.1-6+deb7u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/flac/1.2.1-6+deb7u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `fontconfig=2.9.0-7.1+deb7u1`
 
@@ -793,8 +824,8 @@ Binary Packages:
 - `fontconfig-config=2.9.0-7.1+deb7u1`
 - `libfontconfig1:amd64=2.9.0-7.1+deb7u1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -806,10 +837,11 @@ $ apt-get source -qq --print-uris fontconfig=2.9.0-7.1+deb7u1
 'http://security.debian.org/pool/updates/main/f/fontconfig/fontconfig_2.9.0-7.1+deb7u1.debian.tar.gz' fontconfig_2.9.0-7.1+deb7u1.debian.tar.gz 54842 SHA256:24ad281e5003ca7575a561e209ecb27a703de956d10dcf00038b558569032c88
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/fontconfig/2.9.0-7.1+deb7u1/
-- https://sources.debian.net/src/fontconfig/2.9.0-7.1+deb7u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/fontconfig/2.9.0-7.1+deb7u1/ (for browsing the source)
+- https://sources.debian.net/src/fontconfig/2.9.0-7.1+deb7u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/fontconfig/2.9.0-7.1+deb7u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `freetype=2.4.9-1.1+deb7u7`
 
@@ -836,10 +868,11 @@ $ apt-get source -qq --print-uris freetype=2.4.9-1.1+deb7u7
 'http://security.debian.org/pool/updates/main/f/freetype/freetype_2.4.9-1.1+deb7u7.tar.gz' freetype_2.4.9-1.1+deb7u7.tar.gz 1832352 SHA256:23eb1cb785aaea8f9469205141cdd99ed85c682cd6460c0303bb961774edfea3
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/freetype/2.4.9-1.1+deb7u7/
-- https://sources.debian.net/src/freetype/2.4.9-1.1+deb7u7/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/freetype/2.4.9-1.1+deb7u7/ (for browsing the source)
+- https://sources.debian.net/src/freetype/2.4.9-1.1+deb7u7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/freetype/2.4.9-1.1+deb7u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-4.7=4.7.2-5`
 
@@ -866,10 +899,11 @@ $ apt-get source -qq --print-uris gcc-4.7=4.7.2-5
 'http://deb.debian.org/debian/pool/main/g/gcc-4.7/gcc-4.7_4.7.2-5.diff.gz' gcc-4.7_4.7.2-5.diff.gz 988683 SHA256:94beefe23dbcf9a6797cb91108c3bc12b5c43e9ee3cede94b070bb565248fe1f
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/gcc-4.7/4.7.2-5/
-- https://sources.debian.net/src/gcc-4.7/4.7.2-5/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/gcc-4.7/4.7.2-5/ (for browsing the source)
+- https://sources.debian.net/src/gcc-4.7/4.7.2-5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gcc-4.7/4.7.2-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gdbm=1.8.3-11`
 
@@ -890,10 +924,11 @@ $ apt-get source -qq --print-uris gdbm=1.8.3-11
 'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.8.3-11.debian.tar.bz2' gdbm_1.8.3-11.debian.tar.bz2 14501 SHA256:f673ffdfc6f6b46a5018d0c076cd4a8393b5715796f96ba3efbf997f44312058
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/gdbm/1.8.3-11/
-- https://sources.debian.net/src/gdbm/1.8.3-11/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/gdbm/1.8.3-11/ (for browsing the source)
+- https://sources.debian.net/src/gdbm/1.8.3-11/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gdbm/1.8.3-11/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gdk-pixbuf=2.26.1-1+deb7u5`
 
@@ -907,7 +942,12 @@ Licenses: (parsed from: `/usr/share/doc/libgdk-pixbuf2.0-0/copyright`, `/usr/sha
 - `GPL-2`
 - `LGPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/gdk-pixbuf/2.26.1-1+deb7u5/
 
 
 ### `dpkg` source package: `giflib=4.1.6-10+deb7u1`
@@ -929,10 +969,11 @@ $ apt-get source -qq --print-uris giflib=4.1.6-10+deb7u1
 'http://deb.debian.org/debian/pool/main/g/giflib/giflib_4.1.6-10+deb7u1.debian.tar.gz' giflib_4.1.6-10+deb7u1.debian.tar.gz 10208 SHA256:91b58127e01784db83cccda2775dab40e7e1db5d1df4088f21f5890869b5a746
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/giflib/4.1.6-10+deb7u1/
-- https://sources.debian.net/src/giflib/4.1.6-10+deb7u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/giflib/4.1.6-10+deb7u1/ (for browsing the source)
+- https://sources.debian.net/src/giflib/4.1.6-10+deb7u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/giflib/4.1.6-10+deb7u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glib2.0=2.33.12+really2.32.4-5`
 
@@ -954,10 +995,11 @@ $ apt-get source -qq --print-uris glib2.0=2.33.12+really2.32.4-5
 'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.33.12+really2.32.4-5.debian.tar.gz' glib2.0_2.33.12+really2.32.4-5.debian.tar.gz 64063 SHA256:7324768bc60453dfe84e4a3bb7473ac4bc001965b01645496e6759cf77339159
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/glib2.0/2.33.12+really2.32.4-5/
-- https://sources.debian.net/src/glib2.0/2.33.12+really2.32.4-5/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/glib2.0/2.33.12+really2.32.4-5/ (for browsing the source)
+- https://sources.debian.net/src/glib2.0/2.33.12+really2.32.4-5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/glib2.0/2.33.12+really2.32.4-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gnupg=1.4.12-7+deb7u9`
 
@@ -980,10 +1022,11 @@ $ apt-get source -qq --print-uris gnupg=1.4.12-7+deb7u9
 'http://security.debian.org/pool/updates/main/g/gnupg/gnupg_1.4.12-7+deb7u9.debian.tar.gz' gnupg_1.4.12-7+deb7u9.debian.tar.gz 125126 SHA256:c1727f6f4f96c1f970ed3bf9be29c8f0f81cc428c4e0132a69889fa9c87bc38c
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/gnupg/1.4.12-7+deb7u9/
-- https://sources.debian.net/src/gnupg/1.4.12-7+deb7u9/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/gnupg/1.4.12-7+deb7u9/ (for browsing the source)
+- https://sources.debian.net/src/gnupg/1.4.12-7+deb7u9/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gnupg/1.4.12-7+deb7u9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gnutls26=2.12.20-8+deb7u5`
 
@@ -1008,10 +1051,11 @@ $ apt-get source -qq --print-uris gnutls26=2.12.20-8+deb7u5
 'http://deb.debian.org/debian/pool/main/g/gnutls26/gnutls26_2.12.20-8+deb7u5.debian.tar.gz' gnutls26_2.12.20-8+deb7u5.debian.tar.gz 36298 SHA256:ea529b5cbc3db553eea0bf80905e5e2e02a9a27b8675fa9e13fed0f3296e499b
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/gnutls26/2.12.20-8+deb7u5/
-- https://sources.debian.net/src/gnutls26/2.12.20-8+deb7u5/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/gnutls26/2.12.20-8+deb7u5/ (for browsing the source)
+- https://sources.debian.net/src/gnutls26/2.12.20-8+deb7u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gnutls26/2.12.20-8+deb7u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `grep=2.12-2`
 
@@ -1032,10 +1076,11 @@ $ apt-get source -qq --print-uris grep=2.12-2
 'http://deb.debian.org/debian/pool/main/g/grep/grep_2.12-2.debian.tar.bz2' grep_2.12-2.debian.tar.bz2 13641 SHA256:37887d8aecec66e75365abd8c41be94f75e7a3acf1d6b27fc121584f47281525
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/grep/2.12-2/
-- https://sources.debian.net/src/grep/2.12-2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/grep/2.12-2/ (for browsing the source)
+- https://sources.debian.net/src/grep/2.12-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/grep/2.12-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gtk+2.0=2.24.10-2`
 
@@ -1059,10 +1104,11 @@ $ apt-get source -qq --print-uris gtk+2.0=2.24.10-2
 'http://deb.debian.org/debian/pool/main/g/gtk+2.0/gtk+2.0_2.24.10-2.debian.tar.gz' gtk+2.0_2.24.10-2.debian.tar.gz 105682 SHA256:d320a33f9b76f999e5f8603ce21bb49edb47acddd987c3a5469e0d8766be4c78
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/gtk+2.0/2.24.10-2/
-- https://sources.debian.net/src/gtk+2.0/2.24.10-2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/gtk+2.0/2.24.10-2/ (for browsing the source)
+- https://sources.debian.net/src/gtk+2.0/2.24.10-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gtk+2.0/2.24.10-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gzip=1.5-1.1`
 
@@ -1083,10 +1129,11 @@ $ apt-get source -qq --print-uris gzip=1.5-1.1
 'http://deb.debian.org/debian/pool/main/g/gzip/gzip_1.5-1.1.debian.tar.gz' gzip_1.5-1.1.debian.tar.gz 15080 SHA256:33cd6c5c3290aaad5050917e443c943299e6a216631775db097a8a1175667ae9
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/gzip/1.5-1.1/
-- https://sources.debian.net/src/gzip/1.5-1.1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/gzip/1.5-1.1/ (for browsing the source)
+- https://sources.debian.net/src/gzip/1.5-1.1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gzip/1.5-1.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `hicolor-icon-theme=0.12-1`
 
@@ -1107,10 +1154,11 @@ $ apt-get source -qq --print-uris hicolor-icon-theme=0.12-1
 'http://deb.debian.org/debian/pool/main/h/hicolor-icon-theme/hicolor-icon-theme_0.12-1.debian.tar.gz' hicolor-icon-theme_0.12-1.debian.tar.gz 3511 SHA256:b5db57ff0f540c569079d00405fbdd0685bf54bcc3c0749aa7bf20bc4698a6f0
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/hicolor-icon-theme/0.12-1/
-- https://sources.debian.net/src/hicolor-icon-theme/0.12-1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/hicolor-icon-theme/0.12-1/ (for browsing the source)
+- https://sources.debian.net/src/hicolor-icon-theme/0.12-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/hicolor-icon-theme/0.12-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `hostname=3.11`
 
@@ -1130,10 +1178,11 @@ $ apt-get source -qq --print-uris hostname=3.11
 'http://deb.debian.org/debian/pool/main/h/hostname/hostname_3.11.tar.gz' hostname_3.11.tar.gz 13539 SHA256:8492e822e25f7f8af225a00dfe9c4aa8113e927fe21194a39e2f81c17ce85ee1
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/hostname/3.11/
-- https://sources.debian.net/src/hostname/3.11/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/hostname/3.11/ (for browsing the source)
+- https://sources.debian.net/src/hostname/3.11/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/hostname/3.11/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `icedtea-web=1.4-3~deb7u3`
 
@@ -1155,10 +1204,11 @@ $ apt-get source -qq --print-uris icedtea-web=1.4-3~deb7u3
 'http://security.debian.org/pool/updates/main/i/icedtea-web/icedtea-web_1.4-3~deb7u3.debian.tar.gz' icedtea-web_1.4-3~deb7u3.debian.tar.gz 32198 SHA256:a4bf4d41e3e8506af3d1e72c2c3570552fff0fb54e8126afc2f13c7ba5c43c59
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/icedtea-web/1.4-3~deb7u3/
-- https://sources.debian.net/src/icedtea-web/1.4-3~deb7u3/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/icedtea-web/1.4-3~deb7u3/ (for browsing the source)
+- https://sources.debian.net/src/icedtea-web/1.4-3~deb7u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/icedtea-web/1.4-3~deb7u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `inetutils=2:1.9-2`
 
@@ -1180,10 +1230,11 @@ $ apt-get source -qq --print-uris inetutils=2:1.9-2
 'http://deb.debian.org/debian/pool/main/i/inetutils/inetutils_1.9-2.debian.tar.gz' inetutils_1.9-2.debian.tar.gz 82510 SHA256:a629f3ccdbbcd2d4df22af5df81ba3beb36e64cd40a3c2a79e4a302354437d58
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/inetutils/2:1.9-2/
-- https://sources.debian.net/src/inetutils/2:1.9-2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/inetutils/2:1.9-2/ (for browsing the source)
+- https://sources.debian.net/src/inetutils/2:1.9-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/inetutils/2:1.9-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `insserv=1.14.0-5`
 
@@ -1204,10 +1255,11 @@ $ apt-get source -qq --print-uris insserv=1.14.0-5
 'http://deb.debian.org/debian/pool/main/i/insserv/insserv_1.14.0-5.debian.tar.gz' insserv_1.14.0-5.debian.tar.gz 53943 SHA256:496a3ece3cf4b53ff19f45eeffab6b5a7714785d1db524087c9cbe9cbdd88b2a
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/insserv/1.14.0-5/
-- https://sources.debian.net/src/insserv/1.14.0-5/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/insserv/1.14.0-5/ (for browsing the source)
+- https://sources.debian.net/src/insserv/1.14.0-5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/insserv/1.14.0-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `iproute=20120521-3`
 
@@ -1228,10 +1280,11 @@ $ apt-get source -qq --print-uris iproute=20120521-3
 'http://deb.debian.org/debian/pool/main/i/iproute/iproute_20120521-3.debian.tar.gz' iproute_20120521-3.debian.tar.gz 26344 SHA256:96ed32bf753ebb8734ff02b411507253ae376f04e7a4772ec098246ff5fafa8c
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/iproute/20120521-3/
-- https://sources.debian.net/src/iproute/20120521-3/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/iproute/20120521-3/ (for browsing the source)
+- https://sources.debian.net/src/iproute/20120521-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/iproute/20120521-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `jasper=1.900.1-13+deb7u6`
 
@@ -1239,8 +1292,8 @@ Binary Packages:
 
 - `libjasper1:amd64=1.900.1-13+deb7u6`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -1252,10 +1305,11 @@ $ apt-get source -qq --print-uris jasper=1.900.1-13+deb7u6
 'http://security.debian.org/pool/updates/main/j/jasper/jasper_1.900.1-13+deb7u6.debian.tar.gz' jasper_1.900.1-13+deb7u6.debian.tar.gz 40166 SHA256:66218e510c7cef7b4744b66c8eed10e4842ca95119401df4109d4fbc61eb1595
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/jasper/1.900.1-13+deb7u6/
-- https://sources.debian.net/src/jasper/1.900.1-13+deb7u6/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/jasper/1.900.1-13+deb7u6/ (for browsing the source)
+- https://sources.debian.net/src/jasper/1.900.1-13+deb7u6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/jasper/1.900.1-13+deb7u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `java-atk-wrapper=0.30.4-3`
 
@@ -1279,10 +1333,11 @@ $ apt-get source -qq --print-uris java-atk-wrapper=0.30.4-3
 'http://deb.debian.org/debian/pool/main/j/java-atk-wrapper/java-atk-wrapper_0.30.4-3.debian.tar.bz2' java-atk-wrapper_0.30.4-3.debian.tar.bz2 2603 SHA256:ba1d8f8c30b7331829fcabbd52abdc4b64cea24674e833c5097d18847d5997a4
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/java-atk-wrapper/0.30.4-3/
-- https://sources.debian.net/src/java-atk-wrapper/0.30.4-3/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/java-atk-wrapper/0.30.4-3/ (for browsing the source)
+- https://sources.debian.net/src/java-atk-wrapper/0.30.4-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/java-atk-wrapper/0.30.4-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `java-common=0.47+deb7u2`
 
@@ -1302,10 +1357,11 @@ $ apt-get source -qq --print-uris java-common=0.47+deb7u2
 'http://security.debian.org/pool/updates/main/j/java-common/java-common_0.47+deb7u2.tar.gz' java-common_0.47+deb7u2.tar.gz 53746 SHA256:95bf99e22e505b877c053b9c9b024282c29fae9a6b3dfda4cc9a54bb195402fb
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/java-common/0.47+deb7u2/
-- https://sources.debian.net/src/java-common/0.47+deb7u2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/java-common/0.47+deb7u2/ (for browsing the source)
+- https://sources.debian.net/src/java-common/0.47+deb7u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/java-common/0.47+deb7u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `jbigkit=2.0-2+deb7u1`
 
@@ -1327,10 +1383,11 @@ $ apt-get source -qq --print-uris jbigkit=2.0-2+deb7u1
 'http://deb.debian.org/debian/pool/main/j/jbigkit/jbigkit_2.0-2+deb7u1.debian.tar.gz' jbigkit_2.0-2+deb7u1.debian.tar.gz 6261 SHA256:3e1540a394620ea870d5c6ec61e4b92c23ea47f0cf263aa18f908096df64db89
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/jbigkit/2.0-2+deb7u1/
-- https://sources.debian.net/src/jbigkit/2.0-2+deb7u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/jbigkit/2.0-2+deb7u1/ (for browsing the source)
+- https://sources.debian.net/src/jbigkit/2.0-2+deb7u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/jbigkit/2.0-2+deb7u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `json-c=0.10-1.2`
 
@@ -1351,10 +1408,11 @@ $ apt-get source -qq --print-uris json-c=0.10-1.2
 'http://deb.debian.org/debian/pool/main/j/json-c/json-c_0.10-1.2.debian.tar.gz' json-c_0.10-1.2.debian.tar.gz 3930 SHA256:b2154dc98e7913a2574f70d36b51b513640fc19961fcf54e5d8826872738d650
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/json-c/0.10-1.2/
-- https://sources.debian.net/src/json-c/0.10-1.2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/json-c/0.10-1.2/ (for browsing the source)
+- https://sources.debian.net/src/json-c/0.10-1.2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/json-c/0.10-1.2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `keyutils=1.5.5-3+deb7u1`
 
@@ -1378,10 +1436,11 @@ $ apt-get source -qq --print-uris keyutils=1.5.5-3+deb7u1
 'http://deb.debian.org/debian/pool/main/k/keyutils/keyutils_1.5.5-3+deb7u1.debian.tar.xz' keyutils_1.5.5-3+deb7u1.debian.tar.xz 6040 SHA256:ed9422d02b5e8d4d5a42cf7c68e1996f3ac1acd8c032128baf6267443338c5a2
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/keyutils/1.5.5-3+deb7u1/
-- https://sources.debian.net/src/keyutils/1.5.5-3+deb7u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/keyutils/1.5.5-3+deb7u1/ (for browsing the source)
+- https://sources.debian.net/src/keyutils/1.5.5-3+deb7u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/keyutils/1.5.5-3+deb7u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `krb5=1.10.1+dfsg-5+deb7u8`
 
@@ -1392,8 +1451,8 @@ Binary Packages:
 - `libkrb5-3:amd64=1.10.1+dfsg-5+deb7u8`
 - `libkrb5support0:amd64=1.10.1+dfsg-5+deb7u8`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -1405,10 +1464,11 @@ $ apt-get source -qq --print-uris krb5=1.10.1+dfsg-5+deb7u8
 'http://security.debian.org/pool/updates/main/k/krb5/krb5_1.10.1+dfsg-5+deb7u8.debian.tar.gz' krb5_1.10.1+dfsg-5+deb7u8.debian.tar.gz 157896 SHA256:2ed13be10008d2258e47daa2fe8a8bba47c83d0b2370f719ebd69b4eae3bb18a
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/krb5/1.10.1+dfsg-5+deb7u8/
-- https://sources.debian.net/src/krb5/1.10.1+dfsg-5+deb7u8/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/krb5/1.10.1+dfsg-5+deb7u8/ (for browsing the source)
+- https://sources.debian.net/src/krb5/1.10.1+dfsg-5+deb7u8/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/krb5/1.10.1+dfsg-5+deb7u8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lcms2=2.2+git20110628-2.2+deb7u2`
 
@@ -1431,10 +1491,11 @@ $ apt-get source -qq --print-uris lcms2=2.2+git20110628-2.2+deb7u2
 'http://security.debian.org/pool/updates/main/l/lcms2/lcms2_2.2+git20110628-2.2+deb7u2.debian.tar.gz' lcms2_2.2+git20110628-2.2+deb7u2.debian.tar.gz 7039 SHA256:bf2f7d979fb4dfb07f357e6d2ed0489107d502e5de72161a76ebe1897398b55f
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/lcms2/2.2+git20110628-2.2+deb7u2/
-- https://sources.debian.net/src/lcms2/2.2+git20110628-2.2+deb7u2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/lcms2/2.2+git20110628-2.2+deb7u2/ (for browsing the source)
+- https://sources.debian.net/src/lcms2/2.2+git20110628-2.2+deb7u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/lcms2/2.2+git20110628-2.2+deb7u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libasyncns=0.8-4`
 
@@ -1456,10 +1517,11 @@ $ apt-get source -qq --print-uris libasyncns=0.8-4
 'http://deb.debian.org/debian/pool/main/liba/libasyncns/libasyncns_0.8-4.debian.tar.gz' libasyncns_0.8-4.debian.tar.gz 4265 SHA256:29fdd065ecdfa7a9cbf4d9c858231e28568e1cdac864a20cbde408b218905809
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/libasyncns/0.8-4/
-- https://sources.debian.net/src/libasyncns/0.8-4/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libasyncns/0.8-4/ (for browsing the source)
+- https://sources.debian.net/src/libasyncns/0.8-4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libasyncns/0.8-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libcap2=1:2.22-1.2`
 
@@ -1480,10 +1542,11 @@ $ apt-get source -qq --print-uris libcap2=1:2.22-1.2
 'http://deb.debian.org/debian/pool/main/libc/libcap2/libcap2_2.22-1.2.debian.tar.gz' libcap2_2.22-1.2.debian.tar.gz 8617 SHA256:b70ace8971afaeeee88594426c4c2c4d02033dfeea5e3ed657c9f95c885bd050
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/libcap2/1:2.22-1.2/
-- https://sources.debian.net/src/libcap2/1:2.22-1.2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libcap2/1:2.22-1.2/ (for browsing the source)
+- https://sources.debian.net/src/libcap2/1:2.22-1.2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libcap2/1:2.22-1.2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libclass-isa-perl=0.36-3`
 
@@ -1506,10 +1569,11 @@ $ apt-get source -qq --print-uris libclass-isa-perl=0.36-3
 'http://deb.debian.org/debian/pool/main/libc/libclass-isa-perl/libclass-isa-perl_0.36-3.debian.tar.gz' libclass-isa-perl_0.36-3.debian.tar.gz 2354 SHA256:9d7b698160f735ba50e5e25bbabab6a6ec57cb65c15738600fd6cea1d1947df6
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/libclass-isa-perl/0.36-3/
-- https://sources.debian.net/src/libclass-isa-perl/0.36-3/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libclass-isa-perl/0.36-3/ (for browsing the source)
+- https://sources.debian.net/src/libclass-isa-perl/0.36-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libclass-isa-perl/0.36-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libdatrie=0.2.5-3`
 
@@ -1533,10 +1597,11 @@ $ apt-get source -qq --print-uris libdatrie=0.2.5-3
 'http://deb.debian.org/debian/pool/main/libd/libdatrie/libdatrie_0.2.5-3.debian.tar.gz' libdatrie_0.2.5-3.debian.tar.gz 7006 SHA256:5c04454b22b08f0adffdf7e02acbab66d7ac050235bf8803a865d8fd86e57356
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/libdatrie/0.2.5-3/
-- https://sources.debian.net/src/libdatrie/0.2.5-3/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libdatrie/0.2.5-3/ (for browsing the source)
+- https://sources.debian.net/src/libdatrie/0.2.5-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libdatrie/0.2.5-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libffi=3.0.10-3+deb7u2`
 
@@ -1557,10 +1622,11 @@ $ apt-get source -qq --print-uris libffi=3.0.10-3+deb7u2
 'http://security.debian.org/pool/updates/main/libf/libffi/libffi_3.0.10-3+deb7u2.diff.gz' libffi_3.0.10-3+deb7u2.diff.gz 21140 SHA256:67d25925a375e7b8a54616801abd440d6bd42e82298932652c66aa4c3d01bfbc
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/libffi/3.0.10-3+deb7u2/
-- https://sources.debian.net/src/libffi/3.0.10-3+deb7u2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libffi/3.0.10-3+deb7u2/ (for browsing the source)
+- https://sources.debian.net/src/libffi/3.0.10-3+deb7u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libffi/3.0.10-3+deb7u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libgcrypt11=1.5.0-5+deb7u6`
 
@@ -1582,10 +1648,11 @@ $ apt-get source -qq --print-uris libgcrypt11=1.5.0-5+deb7u6
 'http://security.debian.org/pool/updates/main/libg/libgcrypt11/libgcrypt11_1.5.0-5+deb7u6.debian.tar.gz' libgcrypt11_1.5.0-5+deb7u6.debian.tar.gz 38896 SHA256:112613559143ec5f35f809c31e8fb3ae7f64d944df5111d172fb72fe6b159bd3
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/libgcrypt11/1.5.0-5+deb7u6/
-- https://sources.debian.net/src/libgcrypt11/1.5.0-5+deb7u6/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libgcrypt11/1.5.0-5+deb7u6/ (for browsing the source)
+- https://sources.debian.net/src/libgcrypt11/1.5.0-5+deb7u6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libgcrypt11/1.5.0-5+deb7u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libgpg-error=1.10-3.1`
 
@@ -1606,10 +1673,11 @@ $ apt-get source -qq --print-uris libgpg-error=1.10-3.1
 'http://deb.debian.org/debian/pool/main/libg/libgpg-error/libgpg-error_1.10-3.1.debian.tar.gz' libgpg-error_1.10-3.1.debian.tar.gz 309719 SHA256:712f5ef6d358c5c8d74f029bf8fde3b7f15afc15d59f5700398e314197c317fd
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/libgpg-error/1.10-3.1/
-- https://sources.debian.net/src/libgpg-error/1.10-3.1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libgpg-error/1.10-3.1/ (for browsing the source)
+- https://sources.debian.net/src/libgpg-error/1.10-3.1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libgpg-error/1.10-3.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libice=2:1.0.8-2`
 
@@ -1617,8 +1685,8 @@ Binary Packages:
 
 - `libice6:amd64=2:1.0.8-2`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -1630,10 +1698,11 @@ $ apt-get source -qq --print-uris libice=2:1.0.8-2
 'http://deb.debian.org/debian/pool/main/libi/libice/libice_1.0.8-2.diff.gz' libice_1.0.8-2.diff.gz 15480 SHA256:1c0d0174a668ced313c2478d733318ba0769892bbf12def235e2261277916a8a
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/libice/2:1.0.8-2/
-- https://sources.debian.net/src/libice/2:1.0.8-2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libice/2:1.0.8-2/ (for browsing the source)
+- https://sources.debian.net/src/libice/2:1.0.8-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libice/2:1.0.8-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libidn=1.25-2+deb7u3`
 
@@ -1664,10 +1733,11 @@ $ apt-get source -qq --print-uris libidn=1.25-2+deb7u3
 'http://security.debian.org/pool/updates/main/libi/libidn/libidn_1.25-2+deb7u3.debian.tar.gz' libidn_1.25-2+deb7u3.debian.tar.gz 31795 SHA256:11e7ac785ab5a807c3cee12d33f19d763fd056497c6f240235b6d4c8286ce51c
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/libidn/1.25-2+deb7u3/
-- https://sources.debian.net/src/libidn/1.25-2+deb7u3/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libidn/1.25-2+deb7u3/ (for browsing the source)
+- https://sources.debian.net/src/libidn/1.25-2+deb7u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libidn/1.25-2+deb7u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libjpeg8=8d-1+deb7u1`
 
@@ -1675,8 +1745,8 @@ Binary Packages:
 
 - `libjpeg8:amd64=8d-1+deb7u1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -1688,10 +1758,11 @@ $ apt-get source -qq --print-uris libjpeg8=8d-1+deb7u1
 'http://deb.debian.org/debian/pool/main/libj/libjpeg8/libjpeg8_8d-1+deb7u1.debian.tar.gz' libjpeg8_8d-1+deb7u1.debian.tar.gz 14766 SHA256:d9d56f9f88017d6390578c440f38e156969b9ceaf87e065914e5197973bb21e2
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/libjpeg8/8d-1+deb7u1/
-- https://sources.debian.net/src/libjpeg8/8d-1+deb7u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libjpeg8/8d-1+deb7u1/ (for browsing the source)
+- https://sources.debian.net/src/libjpeg8/8d-1+deb7u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libjpeg8/8d-1+deb7u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `liblocale-gettext-perl=1.05-7`
 
@@ -1714,10 +1785,11 @@ $ apt-get source -qq --print-uris liblocale-gettext-perl=1.05-7
 'http://deb.debian.org/debian/pool/main/libl/liblocale-gettext-perl/liblocale-gettext-perl_1.05-7.debian.tar.gz' liblocale-gettext-perl_1.05-7.debian.tar.gz 5552 SHA256:c9faecf09dcae346cedea54988f72be203f21b16227a0879bac9816ef100c560
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/liblocale-gettext-perl/1.05-7/
-- https://sources.debian.net/src/liblocale-gettext-perl/1.05-7/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/liblocale-gettext-perl/1.05-7/ (for browsing the source)
+- https://sources.debian.net/src/liblocale-gettext-perl/1.05-7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/liblocale-gettext-perl/1.05-7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libogg=1.3.0-4`
 
@@ -1725,8 +1797,8 @@ Binary Packages:
 
 - `libogg0:amd64=1.3.0-4`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -1738,10 +1810,11 @@ $ apt-get source -qq --print-uris libogg=1.3.0-4
 'http://deb.debian.org/debian/pool/main/libo/libogg/libogg_1.3.0-4.diff.gz' libogg_1.3.0-4.diff.gz 6852 SHA256:925f61581a0c57dafdda5525a837140492f7bb49c3f2daedcd1ba319e1e03e74
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/libogg/1.3.0-4/
-- https://sources.debian.net/src/libogg/1.3.0-4/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libogg/1.3.0-4/ (for browsing the source)
+- https://sources.debian.net/src/libogg/1.3.0-4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libogg/1.3.0-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libpng=1.2.49-1+deb7u2`
 
@@ -1762,10 +1835,11 @@ $ apt-get source -qq --print-uris libpng=1.2.49-1+deb7u2
 'http://deb.debian.org/debian/pool/main/libp/libpng/libpng_1.2.49-1+deb7u2.debian.tar.bz2' libpng_1.2.49-1+deb7u2.debian.tar.bz2 19640 SHA256:76b2cf0247a62cb41eabc1a5ba4b6599ad73c56654700040bf23e7c6d8c627a7
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/libpng/1.2.49-1+deb7u2/
-- https://sources.debian.net/src/libpng/1.2.49-1+deb7u2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libpng/1.2.49-1+deb7u2/ (for browsing the source)
+- https://sources.debian.net/src/libpng/1.2.49-1+deb7u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libpng/1.2.49-1+deb7u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libselinux=2.1.9-5`
 
@@ -1787,10 +1861,11 @@ $ apt-get source -qq --print-uris libselinux=2.1.9-5
 'http://deb.debian.org/debian/pool/main/libs/libselinux/libselinux_2.1.9-5.debian.tar.gz' libselinux_2.1.9-5.debian.tar.gz 26754 SHA256:ad2e76959abd6e8063b947faa79062405ca60124b3cdb6a190e2490dabd50a66
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/libselinux/2.1.9-5/
-- https://sources.debian.net/src/libselinux/2.1.9-5/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libselinux/2.1.9-5/ (for browsing the source)
+- https://sources.debian.net/src/libselinux/2.1.9-5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libselinux/2.1.9-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libsemanage=2.1.6-6`
 
@@ -1813,10 +1888,11 @@ $ apt-get source -qq --print-uris libsemanage=2.1.6-6
 'http://deb.debian.org/debian/pool/main/libs/libsemanage/libsemanage_2.1.6-6.debian.tar.gz' libsemanage_2.1.6-6.debian.tar.gz 17952 SHA256:91330dd7917160dafb2776c06851a1c1b7e44bc8d5cfd562a96903dab48e91e9
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/libsemanage/2.1.6-6/
-- https://sources.debian.net/src/libsemanage/2.1.6-6/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libsemanage/2.1.6-6/ (for browsing the source)
+- https://sources.debian.net/src/libsemanage/2.1.6-6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libsemanage/2.1.6-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libsepol=2.1.4-3`
 
@@ -1838,10 +1914,11 @@ $ apt-get source -qq --print-uris libsepol=2.1.4-3
 'http://deb.debian.org/debian/pool/main/libs/libsepol/libsepol_2.1.4-3.debian.tar.gz' libsepol_2.1.4-3.debian.tar.gz 14245 SHA256:258d33ffe3cca87bb987c40df621d8e61d412baa3f3dc4f5a2eeb5ab1c97cb61
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/libsepol/2.1.4-3/
-- https://sources.debian.net/src/libsepol/2.1.4-3/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libsepol/2.1.4-3/ (for browsing the source)
+- https://sources.debian.net/src/libsepol/2.1.4-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libsepol/2.1.4-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libsm=2:1.2.1-2`
 
@@ -1849,8 +1926,8 @@ Binary Packages:
 
 - `libsm6:amd64=2:1.2.1-2`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -1862,10 +1939,11 @@ $ apt-get source -qq --print-uris libsm=2:1.2.1-2
 'http://deb.debian.org/debian/pool/main/libs/libsm/libsm_1.2.1-2.diff.gz' libsm_1.2.1-2.diff.gz 15411 SHA256:cc8cc250f80ffefd644d3619a148bc8cc14c1bc6a5e3331266de356236950153
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/libsm/2:1.2.1-2/
-- https://sources.debian.net/src/libsm/2:1.2.1-2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libsm/2:1.2.1-2/ (for browsing the source)
+- https://sources.debian.net/src/libsm/2:1.2.1-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libsm/2:1.2.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libsndfile=1.0.25-9.1+deb7u4`
 
@@ -1886,10 +1964,11 @@ $ apt-get source -qq --print-uris libsndfile=1.0.25-9.1+deb7u4
 'http://security.debian.org/pool/updates/main/libs/libsndfile/libsndfile_1.0.25-9.1+deb7u4.debian.tar.gz' libsndfile_1.0.25-9.1+deb7u4.debian.tar.gz 20181 SHA256:e96902aff51fb58616153b29a52ea2ad3f863a2cf553ca4e1bf10b417305da9f
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/libsndfile/1.0.25-9.1+deb7u4/
-- https://sources.debian.net/src/libsndfile/1.0.25-9.1+deb7u4/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libsndfile/1.0.25-9.1+deb7u4/ (for browsing the source)
+- https://sources.debian.net/src/libsndfile/1.0.25-9.1+deb7u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libsndfile/1.0.25-9.1+deb7u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libssh2=1.4.2-1.1+deb7u2`
 
@@ -1910,10 +1989,11 @@ $ apt-get source -qq --print-uris libssh2=1.4.2-1.1+deb7u2
 'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.4.2-1.1+deb7u2.debian.tar.gz' libssh2_1.4.2-1.1+deb7u2.debian.tar.gz 7720 SHA256:bfcdc8549b87948f2ca396c1ea9456534b03a7f1d0d0ffbabd2408d77e07cdc4
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/libssh2/1.4.2-1.1+deb7u2/
-- https://sources.debian.net/src/libssh2/1.4.2-1.1+deb7u2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libssh2/1.4.2-1.1+deb7u2/ (for browsing the source)
+- https://sources.debian.net/src/libssh2/1.4.2-1.1+deb7u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libssh2/1.4.2-1.1+deb7u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libswitch-perl=2.16-2`
 
@@ -1936,10 +2016,11 @@ $ apt-get source -qq --print-uris libswitch-perl=2.16-2
 'http://deb.debian.org/debian/pool/main/libs/libswitch-perl/libswitch-perl_2.16-2.debian.tar.gz' libswitch-perl_2.16-2.debian.tar.gz 2280 SHA256:0c5e069cd4683b7fafcfb348e2c22a2d4d28432b32e82eabcb4315b668530067
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/libswitch-perl/2.16-2/
-- https://sources.debian.net/src/libswitch-perl/2.16-2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libswitch-perl/2.16-2/ (for browsing the source)
+- https://sources.debian.net/src/libswitch-perl/2.16-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libswitch-perl/2.16-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libtasn1-3=2.13-2+deb7u5`
 
@@ -1963,10 +2044,11 @@ $ apt-get source -qq --print-uris libtasn1-3=2.13-2+deb7u5
 'http://security.debian.org/pool/updates/main/libt/libtasn1-3/libtasn1-3_2.13-2+deb7u5.debian.tar.gz' libtasn1-3_2.13-2+deb7u5.debian.tar.gz 14449 SHA256:a73cfde650ddc086a7681cae367d082b48a9454e225753cb0893180091d2c70c
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/libtasn1-3/2.13-2+deb7u5/
-- https://sources.debian.net/src/libtasn1-3/2.13-2+deb7u5/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libtasn1-3/2.13-2+deb7u5/ (for browsing the source)
+- https://sources.debian.net/src/libtasn1-3/2.13-2+deb7u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libtasn1-3/2.13-2+deb7u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libtext-charwidth-perl=0.04-7`
 
@@ -1988,10 +2070,11 @@ $ apt-get source -qq --print-uris libtext-charwidth-perl=0.04-7
 'http://deb.debian.org/debian/pool/main/libt/libtext-charwidth-perl/libtext-charwidth-perl_0.04-7.debian.tar.bz2' libtext-charwidth-perl_0.04-7.debian.tar.bz2 3220 SHA256:4aa60af66136cad15d3c9ed73696b822c9f944a3b8484b03c388393302fa6038
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/libtext-charwidth-perl/0.04-7/
-- https://sources.debian.net/src/libtext-charwidth-perl/0.04-7/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libtext-charwidth-perl/0.04-7/ (for browsing the source)
+- https://sources.debian.net/src/libtext-charwidth-perl/0.04-7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libtext-charwidth-perl/0.04-7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libtext-iconv-perl=1.7-5`
 
@@ -2013,10 +2096,11 @@ $ apt-get source -qq --print-uris libtext-iconv-perl=1.7-5
 'http://deb.debian.org/debian/pool/main/libt/libtext-iconv-perl/libtext-iconv-perl_1.7-5.debian.tar.bz2' libtext-iconv-perl_1.7-5.debian.tar.bz2 3157 SHA256:e0ee2ae3908bbde6d43098a6491284fdc7a0a117229053d1e9c539eb66127092
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/libtext-iconv-perl/1.7-5/
-- https://sources.debian.net/src/libtext-iconv-perl/1.7-5/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libtext-iconv-perl/1.7-5/ (for browsing the source)
+- https://sources.debian.net/src/libtext-iconv-perl/1.7-5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libtext-iconv-perl/1.7-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libtext-wrapi18n-perl=0.06-7`
 
@@ -2038,10 +2122,11 @@ $ apt-get source -qq --print-uris libtext-wrapi18n-perl=0.06-7
 'http://deb.debian.org/debian/pool/main/libt/libtext-wrapi18n-perl/libtext-wrapi18n-perl_0.06-7.diff.gz' libtext-wrapi18n-perl_0.06-7.diff.gz 3031 SHA256:fae1a435e8b2604bf78666e58e4603728990495db302a9799d63cb099e3b4001
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/libtext-wrapi18n-perl/0.06-7/
-- https://sources.debian.net/src/libtext-wrapi18n-perl/0.06-7/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libtext-wrapi18n-perl/0.06-7/ (for browsing the source)
+- https://sources.debian.net/src/libtext-wrapi18n-perl/0.06-7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libtext-wrapi18n-perl/0.06-7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libthai=0.1.18-2`
 
@@ -2066,10 +2151,11 @@ $ apt-get source -qq --print-uris libthai=0.1.18-2
 'http://deb.debian.org/debian/pool/main/libt/libthai/libthai_0.1.18-2.debian.tar.gz' libthai_0.1.18-2.debian.tar.gz 10121 SHA256:d8de122d398e0bc50b86af90732ac4010a10c4eb9479107ba4416211f25c555e
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/libthai/0.1.18-2/
-- https://sources.debian.net/src/libthai/0.1.18-2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libthai/0.1.18-2/ (for browsing the source)
+- https://sources.debian.net/src/libthai/0.1.18-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libthai/0.1.18-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libusb=2:0.1.12-20+nmu1`
 
@@ -2090,10 +2176,11 @@ $ apt-get source -qq --print-uris libusb=2:0.1.12-20+nmu1
 'http://deb.debian.org/debian/pool/main/libu/libusb/libusb_0.1.12-20+nmu1.debian.tar.gz' libusb_0.1.12-20+nmu1.debian.tar.gz 263472 SHA256:dbdda962bf196d4c98c7d71dffddcc679acbf8ea8c843fc5e1ba0141d57cf729
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/libusb/2:0.1.12-20+nmu1/
-- https://sources.debian.net/src/libusb/2:0.1.12-20+nmu1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libusb/2:0.1.12-20+nmu1/ (for browsing the source)
+- https://sources.debian.net/src/libusb/2:0.1.12-20+nmu1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libusb/2:0.1.12-20+nmu1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libvorbis=1.3.2-1.3`
 
@@ -2102,8 +2189,8 @@ Binary Packages:
 - `libvorbis0a:amd64=1.3.2-1.3`
 - `libvorbisenc2:amd64=1.3.2-1.3`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2115,10 +2202,11 @@ $ apt-get source -qq --print-uris libvorbis=1.3.2-1.3
 'http://deb.debian.org/debian/pool/main/libv/libvorbis/libvorbis_1.3.2-1.3.diff.gz' libvorbis_1.3.2-1.3.diff.gz 8152 SHA256:4c592f9f2fe312d22946fe77beadf7b273a8cc88d0b10d7717081766e5f23c21
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/libvorbis/1.3.2-1.3/
-- https://sources.debian.net/src/libvorbis/1.3.2-1.3/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libvorbis/1.3.2-1.3/ (for browsing the source)
+- https://sources.debian.net/src/libvorbis/1.3.2-1.3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libvorbis/1.3.2-1.3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libx11=2:1.5.0-1+deb7u4`
 
@@ -2128,8 +2216,8 @@ Binary Packages:
 - `libx11-data=2:1.5.0-1+deb7u4`
 - `libx11-xcb1:amd64=2:1.5.0-1+deb7u4`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2140,10 +2228,11 @@ $ apt-get source -qq --print-uris libx11=2:1.5.0-1+deb7u4
 'http://security.debian.org/pool/updates/main/libx/libx11/libx11_1.5.0-1+deb7u4.tar.gz' libx11_1.5.0-1+deb7u4.tar.gz 2682419 SHA256:17eb00a4ce660891caa15d5b6cec99aef6cd69cb456dc4696d96125b13a69454
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/libx11/2:1.5.0-1+deb7u4/
-- https://sources.debian.net/src/libx11/2:1.5.0-1+deb7u4/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libx11/2:1.5.0-1+deb7u4/ (for browsing the source)
+- https://sources.debian.net/src/libx11/2:1.5.0-1+deb7u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libx11/2:1.5.0-1+deb7u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxau=1:1.0.7-1`
 
@@ -2151,8 +2240,8 @@ Binary Packages:
 
 - `libxau6:amd64=1:1.0.7-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2164,10 +2253,11 @@ $ apt-get source -qq --print-uris libxau=1:1.0.7-1
 'http://deb.debian.org/debian/pool/main/libx/libxau/libxau_1.0.7-1.diff.gz' libxau_1.0.7-1.diff.gz 14982 SHA256:0dd842eb448f2ed419f0d4803165b7d0982fbd48cfc14311f0cec5e9fd999db4
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/libxau/1:1.0.7-1/
-- https://sources.debian.net/src/libxau/1:1.0.7-1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libxau/1:1.0.7-1/ (for browsing the source)
+- https://sources.debian.net/src/libxau/1:1.0.7-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libxau/1:1.0.7-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxcb=1.8.1-2+deb7u1`
 
@@ -2177,8 +2267,8 @@ Binary Packages:
 - `libxcb-shm0:amd64=1.8.1-2+deb7u1`
 - `libxcb1:amd64=1.8.1-2+deb7u1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2190,10 +2280,11 @@ $ apt-get source -qq --print-uris libxcb=1.8.1-2+deb7u1
 'http://deb.debian.org/debian/pool/main/libx/libxcb/libxcb_1.8.1-2+deb7u1.diff.gz' libxcb_1.8.1-2+deb7u1.diff.gz 20444 SHA256:be4afeff29eba38f3957ddb9c0575f071f3d889ff52488385c402a1609e0f6fe
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/libxcb/1.8.1-2+deb7u1/
-- https://sources.debian.net/src/libxcb/1.8.1-2+deb7u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libxcb/1.8.1-2+deb7u1/ (for browsing the source)
+- https://sources.debian.net/src/libxcb/1.8.1-2+deb7u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libxcb/1.8.1-2+deb7u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxcomposite=1:0.4.3-2`
 
@@ -2201,8 +2292,8 @@ Binary Packages:
 
 - `libxcomposite1:amd64=1:0.4.3-2`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2214,10 +2305,11 @@ $ apt-get source -qq --print-uris libxcomposite=1:0.4.3-2
 'http://deb.debian.org/debian/pool/main/libx/libxcomposite/libxcomposite_0.4.3-2.diff.gz' libxcomposite_0.4.3-2.diff.gz 15615 SHA256:0249d0390714fa276538364e2e4aa29799ec5478419b65bef186e1c5e9450d3f
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/libxcomposite/1:0.4.3-2/
-- https://sources.debian.net/src/libxcomposite/1:0.4.3-2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libxcomposite/1:0.4.3-2/ (for browsing the source)
+- https://sources.debian.net/src/libxcomposite/1:0.4.3-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libxcomposite/1:0.4.3-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxcursor=1:1.1.13-1+deb7u1`
 
@@ -2225,8 +2317,8 @@ Binary Packages:
 
 - `libxcursor1:amd64=1:1.1.13-1+deb7u1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2238,10 +2330,11 @@ $ apt-get source -qq --print-uris libxcursor=1:1.1.13-1+deb7u1
 'http://deb.debian.org/debian/pool/main/libx/libxcursor/libxcursor_1.1.13-1+deb7u1.diff.gz' libxcursor_1.1.13-1+deb7u1.diff.gz 18083 SHA256:d0edf9a850d49b149f16ccc17b6a6138647ea715291aa81f65201759952ef7b2
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/libxcursor/1:1.1.13-1+deb7u1/
-- https://sources.debian.net/src/libxcursor/1:1.1.13-1+deb7u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libxcursor/1:1.1.13-1+deb7u1/ (for browsing the source)
+- https://sources.debian.net/src/libxcursor/1:1.1.13-1+deb7u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libxcursor/1:1.1.13-1+deb7u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxdamage=1:1.1.3-2`
 
@@ -2249,8 +2342,8 @@ Binary Packages:
 
 - `libxdamage1:amd64=1:1.1.3-2`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2262,10 +2355,11 @@ $ apt-get source -qq --print-uris libxdamage=1:1.1.3-2
 'http://deb.debian.org/debian/pool/main/libx/libxdamage/libxdamage_1.1.3-2.diff.gz' libxdamage_1.1.3-2.diff.gz 14984 SHA256:02335f95740c1b094d8717b6c0b295b0f77483169b25a30a1559993911d8725e
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/libxdamage/1:1.1.3-2/
-- https://sources.debian.net/src/libxdamage/1:1.1.3-2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libxdamage/1:1.1.3-2/ (for browsing the source)
+- https://sources.debian.net/src/libxdamage/1:1.1.3-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libxdamage/1:1.1.3-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxdmcp=1:1.1.1-1`
 
@@ -2273,8 +2367,8 @@ Binary Packages:
 
 - `libxdmcp6:amd64=1:1.1.1-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2286,10 +2380,11 @@ $ apt-get source -qq --print-uris libxdmcp=1:1.1.1-1
 'http://deb.debian.org/debian/pool/main/libx/libxdmcp/libxdmcp_1.1.1-1.diff.gz' libxdmcp_1.1.1-1.diff.gz 14891 SHA256:bb79bc8439d63d5bed6bf7544f1ed14b4606c246f724523da2fa921cc9929f19
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/libxdmcp/1:1.1.1-1/
-- https://sources.debian.net/src/libxdmcp/1:1.1.1-1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libxdmcp/1:1.1.1-1/ (for browsing the source)
+- https://sources.debian.net/src/libxdmcp/1:1.1.1-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libxdmcp/1:1.1.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxext=2:1.3.1-2+deb7u1`
 
@@ -2297,8 +2392,8 @@ Binary Packages:
 
 - `libxext6:amd64=2:1.3.1-2+deb7u1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2310,10 +2405,11 @@ $ apt-get source -qq --print-uris libxext=2:1.3.1-2+deb7u1
 'http://deb.debian.org/debian/pool/main/libx/libxext/libxext_1.3.1-2+deb7u1.diff.gz' libxext_1.3.1-2+deb7u1.diff.gz 23167 SHA256:a9535d7f34b685862502636a7bea6db7765dc491d1b68ccf19887556fad43ec4
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/libxext/2:1.3.1-2+deb7u1/
-- https://sources.debian.net/src/libxext/2:1.3.1-2+deb7u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libxext/2:1.3.1-2+deb7u1/ (for browsing the source)
+- https://sources.debian.net/src/libxext/2:1.3.1-2+deb7u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libxext/2:1.3.1-2+deb7u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxfixes=1:5.0-4+deb7u2`
 
@@ -2321,8 +2417,8 @@ Binary Packages:
 
 - `libxfixes3:amd64=1:5.0-4+deb7u2`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2334,10 +2430,11 @@ $ apt-get source -qq --print-uris libxfixes=1:5.0-4+deb7u2
 'http://security.debian.org/pool/updates/main/libx/libxfixes/libxfixes_5.0-4+deb7u2.diff.gz' libxfixes_5.0-4+deb7u2.diff.gz 7805 SHA256:89c814567b952964ba347f84443d546aa98f02107af711ba48575c2cf10fa7fd
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/libxfixes/1:5.0-4+deb7u2/
-- https://sources.debian.net/src/libxfixes/1:5.0-4+deb7u2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libxfixes/1:5.0-4+deb7u2/ (for browsing the source)
+- https://sources.debian.net/src/libxfixes/1:5.0-4+deb7u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libxfixes/1:5.0-4+deb7u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxi=2:1.6.1-1+deb7u3`
 
@@ -2345,8 +2442,8 @@ Binary Packages:
 
 - `libxi6:amd64=2:1.6.1-1+deb7u3`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2358,10 +2455,11 @@ $ apt-get source -qq --print-uris libxi=2:1.6.1-1+deb7u3
 'http://security.debian.org/pool/updates/main/libx/libxi/libxi_1.6.1-1+deb7u3.diff.gz' libxi_1.6.1-1+deb7u3.diff.gz 25721 SHA256:9c9abe8bbbe5b7144e2993a0fa727e18f79a6b9de4b940429a575136c2b5a0dd
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/libxi/2:1.6.1-1+deb7u3/
-- https://sources.debian.net/src/libxi/2:1.6.1-1+deb7u3/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libxi/2:1.6.1-1+deb7u3/ (for browsing the source)
+- https://sources.debian.net/src/libxi/2:1.6.1-1+deb7u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libxi/2:1.6.1-1+deb7u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxinerama=2:1.1.2-1+deb7u1`
 
@@ -2369,8 +2467,8 @@ Binary Packages:
 
 - `libxinerama1:amd64=2:1.1.2-1+deb7u1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2382,10 +2480,11 @@ $ apt-get source -qq --print-uris libxinerama=2:1.1.2-1+deb7u1
 'http://deb.debian.org/debian/pool/main/libx/libxinerama/libxinerama_1.1.2-1+deb7u1.diff.gz' libxinerama_1.1.2-1+deb7u1.diff.gz 16845 SHA256:7bc0f6a0cdc3e55260c0d2458ac4f6a7ffacb391b1db064a1170ed1abd8a9813
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/libxinerama/2:1.1.2-1+deb7u1/
-- https://sources.debian.net/src/libxinerama/2:1.1.2-1+deb7u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libxinerama/2:1.1.2-1+deb7u1/ (for browsing the source)
+- https://sources.debian.net/src/libxinerama/2:1.1.2-1+deb7u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libxinerama/2:1.1.2-1+deb7u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxml2=2.8.0+dfsg1-7+wheezy9`
 
@@ -2393,8 +2492,8 @@ Binary Packages:
 
 - `libxml2:amd64=2.8.0+dfsg1-7+wheezy9`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2406,10 +2505,11 @@ $ apt-get source -qq --print-uris libxml2=2.8.0+dfsg1-7+wheezy9
 'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.8.0+dfsg1-7+wheezy9.debian.tar.gz' libxml2_2.8.0+dfsg1-7+wheezy9.debian.tar.gz 74726 SHA256:b2a873ae7edae2ac04acccea346ecace4d4432e40ac47c878d6dd65347fbdf9f
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/libxml2/2.8.0+dfsg1-7+wheezy9/
-- https://sources.debian.net/src/libxml2/2.8.0+dfsg1-7+wheezy9/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libxml2/2.8.0+dfsg1-7+wheezy9/ (for browsing the source)
+- https://sources.debian.net/src/libxml2/2.8.0+dfsg1-7+wheezy9/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libxml2/2.8.0+dfsg1-7+wheezy9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxrandr=2:1.3.2-2+deb7u2`
 
@@ -2417,8 +2517,8 @@ Binary Packages:
 
 - `libxrandr2:amd64=2:1.3.2-2+deb7u2`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2430,10 +2530,11 @@ $ apt-get source -qq --print-uris libxrandr=2:1.3.2-2+deb7u2
 'http://security.debian.org/pool/updates/main/libx/libxrandr/libxrandr_1.3.2-2+deb7u2.diff.gz' libxrandr_1.3.2-2+deb7u2.diff.gz 20593 SHA256:7badcd10aca24a6b6d9080c11173ef13587b1caea3097992e30243e47c5f05c4
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/libxrandr/2:1.3.2-2+deb7u2/
-- https://sources.debian.net/src/libxrandr/2:1.3.2-2+deb7u2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libxrandr/2:1.3.2-2+deb7u2/ (for browsing the source)
+- https://sources.debian.net/src/libxrandr/2:1.3.2-2+deb7u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libxrandr/2:1.3.2-2+deb7u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxrender=1:0.9.7-1+deb7u3`
 
@@ -2441,8 +2542,8 @@ Binary Packages:
 
 - `libxrender1:amd64=1:0.9.7-1+deb7u3`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2454,10 +2555,11 @@ $ apt-get source -qq --print-uris libxrender=1:0.9.7-1+deb7u3
 'http://security.debian.org/pool/updates/main/libx/libxrender/libxrender_0.9.7-1+deb7u3.diff.gz' libxrender_0.9.7-1+deb7u3.diff.gz 21235 SHA256:35bc64e73c2024639ad25a0f1cc41ad2d80af7be1219eec059a2809c4ad767c2
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/libxrender/1:0.9.7-1+deb7u3/
-- https://sources.debian.net/src/libxrender/1:0.9.7-1+deb7u3/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libxrender/1:0.9.7-1+deb7u3/ (for browsing the source)
+- https://sources.debian.net/src/libxrender/1:0.9.7-1+deb7u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libxrender/1:0.9.7-1+deb7u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxtst=2:1.2.1-1+deb7u2`
 
@@ -2465,8 +2567,8 @@ Binary Packages:
 
 - `libxtst6:amd64=2:1.2.1-1+deb7u2`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2478,10 +2580,11 @@ $ apt-get source -qq --print-uris libxtst=2:1.2.1-1+deb7u2
 'http://security.debian.org/pool/updates/main/libx/libxtst/libxtst_1.2.1-1+deb7u2.diff.gz' libxtst_1.2.1-1+deb7u2.diff.gz 18560 SHA256:022f51e9e06574c4ffef5c39c38d977cd85d3a4016f3adf02b0f9c0ca4648891
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/libxtst/2:1.2.1-1+deb7u2/
-- https://sources.debian.net/src/libxtst/2:1.2.1-1+deb7u2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libxtst/2:1.2.1-1+deb7u2/ (for browsing the source)
+- https://sources.debian.net/src/libxtst/2:1.2.1-1+deb7u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libxtst/2:1.2.1-1+deb7u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=4.1+Debian8+deb7u1`
 
@@ -2502,10 +2605,11 @@ $ apt-get source -qq --print-uris lsb=4.1+Debian8+deb7u1
 'http://deb.debian.org/debian/pool/main/l/lsb/lsb_4.1+Debian8+deb7u1.tar.bz2' lsb_4.1+Debian8+deb7u1.tar.bz2 60640 SHA256:c0b0faba3a105b0a93b9975957880df59ac29fc2a978e5cf7be8eb3faf53c55c
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/lsb/4.1+Debian8+deb7u1/
-- https://sources.debian.net/src/lsb/4.1+Debian8+deb7u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/lsb/4.1+Debian8+deb7u1/ (for browsing the source)
+- https://sources.debian.net/src/lsb/4.1+Debian8+deb7u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/lsb/4.1+Debian8+deb7u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mawk=1.3.3-17`
 
@@ -2526,10 +2630,11 @@ $ apt-get source -qq --print-uris mawk=1.3.3-17
 'http://deb.debian.org/debian/pool/main/m/mawk/mawk_1.3.3-17.diff.gz' mawk_1.3.3-17.diff.gz 63506 SHA256:13cb66b6eb5ee654d5626621d5ef476ede6b0bebac18ce765516de810e58490c
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/mawk/1.3.3-17/
-- https://sources.debian.net/src/mawk/1.3.3-17/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/mawk/1.3.3-17/ (for browsing the source)
+- https://sources.debian.net/src/mawk/1.3.3-17/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/mawk/1.3.3-17/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ncurses=5.9-10`
 
@@ -2540,8 +2645,8 @@ Binary Packages:
 - `ncurses-base=5.9-10`
 - `ncurses-bin=5.9-10`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2553,10 +2658,11 @@ $ apt-get source -qq --print-uris ncurses=5.9-10
 'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_5.9-10.debian.tar.gz' ncurses_5.9-10.debian.tar.gz 105737 SHA256:bf16b818751a3c4a09aa25756fa00e20850787c4fb4341cdf23cd4528e3a8abb
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/ncurses/5.9-10/
-- https://sources.debian.net/src/ncurses/5.9-10/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/ncurses/5.9-10/ (for browsing the source)
+- https://sources.debian.net/src/ncurses/5.9-10/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ncurses/5.9-10/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `netbase=5.0`
 
@@ -2576,10 +2682,11 @@ $ apt-get source -qq --print-uris netbase=5.0
 'http://deb.debian.org/debian/pool/main/n/netbase/netbase_5.0.tar.gz' netbase_5.0.tar.gz 34915 SHA256:ac9424d3cb2bd3c07b6c5bc5875c434d3bc687a73cd7c54b7dc7122308afa9dc
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/netbase/5.0/
-- https://sources.debian.net/src/netbase/5.0/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/netbase/5.0/ (for browsing the source)
+- https://sources.debian.net/src/netbase/5.0/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/netbase/5.0/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `nspr=2:4.12-1+deb7u1`
 
@@ -2587,8 +2694,8 @@ Binary Packages:
 
 - `libnspr4:amd64=2:4.12-1+deb7u1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2600,10 +2707,11 @@ $ apt-get source -qq --print-uris nspr=2:4.12-1+deb7u1
 'http://security.debian.org/pool/updates/main/n/nspr/nspr_4.12-1+deb7u1.debian.tar.gz' nspr_4.12-1+deb7u1.debian.tar.gz 15563 SHA256:63d6786ee792c691a9daf5bae0979f1c7e23c045299fdb056bf2f488a79e94e2
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/nspr/2:4.12-1+deb7u1/
-- https://sources.debian.net/src/nspr/2:4.12-1+deb7u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/nspr/2:4.12-1+deb7u1/ (for browsing the source)
+- https://sources.debian.net/src/nspr/2:4.12-1+deb7u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/nspr/2:4.12-1+deb7u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `nss=2:3.26-1+debu7u4`
 
@@ -2611,8 +2719,8 @@ Binary Packages:
 
 - `libnss3:amd64=2:3.26-1+debu7u4`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2624,10 +2732,11 @@ $ apt-get source -qq --print-uris nss=2:3.26-1+debu7u4
 'http://security.debian.org/pool/updates/main/n/nss/nss_3.26-1+debu7u4.debian.tar.gz' nss_3.26-1+debu7u4.debian.tar.gz 42175 SHA256:f089dd13ceb14f68bebdb3909cb32594173d13d2178787d8f3de27a5c3992a9d
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/nss/2:3.26-1+debu7u4/
-- https://sources.debian.net/src/nss/2:3.26-1+debu7u4/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/nss/2:3.26-1+debu7u4/ (for browsing the source)
+- https://sources.debian.net/src/nss/2:3.26-1+debu7u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/nss/2:3.26-1+debu7u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openjdk-6=6b38-1.13.10-1~deb7u1`
 
@@ -2654,10 +2763,11 @@ $ apt-get source -qq --print-uris openjdk-6=6b38-1.13.10-1~deb7u1
 'http://deb.debian.org/debian/pool/main/o/openjdk-6/openjdk-6_6b38-1.13.10-1~deb7u1.diff.gz' openjdk-6_6b38-1.13.10-1~deb7u1.diff.gz 202624 SHA256:7f9b2d5248ca56ca01d4e511c96524c3303a2cebcb1d490392941042b3b17c08
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/openjdk-6/6b38-1.13.10-1~deb7u1/
-- https://sources.debian.net/src/openjdk-6/6b38-1.13.10-1~deb7u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/openjdk-6/6b38-1.13.10-1~deb7u1/ (for browsing the source)
+- https://sources.debian.net/src/openjdk-6/6b38-1.13.10-1~deb7u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openjdk-6/6b38-1.13.10-1~deb7u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.4.31-2+deb7u3`
 
@@ -2665,8 +2775,8 @@ Binary Packages:
 
 - `libldap-2.4-2:amd64=2.4.31-2+deb7u3`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2678,10 +2788,11 @@ $ apt-get source -qq --print-uris openldap=2.4.31-2+deb7u3
 'http://security.debian.org/pool/updates/main/o/openldap/openldap_2.4.31-2+deb7u3.diff.gz' openldap_2.4.31-2+deb7u3.diff.gz 166505 SHA256:699983d42003b2c7402703c33510007c64daafbdf90250199e56bdaf40537aaa
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/openldap/2.4.31-2+deb7u3/
-- https://sources.debian.net/src/openldap/2.4.31-2+deb7u3/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/openldap/2.4.31-2+deb7u3/ (for browsing the source)
+- https://sources.debian.net/src/openldap/2.4.31-2+deb7u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openldap/2.4.31-2+deb7u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=1.0.1t-1+deb7u2`
 
@@ -2690,8 +2801,8 @@ Binary Packages:
 - `libssl1.0.0:amd64=1.0.1t-1+deb7u2`
 - `openssl=1.0.1t-1+deb7u2`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2703,10 +2814,11 @@ $ apt-get source -qq --print-uris openssl=1.0.1t-1+deb7u2
 'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb7u2.debian.tar.gz' openssl_1.0.1t-1+deb7u2.debian.tar.gz 117331 SHA256:0ceea11701c070fff718ad7021d52db1f5a3bbde1b68d508d3f29571678fc69a
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/openssl/1.0.1t-1+deb7u2/
-- https://sources.debian.net/src/openssl/1.0.1t-1+deb7u2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/openssl/1.0.1t-1+deb7u2/ (for browsing the source)
+- https://sources.debian.net/src/openssl/1.0.1t-1+deb7u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/1.0.1t-1+deb7u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.12-3`
 
@@ -2729,10 +2841,11 @@ $ apt-get source -qq --print-uris p11-kit=0.12-3
 'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.12-3.debian.tar.gz' p11-kit_0.12-3.debian.tar.gz 7217 SHA256:c9580da7fce54a6d6f0b119a8a12d37af91d50527d6c75c62d600d6ef28a84d5
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/p11-kit/0.12-3/
-- https://sources.debian.net/src/p11-kit/0.12-3/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/p11-kit/0.12-3/ (for browsing the source)
+- https://sources.debian.net/src/p11-kit/0.12-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/p11-kit/0.12-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pam=1.1.3-7.1`
 
@@ -2756,10 +2869,11 @@ $ apt-get source -qq --print-uris pam=1.1.3-7.1
 'http://deb.debian.org/debian/pool/main/p/pam/pam_1.1.3-7.1.diff.gz' pam_1.1.3-7.1.diff.gz 273542 SHA256:0674e550823033afd3293a4a0e4a9b1d1d4724bd9f150d4a7096e4d9eb4546d2
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/pam/1.1.3-7.1/
-- https://sources.debian.net/src/pam/1.1.3-7.1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/pam/1.1.3-7.1/ (for browsing the source)
+- https://sources.debian.net/src/pam/1.1.3-7.1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/pam/1.1.3-7.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pango1.0=1.30.0-1`
 
@@ -2780,10 +2894,11 @@ $ apt-get source -qq --print-uris pango1.0=1.30.0-1
 'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.30.0-1.debian.tar.xz' pango1.0_1.30.0-1.debian.tar.xz 27676 SHA256:2511ea280d7a944f722612eb38cf71ddc078c25a8d23f7abbed0d8c89c3bd73c
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/pango1.0/1.30.0-1/
-- https://sources.debian.net/src/pango1.0/1.30.0-1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/pango1.0/1.30.0-1/ (for browsing the source)
+- https://sources.debian.net/src/pango1.0/1.30.0-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/pango1.0/1.30.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pcre3=1:8.30-5`
 
@@ -2791,8 +2906,8 @@ Binary Packages:
 
 - `libpcre3:amd64=1:8.30-5`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2804,10 +2919,11 @@ $ apt-get source -qq --print-uris pcre3=1:8.30-5
 'http://deb.debian.org/debian/pool/main/p/pcre3/pcre3_8.30-5.debian.tar.gz' pcre3_8.30-5.debian.tar.gz 15126 SHA256:a137418124d4652aa7614e0c12079a4acd90e02e0ca1c8cf33e348326701f309
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/pcre3/1:8.30-5/
-- https://sources.debian.net/src/pcre3/1:8.30-5/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/pcre3/1:8.30-5/ (for browsing the source)
+- https://sources.debian.net/src/pcre3/1:8.30-5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/pcre3/1:8.30-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pcsc-lite=1.8.4-1+deb7u2`
 
@@ -2832,10 +2948,11 @@ $ apt-get source -qq --print-uris pcsc-lite=1.8.4-1+deb7u2
 'http://security.debian.org/pool/updates/main/p/pcsc-lite/pcsc-lite_1.8.4-1+deb7u2.debian.tar.gz' pcsc-lite_1.8.4-1+deb7u2.debian.tar.gz 16663 SHA256:f2db69a0e7c66cdfa48e10e470a44bcfe5fb5ca3d212afe8edb0f64ba280a6f4
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/pcsc-lite/1.8.4-1+deb7u2/
-- https://sources.debian.net/src/pcsc-lite/1.8.4-1+deb7u2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/pcsc-lite/1.8.4-1+deb7u2/ (for browsing the source)
+- https://sources.debian.net/src/pcsc-lite/1.8.4-1+deb7u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/pcsc-lite/1.8.4-1+deb7u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `perl=5.14.2-21+deb7u5`
 
@@ -2879,10 +2996,11 @@ $ apt-get source -qq --print-uris perl=5.14.2-21+deb7u5
 'http://security.debian.org/pool/updates/main/p/perl/perl_5.14.2-21+deb7u5.debian.tar.gz' perl_5.14.2-21+deb7u5.debian.tar.gz 194825 SHA256:bc1957c557e945349bfbc59ccfb994502c340e448ca33d8f197b8567ea6a9d11
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/perl/5.14.2-21+deb7u5/
-- https://sources.debian.net/src/perl/5.14.2-21+deb7u5/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/perl/5.14.2-21+deb7u5/ (for browsing the source)
+- https://sources.debian.net/src/perl/5.14.2-21+deb7u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/perl/5.14.2-21+deb7u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pixman=0.26.0-4+deb7u2`
 
@@ -2890,8 +3008,8 @@ Binary Packages:
 
 - `libpixman-1-0:amd64=0.26.0-4+deb7u2`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -2903,10 +3021,11 @@ $ apt-get source -qq --print-uris pixman=0.26.0-4+deb7u2
 'http://deb.debian.org/debian/pool/main/p/pixman/pixman_0.26.0-4+deb7u2.diff.gz' pixman_0.26.0-4+deb7u2.diff.gz 211823 SHA256:e44fd8946baa104f8b0749b26697280370b7c299a61262e15fef259df3ed4f95
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/pixman/0.26.0-4+deb7u2/
-- https://sources.debian.net/src/pixman/0.26.0-4+deb7u2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/pixman/0.26.0-4+deb7u2/ (for browsing the source)
+- https://sources.debian.net/src/pixman/0.26.0-4+deb7u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/pixman/0.26.0-4+deb7u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pulseaudio=2.0-6.1`
 
@@ -2932,10 +3051,11 @@ $ apt-get source -qq --print-uris pulseaudio=2.0-6.1
 'http://deb.debian.org/debian/pool/main/p/pulseaudio/pulseaudio_2.0-6.1.debian.tar.xz' pulseaudio_2.0-6.1.debian.tar.xz 25644 SHA256:7bf0f41816206322ce32e019d505479499a9687c3cac8f0ae8ea7505ebf6da57
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/pulseaudio/2.0-6.1/
-- https://sources.debian.net/src/pulseaudio/2.0-6.1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/pulseaudio/2.0-6.1/ (for browsing the source)
+- https://sources.debian.net/src/pulseaudio/2.0-6.1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/pulseaudio/2.0-6.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline6=6.2+dfsg-0.1`
 
@@ -2957,10 +3077,11 @@ $ apt-get source -qq --print-uris readline6=6.2+dfsg-0.1
 'http://deb.debian.org/debian/pool/main/r/readline6/readline6_6.2+dfsg-0.1.debian.tar.gz' readline6_6.2+dfsg-0.1.debian.tar.gz 28710 SHA256:ee86c686b43fb048d18663de8a150032aee3ef2a8f14bcc1ca42624ccdadd499
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/readline6/6.2+dfsg-0.1/
-- https://sources.debian.net/src/readline6/6.2+dfsg-0.1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/readline6/6.2+dfsg-0.1/ (for browsing the source)
+- https://sources.debian.net/src/readline6/6.2+dfsg-0.1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/readline6/6.2+dfsg-0.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rtmpdump=2.4+20111222.git4e06e21-1+deb7u1`
 
@@ -2982,10 +3103,11 @@ $ apt-get source -qq --print-uris rtmpdump=2.4+20111222.git4e06e21-1+deb7u1
 'http://security.debian.org/pool/updates/main/r/rtmpdump/rtmpdump_2.4+20111222.git4e06e21-1+deb7u1.debian.tar.gz' rtmpdump_2.4+20111222.git4e06e21-1+deb7u1.debian.tar.gz 7735 SHA256:b76a37e5bb7fd642cd4e67df734d0bbebef307991d0ae7ddd35f98bc9ee35ca9
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/rtmpdump/2.4+20111222.git4e06e21-1+deb7u1/
-- https://sources.debian.net/src/rtmpdump/2.4+20111222.git4e06e21-1+deb7u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/rtmpdump/2.4+20111222.git4e06e21-1+deb7u1/ (for browsing the source)
+- https://sources.debian.net/src/rtmpdump/2.4+20111222.git4e06e21-1+deb7u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/rtmpdump/2.4+20111222.git4e06e21-1+deb7u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sed=4.2.1-10`
 
@@ -3006,10 +3128,11 @@ $ apt-get source -qq --print-uris sed=4.2.1-10
 'http://deb.debian.org/debian/pool/main/s/sed/sed_4.2.1-10.debian.tar.gz' sed_4.2.1-10.debian.tar.gz 67497 SHA256:18c05427b7808ab74ba20b487f9e80747ba48afe5d3d8145b468e42c2a697ae2
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/sed/4.2.1-10/
-- https://sources.debian.net/src/sed/4.2.1-10/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/sed/4.2.1-10/ (for browsing the source)
+- https://sources.debian.net/src/sed/4.2.1-10/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/sed/4.2.1-10/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sensible-utils=0.0.7`
 
@@ -3029,10 +3152,11 @@ $ apt-get source -qq --print-uris sensible-utils=0.0.7
 'http://deb.debian.org/debian/pool/main/s/sensible-utils/sensible-utils_0.0.7.tar.gz' sensible-utils_0.0.7.tar.gz 74700 SHA256:6b4d5d8787743aac1f80949ae0592c61266bfba507491ae0aab99355ed57642a
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/sensible-utils/0.0.7/
-- https://sources.debian.net/src/sensible-utils/0.0.7/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/sensible-utils/0.0.7/ (for browsing the source)
+- https://sources.debian.net/src/sensible-utils/0.0.7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/sensible-utils/0.0.7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sgml-base=1.26+nmu4`
 
@@ -3052,10 +3176,11 @@ $ apt-get source -qq --print-uris sgml-base=1.26+nmu4
 'http://deb.debian.org/debian/pool/main/s/sgml-base/sgml-base_1.26+nmu4.tar.gz' sgml-base_1.26+nmu4.tar.gz 12845 SHA256:7aea8d5d404476754363763e2bef2bafd52e90e68eb7055366432624cab6c667
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/sgml-base/1.26+nmu4/
-- https://sources.debian.net/src/sgml-base/1.26+nmu4/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/sgml-base/1.26+nmu4/ (for browsing the source)
+- https://sources.debian.net/src/sgml-base/1.26+nmu4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/sgml-base/1.26+nmu4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `shadow=1:4.1.5.1-1+deb7u1`
 
@@ -3077,10 +3202,11 @@ $ apt-get source -qq --print-uris shadow=1:4.1.5.1-1+deb7u1
 'http://security.debian.org/pool/updates/main/s/shadow/shadow_4.1.5.1-1+deb7u1.diff.gz' shadow_4.1.5.1-1+deb7u1.diff.gz 81816 SHA256:75872dd557090197966644ae8e2855f6967d8d24ca48d0edd707f56fdfbd638f
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/shadow/1:4.1.5.1-1+deb7u1/
-- https://sources.debian.net/src/shadow/1:4.1.5.1-1+deb7u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/shadow/1:4.1.5.1-1+deb7u1/ (for browsing the source)
+- https://sources.debian.net/src/shadow/1:4.1.5.1-1+deb7u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/shadow/1:4.1.5.1-1+deb7u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `shared-mime-info=1.0-1`
 
@@ -3101,10 +3227,11 @@ $ apt-get source -qq --print-uris shared-mime-info=1.0-1
 'http://deb.debian.org/debian/pool/main/s/shared-mime-info/shared-mime-info_1.0-1.debian.tar.gz' shared-mime-info_1.0-1.debian.tar.gz 10839 SHA256:3a6ee0db75ba4d46b0f3c05780271b9b4cc0b305bf8d1eaf402b56af7b0d55a8
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/shared-mime-info/1.0-1/
-- https://sources.debian.net/src/shared-mime-info/1.0-1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/shared-mime-info/1.0-1/ (for browsing the source)
+- https://sources.debian.net/src/shared-mime-info/1.0-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/shared-mime-info/1.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `slang2=2.2.4-15`
 
@@ -3126,10 +3253,11 @@ $ apt-get source -qq --print-uris slang2=2.2.4-15
 'http://deb.debian.org/debian/pool/main/s/slang2/slang2_2.2.4-15.debian.tar.xz' slang2_2.2.4-15.debian.tar.xz 19092 SHA256:1440a1fca38bdb30a53ba03032faed70f1110f3e7f775e7135645aadbae405d6
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/slang2/2.2.4-15/
-- https://sources.debian.net/src/slang2/2.2.4-15/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/slang2/2.2.4-15/ (for browsing the source)
+- https://sources.debian.net/src/slang2/2.2.4-15/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/slang2/2.2.4-15/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sqlite3=3.7.13-1+deb7u4`
 
@@ -3137,8 +3265,8 @@ Binary Packages:
 
 - `libsqlite3-0:amd64=3.7.13-1+deb7u4`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -3151,10 +3279,11 @@ $ apt-get source -qq --print-uris sqlite3=3.7.13-1+deb7u4
 'http://security.debian.org/pool/updates/main/s/sqlite3/sqlite3_3.7.13-1+deb7u4.debian.tar.gz' sqlite3_3.7.13-1+deb7u4.debian.tar.gz 22519 SHA256:4a400935fb1472e25af4e9bb11f97ce4c898a72223acea5263613e70bdb78138
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/sqlite3/3.7.13-1+deb7u4/
-- https://sources.debian.net/src/sqlite3/3.7.13-1+deb7u4/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/sqlite3/3.7.13-1+deb7u4/ (for browsing the source)
+- https://sources.debian.net/src/sqlite3/3.7.13-1+deb7u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/sqlite3/3.7.13-1+deb7u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=44-11+deb7u5`
 
@@ -3175,10 +3304,11 @@ $ apt-get source -qq --print-uris systemd=44-11+deb7u5
 'http://security.debian.org/pool/updates/main/s/systemd/systemd_44-11+deb7u5.debian.tar.gz' systemd_44-11+deb7u5.debian.tar.gz 33488 SHA256:320c60d140116c736dcc9ffb89892ea0d92c6cff051ff579b6c04a3ab12e7d90
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/systemd/44-11+deb7u5/
-- https://sources.debian.net/src/systemd/44-11+deb7u5/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/systemd/44-11+deb7u5/ (for browsing the source)
+- https://sources.debian.net/src/systemd/44-11+deb7u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/systemd/44-11+deb7u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-41+deb7u1`
 
@@ -3202,10 +3332,11 @@ $ apt-get source -qq --print-uris sysvinit=2.88dsf-41+deb7u1
 'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_2.88dsf-41+deb7u1.debian.tar.gz' sysvinit_2.88dsf-41+deb7u1.debian.tar.gz 213657 SHA256:29795d8855a6bb0cbb0bec7c3d9f666b92c40a5d6157b61cd727de4819f45827
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/sysvinit/2.88dsf-41+deb7u1/
-- https://sources.debian.net/src/sysvinit/2.88dsf-41+deb7u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/sysvinit/2.88dsf-41+deb7u1/ (for browsing the source)
+- https://sources.debian.net/src/sysvinit/2.88dsf-41+deb7u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/sysvinit/2.88dsf-41+deb7u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tar=1.26+dfsg-0.1+deb7u1`
 
@@ -3227,10 +3358,11 @@ $ apt-get source -qq --print-uris tar=1.26+dfsg-0.1+deb7u1
 'http://security.debian.org/pool/updates/main/t/tar/tar_1.26+dfsg-0.1+deb7u1.debian.tar.gz' tar_1.26+dfsg-0.1+deb7u1.debian.tar.gz 33515 SHA256:49a050cb0c1ed62f6688f0e7f32f44994fab029b4195b8eaf295afd9a0013f4b
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/tar/1.26+dfsg-0.1+deb7u1/
-- https://sources.debian.net/src/tar/1.26+dfsg-0.1+deb7u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/tar/1.26+dfsg-0.1+deb7u1/ (for browsing the source)
+- https://sources.debian.net/src/tar/1.26+dfsg-0.1+deb7u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tar/1.26+dfsg-0.1+deb7u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tcp-wrappers=7.6.q-24`
 
@@ -3239,8 +3371,8 @@ Binary Packages:
 - `libwrap0:amd64=7.6.q-24`
 - `tcpd=7.6.q-24`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -3252,10 +3384,11 @@ $ apt-get source -qq --print-uris tcp-wrappers=7.6.q-24
 'http://deb.debian.org/debian/pool/main/t/tcp-wrappers/tcp-wrappers_7.6.q-24.debian.tar.xz' tcp-wrappers_7.6.q-24.debian.tar.xz 35396 SHA256:672ad0d3f70579815cd8f15c29054c49f6fd9902863be42cc2452a9ecbe8eacd
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/tcp-wrappers/7.6.q-24/
-- https://sources.debian.net/src/tcp-wrappers/7.6.q-24/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/tcp-wrappers/7.6.q-24/ (for browsing the source)
+- https://sources.debian.net/src/tcp-wrappers/7.6.q-24/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tcp-wrappers/7.6.q-24/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tiff3=3.9.6-11+deb7u8`
 
@@ -3263,8 +3396,8 @@ Binary Packages:
 
 - `libtiff4:amd64=3.9.6-11+deb7u8`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -3276,10 +3409,11 @@ $ apt-get source -qq --print-uris tiff3=3.9.6-11+deb7u8
 'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6-11+deb7u8.debian.tar.gz' tiff3_3.9.6-11+deb7u8.debian.tar.gz 48768 SHA256:e3991b5039e7e8c0833ac7f646b116278bb9196f7107ce85d4a98ced2e1e7092
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/tiff3/3.9.6-11+deb7u8/
-- https://sources.debian.net/src/tiff3/3.9.6-11+deb7u8/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/tiff3/3.9.6-11+deb7u8/ (for browsing the source)
+- https://sources.debian.net/src/tiff3/3.9.6-11+deb7u8/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tiff3/3.9.6-11+deb7u8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ttf-dejavu=2.33-3`
 
@@ -3288,8 +3422,8 @@ Binary Packages:
 - `ttf-dejavu-core=2.33-3`
 - `ttf-dejavu-extra=2.33-3`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -3301,10 +3435,11 @@ $ apt-get source -qq --print-uris ttf-dejavu=2.33-3
 'http://deb.debian.org/debian/pool/main/t/ttf-dejavu/ttf-dejavu_2.33-3.debian.tar.gz' ttf-dejavu_2.33-3.debian.tar.gz 10377 SHA256:8a34ce9d24968a494258eb56801f8db7021effb8ba4b16aa5f511a51d8aec7cd
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/ttf-dejavu/2.33-3/
-- https://sources.debian.net/src/ttf-dejavu/2.33-3/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/ttf-dejavu/2.33-3/ (for browsing the source)
+- https://sources.debian.net/src/ttf-dejavu/2.33-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ttf-dejavu/2.33-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tzdata=2017b-0+deb7u1`
 
@@ -3313,8 +3448,8 @@ Binary Packages:
 - `tzdata=2017b-0+deb7u1`
 - `tzdata-java=2017b-0+deb7u1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -3326,10 +3461,11 @@ $ apt-get source -qq --print-uris tzdata=2017b-0+deb7u1
 'http://security.debian.org/pool/updates/main/t/tzdata/tzdata_2017b-0+deb7u1.debian.tar.xz' tzdata_2017b-0+deb7u1.debian.tar.xz 102016 SHA256:87288325b84e8cec04c0424452e9dd05b3c0508f73af75381b6ea0ccf2f74b37
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/tzdata/2017b-0+deb7u1/
-- https://sources.debian.net/src/tzdata/2017b-0+deb7u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/tzdata/2017b-0+deb7u1/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2017b-0+deb7u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2017b-0+deb7u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0025+nmu3`
 
@@ -3349,10 +3485,11 @@ $ apt-get source -qq --print-uris ucf=3.0025+nmu3
 'http://deb.debian.org/debian/pool/main/u/ucf/ucf_3.0025+nmu3.tar.gz' ucf_3.0025+nmu3.tar.gz 94491 SHA256:b97de116fda3c53198cd2154fb54304350bcdf474cca8ab3bef6d01cb824d738
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/ucf/3.0025+nmu3/
-- https://sources.debian.net/src/ucf/3.0025+nmu3/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/ucf/3.0025+nmu3/ (for browsing the source)
+- https://sources.debian.net/src/ucf/3.0025+nmu3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ucf/3.0025+nmu3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `unzip=6.0-8+deb7u6`
 
@@ -3360,8 +3497,8 @@ Binary Packages:
 
 - `unzip=6.0-8+deb7u6`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -3373,10 +3510,11 @@ $ apt-get source -qq --print-uris unzip=6.0-8+deb7u6
 'http://security.debian.org/pool/updates/main/u/unzip/unzip_6.0-8+deb7u6.debian.tar.gz' unzip_6.0-8+deb7u6.debian.tar.gz 17302 SHA256:7a8e82b40c67caa27636e05b1c47c5c89bd5de3d4544707b02feea00fb811335
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/unzip/6.0-8+deb7u6/
-- https://sources.debian.net/src/unzip/6.0-8+deb7u6/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/unzip/6.0-8+deb7u6/ (for browsing the source)
+- https://sources.debian.net/src/unzip/6.0-8+deb7u6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/unzip/6.0-8+deb7u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ustr=1.0.4-3`
 
@@ -3402,10 +3540,11 @@ $ apt-get source -qq --print-uris ustr=1.0.4-3
 'http://deb.debian.org/debian/pool/main/u/ustr/ustr_1.0.4-3.diff.gz' ustr_1.0.4-3.diff.gz 11415 SHA256:8349cbdef416e9b919d434c6a88c7e29700a00df3e81f21b7d8127ffd7e4945a
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/ustr/1.0.4-3/
-- https://sources.debian.net/src/ustr/1.0.4-3/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/ustr/1.0.4-3/ (for browsing the source)
+- https://sources.debian.net/src/ustr/1.0.4-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ustr/1.0.4-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `util-linux=2.20.1-5.3`
 
@@ -3432,10 +3571,11 @@ $ apt-get source -qq --print-uris util-linux=2.20.1-5.3
 'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.20.1-5.3.diff.gz' util-linux_2.20.1-5.3.diff.gz 278967 SHA256:b9709296fa3dbdfed28b708f516298723585ff2fd47f83301f7eb656147d40f8
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/util-linux/2.20.1-5.3/
-- https://sources.debian.net/src/util-linux/2.20.1-5.3/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/util-linux/2.20.1-5.3/ (for browsing the source)
+- https://sources.debian.net/src/util-linux/2.20.1-5.3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/util-linux/2.20.1-5.3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.13.4-3+deb7u4`
 
@@ -3457,10 +3597,11 @@ $ apt-get source -qq --print-uris wget=1.13.4-3+deb7u4
 'http://security.debian.org/pool/updates/main/w/wget/wget_1.13.4-3+deb7u4.debian.tar.gz' wget_1.13.4-3+deb7u4.debian.tar.gz 28807 SHA256:426c625ef6459e25a3bf991e5d16790e98b58d5af34ae9b38f468c902ee7a028
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/wget/1.13.4-3+deb7u4/
-- https://sources.debian.net/src/wget/1.13.4-3+deb7u4/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/wget/1.13.4-3+deb7u4/ (for browsing the source)
+- https://sources.debian.net/src/wget/1.13.4-3+deb7u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/wget/1.13.4-3+deb7u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `xft=2.3.1-1`
 
@@ -3468,8 +3609,8 @@ Binary Packages:
 
 - `libxft2:amd64=2.3.1-1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -3481,10 +3622,11 @@ $ apt-get source -qq --print-uris xft=2.3.1-1
 'http://deb.debian.org/debian/pool/main/x/xft/xft_2.3.1-1.diff.gz' xft_2.3.1-1.diff.gz 20930 SHA256:d8b26c364338a1a77290e4c91c0a9410a5982f0dc6fe070ba84158ac0c3942c0
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/xft/2.3.1-1/
-- https://sources.debian.net/src/xft/2.3.1-1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/xft/2.3.1-1/ (for browsing the source)
+- https://sources.debian.net/src/xft/2.3.1-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/xft/2.3.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `xml-core=0.13+nmu2`
 
@@ -3504,10 +3646,11 @@ $ apt-get source -qq --print-uris xml-core=0.13+nmu2
 'http://deb.debian.org/debian/pool/main/x/xml-core/xml-core_0.13+nmu2.tar.gz' xml-core_0.13+nmu2.tar.gz 23436 SHA256:cd3f5402265a9ab0e7e4a6efafdc5eb9cb02d33c3e75d1ff1ecb0ac0899e242b
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/xml-core/0.13+nmu2/
-- https://sources.debian.net/src/xml-core/0.13+nmu2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/xml-core/0.13+nmu2/ (for browsing the source)
+- https://sources.debian.net/src/xml-core/0.13+nmu2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/xml-core/0.13+nmu2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `xorg=1:7.7+3~deb7u1`
 
@@ -3527,10 +3670,11 @@ $ apt-get source -qq --print-uris xorg=1:7.7+3~deb7u1
 'http://deb.debian.org/debian/pool/main/x/xorg/xorg_7.7+3~deb7u1.tar.gz' xorg_7.7+3~deb7u1.tar.gz 922396 SHA256:4557b3320f95d3718fa082cdb7036654a3d9bfa92789e1c8f213204619a7cd1d
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/xorg/1:7.7+3~deb7u1/
-- https://sources.debian.net/src/xorg/1:7.7+3~deb7u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/xorg/1:7.7+3~deb7u1/ (for browsing the source)
+- https://sources.debian.net/src/xorg/1:7.7+3~deb7u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/xorg/1:7.7+3~deb7u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `xz-utils=5.1.1alpha+20120614-2`
 
@@ -3566,10 +3710,11 @@ $ apt-get source -qq --print-uris xz-utils=5.1.1alpha+20120614-2
 'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.1.1alpha+20120614-2.debian.tar.gz' xz-utils_5.1.1alpha+20120614-2.debian.tar.gz 154298 SHA256:4e2873ab7b1ee44b7d580caf2a5ca761b10cb2725691b2c2a9b21edb0d771f39
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/xz-utils/5.1.1alpha+20120614-2/
-- https://sources.debian.net/src/xz-utils/5.1.1alpha+20120614-2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/xz-utils/5.1.1alpha+20120614-2/ (for browsing the source)
+- https://sources.debian.net/src/xz-utils/5.1.1alpha+20120614-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/xz-utils/5.1.1alpha+20120614-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `zlib=1:1.2.7.dfsg-13`
 
@@ -3577,8 +3722,8 @@ Binary Packages:
 
 - `zlib1g:amd64=1:1.2.7.dfsg-13`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -3590,7 +3735,8 @@ $ apt-get source -qq --print-uris zlib=1:1.2.7.dfsg-13
 'http://deb.debian.org/debian/pool/main/z/zlib/zlib_1.2.7.dfsg-13.debian.tar.gz' zlib_1.2.7.dfsg-13.debian.tar.gz 17060 SHA256:15c787124dc9e7d3676583013089bc152d44ace5cddd04abceb99d5920113f9e
 ```
 
-Likely also available for browsing at:
+Other potentially useful URLs:
 
-- https://sources.debian.net/src/zlib/1:1.2.7.dfsg-13/
-- https://sources.debian.net/src/zlib/1:1.2.7.dfsg-13/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/zlib/1:1.2.7.dfsg-13/ (for browsing the source)
+- https://sources.debian.net/src/zlib/1:1.2.7.dfsg-13/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/zlib/1:1.2.7.dfsg-13/ (for access to the source package after it no longer exists in the archive)
