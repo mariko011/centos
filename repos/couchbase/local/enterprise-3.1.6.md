@@ -251,11 +251,12 @@ Binary Packages:
 
 - `couchbase-server=3.1.6`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
 
 ### `dpkg` source package: `cpio=2.11-7ubuntu3.2`
@@ -325,8 +326,8 @@ Binary Packages:
 
 - `libdb5.1:amd64=5.1.25-11build1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -501,8 +502,8 @@ Binary Packages:
 
 - `libexpat1:amd64=2.0.1-7.2ubuntu1.4`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -524,14 +525,9 @@ Licenses: (parsed from: `/usr/share/doc/fgetty/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris fgetty=0.6-5build1
-'http://archive.ubuntu.com/ubuntu/pool/universe/f/fgetty/fgetty_0.6-5build1.dsc' fgetty_0.6-5build1.dsc 566 MD5Sum:087a8be1c3a129aa6016adc7244b9cf0
-'http://archive.ubuntu.com/ubuntu/pool/universe/f/fgetty/fgetty_0.6.orig.tar.gz' fgetty_0.6.orig.tar.gz 16188 MD5Sum:10238563b5b68d05792b74ea0cc2b6cf
-'http://archive.ubuntu.com/ubuntu/pool/universe/f/fgetty/fgetty_0.6-5build1.diff.gz' fgetty_0.6-5build1.diff.gz 10736 MD5Sum:19722f99a4bcd41f821404b4761a6008
-```
 
 ### `dpkg` source package: `file=5.09-2ubuntu0.6`
 
@@ -817,8 +813,8 @@ Binary Packages:
 - `libdrm-radeon1:amd64=2.4.52-1~precise2`
 - `libdrm2:amd64=2.4.52-1~precise2`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -1053,8 +1049,8 @@ Binary Packages:
 
 - `lsof=4.81.dfsg.1-1build1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -1110,8 +1106,8 @@ Binary Packages:
 
 - `mime-support=3.51-1ubuntu1.1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -1170,8 +1166,8 @@ Binary Packages:
 - `ncurses-base=5.9-4`
 - `ncurses-bin=5.9-4`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -1231,8 +1227,8 @@ Binary Packages:
 - `libssl1.0.0:amd64=1.0.1-4ubuntu5.39`
 - `openssl=1.0.1-4ubuntu5.39`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -1273,8 +1269,8 @@ Binary Packages:
 - `libpci3:amd64=1:3.1.8-2ubuntu6`
 - `pciutils=1:3.1.8-2ubuntu6`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -1292,8 +1288,8 @@ Binary Packages:
 
 - `libpcre3:amd64=8.12-4ubuntu0.2`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -1392,8 +1388,8 @@ Binary Packages:
 - `python=2.7.3-0ubuntu2.2`
 - `python-minimal=2.7.3-0ubuntu2.2`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -1484,8 +1480,8 @@ Binary Packages:
 
 - `runit=2.1.1-6.2ubuntu2.1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -1579,8 +1575,8 @@ Binary Packages:
 
 - `libsqlite3-0:amd64=3.7.9-2ubuntu1.2`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -1660,8 +1656,8 @@ Binary Packages:
 
 - `tzdata=2016j-0ubuntu0.12.04`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
@@ -1853,8 +1849,8 @@ Binary Packages:
 
 - `zlib1g:amd64=1:1.2.3.4.dfsg-3ubuntu4`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
 Source:
