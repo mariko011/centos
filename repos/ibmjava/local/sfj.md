@@ -740,14 +740,9 @@ Licenses: (parsed from: `/usr/share/doc/libidn11/copyright`)
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libidn=1.32-3ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn/libidn_1.32-3ubuntu1.1.dsc' libidn_1.32-3ubuntu1.1.dsc 2303 SHA256:ae2e99369cbf63ecf269b07ab14987354a979e89c5cd86e22db514dd0984c1d4
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn/libidn_1.32.orig.tar.gz' libidn_1.32.orig.tar.gz 3483155 SHA256:ba5d5afee2beff703a34ee094668da5c6ea5afa38784cebba8924105e185c4f5
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn/libidn_1.32-3ubuntu1.1.debian.tar.xz' libidn_1.32-3ubuntu1.1.debian.tar.xz 84344 SHA256:ca711a3ee56c3bf4f603429bbfcda842c1c60f6e95051a0c777f65a62a84d9a5
-```
 
 ### `dpkg` source package: `libseccomp=2.2.3-3ubuntu3`
 
