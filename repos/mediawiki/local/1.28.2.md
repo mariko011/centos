@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0587ec2fc061c7eaaa776d9b01d7190ef3dd059db07ba6850e0689d6d014da1b`
-- Created: `2017-09-21T22:03:27.743536377Z`
-- Virtual Size: ~ 635.77 Mb  
+- Image ID: `sha256:852e1be5b054ce20547f5fdffc6256eb5c56dc10e7e19d6ad67186fafb23f17e`
+- Created: `2017-09-29T01:46:12.346845416Z`
+- Virtual Size: ~ 635.78 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -21,10 +21,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
   - `GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3`
-  - `PHP_VERSION=7.0.23`
-  - `PHP_URL=https://secure.php.net/get/php-7.0.23.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://secure.php.net/get/php-7.0.23.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=8e526e3551a58e00c8055fa4a72804aa1bd3ee1c0411b25bf1504cc4992609df`
+  - `PHP_VERSION=7.0.24`
+  - `PHP_URL=https://secure.php.net/get/php-7.0.24.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://secure.php.net/get/php-7.0.24.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=4dba7aa365193c9229f89f1975fad4c01135d29922a338ffb4a27e840d6f1c98`
   - `PHP_MD5=`
   - `MEDIAWIKI_MAJOR_VERSION=1.28`
   - `MEDIAWIKI_BRANCH=REL1_28`
@@ -1129,12 +1129,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gdbm/1.8.3-13.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gdbm/1.8.3-13.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `git=1:2.1.4-2.1+deb8u4`
+### `dpkg` source package: `git=1:2.1.4-2.1+deb8u5`
 
 Binary Packages:
 
-- `git=1:2.1.4-2.1+deb8u4`
-- `git-man=1:2.1.4-2.1+deb8u4`
+- `git=1:2.1.4-2.1+deb8u5`
+- `git-man=1:2.1.4-2.1+deb8u5`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -1157,13 +1157,20 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris git=1:2.1.4-2.1+deb8u5
+'http://security.debian.org/pool/updates/main/g/git/git_2.1.4-2.1+deb8u5.dsc' git_2.1.4-2.1+deb8u5.dsc 2803 SHA256:98a91bae8bf614cba4049cb47da1fa76d0639748d431d9241c6a269e5147216f
+'http://security.debian.org/pool/updates/main/g/git/git_2.1.4.orig.tar.xz' git_2.1.4.orig.tar.xz 3544804 SHA256:a04968b9b10cbcb31a7054aa3a0d11ac47c83556ecd270ddef1987df5d3d053e
+'http://security.debian.org/pool/updates/main/g/git/git_2.1.4-2.1+deb8u5.debian.tar.xz' git_2.1.4-2.1+deb8u5.debian.tar.xz 481960 SHA256:c3d39c895fdda768f9bc49ffe39e576b493ad92af81814136074fdc08349642b
+```
 
-- http://snapshot.debian.org/package/git/1:2.1.4-2.1+deb8u4/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/git/1:2.1.4-2.1+deb8u5/ (for browsing the source)
+- https://sources.debian.net/src/git/1:2.1.4-2.1+deb8u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/git/1:2.1.4-2.1+deb8u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glib2.0=2.42.1-1`
 
