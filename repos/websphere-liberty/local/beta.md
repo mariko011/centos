@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:cb27c1b9c42138b2213583aa6e7c0b4b512c5cb4b6d184944bf1404a998542ae`
-- Created: `2017-09-19T00:41:00.927588686Z`
-- Virtual Size: ~ 419.18 Mb  
+- Image ID: `sha256:a5ff4dacadfdf3cd195348bdfaf216e58cfc5b1a717669524a2aa2c3e3dccd97`
+- Created: `2017-09-29T18:06:05.62460869Z`
+- Virtual Size: ~ 418.62 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/opt/ibm/wlp/bin/server","run","defaultServer"]`
@@ -12,7 +12,7 @@
   - `PATH=/opt/ibm/wlp/bin:/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_VERSION=1.8.0_sr5`
   - `JAVA_HOME=/opt/ibm/java/jre`
-  - `LIBERTY_VERSION=2017.9.0_0`
+  - `LIBERTY_VERSION=2017.9.0_1`
   - `LOG_DIR=/logs`
   - `WLP_OUTPUT_DIR=/opt/ibm/wlp/output`
 
@@ -743,14 +743,9 @@ Licenses: (parsed from: `/usr/share/doc/libidn11/copyright`)
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libidn=1.32-3ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn/libidn_1.32-3ubuntu1.1.dsc' libidn_1.32-3ubuntu1.1.dsc 2303 SHA256:ae2e99369cbf63ecf269b07ab14987354a979e89c5cd86e22db514dd0984c1d4
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn/libidn_1.32.orig.tar.gz' libidn_1.32.orig.tar.gz 3483155 SHA256:ba5d5afee2beff703a34ee094668da5c6ea5afa38784cebba8924105e185c4f5
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn/libidn_1.32-3ubuntu1.1.debian.tar.xz' libidn_1.32-3ubuntu1.1.debian.tar.xz 84344 SHA256:ca711a3ee56c3bf4f603429bbfcda842c1c60f6e95051a0c777f65a62a84d9a5
-```
 
 ### `dpkg` source package: `libseccomp=2.2.3-3ubuntu3`
 
