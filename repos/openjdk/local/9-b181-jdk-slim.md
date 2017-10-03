@@ -296,19 +296,13 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates-java/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ca-certificates-java=20170531+nmu1
-'http://deb.debian.org/debian/pool/main/c/ca-certificates-java/ca-certificates-java_20170531+nmu1.dsc' ca-certificates-java_20170531+nmu1.dsc 1864 SHA256:07edafb2b29da665dad55034bf8044df1e85e3fa6a611ec6996c6f55f902802a
-'http://deb.debian.org/debian/pool/main/c/ca-certificates-java/ca-certificates-java_20170531+nmu1.tar.xz' ca-certificates-java_20170531+nmu1.tar.xz 15992 SHA256:d89588b1875731ca14e5634c641ecf2668b8dd54ef44c40692dcfec7925778ea
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/ca-certificates-java/20170531+nmu1/
 
-- https://sources.debian.net/src/ca-certificates-java/20170531+nmu1/ (for browsing the source)
-- https://sources.debian.net/src/ca-certificates-java/20170531+nmu1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ca-certificates-java/20170531+nmu1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ca-certificates=20170717`
 
@@ -1898,20 +1892,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nss=2:3.32-2
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.32-2.dsc' nss_3.32-2.dsc 2223 SHA256:dd485ead7c4517c6f6e0b3dccd92a1708e1da4a534c850a8751abfe3e92e6ead
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.32.orig.tar.gz' nss_3.32.orig.tar.gz 9493574 SHA256:35c6f381cc96bb25e4f924469f6ba3e57b3a16e0c2fb7e295a284a00d57ed335
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.32-2.debian.tar.xz' nss_3.32-2.debian.tar.xz 25172 SHA256:c4f7f9292288bfa52885a5736a8b3a5a949fed84b98f26f10e4473828d044431
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nss/2:3.32-2/
 
-- https://sources.debian.net/src/nss/2:3.32-2/ (for browsing the source)
-- https://sources.debian.net/src/nss/2:3.32-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nss/2:3.32-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openjdk-9=9~b181-4`
 
