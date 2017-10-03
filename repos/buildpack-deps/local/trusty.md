@@ -423,13 +423,9 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 - `GPL-2+`
 - `MPL-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ca-certificates=20160104ubuntu0.14.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20160104ubuntu0.14.04.1.dsc' ca-certificates_20160104ubuntu0.14.04.1.dsc 1890 SHA256:965cef08aeeb29e07f73f85a7ccdc2334bb816c214c760f1b0d13589c6b27f0d
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20160104ubuntu0.14.04.1.tar.gz' ca-certificates_20160104ubuntu0.14.04.1.tar.gz 374551 SHA256:3d12d4f6d146e384121eeb3e69540297db5e02257032f6f099cb874d5f160bc6
-```
 
 ### `dpkg` source package: `cairo=1.13.0~20140204-0ubuntu1.1`
 
@@ -2440,14 +2436,9 @@ Licenses: (parsed from: `/usr/share/doc/libidn11/copyright`, `/usr/share/doc/lib
 - `LGPL-3`
 - `LGPL-3+ | GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libidn=1.28-1ubuntu2.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn/libidn_1.28-1ubuntu2.1.dsc' libidn_1.28-1ubuntu2.1.dsc 2264 SHA256:7b111cff79738a91e3b553cd59f01e034a1800ad3d5eb7b157aeda249f360e27
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn/libidn_1.28.orig.tar.gz' libidn_1.28.orig.tar.gz 3476317 SHA256:dd357a968449abc97c7e5fa088a4a384de57cb36564f9d4e0d898ecc6373abfb
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn/libidn_1.28-1ubuntu2.1.debian.tar.gz' libidn_1.28-1ubuntu2.1.debian.tar.gz 47763 SHA256:511a2cfd43a0f3717152434d6735ddcddc12c85914b0b40e5df83a27bc9f0271
-```
 
 ### `dpkg` source package: `libjpeg-turbo=1.3.0-0ubuntu2`
 

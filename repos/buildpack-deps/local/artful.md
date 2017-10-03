@@ -71,14 +71,9 @@ Licenses: (parsed from: `/usr/share/doc/adwaita-icon-theme/copyright`)
 - `GPL-unspecified`
 - `LGPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris adwaita-icon-theme=3.26.0-0ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/adwaita-icon-theme/adwaita-icon-theme_3.26.0-0ubuntu1.dsc' adwaita-icon-theme_3.26.0-0ubuntu1.dsc 2410 SHA256:1a6af6f76c6f5fd30e7000ee851193325655a3de4c1c9d60368fe54f48f67007
-'http://archive.ubuntu.com/ubuntu/pool/main/a/adwaita-icon-theme/adwaita-icon-theme_3.26.0.orig.tar.xz' adwaita-icon-theme_3.26.0.orig.tar.xz 20755152 SHA256:9cad85de19313f5885497aceab0acbb3f08c60fcd5fa5610aeafff37a1d12212
-'http://archive.ubuntu.com/ubuntu/pool/main/a/adwaita-icon-theme/adwaita-icon-theme_3.26.0-0ubuntu1.debian.tar.xz' adwaita-icon-theme_3.26.0-0ubuntu1.debian.tar.xz 30372 SHA256:532ec37ba6174d7ebea6071a5d0bd21727fda5f0887c466f9a86a84968cc1de9
-```
 
 ### `dpkg` source package: `apr-util=1.6.0-2`
 
