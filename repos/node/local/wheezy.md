@@ -1193,20 +1193,13 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris git=1:1.7.10.4-1+wheezy5
-'http://security.debian.org/pool/updates/main/g/git/git_1.7.10.4-1+wheezy5.dsc' git_1.7.10.4-1+wheezy5.dsc 2798 SHA256:c6374545bf4059a6472a10ba44ebe8f74ceca8277b3bbcdeaf018a9c398fa59c
-'http://security.debian.org/pool/updates/main/g/git/git_1.7.10.4.orig.tar.gz' git_1.7.10.4.orig.tar.gz 3813469 SHA256:77ce53644d687202c64ca29db4ae5055daff4e0c611dde8f1d51edb752dba8dd
-'http://security.debian.org/pool/updates/main/g/git/git_1.7.10.4-1+wheezy5.diff.gz' git_1.7.10.4-1+wheezy5.diff.gz 520101 SHA256:495954d169012e2c2119173baa790f4e57917fa06275f36387ec79f0bacc83c3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/git/1:1.7.10.4-1+wheezy5/
 
-- https://sources.debian.net/src/git/1:1.7.10.4-1+wheezy5/ (for browsing the source)
-- https://sources.debian.net/src/git/1:1.7.10.4-1+wheezy5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/git/1:1.7.10.4-1+wheezy5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glib2.0=2.33.12+really2.32.4-5`
 
