@@ -113,6 +113,10 @@ Licenses: (parsed from: `/usr/share/doc/apache2/copyright`, `/usr/share/doc/apac
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/apache2/2.4.10-10+deb8u10/
+
 
 ### `dpkg` source package: `apr-util=1.5.4-1`
 
