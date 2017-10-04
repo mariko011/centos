@@ -16,7 +16,7 @@
 ## `geonetwork:3.0`
 
 ```console
-$ docker pull geonetwork@sha256:f7d5117dbb9ca73aa5b536abfe66f44e723b1a89370e0ee4d43cccbcec09bfa4
+$ docker pull geonetwork@sha256:da33deec219b066e2476fdba53ab3d823739f378702a436435bd6525b4d4e880
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -26,14 +26,14 @@ $ docker pull geonetwork@sha256:f7d5117dbb9ca73aa5b536abfe66f44e723b1a89370e0ee4
 ### `geonetwork:3.0` - linux; amd64
 
 ```console
-$ docker pull geonetwork@sha256:dc091cc8ba8b9173caffb347981a67f37219451414c4c55726474b401506a35f
+$ docker pull geonetwork@sha256:d9e81054d74d2c33dd487241e2b9003765babe3eaaec1b800efa7785c93b0b17
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **342.6 MB (342604592 bytes)**  
+-	Total Size: **342.7 MB (342650897 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ca3ac49100e0d8f589d4fc0c40d50f3c822ed94e6026cc2ef5c3d3e57f1b133f`
+-	Image ID: `sha256:406302c33215d7d0e1128f11bc5cdb6d89b2d74bd579c8a332898a4c02321b23`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["catalina.sh","run"]`
 
@@ -86,43 +86,41 @@ ENV GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E626
 RUN set -ex; 	for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done
 # Thu, 14 Sep 2017 06:49:39 GMT
 ENV TOMCAT_MAJOR=8
-# Thu, 14 Sep 2017 06:49:40 GMT
-ENV TOMCAT_VERSION=8.0.46
-# Thu, 14 Sep 2017 06:49:40 GMT
-ENV TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.0.46/bin/apache-tomcat-8.0.46.tar.gz
-# Thu, 14 Sep 2017 06:49:40 GMT
-ENV TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.46/bin/apache-tomcat-8.0.46.tar.gz.asc
-# Thu, 14 Sep 2017 06:49:40 GMT
-ENV TOMCAT_TGZ_FALLBACK_URL=https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.46/bin/apache-tomcat-8.0.46.tar.gz
-# Thu, 14 Sep 2017 06:49:40 GMT
-ENV TOMCAT_ASC_FALLBACK_URL=https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.46/bin/apache-tomcat-8.0.46.tar.gz.asc
-# Thu, 14 Sep 2017 06:50:36 GMT
-RUN set -x 		&& { 		wget -O tomcat.tar.gz "$TOMCAT_TGZ_URL" 		|| wget -O tomcat.tar.gz "$TOMCAT_TGZ_FALLBACK_URL" 	; } 	&& { 		wget -O tomcat.tar.gz.asc "$TOMCAT_ASC_URL" 		|| wget -O tomcat.tar.gz.asc "$TOMCAT_ASC_FALLBACK_URL" 	; } 	&& gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz 	&& tar -xvf tomcat.tar.gz --strip-components=1 	&& rm bin/*.bat 	&& rm tomcat.tar.gz* 		&& nativeBuildDir="$(mktemp -d)" 	&& tar -xvf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1 	&& nativeBuildDeps=" 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 		openjdk-${JAVA_VERSION%%[-~bu]*}-jdk=$JAVA_DEBIAN_VERSION 	" 	&& apt-get update && apt-get install -y --no-install-recommends $nativeBuildDeps && rm -rf /var/lib/apt/lists/* 	&& ( 		export CATALINA_HOME="$PWD" 		&& cd "$nativeBuildDir/native" 		&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 		&& ./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$(which apr-1-config)" 			--with-java-home="$(docker-java-home)" 			--with-ssl=yes 		&& make -j "$(nproc)" 		&& make install 	) 	&& apt-get purge -y --auto-remove $nativeBuildDeps 	&& rm -rf "$nativeBuildDir" 	&& rm bin/tomcat-native.tar.gz 	&& find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +
-# Thu, 14 Sep 2017 06:50:41 GMT
+# Wed, 04 Oct 2017 00:09:34 GMT
+ENV TOMCAT_VERSION=8.0.47
+# Wed, 04 Oct 2017 00:09:34 GMT
+ENV TOMCAT_SHA1=2b5a0d173040f9a576e372cae5d85b05599fd0eb
+# Wed, 04 Oct 2017 00:09:34 GMT
+ENV TOMCAT_TGZ_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz 	https://www.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz
+# Wed, 04 Oct 2017 00:09:34 GMT
+ENV TOMCAT_ASC_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz.asc 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz.asc 	https://www.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz.asc 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz.asc
+# Wed, 04 Oct 2017 00:10:16 GMT
+RUN set -eux; 		success=; 	for url in $TOMCAT_TGZ_URLS; do 		if wget -O tomcat.tar.gz "$url"; then 			success=1; 			break; 		fi; 	done; 	[ -n "$success" ]; 		echo "$TOMCAT_SHA1 *tomcat.tar.gz" | sha1sum -c -; 		success=; 	for url in $TOMCAT_ASC_URLS; do 		if wget -O tomcat.tar.gz.asc "$url"; then 			success=1; 			break; 		fi; 	done; 	[ -n "$success" ]; 		gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xvf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 		nativeBuildDir="$(mktemp -d)"; 	tar -xvf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	nativeBuildDeps=" 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 		openjdk-${JAVA_VERSION%%[-~bu]*}-jdk=$JAVA_DEBIAN_VERSION 	"; 	apt-get update; 	apt-get install -y --no-install-recommends $nativeBuildDeps; 	rm -rf /var/lib/apt/lists/*; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$(which apr-1-config)" 			--with-java-home="$(docker-java-home)" 			--with-ssl=yes; 		make -j "$(nproc)"; 		make install; 	); 	apt-get purge -y --auto-remove $nativeBuildDeps; 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +
+# Wed, 04 Oct 2017 00:10:17 GMT
 RUN set -e 	&& nativeLines="$(catalina.sh configtest 2>&1)" 	&& nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')" 	&& nativeLines="$(echo "$nativeLines" | sort -u)" 	&& if ! echo "$nativeLines" | grep 'INFO: Loaded APR based Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Thu, 14 Sep 2017 06:50:41 GMT
+# Wed, 04 Oct 2017 00:10:17 GMT
 EXPOSE 8080/tcp
-# Thu, 14 Sep 2017 06:50:42 GMT
+# Wed, 04 Oct 2017 00:10:18 GMT
 CMD ["catalina.sh" "run"]
-# Thu, 14 Sep 2017 08:00:18 GMT
+# Wed, 04 Oct 2017 00:38:40 GMT
 ENV GN_FILE=geonetwork.war
-# Thu, 14 Sep 2017 08:00:18 GMT
+# Wed, 04 Oct 2017 00:38:40 GMT
 ENV DATA_DIR=/usr/local/tomcat/webapps/geonetwork/WEB-INF/data
-# Thu, 14 Sep 2017 08:00:18 GMT
+# Wed, 04 Oct 2017 00:38:41 GMT
 ENV JAVA_OPTS=-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true -Xmx512M -Xss2M -XX:MaxPermSize=512m -XX:+UseConcMarkSweepGC
-# Thu, 14 Sep 2017 08:00:18 GMT
+# Wed, 04 Oct 2017 00:38:41 GMT
 ENV GN_VERSION=3.0.5
-# Thu, 14 Sep 2017 08:00:18 GMT
+# Wed, 04 Oct 2017 00:38:41 GMT
 ENV GN_DOWNLOAD_MD5=1e77c39de4ad156cc9b3c2b033cab359
-# Thu, 14 Sep 2017 08:00:19 GMT
+# Wed, 04 Oct 2017 00:38:41 GMT
 WORKDIR /usr/local/tomcat/webapps
-# Thu, 14 Sep 2017 08:00:34 GMT
+# Wed, 04 Oct 2017 00:38:50 GMT
 RUN curl -fSL -o $GN_FILE      https://sourceforge.net/projects/geonetwork/files/GeoNetwork_opensource/v${GN_VERSION}/geonetwork.war/download &&      echo "$GN_DOWNLOAD_MD5 *$GN_FILE" | md5sum -c &&      mkdir -p geonetwork &&      unzip -e $GN_FILE -d geonetwork &&      rm $GN_FILE
-# Thu, 14 Sep 2017 08:00:36 GMT
+# Wed, 04 Oct 2017 00:38:50 GMT
 COPY file:80432c4531c627e0cdf0de71c059d44a74d09bb678d0caf329b148a8f4b65fb9 in /entrypoint.sh 
-# Thu, 14 Sep 2017 08:00:37 GMT
+# Wed, 04 Oct 2017 00:38:51 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Thu, 14 Sep 2017 08:00:37 GMT
+# Wed, 04 Oct 2017 00:38:51 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -167,27 +165,27 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Thu, 14 Sep 2017 06:56:50 GMT  
 		Size: 113.8 KB (113845 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3acddd1b22fc3da91ae978c5c868dc6283d3f867824edbaf419861422908852c`  
-		Last Modified: Thu, 14 Sep 2017 06:58:43 GMT  
-		Size: 10.3 MB (10277843 bytes)  
+	-	`sha256:b09f1bc8ba69a2a788ea05a213e3c3b7bcc63e3477362c0bb7756755fc3a639a`  
+		Last Modified: Wed, 04 Oct 2017 00:16:20 GMT  
+		Size: 10.3 MB (10324150 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:879d57723a8cc4f1c5a602ecfcf19a013fc02f21e9be4e32e6b7d1ff4ae3ea92`  
-		Last Modified: Thu, 14 Sep 2017 06:58:41 GMT  
-		Size: 131.0 B  
+	-	`sha256:22bf55e4b045145eb9ee62258724c6fe8535a9a8aa4f2d54401fbd014db84168`  
+		Last Modified: Wed, 04 Oct 2017 00:16:19 GMT  
+		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c44027f25fd6261112f0cbd877ce6d2e4958b7c64183fbad2c107ce6deb68325`  
-		Last Modified: Thu, 14 Sep 2017 08:03:05 GMT  
-		Size: 139.4 MB (139410415 bytes)  
+	-	`sha256:64ccd334414dc266bbcb19e9c9f26d36e29a5298f5eb21b75611945ba259b2da`  
+		Last Modified: Wed, 04 Oct 2017 00:43:39 GMT  
+		Size: 139.4 MB (139410416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d2f402a3406f2ebe5353781fd3e574143f59e00489ef09c4828d3640d9c88b5b`  
-		Last Modified: Thu, 14 Sep 2017 08:02:54 GMT  
-		Size: 250.0 B  
+	-	`sha256:7dd86ab47eb7857ae2b1b879ded6f1de6761700e2948000ee1d1e6c3a23b77e1`  
+		Last Modified: Wed, 04 Oct 2017 00:43:25 GMT  
+		Size: 248.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `geonetwork:3.0.5`
 
 ```console
-$ docker pull geonetwork@sha256:f7d5117dbb9ca73aa5b536abfe66f44e723b1a89370e0ee4d43cccbcec09bfa4
+$ docker pull geonetwork@sha256:da33deec219b066e2476fdba53ab3d823739f378702a436435bd6525b4d4e880
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -197,14 +195,14 @@ $ docker pull geonetwork@sha256:f7d5117dbb9ca73aa5b536abfe66f44e723b1a89370e0ee4
 ### `geonetwork:3.0.5` - linux; amd64
 
 ```console
-$ docker pull geonetwork@sha256:dc091cc8ba8b9173caffb347981a67f37219451414c4c55726474b401506a35f
+$ docker pull geonetwork@sha256:d9e81054d74d2c33dd487241e2b9003765babe3eaaec1b800efa7785c93b0b17
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **342.6 MB (342604592 bytes)**  
+-	Total Size: **342.7 MB (342650897 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ca3ac49100e0d8f589d4fc0c40d50f3c822ed94e6026cc2ef5c3d3e57f1b133f`
+-	Image ID: `sha256:406302c33215d7d0e1128f11bc5cdb6d89b2d74bd579c8a332898a4c02321b23`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["catalina.sh","run"]`
 
@@ -257,43 +255,41 @@ ENV GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E626
 RUN set -ex; 	for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done
 # Thu, 14 Sep 2017 06:49:39 GMT
 ENV TOMCAT_MAJOR=8
-# Thu, 14 Sep 2017 06:49:40 GMT
-ENV TOMCAT_VERSION=8.0.46
-# Thu, 14 Sep 2017 06:49:40 GMT
-ENV TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.0.46/bin/apache-tomcat-8.0.46.tar.gz
-# Thu, 14 Sep 2017 06:49:40 GMT
-ENV TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.46/bin/apache-tomcat-8.0.46.tar.gz.asc
-# Thu, 14 Sep 2017 06:49:40 GMT
-ENV TOMCAT_TGZ_FALLBACK_URL=https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.46/bin/apache-tomcat-8.0.46.tar.gz
-# Thu, 14 Sep 2017 06:49:40 GMT
-ENV TOMCAT_ASC_FALLBACK_URL=https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.46/bin/apache-tomcat-8.0.46.tar.gz.asc
-# Thu, 14 Sep 2017 06:50:36 GMT
-RUN set -x 		&& { 		wget -O tomcat.tar.gz "$TOMCAT_TGZ_URL" 		|| wget -O tomcat.tar.gz "$TOMCAT_TGZ_FALLBACK_URL" 	; } 	&& { 		wget -O tomcat.tar.gz.asc "$TOMCAT_ASC_URL" 		|| wget -O tomcat.tar.gz.asc "$TOMCAT_ASC_FALLBACK_URL" 	; } 	&& gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz 	&& tar -xvf tomcat.tar.gz --strip-components=1 	&& rm bin/*.bat 	&& rm tomcat.tar.gz* 		&& nativeBuildDir="$(mktemp -d)" 	&& tar -xvf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1 	&& nativeBuildDeps=" 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 		openjdk-${JAVA_VERSION%%[-~bu]*}-jdk=$JAVA_DEBIAN_VERSION 	" 	&& apt-get update && apt-get install -y --no-install-recommends $nativeBuildDeps && rm -rf /var/lib/apt/lists/* 	&& ( 		export CATALINA_HOME="$PWD" 		&& cd "$nativeBuildDir/native" 		&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 		&& ./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$(which apr-1-config)" 			--with-java-home="$(docker-java-home)" 			--with-ssl=yes 		&& make -j "$(nproc)" 		&& make install 	) 	&& apt-get purge -y --auto-remove $nativeBuildDeps 	&& rm -rf "$nativeBuildDir" 	&& rm bin/tomcat-native.tar.gz 	&& find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +
-# Thu, 14 Sep 2017 06:50:41 GMT
+# Wed, 04 Oct 2017 00:09:34 GMT
+ENV TOMCAT_VERSION=8.0.47
+# Wed, 04 Oct 2017 00:09:34 GMT
+ENV TOMCAT_SHA1=2b5a0d173040f9a576e372cae5d85b05599fd0eb
+# Wed, 04 Oct 2017 00:09:34 GMT
+ENV TOMCAT_TGZ_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz 	https://www.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz
+# Wed, 04 Oct 2017 00:09:34 GMT
+ENV TOMCAT_ASC_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz.asc 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz.asc 	https://www.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz.asc 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz.asc
+# Wed, 04 Oct 2017 00:10:16 GMT
+RUN set -eux; 		success=; 	for url in $TOMCAT_TGZ_URLS; do 		if wget -O tomcat.tar.gz "$url"; then 			success=1; 			break; 		fi; 	done; 	[ -n "$success" ]; 		echo "$TOMCAT_SHA1 *tomcat.tar.gz" | sha1sum -c -; 		success=; 	for url in $TOMCAT_ASC_URLS; do 		if wget -O tomcat.tar.gz.asc "$url"; then 			success=1; 			break; 		fi; 	done; 	[ -n "$success" ]; 		gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xvf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 		nativeBuildDir="$(mktemp -d)"; 	tar -xvf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	nativeBuildDeps=" 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 		openjdk-${JAVA_VERSION%%[-~bu]*}-jdk=$JAVA_DEBIAN_VERSION 	"; 	apt-get update; 	apt-get install -y --no-install-recommends $nativeBuildDeps; 	rm -rf /var/lib/apt/lists/*; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$(which apr-1-config)" 			--with-java-home="$(docker-java-home)" 			--with-ssl=yes; 		make -j "$(nproc)"; 		make install; 	); 	apt-get purge -y --auto-remove $nativeBuildDeps; 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +
+# Wed, 04 Oct 2017 00:10:17 GMT
 RUN set -e 	&& nativeLines="$(catalina.sh configtest 2>&1)" 	&& nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')" 	&& nativeLines="$(echo "$nativeLines" | sort -u)" 	&& if ! echo "$nativeLines" | grep 'INFO: Loaded APR based Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Thu, 14 Sep 2017 06:50:41 GMT
+# Wed, 04 Oct 2017 00:10:17 GMT
 EXPOSE 8080/tcp
-# Thu, 14 Sep 2017 06:50:42 GMT
+# Wed, 04 Oct 2017 00:10:18 GMT
 CMD ["catalina.sh" "run"]
-# Thu, 14 Sep 2017 08:00:18 GMT
+# Wed, 04 Oct 2017 00:38:40 GMT
 ENV GN_FILE=geonetwork.war
-# Thu, 14 Sep 2017 08:00:18 GMT
+# Wed, 04 Oct 2017 00:38:40 GMT
 ENV DATA_DIR=/usr/local/tomcat/webapps/geonetwork/WEB-INF/data
-# Thu, 14 Sep 2017 08:00:18 GMT
+# Wed, 04 Oct 2017 00:38:41 GMT
 ENV JAVA_OPTS=-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true -Xmx512M -Xss2M -XX:MaxPermSize=512m -XX:+UseConcMarkSweepGC
-# Thu, 14 Sep 2017 08:00:18 GMT
+# Wed, 04 Oct 2017 00:38:41 GMT
 ENV GN_VERSION=3.0.5
-# Thu, 14 Sep 2017 08:00:18 GMT
+# Wed, 04 Oct 2017 00:38:41 GMT
 ENV GN_DOWNLOAD_MD5=1e77c39de4ad156cc9b3c2b033cab359
-# Thu, 14 Sep 2017 08:00:19 GMT
+# Wed, 04 Oct 2017 00:38:41 GMT
 WORKDIR /usr/local/tomcat/webapps
-# Thu, 14 Sep 2017 08:00:34 GMT
+# Wed, 04 Oct 2017 00:38:50 GMT
 RUN curl -fSL -o $GN_FILE      https://sourceforge.net/projects/geonetwork/files/GeoNetwork_opensource/v${GN_VERSION}/geonetwork.war/download &&      echo "$GN_DOWNLOAD_MD5 *$GN_FILE" | md5sum -c &&      mkdir -p geonetwork &&      unzip -e $GN_FILE -d geonetwork &&      rm $GN_FILE
-# Thu, 14 Sep 2017 08:00:36 GMT
+# Wed, 04 Oct 2017 00:38:50 GMT
 COPY file:80432c4531c627e0cdf0de71c059d44a74d09bb678d0caf329b148a8f4b65fb9 in /entrypoint.sh 
-# Thu, 14 Sep 2017 08:00:37 GMT
+# Wed, 04 Oct 2017 00:38:51 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Thu, 14 Sep 2017 08:00:37 GMT
+# Wed, 04 Oct 2017 00:38:51 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -338,27 +334,27 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Thu, 14 Sep 2017 06:56:50 GMT  
 		Size: 113.8 KB (113845 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3acddd1b22fc3da91ae978c5c868dc6283d3f867824edbaf419861422908852c`  
-		Last Modified: Thu, 14 Sep 2017 06:58:43 GMT  
-		Size: 10.3 MB (10277843 bytes)  
+	-	`sha256:b09f1bc8ba69a2a788ea05a213e3c3b7bcc63e3477362c0bb7756755fc3a639a`  
+		Last Modified: Wed, 04 Oct 2017 00:16:20 GMT  
+		Size: 10.3 MB (10324150 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:879d57723a8cc4f1c5a602ecfcf19a013fc02f21e9be4e32e6b7d1ff4ae3ea92`  
-		Last Modified: Thu, 14 Sep 2017 06:58:41 GMT  
-		Size: 131.0 B  
+	-	`sha256:22bf55e4b045145eb9ee62258724c6fe8535a9a8aa4f2d54401fbd014db84168`  
+		Last Modified: Wed, 04 Oct 2017 00:16:19 GMT  
+		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c44027f25fd6261112f0cbd877ce6d2e4958b7c64183fbad2c107ce6deb68325`  
-		Last Modified: Thu, 14 Sep 2017 08:03:05 GMT  
-		Size: 139.4 MB (139410415 bytes)  
+	-	`sha256:64ccd334414dc266bbcb19e9c9f26d36e29a5298f5eb21b75611945ba259b2da`  
+		Last Modified: Wed, 04 Oct 2017 00:43:39 GMT  
+		Size: 139.4 MB (139410416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d2f402a3406f2ebe5353781fd3e574143f59e00489ef09c4828d3640d9c88b5b`  
-		Last Modified: Thu, 14 Sep 2017 08:02:54 GMT  
-		Size: 250.0 B  
+	-	`sha256:7dd86ab47eb7857ae2b1b879ded6f1de6761700e2948000ee1d1e6c3a23b77e1`  
+		Last Modified: Wed, 04 Oct 2017 00:43:25 GMT  
+		Size: 248.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `geonetwork:3.0.5-postgres`
 
 ```console
-$ docker pull geonetwork@sha256:d9e07ba8fe54a24f262379e09b341f3bd6d90d223093a5cf15dda4e4d026a6ea
+$ docker pull geonetwork@sha256:90a67462e584b2ad33dbae8c2e4489542b72182c1e0a24832834d4c18ebdcfc8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -368,14 +364,14 @@ $ docker pull geonetwork@sha256:d9e07ba8fe54a24f262379e09b341f3bd6d90d223093a5cf
 ### `geonetwork:3.0.5-postgres` - linux; amd64
 
 ```console
-$ docker pull geonetwork@sha256:bc07ee626b4156138dfceae40b8b679d39dbcd97684e212e0b82591c471a5557
+$ docker pull geonetwork@sha256:699150edd0094a6a7cfbf78404225c7e9ae26acf0bcbcc1fbc9b1b3d085c4502
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **353.4 MB (353415199 bytes)**  
+-	Total Size: **353.5 MB (353461646 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:853bdf7dd6262785c4b91e0983eb609d15e79350a8a1428df9774391dfe66d3a`
+-	Image ID: `sha256:6fa72a782edd0a6ea4bf7c8dd8b725e7326b2d36465d5d591cbb4efa30b3223f`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["catalina.sh","run"]`
 
@@ -428,55 +424,53 @@ ENV GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E626
 RUN set -ex; 	for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done
 # Thu, 14 Sep 2017 06:49:39 GMT
 ENV TOMCAT_MAJOR=8
-# Thu, 14 Sep 2017 06:49:40 GMT
-ENV TOMCAT_VERSION=8.0.46
-# Thu, 14 Sep 2017 06:49:40 GMT
-ENV TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.0.46/bin/apache-tomcat-8.0.46.tar.gz
-# Thu, 14 Sep 2017 06:49:40 GMT
-ENV TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.46/bin/apache-tomcat-8.0.46.tar.gz.asc
-# Thu, 14 Sep 2017 06:49:40 GMT
-ENV TOMCAT_TGZ_FALLBACK_URL=https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.46/bin/apache-tomcat-8.0.46.tar.gz
-# Thu, 14 Sep 2017 06:49:40 GMT
-ENV TOMCAT_ASC_FALLBACK_URL=https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.46/bin/apache-tomcat-8.0.46.tar.gz.asc
-# Thu, 14 Sep 2017 06:50:36 GMT
-RUN set -x 		&& { 		wget -O tomcat.tar.gz "$TOMCAT_TGZ_URL" 		|| wget -O tomcat.tar.gz "$TOMCAT_TGZ_FALLBACK_URL" 	; } 	&& { 		wget -O tomcat.tar.gz.asc "$TOMCAT_ASC_URL" 		|| wget -O tomcat.tar.gz.asc "$TOMCAT_ASC_FALLBACK_URL" 	; } 	&& gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz 	&& tar -xvf tomcat.tar.gz --strip-components=1 	&& rm bin/*.bat 	&& rm tomcat.tar.gz* 		&& nativeBuildDir="$(mktemp -d)" 	&& tar -xvf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1 	&& nativeBuildDeps=" 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 		openjdk-${JAVA_VERSION%%[-~bu]*}-jdk=$JAVA_DEBIAN_VERSION 	" 	&& apt-get update && apt-get install -y --no-install-recommends $nativeBuildDeps && rm -rf /var/lib/apt/lists/* 	&& ( 		export CATALINA_HOME="$PWD" 		&& cd "$nativeBuildDir/native" 		&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 		&& ./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$(which apr-1-config)" 			--with-java-home="$(docker-java-home)" 			--with-ssl=yes 		&& make -j "$(nproc)" 		&& make install 	) 	&& apt-get purge -y --auto-remove $nativeBuildDeps 	&& rm -rf "$nativeBuildDir" 	&& rm bin/tomcat-native.tar.gz 	&& find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +
-# Thu, 14 Sep 2017 06:50:41 GMT
+# Wed, 04 Oct 2017 00:09:34 GMT
+ENV TOMCAT_VERSION=8.0.47
+# Wed, 04 Oct 2017 00:09:34 GMT
+ENV TOMCAT_SHA1=2b5a0d173040f9a576e372cae5d85b05599fd0eb
+# Wed, 04 Oct 2017 00:09:34 GMT
+ENV TOMCAT_TGZ_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz 	https://www.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz
+# Wed, 04 Oct 2017 00:09:34 GMT
+ENV TOMCAT_ASC_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz.asc 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz.asc 	https://www.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz.asc 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz.asc
+# Wed, 04 Oct 2017 00:10:16 GMT
+RUN set -eux; 		success=; 	for url in $TOMCAT_TGZ_URLS; do 		if wget -O tomcat.tar.gz "$url"; then 			success=1; 			break; 		fi; 	done; 	[ -n "$success" ]; 		echo "$TOMCAT_SHA1 *tomcat.tar.gz" | sha1sum -c -; 		success=; 	for url in $TOMCAT_ASC_URLS; do 		if wget -O tomcat.tar.gz.asc "$url"; then 			success=1; 			break; 		fi; 	done; 	[ -n "$success" ]; 		gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xvf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 		nativeBuildDir="$(mktemp -d)"; 	tar -xvf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	nativeBuildDeps=" 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 		openjdk-${JAVA_VERSION%%[-~bu]*}-jdk=$JAVA_DEBIAN_VERSION 	"; 	apt-get update; 	apt-get install -y --no-install-recommends $nativeBuildDeps; 	rm -rf /var/lib/apt/lists/*; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$(which apr-1-config)" 			--with-java-home="$(docker-java-home)" 			--with-ssl=yes; 		make -j "$(nproc)"; 		make install; 	); 	apt-get purge -y --auto-remove $nativeBuildDeps; 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +
+# Wed, 04 Oct 2017 00:10:17 GMT
 RUN set -e 	&& nativeLines="$(catalina.sh configtest 2>&1)" 	&& nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')" 	&& nativeLines="$(echo "$nativeLines" | sort -u)" 	&& if ! echo "$nativeLines" | grep 'INFO: Loaded APR based Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Thu, 14 Sep 2017 06:50:41 GMT
+# Wed, 04 Oct 2017 00:10:17 GMT
 EXPOSE 8080/tcp
-# Thu, 14 Sep 2017 06:50:42 GMT
+# Wed, 04 Oct 2017 00:10:18 GMT
 CMD ["catalina.sh" "run"]
-# Thu, 14 Sep 2017 08:00:18 GMT
+# Wed, 04 Oct 2017 00:38:40 GMT
 ENV GN_FILE=geonetwork.war
-# Thu, 14 Sep 2017 08:00:18 GMT
+# Wed, 04 Oct 2017 00:38:40 GMT
 ENV DATA_DIR=/usr/local/tomcat/webapps/geonetwork/WEB-INF/data
-# Thu, 14 Sep 2017 08:00:18 GMT
+# Wed, 04 Oct 2017 00:38:41 GMT
 ENV JAVA_OPTS=-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true -Xmx512M -Xss2M -XX:MaxPermSize=512m -XX:+UseConcMarkSweepGC
-# Thu, 14 Sep 2017 08:00:18 GMT
+# Wed, 04 Oct 2017 00:38:41 GMT
 ENV GN_VERSION=3.0.5
-# Thu, 14 Sep 2017 08:00:18 GMT
+# Wed, 04 Oct 2017 00:38:41 GMT
 ENV GN_DOWNLOAD_MD5=1e77c39de4ad156cc9b3c2b033cab359
-# Thu, 14 Sep 2017 08:00:19 GMT
+# Wed, 04 Oct 2017 00:38:41 GMT
 WORKDIR /usr/local/tomcat/webapps
-# Thu, 14 Sep 2017 08:00:34 GMT
+# Wed, 04 Oct 2017 00:38:50 GMT
 RUN curl -fSL -o $GN_FILE      https://sourceforge.net/projects/geonetwork/files/GeoNetwork_opensource/v${GN_VERSION}/geonetwork.war/download &&      echo "$GN_DOWNLOAD_MD5 *$GN_FILE" | md5sum -c &&      mkdir -p geonetwork &&      unzip -e $GN_FILE -d geonetwork &&      rm $GN_FILE
-# Thu, 14 Sep 2017 08:00:36 GMT
+# Wed, 04 Oct 2017 00:38:50 GMT
 COPY file:80432c4531c627e0cdf0de71c059d44a74d09bb678d0caf329b148a8f4b65fb9 in /entrypoint.sh 
-# Thu, 14 Sep 2017 08:00:37 GMT
+# Wed, 04 Oct 2017 00:38:51 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Thu, 14 Sep 2017 08:00:37 GMT
+# Wed, 04 Oct 2017 00:38:51 GMT
 CMD ["catalina.sh" "run"]
-# Thu, 14 Sep 2017 08:01:08 GMT
+# Wed, 04 Oct 2017 00:39:38 GMT
 RUN apt-get update && apt-get install -y postgresql-client &&     rm -rf /var/lib/apt/lists/*
-# Thu, 14 Sep 2017 08:01:09 GMT
+# Wed, 04 Oct 2017 00:39:39 GMT
 RUN sed -i -e 's#<import resource="../config-db/h2.xml"/>#<!--<import resource="../config-db/h2.xml"/> -->#g' $CATALINA_HOME/webapps/geonetwork/WEB-INF/config-node/srv.xml && sed -i -e 's#<!--<import resource="../config-db/postgres.xml"/>-->#<import resource="../config-db/postgres.xml"/>#g' $CATALINA_HOME/webapps/geonetwork/WEB-INF/config-node/srv.xml
-# Thu, 14 Sep 2017 08:01:09 GMT
+# Wed, 04 Oct 2017 00:39:39 GMT
 COPY file:e2fbb7cf0447a8bc2706127d7dc9bceba30008f926826a6c3bf869efc97b906d in /usr/local/tomcat/webapps/geonetwork/WEB-INF/config-db/jdbc.properties 
-# Thu, 14 Sep 2017 08:01:09 GMT
+# Wed, 04 Oct 2017 00:39:40 GMT
 COPY file:2dd6f92687b208fdde8d0d8fa36354e2e373245faae443043799a7cca9e3538a in /entrypoint.sh 
-# Thu, 14 Sep 2017 08:01:09 GMT
+# Wed, 04 Oct 2017 00:39:40 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Thu, 14 Sep 2017 08:01:10 GMT
+# Wed, 04 Oct 2017 00:39:40 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -521,43 +515,43 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Thu, 14 Sep 2017 06:56:50 GMT  
 		Size: 113.8 KB (113845 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3acddd1b22fc3da91ae978c5c868dc6283d3f867824edbaf419861422908852c`  
-		Last Modified: Thu, 14 Sep 2017 06:58:43 GMT  
-		Size: 10.3 MB (10277843 bytes)  
+	-	`sha256:b09f1bc8ba69a2a788ea05a213e3c3b7bcc63e3477362c0bb7756755fc3a639a`  
+		Last Modified: Wed, 04 Oct 2017 00:16:20 GMT  
+		Size: 10.3 MB (10324150 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:879d57723a8cc4f1c5a602ecfcf19a013fc02f21e9be4e32e6b7d1ff4ae3ea92`  
-		Last Modified: Thu, 14 Sep 2017 06:58:41 GMT  
-		Size: 131.0 B  
+	-	`sha256:22bf55e4b045145eb9ee62258724c6fe8535a9a8aa4f2d54401fbd014db84168`  
+		Last Modified: Wed, 04 Oct 2017 00:16:19 GMT  
+		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c44027f25fd6261112f0cbd877ce6d2e4958b7c64183fbad2c107ce6deb68325`  
-		Last Modified: Thu, 14 Sep 2017 08:03:05 GMT  
-		Size: 139.4 MB (139410415 bytes)  
+	-	`sha256:64ccd334414dc266bbcb19e9c9f26d36e29a5298f5eb21b75611945ba259b2da`  
+		Last Modified: Wed, 04 Oct 2017 00:43:39 GMT  
+		Size: 139.4 MB (139410416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d2f402a3406f2ebe5353781fd3e574143f59e00489ef09c4828d3640d9c88b5b`  
-		Last Modified: Thu, 14 Sep 2017 08:02:54 GMT  
-		Size: 250.0 B  
+	-	`sha256:7dd86ab47eb7857ae2b1b879ded6f1de6761700e2948000ee1d1e6c3a23b77e1`  
+		Last Modified: Wed, 04 Oct 2017 00:43:25 GMT  
+		Size: 248.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bae475c2f83ddbb091bc25b3727200bd4273102f7c89e63bd2a64421ad52ac4d`  
-		Last Modified: Thu, 14 Sep 2017 08:03:24 GMT  
-		Size: 10.8 MB (10808417 bytes)  
+	-	`sha256:21fc948fe67d783864c43b90b2000a8d6578a8531be27460e95680a5aa4964b8`  
+		Last Modified: Wed, 04 Oct 2017 00:44:03 GMT  
+		Size: 10.8 MB (10808551 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1d59ed1558d2d1672fda5f27be7e0c778afaae837ca756a0224eba1815c57827`  
-		Last Modified: Thu, 14 Sep 2017 08:03:22 GMT  
-		Size: 708.0 B  
+	-	`sha256:e7a5e3de46bf2ab87856a0c5668019b9032229e57c2d4362849d02d40fa58840`  
+		Last Modified: Wed, 04 Oct 2017 00:43:58 GMT  
+		Size: 713.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a3f9710a13f9af2b4a9cb14748f9095f914aa0c5c5130d8cdf26455fdd18f000`  
-		Last Modified: Thu, 14 Sep 2017 08:03:22 GMT  
-		Size: 557.0 B  
+	-	`sha256:c3bfc7cc208074dfbc9f5144f9066d2d63601ae7990df90f8e46e436245e8a44`  
+		Last Modified: Wed, 04 Oct 2017 00:43:58 GMT  
+		Size: 559.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:32e5f8fa25b4bab25ecd76e8db11b56b135093480724d648704eab7fcabde11f`  
-		Last Modified: Thu, 14 Sep 2017 08:03:22 GMT  
-		Size: 925.0 B  
+	-	`sha256:46e187130b08e2b7ac017bd744c2ca90b534d38ab6dc0454d8f0f916a7a874a0`  
+		Last Modified: Wed, 04 Oct 2017 00:43:58 GMT  
+		Size: 926.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `geonetwork:3.0-postgres`
 
 ```console
-$ docker pull geonetwork@sha256:d9e07ba8fe54a24f262379e09b341f3bd6d90d223093a5cf15dda4e4d026a6ea
+$ docker pull geonetwork@sha256:90a67462e584b2ad33dbae8c2e4489542b72182c1e0a24832834d4c18ebdcfc8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -567,14 +561,14 @@ $ docker pull geonetwork@sha256:d9e07ba8fe54a24f262379e09b341f3bd6d90d223093a5cf
 ### `geonetwork:3.0-postgres` - linux; amd64
 
 ```console
-$ docker pull geonetwork@sha256:bc07ee626b4156138dfceae40b8b679d39dbcd97684e212e0b82591c471a5557
+$ docker pull geonetwork@sha256:699150edd0094a6a7cfbf78404225c7e9ae26acf0bcbcc1fbc9b1b3d085c4502
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **353.4 MB (353415199 bytes)**  
+-	Total Size: **353.5 MB (353461646 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:853bdf7dd6262785c4b91e0983eb609d15e79350a8a1428df9774391dfe66d3a`
+-	Image ID: `sha256:6fa72a782edd0a6ea4bf7c8dd8b725e7326b2d36465d5d591cbb4efa30b3223f`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["catalina.sh","run"]`
 
@@ -627,55 +621,53 @@ ENV GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E626
 RUN set -ex; 	for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done
 # Thu, 14 Sep 2017 06:49:39 GMT
 ENV TOMCAT_MAJOR=8
-# Thu, 14 Sep 2017 06:49:40 GMT
-ENV TOMCAT_VERSION=8.0.46
-# Thu, 14 Sep 2017 06:49:40 GMT
-ENV TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.0.46/bin/apache-tomcat-8.0.46.tar.gz
-# Thu, 14 Sep 2017 06:49:40 GMT
-ENV TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.46/bin/apache-tomcat-8.0.46.tar.gz.asc
-# Thu, 14 Sep 2017 06:49:40 GMT
-ENV TOMCAT_TGZ_FALLBACK_URL=https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.46/bin/apache-tomcat-8.0.46.tar.gz
-# Thu, 14 Sep 2017 06:49:40 GMT
-ENV TOMCAT_ASC_FALLBACK_URL=https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.46/bin/apache-tomcat-8.0.46.tar.gz.asc
-# Thu, 14 Sep 2017 06:50:36 GMT
-RUN set -x 		&& { 		wget -O tomcat.tar.gz "$TOMCAT_TGZ_URL" 		|| wget -O tomcat.tar.gz "$TOMCAT_TGZ_FALLBACK_URL" 	; } 	&& { 		wget -O tomcat.tar.gz.asc "$TOMCAT_ASC_URL" 		|| wget -O tomcat.tar.gz.asc "$TOMCAT_ASC_FALLBACK_URL" 	; } 	&& gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz 	&& tar -xvf tomcat.tar.gz --strip-components=1 	&& rm bin/*.bat 	&& rm tomcat.tar.gz* 		&& nativeBuildDir="$(mktemp -d)" 	&& tar -xvf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1 	&& nativeBuildDeps=" 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 		openjdk-${JAVA_VERSION%%[-~bu]*}-jdk=$JAVA_DEBIAN_VERSION 	" 	&& apt-get update && apt-get install -y --no-install-recommends $nativeBuildDeps && rm -rf /var/lib/apt/lists/* 	&& ( 		export CATALINA_HOME="$PWD" 		&& cd "$nativeBuildDir/native" 		&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 		&& ./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$(which apr-1-config)" 			--with-java-home="$(docker-java-home)" 			--with-ssl=yes 		&& make -j "$(nproc)" 		&& make install 	) 	&& apt-get purge -y --auto-remove $nativeBuildDeps 	&& rm -rf "$nativeBuildDir" 	&& rm bin/tomcat-native.tar.gz 	&& find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +
-# Thu, 14 Sep 2017 06:50:41 GMT
+# Wed, 04 Oct 2017 00:09:34 GMT
+ENV TOMCAT_VERSION=8.0.47
+# Wed, 04 Oct 2017 00:09:34 GMT
+ENV TOMCAT_SHA1=2b5a0d173040f9a576e372cae5d85b05599fd0eb
+# Wed, 04 Oct 2017 00:09:34 GMT
+ENV TOMCAT_TGZ_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz 	https://www.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz
+# Wed, 04 Oct 2017 00:09:34 GMT
+ENV TOMCAT_ASC_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz.asc 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz.asc 	https://www.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz.asc 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz.asc
+# Wed, 04 Oct 2017 00:10:16 GMT
+RUN set -eux; 		success=; 	for url in $TOMCAT_TGZ_URLS; do 		if wget -O tomcat.tar.gz "$url"; then 			success=1; 			break; 		fi; 	done; 	[ -n "$success" ]; 		echo "$TOMCAT_SHA1 *tomcat.tar.gz" | sha1sum -c -; 		success=; 	for url in $TOMCAT_ASC_URLS; do 		if wget -O tomcat.tar.gz.asc "$url"; then 			success=1; 			break; 		fi; 	done; 	[ -n "$success" ]; 		gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xvf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 		nativeBuildDir="$(mktemp -d)"; 	tar -xvf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	nativeBuildDeps=" 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 		openjdk-${JAVA_VERSION%%[-~bu]*}-jdk=$JAVA_DEBIAN_VERSION 	"; 	apt-get update; 	apt-get install -y --no-install-recommends $nativeBuildDeps; 	rm -rf /var/lib/apt/lists/*; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$(which apr-1-config)" 			--with-java-home="$(docker-java-home)" 			--with-ssl=yes; 		make -j "$(nproc)"; 		make install; 	); 	apt-get purge -y --auto-remove $nativeBuildDeps; 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +
+# Wed, 04 Oct 2017 00:10:17 GMT
 RUN set -e 	&& nativeLines="$(catalina.sh configtest 2>&1)" 	&& nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')" 	&& nativeLines="$(echo "$nativeLines" | sort -u)" 	&& if ! echo "$nativeLines" | grep 'INFO: Loaded APR based Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Thu, 14 Sep 2017 06:50:41 GMT
+# Wed, 04 Oct 2017 00:10:17 GMT
 EXPOSE 8080/tcp
-# Thu, 14 Sep 2017 06:50:42 GMT
+# Wed, 04 Oct 2017 00:10:18 GMT
 CMD ["catalina.sh" "run"]
-# Thu, 14 Sep 2017 08:00:18 GMT
+# Wed, 04 Oct 2017 00:38:40 GMT
 ENV GN_FILE=geonetwork.war
-# Thu, 14 Sep 2017 08:00:18 GMT
+# Wed, 04 Oct 2017 00:38:40 GMT
 ENV DATA_DIR=/usr/local/tomcat/webapps/geonetwork/WEB-INF/data
-# Thu, 14 Sep 2017 08:00:18 GMT
+# Wed, 04 Oct 2017 00:38:41 GMT
 ENV JAVA_OPTS=-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true -Xmx512M -Xss2M -XX:MaxPermSize=512m -XX:+UseConcMarkSweepGC
-# Thu, 14 Sep 2017 08:00:18 GMT
+# Wed, 04 Oct 2017 00:38:41 GMT
 ENV GN_VERSION=3.0.5
-# Thu, 14 Sep 2017 08:00:18 GMT
+# Wed, 04 Oct 2017 00:38:41 GMT
 ENV GN_DOWNLOAD_MD5=1e77c39de4ad156cc9b3c2b033cab359
-# Thu, 14 Sep 2017 08:00:19 GMT
+# Wed, 04 Oct 2017 00:38:41 GMT
 WORKDIR /usr/local/tomcat/webapps
-# Thu, 14 Sep 2017 08:00:34 GMT
+# Wed, 04 Oct 2017 00:38:50 GMT
 RUN curl -fSL -o $GN_FILE      https://sourceforge.net/projects/geonetwork/files/GeoNetwork_opensource/v${GN_VERSION}/geonetwork.war/download &&      echo "$GN_DOWNLOAD_MD5 *$GN_FILE" | md5sum -c &&      mkdir -p geonetwork &&      unzip -e $GN_FILE -d geonetwork &&      rm $GN_FILE
-# Thu, 14 Sep 2017 08:00:36 GMT
+# Wed, 04 Oct 2017 00:38:50 GMT
 COPY file:80432c4531c627e0cdf0de71c059d44a74d09bb678d0caf329b148a8f4b65fb9 in /entrypoint.sh 
-# Thu, 14 Sep 2017 08:00:37 GMT
+# Wed, 04 Oct 2017 00:38:51 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Thu, 14 Sep 2017 08:00:37 GMT
+# Wed, 04 Oct 2017 00:38:51 GMT
 CMD ["catalina.sh" "run"]
-# Thu, 14 Sep 2017 08:01:08 GMT
+# Wed, 04 Oct 2017 00:39:38 GMT
 RUN apt-get update && apt-get install -y postgresql-client &&     rm -rf /var/lib/apt/lists/*
-# Thu, 14 Sep 2017 08:01:09 GMT
+# Wed, 04 Oct 2017 00:39:39 GMT
 RUN sed -i -e 's#<import resource="../config-db/h2.xml"/>#<!--<import resource="../config-db/h2.xml"/> -->#g' $CATALINA_HOME/webapps/geonetwork/WEB-INF/config-node/srv.xml && sed -i -e 's#<!--<import resource="../config-db/postgres.xml"/>-->#<import resource="../config-db/postgres.xml"/>#g' $CATALINA_HOME/webapps/geonetwork/WEB-INF/config-node/srv.xml
-# Thu, 14 Sep 2017 08:01:09 GMT
+# Wed, 04 Oct 2017 00:39:39 GMT
 COPY file:e2fbb7cf0447a8bc2706127d7dc9bceba30008f926826a6c3bf869efc97b906d in /usr/local/tomcat/webapps/geonetwork/WEB-INF/config-db/jdbc.properties 
-# Thu, 14 Sep 2017 08:01:09 GMT
+# Wed, 04 Oct 2017 00:39:40 GMT
 COPY file:2dd6f92687b208fdde8d0d8fa36354e2e373245faae443043799a7cca9e3538a in /entrypoint.sh 
-# Thu, 14 Sep 2017 08:01:09 GMT
+# Wed, 04 Oct 2017 00:39:40 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Thu, 14 Sep 2017 08:01:10 GMT
+# Wed, 04 Oct 2017 00:39:40 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -720,43 +712,43 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Thu, 14 Sep 2017 06:56:50 GMT  
 		Size: 113.8 KB (113845 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3acddd1b22fc3da91ae978c5c868dc6283d3f867824edbaf419861422908852c`  
-		Last Modified: Thu, 14 Sep 2017 06:58:43 GMT  
-		Size: 10.3 MB (10277843 bytes)  
+	-	`sha256:b09f1bc8ba69a2a788ea05a213e3c3b7bcc63e3477362c0bb7756755fc3a639a`  
+		Last Modified: Wed, 04 Oct 2017 00:16:20 GMT  
+		Size: 10.3 MB (10324150 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:879d57723a8cc4f1c5a602ecfcf19a013fc02f21e9be4e32e6b7d1ff4ae3ea92`  
-		Last Modified: Thu, 14 Sep 2017 06:58:41 GMT  
-		Size: 131.0 B  
+	-	`sha256:22bf55e4b045145eb9ee62258724c6fe8535a9a8aa4f2d54401fbd014db84168`  
+		Last Modified: Wed, 04 Oct 2017 00:16:19 GMT  
+		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c44027f25fd6261112f0cbd877ce6d2e4958b7c64183fbad2c107ce6deb68325`  
-		Last Modified: Thu, 14 Sep 2017 08:03:05 GMT  
-		Size: 139.4 MB (139410415 bytes)  
+	-	`sha256:64ccd334414dc266bbcb19e9c9f26d36e29a5298f5eb21b75611945ba259b2da`  
+		Last Modified: Wed, 04 Oct 2017 00:43:39 GMT  
+		Size: 139.4 MB (139410416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d2f402a3406f2ebe5353781fd3e574143f59e00489ef09c4828d3640d9c88b5b`  
-		Last Modified: Thu, 14 Sep 2017 08:02:54 GMT  
-		Size: 250.0 B  
+	-	`sha256:7dd86ab47eb7857ae2b1b879ded6f1de6761700e2948000ee1d1e6c3a23b77e1`  
+		Last Modified: Wed, 04 Oct 2017 00:43:25 GMT  
+		Size: 248.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bae475c2f83ddbb091bc25b3727200bd4273102f7c89e63bd2a64421ad52ac4d`  
-		Last Modified: Thu, 14 Sep 2017 08:03:24 GMT  
-		Size: 10.8 MB (10808417 bytes)  
+	-	`sha256:21fc948fe67d783864c43b90b2000a8d6578a8531be27460e95680a5aa4964b8`  
+		Last Modified: Wed, 04 Oct 2017 00:44:03 GMT  
+		Size: 10.8 MB (10808551 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1d59ed1558d2d1672fda5f27be7e0c778afaae837ca756a0224eba1815c57827`  
-		Last Modified: Thu, 14 Sep 2017 08:03:22 GMT  
-		Size: 708.0 B  
+	-	`sha256:e7a5e3de46bf2ab87856a0c5668019b9032229e57c2d4362849d02d40fa58840`  
+		Last Modified: Wed, 04 Oct 2017 00:43:58 GMT  
+		Size: 713.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a3f9710a13f9af2b4a9cb14748f9095f914aa0c5c5130d8cdf26455fdd18f000`  
-		Last Modified: Thu, 14 Sep 2017 08:03:22 GMT  
-		Size: 557.0 B  
+	-	`sha256:c3bfc7cc208074dfbc9f5144f9066d2d63601ae7990df90f8e46e436245e8a44`  
+		Last Modified: Wed, 04 Oct 2017 00:43:58 GMT  
+		Size: 559.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:32e5f8fa25b4bab25ecd76e8db11b56b135093480724d648704eab7fcabde11f`  
-		Last Modified: Thu, 14 Sep 2017 08:03:22 GMT  
-		Size: 925.0 B  
+	-	`sha256:46e187130b08e2b7ac017bd744c2ca90b534d38ab6dc0454d8f0f916a7a874a0`  
+		Last Modified: Wed, 04 Oct 2017 00:43:58 GMT  
+		Size: 926.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `geonetwork:3.2`
 
 ```console
-$ docker pull geonetwork@sha256:0fe2801b3f72cba54bda105df218efb7eb9abf24bdc5e71aacb015db498d0340
+$ docker pull geonetwork@sha256:3ba7a6bffee55df07ab1941815b4ef5150fa1aeaa65c120db611c1d79c473294
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -766,14 +758,14 @@ $ docker pull geonetwork@sha256:0fe2801b3f72cba54bda105df218efb7eb9abf24bdc5e71a
 ### `geonetwork:3.2` - linux; amd64
 
 ```console
-$ docker pull geonetwork@sha256:71fb4a1f58e7fe6e8a25b05a13160eb85461588893bc248c350e29085e78e0db
+$ docker pull geonetwork@sha256:aefb04440c089d8413580c8d8a4cdddcb84e48246fd42000ba7aa233018c6e4c
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **433.0 MB (432955790 bytes)**  
+-	Total Size: **434.9 MB (434892787 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0a941cf42aee754f7d2a5e3b4fc29201799dae29dec256c451c4c9075183567b`
+-	Image ID: `sha256:5013d79df3565fb7e195791ff62ad66c73f831fcc39d41efaf4e26382a4046d1`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["catalina.sh","run"]`
 
@@ -830,43 +822,41 @@ ENV GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E626
 RUN set -ex; 	for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done
 # Thu, 14 Sep 2017 06:52:10 GMT
 ENV TOMCAT_MAJOR=8
-# Thu, 14 Sep 2017 06:52:10 GMT
-ENV TOMCAT_VERSION=8.0.46
-# Thu, 14 Sep 2017 06:52:10 GMT
-ENV TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.0.46/bin/apache-tomcat-8.0.46.tar.gz
-# Thu, 14 Sep 2017 06:52:10 GMT
-ENV TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.46/bin/apache-tomcat-8.0.46.tar.gz.asc
-# Thu, 14 Sep 2017 06:52:10 GMT
-ENV TOMCAT_TGZ_FALLBACK_URL=https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.46/bin/apache-tomcat-8.0.46.tar.gz
-# Thu, 14 Sep 2017 06:52:10 GMT
-ENV TOMCAT_ASC_FALLBACK_URL=https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.46/bin/apache-tomcat-8.0.46.tar.gz.asc
-# Thu, 14 Sep 2017 06:52:50 GMT
-RUN set -x 		&& { 		wget -O tomcat.tar.gz "$TOMCAT_TGZ_URL" 		|| wget -O tomcat.tar.gz "$TOMCAT_TGZ_FALLBACK_URL" 	; } 	&& { 		wget -O tomcat.tar.gz.asc "$TOMCAT_ASC_URL" 		|| wget -O tomcat.tar.gz.asc "$TOMCAT_ASC_FALLBACK_URL" 	; } 	&& gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz 	&& tar -xvf tomcat.tar.gz --strip-components=1 	&& rm bin/*.bat 	&& rm tomcat.tar.gz* 		&& nativeBuildDir="$(mktemp -d)" 	&& tar -xvf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1 	&& nativeBuildDeps=" 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 		openjdk-${JAVA_VERSION%%[-~bu]*}-jdk=$JAVA_DEBIAN_VERSION 	" 	&& apt-get update && apt-get install -y --no-install-recommends $nativeBuildDeps && rm -rf /var/lib/apt/lists/* 	&& ( 		export CATALINA_HOME="$PWD" 		&& cd "$nativeBuildDir/native" 		&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 		&& ./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$(which apr-1-config)" 			--with-java-home="$(docker-java-home)" 			--with-ssl=yes 		&& make -j "$(nproc)" 		&& make install 	) 	&& apt-get purge -y --auto-remove $nativeBuildDeps 	&& rm -rf "$nativeBuildDir" 	&& rm bin/tomcat-native.tar.gz 	&& find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +
-# Thu, 14 Sep 2017 06:52:59 GMT
+# Wed, 04 Oct 2017 00:10:52 GMT
+ENV TOMCAT_VERSION=8.0.47
+# Wed, 04 Oct 2017 00:10:52 GMT
+ENV TOMCAT_SHA1=2b5a0d173040f9a576e372cae5d85b05599fd0eb
+# Wed, 04 Oct 2017 00:10:52 GMT
+ENV TOMCAT_TGZ_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz 	https://www.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz
+# Wed, 04 Oct 2017 00:10:52 GMT
+ENV TOMCAT_ASC_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz.asc 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz.asc 	https://www.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz.asc 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz.asc
+# Wed, 04 Oct 2017 00:11:12 GMT
+RUN set -eux; 		success=; 	for url in $TOMCAT_TGZ_URLS; do 		if wget -O tomcat.tar.gz "$url"; then 			success=1; 			break; 		fi; 	done; 	[ -n "$success" ]; 		echo "$TOMCAT_SHA1 *tomcat.tar.gz" | sha1sum -c -; 		success=; 	for url in $TOMCAT_ASC_URLS; do 		if wget -O tomcat.tar.gz.asc "$url"; then 			success=1; 			break; 		fi; 	done; 	[ -n "$success" ]; 		gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xvf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 		nativeBuildDir="$(mktemp -d)"; 	tar -xvf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	nativeBuildDeps=" 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 		openjdk-${JAVA_VERSION%%[-~bu]*}-jdk=$JAVA_DEBIAN_VERSION 	"; 	apt-get update; 	apt-get install -y --no-install-recommends $nativeBuildDeps; 	rm -rf /var/lib/apt/lists/*; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$(which apr-1-config)" 			--with-java-home="$(docker-java-home)" 			--with-ssl=yes; 		make -j "$(nproc)"; 		make install; 	); 	apt-get purge -y --auto-remove $nativeBuildDeps; 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +
+# Wed, 04 Oct 2017 00:11:13 GMT
 RUN set -e 	&& nativeLines="$(catalina.sh configtest 2>&1)" 	&& nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')" 	&& nativeLines="$(echo "$nativeLines" | sort -u)" 	&& if ! echo "$nativeLines" | grep 'INFO: Loaded APR based Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Thu, 14 Sep 2017 06:52:59 GMT
+# Wed, 04 Oct 2017 00:11:13 GMT
 EXPOSE 8080/tcp
-# Thu, 14 Sep 2017 06:53:00 GMT
+# Wed, 04 Oct 2017 00:11:13 GMT
 CMD ["catalina.sh" "run"]
-# Thu, 14 Sep 2017 08:01:12 GMT
+# Wed, 04 Oct 2017 00:39:53 GMT
 ENV GN_FILE=geonetwork.war
-# Thu, 14 Sep 2017 08:01:12 GMT
+# Wed, 04 Oct 2017 00:39:53 GMT
 ENV DATA_DIR=/usr/local/tomcat/webapps/geonetwork/WEB-INF/data
-# Thu, 14 Sep 2017 08:01:12 GMT
+# Wed, 04 Oct 2017 00:39:53 GMT
 ENV JAVA_OPTS=-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true -server -Xms512m -Xmx2024m -XX:NewSize=512m -XX:MaxNewSize=1024m -XX:PermSize=512m -XX:MaxPermSize=1024m -XX:+UseConcMarkSweepGC
-# Tue, 19 Sep 2017 12:14:00 GMT
+# Wed, 04 Oct 2017 00:39:54 GMT
 ENV GN_VERSION=3.2.2
-# Tue, 19 Sep 2017 12:14:00 GMT
+# Wed, 04 Oct 2017 00:39:54 GMT
 ENV GN_DOWNLOAD_MD5=93b5279223503106ffeea3e9ca697805
-# Tue, 19 Sep 2017 12:14:00 GMT
+# Wed, 04 Oct 2017 00:39:54 GMT
 WORKDIR /usr/local/tomcat/webapps
-# Tue, 19 Sep 2017 12:14:21 GMT
+# Wed, 04 Oct 2017 00:40:14 GMT
 RUN curl -fSL -o $GN_FILE      https://sourceforge.net/projects/geonetwork/files/GeoNetwork_opensource/v${GN_VERSION}/geonetwork.war/download &&      echo "$GN_DOWNLOAD_MD5 *$GN_FILE" | md5sum -c &&      mkdir -p geonetwork &&      unzip -e $GN_FILE -d geonetwork &&      rm $GN_FILE
-# Tue, 19 Sep 2017 12:14:22 GMT
+# Wed, 04 Oct 2017 00:40:15 GMT
 COPY file:80432c4531c627e0cdf0de71c059d44a74d09bb678d0caf329b148a8f4b65fb9 in /entrypoint.sh 
-# Tue, 19 Sep 2017 12:14:22 GMT
+# Wed, 04 Oct 2017 00:40:15 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 19 Sep 2017 12:14:22 GMT
+# Wed, 04 Oct 2017 00:40:15 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -915,27 +905,27 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Thu, 14 Sep 2017 06:58:00 GMT  
 		Size: 112.3 KB (112269 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:07300687a0e720a48931edaf685d83d3f18a94d91655c50b65ff1e0c2b724ac9`  
-		Last Modified: Thu, 14 Sep 2017 06:59:37 GMT  
-		Size: 10.3 MB (10309431 bytes)  
+	-	`sha256:ddde8ae0beff3cff74678442c11cc924d1aaa254cdbf2bacafdceb6707679533`  
+		Last Modified: Wed, 04 Oct 2017 00:17:25 GMT  
+		Size: 12.2 MB (12246498 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:58c99d270c5a9e6fd714f05af607ce6acdba469503a38be3199c419c64d53279`  
-		Last Modified: Thu, 14 Sep 2017 06:59:35 GMT  
-		Size: 130.0 B  
+	-	`sha256:44977ddf8e225eeba853e3372454c737fdd59d12b55b35bdc31cc38f963e8a16`  
+		Last Modified: Wed, 04 Oct 2017 00:17:23 GMT  
+		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4dc1f2cf74701ad814eb604671fc5bad8ed059fac6da41f59267d7bf110b50cd`  
-		Last Modified: Tue, 19 Sep 2017 12:15:09 GMT  
-		Size: 193.8 MB (193828812 bytes)  
+	-	`sha256:1e9dd24c94cfa760f866771c04562db1da733fe5a9c4b655edfd15b90602d0c2`  
+		Last Modified: Wed, 04 Oct 2017 00:44:42 GMT  
+		Size: 193.8 MB (193828740 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2fb182effb8d35256108bd221983f6e0a5625cec5376391e5d08acd1f3b382c1`  
-		Last Modified: Tue, 19 Sep 2017 12:14:54 GMT  
-		Size: 249.0 B  
+	-	`sha256:ee1d2b32e51bff20cd93d2324f729f1d615b370ee579b68ea598bbbd0cb22b89`  
+		Last Modified: Wed, 04 Oct 2017 00:44:21 GMT  
+		Size: 250.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `geonetwork:3.2.2`
 
 ```console
-$ docker pull geonetwork@sha256:0fe2801b3f72cba54bda105df218efb7eb9abf24bdc5e71aacb015db498d0340
+$ docker pull geonetwork@sha256:3ba7a6bffee55df07ab1941815b4ef5150fa1aeaa65c120db611c1d79c473294
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -945,14 +935,14 @@ $ docker pull geonetwork@sha256:0fe2801b3f72cba54bda105df218efb7eb9abf24bdc5e71a
 ### `geonetwork:3.2.2` - linux; amd64
 
 ```console
-$ docker pull geonetwork@sha256:71fb4a1f58e7fe6e8a25b05a13160eb85461588893bc248c350e29085e78e0db
+$ docker pull geonetwork@sha256:aefb04440c089d8413580c8d8a4cdddcb84e48246fd42000ba7aa233018c6e4c
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **433.0 MB (432955790 bytes)**  
+-	Total Size: **434.9 MB (434892787 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0a941cf42aee754f7d2a5e3b4fc29201799dae29dec256c451c4c9075183567b`
+-	Image ID: `sha256:5013d79df3565fb7e195791ff62ad66c73f831fcc39d41efaf4e26382a4046d1`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["catalina.sh","run"]`
 
@@ -1009,43 +999,41 @@ ENV GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E626
 RUN set -ex; 	for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done
 # Thu, 14 Sep 2017 06:52:10 GMT
 ENV TOMCAT_MAJOR=8
-# Thu, 14 Sep 2017 06:52:10 GMT
-ENV TOMCAT_VERSION=8.0.46
-# Thu, 14 Sep 2017 06:52:10 GMT
-ENV TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.0.46/bin/apache-tomcat-8.0.46.tar.gz
-# Thu, 14 Sep 2017 06:52:10 GMT
-ENV TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.46/bin/apache-tomcat-8.0.46.tar.gz.asc
-# Thu, 14 Sep 2017 06:52:10 GMT
-ENV TOMCAT_TGZ_FALLBACK_URL=https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.46/bin/apache-tomcat-8.0.46.tar.gz
-# Thu, 14 Sep 2017 06:52:10 GMT
-ENV TOMCAT_ASC_FALLBACK_URL=https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.46/bin/apache-tomcat-8.0.46.tar.gz.asc
-# Thu, 14 Sep 2017 06:52:50 GMT
-RUN set -x 		&& { 		wget -O tomcat.tar.gz "$TOMCAT_TGZ_URL" 		|| wget -O tomcat.tar.gz "$TOMCAT_TGZ_FALLBACK_URL" 	; } 	&& { 		wget -O tomcat.tar.gz.asc "$TOMCAT_ASC_URL" 		|| wget -O tomcat.tar.gz.asc "$TOMCAT_ASC_FALLBACK_URL" 	; } 	&& gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz 	&& tar -xvf tomcat.tar.gz --strip-components=1 	&& rm bin/*.bat 	&& rm tomcat.tar.gz* 		&& nativeBuildDir="$(mktemp -d)" 	&& tar -xvf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1 	&& nativeBuildDeps=" 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 		openjdk-${JAVA_VERSION%%[-~bu]*}-jdk=$JAVA_DEBIAN_VERSION 	" 	&& apt-get update && apt-get install -y --no-install-recommends $nativeBuildDeps && rm -rf /var/lib/apt/lists/* 	&& ( 		export CATALINA_HOME="$PWD" 		&& cd "$nativeBuildDir/native" 		&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 		&& ./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$(which apr-1-config)" 			--with-java-home="$(docker-java-home)" 			--with-ssl=yes 		&& make -j "$(nproc)" 		&& make install 	) 	&& apt-get purge -y --auto-remove $nativeBuildDeps 	&& rm -rf "$nativeBuildDir" 	&& rm bin/tomcat-native.tar.gz 	&& find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +
-# Thu, 14 Sep 2017 06:52:59 GMT
+# Wed, 04 Oct 2017 00:10:52 GMT
+ENV TOMCAT_VERSION=8.0.47
+# Wed, 04 Oct 2017 00:10:52 GMT
+ENV TOMCAT_SHA1=2b5a0d173040f9a576e372cae5d85b05599fd0eb
+# Wed, 04 Oct 2017 00:10:52 GMT
+ENV TOMCAT_TGZ_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz 	https://www.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz
+# Wed, 04 Oct 2017 00:10:52 GMT
+ENV TOMCAT_ASC_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz.asc 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz.asc 	https://www.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz.asc 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz.asc
+# Wed, 04 Oct 2017 00:11:12 GMT
+RUN set -eux; 		success=; 	for url in $TOMCAT_TGZ_URLS; do 		if wget -O tomcat.tar.gz "$url"; then 			success=1; 			break; 		fi; 	done; 	[ -n "$success" ]; 		echo "$TOMCAT_SHA1 *tomcat.tar.gz" | sha1sum -c -; 		success=; 	for url in $TOMCAT_ASC_URLS; do 		if wget -O tomcat.tar.gz.asc "$url"; then 			success=1; 			break; 		fi; 	done; 	[ -n "$success" ]; 		gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xvf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 		nativeBuildDir="$(mktemp -d)"; 	tar -xvf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	nativeBuildDeps=" 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 		openjdk-${JAVA_VERSION%%[-~bu]*}-jdk=$JAVA_DEBIAN_VERSION 	"; 	apt-get update; 	apt-get install -y --no-install-recommends $nativeBuildDeps; 	rm -rf /var/lib/apt/lists/*; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$(which apr-1-config)" 			--with-java-home="$(docker-java-home)" 			--with-ssl=yes; 		make -j "$(nproc)"; 		make install; 	); 	apt-get purge -y --auto-remove $nativeBuildDeps; 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +
+# Wed, 04 Oct 2017 00:11:13 GMT
 RUN set -e 	&& nativeLines="$(catalina.sh configtest 2>&1)" 	&& nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')" 	&& nativeLines="$(echo "$nativeLines" | sort -u)" 	&& if ! echo "$nativeLines" | grep 'INFO: Loaded APR based Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Thu, 14 Sep 2017 06:52:59 GMT
+# Wed, 04 Oct 2017 00:11:13 GMT
 EXPOSE 8080/tcp
-# Thu, 14 Sep 2017 06:53:00 GMT
+# Wed, 04 Oct 2017 00:11:13 GMT
 CMD ["catalina.sh" "run"]
-# Thu, 14 Sep 2017 08:01:12 GMT
+# Wed, 04 Oct 2017 00:39:53 GMT
 ENV GN_FILE=geonetwork.war
-# Thu, 14 Sep 2017 08:01:12 GMT
+# Wed, 04 Oct 2017 00:39:53 GMT
 ENV DATA_DIR=/usr/local/tomcat/webapps/geonetwork/WEB-INF/data
-# Thu, 14 Sep 2017 08:01:12 GMT
+# Wed, 04 Oct 2017 00:39:53 GMT
 ENV JAVA_OPTS=-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true -server -Xms512m -Xmx2024m -XX:NewSize=512m -XX:MaxNewSize=1024m -XX:PermSize=512m -XX:MaxPermSize=1024m -XX:+UseConcMarkSweepGC
-# Tue, 19 Sep 2017 12:14:00 GMT
+# Wed, 04 Oct 2017 00:39:54 GMT
 ENV GN_VERSION=3.2.2
-# Tue, 19 Sep 2017 12:14:00 GMT
+# Wed, 04 Oct 2017 00:39:54 GMT
 ENV GN_DOWNLOAD_MD5=93b5279223503106ffeea3e9ca697805
-# Tue, 19 Sep 2017 12:14:00 GMT
+# Wed, 04 Oct 2017 00:39:54 GMT
 WORKDIR /usr/local/tomcat/webapps
-# Tue, 19 Sep 2017 12:14:21 GMT
+# Wed, 04 Oct 2017 00:40:14 GMT
 RUN curl -fSL -o $GN_FILE      https://sourceforge.net/projects/geonetwork/files/GeoNetwork_opensource/v${GN_VERSION}/geonetwork.war/download &&      echo "$GN_DOWNLOAD_MD5 *$GN_FILE" | md5sum -c &&      mkdir -p geonetwork &&      unzip -e $GN_FILE -d geonetwork &&      rm $GN_FILE
-# Tue, 19 Sep 2017 12:14:22 GMT
+# Wed, 04 Oct 2017 00:40:15 GMT
 COPY file:80432c4531c627e0cdf0de71c059d44a74d09bb678d0caf329b148a8f4b65fb9 in /entrypoint.sh 
-# Tue, 19 Sep 2017 12:14:22 GMT
+# Wed, 04 Oct 2017 00:40:15 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 19 Sep 2017 12:14:22 GMT
+# Wed, 04 Oct 2017 00:40:15 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -1094,27 +1082,27 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Thu, 14 Sep 2017 06:58:00 GMT  
 		Size: 112.3 KB (112269 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:07300687a0e720a48931edaf685d83d3f18a94d91655c50b65ff1e0c2b724ac9`  
-		Last Modified: Thu, 14 Sep 2017 06:59:37 GMT  
-		Size: 10.3 MB (10309431 bytes)  
+	-	`sha256:ddde8ae0beff3cff74678442c11cc924d1aaa254cdbf2bacafdceb6707679533`  
+		Last Modified: Wed, 04 Oct 2017 00:17:25 GMT  
+		Size: 12.2 MB (12246498 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:58c99d270c5a9e6fd714f05af607ce6acdba469503a38be3199c419c64d53279`  
-		Last Modified: Thu, 14 Sep 2017 06:59:35 GMT  
-		Size: 130.0 B  
+	-	`sha256:44977ddf8e225eeba853e3372454c737fdd59d12b55b35bdc31cc38f963e8a16`  
+		Last Modified: Wed, 04 Oct 2017 00:17:23 GMT  
+		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4dc1f2cf74701ad814eb604671fc5bad8ed059fac6da41f59267d7bf110b50cd`  
-		Last Modified: Tue, 19 Sep 2017 12:15:09 GMT  
-		Size: 193.8 MB (193828812 bytes)  
+	-	`sha256:1e9dd24c94cfa760f866771c04562db1da733fe5a9c4b655edfd15b90602d0c2`  
+		Last Modified: Wed, 04 Oct 2017 00:44:42 GMT  
+		Size: 193.8 MB (193828740 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2fb182effb8d35256108bd221983f6e0a5625cec5376391e5d08acd1f3b382c1`  
-		Last Modified: Tue, 19 Sep 2017 12:14:54 GMT  
-		Size: 249.0 B  
+	-	`sha256:ee1d2b32e51bff20cd93d2324f729f1d615b370ee579b68ea598bbbd0cb22b89`  
+		Last Modified: Wed, 04 Oct 2017 00:44:21 GMT  
+		Size: 250.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `geonetwork:3.2.2-postgres`
 
 ```console
-$ docker pull geonetwork@sha256:c27d36c8d977fa4d1f77dcb0043226798fd3b3f456bdcfb9baf602d6659a9a79
+$ docker pull geonetwork@sha256:cf041d6bbc79c3a8326e47a85cd02510757e5847954881ec029cc07617a2cd8a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1124,14 +1112,14 @@ $ docker pull geonetwork@sha256:c27d36c8d977fa4d1f77dcb0043226798fd3b3f456bdcfb9
 ### `geonetwork:3.2.2-postgres` - linux; amd64
 
 ```console
-$ docker pull geonetwork@sha256:06872b8dc26e5a873f472a9b848bb6b4b7569488548ecee2b9dfe97de0bac410
+$ docker pull geonetwork@sha256:a53f5db370012087e48a2b9a10f34c18fcb8d1103edc3d6d260fea18fddfa2ad
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **446.0 MB (445979269 bytes)**  
+-	Total Size: **447.9 MB (447916476 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:263dc4f89a8d8c0cdfe04acc8801d57c3899111ae032bf683eada82e1db60f18`
+-	Image ID: `sha256:15e5d1febb755b9ccfa596b65c650a3d191c05fef6cd84fdcda6090b4cef5812`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["catalina.sh","run"]`
 
@@ -1188,55 +1176,53 @@ ENV GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E626
 RUN set -ex; 	for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done
 # Thu, 14 Sep 2017 06:52:10 GMT
 ENV TOMCAT_MAJOR=8
-# Thu, 14 Sep 2017 06:52:10 GMT
-ENV TOMCAT_VERSION=8.0.46
-# Thu, 14 Sep 2017 06:52:10 GMT
-ENV TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.0.46/bin/apache-tomcat-8.0.46.tar.gz
-# Thu, 14 Sep 2017 06:52:10 GMT
-ENV TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.46/bin/apache-tomcat-8.0.46.tar.gz.asc
-# Thu, 14 Sep 2017 06:52:10 GMT
-ENV TOMCAT_TGZ_FALLBACK_URL=https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.46/bin/apache-tomcat-8.0.46.tar.gz
-# Thu, 14 Sep 2017 06:52:10 GMT
-ENV TOMCAT_ASC_FALLBACK_URL=https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.46/bin/apache-tomcat-8.0.46.tar.gz.asc
-# Thu, 14 Sep 2017 06:52:50 GMT
-RUN set -x 		&& { 		wget -O tomcat.tar.gz "$TOMCAT_TGZ_URL" 		|| wget -O tomcat.tar.gz "$TOMCAT_TGZ_FALLBACK_URL" 	; } 	&& { 		wget -O tomcat.tar.gz.asc "$TOMCAT_ASC_URL" 		|| wget -O tomcat.tar.gz.asc "$TOMCAT_ASC_FALLBACK_URL" 	; } 	&& gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz 	&& tar -xvf tomcat.tar.gz --strip-components=1 	&& rm bin/*.bat 	&& rm tomcat.tar.gz* 		&& nativeBuildDir="$(mktemp -d)" 	&& tar -xvf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1 	&& nativeBuildDeps=" 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 		openjdk-${JAVA_VERSION%%[-~bu]*}-jdk=$JAVA_DEBIAN_VERSION 	" 	&& apt-get update && apt-get install -y --no-install-recommends $nativeBuildDeps && rm -rf /var/lib/apt/lists/* 	&& ( 		export CATALINA_HOME="$PWD" 		&& cd "$nativeBuildDir/native" 		&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 		&& ./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$(which apr-1-config)" 			--with-java-home="$(docker-java-home)" 			--with-ssl=yes 		&& make -j "$(nproc)" 		&& make install 	) 	&& apt-get purge -y --auto-remove $nativeBuildDeps 	&& rm -rf "$nativeBuildDir" 	&& rm bin/tomcat-native.tar.gz 	&& find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +
-# Thu, 14 Sep 2017 06:52:59 GMT
+# Wed, 04 Oct 2017 00:10:52 GMT
+ENV TOMCAT_VERSION=8.0.47
+# Wed, 04 Oct 2017 00:10:52 GMT
+ENV TOMCAT_SHA1=2b5a0d173040f9a576e372cae5d85b05599fd0eb
+# Wed, 04 Oct 2017 00:10:52 GMT
+ENV TOMCAT_TGZ_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz 	https://www.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz
+# Wed, 04 Oct 2017 00:10:52 GMT
+ENV TOMCAT_ASC_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz.asc 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz.asc 	https://www.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz.asc 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz.asc
+# Wed, 04 Oct 2017 00:11:12 GMT
+RUN set -eux; 		success=; 	for url in $TOMCAT_TGZ_URLS; do 		if wget -O tomcat.tar.gz "$url"; then 			success=1; 			break; 		fi; 	done; 	[ -n "$success" ]; 		echo "$TOMCAT_SHA1 *tomcat.tar.gz" | sha1sum -c -; 		success=; 	for url in $TOMCAT_ASC_URLS; do 		if wget -O tomcat.tar.gz.asc "$url"; then 			success=1; 			break; 		fi; 	done; 	[ -n "$success" ]; 		gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xvf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 		nativeBuildDir="$(mktemp -d)"; 	tar -xvf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	nativeBuildDeps=" 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 		openjdk-${JAVA_VERSION%%[-~bu]*}-jdk=$JAVA_DEBIAN_VERSION 	"; 	apt-get update; 	apt-get install -y --no-install-recommends $nativeBuildDeps; 	rm -rf /var/lib/apt/lists/*; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$(which apr-1-config)" 			--with-java-home="$(docker-java-home)" 			--with-ssl=yes; 		make -j "$(nproc)"; 		make install; 	); 	apt-get purge -y --auto-remove $nativeBuildDeps; 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +
+# Wed, 04 Oct 2017 00:11:13 GMT
 RUN set -e 	&& nativeLines="$(catalina.sh configtest 2>&1)" 	&& nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')" 	&& nativeLines="$(echo "$nativeLines" | sort -u)" 	&& if ! echo "$nativeLines" | grep 'INFO: Loaded APR based Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Thu, 14 Sep 2017 06:52:59 GMT
+# Wed, 04 Oct 2017 00:11:13 GMT
 EXPOSE 8080/tcp
-# Thu, 14 Sep 2017 06:53:00 GMT
+# Wed, 04 Oct 2017 00:11:13 GMT
 CMD ["catalina.sh" "run"]
-# Thu, 14 Sep 2017 08:01:12 GMT
+# Wed, 04 Oct 2017 00:39:53 GMT
 ENV GN_FILE=geonetwork.war
-# Thu, 14 Sep 2017 08:01:12 GMT
+# Wed, 04 Oct 2017 00:39:53 GMT
 ENV DATA_DIR=/usr/local/tomcat/webapps/geonetwork/WEB-INF/data
-# Thu, 14 Sep 2017 08:01:12 GMT
+# Wed, 04 Oct 2017 00:39:53 GMT
 ENV JAVA_OPTS=-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true -server -Xms512m -Xmx2024m -XX:NewSize=512m -XX:MaxNewSize=1024m -XX:PermSize=512m -XX:MaxPermSize=1024m -XX:+UseConcMarkSweepGC
-# Tue, 19 Sep 2017 12:14:00 GMT
+# Wed, 04 Oct 2017 00:39:54 GMT
 ENV GN_VERSION=3.2.2
-# Tue, 19 Sep 2017 12:14:00 GMT
+# Wed, 04 Oct 2017 00:39:54 GMT
 ENV GN_DOWNLOAD_MD5=93b5279223503106ffeea3e9ca697805
-# Tue, 19 Sep 2017 12:14:00 GMT
+# Wed, 04 Oct 2017 00:39:54 GMT
 WORKDIR /usr/local/tomcat/webapps
-# Tue, 19 Sep 2017 12:14:21 GMT
+# Wed, 04 Oct 2017 00:40:14 GMT
 RUN curl -fSL -o $GN_FILE      https://sourceforge.net/projects/geonetwork/files/GeoNetwork_opensource/v${GN_VERSION}/geonetwork.war/download &&      echo "$GN_DOWNLOAD_MD5 *$GN_FILE" | md5sum -c &&      mkdir -p geonetwork &&      unzip -e $GN_FILE -d geonetwork &&      rm $GN_FILE
-# Tue, 19 Sep 2017 12:14:22 GMT
+# Wed, 04 Oct 2017 00:40:15 GMT
 COPY file:80432c4531c627e0cdf0de71c059d44a74d09bb678d0caf329b148a8f4b65fb9 in /entrypoint.sh 
-# Tue, 19 Sep 2017 12:14:22 GMT
+# Wed, 04 Oct 2017 00:40:15 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 19 Sep 2017 12:14:22 GMT
+# Wed, 04 Oct 2017 00:40:15 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 19 Sep 2017 12:14:42 GMT
+# Wed, 04 Oct 2017 00:43:11 GMT
 RUN apt-get update && apt-get install -y postgresql-client &&     rm -rf /var/lib/apt/lists/*
-# Tue, 19 Sep 2017 12:14:42 GMT
+# Wed, 04 Oct 2017 00:43:13 GMT
 RUN sed -i -e 's#<import resource="../config-db/h2.xml"/>#<!--<import resource="../config-db/h2.xml"/> -->#g' $CATALINA_HOME/webapps/geonetwork/WEB-INF/config-node/srv.xml && sed -i -e 's#<!--<import resource="../config-db/postgres.xml"/>-->#<import resource="../config-db/postgres.xml"/>#g' $CATALINA_HOME/webapps/geonetwork/WEB-INF/config-node/srv.xml
-# Tue, 19 Sep 2017 12:14:43 GMT
+# Wed, 04 Oct 2017 00:43:14 GMT
 COPY file:e2fbb7cf0447a8bc2706127d7dc9bceba30008f926826a6c3bf869efc97b906d in /usr/local/tomcat/webapps/geonetwork/WEB-INF/config-db/jdbc.properties 
-# Tue, 19 Sep 2017 12:14:43 GMT
+# Wed, 04 Oct 2017 00:43:14 GMT
 COPY file:2dd6f92687b208fdde8d0d8fa36354e2e373245faae443043799a7cca9e3538a in /entrypoint.sh 
-# Tue, 19 Sep 2017 12:14:43 GMT
+# Wed, 04 Oct 2017 00:43:14 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 19 Sep 2017 12:14:43 GMT
+# Wed, 04 Oct 2017 00:43:14 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -1285,43 +1271,43 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Thu, 14 Sep 2017 06:58:00 GMT  
 		Size: 112.3 KB (112269 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:07300687a0e720a48931edaf685d83d3f18a94d91655c50b65ff1e0c2b724ac9`  
-		Last Modified: Thu, 14 Sep 2017 06:59:37 GMT  
-		Size: 10.3 MB (10309431 bytes)  
+	-	`sha256:ddde8ae0beff3cff74678442c11cc924d1aaa254cdbf2bacafdceb6707679533`  
+		Last Modified: Wed, 04 Oct 2017 00:17:25 GMT  
+		Size: 12.2 MB (12246498 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:58c99d270c5a9e6fd714f05af607ce6acdba469503a38be3199c419c64d53279`  
-		Last Modified: Thu, 14 Sep 2017 06:59:35 GMT  
-		Size: 130.0 B  
+	-	`sha256:44977ddf8e225eeba853e3372454c737fdd59d12b55b35bdc31cc38f963e8a16`  
+		Last Modified: Wed, 04 Oct 2017 00:17:23 GMT  
+		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4dc1f2cf74701ad814eb604671fc5bad8ed059fac6da41f59267d7bf110b50cd`  
-		Last Modified: Tue, 19 Sep 2017 12:15:09 GMT  
-		Size: 193.8 MB (193828812 bytes)  
+	-	`sha256:1e9dd24c94cfa760f866771c04562db1da733fe5a9c4b655edfd15b90602d0c2`  
+		Last Modified: Wed, 04 Oct 2017 00:44:42 GMT  
+		Size: 193.8 MB (193828740 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2fb182effb8d35256108bd221983f6e0a5625cec5376391e5d08acd1f3b382c1`  
-		Last Modified: Tue, 19 Sep 2017 12:14:54 GMT  
-		Size: 249.0 B  
+	-	`sha256:ee1d2b32e51bff20cd93d2324f729f1d615b370ee579b68ea598bbbd0cb22b89`  
+		Last Modified: Wed, 04 Oct 2017 00:44:21 GMT  
+		Size: 250.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7e339f0ac175dec53cb45b76e64ba65b5c0e3c72ae363a6232e1e2b643b29b3f`  
-		Last Modified: Tue, 19 Sep 2017 12:15:35 GMT  
-		Size: 13.0 MB (13020719 bytes)  
+	-	`sha256:6473a5c5bd509af5480ec3ccd54e9152f3b3c3d129216f00d492853ce08106a1`  
+		Last Modified: Wed, 04 Oct 2017 00:47:53 GMT  
+		Size: 13.0 MB (13020916 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:863e53bb5efdf8ee5d5b9a6c0b32db6fca67d39e707c60c443873a86ee1e0eb4`  
-		Last Modified: Tue, 19 Sep 2017 12:15:32 GMT  
-		Size: 1.3 KB (1280 bytes)  
+	-	`sha256:e2bf5a5f8cd7ac603286ab61e5aab648acc0ded7e6be6a7a53108476af3ce9f6`  
+		Last Modified: Wed, 04 Oct 2017 00:47:48 GMT  
+		Size: 1.3 KB (1286 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d06dc5ca34a282870ecdbfc74b60aac814000f00dcf40e542d3005b420b10d37`  
-		Last Modified: Tue, 19 Sep 2017 12:15:32 GMT  
-		Size: 554.0 B  
+	-	`sha256:7f6293ae9cd6e2b9ba019ff30c070b721d944df123108e8d84cb3e2e610e04d7`  
+		Last Modified: Wed, 04 Oct 2017 00:47:48 GMT  
+		Size: 560.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3947fcd6ba0ce8774f3c75a6f1c08311c68c4ab3ffed2d0cf702b92aff84a1fa`  
-		Last Modified: Tue, 19 Sep 2017 12:15:32 GMT  
-		Size: 926.0 B  
+	-	`sha256:c204c9cd2e130ea94f9301f2ce3ff1c4023aa6e9c477a28654099bb5478a758b`  
+		Last Modified: Wed, 04 Oct 2017 00:47:48 GMT  
+		Size: 927.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `geonetwork:3.2-postgres`
 
 ```console
-$ docker pull geonetwork@sha256:c27d36c8d977fa4d1f77dcb0043226798fd3b3f456bdcfb9baf602d6659a9a79
+$ docker pull geonetwork@sha256:cf041d6bbc79c3a8326e47a85cd02510757e5847954881ec029cc07617a2cd8a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1331,14 +1317,14 @@ $ docker pull geonetwork@sha256:c27d36c8d977fa4d1f77dcb0043226798fd3b3f456bdcfb9
 ### `geonetwork:3.2-postgres` - linux; amd64
 
 ```console
-$ docker pull geonetwork@sha256:06872b8dc26e5a873f472a9b848bb6b4b7569488548ecee2b9dfe97de0bac410
+$ docker pull geonetwork@sha256:a53f5db370012087e48a2b9a10f34c18fcb8d1103edc3d6d260fea18fddfa2ad
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **446.0 MB (445979269 bytes)**  
+-	Total Size: **447.9 MB (447916476 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:263dc4f89a8d8c0cdfe04acc8801d57c3899111ae032bf683eada82e1db60f18`
+-	Image ID: `sha256:15e5d1febb755b9ccfa596b65c650a3d191c05fef6cd84fdcda6090b4cef5812`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["catalina.sh","run"]`
 
@@ -1395,55 +1381,53 @@ ENV GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E626
 RUN set -ex; 	for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done
 # Thu, 14 Sep 2017 06:52:10 GMT
 ENV TOMCAT_MAJOR=8
-# Thu, 14 Sep 2017 06:52:10 GMT
-ENV TOMCAT_VERSION=8.0.46
-# Thu, 14 Sep 2017 06:52:10 GMT
-ENV TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.0.46/bin/apache-tomcat-8.0.46.tar.gz
-# Thu, 14 Sep 2017 06:52:10 GMT
-ENV TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.46/bin/apache-tomcat-8.0.46.tar.gz.asc
-# Thu, 14 Sep 2017 06:52:10 GMT
-ENV TOMCAT_TGZ_FALLBACK_URL=https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.46/bin/apache-tomcat-8.0.46.tar.gz
-# Thu, 14 Sep 2017 06:52:10 GMT
-ENV TOMCAT_ASC_FALLBACK_URL=https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.46/bin/apache-tomcat-8.0.46.tar.gz.asc
-# Thu, 14 Sep 2017 06:52:50 GMT
-RUN set -x 		&& { 		wget -O tomcat.tar.gz "$TOMCAT_TGZ_URL" 		|| wget -O tomcat.tar.gz "$TOMCAT_TGZ_FALLBACK_URL" 	; } 	&& { 		wget -O tomcat.tar.gz.asc "$TOMCAT_ASC_URL" 		|| wget -O tomcat.tar.gz.asc "$TOMCAT_ASC_FALLBACK_URL" 	; } 	&& gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz 	&& tar -xvf tomcat.tar.gz --strip-components=1 	&& rm bin/*.bat 	&& rm tomcat.tar.gz* 		&& nativeBuildDir="$(mktemp -d)" 	&& tar -xvf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1 	&& nativeBuildDeps=" 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 		openjdk-${JAVA_VERSION%%[-~bu]*}-jdk=$JAVA_DEBIAN_VERSION 	" 	&& apt-get update && apt-get install -y --no-install-recommends $nativeBuildDeps && rm -rf /var/lib/apt/lists/* 	&& ( 		export CATALINA_HOME="$PWD" 		&& cd "$nativeBuildDir/native" 		&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 		&& ./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$(which apr-1-config)" 			--with-java-home="$(docker-java-home)" 			--with-ssl=yes 		&& make -j "$(nproc)" 		&& make install 	) 	&& apt-get purge -y --auto-remove $nativeBuildDeps 	&& rm -rf "$nativeBuildDir" 	&& rm bin/tomcat-native.tar.gz 	&& find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +
-# Thu, 14 Sep 2017 06:52:59 GMT
+# Wed, 04 Oct 2017 00:10:52 GMT
+ENV TOMCAT_VERSION=8.0.47
+# Wed, 04 Oct 2017 00:10:52 GMT
+ENV TOMCAT_SHA1=2b5a0d173040f9a576e372cae5d85b05599fd0eb
+# Wed, 04 Oct 2017 00:10:52 GMT
+ENV TOMCAT_TGZ_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz 	https://www.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz
+# Wed, 04 Oct 2017 00:10:52 GMT
+ENV TOMCAT_ASC_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz.asc 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz.asc 	https://www.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz.asc 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz.asc
+# Wed, 04 Oct 2017 00:11:12 GMT
+RUN set -eux; 		success=; 	for url in $TOMCAT_TGZ_URLS; do 		if wget -O tomcat.tar.gz "$url"; then 			success=1; 			break; 		fi; 	done; 	[ -n "$success" ]; 		echo "$TOMCAT_SHA1 *tomcat.tar.gz" | sha1sum -c -; 		success=; 	for url in $TOMCAT_ASC_URLS; do 		if wget -O tomcat.tar.gz.asc "$url"; then 			success=1; 			break; 		fi; 	done; 	[ -n "$success" ]; 		gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xvf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 		nativeBuildDir="$(mktemp -d)"; 	tar -xvf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	nativeBuildDeps=" 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 		openjdk-${JAVA_VERSION%%[-~bu]*}-jdk=$JAVA_DEBIAN_VERSION 	"; 	apt-get update; 	apt-get install -y --no-install-recommends $nativeBuildDeps; 	rm -rf /var/lib/apt/lists/*; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$(which apr-1-config)" 			--with-java-home="$(docker-java-home)" 			--with-ssl=yes; 		make -j "$(nproc)"; 		make install; 	); 	apt-get purge -y --auto-remove $nativeBuildDeps; 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +
+# Wed, 04 Oct 2017 00:11:13 GMT
 RUN set -e 	&& nativeLines="$(catalina.sh configtest 2>&1)" 	&& nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')" 	&& nativeLines="$(echo "$nativeLines" | sort -u)" 	&& if ! echo "$nativeLines" | grep 'INFO: Loaded APR based Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Thu, 14 Sep 2017 06:52:59 GMT
+# Wed, 04 Oct 2017 00:11:13 GMT
 EXPOSE 8080/tcp
-# Thu, 14 Sep 2017 06:53:00 GMT
+# Wed, 04 Oct 2017 00:11:13 GMT
 CMD ["catalina.sh" "run"]
-# Thu, 14 Sep 2017 08:01:12 GMT
+# Wed, 04 Oct 2017 00:39:53 GMT
 ENV GN_FILE=geonetwork.war
-# Thu, 14 Sep 2017 08:01:12 GMT
+# Wed, 04 Oct 2017 00:39:53 GMT
 ENV DATA_DIR=/usr/local/tomcat/webapps/geonetwork/WEB-INF/data
-# Thu, 14 Sep 2017 08:01:12 GMT
+# Wed, 04 Oct 2017 00:39:53 GMT
 ENV JAVA_OPTS=-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true -server -Xms512m -Xmx2024m -XX:NewSize=512m -XX:MaxNewSize=1024m -XX:PermSize=512m -XX:MaxPermSize=1024m -XX:+UseConcMarkSweepGC
-# Tue, 19 Sep 2017 12:14:00 GMT
+# Wed, 04 Oct 2017 00:39:54 GMT
 ENV GN_VERSION=3.2.2
-# Tue, 19 Sep 2017 12:14:00 GMT
+# Wed, 04 Oct 2017 00:39:54 GMT
 ENV GN_DOWNLOAD_MD5=93b5279223503106ffeea3e9ca697805
-# Tue, 19 Sep 2017 12:14:00 GMT
+# Wed, 04 Oct 2017 00:39:54 GMT
 WORKDIR /usr/local/tomcat/webapps
-# Tue, 19 Sep 2017 12:14:21 GMT
+# Wed, 04 Oct 2017 00:40:14 GMT
 RUN curl -fSL -o $GN_FILE      https://sourceforge.net/projects/geonetwork/files/GeoNetwork_opensource/v${GN_VERSION}/geonetwork.war/download &&      echo "$GN_DOWNLOAD_MD5 *$GN_FILE" | md5sum -c &&      mkdir -p geonetwork &&      unzip -e $GN_FILE -d geonetwork &&      rm $GN_FILE
-# Tue, 19 Sep 2017 12:14:22 GMT
+# Wed, 04 Oct 2017 00:40:15 GMT
 COPY file:80432c4531c627e0cdf0de71c059d44a74d09bb678d0caf329b148a8f4b65fb9 in /entrypoint.sh 
-# Tue, 19 Sep 2017 12:14:22 GMT
+# Wed, 04 Oct 2017 00:40:15 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 19 Sep 2017 12:14:22 GMT
+# Wed, 04 Oct 2017 00:40:15 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 19 Sep 2017 12:14:42 GMT
+# Wed, 04 Oct 2017 00:43:11 GMT
 RUN apt-get update && apt-get install -y postgresql-client &&     rm -rf /var/lib/apt/lists/*
-# Tue, 19 Sep 2017 12:14:42 GMT
+# Wed, 04 Oct 2017 00:43:13 GMT
 RUN sed -i -e 's#<import resource="../config-db/h2.xml"/>#<!--<import resource="../config-db/h2.xml"/> -->#g' $CATALINA_HOME/webapps/geonetwork/WEB-INF/config-node/srv.xml && sed -i -e 's#<!--<import resource="../config-db/postgres.xml"/>-->#<import resource="../config-db/postgres.xml"/>#g' $CATALINA_HOME/webapps/geonetwork/WEB-INF/config-node/srv.xml
-# Tue, 19 Sep 2017 12:14:43 GMT
+# Wed, 04 Oct 2017 00:43:14 GMT
 COPY file:e2fbb7cf0447a8bc2706127d7dc9bceba30008f926826a6c3bf869efc97b906d in /usr/local/tomcat/webapps/geonetwork/WEB-INF/config-db/jdbc.properties 
-# Tue, 19 Sep 2017 12:14:43 GMT
+# Wed, 04 Oct 2017 00:43:14 GMT
 COPY file:2dd6f92687b208fdde8d0d8fa36354e2e373245faae443043799a7cca9e3538a in /entrypoint.sh 
-# Tue, 19 Sep 2017 12:14:43 GMT
+# Wed, 04 Oct 2017 00:43:14 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 19 Sep 2017 12:14:43 GMT
+# Wed, 04 Oct 2017 00:43:14 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -1492,43 +1476,43 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Thu, 14 Sep 2017 06:58:00 GMT  
 		Size: 112.3 KB (112269 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:07300687a0e720a48931edaf685d83d3f18a94d91655c50b65ff1e0c2b724ac9`  
-		Last Modified: Thu, 14 Sep 2017 06:59:37 GMT  
-		Size: 10.3 MB (10309431 bytes)  
+	-	`sha256:ddde8ae0beff3cff74678442c11cc924d1aaa254cdbf2bacafdceb6707679533`  
+		Last Modified: Wed, 04 Oct 2017 00:17:25 GMT  
+		Size: 12.2 MB (12246498 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:58c99d270c5a9e6fd714f05af607ce6acdba469503a38be3199c419c64d53279`  
-		Last Modified: Thu, 14 Sep 2017 06:59:35 GMT  
-		Size: 130.0 B  
+	-	`sha256:44977ddf8e225eeba853e3372454c737fdd59d12b55b35bdc31cc38f963e8a16`  
+		Last Modified: Wed, 04 Oct 2017 00:17:23 GMT  
+		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4dc1f2cf74701ad814eb604671fc5bad8ed059fac6da41f59267d7bf110b50cd`  
-		Last Modified: Tue, 19 Sep 2017 12:15:09 GMT  
-		Size: 193.8 MB (193828812 bytes)  
+	-	`sha256:1e9dd24c94cfa760f866771c04562db1da733fe5a9c4b655edfd15b90602d0c2`  
+		Last Modified: Wed, 04 Oct 2017 00:44:42 GMT  
+		Size: 193.8 MB (193828740 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2fb182effb8d35256108bd221983f6e0a5625cec5376391e5d08acd1f3b382c1`  
-		Last Modified: Tue, 19 Sep 2017 12:14:54 GMT  
-		Size: 249.0 B  
+	-	`sha256:ee1d2b32e51bff20cd93d2324f729f1d615b370ee579b68ea598bbbd0cb22b89`  
+		Last Modified: Wed, 04 Oct 2017 00:44:21 GMT  
+		Size: 250.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7e339f0ac175dec53cb45b76e64ba65b5c0e3c72ae363a6232e1e2b643b29b3f`  
-		Last Modified: Tue, 19 Sep 2017 12:15:35 GMT  
-		Size: 13.0 MB (13020719 bytes)  
+	-	`sha256:6473a5c5bd509af5480ec3ccd54e9152f3b3c3d129216f00d492853ce08106a1`  
+		Last Modified: Wed, 04 Oct 2017 00:47:53 GMT  
+		Size: 13.0 MB (13020916 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:863e53bb5efdf8ee5d5b9a6c0b32db6fca67d39e707c60c443873a86ee1e0eb4`  
-		Last Modified: Tue, 19 Sep 2017 12:15:32 GMT  
-		Size: 1.3 KB (1280 bytes)  
+	-	`sha256:e2bf5a5f8cd7ac603286ab61e5aab648acc0ded7e6be6a7a53108476af3ce9f6`  
+		Last Modified: Wed, 04 Oct 2017 00:47:48 GMT  
+		Size: 1.3 KB (1286 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d06dc5ca34a282870ecdbfc74b60aac814000f00dcf40e542d3005b420b10d37`  
-		Last Modified: Tue, 19 Sep 2017 12:15:32 GMT  
-		Size: 554.0 B  
+	-	`sha256:7f6293ae9cd6e2b9ba019ff30c070b721d944df123108e8d84cb3e2e610e04d7`  
+		Last Modified: Wed, 04 Oct 2017 00:47:48 GMT  
+		Size: 560.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3947fcd6ba0ce8774f3c75a6f1c08311c68c4ab3ffed2d0cf702b92aff84a1fa`  
-		Last Modified: Tue, 19 Sep 2017 12:15:32 GMT  
-		Size: 926.0 B  
+	-	`sha256:c204c9cd2e130ea94f9301f2ce3ff1c4023aa6e9c477a28654099bb5478a758b`  
+		Last Modified: Wed, 04 Oct 2017 00:47:48 GMT  
+		Size: 927.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `geonetwork:latest`
 
 ```console
-$ docker pull geonetwork@sha256:0fe2801b3f72cba54bda105df218efb7eb9abf24bdc5e71aacb015db498d0340
+$ docker pull geonetwork@sha256:3ba7a6bffee55df07ab1941815b4ef5150fa1aeaa65c120db611c1d79c473294
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1538,14 +1522,14 @@ $ docker pull geonetwork@sha256:0fe2801b3f72cba54bda105df218efb7eb9abf24bdc5e71a
 ### `geonetwork:latest` - linux; amd64
 
 ```console
-$ docker pull geonetwork@sha256:71fb4a1f58e7fe6e8a25b05a13160eb85461588893bc248c350e29085e78e0db
+$ docker pull geonetwork@sha256:aefb04440c089d8413580c8d8a4cdddcb84e48246fd42000ba7aa233018c6e4c
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **433.0 MB (432955790 bytes)**  
+-	Total Size: **434.9 MB (434892787 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0a941cf42aee754f7d2a5e3b4fc29201799dae29dec256c451c4c9075183567b`
+-	Image ID: `sha256:5013d79df3565fb7e195791ff62ad66c73f831fcc39d41efaf4e26382a4046d1`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["catalina.sh","run"]`
 
@@ -1602,43 +1586,41 @@ ENV GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E626
 RUN set -ex; 	for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done
 # Thu, 14 Sep 2017 06:52:10 GMT
 ENV TOMCAT_MAJOR=8
-# Thu, 14 Sep 2017 06:52:10 GMT
-ENV TOMCAT_VERSION=8.0.46
-# Thu, 14 Sep 2017 06:52:10 GMT
-ENV TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.0.46/bin/apache-tomcat-8.0.46.tar.gz
-# Thu, 14 Sep 2017 06:52:10 GMT
-ENV TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.46/bin/apache-tomcat-8.0.46.tar.gz.asc
-# Thu, 14 Sep 2017 06:52:10 GMT
-ENV TOMCAT_TGZ_FALLBACK_URL=https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.46/bin/apache-tomcat-8.0.46.tar.gz
-# Thu, 14 Sep 2017 06:52:10 GMT
-ENV TOMCAT_ASC_FALLBACK_URL=https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.46/bin/apache-tomcat-8.0.46.tar.gz.asc
-# Thu, 14 Sep 2017 06:52:50 GMT
-RUN set -x 		&& { 		wget -O tomcat.tar.gz "$TOMCAT_TGZ_URL" 		|| wget -O tomcat.tar.gz "$TOMCAT_TGZ_FALLBACK_URL" 	; } 	&& { 		wget -O tomcat.tar.gz.asc "$TOMCAT_ASC_URL" 		|| wget -O tomcat.tar.gz.asc "$TOMCAT_ASC_FALLBACK_URL" 	; } 	&& gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz 	&& tar -xvf tomcat.tar.gz --strip-components=1 	&& rm bin/*.bat 	&& rm tomcat.tar.gz* 		&& nativeBuildDir="$(mktemp -d)" 	&& tar -xvf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1 	&& nativeBuildDeps=" 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 		openjdk-${JAVA_VERSION%%[-~bu]*}-jdk=$JAVA_DEBIAN_VERSION 	" 	&& apt-get update && apt-get install -y --no-install-recommends $nativeBuildDeps && rm -rf /var/lib/apt/lists/* 	&& ( 		export CATALINA_HOME="$PWD" 		&& cd "$nativeBuildDir/native" 		&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 		&& ./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$(which apr-1-config)" 			--with-java-home="$(docker-java-home)" 			--with-ssl=yes 		&& make -j "$(nproc)" 		&& make install 	) 	&& apt-get purge -y --auto-remove $nativeBuildDeps 	&& rm -rf "$nativeBuildDir" 	&& rm bin/tomcat-native.tar.gz 	&& find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +
-# Thu, 14 Sep 2017 06:52:59 GMT
+# Wed, 04 Oct 2017 00:10:52 GMT
+ENV TOMCAT_VERSION=8.0.47
+# Wed, 04 Oct 2017 00:10:52 GMT
+ENV TOMCAT_SHA1=2b5a0d173040f9a576e372cae5d85b05599fd0eb
+# Wed, 04 Oct 2017 00:10:52 GMT
+ENV TOMCAT_TGZ_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz 	https://www.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz
+# Wed, 04 Oct 2017 00:10:52 GMT
+ENV TOMCAT_ASC_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz.asc 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz.asc 	https://www.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz.asc 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz.asc
+# Wed, 04 Oct 2017 00:11:12 GMT
+RUN set -eux; 		success=; 	for url in $TOMCAT_TGZ_URLS; do 		if wget -O tomcat.tar.gz "$url"; then 			success=1; 			break; 		fi; 	done; 	[ -n "$success" ]; 		echo "$TOMCAT_SHA1 *tomcat.tar.gz" | sha1sum -c -; 		success=; 	for url in $TOMCAT_ASC_URLS; do 		if wget -O tomcat.tar.gz.asc "$url"; then 			success=1; 			break; 		fi; 	done; 	[ -n "$success" ]; 		gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xvf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 		nativeBuildDir="$(mktemp -d)"; 	tar -xvf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	nativeBuildDeps=" 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 		openjdk-${JAVA_VERSION%%[-~bu]*}-jdk=$JAVA_DEBIAN_VERSION 	"; 	apt-get update; 	apt-get install -y --no-install-recommends $nativeBuildDeps; 	rm -rf /var/lib/apt/lists/*; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$(which apr-1-config)" 			--with-java-home="$(docker-java-home)" 			--with-ssl=yes; 		make -j "$(nproc)"; 		make install; 	); 	apt-get purge -y --auto-remove $nativeBuildDeps; 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +
+# Wed, 04 Oct 2017 00:11:13 GMT
 RUN set -e 	&& nativeLines="$(catalina.sh configtest 2>&1)" 	&& nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')" 	&& nativeLines="$(echo "$nativeLines" | sort -u)" 	&& if ! echo "$nativeLines" | grep 'INFO: Loaded APR based Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Thu, 14 Sep 2017 06:52:59 GMT
+# Wed, 04 Oct 2017 00:11:13 GMT
 EXPOSE 8080/tcp
-# Thu, 14 Sep 2017 06:53:00 GMT
+# Wed, 04 Oct 2017 00:11:13 GMT
 CMD ["catalina.sh" "run"]
-# Thu, 14 Sep 2017 08:01:12 GMT
+# Wed, 04 Oct 2017 00:39:53 GMT
 ENV GN_FILE=geonetwork.war
-# Thu, 14 Sep 2017 08:01:12 GMT
+# Wed, 04 Oct 2017 00:39:53 GMT
 ENV DATA_DIR=/usr/local/tomcat/webapps/geonetwork/WEB-INF/data
-# Thu, 14 Sep 2017 08:01:12 GMT
+# Wed, 04 Oct 2017 00:39:53 GMT
 ENV JAVA_OPTS=-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true -server -Xms512m -Xmx2024m -XX:NewSize=512m -XX:MaxNewSize=1024m -XX:PermSize=512m -XX:MaxPermSize=1024m -XX:+UseConcMarkSweepGC
-# Tue, 19 Sep 2017 12:14:00 GMT
+# Wed, 04 Oct 2017 00:39:54 GMT
 ENV GN_VERSION=3.2.2
-# Tue, 19 Sep 2017 12:14:00 GMT
+# Wed, 04 Oct 2017 00:39:54 GMT
 ENV GN_DOWNLOAD_MD5=93b5279223503106ffeea3e9ca697805
-# Tue, 19 Sep 2017 12:14:00 GMT
+# Wed, 04 Oct 2017 00:39:54 GMT
 WORKDIR /usr/local/tomcat/webapps
-# Tue, 19 Sep 2017 12:14:21 GMT
+# Wed, 04 Oct 2017 00:40:14 GMT
 RUN curl -fSL -o $GN_FILE      https://sourceforge.net/projects/geonetwork/files/GeoNetwork_opensource/v${GN_VERSION}/geonetwork.war/download &&      echo "$GN_DOWNLOAD_MD5 *$GN_FILE" | md5sum -c &&      mkdir -p geonetwork &&      unzip -e $GN_FILE -d geonetwork &&      rm $GN_FILE
-# Tue, 19 Sep 2017 12:14:22 GMT
+# Wed, 04 Oct 2017 00:40:15 GMT
 COPY file:80432c4531c627e0cdf0de71c059d44a74d09bb678d0caf329b148a8f4b65fb9 in /entrypoint.sh 
-# Tue, 19 Sep 2017 12:14:22 GMT
+# Wed, 04 Oct 2017 00:40:15 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 19 Sep 2017 12:14:22 GMT
+# Wed, 04 Oct 2017 00:40:15 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -1687,27 +1669,27 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Thu, 14 Sep 2017 06:58:00 GMT  
 		Size: 112.3 KB (112269 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:07300687a0e720a48931edaf685d83d3f18a94d91655c50b65ff1e0c2b724ac9`  
-		Last Modified: Thu, 14 Sep 2017 06:59:37 GMT  
-		Size: 10.3 MB (10309431 bytes)  
+	-	`sha256:ddde8ae0beff3cff74678442c11cc924d1aaa254cdbf2bacafdceb6707679533`  
+		Last Modified: Wed, 04 Oct 2017 00:17:25 GMT  
+		Size: 12.2 MB (12246498 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:58c99d270c5a9e6fd714f05af607ce6acdba469503a38be3199c419c64d53279`  
-		Last Modified: Thu, 14 Sep 2017 06:59:35 GMT  
-		Size: 130.0 B  
+	-	`sha256:44977ddf8e225eeba853e3372454c737fdd59d12b55b35bdc31cc38f963e8a16`  
+		Last Modified: Wed, 04 Oct 2017 00:17:23 GMT  
+		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4dc1f2cf74701ad814eb604671fc5bad8ed059fac6da41f59267d7bf110b50cd`  
-		Last Modified: Tue, 19 Sep 2017 12:15:09 GMT  
-		Size: 193.8 MB (193828812 bytes)  
+	-	`sha256:1e9dd24c94cfa760f866771c04562db1da733fe5a9c4b655edfd15b90602d0c2`  
+		Last Modified: Wed, 04 Oct 2017 00:44:42 GMT  
+		Size: 193.8 MB (193828740 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2fb182effb8d35256108bd221983f6e0a5625cec5376391e5d08acd1f3b382c1`  
-		Last Modified: Tue, 19 Sep 2017 12:14:54 GMT  
-		Size: 249.0 B  
+	-	`sha256:ee1d2b32e51bff20cd93d2324f729f1d615b370ee579b68ea598bbbd0cb22b89`  
+		Last Modified: Wed, 04 Oct 2017 00:44:21 GMT  
+		Size: 250.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `geonetwork:postgres`
 
 ```console
-$ docker pull geonetwork@sha256:c27d36c8d977fa4d1f77dcb0043226798fd3b3f456bdcfb9baf602d6659a9a79
+$ docker pull geonetwork@sha256:cf041d6bbc79c3a8326e47a85cd02510757e5847954881ec029cc07617a2cd8a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1717,14 +1699,14 @@ $ docker pull geonetwork@sha256:c27d36c8d977fa4d1f77dcb0043226798fd3b3f456bdcfb9
 ### `geonetwork:postgres` - linux; amd64
 
 ```console
-$ docker pull geonetwork@sha256:06872b8dc26e5a873f472a9b848bb6b4b7569488548ecee2b9dfe97de0bac410
+$ docker pull geonetwork@sha256:a53f5db370012087e48a2b9a10f34c18fcb8d1103edc3d6d260fea18fddfa2ad
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **446.0 MB (445979269 bytes)**  
+-	Total Size: **447.9 MB (447916476 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:263dc4f89a8d8c0cdfe04acc8801d57c3899111ae032bf683eada82e1db60f18`
+-	Image ID: `sha256:15e5d1febb755b9ccfa596b65c650a3d191c05fef6cd84fdcda6090b4cef5812`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["catalina.sh","run"]`
 
@@ -1781,55 +1763,53 @@ ENV GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E626
 RUN set -ex; 	for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done
 # Thu, 14 Sep 2017 06:52:10 GMT
 ENV TOMCAT_MAJOR=8
-# Thu, 14 Sep 2017 06:52:10 GMT
-ENV TOMCAT_VERSION=8.0.46
-# Thu, 14 Sep 2017 06:52:10 GMT
-ENV TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.0.46/bin/apache-tomcat-8.0.46.tar.gz
-# Thu, 14 Sep 2017 06:52:10 GMT
-ENV TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.46/bin/apache-tomcat-8.0.46.tar.gz.asc
-# Thu, 14 Sep 2017 06:52:10 GMT
-ENV TOMCAT_TGZ_FALLBACK_URL=https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.46/bin/apache-tomcat-8.0.46.tar.gz
-# Thu, 14 Sep 2017 06:52:10 GMT
-ENV TOMCAT_ASC_FALLBACK_URL=https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.46/bin/apache-tomcat-8.0.46.tar.gz.asc
-# Thu, 14 Sep 2017 06:52:50 GMT
-RUN set -x 		&& { 		wget -O tomcat.tar.gz "$TOMCAT_TGZ_URL" 		|| wget -O tomcat.tar.gz "$TOMCAT_TGZ_FALLBACK_URL" 	; } 	&& { 		wget -O tomcat.tar.gz.asc "$TOMCAT_ASC_URL" 		|| wget -O tomcat.tar.gz.asc "$TOMCAT_ASC_FALLBACK_URL" 	; } 	&& gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz 	&& tar -xvf tomcat.tar.gz --strip-components=1 	&& rm bin/*.bat 	&& rm tomcat.tar.gz* 		&& nativeBuildDir="$(mktemp -d)" 	&& tar -xvf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1 	&& nativeBuildDeps=" 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 		openjdk-${JAVA_VERSION%%[-~bu]*}-jdk=$JAVA_DEBIAN_VERSION 	" 	&& apt-get update && apt-get install -y --no-install-recommends $nativeBuildDeps && rm -rf /var/lib/apt/lists/* 	&& ( 		export CATALINA_HOME="$PWD" 		&& cd "$nativeBuildDir/native" 		&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 		&& ./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$(which apr-1-config)" 			--with-java-home="$(docker-java-home)" 			--with-ssl=yes 		&& make -j "$(nproc)" 		&& make install 	) 	&& apt-get purge -y --auto-remove $nativeBuildDeps 	&& rm -rf "$nativeBuildDir" 	&& rm bin/tomcat-native.tar.gz 	&& find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +
-# Thu, 14 Sep 2017 06:52:59 GMT
+# Wed, 04 Oct 2017 00:10:52 GMT
+ENV TOMCAT_VERSION=8.0.47
+# Wed, 04 Oct 2017 00:10:52 GMT
+ENV TOMCAT_SHA1=2b5a0d173040f9a576e372cae5d85b05599fd0eb
+# Wed, 04 Oct 2017 00:10:52 GMT
+ENV TOMCAT_TGZ_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz 	https://www.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz
+# Wed, 04 Oct 2017 00:10:52 GMT
+ENV TOMCAT_ASC_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz.asc 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz.asc 	https://www.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz.asc 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.47/bin/apache-tomcat-8.0.47.tar.gz.asc
+# Wed, 04 Oct 2017 00:11:12 GMT
+RUN set -eux; 		success=; 	for url in $TOMCAT_TGZ_URLS; do 		if wget -O tomcat.tar.gz "$url"; then 			success=1; 			break; 		fi; 	done; 	[ -n "$success" ]; 		echo "$TOMCAT_SHA1 *tomcat.tar.gz" | sha1sum -c -; 		success=; 	for url in $TOMCAT_ASC_URLS; do 		if wget -O tomcat.tar.gz.asc "$url"; then 			success=1; 			break; 		fi; 	done; 	[ -n "$success" ]; 		gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xvf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 		nativeBuildDir="$(mktemp -d)"; 	tar -xvf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	nativeBuildDeps=" 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 		openjdk-${JAVA_VERSION%%[-~bu]*}-jdk=$JAVA_DEBIAN_VERSION 	"; 	apt-get update; 	apt-get install -y --no-install-recommends $nativeBuildDeps; 	rm -rf /var/lib/apt/lists/*; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$(which apr-1-config)" 			--with-java-home="$(docker-java-home)" 			--with-ssl=yes; 		make -j "$(nproc)"; 		make install; 	); 	apt-get purge -y --auto-remove $nativeBuildDeps; 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +
+# Wed, 04 Oct 2017 00:11:13 GMT
 RUN set -e 	&& nativeLines="$(catalina.sh configtest 2>&1)" 	&& nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')" 	&& nativeLines="$(echo "$nativeLines" | sort -u)" 	&& if ! echo "$nativeLines" | grep 'INFO: Loaded APR based Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Thu, 14 Sep 2017 06:52:59 GMT
+# Wed, 04 Oct 2017 00:11:13 GMT
 EXPOSE 8080/tcp
-# Thu, 14 Sep 2017 06:53:00 GMT
+# Wed, 04 Oct 2017 00:11:13 GMT
 CMD ["catalina.sh" "run"]
-# Thu, 14 Sep 2017 08:01:12 GMT
+# Wed, 04 Oct 2017 00:39:53 GMT
 ENV GN_FILE=geonetwork.war
-# Thu, 14 Sep 2017 08:01:12 GMT
+# Wed, 04 Oct 2017 00:39:53 GMT
 ENV DATA_DIR=/usr/local/tomcat/webapps/geonetwork/WEB-INF/data
-# Thu, 14 Sep 2017 08:01:12 GMT
+# Wed, 04 Oct 2017 00:39:53 GMT
 ENV JAVA_OPTS=-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true -server -Xms512m -Xmx2024m -XX:NewSize=512m -XX:MaxNewSize=1024m -XX:PermSize=512m -XX:MaxPermSize=1024m -XX:+UseConcMarkSweepGC
-# Tue, 19 Sep 2017 12:14:00 GMT
+# Wed, 04 Oct 2017 00:39:54 GMT
 ENV GN_VERSION=3.2.2
-# Tue, 19 Sep 2017 12:14:00 GMT
+# Wed, 04 Oct 2017 00:39:54 GMT
 ENV GN_DOWNLOAD_MD5=93b5279223503106ffeea3e9ca697805
-# Tue, 19 Sep 2017 12:14:00 GMT
+# Wed, 04 Oct 2017 00:39:54 GMT
 WORKDIR /usr/local/tomcat/webapps
-# Tue, 19 Sep 2017 12:14:21 GMT
+# Wed, 04 Oct 2017 00:40:14 GMT
 RUN curl -fSL -o $GN_FILE      https://sourceforge.net/projects/geonetwork/files/GeoNetwork_opensource/v${GN_VERSION}/geonetwork.war/download &&      echo "$GN_DOWNLOAD_MD5 *$GN_FILE" | md5sum -c &&      mkdir -p geonetwork &&      unzip -e $GN_FILE -d geonetwork &&      rm $GN_FILE
-# Tue, 19 Sep 2017 12:14:22 GMT
+# Wed, 04 Oct 2017 00:40:15 GMT
 COPY file:80432c4531c627e0cdf0de71c059d44a74d09bb678d0caf329b148a8f4b65fb9 in /entrypoint.sh 
-# Tue, 19 Sep 2017 12:14:22 GMT
+# Wed, 04 Oct 2017 00:40:15 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 19 Sep 2017 12:14:22 GMT
+# Wed, 04 Oct 2017 00:40:15 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 19 Sep 2017 12:14:42 GMT
+# Wed, 04 Oct 2017 00:43:11 GMT
 RUN apt-get update && apt-get install -y postgresql-client &&     rm -rf /var/lib/apt/lists/*
-# Tue, 19 Sep 2017 12:14:42 GMT
+# Wed, 04 Oct 2017 00:43:13 GMT
 RUN sed -i -e 's#<import resource="../config-db/h2.xml"/>#<!--<import resource="../config-db/h2.xml"/> -->#g' $CATALINA_HOME/webapps/geonetwork/WEB-INF/config-node/srv.xml && sed -i -e 's#<!--<import resource="../config-db/postgres.xml"/>-->#<import resource="../config-db/postgres.xml"/>#g' $CATALINA_HOME/webapps/geonetwork/WEB-INF/config-node/srv.xml
-# Tue, 19 Sep 2017 12:14:43 GMT
+# Wed, 04 Oct 2017 00:43:14 GMT
 COPY file:e2fbb7cf0447a8bc2706127d7dc9bceba30008f926826a6c3bf869efc97b906d in /usr/local/tomcat/webapps/geonetwork/WEB-INF/config-db/jdbc.properties 
-# Tue, 19 Sep 2017 12:14:43 GMT
+# Wed, 04 Oct 2017 00:43:14 GMT
 COPY file:2dd6f92687b208fdde8d0d8fa36354e2e373245faae443043799a7cca9e3538a in /entrypoint.sh 
-# Tue, 19 Sep 2017 12:14:43 GMT
+# Wed, 04 Oct 2017 00:43:14 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 19 Sep 2017 12:14:43 GMT
+# Wed, 04 Oct 2017 00:43:14 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -1878,35 +1858,35 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Thu, 14 Sep 2017 06:58:00 GMT  
 		Size: 112.3 KB (112269 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:07300687a0e720a48931edaf685d83d3f18a94d91655c50b65ff1e0c2b724ac9`  
-		Last Modified: Thu, 14 Sep 2017 06:59:37 GMT  
-		Size: 10.3 MB (10309431 bytes)  
+	-	`sha256:ddde8ae0beff3cff74678442c11cc924d1aaa254cdbf2bacafdceb6707679533`  
+		Last Modified: Wed, 04 Oct 2017 00:17:25 GMT  
+		Size: 12.2 MB (12246498 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:58c99d270c5a9e6fd714f05af607ce6acdba469503a38be3199c419c64d53279`  
-		Last Modified: Thu, 14 Sep 2017 06:59:35 GMT  
-		Size: 130.0 B  
+	-	`sha256:44977ddf8e225eeba853e3372454c737fdd59d12b55b35bdc31cc38f963e8a16`  
+		Last Modified: Wed, 04 Oct 2017 00:17:23 GMT  
+		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4dc1f2cf74701ad814eb604671fc5bad8ed059fac6da41f59267d7bf110b50cd`  
-		Last Modified: Tue, 19 Sep 2017 12:15:09 GMT  
-		Size: 193.8 MB (193828812 bytes)  
+	-	`sha256:1e9dd24c94cfa760f866771c04562db1da733fe5a9c4b655edfd15b90602d0c2`  
+		Last Modified: Wed, 04 Oct 2017 00:44:42 GMT  
+		Size: 193.8 MB (193828740 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2fb182effb8d35256108bd221983f6e0a5625cec5376391e5d08acd1f3b382c1`  
-		Last Modified: Tue, 19 Sep 2017 12:14:54 GMT  
-		Size: 249.0 B  
+	-	`sha256:ee1d2b32e51bff20cd93d2324f729f1d615b370ee579b68ea598bbbd0cb22b89`  
+		Last Modified: Wed, 04 Oct 2017 00:44:21 GMT  
+		Size: 250.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7e339f0ac175dec53cb45b76e64ba65b5c0e3c72ae363a6232e1e2b643b29b3f`  
-		Last Modified: Tue, 19 Sep 2017 12:15:35 GMT  
-		Size: 13.0 MB (13020719 bytes)  
+	-	`sha256:6473a5c5bd509af5480ec3ccd54e9152f3b3c3d129216f00d492853ce08106a1`  
+		Last Modified: Wed, 04 Oct 2017 00:47:53 GMT  
+		Size: 13.0 MB (13020916 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:863e53bb5efdf8ee5d5b9a6c0b32db6fca67d39e707c60c443873a86ee1e0eb4`  
-		Last Modified: Tue, 19 Sep 2017 12:15:32 GMT  
-		Size: 1.3 KB (1280 bytes)  
+	-	`sha256:e2bf5a5f8cd7ac603286ab61e5aab648acc0ded7e6be6a7a53108476af3ce9f6`  
+		Last Modified: Wed, 04 Oct 2017 00:47:48 GMT  
+		Size: 1.3 KB (1286 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d06dc5ca34a282870ecdbfc74b60aac814000f00dcf40e542d3005b420b10d37`  
-		Last Modified: Tue, 19 Sep 2017 12:15:32 GMT  
-		Size: 554.0 B  
+	-	`sha256:7f6293ae9cd6e2b9ba019ff30c070b721d944df123108e8d84cb3e2e610e04d7`  
+		Last Modified: Wed, 04 Oct 2017 00:47:48 GMT  
+		Size: 560.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3947fcd6ba0ce8774f3c75a6f1c08311c68c4ab3ffed2d0cf702b92aff84a1fa`  
-		Last Modified: Tue, 19 Sep 2017 12:15:32 GMT  
-		Size: 926.0 B  
+	-	`sha256:c204c9cd2e130ea94f9301f2ce3ff1c4023aa6e9c477a28654099bb5478a758b`  
+		Last Modified: Wed, 04 Oct 2017 00:47:48 GMT  
+		Size: 927.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
