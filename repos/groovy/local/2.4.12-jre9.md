@@ -296,20 +296,13 @@ Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris audit=1:2.7.7-1
-'http://deb.debian.org/debian/pool/main/a/audit/audit_2.7.7-1.dsc' audit_2.7.7-1.dsc 2485 SHA256:aa5701159bdbefdf93d536042449d53430e2f3455a1d68842a44446c156c151b
-'http://deb.debian.org/debian/pool/main/a/audit/audit_2.7.7.orig.tar.gz' audit_2.7.7.orig.tar.gz 1110512 SHA256:98e22549444c313187dc98c2e137f36a9882efa0874b559b0457e5f87ae178ef
-'http://deb.debian.org/debian/pool/main/a/audit/audit_2.7.7-1.debian.tar.xz' audit_2.7.7-1.debian.tar.xz 18684 SHA256:18056454f7252209b1d53063173952fa0c023e2ce5d96b197b137d3031cf9b36
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/audit/1:2.7.7-1/
 
-- https://sources.debian.net/src/audit/1:2.7.7-1/ (for browsing the source)
-- https://sources.debian.net/src/audit/1:2.7.7-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/audit/1:2.7.7-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `avahi=0.6.32-2`
 
@@ -1555,20 +1548,13 @@ Licenses: (parsed from: `/usr/share/doc/gtk-update-icon-cache/copyright`, `/usr/
 - `LGPL-2.1+`
 - `other`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gtk+3.0=3.22.21-1
-'http://deb.debian.org/debian/pool/main/g/gtk+3.0/gtk+3.0_3.22.21-1.dsc' gtk+3.0_3.22.21-1.dsc 3873 SHA256:65f4cf466bfe210dd4233e10518182958901c5e21ead674dde8395357a5a0000
-'http://deb.debian.org/debian/pool/main/g/gtk+3.0/gtk+3.0_3.22.21.orig.tar.xz' gtk+3.0_3.22.21.orig.tar.xz 18847580 SHA256:1bd3c1a85cfb4db112cabb5379abb05a1a94fe43052d309d573493fca00e6b87
-'http://deb.debian.org/debian/pool/main/g/gtk+3.0/gtk+3.0_3.22.21-1.debian.tar.xz' gtk+3.0_3.22.21-1.debian.tar.xz 144484 SHA256:75e32d31d35d524618f672dd782f81d11ff347ad5596710ce3ec3812aefd764a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gtk+3.0/3.22.21-1/
 
-- https://sources.debian.net/src/gtk+3.0/3.22.21-1/ (for browsing the source)
-- https://sources.debian.net/src/gtk+3.0/3.22.21-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gtk+3.0/3.22.21-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gzip=1.6-5`
 
