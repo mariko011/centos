@@ -1,18 +1,18 @@
-# `memcached:1.5.1`
+# `memcached:1.5.2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4cc987931b900be41f8b59f793f5c58756428d60deaa79a101a4b3674e2f1370`
-- Created: `2017-09-19T01:41:20.70357426Z`
-- Virtual Size: ~ 58.61 Mb  
+- Image ID: `sha256:ed85c5f97e4a3071fc18ddaa41c6fbc4fe64f9f6e16c15e8b31b38389e91f40a`
+- Created: `2017-10-02T23:37:43.655299343Z`
+- Virtual Size: ~ 63.89 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["memcached"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `MEMCACHED_VERSION=1.5.1`
-  - `MEMCACHED_SHA1=e5b7e4e562eb99fdfa67d71697cc6744d3e9663f`
+  - `MEMCACHED_VERSION=1.5.2`
+  - `MEMCACHED_SHA1=5d6c85fe15b5e575a563ec1bbeb01020e0132958`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1089,11 +1089,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pcre3/2:8.39-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pcre3/2:8.39-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `perl=5.24.1-3+deb9u1`
+### `dpkg` source package: `perl=5.24.1-3+deb9u2`
 
 Binary Packages:
 
-- `perl-base=5.24.1-3+deb9u1`
+- `perl-base=5.24.1-3+deb9u2`
 
 Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 
@@ -1128,17 +1128,17 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris perl=5.24.1-3+deb9u1
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.24.1-3+deb9u1.dsc' perl_5.24.1-3+deb9u1.dsc 2393 SHA256:543956cb46686a577b7e6a6f3db713b4acb98e254d1f66a159757b7f2bf8ba68
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.24.1.orig.tar.xz' perl_5.24.1.orig.tar.xz 11569284 SHA256:03a77bac4505c270f1890ece75afc7d4b555090b41aa41ea478747e23b2afb3f
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.24.1-3+deb9u1.debian.tar.xz' perl_5.24.1-3+deb9u1.debian.tar.xz 172800 SHA256:928dc211d523b1e058cd2389873f564355c3b9df1ef7efc70f55dff106e5efea
+$ apt-get source -qq --print-uris perl=5.24.1-3+deb9u2
+'http://security.debian.org/pool/updates/main/p/perl/perl_5.24.1-3+deb9u2.dsc' perl_5.24.1-3+deb9u2.dsc 2397 SHA256:16a107d177b44570b3048c0407aba647b52808ea5da2e1d59f72156c1d7b752f
+'http://security.debian.org/pool/updates/main/p/perl/perl_5.24.1.orig.tar.xz' perl_5.24.1.orig.tar.xz 11569284 SHA256:03a77bac4505c270f1890ece75afc7d4b555090b41aa41ea478747e23b2afb3f
+'http://security.debian.org/pool/updates/main/p/perl/perl_5.24.1-3+deb9u2.debian.tar.xz' perl_5.24.1-3+deb9u2.debian.tar.xz 174248 SHA256:2360af85de9a0577d3045e6ffb576c8cc63d9d2622ce6bfbcd8734e63fee50a0
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/perl/5.24.1-3+deb9u1/ (for browsing the source)
-- https://sources.debian.net/src/perl/5.24.1-3+deb9u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/perl/5.24.1-3+deb9u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/perl/5.24.1-3+deb9u2/ (for browsing the source)
+- https://sources.debian.net/src/perl/5.24.1-3+deb9u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/perl/5.24.1-3+deb9u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sed=4.4-1`
 
