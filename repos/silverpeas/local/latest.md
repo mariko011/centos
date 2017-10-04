@@ -2247,14 +2247,9 @@ Licenses: (parsed from: `/usr/share/doc/libidn11/copyright`)
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libidn=1.32-3ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn/libidn_1.32-3ubuntu1.1.dsc' libidn_1.32-3ubuntu1.1.dsc 2303 SHA256:ae2e99369cbf63ecf269b07ab14987354a979e89c5cd86e22db514dd0984c1d4
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn/libidn_1.32.orig.tar.gz' libidn_1.32.orig.tar.gz 3483155 SHA256:ba5d5afee2beff703a34ee094668da5c6ea5afa38784cebba8924105e185c4f5
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn/libidn_1.32-3ubuntu1.1.debian.tar.xz' libidn_1.32-3ubuntu1.1.debian.tar.xz 84344 SHA256:ca711a3ee56c3bf4f603429bbfcda842c1c60f6e95051a0c777f65a62a84d9a5
-```
 
 ### `dpkg` source package: `libiec61883=1.2.0-0.2`
 
@@ -3692,14 +3687,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nss=2:3.28.4-0ubuntu0.16.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.28.4-0ubuntu0.16.04.2.dsc' nss_3.28.4-0ubuntu0.16.04.2.dsc 2430 SHA256:738a6c9582904549d68d57e86a9d1c9b4a8ccade1c8e9ee65884f9f58a5439be
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.28.4.orig.tar.gz' nss_3.28.4.orig.tar.gz 7453282 SHA256:d5d4761778b8d4c378b2174c9e13e7abd20a6961f557d4fcc029af723ffd7189
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.28.4-0ubuntu0.16.04.2.debian.tar.xz' nss_3.28.4-0ubuntu0.16.04.2.debian.tar.xz 30492 SHA256:b276eddabe229340e041e31fd566be443f3d8d8f651a69c89c72321ecb810fd3
-```
 
 ### `dpkg` source package: `numactl=2.0.11-1ubuntu1`
 
