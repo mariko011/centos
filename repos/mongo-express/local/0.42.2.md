@@ -2,17 +2,17 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0737a48c35498a51661a0364cd184e2b1e414e8d42e7aacd81602193e97c5468`
-- Created: `2017-09-13T21:10:57.017342052Z`
-- Virtual Size: ~ 245.04 Mb  
+- Image ID: `sha256:7760763d2f6dc05da84cd421b27154fcefc0bbfd044cf1a203782e07c6878402`
+- Created: `2017-10-04T17:44:10.075775203Z`
+- Virtual Size: ~ 245.37 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["tini","--","node","app"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `NPM_CONFIG_LOGLEVEL=info`
-  - `NODE_VERSION=6.11.3`
-  - `YARN_VERSION=0.27.5`
+  - `NODE_VERSION=6.11.4`
+  - `YARN_VERSION=1.1.0`
   - `TINI_VERSION=0.9.0`
   - `ME_CONFIG_EDITORTHEME=default`
   - `ME_CONFIG_MONGODB_SERVER=mongo`
