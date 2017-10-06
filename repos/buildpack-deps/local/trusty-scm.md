@@ -859,14 +859,9 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris git=1:1.9.1-1ubuntu0.6
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_1.9.1-1ubuntu0.6.dsc' git_1.9.1-1ubuntu0.6.dsc 2794 SHA256:6adb9c38a2dc2ffccb6320d383d3b03756ee7368bc99c17ff4bb67d276ac3b25
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_1.9.1.orig.tar.xz' git_1.9.1.orig.tar.xz 3384080 SHA256:f962fbce8c049f94ece1d1845cba1528c13ff82de7cc8d23cddb3d0c93c3a77b
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_1.9.1-1ubuntu0.6.debian.tar.gz' git_1.9.1-1ubuntu0.6.debian.tar.gz 624161 SHA256:e33a2018c50ebe35aacbe53605708791534cfceeaab33e57898879181978b340
-```
 
 ### `dpkg` source package: `gnupg=1.4.16-1ubuntu2.4`
 

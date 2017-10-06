@@ -634,14 +634,9 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris git=1:2.14.1-1ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.14.1-1ubuntu3.dsc' git_2.14.1-1ubuntu3.dsc 2611 SHA256:d5fa12983139579ba4ea8ed5cd9f85439550fb978029dc7eab6d3613d39a2e4d
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.14.1.orig.tar.xz' git_2.14.1.orig.tar.xz 4791876 SHA256:6f724c6d0e9e13114ab35db6f67e1b2c1934b641e89366e6a0e37618231f2cc6
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.14.1-1ubuntu3.debian.tar.xz' git_2.14.1-1ubuntu3.debian.tar.xz 545768 SHA256:6647afbd86cc303c91e65fde1e77b67a1626092b7f888e13b6f9dd3181851db2
-```
 
 ### `dpkg` source package: `glibc=2.24-12ubuntu1`
 
