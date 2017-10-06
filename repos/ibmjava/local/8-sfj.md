@@ -467,9 +467,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris gcc-5=5.4.0-6ubuntu1~16.04.4
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-5/gcc-5_5.4.0-6ubuntu1~16.04.4.dsc' gcc-5_5.4.0-6ubuntu1~16.04.4.dsc 28631 SHA256:aa1bf24191d929638953b9420d6c90df7f3dbd82d0bb2e27f02b9bd598c489c5
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-5/gcc-5_5.4.0.orig.tar.gz' gcc-5_5.4.0.orig.tar.gz 73530162 SHA256:00f73e8382aa8653aa501ce2263597c2c4429912bfa18102f47cc362f00ed88d
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-5/gcc-5_5.4.0-6ubuntu1~16.04.4.diff.gz' gcc-5_5.4.0-6ubuntu1~16.04.4.diff.gz 1451941 SHA256:87c63d2da53e46bf05bef082b015ac14ffcb46467e2fdfd87a4891d742d4697d
+'http://security.ubuntu.com/ubuntu/pool/main/g/gcc-5/gcc-5_5.4.0-6ubuntu1~16.04.4.dsc' gcc-5_5.4.0-6ubuntu1~16.04.4.dsc 28631 SHA256:aa1bf24191d929638953b9420d6c90df7f3dbd82d0bb2e27f02b9bd598c489c5
+'http://security.ubuntu.com/ubuntu/pool/main/g/gcc-5/gcc-5_5.4.0.orig.tar.gz' gcc-5_5.4.0.orig.tar.gz 73530162 SHA256:00f73e8382aa8653aa501ce2263597c2c4429912bfa18102f47cc362f00ed88d
+'http://security.ubuntu.com/ubuntu/pool/main/g/gcc-5/gcc-5_5.4.0-6ubuntu1~16.04.4.diff.gz' gcc-5_5.4.0-6ubuntu1~16.04.4.diff.gz 1451941 SHA256:87c63d2da53e46bf05bef082b015ac14ffcb46467e2fdfd87a4891d742d4697d
 ```
 
 ### `dpkg` source package: `gccgo-6=6.0.1-0ubuntu1`
