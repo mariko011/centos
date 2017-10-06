@@ -1,10 +1,10 @@
-# `python:3.6.2-slim`
+# `python:3.6.3-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f39b8b8e7f071ac66fd88b7e9a425fc55cbd03e615a01f0768af0110e2a115a9`
-- Created: `2017-09-21T20:33:21.947446904Z`
-- Virtual Size: ~ 205.53 Mb  
+- Image ID: `sha256:45454af642e00165777e92e83b1571a4a31efdfe1f17eaf21f79083855375e6d`
+- Created: `2017-10-04T00:30:56.240116482Z`
+- Virtual Size: ~ 205.77 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["python3"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D`
-  - `PYTHON_VERSION=3.6.2`
+  - `PYTHON_VERSION=3.6.3`
   - `PYTHON_PIP_VERSION=9.0.1`
 
 ## `dpkg` (`.deb`-based packages)
