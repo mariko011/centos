@@ -1,7 +1,7 @@
 ## `orientdb:latest`
 
 ```console
-$ docker pull orientdb@sha256:38d4bbb91d12acb34389c012a77f31d0c91a52e94abe53204c9f6ca57911ff91
+$ docker pull orientdb@sha256:e2caf64d8448c82331e9c84c703a72e9a109a98166a8ac786251f87756543fb2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull orientdb@sha256:38d4bbb91d12acb34389c012a77f31d0c91a52e94abe53204c
 ### `orientdb:latest` - linux; amd64
 
 ```console
-$ docker pull orientdb@sha256:d8534af9e4699702d37cc4746c072c88a43dc412451015f025d2e0f8eef9614b
+$ docker pull orientdb@sha256:38ed7982b3f29f0c7cdf2d785f5f607d8402b22a8b7ff26323946ca51ec03022
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **117.0 MB (116986645 bytes)**  
+-	Total Size: **117.0 MB (116970225 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a85aca354e54ce2ccf255a7dc33950f701ecdac8cb462ab1824f28253ef58e2d`
+-	Image ID: `sha256:e7a4e1ff2dc8d37b9746746c95338d6aa64d60c0771a786872133a3f003c6ff1`
 -	Default Command: `["server.sh"]`
 
 ```dockerfile
@@ -44,29 +44,29 @@ RUN set -x 	&& apk add --no-cache 		openjdk8="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA
 MAINTAINER OrientDB LTD (info@orientdb.com)
 # Thu, 14 Sep 2017 06:40:43 GMT
 ARG ORIENTDB_DOWNLOAD_SERVER
-# Tue, 26 Sep 2017 17:44:10 GMT
-ENV ORIENTDB_VERSION=2.2.28
-# Tue, 26 Sep 2017 17:44:10 GMT
-ENV ORIENTDB_DOWNLOAD_MD5=631c866d91c43efa80354b1949c2502d
-# Tue, 26 Sep 2017 17:44:10 GMT
-ENV ORIENTDB_DOWNLOAD_SHA1=8d773792d534c50c3c90657cc02a0d8ffa436f3a
-# Tue, 26 Sep 2017 17:44:10 GMT
-ENV ORIENTDB_DOWNLOAD_URL=http://central.maven.org/maven2/com/orientechnologies/orientdb-community/2.2.28/orientdb-community-2.2.28.tar.gz
-# Tue, 26 Sep 2017 17:44:14 GMT
+# Fri, 06 Oct 2017 18:37:31 GMT
+ENV ORIENTDB_VERSION=2.2.29
+# Fri, 06 Oct 2017 18:37:31 GMT
+ENV ORIENTDB_DOWNLOAD_MD5=f20dc9a571e3b361bf115f1a5b9b82cb
+# Fri, 06 Oct 2017 18:37:31 GMT
+ENV ORIENTDB_DOWNLOAD_SHA1=051f68bdc70642744def2c85d7136673a6bf24c1
+# Fri, 06 Oct 2017 18:37:32 GMT
+ENV ORIENTDB_DOWNLOAD_URL=http://central.maven.org/maven2/com/orientechnologies/orientdb-community/2.2.29/orientdb-community-2.2.29.tar.gz
+# Fri, 06 Oct 2017 18:37:35 GMT
 RUN apk add --update tar curl     && rm -rf /var/cache/apk/*
-# Tue, 26 Sep 2017 17:44:17 GMT
+# Fri, 06 Oct 2017 18:37:41 GMT
 RUN mkdir /orientdb &&   wget  $ORIENTDB_DOWNLOAD_URL   && echo "$ORIENTDB_DOWNLOAD_MD5 *orientdb-community-$ORIENTDB_VERSION.tar.gz" | md5sum -c -   && echo "$ORIENTDB_DOWNLOAD_SHA1 *orientdb-community-$ORIENTDB_VERSION.tar.gz" | sha1sum -c -   && tar -xvzf orientdb-community-$ORIENTDB_VERSION.tar.gz -C /orientdb --strip-components=1   && rm orientdb-community-$ORIENTDB_VERSION.tar.gz   && rm -rf /orientdb/databases/*
-# Tue, 26 Sep 2017 17:44:17 GMT
+# Fri, 06 Oct 2017 18:37:41 GMT
 ENV PATH=/orientdb/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Tue, 26 Sep 2017 17:44:17 GMT
+# Fri, 06 Oct 2017 18:37:42 GMT
 VOLUME [/orientdb/backup /orientdb/databases /orientdb/config]
-# Tue, 26 Sep 2017 17:44:17 GMT
+# Fri, 06 Oct 2017 18:37:42 GMT
 WORKDIR /orientdb
-# Tue, 26 Sep 2017 17:44:18 GMT
+# Fri, 06 Oct 2017 18:37:42 GMT
 EXPOSE 2424/tcp
-# Tue, 26 Sep 2017 17:44:18 GMT
+# Fri, 06 Oct 2017 18:37:42 GMT
 EXPOSE 2480/tcp
-# Tue, 26 Sep 2017 17:44:18 GMT
+# Fri, 06 Oct 2017 18:37:43 GMT
 CMD ["server.sh"]
 ```
 
@@ -83,11 +83,11 @@ CMD ["server.sh"]
 		Last Modified: Thu, 14 Sep 2017 04:59:04 GMT  
 		Size: 70.1 MB (70051361 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f5cbf95a9a95f072beac83db8315f1298bf6835f32253cbb25e21cb78e59d02d`  
-		Last Modified: Tue, 26 Sep 2017 17:44:37 GMT  
-		Size: 649.4 KB (649436 bytes)  
+	-	`sha256:df238cfb90639443a84c7dfe64eed41845a2968b365a63e13da766c6aea136a2`  
+		Last Modified: Fri, 06 Oct 2017 18:38:01 GMT  
+		Size: 662.5 KB (662481 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a15e951399d4e5e3fc1a426eb135eb1f660e32694529dd5f3f9de3fdfaef04e4`  
-		Last Modified: Tue, 26 Sep 2017 17:44:42 GMT  
-		Size: 44.3 MB (44295206 bytes)  
+	-	`sha256:72210388770339e73eebf9534c49eb04bad63f20cf2516213f0a7dd226728c4c`  
+		Last Modified: Fri, 06 Oct 2017 18:38:04 GMT  
+		Size: 44.3 MB (44265741 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
