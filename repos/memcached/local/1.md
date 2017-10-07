@@ -78,19 +78,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=1.4.7
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4.7.dsc' apt_1.4.7.dsc 2549 SHA256:0e707ac8c40944f6da17a99494fe860b8fdbfc33f0ed115b78c4b6bf623d8a1e
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4.7.tar.xz' apt_1.4.7.tar.xz 2078852 SHA256:ea2a2e8e08daf8ea11aeaa86928d943a42ce53989165a30cc828838d470b7719
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/1.4.7/
 
-- https://sources.debian.net/src/apt/1.4.7/ (for browsing the source)
-- https://sources.debian.net/src/apt/1.4.7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/1.4.7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
@@ -357,20 +351,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris db5.3=5.3.28-12
-'http://deb.debian.org/debian/pool/main/d/db5.3/db5.3_5.3.28-12.dsc' db5.3_5.3.28-12.dsc 3199 SHA256:1c4d6149f83a798e69f6d8e7444711d963c31d649284357135ea33b319c71bba
-'http://deb.debian.org/debian/pool/main/d/db5.3/db5.3_5.3.28.orig.tar.xz' db5.3_5.3.28.orig.tar.xz 24154920 SHA256:e1f85c8b6ebd0ed3ca72fa0ae97b65006f6d0bd0cd6f4ac24bed103cb5497bf5
-'http://deb.debian.org/debian/pool/main/d/db5.3/db5.3_5.3.28-12.debian.tar.xz' db5.3_5.3.28-12.debian.tar.xz 27812 SHA256:7907d8ad4c408857a71782436283a7ab67d7fe0f38ae15782f08077bdfd55c03
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/db5.3/5.3.28-12/
 
-- https://sources.debian.net/src/db5.3/5.3.28-12/ (for browsing the source)
-- https://sources.debian.net/src/db5.3/5.3.28-12/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/db5.3/5.3.28-12/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debconf=1.5.61`
 
@@ -815,9 +802,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libgcrypt20=1.7.6-2+deb9u2
-'http://security.debian.org/pool/updates/main/libg/libgcrypt20/libgcrypt20_1.7.6-2+deb9u2.dsc' libgcrypt20_1.7.6-2+deb9u2.dsc 2838 SHA256:ece58728d3b18510e0f0a699b5207c393f67e96e0e9cb3191eeb831f2b7d61c1
-'http://security.debian.org/pool/updates/main/libg/libgcrypt20/libgcrypt20_1.7.6.orig.tar.bz2' libgcrypt20_1.7.6.orig.tar.bz2 2897695 SHA256:626aafee84af9d2ce253d2c143dc1c0902dda045780cc241f39970fc60be05bc
-'http://security.debian.org/pool/updates/main/libg/libgcrypt20/libgcrypt20_1.7.6-2+deb9u2.debian.tar.xz' libgcrypt20_1.7.6-2+deb9u2.debian.tar.xz 32044 SHA256:190182723dd39b256cb03e0b74ad9c2047943fe53584c7794b2cec080d5e33e6
+'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.7.6-2+deb9u2.dsc' libgcrypt20_1.7.6-2+deb9u2.dsc 2838 SHA256:ece58728d3b18510e0f0a699b5207c393f67e96e0e9cb3191eeb831f2b7d61c1
+'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.7.6.orig.tar.bz2' libgcrypt20_1.7.6.orig.tar.bz2 2897695 SHA256:626aafee84af9d2ce253d2c143dc1c0902dda045780cc241f39970fc60be05bc
+'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.7.6-2+deb9u2.debian.tar.xz' libgcrypt20_1.7.6-2+deb9u2.debian.tar.xz 32044 SHA256:190182723dd39b256cb03e0b74ad9c2047943fe53584c7794b2cec080d5e33e6
 ```
 
 Other potentially useful URLs:
@@ -1129,9 +1116,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris perl=5.24.1-3+deb9u2
-'http://security.debian.org/pool/updates/main/p/perl/perl_5.24.1-3+deb9u2.dsc' perl_5.24.1-3+deb9u2.dsc 2397 SHA256:16a107d177b44570b3048c0407aba647b52808ea5da2e1d59f72156c1d7b752f
-'http://security.debian.org/pool/updates/main/p/perl/perl_5.24.1.orig.tar.xz' perl_5.24.1.orig.tar.xz 11569284 SHA256:03a77bac4505c270f1890ece75afc7d4b555090b41aa41ea478747e23b2afb3f
-'http://security.debian.org/pool/updates/main/p/perl/perl_5.24.1-3+deb9u2.debian.tar.xz' perl_5.24.1-3+deb9u2.debian.tar.xz 174248 SHA256:2360af85de9a0577d3045e6ffb576c8cc63d9d2622ce6bfbcd8734e63fee50a0
+'http://deb.debian.org/debian/pool/main/p/perl/perl_5.24.1-3+deb9u2.dsc' perl_5.24.1-3+deb9u2.dsc 2397 SHA256:16a107d177b44570b3048c0407aba647b52808ea5da2e1d59f72156c1d7b752f
+'http://deb.debian.org/debian/pool/main/p/perl/perl_5.24.1.orig.tar.xz' perl_5.24.1.orig.tar.xz 11569284 SHA256:03a77bac4505c270f1890ece75afc7d4b555090b41aa41ea478747e23b2afb3f
+'http://deb.debian.org/debian/pool/main/p/perl/perl_5.24.1-3+deb9u2.debian.tar.xz' perl_5.24.1-3+deb9u2.debian.tar.xz 174248 SHA256:2360af85de9a0577d3045e6ffb576c8cc63d9d2622ce6bfbcd8734e63fee50a0
 ```
 
 Other potentially useful URLs:
