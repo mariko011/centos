@@ -1,18 +1,18 @@
-# `node:6.11.3-stretch`
+# `node:6.11.4-stretch`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6d71556f616a2eae18d2bc58741ea5b5ba4cede1630e7c41229cdaf0ec95e7cb`
-- Created: `2017-09-13T20:38:42.739104896Z`
-- Virtual Size: ~ 876.03 Mb  
+- Image ID: `sha256:1acc617c502ea513e324cc80323315cc77b7679a87f570e17cc491c07f50bf98`
+- Created: `2017-10-04T17:23:28.901559666Z`
+- Virtual Size: ~ 876.26 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `NPM_CONFIG_LOGLEVEL=info`
-  - `NODE_VERSION=6.11.3`
-  - `YARN_VERSION=0.27.5`
+  - `NODE_VERSION=6.11.4`
+  - `YARN_VERSION=1.1.0`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -128,19 +128,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=1.4.7
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4.7.dsc' apt_1.4.7.dsc 2549 SHA256:0e707ac8c40944f6da17a99494fe860b8fdbfc33f0ed115b78c4b6bf623d8a1e
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4.7.tar.xz' apt_1.4.7.tar.xz 2078852 SHA256:ea2a2e8e08daf8ea11aeaa86928d943a42ce53989165a30cc828838d470b7719
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/1.4.7/
 
-- https://sources.debian.net/src/apt/1.4.7/ (for browsing the source)
-- https://sources.debian.net/src/apt/1.4.7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/1.4.7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `atk1.0=2.22.0-1`
 
@@ -782,20 +776,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris db5.3=5.3.28-12
-'http://deb.debian.org/debian/pool/main/d/db5.3/db5.3_5.3.28-12.dsc' db5.3_5.3.28-12.dsc 3199 SHA256:1c4d6149f83a798e69f6d8e7444711d963c31d649284357135ea33b319c71bba
-'http://deb.debian.org/debian/pool/main/d/db5.3/db5.3_5.3.28.orig.tar.xz' db5.3_5.3.28.orig.tar.xz 24154920 SHA256:e1f85c8b6ebd0ed3ca72fa0ae97b65006f6d0bd0cd6f4ac24bed103cb5497bf5
-'http://deb.debian.org/debian/pool/main/d/db5.3/db5.3_5.3.28-12.debian.tar.xz' db5.3_5.3.28-12.debian.tar.xz 27812 SHA256:7907d8ad4c408857a71782436283a7ab67d7fe0f38ae15782f08077bdfd55c03
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/db5.3/5.3.28-12/
 
-- https://sources.debian.net/src/db5.3/5.3.28-12/ (for browsing the source)
-- https://sources.debian.net/src/db5.3/5.3.28-12/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/db5.3/5.3.28-12/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `dbus=1.10.18-1`
 
@@ -815,20 +802,13 @@ Licenses: (parsed from: `/usr/share/doc/libdbus-1-3/copyright`)
 - `Tcl-BSDish`
 - `g10-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dbus=1.10.18-1
-'http://deb.debian.org/debian/pool/main/d/dbus/dbus_1.10.18-1.dsc' dbus_1.10.18-1.dsc 3073 SHA256:66636c2539bcd4128716db520d037081d719ab9cb0369f33861eca5c225840b6
-'http://deb.debian.org/debian/pool/main/d/dbus/dbus_1.10.18.orig.tar.gz' dbus_1.10.18.orig.tar.gz 1986589 SHA256:6049ddd5f3f3e2618f615f1faeda0a115104423a7996b7aa73e2f36e38cc514a
-'http://deb.debian.org/debian/pool/main/d/dbus/dbus_1.10.18-1.debian.tar.xz' dbus_1.10.18-1.debian.tar.xz 56484 SHA256:796909df79b3212448069465c1442d6e53ab80339d998dcc44ab11bd161c4f4b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/dbus/1.10.18-1/
 
-- https://sources.debian.net/src/dbus/1.10.18-1/ (for browsing the source)
-- https://sources.debian.net/src/dbus/1.10.18-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dbus/1.10.18-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debconf=1.5.61`
 
@@ -1082,9 +1062,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris expat=2.2.0-2+deb9u1
-'http://security.debian.org/pool/updates/main/e/expat/expat_2.2.0-2+deb9u1.dsc' expat_2.2.0-2+deb9u1.dsc 2295 SHA256:6d7f96d7148dda2857772b499cbe17d0feb1c016dcf35b1a6da7c846123bd20b
-'http://security.debian.org/pool/updates/main/e/expat/expat_2.2.0.orig.tar.bz2' expat_2.2.0.orig.tar.bz2 414352 SHA256:d9e50ff2d19b3538bd2127902a89987474e1a4db8e43a66a4d1a712ab9a504ff
-'http://security.debian.org/pool/updates/main/e/expat/expat_2.2.0-2+deb9u1.debian.tar.xz' expat_2.2.0-2+deb9u1.debian.tar.xz 11448 SHA256:d3e171fc4d2e6173945daab7d7df46d640fa23134c9474080f6d1b65d494b0a5
+'http://deb.debian.org/debian/pool/main/e/expat/expat_2.2.0-2+deb9u1.dsc' expat_2.2.0-2+deb9u1.dsc 2295 SHA256:6d7f96d7148dda2857772b499cbe17d0feb1c016dcf35b1a6da7c846123bd20b
+'http://deb.debian.org/debian/pool/main/e/expat/expat_2.2.0.orig.tar.bz2' expat_2.2.0.orig.tar.bz2 414352 SHA256:d9e50ff2d19b3538bd2127902a89987474e1a4db8e43a66a4d1a712ab9a504ff
+'http://deb.debian.org/debian/pool/main/e/expat/expat_2.2.0-2+deb9u1.debian.tar.xz' expat_2.2.0-2+deb9u1.debian.tar.xz 11448 SHA256:d3e171fc4d2e6173945daab7d7df46d640fa23134c9474080f6d1b65d494b0a5
 ```
 
 Other potentially useful URLs:
@@ -1163,9 +1143,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris file=1:5.30-1+deb9u1
-'http://security.debian.org/pool/updates/main/f/file/file_5.30-1+deb9u1.dsc' file_5.30-1+deb9u1.dsc 2321 SHA256:c36b1d8cf9c7df85503fd7483e2868ced1a63aeaafe89ef924d9237acec176f2
-'http://security.debian.org/pool/updates/main/f/file/file_5.30.orig.tar.xz' file_5.30.orig.tar.xz 578628 SHA256:813feaa00da67897b652aa2f0bdeba46f1a265223071a3ea0591476b4e1b0291
-'http://security.debian.org/pool/updates/main/f/file/file_5.30-1+deb9u1.debian.tar.xz' file_5.30-1+deb9u1.debian.tar.xz 39576 SHA256:eebe48791dc0d1db3f40106e6b72af57c0bb35b77f79ca68f0798b51855b25cc
+'http://deb.debian.org/debian/pool/main/f/file/file_5.30-1+deb9u1.dsc' file_5.30-1+deb9u1.dsc 2321 SHA256:c36b1d8cf9c7df85503fd7483e2868ced1a63aeaafe89ef924d9237acec176f2
+'http://deb.debian.org/debian/pool/main/f/file/file_5.30.orig.tar.xz' file_5.30.orig.tar.xz 578628 SHA256:813feaa00da67897b652aa2f0bdeba46f1a265223071a3ea0591476b4e1b0291
+'http://deb.debian.org/debian/pool/main/f/file/file_5.30-1+deb9u1.debian.tar.xz' file_5.30-1+deb9u1.debian.tar.xz 39576 SHA256:eebe48791dc0d1db3f40106e6b72af57c0bb35b77f79ca68f0798b51855b25cc
 ```
 
 Other potentially useful URLs:
@@ -1401,20 +1381,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-gdkpixbuf-2.0/copyright`, `/usr/s
 - `GPL-2`
 - `LGPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gdk-pixbuf=2.36.5-2
-'http://deb.debian.org/debian/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.36.5-2.dsc' gdk-pixbuf_2.36.5-2.dsc 2781 SHA256:9f009a815f748b01895b9b595b0f348a595321ed6bfc56cd304238e802a949bf
-'http://deb.debian.org/debian/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.36.5.orig.tar.xz' gdk-pixbuf_2.36.5.orig.tar.xz 5165640 SHA256:7ace06170291a1f21771552768bace072ecdea9bd4a02f7658939b9a314c40fc
-'http://deb.debian.org/debian/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.36.5-2.debian.tar.xz' gdk-pixbuf_2.36.5-2.debian.tar.xz 14040 SHA256:2da035dad66a16fcc9b17cd93068c527dadf398a08789abc64c725550dac3062
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gdk-pixbuf/2.36.5-2/
 
-- https://sources.debian.net/src/gdk-pixbuf/2.36.5-2/ (for browsing the source)
-- https://sources.debian.net/src/gdk-pixbuf/2.36.5-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gdk-pixbuf/2.36.5-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `geoip=1.6.9-4`
 
@@ -1649,21 +1622,13 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `The MIT License (MIT)`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.5.8-5+deb9u2
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.8-5+deb9u2.dsc' gnutls28_3.5.8-5+deb9u2.dsc 3286 SHA256:7e9f5175859130a1bb2768b8ed46fd5f8f3f36145b5e7bf8c422cc91aa6920db
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.8.orig.tar.xz' gnutls28_3.5.8.orig.tar.xz 7264448 SHA256:0e97f243ae72b70307d684b84c7fe679385aa7a7a0e37e5be810193dcc17d4ff
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.8.orig.tar.xz.asc' gnutls28_3.5.8.orig.tar.xz.asc 287 SHA256:417da9db564a841128edb2dc2c98465a5749541f7d71492cb7c4905a0bfeac82
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.8-5+deb9u2.debian.tar.xz' gnutls28_3.5.8-5+deb9u2.debian.tar.xz 107164 SHA256:afcc9cf4f33f0e84751d770631a4915c70309fc9c5e04344d06a86c66b58b0c8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnutls28/3.5.8-5+deb9u2/
 
-- https://sources.debian.net/src/gnutls28/3.5.8-5+deb9u2/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.5.8-5+deb9u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.5.8-5+deb9u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gobject-introspection=1.50.0-1`
 
@@ -2076,9 +2041,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris imagemagick=8:6.9.7.4+dfsg-11+deb9u1
-'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.9.7.4+dfsg-11+deb9u1.dsc' imagemagick_6.9.7.4+dfsg-11+deb9u1.dsc 5165 SHA256:0d21c5f12c9bf494291114133859b4325cdfc36632d1859c32feadb36b0fbbc8
-'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.9.7.4+dfsg.orig.tar.xz' imagemagick_6.9.7.4+dfsg.orig.tar.xz 8929800 SHA256:47fb2cdd26f5913318c4504f16ea363e04d1f400dda9ec52e461ab661d724026
-'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.9.7.4+dfsg-11+deb9u1.debian.tar.xz' imagemagick_6.9.7.4+dfsg-11+deb9u1.debian.tar.xz 230280 SHA256:a68636c822d2782ea0567c92eac903381b12223d75b01b77e64a79cb7182e90f
+'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_6.9.7.4+dfsg-11+deb9u1.dsc' imagemagick_6.9.7.4+dfsg-11+deb9u1.dsc 5165 SHA256:0d21c5f12c9bf494291114133859b4325cdfc36632d1859c32feadb36b0fbbc8
+'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_6.9.7.4+dfsg.orig.tar.xz' imagemagick_6.9.7.4+dfsg.orig.tar.xz 8929800 SHA256:47fb2cdd26f5913318c4504f16ea363e04d1f400dda9ec52e461ab661d724026
+'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_6.9.7.4+dfsg-11+deb9u1.debian.tar.xz' imagemagick_6.9.7.4+dfsg-11+deb9u1.debian.tar.xz 230280 SHA256:a68636c822d2782ea0567c92eac903381b12223d75b01b77e64a79cb7182e90f
 ```
 
 Other potentially useful URLs:
@@ -2298,20 +2263,13 @@ Licenses: (parsed from: `/usr/share/doc/krb5-multidev/copyright`, `/usr/share/do
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.15-1
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.15-1.dsc' krb5_1.15-1.dsc 3282 SHA256:ec2a3211b949480f2419dd4731e8213635d7dfcbe1658d1000cea8fa950599aa
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.15.orig.tar.gz' krb5_1.15.orig.tar.gz 9327157 SHA256:fd34752774c808ab4f6f864f935c49945f5a56b62240b1ad4ab1af7b4ded127c
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.15-1.debian.tar.xz' krb5_1.15-1.debian.tar.xz 141624 SHA256:ddad4ec3d024b1164d1726c767ed8ea4900454793f5a2ce53a5cf7a123c5b4e7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/krb5/1.15-1/
 
-- https://sources.debian.net/src/krb5/1.15-1/ (for browsing the source)
-- https://sources.debian.net/src/krb5/1.15-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/krb5/1.15-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lcms2=2.8-4`
 
@@ -2651,9 +2609,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libgcrypt20=1.7.6-2+deb9u2
-'http://security.debian.org/pool/updates/main/libg/libgcrypt20/libgcrypt20_1.7.6-2+deb9u2.dsc' libgcrypt20_1.7.6-2+deb9u2.dsc 2838 SHA256:ece58728d3b18510e0f0a699b5207c393f67e96e0e9cb3191eeb831f2b7d61c1
-'http://security.debian.org/pool/updates/main/libg/libgcrypt20/libgcrypt20_1.7.6.orig.tar.bz2' libgcrypt20_1.7.6.orig.tar.bz2 2897695 SHA256:626aafee84af9d2ce253d2c143dc1c0902dda045780cc241f39970fc60be05bc
-'http://security.debian.org/pool/updates/main/libg/libgcrypt20/libgcrypt20_1.7.6-2+deb9u2.debian.tar.xz' libgcrypt20_1.7.6-2+deb9u2.debian.tar.xz 32044 SHA256:190182723dd39b256cb03e0b74ad9c2047943fe53584c7794b2cec080d5e33e6
+'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.7.6-2+deb9u2.dsc' libgcrypt20_1.7.6-2+deb9u2.dsc 2838 SHA256:ece58728d3b18510e0f0a699b5207c393f67e96e0e9cb3191eeb831f2b7d61c1
+'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.7.6.orig.tar.bz2' libgcrypt20_1.7.6.orig.tar.bz2 2897695 SHA256:626aafee84af9d2ce253d2c143dc1c0902dda045780cc241f39970fc60be05bc
+'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.7.6-2+deb9u2.debian.tar.xz' libgcrypt20_1.7.6-2+deb9u2.debian.tar.xz 32044 SHA256:190182723dd39b256cb03e0b74ad9c2047943fe53584c7794b2cec080d5e33e6
 ```
 
 Other potentially useful URLs:
@@ -2686,9 +2644,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libgd2=2.2.4-2+deb9u2
-'http://security.debian.org/pool/updates/main/libg/libgd2/libgd2_2.2.4-2+deb9u2.dsc' libgd2_2.2.4-2+deb9u2.dsc 2346 SHA256:3e51505d37e957373aaa8b9687a7ac49a2473bd09e072d7f4bdf72cbb99b611d
-'http://security.debian.org/pool/updates/main/libg/libgd2/libgd2_2.2.4.orig.tar.xz' libgd2_2.2.4.orig.tar.xz 2478528 SHA256:137f13a7eb93ce72e32ccd7cebdab6874f8cf7ddf31d3a455a68e016ecd9e4e6
-'http://security.debian.org/pool/updates/main/libg/libgd2/libgd2_2.2.4-2+deb9u2.debian.tar.xz' libgd2_2.2.4-2+deb9u2.debian.tar.xz 27040 SHA256:b1c7b8a146ac7b7f59a8c40d141dca66398dc7d6b02e4c60920ca378940c502a
+'http://deb.debian.org/debian/pool/main/libg/libgd2/libgd2_2.2.4-2+deb9u2.dsc' libgd2_2.2.4-2+deb9u2.dsc 2346 SHA256:3e51505d37e957373aaa8b9687a7ac49a2473bd09e072d7f4bdf72cbb99b611d
+'http://deb.debian.org/debian/pool/main/libg/libgd2/libgd2_2.2.4.orig.tar.xz' libgd2_2.2.4.orig.tar.xz 2478528 SHA256:137f13a7eb93ce72e32ccd7cebdab6874f8cf7ddf31d3a455a68e016ecd9e4e6
+'http://deb.debian.org/debian/pool/main/libg/libgd2/libgd2_2.2.4-2+deb9u2.debian.tar.xz' libgd2_2.2.4-2+deb9u2.debian.tar.xz 27040 SHA256:b1c7b8a146ac7b7f59a8c40d141dca66398dc7d6b02e4c60920ca378940c502a
 ```
 
 Other potentially useful URLs:
@@ -2763,20 +2721,13 @@ Licenses: (parsed from: `/usr/share/doc/libidn2-0/copyright`)
 - `LGPL-3+`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libidn2-0=0.16-1
-'http://deb.debian.org/debian/pool/main/libi/libidn2-0/libidn2-0_0.16-1.dsc' libidn2-0_0.16-1.dsc 1786 SHA256:d806657d36a5836ab08ccc5488372d7b95c03e10964b1c692b0948e6805bc84e
-'http://deb.debian.org/debian/pool/main/libi/libidn2-0/libidn2-0_0.16.orig.tar.gz' libidn2-0_0.16.orig.tar.gz 1494295 SHA256:2fad9efff4082ae2143f69df76339ca99379e0e0f4231455f5d3d9d2089c688f
-'http://deb.debian.org/debian/pool/main/libi/libidn2-0/libidn2-0_0.16-1.debian.tar.xz' libidn2-0_0.16-1.debian.tar.xz 57392 SHA256:9b643e5a5bd9f3eff52cd5508b1f15f44fe32bca4c1a6c3aa04ebad59d16272d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libidn2-0/0.16-1/
 
-- https://sources.debian.net/src/libidn2-0/0.16-1/ (for browsing the source)
-- https://sources.debian.net/src/libidn2-0/0.16-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libidn2-0/0.16-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libidn=1.33-1`
 
@@ -3665,9 +3616,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libxml2=2.9.4+dfsg1-2.2+deb9u1
-'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.9.4+dfsg1-2.2+deb9u1.dsc' libxml2_2.9.4+dfsg1-2.2+deb9u1.dsc 3049 SHA256:9cd8802fa5c7a6c89a23c755b41f5e9a114f7e74c4b5aeb303516c1f298df87a
-'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.9.4+dfsg1.orig.tar.xz' libxml2_2.9.4+dfsg1.orig.tar.xz 2446412 SHA256:a74ad55e346aa0b2b41903e66d21f8f3d2a736b3f41e32496376861ab484184e
-'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.9.4+dfsg1-2.2+deb9u1.debian.tar.xz' libxml2_2.9.4+dfsg1-2.2+deb9u1.debian.tar.xz 33600 SHA256:6c9e6fed9d68a7992057e6153972d1582fc75ff3140f619ba9c0b024351c14e7
+'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1-2.2+deb9u1.dsc' libxml2_2.9.4+dfsg1-2.2+deb9u1.dsc 3049 SHA256:9cd8802fa5c7a6c89a23c755b41f5e9a114f7e74c4b5aeb303516c1f298df87a
+'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1.orig.tar.xz' libxml2_2.9.4+dfsg1.orig.tar.xz 2446412 SHA256:a74ad55e346aa0b2b41903e66d21f8f3d2a736b3f41e32496376861ab484184e
+'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1-2.2+deb9u1.debian.tar.xz' libxml2_2.9.4+dfsg1-2.2+deb9u1.debian.tar.xz 33600 SHA256:6c9e6fed9d68a7992057e6153972d1582fc75ff3140f619ba9c0b024351c14e7
 ```
 
 Other potentially useful URLs:
@@ -4016,9 +3967,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris mariadb-10.1=10.1.26-0+deb9u1
-'http://security.debian.org/pool/updates/main/m/mariadb-10.1/mariadb-10.1_10.1.26-0+deb9u1.dsc' mariadb-10.1_10.1.26-0+deb9u1.dsc 4476 SHA256:f461d4adcf8934e9ab60ff913a381e421ae0dda403e54f36fcddcbfa1a32e142
-'http://security.debian.org/pool/updates/main/m/mariadb-10.1/mariadb-10.1_10.1.26.orig.tar.gz' mariadb-10.1_10.1.26.orig.tar.gz 61887132 SHA256:ba88b1cb9967dea2909938a34ba89373b162b0d83e5c98a0f1c94540156bf73d
-'http://security.debian.org/pool/updates/main/m/mariadb-10.1/mariadb-10.1_10.1.26-0+deb9u1.debian.tar.xz' mariadb-10.1_10.1.26-0+deb9u1.debian.tar.xz 226912 SHA256:3d90b4bc9201de408abcdb3b43e990c2010320fa97b358cecdc1a0203a21d1ec
+'http://deb.debian.org/debian/pool/main/m/mariadb-10.1/mariadb-10.1_10.1.26-0+deb9u1.dsc' mariadb-10.1_10.1.26-0+deb9u1.dsc 4476 SHA256:f461d4adcf8934e9ab60ff913a381e421ae0dda403e54f36fcddcbfa1a32e142
+'http://deb.debian.org/debian/pool/main/m/mariadb-10.1/mariadb-10.1_10.1.26.orig.tar.gz' mariadb-10.1_10.1.26.orig.tar.gz 61887132 SHA256:ba88b1cb9967dea2909938a34ba89373b162b0d83e5c98a0f1c94540156bf73d
+'http://deb.debian.org/debian/pool/main/m/mariadb-10.1/mariadb-10.1_10.1.26-0+deb9u1.debian.tar.xz' mariadb-10.1_10.1.26-0+deb9u1.debian.tar.xz 226912 SHA256:3d90b4bc9201de408abcdb3b43e990c2010320fa97b358cecdc1a0203a21d1ec
 ```
 
 Other potentially useful URLs:
@@ -4068,9 +4019,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris mercurial=4.0-1+deb9u1
-'http://security.debian.org/pool/updates/main/m/mercurial/mercurial_4.0-1+deb9u1.dsc' mercurial_4.0-1+deb9u1.dsc 2427 SHA256:ba44c9b1c5426154dd3bf44ad16b2973e4da475b8dd5d97ce9ebcd3ec472e174
-'http://security.debian.org/pool/updates/main/m/mercurial/mercurial_4.0.orig.tar.gz' mercurial_4.0.orig.tar.gz 4850316 SHA256:24be080745230840f214d93e9f9fb4e25510f9abbbec2e56fab18543fedc43a7
-'http://security.debian.org/pool/updates/main/m/mercurial/mercurial_4.0-1+deb9u1.debian.tar.xz' mercurial_4.0-1+deb9u1.debian.tar.xz 101944 SHA256:83c6dee02fa4df95235a2f03baea99731a37e9d8d166362db6152a2990e6ad96
+'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_4.0-1+deb9u1.dsc' mercurial_4.0-1+deb9u1.dsc 2427 SHA256:ba44c9b1c5426154dd3bf44ad16b2973e4da475b8dd5d97ce9ebcd3ec472e174
+'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_4.0.orig.tar.gz' mercurial_4.0.orig.tar.gz 4850316 SHA256:24be080745230840f214d93e9f9fb4e25510f9abbbec2e56fab18543fedc43a7
+'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_4.0-1+deb9u1.debian.tar.xz' mercurial_4.0-1+deb9u1.debian.tar.xz 101944 SHA256:83c6dee02fa4df95235a2f03baea99731a37e9d8d166362db6152a2990e6ad96
 ```
 
 Other potentially useful URLs:
@@ -4429,20 +4380,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openldap=2.4.44+dfsg-5
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.44+dfsg-5.dsc' openldap_2.4.44+dfsg-5.dsc 2946 SHA256:852cf740c7de619527923f49f2ab095278ebf1fbb0b28df1529ea8e6aa05d99a
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.44+dfsg.orig.tar.gz' openldap_2.4.44+dfsg.orig.tar.gz 4826590 SHA256:d5187c229bec163c5d97845846e1b87917755f85b04f444c08836384f4bd7ffe
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.44+dfsg-5.debian.tar.xz' openldap_2.4.44+dfsg-5.debian.tar.xz 163740 SHA256:d7c6de5c192341e43958b9f899fab68198c6592782980c78cd3b15267e20ef34
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openldap/2.4.44+dfsg-5/
 
-- https://sources.debian.net/src/openldap/2.4.44+dfsg-5/ (for browsing the source)
-- https://sources.debian.net/src/openldap/2.4.44+dfsg-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openldap/2.4.44+dfsg-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssh=1:7.4p1-10+deb9u1`
 
@@ -4710,20 +4654,13 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.24/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.24.1-3+deb9u1
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.24.1-3+deb9u1.dsc' perl_5.24.1-3+deb9u1.dsc 2393 SHA256:543956cb46686a577b7e6a6f3db713b4acb98e254d1f66a159757b7f2bf8ba68
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.24.1.orig.tar.xz' perl_5.24.1.orig.tar.xz 11569284 SHA256:03a77bac4505c270f1890ece75afc7d4b555090b41aa41ea478747e23b2afb3f
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.24.1-3+deb9u1.debian.tar.xz' perl_5.24.1-3+deb9u1.debian.tar.xz 172800 SHA256:928dc211d523b1e058cd2389873f564355c3b9df1ef7efc70f55dff106e5efea
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/perl/5.24.1-3+deb9u1/
 
-- https://sources.debian.net/src/perl/5.24.1-3+deb9u1/ (for browsing the source)
-- https://sources.debian.net/src/perl/5.24.1-3+deb9u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/perl/5.24.1-3+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pinentry=1.0.0-2`
 
@@ -4833,9 +4770,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris postgresql-9.6=9.6.4-0+deb9u1
-'http://security.debian.org/pool/updates/main/p/postgresql-9.6/postgresql-9.6_9.6.4-0+deb9u1.dsc' postgresql-9.6_9.6.4-0+deb9u1.dsc 3694 SHA256:baf59e5e050f2ae3108226fcd5937e323da34828231fec1eb3d8a58c99d724c0
-'http://security.debian.org/pool/updates/main/p/postgresql-9.6/postgresql-9.6_9.6.4.orig.tar.bz2' postgresql-9.6_9.6.4.orig.tar.bz2 19566875 SHA256:2b3ab16d82e21cead54c08b95ce3ac480696944a68603b6c11b3205b7376ce13
-'http://security.debian.org/pool/updates/main/p/postgresql-9.6/postgresql-9.6_9.6.4-0+deb9u1.debian.tar.xz' postgresql-9.6_9.6.4-0+deb9u1.debian.tar.xz 21072 SHA256:d2aee3d5cf7d150c0117f0a0f5c3a65bcd47b9dd7a95387b6b9aad166f770f44
+'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.4-0+deb9u1.dsc' postgresql-9.6_9.6.4-0+deb9u1.dsc 3694 SHA256:baf59e5e050f2ae3108226fcd5937e323da34828231fec1eb3d8a58c99d724c0
+'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.4.orig.tar.bz2' postgresql-9.6_9.6.4.orig.tar.bz2 19566875 SHA256:2b3ab16d82e21cead54c08b95ce3ac480696944a68603b6c11b3205b7376ce13
+'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.4-0+deb9u1.debian.tar.xz' postgresql-9.6_9.6.4-0+deb9u1.debian.tar.xz 21072 SHA256:d2aee3d5cf7d150c0117f0a0f5c3a65bcd47b9dd7a95387b6b9aad166f770f44
 ```
 
 Other potentially useful URLs:
@@ -5268,9 +5205,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris subversion=1.9.5-1+deb9u1
-'http://security.debian.org/pool/updates/main/s/subversion/subversion_1.9.5-1+deb9u1.dsc' subversion_1.9.5-1+deb9u1.dsc 3077 SHA256:343fda8307ee3d0238303dc5c07fe394000058446bad56d800e5583a62c6b5fd
-'http://security.debian.org/pool/updates/main/s/subversion/subversion_1.9.5.orig.tar.gz' subversion_1.9.5.orig.tar.gz 10615674 SHA256:280ba586c5d51d7b976b65d22d5e8e42f3908ed1c968d71120dcf534ce857a83
-'http://security.debian.org/pool/updates/main/s/subversion/subversion_1.9.5-1+deb9u1.diff.gz' subversion_1.9.5-1+deb9u1.diff.gz 2535701 SHA256:2bb2797c058e1ca671dcf219c2fb7317ec106078ce496ea00a921c0eb37299a7
+'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.9.5-1+deb9u1.dsc' subversion_1.9.5-1+deb9u1.dsc 3077 SHA256:343fda8307ee3d0238303dc5c07fe394000058446bad56d800e5583a62c6b5fd
+'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.9.5.orig.tar.gz' subversion_1.9.5.orig.tar.gz 10615674 SHA256:280ba586c5d51d7b976b65d22d5e8e42f3908ed1c968d71120dcf534ce857a83
+'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.9.5-1+deb9u1.diff.gz' subversion_1.9.5-1+deb9u1.diff.gz 2535701 SHA256:2bb2797c058e1ca671dcf219c2fb7317ec106078ce496ea00a921c0eb37299a7
 ```
 
 Other potentially useful URLs:
