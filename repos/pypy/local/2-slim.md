@@ -1,17 +1,17 @@
-# `pypy:2-5.8.0-slim`
+# `pypy:2-5.9.0-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:16c2983f43035f1416a17dcb3d5f08567c7dd61c3ecde8741076721d75201ef3`
-- Created: `2017-09-14T02:33:08.004662722Z`
-- Virtual Size: ~ 197.34 Mb  
+- Image ID: `sha256:e5fb62cbe6d9ca628200361a7743cf2141a13552131d9ee8d7586187ade58e57`
+- Created: `2017-10-05T19:04:09.771400596Z`
+- Virtual Size: ~ 198.91 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["pypy"]`
 - Environment:
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `PYPY_VERSION=5.8.0`
+  - `PYPY_VERSION=5.9.0`
   - `PYTHON_PIP_VERSION=9.0.1`
 
 ## `dpkg` (`.deb`-based packages)
