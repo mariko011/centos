@@ -227,10 +227,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris binutils=2.29.1-4
-'http://http.debian.net/debian/pool/main/b/binutils/binutils_2.29.1-4.dsc' binutils_2.29.1-4.dsc 6126 SHA256:8c77f5e14ea423183ce4d8570988936f43bb7524c78388d0ecfe01d6ba3ce8d2
-'http://http.debian.net/debian/pool/main/b/binutils/binutils_2.29.1.orig.tar.xz' binutils_2.29.1.orig.tar.xz 19923564 SHA256:0e993857e2e9b006fb541a3e1ce319d00770b27d3c50af2ee9c779388da1915c
-'http://http.debian.net/debian/pool/main/b/binutils/binutils_2.29.1-4.debian.tar.xz' binutils_2.29.1-4.debian.tar.xz 172660 SHA256:61bfec18e033fa37f318b2466b4b41a45c7927101cc6d90858e4d2cad6d95dce
+'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.29.1-4.dsc' binutils_2.29.1-4.dsc 6126 SHA256:8c77f5e14ea423183ce4d8570988936f43bb7524c78388d0ecfe01d6ba3ce8d2
+'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.29.1.orig.tar.xz' binutils_2.29.1.orig.tar.xz 19923564 SHA256:0e993857e2e9b006fb541a3e1ce319d00770b27d3c50af2ee9c779388da1915c
+'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.29.1-4.debian.tar.xz' binutils_2.29.1-4.debian.tar.xz 172660 SHA256:61bfec18e033fa37f318b2466b4b41a45c7927101cc6d90858e4d2cad6d95dce
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/binutils/2.29.1-4/ (for browsing the source)
+- https://sources.debian.net/src/binutils/2.29.1-4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/binutils/2.29.1-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `boot=1.3-20-1.1`
 
@@ -1005,10 +1011,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris gcc-7=7.2.0-8
-'http://http.debian.net/debian/pool/main/g/gcc-7/gcc-7_7.2.0-8.dsc' gcc-7_7.2.0-8.dsc 26328 SHA256:8cfedde7bca4730357bfc04b396913946a86f288287fc39cd49d18e46e6d3ebf
-'http://http.debian.net/debian/pool/main/g/gcc-7/gcc-7_7.2.0.orig.tar.gz' gcc-7_7.2.0.orig.tar.gz 70028185 SHA256:a1050ca96c2b931ad82da3caf2868cd68b95a62151ac9af53fbe9b69b6e9b651
-'http://http.debian.net/debian/pool/main/g/gcc-7/gcc-7_7.2.0-8.diff.gz' gcc-7_7.2.0-8.diff.gz 3094749 SHA256:3a6a3bf78a4282ff51f729aaf0b81985afe85a35063be23ec31ac7c620c02daa
+'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.2.0-8.dsc' gcc-7_7.2.0-8.dsc 26328 SHA256:8cfedde7bca4730357bfc04b396913946a86f288287fc39cd49d18e46e6d3ebf
+'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.2.0.orig.tar.gz' gcc-7_7.2.0.orig.tar.gz 70028185 SHA256:a1050ca96c2b931ad82da3caf2868cd68b95a62151ac9af53fbe9b69b6e9b651
+'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.2.0-8.diff.gz' gcc-7_7.2.0-8.diff.gz 3094749 SHA256:3a6a3bf78a4282ff51f729aaf0b81985afe85a35063be23ec31ac7c620c02daa
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/gcc-7/7.2.0-8/ (for browsing the source)
+- https://sources.debian.net/src/gcc-7/7.2.0-8/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gcc-7/7.2.0-8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-defaults=1.173d1`
 
@@ -1985,10 +1997,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libpng1.6=1.6.34-1
-'http://http.debian.net/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.34-1.dsc' libpng1.6_1.6.34-1.dsc 2191 SHA256:e491569d9015036d43c7a9dfcf2d835abde8c9817b057d55d929cb78501d5a30
-'http://http.debian.net/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.34.orig.tar.xz' libpng1.6_1.6.34.orig.tar.xz 997968 SHA256:2f1e960d92ce3b3abd03d06dfec9637dfbd22febf107a536b44f7a47c60659f6
-'http://http.debian.net/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.34-1.debian.tar.xz' libpng1.6_1.6.34-1.debian.tar.xz 23568 SHA256:8ca33d2930b340412f04d76cac3159f6b3b823cff33b35b72426a75f3f02a8a0
+'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.34-1.dsc' libpng1.6_1.6.34-1.dsc 2191 SHA256:e491569d9015036d43c7a9dfcf2d835abde8c9817b057d55d929cb78501d5a30
+'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.34.orig.tar.xz' libpng1.6_1.6.34.orig.tar.xz 997968 SHA256:2f1e960d92ce3b3abd03d06dfec9637dfbd22febf107a536b44f7a47c60659f6
+'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.34-1.debian.tar.xz' libpng1.6_1.6.34-1.debian.tar.xz 23568 SHA256:8ca33d2930b340412f04d76cac3159f6b3b823cff33b35b72426a75f3f02a8a0
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libpng1.6/1.6.34-1/ (for browsing the source)
+- https://sources.debian.net/src/libpng1.6/1.6.34-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libpng1.6/1.6.34-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libpsl=0.18.0-2`
 
