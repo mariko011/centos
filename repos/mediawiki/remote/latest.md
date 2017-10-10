@@ -1,7 +1,7 @@
 ## `mediawiki:latest`
 
 ```console
-$ docker pull mediawiki@sha256:18c1e49ea46044a8937cc3928c25626efd4e867f5e9a3778f40cc3ef9d70913f
+$ docker pull mediawiki@sha256:5926ba1b4476456eae070bb337e90511e563cf01f5aa9914bf9ce89832ebdc00
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull mediawiki@sha256:18c1e49ea46044a8937cc3928c25626efd4e867f5e9a3778f
 ### `mediawiki:latest` - linux; amd64
 
 ```console
-$ docker pull mediawiki@sha256:46e72cd052004fbe981502e4e21063aa5aca09c8b9b5028a2e70ff3c080b3e0f
+$ docker pull mediawiki@sha256:d32a38135e2bdb516679e7e4354ac72fc050eb928d48413c7283ff73e56bf501
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **254.3 MB (254307838 bytes)**  
+-	Total Size: **262.0 MB (261994748 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b1ec4b41f95bc10da5b58382c466a71e73e9e6c3773d5bba2360e4ef6216ff26`
+-	Image ID: `sha256:0652b37be42bfa0c98dd61e7d1e08ebae13ec245cd4cb70936c8ae4060014985`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -85,25 +85,25 @@ WORKDIR /var/www/html
 EXPOSE 80/tcp
 # Tue, 10 Oct 2017 01:26:58 GMT
 CMD ["apache2-foreground"]
-# Tue, 10 Oct 2017 10:21:11 GMT
-RUN apt-get update && apt-get install -y 		git 		imagemagick 		libicu-dev 	--no-install-recommends && rm -r /var/lib/apt/lists/*
-# Tue, 10 Oct 2017 10:22:28 GMT
+# Tue, 10 Oct 2017 16:45:12 GMT
+RUN apt-get update && apt-get install -y 		git 		imagemagick 		libicu-dev 		python 	--no-install-recommends && rm -r /var/lib/apt/lists/*
+# Tue, 10 Oct 2017 16:46:27 GMT
 RUN docker-php-ext-install mbstring mysqli opcache intl
-# Tue, 10 Oct 2017 10:22:38 GMT
+# Tue, 10 Oct 2017 16:46:42 GMT
 RUN pecl channel-update pecl.php.net 	&& pecl install apcu-5.1.8 	&& docker-php-ext-enable apcu
-# Tue, 10 Oct 2017 10:22:39 GMT
+# Tue, 10 Oct 2017 16:46:42 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Tue, 10 Oct 2017 10:22:39 GMT
+# Tue, 10 Oct 2017 16:46:43 GMT
 RUN mkdir -p /var/www/data 	&& chown -R www-data:www-data /var/www/data
-# Tue, 10 Oct 2017 10:22:40 GMT
+# Tue, 10 Oct 2017 16:46:43 GMT
 ENV MEDIAWIKI_MAJOR_VERSION=1.29
-# Tue, 10 Oct 2017 10:22:40 GMT
+# Tue, 10 Oct 2017 16:46:43 GMT
 ENV MEDIAWIKI_BRANCH=REL1_29
-# Tue, 10 Oct 2017 10:22:40 GMT
+# Tue, 10 Oct 2017 16:46:44 GMT
 ENV MEDIAWIKI_VERSION=1.29.1
-# Tue, 10 Oct 2017 10:22:40 GMT
+# Tue, 10 Oct 2017 16:46:44 GMT
 ENV MEDIAWIKI_SHA512=c4e04c4fb665c3d8299f3e03e608904aaf0e06381240c7259813eb670c3e32cde919353dd19993250cf49be81d604ac5f6d468bc563116a4b268e5011d34119f
-# Tue, 10 Oct 2017 10:22:46 GMT
+# Tue, 10 Oct 2017 16:46:49 GMT
 RUN curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz" -o mediawiki.tar.gz 	&& echo "${MEDIAWIKI_SHA512} *mediawiki.tar.gz" | sha512sum -c - 	&& tar -xz --strip-components=1 -f mediawiki.tar.gz 	&& rm mediawiki.tar.gz 	&& chown -R www-data:www-data extensions skins cache images
 ```
 
@@ -160,27 +160,27 @@ RUN curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSIO
 		Last Modified: Tue, 10 Oct 2017 02:34:25 GMT  
 		Size: 901.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2e624d4fcbf7464b250b1ca45ede077baeb024d24b5c16ef17046b26451ba8b2`  
-		Last Modified: Tue, 10 Oct 2017 10:30:33 GMT  
-		Size: 48.1 MB (48128604 bytes)  
+	-	`sha256:dfbfc15cf06ece8dfd19886d39747df35e0c98b3df21217aad25d16e028d833b`  
+		Last Modified: Tue, 10 Oct 2017 17:02:27 GMT  
+		Size: 55.8 MB (55815526 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c7964de1e33025cfc7f0cf6e9f256b52572edfd3e0fb7945e6fc4b1ce6abf125`  
-		Last Modified: Tue, 10 Oct 2017 10:30:23 GMT  
-		Size: 1.5 MB (1490066 bytes)  
+	-	`sha256:ce9e9fc351262c4bbaefb177f01b826820ab563f297c03058f7826cbd1f72e15`  
+		Last Modified: Tue, 10 Oct 2017 17:02:12 GMT  
+		Size: 1.5 MB (1490094 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2ba4741bc400a0559e51015efa460987a33c3b79bfe213520307892b1e348636`  
-		Last Modified: Tue, 10 Oct 2017 10:30:24 GMT  
-		Size: 326.1 KB (326090 bytes)  
+	-	`sha256:fa4e41a36b88b47710bda627083c7127a3387eb40ebde71a6a53820a911ceebf`  
+		Last Modified: Tue, 10 Oct 2017 17:02:14 GMT  
+		Size: 326.1 KB (326084 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fa9a4de487d950b5328068652f65deb5c58b1635c7001bfd762aa1fdcbab820a`  
-		Last Modified: Tue, 10 Oct 2017 10:30:23 GMT  
-		Size: 351.0 B  
+	-	`sha256:67db7d4d75d012bea2eb873c4274498573296290444189d8062164bb501f9376`  
+		Last Modified: Tue, 10 Oct 2017 17:02:10 GMT  
+		Size: 350.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d779af943bbfb4b52dd6786f3ac273b4dba7e7dd35fee006555aa72e71423b91`  
-		Last Modified: Tue, 10 Oct 2017 10:30:23 GMT  
-		Size: 139.0 B  
+	-	`sha256:9c6019f8f2d0fbaefcccddb3a14ae3c4ccb5282f8bcecd08b14cd9211acea083`  
+		Last Modified: Tue, 10 Oct 2017 17:02:11 GMT  
+		Size: 138.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:65f536626cf5d60d587d9f496e8098eab174a1b093cf5ede6024adcfe43fc65d`  
-		Last Modified: Tue, 10 Oct 2017 10:30:36 GMT  
-		Size: 40.2 MB (40208777 bytes)  
+	-	`sha256:3f495582dc2009f744524f39e82ef48e93edbf58bd1c97cf1c3aec64d425298c`  
+		Last Modified: Tue, 10 Oct 2017 17:02:35 GMT  
+		Size: 40.2 MB (40208745 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
