@@ -1,7 +1,7 @@
 ## `gazebo:gzserver4`
 
 ```console
-$ docker pull gazebo@sha256:a97fb4f942022185b4215dae7842403d79891228b362a8ea6220905dde8547aa
+$ docker pull gazebo@sha256:c5363ecc4678fab7c9b00e9433ffd883d3906c73d73e4eda54c414a6a31f6d78
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull gazebo@sha256:a97fb4f942022185b4215dae7842403d79891228b362a8ea6220
 ### `gazebo:gzserver4` - linux; amd64
 
 ```console
-$ docker pull gazebo@sha256:ed7da1a82a9aedc09f251c87cca46fd3d1b8d08bdb386527252aea5997b24700
+$ docker pull gazebo@sha256:edb7dbe6262e7fb388769459aaa09a90422709cc0589391b68698e1df0d9d341
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **213.7 MB (213708049 bytes)**  
+-	Total Size: **213.7 MB (213658818 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bad73002e88278a76bd19bb973ee12a616c756f6a41e0e18c445c8e2a0f90b42`
+-	Image ID: `sha256:5870985f3b349833819cd35ea038dca0c0bfc8d6778dc18a8ed544f91cd179e2`
 -	Entrypoint: `["\/gzserver_entrypoint.sh"]`
 -	Default Command: `["gzserver"]`
 
@@ -35,19 +35,19 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 # Wed, 13 Sep 2017 23:26:23 GMT
 CMD ["/bin/bash"]
-# Wed, 13 Sep 2017 23:47:26 GMT
-RUN apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys D2486D2DD83DB69272AFE98867170598AF249743
-# Wed, 13 Sep 2017 23:47:27 GMT
+# Tue, 10 Oct 2017 04:11:23 GMT
+RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys D2486D2DD83DB69272AFE98867170598AF249743
+# Tue, 10 Oct 2017 04:11:23 GMT
 RUN . /etc/os-release     && . /etc/lsb-release     && echo "deb http://packages.osrfoundation.org/gazebo/$ID-stable $DISTRIB_CODENAME main" > /etc/apt/sources.list.d/gazebo-latest.list
-# Wed, 13 Sep 2017 23:48:50 GMT
+# Tue, 10 Oct 2017 04:12:40 GMT
 RUN apt-get update && apt-get install -q -y     gazebo4=4.1.3-1*     && rm -rf /var/lib/apt/lists/*
-# Wed, 13 Sep 2017 23:48:50 GMT
+# Tue, 10 Oct 2017 04:12:41 GMT
 EXPOSE 11345/tcp
-# Wed, 13 Sep 2017 23:48:51 GMT
+# Tue, 10 Oct 2017 04:12:41 GMT
 COPY file:5869092530419fa234b6d43a32bf8687d0d509fced55597b2e241dd58b3d1335 in / 
-# Wed, 13 Sep 2017 23:48:51 GMT
+# Tue, 10 Oct 2017 04:12:41 GMT
 ENTRYPOINT ["/gzserver_entrypoint.sh"]
-# Wed, 13 Sep 2017 23:48:51 GMT
+# Tue, 10 Oct 2017 04:12:41 GMT
 CMD ["gzserver"]
 ```
 
@@ -72,19 +72,19 @@ CMD ["gzserver"]
 		Last Modified: Wed, 13 Sep 2017 23:27:09 GMT  
 		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:014c84f89dbd69401e35da84b2663eb666e8cd40bcf0c1bc579dd902903c1d39`  
-		Last Modified: Thu, 14 Sep 2017 00:10:12 GMT  
+	-	`sha256:e8175c22ed727f109e1190bf48ffa848f87f9c6ff59d507116e3b5afb8d39ca3`  
+		Last Modified: Tue, 10 Oct 2017 04:45:04 GMT  
 		Size: 13.1 KB (13113 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af224dcaa5dca0c70968e48c3443e210618b84d6b063fde3208e87030571ec67`  
-		Last Modified: Thu, 14 Sep 2017 00:10:11 GMT  
+	-	`sha256:fadf30742e84f473dd8474778bc1f4fc373cede6755a74bf9b51d417032dd316`  
+		Last Modified: Tue, 10 Oct 2017 04:45:03 GMT  
 		Size: 239.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b9a36ba49ce8d3c810e7c9e523ed8572240f977845f5745aebd3778270ec832c`  
-		Last Modified: Thu, 14 Sep 2017 00:10:46 GMT  
-		Size: 146.5 MB (146505577 bytes)  
+	-	`sha256:7e426be25939b8ba03e64b11eb0a91b8d36a009579bf10a1c65ed9acb74dc4bb`  
+		Last Modified: Tue, 10 Oct 2017 04:45:30 GMT  
+		Size: 146.5 MB (146456347 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:64821023e304bb6f3937e5399c2933afb012bc079aae84bb122d651f5e25b708`  
-		Last Modified: Thu, 14 Sep 2017 00:10:11 GMT  
-		Size: 188.0 B  
+	-	`sha256:01e79631f993aa905911a8f1e119e018e18b9d36491b8160403d59e2959c1eb2`  
+		Last Modified: Tue, 10 Oct 2017 04:45:03 GMT  
+		Size: 187.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

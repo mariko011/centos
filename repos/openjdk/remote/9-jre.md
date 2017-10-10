@@ -1,7 +1,7 @@
 ## `openjdk:9-jre`
 
 ```console
-$ docker pull openjdk@sha256:e60179e8c1b45812657a890f686dec56dfef6a9346fcbca0c8eacc7368749cd7
+$ docker pull openjdk@sha256:6270852dfb08fa29a825b347c3160564e2b44fdc810b0c16cfdb174bbb7389ae
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -367,71 +367,71 @@ RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/m
 ### `openjdk:9-jre` - linux; ppc64le
 
 ```console
-$ docker pull openjdk@sha256:469074783b82b42b4922ff4629c649c840965a9d932213f18216ea11a1eb4016
+$ docker pull openjdk@sha256:b5fd2cadddde78eac479cf5dd926e64cbf1e63b5c36624a5475f4957d7ad045c
 ```
 
--	Docker Version: 17.06.1-ce
+-	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **322.2 MB (322159737 bytes)**  
+-	Total Size: **322.9 MB (322867301 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b8c8e7aee329e83a079ca65e1003af178a15adade8085c96df51cb8e838fb0a0`
+-	Image ID: `sha256:52985250269b12f9ebc9d7d664ac94d81bd8cc7a12893aff9bdd70c0be806a1b`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Fri, 08 Sep 2017 00:33:20 GMT
-ADD file:819bded9731f1d65e9cc04b2c7f43a197ec4be8692da4708af0f87e7426351f3 in / 
-# Fri, 08 Sep 2017 00:33:21 GMT
+# Mon, 09 Oct 2017 21:44:18 GMT
+ADD file:c095ec4581fd0b74d04b5c60602abfc26045b0c8018b11e233ff33678663b4bc in / 
+# Mon, 09 Oct 2017 21:44:21 GMT
 CMD ["bash"]
-# Fri, 08 Sep 2017 01:06:18 GMT
+# Mon, 09 Oct 2017 23:32:14 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 08 Sep 2017 01:06:31 GMT
+# Mon, 09 Oct 2017 23:34:35 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Fri, 15 Sep 2017 01:31:26 GMT
+# Tue, 10 Oct 2017 04:44:02 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 15 Sep 2017 01:31:29 GMT
+# Tue, 10 Oct 2017 04:44:07 GMT
 ENV LANG=C.UTF-8
-# Fri, 15 Sep 2017 01:31:36 GMT
+# Tue, 10 Oct 2017 04:44:15 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Fri, 15 Sep 2017 01:31:46 GMT
+# Tue, 10 Oct 2017 04:44:24 GMT
 RUN ln -svT "/usr/lib/jvm/java-9-openjdk-$(dpkg --print-architecture)" /docker-java-home
-# Fri, 15 Sep 2017 01:31:48 GMT
+# Tue, 10 Oct 2017 04:44:27 GMT
 ENV JAVA_HOME=/docker-java-home
-# Fri, 15 Sep 2017 01:31:51 GMT
+# Tue, 10 Oct 2017 04:44:29 GMT
 ENV JAVA_VERSION=9-b181
-# Fri, 15 Sep 2017 01:31:53 GMT
+# Tue, 10 Oct 2017 04:44:31 GMT
 ENV JAVA_DEBIAN_VERSION=9~b181-4
-# Fri, 15 Sep 2017 01:42:12 GMT
+# Tue, 10 Oct 2017 05:01:58 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y 		openjdk-9-jre="$JAVA_DEBIAN_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
 ```
 
 -	Layers:
-	-	`sha256:2fab6b5610875e8a6c33bc4d56c825f356289185b055082d589665968ef0900c`  
-		Last Modified: Fri, 08 Sep 2017 00:38:59 GMT  
-		Size: 48.4 MB (48412021 bytes)  
+	-	`sha256:11a0304e8c893e4d955264c2d8a8a0c4dd84908eba9876476623a4a364a7c48e`  
+		Last Modified: Mon, 09 Oct 2017 21:50:45 GMT  
+		Size: 48.7 MB (48723592 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c7c2d0fb79a1104e22147e2364a797daa7dd139ad67e5b62e62304653e783a6`  
-		Last Modified: Thu, 14 Sep 2017 22:22:30 GMT  
-		Size: 8.0 MB (7976467 bytes)  
+	-	`sha256:f2ee00dbe27034f9638c9023274ecf0166a5b554572eb473a7ffc2b3c764737c`  
+		Last Modified: Tue, 10 Oct 2017 00:56:04 GMT  
+		Size: 8.0 MB (7978865 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1d65a92b732b401ccd8c040a8e7970e1019757e70e1e5ff31fedde7766b8e40`  
-		Last Modified: Thu, 14 Sep 2017 22:22:30 GMT  
-		Size: 10.1 MB (10071564 bytes)  
+	-	`sha256:b61e6c60857c077b60e6f1bed65fd0305a4f2dd5780a6e42953e68147c6141a1`  
+		Last Modified: Tue, 10 Oct 2017 00:56:04 GMT  
+		Size: 9.5 MB (9498659 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e6a84edc75d6de1024e082546bb4015de724be4000026f62def91a1e7d6b391c`  
-		Last Modified: Fri, 15 Sep 2017 01:49:14 GMT  
-		Size: 852.2 KB (852202 bytes)  
+	-	`sha256:b0d177e5090def4650ff7f3da9582777ceb4f3c74e43a714179a0889c9f7f9e4`  
+		Last Modified: Tue, 10 Oct 2017 05:23:53 GMT  
+		Size: 852.0 KB (851969 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:73fb7ec5951e843298632b79edd9564ef00ac0f4e13966c511c0305998fe906f`  
-		Last Modified: Fri, 15 Sep 2017 01:49:13 GMT  
-		Size: 247.0 B  
+	-	`sha256:cb33c327c1bd4f09349ee6f16949ec92588f10d0eea0738d1c691a2138593f71`  
+		Last Modified: Tue, 10 Oct 2017 05:23:53 GMT  
+		Size: 248.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae09df1a629006754e9db679b3d5f3e6a795f0202555428d3d36f76f962cf0de`  
-		Last Modified: Fri, 15 Sep 2017 01:49:13 GMT  
+	-	`sha256:2dbfc20af0a90b4595c791869027ef1df77e303a5c3c344d565e78b3abd7e439`  
+		Last Modified: Tue, 10 Oct 2017 05:23:52 GMT  
 		Size: 133.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fe6e4507b4d8dd6ff9d502b6fda9312fc5c0db62c18e10ee19278fad11a96917`  
-		Last Modified: Fri, 15 Sep 2017 01:50:05 GMT  
-		Size: 254.8 MB (254847103 bytes)  
+	-	`sha256:3339534c486332d9c0ab374c41e40f8893b96cadafbc236ca66d59fde2088c42`  
+		Last Modified: Tue, 10 Oct 2017 05:25:16 GMT  
+		Size: 255.8 MB (255813835 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:9-jre` - linux; s390x
