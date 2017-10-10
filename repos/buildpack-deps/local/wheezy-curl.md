@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3e15a0d145e37e5ded1ee57558ae5039e08149f942ad7dfabebf41cff5e3e419`
-- Created: `2017-09-13T12:41:34.239449713Z`
+- Image ID: `sha256:4db6f3d4e87cd31e230a5a76d0fa038b9b1908cb8679a9ed02afc48caa899392`
+- Created: `2017-10-09T22:39:57.200444405Z`
 - Virtual Size: ~ 99.65 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -239,12 +239,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/coreutils/8.13-3.5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/coreutils/8.13-3.5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `curl=7.26.0-1+wheezy20`
+### `dpkg` source package: `curl=7.26.0-1+wheezy21`
 
 Binary Packages:
 
-- `curl=7.26.0-1+wheezy20`
-- `libcurl3:amd64=7.26.0-1+wheezy20`
+- `curl=7.26.0-1+wheezy21`
+- `libcurl3:amd64=7.26.0-1+wheezy21`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`)
 
@@ -253,13 +253,20 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `ISC`
 - `curl`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris curl=7.26.0-1+wheezy21
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0-1+wheezy21.dsc' curl_7.26.0-1+wheezy21.dsc 2534 SHA256:c9bf81f58e3ba1df22d8d2efc7dde2faddde94fd5c367be97dc96927562f7a05
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0.orig.tar.gz' curl_7.26.0.orig.tar.gz 3073624 SHA256:79ccce9edb8aee17d20ad4d75e1f83a789f8c2e71e68f468e1bf8abf8933193f
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0-1+wheezy21.debian.tar.gz' curl_7.26.0-1+wheezy21.debian.tar.gz 67214 SHA256:e853f350add9d4bc84b922861453f84c69cc5d6fc1768043523a48c191ee7ef6
+```
 
-- http://snapshot.debian.org/package/curl/7.26.0-1+wheezy20/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/curl/7.26.0-1+wheezy21/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.26.0-1+wheezy21/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.26.0-1+wheezy21/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.25.dfsg1-6+deb7u1`
 
