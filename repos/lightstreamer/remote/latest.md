@@ -1,7 +1,7 @@
 ## `lightstreamer:latest`
 
 ```console
-$ docker pull lightstreamer@sha256:e03cde30e8f79a593e3a7633a3886671699f1b3ad2db28098446f87d837c8ca5
+$ docker pull lightstreamer@sha256:3fcefe4031345f95977bddf35b61ec2f6948cdd620e0d1d890b2016f3f1ddcdd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,109 +11,109 @@ $ docker pull lightstreamer@sha256:e03cde30e8f79a593e3a7633a3886671699f1b3ad2db2
 ### `lightstreamer:latest` - linux; amd64
 
 ```console
-$ docker pull lightstreamer@sha256:872489cf97433fddcbb665d68c5c0b2fdcefcca07b3ec63e1353b840b864e117
+$ docker pull lightstreamer@sha256:1560bfb9b9c4f88061c5d2fe6c1e746d93f06900f6998a46cc9480840bd3495b
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **264.7 MB (264716551 bytes)**  
+-	Total Size: **264.7 MB (264718507 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:862e9a8c121ca4a5a418ba049ec4e3ebe5d753b8325158bbbca110426dad105f`
+-	Image ID: `sha256:24f841fffc4dae48107a7e32c3346dc2df74b83df30bddad21f5134bdc67d1b5`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
-# Wed, 13 Sep 2017 08:41:42 GMT
-ADD file:a7405474b639b2239b96a93d02803224c052a390fe42b3f9080f2ad07de94640 in / 
-# Wed, 13 Sep 2017 08:41:42 GMT
+# Mon, 09 Oct 2017 21:33:25 GMT
+ADD file:a71e077a42995a68ffe4834d85cfe26af4ea12aa8ed43decc03cc487124b1f70 in / 
+# Mon, 09 Oct 2017 21:33:25 GMT
 CMD ["bash"]
-# Wed, 13 Sep 2017 12:36:23 GMT
+# Mon, 09 Oct 2017 22:37:34 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 13 Sep 2017 12:36:27 GMT
+# Mon, 09 Oct 2017 22:37:38 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Thu, 14 Sep 2017 04:21:52 GMT
+# Tue, 10 Oct 2017 00:50:26 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 14 Sep 2017 04:21:52 GMT
+# Tue, 10 Oct 2017 00:50:26 GMT
 ENV LANG=C.UTF-8
-# Thu, 14 Sep 2017 04:21:53 GMT
+# Tue, 10 Oct 2017 00:50:27 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Thu, 14 Sep 2017 04:21:54 GMT
+# Tue, 10 Oct 2017 00:50:27 GMT
 RUN ln -svT "/usr/lib/jvm/java-8-openjdk-$(dpkg --print-architecture)" /docker-java-home
-# Thu, 14 Sep 2017 04:21:55 GMT
+# Tue, 10 Oct 2017 00:50:27 GMT
 ENV JAVA_HOME=/docker-java-home/jre
-# Thu, 14 Sep 2017 04:21:55 GMT
+# Tue, 10 Oct 2017 00:50:28 GMT
 ENV JAVA_VERSION=8u141
-# Thu, 14 Sep 2017 04:21:55 GMT
+# Tue, 10 Oct 2017 00:50:28 GMT
 ENV JAVA_DEBIAN_VERSION=8u141-b15-1~deb9u1
-# Thu, 14 Sep 2017 04:21:55 GMT
+# Tue, 10 Oct 2017 00:50:28 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1
-# Thu, 14 Sep 2017 04:23:09 GMT
+# Tue, 10 Oct 2017 00:51:10 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y 		openjdk-8-jre="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Thu, 14 Sep 2017 04:23:14 GMT
+# Tue, 10 Oct 2017 00:51:12 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Thu, 14 Sep 2017 06:35:01 GMT
+# Tue, 10 Oct 2017 10:07:13 GMT
 MAINTAINER Lightstreamer Server Development Team <support@lightstreamer.com>
-# Thu, 14 Sep 2017 06:35:04 GMT
+# Tue, 10 Oct 2017 10:07:16 GMT
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
-# Thu, 14 Sep 2017 06:35:05 GMT
+# Tue, 10 Oct 2017 10:07:17 GMT
 ENV LIGHSTREAMER_EDITION=Allegro-Presto-Vivace
-# Thu, 14 Sep 2017 06:35:14 GMT
+# Tue, 10 Oct 2017 10:07:48 GMT
 ENV LIGHSTREAMER_VERSION=6_1_0_20170123
-# Thu, 14 Sep 2017 06:35:14 GMT
+# Tue, 10 Oct 2017 10:07:48 GMT
 ENV LIGHSTREAMER_URL_DOWNLOAD=http://www.lightstreamer.com/repo/distros/Lightstreamer_Allegro-Presto-Vivace_6_1_0_20170123.tar.gz
-# Thu, 14 Sep 2017 06:35:14 GMT
+# Tue, 10 Oct 2017 10:07:48 GMT
 WORKDIR /lightstreamer
-# Thu, 14 Sep 2017 06:35:19 GMT
+# Tue, 10 Oct 2017 10:07:54 GMT
 RUN set -x         && curl -fSL -o Lightstreamer.tar.gz ${LIGHSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc         && sed -i -- 's/\/usr\/jdk1.8.0/$JAVA_HOME/' bin/unix-like/LS.sh         && sed -i -e '123,$s/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<appender-ref ref="LSDailyRolling" \/>/ d' conf/lightstreamer_log_conf.xml
-# Thu, 14 Sep 2017 06:35:19 GMT
+# Tue, 10 Oct 2017 10:07:54 GMT
 EXPOSE 8080/tcp
-# Thu, 14 Sep 2017 06:35:19 GMT
+# Tue, 10 Oct 2017 10:07:54 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Thu, 14 Sep 2017 06:35:19 GMT
+# Tue, 10 Oct 2017 10:07:54 GMT
 CMD ["./LS.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:219d2e45b4afc3d80375a2fcf76505684de01f55027fb35a691099f0e538fdd8`  
-		Last Modified: Thu, 07 Sep 2017 23:20:31 GMT  
-		Size: 45.1 MB (45125497 bytes)  
+	-	`sha256:3e17c6eae66cd23c59751c8d8f5eaf7044e0611dc5cebb12b1273be07cdac242`  
+		Last Modified: Mon, 09 Oct 2017 21:41:38 GMT  
+		Size: 45.1 MB (45129088 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ef9ce992ffe4e9206f990140191a5c20da0b4d94b00368b0cf95d842ff624a05`  
-		Last Modified: Wed, 13 Sep 2017 12:57:46 GMT  
-		Size: 11.1 MB (11103324 bytes)  
+	-	`sha256:74d44b20f851c8ef0b042070ba8eb018b386f50fdae5c37871d3fe7b4cfb4956`  
+		Last Modified: Mon, 09 Oct 2017 23:01:17 GMT  
+		Size: 11.1 MB (11106736 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d0df8518230c3fcec095c3d4d27ee2f0f7df43aff4edb1461414ed74fa0751ec`  
-		Last Modified: Wed, 13 Sep 2017 12:57:44 GMT  
-		Size: 4.6 MB (4634394 bytes)  
+	-	`sha256:a156217f3fa434b4821b01f0d24be50ead40560053fb5b65982f52507f55bc12`  
+		Last Modified: Mon, 09 Oct 2017 23:01:15 GMT  
+		Size: 4.6 MB (4633218 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63678957352b01a378d047c9d036cc6173292cb74ab3ab1ef999f7c1795a4289`  
-		Last Modified: Thu, 14 Sep 2017 04:59:44 GMT  
-		Size: 852.4 KB (852355 bytes)  
+	-	`sha256:8bceb9f576935acd4433bd41017d3b74ea1bcde02593938b3fdba8f594d353f3`  
+		Last Modified: Tue, 10 Oct 2017 01:23:47 GMT  
+		Size: 852.5 KB (852507 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:929e9da71fa4b99a3e2311d9fbe8ed9309d64aa1e186d75cedd8376f2470ed12`  
-		Last Modified: Thu, 14 Sep 2017 04:59:43 GMT  
-		Size: 246.0 B  
+	-	`sha256:268410abd9cfbc11b635f95ac458e4af7061aec128041149ce86063cfc8d0aa7`  
+		Last Modified: Tue, 10 Oct 2017 01:23:47 GMT  
+		Size: 248.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:96ef2abace7441da328e7b5d88d7a9af50029e2708469dd04f2fba6c718ab466`  
-		Last Modified: Thu, 14 Sep 2017 04:59:42 GMT  
+	-	`sha256:c5e2fb2d87cf14b0e5968b7b40cd36663f45d6244a3bd37c1204d928026aa952`  
+		Last Modified: Tue, 10 Oct 2017 01:23:49 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ee465bb23abdb02ce2e1a5ea1650604d45a2a340953fd984f5fbfe72d728e20e`  
-		Last Modified: Thu, 14 Sep 2017 05:00:36 GMT  
-		Size: 166.2 MB (166171116 bytes)  
+	-	`sha256:09681f714a7bf2a3c7453539930f6b768c3733a18457685857ab6a8be93176d4`  
+		Last Modified: Tue, 10 Oct 2017 01:24:32 GMT  
+		Size: 166.2 MB (166170709 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7389ed23519a6eade3f5bd0e2ddf2ee46626e8576179782441dbe628d4ac938b`  
-		Last Modified: Thu, 14 Sep 2017 04:59:43 GMT  
-		Size: 272.1 KB (272076 bytes)  
+	-	`sha256:c20de950ce5253aeea1d19e7edfca3d1738e872ab3a0cf6b182bf804e42a3fe8`  
+		Last Modified: Tue, 10 Oct 2017 01:23:47 GMT  
+		Size: 272.0 KB (272003 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:37624a6c4a273e63871e31194abfae144ea5b879b4a17be8edcfe6b676c42199`  
-		Last Modified: Thu, 14 Sep 2017 06:35:28 GMT  
-		Size: 5.4 KB (5418 bytes)  
+	-	`sha256:41b0521cbbb13b2d83d66380d3c7d93b433a01d13d272b5fb7d4c61135ace740`  
+		Last Modified: Tue, 10 Oct 2017 10:08:09 GMT  
+		Size: 1.8 KB (1835 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e5470141cf21869c5bf25484d2a4b2b169ab833abd154c101ba1957c62d4a3fc`  
-		Last Modified: Thu, 14 Sep 2017 06:35:49 GMT  
+	-	`sha256:fa93ed6b7a21cc6daa708e926196e1f5880a3ca4e4364c207b4b2036e4dfd5f1`  
+		Last Modified: Tue, 10 Oct 2017 10:08:36 GMT  
 		Size: 102.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bb0f57296e89fd70860d9a22fba21f147e6ca704cbc9d8e0adaad089ab857320`  
-		Last Modified: Thu, 14 Sep 2017 06:35:54 GMT  
-		Size: 36.6 MB (36551892 bytes)  
+	-	`sha256:dde1818898036e05904603bebe041de5069e7c6a61652955574b0fa926ca27f8`  
+		Last Modified: Tue, 10 Oct 2017 10:08:41 GMT  
+		Size: 36.6 MB (36551930 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
