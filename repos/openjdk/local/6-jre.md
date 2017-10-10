@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b765f62311050f22b6b2a410262ff10e6e7760556de514b80e23fbd6b215c0fe`
-- Created: `2017-09-14T04:07:37.471339724Z`
+- Image ID: `sha256:4d4cb2cff632c987f88b1ad8c7d432cac78a72288b3eea5a12becd7e1f3dced5`
+- Created: `2017-10-10T00:35:19.285800028Z`
 - Virtual Size: ~ 306.07 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -424,12 +424,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/cups/1.5.3-5+deb7u6/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/cups/1.5.3-5+deb7u6/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `curl=7.26.0-1+wheezy20`
+### `dpkg` source package: `curl=7.26.0-1+wheezy21`
 
 Binary Packages:
 
-- `curl=7.26.0-1+wheezy20`
-- `libcurl3:amd64=7.26.0-1+wheezy20`
+- `curl=7.26.0-1+wheezy21`
+- `libcurl3:amd64=7.26.0-1+wheezy21`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`)
 
@@ -438,13 +438,20 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `ISC`
 - `curl`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris curl=7.26.0-1+wheezy21
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0-1+wheezy21.dsc' curl_7.26.0-1+wheezy21.dsc 2534 SHA256:c9bf81f58e3ba1df22d8d2efc7dde2faddde94fd5c367be97dc96927562f7a05
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0.orig.tar.gz' curl_7.26.0.orig.tar.gz 3073624 SHA256:79ccce9edb8aee17d20ad4d75e1f83a789f8c2e71e68f468e1bf8abf8933193f
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0-1+wheezy21.debian.tar.gz' curl_7.26.0-1+wheezy21.debian.tar.gz 67214 SHA256:e853f350add9d4bc84b922861453f84c69cc5d6fc1768043523a48c191ee7ef6
+```
 
-- http://snapshot.debian.org/package/curl/7.26.0-1+wheezy20/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/curl/7.26.0-1+wheezy21/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.26.0-1+wheezy21/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.26.0-1+wheezy21/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.25.dfsg1-6+deb7u1`
 
@@ -923,25 +930,32 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gdbm/1.8.3-11/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gdbm/1.8.3-11/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gdk-pixbuf=2.26.1-1+deb7u5`
+### `dpkg` source package: `gdk-pixbuf=2.26.1-1+deb7u6`
 
 Binary Packages:
 
-- `libgdk-pixbuf2.0-0:amd64=2.26.1-1+deb7u5`
-- `libgdk-pixbuf2.0-common=2.26.1-1+deb7u5`
+- `libgdk-pixbuf2.0-0:amd64=2.26.1-1+deb7u6`
+- `libgdk-pixbuf2.0-common=2.26.1-1+deb7u6`
 
 Licenses: (parsed from: `/usr/share/doc/libgdk-pixbuf2.0-0/copyright`, `/usr/share/doc/libgdk-pixbuf2.0-common/copyright`)
 
 - `GPL-2`
 - `LGPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris gdk-pixbuf=2.26.1-1+deb7u6
+'http://security.debian.org/pool/updates/main/g/gdk-pixbuf/gdk-pixbuf_2.26.1-1+deb7u6.dsc' gdk-pixbuf_2.26.1-1+deb7u6.dsc 2713 SHA256:1abba1c5a3f736123de8aefd0b8d7a2e2a6aeb727db0168878eff3901cae019f
+'http://security.debian.org/pool/updates/main/g/gdk-pixbuf/gdk-pixbuf_2.26.1.orig.tar.xz' gdk-pixbuf_2.26.1.orig.tar.xz 1167608 SHA256:a60af12b58d9cc15ba4c680c6730ce5d38e8d664af1d575a379385b94b4ec7ba
+'http://security.debian.org/pool/updates/main/g/gdk-pixbuf/gdk-pixbuf_2.26.1-1+deb7u6.debian.tar.gz' gdk-pixbuf_2.26.1-1+deb7u6.debian.tar.gz 19605 SHA256:609dd2e125d07f9f07bdc2d1ef3029ec72dce3b7697e986f292700bee32a3023
+```
 
-- http://snapshot.debian.org/package/gdk-pixbuf/2.26.1-1+deb7u5/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/gdk-pixbuf/2.26.1-1+deb7u6/ (for browsing the source)
+- https://sources.debian.net/src/gdk-pixbuf/2.26.1-1+deb7u6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gdk-pixbuf/2.26.1-1+deb7u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `giflib=4.1.6-10+deb7u1`
 

@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:927e8dde050adab136acb73a6e477474c2472f012b8d2618bb872f01f63fb902`
-- Created: `2017-09-14T04:05:07.13373899Z`
-- Virtual Size: ~ 421.12 Mb  
+- Image ID: `sha256:ab6e4e42b9f39fdd21c890303fd6c7cb020ab3ef9ddc6acf258df75521a6f5ed`
+- Created: `2017-10-10T00:32:51.427417633Z`
+- Virtual Size: ~ 421.11 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -349,12 +349,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/bzip2/1.0.6-4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/bzip2/1.0.6-4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `bzr=2.6.0~bzr6526-1`
+### `dpkg` source package: `bzr=2.6.0~bzr6526-1+deb7u1`
 
 Binary Packages:
 
-- `bzr=2.6.0~bzr6526-1`
-- `python-bzrlib=2.6.0~bzr6526-1`
+- `bzr=2.6.0~bzr6526-1+deb7u1`
+- `python-bzrlib=2.6.0~bzr6526-1+deb7u1`
 
 Licenses: (parsed from: `/usr/share/doc/bzr/copyright`, `/usr/share/doc/python-bzrlib/copyright`)
 
@@ -364,17 +364,17 @@ Licenses: (parsed from: `/usr/share/doc/bzr/copyright`, `/usr/share/doc/python-b
 Source:
 
 ```console
-$ apt-get source -qq --print-uris bzr=2.6.0~bzr6526-1
-'http://deb.debian.org/debian/pool/main/b/bzr/bzr_2.6.0~bzr6526-1.dsc' bzr_2.6.0~bzr6526-1.dsc 1831 SHA256:a72bb96f7eb51d0094d33862da83c042d0071597d50982a7ab40acb39afad1cb
-'http://deb.debian.org/debian/pool/main/b/bzr/bzr_2.6.0~bzr6526.orig.tar.gz' bzr_2.6.0~bzr6526.orig.tar.gz 9966974 SHA256:d7196bf838062aea7e1c215cef26dfe160c64f28b2092a22d4f6c1b96ecc046d
-'http://deb.debian.org/debian/pool/main/b/bzr/bzr_2.6.0~bzr6526-1.debian.tar.gz' bzr_2.6.0~bzr6526-1.debian.tar.gz 41728 SHA256:48d590085e7f0578b135cf4855e6f0ab0432f40deb91199b0cd542ed5faff353
+$ apt-get source -qq --print-uris bzr=2.6.0~bzr6526-1+deb7u1
+'http://security.debian.org/pool/updates/main/b/bzr/bzr_2.6.0~bzr6526-1+deb7u1.dsc' bzr_2.6.0~bzr6526-1+deb7u1.dsc 2496 SHA256:3c6c1d75bb41892e64e8931b62af169f7d9a1489e7b2ee94364d05ce024be917
+'http://security.debian.org/pool/updates/main/b/bzr/bzr_2.6.0~bzr6526.orig.tar.gz' bzr_2.6.0~bzr6526.orig.tar.gz 9966974 SHA256:d7196bf838062aea7e1c215cef26dfe160c64f28b2092a22d4f6c1b96ecc046d
+'http://security.debian.org/pool/updates/main/b/bzr/bzr_2.6.0~bzr6526-1+deb7u1.debian.tar.gz' bzr_2.6.0~bzr6526-1+deb7u1.debian.tar.gz 44251 SHA256:405f7ac5596952a7f2111d1446c457ecc70f0db83c8150f3e00fdd2c4638f78e
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/bzr/2.6.0~bzr6526-1/ (for browsing the source)
-- https://sources.debian.net/src/bzr/2.6.0~bzr6526-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/bzr/2.6.0~bzr6526-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/bzr/2.6.0~bzr6526-1+deb7u1/ (for browsing the source)
+- https://sources.debian.net/src/bzr/2.6.0~bzr6526-1+deb7u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/bzr/2.6.0~bzr6526-1+deb7u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ca-certificates-java=20121112+nmu2`
 
@@ -526,13 +526,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/cups/1.5.3-5+deb7u6/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/cups/1.5.3-5+deb7u6/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `curl=7.26.0-1+wheezy20`
+### `dpkg` source package: `curl=7.26.0-1+wheezy21`
 
 Binary Packages:
 
-- `curl=7.26.0-1+wheezy20`
-- `libcurl3:amd64=7.26.0-1+wheezy20`
-- `libcurl3-gnutls:amd64=7.26.0-1+wheezy20`
+- `curl=7.26.0-1+wheezy21`
+- `libcurl3:amd64=7.26.0-1+wheezy21`
+- `libcurl3-gnutls:amd64=7.26.0-1+wheezy21`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`)
 
@@ -541,13 +541,20 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `ISC`
 - `curl`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris curl=7.26.0-1+wheezy21
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0-1+wheezy21.dsc' curl_7.26.0-1+wheezy21.dsc 2534 SHA256:c9bf81f58e3ba1df22d8d2efc7dde2faddde94fd5c367be97dc96927562f7a05
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0.orig.tar.gz' curl_7.26.0.orig.tar.gz 3073624 SHA256:79ccce9edb8aee17d20ad4d75e1f83a789f8c2e71e68f468e1bf8abf8933193f
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0-1+wheezy21.debian.tar.gz' curl_7.26.0-1+wheezy21.debian.tar.gz 67214 SHA256:e853f350add9d4bc84b922861453f84c69cc5d6fc1768043523a48c191ee7ef6
+```
 
-- http://snapshot.debian.org/package/curl/7.26.0-1+wheezy20/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/curl/7.26.0-1+wheezy21/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.26.0-1+wheezy21/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.26.0-1+wheezy21/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.25.dfsg1-6+deb7u1`
 
@@ -1026,25 +1033,32 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gdbm/1.8.3-11/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gdbm/1.8.3-11/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gdk-pixbuf=2.26.1-1+deb7u5`
+### `dpkg` source package: `gdk-pixbuf=2.26.1-1+deb7u6`
 
 Binary Packages:
 
-- `libgdk-pixbuf2.0-0:amd64=2.26.1-1+deb7u5`
-- `libgdk-pixbuf2.0-common=2.26.1-1+deb7u5`
+- `libgdk-pixbuf2.0-0:amd64=2.26.1-1+deb7u6`
+- `libgdk-pixbuf2.0-common=2.26.1-1+deb7u6`
 
 Licenses: (parsed from: `/usr/share/doc/libgdk-pixbuf2.0-0/copyright`, `/usr/share/doc/libgdk-pixbuf2.0-common/copyright`)
 
 - `GPL-2`
 - `LGPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris gdk-pixbuf=2.26.1-1+deb7u6
+'http://security.debian.org/pool/updates/main/g/gdk-pixbuf/gdk-pixbuf_2.26.1-1+deb7u6.dsc' gdk-pixbuf_2.26.1-1+deb7u6.dsc 2713 SHA256:1abba1c5a3f736123de8aefd0b8d7a2e2a6aeb727db0168878eff3901cae019f
+'http://security.debian.org/pool/updates/main/g/gdk-pixbuf/gdk-pixbuf_2.26.1.orig.tar.xz' gdk-pixbuf_2.26.1.orig.tar.xz 1167608 SHA256:a60af12b58d9cc15ba4c680c6730ce5d38e8d664af1d575a379385b94b4ec7ba
+'http://security.debian.org/pool/updates/main/g/gdk-pixbuf/gdk-pixbuf_2.26.1-1+deb7u6.debian.tar.gz' gdk-pixbuf_2.26.1-1+deb7u6.debian.tar.gz 19605 SHA256:609dd2e125d07f9f07bdc2d1ef3029ec72dce3b7697e986f292700bee32a3023
+```
 
-- http://snapshot.debian.org/package/gdk-pixbuf/2.26.1-1+deb7u5/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/gdk-pixbuf/2.26.1-1+deb7u6/ (for browsing the source)
+- https://sources.debian.net/src/gdk-pixbuf/2.26.1-1+deb7u6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gdk-pixbuf/2.26.1-1+deb7u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `giflib=4.1.6-10+deb7u1`
 
@@ -1071,12 +1085,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/giflib/4.1.6-10+deb7u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/giflib/4.1.6-10+deb7u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `git=1:1.7.10.4-1+wheezy5`
+### `dpkg` source package: `git=1:1.7.10.4-1+wheezy6`
 
 Binary Packages:
 
-- `git=1:1.7.10.4-1+wheezy5`
-- `git-man=1:1.7.10.4-1+wheezy5`
+- `git=1:1.7.10.4-1+wheezy6`
+- `git-man=1:1.7.10.4-1+wheezy6`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -1098,13 +1112,20 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris git=1:1.7.10.4-1+wheezy6
+'http://security.debian.org/pool/updates/main/g/git/git_1.7.10.4-1+wheezy6.dsc' git_1.7.10.4-1+wheezy6.dsc 2647 SHA256:8befb631b5fd5148a7de7ff6af0cf126d151e3054275beaf2e0c684c0deae64b
+'http://security.debian.org/pool/updates/main/g/git/git_1.7.10.4.orig.tar.gz' git_1.7.10.4.orig.tar.gz 3813469 SHA256:77ce53644d687202c64ca29db4ae5055daff4e0c611dde8f1d51edb752dba8dd
+'http://security.debian.org/pool/updates/main/g/git/git_1.7.10.4-1+wheezy6.diff.gz' git_1.7.10.4-1+wheezy6.diff.gz 524332 SHA256:983cf65f3e2aa609f54c53680f420c328b2f254a2b6227fa0677d103ff378aa6
+```
 
-- http://snapshot.debian.org/package/git/1:1.7.10.4-1+wheezy5/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/git/1:1.7.10.4-1+wheezy6/ (for browsing the source)
+- https://sources.debian.net/src/git/1:1.7.10.4-1+wheezy6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/git/1:1.7.10.4-1+wheezy6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glib2.0=2.33.12+really2.32.4-5`
 

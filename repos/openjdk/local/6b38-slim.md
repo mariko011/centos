@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:22a6de3490ab0b9029f8e4aa4df0ff1b15f0e0e68a20bf83569c0f294bf993da`
-- Created: `2017-09-14T04:06:29.608107421Z`
+- Image ID: `sha256:701932090cb41a692320d366a30341aab6f86069826cb9e702b980fab8891cf8`
+- Created: `2017-10-10T00:34:22.498452461Z`
 - Virtual Size: ~ 247.18 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -871,25 +871,32 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gdbm/1.8.3-11/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gdbm/1.8.3-11/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gdk-pixbuf=2.26.1-1+deb7u5`
+### `dpkg` source package: `gdk-pixbuf=2.26.1-1+deb7u6`
 
 Binary Packages:
 
-- `libgdk-pixbuf2.0-0:amd64=2.26.1-1+deb7u5`
-- `libgdk-pixbuf2.0-common=2.26.1-1+deb7u5`
+- `libgdk-pixbuf2.0-0:amd64=2.26.1-1+deb7u6`
+- `libgdk-pixbuf2.0-common=2.26.1-1+deb7u6`
 
 Licenses: (parsed from: `/usr/share/doc/libgdk-pixbuf2.0-0/copyright`, `/usr/share/doc/libgdk-pixbuf2.0-common/copyright`)
 
 - `GPL-2`
 - `LGPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris gdk-pixbuf=2.26.1-1+deb7u6
+'http://security.debian.org/pool/updates/main/g/gdk-pixbuf/gdk-pixbuf_2.26.1-1+deb7u6.dsc' gdk-pixbuf_2.26.1-1+deb7u6.dsc 2713 SHA256:1abba1c5a3f736123de8aefd0b8d7a2e2a6aeb727db0168878eff3901cae019f
+'http://security.debian.org/pool/updates/main/g/gdk-pixbuf/gdk-pixbuf_2.26.1.orig.tar.xz' gdk-pixbuf_2.26.1.orig.tar.xz 1167608 SHA256:a60af12b58d9cc15ba4c680c6730ce5d38e8d664af1d575a379385b94b4ec7ba
+'http://security.debian.org/pool/updates/main/g/gdk-pixbuf/gdk-pixbuf_2.26.1-1+deb7u6.debian.tar.gz' gdk-pixbuf_2.26.1-1+deb7u6.debian.tar.gz 19605 SHA256:609dd2e125d07f9f07bdc2d1ef3029ec72dce3b7697e986f292700bee32a3023
+```
 
-- http://snapshot.debian.org/package/gdk-pixbuf/2.26.1-1+deb7u5/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/gdk-pixbuf/2.26.1-1+deb7u6/ (for browsing the source)
+- https://sources.debian.net/src/gdk-pixbuf/2.26.1-1+deb7u6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gdk-pixbuf/2.26.1-1+deb7u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `giflib=4.1.6-10+deb7u1`
 
