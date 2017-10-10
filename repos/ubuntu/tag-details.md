@@ -7,14 +7,14 @@
 -	[`ubuntu:17.04`](#ubuntu1704)
 -	[`ubuntu:17.10`](#ubuntu1710)
 -	[`ubuntu:artful`](#ubuntuartful)
--	[`ubuntu:artful-20170916`](#ubuntuartful-20170916)
+-	[`ubuntu:artful-20171006`](#ubuntuartful-20171006)
 -	[`ubuntu:devel`](#ubuntudevel)
 -	[`ubuntu:latest`](#ubuntulatest)
 -	[`ubuntu:rolling`](#ubunturolling)
 -	[`ubuntu:trusty`](#ubuntutrusty)
 -	[`ubuntu:trusty-20170817`](#ubuntutrusty-20170817)
 -	[`ubuntu:xenial`](#ubuntuxenial)
--	[`ubuntu:xenial-20170915`](#ubuntuxenial-20170915)
+-	[`ubuntu:xenial-20171006`](#ubuntuxenial-20171006)
 -	[`ubuntu:zesty`](#ubuntuzesty)
 -	[`ubuntu:zesty-20170915`](#ubuntuzesty-20170915)
 
@@ -1542,7 +1542,7 @@ CMD ["/bin/bash"]
 		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `ubuntu:artful-20170916`
+## `ubuntu:artful-20171006`
 
 ```console
 $ docker pull ubuntu@sha256:23a8e203057850784923358af8656db28ca56bb57a3c70288ffc7667a7049090
@@ -1557,7 +1557,7 @@ $ docker pull ubuntu@sha256:23a8e203057850784923358af8656db28ca56bb57a3c70288ffc
 	-	linux; ppc64le
 	-	linux; s390x
 
-### `ubuntu:artful-20170916` - linux; amd64
+### `ubuntu:artful-20171006` - linux; amd64
 
 ```console
 $ docker pull ubuntu@sha256:b3c5a586f7f13c07fdcdf53328f1f85832c6c26a1fbd201998147ddb31493092
@@ -1607,7 +1607,7 @@ CMD ["/bin/bash"]
 		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `ubuntu:artful-20170916` - linux; arm variant v7
+### `ubuntu:artful-20171006` - linux; arm variant v7
 
 ```console
 $ docker pull ubuntu@sha256:f8a4c957e893665498cb103fa3e70adcbb5319a32e0158a3d84b57fa08b8c233
@@ -1657,7 +1657,7 @@ CMD ["/bin/bash"]
 		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `ubuntu:artful-20170916` - linux; arm64 variant v8
+### `ubuntu:artful-20171006` - linux; arm64 variant v8
 
 ```console
 $ docker pull ubuntu@sha256:03d02e336f8492ff96bef80b9fa83b4c3e969738455d03c7a810afb32ee903b1
@@ -1707,7 +1707,7 @@ CMD ["/bin/bash"]
 		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `ubuntu:artful-20170916` - linux; 386
+### `ubuntu:artful-20171006` - linux; 386
 
 ```console
 $ docker pull ubuntu@sha256:33192da2cebd64b5b7761b7661c2747cc29f478c2d572b182c2c3c2875b4379e
@@ -1757,7 +1757,7 @@ CMD ["/bin/bash"]
 		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `ubuntu:artful-20170916` - linux; ppc64le
+### `ubuntu:artful-20171006` - linux; ppc64le
 
 ```console
 $ docker pull ubuntu@sha256:9141e6a5813f1001f48a49c619051dd775eba093c31ffd7c10a91f5f0693f5d0
@@ -1807,7 +1807,7 @@ CMD ["/bin/bash"]
 		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `ubuntu:artful-20170916` - linux; s390x
+### `ubuntu:artful-20171006` - linux; s390x
 
 ```console
 $ docker pull ubuntu@sha256:5354d9bd4600cb6ba1ad38c287e853fa0ec5c0f2cf680d028800460d5857b339
@@ -3645,7 +3645,7 @@ CMD ["/bin/bash"]
 		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `ubuntu:xenial-20170915`
+## `ubuntu:xenial-20171006`
 
 ```console
 $ docker pull ubuntu@sha256:d45655633486615d164808b724b29406cb88e23d9c40ac3aaaa2d69e79e3bd5d
@@ -3660,7 +3660,7 @@ $ docker pull ubuntu@sha256:d45655633486615d164808b724b29406cb88e23d9c40ac3aaaa2
 	-	linux; ppc64le
 	-	linux; s390x
 
-### `ubuntu:xenial-20170915` - linux; amd64
+### `ubuntu:xenial-20171006` - linux; amd64
 
 ```console
 $ docker pull ubuntu@sha256:4c169defc8337fc5266483b503fd07f4878fed781e87271a0266d5998d0e1a00
@@ -3710,7 +3710,7 @@ CMD ["/bin/bash"]
 		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `ubuntu:xenial-20170915` - linux; arm variant v7
+### `ubuntu:xenial-20171006` - linux; arm variant v7
 
 ```console
 $ docker pull ubuntu@sha256:e762ec77d084694fd54ef4d4301c32de4307801bed603f7a91089e21b0577b13
@@ -3760,7 +3760,7 @@ CMD ["/bin/bash"]
 		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `ubuntu:xenial-20170915` - linux; arm64 variant v8
+### `ubuntu:xenial-20171006` - linux; arm64 variant v8
 
 ```console
 $ docker pull ubuntu@sha256:9cf55f3208b5481301af52e99b35dcbd3bf992d7ee39c57c0b65d8f9686dff23
@@ -3810,7 +3810,7 @@ CMD ["/bin/bash"]
 		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `ubuntu:xenial-20170915` - linux; 386
+### `ubuntu:xenial-20171006` - linux; 386
 
 ```console
 $ docker pull ubuntu@sha256:1555e6fda9382b8977ae3bf847bb124861b184eadcd5af7739b21bcccc1fbf7a
@@ -3860,7 +3860,7 @@ CMD ["/bin/bash"]
 		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `ubuntu:xenial-20170915` - linux; ppc64le
+### `ubuntu:xenial-20171006` - linux; ppc64le
 
 ```console
 $ docker pull ubuntu@sha256:b9beecc5d7b7c2dba1a02924705f7056fdbd31fc8cee5a586b842840291968ba
@@ -3910,7 +3910,7 @@ CMD ["/bin/bash"]
 		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `ubuntu:xenial-20170915` - linux; s390x
+### `ubuntu:xenial-20171006` - linux; s390x
 
 ```console
 $ docker pull ubuntu@sha256:47012d31f006d4ee3d64b035fc2fe211879980072b7811bb09e878295f3763d3
