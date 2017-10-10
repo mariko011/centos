@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0a6559c6790dd627ed445f28111000ccd95690580eb8a034daebd26b83734732`
-- Created: `2017-09-14T00:56:56.132661511Z`
-- Virtual Size: ~ 911.28 Mb  
+- Image ID: `sha256:0004f3f843cf56108b925fa2eda59a05e7c8102585faab24b59a5520d08b2edc`
+- Created: `2017-10-10T03:02:04.908244686Z`
+- Virtual Size: ~ 911.31 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/ros_entrypoint.sh"]`
@@ -909,12 +909,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/cups/1.7.5-11+deb8u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/cups/1.7.5-11+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `curl=7.38.0-4+deb8u5`
+### `dpkg` source package: `curl=7.38.0-4+deb8u6`
 
 Binary Packages:
 
-- `libcurl3:amd64=7.38.0-4+deb8u5`
-- `libcurl3-gnutls:amd64=7.38.0-4+deb8u5`
+- `libcurl3:amd64=7.38.0-4+deb8u6`
+- `libcurl3-gnutls:amd64=7.38.0-4+deb8u6`
 
 Licenses: (parsed from: `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`)
 
@@ -926,17 +926,17 @@ Licenses: (parsed from: `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris curl=7.38.0-4+deb8u5
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.38.0-4+deb8u5.dsc' curl_7.38.0-4+deb8u5.dsc 2637 SHA256:2b5e0bf7ea27efaa23d3274a487227436a8b6777dc571c957ae1c9fb4e455d8d
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.38.0.orig.tar.gz' curl_7.38.0.orig.tar.gz 4094034 SHA256:5661028aa6532882fa228cd23c99ddbb8b87643dbb1a7ea55c068d34a943dff1
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.38.0-4+deb8u5.debian.tar.xz' curl_7.38.0-4+deb8u5.debian.tar.xz 40224 SHA256:3f917091d1694a77852fe05293dafff079382e70d93f62f7de5c61f1812cf69d
+$ apt-get source -qq --print-uris curl=7.38.0-4+deb8u6
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0-4+deb8u6.dsc' curl_7.38.0-4+deb8u6.dsc 2669 SHA256:ed599fd1b78609ab0d91125d095ce88c8bfece997cece225cdec251c888766cd
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0.orig.tar.gz' curl_7.38.0.orig.tar.gz 4094034 SHA256:5661028aa6532882fa228cd23c99ddbb8b87643dbb1a7ea55c068d34a943dff1
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0-4+deb8u6.debian.tar.xz' curl_7.38.0-4+deb8u6.debian.tar.xz 42064 SHA256:16a861a007d3ea6db80608bf6b27221f9cdc9bf0ee0b931c32971014d5cd2863
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/curl/7.38.0-4+deb8u5/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.38.0-4+deb8u5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.38.0-4+deb8u5/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/curl/7.38.0-4+deb8u6/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.38.0-4+deb8u6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.38.0-4+deb8u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-13+deb8u1`
 
@@ -1604,12 +1604,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gdbm/1.8.3-13.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gdbm/1.8.3-13.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gdk-pixbuf=2.31.1-2+deb8u5`
+### `dpkg` source package: `gdk-pixbuf=2.31.1-2+deb8u6`
 
 Binary Packages:
 
-- `libgdk-pixbuf2.0-0:amd64=2.31.1-2+deb8u5`
-- `libgdk-pixbuf2.0-common=2.31.1-2+deb8u5`
+- `libgdk-pixbuf2.0-0:amd64=2.31.1-2+deb8u6`
+- `libgdk-pixbuf2.0-common=2.31.1-2+deb8u6`
 
 Licenses: (parsed from: `/usr/share/doc/libgdk-pixbuf2.0-0/copyright`, `/usr/share/doc/libgdk-pixbuf2.0-common/copyright`)
 
@@ -1619,25 +1619,25 @@ Licenses: (parsed from: `/usr/share/doc/libgdk-pixbuf2.0-0/copyright`, `/usr/sha
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gdk-pixbuf=2.31.1-2+deb8u5
-'http://deb.debian.org/debian/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.31.1-2+deb8u5.dsc' gdk-pixbuf_2.31.1-2+deb8u5.dsc 2902 SHA256:d2fd75ff6c0ae20bc3b67621b09e980a1c78fad20a1b21df054275eeaab4a9c0
-'http://deb.debian.org/debian/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.31.1.orig.tar.xz' gdk-pixbuf_2.31.1.orig.tar.xz 1340056 SHA256:25a75e3c61dac11e6ff6416ad846951ccafac6486b1c6a1bfb0b213b99db52cd
-'http://deb.debian.org/debian/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.31.1-2+deb8u5.debian.tar.xz' gdk-pixbuf_2.31.1-2+deb8u5.debian.tar.xz 18300 SHA256:3a8ffeac00c1020e2429454adbea06b15389aa5bfb308550c8c6d176c7c1fe63
+$ apt-get source -qq --print-uris gdk-pixbuf=2.31.1-2+deb8u6
+'http://security.debian.org/pool/updates/main/g/gdk-pixbuf/gdk-pixbuf_2.31.1-2+deb8u6.dsc' gdk-pixbuf_2.31.1-2+deb8u6.dsc 2916 SHA256:8847edd7110cbdb23a98285176f8f2954746197f4d84476455b8e3353661ccf4
+'http://security.debian.org/pool/updates/main/g/gdk-pixbuf/gdk-pixbuf_2.31.1.orig.tar.xz' gdk-pixbuf_2.31.1.orig.tar.xz 1340056 SHA256:25a75e3c61dac11e6ff6416ad846951ccafac6486b1c6a1bfb0b213b99db52cd
+'http://security.debian.org/pool/updates/main/g/gdk-pixbuf/gdk-pixbuf_2.31.1-2+deb8u6.debian.tar.xz' gdk-pixbuf_2.31.1-2+deb8u6.debian.tar.xz 18820 SHA256:08b58c4ba182eba172ce086f92cdb974844c1a09c759c1f2c73dca78313b746a
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/gdk-pixbuf/2.31.1-2+deb8u5/ (for browsing the source)
-- https://sources.debian.net/src/gdk-pixbuf/2.31.1-2+deb8u5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gdk-pixbuf/2.31.1-2+deb8u5/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/gdk-pixbuf/2.31.1-2+deb8u6/ (for browsing the source)
+- https://sources.debian.net/src/gdk-pixbuf/2.31.1-2+deb8u6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gdk-pixbuf/2.31.1-2+deb8u6/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `git=1:2.1.4-2.1+deb8u4`
+### `dpkg` source package: `git=1:2.1.4-2.1+deb8u5`
 
 Binary Packages:
 
-- `git=1:2.1.4-2.1+deb8u4`
-- `git-core=1:2.1.4-2.1+deb8u4`
-- `git-man=1:2.1.4-2.1+deb8u4`
+- `git=1:2.1.4-2.1+deb8u5`
+- `git-core=1:2.1.4-2.1+deb8u5`
+- `git-man=1:2.1.4-2.1+deb8u5`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-core/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -1660,13 +1660,20 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-core
 - `dlmalloc`
 - `mingw-runtime`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris git=1:2.1.4-2.1+deb8u5
+'http://security.debian.org/pool/updates/main/g/git/git_2.1.4-2.1+deb8u5.dsc' git_2.1.4-2.1+deb8u5.dsc 2803 SHA256:98a91bae8bf614cba4049cb47da1fa76d0639748d431d9241c6a269e5147216f
+'http://security.debian.org/pool/updates/main/g/git/git_2.1.4.orig.tar.xz' git_2.1.4.orig.tar.xz 3544804 SHA256:a04968b9b10cbcb31a7054aa3a0d11ac47c83556ecd270ddef1987df5d3d053e
+'http://security.debian.org/pool/updates/main/g/git/git_2.1.4-2.1+deb8u5.debian.tar.xz' git_2.1.4-2.1+deb8u5.debian.tar.xz 481960 SHA256:c3d39c895fdda768f9bc49ffe39e576b493ad92af81814136074fdc08349642b
+```
 
-- http://snapshot.debian.org/package/git/1:2.1.4-2.1+deb8u4/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/git/1:2.1.4-2.1+deb8u5/ (for browsing the source)
+- https://sources.debian.net/src/git/1:2.1.4-2.1+deb8u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/git/1:2.1.4-2.1+deb8u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glib2.0=2.42.1-1`
 
@@ -3480,11 +3487,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libyaml/0.1.6-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libyaml/0.1.6-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=3.16.43-2+deb8u3`
+### `dpkg` source package: `linux=3.16.43-2+deb8u5`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.16.43-2+deb8u3`
+- `linux-libc-dev:amd64=3.16.43-2+deb8u5`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -3492,13 +3499,20 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris linux=3.16.43-2+deb8u5
+'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.43-2+deb8u5.dsc' linux_3.16.43-2+deb8u5.dsc 140609 SHA256:1fe7cec4b46c3dd6ada1c7561789f5ba3bd8f382aae7fbafe5406c095c7bc567
+'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.43.orig.tar.xz' linux_3.16.43.orig.tar.xz 81815520 SHA256:77fc86010339c04736799d4f2e19adc1623c440583e7eae09e4b76b63c4edd8f
+'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.43-2+deb8u5.debian.tar.xz' linux_3.16.43-2+deb8u5.debian.tar.xz 3261164 SHA256:3b9c0ee0e7cad179d1838d54937d93a19ee09d2e4f121cfae6c480570c800748
+```
 
-- http://snapshot.debian.org/package/linux/3.16.43-2+deb8u3/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/linux/3.16.43-2+deb8u5/ (for browsing the source)
+- https://sources.debian.net/src/linux/3.16.43-2+deb8u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/3.16.43-2+deb8u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lksctp-tools=1.0.16+dfsg-2`
 
@@ -4311,13 +4325,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pcre3/2:8.35-3.3+deb8u4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pcre3/2:8.35-3.3+deb8u4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `perl=5.20.2-3+deb8u8`
+### `dpkg` source package: `perl=5.20.2-3+deb8u9`
 
 Binary Packages:
 
-- `perl=5.20.2-3+deb8u8`
-- `perl-base=5.20.2-3+deb8u8`
-- `perl-modules=5.20.2-3+deb8u8`
+- `perl=5.20.2-3+deb8u9`
+- `perl-base=5.20.2-3+deb8u9`
+- `perl-modules=5.20.2-3+deb8u9`
 
 Licenses: (parsed from: `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-base/copyright`, `/usr/share/doc/perl-modules/copyright`)
 
@@ -4349,17 +4363,17 @@ Licenses: (parsed from: `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-ba
 Source:
 
 ```console
-$ apt-get source -qq --print-uris perl=5.20.2-3+deb8u8
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.20.2-3+deb8u8.dsc' perl_5.20.2-3+deb8u8.dsc 2373 SHA256:23fcb40f5d19a938a5d0571c316c6aa52e95c9d0b2b76a135efb23e647d03262
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.20.2.orig.tar.bz2' perl_5.20.2.orig.tar.bz2 13717128 SHA256:e5a4713bc65e1da98ebd833dce425c000768bfe84d17ec5183ec5ca249db71ab
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.20.2-3+deb8u8.debian.tar.xz' perl_5.20.2-3+deb8u8.debian.tar.xz 153004 SHA256:137e2923885d41b4680d6d1329c56f7cd1202b87e5c13f34331f228748422084
+$ apt-get source -qq --print-uris perl=5.20.2-3+deb8u9
+'http://security.debian.org/pool/updates/main/p/perl/perl_5.20.2-3+deb8u9.dsc' perl_5.20.2-3+deb8u9.dsc 2338 SHA256:b6a40aaebb24ab28bb6a370d3716eb22acb08c981dc8ea6ad086d7ca6767cc62
+'http://security.debian.org/pool/updates/main/p/perl/perl_5.20.2.orig.tar.bz2' perl_5.20.2.orig.tar.bz2 13717128 SHA256:e5a4713bc65e1da98ebd833dce425c000768bfe84d17ec5183ec5ca249db71ab
+'http://security.debian.org/pool/updates/main/p/perl/perl_5.20.2-3+deb8u9.debian.tar.xz' perl_5.20.2-3+deb8u9.debian.tar.xz 155320 SHA256:98163e774fa007567241645792f98530ad05549756cf82611ae4143964a16a4d
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/perl/5.20.2-3+deb8u8/ (for browsing the source)
-- https://sources.debian.net/src/perl/5.20.2-3+deb8u8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/perl/5.20.2-3+deb8u8/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/perl/5.20.2-3+deb8u9/ (for browsing the source)
+- https://sources.debian.net/src/perl/5.20.2-3+deb8u9/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/perl/5.20.2-3+deb8u9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pinentry=0.8.3-2`
 
@@ -4524,11 +4538,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pth/2.0.7-20/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pth/2.0.7-20/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `python-catkin-pkg-modules=0.3.6-1`
+### `dpkg` source package: `python-catkin-pkg-modules=0.3.7-1`
 
 Binary Packages:
 
-- `python-catkin-pkg-modules=0.3.6-1`
+- `python-catkin-pkg-modules=0.3.7-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4537,17 +4551,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris python-catkin-pkg-modules=0.3.6-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.3.6-1.dsc' python-catkin-pkg-modules_0.3.6-1.dsc 991 SHA256:b3032474ea46ecc0446683cbe81d5d624c4e8df8fc0d3b98efcae20b99e9e7ba
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.3.6.orig.tar.gz' python-catkin-pkg-modules_0.3.6.orig.tar.gz 44748 SHA256:94b5b3a4ecbe74e9581151a95e62f2ca52b00506bbe2839eb47a94ecada3f180
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.3.6-1.debian.tar.xz' python-catkin-pkg-modules_0.3.6-1.debian.tar.xz 1128 SHA256:8226837e52c47cc880217c398bc1396fcd396a2953b1c006d18f08eaf50bc494
+$ apt-get source -qq --print-uris python-catkin-pkg-modules=0.3.7-1
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.3.7-1.dsc' python-catkin-pkg-modules_0.3.7-1.dsc 991 SHA256:f5241cdb6065f03ea907eb4bfa5ba4eba540818a0b09ae854d15a31440518542
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.3.7.orig.tar.gz' python-catkin-pkg-modules_0.3.7.orig.tar.gz 44988 SHA256:becc05f81c33b52d6fa612999e66677a572dd9331b5375ffa3c5381d9d6300ef
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.3.7-1.debian.tar.xz' python-catkin-pkg-modules_0.3.7-1.debian.tar.xz 1128 SHA256:95c0da3210be0d430f0a3332fc101525d1141e0a7f4d5d90c15d87e5dfd4202d
 ```
 
-### `dpkg` source package: `python-catkin-pkg=0.3.6-1`
+### `dpkg` source package: `python-catkin-pkg=0.3.7-100`
 
 Binary Packages:
 
-- `python-catkin-pkg=0.3.6-1`
+- `python-catkin-pkg=0.3.7-100`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4556,10 +4570,10 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris python-catkin-pkg=0.3.6-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.3.6-1.dsc' python-catkin-pkg_0.3.6-1.dsc 920 SHA256:a3e3801d09f5a05636c4cf17ad338bcf2aab843467e260dcc36685c5f4824d56
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.3.6.orig.tar.gz' python-catkin-pkg_0.3.6.orig.tar.gz 9647 SHA256:10e413312f8fa9535025ffdf54c84173c8d2f19ec60165dcaad670f340e69523
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.3.6-1.debian.tar.xz' python-catkin-pkg_0.3.6-1.debian.tar.xz 1116 SHA256:cc6833d7026831cda3978db5d0512e34a3a676f0334dac86a34991865d890332
+$ apt-get source -qq --print-uris python-catkin-pkg=0.3.7-100
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.3.7-100.dsc' python-catkin-pkg_0.3.7-100.dsc 928 SHA256:6a90710dc1b80d22e7658ba079fb0782f2622fc3ec1f5f6f0899758261b94cc7
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.3.7.orig.tar.gz' python-catkin-pkg_0.3.7.orig.tar.gz 9650 SHA256:90b923a9edc01e5381d605341c34525fa67caff6cfe62d62187a9fe8ffa6b5b4
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.3.7-100.debian.tar.xz' python-catkin-pkg_0.3.7-100.debian.tar.xz 1116 SHA256:30837f85ce757add7a791979440678e899c78863bfd7b8c8681ae6bfb133a628
 ```
 
 ### `dpkg` source package: `python-crypto=2.6.1-5+deb8u1`
@@ -4826,33 +4840,43 @@ $ apt-get source -qq --print-uris python-rosinstall=0.7.8-1
 'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosinstall/python-rosinstall_0.7.8-1.debian.tar.gz' python-rosinstall_0.7.8-1.debian.tar.gz 1008 SHA256:218375984f09c4fcfd9febfa9d08af30706a37c83e0c88925e682d84b6d44c7d
 ```
 
-### `dpkg` source package: `python-rospkg-modules=1.1.2-1`
+### `dpkg` source package: `python-rospkg-modules=1.1.3-1`
 
 Binary Packages:
 
-- `python-rospkg-modules=1.1.2-1`
+- `python-rospkg-modules=1.1.3-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python-rospkg-modules=1.1.3-1
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg-modules/python-rospkg-modules_1.1.3-1.dsc' python-rospkg-modules_1.1.3-1.dsc 944 SHA256:9fcaa799107b148237cef218d5a8bdb9229983c2c14aeabae7e018ac2bd437ea
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg-modules/python-rospkg-modules_1.1.3.orig.tar.gz' python-rospkg-modules_1.1.3.orig.tar.gz 38446 SHA256:464f3f37e586e6ab279776ffd3fe586f3397f4fc1d2dc654899346b27ea26faa
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg-modules/python-rospkg-modules_1.1.3-1.debian.tar.gz' python-rospkg-modules_1.1.3-1.debian.tar.gz 1074 SHA256:11bd2ab3110e77e855ff5c2dca55f69ce32f2e8a54c4457a50769d0504329e69
+```
 
-### `dpkg` source package: `python-rospkg=1.1.2-1`
+### `dpkg` source package: `python-rospkg=1.1.3-100`
 
 Binary Packages:
 
-- `python-rospkg=1.1.2-1`
+- `python-rospkg=1.1.3-100`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python-rospkg=1.1.3-100
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg/python-rospkg_1.1.3-100.dsc' python-rospkg_1.1.3-100.dsc 884 SHA256:556ecfa46f7f5805c213671f009b008128c05b3bb692533a5f20980127f10c2d
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg/python-rospkg_1.1.3.orig.tar.gz' python-rospkg_1.1.3.orig.tar.gz 18090 SHA256:cd7338a5a15ee16025c1e70f6a85b4feed6a490efe8b14c530ef1c2f3b9cf759
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg/python-rospkg_1.1.3-100.debian.tar.gz' python-rospkg_1.1.3-100.debian.tar.gz 1049 SHA256:03e047e04824a5e03c72820891299fd5da6d17567bac471463ed39beb7ced202
+```
 
 ### `dpkg` source package: `python-setuptools=5.5.1-1`
 

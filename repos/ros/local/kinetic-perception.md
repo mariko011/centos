@@ -368,14 +368,9 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`)
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris binutils=2.26.1-1ubuntu1~16.04.4
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.26.1-1ubuntu1~16.04.4.dsc' binutils_2.26.1-1ubuntu1~16.04.4.dsc 4028 SHA256:be3feab51074bcbd032425dc9e54cee17da022fd70961f3fa9d44ebdab56a81d
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.26.1.orig.tar.gz' binutils_2.26.1.orig.tar.gz 34868933 SHA256:dd9c3e37c266e4fefba68e444e2a00538b3c902dd31bf4912d90dca6d830a2a1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.26.1-1ubuntu1~16.04.4.diff.gz' binutils_2.26.1-1ubuntu1~16.04.4.diff.gz 233084 SHA256:bf53a639bf8603ad4b48d50933e14b5a01c7f48ba0e5876dbfacbc562dd6d217
-```
 
 ### `dpkg` source package: `boost-defaults=1.58.0.1ubuntu1`
 
@@ -5220,14 +5215,9 @@ Licenses: (parsed from: `/usr/share/doc/libegl1-mesa/copyright`, `/usr/share/doc
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mesa=17.0.7-0ubuntu0.16.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_17.0.7-0ubuntu0.16.04.1.dsc' mesa_17.0.7-0ubuntu0.16.04.1.dsc 4898 SHA256:357da2e616151ef8dd99e568efac40a6868c088357d9548ffbe3b444da4f2e3b
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_17.0.7.orig.tar.gz' mesa_17.0.7.orig.tar.gz 15931608 SHA256:bc68d13c6b1a053b855ac453ebf7e62bd89511adf44bad6c613e09f7fa13390a
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_17.0.7-0ubuntu0.16.04.1.diff.gz' mesa_17.0.7-0ubuntu0.16.04.1.diff.gz 123236 SHA256:d180bd2c604edee94692bd6aa8753d334c56d700732ddf75db89c74482cdd58c
-```
 
 ### `dpkg` source package: `mime-support=3.59ubuntu1`
 
@@ -6493,14 +6483,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-catkin-pkg-modules=0.3.6-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.3.6-1.dsc' python-catkin-pkg-modules_0.3.6-1.dsc 991 SHA256:b3032474ea46ecc0446683cbe81d5d624c4e8df8fc0d3b98efcae20b99e9e7ba
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.3.6.orig.tar.gz' python-catkin-pkg-modules_0.3.6.orig.tar.gz 44748 SHA256:94b5b3a4ecbe74e9581151a95e62f2ca52b00506bbe2839eb47a94ecada3f180
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.3.6-1.debian.tar.xz' python-catkin-pkg-modules_0.3.6-1.debian.tar.xz 1128 SHA256:8226837e52c47cc880217c398bc1396fcd396a2953b1c006d18f08eaf50bc494
-```
 
 ### `dpkg` source package: `python-catkin-pkg=0.3.6-1`
 
@@ -6512,14 +6497,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-catkin-pkg=0.3.6-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.3.6-1.dsc' python-catkin-pkg_0.3.6-1.dsc 920 SHA256:a3e3801d09f5a05636c4cf17ad338bcf2aab843467e260dcc36685c5f4824d56
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.3.6.orig.tar.gz' python-catkin-pkg_0.3.6.orig.tar.gz 9647 SHA256:10e413312f8fa9535025ffdf54c84173c8d2f19ec60165dcaad670f340e69523
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.3.6-1.debian.tar.xz' python-catkin-pkg_0.3.6-1.debian.tar.xz 1116 SHA256:cc6833d7026831cda3978db5d0512e34a3a676f0334dac86a34991865d890332
-```
 
 ### `dpkg` source package: `python-cffi=1.5.2-1ubuntu1`
 

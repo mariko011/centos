@@ -1956,13 +1956,9 @@ Licenses: (parsed from: `/usr/share/doc/initramfs-tools/copyright`, `/usr/share/
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris initramfs-tools=0.103ubuntu4.7
-'http://archive.ubuntu.com/ubuntu/pool/main/i/initramfs-tools/initramfs-tools_0.103ubuntu4.7.dsc' initramfs-tools_0.103ubuntu4.7.dsc 1897 SHA256:cf30787e4805334b28b15d6e25cde0559d27c08774c67ee91454136086888314
-'http://archive.ubuntu.com/ubuntu/pool/main/i/initramfs-tools/initramfs-tools_0.103ubuntu4.7.tar.xz' initramfs-tools_0.103ubuntu4.7.tar.xz 94356 SHA256:efb638f3c6e27b3d9c0ccdf0401a73941209db6719ad2a26497d384aacda51d8
-```
 
 ### `dpkg` source package: `insserv=1.14.0-5ubuntu2`
 
@@ -4750,14 +4746,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-catkin-pkg-modules=0.3.6-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.3.6-1.dsc' python-catkin-pkg-modules_0.3.6-1.dsc 991 SHA256:b3032474ea46ecc0446683cbe81d5d624c4e8df8fc0d3b98efcae20b99e9e7ba
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.3.6.orig.tar.gz' python-catkin-pkg-modules_0.3.6.orig.tar.gz 44748 SHA256:94b5b3a4ecbe74e9581151a95e62f2ca52b00506bbe2839eb47a94ecada3f180
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.3.6-1.debian.tar.xz' python-catkin-pkg-modules_0.3.6-1.debian.tar.xz 1128 SHA256:8226837e52c47cc880217c398bc1396fcd396a2953b1c006d18f08eaf50bc494
-```
 
 ### `dpkg` source package: `python-catkin-pkg=0.3.6-1`
 
@@ -4769,14 +4760,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-catkin-pkg=0.3.6-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.3.6-1.dsc' python-catkin-pkg_0.3.6-1.dsc 920 SHA256:a3e3801d09f5a05636c4cf17ad338bcf2aab843467e260dcc36685c5f4824d56
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.3.6.orig.tar.gz' python-catkin-pkg_0.3.6.orig.tar.gz 9647 SHA256:10e413312f8fa9535025ffdf54c84173c8d2f19ec60165dcaad670f340e69523
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.3.6-1.debian.tar.xz' python-catkin-pkg_0.3.6-1.debian.tar.xz 1116 SHA256:cc6833d7026831cda3978db5d0512e34a3a676f0334dac86a34991865d890332
-```
 
 ### `dpkg` source package: `python-crypto=2.6.1-4ubuntu0.2`
 
