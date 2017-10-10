@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4393dd28cab15ee17cf9adf8606b760da5edfc93b281488e356f2c6ed285b4e9`
-- Created: `2017-09-21T20:09:54.226896659Z`
+- Image ID: `sha256:3ab3c82da89cbda769ee7a4a6a6f5048ced32b4a6b8683ca885b42fca607b80e`
+- Created: `2017-10-10T02:25:10.791611831Z`
 - Virtual Size: ~ 368.40 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -453,12 +453,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/cryptsetup/2:1.6.6-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/cryptsetup/2:1.6.6-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `curl=7.38.0-4+deb8u5`
+### `dpkg` source package: `curl=7.38.0-4+deb8u6`
 
 Binary Packages:
 
-- `curl=7.38.0-4+deb8u5`
-- `libcurl3:amd64=7.38.0-4+deb8u5`
+- `curl=7.38.0-4+deb8u6`
+- `libcurl3:amd64=7.38.0-4+deb8u6`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`)
 
@@ -470,17 +470,17 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 Source:
 
 ```console
-$ apt-get source -qq --print-uris curl=7.38.0-4+deb8u5
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.38.0-4+deb8u5.dsc' curl_7.38.0-4+deb8u5.dsc 2637 SHA256:2b5e0bf7ea27efaa23d3274a487227436a8b6777dc571c957ae1c9fb4e455d8d
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.38.0.orig.tar.gz' curl_7.38.0.orig.tar.gz 4094034 SHA256:5661028aa6532882fa228cd23c99ddbb8b87643dbb1a7ea55c068d34a943dff1
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.38.0-4+deb8u5.debian.tar.xz' curl_7.38.0-4+deb8u5.debian.tar.xz 40224 SHA256:3f917091d1694a77852fe05293dafff079382e70d93f62f7de5c61f1812cf69d
+$ apt-get source -qq --print-uris curl=7.38.0-4+deb8u6
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0-4+deb8u6.dsc' curl_7.38.0-4+deb8u6.dsc 2669 SHA256:ed599fd1b78609ab0d91125d095ce88c8bfece997cece225cdec251c888766cd
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0.orig.tar.gz' curl_7.38.0.orig.tar.gz 4094034 SHA256:5661028aa6532882fa228cd23c99ddbb8b87643dbb1a7ea55c068d34a943dff1
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0-4+deb8u6.debian.tar.xz' curl_7.38.0-4+deb8u6.debian.tar.xz 42064 SHA256:16a861a007d3ea6db80608bf6b27221f9cdc9bf0ee0b931c32971014d5cd2863
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/curl/7.38.0-4+deb8u5/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.38.0-4+deb8u5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.38.0-4+deb8u5/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/curl/7.38.0-4+deb8u6/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.38.0-4+deb8u6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.38.0-4+deb8u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-13+deb8u1`
 
@@ -1865,11 +1865,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libxml2/2.9.1+dfsg1-5+deb8u5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libxml2/2.9.1+dfsg1-5+deb8u5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=3.16.43-2+deb8u3`
+### `dpkg` source package: `linux=3.16.43-2+deb8u5`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.16.43-2+deb8u3`
+- `linux-libc-dev:amd64=3.16.43-2+deb8u5`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1877,13 +1877,20 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris linux=3.16.43-2+deb8u5
+'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.43-2+deb8u5.dsc' linux_3.16.43-2+deb8u5.dsc 140609 SHA256:1fe7cec4b46c3dd6ada1c7561789f5ba3bd8f382aae7fbafe5406c095c7bc567
+'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.43.orig.tar.xz' linux_3.16.43.orig.tar.xz 81815520 SHA256:77fc86010339c04736799d4f2e19adc1623c440583e7eae09e4b76b63c4edd8f
+'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.43-2+deb8u5.debian.tar.xz' linux_3.16.43-2+deb8u5.debian.tar.xz 3261164 SHA256:3b9c0ee0e7cad179d1838d54937d93a19ee09d2e4f121cfae6c480570c800748
+```
 
-- http://snapshot.debian.org/package/linux/3.16.43-2+deb8u3/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/linux/3.16.43-2+deb8u5/ (for browsing the source)
+- https://sources.debian.net/src/linux/3.16.43-2+deb8u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/3.16.43-2+deb8u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=4.1+Debian13+nmu1`
 
@@ -2310,13 +2317,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pcre3/2:8.35-3.3+deb8u4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pcre3/2:8.35-3.3+deb8u4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `perl=5.20.2-3+deb8u8`
+### `dpkg` source package: `perl=5.20.2-3+deb8u9`
 
 Binary Packages:
 
-- `perl=5.20.2-3+deb8u8`
-- `perl-base=5.20.2-3+deb8u8`
-- `perl-modules=5.20.2-3+deb8u8`
+- `perl=5.20.2-3+deb8u9`
+- `perl-base=5.20.2-3+deb8u9`
+- `perl-modules=5.20.2-3+deb8u9`
 
 Licenses: (parsed from: `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-base/copyright`, `/usr/share/doc/perl-modules/copyright`)
 
@@ -2348,17 +2355,17 @@ Licenses: (parsed from: `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-ba
 Source:
 
 ```console
-$ apt-get source -qq --print-uris perl=5.20.2-3+deb8u8
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.20.2-3+deb8u8.dsc' perl_5.20.2-3+deb8u8.dsc 2373 SHA256:23fcb40f5d19a938a5d0571c316c6aa52e95c9d0b2b76a135efb23e647d03262
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.20.2.orig.tar.bz2' perl_5.20.2.orig.tar.bz2 13717128 SHA256:e5a4713bc65e1da98ebd833dce425c000768bfe84d17ec5183ec5ca249db71ab
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.20.2-3+deb8u8.debian.tar.xz' perl_5.20.2-3+deb8u8.debian.tar.xz 153004 SHA256:137e2923885d41b4680d6d1329c56f7cd1202b87e5c13f34331f228748422084
+$ apt-get source -qq --print-uris perl=5.20.2-3+deb8u9
+'http://security.debian.org/pool/updates/main/p/perl/perl_5.20.2-3+deb8u9.dsc' perl_5.20.2-3+deb8u9.dsc 2338 SHA256:b6a40aaebb24ab28bb6a370d3716eb22acb08c981dc8ea6ad086d7ca6767cc62
+'http://security.debian.org/pool/updates/main/p/perl/perl_5.20.2.orig.tar.bz2' perl_5.20.2.orig.tar.bz2 13717128 SHA256:e5a4713bc65e1da98ebd833dce425c000768bfe84d17ec5183ec5ca249db71ab
+'http://security.debian.org/pool/updates/main/p/perl/perl_5.20.2-3+deb8u9.debian.tar.xz' perl_5.20.2-3+deb8u9.debian.tar.xz 155320 SHA256:98163e774fa007567241645792f98530ad05549756cf82611ae4143964a16a4d
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/perl/5.20.2-3+deb8u8/ (for browsing the source)
-- https://sources.debian.net/src/perl/5.20.2-3+deb8u8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/perl/5.20.2-3+deb8u8/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/perl/5.20.2-3+deb8u9/ (for browsing the source)
+- https://sources.debian.net/src/perl/5.20.2-3+deb8u9/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/perl/5.20.2-3+deb8u9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pkg-config=0.28-1`
 
