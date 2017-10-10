@@ -1,7 +1,7 @@
 ## `fsharp:latest`
 
 ```console
-$ docker pull fsharp@sha256:ad7d7fd617ddc8f78109ccbb0ca77fd9eebef31085884cc029afaf868dc20874
+$ docker pull fsharp@sha256:76717fe3af98cdbe8f76fdc6280c616ea169b90e443c9a408cea95cbf49dad1f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull fsharp@sha256:ad7d7fd617ddc8f78109ccbb0ca77fd9eebef31085884cc029af
 ### `fsharp:latest` - linux; amd64
 
 ```console
-$ docker pull fsharp@sha256:a6c04fde69ca343dea228c1df8fb2b99f6396121c746b237517fd9399daa15c4
+$ docker pull fsharp@sha256:39f1f91b80c569a9fa5e1f3b9a271cc279768d32d33ba0633f8ec20bdf4645c8
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **178.9 MB (178870077 bytes)**  
+-	Total Size: **176.0 MB (175974743 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:63afea6f4d32d9aa2b9a51fbd17977e55c54e7130bc5a51a9b9cd1fcf2afde9b`
+-	Image ID: `sha256:f3f0df2e12979ccda4f17a215a4fa3ab187d9c53edbfb677c9f683a9224bc4ba`
 -	Default Command: `["fsharpi"]`
 
 ```dockerfile
@@ -30,11 +30,11 @@ CMD ["bash"]
 LABEL maintainer=Dave Curylo <dave@curylo.org>, Steve Desmond <steve@stevedesmond.ca>
 # Mon, 09 Oct 2017 22:38:18 GMT
 ENV MONO_THREADS_PER_CPU=50
-# Mon, 09 Oct 2017 22:55:05 GMT
-RUN MONO_VERSION=5.0.1.1 &&     FSHARP_VERSION=4.1.25 &&     FSHARP_PREFIX=/usr &&     FSHARP_GACDIR=/usr/lib/mono/gac &&     FSHARP_BASENAME=fsharp-$FSHARP_VERSION &&     FSHARP_ARCHIVE=$FSHARP_VERSION.tar.gz &&     FSHARP_ARCHIVE_URL=https://github.com/fsharp/fsharp/archive/$FSHARP_VERSION.tar.gz &&     apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF &&     echo "deb http://download.mono-project.com/repo/debian jessie/snapshots/$MONO_VERSION main" > /etc/apt/sources.list.d/mono-official.list &&     apt-get update -y &&     apt-get --no-install-recommends install -y autoconf libtool pkg-config make automake nuget mono-devel msbuild ca-certificates-mono &&     rm -rf /var/lib/apt/lists/* &&     mkdir -p /tmp/src &&     cd /tmp/src &&     printf "namespace a { class b { public static void Main(string[] args) { new System.Net.WebClient().DownloadFile(\"%s\", \"%s\");}}}" $FSHARP_ARCHIVE_URL $FSHARP_ARCHIVE > download-fsharp.cs &&     mcs download-fsharp.cs && mono download-fsharp.exe && rm download-fsharp.exe download-fsharp.cs &&     tar xf $FSHARP_ARCHIVE &&     cd $FSHARP_BASENAME &&     ./autogen.sh --prefix=$FSHARP_PREFIX --with-gacdir=$FSHARP_GACDIR &&     make &&     make install &&     cd ~ &&     rm -rf /tmp/src /tmp/NuGetScratch ~/.nuget ~/.config ~/.local &&     apt-get purge -y autoconf libtool make automake &&     apt-get clean
-# Mon, 09 Oct 2017 22:57:39 GMT
+# Tue, 10 Oct 2017 20:25:21 GMT
+RUN MONO_VERSION=5.2.0.224 &&     FSHARP_VERSION=4.1.28 &&     FSHARP_PREFIX=/usr &&     FSHARP_GACDIR=/usr/lib/mono/gac &&     FSHARP_BASENAME=fsharp-$FSHARP_VERSION &&     FSHARP_ARCHIVE=$FSHARP_VERSION.tar.gz &&     FSHARP_ARCHIVE_URL=https://github.com/fsharp/fsharp/archive/$FSHARP_VERSION.tar.gz &&     apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF &&     echo "deb http://download.mono-project.com/repo/debian jessie/snapshots/$MONO_VERSION main" > /etc/apt/sources.list.d/mono-official.list &&     apt-get update -y &&     apt-get --no-install-recommends install -y autoconf libtool pkg-config make automake nuget mono-devel msbuild ca-certificates-mono &&     rm -rf /var/lib/apt/lists/* &&     mkdir -p /tmp/src &&     cd /tmp/src &&     printf "namespace a { class b { public static void Main(string[] args) { new System.Net.WebClient().DownloadFile(\"%s\", \"%s\");}}}" $FSHARP_ARCHIVE_URL $FSHARP_ARCHIVE > download-fsharp.cs &&     mcs download-fsharp.cs && mono download-fsharp.exe && rm download-fsharp.exe download-fsharp.cs &&     tar xf $FSHARP_ARCHIVE &&     cd $FSHARP_BASENAME &&     ./autogen.sh --prefix=$FSHARP_PREFIX --with-gacdir=$FSHARP_GACDIR &&     make &&     make install &&     cd ~ &&     rm -rf /tmp/src /tmp/NuGetScratch ~/.nuget ~/.config ~/.local &&     apt-get purge -y autoconf libtool make automake &&     apt-get clean
+# Tue, 10 Oct 2017 20:29:23 GMT
 WORKDIR /root
-# Mon, 09 Oct 2017 22:57:39 GMT
+# Tue, 10 Oct 2017 20:29:23 GMT
 CMD ["fsharpi"]
 ```
 
@@ -43,7 +43,7 @@ CMD ["fsharpi"]
 		Last Modified: Mon, 09 Oct 2017 21:37:31 GMT  
 		Size: 30.1 MB (30113318 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3929642b6f548f354927e4e563254988d575e8f975ff5dd9f043be3f55006f1d`  
-		Last Modified: Mon, 09 Oct 2017 22:58:50 GMT  
-		Size: 148.8 MB (148756759 bytes)  
+	-	`sha256:050e2e49d41dfb5222eef5678c26c9eb61ece9a0ff3b0cc98adbf8e67cf6eefa`  
+		Last Modified: Tue, 10 Oct 2017 20:30:17 GMT  
+		Size: 145.9 MB (145861425 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
