@@ -1,7 +1,7 @@
 ## `irssi:latest`
 
 ```console
-$ docker pull irssi@sha256:7c1f56fddce222a6c9a94283b2284a86a3e1193b76fc3ace6d6846c0edca078d
+$ docker pull irssi@sha256:d321aaae96df65dd0183b85011b42adad665f2722161033864154a8de6cb4e3b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -297,57 +297,57 @@ CMD ["irssi"]
 ### `irssi:latest` - linux; ppc64le
 
 ```console
-$ docker pull irssi@sha256:e0fd830e39a0af128577f8fbbef982aed3435a1efa1a0b6be6e5b9464bf2b097
+$ docker pull irssi@sha256:ec80c5a5011c909ca325816b4e1cda9cb5745376474e00df3a19698035299feb
 ```
 
--	Docker Version: 17.06.1-ce
+-	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **97.4 MB (97401925 bytes)**  
+-	Total Size: **97.4 MB (97405113 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:267d67fb143214dd38b8bf4e0450a9ebcebbbe9d1bf25c69842c27127057b46a`
+-	Image ID: `sha256:a56b48e3d08e0f4159ba3f91881f924fb66afad7431eee97529cd1706167f7b5`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
-# Fri, 08 Sep 2017 00:32:21 GMT
-ADD file:483b3245941140ac32394a804364a1a9bd5dfdf1b4475238b61068cc7252ac08 in / 
-# Fri, 08 Sep 2017 00:32:21 GMT
+# Mon, 09 Oct 2017 21:42:51 GMT
+ADD file:c62750f1e0dbf2b729abca09eb7927f2ee4fa8311dc40ae8066a53a4f1c85059 in / 
+# Mon, 09 Oct 2017 21:42:53 GMT
 CMD ["bash"]
-# Fri, 08 Sep 2017 01:17:00 GMT
+# Tue, 10 Oct 2017 01:29:12 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libglib2.0-0 		libwww-perl 		perl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 08 Sep 2017 01:17:01 GMT
+# Tue, 10 Oct 2017 01:29:15 GMT
 ENV HOME=/home/user
-# Fri, 08 Sep 2017 01:17:01 GMT
+# Tue, 10 Oct 2017 01:29:25 GMT
 RUN useradd --create-home --home-dir $HOME user 	&& mkdir -p $HOME/.irssi 	&& chown -R user:user $HOME
-# Fri, 08 Sep 2017 01:17:02 GMT
+# Tue, 10 Oct 2017 01:29:29 GMT
 ENV LANG=C.UTF-8
-# Fri, 08 Sep 2017 01:17:02 GMT
+# Tue, 10 Oct 2017 01:29:33 GMT
 ENV IRSSI_VERSION=1.0.4
-# Fri, 08 Sep 2017 01:18:02 GMT
+# Tue, 10 Oct 2017 01:41:39 GMT
 RUN buildDeps=' 		autoconf 		automake 		bzip2 		dpkg-dev 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		make 		pkg-config 		xz-utils 	' 	&& set -x 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -rf /var/lib/apt/lists/* 	&& wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz 	&& wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1 	&& gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz 	&& rm -rf "$GNUPGHOME" /tmp/irssi.tar.xz.asc 	&& mkdir -p /usr/src/irssi 	&& tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1 	&& rm /tmp/irssi.tar.xz 	&& cd /usr/src/irssi 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-true-color 		--with-bot 		--with-proxy 		--with-socks 	&& make -j "$(nproc)" 	&& make install 	&& rm -rf /usr/src/irssi 	&& apt-get purge -y --auto-remove $buildDeps
-# Fri, 08 Sep 2017 01:18:02 GMT
+# Tue, 10 Oct 2017 01:41:43 GMT
 WORKDIR /home/user
-# Fri, 08 Sep 2017 01:18:02 GMT
+# Tue, 10 Oct 2017 01:41:48 GMT
 USER [user]
-# Fri, 08 Sep 2017 01:18:02 GMT
+# Tue, 10 Oct 2017 01:41:52 GMT
 CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:d4a5434e09b7ac8431060d347d6ef1233ae07514878fb2aff4085bcf441c29f3`  
-		Last Modified: Fri, 08 Sep 2017 00:36:52 GMT  
-		Size: 51.8 MB (51809570 bytes)  
+	-	`sha256:0f531bde4b154605e2d6339e50b65d65d06568d747b8bef594269dd06602062f`  
+		Last Modified: Mon, 09 Oct 2017 21:48:50 GMT  
+		Size: 51.8 MB (51809739 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b676e9b8213dc21a5ff4d2f5382386559bee357259e5032e9d72316ba5d17be7`  
-		Last Modified: Fri, 08 Sep 2017 01:18:20 GMT  
-		Size: 32.9 MB (32862966 bytes)  
+	-	`sha256:7cc7b58fa19c4a7cf4bcb051a5cfb06120df1865c504ea06dc535df948461ea5`  
+		Last Modified: Tue, 10 Oct 2017 01:42:25 GMT  
+		Size: 32.9 MB (32864143 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:287a91c6a95cfe46f948ffd5a719ed21b8fe09bbfaa555fe0ee169527d815eae`  
-		Last Modified: Fri, 08 Sep 2017 01:18:10 GMT  
-		Size: 4.5 KB (4451 bytes)  
+	-	`sha256:77c9b90351373b158b1338e15660e9af7373f453086719bfdca3a9af051fc3c3`  
+		Last Modified: Tue, 10 Oct 2017 01:42:17 GMT  
+		Size: 4.5 KB (4464 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7a24ae4c938737866051a97c325121a3f37fe1c6459e7b289f96ba5dc219cfd2`  
-		Last Modified: Fri, 08 Sep 2017 01:18:15 GMT  
-		Size: 12.7 MB (12724938 bytes)  
+	-	`sha256:93842262ef932d5293352fc6fbfb9ca8d691fb2b377e58197bfc091a798ebc16`  
+		Last Modified: Tue, 10 Oct 2017 01:42:21 GMT  
+		Size: 12.7 MB (12726767 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `irssi:latest` - linux; s390x
