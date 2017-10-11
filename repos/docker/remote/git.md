@@ -1,7 +1,7 @@
 ## `docker:git`
 
 ```console
-$ docker pull docker@sha256:4b407a5e1f23a3dec45bcfbef156f2b7cf64a3036c52195ae83919b3a5b0ed3d
+$ docker pull docker@sha256:0d53276d97ffd1348cd1c9d56f3d1497dbd890a2060aa05fd8e8ff67a412b03d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull docker@sha256:4b407a5e1f23a3dec45bcfbef156f2b7cf64a3036c52195ae839
 ### `docker:git` - linux; amd64
 
 ```console
-$ docker pull docker@sha256:da8f153a199f37c5f0d36411b68d93df5c9226a7ff427660671ac95377786e34
+$ docker pull docker@sha256:c70d046173b8d5e769893d3af1bfa84a49e12004b1630e34e305733bf72ca1e4
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **44.8 MB (44801577 bytes)**  
+-	Total Size: **44.8 MB (44812049 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5917639be9495ab183f357e8bafafea82449f0c4b12b745eef8bd23d474220ca`
+-	Image ID: `sha256:aebf1027c6e6f4d6cfee51e97130b5a0d62b32dd48e03279891cbd1f96b9669a`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["sh"]`
 
@@ -41,7 +41,7 @@ COPY file:0d94e1cd679f133aab807891a1b00b6aef1a9f1f884108e7a17ddf50ab88f1fb in /u
 ENTRYPOINT ["docker-entrypoint.sh"]
 # Wed, 27 Sep 2017 20:50:33 GMT
 CMD ["sh"]
-# Wed, 27 Sep 2017 20:50:57 GMT
+# Wed, 11 Oct 2017 18:41:40 GMT
 RUN apk add --no-cache 		git 		openssh-client
 ```
 
@@ -62,7 +62,7 @@ RUN apk add --no-cache 		git 		openssh-client
 		Last Modified: Wed, 27 Sep 2017 20:51:11 GMT  
 		Size: 739.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:141955f33ab49627011c59b6f31b5d6111b3ddab2e82daf702e688146033fdc6`  
-		Last Modified: Wed, 27 Sep 2017 20:52:56 GMT  
-		Size: 11.8 MB (11769670 bytes)  
+	-	`sha256:7b78ba896fc6fbe287bffc47d03134aa4a580a0db995e767ac6cc698caa9949c`  
+		Last Modified: Wed, 11 Oct 2017 18:42:05 GMT  
+		Size: 11.8 MB (11780142 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
