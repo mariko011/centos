@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ac53d4ccb56ff76e32f430cd5216ab7a6cf92c566f8d986f0ee4dfdde2e33ddb`
-- Created: `2017-09-13T20:47:30.326978346Z`
+- Image ID: `sha256:0fd42290d5f1a44ad09f124fe227c0346f69500089161245ab5d177d4324547d`
+- Created: `2017-10-10T06:33:51.295394523Z`
 - Virtual Size: ~ 508.42 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -386,12 +386,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/bzip2/1.0.6-4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/bzip2/1.0.6-4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `bzr=2.6.0~bzr6526-1`
+### `dpkg` source package: `bzr=2.6.0~bzr6526-1+deb7u1`
 
 Binary Packages:
 
-- `bzr=2.6.0~bzr6526-1`
-- `python-bzrlib=2.6.0~bzr6526-1`
+- `bzr=2.6.0~bzr6526-1+deb7u1`
+- `python-bzrlib=2.6.0~bzr6526-1+deb7u1`
 
 Licenses: (parsed from: `/usr/share/doc/bzr/copyright`, `/usr/share/doc/python-bzrlib/copyright`)
 
@@ -401,17 +401,17 @@ Licenses: (parsed from: `/usr/share/doc/bzr/copyright`, `/usr/share/doc/python-b
 Source:
 
 ```console
-$ apt-get source -qq --print-uris bzr=2.6.0~bzr6526-1
-'http://deb.debian.org/debian/pool/main/b/bzr/bzr_2.6.0~bzr6526-1.dsc' bzr_2.6.0~bzr6526-1.dsc 1831 SHA256:a72bb96f7eb51d0094d33862da83c042d0071597d50982a7ab40acb39afad1cb
-'http://deb.debian.org/debian/pool/main/b/bzr/bzr_2.6.0~bzr6526.orig.tar.gz' bzr_2.6.0~bzr6526.orig.tar.gz 9966974 SHA256:d7196bf838062aea7e1c215cef26dfe160c64f28b2092a22d4f6c1b96ecc046d
-'http://deb.debian.org/debian/pool/main/b/bzr/bzr_2.6.0~bzr6526-1.debian.tar.gz' bzr_2.6.0~bzr6526-1.debian.tar.gz 41728 SHA256:48d590085e7f0578b135cf4855e6f0ab0432f40deb91199b0cd542ed5faff353
+$ apt-get source -qq --print-uris bzr=2.6.0~bzr6526-1+deb7u1
+'http://security.debian.org/pool/updates/main/b/bzr/bzr_2.6.0~bzr6526-1+deb7u1.dsc' bzr_2.6.0~bzr6526-1+deb7u1.dsc 2496 SHA256:3c6c1d75bb41892e64e8931b62af169f7d9a1489e7b2ee94364d05ce024be917
+'http://security.debian.org/pool/updates/main/b/bzr/bzr_2.6.0~bzr6526.orig.tar.gz' bzr_2.6.0~bzr6526.orig.tar.gz 9966974 SHA256:d7196bf838062aea7e1c215cef26dfe160c64f28b2092a22d4f6c1b96ecc046d
+'http://security.debian.org/pool/updates/main/b/bzr/bzr_2.6.0~bzr6526-1+deb7u1.debian.tar.gz' bzr_2.6.0~bzr6526-1+deb7u1.debian.tar.gz 44251 SHA256:405f7ac5596952a7f2111d1446c457ecc70f0db83c8150f3e00fdd2c4638f78e
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/bzr/2.6.0~bzr6526-1/ (for browsing the source)
-- https://sources.debian.net/src/bzr/2.6.0~bzr6526-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/bzr/2.6.0~bzr6526-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/bzr/2.6.0~bzr6526-1+deb7u1/ (for browsing the source)
+- https://sources.debian.net/src/bzr/2.6.0~bzr6526-1+deb7u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/bzr/2.6.0~bzr6526-1+deb7u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ca-certificates=20130119+deb7u1`
 
@@ -515,14 +515,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/coreutils/8.13-3.5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/coreutils/8.13-3.5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `curl=7.26.0-1+wheezy20`
+### `dpkg` source package: `curl=7.26.0-1+wheezy21`
 
 Binary Packages:
 
-- `curl=7.26.0-1+wheezy20`
-- `libcurl3:amd64=7.26.0-1+wheezy20`
-- `libcurl3-gnutls:amd64=7.26.0-1+wheezy20`
-- `libcurl4-openssl-dev=7.26.0-1+wheezy20`
+- `curl=7.26.0-1+wheezy21`
+- `libcurl3:amd64=7.26.0-1+wheezy21`
+- `libcurl3-gnutls:amd64=7.26.0-1+wheezy21`
+- `libcurl4-openssl-dev=7.26.0-1+wheezy21`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
 
@@ -531,13 +531,20 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `ISC`
 - `curl`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris curl=7.26.0-1+wheezy21
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0-1+wheezy21.dsc' curl_7.26.0-1+wheezy21.dsc 2534 SHA256:c9bf81f58e3ba1df22d8d2efc7dde2faddde94fd5c367be97dc96927562f7a05
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0.orig.tar.gz' curl_7.26.0.orig.tar.gz 3073624 SHA256:79ccce9edb8aee17d20ad4d75e1f83a789f8c2e71e68f468e1bf8abf8933193f
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0-1+wheezy21.debian.tar.gz' curl_7.26.0-1+wheezy21.debian.tar.gz 67214 SHA256:e853f350add9d4bc84b922861453f84c69cc5d6fc1768043523a48c191ee7ef6
+```
 
-- http://snapshot.debian.org/package/curl/7.26.0-1+wheezy20/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/curl/7.26.0-1+wheezy21/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.26.0-1+wheezy21/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.26.0-1+wheezy21/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.25.dfsg1-6+deb7u1`
 
@@ -1110,27 +1117,34 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gdbm/1.8.3-11/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gdbm/1.8.3-11/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gdk-pixbuf=2.26.1-1+deb7u5`
+### `dpkg` source package: `gdk-pixbuf=2.26.1-1+deb7u6`
 
 Binary Packages:
 
-- `gir1.2-gdkpixbuf-2.0=2.26.1-1+deb7u5`
-- `libgdk-pixbuf2.0-0:amd64=2.26.1-1+deb7u5`
-- `libgdk-pixbuf2.0-common=2.26.1-1+deb7u5`
-- `libgdk-pixbuf2.0-dev=2.26.1-1+deb7u5`
+- `gir1.2-gdkpixbuf-2.0=2.26.1-1+deb7u6`
+- `libgdk-pixbuf2.0-0:amd64=2.26.1-1+deb7u6`
+- `libgdk-pixbuf2.0-common=2.26.1-1+deb7u6`
+- `libgdk-pixbuf2.0-dev=2.26.1-1+deb7u6`
 
 Licenses: (parsed from: `/usr/share/doc/gir1.2-gdkpixbuf-2.0/copyright`, `/usr/share/doc/libgdk-pixbuf2.0-0/copyright`, `/usr/share/doc/libgdk-pixbuf2.0-common/copyright`, `/usr/share/doc/libgdk-pixbuf2.0-dev/copyright`)
 
 - `GPL-2`
 - `LGPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris gdk-pixbuf=2.26.1-1+deb7u6
+'http://security.debian.org/pool/updates/main/g/gdk-pixbuf/gdk-pixbuf_2.26.1-1+deb7u6.dsc' gdk-pixbuf_2.26.1-1+deb7u6.dsc 2713 SHA256:1abba1c5a3f736123de8aefd0b8d7a2e2a6aeb727db0168878eff3901cae019f
+'http://security.debian.org/pool/updates/main/g/gdk-pixbuf/gdk-pixbuf_2.26.1.orig.tar.xz' gdk-pixbuf_2.26.1.orig.tar.xz 1167608 SHA256:a60af12b58d9cc15ba4c680c6730ce5d38e8d664af1d575a379385b94b4ec7ba
+'http://security.debian.org/pool/updates/main/g/gdk-pixbuf/gdk-pixbuf_2.26.1-1+deb7u6.debian.tar.gz' gdk-pixbuf_2.26.1-1+deb7u6.debian.tar.gz 19605 SHA256:609dd2e125d07f9f07bdc2d1ef3029ec72dce3b7697e986f292700bee32a3023
+```
 
-- http://snapshot.debian.org/package/gdk-pixbuf/2.26.1-1+deb7u5/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/gdk-pixbuf/2.26.1-1+deb7u6/ (for browsing the source)
+- https://sources.debian.net/src/gdk-pixbuf/2.26.1-1+deb7u6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gdk-pixbuf/2.26.1-1+deb7u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `geoip=1.4.8+dfsg-3`
 
@@ -1159,12 +1173,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/geoip/1.4.8+dfsg-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/geoip/1.4.8+dfsg-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `git=1:1.7.10.4-1+wheezy5`
+### `dpkg` source package: `git=1:1.7.10.4-1+wheezy6`
 
 Binary Packages:
 
-- `git=1:1.7.10.4-1+wheezy5`
-- `git-man=1:1.7.10.4-1+wheezy5`
+- `git=1:1.7.10.4-1+wheezy6`
+- `git-man=1:1.7.10.4-1+wheezy6`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -1186,13 +1200,20 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris git=1:1.7.10.4-1+wheezy6
+'http://security.debian.org/pool/updates/main/g/git/git_1.7.10.4-1+wheezy6.dsc' git_1.7.10.4-1+wheezy6.dsc 2647 SHA256:8befb631b5fd5148a7de7ff6af0cf126d151e3054275beaf2e0c684c0deae64b
+'http://security.debian.org/pool/updates/main/g/git/git_1.7.10.4.orig.tar.gz' git_1.7.10.4.orig.tar.gz 3813469 SHA256:77ce53644d687202c64ca29db4ae5055daff4e0c611dde8f1d51edb752dba8dd
+'http://security.debian.org/pool/updates/main/g/git/git_1.7.10.4-1+wheezy6.diff.gz' git_1.7.10.4-1+wheezy6.diff.gz 524332 SHA256:983cf65f3e2aa609f54c53680f420c328b2f254a2b6227fa0677d103ff378aa6
+```
 
-- http://snapshot.debian.org/package/git/1:1.7.10.4-1+wheezy5/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/git/1:1.7.10.4-1+wheezy6/ (for browsing the source)
+- https://sources.debian.net/src/git/1:1.7.10.4-1+wheezy6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/git/1:1.7.10.4-1+wheezy6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glib2.0=2.33.12+really2.32.4-5`
 
@@ -1526,20 +1547,13 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `TatcherUlrichPublicDomain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:6.7.7.10-5+deb7u16
-'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.7.7.10-5+deb7u16.dsc' imagemagick_6.7.7.10-5+deb7u16.dsc 3160 SHA256:8f4e8dc4068a27d6933b950adb685b3062ecb278c67c52452363218b1bdd2a3f
-'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.7.7.10.orig.tar.bz2' imagemagick_6.7.7.10.orig.tar.bz2 10473522 SHA256:05fb23824b1c90ac35259715c94c65fb5cda6969eb597a7637762d8cf3998fda
-'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.7.7.10-5+deb7u16.debian.tar.bz2' imagemagick_6.7.7.10-5+deb7u16.debian.tar.bz2 238052 SHA256:119cd980dfa33500c7bbdf4bcb73795e0d544e3abfe771e769ee75acc603b0fe
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/imagemagick/8:6.7.7.10-5+deb7u16/
 
-- https://sources.debian.net/src/imagemagick/8:6.7.7.10-5+deb7u16/ (for browsing the source)
-- https://sources.debian.net/src/imagemagick/8:6.7.7.10-5+deb7u16/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/imagemagick/8:6.7.7.10-5+deb7u16/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `inetutils=2:1.9-2`
 
@@ -2082,11 +2096,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libgcrypt11/1.5.0-5+deb7u6/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libgcrypt11/1.5.0-5+deb7u6/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libgd2=2.0.36~rc1~dfsg-6.1+deb7u9`
+### `dpkg` source package: `libgd2=2.0.36~rc1~dfsg-6.1+deb7u10`
 
 Binary Packages:
 
-- `libgd2-noxpm:amd64=2.0.36~rc1~dfsg-6.1+deb7u9`
+- `libgd2-noxpm:amd64=2.0.36~rc1~dfsg-6.1+deb7u10`
 
 Licenses: (parsed from: `/usr/share/doc/libgd2-noxpm/copyright`)
 
@@ -2100,13 +2114,20 @@ Licenses: (parsed from: `/usr/share/doc/libgd2-noxpm/copyright`)
 - `HPND`
 - `MIT`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris libgd2=2.0.36~rc1~dfsg-6.1+deb7u10
+'http://security.debian.org/pool/updates/main/libg/libgd2/libgd2_2.0.36~rc1~dfsg-6.1+deb7u10.dsc' libgd2_2.0.36~rc1~dfsg-6.1+deb7u10.dsc 2429 SHA256:1d4b79d6ba7351daf18c41190f7439627596a815043203a77a5b595994fef0a2
+'http://security.debian.org/pool/updates/main/libg/libgd2/libgd2_2.0.36~rc1~dfsg.orig.tar.gz' libgd2_2.0.36~rc1~dfsg.orig.tar.gz 761899 SHA256:919df21310ad4a8b6155df01411138110589cc6c50b1bc414dc62aebb0a7f41a
+'http://security.debian.org/pool/updates/main/libg/libgd2/libgd2_2.0.36~rc1~dfsg-6.1+deb7u10.debian.tar.gz' libgd2_2.0.36~rc1~dfsg-6.1+deb7u10.debian.tar.gz 35207 SHA256:7abaaf8937f4d6158593f147e1162e5d7b950dcb292cffb1bd71961c6da8b175
+```
 
-- http://snapshot.debian.org/package/libgd2/2.0.36~rc1~dfsg-6.1+deb7u9/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/libgd2/2.0.36~rc1~dfsg-6.1+deb7u10/ (for browsing the source)
+- https://sources.debian.net/src/libgd2/2.0.36~rc1~dfsg-6.1+deb7u10/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libgd2/2.0.36~rc1~dfsg-6.1+deb7u10/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libgpg-error=1.10-3.1`
 
@@ -3050,23 +3071,30 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libyaml/0.1.4-2+deb7u5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libyaml/0.1.4-2+deb7u5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=3.2.89-2`
+### `dpkg` source package: `linux=3.2.93-1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.2.89-2`
+- `linux-libc-dev:amd64=3.2.93-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris linux=3.2.93-1
+'http://security.debian.org/pool/updates/main/l/linux/linux_3.2.93-1.dsc' linux_3.2.93-1.dsc 103043 SHA256:489e7e5dd271d6cf6e323c23c82c07d51e32a03ab3adc3f8d3ec14563aa3d8e7
+'http://security.debian.org/pool/updates/main/l/linux/linux_3.2.93.orig.tar.xz' linux_3.2.93.orig.tar.xz 65999680 SHA256:8202c633ca235f81f0b4fd44df8f4a93ac775d6ad824eedccb9aee5431e1255e
+'http://security.debian.org/pool/updates/main/l/linux/linux_3.2.93-1.debian.tar.xz' linux_3.2.93-1.debian.tar.xz 3747156 SHA256:d89fb30e7ab19a29bc6f49b7b57eece7277b3edf1d7b56f10a4194467add263a
+```
 
-- http://snapshot.debian.org/package/linux/3.2.89-2/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/linux/3.2.93-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/3.2.93-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/3.2.93-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=4.1+Debian8+deb7u1`
 
