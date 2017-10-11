@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:cf6b6d2e846326d2e49e12961ee0f63d8b5386980b5d3a11b8283151602fa756`
-- Created: `2017-10-04T22:01:05.443775843Z`
-- Virtual Size: ~ 182.07 Mb  
+- Image ID: `sha256:52c70f4c98429d221d7ad9efe2d6e694e0581e60105e34bdd67fa4b6abc180fb`
+- Created: `2017-10-09T23:19:55.924448425Z`
+- Virtual Size: ~ 177.29 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["httpd-foreground"]`
@@ -1445,11 +1445,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libxml2/2.9.1+dfsg1-5+deb8u5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libxml2/2.9.1+dfsg1-5+deb8u5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=3.16.43-2+deb8u3`
+### `dpkg` source package: `linux=3.16.43-2+deb8u5`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.16.43-2+deb8u3`
+- `linux-libc-dev:amd64=3.16.43-2+deb8u5`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1457,13 +1457,20 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris linux=3.16.43-2+deb8u5
+'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.43-2+deb8u5.dsc' linux_3.16.43-2+deb8u5.dsc 140609 SHA256:1fe7cec4b46c3dd6ada1c7561789f5ba3bd8f382aae7fbafe5406c095c7bc567
+'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.43.orig.tar.xz' linux_3.16.43.orig.tar.xz 81815520 SHA256:77fc86010339c04736799d4f2e19adc1623c440583e7eae09e4b76b63c4edd8f
+'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.43-2+deb8u5.debian.tar.xz' linux_3.16.43-2+deb8u5.debian.tar.xz 3261164 SHA256:3b9c0ee0e7cad179d1838d54937d93a19ee09d2e4f121cfae6c480570c800748
+```
 
-- http://snapshot.debian.org/package/linux/3.16.43-2+deb8u3/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/linux/3.16.43-2+deb8u5/ (for browsing the source)
+- https://sources.debian.net/src/linux/3.16.43-2+deb8u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/3.16.43-2+deb8u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lksctp-tools=1.0.16+dfsg-2`
 
