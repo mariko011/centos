@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4d3073231decbdcd02187c1d6c6222b0a3af2c4b070bca8f193b01e7a092dc5d`
-- Created: `2017-09-13T23:52:19.837495441Z`
+- Image ID: `sha256:c96a2d42c69652f357a4744422b00444c8fc713cb83b059e5787607d5ba5507f`
+- Created: `2017-10-10T04:15:56.764851696Z`
 - Virtual Size: ~ 1.26 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -589,11 +589,11 @@ $ apt-get source -qq --print-uris bzip2=1.0.6-5
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.6-5.debian.tar.bz2' bzip2_1.0.6-5.debian.tar.bz2 60984 SHA256:182c087bbd173bfcc2b0f4210c790a03f3d49876f6250213332832319b7b5758
 ```
 
-### `dpkg` source package: `ca-certificates=20160104ubuntu0.14.04.1`
+### `dpkg` source package: `ca-certificates=20170717~14.04.1`
 
 Binary Packages:
 
-- `ca-certificates=20160104ubuntu0.14.04.1`
+- `ca-certificates=20170717~14.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -601,9 +601,13 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 - `GPL-2+`
 - `MPL-2.0`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris ca-certificates=20170717~14.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20170717~14.04.1.dsc' ca-certificates_20170717~14.04.1.dsc 1862 SHA256:7216d0b4f25af1b13e5fb81ac61efa72f200cff15ae68e97dd0b9f7f76dec4cc
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20170717~14.04.1.tar.gz' ca-certificates_20170717~14.04.1.tar.gz 369186 SHA256:423a82170776597fb6e37e0207e9fc095a70d30dddb8e817692286c744599f97
+```
 
 ### `dpkg` source package: `cairo=1.13.0~20140204-0ubuntu1.1`
 
@@ -825,14 +829,9 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `ISC`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.35.0-1ubuntu2.10
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0-1ubuntu2.10.dsc' curl_7.35.0-1ubuntu2.10.dsc 2741 SHA256:2fb4cdd91ed6bd0e262c16d1e6e32a33a6f9d4003834ef3e9b010ed2e24afc06
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0.orig.tar.gz' curl_7.35.0.orig.tar.gz 3544496 SHA256:917d118fc5d61e9dd1538d6519bd93bbebf2e866882419781c2e0fdb2bc42121
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0-1ubuntu2.10.debian.tar.gz' curl_7.35.0-1ubuntu2.10.debian.tar.gz 59782 SHA256:72a2c03db7f4eac287a70a8063d3031620e9cf9d86f0e357dd78ba755e926c18
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.25.dfsg1-17build1`
 
@@ -1503,23 +1502,28 @@ $ apt-get source -qq --print-uris gdbm=1.8.3-12build1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdbm/gdbm_1.8.3-12build1.debian.tar.bz2' gdbm_1.8.3-12build1.debian.tar.bz2 15091 SHA256:5e511c9a6419501dd31e21af84431f41f8785e0f48d6475ebfc48fa49f20fdba
 ```
 
-### `dpkg` source package: `gdk-pixbuf=2.30.7-0ubuntu1.6`
+### `dpkg` source package: `gdk-pixbuf=2.30.7-0ubuntu1.7`
 
 Binary Packages:
 
-- `gir1.2-gdkpixbuf-2.0=2.30.7-0ubuntu1.6`
-- `libgdk-pixbuf2.0-0:amd64=2.30.7-0ubuntu1.6`
-- `libgdk-pixbuf2.0-common=2.30.7-0ubuntu1.6`
-- `libgdk-pixbuf2.0-dev=2.30.7-0ubuntu1.6`
+- `gir1.2-gdkpixbuf-2.0=2.30.7-0ubuntu1.7`
+- `libgdk-pixbuf2.0-0:amd64=2.30.7-0ubuntu1.7`
+- `libgdk-pixbuf2.0-common=2.30.7-0ubuntu1.7`
+- `libgdk-pixbuf2.0-dev=2.30.7-0ubuntu1.7`
 
 Licenses: (parsed from: `/usr/share/doc/gir1.2-gdkpixbuf-2.0/copyright`, `/usr/share/doc/libgdk-pixbuf2.0-0/copyright`, `/usr/share/doc/libgdk-pixbuf2.0-common/copyright`, `/usr/share/doc/libgdk-pixbuf2.0-dev/copyright`)
 
 - `GPL-2`
 - `LGPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris gdk-pixbuf=2.30.7-0ubuntu1.7
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.30.7-0ubuntu1.7.dsc' gdk-pixbuf_2.30.7-0ubuntu1.7.dsc 2887 SHA256:700ffa19dd9f232ad42790dd9548f6fcafa24c8fb3299145141ce5074e5e9d7a
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.30.7.orig.tar.xz' gdk-pixbuf_2.30.7.orig.tar.xz 1329096 SHA256:0aafc365eab1083a53f15e4828333b968219ffcb1a995ac6289c0147c9ffad06
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.30.7-0ubuntu1.7.debian.tar.gz' gdk-pixbuf_2.30.7-0ubuntu1.7.debian.tar.gz 24062 SHA256:b77950266789fedc80b3cc9c6d5e4a470f989647831a8fbd3f205a90013d0d5b
+```
 
 ### `dpkg` source package: `geos=3.4.2-4ubuntu1`
 
@@ -2124,13 +2128,9 @@ Licenses: (parsed from: `/usr/share/doc/initramfs-tools/copyright`, `/usr/share/
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris initramfs-tools=0.103ubuntu4.7
-'http://archive.ubuntu.com/ubuntu/pool/main/i/initramfs-tools/initramfs-tools_0.103ubuntu4.7.dsc' initramfs-tools_0.103ubuntu4.7.dsc 1897 SHA256:cf30787e4805334b28b15d6e25cde0559d27c08774c67ee91454136086888314
-'http://archive.ubuntu.com/ubuntu/pool/main/i/initramfs-tools/initramfs-tools_0.103ubuntu4.7.tar.xz' initramfs-tools_0.103ubuntu4.7.tar.xz 94356 SHA256:efb638f3c6e27b3d9c0ccdf0401a73941209db6719ad2a26497d384aacda51d8
-```
 
 ### `dpkg` source package: `insserv=1.14.0-5ubuntu2`
 
@@ -3054,12 +3054,12 @@ $ apt-get source -qq --print-uris libice=2:1.0.8-2
 'http://archive.ubuntu.com/ubuntu/pool/main/libi/libice/libice_1.0.8-2.diff.gz' libice_1.0.8-2.diff.gz 15480 SHA256:1c0d0174a668ced313c2478d733318ba0769892bbf12def235e2261277916a8a
 ```
 
-### `dpkg` source package: `libidn=1.28-1ubuntu2.1`
+### `dpkg` source package: `libidn=1.28-1ubuntu2.2`
 
 Binary Packages:
 
-- `libidn11:amd64=1.28-1ubuntu2.1`
-- `libidn11-dev=1.28-1ubuntu2.1`
+- `libidn11:amd64=1.28-1ubuntu2.2`
+- `libidn11-dev=1.28-1ubuntu2.2`
 
 Licenses: (parsed from: `/usr/share/doc/libidn11/copyright`, `/usr/share/doc/libidn11-dev/copyright`)
 
@@ -3075,9 +3075,14 @@ Licenses: (parsed from: `/usr/share/doc/libidn11/copyright`, `/usr/share/doc/lib
 - `LGPL-3`
 - `LGPL-3+ | GPL-2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libidn=1.28-1ubuntu2.2
+'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn/libidn_1.28-1ubuntu2.2.dsc' libidn_1.28-1ubuntu2.2.dsc 2264 SHA256:352e6d646209d73450263b5d28eaa285340a5ef979924720b3ce8f467b2e1992
+'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn/libidn_1.28.orig.tar.gz' libidn_1.28.orig.tar.gz 3476317 SHA256:dd357a968449abc97c7e5fa088a4a384de57cb36564f9d4e0d898ecc6373abfb
+'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn/libidn_1.28-1ubuntu2.2.debian.tar.gz' libidn_1.28-1ubuntu2.2.debian.tar.gz 48795 SHA256:856416d57414dd7737049073e01a0d0b9d0297fde9139f2edf234427d943638e
+```
 
 ### `dpkg` source package: `libjpeg-turbo=1.3.0-0ubuntu2`
 
@@ -4209,21 +4214,26 @@ $ apt-get source -qq --print-uris libxinerama=2:1.1.3-1
 'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxinerama/libxinerama_1.1.3-1.diff.gz' libxinerama_1.1.3-1.diff.gz 15738 SHA256:2b1487e3511ddabfec666a62f6e5e8ac4f97536b0d53c51f7bf4cbe07508a130
 ```
 
-### `dpkg` source package: `libxml2=2.9.1+dfsg1-3ubuntu4.9`
+### `dpkg` source package: `libxml2=2.9.1+dfsg1-3ubuntu4.10`
 
 Binary Packages:
 
-- `libxml2:amd64=2.9.1+dfsg1-3ubuntu4.9`
-- `libxml2-dev:amd64=2.9.1+dfsg1-3ubuntu4.9`
-- `libxml2-utils=2.9.1+dfsg1-3ubuntu4.9`
+- `libxml2:amd64=2.9.1+dfsg1-3ubuntu4.10`
+- `libxml2-dev:amd64=2.9.1+dfsg1-3ubuntu4.10`
+- `libxml2-utils=2.9.1+dfsg1-3ubuntu4.10`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libxml2=2.9.1+dfsg1-3ubuntu4.10
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.1+dfsg1-3ubuntu4.10.dsc' libxml2_2.9.1+dfsg1-3ubuntu4.10.dsc 2717 SHA256:55854e06361d4cdd263aaf22ba784d75cca8cd7ab51468a33b646abc69f8cd04
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.1+dfsg1.orig.tar.gz' libxml2_2.9.1+dfsg1.orig.tar.gz 3793894 SHA256:f3ec5256412192f74833286c4490672500b232ed1c9195214db2c641df064a28
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.1+dfsg1-3ubuntu4.10.debian.tar.gz' libxml2_2.9.1+dfsg1-3ubuntu4.10.debian.tar.gz 80309 SHA256:a48de235efe2f764c488ecddd5f1d73f1bc60fbf900518dc278e6edabcd1874c
+```
 
 ### `dpkg` source package: `libxmu=2:1.1.1-1`
 
@@ -4404,11 +4414,11 @@ $ apt-get source -qq --print-uris libxxf86vm=1:1.1.3-1
 'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxxf86vm/libxxf86vm_1.1.3-1.diff.gz' libxxf86vm_1.1.3-1.diff.gz 5115 SHA256:5b51cc770666430c2c40e9a58395c72d7591f81bc5e7fd494397bbaf794b38e2
 ```
 
-### `dpkg` source package: `linux=3.13.0-129.178`
+### `dpkg` source package: `linux=3.13.0-132.181`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.13.0-129.178`
+- `linux-libc-dev:amd64=3.13.0-132.181`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -5578,11 +5588,11 @@ $ apt-get source -qq --print-uris popt=1.16-8ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/popt/popt_1.16-8ubuntu1.debian.tar.gz' popt_1.16-8ubuntu1.debian.tar.gz 15563 SHA256:f56a14f2dd571a3f14f0d340d54e502b50ae5fcae3f9303b93d9cc0f20c8cf29
 ```
 
-### `dpkg` source package: `postgresql-9.3=9.3.18-0ubuntu0.14.04.1`
+### `dpkg` source package: `postgresql-9.3=9.3.19-0ubuntu0.14.04`
 
 Binary Packages:
 
-- `libpq5=9.3.18-0ubuntu0.14.04.1`
+- `libpq5=9.3.19-0ubuntu0.14.04`
 
 Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 
@@ -5594,10 +5604,10 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris postgresql-9.3=9.3.18-0ubuntu0.14.04.1
-'http://security.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.18-0ubuntu0.14.04.1.dsc' postgresql-9.3_9.3.18-0ubuntu0.14.04.1.dsc 3463 SHA256:91500b2c4f89a0884c1edf59edcd7f3bb3610b3d4bc96470f33e146c7f27b2a9
-'http://security.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.18.orig.tar.bz2' postgresql-9.3_9.3.18.orig.tar.bz2 17194269 SHA256:ad60d12a5a3dd0f6f5904c41b87e43eff49d3f74e45129fe52c5744366ff2fe0
-'http://security.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.18-0ubuntu0.14.04.1.debian.tar.gz' postgresql-9.3_9.3.18-0ubuntu0.14.04.1.debian.tar.gz 33642 SHA256:2786ae82db55203adae022dee359cd8e50c2c5ba6b46421d39cd5fa73b3c6811
+$ apt-get source -qq --print-uris postgresql-9.3=9.3.19-0ubuntu0.14.04
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.19-0ubuntu0.14.04.dsc' postgresql-9.3_9.3.19-0ubuntu0.14.04.dsc 3595 SHA256:b55c927d79067964642e3f049c4b9f7554e0573f6bd5a491fe00faf25ab6898c
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.19.orig.tar.bz2' postgresql-9.3_9.3.19.orig.tar.bz2 17190203 SHA256:fb9e872cd9e927ba331690d86bc63dcb5a596acb7a536fa0518a3c7d43ac2fb5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.19-0ubuntu0.14.04.debian.tar.xz' postgresql-9.3_9.3.19-0ubuntu0.14.04.debian.tar.xz 29520 SHA256:48a64bf817b60d65720fd377e261a6a9c03ed360ffdfed96d94ce94da6fc80d0
 ```
 
 ### `dpkg` source package: `procps=1:3.3.9-1ubuntu2.2`
