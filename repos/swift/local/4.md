@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a8d29543c87b2f8f19f156ff9399dea7b02f47fea005440b368a2c0eda933703`
-- Created: `2017-10-03T21:25:31.387846863Z`
+- Image ID: `sha256:83baa74da88ea5d71d360c6e93eaad06e58ec94b9d224c4a4334ddc988a07a2f`
+- Created: `2017-10-10T21:22:36.943839669Z`
 - Virtual Size: ~ 1.33 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -234,11 +234,11 @@ $ apt-get source -qq --print-uris binfmt-support=2.1.6-1
 'http://archive.ubuntu.com/ubuntu/pool/main/b/binfmt-support/binfmt-support_2.1.6-1.debian.tar.xz' binfmt-support_2.1.6-1.debian.tar.xz 202852 SHA256:17a00cfc0e2b4c71890d4aae6d4e67f606ad1531d78afd6ff6cbd54970d14718
 ```
 
-### `dpkg` source package: `binutils=2.26.1-1ubuntu1~16.04.4`
+### `dpkg` source package: `binutils=2.26.1-1ubuntu1~16.04.5`
 
 Binary Packages:
 
-- `binutils=2.26.1-1ubuntu1~16.04.4`
+- `binutils=2.26.1-1ubuntu1~16.04.5`
 
 Licenses: (parsed from: `/usr/share/doc/binutils/copyright`)
 
@@ -249,10 +249,10 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris binutils=2.26.1-1ubuntu1~16.04.4
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.26.1-1ubuntu1~16.04.4.dsc' binutils_2.26.1-1ubuntu1~16.04.4.dsc 4028 SHA256:be3feab51074bcbd032425dc9e54cee17da022fd70961f3fa9d44ebdab56a81d
+$ apt-get source -qq --print-uris binutils=2.26.1-1ubuntu1~16.04.5
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.26.1-1ubuntu1~16.04.5.dsc' binutils_2.26.1-1ubuntu1~16.04.5.dsc 4028 SHA256:1f43939e7dd381e1aee241266a194c113fd8f734262019fe60aa99fe0f747ce0
 'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.26.1.orig.tar.gz' binutils_2.26.1.orig.tar.gz 34868933 SHA256:dd9c3e37c266e4fefba68e444e2a00538b3c902dd31bf4912d90dca6d830a2a1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.26.1-1ubuntu1~16.04.4.diff.gz' binutils_2.26.1-1ubuntu1~16.04.4.diff.gz 233084 SHA256:bf53a639bf8603ad4b48d50933e14b5a01c7f48ba0e5876dbfacbc562dd6d217
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.26.1-1ubuntu1~16.04.5.diff.gz' binutils_2.26.1-1ubuntu1~16.04.5.diff.gz 236262 SHA256:d74aa8a848d0a1e472f0d71fb82eee812e6e41c3d8bb95813fc7d442e6dde13c
 ```
 
 ### `dpkg` source package: `build-essential=12.1ubuntu2`
@@ -370,14 +370,14 @@ $ apt-get source -qq --print-uris cryptsetup=2:1.6.6-5ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cryptsetup/cryptsetup_1.6.6-5ubuntu2.1.debian.tar.xz' cryptsetup_1.6.6-5ubuntu2.1.debian.tar.xz 91808 SHA256:0979ff24a2c4ecc5471a017b286cd7a4ccc497e72854b02aadc21465dcce96e4
 ```
 
-### `dpkg` source package: `curl=7.47.0-1ubuntu2.2`
+### `dpkg` source package: `curl=7.47.0-1ubuntu2.3`
 
 Binary Packages:
 
-- `curl=7.47.0-1ubuntu2.2`
-- `libcurl3:amd64=7.47.0-1ubuntu2.2`
-- `libcurl3-gnutls:amd64=7.47.0-1ubuntu2.2`
-- `libcurl4-openssl-dev:amd64=7.47.0-1ubuntu2.2`
+- `curl=7.47.0-1ubuntu2.3`
+- `libcurl3:amd64=7.47.0-1ubuntu2.3`
+- `libcurl3-gnutls:amd64=7.47.0-1ubuntu2.3`
+- `libcurl4-openssl-dev:amd64=7.47.0-1ubuntu2.3`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
 
@@ -391,10 +391,10 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 Source:
 
 ```console
-$ apt-get source -qq --print-uris curl=7.47.0-1ubuntu2.2
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0-1ubuntu2.2.dsc' curl_7.47.0-1ubuntu2.2.dsc 2715 SHA256:d386b77cfb463ae8cf3c3f12b5dc29ec53deb51c4c403bb6feb330af9a64804d
+$ apt-get source -qq --print-uris curl=7.47.0-1ubuntu2.3
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0-1ubuntu2.3.dsc' curl_7.47.0-1ubuntu2.3.dsc 2715 SHA256:30055c97489a45235e82bf7e5312d84e9189fa2d5c8967b4587f8567e19f0c5b
 'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0.orig.tar.gz' curl_7.47.0.orig.tar.gz 4563163 SHA256:df01bd42af361978d9de7de8529718bcafe01897a544a7650139a1954c55bdfe
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0-1ubuntu2.2.debian.tar.xz' curl_7.47.0-1ubuntu2.2.debian.tar.xz 38164 SHA256:4a0154bfec096266dba8bfc9c27fa0772b35e427defc019b0758c3ac6a8d0e0c
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0-1ubuntu2.3.debian.tar.xz' curl_7.47.0-1ubuntu2.3.debian.tar.xz 42956 SHA256:2453d3d900981a3cd4ccb3b5e6e7e557cd01c421ecea931f8cfd93f9036822f3
 ```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-14build1`
@@ -648,30 +648,30 @@ $ apt-get source -qq --print-uris findutils=4.6.0+git+20160126-2
 'http://archive.ubuntu.com/ubuntu/pool/main/f/findutils/findutils_4.6.0+git+20160126-2.debian.tar.xz' findutils_4.6.0+git+20160126-2.debian.tar.xz 25080 SHA256:58bf1e7a07fbac6a68693b099ec6fc9a6166e0b1b60cebe6bac3b90287a8dc3f
 ```
 
-### `dpkg` source package: `gcc-5=5.4.0-6ubuntu1~16.04.4`
+### `dpkg` source package: `gcc-5=5.4.0-6ubuntu1~16.04.5`
 
 Binary Packages:
 
-- `cpp-5=5.4.0-6ubuntu1~16.04.4`
-- `g++-5=5.4.0-6ubuntu1~16.04.4`
-- `gcc-5=5.4.0-6ubuntu1~16.04.4`
-- `gcc-5-base:amd64=5.4.0-6ubuntu1~16.04.4`
-- `libasan2:amd64=5.4.0-6ubuntu1~16.04.4`
-- `libatomic1:amd64=5.4.0-6ubuntu1~16.04.4`
-- `libcc1-0:amd64=5.4.0-6ubuntu1~16.04.4`
-- `libcilkrts5:amd64=5.4.0-6ubuntu1~16.04.4`
-- `libgcc-5-dev:amd64=5.4.0-6ubuntu1~16.04.4`
-- `libgomp1:amd64=5.4.0-6ubuntu1~16.04.4`
-- `libitm1:amd64=5.4.0-6ubuntu1~16.04.4`
-- `liblsan0:amd64=5.4.0-6ubuntu1~16.04.4`
-- `libmpx0:amd64=5.4.0-6ubuntu1~16.04.4`
-- `libobjc-5-dev:amd64=5.4.0-6ubuntu1~16.04.4`
-- `libobjc4:amd64=5.4.0-6ubuntu1~16.04.4`
-- `libquadmath0:amd64=5.4.0-6ubuntu1~16.04.4`
-- `libstdc++-5-dev:amd64=5.4.0-6ubuntu1~16.04.4`
-- `libstdc++6:amd64=5.4.0-6ubuntu1~16.04.4`
-- `libtsan0:amd64=5.4.0-6ubuntu1~16.04.4`
-- `libubsan0:amd64=5.4.0-6ubuntu1~16.04.4`
+- `cpp-5=5.4.0-6ubuntu1~16.04.5`
+- `g++-5=5.4.0-6ubuntu1~16.04.5`
+- `gcc-5=5.4.0-6ubuntu1~16.04.5`
+- `gcc-5-base:amd64=5.4.0-6ubuntu1~16.04.5`
+- `libasan2:amd64=5.4.0-6ubuntu1~16.04.5`
+- `libatomic1:amd64=5.4.0-6ubuntu1~16.04.5`
+- `libcc1-0:amd64=5.4.0-6ubuntu1~16.04.5`
+- `libcilkrts5:amd64=5.4.0-6ubuntu1~16.04.5`
+- `libgcc-5-dev:amd64=5.4.0-6ubuntu1~16.04.5`
+- `libgomp1:amd64=5.4.0-6ubuntu1~16.04.5`
+- `libitm1:amd64=5.4.0-6ubuntu1~16.04.5`
+- `liblsan0:amd64=5.4.0-6ubuntu1~16.04.5`
+- `libmpx0:amd64=5.4.0-6ubuntu1~16.04.5`
+- `libobjc-5-dev:amd64=5.4.0-6ubuntu1~16.04.5`
+- `libobjc4:amd64=5.4.0-6ubuntu1~16.04.5`
+- `libquadmath0:amd64=5.4.0-6ubuntu1~16.04.5`
+- `libstdc++-5-dev:amd64=5.4.0-6ubuntu1~16.04.5`
+- `libstdc++6:amd64=5.4.0-6ubuntu1~16.04.5`
+- `libtsan0:amd64=5.4.0-6ubuntu1~16.04.5`
+- `libubsan0:amd64=5.4.0-6ubuntu1~16.04.5`
 
 Licenses: (parsed from: `/usr/share/doc/cpp-5/copyright`, `/usr/share/doc/g++-5/copyright`, `/usr/share/doc/gcc-5/copyright`, `/usr/share/doc/gcc-5-base/copyright`, `/usr/share/doc/libasan2/copyright`, `/usr/share/doc/libatomic1/copyright`, `/usr/share/doc/libcc1-0/copyright`, `/usr/share/doc/libcilkrts5/copyright`, `/usr/share/doc/libgcc-5-dev/copyright`, `/usr/share/doc/libgomp1/copyright`, `/usr/share/doc/libitm1/copyright`, `/usr/share/doc/liblsan0/copyright`, `/usr/share/doc/libmpx0/copyright`, `/usr/share/doc/libobjc-5-dev/copyright`, `/usr/share/doc/libobjc4/copyright`, `/usr/share/doc/libquadmath0/copyright`, `/usr/share/doc/libstdc++-5-dev/copyright`, `/usr/share/doc/libstdc++6/copyright`, `/usr/share/doc/libtsan0/copyright`, `/usr/share/doc/libubsan0/copyright`)
 
@@ -684,10 +684,10 @@ Licenses: (parsed from: `/usr/share/doc/cpp-5/copyright`, `/usr/share/doc/g++-5/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gcc-5=5.4.0-6ubuntu1~16.04.4
-'http://security.ubuntu.com/ubuntu/pool/main/g/gcc-5/gcc-5_5.4.0-6ubuntu1~16.04.4.dsc' gcc-5_5.4.0-6ubuntu1~16.04.4.dsc 28631 SHA256:aa1bf24191d929638953b9420d6c90df7f3dbd82d0bb2e27f02b9bd598c489c5
-'http://security.ubuntu.com/ubuntu/pool/main/g/gcc-5/gcc-5_5.4.0.orig.tar.gz' gcc-5_5.4.0.orig.tar.gz 73530162 SHA256:00f73e8382aa8653aa501ce2263597c2c4429912bfa18102f47cc362f00ed88d
-'http://security.ubuntu.com/ubuntu/pool/main/g/gcc-5/gcc-5_5.4.0-6ubuntu1~16.04.4.diff.gz' gcc-5_5.4.0-6ubuntu1~16.04.4.diff.gz 1451941 SHA256:87c63d2da53e46bf05bef082b015ac14ffcb46467e2fdfd87a4891d742d4697d
+$ apt-get source -qq --print-uris gcc-5=5.4.0-6ubuntu1~16.04.5
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-5/gcc-5_5.4.0-6ubuntu1~16.04.5.dsc' gcc-5_5.4.0-6ubuntu1~16.04.5.dsc 28625 SHA256:1403c6a2abf7a100b453ff9511a53d9e00dbbc03955bcf389f9302255344240e
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-5/gcc-5_5.4.0.orig.tar.gz' gcc-5_5.4.0.orig.tar.gz 73530162 SHA256:00f73e8382aa8653aa501ce2263597c2c4429912bfa18102f47cc362f00ed88d
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-5/gcc-5_5.4.0-6ubuntu1~16.04.5.diff.gz' gcc-5_5.4.0-6ubuntu1~16.04.5.diff.gz 1457564 SHA256:4af88f26fbcd0302fc163ebb6f914240472587d8bd65ae1d3f2b34ed55cc6644
 ```
 
 ### `dpkg` source package: `gcc-defaults=1.150ubuntu1`
@@ -753,12 +753,12 @@ $ apt-get source -qq --print-uris gdbm=1.8.3-13.1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdbm/gdbm_1.8.3-13.1.debian.tar.xz' gdbm_1.8.3-13.1.debian.tar.xz 14748 SHA256:251401e1f5210226f384e936b1b7ea1df40119a918d9f3dbf48b2e51d4df8983
 ```
 
-### `dpkg` source package: `git=1:2.7.4-0ubuntu1.2`
+### `dpkg` source package: `git=1:2.7.4-0ubuntu1.3`
 
 Binary Packages:
 
-- `git=1:2.7.4-0ubuntu1.2`
-- `git-man=1:2.7.4-0ubuntu1.2`
+- `git=1:2.7.4-0ubuntu1.3`
+- `git-man=1:2.7.4-0ubuntu1.3`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -781,9 +781,14 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris git=1:2.7.4-0ubuntu1.3
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.7.4-0ubuntu1.3.dsc' git_2.7.4-0ubuntu1.3.dsc 2883 SHA256:5eb38a0856e2e059e4444958367f2428f2737895aa887e751ca94b4792b701da
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.7.4.orig.tar.xz' git_2.7.4.orig.tar.xz 3909636 SHA256:dee574defbe05ec7356a0842ddbda51315926f2fa7e39c2539f2c3dcc52e457b
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.7.4-0ubuntu1.3.debian.tar.xz' git_2.7.4-0ubuntu1.3.debian.tar.xz 510072 SHA256:52c820eae29877651bfb540852c005030a533c4fd5810d7e99e269e1fb500973
+```
 
 ### `dpkg` source package: `glib2.0=2.48.2-0ubuntu1`
 
@@ -1841,11 +1846,11 @@ $ apt-get source -qq --print-uris linux-atm=1:2.5.1-1.5
 'http://archive.ubuntu.com/ubuntu/pool/main/l/linux-atm/linux-atm_2.5.1-1.5.debian.tar.gz' linux-atm_2.5.1-1.5.debian.tar.gz 10723 SHA256:9b2325859b3fd008b588a3897e713f52137abae08d1f5a44f5661f45a87f4d29
 ```
 
-### `dpkg` source package: `linux=4.4.0-96.119`
+### `dpkg` source package: `linux=4.4.0-97.120`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.4.0-96.119`
+- `linux-libc-dev:amd64=4.4.0-97.120`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1855,10 +1860,10 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=4.4.0-96.119
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-96.119.dsc' linux_4.4.0-96.119.dsc 9617 SHA256:beea331cb76576f30fccc2254a340a33a166246dd8f3962c9b9aacd6b07c7135
+$ apt-get source -qq --print-uris linux=4.4.0-97.120
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-97.120.dsc' linux_4.4.0-97.120.dsc 9290 SHA256:d8d97533064b742f094029c6d1b5abd113556cac17051b957053c6de0cb7cf98
 'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-96.119.diff.gz' linux_4.4.0-96.119.diff.gz 13602301 SHA256:fb6eafe7811ff26621c96f89d9df63f4127efcb01387e8d7b366798175d27143
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-97.120.diff.gz' linux_4.4.0-97.120.diff.gz 13634106 SHA256:67ee211d2797504a5b374b5319cfa515c6f2d4eebe1b4a8a7017013570ce7dd8
 ```
 
 ### `dpkg` source package: `llvm-toolchain-3.8=1:3.8-2ubuntu4`
