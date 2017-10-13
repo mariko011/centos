@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:54793fc93d35f93e61c08cc73c5aa20e4b2983856ffdd766015298028b198167`
-- Created: `2017-09-18T23:53:25.389784933Z`
-- Virtual Size: ~ 1.14 Gb  
+- Image ID: `sha256:b2ff9794613782d6132b6a09b7556eaf91c6e6001c826b81e124805d5534e1f0`
+- Created: `2017-10-10T21:28:46.923306759Z`
+- Virtual Size: ~ 741.72 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -51,11 +51,11 @@ $ apt-get source -qq --print-uris adduser=3.113+nmu3ubuntu5
 'http://archive.ubuntu.com/ubuntu/pool/main/a/adduser/adduser_3.113+nmu3ubuntu5.tar.gz' adduser_3.113+nmu3ubuntu5.tar.gz 362722 SHA256:03221563714d853cda454deabbd6eb87c41fbc87509e929828f8b670560f129f
 ```
 
-### `dpkg` source package: `adwaita-icon-theme=3.26.0-0ubuntu1`
+### `dpkg` source package: `adwaita-icon-theme=3.26.0-0ubuntu2`
 
 Binary Packages:
 
-- `adwaita-icon-theme=3.26.0-0ubuntu1`
+- `adwaita-icon-theme=3.26.0-0ubuntu2`
 
 Licenses: (parsed from: `/usr/share/doc/adwaita-icon-theme/copyright`)
 
@@ -71,9 +71,14 @@ Licenses: (parsed from: `/usr/share/doc/adwaita-icon-theme/copyright`)
 - `GPL-unspecified`
 - `LGPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris adwaita-icon-theme=3.26.0-0ubuntu2
+'http://archive.ubuntu.com/ubuntu/pool/main/a/adwaita-icon-theme/adwaita-icon-theme_3.26.0-0ubuntu2.dsc' adwaita-icon-theme_3.26.0-0ubuntu2.dsc 1794 SHA256:4d1a56c3635eb8a168006f843fdc463ea7bb8defa4827430697b6064cef3e017
+'http://archive.ubuntu.com/ubuntu/pool/main/a/adwaita-icon-theme/adwaita-icon-theme_3.26.0.orig.tar.xz' adwaita-icon-theme_3.26.0.orig.tar.xz 20755152 SHA256:9cad85de19313f5885497aceab0acbb3f08c60fcd5fa5610aeafff37a1d12212
+'http://archive.ubuntu.com/ubuntu/pool/main/a/adwaita-icon-theme/adwaita-icon-theme_3.26.0-0ubuntu2.debian.tar.xz' adwaita-icon-theme_3.26.0-0ubuntu2.debian.tar.xz 30388 SHA256:53baee17faec1e344e8e87384ef463d989529a55764e60a7141c0c09f3d4e17b
+```
 
 ### `dpkg` source package: `apr-util=1.6.0-2`
 
@@ -115,40 +120,45 @@ $ apt-get source -qq --print-uris apr=1.6.2-1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/apr/apr_1.6.2-1.debian.tar.xz' apr_1.6.2-1.debian.tar.xz 212900 SHA256:d1fdfd94fce25be17e6bb84ef6ef694db5b7bad4be964b39b0195c9926dd0510
 ```
 
-### `dpkg` source package: `apt=1.5~rc4`
+### `dpkg` source package: `apt=1.5`
 
 Binary Packages:
 
-- `apt=1.5~rc4`
-- `libapt-pkg5.0:amd64=1.5~rc4`
+- `apt=1.5`
+- `libapt-pkg5.0:amd64=1.5`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg5.0/copyright`)
 
 - `GPL-2`
 - `GPLv2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris apt=1.5
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.5.dsc' apt_1.5.dsc 2599 SHA256:6e4600cf5e30c4aeba4203f0c869a60be6296ef35504b39a217a18f8b0f963cf
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.5.tar.xz' apt_1.5.tar.xz 2095240 SHA256:7d9a4daf7a4ae87de7ff4b1423e951ce66fe0535944f0774c8890d8f2a23e920
+```
 
-- http://snapshot.debian.org/package/apt/1.5~rc4/
-
-
-### `dpkg` source package: `atk1.0=2.25.90-0ubuntu1`
+### `dpkg` source package: `atk1.0=2.26.0-2ubuntu1`
 
 Binary Packages:
 
-- `libatk1.0-0:amd64=2.25.90-0ubuntu1`
-- `libatk1.0-data=2.25.90-0ubuntu1`
+- `libatk1.0-0:amd64=2.26.0-2ubuntu1`
+- `libatk1.0-data=2.26.0-2ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/libatk1.0-0/copyright`, `/usr/share/doc/libatk1.0-data/copyright`)
 
 - `LGPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris atk1.0=2.26.0-2ubuntu1
+'http://archive.ubuntu.com/ubuntu/pool/main/a/atk1.0/atk1.0_2.26.0-2ubuntu1.dsc' atk1.0_2.26.0-2ubuntu1.dsc 2914 SHA256:135a0b339be38b025135c0e7062fe8f27ed14cdfedb486c346e4b370e7701f11
+'http://archive.ubuntu.com/ubuntu/pool/main/a/atk1.0/atk1.0_2.26.0.orig.tar.xz' atk1.0_2.26.0.orig.tar.xz 710436 SHA256:eafe49d5c4546cb723ec98053290d7e0b8d85b3fdb123938213acb7bb4178827
+'http://archive.ubuntu.com/ubuntu/pool/main/a/atk1.0/atk1.0_2.26.0-2ubuntu1.debian.tar.xz' atk1.0_2.26.0-2ubuntu1.debian.tar.xz 11072 SHA256:352497d2d6af78f803f76461e43c105b4e8ed12d0cf36715584752d77984a0a1
+```
 
 ### `dpkg` source package: `attr=1:2.4.47-2build1`
 
@@ -349,14 +359,14 @@ $ apt-get source -qq --print-uris bash=4.4-5ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_4.4-5ubuntu1.debian.tar.xz' bash_4.4-5ubuntu1.debian.tar.xz 71084 SHA256:b902f0c2168e16d54f004e0f903933a08b8471cd3a12ad7556bafc6156484ec1
 ```
 
-### `dpkg` source package: `binutils=2.29-10ubuntu1`
+### `dpkg` source package: `binutils=2.29.1-4ubuntu1`
 
 Binary Packages:
 
-- `binutils=2.29-10ubuntu1`
-- `binutils-common:amd64=2.29-10ubuntu1`
-- `binutils-x86-64-linux-gnu=2.29-10ubuntu1`
-- `libbinutils:amd64=2.29-10ubuntu1`
+- `binutils=2.29.1-4ubuntu1`
+- `binutils-common:amd64=2.29.1-4ubuntu1`
+- `binutils-x86-64-linux-gnu=2.29.1-4ubuntu1`
+- `libbinutils:amd64=2.29.1-4ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/binutils-common/copyright`, `/usr/share/doc/binutils-x86-64-linux-gnu/copyright`, `/usr/share/doc/libbinutils/copyright`)
 
@@ -364,9 +374,14 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris binutils=2.29.1-4ubuntu1
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.29.1-4ubuntu1.dsc' binutils_2.29.1-4ubuntu1.dsc 6238 SHA256:52680d4bce0029609a40ca2a2c5b24002c2340dcb827f4a26373bb40ffa49f8d
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.29.1.orig.tar.xz' binutils_2.29.1.orig.tar.xz 20053224 SHA256:f87b21bb0b0fe91b5a5b2f801ea462917f4e68251b78ce6599f28e5edae33a8e
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.29.1-4ubuntu1.debian.tar.xz' binutils_2.29.1-4ubuntu1.debian.tar.xz 180312 SHA256:df93ed94b5f02071455da606a9e82472e60e0e31167612cdb8aa6c41fed0b049
+```
 
 ### `dpkg` source package: `bzip2=1.0.6-8.1`
 
@@ -430,26 +445,27 @@ $ apt-get source -qq --print-uris ca-certificates=20170717
 'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20170717.tar.xz' ca-certificates_20170717.tar.xz 293028 SHA256:e487639b641fa75445174734dd6e9d600373e3248b3d86a7e3c6d0f6977decd2
 ```
 
-### `dpkg` source package: `cairo=1.14.10-1`
+### `dpkg` source package: `cairo=1.14.10-1ubuntu1`
 
 Binary Packages:
 
-- `libcairo-gobject2:amd64=1.14.10-1`
-- `libcairo-script-interpreter2:amd64=1.14.10-1`
-- `libcairo2:amd64=1.14.10-1`
-- `libcairo2-dev=1.14.10-1`
+- `libcairo-gobject2:amd64=1.14.10-1ubuntu1`
+- `libcairo-script-interpreter2:amd64=1.14.10-1ubuntu1`
+- `libcairo2:amd64=1.14.10-1ubuntu1`
+- `libcairo2-dev=1.14.10-1ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/libcairo-gobject2/copyright`, `/usr/share/doc/libcairo-script-interpreter2/copyright`, `/usr/share/doc/libcairo2/copyright`, `/usr/share/doc/libcairo2-dev/copyright`)
 
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/cairo/1.14.10-1/
-
+```console
+$ apt-get source -qq --print-uris cairo=1.14.10-1ubuntu1
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cairo/cairo_1.14.10-1ubuntu1.dsc' cairo_1.14.10-1ubuntu1.dsc 2349 SHA256:9bb60dc6f21cf3957e255bdbd92238096c6dcc465e1bddd10751b3584374ca20
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cairo/cairo_1.14.10.orig.tar.xz' cairo_1.14.10.orig.tar.xz 36251788 SHA256:7e87878658f2c9951a14fc64114d4958c0e65ac47530b8ac3078b2ce41b66a09
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cairo/cairo_1.14.10-1ubuntu1.debian.tar.xz' cairo_1.14.10-1ubuntu1.debian.tar.xz 29556 SHA256:13cdfd67d9e76f78187f1b91338fef6258a0788af191e340282acbd836e067a4
+```
 
 ### `dpkg` source package: `cdebconf=0.213ubuntu1`
 
@@ -502,11 +518,11 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `cups=2.2.4-7`
+### `dpkg` source package: `cups=2.2.4-7ubuntu2`
 
 Binary Packages:
 
-- `libcups2:amd64=2.2.4-7`
+- `libcups2:amd64=2.2.4-7ubuntu2`
 
 Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 
@@ -520,20 +536,20 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris cups=2.2.4-7
+$ apt-get source -qq --print-uris cups=2.2.4-7ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.2.4-7ubuntu2.dsc' cups_2.2.4-7ubuntu2.dsc 2688 SHA256:c47b45e2e484cdd335e26af457e70f59c5e9ba7de4228782d4f4ed15253f41e3
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.2.4.orig.tar.gz' cups_2.2.4.orig.tar.gz 9984475 SHA256:596d4db72651c335469ae5f37b0da72ac9f97d73e30838d787065f559dea98cc
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.2.4-7ubuntu2.debian.tar.xz' cups_2.2.4-7ubuntu2.debian.tar.xz 356980 SHA256:a8615926687505a9bdd68f30fc71dd5fac59d462a75e1a7387cd650c47fd5e92
 ```
 
-### `dpkg` source package: `curl=7.55.0-1ubuntu2`
+### `dpkg` source package: `curl=7.55.1-1ubuntu2`
 
 Binary Packages:
 
-- `curl=7.55.0-1ubuntu2`
-- `libcurl3:amd64=7.55.0-1ubuntu2`
-- `libcurl3-gnutls:amd64=7.55.0-1ubuntu2`
-- `libcurl4-openssl-dev:amd64=7.55.0-1ubuntu2`
+- `curl=7.55.1-1ubuntu2`
+- `libcurl3:amd64=7.55.1-1ubuntu2`
+- `libcurl3-gnutls:amd64=7.55.1-1ubuntu2`
+- `libcurl4-openssl-dev:amd64=7.55.1-1ubuntu2`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
 
@@ -544,9 +560,14 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.55.1-1ubuntu2
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.55.1-1ubuntu2.dsc' curl_7.55.1-1ubuntu2.dsc 2774 SHA256:ad35822cd453e8d8d0d089a63a1454005dd7a445b869754f1e683afb46fb98ee
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.55.1.orig.tar.gz' curl_7.55.1.orig.tar.gz 3736406 SHA256:09576ea5e66672648d83dce3af16d0cb294d4cba2b5d166ade39655c495f4a20
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.55.1-1ubuntu2.debian.tar.xz' curl_7.55.1-1ubuntu2.debian.tar.xz 33016 SHA256:f51f583c9fa19f80d35e8b47ef8ebdd62e02b3f11d1a8319f5a0c83385c85226
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3ubuntu1`
 
@@ -798,11 +819,11 @@ $ apt-get source -qq --print-uris e2fsprogs=1.43.5-1
 'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.43.5-1.debian.tar.xz' e2fsprogs_1.43.5-1.debian.tar.xz 76556 SHA256:941f30978f7320930b9efb4cf7dda89c96bfbb84a4c46eccb88d4afab6dac64f
 ```
 
-### `dpkg` source package: `elfutils=0.170-0ubuntu2`
+### `dpkg` source package: `elfutils=0.170-0.1`
 
 Binary Packages:
 
-- `libelf1:amd64=0.170-0ubuntu2`
+- `libelf1:amd64=0.170-0.1`
 
 Licenses: (parsed from: `/usr/share/doc/libelf1/copyright`)
 
@@ -810,9 +831,14 @@ Licenses: (parsed from: `/usr/share/doc/libelf1/copyright`)
 - `GPL-3`
 - `LGPL-`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris elfutils=0.170-0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.170-0.1.dsc' elfutils_0.170-0.1.dsc 2293 SHA256:a4f4a38b6bbb939080323243584362129b54a1cedc873b3c449067c3055e7523
+'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.170.orig.tar.bz2' elfutils_0.170.orig.tar.bz2 8358001 SHA256:1f844775576b79bdc9f9c717a50058d08620323c1e935458223a12f249c9e066
+'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.170-0.1.debian.tar.xz' elfutils_0.170-0.1.debian.tar.xz 37504 SHA256:71accbdfb81c3abe45e746b96bd62cc08d2b3c4c4073acece2e6a354f1595fa2
+```
 
 ### `dpkg` source package: `expat=2.2.3-1`
 
@@ -987,29 +1013,29 @@ $ apt-get source -qq --print-uris freetype=2.8-0.2ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.8-0.2ubuntu2.diff.gz' freetype_2.8-0.2ubuntu2.diff.gz 41279 SHA256:8169e25e183ca7f9fe4ad92ac4144a784a64f635a54e23e2a9f1040b1782b368
 ```
 
-### `dpkg` source package: `gcc-7=7.2.0-3ubuntu1`
+### `dpkg` source package: `gcc-7=7.2.0-8ubuntu2`
 
 Binary Packages:
 
-- `cpp-7=7.2.0-3ubuntu1`
-- `g++-7=7.2.0-3ubuntu1`
-- `gcc-7=7.2.0-3ubuntu1`
-- `gcc-7-base:amd64=7.2.0-3ubuntu1`
-- `libasan4:amd64=7.2.0-3ubuntu1`
-- `libatomic1:amd64=7.2.0-3ubuntu1`
-- `libcc1-0:amd64=7.2.0-3ubuntu1`
-- `libcilkrts5:amd64=7.2.0-3ubuntu1`
-- `libgcc-7-dev:amd64=7.2.0-3ubuntu1`
-- `libgcc1:amd64=1:7.2.0-3ubuntu1`
-- `libgomp1:amd64=7.2.0-3ubuntu1`
-- `libitm1:amd64=7.2.0-3ubuntu1`
-- `liblsan0:amd64=7.2.0-3ubuntu1`
-- `libmpx2:amd64=7.2.0-3ubuntu1`
-- `libquadmath0:amd64=7.2.0-3ubuntu1`
-- `libstdc++-7-dev:amd64=7.2.0-3ubuntu1`
-- `libstdc++6:amd64=7.2.0-3ubuntu1`
-- `libtsan0:amd64=7.2.0-3ubuntu1`
-- `libubsan0:amd64=7.2.0-3ubuntu1`
+- `cpp-7=7.2.0-8ubuntu2`
+- `g++-7=7.2.0-8ubuntu2`
+- `gcc-7=7.2.0-8ubuntu2`
+- `gcc-7-base:amd64=7.2.0-8ubuntu2`
+- `libasan4:amd64=7.2.0-8ubuntu2`
+- `libatomic1:amd64=7.2.0-8ubuntu2`
+- `libcc1-0:amd64=7.2.0-8ubuntu2`
+- `libcilkrts5:amd64=7.2.0-8ubuntu2`
+- `libgcc-7-dev:amd64=7.2.0-8ubuntu2`
+- `libgcc1:amd64=1:7.2.0-8ubuntu2`
+- `libgomp1:amd64=7.2.0-8ubuntu2`
+- `libitm1:amd64=7.2.0-8ubuntu2`
+- `liblsan0:amd64=7.2.0-8ubuntu2`
+- `libmpx2:amd64=7.2.0-8ubuntu2`
+- `libquadmath0:amd64=7.2.0-8ubuntu2`
+- `libstdc++-7-dev:amd64=7.2.0-8ubuntu2`
+- `libstdc++6:amd64=7.2.0-8ubuntu2`
+- `libtsan0:amd64=7.2.0-8ubuntu2`
+- `libubsan0:amd64=7.2.0-8ubuntu2`
 
 Licenses: (parsed from: `/usr/share/doc/cpp-7/copyright`, `/usr/share/doc/g++-7/copyright`, `/usr/share/doc/gcc-7/copyright`, `/usr/share/doc/gcc-7-base/copyright`, `/usr/share/doc/libasan4/copyright`, `/usr/share/doc/libatomic1/copyright`, `/usr/share/doc/libcc1-0/copyright`, `/usr/share/doc/libcilkrts5/copyright`, `/usr/share/doc/libgcc-7-dev/copyright`, `/usr/share/doc/libgcc1/copyright`, `/usr/share/doc/libgomp1/copyright`, `/usr/share/doc/libitm1/copyright`, `/usr/share/doc/liblsan0/copyright`, `/usr/share/doc/libmpx2/copyright`, `/usr/share/doc/libquadmath0/copyright`, `/usr/share/doc/libstdc++-7-dev/copyright`, `/usr/share/doc/libstdc++6/copyright`, `/usr/share/doc/libtsan0/copyright`, `/usr/share/doc/libubsan0/copyright`)
 
@@ -1020,9 +1046,14 @@ Licenses: (parsed from: `/usr/share/doc/cpp-7/copyright`, `/usr/share/doc/g++-7/
 - `GPL-3`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris gcc-7=7.2.0-8ubuntu2
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.2.0-8ubuntu2.dsc' gcc-7_7.2.0-8ubuntu2.dsc 30465 SHA256:86f6d1d149e873ec93ed03599422be4a303824da6b0b8c414ecbc8cce6b45f2a
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.2.0.orig.tar.gz' gcc-7_7.2.0.orig.tar.gz 73406637 SHA256:aa50238ecb3a1ae463739e0ff5d31bb2fdf4e339456403bd58b765f57f237aa3
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.2.0-8ubuntu2.diff.gz' gcc-7_7.2.0-8ubuntu2.diff.gz 2957112 SHA256:2dbbab42d999070cf694bbd0f61a6a4153ffde9202c3f233e8ae8651ed70abc7
+```
 
 ### `dpkg` source package: `gcc-defaults=1.173ubuntu1`
 
@@ -1064,35 +1095,39 @@ $ apt-get source -qq --print-uris gdbm=1.8.3-14
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdbm/gdbm_1.8.3-14.debian.tar.xz' gdbm_1.8.3-14.debian.tar.xz 15308 SHA256:1c0570dd53947ea5980111f51b67356d647c4f21c502443b02397041dde0bf31
 ```
 
-### `dpkg` source package: `gdk-pixbuf=2.36.5-3`
+### `dpkg` source package: `gdk-pixbuf=2.36.11-1`
 
 Binary Packages:
 
-- `gir1.2-gdkpixbuf-2.0:amd64=2.36.5-3`
-- `libgdk-pixbuf2.0-0:amd64=2.36.5-3`
-- `libgdk-pixbuf2.0-common=2.36.5-3`
-- `libgdk-pixbuf2.0-dev=2.36.5-3`
+- `gir1.2-gdkpixbuf-2.0:amd64=2.36.11-1`
+- `libgdk-pixbuf2.0-0:amd64=2.36.11-1`
+- `libgdk-pixbuf2.0-common=2.36.11-1`
+- `libgdk-pixbuf2.0-dev=2.36.11-1`
 
 Licenses: (parsed from: `/usr/share/doc/gir1.2-gdkpixbuf-2.0/copyright`, `/usr/share/doc/libgdk-pixbuf2.0-0/copyright`, `/usr/share/doc/libgdk-pixbuf2.0-common/copyright`, `/usr/share/doc/libgdk-pixbuf2.0-dev/copyright`)
 
 - `GPL-2`
+- `GPL-2+`
 - `LGPL-2`
+- `LGPL-2+`
+- `MPL-1.1-or-LGPL-2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris gdk-pixbuf=2.36.11-1
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.36.11-1.dsc' gdk-pixbuf_2.36.11-1.dsc 2893 SHA256:51c30d563a34fedf4b3a4ad32ab9147598a2f7b266186bc9e625566779432b95
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.36.11.orig.tar.xz' gdk-pixbuf_2.36.11.orig.tar.xz 5675908 SHA256:ae62ab87250413156ed72ef756347b10208c00e76b222d82d9ed361ed9dde2f3
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.36.11-1.debian.tar.xz' gdk-pixbuf_2.36.11-1.debian.tar.xz 13540 SHA256:0af4f3d5d41e051327e516492f197ca56a03b64c462cc8ca0bea66df3d75d8d5
+```
 
-- http://snapshot.debian.org/package/gdk-pixbuf/2.36.5-3/
-
-
-### `dpkg` source package: `geoip=1.6.11-2`
+### `dpkg` source package: `geoip=1.6.11-2ubuntu1`
 
 Binary Packages:
 
-- `geoip-bin=1.6.11-2`
-- `libgeoip-dev=1.6.11-2`
-- `libgeoip1:amd64=1.6.11-2`
+- `geoip-bin=1.6.11-2ubuntu1`
+- `libgeoip-dev=1.6.11-2ubuntu1`
+- `libgeoip1:amd64=1.6.11-2ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/geoip-bin/copyright`, `/usr/share/doc/libgeoip-dev/copyright`, `/usr/share/doc/libgeoip1/copyright`)
 
@@ -1100,20 +1135,21 @@ Licenses: (parsed from: `/usr/share/doc/geoip-bin/copyright`, `/usr/share/doc/li
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris geoip=1.6.11-2ubuntu1
+'http://archive.ubuntu.com/ubuntu/pool/main/g/geoip/geoip_1.6.11-2ubuntu1.dsc' geoip_1.6.11-2ubuntu1.dsc 1970 SHA256:f87f70f83022318c5fb5837aed70661540929bc8a215258d22bf8fe23c34e62a
+'http://archive.ubuntu.com/ubuntu/pool/main/g/geoip/geoip_1.6.11.orig.tar.gz' geoip_1.6.11.orig.tar.gz 161934 SHA256:8859cb7c9cb63e77f4aedb40a4622024359b956b251aba46b255acbe190c34e0
+'http://archive.ubuntu.com/ubuntu/pool/main/g/geoip/geoip_1.6.11-2ubuntu1.debian.tar.xz' geoip_1.6.11-2ubuntu1.debian.tar.xz 22412 SHA256:15114f42de179177d6d2e077182e838c10be0e1d5f22cdfcb304f85952d8b6be
+```
 
-- http://snapshot.debian.org/package/geoip/1.6.11-2/
-
-
-### `dpkg` source package: `git=1:2.14.1-1ubuntu3`
+### `dpkg` source package: `git=1:2.14.1-1ubuntu4`
 
 Binary Packages:
 
-- `git=1:2.14.1-1ubuntu3`
-- `git-man=1:2.14.1-1ubuntu3`
+- `git=1:2.14.1-1ubuntu4`
+- `git-man=1:2.14.1-1ubuntu4`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -1136,46 +1172,61 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris git=1:2.14.1-1ubuntu4
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.14.1-1ubuntu4.dsc' git_2.14.1-1ubuntu4.dsc 2934 SHA256:90d2356d869494bff03e2111c2f0ea6ab96ddfc25786693f1a02124bbfef05c8
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.14.1.orig.tar.xz' git_2.14.1.orig.tar.xz 4791876 SHA256:6f724c6d0e9e13114ab35db6f67e1b2c1934b641e89366e6a0e37618231f2cc6
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.14.1-1ubuntu4.debian.tar.xz' git_2.14.1-1ubuntu4.debian.tar.xz 549800 SHA256:0e99c7771e82f1f1500e89304549f23cbd169ab363254f12d3cd9639b91a9832
+```
 
-### `dpkg` source package: `glib2.0=2.53.6-1ubuntu2`
+### `dpkg` source package: `glib2.0=2.54.1-1ubuntu1`
 
 Binary Packages:
 
-- `libglib2.0-0:amd64=2.53.6-1ubuntu2`
-- `libglib2.0-bin=2.53.6-1ubuntu2`
-- `libglib2.0-data=2.53.6-1ubuntu2`
-- `libglib2.0-dev:amd64=2.53.6-1ubuntu2`
-- `libglib2.0-dev-bin=2.53.6-1ubuntu2`
+- `libglib2.0-0:amd64=2.54.1-1ubuntu1`
+- `libglib2.0-bin=2.54.1-1ubuntu1`
+- `libglib2.0-data=2.54.1-1ubuntu1`
+- `libglib2.0-dev:amd64=2.54.1-1ubuntu1`
+- `libglib2.0-dev-bin=2.54.1-1ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc/libglib2.0-bin/copyright`, `/usr/share/doc/libglib2.0-data/copyright`, `/usr/share/doc/libglib2.0-dev/copyright`, `/usr/share/doc/libglib2.0-dev-bin/copyright`)
 
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris glib2.0=2.54.1-1ubuntu1
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.54.1-1ubuntu1.dsc' glib2.0_2.54.1-1ubuntu1.dsc 2734 SHA256:0053fec2863f7dd59081a389ce781347e2c03375342b1890e1219197558aa221
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.54.1.orig.tar.xz' glib2.0_2.54.1.orig.tar.xz 7829104 SHA256:50c01b1419324f10fbf9b9709ec2164b18586968bdce7540583bf32302cf47a3
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.54.1-1ubuntu1.debian.tar.xz' glib2.0_2.54.1-1ubuntu1.debian.tar.xz 75252 SHA256:aab799877787337ea87e03cb713f6c2a9dcef11aac9bf481ac9384a63cedcf11
+```
 
-### `dpkg` source package: `glibc=2.24-12ubuntu1`
+### `dpkg` source package: `glibc=2.26-0ubuntu1`
 
 Binary Packages:
 
-- `libc-bin=2.24-12ubuntu1`
-- `libc-dev-bin=2.24-12ubuntu1`
-- `libc6:amd64=2.24-12ubuntu1`
-- `libc6-dev:amd64=2.24-12ubuntu1`
-- `multiarch-support=2.24-12ubuntu1`
+- `libc-bin=2.26-0ubuntu1`
+- `libc-dev-bin=2.26-0ubuntu1`
+- `libc6:amd64=2.26-0ubuntu1`
+- `libc6-dev:amd64=2.26-0ubuntu1`
+- `multiarch-support=2.26-0ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`, `/usr/share/doc/multiarch-support/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris glibc=2.26-0ubuntu1
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.26-0ubuntu1.dsc' glibc_2.26-0ubuntu1.dsc 8688 SHA256:2dd815f24008fa6992392bc832ee2b9654dcbcc924a7d28c691519e192eedac2
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.26.orig.tar.xz' glibc_2.26.orig.tar.xz 15207960 SHA256:cdfbf4634e016f2b8f279634329baf8a721aa2549cf016e75cea7db938d2dd6e
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.26-0ubuntu1.debian.tar.xz' glibc_2.26-0ubuntu1.debian.tar.xz 957912 SHA256:70a935386bb1805bc8fedeb4c2296696de56f42e924d02bfd4d8936b7e8c3bfa
+```
 
 ### `dpkg` source package: `gmp=2:6.1.2+dfsg-1`
 
@@ -1256,13 +1307,13 @@ $ apt-get source -qq --print-uris gnutls28=3.5.8-6ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.8-6ubuntu3.debian.tar.xz' gnutls28_3.5.8-6ubuntu3.debian.tar.xz 110040 SHA256:b6e3ef685c24c23bc45e4e08883763f0fdd889a49f5c899d4a6a9f3911ec11f4
 ```
 
-### `dpkg` source package: `gobject-introspection=1.53.2-4`
+### `dpkg` source package: `gobject-introspection=1.54.1-1`
 
 Binary Packages:
 
-- `gir1.2-freedesktop:amd64=1.53.2-4`
-- `gir1.2-glib-2.0:amd64=1.53.2-4`
-- `libgirepository-1.0-1:amd64=1.53.2-4`
+- `gir1.2-freedesktop:amd64=1.54.1-1`
+- `gir1.2-glib-2.0:amd64=1.54.1-1`
+- `libgirepository-1.0-1:amd64=1.54.1-1`
 
 Licenses: (parsed from: `/usr/share/doc/gir1.2-freedesktop/copyright`, `/usr/share/doc/gir1.2-glib-2.0/copyright`, `/usr/share/doc/libgirepository-1.0-1/copyright`)
 
@@ -1273,13 +1324,14 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-freedesktop/copyright`, `/usr/sha
 - `LGPL-2+`
 - `MIT`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/gobject-introspection/1.53.2-4/
-
+```console
+$ apt-get source -qq --print-uris gobject-introspection=1.54.1-1
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gobject-introspection/gobject-introspection_1.54.1-1.dsc' gobject-introspection_1.54.1-1.dsc 2902 SHA256:ebb7eccb015ec5224aa9c705aee447844ab28cf8b4f67ebc2118612866acc537
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gobject-introspection/gobject-introspection_1.54.1.orig.tar.xz' gobject-introspection_1.54.1.orig.tar.xz 1392504 SHA256:b88ded5e5f064ab58a93aadecd6d58db2ec9d970648534c63807d4f9a7bb877e
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gobject-introspection/gobject-introspection_1.54.1-1.debian.tar.xz' gobject-introspection_1.54.1-1.debian.tar.xz 19816 SHA256:e93b5caac3aa2e9afc2ec22da5cdd4da5b57d6f5a631d9983f797cb0d85dabe1
+```
 
 ### `dpkg` source package: `graphite2=1.3.10-2`
 
@@ -1378,11 +1430,11 @@ $ apt-get source -qq --print-uris gtk+2.0=2.24.31-2ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+2.0/gtk+2.0_2.24.31-2ubuntu1.debian.tar.xz' gtk+2.0_2.24.31-2ubuntu1.debian.tar.xz 107156 SHA256:967bf923d0c2e04997075042d474d9ae35947ca18b89fc976a0e7cc049ef2b7f
 ```
 
-### `dpkg` source package: `gtk+3.0=3.22.19-0ubuntu1`
+### `dpkg` source package: `gtk+3.0=3.22.21-0ubuntu1`
 
 Binary Packages:
 
-- `gtk-update-icon-cache=3.22.19-0ubuntu1`
+- `gtk-update-icon-cache=3.22.21-0ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/gtk-update-icon-cache/copyright`)
 
@@ -1394,9 +1446,14 @@ Licenses: (parsed from: `/usr/share/doc/gtk-update-icon-cache/copyright`)
 - `LGPL-2.1+`
 - `other`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris gtk+3.0=3.22.21-0ubuntu1
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+3.0/gtk+3.0_3.22.21-0ubuntu1.dsc' gtk+3.0_3.22.21-0ubuntu1.dsc 4182 SHA256:f0455fee9d0be66bff64c0c8f499c35cd3701f92f9cdf43a003ebaddd47f2329
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+3.0/gtk+3.0_3.22.21.orig.tar.xz' gtk+3.0_3.22.21.orig.tar.xz 18847580 SHA256:1bd3c1a85cfb4db112cabb5379abb05a1a94fe43052d309d573493fca00e6b87
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+3.0/gtk+3.0_3.22.21-0ubuntu1.debian.tar.xz' gtk+3.0_3.22.21-0ubuntu1.debian.tar.xz 176728 SHA256:dbd4b363a17d29df4ac2c7feeed5cdd09ca7e9db9bc77b3fc3559a01328d0720
+```
 
 ### `dpkg` source package: `gzip=1.6-5ubuntu1`
 
@@ -1463,23 +1520,24 @@ $ apt-get source -qq --print-uris heimdal=7.4.0.dfsg.1-2
 'http://archive.ubuntu.com/ubuntu/pool/main/h/heimdal/heimdal_7.4.0.dfsg.1-2.debian.tar.xz' heimdal_7.4.0.dfsg.1-2.debian.tar.xz 128348 SHA256:ea4359d8aefdda794352d82111866a72bf0b698a3afbc3a55208ef68c8cb47f5
 ```
 
-### `dpkg` source package: `hicolor-icon-theme=0.15-1`
+### `dpkg` source package: `hicolor-icon-theme=0.17-1`
 
 Binary Packages:
 
-- `hicolor-icon-theme=0.15-1`
+- `hicolor-icon-theme=0.17-1`
 
 Licenses: (parsed from: `/usr/share/doc/hicolor-icon-theme/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/hicolor-icon-theme/0.15-1/
-
+```console
+$ apt-get source -qq --print-uris hicolor-icon-theme=0.17-1
+'http://archive.ubuntu.com/ubuntu/pool/main/h/hicolor-icon-theme/hicolor-icon-theme_0.17-1.dsc' hicolor-icon-theme_0.17-1.dsc 1592 SHA256:c60867c2937f943439da5b567bf7344dbef4834ed5af85ead84c091a17f1312c
+'http://archive.ubuntu.com/ubuntu/pool/main/h/hicolor-icon-theme/hicolor-icon-theme_0.17.orig.tar.xz' hicolor-icon-theme_0.17.orig.tar.xz 53016 SHA256:317484352271d18cbbcfac3868eab798d67fff1b8402e740baa6ff41d588a9d8
+'http://archive.ubuntu.com/ubuntu/pool/main/h/hicolor-icon-theme/hicolor-icon-theme_0.17-1.debian.tar.xz' hicolor-icon-theme_0.17-1.debian.tar.xz 3408 SHA256:3318c99b4a7dda3bc7b6a912c951ce5366cc46773c41dddd2ea0599f47357c56
+```
 
 ### `dpkg` source package: `hostname=3.18`
 
@@ -1962,12 +2020,12 @@ $ apt-get source -qq --print-uris libevent=2.1.8-stable-4
 'http://archive.ubuntu.com/ubuntu/pool/main/libe/libevent/libevent_2.1.8-stable-4.debian.tar.xz' libevent_2.1.8-stable-4.debian.tar.xz 12060 SHA256:c1334029455256b62e201ba333a8616a1709e0f3caada753d35376b88aca2d5e
 ```
 
-### `dpkg` source package: `libexif=0.6.21-2`
+### `dpkg` source package: `libexif=0.6.21-2.1`
 
 Binary Packages:
 
-- `libexif-dev=0.6.21-2`
-- `libexif12:amd64=0.6.21-2`
+- `libexif-dev:amd64=0.6.21-2.1`
+- `libexif12:amd64=0.6.21-2.1`
 
 Licenses: (parsed from: `/usr/share/doc/libexif-dev/copyright`, `/usr/share/doc/libexif12/copyright`)
 
@@ -1977,13 +2035,14 @@ Licenses: (parsed from: `/usr/share/doc/libexif-dev/copyright`, `/usr/share/doc/
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/libexif/0.6.21-2/
-
+```console
+$ apt-get source -qq --print-uris libexif=0.6.21-2.1
+'http://archive.ubuntu.com/ubuntu/pool/main/libe/libexif/libexif_0.6.21-2.1.dsc' libexif_0.6.21-2.1.dsc 2076 SHA256:7cf7e50a2bb33a7964cca2f6c18fcfd53e123b6e5c42fd05caa6a68ed97d523e
+'http://archive.ubuntu.com/ubuntu/pool/main/libe/libexif/libexif_0.6.21.orig.tar.gz' libexif_0.6.21.orig.tar.gz 2081615 SHA256:edb7eb13664cf950a6edd132b75e99afe61c5effe2f16494e6d27bc404b287bf
+'http://archive.ubuntu.com/ubuntu/pool/main/libe/libexif/libexif_0.6.21-2.1.debian.tar.xz' libexif_0.6.21-2.1.debian.tar.xz 9696 SHA256:d9aa6ebdc988f04d02984370ca3728aa3ae53c311ec67123e1dc01d589f0096c
+```
 
 ### `dpkg` source package: `libffi=3.2.1-6`
 
@@ -2005,30 +2064,32 @@ $ apt-get source -qq --print-uris libffi=3.2.1-6
 'http://archive.ubuntu.com/ubuntu/pool/main/libf/libffi/libffi_3.2.1-6.debian.tar.xz' libffi_3.2.1-6.debian.tar.xz 11252 SHA256:477709fa90f8c7631fa226a48cdf38737c9f195f3686f62aa76714bcffaee512
 ```
 
-### `dpkg` source package: `libgcrypt20=1.7.8-2`
+### `dpkg` source package: `libgcrypt20=1.7.8-2ubuntu1`
 
 Binary Packages:
 
-- `libgcrypt20:amd64=1.7.8-2`
+- `libgcrypt20:amd64=1.7.8-2ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 
 - `GPL-2`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris libgcrypt20=1.7.8-2ubuntu1
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.7.8-2ubuntu1.dsc' libgcrypt20_1.7.8-2ubuntu1.dsc 3007 SHA256:dfd3aa72d725333a8bbfd60232e50971e90f7b327a043aceb7bbf8b721df6745
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.7.8.orig.tar.bz2' libgcrypt20_1.7.8.orig.tar.bz2 2897853 SHA256:948276ea47e6ba0244f36a17b51dcdd52cfd1e664b0a1ac3bc82134fb6cec199
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.7.8.orig.tar.bz2.asc' libgcrypt20_1.7.8.orig.tar.bz2.asc 310 SHA256:7785a7b8f861b8742f64c27a08de8aa27cb6f22af8884e5252602051544085db
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.7.8-2ubuntu1.debian.tar.xz' libgcrypt20_1.7.8-2ubuntu1.debian.tar.xz 28436 SHA256:e9f1b95a1024ee378198b96e5d04e43b4705214e5cb6ec8f553f765f7212f356
+```
 
-- http://snapshot.debian.org/package/libgcrypt20/1.7.8-2/
-
-
-### `dpkg` source package: `libgd2=2.2.5-2ubuntu1`
+### `dpkg` source package: `libgd2=2.2.5-3`
 
 Binary Packages:
 
-- `libgd3:amd64=2.2.5-2ubuntu1`
+- `libgd3:amd64=2.2.5-3`
 
 Licenses: (parsed from: `/usr/share/doc/libgd3/copyright`)
 
@@ -2044,9 +2105,14 @@ Licenses: (parsed from: `/usr/share/doc/libgd3/copyright`)
 - `WEBP`
 - `XFIG`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libgd2=2.2.5-3
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.2.5-3.dsc' libgd2_2.2.5-3.dsc 2293 SHA256:8a8ddef6b32473b95612713a624cb6f2412d4770a67e9c2bb15fae59ef8af7ee
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.2.5.orig.tar.gz' libgd2_2.2.5.orig.tar.gz 3326856 SHA256:150e6952af874bbccb33cf0f87288b41a8fd54f0ce4cff914ef90a80ef9d0162
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.2.5-3.debian.tar.xz' libgd2_2.2.5-3.debian.tar.xz 25744 SHA256:44523d37aaafd426c7d130f7e6271967cb993948f10d31e81e36122e086a07d1
+```
 
 ### `dpkg` source package: `libgpg-error=1.27-3`
 
@@ -2141,12 +2207,12 @@ $ apt-get source -qq --print-uris libidn=1.33-2
 'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn/libidn_1.33-2.debian.tar.xz' libidn_1.33-2.debian.tar.xz 65292 SHA256:13e3e90d34fefcfb81036b28311aa2771a98d998233b615f831df8ee988e4c9e
 ```
 
-### `dpkg` source package: `libjpeg-turbo=1.5.2-0ubuntu1`
+### `dpkg` source package: `libjpeg-turbo=1.5.2-0ubuntu3`
 
 Binary Packages:
 
-- `libjpeg-turbo8:amd64=1.5.2-0ubuntu1`
-- `libjpeg-turbo8-dev:amd64=1.5.2-0ubuntu1`
+- `libjpeg-turbo8:amd64=1.5.2-0ubuntu3`
+- `libjpeg-turbo8-dev:amd64=1.5.2-0ubuntu3`
 
 Licenses: (parsed from: `/usr/share/doc/libjpeg-turbo8/copyright`, `/usr/share/doc/libjpeg-turbo8-dev/copyright`)
 
@@ -2219,12 +2285,12 @@ $ apt-get source -qq --print-uris liblqr=0.4.2-2
 'http://archive.ubuntu.com/ubuntu/pool/main/libl/liblqr/liblqr_0.4.2-2.debian.tar.xz' liblqr_0.4.2-2.debian.tar.xz 5860 SHA256:2c886ee88f65eade9e1cd10965bf572a3cc178d6119b9342c8469b6b41d2bb62
 ```
 
-### `dpkg` source package: `libpng1.6=1.6.32-1`
+### `dpkg` source package: `libpng1.6=1.6.34-1`
 
 Binary Packages:
 
-- `libpng-dev:amd64=1.6.32-1`
-- `libpng16-16:amd64=1.6.32-1`
+- `libpng-dev:amd64=1.6.34-1`
+- `libpng16-16:amd64=1.6.34-1`
 
 Licenses: (parsed from: `/usr/share/doc/libpng-dev/copyright`, `/usr/share/doc/libpng16-16/copyright`)
 
@@ -2237,13 +2303,14 @@ Licenses: (parsed from: `/usr/share/doc/libpng-dev/copyright`, `/usr/share/doc/l
 - `libpng`
 - `libpng OR Apache-2.0 OR BSD-3-clause`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/libpng1.6/1.6.32-1/
-
+```console
+$ apt-get source -qq --print-uris libpng1.6=1.6.34-1
+'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.34-1.dsc' libpng1.6_1.6.34-1.dsc 2191 SHA256:e491569d9015036d43c7a9dfcf2d835abde8c9817b057d55d929cb78501d5a30
+'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.34.orig.tar.xz' libpng1.6_1.6.34.orig.tar.xz 997968 SHA256:2f1e960d92ce3b3abd03d06dfec9637dfbd22febf107a536b44f7a47c60659f6
+'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.34-1.debian.tar.xz' libpng1.6_1.6.34-1.debian.tar.xz 23568 SHA256:8ca33d2930b340412f04d76cac3159f6b3b823cff33b35b72426a75f3f02a8a0
+```
 
 ### `dpkg` source package: `libpsl=0.18.0-2`
 
@@ -2309,27 +2376,32 @@ $ apt-get source -qq --print-uris librsvg=2.40.18-1
 'http://archive.ubuntu.com/ubuntu/pool/main/libr/librsvg/librsvg_2.40.18-1.debian.tar.xz' librsvg_2.40.18-1.debian.tar.xz 14464 SHA256:29b5747a7208268ceed3ccd5432b2379ee5937ba3fce4fbb1d41ffbf7de3f792
 ```
 
-### `dpkg` source package: `libselinux=2.6-3build2`
+### `dpkg` source package: `libselinux=2.7-1`
 
 Binary Packages:
 
-- `libselinux1:amd64=2.6-3build2`
+- `libselinux1:amd64=2.7-1`
 
 Licenses: (parsed from: `/usr/share/doc/libselinux1/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libselinux=2.7-1
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_2.7-1.dsc' libselinux_2.7-1.dsc 2347 SHA256:8c3bbd095081dc6a1599346d78903709c983e62387976bf411afefc631da7be4
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_2.7.orig.tar.gz' libselinux_2.7.orig.tar.gz 187574 SHA256:d0fec0769b3ad60aa7baf9b9a4b7a056827769dc2dadda0dc0eb59b3d1c18c57
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_2.7-1.debian.tar.xz' libselinux_2.7-1.debian.tar.xz 22944 SHA256:0711a79888dddc120aabd785bc0018caf43872490dcf064f51700e0e9f428fb4
+```
 
-### `dpkg` source package: `libsemanage=2.6-2build2`
+### `dpkg` source package: `libsemanage=2.7-1`
 
 Binary Packages:
 
-- `libsemanage-common=2.6-2build2`
-- `libsemanage1:amd64=2.6-2build2`
+- `libsemanage-common=2.7-1`
+- `libsemanage1:amd64=2.7-1`
 
 Licenses: (parsed from: `/usr/share/doc/libsemanage-common/copyright`, `/usr/share/doc/libsemanage1/copyright`)
 
@@ -2338,6 +2410,10 @@ Licenses: (parsed from: `/usr/share/doc/libsemanage-common/copyright`, `/usr/sha
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libsemanage/2.7-1/
 
 
 ### `dpkg` source package: `libsepol=2.7-1`
@@ -2528,14 +2604,9 @@ Licenses: (parsed from: `/usr/share/doc/libwmf-dev/copyright`, `/usr/share/doc/l
 
 - `LGPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libwmf=0.2.8.4-10.6ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/libw/libwmf/libwmf_0.2.8.4-10.6ubuntu1.dsc' libwmf_0.2.8.4-10.6ubuntu1.dsc 2214 SHA256:11de54938cbd8f2985906fab418452aa8a1128acad869edaac368e8cd75635ad
-'http://archive.ubuntu.com/ubuntu/pool/main/libw/libwmf/libwmf_0.2.8.4.orig.tar.gz' libwmf_0.2.8.4.orig.tar.gz 2169375 SHA256:5b345c69220545d003ad52bfd035d5d6f4f075e65204114a9e875e84895a7cf8
-'http://archive.ubuntu.com/ubuntu/pool/main/libw/libwmf/libwmf_0.2.8.4-10.6ubuntu1.debian.tar.xz' libwmf_0.2.8.4-10.6ubuntu1.debian.tar.xz 12244 SHA256:96a7c809c5ddd95ba90ae1e50292dc4f51e98470bb447044ccabc1bc9fbc2db8
-```
 
 ### `dpkg` source package: `libx11=2:1.6.4-3`
 
@@ -2593,14 +2664,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxcb=1.11.1-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxcb/libxcb_1.11.1-1ubuntu1.dsc' libxcb_1.11.1-1ubuntu1.dsc 6434 SHA256:d059cea4a732eb2600d829d023af89956b46d85399d90be122a887a6baf59a26
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxcb/libxcb_1.11.1.orig.tar.gz' libxcb_1.11.1.orig.tar.gz 633057 SHA256:660312d5e64d0a5800262488042c1707a0261fa01a759bad265b1b75dd4844dd
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxcb/libxcb_1.11.1-1ubuntu1.diff.gz' libxcb_1.11.1-1ubuntu1.diff.gz 25030 SHA256:017d57e8d555e9f003b1d1ef394b81eddecf9029b6b7e582400dd51e17d63401
-```
 
 ### `dpkg` source package: `libxcomposite=1:0.4.4-2`
 
@@ -2767,14 +2833,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.4+dfsg1-3.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1-3.1.dsc' libxml2_2.9.4+dfsg1-3.1.dsc 3121 SHA256:7b6dbd6cb82e44393436d1900ec37791002456eb53f17951d561b2b4f3a71bdf
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1.orig.tar.xz' libxml2_2.9.4+dfsg1.orig.tar.xz 2446412 SHA256:a74ad55e346aa0b2b41903e66d21f8f3d2a736b3f41e32496376861ab484184e
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1-3.1.debian.tar.xz' libxml2_2.9.4+dfsg1-3.1.debian.tar.xz 33852 SHA256:9de354bf1315f0e631505789a6059fdbcef3fd2c262b1573935cdf6acf0ee976
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libxml2/2.9.4+dfsg1-3.1/
+
 
 ### `dpkg` source package: `libxpm=1:3.5.12-1`
 
@@ -2895,11 +2960,11 @@ $ apt-get source -qq --print-uris libyaml=0.1.7-2ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/liby/libyaml/libyaml_0.1.7-2ubuntu3.debian.tar.xz' libyaml_0.1.7-2ubuntu3.debian.tar.xz 4288 SHA256:d1b9caa9e645c2c306417068bcdd85e56e6065d74771c15cc970652e52f8259b
 ```
 
-### `dpkg` source package: `linux=4.12.0-13.14`
+### `dpkg` source package: `linux=4.13.0-12.13`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.12.0-13.14`
+- `linux-libc-dev:amd64=4.13.0-12.13`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -3027,25 +3092,26 @@ $ apt-get source -qq --print-uris mawk=1.3.3-17ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mawk/mawk_1.3.3-17ubuntu2.diff.gz' mawk_1.3.3-17ubuntu2.diff.gz 63882 SHA256:670103046767474be29e80f2143dc67e3d0b958972f5942c3df94883f978eded
 ```
 
-### `dpkg` source package: `mercurial=4.0-1`
+### `dpkg` source package: `mercurial=4.3.1-2`
 
 Binary Packages:
 
-- `mercurial=4.0-1`
-- `mercurial-common=4.0-1`
+- `mercurial=4.3.1-2`
+- `mercurial-common=4.3.1-2`
 
 Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/mercurial-common/copyright`)
 
 - `GPL-2`
 - `GPL-2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/mercurial/4.0-1/
-
+```console
+$ apt-get source -qq --print-uris mercurial=4.3.1-2
+'http://archive.ubuntu.com/ubuntu/pool/universe/m/mercurial/mercurial_4.3.1-2.dsc' mercurial_4.3.1-2.dsc 2225 SHA256:f3569ce442f03fa9c63746efdacf18050ede51f193c49591aa6e92906d7828e4
+'http://archive.ubuntu.com/ubuntu/pool/universe/m/mercurial/mercurial_4.3.1.orig.tar.gz' mercurial_4.3.1.orig.tar.gz 5475042 SHA256:2b12f02e3a452adff4ec9cf007017bab0cadb3f37eaf12f4b25a662df73618a2
+'http://archive.ubuntu.com/ubuntu/pool/universe/m/mercurial/mercurial_4.3.1-2.debian.tar.xz' mercurial_4.3.1-2.debian.tar.xz 54836 SHA256:6e9383eea38e11d2cb4f9365ee88da899d3de7da051d717e5b3480d5dea2d0f6
+```
 
 ### `dpkg` source package: `mime-support=3.60ubuntu1`
 
@@ -3386,26 +3452,27 @@ $ apt-get source -qq --print-uris pam=1.1.8-3.2ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.1.8-3.2ubuntu3.diff.gz' pam_1.1.8-3.2ubuntu3.diff.gz 198914 SHA256:2c343abda296491619b10e12e3f5e79f97cb1531ae80be4da276ec6a63679787
 ```
 
-### `dpkg` source package: `pango1.0=1.40.11-1`
+### `dpkg` source package: `pango1.0=1.40.12-1`
 
 Binary Packages:
 
-- `libpango-1.0-0:amd64=1.40.11-1`
-- `libpangocairo-1.0-0:amd64=1.40.11-1`
-- `libpangoft2-1.0-0:amd64=1.40.11-1`
+- `libpango-1.0-0:amd64=1.40.12-1`
+- `libpangocairo-1.0-0:amd64=1.40.12-1`
+- `libpangoft2-1.0-0:amd64=1.40.12-1`
 
 Licenses: (parsed from: `/usr/share/doc/libpango-1.0-0/copyright`, `/usr/share/doc/libpangocairo-1.0-0/copyright`, `/usr/share/doc/libpangoft2-1.0-0/copyright`)
 
 - `LGPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/pango1.0/1.40.11-1/
-
+```console
+$ apt-get source -qq --print-uris pango1.0=1.40.12-1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/pango1.0_1.40.12-1.dsc' pango1.0_1.40.12-1.dsc 3315 SHA256:21e17cb046cc0823eda025b5be6e88cb8acf00c2e5230699e3456f55e745265d
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/pango1.0_1.40.12.orig.tar.xz' pango1.0_1.40.12.orig.tar.xz 856228 SHA256:75f1a9a8e4e2b28cbc078b50c1fa927ee4ded994d1ade97c5603e2d1f3161cfc
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/pango1.0_1.40.12-1.debian.tar.xz' pango1.0_1.40.12-1.debian.tar.xz 27520 SHA256:54a1093a552551e5ae215c2664a4bf80e2b6d9646887d7384184974d72c469d1
+```
 
 ### `dpkg` source package: `patch=2.7.5-1build1`
 
@@ -3440,14 +3507,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pcre3=2:8.39-4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre3/pcre3_8.39-4.dsc' pcre3_8.39-4.dsc 2224 SHA256:d79722717c869fce3343423d479e3cc0dfe5a31e392f9946a7054a11d395a544
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre3/pcre3_8.39.orig.tar.bz2' pcre3_8.39.orig.tar.bz2 1560758 SHA256:b858099f82483031ee02092711689e7245586ada49e534a06e678b8ea9549e8b
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre3/pcre3_8.39-4.debian.tar.gz' pcre3_8.39-4.debian.tar.gz 25456 SHA256:4b1f803c48e0d09bd4d8740c267ded7896afeb3a7ba0fc24326caf51044cf768
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/pcre3/2:8.39-4/
+
 
 ### `dpkg` source package: `perl=5.26.0-8ubuntu1`
 
@@ -3617,34 +3683,34 @@ $ apt-get source -qq --print-uris procps=2:3.3.12-1ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.12-1ubuntu2.debian.tar.xz' procps_3.3.12-1ubuntu2.debian.tar.xz 30724 SHA256:1b40d1519e0dd9965aa3faed306dfdb44a113e39a14a404ba5fd28ff3d6e42b8
 ```
 
-### `dpkg` source package: `python-defaults=2.7.13-2`
+### `dpkg` source package: `python-defaults=2.7.14-2ubuntu1`
 
 Binary Packages:
 
-- `libpython-stdlib:amd64=2.7.13-2`
-- `python=2.7.13-2`
-- `python-minimal=2.7.13-2`
+- `libpython-stdlib:amd64=2.7.14-2ubuntu1`
+- `python=2.7.14-2ubuntu1`
+- `python-minimal=2.7.14-2ubuntu1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris python-defaults=2.7.14-2ubuntu1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-defaults/python-defaults_2.7.14-2ubuntu1.dsc' python-defaults_2.7.14-2ubuntu1.dsc 2772 SHA256:36dd1f3fa50649ad472f716a396cf62014dd35ca521865402bd7f002cd76d321
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-defaults/python-defaults_2.7.14-2ubuntu1.tar.gz' python-defaults_2.7.14-2ubuntu1.tar.gz 275275 SHA256:234581ddf8a7115fce99f619436baafbec7dce9510f75030ab39063e64cdddb5
+```
 
-- http://snapshot.debian.org/package/python-defaults/2.7.13-2/
-
-
-### `dpkg` source package: `python2.7=2.7.14-2ubuntu1`
+### `dpkg` source package: `python2.7=2.7.14-2ubuntu2`
 
 Binary Packages:
 
-- `libpython2.7-minimal:amd64=2.7.14-2ubuntu1`
-- `libpython2.7-stdlib:amd64=2.7.14-2ubuntu1`
-- `python2.7=2.7.14-2ubuntu1`
-- `python2.7-minimal=2.7.14-2ubuntu1`
+- `libpython2.7-minimal:amd64=2.7.14-2ubuntu2`
+- `libpython2.7-stdlib:amd64=2.7.14-2ubuntu2`
+- `python2.7=2.7.14-2ubuntu2`
+- `python2.7-minimal=2.7.14-2ubuntu2`
 
 Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/share/doc/libpython2.7-stdlib/copyright`, `/usr/share/doc/python2.7/copyright`, `/usr/share/doc/python2.7-minimal/copyright`)
 
@@ -3665,17 +3731,22 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/s
 - `implied`
 - `see above, some license as Python`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python2.7=2.7.14-2ubuntu2
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.14-2ubuntu2.dsc' python2.7_2.7.14-2ubuntu2.dsc 3430 SHA256:0f415a6eaf2ea45c01511fb105d48f5b407063ea5360cddf4be4ee2eca399454
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.14.orig.tar.gz' python2.7_2.7.14.orig.tar.gz 17176758 SHA256:304c9b202ea6fbd0a4a8e0ad3733715fbd4749f2204a9173a58ec53c32ea73e8
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.14-2ubuntu2.diff.gz' python2.7_2.7.14-2ubuntu2.diff.gz 285380 SHA256:2771714530b7f0c816225688d9c1114a635f49bfaaed07cb46880b9a48229ffe
+```
 
-### `dpkg` source package: `python3-defaults=3.6.1-0ubuntu3`
+### `dpkg` source package: `python3-defaults=3.6.3-0ubuntu1`
 
 Binary Packages:
 
-- `libpython3-stdlib:amd64=3.6.1-0ubuntu3`
-- `python3=3.6.1-0ubuntu3`
-- `python3-minimal=3.6.1-0ubuntu3`
+- `libpython3-stdlib:amd64=3.6.3-0ubuntu1`
+- `python3=3.6.3-0ubuntu1`
+- `python3-minimal=3.6.3-0ubuntu1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3685,14 +3756,14 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `python3.6=3.6.2-3`
+### `dpkg` source package: `python3.6=3.6.3-1ubuntu1`
 
 Binary Packages:
 
-- `libpython3.6-minimal:amd64=3.6.2-3`
-- `libpython3.6-stdlib:amd64=3.6.2-3`
-- `python3.6=3.6.2-3`
-- `python3.6-minimal=3.6.2-3`
+- `libpython3.6-minimal:amd64=3.6.3-1ubuntu1`
+- `libpython3.6-stdlib:amd64=3.6.3-1ubuntu1`
+- `python3.6=3.6.3-1ubuntu1`
+- `python3.6-minimal=3.6.3-1ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.6-minimal/copyright`, `/usr/share/doc/libpython3.6-stdlib/copyright`, `/usr/share/doc/python3.6/copyright`, `/usr/share/doc/python3.6-minimal/copyright`)
 
@@ -3714,13 +3785,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.6-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/python3.6/3.6.2-3/
-
+```console
+$ apt-get source -qq --print-uris python3.6=3.6.3-1ubuntu1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.6/python3.6_3.6.3-1ubuntu1.dsc' python3.6_3.6.3-1ubuntu1.dsc 3430 SHA256:f775b589ef49cf273a74aa36574267f94988b0978904e96484b505e2c8c657e5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.6/python3.6_3.6.3.orig.tar.xz' python3.6_3.6.3.orig.tar.xz 16974296 SHA256:cda7d967c9a4bfa52337cdf551bcc5cff026b6ac50a8834e568ce4a794ca81da
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.6/python3.6_3.6.3-1ubuntu1.debian.tar.xz' python3.6_3.6.3-1ubuntu1.debian.tar.xz 205100 SHA256:91d3377d5ff49412be6679007fc1163c6e5ddedf1895cca040f8acaca50c9a3a
+```
 
 ### `dpkg` source package: `readline=7.0-0ubuntu2`
 
@@ -4027,11 +4099,11 @@ $ apt-get source -qq --print-uris ubuntu-keyring=2016.10.27
 'http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-keyring/ubuntu-keyring_2016.10.27.tar.gz' ubuntu-keyring_2016.10.27.tar.gz 19182 SHA256:dc0b83433b28e5acedf39330bedec2cd102547570d1ae135497b15bd6ac85abe
 ```
 
-### `dpkg` source package: `ubuntu-themes=16.10+17.10.20170918-0ubuntu1`
+### `dpkg` source package: `ubuntu-themes=16.10+17.10.20171003-0ubuntu1`
 
 Binary Packages:
 
-- `ubuntu-mono=16.10+17.10.20170918-0ubuntu1`
+- `ubuntu-mono=16.10+17.10.20171003-0ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/ubuntu-mono/copyright`)
 
@@ -4058,30 +4130,6 @@ Source:
 $ apt-get source -qq --print-uris ucf=3.0036
 'http://archive.ubuntu.com/ubuntu/pool/main/u/ucf/ucf_3.0036.dsc' ucf_3.0036.dsc 1343 SHA256:e67a8a3012ac357c7759dabd93d258422b1003bad8c3f17f25fc2a289eeda3bb
 'http://archive.ubuntu.com/ubuntu/pool/main/u/ucf/ucf_3.0036.tar.xz' ucf_3.0036.tar.xz 65020 SHA256:34aa44416106f1205376918386b2896edf21dd42b633133b5f8fedecae17fca8
-```
-
-### `dpkg` source package: `ustr=1.0.4-6`
-
-Binary Packages:
-
-- `libustr-1.0-1:amd64=1.0.4-6`
-
-Licenses: (parsed from: `/usr/share/doc/libustr-1.0-1/copyright`)
-
-- `BSD-2-clause`
-- `GPL-2`
-- `GPL-2+`
-- `LGPL-2+`
-- `LGPL-2.1`
-- `MIT`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris ustr=1.0.4-6
-'http://archive.ubuntu.com/ubuntu/pool/universe/u/ustr/ustr_1.0.4-6.dsc' ustr_1.0.4-6.dsc 2029 SHA256:87a854fc03dc059d5d4f135dfd36353c8c09f88a6eb216c6dcea8adadbe6ba59
-'http://archive.ubuntu.com/ubuntu/pool/universe/u/ustr/ustr_1.0.4.orig.tar.gz' ustr_1.0.4.orig.tar.gz 301345 SHA256:4d293b6b9d9fe51d58441f4b09b1f0005fcad8256ae8048587789bf5dbefb62e
-'http://archive.ubuntu.com/ubuntu/pool/universe/u/ustr/ustr_1.0.4-6.debian.tar.xz' ustr_1.0.4-6.debian.tar.xz 25608 SHA256:75aa6be2c70eba632ac63078e55ecb4b5a45e6624501a8ed6d81b9a2014d149e
 ```
 
 ### `dpkg` source package: `util-linux=2.30.1-0ubuntu4`
@@ -4270,13 +4318,9 @@ Licenses: (parsed from: `/usr/share/doc/x11-common/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris xorg=1:7.7+19ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xorg/xorg_7.7+19ubuntu2.dsc' xorg_7.7+19ubuntu2.dsc 2064 SHA256:d216c96b579846d08b817a4610c4d92d650a3225dae3dc5986f790c662eb61c7
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xorg/xorg_7.7+19ubuntu2.tar.gz' xorg_7.7+19ubuntu2.tar.gz 303266 SHA256:0ad69ac62b6ef246e315356992c0d228a5aa00acd4b5ddc579435a9949f74e4a
-```
 
 ### `dpkg` source package: `xtrans=1.3.5-1`
 

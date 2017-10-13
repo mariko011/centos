@@ -558,20 +558,13 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris coreutils=8.26-3
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_8.26-3.dsc' coreutils_8.26-3.dsc 1955 SHA256:f62ab642e46e02c470cc045316643de530a0be50446151a5e449ca12da6485c4
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_8.26.orig.tar.xz' coreutils_8.26.orig.tar.xz 5810244 SHA256:155e94d748f8e2bc327c66e0cbebdb8d6ab265d2f37c3c928f7bf6c3beba9a8e
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_8.26-3.debian.tar.xz' coreutils_8.26-3.debian.tar.xz 22392 SHA256:cef6a15eb95d9e7bc992bca95010bc5ea9e25e98d8f4f668a698eee534d14b93
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/coreutils/8.26-3/
 
-- https://sources.debian.net/src/coreutils/8.26-3/ (for browsing the source)
-- https://sources.debian.net/src/coreutils/8.26-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/coreutils/8.26-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cups=2.2.4-7`
 
@@ -2567,20 +2560,13 @@ Licenses: (parsed from: `/usr/share/doc/libexif-dev/copyright`, `/usr/share/doc/
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libexif=0.6.21-2
-'http://deb.debian.org/debian/pool/main/libe/libexif/libexif_0.6.21-2.dsc' libexif_0.6.21-2.dsc 2053 SHA256:284942bcd7656949a383f2ee775babb20b50781c30d915b34fe272220f997ea6
-'http://deb.debian.org/debian/pool/main/libe/libexif/libexif_0.6.21.orig.tar.gz' libexif_0.6.21.orig.tar.gz 2081615 SHA256:edb7eb13664cf950a6edd132b75e99afe61c5effe2f16494e6d27bc404b287bf
-'http://deb.debian.org/debian/pool/main/libe/libexif/libexif_0.6.21-2.debian.tar.xz' libexif_0.6.21-2.debian.tar.xz 8628 SHA256:648796d86b17567fb13dd356fc18c4b164b5a598853964d15beb9a32ec1253d8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libexif/0.6.21-2/
 
-- https://sources.debian.net/src/libexif/0.6.21-2/ (for browsing the source)
-- https://sources.debian.net/src/libexif/0.6.21-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libexif/0.6.21-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libffi=3.2.1-6`
 
@@ -4411,20 +4397,13 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:7.5p1-10
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.5p1-10.dsc' openssh_7.5p1-10.dsc 2856 SHA256:b4782d7383b5dd7e23a71a28065fd15e6b8aa8cd052f8f45d0078f053efa81be
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.5p1.orig.tar.gz' openssh_7.5p1.orig.tar.gz 1510857 SHA256:9846e3c5fab9f0547400b4d2c017992f914222b3fd1f8eee6c7dc6bc5e59f9f0
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.5p1-10.debian.tar.xz' openssh_7.5p1-10.debian.tar.xz 159252 SHA256:2eda9f24b25b306cae15a8080018ee4f06679e98e2574725459be0d7e0c7db53
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssh/1:7.5p1-10/
 
-- https://sources.debian.net/src/openssh/1:7.5p1-10/ (for browsing the source)
-- https://sources.debian.net/src/openssh/1:7.5p1-10/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssh/1:7.5p1-10/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl1.0=1.0.2l-2`
 
