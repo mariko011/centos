@@ -4,6 +4,8 @@
 
 -	[`odoo:10`](#odoo10)
 -	[`odoo:10.0`](#odoo100)
+-	[`odoo:11`](#odoo11)
+-	[`odoo:11.0`](#odoo110)
 -	[`odoo:8`](#odoo8)
 -	[`odoo:8.0`](#odoo80)
 -	[`odoo:9`](#odoo9)
@@ -191,6 +193,14 @@ CMD ["odoo"]
 		Last Modified: Tue, 10 Oct 2017 00:45:29 GMT  
 		Size: 125.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `odoo:11`
+
+**does not exist** (yet?)
+
+## `odoo:11.0`
+
+**does not exist** (yet?)
 
 ## `odoo:8`
 
