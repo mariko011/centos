@@ -600,14 +600,9 @@ Licenses: (parsed from: `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/lib
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.52.1-4ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.52.1-4ubuntu1.1.dsc' curl_7.52.1-4ubuntu1.1.dsc 2835 SHA256:fd33ddb865faba8ec780cdddcc80ee95680fda68ee69960198793377faac59b7
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.52.1.orig.tar.gz' curl_7.52.1.orig.tar.gz 3504621 SHA256:a8984e8b20880b621f61a62d95ff3c0763a3152093a9f9ce4287cfd614add6ae
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.52.1-4ubuntu1.1.debian.tar.xz' curl_7.52.1-4ubuntu1.1.debian.tar.xz 37856 SHA256:f476d07bd4ebc1cdffd8d0d93b156b5143baaf32d2a05afe0d278e3c8c0a9740
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-2ubuntu1`
 
@@ -2204,14 +2199,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=4.10.0-35.39
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.10.0-35.39.dsc' linux_4.10.0-35.39.dsc 6015 SHA256:9b2df02f44e8f4786c74f1012a2b7d6c29fc09d2e3bce0fab0f3017bc59468dd
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.10.0.orig.tar.gz' linux_4.10.0.orig.tar.gz 143917000 SHA256:1221bcded9062e5740e7cd1b047479494312b13a2a3ba8a48c820d12276c417d
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.10.0-35.39.diff.gz' linux_4.10.0-35.39.diff.gz 7656058 SHA256:1a92b5c2718863d117bc9bfac0912cb36fb406a6206b572997d8621fc3ef4b5d
-```
 
 ### `dpkg` source package: `lksctp-tools=1.0.17+dfsg-1`
 

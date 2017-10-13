@@ -855,14 +855,9 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `ISC`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.35.0-1ubuntu2.10
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0-1ubuntu2.10.dsc' curl_7.35.0-1ubuntu2.10.dsc 2741 SHA256:2fb4cdd91ed6bd0e262c16d1e6e32a33a6f9d4003834ef3e9b010ed2e24afc06
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0.orig.tar.gz' curl_7.35.0.orig.tar.gz 3544496 SHA256:917d118fc5d61e9dd1538d6519bd93bbebf2e866882419781c2e0fdb2bc42121
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0-1ubuntu2.10.debian.tar.gz' curl_7.35.0-1ubuntu2.10.debian.tar.gz 59782 SHA256:72a2c03db7f4eac287a70a8063d3031620e9cf9d86f0e357dd78ba755e926c18
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.25.dfsg1-17build1`
 
@@ -2496,14 +2491,9 @@ Licenses: (parsed from: `/usr/share/doc/libffi6/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libffi=3.1~rc1+r3.0.13-12ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libf/libffi/libffi_3.1~rc1+r3.0.13-12ubuntu0.1.dsc' libffi_3.1~rc1+r3.0.13-12ubuntu0.1.dsc 2198 SHA256:cb5498b0b52063dfed0a38489195ef25f0136faee6999b61a5a1e76089c0a6c8
-'http://archive.ubuntu.com/ubuntu/pool/main/libf/libffi/libffi_3.1~rc1+r3.0.13.orig.tar.gz' libffi_3.1~rc1+r3.0.13.orig.tar.gz 845747 SHA256:1dddde1400c3bcb7749d398071af88c3e4754058d2d4c0b3696c2f82dc5cf11c
-'http://archive.ubuntu.com/ubuntu/pool/main/libf/libffi/libffi_3.1~rc1+r3.0.13-12ubuntu0.1.debian.tar.xz' libffi_3.1~rc1+r3.0.13-12ubuntu0.1.debian.tar.xz 48188 SHA256:260827506b832f348584a35e38c2ccee9deb5efcf859aebe8d7d25733256f108
-```
 
 ### `dpkg` source package: `libgcrypt11=1.5.3-2ubuntu4.5`
 
