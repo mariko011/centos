@@ -8,51 +8,68 @@
 -	[`docker:17.06.2-ce`](#docker17062-ce)
 -	[`docker:17.06.2-ce-dind`](#docker17062-ce-dind)
 -	[`docker:17.06.2-ce-git`](#docker17062-ce-git)
+-	[`docker:17.06.2-ce-windowsservercore`](#docker17062-ce-windowsservercore)
 -	[`docker:17.06.2-dind`](#docker17062-dind)
 -	[`docker:17.06.2-git`](#docker17062-git)
+-	[`docker:17.06.2-windowsservercore`](#docker17062-windowsservercore)
 -	[`docker:17.06-dind`](#docker1706-dind)
 -	[`docker:17.06-git`](#docker1706-git)
+-	[`docker:17.06-windowsservercore`](#docker1706-windowsservercore)
 -	[`docker:17.07`](#docker1707)
 -	[`docker:17.07.0`](#docker17070)
 -	[`docker:17.07.0-ce`](#docker17070-ce)
 -	[`docker:17.07.0-ce-dind`](#docker17070-ce-dind)
 -	[`docker:17.07.0-ce-git`](#docker17070-ce-git)
+-	[`docker:17.07.0-ce-windowsservercore`](#docker17070-ce-windowsservercore)
 -	[`docker:17.07.0-dind`](#docker17070-dind)
 -	[`docker:17.07.0-git`](#docker17070-git)
+-	[`docker:17.07.0-windowsservercore`](#docker17070-windowsservercore)
 -	[`docker:17.07-dind`](#docker1707-dind)
 -	[`docker:17.07-git`](#docker1707-git)
+-	[`docker:17.07-windowsservercore`](#docker1707-windowsservercore)
 -	[`docker:17.09`](#docker1709)
 -	[`docker:17.09.0`](#docker17090)
 -	[`docker:17.09.0-ce`](#docker17090-ce)
 -	[`docker:17.09.0-ce-dind`](#docker17090-ce-dind)
 -	[`docker:17.09.0-ce-git`](#docker17090-ce-git)
+-	[`docker:17.09.0-ce-windowsservercore`](#docker17090-ce-windowsservercore)
 -	[`docker:17.09.0-dind`](#docker17090-dind)
 -	[`docker:17.09.0-git`](#docker17090-git)
+-	[`docker:17.09.0-windowsservercore`](#docker17090-windowsservercore)
 -	[`docker:17.09-dind`](#docker1709-dind)
 -	[`docker:17.09-git`](#docker1709-git)
+-	[`docker:17.09-windowsservercore`](#docker1709-windowsservercore)
 -	[`docker:17.10.0-ce-rc2`](#docker17100-ce-rc2)
 -	[`docker:17.10.0-ce-rc2-dind`](#docker17100-ce-rc2-dind)
 -	[`docker:17.10.0-ce-rc2-git`](#docker17100-ce-rc2-git)
+-	[`docker:17.10.0-ce-rc2-windowsservercore`](#docker17100-ce-rc2-windowsservercore)
 -	[`docker:17.10-rc`](#docker1710-rc)
 -	[`docker:17.10-rc-dind`](#docker1710-rc-dind)
 -	[`docker:17.10-rc-git`](#docker1710-rc-git)
+-	[`docker:17.10-rc-windowsservercore`](#docker1710-rc-windowsservercore)
 -	[`docker:17-dind`](#docker17-dind)
 -	[`docker:17-git`](#docker17-git)
+-	[`docker:17-windowsservercore`](#docker17-windowsservercore)
 -	[`docker:dind`](#dockerdind)
 -	[`docker:edge`](#dockeredge)
 -	[`docker:edge-dind`](#dockeredge-dind)
 -	[`docker:edge-git`](#dockeredge-git)
+-	[`docker:edge-windowsservercore`](#dockeredge-windowsservercore)
 -	[`docker:git`](#dockergit)
 -	[`docker:latest`](#dockerlatest)
 -	[`docker:rc`](#dockerrc)
 -	[`docker:rc-dind`](#dockerrc-dind)
 -	[`docker:rc-git`](#dockerrc-git)
+-	[`docker:rc-windowsservercore`](#dockerrc-windowsservercore)
 -	[`docker:stable`](#dockerstable)
 -	[`docker:stable-dind`](#dockerstable-dind)
 -	[`docker:stable-git`](#dockerstable-git)
+-	[`docker:stable-windowsservercore`](#dockerstable-windowsservercore)
 -	[`docker:test`](#dockertest)
 -	[`docker:test-dind`](#dockertest-dind)
 -	[`docker:test-git`](#dockertest-git)
+-	[`docker:test-windowsservercore`](#dockertest-windowsservercore)
+-	[`docker:windowsservercore`](#dockerwindowsservercore)
 
 ## `docker:17`
 
@@ -508,6 +525,10 @@ RUN apk add --no-cache 		git 		openssh-client
 		Size: 11.8 MB (11780130 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `docker:17.06.2-ce-windowsservercore`
+
+**does not exist** (yet?)
+
 ## `docker:17.06.2-dind`
 
 ```console
@@ -686,6 +707,10 @@ RUN apk add --no-cache 		git 		openssh-client
 		Size: 11.8 MB (11780130 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `docker:17.06.2-windowsservercore`
+
+**does not exist** (yet?)
+
 ## `docker:17.06-dind`
 
 ```console
@@ -863,6 +888,10 @@ RUN apk add --no-cache 		git 		openssh-client
 		Last Modified: Thu, 12 Oct 2017 22:01:47 GMT  
 		Size: 11.8 MB (11780130 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `docker:17.06-windowsservercore`
+
+**does not exist** (yet?)
 
 ## `docker:17.07`
 
@@ -1249,6 +1278,10 @@ RUN apk add --no-cache 		git 		openssh-client
 		Size: 11.8 MB (11780145 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `docker:17.07.0-ce-windowsservercore`
+
+**does not exist** (yet?)
+
 ## `docker:17.07.0-dind`
 
 ```console
@@ -1427,6 +1460,10 @@ RUN apk add --no-cache 		git 		openssh-client
 		Size: 11.8 MB (11780145 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `docker:17.07.0-windowsservercore`
+
+**does not exist** (yet?)
+
 ## `docker:17.07-dind`
 
 ```console
@@ -1604,6 +1641,10 @@ RUN apk add --no-cache 		git 		openssh-client
 		Last Modified: Thu, 12 Oct 2017 22:00:05 GMT  
 		Size: 11.8 MB (11780145 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `docker:17.07-windowsservercore`
+
+**does not exist** (yet?)
 
 ## `docker:17.09`
 
@@ -1990,6 +2031,10 @@ RUN apk add --no-cache 		git 		openssh-client
 		Size: 11.8 MB (11780142 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `docker:17.09.0-ce-windowsservercore`
+
+**does not exist** (yet?)
+
 ## `docker:17.09.0-dind`
 
 ```console
@@ -2168,6 +2213,10 @@ RUN apk add --no-cache 		git 		openssh-client
 		Size: 11.8 MB (11780142 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `docker:17.09.0-windowsservercore`
+
+**does not exist** (yet?)
+
 ## `docker:17.09-dind`
 
 ```console
@@ -2345,6 +2394,10 @@ RUN apk add --no-cache 		git 		openssh-client
 		Last Modified: Thu, 12 Oct 2017 21:57:36 GMT  
 		Size: 11.8 MB (11780142 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `docker:17.09-windowsservercore`
+
+**does not exist** (yet?)
 
 ## `docker:17.10.0-ce-rc2`
 
@@ -2593,6 +2646,10 @@ RUN apk add --no-cache 		git 		openssh-client
 		Size: 11.8 MB (11780151 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `docker:17.10.0-ce-rc2-windowsservercore`
+
+**does not exist** (yet?)
+
 ## `docker:17.10-rc`
 
 ```console
@@ -2840,6 +2897,10 @@ RUN apk add --no-cache 		git 		openssh-client
 		Size: 11.8 MB (11780151 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `docker:17.10-rc-windowsservercore`
+
+**does not exist** (yet?)
+
 ## `docker:17-dind`
 
 ```console
@@ -3017,6 +3078,10 @@ RUN apk add --no-cache 		git 		openssh-client
 		Last Modified: Thu, 12 Oct 2017 21:57:36 GMT  
 		Size: 11.8 MB (11780142 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `docker:17-windowsservercore`
+
+**does not exist** (yet?)
 
 ## `docker:dind`
 
@@ -3367,6 +3432,10 @@ RUN apk add --no-cache 		git 		openssh-client
 		Last Modified: Thu, 12 Oct 2017 21:57:36 GMT  
 		Size: 11.8 MB (11780142 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `docker:edge-windowsservercore`
+
+**does not exist** (yet?)
 
 ## `docker:git`
 
@@ -3759,6 +3828,10 @@ RUN apk add --no-cache 		git 		openssh-client
 		Size: 11.8 MB (11780151 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `docker:rc-windowsservercore`
+
+**does not exist** (yet?)
+
 ## `docker:stable`
 
 ```console
@@ -4006,6 +4079,10 @@ RUN apk add --no-cache 		git 		openssh-client
 		Size: 11.8 MB (11780142 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `docker:stable-windowsservercore`
+
+**does not exist** (yet?)
+
 ## `docker:test`
 
 ```console
@@ -4252,3 +4329,11 @@ RUN apk add --no-cache 		git 		openssh-client
 		Last Modified: Thu, 12 Oct 2017 21:57:36 GMT  
 		Size: 11.8 MB (11780142 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `docker:test-windowsservercore`
+
+**does not exist** (yet?)
+
+## `docker:windowsservercore`
+
+**does not exist** (yet?)

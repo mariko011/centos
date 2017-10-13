@@ -3,8 +3,10 @@
 # Tags of `swipl`
 
 -	[`swipl:7.5.15`](#swipl7515)
+-	[`swipl:7.6.0`](#swipl760)
 -	[`swipl:7.7.0`](#swipl770)
 -	[`swipl:latest`](#swipllatest)
+-	[`swipl:stable`](#swiplstable)
 
 ## `swipl:7.5.15`
 
@@ -59,6 +61,10 @@ CMD ["swipl"]
 		Last Modified: Mon, 09 Oct 2017 22:11:45 GMT  
 		Size: 6.5 MB (6479800 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `swipl:7.6.0`
+
+**does not exist** (yet?)
 
 ## `swipl:7.7.0`
 
@@ -167,3 +173,7 @@ CMD ["swipl"]
 		Last Modified: Mon, 09 Oct 2017 22:11:22 GMT  
 		Size: 6.5 MB (6482581 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `swipl:stable`
+
+**does not exist** (yet?)
