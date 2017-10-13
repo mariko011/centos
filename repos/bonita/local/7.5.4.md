@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c41be03be9cb8f76b91554587a73e19a104c8279dd252202ec31822727a2dca1`
-- Created: `2017-09-19T00:02:05.755786553Z`
-- Virtual Size: ~ 434.82 Mb  
+- Image ID: `sha256:52c6e0a5b48b620cf034ee488273d713a7be845f4241bee8254b6823291d459f`
+- Created: `2017-10-10T21:24:07.383345319Z`
+- Virtual Size: ~ 435.08 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/opt/files/startup.sh"]`
@@ -275,11 +275,11 @@ $ apt-get source -qq --print-uris ca-certificates-java=20160321
 'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates-java/ca-certificates-java_20160321.tar.xz' ca-certificates-java_20160321.tar.xz 15712 SHA256:3caf93b56caa98b2c06ca704d85efc1e5ef7ca14fda8dc8392b15e6fc27aa849
 ```
 
-### `dpkg` source package: `ca-certificates=20160104ubuntu1`
+### `dpkg` source package: `ca-certificates=20170717~16.04.1`
 
 Binary Packages:
 
-- `ca-certificates=20160104ubuntu1`
+- `ca-certificates=20170717~16.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -290,9 +290,9 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ca-certificates=20160104ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20160104ubuntu1.dsc' ca-certificates_20160104ubuntu1.dsc 1858 SHA256:e7572ca55c517a86793943ebc172accc7246e40693b8f37848020b617c5f4fd0
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20160104ubuntu1.tar.xz' ca-certificates_20160104ubuntu1.tar.xz 293852 SHA256:321a9e2cdaf0d02077fc5ac755024cdf0d354ef10ab1581bff14694cc391a16e
+$ apt-get source -qq --print-uris ca-certificates=20170717~16.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20170717~16.04.1.dsc' ca-certificates_20170717~16.04.1.dsc 1862 SHA256:5f7a908b265052c882ee7e2584673de5c0ab90ab3284a05c287c48f3117bda09
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20170717~16.04.1.tar.xz' ca-certificates_20170717~16.04.1.tar.xz 292920 SHA256:fb7a3ab87d0b5377b01359e0d8f2d564491b7fb8e7de424d7678e6c8912b312d
 ```
 
 ### `dpkg` source package: `cdebconf=0.198ubuntu1`
@@ -735,12 +735,12 @@ $ apt-get source -qq --print-uris freetype=2.6.1-0.1ubuntu2.3
 'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.6.1-0.1ubuntu2.3.diff.gz' freetype_2.6.1-0.1ubuntu2.3.diff.gz 44226 SHA256:f8e1484f54d8f83e12ea437f193f55d2d45a93e1882908cd8edf6cd8fb56d8b2
 ```
 
-### `dpkg` source package: `gcc-5=5.4.0-6ubuntu1~16.04.4`
+### `dpkg` source package: `gcc-5=5.4.0-6ubuntu1~16.04.5`
 
 Binary Packages:
 
-- `gcc-5-base:amd64=5.4.0-6ubuntu1~16.04.4`
-- `libstdc++6:amd64=5.4.0-6ubuntu1~16.04.4`
+- `gcc-5-base:amd64=5.4.0-6ubuntu1~16.04.5`
+- `libstdc++6:amd64=5.4.0-6ubuntu1~16.04.5`
 
 Licenses: (parsed from: `/usr/share/doc/gcc-5-base/copyright`, `/usr/share/doc/libstdc++6/copyright`)
 
@@ -753,10 +753,10 @@ Licenses: (parsed from: `/usr/share/doc/gcc-5-base/copyright`, `/usr/share/doc/l
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gcc-5=5.4.0-6ubuntu1~16.04.4
-'http://security.ubuntu.com/ubuntu/pool/main/g/gcc-5/gcc-5_5.4.0-6ubuntu1~16.04.4.dsc' gcc-5_5.4.0-6ubuntu1~16.04.4.dsc 28631 SHA256:aa1bf24191d929638953b9420d6c90df7f3dbd82d0bb2e27f02b9bd598c489c5
-'http://security.ubuntu.com/ubuntu/pool/main/g/gcc-5/gcc-5_5.4.0.orig.tar.gz' gcc-5_5.4.0.orig.tar.gz 73530162 SHA256:00f73e8382aa8653aa501ce2263597c2c4429912bfa18102f47cc362f00ed88d
-'http://security.ubuntu.com/ubuntu/pool/main/g/gcc-5/gcc-5_5.4.0-6ubuntu1~16.04.4.diff.gz' gcc-5_5.4.0-6ubuntu1~16.04.4.diff.gz 1451941 SHA256:87c63d2da53e46bf05bef082b015ac14ffcb46467e2fdfd87a4891d742d4697d
+$ apt-get source -qq --print-uris gcc-5=5.4.0-6ubuntu1~16.04.5
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-5/gcc-5_5.4.0-6ubuntu1~16.04.5.dsc' gcc-5_5.4.0-6ubuntu1~16.04.5.dsc 28625 SHA256:1403c6a2abf7a100b453ff9511a53d9e00dbbc03955bcf389f9302255344240e
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-5/gcc-5_5.4.0.orig.tar.gz' gcc-5_5.4.0.orig.tar.gz 73530162 SHA256:00f73e8382aa8653aa501ce2263597c2c4429912bfa18102f47cc362f00ed88d
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-5/gcc-5_5.4.0-6ubuntu1~16.04.5.diff.gz' gcc-5_5.4.0-6ubuntu1~16.04.5.diff.gz 1457564 SHA256:4af88f26fbcd0302fc163ebb6f914240472587d8bd65ae1d3f2b34ed55cc6644
 ```
 
 ### `dpkg` source package: `gccgo-6=6.0.1-0ubuntu1`
@@ -1361,11 +1361,11 @@ $ apt-get source -qq --print-uris libgpg-error=1.21-2ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgpg-error/libgpg-error_1.21-2ubuntu1.debian.tar.xz' libgpg-error_1.21-2ubuntu1.debian.tar.xz 11988 SHA256:b67f4686d39ec678e860b28d05e07567ec6d43025c18b82c1e9a5dda07a00ed9
 ```
 
-### `dpkg` source package: `libidn=1.32-3ubuntu1.1`
+### `dpkg` source package: `libidn=1.32-3ubuntu1.2`
 
 Binary Packages:
 
-- `libidn11:amd64=1.32-3ubuntu1.1`
+- `libidn11:amd64=1.32-3ubuntu1.2`
 
 Licenses: (parsed from: `/usr/share/doc/libidn11/copyright`)
 
@@ -1382,9 +1382,14 @@ Licenses: (parsed from: `/usr/share/doc/libidn11/copyright`)
 - `LGPL-3`
 - `LGPL-3+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libidn=1.32-3ubuntu1.2
+'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn/libidn_1.32-3ubuntu1.2.dsc' libidn_1.32-3ubuntu1.2.dsc 2303 SHA256:7e8ac6585e9ab5e0fce89ff91ff1972709da56551814973b84ef36e6c84072e4
+'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn/libidn_1.32.orig.tar.gz' libidn_1.32.orig.tar.gz 3483155 SHA256:ba5d5afee2beff703a34ee094668da5c6ea5afa38784cebba8924105e185c4f5
+'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn/libidn_1.32-3ubuntu1.2.debian.tar.xz' libidn_1.32-3ubuntu1.2.debian.tar.xz 84724 SHA256:f898167a432eeb656fe372b0565af7ab26f8eeaf269cfd768d34fa97fcaa3a4c
+```
 
 ### `dpkg` source package: `libjpeg-turbo=1.4.2-0ubuntu3`
 
@@ -2017,20 +2022,25 @@ $ apt-get source -qq --print-uris nspr=2:4.13.1-0ubuntu0.16.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/n/nspr/nspr_4.13.1-0ubuntu0.16.04.1.debian.tar.xz' nspr_4.13.1-0ubuntu0.16.04.1.debian.tar.xz 18308 SHA256:047734933b7369657df94947858aa40ad38b46cdd7ba7ead6c6e1656739aac13
 ```
 
-### `dpkg` source package: `nss=2:3.28.4-0ubuntu0.16.04.2`
+### `dpkg` source package: `nss=2:3.28.4-0ubuntu0.16.04.3`
 
 Binary Packages:
 
-- `libnss3:amd64=2:3.28.4-0ubuntu0.16.04.2`
-- `libnss3-nssdb=2:3.28.4-0ubuntu0.16.04.2`
+- `libnss3:amd64=2:3.28.4-0ubuntu0.16.04.3`
+- `libnss3-nssdb=2:3.28.4-0ubuntu0.16.04.3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris nss=2:3.28.4-0ubuntu0.16.04.3
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.28.4-0ubuntu0.16.04.3.dsc' nss_3.28.4-0ubuntu0.16.04.3.dsc 2430 SHA256:b8c5c541c6b0f057922ba3da6fde67b8275da923adf56fc1fc3924ffa3d6d8fd
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.28.4.orig.tar.gz' nss_3.28.4.orig.tar.gz 7453282 SHA256:d5d4761778b8d4c378b2174c9e13e7abd20a6961f557d4fcc029af723ffd7189
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.28.4-0ubuntu0.16.04.3.debian.tar.xz' nss_3.28.4-0ubuntu0.16.04.3.debian.tar.xz 31344 SHA256:09fb9c17dce30499f90a35b0f5e5a9f937fe2acee0a349fc8e21c1a6a7332f04
+```
 
 ### `dpkg` source package: `numactl=2.0.11-1ubuntu1`
 
@@ -2244,12 +2254,12 @@ $ apt-get source -qq --print-uris perl=5.22.1-9
 'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.22.1-9.debian.tar.xz' perl_5.22.1-9.debian.tar.xz 148292 SHA256:3368488e1d56e9ff69556a2e75cc50858414147afcf5d72f91dbfd71fb5d9127
 ```
 
-### `dpkg` source package: `postgresql-9.5=9.5.8-0ubuntu0.16.04.1`
+### `dpkg` source package: `postgresql-9.5=9.5.9-0ubuntu0.16.04`
 
 Binary Packages:
 
-- `libpq5:amd64=9.5.8-0ubuntu0.16.04.1`
-- `postgresql-client-9.5=9.5.8-0ubuntu0.16.04.1`
+- `libpq5:amd64=9.5.9-0ubuntu0.16.04`
+- `postgresql-client-9.5=9.5.9-0ubuntu0.16.04`
 
 Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postgresql-client-9.5/copyright`)
 
@@ -2263,10 +2273,10 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postg
 Source:
 
 ```console
-$ apt-get source -qq --print-uris postgresql-9.5=9.5.8-0ubuntu0.16.04.1
-'http://security.ubuntu.com/ubuntu/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.8-0ubuntu0.16.04.1.dsc' postgresql-9.5_9.5.8-0ubuntu0.16.04.1.dsc 3657 SHA256:c77a666392c99ff7468427fa0d6c3f0e67aa045e77dbf08e996efe6315c19902
-'http://security.ubuntu.com/ubuntu/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.8.orig.tar.bz2' postgresql-9.5_9.5.8.orig.tar.bz2 18670910 SHA256:ade57068f134f36710fa953e1ef79185abd96572f8098741413132f79ed37202
-'http://security.ubuntu.com/ubuntu/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.8-0ubuntu0.16.04.1.debian.tar.xz' postgresql-9.5_9.5.8-0ubuntu0.16.04.1.debian.tar.xz 22924 SHA256:34729c8b7fc9be9bc46c504ecaef29ea57e07f4b1a262e21bcbabfdf5d709825
+$ apt-get source -qq --print-uris postgresql-9.5=9.5.9-0ubuntu0.16.04
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.9-0ubuntu0.16.04.dsc' postgresql-9.5_9.5.9-0ubuntu0.16.04.dsc 3649 SHA256:a7a2e3e4830a15154b3639d45569bdb674c597e43e958adf726933c2d849fddf
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.9.orig.tar.bz2' postgresql-9.5_9.5.9.orig.tar.bz2 18677113 SHA256:e98cd5c664ab5a05cb83618ba8078647815cb71f7a60437f0322c7518727cdd4
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.9-0ubuntu0.16.04.debian.tar.xz' postgresql-9.5_9.5.9-0ubuntu0.16.04.debian.tar.xz 23000 SHA256:aaf8713f31796edbf50335430b07badddb9e72d7c389b358923420fe4cc4d3a5
 ```
 
 ### `dpkg` source package: `postgresql-common=173`
@@ -2334,14 +2344,14 @@ $ apt-get source -qq --print-uris python3-defaults=3.5.1-3
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.5.1-3.tar.gz' python3-defaults_3.5.1-3.tar.gz 924115 SHA256:8d1284430b77775d4cea62a33b0685e0523b8dfa2ebcc092d382af5cb5b4f237
 ```
 
-### `dpkg` source package: `python3.5=3.5.2-2ubuntu0~16.04.2`
+### `dpkg` source package: `python3.5=3.5.2-2ubuntu0~16.04.3`
 
 Binary Packages:
 
-- `libpython3.5-minimal:amd64=3.5.2-2ubuntu0~16.04.2`
-- `libpython3.5-stdlib:amd64=3.5.2-2ubuntu0~16.04.2`
-- `python3.5=3.5.2-2ubuntu0~16.04.2`
-- `python3.5-minimal=3.5.2-2ubuntu0~16.04.2`
+- `libpython3.5-minimal:amd64=3.5.2-2ubuntu0~16.04.3`
+- `libpython3.5-stdlib:amd64=3.5.2-2ubuntu0~16.04.3`
+- `python3.5=3.5.2-2ubuntu0~16.04.3`
+- `python3.5-minimal=3.5.2-2ubuntu0~16.04.3`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.5-minimal/copyright`, `/usr/share/doc/libpython3.5-stdlib/copyright`, `/usr/share/doc/python3.5/copyright`, `/usr/share/doc/python3.5-minimal/copyright`)
 
@@ -2372,9 +2382,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.5-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.5=3.5.2-2ubuntu0~16.04.3
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.5/python3.5_3.5.2-2ubuntu0~16.04.3.dsc' python3.5_3.5.2-2ubuntu0~16.04.3.dsc 2797 SHA256:93183010bad2d809639254019ed81c57a9d1e23a12fb2310edbeca263e189171
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.5/python3.5_3.5.2.orig.tar.xz' python3.5_3.5.2.orig.tar.xz 15222676 SHA256:0010f56100b9b74259ebcd5d4b295a32324b58b517403a10d1a2aa7cb22bca40
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.5/python3.5_3.5.2-2ubuntu0~16.04.3.debian.tar.xz' python3.5_3.5.2-2ubuntu0~16.04.3.debian.tar.xz 214216 SHA256:942d7ac62051df5d250db8b5eca469a2454fd1f537b274e3aa0c9a81493095f1
+```
 
 ### `dpkg` source package: `readline6=6.3-8ubuntu2`
 
