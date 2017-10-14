@@ -4751,14 +4751,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris x11proto-core=7.0.31-1~ubuntu16.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/x/x11proto-core/x11proto-core_7.0.31-1~ubuntu16.04.1.dsc' x11proto-core_7.0.31-1~ubuntu16.04.1.dsc 2079 SHA256:5fbc2bb209c59ed702e6591ee0badc9521832d9e6470a1da1aa72fbf4704abfd
-'http://archive.ubuntu.com/ubuntu/pool/main/x/x11proto-core/x11proto-core_7.0.31.orig.tar.gz' x11proto-core_7.0.31.orig.tar.gz 367979 SHA256:6d755eaae27b45c5cc75529a12855fed5de5969b367ed05003944cf901ed43c7
-'http://archive.ubuntu.com/ubuntu/pool/main/x/x11proto-core/x11proto-core_7.0.31-1~ubuntu16.04.1.diff.gz' x11proto-core_7.0.31-1~ubuntu16.04.1.diff.gz 29976 SHA256:49fc99eccdfa9f9c477979933dafe570c19b215861bf7473564311ed90fcd51b
-```
 
 ### `dpkg` source package: `x11proto-input=2.3.1-1`
 
