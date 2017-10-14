@@ -316,20 +316,13 @@ Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris audit=1:2.7.8-1
-'http://deb.debian.org/debian/pool/main/a/audit/audit_2.7.8-1.dsc' audit_2.7.8-1.dsc 2450 SHA256:aa9ccc9b92f5ef52d95f2568267c03452b100aa6f43864c7c025145ecb0f5434
-'http://deb.debian.org/debian/pool/main/a/audit/audit_2.7.8.orig.tar.gz' audit_2.7.8.orig.tar.gz 1111998 SHA256:57b5ae5697f288b8e53286eacd1c6c2e88bd65db18df3d855332fc63b302fdae
-'http://deb.debian.org/debian/pool/main/a/audit/audit_2.7.8-1.debian.tar.xz' audit_2.7.8-1.debian.tar.xz 18748 SHA256:0e428515e30eb5aef58c7b445a2f7c37ac43b77e4cd48e7964e10f7a08635fb4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/audit/1:2.7.8-1/
 
-- https://sources.debian.net/src/audit/1:2.7.8-1/ (for browsing the source)
-- https://sources.debian.net/src/audit/1:2.7.8-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/audit/1:2.7.8-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `avahi=0.7-3`
 
@@ -546,19 +539,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cdebconf=0.230
-'http://deb.debian.org/debian/pool/main/c/cdebconf/cdebconf_0.230.dsc' cdebconf_0.230.dsc 2662 SHA256:892693c02be63a01948cd6719cabd65c958dfee11eebc3db06cb3c60eb51e8bd
-'http://deb.debian.org/debian/pool/main/c/cdebconf/cdebconf_0.230.tar.xz' cdebconf_0.230.tar.xz 273332 SHA256:8e39217219fa8d2e79f50ffa9f2e9a014d113b8a400979a2903c19c5bb2801e2
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/cdebconf/0.230/
 
-- https://sources.debian.net/src/cdebconf/0.230/ (for browsing the source)
-- https://sources.debian.net/src/cdebconf/0.230/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cdebconf/0.230/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `colord=1.3.3-2`
 
@@ -1145,20 +1132,13 @@ Licenses: (parsed from: `/usr/share/doc/gcc-5-base/copyright`)
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-5=5.4.1-14
-'http://deb.debian.org/debian/pool/main/g/gcc-5/gcc-5_5.4.1-14.dsc' gcc-5_5.4.1-14.dsc 17609 SHA256:d10dae93044bd5faad5bc21c04dc6c5c942089df5a807f4a9c69a548654cad1c
-'http://deb.debian.org/debian/pool/main/g/gcc-5/gcc-5_5.4.1.orig.tar.gz' gcc-5_5.4.1.orig.tar.gz 76812822 SHA256:2a84447f34cd062066d38300ac8a1fb528eb301a504b48e1d017e547e5abfcdb
-'http://deb.debian.org/debian/pool/main/g/gcc-5/gcc-5_5.4.1-14.diff.gz' gcc-5_5.4.1-14.diff.gz 3743877 SHA256:b075cba7a1a83810b8075784f04b09a239c55ff415c041a1142e2e9dd28d9863
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-5/5.4.1-14/
 
-- https://sources.debian.net/src/gcc-5/5.4.1-14/ (for browsing the source)
-- https://sources.debian.net/src/gcc-5/5.4.1-14/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-5/5.4.1-14/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-6=6.4.0-7`
 
@@ -1816,19 +1796,13 @@ Licenses: (parsed from: `/usr/share/doc/init-system-helpers/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris init-system-helpers=1.49
-'http://deb.debian.org/debian/pool/main/i/init-system-helpers/init-system-helpers_1.49.dsc' init-system-helpers_1.49.dsc 1945 SHA256:c051912f7585c7638efe621d4714f1daff25c4134b0b8806b8b67bfdf9b98a14
-'http://deb.debian.org/debian/pool/main/i/init-system-helpers/init-system-helpers_1.49.tar.xz' init-system-helpers_1.49.tar.xz 42660 SHA256:845ed218f1cb54d5b10ea850620e5b6b3905fb248163f97ad4670a55100cedae
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/init-system-helpers/1.49/
 
-- https://sources.debian.net/src/init-system-helpers/1.49/ (for browsing the source)
-- https://sources.debian.net/src/init-system-helpers/1.49/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/init-system-helpers/1.49/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `iproute2=4.9.0-2`
 
@@ -1978,9 +1952,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris keyutils=1.5.9-9
-'http://deb.debian.org/debian/pool/main/k/keyutils/keyutils_1.5.9-9.dsc' keyutils_1.5.9-9.dsc 2033 SHA256:5fe3b2578a7ec662b7f495b11b7d861c3ee68c9550d4dec20c10ff4f3b3ca3dd
+'http://deb.debian.org/debian/pool/main/k/keyutils/keyutils_1.5.9-9.1.dsc' keyutils_1.5.9-9.1.dsc 2118 SHA256:a16d70de62b984b7064d6517884438846f4270948ff4680761112301beb0a20e
 'http://deb.debian.org/debian/pool/main/k/keyutils/keyutils_1.5.9.orig.tar.bz2' keyutils_1.5.9.orig.tar.bz2 74683 SHA256:4da2c5552c688b65ab14d4fd40fbdf720c8b396d8ece643e040cf6e707e083ae
-'http://deb.debian.org/debian/pool/main/k/keyutils/keyutils_1.5.9-9.debian.tar.xz' keyutils_1.5.9-9.debian.tar.xz 17588 SHA256:2e9db3f51d902a4d8fa4bef3b914353f9f83ed53b9003f24b5fc44748f4d6d80
+'http://deb.debian.org/debian/pool/main/k/keyutils/keyutils_1.5.9-9.1.debian.tar.xz' keyutils_1.5.9-9.1.debian.tar.xz 17644 SHA256:899184c857c9acdc62bd704666def7e7e733fc17b9da4f23d891ea31ce543127
 ```
 
 Other potentially useful URLs:
@@ -2174,20 +2148,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libdrm=2.4.83-1
-'http://deb.debian.org/debian/pool/main/libd/libdrm/libdrm_2.4.83-1.dsc' libdrm_2.4.83-1.dsc 2989 SHA256:42b2d68f65b65871e6ae57969bc7b30e8a69caca170027b6df6073d504851df9
-'http://deb.debian.org/debian/pool/main/libd/libdrm/libdrm_2.4.83.orig.tar.gz' libdrm_2.4.83.orig.tar.gz 1056627 SHA256:2ff5f626a14ec5bd680f7769cac9a8eb1e40c36cf5ca554d2c4e5d91bab3d81d
-'http://deb.debian.org/debian/pool/main/libd/libdrm/libdrm_2.4.83-1.diff.gz' libdrm_2.4.83-1.diff.gz 51402 SHA256:915a0164cb5f671223cc8be94b87c64bcc680f9b2631ce5a8b750091287522ed
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libdrm/2.4.83-1/
 
-- https://sources.debian.net/src/libdrm/2.4.83-1/ (for browsing the source)
-- https://sources.debian.net/src/libdrm/2.4.83-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libdrm/2.4.83-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libedit=3.1-20170329-1`
 
@@ -2763,20 +2730,13 @@ Licenses: (parsed from: `/usr/share/doc/libsoup-gnome2.4-1/copyright`, `/usr/sha
 - `LGPL-2`
 - `LGPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libsoup2.4=2.60.0-1
-'http://deb.debian.org/debian/pool/main/libs/libsoup2.4/libsoup2.4_2.60.0-1.dsc' libsoup2.4_2.60.0-1.dsc 2760 SHA256:cfa572f932fab1fe40ae26cedc98442f729aac30b740fb9ed95dcd2352035652
-'http://deb.debian.org/debian/pool/main/libs/libsoup2.4/libsoup2.4_2.60.0.orig.tar.xz' libsoup2.4_2.60.0.orig.tar.xz 1826560 SHA256:b324edbecda0884143c0853b4a2bd5bd37fb3761f12f293c621ff34b9acdc84c
-'http://deb.debian.org/debian/pool/main/libs/libsoup2.4/libsoup2.4_2.60.0-1.debian.tar.xz' libsoup2.4_2.60.0-1.debian.tar.xz 16456 SHA256:e7e8d70478e2ea1ac9dd437f0dae93ec2e79288b24585fcb3e30202044ac9177
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libsoup2.4/2.60.0-1/
 
-- https://sources.debian.net/src/libsoup2.4/2.60.0-1/ (for browsing the source)
-- https://sources.debian.net/src/libsoup2.4/2.60.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libsoup2.4/2.60.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libssh2=1.8.0-1`
 
@@ -4319,20 +4279,13 @@ Licenses: (parsed from: `/usr/share/doc/shared-mime-info/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris shared-mime-info=1.9-1
-'http://deb.debian.org/debian/pool/main/s/shared-mime-info/shared-mime-info_1.9-1.dsc' shared-mime-info_1.9-1.dsc 2206 SHA256:0fed9c1598e56d8e3db43ffe0e4136c89c5d21deafa518907c5055f708a780bf
-'http://deb.debian.org/debian/pool/main/s/shared-mime-info/shared-mime-info_1.9.orig.tar.xz' shared-mime-info_1.9.orig.tar.xz 607648 SHA256:5c0133ec4e228e41bdf52f726d271a2d821499c2ab97afd3aa3d6cf43efcdc83
-'http://deb.debian.org/debian/pool/main/s/shared-mime-info/shared-mime-info_1.9-1.debian.tar.xz' shared-mime-info_1.9-1.debian.tar.xz 10048 SHA256:194dbe55d32467223c370aadfd61a99f00aaec58bda18ec18f696df6333cd813
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/shared-mime-info/1.9-1/
 
-- https://sources.debian.net/src/shared-mime-info/1.9-1/ (for browsing the source)
-- https://sources.debian.net/src/shared-mime-info/1.9-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/shared-mime-info/1.9-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sqlite3=3.20.1-1`
 
@@ -4379,20 +4332,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=234-3
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_234-3.dsc' systemd_234-3.dsc 4838 SHA256:2c85a08e1ef7818c755f98a7aaf1e97deccc7575a717903e3330dae2777d5a94
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_234.orig.tar.gz' systemd_234.orig.tar.gz 4800186 SHA256:da3e69d10aa1c983d33833372ad4929037b411ac421fb085c8cee79ae1d80b6a
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_234-3.debian.tar.xz' systemd_234-3.debian.tar.xz 134836 SHA256:b873f8ce1cdaa82212ec043cc5d7bf9f82dd2c347d59816989e2079dfe94720f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/234-3/
 
-- https://sources.debian.net/src/systemd/234-3/ (for browsing the source)
-- https://sources.debian.net/src/systemd/234-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/234-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10`
 
