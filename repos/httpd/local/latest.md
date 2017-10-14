@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:52c70f4c98429d221d7ad9efe2d6e694e0581e60105e34bdd67fa4b6abc180fb`
-- Created: `2017-10-09T23:19:55.924448425Z`
+- Image ID: `sha256:c24f66af34b4d76558f7743109e2476b6325fcf6cc167c6e1e07cd121a22b341`
+- Created: `2017-10-12T22:00:16.508326037Z`
 - Virtual Size: ~ 177.29 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -14,11 +14,9 @@
   - `NGHTTP2_VERSION=1.18.1-1`
   - `OPENSSL_VERSION=1.0.2l-1~bpo8+1`
   - `HTTPD_VERSION=2.4.28`
-  - `HTTPD_SHA1=0b37522b808dcee72e1d56d656b0def530b820a2`
-  - `HTTPD_BZ2_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=httpd/httpd-2.4.28.tar.bz2`
-  - `HTTPD_ASC_URL=https://www.apache.org/dist/httpd/httpd-2.4.28.tar.bz2.asc`
-  - `HTTPD_BZ2_FALLBACK_URL=https://archive.apache.org/dist/httpd/httpd-2.4.28.tar.bz2`
-  - `HTTPD_ASC_FALLBACK_URL=https://archive.apache.org/dist/httpd/httpd-2.4.28.tar.bz2.asc`
+  - `HTTPD_SHA256=c1197a3a62a4ab5c584ab89b249af38cf28b4adee9c0106b62999fd29f920666`
+  - `HTTPD_PATCHES=`
+  - `APACHE_DIST_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename= 	https://www-us.apache.org/dist/ 	https://www.apache.org/dist/ 	https://archive.apache.org/dist/`
 
 ## `dpkg` (`.deb`-based packages)
 
