@@ -257,10 +257,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris boot=1.3-20-1.1
-'http://http.debian.net/debian/pool/main/b/boot/boot_1.3-20-1.1.dsc' boot_1.3-20-1.1.dsc 1663 SHA256:fc68f2a803dcd537963c043519686415f745593d9aebaf3b98cf881de2710730
-'http://http.debian.net/debian/pool/main/b/boot/boot_1.3-20.orig.tar.gz' boot_1.3-20.orig.tar.gz 231855 SHA256:adcb90b72409705e3f9c69ea6c15673dcb649b464fed06723fe0930beac5212a
-'http://http.debian.net/debian/pool/main/b/boot/boot_1.3-20-1.1.diff.gz' boot_1.3-20-1.1.diff.gz 3535 SHA256:b52bcec1b6a4e9febb4f08b27737ac37087ee48d137c35fc911f054bd22bc51f
+'http://deb.debian.org/debian/pool/main/b/boot/boot_1.3-20-1.1.dsc' boot_1.3-20-1.1.dsc 1663 SHA256:fc68f2a803dcd537963c043519686415f745593d9aebaf3b98cf881de2710730
+'http://deb.debian.org/debian/pool/main/b/boot/boot_1.3-20.orig.tar.gz' boot_1.3-20.orig.tar.gz 231855 SHA256:adcb90b72409705e3f9c69ea6c15673dcb649b464fed06723fe0930beac5212a
+'http://deb.debian.org/debian/pool/main/b/boot/boot_1.3-20-1.1.diff.gz' boot_1.3-20-1.1.diff.gz 3535 SHA256:b52bcec1b6a4e9febb4f08b27737ac37087ee48d137c35fc911f054bd22bc51f
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/boot/1.3-20-1.1/ (for browsing the source)
+- https://sources.debian.net/src/boot/1.3-20-1.1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/boot/1.3-20-1.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `build-essential=12.4`
 
@@ -436,10 +442,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris cluster=2.0.6-2
-'http://http.debian.net/debian/pool/main/c/cluster/cluster_2.0.6-2.dsc' cluster_2.0.6-2.dsc 1635 SHA256:957569bb46a87a2a34a87f1924ff27264b35053357d6fcc91d0dc7ff6a9c9828
-'http://http.debian.net/debian/pool/main/c/cluster/cluster_2.0.6.orig.tar.gz' cluster_2.0.6.orig.tar.gz 319245 SHA256:f424b87f10595ed358b1ac80471b520ab9c767a4d203663c25b177c8ce5f8ffc
-'http://http.debian.net/debian/pool/main/c/cluster/cluster_2.0.6-2.diff.gz' cluster_2.0.6-2.diff.gz 3506 SHA256:c07da13c61e691e51772def710f366fc1ad889fea79186ea473e4f691e4e0571
+'http://deb.debian.org/debian/pool/main/c/cluster/cluster_2.0.6-2.dsc' cluster_2.0.6-2.dsc 1635 SHA256:957569bb46a87a2a34a87f1924ff27264b35053357d6fcc91d0dc7ff6a9c9828
+'http://deb.debian.org/debian/pool/main/c/cluster/cluster_2.0.6.orig.tar.gz' cluster_2.0.6.orig.tar.gz 319245 SHA256:f424b87f10595ed358b1ac80471b520ab9c767a4d203663c25b177c8ce5f8ffc
+'http://deb.debian.org/debian/pool/main/c/cluster/cluster_2.0.6-2.diff.gz' cluster_2.0.6-2.diff.gz 3506 SHA256:c07da13c61e691e51772def710f366fc1ad889fea79186ea473e4f691e4e0571
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/cluster/2.0.6-2/ (for browsing the source)
+- https://sources.debian.net/src/cluster/2.0.6-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/cluster/2.0.6-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `codetools=0.2-15-1.1`
 
@@ -455,10 +467,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris codetools=0.2-15-1.1
-'http://http.debian.net/debian/pool/main/c/codetools/codetools_0.2-15-1.1.dsc' codetools_0.2-15-1.1.dsc 1756 SHA256:dbff17e29acd3f7eef47cd3c7bc3c4e3e59aa7f988d29335c836811d31a82542
-'http://http.debian.net/debian/pool/main/c/codetools/codetools_0.2-15.orig.tar.gz' codetools_0.2-15.orig.tar.gz 12930 SHA256:4e0798ed79281a614f8cdd199e25f2c1bd8f35ecec902b03016544bd7795fa40
-'http://http.debian.net/debian/pool/main/c/codetools/codetools_0.2-15-1.1.debian.tar.xz' codetools_0.2-15-1.1.debian.tar.xz 2552 SHA256:e32f2cdbcc00c3cf065cc69b0b073928e167be29e9027c8476be0c44385eb6cc
+'http://deb.debian.org/debian/pool/main/c/codetools/codetools_0.2-15-1.1.dsc' codetools_0.2-15-1.1.dsc 1756 SHA256:dbff17e29acd3f7eef47cd3c7bc3c4e3e59aa7f988d29335c836811d31a82542
+'http://deb.debian.org/debian/pool/main/c/codetools/codetools_0.2-15.orig.tar.gz' codetools_0.2-15.orig.tar.gz 12930 SHA256:4e0798ed79281a614f8cdd199e25f2c1bd8f35ecec902b03016544bd7795fa40
+'http://deb.debian.org/debian/pool/main/c/codetools/codetools_0.2-15-1.1.debian.tar.xz' codetools_0.2-15-1.1.debian.tar.xz 2552 SHA256:e32f2cdbcc00c3cf065cc69b0b073928e167be29e9027c8476be0c44385eb6cc
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/codetools/0.2-15-1.1/ (for browsing the source)
+- https://sources.debian.net/src/codetools/0.2-15-1.1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/codetools/0.2-15-1.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `coreutils=8.26-3`
 
@@ -474,16 +492,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris coreutils=8.26-3
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_8.26-3.dsc' coreutils_8.26-3.dsc 1955 SHA256:f62ab642e46e02c470cc045316643de530a0be50446151a5e449ca12da6485c4
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_8.26.orig.tar.xz' coreutils_8.26.orig.tar.xz 5810244 SHA256:155e94d748f8e2bc327c66e0cbebdb8d6ab265d2f37c3c928f7bf6c3beba9a8e
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_8.26-3.debian.tar.xz' coreutils_8.26-3.debian.tar.xz 22392 SHA256:cef6a15eb95d9e7bc992bca95010bc5ea9e25e98d8f4f668a698eee534d14b93
+'http://http.debian.net/debian/pool/main/c/coreutils/coreutils_8.26-3.dsc' coreutils_8.26-3.dsc 1955 SHA256:f62ab642e46e02c470cc045316643de530a0be50446151a5e449ca12da6485c4
+'http://http.debian.net/debian/pool/main/c/coreutils/coreutils_8.26.orig.tar.xz' coreutils_8.26.orig.tar.xz 5810244 SHA256:155e94d748f8e2bc327c66e0cbebdb8d6ab265d2f37c3c928f7bf6c3beba9a8e
+'http://http.debian.net/debian/pool/main/c/coreutils/coreutils_8.26-3.debian.tar.xz' coreutils_8.26-3.debian.tar.xz 22392 SHA256:cef6a15eb95d9e7bc992bca95010bc5ea9e25e98d8f4f668a698eee534d14b93
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/coreutils/8.26-3/ (for browsing the source)
-- https://sources.debian.net/src/coreutils/8.26-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/coreutils/8.26-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `curl=7.55.1-1`
 
@@ -924,10 +936,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris foreign=0.8.69-1
-'http://http.debian.net/debian/pool/main/f/foreign/foreign_0.8.69-1.dsc' foreign_0.8.69-1.dsc 1642 SHA256:1a6ed554aa31ef3d8e1454cb4b1224377801f85a8d48b32e095342d86a37913f
-'http://http.debian.net/debian/pool/main/f/foreign/foreign_0.8.69.orig.tar.gz' foreign_0.8.69.orig.tar.gz 344394 SHA256:13689f5ec1ab09e8973be81c7f1799b7de4313176072887a9fa0b5825aed3468
-'http://http.debian.net/debian/pool/main/f/foreign/foreign_0.8.69-1.diff.gz' foreign_0.8.69-1.diff.gz 3919 SHA256:df0cb94a9028ac77de7d4d719ce3daf53720d8043fd40243bf00cd3c0b6d95c5
+'http://deb.debian.org/debian/pool/main/f/foreign/foreign_0.8.69-1.dsc' foreign_0.8.69-1.dsc 1642 SHA256:1a6ed554aa31ef3d8e1454cb4b1224377801f85a8d48b32e095342d86a37913f
+'http://deb.debian.org/debian/pool/main/f/foreign/foreign_0.8.69.orig.tar.gz' foreign_0.8.69.orig.tar.gz 344394 SHA256:13689f5ec1ab09e8973be81c7f1799b7de4313176072887a9fa0b5825aed3468
+'http://deb.debian.org/debian/pool/main/f/foreign/foreign_0.8.69-1.diff.gz' foreign_0.8.69-1.diff.gz 3919 SHA256:df0cb94a9028ac77de7d4d719ce3daf53720d8043fd40243bf00cd3c0b6d95c5
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/foreign/0.8.69-1/ (for browsing the source)
+- https://sources.debian.net/src/foreign/0.8.69-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/foreign/0.8.69-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `freetype=2.8-0.2`
 
@@ -1551,10 +1569,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris kernsmooth=2.23-15-3
-'http://http.debian.net/debian/pool/main/k/kernsmooth/kernsmooth_2.23-15-3.dsc' kernsmooth_2.23-15-3.dsc 1686 SHA256:c9a41db32a486837694ce74b5d791e24f2a586d953c8021ff66cf6898e9ae49d
-'http://http.debian.net/debian/pool/main/k/kernsmooth/kernsmooth_2.23-15.orig.tar.gz' kernsmooth_2.23-15.orig.tar.gz 24572 SHA256:8b72d23ed121a54af188b2cda4441e3ce2646359309885f6455b82c0275210f6
-'http://http.debian.net/debian/pool/main/k/kernsmooth/kernsmooth_2.23-15-3.diff.gz' kernsmooth_2.23-15-3.diff.gz 2939 SHA256:d17aa055156049370e420ffe548ad0fef941129b6f2e2283203419801e369326
+'http://deb.debian.org/debian/pool/main/k/kernsmooth/kernsmooth_2.23-15-3.dsc' kernsmooth_2.23-15-3.dsc 1686 SHA256:c9a41db32a486837694ce74b5d791e24f2a586d953c8021ff66cf6898e9ae49d
+'http://deb.debian.org/debian/pool/main/k/kernsmooth/kernsmooth_2.23-15.orig.tar.gz' kernsmooth_2.23-15.orig.tar.gz 24572 SHA256:8b72d23ed121a54af188b2cda4441e3ce2646359309885f6455b82c0275210f6
+'http://deb.debian.org/debian/pool/main/k/kernsmooth/kernsmooth_2.23-15-3.diff.gz' kernsmooth_2.23-15-3.diff.gz 2939 SHA256:d17aa055156049370e420ffe548ad0fef941129b6f2e2283203419801e369326
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/kernsmooth/2.23-15-3/ (for browsing the source)
+- https://sources.debian.net/src/kernsmooth/2.23-15-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/kernsmooth/2.23-15-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `keyutils=1.5.9-9`
 
@@ -2683,10 +2707,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris mgcv=1.8-22-1
-'http://http.debian.net/debian/pool/main/m/mgcv/mgcv_1.8-22-1.dsc' mgcv_1.8-22-1.dsc 1643 SHA256:327cf64cde242c621efe9b2736511415df9c8f72f5473debef5e7956530ebb76
-'http://http.debian.net/debian/pool/main/m/mgcv/mgcv_1.8-22.orig.tar.gz' mgcv_1.8-22.orig.tar.gz 859944 SHA256:5a3bb235cc798f617392ef4996f2d502233998b041db2a68377f3cea94b98694
-'http://http.debian.net/debian/pool/main/m/mgcv/mgcv_1.8-22-1.diff.gz' mgcv_1.8-22-1.diff.gz 5312 SHA256:3dc37478710f1070315b8d321359a86a0042ef7a8e378361dffa899d0a4609c9
+'http://deb.debian.org/debian/pool/main/m/mgcv/mgcv_1.8-22-1.dsc' mgcv_1.8-22-1.dsc 1643 SHA256:327cf64cde242c621efe9b2736511415df9c8f72f5473debef5e7956530ebb76
+'http://deb.debian.org/debian/pool/main/m/mgcv/mgcv_1.8-22.orig.tar.gz' mgcv_1.8-22.orig.tar.gz 859944 SHA256:5a3bb235cc798f617392ef4996f2d502233998b041db2a68377f3cea94b98694
+'http://deb.debian.org/debian/pool/main/m/mgcv/mgcv_1.8-22-1.diff.gz' mgcv_1.8-22-1.diff.gz 5312 SHA256:3dc37478710f1070315b8d321359a86a0042ef7a8e378361dffa899d0a4609c9
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/mgcv/1.8-22-1/ (for browsing the source)
+- https://sources.debian.net/src/mgcv/1.8-22-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/mgcv/1.8-22-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mpclib3=1.0.3-2`
 
@@ -2877,10 +2907,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris nlme=3.1.131-3
-'http://http.debian.net/debian/pool/main/n/nlme/nlme_3.1.131-3.dsc' nlme_3.1.131-3.dsc 1653 SHA256:75f4660a24563fcc4af4960da2fcdd76f0bc6f8431554c600a7a6ace563fd420
-'http://http.debian.net/debian/pool/main/n/nlme/nlme_3.1.131.orig.tar.gz' nlme_3.1.131.orig.tar.gz 780607 SHA256:79daa167eb9bc7d8dba506da4b24b5250665b051d4e0a51dfccbb0087fdb564c
-'http://http.debian.net/debian/pool/main/n/nlme/nlme_3.1.131-3.diff.gz' nlme_3.1.131-3.diff.gz 4040 SHA256:20c8bc2f231102e312c690e71d7eeb7e8fef26b2ab4521e8fbd1ca00d50be487
+'http://deb.debian.org/debian/pool/main/n/nlme/nlme_3.1.131-3.dsc' nlme_3.1.131-3.dsc 1653 SHA256:75f4660a24563fcc4af4960da2fcdd76f0bc6f8431554c600a7a6ace563fd420
+'http://deb.debian.org/debian/pool/main/n/nlme/nlme_3.1.131.orig.tar.gz' nlme_3.1.131.orig.tar.gz 780607 SHA256:79daa167eb9bc7d8dba506da4b24b5250665b051d4e0a51dfccbb0087fdb564c
+'http://deb.debian.org/debian/pool/main/n/nlme/nlme_3.1.131-3.diff.gz' nlme_3.1.131-3.diff.gz 4040 SHA256:20c8bc2f231102e312c690e71d7eeb7e8fef26b2ab4521e8fbd1ca00d50be487
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/nlme/3.1.131-3/ (for browsing the source)
+- https://sources.debian.net/src/nlme/3.1.131-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/nlme/3.1.131-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.4.45+dfsg-1`
 
@@ -3221,10 +3257,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris r-base=3.4.2-1
-'http://http.debian.net/debian/pool/main/r/r-base/r-base_3.4.2-1.dsc' r-base_3.4.2-1.dsc 2832 SHA256:d0559b10660b63e3752500c2a17c4ba23e92c5162d021cf9a07bad7c2610fb4a
-'http://http.debian.net/debian/pool/main/r/r-base/r-base_3.4.2.orig.tar.gz' r-base_3.4.2.orig.tar.gz 30255544 SHA256:971e30c2436cf645f58552905105d75788bd9733bddbcb7c4fbff4c1a6d80c64
-'http://http.debian.net/debian/pool/main/r/r-base/r-base_3.4.2-1.debian.tar.xz' r-base_3.4.2-1.debian.tar.xz 87344 SHA256:cc750595f200ecd3e5bea04b4abccb8bccbeb179450f15958979d67692fc3e49
+'http://deb.debian.org/debian/pool/main/r/r-base/r-base_3.4.2-1.dsc' r-base_3.4.2-1.dsc 2832 SHA256:d0559b10660b63e3752500c2a17c4ba23e92c5162d021cf9a07bad7c2610fb4a
+'http://deb.debian.org/debian/pool/main/r/r-base/r-base_3.4.2.orig.tar.gz' r-base_3.4.2.orig.tar.gz 30255544 SHA256:971e30c2436cf645f58552905105d75788bd9733bddbcb7c4fbff4c1a6d80c64
+'http://deb.debian.org/debian/pool/main/r/r-base/r-base_3.4.2-1.debian.tar.xz' r-base_3.4.2-1.debian.tar.xz 87344 SHA256:cc750595f200ecd3e5bea04b4abccb8bccbeb179450f15958979d67692fc3e49
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/r-base/3.4.2-1/ (for browsing the source)
+- https://sources.debian.net/src/r-base/3.4.2-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/r-base/3.4.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `r-cran-class=7.3-14-2`
 
@@ -3241,10 +3283,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris r-cran-class=7.3-14-2
-'http://http.debian.net/debian/pool/main/r/r-cran-class/r-cran-class_7.3-14-2.dsc' r-cran-class_7.3-14-2.dsc 1749 SHA256:e04edb272ae74bc725f2f9a0af79464de731be7f5e885366e1173a436ae4db4f
-'http://http.debian.net/debian/pool/main/r/r-cran-class/r-cran-class_7.3-14.orig.tar.gz' r-cran-class_7.3-14.orig.tar.gz 19726 SHA256:18b876dbc18bebe6a00890eab7d04ef72b903ba0049d5ce50731406a82426b9c
-'http://http.debian.net/debian/pool/main/r/r-cran-class/r-cran-class_7.3-14-2.diff.gz' r-cran-class_7.3-14-2.diff.gz 2753 SHA256:06d2771ff4a84e396990873861666f26618ac24363683ad0421eef202a51e18d
+'http://deb.debian.org/debian/pool/main/r/r-cran-class/r-cran-class_7.3-14-2.dsc' r-cran-class_7.3-14-2.dsc 1749 SHA256:e04edb272ae74bc725f2f9a0af79464de731be7f5e885366e1173a436ae4db4f
+'http://deb.debian.org/debian/pool/main/r/r-cran-class/r-cran-class_7.3-14.orig.tar.gz' r-cran-class_7.3-14.orig.tar.gz 19726 SHA256:18b876dbc18bebe6a00890eab7d04ef72b903ba0049d5ce50731406a82426b9c
+'http://deb.debian.org/debian/pool/main/r/r-cran-class/r-cran-class_7.3-14-2.diff.gz' r-cran-class_7.3-14-2.diff.gz 2753 SHA256:06d2771ff4a84e396990873861666f26618ac24363683ad0421eef202a51e18d
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/r-cran-class/7.3-14-2/ (for browsing the source)
+- https://sources.debian.net/src/r-cran-class/7.3-14-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/r-cran-class/7.3-14-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `r-cran-mass=7.3-47-1`
 
@@ -3261,10 +3309,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris r-cran-mass=7.3-47-1
-'http://http.debian.net/debian/pool/main/r/r-cran-mass/r-cran-mass_7.3-47-1.dsc' r-cran-mass_7.3-47-1.dsc 1729 SHA256:de4b97c5b6e284facb79a8e910a1b56e7be17cdcb86d632f07be43dd16bf7724
-'http://http.debian.net/debian/pool/main/r/r-cran-mass/r-cran-mass_7.3-47.orig.tar.gz' r-cran-mass_7.3-47.orig.tar.gz 487716 SHA256:ed44cdabe84fff3553122267ade61d5cc68071c435f7645d36c8f2e4e9f9c6bf
-'http://http.debian.net/debian/pool/main/r/r-cran-mass/r-cran-mass_7.3-47-1.diff.gz' r-cran-mass_7.3-47-1.diff.gz 3464 SHA256:f7f19e3b5e27b76033fb1124901d940351d7e25672c0e0e4a09713a1cc567a60
+'http://deb.debian.org/debian/pool/main/r/r-cran-mass/r-cran-mass_7.3-47-1.dsc' r-cran-mass_7.3-47-1.dsc 1729 SHA256:de4b97c5b6e284facb79a8e910a1b56e7be17cdcb86d632f07be43dd16bf7724
+'http://deb.debian.org/debian/pool/main/r/r-cran-mass/r-cran-mass_7.3-47.orig.tar.gz' r-cran-mass_7.3-47.orig.tar.gz 487716 SHA256:ed44cdabe84fff3553122267ade61d5cc68071c435f7645d36c8f2e4e9f9c6bf
+'http://deb.debian.org/debian/pool/main/r/r-cran-mass/r-cran-mass_7.3-47-1.diff.gz' r-cran-mass_7.3-47-1.diff.gz 3464 SHA256:f7f19e3b5e27b76033fb1124901d940351d7e25672c0e0e4a09713a1cc567a60
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/r-cran-mass/7.3-47-1/ (for browsing the source)
+- https://sources.debian.net/src/r-cran-mass/7.3-47-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/r-cran-mass/7.3-47-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `r-cran-nnet=7.3-12-2`
 
@@ -3281,10 +3335,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris r-cran-nnet=7.3-12-2
-'http://http.debian.net/debian/pool/main/r/r-cran-nnet/r-cran-nnet_7.3-12-2.dsc' r-cran-nnet_7.3-12-2.dsc 1726 SHA256:abe64b8ddcb5319ba72a782f1bc5582d9e30bd641f87166ed74e273e169f2a18
-'http://http.debian.net/debian/pool/main/r/r-cran-nnet/r-cran-nnet_7.3-12.orig.tar.gz' r-cran-nnet_7.3-12.orig.tar.gz 28521 SHA256:2723523e8581cc0e2215435ac773033577a16087a3f41d111757dd96b8c5559d
-'http://http.debian.net/debian/pool/main/r/r-cran-nnet/r-cran-nnet_7.3-12-2.diff.gz' r-cran-nnet_7.3-12-2.diff.gz 2782 SHA256:272d1f8dddd22695c056c4a5347928279a3df1bd6a6c7aced957549dd7a00862
+'http://deb.debian.org/debian/pool/main/r/r-cran-nnet/r-cran-nnet_7.3-12-2.dsc' r-cran-nnet_7.3-12-2.dsc 1726 SHA256:abe64b8ddcb5319ba72a782f1bc5582d9e30bd641f87166ed74e273e169f2a18
+'http://deb.debian.org/debian/pool/main/r/r-cran-nnet/r-cran-nnet_7.3-12.orig.tar.gz' r-cran-nnet_7.3-12.orig.tar.gz 28521 SHA256:2723523e8581cc0e2215435ac773033577a16087a3f41d111757dd96b8c5559d
+'http://deb.debian.org/debian/pool/main/r/r-cran-nnet/r-cran-nnet_7.3-12-2.diff.gz' r-cran-nnet_7.3-12-2.diff.gz 2782 SHA256:272d1f8dddd22695c056c4a5347928279a3df1bd6a6c7aced957549dd7a00862
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/r-cran-nnet/7.3-12-2/ (for browsing the source)
+- https://sources.debian.net/src/r-cran-nnet/7.3-12-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/r-cran-nnet/7.3-12-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `r-cran-spatial=7.3-11-2`
 
@@ -3301,10 +3361,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris r-cran-spatial=7.3-11-2
-'http://http.debian.net/debian/pool/main/r/r-cran-spatial/r-cran-spatial_7.3-11-2.dsc' r-cran-spatial_7.3-11-2.dsc 1756 SHA256:4078c53bc1dd35bec632d28c973bc8fd8b443d23a75ba899e9f06ea834345359
-'http://http.debian.net/debian/pool/main/r/r-cran-spatial/r-cran-spatial_7.3-11.orig.tar.gz' r-cran-spatial_7.3-11.orig.tar.gz 44666 SHA256:624448d2ac22e1798097d09fc5dc4605908a33f490b8ec971fc6ea318a445c11
-'http://http.debian.net/debian/pool/main/r/r-cran-spatial/r-cran-spatial_7.3-11-2.diff.gz' r-cran-spatial_7.3-11-2.diff.gz 2752 SHA256:fa4cc5f8ea2992f39dce43008eaef4198709c80fc8efe0c09e82cf300c6ca928
+'http://deb.debian.org/debian/pool/main/r/r-cran-spatial/r-cran-spatial_7.3-11-2.dsc' r-cran-spatial_7.3-11-2.dsc 1756 SHA256:4078c53bc1dd35bec632d28c973bc8fd8b443d23a75ba899e9f06ea834345359
+'http://deb.debian.org/debian/pool/main/r/r-cran-spatial/r-cran-spatial_7.3-11.orig.tar.gz' r-cran-spatial_7.3-11.orig.tar.gz 44666 SHA256:624448d2ac22e1798097d09fc5dc4605908a33f490b8ec971fc6ea318a445c11
+'http://deb.debian.org/debian/pool/main/r/r-cran-spatial/r-cran-spatial_7.3-11-2.diff.gz' r-cran-spatial_7.3-11-2.diff.gz 2752 SHA256:fa4cc5f8ea2992f39dce43008eaef4198709c80fc8efe0c09e82cf300c6ca928
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/r-cran-spatial/7.3-11-2/ (for browsing the source)
+- https://sources.debian.net/src/r-cran-spatial/7.3-11-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/r-cran-spatial/7.3-11-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=7.0-3`
 
@@ -3350,10 +3416,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris rmatrix=1.2-11-1
-'http://http.debian.net/debian/pool/main/r/rmatrix/rmatrix_1.2-11-1.dsc' rmatrix_1.2-11-1.dsc 1674 SHA256:277b45919177eaab5b186d52d51b2e71f201631466780ee366baf9c2144a5874
-'http://http.debian.net/debian/pool/main/r/rmatrix/rmatrix_1.2-11.orig.tar.gz' rmatrix_1.2-11.orig.tar.gz 1819378 SHA256:cf8ccba0a89eaa261f6332ce013c82255f34a21ce4d9fcf72332253bba336dfb
-'http://http.debian.net/debian/pool/main/r/rmatrix/rmatrix_1.2-11-1.diff.gz' rmatrix_1.2-11-1.diff.gz 5416 SHA256:6f8bf5caa024c3c7f874f468a2f8e969b3e92491b567476eae0ceec4acd57a52
+'http://deb.debian.org/debian/pool/main/r/rmatrix/rmatrix_1.2-11-1.dsc' rmatrix_1.2-11-1.dsc 1674 SHA256:277b45919177eaab5b186d52d51b2e71f201631466780ee366baf9c2144a5874
+'http://deb.debian.org/debian/pool/main/r/rmatrix/rmatrix_1.2-11.orig.tar.gz' rmatrix_1.2-11.orig.tar.gz 1819378 SHA256:cf8ccba0a89eaa261f6332ce013c82255f34a21ce4d9fcf72332253bba336dfb
+'http://deb.debian.org/debian/pool/main/r/rmatrix/rmatrix_1.2-11-1.diff.gz' rmatrix_1.2-11-1.diff.gz 5416 SHA256:6f8bf5caa024c3c7f874f468a2f8e969b3e92491b567476eae0ceec4acd57a52
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/rmatrix/1.2-11-1/ (for browsing the source)
+- https://sources.debian.net/src/rmatrix/1.2-11-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/rmatrix/1.2-11-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rpart=4.1-11-1`
 
@@ -3370,10 +3442,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris rpart=4.1-11-1
-'http://http.debian.net/debian/pool/main/r/rpart/rpart_4.1-11-1.dsc' rpart_4.1-11-1.dsc 1653 SHA256:3fab69335c71d1520b2bd2df9b0b2d2fc1763a3496d27c5b9617c5042d16a4e8
-'http://http.debian.net/debian/pool/main/r/rpart/rpart_4.1-11.orig.tar.gz' rpart_4.1-11.orig.tar.gz 819692 SHA256:38ab80959f59bcdd2c4c72860e8dd0deab0307668cbbf24f96014d7a2496ad98
-'http://http.debian.net/debian/pool/main/r/rpart/rpart_4.1-11-1.diff.gz' rpart_4.1-11-1.diff.gz 3753 SHA256:1806131ce814377f931c8be68ad1e7e993bbb6ed2c90a80e65023aca082e2450
+'http://deb.debian.org/debian/pool/main/r/rpart/rpart_4.1-11-1.dsc' rpart_4.1-11-1.dsc 1653 SHA256:3fab69335c71d1520b2bd2df9b0b2d2fc1763a3496d27c5b9617c5042d16a4e8
+'http://deb.debian.org/debian/pool/main/r/rpart/rpart_4.1-11.orig.tar.gz' rpart_4.1-11.orig.tar.gz 819692 SHA256:38ab80959f59bcdd2c4c72860e8dd0deab0307668cbbf24f96014d7a2496ad98
+'http://deb.debian.org/debian/pool/main/r/rpart/rpart_4.1-11-1.diff.gz' rpart_4.1-11-1.diff.gz 3753 SHA256:1806131ce814377f931c8be68ad1e7e993bbb6ed2c90a80e65023aca082e2450
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/rpart/4.1-11-1/ (for browsing the source)
+- https://sources.debian.net/src/rpart/4.1-11-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/rpart/4.1-11-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rtmpdump=2.4+20151223.gitfa8646d.1-1`
 
@@ -3494,10 +3572,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris survival=2.41-3-2
-'http://http.debian.net/debian/pool/main/s/survival/survival_2.41-3-2.dsc' survival_2.41-3-2.dsc 1669 SHA256:4b389b0623e8869f671be51a695bd995f78001a84f40c6074ea99fe31dc4bb5e
-'http://http.debian.net/debian/pool/main/s/survival/survival_2.41-3.orig.tar.gz' survival_2.41-3.orig.tar.gz 4992943 SHA256:f3797c344de93abd2ba8c89568770a13524a8b2694144ae55adec46921c8961d
-'http://http.debian.net/debian/pool/main/s/survival/survival_2.41-3-2.diff.gz' survival_2.41-3-2.diff.gz 3586 SHA256:02d0ffa9b23f640c4ca57bdf75ea00eb2267a50c552eb155721cafa39c9bf7fa
+'http://deb.debian.org/debian/pool/main/s/survival/survival_2.41-3-2.dsc' survival_2.41-3-2.dsc 1669 SHA256:4b389b0623e8869f671be51a695bd995f78001a84f40c6074ea99fe31dc4bb5e
+'http://deb.debian.org/debian/pool/main/s/survival/survival_2.41-3.orig.tar.gz' survival_2.41-3.orig.tar.gz 4992943 SHA256:f3797c344de93abd2ba8c89568770a13524a8b2694144ae55adec46921c8961d
+'http://deb.debian.org/debian/pool/main/s/survival/survival_2.41-3-2.diff.gz' survival_2.41-3-2.diff.gz 3586 SHA256:02d0ffa9b23f640c4ca57bdf75ea00eb2267a50c552eb155721cafa39c9bf7fa
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/survival/2.41-3-2/ (for browsing the source)
+- https://sources.debian.net/src/survival/2.41-3-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/survival/2.41-3-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=234-3`
 
