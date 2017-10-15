@@ -1,10 +1,10 @@
-# `cassandra:3.11.0`
+# `cassandra:3.11.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e136e4e9d9284dfc6ceb20976056759f8c278140c067d3ac23258cfbf4c2005f`
-- Created: `2017-10-09T22:22:15.004260356Z`
-- Virtual Size: ~ 385.28 Mb  
+- Image ID: `sha256:cc1249ebe4c3871479142154c566793decf5bf6ef114080f04263ff7d3056edc`
+- Created: `2017-10-12T22:24:24.707312732Z`
+- Virtual Size: ~ 385.40 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -13,7 +13,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GOSU_VERSION=1.10`
   - `GPG_KEYS=514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA`
-  - `CASSANDRA_VERSION=3.11.0`
+  - `CASSANDRA_VERSION=3.11.1`
   - `CASSANDRA_CONFIG=/etc/cassandra`
 
 ## `dpkg` (`.deb`-based packages)
@@ -358,20 +358,25 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/ca-certificates/20141019+deb8u3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/ca-certificates/20141019+deb8u3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `cassandra=3.11.0`
+### `dpkg` source package: `cassandra=3.11.1`
 
 Binary Packages:
 
-- `cassandra=3.11.0`
-- `cassandra-tools=3.11.0`
+- `cassandra=3.11.1`
+- `cassandra-tools=3.11.1`
 
 Licenses: (parsed from: `/usr/share/doc/cassandra/copyright`, `/usr/share/doc/cassandra-tools/copyright`)
 
 - `Apache-2.0`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris cassandra=3.11.1
+'http://www.apache.org/dist/cassandra/debian/pool/main/c/cassandra/cassandra_3.11.1.dsc' cassandra_3.11.1.dsc 2022 SHA256:c57fbb51f8cf3274914b56195c345198f4f205b6ad207a577872d6bb8aa4f55c
+'http://www.apache.org/dist/cassandra/debian/pool/main/c/cassandra/cassandra_3.11.1.orig.tar.gz' cassandra_3.11.1.orig.tar.gz 36135685 SHA256:84a5b50a4da6e2532b2f9cca3bfb1246ec5e466e666065d0f785ba5c724b3424
+'http://www.apache.org/dist/cassandra/debian/pool/main/c/cassandra/cassandra_3.11.1.diff.gz' cassandra_3.11.1.diff.gz 20 SHA256:f61f27bd17de546264aa58f40f3aafaac7021e0ef69c17f6b1b4cd7664a037ec
+```
 
 ### `dpkg` source package: `cdebconf=0.192`
 
@@ -3046,11 +3051,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nspr/2:4.12-1+debu8u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nspr/2:4.12-1+debu8u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `nss=2:3.26-1+debu8u2`
+### `dpkg` source package: `nss=2:3.26-1+debu8u3`
 
 Binary Packages:
 
-- `libnss3:amd64=2:3.26-1+debu8u2`
+- `libnss3:amd64=2:3.26-1+debu8u3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3059,17 +3064,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris nss=2:3.26-1+debu8u2
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.26-1+debu8u2.dsc' nss_3.26-1+debu8u2.dsc 2252 SHA256:0ebeeef9c3c439fee010e2d1222126637b54d52a16dd88a4f194507631ada31b
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.26.orig.tar.gz' nss_3.26.orig.tar.gz 7386943 SHA256:91783a570ab953693eb977ce47c501f04c104cec287fa011c91bcc8970d1c564
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.26-1+debu8u2.debian.tar.xz' nss_3.26-1+debu8u2.debian.tar.xz 27236 SHA256:31008e9f1b73de3ccac32d2c45ec0c7810936e478e98155002c731ab16e1d7af
+$ apt-get source -qq --print-uris nss=2:3.26-1+debu8u3
+'http://security.debian.org/pool/updates/main/n/nss/nss_3.26-1+debu8u3.dsc' nss_3.26-1+debu8u3.dsc 2407 SHA256:f74a3c32145effae8bb6f24b5bbe7ca5f8d9c505aba7cb781f44e781a51fa221
+'http://security.debian.org/pool/updates/main/n/nss/nss_3.26.orig.tar.gz' nss_3.26.orig.tar.gz 7386943 SHA256:91783a570ab953693eb977ce47c501f04c104cec287fa011c91bcc8970d1c564
+'http://security.debian.org/pool/updates/main/n/nss/nss_3.26-1+debu8u3.debian.tar.xz' nss_3.26-1+debu8u3.debian.tar.xz 27984 SHA256:b8ba1f94dfcb08de82d3b752a25ba60db7469f16777b5d62289dbc0a73a1acee
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/nss/2:3.26-1+debu8u2/ (for browsing the source)
-- https://sources.debian.net/src/nss/2:3.26-1+debu8u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nss/2:3.26-1+debu8u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/nss/2:3.26-1+debu8u3/ (for browsing the source)
+- https://sources.debian.net/src/nss/2:3.26-1+debu8u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/nss/2:3.26-1+debu8u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ntp=1:4.2.6.p5+dfsg-7+deb8u2`
 
