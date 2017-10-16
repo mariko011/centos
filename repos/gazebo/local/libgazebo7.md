@@ -4080,14 +4080,9 @@ Licenses: (parsed from: `/usr/share/doc/libmirclient9/copyright`, `/usr/share/do
 - `GPL-3`
 - `LGPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mir=0.26.3+16.04.20170605-0ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mir/mir_0.26.3+16.04.20170605-0ubuntu1.dsc' mir_0.26.3+16.04.20170605-0ubuntu1.dsc 5191 SHA256:2a612f95063bfa926ad456950d9f2dbce79394b057b964fbbf1e24317a7a2b7b
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mir/mir_0.26.3+16.04.20170605.orig.tar.gz' mir_0.26.3+16.04.20170605.orig.tar.gz 1862434 SHA256:960233f1aa2f134872c130a28b08bce8e8d94d285dd6a319fd40d73b00430f66
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mir/mir_0.26.3+16.04.20170605-0ubuntu1.diff.gz' mir_0.26.3+16.04.20170605-0ubuntu1.diff.gz 74049 SHA256:3d766b51580fc0a738fd71d56af99cfef681e2aa0d5f481183ec3340c32e6254
-```
 
 ### `dpkg` source package: `mpclib3=1.0.3-1`
 
@@ -5792,14 +5787,9 @@ Licenses: (parsed from: `/usr/share/doc/libwayland-client0/copyright`, `/usr/sha
 
 - `X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris wayland=1.12.0-1~ubuntu16.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wayland/wayland_1.12.0-1~ubuntu16.04.1.dsc' wayland_1.12.0-1~ubuntu16.04.1.dsc 2451 SHA256:e4578012d73ad83ebfa79adc80db2f0eeef864d9d08c6ee36c9d6cdfbdb2d33b
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wayland/wayland_1.12.0.orig.tar.gz' wayland_1.12.0.orig.tar.gz 575381 SHA256:428537c2887b608cabde189a6450fcade8877e03b063a72c84431b5753a34aef
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wayland/wayland_1.12.0-1~ubuntu16.04.1.diff.gz' wayland_1.12.0-1~ubuntu16.04.1.diff.gz 10346 SHA256:9c99b3c3e6fe221d4a2975d5c0091b5c77c6afd2f61f4034b050952d9502dea1
-```
 
 ### `dpkg` source package: `x11proto-core=7.0.31-1~ubuntu16.04.1`
 
@@ -5811,14 +5801,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris x11proto-core=7.0.31-1~ubuntu16.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/x/x11proto-core/x11proto-core_7.0.31-1~ubuntu16.04.1.dsc' x11proto-core_7.0.31-1~ubuntu16.04.1.dsc 2079 SHA256:5fbc2bb209c59ed702e6591ee0badc9521832d9e6470a1da1aa72fbf4704abfd
-'http://archive.ubuntu.com/ubuntu/pool/main/x/x11proto-core/x11proto-core_7.0.31.orig.tar.gz' x11proto-core_7.0.31.orig.tar.gz 367979 SHA256:6d755eaae27b45c5cc75529a12855fed5de5969b367ed05003944cf901ed43c7
-'http://archive.ubuntu.com/ubuntu/pool/main/x/x11proto-core/x11proto-core_7.0.31-1~ubuntu16.04.1.diff.gz' x11proto-core_7.0.31-1~ubuntu16.04.1.diff.gz 29976 SHA256:49fc99eccdfa9f9c477979933dafe570c19b215861bf7473564311ed90fcd51b
-```
 
 ### `dpkg` source package: `x11proto-damage=1:1.2.1-2`
 
