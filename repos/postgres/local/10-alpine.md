@@ -2,15 +2,15 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:66015a295269c190197f95f2990ac55d1df2cdc7e0b23c724daa7e8cc34d3546`
-- Created: `2017-10-05T19:01:42.039083817Z`
+- Image ID: `sha256:c6ab50cefcc0b31831d160235222af6a15bd4bfcbd6f826fd6f61011fb5ed58e`
+- Created: `2017-10-12T22:03:39.349783698Z`
 - Virtual Size: ~ 38.75 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["postgres"]`
 - Environment:
-  - `PATH=/usr/lib/postgresql/10/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+  - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=en_US.utf8`
   - `PG_MAJOR=10`
   - `PG_VERSION=10.0`

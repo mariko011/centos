@@ -2,15 +2,15 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0ab78a2ecd53fb154467515c33376b98beb7d2059b28be407ae52ce48a35ab5f`
-- Created: `2017-10-10T01:45:10.64410994Z`
+- Image ID: `sha256:b106d5a0dc75f330cee9a1c9681ca674846235c04c8c084c5c9de7566990d635`
+- Created: `2017-10-12T22:03:16.920034519Z`
 - Virtual Size: ~ 287.19 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["postgres"]`
 - Environment:
-  - `PATH=/usr/lib/postgresql/10/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+  - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/10/bin`
   - `GOSU_VERSION=1.10`
   - `LANG=en_US.utf8`
   - `PG_MAJOR=10`
@@ -2469,13 +2469,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pgdg-keyring=2017.1
-'http://apt.postgresql.org/pub/repos/apt/pool/main/p/pgdg-keyring/pgdg-keyring_2017.1.dsc' pgdg-keyring_2017.1.dsc 1672 SHA256:fe2328561d11de474f8128b17c033297c66092f34cfb9d0afd030dce93059201
-'http://apt.postgresql.org/pub/repos/apt/pool/main/p/pgdg-keyring/pgdg-keyring_2017.1.tar.xz' pgdg-keyring_2017.1.tar.xz 9724 SHA256:da667285101b1027547281c6ff85e1d42edc582d0376a58f720f493c5be62146
-```
 
 ### `dpkg` source package: `pinentry=1.0.0-2`
 
