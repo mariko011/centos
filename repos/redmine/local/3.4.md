@@ -1,10 +1,10 @@
-# `redmine:3.4.2`
+# `redmine:3.4.3`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c650b5a815cc3420a97a05ee32054041deeb3ed8c2f2db2877b579752fe8cc97`
-- Created: `2017-10-10T21:09:09.455104204Z`
-- Virtual Size: ~ 594.17 Mb  
+- Image ID: `sha256:98d545b2cd12cf25a2a9cd8d6be107b537edcd733e0caaba0d68545b5f94ad35`
+- Created: `2017-10-16T19:54:09.538807968Z`
+- Virtual Size: ~ 594.27 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -24,8 +24,8 @@
   - `GOSU_VERSION=1.10`
   - `TINI_VERSION=v0.16.1`
   - `RAILS_ENV=production`
-  - `REDMINE_VERSION=3.4.2`
-  - `REDMINE_DOWNLOAD_MD5=2980b80e9acc81c01c06adb86eb4f37d`
+  - `REDMINE_VERSION=3.4.3`
+  - `REDMINE_DOWNLOAD_MD5=8053592a1259863623824543524e4360`
 
 ## `dpkg` (`.deb`-based packages)
 
