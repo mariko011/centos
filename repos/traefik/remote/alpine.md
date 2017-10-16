@@ -1,7 +1,7 @@
 ## `traefik:alpine`
 
 ```console
-$ docker pull traefik@sha256:882bd8f818de9437be8d8bf6c6eeddaa03f43ed92173c2bf2cb1017c8007c65b
+$ docker pull traefik@sha256:14b4cf8ada48a1eeb5c7024a35766d0c319710625079b90cb91da7a77166d5c2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull traefik@sha256:882bd8f818de9437be8d8bf6c6eeddaa03f43ed92173c2bf2cb
 ### `traefik:alpine` - linux; amd64
 
 ```console
-$ docker pull traefik@sha256:2ee454e68fe274a1e6daf103bb051082179ebf449c24c3010da921a91dfa1e38
+$ docker pull traefik@sha256:0acd867a486e0589fa6e600db4c0869fecfb9d777db7dc4e7c98098f10e393b4
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.3 MB (15335648 bytes)**  
+-	Total Size: **15.5 MB (15545601 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6d95023f9ce9e4b655a9b7cd61a94dfa1a17b21038b83fdb87859a6e0c1b15a5`
+-	Image ID: `sha256:f9542d0c874d180048f4da582010e76ded226d1c878d4e77681440560107e6d7`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["traefik"]`
 
@@ -29,18 +29,18 @@ ADD file:4583e12bf5caec40b861a3409f2a1624c3f3556cc457edb99c9707f00e779e45 in /
 CMD ["/bin/sh"]
 # Mon, 18 Sep 2017 19:35:45 GMT
 RUN apk --no-cache add ca-certificates
-# Mon, 18 Sep 2017 19:36:14 GMT
-RUN set -ex; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		armhf) arch='arm' ;; 		aarch64) arch='arm64' ;; 		x86_64) arch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: $apkArch"; exit 1 ;; 	esac; 	apk add --no-cache --virtual .fetch-deps libressl; 	wget -O /usr/local/bin/traefik "https://github.com/containous/traefik/releases/download/v1.3.8/traefik_linux-$arch"; 	apk del .fetch-deps; 	chmod +x /usr/local/bin/traefik
-# Mon, 18 Sep 2017 19:36:15 GMT
+# Mon, 16 Oct 2017 18:48:46 GMT
+RUN set -ex; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		armhf) arch='arm' ;; 		aarch64) arch='arm64' ;; 		x86_64) arch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: $apkArch"; exit 1 ;; 	esac; 	apk add --no-cache --virtual .fetch-deps libressl; 	wget -O /usr/local/bin/traefik "https://github.com/containous/traefik/releases/download/v1.4.0/traefik_linux-$arch"; 	apk del .fetch-deps; 	chmod +x /usr/local/bin/traefik
+# Mon, 16 Oct 2017 18:48:47 GMT
 COPY file:41f5bd1ea0a61e819b7d8c5489c305d4f2798046917dd6b6695318f555981727 in / 
-# Mon, 18 Sep 2017 19:36:15 GMT
+# Mon, 16 Oct 2017 18:48:47 GMT
 EXPOSE 80/tcp
-# Mon, 18 Sep 2017 19:36:15 GMT
+# Mon, 16 Oct 2017 18:48:47 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Mon, 18 Sep 2017 19:36:15 GMT
+# Mon, 16 Oct 2017 18:48:47 GMT
 CMD ["traefik"]
-# Mon, 18 Sep 2017 19:36:15 GMT
-LABEL org.label-schema.vendor=Containous org.label-schema.url=https://traefik.io org.label-schema.name=Traefik org.label-schema.description=A modern reverse-proxy org.label-schema.version=v1.3.8 org.label-schema.docker.schema-version=1.0
+# Mon, 16 Oct 2017 18:48:47 GMT
+LABEL org.label-schema.vendor=Containous org.label-schema.url=https://traefik.io org.label-schema.name=Traefik org.label-schema.description=A modern reverse-proxy org.label-schema.version=v1.4.0 org.label-schema.docker.schema-version=1.0
 ```
 
 -	Layers:
@@ -52,11 +52,11 @@ LABEL org.label-schema.vendor=Containous org.label-schema.url=https://traefik.io
 		Last Modified: Mon, 18 Sep 2017 19:37:01 GMT  
 		Size: 351.4 KB (351350 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1bf4bd1966dd6bd12b2296c6d77fef149b96e6739897310350c2ace52dd5135b`  
-		Last Modified: Mon, 18 Sep 2017 19:37:35 GMT  
-		Size: 13.0 MB (12993555 bytes)  
+	-	`sha256:4dd0fb074fafa62a96dbc669ef41607a47945b5f01f18e52c5bb32d2c36812f2`  
+		Last Modified: Mon, 16 Oct 2017 18:49:57 GMT  
+		Size: 13.2 MB (13203510 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f6fe078b14dae64bede97a388b2b38920330f351c95f75e9929dcae559ecf950`  
-		Last Modified: Mon, 18 Sep 2017 19:37:32 GMT  
-		Size: 341.0 B  
+	-	`sha256:8ee8516667533c370cacd2074f3b1725a991f47c37b7c8a086a0e33f9662faa1`  
+		Last Modified: Mon, 16 Oct 2017 18:49:54 GMT  
+		Size: 339.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
