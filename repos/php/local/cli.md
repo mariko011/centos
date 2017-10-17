@@ -1,4 +1,4 @@
-# `php:7.1.10-cli`
+# `php:7.1.10-cli-jessie`
 
 ## Docker Metadata
 

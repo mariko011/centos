@@ -1,4 +1,4 @@
-# `php:7.1.10-fpm-alpine`
+# `php:7.1.10-fpm-alpine3.4`
 
 ## Docker Metadata
 

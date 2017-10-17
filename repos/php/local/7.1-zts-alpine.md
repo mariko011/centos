@@ -1,4 +1,4 @@
-# `php:7.1.10-zts-alpine`
+# `php:7.1.10-zts-alpine3.4`
 
 ## Docker Metadata
 

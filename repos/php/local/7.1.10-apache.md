@@ -1,4 +1,4 @@
-# `php:7.1.10-apache`
+# `php:7.1.10-apache-jessie`
 
 ## Docker Metadata
 

@@ -1,10 +1,10 @@
-# `php:7.2.0RC3-cli`
+# `php:7.2.0RC4-cli-stretch`
 
 ## Docker Metadata
 
-- Image ID: `sha256:42291d0d75139f581aebc2a4f48a7763cdfd36f937a82797f0be9c102694d45f`
-- Created: `2017-10-10T00:57:44.272402226Z`
-- Virtual Size: ~ 353.94 Mb  
+- Image ID: `sha256:3e291a68216dadb897adae0337dede04b8f3ce087724bbb189f0b9fd40d7434e`
+- Created: `2017-10-12T22:14:09.850899165Z`
+- Virtual Size: ~ 353.95 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
   - `GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 B1B44D8F021E4E2D6021E995DC9FF8D3EE5AF27F`
-  - `PHP_VERSION=7.2.0RC3`
-  - `PHP_URL=https://downloads.php.net/~remi/php-7.2.0RC3.tar.xz`
-  - `PHP_ASC_URL=https://downloads.php.net/~remi/php-7.2.0RC3.tar.xz.asc`
-  - `PHP_SHA256=abe0a237f94837854f2cfd9c7dc99fbca2c817ae1d6194a514f29b463db36853`
+  - `PHP_VERSION=7.2.0RC4`
+  - `PHP_URL=https://downloads.php.net/~remi/php-7.2.0RC4.tar.xz`
+  - `PHP_ASC_URL=https://downloads.php.net/~remi/php-7.2.0RC4.tar.xz.asc`
+  - `PHP_SHA256=08ee9e764891224d73f157e01594605fc85c63ffc9d4773d9ac29b0e3160c68f`
   - `PHP_MD5=`
 
 ## `dpkg` (`.deb`-based packages)

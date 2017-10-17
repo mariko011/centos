@@ -1,4 +1,4 @@
-# `php:7.1.10-fpm`
+# `php:7.1.10-fpm-jessie`
 
 ## Docker Metadata
 
