@@ -1548,7 +1548,7 @@ CMD ["/opt/ibm/docker/docker-server" "run" "defaultServer"]
 ## `websphere-liberty:latest`
 
 ```console
-$ docker pull websphere-liberty@sha256:0d6358fdcf1fbc4fe3f6910cf58230cc7697d126e7d814d93ab17ed1b43f59ea
+$ docker pull websphere-liberty@sha256:5c5069221d62829d21c04b0b1b5f071d13520ceabd7f8845775ac87ff67d9cf9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1561,14 +1561,14 @@ $ docker pull websphere-liberty@sha256:0d6358fdcf1fbc4fe3f6910cf58230cc7697d126e
 ### `websphere-liberty:latest` - linux; amd64
 
 ```console
-$ docker pull websphere-liberty@sha256:988e58f98c243b5907bcb8222223aa230e1d8301370aebb16c9d474024e588bd
+$ docker pull websphere-liberty@sha256:ad548e18939e3c0e650cb00932c246f68484978d3de59a578eb618b44db8e27f
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **291.0 MB (291008126 bytes)**  
+-	Total Size: **290.2 MB (290161995 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9fc80e109362327eb7fdbbc154bc4ac48a5e145860f96d0f2cb374b4db39d78d`
+-	Image ID: `sha256:14c44cc25ef7b06c57afa3003569d2c6426e715ce9c0b18a6313fed76d145552`
 -	Default Command: `["\/opt\/ibm\/docker\/docker-server","run","defaultServer"]`
 
 ```dockerfile
@@ -1598,43 +1598,43 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 MAINTAINER David Currie <david_currie@uk.ibm.com> (@davidcurrie)
 # Tue, 10 Oct 2017 22:31:56 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends unzip     && rm -rf /var/lib/apt/lists/*
-# Tue, 10 Oct 2017 22:31:57 GMT
-ENV LIBERTY_VERSION=17.0.0_02
-# Tue, 10 Oct 2017 22:31:57 GMT
+# Tue, 17 Oct 2017 20:02:24 GMT
+ENV LIBERTY_VERSION=17.0.0_03
+# Tue, 17 Oct 2017 20:02:24 GMT
 ARG LIBERTY_URL
-# Tue, 10 Oct 2017 22:31:57 GMT
+# Tue, 17 Oct 2017 20:02:25 GMT
 ARG DOWNLOAD_OPTIONS=
-# Tue, 10 Oct 2017 22:32:00 GMT
+# Tue, 17 Oct 2017 20:02:29 GMT
 # ARGS: DOWNLOAD_OPTIONS=
 RUN LIBERTY_URL=${LIBERTY_URL:-$(wget -q -O - https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/downloads/wlp/index.yml  | grep $LIBERTY_VERSION -A 6 | sed -n 's/\s*kernel:\s//p' | tr -d '\r' )}      && wget $DOWNLOAD_OPTIONS $LIBERTY_URL -U UA-IBM-WebSphere-Liberty-Docker -O /tmp/wlp.zip     && unzip -q /tmp/wlp.zip -d /opt/ibm     && rm /tmp/wlp.zip
-# Tue, 10 Oct 2017 22:32:01 GMT
+# Tue, 17 Oct 2017 20:02:29 GMT
 ENV PATH=/opt/ibm/wlp/bin:/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 10 Oct 2017 22:32:01 GMT
+# Tue, 17 Oct 2017 20:02:29 GMT
 ENV LOG_DIR=/logs WLP_OUTPUT_DIR=/opt/ibm/wlp/output
-# Tue, 10 Oct 2017 22:32:02 GMT
+# Tue, 17 Oct 2017 20:02:30 GMT
 # ARGS: DOWNLOAD_OPTIONS=
 RUN mkdir /logs     && ln -s $WLP_OUTPUT_DIR/defaultServer /output     && ln -s /opt/ibm/wlp/usr/servers/defaultServer /config
-# Tue, 10 Oct 2017 22:32:05 GMT
+# Tue, 17 Oct 2017 20:02:34 GMT
 # ARGS: DOWNLOAD_OPTIONS=
 RUN /opt/ibm/wlp/bin/server create     && rm -rf $WLP_OUTPUT_DIR/.classCache /output/workarea
-# Tue, 10 Oct 2017 22:32:06 GMT
+# Tue, 17 Oct 2017 20:02:34 GMT
 COPY file:53b1bf224098174489129fdc8fec40f8eb4b3d0bf09e3028796a285d9a3457f1 in /opt/ibm/docker/ 
-# Tue, 10 Oct 2017 22:32:06 GMT
+# Tue, 17 Oct 2017 20:02:34 GMT
 EXPOSE 9080/tcp 9443/tcp
-# Tue, 10 Oct 2017 22:32:06 GMT
+# Tue, 17 Oct 2017 20:02:35 GMT
 CMD ["/opt/ibm/docker/docker-server" "run" "defaultServer"]
-# Tue, 10 Oct 2017 22:32:13 GMT
+# Tue, 17 Oct 2017 20:02:41 GMT
 ARG REPOSITORIES_PROPERTIES=
-# Tue, 10 Oct 2017 22:33:36 GMT
+# Tue, 17 Oct 2017 20:04:48 GMT
 COPY file:8a7d2385caf8e280c085cfcfad69edf89d8b4815d0f898897aa5053f0081bf61 in /config/ 
-# Tue, 10 Oct 2017 22:34:23 GMT
+# Tue, 17 Oct 2017 20:05:51 GMT
 # ARGS: REPOSITORIES_PROPERTIES=
 RUN if [ ! -z $REPOSITORIES_PROPERTIES ]; then mkdir /opt/ibm/wlp/etc/   && echo $REPOSITORIES_PROPERTIES > /opt/ibm/wlp/etc/repositories.properties; fi   && installUtility install --acceptLicense     appSecurity-2.0 bluemixUtility-1.0 collectiveMember-1.0 ldapRegistry-3.0     localConnector-1.0 microProfile-1.0 monitor-1.0 restConnector-1.0     requestTiming-1.0 restConnector-2.0 sessionDatabase-1.0 ssl-1.0 transportSecurity-1.0     webCache-1.0 webProfile-7.0   && if [ ! -z $REPOSITORIES_PROPERTIES ]; then rm /opt/ibm/wlp/etc/repositories.properties; fi   && rm -rf /output/workarea /output/logs
-# Tue, 10 Oct 2017 22:34:35 GMT
+# Tue, 17 Oct 2017 20:06:03 GMT
 COPY file:a6a1a88d3f0473f85596df9cf7599a22f32111deb67c95183a9a45b654d347eb in /config/ 
-# Tue, 10 Oct 2017 22:34:35 GMT
+# Tue, 17 Oct 2017 20:06:03 GMT
 ARG REPOSITORIES_PROPERTIES=
-# Tue, 10 Oct 2017 22:35:03 GMT
+# Tue, 17 Oct 2017 20:06:40 GMT
 # ARGS: REPOSITORIES_PROPERTIES=
 RUN if [ ! -z $REPOSITORIES_PROPERTIES ]; then echo $REPOSITORIES_PROPERTIES > /opt/ibm/wlp/etc/repositories.properties; fi     && installUtility install --acceptLicense appSecurityClient-1.0 javaee-7.0 javaeeClient-7.0     && if [ ! -z $REPOSITORIES_PROPERTIES ] ; then rm /opt/ibm/wlp/etc/repositories.properties; fi     && rm -rf /output/workarea /output/logs
 ```
@@ -1672,37 +1672,37 @@ RUN if [ ! -z $REPOSITORIES_PROPERTIES ]; then echo $REPOSITORIES_PROPERTIES > /
 		Last Modified: Tue, 10 Oct 2017 22:36:00 GMT  
 		Size: 421.9 KB (421911 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0264493ad3bb6abd396d91cb4df36fb78f5f2a1d4e7245705d60c9804d2d03c1`  
-		Last Modified: Tue, 10 Oct 2017 22:35:59 GMT  
-		Size: 11.5 MB (11515385 bytes)  
+	-	`sha256:520e4644f9802c1b103ddff1d0b5354ce70852303c9c278c75c408499866c135`  
+		Last Modified: Tue, 17 Oct 2017 20:07:01 GMT  
+		Size: 11.7 MB (11656671 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cd8ff4c6dc93d1c30acc4ba24d098a8541da125c5bc3ebab0613497adfdd6709`  
-		Last Modified: Tue, 10 Oct 2017 22:35:58 GMT  
+	-	`sha256:94e5b51e65a2b7e128178ee9e1192c065bfeda74a52c281eb6014c8aa67e1857`  
+		Last Modified: Tue, 17 Oct 2017 20:07:00 GMT  
 		Size: 176.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08bb47460808ab99a61ef9bb07147ecf8346715cfee5c8c7f0a03353485d7546`  
-		Last Modified: Tue, 10 Oct 2017 22:35:57 GMT  
-		Size: 599.0 B  
+	-	`sha256:ab0fe447c772bc284304bed37f8e1a2153a0d566631c93763abf24405e55c3b9`  
+		Last Modified: Tue, 17 Oct 2017 20:07:00 GMT  
+		Size: 605.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d3d65a863a2e0ac19c797aaf160a2430bdfd0e95987b3fb88fd09048e5fda49c`  
-		Last Modified: Tue, 10 Oct 2017 22:35:58 GMT  
-		Size: 467.0 B  
+	-	`sha256:a398fc78524a7bd976afa215dd91638a737f78db1ed9ae6a6fb1116453339d59`  
+		Last Modified: Tue, 17 Oct 2017 20:06:59 GMT  
+		Size: 468.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d6128441d1db7a6b1b6594051f7aa9e8f265dad3b0090553ac0e18591df19964`  
-		Last Modified: Tue, 10 Oct 2017 22:36:51 GMT  
-		Size: 544.0 B  
+	-	`sha256:647d4f62b4c34cf39c8e08d6eeef13864b5d65d16138911793e1dab0ac485a75`  
+		Last Modified: Tue, 17 Oct 2017 20:07:47 GMT  
+		Size: 552.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2cc3358d43985c47084a14a23fe8c7b08cd4e68aa2d5d19e0687882398af3c28`  
-		Last Modified: Tue, 10 Oct 2017 22:36:56 GMT  
-		Size: 63.5 MB (63536271 bytes)  
+	-	`sha256:b04ee41e951977419040e8047089242aedadb701b315a6532abdfd07e0220434`  
+		Last Modified: Tue, 17 Oct 2017 20:07:53 GMT  
+		Size: 68.7 MB (68662321 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4025ba410bf698ecb136902689c6739fd0c9116aa5ecb312f089bd3f29659abc`  
-		Last Modified: Tue, 10 Oct 2017 22:37:08 GMT  
+	-	`sha256:f86070ddfc52199b0df5c2d59076f1977de03b61ed2f629be5d7333e91cf5eca`  
+		Last Modified: Tue, 17 Oct 2017 20:08:07 GMT  
 		Size: 919.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:97d164427fb75621472648b080d23d0b2ebd1688e66e5258d82972dea8510098`  
-		Last Modified: Tue, 10 Oct 2017 22:37:13 GMT  
-		Size: 38.3 MB (38349985 bytes)  
+	-	`sha256:0eaeef0b7a12086c13bc87740e23348e9019b3a0760a223c9ca5a365a3569ee1`  
+		Last Modified: Tue, 17 Oct 2017 20:08:11 GMT  
+		Size: 32.2 MB (32236503 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `websphere-liberty:latest` - linux; 386
