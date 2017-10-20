@@ -1942,20 +1942,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris icu=57.1-6
-'http://deb.debian.org/debian/pool/main/i/icu/icu_57.1-6.dsc' icu_57.1-6.dsc 2105 SHA256:6d3979c7e13e23d4de31e0ff3b83c34e4824e4982cfed9887b21ab6b6c272e6b
-'http://deb.debian.org/debian/pool/main/i/icu/icu_57.1.orig.tar.gz' icu_57.1.orig.tar.gz 22360664 SHA256:ff8c67cb65949b1e7808f2359f2b80f722697048e90e7cfc382ec1fe229e9581
-'http://deb.debian.org/debian/pool/main/i/icu/icu_57.1-6.debian.tar.xz' icu_57.1-6.debian.tar.xz 32768 SHA256:9c1239e6c395aa44880617a8f67f1f9936a9536ad0c85b8c0ceedf4c0bf40819
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/icu/57.1-6/
 
-- https://sources.debian.net/src/icu/57.1-6/ (for browsing the source)
-- https://sources.debian.net/src/icu/57.1-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/icu/57.1-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ilmbase=2.2.0-12`
 
@@ -2086,19 +2079,13 @@ Licenses: (parsed from: `/usr/share/doc/init-system-helpers/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris init-system-helpers=1.49
-'http://deb.debian.org/debian/pool/main/i/init-system-helpers/init-system-helpers_1.49.dsc' init-system-helpers_1.49.dsc 1945 SHA256:c051912f7585c7638efe621d4714f1daff25c4134b0b8806b8b67bfdf9b98a14
-'http://deb.debian.org/debian/pool/main/i/init-system-helpers/init-system-helpers_1.49.tar.xz' init-system-helpers_1.49.tar.xz 42660 SHA256:845ed218f1cb54d5b10ea850620e5b6b3905fb248163f97ad4670a55100cedae
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/init-system-helpers/1.49/
 
-- https://sources.debian.net/src/init-system-helpers/1.49/ (for browsing the source)
-- https://sources.debian.net/src/init-system-helpers/1.49/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/init-system-helpers/1.49/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `iproute2=4.9.0-2`
 
@@ -3573,20 +3560,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.4+dfsg1-4
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1-4.dsc' libxml2_2.9.4+dfsg1-4.dsc 2968 SHA256:981af9b15a1a2046516cf6653c5fbc16cd56d2b01a22d2f9342f021db23d6970
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1.orig.tar.xz' libxml2_2.9.4+dfsg1.orig.tar.xz 2446412 SHA256:a74ad55e346aa0b2b41903e66d21f8f3d2a736b3f41e32496376861ab484184e
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1-4.debian.tar.xz' libxml2_2.9.4+dfsg1-4.debian.tar.xz 34072 SHA256:8597aee686c4e10f6c80fc8d60fdc4a32b8fffbf2f13f1e25c54672b731f00dc
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libxml2/2.9.4+dfsg1-4/
 
-- https://sources.debian.net/src/libxml2/2.9.4+dfsg1-4/ (for browsing the source)
-- https://sources.debian.net/src/libxml2/2.9.4+dfsg1-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxml2/2.9.4+dfsg1-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxpm=1:3.5.12-1`
 
@@ -3675,20 +3655,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxslt=1.1.29-2.1
-'http://deb.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.29-2.1.dsc' libxslt_1.1.29-2.1.dsc 2535 SHA256:8823c0cb209943fb1a3f6761b9a1b3c49c0348da3aa7a67ff9e09760c0976410
-'http://deb.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.29.orig.tar.gz' libxslt_1.1.29.orig.tar.gz 3428524 SHA256:b5976e3857837e7617b29f2249ebb5eeac34e249208d31f1fbf7a6ba7a4090ce
-'http://deb.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.29-2.1.debian.tar.xz' libxslt_1.1.29-2.1.debian.tar.xz 28548 SHA256:93ef76669dae1bdfdd5f60418e29ccda60c7b693b67d0da81e7d12ffb6d25085
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libxslt/1.1.29-2.1/
 
-- https://sources.debian.net/src/libxslt/1.1.29-2.1/ (for browsing the source)
-- https://sources.debian.net/src/libxslt/1.1.29-2.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxslt/1.1.29-2.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxt=1:1.1.5-1`
 
@@ -5138,21 +5111,13 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`, `/usr/share/doc
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.20.1-1
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.20.1-1.dsc' sqlite3_3.20.1-1.dsc 2473 SHA256:f9d17a62dbf721057c9ca05bc37bd69e247f289ac7098ab5e98d1e51434dda8a
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.20.1.orig-www.tar.xz' sqlite3_3.20.1.orig-www.tar.xz 3485848 SHA256:c31a1ad382c331c0507a5992c6d1697450ffc3410209ae992ead1c34344b5654
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.20.1.orig.tar.xz' sqlite3_3.20.1.orig.tar.xz 5900940 SHA256:0ed8da87222d3e0d45afcd9dac3b91a453eee4ea6eaf1287b78a6f0fb5274437
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.20.1-1.debian.tar.xz' sqlite3_3.20.1-1.debian.tar.xz 17652 SHA256:8c205983e0f7baf75419123093a42aac97c94e8454c0adf540838264604e04b3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sqlite3/3.20.1-1/
 
-- https://sources.debian.net/src/sqlite3/3.20.1-1/ (for browsing the source)
-- https://sources.debian.net/src/sqlite3/3.20.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sqlite3/3.20.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `subversion=1.9.7-2`
 

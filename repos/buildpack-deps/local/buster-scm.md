@@ -1093,19 +1093,13 @@ Licenses: (parsed from: `/usr/share/doc/init-system-helpers/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris init-system-helpers=1.49
-'http://deb.debian.org/debian/pool/main/i/init-system-helpers/init-system-helpers_1.49.dsc' init-system-helpers_1.49.dsc 1945 SHA256:c051912f7585c7638efe621d4714f1daff25c4134b0b8806b8b67bfdf9b98a14
-'http://deb.debian.org/debian/pool/main/i/init-system-helpers/init-system-helpers_1.49.tar.xz' init-system-helpers_1.49.tar.xz 42660 SHA256:845ed218f1cb54d5b10ea850620e5b6b3905fb248163f97ad4670a55100cedae
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/init-system-helpers/1.49/
 
-- https://sources.debian.net/src/init-system-helpers/1.49/ (for browsing the source)
-- https://sources.debian.net/src/init-system-helpers/1.49/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/init-system-helpers/1.49/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `iproute2=4.9.0-2`
 
@@ -2527,21 +2521,13 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.20.1-1
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.20.1-1.dsc' sqlite3_3.20.1-1.dsc 2473 SHA256:f9d17a62dbf721057c9ca05bc37bd69e247f289ac7098ab5e98d1e51434dda8a
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.20.1.orig-www.tar.xz' sqlite3_3.20.1.orig-www.tar.xz 3485848 SHA256:c31a1ad382c331c0507a5992c6d1697450ffc3410209ae992ead1c34344b5654
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.20.1.orig.tar.xz' sqlite3_3.20.1.orig.tar.xz 5900940 SHA256:0ed8da87222d3e0d45afcd9dac3b91a453eee4ea6eaf1287b78a6f0fb5274437
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.20.1-1.debian.tar.xz' sqlite3_3.20.1-1.debian.tar.xz 17652 SHA256:8c205983e0f7baf75419123093a42aac97c94e8454c0adf540838264604e04b3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sqlite3/3.20.1-1/
 
-- https://sources.debian.net/src/sqlite3/3.20.1-1/ (for browsing the source)
-- https://sources.debian.net/src/sqlite3/3.20.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sqlite3/3.20.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `subversion=1.9.7-2`
 
