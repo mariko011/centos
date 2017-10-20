@@ -3088,20 +3088,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nss=2:3.26-1+debu7u4
-'http://security.debian.org/pool/updates/main/n/nss/nss_3.26-1+debu7u4.dsc' nss_3.26-1+debu7u4.dsc 2232 SHA256:955a820f0c2ee00e4c6fab59b8485fdaa3ccff15cf5bcd65027c61f3ef951337
-'http://security.debian.org/pool/updates/main/n/nss/nss_3.26.orig.tar.gz' nss_3.26.orig.tar.gz 7386943 SHA256:91783a570ab953693eb977ce47c501f04c104cec287fa011c91bcc8970d1c564
-'http://security.debian.org/pool/updates/main/n/nss/nss_3.26-1+debu7u4.debian.tar.gz' nss_3.26-1+debu7u4.debian.tar.gz 42175 SHA256:f089dd13ceb14f68bebdb3909cb32594173d13d2178787d8f3de27a5c3992a9d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nss/2:3.26-1+debu7u4/
 
-- https://sources.debian.net/src/nss/2:3.26-1+debu7u4/ (for browsing the source)
-- https://sources.debian.net/src/nss/2:3.26-1+debu7u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nss/2:3.26-1+debu7u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openjdk-6=6b38-1.13.10-1~deb7u1`
 
