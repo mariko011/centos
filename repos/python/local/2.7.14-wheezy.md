@@ -3320,20 +3320,13 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mysql-5.5=5.5.57-0+deb7u1
-'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.57-0+deb7u1.dsc' mysql-5.5_5.5.57-0+deb7u1.dsc 2971 SHA256:c2ab2fab8ad621135c05e8bb5417e73ca4e679d051e237dfea6772f0adc39d96
-'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.57.orig.tar.gz' mysql-5.5_5.5.57.orig.tar.gz 21044615 SHA256:c1c2bd321e524f92e43fe73d0d6745badd538c984c7561b273ae10e9aef57384
-'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.57-0+deb7u1.debian.tar.gz' mysql-5.5_5.5.57-0+deb7u1.debian.tar.gz 380210 SHA256:fe417b8157deb9c1cc6b7e83ca8a80ddd34e6c1907a738ad31666e5647317293
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mysql-5.5/5.5.57-0+deb7u1/
 
-- https://sources.debian.net/src/mysql-5.5/5.5.57-0+deb7u1/ (for browsing the source)
-- https://sources.debian.net/src/mysql-5.5/5.5.57-0+deb7u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mysql-5.5/5.5.57-0+deb7u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ncurses=5.9-10`
 
