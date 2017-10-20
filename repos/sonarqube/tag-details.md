@@ -4,8 +4,8 @@
 
 -	[`sonarqube:5.6.7`](#sonarqube567)
 -	[`sonarqube:5.6.7-alpine`](#sonarqube567-alpine)
--	[`sonarqube:6.5`](#sonarqube65)
--	[`sonarqube:6.5-alpine`](#sonarqube65-alpine)
+-	[`sonarqube:6.6`](#sonarqube66)
+-	[`sonarqube:6.6-alpine`](#sonarqube66-alpine)
 -	[`sonarqube:alpine`](#sonarqubealpine)
 -	[`sonarqube:latest`](#sonarqubelatest)
 -	[`sonarqube:lts`](#sonarqubelts)
@@ -207,7 +207,7 @@ ENTRYPOINT ["./bin/run.sh"]
 		Size: 443.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `sonarqube:6.5`
+## `sonarqube:6.6`
 
 ```console
 $ docker pull sonarqube@sha256:e93496aee173eb1699b7a257ff8a2aae3bdcffc8c8e69750b5896d86fda93bcb
@@ -217,7 +217,7 @@ $ docker pull sonarqube@sha256:e93496aee173eb1699b7a257ff8a2aae3bdcffc8c8e69750b
 -	Platforms:
 	-	linux; amd64
 
-### `sonarqube:6.5` - linux; amd64
+### `sonarqube:6.6` - linux; amd64
 
 ```console
 $ docker pull sonarqube@sha256:20e3cf51af9b2dd5a0d0601a6c184d828e15cf9177ee90902b00d453eaec3b67
@@ -323,7 +323,7 @@ ENTRYPOINT ["./bin/run.sh"]
 		Size: 445.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `sonarqube:6.5-alpine`
+## `sonarqube:6.6-alpine`
 
 ```console
 $ docker pull sonarqube@sha256:e4bd86c36de9af7eb3000a28038cc30fd470c9def3a2c389eb805b5ce41b0f6d
@@ -333,7 +333,7 @@ $ docker pull sonarqube@sha256:e4bd86c36de9af7eb3000a28038cc30fd470c9def3a2c389e
 -	Platforms:
 	-	linux; amd64
 
-### `sonarqube:6.5-alpine` - linux; amd64
+### `sonarqube:6.6-alpine` - linux; amd64
 
 ```console
 $ docker pull sonarqube@sha256:be955779218057aedf52424cfe6ee33e1348e1ff8617c93605d37e8097b84566
