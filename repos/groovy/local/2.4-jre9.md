@@ -924,21 +924,13 @@ Licenses: (parsed from: `/usr/share/doc/e2fslibs/copyright`, `/usr/share/doc/e2f
 - `GPL-2`
 - `LGPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris e2fsprogs=1.43.6-1
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.43.6-1.dsc' e2fsprogs_1.43.6-1.dsc 2305 SHA256:7397523f79b776a237fbc8ed124407d6fcf0c8b568b772b4d9dad5bec20cd705
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.43.6.orig.tar.gz' e2fsprogs_1.43.6.orig.tar.gz 7478011 SHA256:60139d75802925b0c23d451da8e4fc84c5e7cf94626cc324b59295495c0fdc80
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.43.6.orig.tar.gz.asc' e2fsprogs_1.43.6.orig.tar.gz.asc 488 SHA256:af46a31e5178dd86c324805552b6d003af4719932c3dc9d1b55ac99737e198fe
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.43.6-1.debian.tar.xz' e2fsprogs_1.43.6-1.debian.tar.xz 75236 SHA256:b29924813f322aaac5b1026e3d9594d5af153b56a1eefb827d0d25cf85ac9e17
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/e2fsprogs/1.43.6-1/
 
-- https://sources.debian.net/src/e2fsprogs/1.43.6-1/ (for browsing the source)
-- https://sources.debian.net/src/e2fsprogs/1.43.6-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/e2fsprogs/1.43.6-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `elfutils=0.170-0.1`
 
@@ -3450,6 +3442,10 @@ Licenses: (parsed from: `/usr/share/doc/libllvm5.0/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/llvm-toolchain-5.0/1:5.0-3/
+
 
 ### `dpkg` source package: `lm-sensors=1:3.4.0-4`
 
@@ -3571,20 +3567,13 @@ Licenses: (parsed from: `/usr/share/doc/libegl-mesa0/copyright`, `/usr/share/doc
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mesa=17.2.2-1
-'http://deb.debian.org/debian/pool/main/m/mesa/mesa_17.2.2-1.dsc' mesa_17.2.2-1.dsc 4869 SHA256:358c4c5109c4e884e4aa3c74187c8af45f813712d219c957cd4584e77d52d4b5
-'http://deb.debian.org/debian/pool/main/m/mesa/mesa_17.2.2.orig.tar.gz' mesa_17.2.2.orig.tar.gz 17738038 SHA256:8242256f3243ed3f35184ed7bf0a9070439ccdf477a3bd9cfd2437c0b2f9bc7f
-'http://deb.debian.org/debian/pool/main/m/mesa/mesa_17.2.2-1.diff.gz' mesa_17.2.2-1.diff.gz 117449 SHA256:28b71db4eb938cb5b8145eb3d61d1f7b1e61ae2d8c1ccfdf8d696b0737aee187
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mesa/17.2.2-1/
 
-- https://sources.debian.net/src/mesa/17.2.2-1/ (for browsing the source)
-- https://sources.debian.net/src/mesa/17.2.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mesa/17.2.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ncurses=6.0+20170902-1`
 
