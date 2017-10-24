@@ -2720,14 +2720,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris icu=57.1-5ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_57.1-5ubuntu0.1.dsc' icu_57.1-5ubuntu0.1.dsc 2206 SHA256:33c08c3c4ce19fd6804a7943bc5b971ca4133b62be03ccc1f84e54fbd0b65059
-'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_57.1.orig.tar.gz' icu_57.1.orig.tar.gz 22360664 SHA256:ff8c67cb65949b1e7808f2359f2b80f722697048e90e7cfc382ec1fe229e9581
-'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_57.1-5ubuntu0.1.debian.tar.xz' icu_57.1-5ubuntu0.1.debian.tar.xz 33128 SHA256:10ddc2b2c0360e77fc9568b6d0d7915f441efa73853c4f98f35e4242a424c06f
-```
 
 ### `dpkg` source package: `incremental=16.10.1-3`
 
@@ -6132,14 +6127,9 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mysql-5.7=5.7.19-0ubuntu0.17.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.19-0ubuntu0.17.04.1.dsc' mysql-5.7_5.7.19-0ubuntu0.17.04.1.dsc 3335 SHA256:eb06a00cf3e8c89d2d08d82b6921c8799c9b1b3b039f8b1551bfc138091bf986
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.19.orig.tar.gz' mysql-5.7_5.7.19.orig.tar.gz 48799895 SHA256:22e5034e40e0731eff521b7aaf7584b76297a69875ee50026b12f2bfac3e1bca
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.19-0ubuntu0.17.04.1.debian.tar.xz' mysql-5.7_5.7.19-0ubuntu0.17.04.1.debian.tar.xz 249528 SHA256:53295938b69c200797eeab2f7b02e3226c658aee7bcdbb19b69244de2b4477f0
-```
 
 ### `dpkg` source package: `mysql-defaults=1.0.2ubuntu1`
 

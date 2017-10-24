@@ -935,14 +935,9 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.47.0-1ubuntu2.3
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0-1ubuntu2.3.dsc' curl_7.47.0-1ubuntu2.3.dsc 2715 SHA256:30055c97489a45235e82bf7e5312d84e9189fa2d5c8967b4587f8567e19f0c5b
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0.orig.tar.gz' curl_7.47.0.orig.tar.gz 4563163 SHA256:df01bd42af361978d9de7de8529718bcafe01897a544a7650139a1954c55bdfe
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0-1ubuntu2.3.debian.tar.xz' curl_7.47.0-1ubuntu2.3.debian.tar.xz 42956 SHA256:2453d3d900981a3cd4ccb3b5e6e7e557cd01c421ecea931f8cfd93f9036822f3
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-14build1`
 
@@ -2258,14 +2253,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris icu=55.1-7ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_55.1-7ubuntu0.2.dsc' icu_55.1-7ubuntu0.2.dsc 2148 SHA256:ce7230a0cb7e5692f3d7ede5e307fe71f550652fccc03a9c74d7e2efdce9d8c8
-'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_55.1.orig.tar.gz' icu_55.1.orig.tar.gz 25600847 SHA256:e16b22cbefdd354bec114541f7849a12f8fc2015320ca5282ee4fd787571457b
-'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_55.1-7ubuntu0.2.debian.tar.xz' icu_55.1-7ubuntu0.2.debian.tar.xz 30160 SHA256:7f8578dda9d7d37c7e3a42356f8678305eaf6741fd01d63153cb4ac30103bc8a
-```
 
 ### `dpkg` source package: `init-system-helpers=1.29ubuntu4`
 
@@ -4840,14 +4830,9 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient20/copyright`, `/usr/share
 - `public-domain`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mysql-5.7=5.7.19-0ubuntu0.16.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.19-0ubuntu0.16.04.1.dsc' mysql-5.7_5.7.19-0ubuntu0.16.04.1.dsc 3355 SHA256:7f28628136bcadc074fa5f5f1dbbe6f21f9e0c75e384863f2cad871dda42df65
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.19.orig.tar.gz' mysql-5.7_5.7.19.orig.tar.gz 48799895 SHA256:22e5034e40e0731eff521b7aaf7584b76297a69875ee50026b12f2bfac3e1bca
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.19-0ubuntu0.16.04.1.debian.tar.xz' mysql-5.7_5.7.19-0ubuntu0.16.04.1.debian.tar.xz 249972 SHA256:86091f1c29c1407b53b394086ca14807af44f5a96cb60781f42eba37442c2994
-```
 
 ### `dpkg` source package: `ncurses=6.0+20160213-1ubuntu1`
 
@@ -8405,14 +8390,9 @@ Licenses: (parsed from: `/usr/share/doc/libpam-systemd/copyright`, `/usr/share/d
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=229-4ubuntu19
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu19.dsc' systemd_229-4ubuntu19.dsc 3838 SHA256:a49615c784f23999f7fb1a6015097e1a8d8dff7c4dc220ed59d06dcc9efd0a2c
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229.orig.tar.gz' systemd_229.orig.tar.gz 4319173 SHA256:b51b0a48d1beb388d95bd6a98d62be05490335d4bb388aefecdcb576e91e0741
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu19.debian.tar.xz' systemd_229-4ubuntu19.debian.tar.xz 247552 SHA256:7efc886d38fa7510462bda29dea7d22023fa8265ff5bb700f3715bf50b603d77
-```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.3ubuntu2`
 

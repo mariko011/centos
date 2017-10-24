@@ -1375,14 +1375,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris icu=57.1-5ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_57.1-5ubuntu0.1.dsc' icu_57.1-5ubuntu0.1.dsc 2206 SHA256:33c08c3c4ce19fd6804a7943bc5b971ca4133b62be03ccc1f84e54fbd0b65059
-'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_57.1.orig.tar.gz' icu_57.1.orig.tar.gz 22360664 SHA256:ff8c67cb65949b1e7808f2359f2b80f722697048e90e7cfc382ec1fe229e9581
-'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_57.1-5ubuntu0.1.debian.tar.xz' icu_57.1-5ubuntu0.1.debian.tar.xz 33128 SHA256:10ddc2b2c0360e77fc9568b6d0d7915f441efa73853c4f98f35e4242a424c06f
-```
 
 ### `dpkg` source package: `infinipath-psm=3.3+19.g67c0807.open-3`
 
