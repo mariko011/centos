@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:55c54da9ed7e57121d539953425a109b4f063989be9cf101855c504dbbf8a5c4`
-- Created: `2017-09-14T23:21:05.155150074Z`
-- Virtual Size: ~ 289.33 Mb  
+- Image ID: `sha256:d0b4873d465608fc7bbd4056a53cd95856bf2cde233fada58eb2be0d386697ff`
+- Created: `2017-10-23T18:59:51.866856586Z`
+- Virtual Size: ~ 314.19 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["./bin/run.sh"]`
@@ -14,7 +14,7 @@
   - `JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk`
   - `JAVA_VERSION=8u131`
   - `JAVA_ALPINE_VERSION=8.131.11-r2`
-  - `SONAR_VERSION=6.5`
+  - `SONAR_VERSION=6.6`
   - `SONARQUBE_HOME=/opt/sonarqube`
   - `SONARQUBE_JDBC_USERNAME=sonar`
   - `SONARQUBE_JDBC_PASSWORD=sonar`
