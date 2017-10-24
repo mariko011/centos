@@ -1923,14 +1923,9 @@ Licenses: (parsed from: `/usr/share/doc/mysql-client-core-5.7/copyright`)
 - `public-domain`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mysql-5.7=5.7.19-0ubuntu0.16.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.19-0ubuntu0.16.04.1.dsc' mysql-5.7_5.7.19-0ubuntu0.16.04.1.dsc 3355 SHA256:7f28628136bcadc074fa5f5f1dbbe6f21f9e0c75e384863f2cad871dda42df65
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.19.orig.tar.gz' mysql-5.7_5.7.19.orig.tar.gz 48799895 SHA256:22e5034e40e0731eff521b7aaf7584b76297a69875ee50026b12f2bfac3e1bca
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.19-0ubuntu0.16.04.1.debian.tar.xz' mysql-5.7_5.7.19-0ubuntu0.16.04.1.debian.tar.xz 249972 SHA256:86091f1c29c1407b53b394086ca14807af44f5a96cb60781f42eba37442c2994
-```
 
 ### `dpkg` source package: `ncurses=6.0+20160213-1ubuntu1`
 
@@ -2509,14 +2504,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=229-4ubuntu19
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu19.dsc' systemd_229-4ubuntu19.dsc 3838 SHA256:a49615c784f23999f7fb1a6015097e1a8d8dff7c4dc220ed59d06dcc9efd0a2c
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229.orig.tar.gz' systemd_229.orig.tar.gz 4319173 SHA256:b51b0a48d1beb388d95bd6a98d62be05490335d4bb388aefecdcb576e91e0741
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu19.debian.tar.xz' systemd_229-4ubuntu19.debian.tar.xz 247552 SHA256:7efc886d38fa7510462bda29dea7d22023fa8265ff5bb700f3715bf50b603d77
-```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.3ubuntu2`
 
