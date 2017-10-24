@@ -3323,10 +3323,6 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/mysql-5.5/5.5.57-0+deb7u1/
-
 
 ### `dpkg` source package: `ncurses=5.9-10`
 
