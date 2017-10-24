@@ -1,7 +1,7 @@
 ## `python:onbuild`
 
 ```console
-$ docker pull python@sha256:577a9acf5933aa6dece4fa751fd943fe7cd834a2240702da9cc04553474550a8
+$ docker pull python@sha256:55ce945be3a74be4fdda5033cb47a2ab4462f7f1648752ea434b70e70765354b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9,6 +9,7 @@ $ docker pull python@sha256:577a9acf5933aa6dece4fa751fd943fe7cd834a2240702da9cc0
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
+	-	linux; ppc64le
 
 ### `python:onbuild` - linux; amd64
 
@@ -296,4 +297,100 @@ ONBUILD COPY . /usr/src/app
 	-	`sha256:7bb4744b80e87a532b63816cfd4ec712741f62c40a8a9ee0861be6c74f8f271d`  
 		Last Modified: Tue, 10 Oct 2017 00:21:13 GMT  
 		Size: 164.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `python:onbuild` - linux; ppc64le
+
+```console
+$ docker pull python@sha256:f8032dd8058b12bbd134c6c6b97bbe7273e8f010aa9abe9c3b8a3332f5f51f2f
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **261.7 MB (261653000 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:be298c944bb499416044b63b544401eded5666e096d260073c8894fe50b59b74`
+-	Default Command: `["python3"]`
+
+```dockerfile
+# Mon, 09 Oct 2017 21:42:51 GMT
+ADD file:c62750f1e0dbf2b729abca09eb7927f2ee4fa8311dc40ae8066a53a4f1c85059 in / 
+# Mon, 09 Oct 2017 21:42:53 GMT
+CMD ["bash"]
+# Mon, 09 Oct 2017 22:55:42 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
+# Mon, 09 Oct 2017 22:55:53 GMT
+RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
+# Mon, 09 Oct 2017 23:00:24 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
+# Mon, 09 Oct 2017 23:29:02 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Wed, 11 Oct 2017 05:17:48 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 11 Oct 2017 05:17:50 GMT
+ENV LANG=C.UTF-8
+# Wed, 11 Oct 2017 05:18:42 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
+# Wed, 11 Oct 2017 05:18:45 GMT
+ENV GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D
+# Wed, 11 Oct 2017 05:18:47 GMT
+ENV PYTHON_VERSION=3.6.3
+# Wed, 11 Oct 2017 05:22:00 GMT
+RUN set -ex 	&& buildDeps=' 		dpkg-dev 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
+# Wed, 11 Oct 2017 05:22:07 GMT
+RUN cd /usr/local/bin 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
+# Wed, 11 Oct 2017 05:22:10 GMT
+ENV PYTHON_PIP_VERSION=9.0.1
+# Wed, 11 Oct 2017 05:22:23 GMT
+RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
+# Wed, 11 Oct 2017 05:22:26 GMT
+CMD ["python3"]
+# Wed, 11 Oct 2017 05:22:40 GMT
+RUN mkdir -p /usr/src/app
+# Wed, 11 Oct 2017 05:22:43 GMT
+WORKDIR /usr/src/app
+# Wed, 11 Oct 2017 05:22:45 GMT
+ONBUILD COPY requirements.txt /usr/src/app/
+# Wed, 11 Oct 2017 05:22:47 GMT
+ONBUILD RUN pip install --no-cache-dir -r requirements.txt
+# Wed, 11 Oct 2017 05:22:50 GMT
+ONBUILD COPY . /usr/src/app
+```
+
+-	Layers:
+	-	`sha256:0f531bde4b154605e2d6339e50b65d65d06568d747b8bef594269dd06602062f`  
+		Last Modified: Mon, 09 Oct 2017 21:48:50 GMT  
+		Size: 51.8 MB (51809739 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:41e89885275517e26348ed4e0233ba2840ced4a5353d0672d6b9c7eacc3cd124`  
+		Last Modified: Tue, 10 Oct 2017 00:55:23 GMT  
+		Size: 19.2 MB (19201020 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7fe1a37bca48df96195d1cc5d94de50074b535c1ac9ae5c1feb2a7d0daca610e`  
+		Last Modified: Tue, 10 Oct 2017 00:55:50 GMT  
+		Size: 42.7 MB (42731161 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f186539c4e3a11aa6fa3b5f09347f572802d1e2504ad06cb1c669abb21255478`  
+		Last Modified: Wed, 11 Oct 2017 04:18:21 GMT  
+		Size: 122.7 MB (122734290 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a10e8daeca7ad376620e7fb51134e314585949e71bc89a35cdf156419d0f4b54`  
+		Last Modified: Wed, 11 Oct 2017 05:40:41 GMT  
+		Size: 3.2 MB (3151537 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4c951c2b200568369e8b1f944790b3554e868bb746cc1e2e60df2b9c187edd5d`  
+		Last Modified: Wed, 11 Oct 2017 05:40:49 GMT  
+		Size: 20.4 MB (20363512 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:826e2c64e67ac3b24042371dd9569169a10bdacc3bfbface81d6aff7fdb3f539`  
+		Last Modified: Wed, 11 Oct 2017 05:40:38 GMT  
+		Size: 241.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5a89c356b8dbc6a184ac607bcc280debf2d4b856d4d4817983156eceba5ec13d`  
+		Last Modified: Wed, 11 Oct 2017 05:40:41 GMT  
+		Size: 1.7 MB (1661335 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ac634447da04c84d280bc62aacdf6d06ca1f5db242eea4da4a611515ea57b39a`  
+		Last Modified: Wed, 11 Oct 2017 05:41:18 GMT  
+		Size: 165.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
