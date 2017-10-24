@@ -428,20 +428,13 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris binutils=2.29.1-4
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.29.1-4.dsc' binutils_2.29.1-4.dsc 6126 SHA256:8c77f5e14ea423183ce4d8570988936f43bb7524c78388d0ecfe01d6ba3ce8d2
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.29.1.orig.tar.xz' binutils_2.29.1.orig.tar.xz 19923564 SHA256:0e993857e2e9b006fb541a3e1ce319d00770b27d3c50af2ee9c779388da1915c
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.29.1-4.debian.tar.xz' binutils_2.29.1-4.debian.tar.xz 172660 SHA256:61bfec18e033fa37f318b2466b4b41a45c7927101cc6d90858e4d2cad6d95dce
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/binutils/2.29.1-4/
 
-- https://sources.debian.net/src/binutils/2.29.1-4/ (for browsing the source)
-- https://sources.debian.net/src/binutils/2.29.1-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/binutils/2.29.1-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `bzip2=1.0.6-8.1`
 
@@ -534,19 +527,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cdebconf=0.230
-'http://deb.debian.org/debian/pool/main/c/cdebconf/cdebconf_0.230.dsc' cdebconf_0.230.dsc 2662 SHA256:892693c02be63a01948cd6719cabd65c958dfee11eebc3db06cb3c60eb51e8bd
-'http://deb.debian.org/debian/pool/main/c/cdebconf/cdebconf_0.230.tar.xz' cdebconf_0.230.tar.xz 273332 SHA256:8e39217219fa8d2e79f50ffa9f2e9a014d113b8a400979a2903c19c5bb2801e2
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/cdebconf/0.230/
 
-- https://sources.debian.net/src/cdebconf/0.230/ (for browsing the source)
-- https://sources.debian.net/src/cdebconf/0.230/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cdebconf/0.230/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `coreutils=8.26-3`
 
@@ -581,20 +568,13 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 - `LGPL-2.0 with AOSDL exception`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cups=2.2.4-7
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.4-7.dsc' cups_2.2.4-7.dsc 3158 SHA256:13ef6546cc78bc77f4205267901de5256ce6090108ce82e262c9c10fabc87eea
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.4.orig.tar.gz' cups_2.2.4.orig.tar.gz 9984475 SHA256:596d4db72651c335469ae5f37b0da72ac9f97d73e30838d787065f559dea98cc
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.4-7.debian.tar.xz' cups_2.2.4-7.debian.tar.xz 356900 SHA256:d742242d92c594d9ed1c71ef4bb95c0831cfbfd9cf3d40af078c01034b5dadfb
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/cups/2.2.4-7/
 
-- https://sources.debian.net/src/cups/2.2.4-7/ (for browsing the source)
-- https://sources.debian.net/src/cups/2.2.4-7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cups/2.2.4-7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `curl=7.55.1-1`
 
@@ -776,19 +756,13 @@ Licenses: (parsed from: `/usr/share/doc/debconf/copyright`)
 
 - `BSD-2-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debconf=1.5.63
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.63.dsc' debconf_1.5.63.dsc 1937 SHA256:532d624315a3a6c62f3cafe90f12e4a185309b40350643be4861b64afe736555
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.63.tar.xz' debconf_1.5.63.tar.xz 571980 SHA256:e50033ced377f22162de2200f5a8a7854ab45bc89e6e9a7ffbfae7dd70265092
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/debconf/1.5.63/
 
-- https://sources.debian.net/src/debconf/1.5.63/ (for browsing the source)
-- https://sources.debian.net/src/debconf/1.5.63/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/debconf/1.5.63/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debian-archive-keyring=2017.6`
 
@@ -953,21 +927,13 @@ Licenses: (parsed from: `/usr/share/doc/comerr-dev/copyright`, `/usr/share/doc/e
 - `GPL-2`
 - `LGPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris e2fsprogs=1.43.6-1
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.43.6-1.dsc' e2fsprogs_1.43.6-1.dsc 2305 SHA256:7397523f79b776a237fbc8ed124407d6fcf0c8b568b772b4d9dad5bec20cd705
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.43.6.orig.tar.gz' e2fsprogs_1.43.6.orig.tar.gz 7478011 SHA256:60139d75802925b0c23d451da8e4fc84c5e7cf94626cc324b59295495c0fdc80
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.43.6.orig.tar.gz.asc' e2fsprogs_1.43.6.orig.tar.gz.asc 488 SHA256:af46a31e5178dd86c324805552b6d003af4719932c3dc9d1b55ac99737e198fe
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.43.6-1.debian.tar.xz' e2fsprogs_1.43.6-1.debian.tar.xz 75236 SHA256:b29924813f322aaac5b1026e3d9594d5af153b56a1eefb827d0d25cf85ac9e17
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/e2fsprogs/1.43.6-1/
 
-- https://sources.debian.net/src/e2fsprogs/1.43.6-1/ (for browsing the source)
-- https://sources.debian.net/src/e2fsprogs/1.43.6-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/e2fsprogs/1.43.6-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `elfutils=0.170-0.1`
 
@@ -1678,20 +1644,13 @@ Licenses: (parsed from: `/usr/share/doc/libgraphite2-3/copyright`)
 - `MPL-1.1`
 - `custom-sil-open-font-license`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris graphite2=1.3.10-5
-'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.10-5.dsc' graphite2_1.3.10-5.dsc 2302 SHA256:666edfb26ba547f2e781e22a32246f6138f26830df8f4b609d88f5b2947146ec
-'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.10.orig.tar.gz' graphite2_1.3.10.orig.tar.gz 3889647 SHA256:90fde3b2f9ea95d68ffb19278d07d9b8a7efa5ba0e413bebcea802ce05cda1ae
-'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.10-5.debian.tar.xz' graphite2_1.3.10-5.debian.tar.xz 11416 SHA256:0ee63ed65a5b032c8d71c05654997ae3719a6102026829a61e8ba019f43a0fdb
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/graphite2/1.3.10-5/
 
-- https://sources.debian.net/src/graphite2/1.3.10-5/ (for browsing the source)
-- https://sources.debian.net/src/graphite2/1.3.10-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/graphite2/1.3.10-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `graphviz=2.38.0-18`
 
@@ -3249,20 +3208,13 @@ Licenses: (parsed from: `/usr/share/doc/libwmf-dev/copyright`, `/usr/share/doc/l
 
 - `LGPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libwmf=0.2.8.4-11
-'http://deb.debian.org/debian/pool/main/libw/libwmf/libwmf_0.2.8.4-11.dsc' libwmf_0.2.8.4-11.dsc 2078 SHA256:12b561f83c00fae3850e2581ad32d8ac89b21852bc575c44cfe3e3a83a5979fb
-'http://deb.debian.org/debian/pool/main/libw/libwmf/libwmf_0.2.8.4.orig.tar.gz' libwmf_0.2.8.4.orig.tar.gz 2169375 SHA256:5b345c69220545d003ad52bfd035d5d6f4f075e65204114a9e875e84895a7cf8
-'http://deb.debian.org/debian/pool/main/libw/libwmf/libwmf_0.2.8.4-11.debian.tar.xz' libwmf_0.2.8.4-11.debian.tar.xz 11820 SHA256:3b262b166874c56a99e24ebe596fe28bf4f32f8ef4d47dc699a58b40e3c8ec90
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libwmf/0.2.8.4-11/
 
-- https://sources.debian.net/src/libwmf/0.2.8.4-11/ (for browsing the source)
-- https://sources.debian.net/src/libwmf/0.2.8.4-11/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libwmf/0.2.8.4-11/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libx11=2:1.6.4-3`
 
@@ -4296,20 +4248,13 @@ Licenses: (parsed from: `/usr/share/doc/libopenjp2-7/copyright`, `/usr/share/doc
 - `ZLIB`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjpeg2=2.2.0-2
-'http://deb.debian.org/debian/pool/main/o/openjpeg2/openjpeg2_2.2.0-2.dsc' openjpeg2_2.2.0-2.dsc 2786 SHA256:d457def4421212fc39fe1214d8458fef28b3ab09cc253e5e33d1b0036f93c915
-'http://deb.debian.org/debian/pool/main/o/openjpeg2/openjpeg2_2.2.0.orig.tar.gz' openjpeg2_2.2.0.orig.tar.gz 2043867 SHA256:f73c0e2e689a1454a2ecc47f56a648d5f35e85fe882a4a2f8fdfe2e36e23b73f
-'http://deb.debian.org/debian/pool/main/o/openjpeg2/openjpeg2_2.2.0-2.debian.tar.xz' openjpeg2_2.2.0-2.debian.tar.xz 17772 SHA256:56866e6d4f0a3e889fa3eb46b355b14e4860e75ed8fa69039d02d08d20df3abe
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openjpeg2/2.2.0-2/
 
-- https://sources.debian.net/src/openjpeg2/2.2.0-2/ (for browsing the source)
-- https://sources.debian.net/src/openjpeg2/2.2.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openjpeg2/2.2.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.4.45+dfsg-1`
 
@@ -4431,21 +4376,13 @@ Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
 - `permissive-like-automake-output`
 - `same-as-rest-of-p11kit`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris p11-kit=0.23.7-3
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.23.7-3.dsc' p11-kit_0.23.7-3.dsc 2452 SHA256:ce5611bfa9891673edcb5b4ee369da586b2cee214061dff492dc5f6a8fff6092
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.23.7.orig.tar.gz' p11-kit_0.23.7.orig.tar.gz 1087009 SHA256:988e7c86f2641b36702503481292ef0686e6b1c39d80b215699b6dbf1024be41
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.23.7.orig.tar.gz.asc' p11-kit_0.23.7.orig.tar.gz.asc 543 SHA256:7156998e36be4e12e2375518d76a1b1fdf46acbae10dd6bb098c1bd902f0cdad
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.23.7-3.debian.tar.xz' p11-kit_0.23.7-3.debian.tar.xz 21772 SHA256:8dc0b106a69842cc734f8f3c9a1ad6312cd5d1cd318b696cdc76e6ca0c3108b5
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/p11-kit/0.23.7-3/
 
-- https://sources.debian.net/src/p11-kit/0.23.7-3/ (for browsing the source)
-- https://sources.debian.net/src/p11-kit/0.23.7-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/p11-kit/0.23.7-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pam=1.1.8-3.6`
 
