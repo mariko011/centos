@@ -41,7 +41,7 @@ echo 'done'
 for repo in "${repos[@]}"; do
 	echo -n "$repo ... "
 	IFS=$'\n'
-	tags=( $(bashbrew cat --format '{{- range .Entries -}}{{- range .Tags -}}{{- $.RepoName -}}:{{- . -}}{{- "\n" -}}{{- end -}}{{- range .SharedTags -}}{{- $.RepoName -}}:{{- . -}}{{- "\n" -}}{{- end -}}{{- end -}}' "$repo" 2>/dev/null | sort -u) )
+	tags=( $(bashbrew list "$repo" 2>/dev/null | sort -u) )
 	unset IFS
 	if [ "${#tags[@]}" -eq 0 ]; then
 		echo 'skipping'
