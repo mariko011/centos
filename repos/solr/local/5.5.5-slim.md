@@ -1,9 +1,9 @@
-# `solr:5.5.4-slim`
+# `solr:5.5.5-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7f39e16cc861137f738521c75bb11f946d2309d0e1f4d464e5f26346ed39bec0`
-- Created: `2017-10-10T08:22:59.539902173Z`
+- Image ID: `sha256:8d0891aaee1d35772995c0c45bd458e7dc4f5918c0b0aa64034ff44b74d9a8ce`
+- Created: `2017-10-24T22:11:01.250711789Z`
 - Virtual Size: ~ 372.53 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -20,10 +20,10 @@
   - `SOLR_UID=8983`
   - `SOLR_GROUP=solr`
   - `SOLR_GID=8983`
-  - `SOLR_VERSION=5.5.4`
-  - `SOLR_URL=https://archive.apache.org/dist/lucene/solr/5.5.4/solr-5.5.4.tgz`
-  - `SOLR_SHA256=c1528e4afc9a0b8e7e5be0a16f40bb4080f410d502cd63b4447d448c49e9f500`
-  - `SOLR_KEYS=E6E21FFCDCEA14C95910EA65051A0FAF76BC6507`
+  - `SOLR_VERSION=5.5.5`
+  - `SOLR_URL=https://archive.apache.org/dist/lucene/solr/5.5.5/solr-5.5.5.tgz`
+  - `SOLR_SHA256=2bbe3a55976f118c5d8c2382d4591257f6e2af779c08c6561e44afa3181a87c1`
+  - `SOLR_KEYS=5F55943E13D49059D3F342777186B06E1ED139E7`
 
 ## `dpkg` (`.deb`-based packages)
 
