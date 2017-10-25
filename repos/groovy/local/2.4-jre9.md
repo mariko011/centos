@@ -145,20 +145,13 @@ Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apparmor=2.11.0-11
-'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.11.0-11.dsc' apparmor_2.11.0-11.dsc 3125 SHA256:418e6c1a67c8e970d3b0b0417f6124dbe1e5371908e8af60a88d1487de1ff2f8
-'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.11.0.orig.tar.gz' apparmor_2.11.0.orig.tar.gz 5013297 SHA256:b1c489ea11e7771b8e6b181532cafbf9ebe6603e3cb00e2558f21b7a5bdd739a
-'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.11.0-11.debian.tar.xz' apparmor_2.11.0-11.debian.tar.xz 88956 SHA256:07dc32b369c62a05fd4a0a7c0007ba5bb6f2f36ace6db38989c8b99b8fa0c050
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apparmor/2.11.0-11/
 
-- https://sources.debian.net/src/apparmor/2.11.0-11/ (for browsing the source)
-- https://sources.debian.net/src/apparmor/2.11.0-11/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apparmor/2.11.0-11/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apt=1.5`
 
@@ -172,19 +165,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=1.5
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.5.dsc' apt_1.5.dsc 2599 SHA256:6e4600cf5e30c4aeba4203f0c869a60be6296ef35504b39a217a18f8b0f963cf
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.5.tar.xz' apt_1.5.tar.xz 2095240 SHA256:7d9a4daf7a4ae87de7ff4b1423e951ce66fe0535944f0774c8890d8f2a23e920
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/1.5/
 
-- https://sources.debian.net/src/apt/1.5/ (for browsing the source)
-- https://sources.debian.net/src/apt/1.5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/1.5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `at-spi2-atk=2.26.0-1`
 
@@ -1417,21 +1404,13 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `The MIT License (MIT)`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.5.15-2
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.15-2.dsc' gnutls28_3.5.15-2.dsc 3322 SHA256:16712db8bb067d802958d462274fcc87dcaece8ea4ab5a3d6fd182520fbc4272
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.15.orig.tar.xz' gnutls28_3.5.15.orig.tar.xz 7238928 SHA256:046081108b8b1fe455a13a4c5a4eaa0368e185b678f1670fe09a11a2d7ecfad5
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.15.orig.tar.xz.asc' gnutls28_3.5.15.orig.tar.xz.asc 310 SHA256:8e19becd65224aefc70a0ea15df7369ed9588f9d692cc5cd790a72b541a48de2
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.15-2.debian.tar.xz' gnutls28_3.5.15-2.debian.tar.xz 100840 SHA256:b470739833727c0f4f58c14b598c4e3ad56384e4fbb271a10106418c9a44143e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnutls28/3.5.15-2/
 
-- https://sources.debian.net/src/gnutls28/3.5.15-2/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.5.15-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.5.15-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gpm=1.20.4-6.2`
 
@@ -4341,20 +4320,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2017b-2
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017b-2.dsc' tzdata_2017b-2.dsc 2005 SHA256:479f7a077690c3d84f15dc8be1da0a732a54cc07f7b30ca7fad6a5bd00921748
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017b.orig.tar.gz' tzdata_2017b.orig.tar.gz 324317 SHA256:f8242a522ea3496b0ce4ff4f2e75a049178da21001a08b8e666d8cbe07d18086
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017b-2.debian.tar.xz' tzdata_2017b-2.debian.tar.xz 101096 SHA256:2607bdfaa4535e59223d194c1cc1891a3c26a731d20a4a1d9311d22d1a9175d8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2017b-2/
 
-- https://sources.debian.net/src/tzdata/2017b-2/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2017b-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2017b-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0036`
 
