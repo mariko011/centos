@@ -6,12 +6,14 @@
 -	[`zookeeper:3.3.6`](#zookeeper336)
 -	[`zookeeper:3.4`](#zookeeper34)
 -	[`zookeeper:3.4.10`](#zookeeper3410)
+-	[`zookeeper:3.5`](#zookeeper35)
+-	[`zookeeper:3.5.3-beta`](#zookeeper353-beta)
 -	[`zookeeper:latest`](#zookeeperlatest)
 
 ## `zookeeper:3.3`
 
 ```console
-$ docker pull zookeeper@sha256:43693e22efb17a3626bddeb5d3f6a661956cc828e063c7090bbab63f088c85b1
+$ docker pull zookeeper@sha256:75cae7ff100cb1999a94b7bf3e5167160e352b5b56e88a67abea2579bf49c49c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -21,14 +23,14 @@ $ docker pull zookeeper@sha256:43693e22efb17a3626bddeb5d3f6a661956cc828e063c7090
 ### `zookeeper:3.3` - linux; amd64
 
 ```console
-$ docker pull zookeeper@sha256:014cde3f9ec2c9399acb3d73c87f4081b772b3fc6dd06b9332790986895d4344
+$ docker pull zookeeper@sha256:a38c7d155ae27a3693f36ed0c0eed207d9c048ace40c75dcc048bfac835429e1
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **69.3 MB (69292463 bytes)**  
+-	Total Size: **69.6 MB (69588115 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c08c1c22dae391012da865c7824aa9ad219db6e03d27402a59567919f201a42c`
+-	Image ID: `sha256:3e3b321121d171be380b77e0c46812b203962a3f2a540ca19c3c0719bbc83c52`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["zkServer.sh","start-foreground"]`
 
@@ -63,22 +65,22 @@ RUN set -ex;     adduser -D "$ZOO_USER";     mkdir -p "$ZOO_DATA_LOG_DIR" "$ZOO_
 ARG GPG_KEY=D0BC8D8A4E90A40AFDFC43B3E22A746A68E327C1
 # Thu, 14 Sep 2017 07:50:06 GMT
 ARG DISTRO_NAME=zookeeper-3.3.6
-# Thu, 14 Sep 2017 07:50:22 GMT
+# Wed, 25 Oct 2017 17:40:45 GMT
 # ARGS: DISTRO_NAME=zookeeper-3.3.6 GPG_KEY=D0BC8D8A4E90A40AFDFC43B3E22A746A68E327C1
-RUN set -ex;     apk add --no-cache --virtual .build-deps         gnupg;     wget -q "http://www.apache.org/dist/zookeeper/$DISTRO_NAME/$DISTRO_NAME.tar.gz";     wget -q "http://www.apache.org/dist/zookeeper/$DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-key "$GPG_KEY" ||     gpg --keyserver pgp.mit.edu --recv-keys "$GPG_KEY" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -xzf "$DISTRO_NAME.tar.gz";     mv "$DISTRO_NAME/conf/"* "$ZOO_CONF_DIR";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     apk del .build-deps
-# Thu, 14 Sep 2017 07:50:22 GMT
+RUN set -ex;     apk add --no-cache --virtual .build-deps         ca-certificates         gnupg         libressl;     wget -q "https://www.apache.org/dist/zookeeper/$DISTRO_NAME/$DISTRO_NAME.tar.gz";     wget -q "https://www.apache.org/dist/zookeeper/$DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-key "$GPG_KEY" ||     gpg --keyserver pgp.mit.edu --recv-keys "$GPG_KEY" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -xzf "$DISTRO_NAME.tar.gz";     mv "$DISTRO_NAME/conf/"* "$ZOO_CONF_DIR";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     apk del .build-deps
+# Wed, 25 Oct 2017 17:40:45 GMT
 WORKDIR /zookeeper-3.3.6
-# Thu, 14 Sep 2017 07:50:22 GMT
+# Wed, 25 Oct 2017 17:40:45 GMT
 VOLUME [/data /datalog]
-# Thu, 14 Sep 2017 07:50:23 GMT
+# Wed, 25 Oct 2017 17:40:45 GMT
 EXPOSE 2181/tcp 2888/tcp 3888/tcp
-# Thu, 14 Sep 2017 07:50:23 GMT
+# Wed, 25 Oct 2017 17:40:46 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin:/zookeeper-3.3.6/bin ZOOCFGDIR=/conf
-# Thu, 14 Sep 2017 07:50:23 GMT
+# Wed, 25 Oct 2017 17:40:46 GMT
 COPY file:dab1f2991c403145ae0277be86810aa6ab4838363663db6dfbedba997dfd4bcf in / 
-# Thu, 14 Sep 2017 07:50:23 GMT
+# Wed, 25 Oct 2017 17:40:46 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 14 Sep 2017 07:50:23 GMT
+# Wed, 25 Oct 2017 17:40:46 GMT
 CMD ["zkServer.sh" "start-foreground"]
 ```
 
@@ -103,19 +105,19 @@ CMD ["zkServer.sh" "start-foreground"]
 		Last Modified: Thu, 14 Sep 2017 07:50:56 GMT  
 		Size: 1.3 KB (1297 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:548b816d0de5af186c9e6bcee10d81de80b0505732ff872f4bb0aa197c1f9a00`  
-		Last Modified: Thu, 14 Sep 2017 07:50:58 GMT  
-		Size: 11.9 MB (11892637 bytes)  
+	-	`sha256:df0764b95be6205f9147f49128e1edcca2d49a5c17150b36c6b900ae62c6a477`  
+		Last Modified: Wed, 25 Oct 2017 17:41:59 GMT  
+		Size: 12.2 MB (12188291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a85504f3b3c6052919a58bed7ceb4bb275f6344c8def56c67de236ecf52f993b`  
-		Last Modified: Thu, 14 Sep 2017 07:50:56 GMT  
-		Size: 545.0 B  
+	-	`sha256:9a4576796ecc7d6a2121d9119dc8bdf5de0fa7b7b59c257ed9d8771fc5e4dc45`  
+		Last Modified: Wed, 25 Oct 2017 17:41:57 GMT  
+		Size: 543.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `zookeeper:3.3.6`
 
 ```console
-$ docker pull zookeeper@sha256:43693e22efb17a3626bddeb5d3f6a661956cc828e063c7090bbab63f088c85b1
+$ docker pull zookeeper@sha256:75cae7ff100cb1999a94b7bf3e5167160e352b5b56e88a67abea2579bf49c49c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -125,14 +127,14 @@ $ docker pull zookeeper@sha256:43693e22efb17a3626bddeb5d3f6a661956cc828e063c7090
 ### `zookeeper:3.3.6` - linux; amd64
 
 ```console
-$ docker pull zookeeper@sha256:014cde3f9ec2c9399acb3d73c87f4081b772b3fc6dd06b9332790986895d4344
+$ docker pull zookeeper@sha256:a38c7d155ae27a3693f36ed0c0eed207d9c048ace40c75dcc048bfac835429e1
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **69.3 MB (69292463 bytes)**  
+-	Total Size: **69.6 MB (69588115 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c08c1c22dae391012da865c7824aa9ad219db6e03d27402a59567919f201a42c`
+-	Image ID: `sha256:3e3b321121d171be380b77e0c46812b203962a3f2a540ca19c3c0719bbc83c52`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["zkServer.sh","start-foreground"]`
 
@@ -167,22 +169,22 @@ RUN set -ex;     adduser -D "$ZOO_USER";     mkdir -p "$ZOO_DATA_LOG_DIR" "$ZOO_
 ARG GPG_KEY=D0BC8D8A4E90A40AFDFC43B3E22A746A68E327C1
 # Thu, 14 Sep 2017 07:50:06 GMT
 ARG DISTRO_NAME=zookeeper-3.3.6
-# Thu, 14 Sep 2017 07:50:22 GMT
+# Wed, 25 Oct 2017 17:40:45 GMT
 # ARGS: DISTRO_NAME=zookeeper-3.3.6 GPG_KEY=D0BC8D8A4E90A40AFDFC43B3E22A746A68E327C1
-RUN set -ex;     apk add --no-cache --virtual .build-deps         gnupg;     wget -q "http://www.apache.org/dist/zookeeper/$DISTRO_NAME/$DISTRO_NAME.tar.gz";     wget -q "http://www.apache.org/dist/zookeeper/$DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-key "$GPG_KEY" ||     gpg --keyserver pgp.mit.edu --recv-keys "$GPG_KEY" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -xzf "$DISTRO_NAME.tar.gz";     mv "$DISTRO_NAME/conf/"* "$ZOO_CONF_DIR";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     apk del .build-deps
-# Thu, 14 Sep 2017 07:50:22 GMT
+RUN set -ex;     apk add --no-cache --virtual .build-deps         ca-certificates         gnupg         libressl;     wget -q "https://www.apache.org/dist/zookeeper/$DISTRO_NAME/$DISTRO_NAME.tar.gz";     wget -q "https://www.apache.org/dist/zookeeper/$DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-key "$GPG_KEY" ||     gpg --keyserver pgp.mit.edu --recv-keys "$GPG_KEY" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -xzf "$DISTRO_NAME.tar.gz";     mv "$DISTRO_NAME/conf/"* "$ZOO_CONF_DIR";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     apk del .build-deps
+# Wed, 25 Oct 2017 17:40:45 GMT
 WORKDIR /zookeeper-3.3.6
-# Thu, 14 Sep 2017 07:50:22 GMT
+# Wed, 25 Oct 2017 17:40:45 GMT
 VOLUME [/data /datalog]
-# Thu, 14 Sep 2017 07:50:23 GMT
+# Wed, 25 Oct 2017 17:40:45 GMT
 EXPOSE 2181/tcp 2888/tcp 3888/tcp
-# Thu, 14 Sep 2017 07:50:23 GMT
+# Wed, 25 Oct 2017 17:40:46 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin:/zookeeper-3.3.6/bin ZOOCFGDIR=/conf
-# Thu, 14 Sep 2017 07:50:23 GMT
+# Wed, 25 Oct 2017 17:40:46 GMT
 COPY file:dab1f2991c403145ae0277be86810aa6ab4838363663db6dfbedba997dfd4bcf in / 
-# Thu, 14 Sep 2017 07:50:23 GMT
+# Wed, 25 Oct 2017 17:40:46 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 14 Sep 2017 07:50:23 GMT
+# Wed, 25 Oct 2017 17:40:46 GMT
 CMD ["zkServer.sh" "start-foreground"]
 ```
 
@@ -207,19 +209,19 @@ CMD ["zkServer.sh" "start-foreground"]
 		Last Modified: Thu, 14 Sep 2017 07:50:56 GMT  
 		Size: 1.3 KB (1297 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:548b816d0de5af186c9e6bcee10d81de80b0505732ff872f4bb0aa197c1f9a00`  
-		Last Modified: Thu, 14 Sep 2017 07:50:58 GMT  
-		Size: 11.9 MB (11892637 bytes)  
+	-	`sha256:df0764b95be6205f9147f49128e1edcca2d49a5c17150b36c6b900ae62c6a477`  
+		Last Modified: Wed, 25 Oct 2017 17:41:59 GMT  
+		Size: 12.2 MB (12188291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a85504f3b3c6052919a58bed7ceb4bb275f6344c8def56c67de236ecf52f993b`  
-		Last Modified: Thu, 14 Sep 2017 07:50:56 GMT  
-		Size: 545.0 B  
+	-	`sha256:9a4576796ecc7d6a2121d9119dc8bdf5de0fa7b7b59c257ed9d8771fc5e4dc45`  
+		Last Modified: Wed, 25 Oct 2017 17:41:57 GMT  
+		Size: 543.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `zookeeper:3.4`
 
 ```console
-$ docker pull zookeeper@sha256:c9d677c4d859462e86fa663d1986f5ce1d19032fa12165ecb9f8eb01e80befab
+$ docker pull zookeeper@sha256:c8e40f52fa0f5d7b7f109285c4381dfdced2d0d567e0098e63114bb481b06e08
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -229,14 +231,14 @@ $ docker pull zookeeper@sha256:c9d677c4d859462e86fa663d1986f5ce1d19032fa12165ecb
 ### `zookeeper:3.4` - linux; amd64
 
 ```console
-$ docker pull zookeeper@sha256:8cd51da85f15a703f8fae0150cbddf0e09abe8d26af353749d5720ba86018ef3
+$ docker pull zookeeper@sha256:b7a7e4e08222ac77024237b741f2af419c3d6a538eacbe252fe1ddf08ef7dd77
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **92.6 MB (92559587 bytes)**  
+-	Total Size: **92.9 MB (92851800 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f2249a75c5d00931f32779e5593ac02700e07f1648e95137c3acab820575c701`
+-	Image ID: `sha256:99027069cbc15cd31092907dcfc57a9a8cd6386157a8ae186f1da91b323ae13a`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["zkServer.sh","start-foreground"]`
 
@@ -271,22 +273,22 @@ RUN set -ex;     adduser -D "$ZOO_USER";     mkdir -p "$ZOO_DATA_LOG_DIR" "$ZOO_
 ARG GPG_KEY=C823E3E5B12AF29C67F81976F5CECB3CB5E9BD2D
 # Thu, 14 Sep 2017 07:50:27 GMT
 ARG DISTRO_NAME=zookeeper-3.4.10
-# Thu, 14 Sep 2017 07:50:46 GMT
+# Wed, 25 Oct 2017 17:41:03 GMT
 # ARGS: DISTRO_NAME=zookeeper-3.4.10 GPG_KEY=C823E3E5B12AF29C67F81976F5CECB3CB5E9BD2D
-RUN set -ex;     apk add --no-cache --virtual .build-deps         gnupg;     wget -q "http://www.apache.org/dist/zookeeper/$DISTRO_NAME/$DISTRO_NAME.tar.gz";     wget -q "http://www.apache.org/dist/zookeeper/$DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-key "$GPG_KEY" ||     gpg --keyserver pgp.mit.edu --recv-keys "$GPG_KEY" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -xzf "$DISTRO_NAME.tar.gz";     mv "$DISTRO_NAME/conf/"* "$ZOO_CONF_DIR";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     apk del .build-deps
-# Thu, 14 Sep 2017 07:50:47 GMT
+RUN set -ex;     apk add --no-cache --virtual .build-deps         ca-certificates         gnupg         libressl;     wget -q "https://www.apache.org/dist/zookeeper/$DISTRO_NAME/$DISTRO_NAME.tar.gz";     wget -q "https://www.apache.org/dist/zookeeper/$DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-key "$GPG_KEY" ||     gpg --keyserver pgp.mit.edu --recv-keys "$GPG_KEY" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -xzf "$DISTRO_NAME.tar.gz";     mv "$DISTRO_NAME/conf/"* "$ZOO_CONF_DIR";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     apk del .build-deps
+# Wed, 25 Oct 2017 17:41:04 GMT
 WORKDIR /zookeeper-3.4.10
-# Thu, 14 Sep 2017 07:50:47 GMT
+# Wed, 25 Oct 2017 17:41:04 GMT
 VOLUME [/data /datalog]
-# Thu, 14 Sep 2017 07:50:47 GMT
+# Wed, 25 Oct 2017 17:41:04 GMT
 EXPOSE 2181/tcp 2888/tcp 3888/tcp
-# Thu, 14 Sep 2017 07:50:47 GMT
+# Wed, 25 Oct 2017 17:41:04 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin:/zookeeper-3.4.10/bin ZOOCFGDIR=/conf
-# Thu, 14 Sep 2017 07:50:47 GMT
+# Wed, 25 Oct 2017 17:41:04 GMT
 COPY file:dab1f2991c403145ae0277be86810aa6ab4838363663db6dfbedba997dfd4bcf in / 
-# Thu, 14 Sep 2017 07:50:48 GMT
+# Wed, 25 Oct 2017 17:41:05 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 14 Sep 2017 07:50:48 GMT
+# Wed, 25 Oct 2017 17:41:05 GMT
 CMD ["zkServer.sh" "start-foreground"]
 ```
 
@@ -311,19 +313,19 @@ CMD ["zkServer.sh" "start-foreground"]
 		Last Modified: Thu, 14 Sep 2017 07:50:56 GMT  
 		Size: 1.3 KB (1297 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6ac726347bf47c59115dc09926565e9c6e6bfe4abfd630bb70d3f10aa4168e71`  
-		Last Modified: Thu, 14 Sep 2017 07:51:17 GMT  
-		Size: 35.2 MB (35159761 bytes)  
+	-	`sha256:ff77a68658f1a3f0c64bfbdfded056fc55539f5a8830fb1ef2f8c23c7dcba8ed`  
+		Last Modified: Wed, 25 Oct 2017 17:42:22 GMT  
+		Size: 35.5 MB (35451974 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c23175ccbbeb7028f0019e8b098f23c06b0767d7299e09ba251a6af39c75c01a`  
-		Last Modified: Thu, 14 Sep 2017 07:51:13 GMT  
+	-	`sha256:689d6b9060f941b005db065a5a72d79499e7e1c6ba852ff8e4c8b89eb1ff35a7`  
+		Last Modified: Wed, 25 Oct 2017 17:42:20 GMT  
 		Size: 545.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `zookeeper:3.4.10`
 
 ```console
-$ docker pull zookeeper@sha256:c9d677c4d859462e86fa663d1986f5ce1d19032fa12165ecb9f8eb01e80befab
+$ docker pull zookeeper@sha256:c8e40f52fa0f5d7b7f109285c4381dfdced2d0d567e0098e63114bb481b06e08
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -333,14 +335,14 @@ $ docker pull zookeeper@sha256:c9d677c4d859462e86fa663d1986f5ce1d19032fa12165ecb
 ### `zookeeper:3.4.10` - linux; amd64
 
 ```console
-$ docker pull zookeeper@sha256:8cd51da85f15a703f8fae0150cbddf0e09abe8d26af353749d5720ba86018ef3
+$ docker pull zookeeper@sha256:b7a7e4e08222ac77024237b741f2af419c3d6a538eacbe252fe1ddf08ef7dd77
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **92.6 MB (92559587 bytes)**  
+-	Total Size: **92.9 MB (92851800 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f2249a75c5d00931f32779e5593ac02700e07f1648e95137c3acab820575c701`
+-	Image ID: `sha256:99027069cbc15cd31092907dcfc57a9a8cd6386157a8ae186f1da91b323ae13a`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["zkServer.sh","start-foreground"]`
 
@@ -375,22 +377,22 @@ RUN set -ex;     adduser -D "$ZOO_USER";     mkdir -p "$ZOO_DATA_LOG_DIR" "$ZOO_
 ARG GPG_KEY=C823E3E5B12AF29C67F81976F5CECB3CB5E9BD2D
 # Thu, 14 Sep 2017 07:50:27 GMT
 ARG DISTRO_NAME=zookeeper-3.4.10
-# Thu, 14 Sep 2017 07:50:46 GMT
+# Wed, 25 Oct 2017 17:41:03 GMT
 # ARGS: DISTRO_NAME=zookeeper-3.4.10 GPG_KEY=C823E3E5B12AF29C67F81976F5CECB3CB5E9BD2D
-RUN set -ex;     apk add --no-cache --virtual .build-deps         gnupg;     wget -q "http://www.apache.org/dist/zookeeper/$DISTRO_NAME/$DISTRO_NAME.tar.gz";     wget -q "http://www.apache.org/dist/zookeeper/$DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-key "$GPG_KEY" ||     gpg --keyserver pgp.mit.edu --recv-keys "$GPG_KEY" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -xzf "$DISTRO_NAME.tar.gz";     mv "$DISTRO_NAME/conf/"* "$ZOO_CONF_DIR";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     apk del .build-deps
-# Thu, 14 Sep 2017 07:50:47 GMT
+RUN set -ex;     apk add --no-cache --virtual .build-deps         ca-certificates         gnupg         libressl;     wget -q "https://www.apache.org/dist/zookeeper/$DISTRO_NAME/$DISTRO_NAME.tar.gz";     wget -q "https://www.apache.org/dist/zookeeper/$DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-key "$GPG_KEY" ||     gpg --keyserver pgp.mit.edu --recv-keys "$GPG_KEY" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -xzf "$DISTRO_NAME.tar.gz";     mv "$DISTRO_NAME/conf/"* "$ZOO_CONF_DIR";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     apk del .build-deps
+# Wed, 25 Oct 2017 17:41:04 GMT
 WORKDIR /zookeeper-3.4.10
-# Thu, 14 Sep 2017 07:50:47 GMT
+# Wed, 25 Oct 2017 17:41:04 GMT
 VOLUME [/data /datalog]
-# Thu, 14 Sep 2017 07:50:47 GMT
+# Wed, 25 Oct 2017 17:41:04 GMT
 EXPOSE 2181/tcp 2888/tcp 3888/tcp
-# Thu, 14 Sep 2017 07:50:47 GMT
+# Wed, 25 Oct 2017 17:41:04 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin:/zookeeper-3.4.10/bin ZOOCFGDIR=/conf
-# Thu, 14 Sep 2017 07:50:47 GMT
+# Wed, 25 Oct 2017 17:41:04 GMT
 COPY file:dab1f2991c403145ae0277be86810aa6ab4838363663db6dfbedba997dfd4bcf in / 
-# Thu, 14 Sep 2017 07:50:48 GMT
+# Wed, 25 Oct 2017 17:41:05 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 14 Sep 2017 07:50:48 GMT
+# Wed, 25 Oct 2017 17:41:05 GMT
 CMD ["zkServer.sh" "start-foreground"]
 ```
 
@@ -415,14 +417,22 @@ CMD ["zkServer.sh" "start-foreground"]
 		Last Modified: Thu, 14 Sep 2017 07:50:56 GMT  
 		Size: 1.3 KB (1297 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6ac726347bf47c59115dc09926565e9c6e6bfe4abfd630bb70d3f10aa4168e71`  
-		Last Modified: Thu, 14 Sep 2017 07:51:17 GMT  
-		Size: 35.2 MB (35159761 bytes)  
+	-	`sha256:ff77a68658f1a3f0c64bfbdfded056fc55539f5a8830fb1ef2f8c23c7dcba8ed`  
+		Last Modified: Wed, 25 Oct 2017 17:42:22 GMT  
+		Size: 35.5 MB (35451974 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c23175ccbbeb7028f0019e8b098f23c06b0767d7299e09ba251a6af39c75c01a`  
-		Last Modified: Thu, 14 Sep 2017 07:51:13 GMT  
+	-	`sha256:689d6b9060f941b005db065a5a72d79499e7e1c6ba852ff8e4c8b89eb1ff35a7`  
+		Last Modified: Wed, 25 Oct 2017 17:42:20 GMT  
 		Size: 545.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `zookeeper:3.5`
+
+**does not exist** (yet?)
+
+## `zookeeper:3.5.3-beta`
+
+**does not exist** (yet?)
 
 ## `zookeeper:latest`
 
