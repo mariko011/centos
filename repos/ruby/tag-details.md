@@ -51,6 +51,18 @@
 -	[`ruby:2.4-slim-jessie`](#ruby24-slim-jessie)
 -	[`ruby:2.4-slim-stretch`](#ruby24-slim-stretch)
 -	[`ruby:2.4-stretch`](#ruby24-stretch)
+-	[`ruby:2.5.0-preview1`](#ruby250-preview1)
+-	[`ruby:2.5.0-preview1-alpine`](#ruby250-preview1-alpine)
+-	[`ruby:2.5.0-preview1-alpine3.6`](#ruby250-preview1-alpine36)
+-	[`ruby:2.5.0-preview1-slim`](#ruby250-preview1-slim)
+-	[`ruby:2.5.0-preview1-slim-stretch`](#ruby250-preview1-slim-stretch)
+-	[`ruby:2.5.0-preview1-stretch`](#ruby250-preview1-stretch)
+-	[`ruby:2.5-rc`](#ruby25-rc)
+-	[`ruby:2.5-rc-alpine`](#ruby25-rc-alpine)
+-	[`ruby:2.5-rc-alpine3.6`](#ruby25-rc-alpine36)
+-	[`ruby:2.5-rc-slim`](#ruby25-rc-slim)
+-	[`ruby:2.5-rc-slim-stretch`](#ruby25-rc-slim-stretch)
+-	[`ruby:2.5-rc-stretch`](#ruby25-rc-stretch)
 -	[`ruby:2-alpine`](#ruby2-alpine)
 -	[`ruby:2-alpine3.4`](#ruby2-alpine34)
 -	[`ruby:2-alpine3.6`](#ruby2-alpine36)
@@ -66,6 +78,12 @@
 -	[`ruby:jessie`](#rubyjessie)
 -	[`ruby:latest`](#rubylatest)
 -	[`ruby:onbuild`](#rubyonbuild)
+-	[`ruby:rc`](#rubyrc)
+-	[`ruby:rc-alpine`](#rubyrc-alpine)
+-	[`ruby:rc-alpine3.6`](#rubyrc-alpine36)
+-	[`ruby:rc-slim`](#rubyrc-slim)
+-	[`ruby:rc-slim-stretch`](#rubyrc-slim-stretch)
+-	[`ruby:rc-stretch`](#rubyrc-stretch)
 -	[`ruby:slim`](#rubyslim)
 -	[`ruby:slim-jessie`](#rubyslim-jessie)
 -	[`ruby:slim-stretch`](#rubyslim-stretch)
@@ -22891,6 +22909,54 @@ CMD ["irb"]
 		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `ruby:2.5.0-preview1`
+
+**does not exist** (yet?)
+
+## `ruby:2.5.0-preview1-alpine`
+
+**does not exist** (yet?)
+
+## `ruby:2.5.0-preview1-alpine3.6`
+
+**does not exist** (yet?)
+
+## `ruby:2.5.0-preview1-slim`
+
+**does not exist** (yet?)
+
+## `ruby:2.5.0-preview1-slim-stretch`
+
+**does not exist** (yet?)
+
+## `ruby:2.5.0-preview1-stretch`
+
+**does not exist** (yet?)
+
+## `ruby:2.5-rc`
+
+**does not exist** (yet?)
+
+## `ruby:2.5-rc-alpine`
+
+**does not exist** (yet?)
+
+## `ruby:2.5-rc-alpine3.6`
+
+**does not exist** (yet?)
+
+## `ruby:2.5-rc-slim`
+
+**does not exist** (yet?)
+
+## `ruby:2.5-rc-slim-stretch`
+
+**does not exist** (yet?)
+
+## `ruby:2.5-rc-stretch`
+
+**does not exist** (yet?)
+
 ## `ruby:2-alpine`
 
 ```console
@@ -29088,6 +29154,30 @@ ONBUILD COPY . /usr/src/app
 		Last Modified: Wed, 11 Oct 2017 08:55:21 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `ruby:rc`
+
+**does not exist** (yet?)
+
+## `ruby:rc-alpine`
+
+**does not exist** (yet?)
+
+## `ruby:rc-alpine3.6`
+
+**does not exist** (yet?)
+
+## `ruby:rc-slim`
+
+**does not exist** (yet?)
+
+## `ruby:rc-slim-stretch`
+
+**does not exist** (yet?)
+
+## `ruby:rc-stretch`
+
+**does not exist** (yet?)
 
 ## `ruby:slim`
 
