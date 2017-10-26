@@ -5,8 +5,8 @@
 -	[`kong:0.10`](#kong010)
 -	[`kong:0.10.3`](#kong0103)
 -	[`kong:0.11`](#kong011)
--	[`kong:0.11.0`](#kong0110)
--	[`kong:0.11.0-alpine`](#kong0110-alpine)
+-	[`kong:0.11.1`](#kong0111)
+-	[`kong:0.11.1-alpine`](#kong0111-alpine)
 -	[`kong:0.11-alpine`](#kong011-alpine)
 -	[`kong:0.9`](#kong09)
 -	[`kong:0.9.9`](#kong099)
@@ -209,7 +209,7 @@ CMD ["/usr/local/openresty/nginx/sbin/nginx" "-c" "/usr/local/kong/nginx.conf" "
 		Size: 324.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `kong:0.11.0`
+## `kong:0.11.1`
 
 ```console
 $ docker pull kong@sha256:d24e86684ec127afed3e28fad3a7802d3f9fd4f8fcc7b3cada8e6614ddc53a24
@@ -219,7 +219,7 @@ $ docker pull kong@sha256:d24e86684ec127afed3e28fad3a7802d3f9fd4f8fcc7b3cada8e66
 -	Platforms:
 	-	linux; amd64
 
-### `kong:0.11.0` - linux; amd64
+### `kong:0.11.1` - linux; amd64
 
 ```console
 $ docker pull kong@sha256:a13ce3786145ff2d55032557a054403cd40e1f16e07d794493d3913a2e01ea15
@@ -272,7 +272,7 @@ CMD ["/usr/local/openresty/nginx/sbin/nginx" "-c" "/usr/local/kong/nginx.conf" "
 		Size: 324.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `kong:0.11.0-alpine`
+## `kong:0.11.1-alpine`
 
 ```console
 $ docker pull kong@sha256:9e4d383ff9071ba464d2620c99269ff3a7522f98b3b6020444961dc9b59663bd
@@ -282,7 +282,7 @@ $ docker pull kong@sha256:9e4d383ff9071ba464d2620c99269ff3a7522f98b3b6020444961d
 -	Platforms:
 	-	linux; amd64
 
-### `kong:0.11.0-alpine` - linux; amd64
+### `kong:0.11.1-alpine` - linux; amd64
 
 ```console
 $ docker pull kong@sha256:269eb3c2a7c456914953031c6d540a56373a171201e3c3fcb8966aece12ea5db

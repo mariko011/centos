@@ -159,9 +159,11 @@ RUN cmd /S /C #(nop)  CMD ["-c" "gnatsd.conf"]
 
 -	Layers:
 	-	`sha256:bce2fbc256ea437a87dadac2f69aabd25bed4f56255549090056c1131fad0277`  
+		Last Modified: Tue, 13 Dec 2016 10:47:17 GMT  
 		Size: 252.7 MB (252691002 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
 	-	`sha256:b0b5e40cb939a7befa4e01212d6f65f30022bbd04b5f15985b45ce9cfd3fcabc`  
+		Last Modified: Mon, 09 Oct 2017 19:23:15 GMT  
 		Size: 141.8 MB (141758132 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
 	-	`sha256:e0c298e0d90d212bef2886ad3f661e0abcaffe81f9f80d461f8e77ed1cdfe68f`  

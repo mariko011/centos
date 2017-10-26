@@ -172,9 +172,11 @@ RUN cmd /S /C #(nop)  CMD ["-c" "gnatsd.conf"]
 
 -	Layers:
 	-	`sha256:bce2fbc256ea437a87dadac2f69aabd25bed4f56255549090056c1131fad0277`  
+		Last Modified: Tue, 13 Dec 2016 10:47:17 GMT  
 		Size: 252.7 MB (252691002 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
 	-	`sha256:b0b5e40cb939a7befa4e01212d6f65f30022bbd04b5f15985b45ce9cfd3fcabc`  
+		Last Modified: Mon, 09 Oct 2017 19:23:15 GMT  
 		Size: 141.8 MB (141758132 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
 	-	`sha256:e0c298e0d90d212bef2886ad3f661e0abcaffe81f9f80d461f8e77ed1cdfe68f`  
@@ -376,9 +378,11 @@ RUN cmd /S /C #(nop)  CMD ["-c" "gnatsd.conf"]
 
 -	Layers:
 	-	`sha256:bce2fbc256ea437a87dadac2f69aabd25bed4f56255549090056c1131fad0277`  
+		Last Modified: Tue, 13 Dec 2016 10:47:17 GMT  
 		Size: 252.7 MB (252691002 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
 	-	`sha256:b0b5e40cb939a7befa4e01212d6f65f30022bbd04b5f15985b45ce9cfd3fcabc`  
+		Last Modified: Mon, 09 Oct 2017 19:23:15 GMT  
 		Size: 141.8 MB (141758132 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
 	-	`sha256:e0c298e0d90d212bef2886ad3f661e0abcaffe81f9f80d461f8e77ed1cdfe68f`  
@@ -457,9 +461,11 @@ RUN cmd /S /C #(nop)  CMD ["-c" "gnatsd.conf"]
 
 -	Layers:
 	-	`sha256:3889bb8d808bbae6fa5a33e07093e65c31371bcf9e4c38c21be6b9af52ad1548`  
+		Last Modified: Tue, 13 Dec 2016 10:53:31 GMT  
 		Size: 4.1 GB (4069985900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
 	-	`sha256:8df8e568af76c1c311a1251f6f7402e2a09d14629840c97091beb9ba55419464`  
+		Last Modified: Mon, 09 Oct 2017 19:23:50 GMT  
 		Size: 1.3 GB (1280521235 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
 	-	`sha256:1b81c984f5c532aac6553185533b3b8aedb0c8096ea7477fb86499780ccc30f4`  
@@ -652,9 +658,11 @@ RUN cmd /S /C #(nop)  CMD ["-c" "gnatsd.conf"]
 
 -	Layers:
 	-	`sha256:bce2fbc256ea437a87dadac2f69aabd25bed4f56255549090056c1131fad0277`  
+		Last Modified: Tue, 13 Dec 2016 10:47:17 GMT  
 		Size: 252.7 MB (252691002 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
 	-	`sha256:b0b5e40cb939a7befa4e01212d6f65f30022bbd04b5f15985b45ce9cfd3fcabc`  
+		Last Modified: Mon, 09 Oct 2017 19:23:15 GMT  
 		Size: 141.8 MB (141758132 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
 	-	`sha256:e0c298e0d90d212bef2886ad3f661e0abcaffe81f9f80d461f8e77ed1cdfe68f`  
@@ -856,9 +864,11 @@ RUN cmd /S /C #(nop)  CMD ["-c" "gnatsd.conf"]
 
 -	Layers:
 	-	`sha256:bce2fbc256ea437a87dadac2f69aabd25bed4f56255549090056c1131fad0277`  
+		Last Modified: Tue, 13 Dec 2016 10:47:17 GMT  
 		Size: 252.7 MB (252691002 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
 	-	`sha256:b0b5e40cb939a7befa4e01212d6f65f30022bbd04b5f15985b45ce9cfd3fcabc`  
+		Last Modified: Mon, 09 Oct 2017 19:23:15 GMT  
 		Size: 141.8 MB (141758132 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
 	-	`sha256:e0c298e0d90d212bef2886ad3f661e0abcaffe81f9f80d461f8e77ed1cdfe68f`  
@@ -937,9 +947,11 @@ RUN cmd /S /C #(nop)  CMD ["-c" "gnatsd.conf"]
 
 -	Layers:
 	-	`sha256:3889bb8d808bbae6fa5a33e07093e65c31371bcf9e4c38c21be6b9af52ad1548`  
+		Last Modified: Tue, 13 Dec 2016 10:53:31 GMT  
 		Size: 4.1 GB (4069985900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
 	-	`sha256:8df8e568af76c1c311a1251f6f7402e2a09d14629840c97091beb9ba55419464`  
+		Last Modified: Mon, 09 Oct 2017 19:23:50 GMT  
 		Size: 1.3 GB (1280521235 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
 	-	`sha256:1b81c984f5c532aac6553185533b3b8aedb0c8096ea7477fb86499780ccc30f4`  
