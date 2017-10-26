@@ -1,4 +1,4 @@
-# `couchbase:community`
+# `couchbase:community-4.5.1`
 
 ## Docker Metadata
 

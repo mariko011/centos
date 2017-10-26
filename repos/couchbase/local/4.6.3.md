@@ -1,4 +1,4 @@
-# `couchbase:latest`
+# `couchbase:4.6.3`
 
 ## Docker Metadata
 
