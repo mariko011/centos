@@ -201,6 +201,20 @@ sub get_blob_headers {
 	});
 }
 
+sub get_foreign_headers {
+	my ($urls, $callback) = @_;
+
+	my $url = $urls->[0];
+	state %headers;
+	return $callback->($headers{$url}) if $headers{$url};
+
+	return ua_req(head => $url => {} => sub {
+		my $headersTx = shift;
+		die "failed to get headers for $url" unless $headersTx->success;
+		return $callback->($headers{$url} = $headersTx->res->headers);
+	});
+}
+
 sub parse_manifest_v1_data {
 	my ($repo, $manifest, $callback) = @_;
 
@@ -335,17 +349,30 @@ sub get_image_data {
 				$image->{layers} //= [];
 				for my $layer (@{ $image->{layers} }) {
 					if (defined $layer->{mediaType} && $layer->{mediaType} eq $mediaForeignLayer) {
-						# skip foreign layers -- we can't fetch them (likely Windows base layer, which 404s unless authorized properly)
-						next;
+						if (defined $layer->{urls} && @{ $layer->{urls} }) {
+							my $layerHeadersEnd = $layerHeadersDelay->begin(0);
+							get_foreign_headers($layer->{urls}, sub {
+								my $headers = shift;
+								$layer->{size} //= $headers->content_length;
+								$layer->{lastModified} //= $headers->last_modified;
+								$layerHeadersEnd->();
+							});
+						}
+						else {
+							# if this foreign layer doesn't have any URLs, skip fetching more useful data about it
+							next;
+						}
 					}
-					my $layerHeadersEnd = $layerHeadersDelay->begin(0);
-					get_blob_headers($repo, $layer->{digest}, sub {
-						my $headers = shift;
-						$layer->{size} //= $headers->content_length;
-						$layer->{mediaType} //= $headers->content_type;
-						$layer->{lastModified} //= $headers->last_modified;
-						$layerHeadersEnd->();
-					});
+					else {
+						my $layerHeadersEnd = $layerHeadersDelay->begin(0);
+						get_blob_headers($repo, $layer->{digest}, sub {
+							my $headers = shift;
+							$layer->{size} //= $headers->content_length;
+							$layer->{mediaType} //= $headers->content_type;
+							$layer->{lastModified} //= $headers->last_modified;
+							$layerHeadersEnd->();
+						});
+					}
 				}
 			}
 			$layerHeadersDelayMutex->();
