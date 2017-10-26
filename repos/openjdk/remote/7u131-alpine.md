@@ -1,7 +1,7 @@
 ## `openjdk:7u131-alpine`
 
 ```console
-$ docker pull openjdk@sha256:889e5869f01eaf7d288a22afd24356a4b12d88c7ba7cb1895cc78c5506d44e76
+$ docker pull openjdk@sha256:0b89fca99f06bfa867a709d03d13f2019f140a8198e2fe64b71cc811ea8fb217
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -280,49 +280,53 @@ RUN set -x 	&& apk add --no-cache 		openjdk7="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA
 ### `openjdk:7u131-alpine` - linux; s390x
 
 ```console
-$ docker pull openjdk@sha256:23757a0abb208937941b31a176cd4c36b83fa1d477966388d20b064202b587b4
+$ docker pull openjdk@sha256:9a9634bdca59a1388c20e6e80a431cf4a76710c667c3dbc12cb7fcb5a8614a95
 ```
 
--	Docker Version: 1.12.6
+-	Docker Version: 17.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **71.5 MB (71482716 bytes)**  
+-	Total Size: **71.9 MB (71858503 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1996afd1bfd2b843f779908d7e543aff8eb204303c8c96ee87fd271fac9d696a`
--	Default Command: `["sh"]`
+-	Image ID: `sha256:3185fad01f2ed6226beb0fbecf82596367f5fe2859ad023f4970217d5f296d19`
+-	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Wed, 24 May 2017 21:55:01 GMT
-ADD file:112165733aad4763dc22ab51fee7f15130533bc22daccda6c0c11c70b225126f in / 
-# Wed, 31 May 2017 20:24:12 GMT
-ENV TZ=UTC
-# Wed, 31 May 2017 20:24:13 GMT
-CMD ["sh"]
-# Thu, 01 Jun 2017 16:31:42 GMT
+# Wed, 25 Oct 2017 23:28:40 GMT
+ADD file:6fbdff4b4c08600e192f5da9b67a02c58759237fb40525d70712104c80c34c48 in / 
+# Wed, 25 Oct 2017 23:28:40 GMT
+COPY file:0f1d36dd7d8d53613b275660a88c5bf9b608ea8aa73a8054cb8bdbd73fd971ac in /etc/localtime 
+# Wed, 25 Oct 2017 23:28:40 GMT
+CMD ["/bin/sh"]
+# Thu, 26 Oct 2017 16:54:06 GMT
 ENV LANG=C.UTF-8
-# Thu, 01 Jun 2017 16:31:45 GMT
+# Thu, 26 Oct 2017 16:54:07 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Thu, 01 Jun 2017 16:31:46 GMT
+# Thu, 26 Oct 2017 16:54:07 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-1.7-openjdk
-# Thu, 01 Jun 2017 16:31:47 GMT
+# Thu, 26 Oct 2017 16:54:07 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.7-openjdk/jre/bin:/usr/lib/jvm/java-1.7-openjdk/bin
-# Thu, 01 Jun 2017 16:31:48 GMT
+# Thu, 26 Oct 2017 16:54:07 GMT
 ENV JAVA_VERSION=7u131
-# Thu, 01 Jun 2017 16:31:50 GMT
+# Thu, 26 Oct 2017 16:54:08 GMT
 ENV JAVA_ALPINE_VERSION=7.131.2.6.9-r1
-# Thu, 01 Jun 2017 16:32:18 GMT
+# Thu, 26 Oct 2017 16:54:37 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk7="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
 -	Layers:
-	-	`sha256:2605c66e87571067516195ef0856981701ebcea726f80e47b5df0045c3fc955e`  
-		Last Modified: Wed, 24 May 2017 21:55:11 GMT  
-		Size: 2.1 MB (2065283 bytes)  
+	-	`sha256:d45fd9d3c4f188ab1f3a4bf6a9f5202b3f1577dbb998f5f28e82d192e0c1f0e7`  
+		Last Modified: Sat, 17 Jun 2017 20:41:42 GMT  
+		Size: 2.1 MB (2065460 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6862e05660a842a4c6bf927fac8b607d01395351c12b13595a3a4b9ba19cf767`  
-		Last Modified: Thu, 01 Jun 2017 16:40:27 GMT  
+	-	`sha256:0e5978b6b34b3e943e0fd25dfb50991c0bad82a986cfdaa91c4de756431ba679`  
+		Last Modified: Wed, 25 Oct 2017 23:28:59 GMT  
+		Size: 176.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6b16db6a3dbf8986a149c7450969f18d66990974e5826930cb148d70dfdf01a1`  
+		Last Modified: Thu, 26 Oct 2017 16:56:22 GMT  
 		Size: 238.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d5008eabf8be1a66e1f34a6cfeb5bc77ae9d32b7c5be26411d8b7a25191ba5ae`  
-		Last Modified: Thu, 01 Jun 2017 16:40:48 GMT  
-		Size: 69.4 MB (69417195 bytes)  
+	-	`sha256:f650ea6a6ab9ff48c14332bc1cd082d132f8ee1539458f3e20a8ac165bfd8d71`  
+		Last Modified: Thu, 26 Oct 2017 16:56:30 GMT  
+		Size: 69.8 MB (69792629 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
