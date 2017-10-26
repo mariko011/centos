@@ -1,10 +1,10 @@
-# `irssi:1.0.4`
+# `irssi:1.0.5`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c2a281b1de0f965a33f0f3a13aad6aa6d0fb1274a4e5ed0f5e9e2bdd47dd4932`
-- Created: `2017-10-09T23:36:12.02770168Z`
-- Virtual Size: ~ 257.32 Mb  
+- Image ID: `sha256:9d266150ee8a60f3c6580397a6aeb7fdf5f79de171ef901f62198671a4355512`
+- Created: `2017-10-23T19:48:42.97681491Z`
+- Virtual Size: ~ 257.33 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["irssi"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `HOME=/home/user`
   - `LANG=C.UTF-8`
-  - `IRSSI_VERSION=1.0.4`
+  - `IRSSI_VERSION=1.0.5`
 
 ## `dpkg` (`.deb`-based packages)
 
