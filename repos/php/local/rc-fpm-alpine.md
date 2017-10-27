@@ -1,10 +1,10 @@
-# `php:7.2.0RC4-fpm-alpine3.6`
+# `php:7.2.0RC5-fpm-alpine3.6`
 
 ## Docker Metadata
 
-- Image ID: `sha256:beb2dbb760ad969d3d7e18050ee54ba8b0a6574720458c43db33d49c05862780`
-- Created: `2017-10-12T22:52:22.782731867Z`
-- Virtual Size: ~ 78.17 Mb  
+- Image ID: `sha256:b803af4d48dc373704981d10a5ce445676664a052ee0f2a95a769a3e609ef087`
+- Created: `2017-10-26T23:55:51.476144709Z`
+- Virtual Size: ~ 75.56 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -18,8 +18,8 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
   - `GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 B1B44D8F021E4E2D6021E995DC9FF8D3EE5AF27F`
-  - `PHP_VERSION=7.2.0RC4`
-  - `PHP_URL=https://downloads.php.net/~remi/php-7.2.0RC4.tar.xz`
-  - `PHP_ASC_URL=https://downloads.php.net/~remi/php-7.2.0RC4.tar.xz.asc`
-  - `PHP_SHA256=08ee9e764891224d73f157e01594605fc85c63ffc9d4773d9ac29b0e3160c68f`
+  - `PHP_VERSION=7.2.0RC5`
+  - `PHP_URL=https://downloads.php.net/~pollita/php-7.2.0RC5.tar.xz`
+  - `PHP_ASC_URL=https://downloads.php.net/~pollita/php-7.2.0RC5.tar.xz.asc`
+  - `PHP_SHA256=92a745048912beb3f6c2a3c188ce695a51852c67201fdf9a21dafe59f51aecc1`
   - `PHP_MD5=`
