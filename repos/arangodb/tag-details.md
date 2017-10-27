@@ -5,7 +5,7 @@
 -	[`arangodb:2.8`](#arangodb28)
 -	[`arangodb:2.8.11`](#arangodb2811)
 -	[`arangodb:3.2`](#arangodb32)
--	[`arangodb:3.2.5`](#arangodb325)
+-	[`arangodb:3.2.6`](#arangodb326)
 -	[`arangodb:latest`](#arangodblatest)
 
 ## `arangodb:2.8`
@@ -275,7 +275,7 @@ CMD ["arangod"]
 		Size: 1.8 KB (1830 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `arangodb:3.2.5`
+## `arangodb:3.2.6`
 
 ```console
 $ docker pull arangodb@sha256:7b4213e7f085e8e7fdbd21c4971e536d37fff4e38f8c213a1bbe83b9635a966f
@@ -285,7 +285,7 @@ $ docker pull arangodb@sha256:7b4213e7f085e8e7fdbd21c4971e536d37fff4e38f8c213a1b
 -	Platforms:
 	-	linux; amd64
 
-### `arangodb:3.2.5` - linux; amd64
+### `arangodb:3.2.6` - linux; amd64
 
 ```console
 $ docker pull arangodb@sha256:263104445f82b9032be449ff4b353800e45ec87784c8d4bd1b056c1934cf4b81
