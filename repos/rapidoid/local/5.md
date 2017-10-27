@@ -1,9 +1,9 @@
-# `rapidoid:5.4.5`
+# `rapidoid:5.4.6`
 
 ## Docker Metadata
 
-- Image ID: `sha256:205d8289dba42eb8cc2648656f530ffc41e67c56fb677e43dbf065e187d572ae`
-- Created: `2017-10-18T21:49:29.461316499Z`
+- Image ID: `sha256:df8fe499542270b9c5c20f4445f1e531aa5e1d500cae75ac6f0b36a80f74e38a`
+- Created: `2017-10-26T22:56:47.831733435Z`
 - Virtual Size: ~ 230.74 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -18,8 +18,8 @@
   - `GPG_KEY=E306FEF548C686C23DC00242B9B08D8F616EF49C`
   - `RAPIDOID_JAR=/opt/rapidoid.jar`
   - `RAPIDOID_TMP=/tmp/rapidoid`
-  - `RAPIDOID_VERSION=5.4.5`
-  - `RAPIDOID_URL=https://repo1.maven.org/maven2/org/rapidoid/rapidoid-platform/5.4.5/rapidoid-platform-5.4.5.jar`
+  - `RAPIDOID_VERSION=5.4.6`
+  - `RAPIDOID_URL=https://repo1.maven.org/maven2/org/rapidoid/rapidoid-platform/5.4.6/rapidoid-platform-5.4.6.jar`
 
 ## `dpkg` (`.deb`-based packages)
 
