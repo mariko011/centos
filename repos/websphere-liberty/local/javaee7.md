@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:14c44cc25ef7b06c57afa3003569d2c6426e715ce9c0b18a6313fed76d145552`
-- Created: `2017-10-17T20:06:40.088124581Z`
+- Image ID: `sha256:b8bf64ee4887118213a8187f4990b9fcb1835c38f6a1aaf97332d0822eda7c39`
+- Created: `2017-10-24T18:06:40.281601786Z`
 - Virtual Size: ~ 457.76 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1357,14 +1357,9 @@ Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 - `GFDL-1.2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris wget=1.17.1-1ubuntu1.2
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.17.1-1ubuntu1.2.dsc' wget_1.17.1-1ubuntu1.2.dsc 1297 SHA256:bca79c36d8705a385584fe381ab5437803aaa662cdfa7daceaedb03eb5815c1d
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.17.1.orig.tar.gz' wget_1.17.1.orig.tar.gz 3801442 SHA256:029fbb93bdc1c0c5a7507b6076a6ec2f8d34204a85aa87e5b2f61a9405b290f5
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.17.1-1ubuntu1.2.debian.tar.xz' wget_1.17.1-1ubuntu1.2.debian.tar.xz 25384 SHA256:6f77e2f7ccc0b8038dab23576e3fcbe91b86e799c6702fbba6f5d34fdf0cf04e
-```
 
 ### `dpkg` source package: `xz-utils=5.1.1alpha+20120614-2ubuntu2`
 
