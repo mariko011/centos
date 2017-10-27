@@ -2987,14 +2987,9 @@ Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 - `GFDL-1.2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris wget=1.15-1ubuntu1.14.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.15-1ubuntu1.14.04.2.dsc' wget_1.15-1ubuntu1.14.04.2.dsc 1929 SHA256:6147886b3ae1a472472f0280e41e6fb6b24d368c6657a9e5a680791f3d33fc8d
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.15.orig.tar.gz' wget_1.15.orig.tar.gz 3417936 SHA256:52126be8cf1bddd7536886e74c053ad7d0ed2aa89b4b630f76785bac21695fcd
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.15-1ubuntu1.14.04.2.debian.tar.gz' wget_1.15-1ubuntu1.14.04.2.debian.tar.gz 28261 SHA256:949d5d96991d7a41b6cde8673ea39123cd566c1225ad2c039a9935deea5492d2
-```
 
 ### `dpkg` source package: `xkeyboard-config=2.10.1-1ubuntu1`
 
