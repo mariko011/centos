@@ -3,7 +3,7 @@
 # Tags of `kong`
 
 -	[`kong:0.10`](#kong010)
--	[`kong:0.10.3`](#kong0103)
+-	[`kong:0.10.4`](#kong0104)
 -	[`kong:0.11`](#kong011)
 -	[`kong:0.11.1`](#kong0111)
 -	[`kong:0.11.1-alpine`](#kong0111-alpine)
@@ -79,7 +79,7 @@ CMD ["kong" "start"]
 		Size: 219.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `kong:0.10.3`
+## `kong:0.10.4`
 
 ```console
 $ docker pull kong@sha256:21906cabdbd11e6fef944dbae4527eaf13a7078890cfe5d9c1ae0cd08496da72
@@ -89,7 +89,7 @@ $ docker pull kong@sha256:21906cabdbd11e6fef944dbae4527eaf13a7078890cfe5d9c1ae0c
 -	Platforms:
 	-	linux; amd64
 
-### `kong:0.10.3` - linux; amd64
+### `kong:0.10.4` - linux; amd64
 
 ```console
 $ docker pull kong@sha256:3076c2cfe270f84d22044119bb566ff5804abb119694d46c8583861f493b2a3f
