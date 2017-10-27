@@ -438,20 +438,13 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `ISC`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.26.0-1+wheezy21
-'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0-1+wheezy21.dsc' curl_7.26.0-1+wheezy21.dsc 2534 SHA256:c9bf81f58e3ba1df22d8d2efc7dde2faddde94fd5c367be97dc96927562f7a05
-'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0.orig.tar.gz' curl_7.26.0.orig.tar.gz 3073624 SHA256:79ccce9edb8aee17d20ad4d75e1f83a789f8c2e71e68f468e1bf8abf8933193f
-'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0-1+wheezy21.debian.tar.gz' curl_7.26.0-1+wheezy21.debian.tar.gz 67214 SHA256:e853f350add9d4bc84b922861453f84c69cc5d6fc1768043523a48c191ee7ef6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/7.26.0-1+wheezy21/
 
-- https://sources.debian.net/src/curl/7.26.0-1+wheezy21/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.26.0-1+wheezy21/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.26.0-1+wheezy21/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.25.dfsg1-6+deb7u1`
 

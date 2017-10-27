@@ -143,20 +143,13 @@ Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apparmor=2.11.0-11
-'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.11.0-11.dsc' apparmor_2.11.0-11.dsc 3125 SHA256:418e6c1a67c8e970d3b0b0417f6124dbe1e5371908e8af60a88d1487de1ff2f8
-'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.11.0.orig.tar.gz' apparmor_2.11.0.orig.tar.gz 5013297 SHA256:b1c489ea11e7771b8e6b181532cafbf9ebe6603e3cb00e2558f21b7a5bdd739a
-'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.11.0-11.debian.tar.xz' apparmor_2.11.0-11.debian.tar.xz 88956 SHA256:07dc32b369c62a05fd4a0a7c0007ba5bb6f2f36ace6db38989c8b99b8fa0c050
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apparmor/2.11.0-11/
 
-- https://sources.debian.net/src/apparmor/2.11.0-11/ (for browsing the source)
-- https://sources.debian.net/src/apparmor/2.11.0-11/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apparmor/2.11.0-11/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apt=1.5`
 
@@ -1624,20 +1617,13 @@ Licenses: (parsed from: `/usr/share/doc/libharfbuzz0b/copyright`)
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris harfbuzz=1.5.1-1
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_1.5.1-1.dsc' harfbuzz_1.5.1-1.dsc 2655 SHA256:6a07c65509ca8f32db3ae677d61961816a69c737bcd1194c4c1a81511becef4a
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_1.5.1.orig.tar.bz2' harfbuzz_1.5.1.orig.tar.bz2 1615704 SHA256:56838dfdad2729b8866763c82d623354d138a4d99d9ffb710c7d377b5cfc7c51
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_1.5.1-1.debian.tar.xz' harfbuzz_1.5.1-1.debian.tar.xz 8576 SHA256:0e1f5f02ee3144065c1bcc61775446e1c1041829649f52b59572b7897bde1936
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/harfbuzz/1.5.1-1/
 
-- https://sources.debian.net/src/harfbuzz/1.5.1-1/ (for browsing the source)
-- https://sources.debian.net/src/harfbuzz/1.5.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/harfbuzz/1.5.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `hicolor-icon-theme=0.17-1`
 
@@ -1929,20 +1915,13 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.15.1-2
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.15.1-2.dsc' krb5_1.15.1-2.dsc 3294 SHA256:717416ea51edbfd2555568631e700c15cce1244f730a97d317288ab0be20d43a
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.15.1.orig.tar.gz' krb5_1.15.1.orig.tar.gz 9375538 SHA256:437c8831ddd5fde2a993fef425dedb48468109bb3d3261ef838295045a89eb45
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.15.1-2.debian.tar.xz' krb5_1.15.1-2.debian.tar.xz 143404 SHA256:e44c17efbf26e5d2a3de7577a039085683efe21afb0da3eacc12c17dc01e9d1a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/krb5/1.15.1-2/
 
-- https://sources.debian.net/src/krb5/1.15.1-2/ (for browsing the source)
-- https://sources.debian.net/src/krb5/1.15.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/krb5/1.15.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lcms2=2.8-4`
 
@@ -4479,20 +4458,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2017b-2
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017b-2.dsc' tzdata_2017b-2.dsc 2005 SHA256:479f7a077690c3d84f15dc8be1da0a732a54cc07f7b30ca7fad6a5bd00921748
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017b.orig.tar.gz' tzdata_2017b.orig.tar.gz 324317 SHA256:f8242a522ea3496b0ce4ff4f2e75a049178da21001a08b8e666d8cbe07d18086
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017b-2.debian.tar.xz' tzdata_2017b-2.debian.tar.xz 101096 SHA256:2607bdfaa4535e59223d194c1cc1891a3c26a731d20a4a1d9311d22d1a9175d8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2017b-2/
 
-- https://sources.debian.net/src/tzdata/2017b-2/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2017b-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2017b-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0036`
 
