@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8e1a220f5e6ed2dfd6a76dcd3c6f4db114a3c6558c82fb1004ae782ec19e26ea`
-- Created: `2017-10-10T12:31:59.443762009Z`
-- Virtual Size: ~ 1.25 Gb  
+- Image ID: `sha256:6cd99b59cbd2ae5090e0441f5fe7fc5890d9027d87d6c68c8588382515fe8a64`
+- Created: `2017-10-24T17:38:10.467354415Z`
+- Virtual Size: ~ 1.26 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -26,9 +26,9 @@
   - `TOMCAT_SHA1=1ba27c1bb86ab9c8404e98068800f90bd662523c`
   - `TOMCAT_TGZ_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.23/bin/apache-tomcat-8.5.23.tar.gz 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.23/bin/apache-tomcat-8.5.23.tar.gz 	https://www.apache.org/dist/tomcat/tomcat-8/v8.5.23/bin/apache-tomcat-8.5.23.tar.gz 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.23/bin/apache-tomcat-8.5.23.tar.gz`
   - `TOMCAT_ASC_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.23/bin/apache-tomcat-8.5.23.tar.gz.asc 	https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.23/bin/apache-tomcat-8.5.23.tar.gz.asc 	https://www.apache.org/dist/tomcat/tomcat-8/v8.5.23/bin/apache-tomcat-8.5.23.tar.gz.asc 	https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.23/bin/apache-tomcat-8.5.23.tar.gz.asc`
-  - `XWIKI_VERSION=9.8.1`
-  - `XWIKI_URL_PREFIX=http://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/9.8.1`
-  - `XWIKI_DOWNLOAD_SHA256=26f55d585ed1b05cf730af585ab1cd0751e2b09770e2ab27c11e3b55027b9733`
+  - `XWIKI_VERSION=9.9`
+  - `XWIKI_URL_PREFIX=http://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/9.9`
+  - `XWIKI_DOWNLOAD_SHA256=6141614d0cebcdec83b83642e94b0b8b70ed832e9b32db2c34c31549e546a3a9`
 
 ## `dpkg` (`.deb`-based packages)
 
