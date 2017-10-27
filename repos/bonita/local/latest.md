@@ -556,8 +556,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris distro-info-data=0.28ubuntu0.3
-'http://archive.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.28ubuntu0.3.dsc' distro-info-data_0.28ubuntu0.3.dsc 1440 SHA256:b2b778242223dd782c3fe15f54df704767a96be697b9cd9fa26374f38836745c
-'http://archive.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.28ubuntu0.3.tar.xz' distro-info-data_0.28ubuntu0.3.tar.xz 6268 SHA256:67b3bf9008e0f0b3da9ff71ffdf9e1dcc2f2e96b8b897f56e9f42dddb5dc0d35
+'http://security.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.28ubuntu0.3.dsc' distro-info-data_0.28ubuntu0.3.dsc 1440 SHA256:b2b778242223dd782c3fe15f54df704767a96be697b9cd9fa26374f38836745c
+'http://security.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.28ubuntu0.3.tar.xz' distro-info-data_0.28ubuntu0.3.tar.xz 6268 SHA256:67b3bf9008e0f0b3da9ff71ffdf9e1dcc2f2e96b8b897f56e9f42dddb5dc0d35
 ```
 
 ### `dpkg` source package: `dpkg=1.18.4ubuntu1.2`
@@ -872,9 +872,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris gnutls28=3.4.10-4ubuntu1.3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.4.10-4ubuntu1.3.dsc' gnutls28_3.4.10-4ubuntu1.3.dsc 3076 SHA256:fdd0345d4528501ba95271e175b984172ffdb2cfbd7062576be1c6751c7acc6f
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.4.10.orig.tar.xz' gnutls28_3.4.10.orig.tar.xz 6645892 SHA256:6a32c2b4acbd33ff7eefcbd1357009da04c94c60146ef61320b6c076b1bdf59f
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.4.10-4ubuntu1.3.debian.tar.xz' gnutls28_3.4.10-4ubuntu1.3.debian.tar.xz 96112 SHA256:d3609837d6415df3bda609dc4c6eacf657f5e76c4a32cfab606e813ec2e18835
+'http://security.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.4.10-4ubuntu1.3.dsc' gnutls28_3.4.10-4ubuntu1.3.dsc 3076 SHA256:fdd0345d4528501ba95271e175b984172ffdb2cfbd7062576be1c6751c7acc6f
+'http://security.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.4.10.orig.tar.xz' gnutls28_3.4.10.orig.tar.xz 6645892 SHA256:6a32c2b4acbd33ff7eefcbd1357009da04c94c60146ef61320b6c076b1bdf59f
+'http://security.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.4.10-4ubuntu1.3.debian.tar.xz' gnutls28_3.4.10-4ubuntu1.3.debian.tar.xz 96112 SHA256:d3609837d6415df3bda609dc4c6eacf657f5e76c4a32cfab606e813ec2e18835
 ```
 
 ### `dpkg` source package: `grep=2.25-1~16.04.1`
@@ -2680,14 +2680,9 @@ Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 - `GFDL-1.2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris wget=1.17.1-1ubuntu1.2
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.17.1-1ubuntu1.2.dsc' wget_1.17.1-1ubuntu1.2.dsc 1297 SHA256:bca79c36d8705a385584fe381ab5437803aaa662cdfa7daceaedb03eb5815c1d
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.17.1.orig.tar.gz' wget_1.17.1.orig.tar.gz 3801442 SHA256:029fbb93bdc1c0c5a7507b6076a6ec2f8d34204a85aa87e5b2f61a9405b290f5
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.17.1-1ubuntu1.2.debian.tar.xz' wget_1.17.1-1ubuntu1.2.debian.tar.xz 25384 SHA256:6f77e2f7ccc0b8038dab23576e3fcbe91b86e799c6702fbba6f5d34fdf0cf04e
-```
 
 ### `dpkg` source package: `xorg=1:7.7+13ubuntu3`
 
