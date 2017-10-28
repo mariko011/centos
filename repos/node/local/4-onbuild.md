@@ -1,18 +1,17 @@
-# `node:4.8.4-onbuild`
+# `node:4.8.5-onbuild`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1a80fbabd130bd7a8331e953fd888f465be0946571d1109f4d9d72acca406cab`
-- Created: `2017-10-10T06:32:06.347016418Z`
-- Virtual Size: ~ 654.52 Mb  
+- Image ID: `sha256:7dcfb815fadfacb59bcc4f9ed3d5d8aa1593afff5fa96f237306370954e8bc01`
+- Created: `2017-10-25T15:21:56.568054591Z`
+- Virtual Size: ~ 654.93 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["npm","start"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NPM_CONFIG_LOGLEVEL=info`
-  - `NODE_VERSION=4.8.4`
-  - `YARN_VERSION=0.24.4`
+  - `NODE_VERSION=4.8.5`
+  - `YARN_VERSION=1.2.1`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -645,20 +644,13 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `ISC`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.38.0-4+deb8u6
-'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0-4+deb8u6.dsc' curl_7.38.0-4+deb8u6.dsc 2669 SHA256:ed599fd1b78609ab0d91125d095ce88c8bfece997cece225cdec251c888766cd
-'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0.orig.tar.gz' curl_7.38.0.orig.tar.gz 4094034 SHA256:5661028aa6532882fa228cd23c99ddbb8b87643dbb1a7ea55c068d34a943dff1
-'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0-4+deb8u6.debian.tar.xz' curl_7.38.0-4+deb8u6.debian.tar.xz 42064 SHA256:16a861a007d3ea6db80608bf6b27221f9cdc9bf0ee0b931c32971014d5cd2863
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/7.38.0-4+deb8u6/
 
-- https://sources.debian.net/src/curl/7.38.0-4+deb8u6/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.38.0-4+deb8u6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.38.0-4+deb8u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-13+deb8u1`
 

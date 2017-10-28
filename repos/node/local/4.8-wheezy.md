@@ -1,18 +1,17 @@
-# `node:4.8.4-wheezy`
+# `node:4.8.5-wheezy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0fd42290d5f1a44ad09f124fe227c0346f69500089161245ab5d177d4324547d`
-- Created: `2017-10-10T06:33:51.295394523Z`
-- Virtual Size: ~ 508.42 Mb  
+- Image ID: `sha256:e899a9b87182af5b1c8c91caca6246943fc1dfd580fe0e8593120c6eaeaf2e33`
+- Created: `2017-10-25T15:23:20.563780562Z`
+- Virtual Size: ~ 508.83 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NPM_CONFIG_LOGLEVEL=info`
-  - `NODE_VERSION=4.8.4`
-  - `YARN_VERSION=0.24.4`
+  - `NODE_VERSION=4.8.5`
+  - `YARN_VERSION=1.2.1`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -4320,20 +4319,13 @@ Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 - `GFDL-1.2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris wget=1.13.4-3+deb7u4
-'http://security.debian.org/pool/updates/main/w/wget/wget_1.13.4-3+deb7u4.dsc' wget_1.13.4-3+deb7u4.dsc 1768 SHA256:1d62e31002bce8eb855c9f67d7a79970d0c823a2a689adbb49e05acb75de0bd9
-'http://security.debian.org/pool/updates/main/w/wget/wget_1.13.4.orig.tar.gz' wget_1.13.4.orig.tar.gz 2815185 SHA256:24c7710bc9f220ce23d8a9e0f5673b0efc1cace62db6de0239b5863ecc934dcd
-'http://security.debian.org/pool/updates/main/w/wget/wget_1.13.4-3+deb7u4.debian.tar.gz' wget_1.13.4-3+deb7u4.debian.tar.gz 28807 SHA256:426c625ef6459e25a3bf991e5d16790e98b58d5af34ae9b38f468c902ee7a028
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/wget/1.13.4-3+deb7u4/
 
-- https://sources.debian.net/src/wget/1.13.4-3+deb7u4/ (for browsing the source)
-- https://sources.debian.net/src/wget/1.13.4-3+deb7u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/wget/1.13.4-3+deb7u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `x11proto-core=7.0.23-1`
 
