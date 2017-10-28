@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d7d68a8607910a82dc065579ac01268045213edc1b786c1b2dfd5101a90153b1`
-- Created: `2017-10-24T21:54:52.555516327Z`
-- Virtual Size: ~ 265.52 Mb  
+- Image ID: `sha256:dc877c40e740361a6522b2a4b7d292d8d8ede5587d29ab2d323f8e184126a5c1`
+- Created: `2017-10-26T03:58:25.606567962Z`
+- Virtual Size: ~ 265.61 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
