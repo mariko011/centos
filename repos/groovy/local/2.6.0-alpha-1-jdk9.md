@@ -1729,20 +1729,13 @@ Licenses: (parsed from: `/usr/share/doc/libharfbuzz0b/copyright`)
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris harfbuzz=1.5.1-1
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_1.5.1-1.dsc' harfbuzz_1.5.1-1.dsc 2655 SHA256:6a07c65509ca8f32db3ae677d61961816a69c737bcd1194c4c1a81511becef4a
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_1.5.1.orig.tar.bz2' harfbuzz_1.5.1.orig.tar.bz2 1615704 SHA256:56838dfdad2729b8866763c82d623354d138a4d99d9ffb710c7d377b5cfc7c51
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_1.5.1-1.debian.tar.xz' harfbuzz_1.5.1-1.debian.tar.xz 8576 SHA256:0e1f5f02ee3144065c1bcc61775446e1c1041829649f52b59572b7897bde1936
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/harfbuzz/1.5.1-1/
 
-- https://sources.debian.net/src/harfbuzz/1.5.1-1/ (for browsing the source)
-- https://sources.debian.net/src/harfbuzz/1.5.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/harfbuzz/1.5.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `hicolor-icon-theme=0.17-1`
 
@@ -2034,20 +2027,13 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.15.1-2
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.15.1-2.dsc' krb5_1.15.1-2.dsc 3294 SHA256:717416ea51edbfd2555568631e700c15cce1244f730a97d317288ab0be20d43a
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.15.1.orig.tar.gz' krb5_1.15.1.orig.tar.gz 9375538 SHA256:437c8831ddd5fde2a993fef425dedb48468109bb3d3261ef838295045a89eb45
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.15.1-2.debian.tar.xz' krb5_1.15.1-2.debian.tar.xz 143404 SHA256:e44c17efbf26e5d2a3de7577a039085683efe21afb0da3eacc12c17dc01e9d1a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/krb5/1.15.1-2/
 
-- https://sources.debian.net/src/krb5/1.15.1-2/ (for browsing the source)
-- https://sources.debian.net/src/krb5/1.15.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/krb5/1.15.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lcms2=2.8-4`
 
@@ -3894,20 +3880,13 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.26.0-1
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.26.0-1.dsc' nghttp2_1.26.0-1.dsc 2310 SHA256:89da72c5cf1d3b299338e942cc849c551d07ab9b1cfd8a932270b188e840ff7e
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.26.0.orig.tar.bz2' nghttp2_1.26.0.orig.tar.bz2 1840832 SHA256:0df4229f4123b5aa96e834ebcfdffe954e93d986f0252fd10123d50c6f010983
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.26.0-1.debian.tar.xz' nghttp2_1.26.0-1.debian.tar.xz 12016 SHA256:480f9fbf4cbbbc49326737f9d93fed10a469d1bac0b4b7ef885a62c60237e3a9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nghttp2/1.26.0-1/
 
-- https://sources.debian.net/src/nghttp2/1.26.0-1/ (for browsing the source)
-- https://sources.debian.net/src/nghttp2/1.26.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nghttp2/1.26.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `nspr=2:4.16-1`
 
