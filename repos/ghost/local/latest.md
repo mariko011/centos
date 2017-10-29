@@ -1,10 +1,10 @@
-# `ghost:1.15.1`
+# `ghost:1.16.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ebe9f648abbb4567dea1fcbe7c952c4083ebba5523e4780b6b52c5ed2f3da2ed`
-- Created: `2017-10-25T18:47:41.508093395Z`
-- Virtual Size: ~ 604.13 Mb  
+- Image ID: `sha256:ea3d66911d488b69a990d2028347859dcb09588d8798dda6d1a645d776209508`
+- Created: `2017-10-26T17:40:13.207079347Z`
+- Virtual Size: ~ 617.28 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `NPM_CONFIG_LOGLEVEL=warn`
   - `NODE_ENV=production`
   - `GHOST_CLI_VERSION=1.1.3`
-  - `GHOST_VERSION=1.15.1`
+  - `GHOST_VERSION=1.16.0`
   - `GHOST_INSTALL=/var/lib/ghost`
   - `GHOST_CONTENT=/var/lib/ghost/content`
 
@@ -367,20 +367,13 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `ISC`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.38.0-4+deb8u6
-'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0-4+deb8u6.dsc' curl_7.38.0-4+deb8u6.dsc 2669 SHA256:ed599fd1b78609ab0d91125d095ce88c8bfece997cece225cdec251c888766cd
-'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0.orig.tar.gz' curl_7.38.0.orig.tar.gz 4094034 SHA256:5661028aa6532882fa228cd23c99ddbb8b87643dbb1a7ea55c068d34a943dff1
-'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0-4+deb8u6.debian.tar.xz' curl_7.38.0-4+deb8u6.debian.tar.xz 42064 SHA256:16a861a007d3ea6db80608bf6b27221f9cdc9bf0ee0b931c32971014d5cd2863
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/7.38.0-4+deb8u6/
 
-- https://sources.debian.net/src/curl/7.38.0-4+deb8u6/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.38.0-4+deb8u6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.38.0-4+deb8u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-13+deb8u1`
 
