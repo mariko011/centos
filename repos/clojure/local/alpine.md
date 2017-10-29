@@ -1,9 +1,9 @@
-# `clojure:lein-2.8.0-alpine`
+# `clojure:lein-2.8.1-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:102a30e3d52184aa7fea8570155ef2b1d5d305b91a92df51cb2ca9974a6986a8`
-- Created: `2017-10-24T17:44:47.093211044Z`
+- Image ID: `sha256:937b2bee514a52a127aff0fdbd16d7b80313163a4d534b61b7f44da2fc4c2507`
+- Created: `2017-10-27T22:45:10.219982787Z`
 - Virtual Size: ~ 134.46 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -14,6 +14,6 @@
   - `JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk`
   - `JAVA_VERSION=8u131`
   - `JAVA_ALPINE_VERSION=8.131.11-r2`
-  - `LEIN_VERSION=2.8.0`
+  - `LEIN_VERSION=2.8.1`
   - `LEIN_INSTALL=/usr/local/bin/`
   - `LEIN_ROOT=1`

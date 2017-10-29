@@ -1,13 +1,13 @@
-# `clojure:lein-2.8.0`
+# `clojure:lein-2.8.1-onbuild`
 
 ## Docker Metadata
 
-- Image ID: `sha256:32eccb5c9324d2ea832c461327ff03487f5f3b46c08eb6f4d99ed1066e0cfa3d`
-- Created: `2017-10-24T17:43:51.116563181Z`
+- Image ID: `sha256:2586fc10b40e62f1f4138aaca1d2bddbfb498dab270d46ae0df4eb5f33a59fc1`
+- Created: `2017-10-27T22:44:18.847177496Z`
 - Virtual Size: ~ 757.28 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Command: `["bash"]`
+- Command: `["lein","run"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/`
   - `LANG=C.UTF-8`
@@ -15,7 +15,7 @@
   - `JAVA_VERSION=8u141`
   - `JAVA_DEBIAN_VERSION=8u141-b15-1~deb9u1`
   - `CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1`
-  - `LEIN_VERSION=2.8.0`
+  - `LEIN_VERSION=2.8.1`
   - `LEIN_INSTALL=/usr/local/bin/`
   - `LEIN_ROOT=1`
 
@@ -757,20 +757,13 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.52.1-5+deb9u1
-'http://security.debian.org/pool/updates/main/c/curl/curl_7.52.1-5+deb9u1.dsc' curl_7.52.1-5+deb9u1.dsc 2793 SHA256:63aa20ac041dc912d2c4d879f1dcedb703e84c77bb0997b68f1ae7f34234e31d
-'http://security.debian.org/pool/updates/main/c/curl/curl_7.52.1.orig.tar.gz' curl_7.52.1.orig.tar.gz 3504621 SHA256:a8984e8b20880b621f61a62d95ff3c0763a3152093a9f9ce4287cfd614add6ae
-'http://security.debian.org/pool/updates/main/c/curl/curl_7.52.1-5+deb9u1.debian.tar.xz' curl_7.52.1-5+deb9u1.debian.tar.xz 34788 SHA256:c7ba15d40903398131ad1fdc84188bf3fabe7c9e150cfbd286b54295b6331eb9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/7.52.1-5+deb9u1/
 
-- https://sources.debian.net/src/curl/7.52.1-5+deb9u1/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.52.1-5+deb9u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.52.1-5+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3`
 
