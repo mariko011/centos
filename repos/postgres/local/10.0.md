@@ -2575,13 +2575,9 @@ Licenses: (parsed from: `/usr/share/doc/postgresql-client-common/copyright`, `/u
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-common=186.pgdg90+1
-'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-common/postgresql-common_186.pgdg90+1.dsc' postgresql-common_186.pgdg90+1.dsc 1492 SHA256:d39e823aad88cb7d537d5e7e26ef0168fc7546daf1de1a1ebe1553feede1b9a2
-'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-common/postgresql-common_186.pgdg90+1.tar.xz' postgresql-common_186.pgdg90+1.tar.xz 206032 SHA256:2bb46c51d65e6704f0e9fba09fd5cf2e3b122a3ccb3596f6cd399f91b391b6e7
-```
 
 ### `dpkg` source package: `procps=2:3.3.12-3`
 
