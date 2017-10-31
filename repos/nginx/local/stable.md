@@ -1,17 +1,17 @@
-# `nginx:1.12.1`
+# `nginx:1.12.2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0f5baf09c628c0f44c1d53be8293f95ee80cd542f2ea37c48a667d535614b12a`
-- Created: `2017-10-10T00:27:09.726711282Z`
-- Virtual Size: ~ 107.45 Mb  
+- Image ID: `sha256:6224bbebb85399742ec1a72661ecfd8bc8609e6dc535c6afedeeb3884cd34c7c`
+- Created: `2017-10-27T22:22:26.999488634Z`
+- Virtual Size: ~ 108.36 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.12.1-1~stretch`
-  - `NJS_VERSION=1.12.1.0.1.10-1~stretch`
+  - `NGINX_VERSION=1.12.2-1~stretch`
+  - `NJS_VERSION=1.12.2.0.1.14-1~stretch`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1002,6 +1002,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libcap-ng/0.7.7-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libcap-ng/0.7.7-3/ (for access to the source package after it no longer exists in the archive)
 
+### `dpkg` source package: `libedit=3.1-20160903-3`
+
+Binary Packages:
+
+- `libedit2:amd64=3.1-20160903-3`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris libedit=3.1-20160903-3
+'http://deb.debian.org/debian/pool/main/libe/libedit/libedit_3.1-20160903-3.dsc' libedit_3.1-20160903-3.dsc 2240 SHA256:d143cac52af230cce5ee3d8f181f5b496da675dd6abc1d30a14d5bbb0926a71a
+'http://deb.debian.org/debian/pool/main/libe/libedit/libedit_3.1-20160903.orig.tar.gz' libedit_3.1-20160903.orig.tar.gz 508108 SHA256:0ccbd2e7d46097f136fcb1aaa0d5bc24e23bb73f57d25bee5a852a683eaa7567
+'http://deb.debian.org/debian/pool/main/libe/libedit/libedit_3.1-20160903-3.debian.tar.bz2' libedit_3.1-20160903-3.debian.tar.bz2 11290 SHA256:6508b14c90bd756b6a5b3d3e7183b167276958e445a78ca753e460482da774f4
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libedit/3.1-20160903-3/ (for browsing the source)
+- https://sources.debian.net/src/libedit/3.1-20160903-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libedit/3.1-20160903-3/ (for access to the source package after it no longer exists in the archive)
+
 ### `dpkg` source package: `libgcrypt20=1.7.6-2+deb9u2`
 
 Binary Packages:
@@ -1506,6 +1531,7 @@ Other potentially useful URLs:
 
 Binary Packages:
 
+- `libncurses5:amd64=6.0+20161126-1+deb9u1`
 - `libncursesw5:amd64=6.0+20161126-1+deb9u1`
 - `libtinfo5:amd64=6.0+20161126-1+deb9u1`
 - `ncurses-base=6.0+20161126-1+deb9u1`
@@ -1530,11 +1556,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/ncurses/6.0+20161126-1+deb9u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/ncurses/6.0+20161126-1+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `nginx-module-geoip=1.12.1-1~stretch`
+### `dpkg` source package: `nginx-module-geoip=1.12.2-1~stretch`
 
 Binary Packages:
 
-- `nginx-module-geoip=1.12.1-1~stretch`
+- `nginx-module-geoip=1.12.2-1~stretch`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1543,17 +1569,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris nginx-module-geoip=1.12.1-1~stretch
-'http://nginx.org/packages/debian/pool/nginx/n/nginx-module-geoip/nginx-module-geoip_1.12.1-1~stretch.dsc' nginx-module-geoip_1.12.1-1~stretch.dsc 1651 SHA256:85bdd9b2a598bca8223a36c55990891333a4175118a19b1a3c26b115d7c4c0a9
-'http://nginx.org/packages/debian/pool/nginx/n/nginx-module-geoip/nginx-module-geoip_1.12.1.orig.tar.gz' nginx-module-geoip_1.12.1.orig.tar.gz 981093 SHA256:8793bf426485a30f91021b6b945a9fd8a84d87d17b566562c3797aba8fac76fb
-'http://nginx.org/packages/debian/pool/nginx/n/nginx-module-geoip/nginx-module-geoip_1.12.1-1~stretch.debian.tar.xz' nginx-module-geoip_1.12.1-1~stretch.debian.tar.xz 3316 SHA256:1a7911acc7b0e4d56c41724301fdc8d470e71f24575e3e4b28898d784f606169
+$ apt-get source -qq --print-uris nginx-module-geoip=1.12.2-1~stretch
+'http://nginx.org/packages/debian/pool/nginx/n/nginx-module-geoip/nginx-module-geoip_1.12.2-1~stretch.dsc' nginx-module-geoip_1.12.2-1~stretch.dsc 1651 SHA256:bf98a499bdc2a2e088579d4386b03010fdfd79e710df1c4a2c0c3f9289b9e14f
+'http://nginx.org/packages/debian/pool/nginx/n/nginx-module-geoip/nginx-module-geoip_1.12.2.orig.tar.gz' nginx-module-geoip_1.12.2.orig.tar.gz 981687 SHA256:305f379da1d5fb5aefa79e45c829852ca6983c7cd2a79328f8e084a324cf0416
+'http://nginx.org/packages/debian/pool/nginx/n/nginx-module-geoip/nginx-module-geoip_1.12.2-1~stretch.debian.tar.xz' nginx-module-geoip_1.12.2-1~stretch.debian.tar.xz 3328 SHA256:313ac1e9bb484e99608905f7658691441f52094615d79ed6a1a99508bae92651
 ```
 
-### `dpkg` source package: `nginx-module-image-filter=1.12.1-1~stretch`
+### `dpkg` source package: `nginx-module-image-filter=1.12.2-1~stretch`
 
 Binary Packages:
 
-- `nginx-module-image-filter=1.12.1-1~stretch`
+- `nginx-module-image-filter=1.12.2-1~stretch`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1562,17 +1588,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris nginx-module-image-filter=1.12.1-1~stretch
-'http://nginx.org/packages/debian/pool/nginx/n/nginx-module-image-filter/nginx-module-image-filter_1.12.1-1~stretch.dsc' nginx-module-image-filter_1.12.1-1~stretch.dsc 1725 SHA256:591564bc7f5259247b74af751d2f5a12302db9af1b7e903f7223b6574e24a6c2
-'http://nginx.org/packages/debian/pool/nginx/n/nginx-module-image-filter/nginx-module-image-filter_1.12.1.orig.tar.gz' nginx-module-image-filter_1.12.1.orig.tar.gz 981093 SHA256:8793bf426485a30f91021b6b945a9fd8a84d87d17b566562c3797aba8fac76fb
-'http://nginx.org/packages/debian/pool/nginx/n/nginx-module-image-filter/nginx-module-image-filter_1.12.1-1~stretch.debian.tar.xz' nginx-module-image-filter_1.12.1-1~stretch.debian.tar.xz 3300 SHA256:42993b857339979478c84cd6370008427750125b57f559fc742cce1acd313017
+$ apt-get source -qq --print-uris nginx-module-image-filter=1.12.2-1~stretch
+'http://nginx.org/packages/debian/pool/nginx/n/nginx-module-image-filter/nginx-module-image-filter_1.12.2-1~stretch.dsc' nginx-module-image-filter_1.12.2-1~stretch.dsc 1725 SHA256:39fee0931d41af0f8abfb1839449c07108a380f156b0564ea3c8abde16487701
+'http://nginx.org/packages/debian/pool/nginx/n/nginx-module-image-filter/nginx-module-image-filter_1.12.2.orig.tar.gz' nginx-module-image-filter_1.12.2.orig.tar.gz 981687 SHA256:305f379da1d5fb5aefa79e45c829852ca6983c7cd2a79328f8e084a324cf0416
+'http://nginx.org/packages/debian/pool/nginx/n/nginx-module-image-filter/nginx-module-image-filter_1.12.2-1~stretch.debian.tar.xz' nginx-module-image-filter_1.12.2-1~stretch.debian.tar.xz 3308 SHA256:d05a1535fa0c0e741173643983dcc1309bace35ed4b41e2eba016ee3a59ce5f8
 ```
 
-### `dpkg` source package: `nginx-module-njs=1.12.1.0.1.10-1~stretch`
+### `dpkg` source package: `nginx-module-njs=1.12.2.0.1.14-1~stretch`
 
 Binary Packages:
 
-- `nginx-module-njs=1.12.1.0.1.10-1~stretch`
+- `nginx-module-njs=1.12.2.0.1.14-1~stretch`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1581,17 +1607,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris nginx-module-njs=1.12.1.0.1.10-1~stretch
-'http://nginx.org/packages/debian/pool/nginx/n/nginx-module-njs/nginx-module-njs_1.12.1.0.1.10-1~stretch.dsc' nginx-module-njs_1.12.1.0.1.10-1~stretch.dsc 1670 SHA256:22da78b4839d4dde38b6c1d2e51caf55b97d7ccc31434ab2d3b57ef6b2c5ff0e
-'http://nginx.org/packages/debian/pool/nginx/n/nginx-module-njs/nginx-module-njs_1.12.1.0.1.10.orig.tar.gz' nginx-module-njs_1.12.1.0.1.10.orig.tar.gz 981093 SHA256:8793bf426485a30f91021b6b945a9fd8a84d87d17b566562c3797aba8fac76fb
-'http://nginx.org/packages/debian/pool/nginx/n/nginx-module-njs/nginx-module-njs_1.12.1.0.1.10-1~stretch.debian.tar.xz' nginx-module-njs_1.12.1.0.1.10-1~stretch.debian.tar.xz 139216 SHA256:0aa0be03dbdcbf2ebad8ddef7d807ad72cdf035cb9a435ed9488ebe252bb5c06
+$ apt-get source -qq --print-uris nginx-module-njs=1.12.2.0.1.14-1~stretch
+'http://nginx.org/packages/debian/pool/nginx/n/nginx-module-njs/nginx-module-njs_1.12.2.0.1.14-1~stretch.dsc' nginx-module-njs_1.12.2.0.1.14-1~stretch.dsc 1683 SHA256:0fa5bc990c600ea1734432b3720f7911b4d36556f3fdb73479660730892da07c
+'http://nginx.org/packages/debian/pool/nginx/n/nginx-module-njs/nginx-module-njs_1.12.2.0.1.14.orig.tar.gz' nginx-module-njs_1.12.2.0.1.14.orig.tar.gz 981687 SHA256:305f379da1d5fb5aefa79e45c829852ca6983c7cd2a79328f8e084a324cf0416
+'http://nginx.org/packages/debian/pool/nginx/n/nginx-module-njs/nginx-module-njs_1.12.2.0.1.14-1~stretch.debian.tar.xz' nginx-module-njs_1.12.2.0.1.14-1~stretch.debian.tar.xz 159216 SHA256:47e13c8960d76fef28a7faa13a89715a83b14764ff93a96fda688f1c90cbc7b5
 ```
 
-### `dpkg` source package: `nginx-module-xslt=1.12.1-1~stretch`
+### `dpkg` source package: `nginx-module-xslt=1.12.2-1~stretch`
 
 Binary Packages:
 
-- `nginx-module-xslt=1.12.1-1~stretch`
+- `nginx-module-xslt=1.12.2-1~stretch`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1600,17 +1626,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris nginx-module-xslt=1.12.1-1~stretch
-'http://nginx.org/packages/debian/pool/nginx/n/nginx-module-xslt/nginx-module-xslt_1.12.1-1~stretch.dsc' nginx-module-xslt_1.12.1-1~stretch.dsc 1640 SHA256:21e7d650144d541e707d145a17eac649e9b5236548ce7dea69fff1a76fec8612
-'http://nginx.org/packages/debian/pool/nginx/n/nginx-module-xslt/nginx-module-xslt_1.12.1.orig.tar.gz' nginx-module-xslt_1.12.1.orig.tar.gz 981093 SHA256:8793bf426485a30f91021b6b945a9fd8a84d87d17b566562c3797aba8fac76fb
-'http://nginx.org/packages/debian/pool/nginx/n/nginx-module-xslt/nginx-module-xslt_1.12.1-1~stretch.debian.tar.xz' nginx-module-xslt_1.12.1-1~stretch.debian.tar.xz 3296 SHA256:bd1a2a90c8b325abbbb426816c7746a0ddbdde7dda8b32ac6850e6a8913b15ba
+$ apt-get source -qq --print-uris nginx-module-xslt=1.12.2-1~stretch
+'http://nginx.org/packages/debian/pool/nginx/n/nginx-module-xslt/nginx-module-xslt_1.12.2-1~stretch.dsc' nginx-module-xslt_1.12.2-1~stretch.dsc 1640 SHA256:fee8b77c66e366b891c623dc2d83c3f528eb587a1c3fde5e08b9479e86664319
+'http://nginx.org/packages/debian/pool/nginx/n/nginx-module-xslt/nginx-module-xslt_1.12.2.orig.tar.gz' nginx-module-xslt_1.12.2.orig.tar.gz 981687 SHA256:305f379da1d5fb5aefa79e45c829852ca6983c7cd2a79328f8e084a324cf0416
+'http://nginx.org/packages/debian/pool/nginx/n/nginx-module-xslt/nginx-module-xslt_1.12.2-1~stretch.debian.tar.xz' nginx-module-xslt_1.12.2-1~stretch.debian.tar.xz 3308 SHA256:4259dfad28210dd5e5bb7e3931f4aea5040a37459ded121e7be330a44c5403a6
 ```
 
-### `dpkg` source package: `nginx=1.12.1-1~stretch`
+### `dpkg` source package: `nginx=1.12.2-1~stretch`
 
 Binary Packages:
 
-- `nginx=1.12.1-1~stretch`
+- `nginx=1.12.2-1~stretch`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1619,10 +1645,10 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris nginx=1.12.1-1~stretch
-'http://nginx.org/packages/debian/pool/nginx/n/nginx/nginx_1.12.1-1~stretch.dsc' nginx_1.12.1-1~stretch.dsc 1499 SHA256:7fbfb22a0f57a28e0df50f941202d70245064858d9c5f03cbe0f5d842df30183
-'http://nginx.org/packages/debian/pool/nginx/n/nginx/nginx_1.12.1.orig.tar.gz' nginx_1.12.1.orig.tar.gz 981093 SHA256:8793bf426485a30f91021b6b945a9fd8a84d87d17b566562c3797aba8fac76fb
-'http://nginx.org/packages/debian/pool/nginx/n/nginx/nginx_1.12.1-1~stretch.debian.tar.xz' nginx_1.12.1-1~stretch.debian.tar.xz 107284 SHA256:97f5da2d340c9cab76bd68ab8c4ef3f2a4d236055a56f804e1086ad0ce0a3224
+$ apt-get source -qq --print-uris nginx=1.12.2-1~stretch
+'http://nginx.org/packages/debian/pool/nginx/n/nginx/nginx_1.12.2-1~stretch.dsc' nginx_1.12.2-1~stretch.dsc 1511 SHA256:b57759220ffafd6de6d9b1eaaf8bb1ada55ff394d96babdb9f71c3930858030c
+'http://nginx.org/packages/debian/pool/nginx/n/nginx/nginx_1.12.2.orig.tar.gz' nginx_1.12.2.orig.tar.gz 981687 SHA256:305f379da1d5fb5aefa79e45c829852ca6983c7cd2a79328f8e084a324cf0416
+'http://nginx.org/packages/debian/pool/nginx/n/nginx/nginx_1.12.2-1~stretch.debian.tar.xz' nginx_1.12.2-1~stretch.debian.tar.xz 107776 SHA256:34f261bcf8cb863e9f0bff37e24282066f3e6873a44180029a879daf52676a34
 ```
 
 ### `dpkg` source package: `openssl=1.1.0f-3`

@@ -1,17 +1,17 @@
-# `nginx:1.13.5-perl`
+# `nginx:1.13.6-perl`
 
 ## Docker Metadata
 
-- Image ID: `sha256:498a75a554f9f213064c4ad4a3835b73a8ca0b6c76e946aa4c8139828d964cf5`
-- Created: `2017-10-10T00:26:42.119514015Z`
-- Virtual Size: ~ 147.24 Mb  
+- Image ID: `sha256:651a97933b6cd1be7b3eb9c249d72c7d53eced65f2c92b180d8d4a80b44b347d`
+- Created: `2017-10-27T22:19:19.295720357Z`
+- Virtual Size: ~ 147.32 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.13.5-1~stretch`
-  - `NJS_VERSION=1.13.5.0.1.13-1~stretch`
+  - `NGINX_VERSION=1.13.6-1~stretch`
+  - `NJS_VERSION=1.13.6.0.1.14-1~stretch`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1581,11 +1581,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/ncurses/6.0+20161126-1+deb9u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/ncurses/6.0+20161126-1+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `nginx-module-geoip=1.13.5-1~stretch`
+### `dpkg` source package: `nginx-module-geoip=1.13.6-1~stretch`
 
 Binary Packages:
 
-- `nginx-module-geoip=1.13.5-1~stretch`
+- `nginx-module-geoip=1.13.6-1~stretch`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1594,17 +1594,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris nginx-module-geoip=1.13.5-1~stretch
-'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-geoip/nginx-module-geoip_1.13.5-1~stretch.dsc' nginx-module-geoip_1.13.5-1~stretch.dsc 1651 SHA256:54e15d384346266c40d2dc607a76456436b29130497adcade15a3b60183b338f
-'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-geoip/nginx-module-geoip_1.13.5.orig.tar.gz' nginx-module-geoip_1.13.5.orig.tar.gz 988821 SHA256:0e75b94429b3f745377aeba3aff97da77bf2b03fcb9ff15b3bad9b038db29f2e
-'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-geoip/nginx-module-geoip_1.13.5-1~stretch.debian.tar.xz' nginx-module-geoip_1.13.5-1~stretch.debian.tar.xz 3368 SHA256:d4038483361e9e2d25b55a9281cfa26bfa054238f89da1e27599a79046e06df3
+$ apt-get source -qq --print-uris nginx-module-geoip=1.13.6-1~stretch
+'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-geoip/nginx-module-geoip_1.13.6-1~stretch.dsc' nginx-module-geoip_1.13.6-1~stretch.dsc 1651 SHA256:fcab66f8d00c8acdafe453190074fffe7472e721064270dd40a429273613c65e
+'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-geoip/nginx-module-geoip_1.13.6.orig.tar.gz' nginx-module-geoip_1.13.6.orig.tar.gz 989760 SHA256:8512fc6f986a20af293b61f33b0e72f64a72ea5b1acbcc790c4c4e2d6f63f8f8
+'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-geoip/nginx-module-geoip_1.13.6-1~stretch.debian.tar.xz' nginx-module-geoip_1.13.6-1~stretch.debian.tar.xz 3400 SHA256:24bb6a28b64a11ad42e566297c6111a7ac102e776cfebd2fb705e629fb95e78b
 ```
 
-### `dpkg` source package: `nginx-module-image-filter=1.13.5-1~stretch`
+### `dpkg` source package: `nginx-module-image-filter=1.13.6-1~stretch`
 
 Binary Packages:
 
-- `nginx-module-image-filter=1.13.5-1~stretch`
+- `nginx-module-image-filter=1.13.6-1~stretch`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1613,17 +1613,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris nginx-module-image-filter=1.13.5-1~stretch
-'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-image-filter/nginx-module-image-filter_1.13.5-1~stretch.dsc' nginx-module-image-filter_1.13.5-1~stretch.dsc 1725 SHA256:a378598bea63de3f77a6c26e938f6e141d21f5be7b5c628f830236f28f00d8e3
-'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-image-filter/nginx-module-image-filter_1.13.5.orig.tar.gz' nginx-module-image-filter_1.13.5.orig.tar.gz 988821 SHA256:0e75b94429b3f745377aeba3aff97da77bf2b03fcb9ff15b3bad9b038db29f2e
-'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-image-filter/nginx-module-image-filter_1.13.5-1~stretch.debian.tar.xz' nginx-module-image-filter_1.13.5-1~stretch.debian.tar.xz 3352 SHA256:f1d2b9ae4c2b268ea2d4d0697ad2e1144711a303267f8d92020c9b3c28337e14
+$ apt-get source -qq --print-uris nginx-module-image-filter=1.13.6-1~stretch
+'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-image-filter/nginx-module-image-filter_1.13.6-1~stretch.dsc' nginx-module-image-filter_1.13.6-1~stretch.dsc 1725 SHA256:bb7007aa879a70f360e43f804c580e07bbc386071c042dff5c29cdfa762d59f8
+'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-image-filter/nginx-module-image-filter_1.13.6.orig.tar.gz' nginx-module-image-filter_1.13.6.orig.tar.gz 989760 SHA256:8512fc6f986a20af293b61f33b0e72f64a72ea5b1acbcc790c4c4e2d6f63f8f8
+'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-image-filter/nginx-module-image-filter_1.13.6-1~stretch.debian.tar.xz' nginx-module-image-filter_1.13.6-1~stretch.debian.tar.xz 3376 SHA256:06fae35c559b280c9555426899cd1c10427879c8d550852e63588495f49d6809
 ```
 
-### `dpkg` source package: `nginx-module-njs=1.13.5.0.1.13-1~stretch`
+### `dpkg` source package: `nginx-module-njs=1.13.6.0.1.14-1~stretch`
 
 Binary Packages:
 
-- `nginx-module-njs=1.13.5.0.1.13-1~stretch`
+- `nginx-module-njs=1.13.6.0.1.14-1~stretch`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1632,17 +1632,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris nginx-module-njs=1.13.5.0.1.13-1~stretch
-'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-njs/nginx-module-njs_1.13.5.0.1.13-1~stretch.dsc' nginx-module-njs_1.13.5.0.1.13-1~stretch.dsc 1683 SHA256:9cb62c7f05ee9a352e332e7ef11be3fd96aed47c752cfec915fbefdccab652b7
-'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-njs/nginx-module-njs_1.13.5.0.1.13.orig.tar.gz' nginx-module-njs_1.13.5.0.1.13.orig.tar.gz 988821 SHA256:0e75b94429b3f745377aeba3aff97da77bf2b03fcb9ff15b3bad9b038db29f2e
-'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-njs/nginx-module-njs_1.13.5.0.1.13-1~stretch.debian.tar.xz' nginx-module-njs_1.13.5.0.1.13-1~stretch.debian.tar.xz 149036 SHA256:f872ab4f2e196e5aca22b738a232c813433c3ac9827781872d25f664ac1bdea7
+$ apt-get source -qq --print-uris nginx-module-njs=1.13.6.0.1.14-1~stretch
+'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-njs/nginx-module-njs_1.13.6.0.1.14-1~stretch.dsc' nginx-module-njs_1.13.6.0.1.14-1~stretch.dsc 1683 SHA256:e0b8e007d3f1a7f3e517858f8c5b078468fedd6412b5b2447cd5c7c1a2e41d1b
+'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-njs/nginx-module-njs_1.13.6.0.1.14.orig.tar.gz' nginx-module-njs_1.13.6.0.1.14.orig.tar.gz 989760 SHA256:8512fc6f986a20af293b61f33b0e72f64a72ea5b1acbcc790c4c4e2d6f63f8f8
+'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-njs/nginx-module-njs_1.13.6.0.1.14-1~stretch.debian.tar.xz' nginx-module-njs_1.13.6.0.1.14-1~stretch.debian.tar.xz 159324 SHA256:8c3d53f421707daf5a6d4670aeebf046849aba1ba32a8a9cc98318978ba45c24
 ```
 
-### `dpkg` source package: `nginx-module-perl=1.13.5-1~stretch`
+### `dpkg` source package: `nginx-module-perl=1.13.6-1~stretch`
 
 Binary Packages:
 
-- `nginx-module-perl=1.13.5-1~stretch`
+- `nginx-module-perl=1.13.6-1~stretch`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1651,17 +1651,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris nginx-module-perl=1.13.5-1~stretch
-'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-perl/nginx-module-perl_1.13.5-1~stretch.dsc' nginx-module-perl_1.13.5-1~stretch.dsc 1639 SHA256:0a2e72c37faa26a3a33f57022d30ae3b2e113a220c808351b1419a65cc826cf8
-'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-perl/nginx-module-perl_1.13.5.orig.tar.gz' nginx-module-perl_1.13.5.orig.tar.gz 988821 SHA256:0e75b94429b3f745377aeba3aff97da77bf2b03fcb9ff15b3bad9b038db29f2e
-'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-perl/nginx-module-perl_1.13.5-1~stretch.debian.tar.xz' nginx-module-perl_1.13.5-1~stretch.debian.tar.xz 3488 SHA256:452cee0cc88233c8d75186b6c89ea0d4e8ad1d271446171d1f9145a017623a59
+$ apt-get source -qq --print-uris nginx-module-perl=1.13.6-1~stretch
+'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-perl/nginx-module-perl_1.13.6-1~stretch.dsc' nginx-module-perl_1.13.6-1~stretch.dsc 1639 SHA256:ab772c64bbbec0773ddd4b9934b4dec4222ae744a1eee86a9fada8ef204132af
+'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-perl/nginx-module-perl_1.13.6.orig.tar.gz' nginx-module-perl_1.13.6.orig.tar.gz 989760 SHA256:8512fc6f986a20af293b61f33b0e72f64a72ea5b1acbcc790c4c4e2d6f63f8f8
+'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-perl/nginx-module-perl_1.13.6-1~stretch.debian.tar.xz' nginx-module-perl_1.13.6-1~stretch.debian.tar.xz 3512 SHA256:f3232415663c07e0d9183ccff6d71332d8460b6ec9eaed68918204a769bb869e
 ```
 
-### `dpkg` source package: `nginx-module-xslt=1.13.5-1~stretch`
+### `dpkg` source package: `nginx-module-xslt=1.13.6-1~stretch`
 
 Binary Packages:
 
-- `nginx-module-xslt=1.13.5-1~stretch`
+- `nginx-module-xslt=1.13.6-1~stretch`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1670,17 +1670,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris nginx-module-xslt=1.13.5-1~stretch
-'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-xslt/nginx-module-xslt_1.13.5-1~stretch.dsc' nginx-module-xslt_1.13.5-1~stretch.dsc 1640 SHA256:f88c122f1c6b4970dde1cc044d2146f0b2cacb38a882a756f73b1816470df3ce
-'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-xslt/nginx-module-xslt_1.13.5.orig.tar.gz' nginx-module-xslt_1.13.5.orig.tar.gz 988821 SHA256:0e75b94429b3f745377aeba3aff97da77bf2b03fcb9ff15b3bad9b038db29f2e
-'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-xslt/nginx-module-xslt_1.13.5-1~stretch.debian.tar.xz' nginx-module-xslt_1.13.5-1~stretch.debian.tar.xz 3348 SHA256:bb83b737fe4c46ce9808a4b24244ab0467f1645d8f3c20fc5c6794a0e58f10e9
+$ apt-get source -qq --print-uris nginx-module-xslt=1.13.6-1~stretch
+'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-xslt/nginx-module-xslt_1.13.6-1~stretch.dsc' nginx-module-xslt_1.13.6-1~stretch.dsc 1640 SHA256:a0559a3cd51d5cbad60b9c9e4fbdaebc9d81181db97e70148650f5501155a63c
+'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-xslt/nginx-module-xslt_1.13.6.orig.tar.gz' nginx-module-xslt_1.13.6.orig.tar.gz 989760 SHA256:8512fc6f986a20af293b61f33b0e72f64a72ea5b1acbcc790c4c4e2d6f63f8f8
+'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-xslt/nginx-module-xslt_1.13.6-1~stretch.debian.tar.xz' nginx-module-xslt_1.13.6-1~stretch.debian.tar.xz 3376 SHA256:ccee643aa7618ed20a1a10f61dbef4919c89e3a4d5fb047ad1868505bd8ab48e
 ```
 
-### `dpkg` source package: `nginx=1.13.5-1~stretch`
+### `dpkg` source package: `nginx=1.13.6-1~stretch`
 
 Binary Packages:
 
-- `nginx=1.13.5-1~stretch`
+- `nginx=1.13.6-1~stretch`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1689,10 +1689,10 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris nginx=1.13.5-1~stretch
-'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx/nginx_1.13.5-1~stretch.dsc' nginx_1.13.5-1~stretch.dsc 1511 SHA256:5fc1efedeee16d3b596d2e51b9d54bb7f4641de0878a1adecae2947f024162a7
-'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx/nginx_1.13.5.orig.tar.gz' nginx_1.13.5.orig.tar.gz 988821 SHA256:0e75b94429b3f745377aeba3aff97da77bf2b03fcb9ff15b3bad9b038db29f2e
-'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx/nginx_1.13.5-1~stretch.debian.tar.xz' nginx_1.13.5-1~stretch.debian.tar.xz 108756 SHA256:b52f6d0dd288c36665c5798e012b1b697cb5247949bae2e2a418fc8b8d62811a
+$ apt-get source -qq --print-uris nginx=1.13.6-1~stretch
+'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx/nginx_1.13.6-1~stretch.dsc' nginx_1.13.6-1~stretch.dsc 1511 SHA256:ee6263c2e245204cd1fa482b72531aeda71d9458a93eb191798347b9288d21ca
+'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx/nginx_1.13.6.orig.tar.gz' nginx_1.13.6.orig.tar.gz 989760 SHA256:8512fc6f986a20af293b61f33b0e72f64a72ea5b1acbcc790c4c4e2d6f63f8f8
+'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx/nginx_1.13.6-1~stretch.debian.tar.xz' nginx_1.13.6-1~stretch.debian.tar.xz 109308 SHA256:85219a5a7aa55c17ae0b82baed5cc99e37f2a619c62931fe0cea06211f81cb7c
 ```
 
 ### `dpkg` source package: `openssl=1.1.0f-3`
