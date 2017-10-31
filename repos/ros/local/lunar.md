@@ -3670,14 +3670,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `GPL-2`
 - `redpine-signals`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=4.4.0-97.120
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-97.120.dsc' linux_4.4.0-97.120.dsc 9290 SHA256:d8d97533064b742f094029c6d1b5abd113556cac17051b957053c6de0cb7cf98
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-97.120.diff.gz' linux_4.4.0-97.120.diff.gz 13634106 SHA256:67ee211d2797504a5b374b5319cfa515c6f2d4eebe1b4a8a7017013570ce7dd8
-```
 
 ### `dpkg` source package: `lksctp-tools=1.0.16+dfsg-3`
 
