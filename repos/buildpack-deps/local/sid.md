@@ -146,20 +146,13 @@ Licenses: (parsed from: `/usr/share/doc/libatk1.0-0/copyright`, `/usr/share/doc/
 
 - `LGPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris atk1.0=2.26.0-2
-'http://deb.debian.org/debian/pool/main/a/atk1.0/atk1.0_2.26.0-2.dsc' atk1.0_2.26.0-2.dsc 2807 SHA256:b667d253f54c991acd7778d8424916cadf75893e6e45d7c5edc619f7b4d626f9
-'http://deb.debian.org/debian/pool/main/a/atk1.0/atk1.0_2.26.0.orig.tar.xz' atk1.0_2.26.0.orig.tar.xz 710436 SHA256:eafe49d5c4546cb723ec98053290d7e0b8d85b3fdb123938213acb7bb4178827
-'http://deb.debian.org/debian/pool/main/a/atk1.0/atk1.0_2.26.0-2.debian.tar.xz' atk1.0_2.26.0-2.debian.tar.xz 10936 SHA256:ed114fd8b1c84695edc3335dd6b7298b7c03dc3b704c7fc17409311c86905dc7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/atk1.0/2.26.0-2/
 
-- https://sources.debian.net/src/atk1.0/2.26.0-2/ (for browsing the source)
-- https://sources.debian.net/src/atk1.0/2.26.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/atk1.0/2.26.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
@@ -1635,20 +1628,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-freedesktop/copyright`, `/usr/sha
 - `LGPL-2+`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gobject-introspection=1.54.1-1
-'http://deb.debian.org/debian/pool/main/g/gobject-introspection/gobject-introspection_1.54.1-1.dsc' gobject-introspection_1.54.1-1.dsc 2902 SHA256:ebb7eccb015ec5224aa9c705aee447844ab28cf8b4f67ebc2118612866acc537
-'http://deb.debian.org/debian/pool/main/g/gobject-introspection/gobject-introspection_1.54.1.orig.tar.xz' gobject-introspection_1.54.1.orig.tar.xz 1392504 SHA256:b88ded5e5f064ab58a93aadecd6d58db2ec9d970648534c63807d4f9a7bb877e
-'http://deb.debian.org/debian/pool/main/g/gobject-introspection/gobject-introspection_1.54.1-1.debian.tar.xz' gobject-introspection_1.54.1-1.debian.tar.xz 19816 SHA256:e93b5caac3aa2e9afc2ec22da5cdd4da5b57d6f5a631d9983f797cb0d85dabe1
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gobject-introspection/1.54.1-1/
 
-- https://sources.debian.net/src/gobject-introspection/1.54.1-1/ (for browsing the source)
-- https://sources.debian.net/src/gobject-introspection/1.54.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gobject-introspection/1.54.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `graphite2=1.3.10-5`
 
@@ -2502,20 +2488,13 @@ Licenses: (parsed from: `/usr/share/doc/libexif-dev/copyright`, `/usr/share/doc/
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libexif=0.6.21-2.1
-'http://deb.debian.org/debian/pool/main/libe/libexif/libexif_0.6.21-2.1.dsc' libexif_0.6.21-2.1.dsc 2076 SHA256:7cf7e50a2bb33a7964cca2f6c18fcfd53e123b6e5c42fd05caa6a68ed97d523e
-'http://deb.debian.org/debian/pool/main/libe/libexif/libexif_0.6.21.orig.tar.gz' libexif_0.6.21.orig.tar.gz 2081615 SHA256:edb7eb13664cf950a6edd132b75e99afe61c5effe2f16494e6d27bc404b287bf
-'http://deb.debian.org/debian/pool/main/libe/libexif/libexif_0.6.21-2.1.debian.tar.xz' libexif_0.6.21-2.1.debian.tar.xz 9696 SHA256:d9aa6ebdc988f04d02984370ca3728aa3ae53c311ec67123e1dc01d589f0096c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libexif/0.6.21-2.1/
 
-- https://sources.debian.net/src/libexif/0.6.21-2.1/ (for browsing the source)
-- https://sources.debian.net/src/libexif/0.6.21-2.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libexif/0.6.21-2.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libffi=3.2.1-6`
 
@@ -4173,20 +4152,13 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.26.0-1
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.26.0-1.dsc' nghttp2_1.26.0-1.dsc 2310 SHA256:89da72c5cf1d3b299338e942cc849c551d07ab9b1cfd8a932270b188e840ff7e
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.26.0.orig.tar.bz2' nghttp2_1.26.0.orig.tar.bz2 1840832 SHA256:0df4229f4123b5aa96e834ebcfdffe954e93d986f0252fd10123d50c6f010983
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.26.0-1.debian.tar.xz' nghttp2_1.26.0-1.debian.tar.xz 12016 SHA256:480f9fbf4cbbbc49326737f9d93fed10a469d1bac0b4b7ef885a62c60237e3a9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nghttp2/1.26.0-1/
 
-- https://sources.debian.net/src/nghttp2/1.26.0-1/ (for browsing the source)
-- https://sources.debian.net/src/nghttp2/1.26.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nghttp2/1.26.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `npth=1.5-2`
 
@@ -5191,20 +5163,13 @@ Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`, `/usr/share/doc/lib
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tiff=4.0.8-5
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.8-5.dsc' tiff_4.0.8-5.dsc 2157 SHA256:461a69a1c053f98981fc92f243ab616c1bb971186b452e54f98f26d19fc95769
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.8.orig.tar.gz' tiff_4.0.8.orig.tar.gz 2065574 SHA256:59d7a5a8ccd92059913f246877db95a2918e6c04fb9d43fd74e5c3390dac2910
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.8-5.debian.tar.xz' tiff_4.0.8-5.debian.tar.xz 24124 SHA256:0a72efaba5da935537dd7dc28593503c3a0161d954fcd2da6eb511c0238d1387
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tiff/4.0.8-5/
 
-- https://sources.debian.net/src/tiff/4.0.8-5/ (for browsing the source)
-- https://sources.debian.net/src/tiff/4.0.8-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tiff/4.0.8-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tzdata=2017b-2`
 
