@@ -2,15 +2,15 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:97dbd18772c407993ca62b44a3526d925b57581125d53ee28871a73eee062c92`
-- Created: `2017-10-12T17:37:00.475452942Z`
-- Virtual Size: ~ 887.37 Mb  
+- Image ID: `sha256:8ad91548541fe7f33f27428958e6713e2ee9f83e5e29f419da6fa9ee4ca39168`
+- Created: `2017-10-27T17:40:46.71202429Z`
+- Virtual Size: ~ 887.42 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["iex"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `OTP_VERSION=20.1.2`
+  - `OTP_VERSION=20.1.3`
   - `REBAR_VERSION=2.6.4`
   - `REBAR3_VERSION=3.4.4`
   - `ELIXIR_VERSION=v1.5.2`
@@ -730,20 +730,13 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `ISC`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.38.0-4+deb8u6
-'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0-4+deb8u6.dsc' curl_7.38.0-4+deb8u6.dsc 2669 SHA256:ed599fd1b78609ab0d91125d095ce88c8bfece997cece225cdec251c888766cd
-'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0.orig.tar.gz' curl_7.38.0.orig.tar.gz 4094034 SHA256:5661028aa6532882fa228cd23c99ddbb8b87643dbb1a7ea55c068d34a943dff1
-'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0-4+deb8u6.debian.tar.xz' curl_7.38.0-4+deb8u6.debian.tar.xz 42064 SHA256:16a861a007d3ea6db80608bf6b27221f9cdc9bf0ee0b931c32971014d5cd2863
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/7.38.0-4+deb8u6/
 
-- https://sources.debian.net/src/curl/7.38.0-4+deb8u6/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.38.0-4+deb8u6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.38.0-4+deb8u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-13+deb8u1`
 
