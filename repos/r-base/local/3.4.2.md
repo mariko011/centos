@@ -497,16 +497,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris curl=7.55.1-1
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.55.1-1.dsc' curl_7.55.1-1.dsc 2712 SHA256:dc8890b7c70c5d376f8f65c5aa96627ebf768511228fc513496175a87215da6d
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.55.1.orig.tar.gz' curl_7.55.1.orig.tar.gz 3736406 SHA256:09576ea5e66672648d83dce3af16d0cb294d4cba2b5d166ade39655c495f4a20
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.55.1-1.debian.tar.xz' curl_7.55.1-1.debian.tar.xz 28136 SHA256:7c9d3959512e3149661552ecb169f0a79b16cfbb00079563c4e718f68543a831
+'http://http.debian.net/debian/pool/main/c/curl/curl_7.55.1-1.dsc' curl_7.55.1-1.dsc 2712 SHA256:dc8890b7c70c5d376f8f65c5aa96627ebf768511228fc513496175a87215da6d
+'http://http.debian.net/debian/pool/main/c/curl/curl_7.55.1.orig.tar.gz' curl_7.55.1.orig.tar.gz 3736406 SHA256:09576ea5e66672648d83dce3af16d0cb294d4cba2b5d166ade39655c495f4a20
+'http://http.debian.net/debian/pool/main/c/curl/curl_7.55.1-1.debian.tar.xz' curl_7.55.1-1.debian.tar.xz 28136 SHA256:7c9d3959512e3149661552ecb169f0a79b16cfbb00079563c4e718f68543a831
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/curl/7.55.1-1/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.55.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.55.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3`
 
@@ -1297,20 +1291,13 @@ Licenses: (parsed from: `/usr/share/doc/libharfbuzz0b/copyright`)
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris harfbuzz=1.5.1-1
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_1.5.1-1.dsc' harfbuzz_1.5.1-1.dsc 2655 SHA256:6a07c65509ca8f32db3ae677d61961816a69c737bcd1194c4c1a81511becef4a
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_1.5.1.orig.tar.bz2' harfbuzz_1.5.1.orig.tar.bz2 1615704 SHA256:56838dfdad2729b8866763c82d623354d138a4d99d9ffb710c7d377b5cfc7c51
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_1.5.1-1.debian.tar.xz' harfbuzz_1.5.1-1.debian.tar.xz 8576 SHA256:0e1f5f02ee3144065c1bcc61775446e1c1041829649f52b59572b7897bde1936
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/harfbuzz/1.5.1-1/
 
-- https://sources.debian.net/src/harfbuzz/1.5.1-1/ (for browsing the source)
-- https://sources.debian.net/src/harfbuzz/1.5.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/harfbuzz/1.5.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `hostname=3.18`
 
@@ -3166,16 +3153,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris r-base=3.4.2-1
-'http://deb.debian.org/debian/pool/main/r/r-base/r-base_3.4.2-1.dsc' r-base_3.4.2-1.dsc 2832 SHA256:d0559b10660b63e3752500c2a17c4ba23e92c5162d021cf9a07bad7c2610fb4a
-'http://deb.debian.org/debian/pool/main/r/r-base/r-base_3.4.2.orig.tar.gz' r-base_3.4.2.orig.tar.gz 30255544 SHA256:971e30c2436cf645f58552905105d75788bd9733bddbcb7c4fbff4c1a6d80c64
-'http://deb.debian.org/debian/pool/main/r/r-base/r-base_3.4.2-1.debian.tar.xz' r-base_3.4.2-1.debian.tar.xz 87344 SHA256:cc750595f200ecd3e5bea04b4abccb8bccbeb179450f15958979d67692fc3e49
+'http://http.debian.net/debian/pool/main/r/r-base/r-base_3.4.2-1.dsc' r-base_3.4.2-1.dsc 2832 SHA256:d0559b10660b63e3752500c2a17c4ba23e92c5162d021cf9a07bad7c2610fb4a
+'http://http.debian.net/debian/pool/main/r/r-base/r-base_3.4.2.orig.tar.gz' r-base_3.4.2.orig.tar.gz 30255544 SHA256:971e30c2436cf645f58552905105d75788bd9733bddbcb7c4fbff4c1a6d80c64
+'http://http.debian.net/debian/pool/main/r/r-base/r-base_3.4.2-1.debian.tar.xz' r-base_3.4.2-1.debian.tar.xz 87344 SHA256:cc750595f200ecd3e5bea04b4abccb8bccbeb179450f15958979d67692fc3e49
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/r-base/3.4.2-1/ (for browsing the source)
-- https://sources.debian.net/src/r-base/3.4.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/r-base/3.4.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `r-cran-class=7.3-14-2`
 
@@ -3628,20 +3609,13 @@ Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`)
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tiff=4.0.8-5
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.8-5.dsc' tiff_4.0.8-5.dsc 2157 SHA256:461a69a1c053f98981fc92f243ab616c1bb971186b452e54f98f26d19fc95769
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.8.orig.tar.gz' tiff_4.0.8.orig.tar.gz 2065574 SHA256:59d7a5a8ccd92059913f246877db95a2918e6c04fb9d43fd74e5c3390dac2910
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.8-5.debian.tar.xz' tiff_4.0.8-5.debian.tar.xz 24124 SHA256:0a72efaba5da935537dd7dc28593503c3a0161d954fcd2da6eb511c0238d1387
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tiff/4.0.8-5/
 
-- https://sources.debian.net/src/tiff/4.0.8-5/ (for browsing the source)
-- https://sources.debian.net/src/tiff/4.0.8-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tiff/4.0.8-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tk8.6=8.6.7-1`
 
@@ -3678,20 +3652,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2017b-2
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017b-2.dsc' tzdata_2017b-2.dsc 2005 SHA256:479f7a077690c3d84f15dc8be1da0a732a54cc07f7b30ca7fad6a5bd00921748
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017b.orig.tar.gz' tzdata_2017b.orig.tar.gz 324317 SHA256:f8242a522ea3496b0ce4ff4f2e75a049178da21001a08b8e666d8cbe07d18086
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017b-2.debian.tar.xz' tzdata_2017b-2.debian.tar.xz 101096 SHA256:2607bdfaa4535e59223d194c1cc1891a3c26a731d20a4a1d9311d22d1a9175d8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2017b-2/
 
-- https://sources.debian.net/src/tzdata/2017b-2/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2017b-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2017b-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0036`
 
