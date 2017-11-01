@@ -1,10 +1,10 @@
-# `maven:3.5.0-jdk-8-slim`
+# `maven:3.5.2-jdk-8-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b8c4173bcfc5761a2ad170b87e0ca452669d3ca7011ef7cdd479af358f8a73ec`
-- Created: `2017-10-10T09:58:37.488251463Z`
-- Virtual Size: ~ 266.03 Mb  
+- Image ID: `sha256:76e98f4df01b655079f3314dc2ae45690e91d460b78fb4ecb52cab2652228c86`
+- Created: `2017-10-30T20:05:43.31576245Z`
+- Virtual Size: ~ 266.39 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -439,12 +439,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/cups/2.2.1-8/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/cups/2.2.1-8/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `curl=7.52.1-5+deb9u1`
+### `dpkg` source package: `curl=7.52.1-5+deb9u2`
 
 Binary Packages:
 
-- `curl=7.52.1-5+deb9u1`
-- `libcurl3:amd64=7.52.1-5+deb9u1`
+- `curl=7.52.1-5+deb9u2`
+- `libcurl3:amd64=7.52.1-5+deb9u2`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`)
 
@@ -455,13 +455,20 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris curl=7.52.1-5+deb9u2
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.52.1-5+deb9u2.dsc' curl_7.52.1-5+deb9u2.dsc 2818 SHA256:f73c8a248b9c883064f2a6e3641810338ed4fd5e22e30e85e8d4e40427ff00bd
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.52.1.orig.tar.gz' curl_7.52.1.orig.tar.gz 3504621 SHA256:a8984e8b20880b621f61a62d95ff3c0763a3152093a9f9ce4287cfd614add6ae
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.52.1-5+deb9u2.debian.tar.xz' curl_7.52.1-5+deb9u2.debian.tar.xz 35048 SHA256:42d3e01db23a7d5e763f17e4d3aa32f97acfaf3154f246e3be0cbb38a1707450
+```
 
-- http://snapshot.debian.org/package/curl/7.52.1-5+deb9u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/curl/7.52.1-5+deb9u2/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.52.1-5+deb9u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.52.1-5+deb9u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3`
 

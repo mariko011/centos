@@ -1,10 +1,10 @@
-# `maven:3.5.0-jdk-9-slim`
+# `maven:3.5.2-jdk-9-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:36954f355590ebc9efe4252facdcffd1720045ed27f72d5149fb5c41b6bba7ab`
-- Created: `2017-10-10T09:59:19.977280166Z`
-- Virtual Size: ~ 390.12 Mb  
+- Image ID: `sha256:629b66ea1155404dc7bfcba092d8b709e70a3185df11e10c32119359515dd382`
+- Created: `2017-10-30T20:06:18.555021758Z`
+- Virtual Size: ~ 390.51 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -405,12 +405,12 @@ The source package *may* still be available for download from:
 - http://snapshot.debian.org/package/cups/2.2.4-7/
 
 
-### `dpkg` source package: `curl=7.55.1-1`
+### `dpkg` source package: `curl=7.56.1-1`
 
 Binary Packages:
 
-- `curl=7.55.1-1`
-- `libcurl3:amd64=7.55.1-1`
+- `curl=7.56.1-1`
+- `libcurl3:amd64=7.56.1-1`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`)
 
@@ -424,17 +424,17 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 Source:
 
 ```console
-$ apt-get source -qq --print-uris curl=7.55.1-1
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.55.1-1.dsc' curl_7.55.1-1.dsc 2712 SHA256:dc8890b7c70c5d376f8f65c5aa96627ebf768511228fc513496175a87215da6d
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.55.1.orig.tar.gz' curl_7.55.1.orig.tar.gz 3736406 SHA256:09576ea5e66672648d83dce3af16d0cb294d4cba2b5d166ade39655c495f4a20
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.55.1-1.debian.tar.xz' curl_7.55.1-1.debian.tar.xz 28136 SHA256:7c9d3959512e3149661552ecb169f0a79b16cfbb00079563c4e718f68543a831
+$ apt-get source -qq --print-uris curl=7.56.1-1
+'http://deb.debian.org/debian/pool/main/c/curl/curl_7.56.1-1.dsc' curl_7.56.1-1.dsc 2737 SHA256:3b4a9d68bb96db9838536916678cfef384bf7d0455dad98a36550f07ea0eb3ca
+'http://deb.debian.org/debian/pool/main/c/curl/curl_7.56.1.orig.tar.gz' curl_7.56.1.orig.tar.gz 3799766 SHA256:961a25531d72a843dfcce87b290e7a882f2d376f3b88de11df009710019c5b16
+'http://deb.debian.org/debian/pool/main/c/curl/curl_7.56.1-1.debian.tar.xz' curl_7.56.1-1.debian.tar.xz 27512 SHA256:a99a91f2a10fba2b13ecacbba55287b1c1f6613cc479030c4d5fcc1a74fd1740
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/curl/7.55.1-1/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.55.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.55.1-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/curl/7.56.1-1/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.56.1-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.56.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3`
 
@@ -1956,11 +1956,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nettle/3.3-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nettle/3.3-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `nghttp2=1.26.0-1`
+### `dpkg` source package: `nghttp2=1.27.0-1`
 
 Binary Packages:
 
-- `libnghttp2-14:amd64=1.26.0-1`
+- `libnghttp2-14:amd64=1.27.0-1`
 
 Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 
@@ -1975,17 +1975,17 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris nghttp2=1.26.0-1
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.26.0-1.dsc' nghttp2_1.26.0-1.dsc 2310 SHA256:89da72c5cf1d3b299338e942cc849c551d07ab9b1cfd8a932270b188e840ff7e
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.26.0.orig.tar.bz2' nghttp2_1.26.0.orig.tar.bz2 1840832 SHA256:0df4229f4123b5aa96e834ebcfdffe954e93d986f0252fd10123d50c6f010983
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.26.0-1.debian.tar.xz' nghttp2_1.26.0-1.debian.tar.xz 12016 SHA256:480f9fbf4cbbbc49326737f9d93fed10a469d1bac0b4b7ef885a62c60237e3a9
+$ apt-get source -qq --print-uris nghttp2=1.27.0-1
+'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.27.0-1.dsc' nghttp2_1.27.0-1.dsc 2311 SHA256:de36f3508ed53e3b090cf06b1b3efe1080907229a5e0192367ca92e9fc651c3a
+'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.27.0.orig.tar.bz2' nghttp2_1.27.0.orig.tar.bz2 1840935 SHA256:d3c9542e26c3819c50963e02d285973b38ec1dd2816133c852a224f0bd911952
+'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.27.0-1.debian.tar.xz' nghttp2_1.27.0-1.debian.tar.xz 12024 SHA256:cc34f00f32a7022dc26b158328dfd72de69e079efd47468bd2c8b3cb40ad65f3
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/nghttp2/1.26.0-1/ (for browsing the source)
-- https://sources.debian.net/src/nghttp2/1.26.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nghttp2/1.26.0-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/nghttp2/1.27.0-1/ (for browsing the source)
+- https://sources.debian.net/src/nghttp2/1.27.0-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/nghttp2/1.27.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `nspr=2:4.16-1`
 

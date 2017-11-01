@@ -1,10 +1,10 @@
-# `maven:3.5.0-ibmjava-9-alpine`
+# `maven:3.5.2-ibmjava-9-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2661ad675c727838e13e1c83f75dbe96b5e39104bb4f756b3ec59d49bf08de68`
-- Created: `2017-10-26T04:40:30.769228547Z`
-- Virtual Size: ~ 448.32 Mb  
+- Image ID: `sha256:2be27a43676cf1e228ab30d4c9cebf16dc6c7035f84f7774f05b9fcf226d2aa9`
+- Created: `2017-10-30T20:07:22.43474137Z`
+- Virtual Size: ~ 448.68 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`

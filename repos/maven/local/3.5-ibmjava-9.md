@@ -1,10 +1,10 @@
-# `maven:3.5.0-ibmjava-9`
+# `maven:3.5.2-ibmjava-9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ff8fa5c08179ba3c9e8fee73e8cc055cba19929f9d373012c0a424f11044b44d`
-- Created: `2017-10-10T22:40:36.571603536Z`
-- Virtual Size: ~ 608.47 Mb  
+- Image ID: `sha256:6c584e572a093d7dc2b436547c776c7068d89fed1c9357118b896154eb01533b`
+- Created: `2017-10-30T20:07:43.159157167Z`
+- Virtual Size: ~ 608.87 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -292,12 +292,12 @@ $ apt-get source -qq --print-uris cryptsetup=2:1.6.6-5ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cryptsetup/cryptsetup_1.6.6-5ubuntu2.1.debian.tar.xz' cryptsetup_1.6.6-5ubuntu2.1.debian.tar.xz 91808 SHA256:0979ff24a2c4ecc5471a017b286cd7a4ccc497e72854b02aadc21465dcce96e4
 ```
 
-### `dpkg` source package: `curl=7.47.0-1ubuntu2.3`
+### `dpkg` source package: `curl=7.47.0-1ubuntu2.4`
 
 Binary Packages:
 
-- `curl=7.47.0-1ubuntu2.3`
-- `libcurl3-gnutls:amd64=7.47.0-1ubuntu2.3`
+- `curl=7.47.0-1ubuntu2.4`
+- `libcurl3-gnutls:amd64=7.47.0-1ubuntu2.4`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`)
 
@@ -308,9 +308,14 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.47.0-1ubuntu2.4
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0-1ubuntu2.4.dsc' curl_7.47.0-1ubuntu2.4.dsc 2715 SHA256:d6fc4c5cc89128855a269c6edf25548708d0ac3f4745ecce195ef896bb46e810
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0.orig.tar.gz' curl_7.47.0.orig.tar.gz 4563163 SHA256:df01bd42af361978d9de7de8529718bcafe01897a544a7650139a1954c55bdfe
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0-1ubuntu2.4.debian.tar.xz' curl_7.47.0-1ubuntu2.4.debian.tar.xz 43268 SHA256:ff240ddb2f1851f14b0e178b118c40de8fabb55f94b8e8781104453d7a6a254e
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-14build1`
 
@@ -611,11 +616,11 @@ $ apt-get source -qq --print-uris gnupg=1.4.20-1ubuntu3.1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg/gnupg_1.4.20-1ubuntu3.1.debian.tar.xz' gnupg_1.4.20-1ubuntu3.1.debian.tar.xz 38320 SHA256:a299bedd609dd8a8f488db64c6a13361599ba0f906a805730496f9973257d91c
 ```
 
-### `dpkg` source package: `gnutls28=3.4.10-4ubuntu1.3`
+### `dpkg` source package: `gnutls28=3.4.10-4ubuntu1.4`
 
 Binary Packages:
 
-- `libgnutls30:amd64=3.4.10-4ubuntu1.3`
+- `libgnutls30:amd64=3.4.10-4ubuntu1.4`
 
 Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 
@@ -633,10 +638,10 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gnutls28=3.4.10-4ubuntu1.3
-'http://security.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.4.10-4ubuntu1.3.dsc' gnutls28_3.4.10-4ubuntu1.3.dsc 3076 SHA256:fdd0345d4528501ba95271e175b984172ffdb2cfbd7062576be1c6751c7acc6f
-'http://security.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.4.10.orig.tar.xz' gnutls28_3.4.10.orig.tar.xz 6645892 SHA256:6a32c2b4acbd33ff7eefcbd1357009da04c94c60146ef61320b6c076b1bdf59f
-'http://security.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.4.10-4ubuntu1.3.debian.tar.xz' gnutls28_3.4.10-4ubuntu1.3.debian.tar.xz 96112 SHA256:d3609837d6415df3bda609dc4c6eacf657f5e76c4a32cfab606e813ec2e18835
+$ apt-get source -qq --print-uris gnutls28=3.4.10-4ubuntu1.4
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.4.10-4ubuntu1.4.dsc' gnutls28_3.4.10-4ubuntu1.4.dsc 3076 SHA256:48a249686197b4548b2ef1cef1cb71a2ed7c662b2a449fed0987e53c44afc610
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.4.10.orig.tar.xz' gnutls28_3.4.10.orig.tar.xz 6645892 SHA256:6a32c2b4acbd33ff7eefcbd1357009da04c94c60146ef61320b6c076b1bdf59f
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.4.10-4ubuntu1.4.debian.tar.xz' gnutls28_3.4.10-4ubuntu1.4.debian.tar.xz 96568 SHA256:b32bfc6bd9b4c54c83de5ea318e76e5d5e5bfcbd3311179cb472680a7209d880
 ```
 
 ### `dpkg` source package: `grep=2.25-1~16.04.1`
