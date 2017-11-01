@@ -22,7 +22,7 @@
 ## `redmine:3`
 
 ```console
-$ docker pull redmine@sha256:472383bd559be1b23c7b532ce93c70541aa284098e8e37ab71848ef9fbfa14a6
+$ docker pull redmine@sha256:c0ec78a3c6efc31beb72d716d83f210ec60a15c6590bb76fe9ef253e4a865eb0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -743,14 +743,14 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 ### `redmine:3` - linux; ppc64le
 
 ```console
-$ docker pull redmine@sha256:f6ddb2d19ef9296ee8f9bc4e5f0dfcb49bca0cb127b7e9c2dc4dfca6b2676138
+$ docker pull redmine@sha256:ef29900b29066ab68498a3ad1618b8c91dd590b731064bd6106d49e3f3507285
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **239.8 MB (239848372 bytes)**  
+-	Total Size: **239.8 MB (239848369 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:375f18b81a09ba64e7aa62b679035640c7ccf111e443825f41ffdda9eb5e9986`
+-	Image ID: `sha256:251ae0c532972b481a84b80bbad8aed1b09d87c0eff711ed57543c80f66a3770`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["rails","server","-b","0.0.0.0"]`
 
@@ -813,13 +813,13 @@ RUN wget -O redmine.tar.gz "https://www.redmine.org/releases/redmine-${REDMINE_V
 RUN buildDeps=' 		gcc 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libpq-dev 		libsqlite3-dev 		make 		patch 	' 	&& set -ex 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -rf /var/lib/apt/lists/* 	&& bundle install --without development test 	&& for adapter in mysql2 postgresql sqlite3; do 		echo "$RAILS_ENV:" > ./config/database.yml; 		echo "  adapter: $adapter" >> ./config/database.yml; 		bundle install --without development test; 		cp Gemfile.lock "Gemfile.lock.${adapter}"; 	done 	&& rm ./config/database.yml 	&& apt-get purge -y --auto-remove $buildDeps
 # Thu, 26 Oct 2017 02:27:00 GMT
 VOLUME [/usr/src/redmine/files]
-# Thu, 26 Oct 2017 02:27:03 GMT
-COPY file:48ac4da47b7f343106bccb51ed58f7693c40d728da4301b808bf2ce826c7c41d in / 
-# Thu, 26 Oct 2017 02:27:08 GMT
+# Wed, 01 Nov 2017 13:48:26 GMT
+COPY file:c528f0ec041fb8cc2ac2be3e5ef52d70d1dcd0b5aa20216909017d412967719a in / 
+# Wed, 01 Nov 2017 13:48:28 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 26 Oct 2017 02:27:11 GMT
+# Wed, 01 Nov 2017 13:48:29 GMT
 EXPOSE 3000/tcp
-# Thu, 26 Oct 2017 02:27:14 GMT
+# Wed, 01 Nov 2017 13:48:31 GMT
 CMD ["rails" "server" "-b" "0.0.0.0"]
 ```
 
@@ -876,9 +876,9 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 		Last Modified: Thu, 26 Oct 2017 03:04:27 GMT  
 		Size: 77.4 MB (77410364 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1750e6d08b1fc4f3b62ff76804860007a05b8d2be3f541f4f0715656ab5abae0`  
-		Last Modified: Thu, 26 Oct 2017 03:04:11 GMT  
-		Size: 1.7 KB (1709 bytes)  
+	-	`sha256:10e4fae2351ba201f803dac4ad242289fd2b73e679c14384596bc2a41027f4e9`  
+		Last Modified: Wed, 01 Nov 2017 13:49:13 GMT  
+		Size: 1.7 KB (1706 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redmine:3` - linux; s390x
@@ -3365,7 +3365,7 @@ CMD ["passenger" "start"]
 ## `redmine:3.3`
 
 ```console
-$ docker pull redmine@sha256:c83aac76442918aa3333a0df8f53458d5b7e3494b0d55c768c9008c0235d2c12
+$ docker pull redmine@sha256:4a252cde20c3b475a40c5570e82ce33574db4107733a021ef4a838d38f0b13ba
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4086,14 +4086,14 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 ### `redmine:3.3` - linux; ppc64le
 
 ```console
-$ docker pull redmine@sha256:7ded266de949b9233a9f732d1678ea3c67fdb4e1b9653d275f8756e8f42c2a6e
+$ docker pull redmine@sha256:182ae33dd049296c43b612b310efd82b945a9c5f59455a7c7e27fedb7b96acee
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.6 MB (251643713 bytes)**  
+-	Total Size: **251.6 MB (251643710 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:578ac3dc011fb40ad5a707a2d546626a2547c73d4ac1d1616e52848b1b3113ff`
+-	Image ID: `sha256:d43f1d449f1d015a941247e78175241ca2f6f7a4d33709c2865a262405b0d4ed`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["rails","server","-b","0.0.0.0"]`
 
@@ -4156,13 +4156,13 @@ RUN wget -O redmine.tar.gz "https://www.redmine.org/releases/redmine-${REDMINE_V
 RUN buildDeps=' 		gcc 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libpq-dev 		libsqlite3-dev 		make 		patch 	' 	&& set -ex 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -rf /var/lib/apt/lists/* 	&& bundle install --without development test 	&& for adapter in mysql2 postgresql sqlite3; do 		echo "$RAILS_ENV:" > ./config/database.yml; 		echo "  adapter: $adapter" >> ./config/database.yml; 		bundle install --without development test; 		cp Gemfile.lock "Gemfile.lock.${adapter}"; 	done 	&& rm ./config/database.yml 	&& apt-get purge -y --auto-remove $buildDeps
 # Thu, 26 Oct 2017 02:50:07 GMT
 VOLUME [/usr/src/redmine/files]
-# Thu, 26 Oct 2017 02:50:09 GMT
-COPY file:48ac4da47b7f343106bccb51ed58f7693c40d728da4301b808bf2ce826c7c41d in / 
-# Thu, 26 Oct 2017 02:50:15 GMT
+# Wed, 01 Nov 2017 13:48:39 GMT
+COPY file:c528f0ec041fb8cc2ac2be3e5ef52d70d1dcd0b5aa20216909017d412967719a in / 
+# Wed, 01 Nov 2017 13:48:41 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 26 Oct 2017 02:50:17 GMT
+# Wed, 01 Nov 2017 13:48:43 GMT
 EXPOSE 3000/tcp
-# Thu, 26 Oct 2017 02:50:18 GMT
+# Wed, 01 Nov 2017 13:48:45 GMT
 CMD ["rails" "server" "-b" "0.0.0.0"]
 ```
 
@@ -4219,9 +4219,9 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 		Last Modified: Thu, 26 Oct 2017 03:05:15 GMT  
 		Size: 78.1 MB (78093538 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e176d74a9c4893891a96fb0e0609a34ecb7fca0f4d54343d07860f20515488ad`  
-		Last Modified: Thu, 26 Oct 2017 03:05:00 GMT  
-		Size: 1.7 KB (1709 bytes)  
+	-	`sha256:aeaeee43485fe4f37e498dc26e78274b947b4be4991fe42a8189e83bb2e353cb`  
+		Last Modified: Wed, 01 Nov 2017 13:49:45 GMT  
+		Size: 1.7 KB (1706 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redmine:3.3` - linux; s390x
@@ -4368,7 +4368,7 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 ## `redmine:3.3.5`
 
 ```console
-$ docker pull redmine@sha256:c83aac76442918aa3333a0df8f53458d5b7e3494b0d55c768c9008c0235d2c12
+$ docker pull redmine@sha256:4a252cde20c3b475a40c5570e82ce33574db4107733a021ef4a838d38f0b13ba
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5089,14 +5089,14 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 ### `redmine:3.3.5` - linux; ppc64le
 
 ```console
-$ docker pull redmine@sha256:7ded266de949b9233a9f732d1678ea3c67fdb4e1b9653d275f8756e8f42c2a6e
+$ docker pull redmine@sha256:182ae33dd049296c43b612b310efd82b945a9c5f59455a7c7e27fedb7b96acee
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.6 MB (251643713 bytes)**  
+-	Total Size: **251.6 MB (251643710 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:578ac3dc011fb40ad5a707a2d546626a2547c73d4ac1d1616e52848b1b3113ff`
+-	Image ID: `sha256:d43f1d449f1d015a941247e78175241ca2f6f7a4d33709c2865a262405b0d4ed`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["rails","server","-b","0.0.0.0"]`
 
@@ -5159,13 +5159,13 @@ RUN wget -O redmine.tar.gz "https://www.redmine.org/releases/redmine-${REDMINE_V
 RUN buildDeps=' 		gcc 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libpq-dev 		libsqlite3-dev 		make 		patch 	' 	&& set -ex 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -rf /var/lib/apt/lists/* 	&& bundle install --without development test 	&& for adapter in mysql2 postgresql sqlite3; do 		echo "$RAILS_ENV:" > ./config/database.yml; 		echo "  adapter: $adapter" >> ./config/database.yml; 		bundle install --without development test; 		cp Gemfile.lock "Gemfile.lock.${adapter}"; 	done 	&& rm ./config/database.yml 	&& apt-get purge -y --auto-remove $buildDeps
 # Thu, 26 Oct 2017 02:50:07 GMT
 VOLUME [/usr/src/redmine/files]
-# Thu, 26 Oct 2017 02:50:09 GMT
-COPY file:48ac4da47b7f343106bccb51ed58f7693c40d728da4301b808bf2ce826c7c41d in / 
-# Thu, 26 Oct 2017 02:50:15 GMT
+# Wed, 01 Nov 2017 13:48:39 GMT
+COPY file:c528f0ec041fb8cc2ac2be3e5ef52d70d1dcd0b5aa20216909017d412967719a in / 
+# Wed, 01 Nov 2017 13:48:41 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 26 Oct 2017 02:50:17 GMT
+# Wed, 01 Nov 2017 13:48:43 GMT
 EXPOSE 3000/tcp
-# Thu, 26 Oct 2017 02:50:18 GMT
+# Wed, 01 Nov 2017 13:48:45 GMT
 CMD ["rails" "server" "-b" "0.0.0.0"]
 ```
 
@@ -5222,9 +5222,9 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 		Last Modified: Thu, 26 Oct 2017 03:05:15 GMT  
 		Size: 78.1 MB (78093538 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e176d74a9c4893891a96fb0e0609a34ecb7fca0f4d54343d07860f20515488ad`  
-		Last Modified: Thu, 26 Oct 2017 03:05:00 GMT  
-		Size: 1.7 KB (1709 bytes)  
+	-	`sha256:aeaeee43485fe4f37e498dc26e78274b947b4be4991fe42a8189e83bb2e353cb`  
+		Last Modified: Wed, 01 Nov 2017 13:49:45 GMT  
+		Size: 1.7 KB (1706 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redmine:3.3.5` - linux; s390x
@@ -5705,7 +5705,7 @@ CMD ["passenger" "start"]
 ## `redmine:3.4`
 
 ```console
-$ docker pull redmine@sha256:472383bd559be1b23c7b532ce93c70541aa284098e8e37ab71848ef9fbfa14a6
+$ docker pull redmine@sha256:c0ec78a3c6efc31beb72d716d83f210ec60a15c6590bb76fe9ef253e4a865eb0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6426,14 +6426,14 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 ### `redmine:3.4` - linux; ppc64le
 
 ```console
-$ docker pull redmine@sha256:f6ddb2d19ef9296ee8f9bc4e5f0dfcb49bca0cb127b7e9c2dc4dfca6b2676138
+$ docker pull redmine@sha256:ef29900b29066ab68498a3ad1618b8c91dd590b731064bd6106d49e3f3507285
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **239.8 MB (239848372 bytes)**  
+-	Total Size: **239.8 MB (239848369 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:375f18b81a09ba64e7aa62b679035640c7ccf111e443825f41ffdda9eb5e9986`
+-	Image ID: `sha256:251ae0c532972b481a84b80bbad8aed1b09d87c0eff711ed57543c80f66a3770`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["rails","server","-b","0.0.0.0"]`
 
@@ -6496,13 +6496,13 @@ RUN wget -O redmine.tar.gz "https://www.redmine.org/releases/redmine-${REDMINE_V
 RUN buildDeps=' 		gcc 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libpq-dev 		libsqlite3-dev 		make 		patch 	' 	&& set -ex 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -rf /var/lib/apt/lists/* 	&& bundle install --without development test 	&& for adapter in mysql2 postgresql sqlite3; do 		echo "$RAILS_ENV:" > ./config/database.yml; 		echo "  adapter: $adapter" >> ./config/database.yml; 		bundle install --without development test; 		cp Gemfile.lock "Gemfile.lock.${adapter}"; 	done 	&& rm ./config/database.yml 	&& apt-get purge -y --auto-remove $buildDeps
 # Thu, 26 Oct 2017 02:27:00 GMT
 VOLUME [/usr/src/redmine/files]
-# Thu, 26 Oct 2017 02:27:03 GMT
-COPY file:48ac4da47b7f343106bccb51ed58f7693c40d728da4301b808bf2ce826c7c41d in / 
-# Thu, 26 Oct 2017 02:27:08 GMT
+# Wed, 01 Nov 2017 13:48:26 GMT
+COPY file:c528f0ec041fb8cc2ac2be3e5ef52d70d1dcd0b5aa20216909017d412967719a in / 
+# Wed, 01 Nov 2017 13:48:28 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 26 Oct 2017 02:27:11 GMT
+# Wed, 01 Nov 2017 13:48:29 GMT
 EXPOSE 3000/tcp
-# Thu, 26 Oct 2017 02:27:14 GMT
+# Wed, 01 Nov 2017 13:48:31 GMT
 CMD ["rails" "server" "-b" "0.0.0.0"]
 ```
 
@@ -6559,9 +6559,9 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 		Last Modified: Thu, 26 Oct 2017 03:04:27 GMT  
 		Size: 77.4 MB (77410364 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1750e6d08b1fc4f3b62ff76804860007a05b8d2be3f541f4f0715656ab5abae0`  
-		Last Modified: Thu, 26 Oct 2017 03:04:11 GMT  
-		Size: 1.7 KB (1709 bytes)  
+	-	`sha256:10e4fae2351ba201f803dac4ad242289fd2b73e679c14384596bc2a41027f4e9`  
+		Last Modified: Wed, 01 Nov 2017 13:49:13 GMT  
+		Size: 1.7 KB (1706 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redmine:3.4` - linux; s390x
@@ -6708,7 +6708,7 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 ## `redmine:3.4.3`
 
 ```console
-$ docker pull redmine@sha256:472383bd559be1b23c7b532ce93c70541aa284098e8e37ab71848ef9fbfa14a6
+$ docker pull redmine@sha256:c0ec78a3c6efc31beb72d716d83f210ec60a15c6590bb76fe9ef253e4a865eb0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7429,14 +7429,14 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 ### `redmine:3.4.3` - linux; ppc64le
 
 ```console
-$ docker pull redmine@sha256:f6ddb2d19ef9296ee8f9bc4e5f0dfcb49bca0cb127b7e9c2dc4dfca6b2676138
+$ docker pull redmine@sha256:ef29900b29066ab68498a3ad1618b8c91dd590b731064bd6106d49e3f3507285
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **239.8 MB (239848372 bytes)**  
+-	Total Size: **239.8 MB (239848369 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:375f18b81a09ba64e7aa62b679035640c7ccf111e443825f41ffdda9eb5e9986`
+-	Image ID: `sha256:251ae0c532972b481a84b80bbad8aed1b09d87c0eff711ed57543c80f66a3770`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["rails","server","-b","0.0.0.0"]`
 
@@ -7499,13 +7499,13 @@ RUN wget -O redmine.tar.gz "https://www.redmine.org/releases/redmine-${REDMINE_V
 RUN buildDeps=' 		gcc 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libpq-dev 		libsqlite3-dev 		make 		patch 	' 	&& set -ex 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -rf /var/lib/apt/lists/* 	&& bundle install --without development test 	&& for adapter in mysql2 postgresql sqlite3; do 		echo "$RAILS_ENV:" > ./config/database.yml; 		echo "  adapter: $adapter" >> ./config/database.yml; 		bundle install --without development test; 		cp Gemfile.lock "Gemfile.lock.${adapter}"; 	done 	&& rm ./config/database.yml 	&& apt-get purge -y --auto-remove $buildDeps
 # Thu, 26 Oct 2017 02:27:00 GMT
 VOLUME [/usr/src/redmine/files]
-# Thu, 26 Oct 2017 02:27:03 GMT
-COPY file:48ac4da47b7f343106bccb51ed58f7693c40d728da4301b808bf2ce826c7c41d in / 
-# Thu, 26 Oct 2017 02:27:08 GMT
+# Wed, 01 Nov 2017 13:48:26 GMT
+COPY file:c528f0ec041fb8cc2ac2be3e5ef52d70d1dcd0b5aa20216909017d412967719a in / 
+# Wed, 01 Nov 2017 13:48:28 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 26 Oct 2017 02:27:11 GMT
+# Wed, 01 Nov 2017 13:48:29 GMT
 EXPOSE 3000/tcp
-# Thu, 26 Oct 2017 02:27:14 GMT
+# Wed, 01 Nov 2017 13:48:31 GMT
 CMD ["rails" "server" "-b" "0.0.0.0"]
 ```
 
@@ -7562,9 +7562,9 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 		Last Modified: Thu, 26 Oct 2017 03:04:27 GMT  
 		Size: 77.4 MB (77410364 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1750e6d08b1fc4f3b62ff76804860007a05b8d2be3f541f4f0715656ab5abae0`  
-		Last Modified: Thu, 26 Oct 2017 03:04:11 GMT  
-		Size: 1.7 KB (1709 bytes)  
+	-	`sha256:10e4fae2351ba201f803dac4ad242289fd2b73e679c14384596bc2a41027f4e9`  
+		Last Modified: Wed, 01 Nov 2017 13:49:13 GMT  
+		Size: 1.7 KB (1706 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redmine:3.4.3` - linux; s390x
