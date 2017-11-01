@@ -1,7 +1,7 @@
 ## `docker:17-dind`
 
 ```console
-$ docker pull docker@sha256:0fada51bee84cac096e3f00802e125515da90368e7c0ecae08165e2764b4bb68
+$ docker pull docker@sha256:a0783cf0465b7a92fc605166b407ca1d1f01c5b369d71d5af228b29ad76175c2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -305,14 +305,14 @@ CMD []
 ### `docker:17-dind` - linux; s390x
 
 ```console
-$ docker pull docker@sha256:7a4e3ab75d84624bb6a7224cf5c30f78da0818f470f5eb3e4845a321be0a5571
+$ docker pull docker@sha256:6519a03a857c7221f8a860a5661f6a2eb511d4e126b7328b37126a805099004a
 ```
 
 -	Docker Version: 17.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **35.1 MB (35143969 bytes)**  
+-	Total Size: **36.9 MB (36945607 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f3774a44a5c47d7468e7d721b805e3d2739254692476b907b7b737bb21826378`
+-	Image ID: `sha256:d3ba75f4098513e8c847d145d3a93d7ea7fe92e9d3e6879f03fa81eea4e8bedf`
 -	Entrypoint: `["dockerd-entrypoint.sh"]`
 -	Default Command: `[]`
 
@@ -339,23 +339,23 @@ COPY file:0d94e1cd679f133aab807891a1b00b6aef1a9f1f884108e7a17ddf50ab88f1fb in /u
 ENTRYPOINT ["docker-entrypoint.sh"]
 # Thu, 26 Oct 2017 03:01:42 GMT
 CMD ["sh"]
-# Thu, 26 Oct 2017 03:01:56 GMT
-RUN apk add --no-cache 		btrfs-progs 		e2fsprogs 		e2fsprogs-extra 		iptables 		xfsprogs 		xz
-# Thu, 26 Oct 2017 03:01:57 GMT
+# Wed, 01 Nov 2017 03:01:44 GMT
+RUN apk add --no-cache 		btrfs-progs 		e2fsprogs 		e2fsprogs-extra 		iptables 		xfsprogs 		xz 		zfs
+# Wed, 01 Nov 2017 03:01:44 GMT
 RUN set -x 	&& addgroup -S dockremap 	&& adduser -S -G dockremap dockremap 	&& echo 'dockremap:165536:65536' >> /etc/subuid 	&& echo 'dockremap:165536:65536' >> /etc/subgid
-# Thu, 26 Oct 2017 03:01:57 GMT
+# Wed, 01 Nov 2017 03:01:44 GMT
 ENV DIND_COMMIT=3b5fac462d21ca164b3778647420016315289034
-# Thu, 26 Oct 2017 03:02:00 GMT
+# Wed, 01 Nov 2017 03:01:48 GMT
 RUN set -ex; 	apk add --no-cache --virtual .fetch-deps libressl; 	wget -O /usr/local/bin/dind "https://raw.githubusercontent.com/docker/docker/${DIND_COMMIT}/hack/dind"; 	chmod +x /usr/local/bin/dind; 	apk del .fetch-deps
-# Thu, 26 Oct 2017 03:02:00 GMT
-COPY file:7070e4b35c137a8ec5904300d19b8f7ee74aa76659517767c617249cece98a4a in /usr/local/bin/ 
-# Thu, 26 Oct 2017 03:02:01 GMT
+# Wed, 01 Nov 2017 03:01:48 GMT
+COPY file:14215a2b157618f9ff66709b019144b953b95bbd7273096e970306475e524820 in /usr/local/bin/ 
+# Wed, 01 Nov 2017 03:01:48 GMT
 VOLUME [/var/lib/docker]
-# Thu, 26 Oct 2017 03:02:01 GMT
+# Wed, 01 Nov 2017 03:01:48 GMT
 EXPOSE 2375/tcp
-# Thu, 26 Oct 2017 03:02:01 GMT
+# Wed, 01 Nov 2017 03:01:48 GMT
 ENTRYPOINT ["dockerd-entrypoint.sh"]
-# Thu, 26 Oct 2017 03:02:01 GMT
+# Wed, 01 Nov 2017 03:01:49 GMT
 CMD []
 ```
 
@@ -384,19 +384,19 @@ CMD []
 		Last Modified: Thu, 26 Oct 2017 03:03:38 GMT  
 		Size: 741.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11d431807efdfc0072396a709563d30a3a90e544908f62dd87eae037b3b171e8`  
-		Last Modified: Thu, 26 Oct 2017 03:04:12 GMT  
-		Size: 2.3 MB (2346717 bytes)  
+	-	`sha256:41bd558a95d4fd1ccbec73b1666cb436bbc1a9e65b9b1d9d40d8eb4d17cc26ec`  
+		Last Modified: Wed, 01 Nov 2017 03:02:53 GMT  
+		Size: 4.1 MB (4144733 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bcbee49ab4b290fea3da470f7b9f3189c44aa2ae5276b6a1b260254bc4b9b6e9`  
-		Last Modified: Thu, 26 Oct 2017 03:04:12 GMT  
-		Size: 1.3 KB (1305 bytes)  
+	-	`sha256:94ef148e5dbaa9c467ef13001a9fd637cb9d747f9d98946f21eee4a06338b491`  
+		Last Modified: Wed, 01 Nov 2017 03:02:52 GMT  
+		Size: 1.3 KB (1307 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eeef88a2435654c8ff836b93ccc3e6cfeeca022744cad203637ae215beaa654f`  
-		Last Modified: Thu, 26 Oct 2017 03:04:12 GMT  
-		Size: 176.1 KB (176133 bytes)  
+	-	`sha256:da4133abb59c11614de6fb724d0f8b9167c9d36adf31630afa878e91d0f98c68`  
+		Last Modified: Wed, 01 Nov 2017 03:02:52 GMT  
+		Size: 179.8 KB (179769 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:348a62cebee3849ab608f710fc5409b2d6b2710ff0526a82e73788f65612818a`  
-		Last Modified: Thu, 26 Oct 2017 03:04:12 GMT  
-		Size: 497.0 B  
+	-	`sha256:3bbdfc263e5015a0d2c44de50449bbe4fd86d381ec64138880ea9d34cdf8c6d7`  
+		Last Modified: Wed, 01 Nov 2017 03:02:52 GMT  
+		Size: 481.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
