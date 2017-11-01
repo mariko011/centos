@@ -241,20 +241,13 @@ Licenses: (parsed from: `/usr/share/doc/libatk-bridge2.0-0/copyright`)
 - `LGPL-2+`
 - `Unlimited`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris at-spi2-atk=2.26.0-1
-'http://deb.debian.org/debian/pool/main/a/at-spi2-atk/at-spi2-atk_2.26.0-1.dsc' at-spi2-atk_2.26.0-1.dsc 2502 SHA256:9f3158b65335dc9cf53daf7fb7854b6e0bf3db62333a5e0d756da1c6ca8a489e
-'http://deb.debian.org/debian/pool/main/a/at-spi2-atk/at-spi2-atk_2.26.0.orig.tar.xz' at-spi2-atk_2.26.0.orig.tar.xz 322468 SHA256:d25e528e1406a10c7d9b675aa15e638bcbf0a122ca3681f655a30cce83272fb9
-'http://deb.debian.org/debian/pool/main/a/at-spi2-atk/at-spi2-atk_2.26.0-1.debian.tar.xz' at-spi2-atk_2.26.0-1.debian.tar.xz 9220 SHA256:3bcb3d351d579ef403c203f987e23091621a56265a11bfcb8365187cafa0dc65
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/at-spi2-atk/2.26.0-1/
 
-- https://sources.debian.net/src/at-spi2-atk/2.26.0-1/ (for browsing the source)
-- https://sources.debian.net/src/at-spi2-atk/2.26.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/at-spi2-atk/2.26.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `at-spi2-core=2.26.0-2`
 
@@ -275,20 +268,13 @@ Licenses: (parsed from: `/usr/share/doc/at-spi2-core/copyright`, `/usr/share/doc
 - `Unlimited`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris at-spi2-core=2.26.0-2
-'http://deb.debian.org/debian/pool/main/a/at-spi2-core/at-spi2-core_2.26.0-2.dsc' at-spi2-core_2.26.0-2.dsc 2600 SHA256:f8bcfd3432eccd900951abc2e6b1d6046ed2fc89a8e5600fdad9ef0792221804
-'http://deb.debian.org/debian/pool/main/a/at-spi2-core/at-spi2-core_2.26.0.orig.tar.xz' at-spi2-core_2.26.0.orig.tar.xz 501428 SHA256:511568a65fda11fdd5ba5d4adfd48d5d76810d0e6ba4f7460f1b2ec0dbbbc337
-'http://deb.debian.org/debian/pool/main/a/at-spi2-core/at-spi2-core_2.26.0-2.debian.tar.xz' at-spi2-core_2.26.0-2.debian.tar.xz 8896 SHA256:4c234e3aa03eb222cdd207d3ccfff41fe598080bf749d99a63127436a426551f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/at-spi2-core/2.26.0-2/
 
-- https://sources.debian.net/src/at-spi2-core/2.26.0-2/ (for browsing the source)
-- https://sources.debian.net/src/at-spi2-core/2.26.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/at-spi2-core/2.26.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `atk1.0=2.26.0-2`
 
@@ -301,20 +287,13 @@ Licenses: (parsed from: `/usr/share/doc/libatk1.0-0/copyright`, `/usr/share/doc/
 
 - `LGPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris atk1.0=2.26.0-2
-'http://deb.debian.org/debian/pool/main/a/atk1.0/atk1.0_2.26.0-2.dsc' atk1.0_2.26.0-2.dsc 2807 SHA256:b667d253f54c991acd7778d8424916cadf75893e6e45d7c5edc619f7b4d626f9
-'http://deb.debian.org/debian/pool/main/a/atk1.0/atk1.0_2.26.0.orig.tar.xz' atk1.0_2.26.0.orig.tar.xz 710436 SHA256:eafe49d5c4546cb723ec98053290d7e0b8d85b3fdb123938213acb7bb4178827
-'http://deb.debian.org/debian/pool/main/a/atk1.0/atk1.0_2.26.0-2.debian.tar.xz' atk1.0_2.26.0-2.debian.tar.xz 10936 SHA256:ed114fd8b1c84695edc3335dd6b7298b7c03dc3b704c7fc17409311c86905dc7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/atk1.0/2.26.0-2/
 
-- https://sources.debian.net/src/atk1.0/2.26.0-2/ (for browsing the source)
-- https://sources.debian.net/src/atk1.0/2.26.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/atk1.0/2.26.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
@@ -1382,20 +1361,13 @@ Licenses: (parsed from: `/usr/share/doc/glib-networking/copyright`, `/usr/share/
 - `LGPL-2+`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib-networking=2.54.0-1
-'http://deb.debian.org/debian/pool/main/g/glib-networking/glib-networking_2.54.0-1.dsc' glib-networking_2.54.0-1.dsc 2536 SHA256:33ef77260603b8030e8b7cf054dc3da70b74f24df2b366294b070ed793428583
-'http://deb.debian.org/debian/pool/main/g/glib-networking/glib-networking_2.54.0.orig.tar.xz' glib-networking_2.54.0.orig.tar.xz 439996 SHA256:5961b3779080b72314b373ff5d4790eb7e41b75ca91816ad7a81ef32922f7096
-'http://deb.debian.org/debian/pool/main/g/glib-networking/glib-networking_2.54.0-1.debian.tar.xz' glib-networking_2.54.0-1.debian.tar.xz 7332 SHA256:41188febcf77c91c748c15d75ec07807637a5525c1bc1444632b3ef49c7e96b4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/glib-networking/2.54.0-1/
 
-- https://sources.debian.net/src/glib-networking/2.54.0-1/ (for browsing the source)
-- https://sources.debian.net/src/glib-networking/2.54.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glib-networking/2.54.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glib2.0=2.54.1-1`
 
@@ -4144,20 +4116,13 @@ Licenses: (parsed from: `/usr/share/doc/libpango-1.0-0/copyright`, `/usr/share/d
 - `LGPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pango1.0=1.40.12-1
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.40.12-1.dsc' pango1.0_1.40.12-1.dsc 3315 SHA256:21e17cb046cc0823eda025b5be6e88cb8acf00c2e5230699e3456f55e745265d
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.40.12.orig.tar.xz' pango1.0_1.40.12.orig.tar.xz 856228 SHA256:75f1a9a8e4e2b28cbc078b50c1fa927ee4ded994d1ade97c5603e2d1f3161cfc
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.40.12-1.debian.tar.xz' pango1.0_1.40.12-1.debian.tar.xz 27520 SHA256:54a1093a552551e5ae215c2664a4bf80e2b6d9646887d7384184974d72c469d1
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pango1.0/1.40.12-1/
 
-- https://sources.debian.net/src/pango1.0/1.40.12-1/ (for browsing the source)
-- https://sources.debian.net/src/pango1.0/1.40.12-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pango1.0/1.40.12-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pcre2=10.22-3`
 
@@ -4746,20 +4711,13 @@ Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`)
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tiff=4.0.8-5
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.8-5.dsc' tiff_4.0.8-5.dsc 2157 SHA256:461a69a1c053f98981fc92f243ab616c1bb971186b452e54f98f26d19fc95769
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.8.orig.tar.gz' tiff_4.0.8.orig.tar.gz 2065574 SHA256:59d7a5a8ccd92059913f246877db95a2918e6c04fb9d43fd74e5c3390dac2910
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.8-5.debian.tar.xz' tiff_4.0.8-5.debian.tar.xz 24124 SHA256:0a72efaba5da935537dd7dc28593503c3a0161d954fcd2da6eb511c0238d1387
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tiff/4.0.8-5/
 
-- https://sources.debian.net/src/tiff/4.0.8-5/ (for browsing the source)
-- https://sources.debian.net/src/tiff/4.0.8-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tiff/4.0.8-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tzdata=2017b-2`
 
