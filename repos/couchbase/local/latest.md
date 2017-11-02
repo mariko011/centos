@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a2caf73ea2d0a5596c98fb578c3b57120a13f1eba208353791e825a66bc8c8d1`
-- Created: `2017-10-24T22:04:51.502846279Z`
+- Image ID: `sha256:3074490212bc5dc544cb996c865804b1a27cc1a9f9fe5233e1f7084ab8e68611`
+- Created: `2017-11-01T17:05:27.311568555Z`
 - Virtual Size: ~ 554.98 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1739,14 +1739,9 @@ Licenses: (parsed from: `/usr/share/doc/lshw/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lshw=02.16-2ubuntu1.3
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lshw/lshw_02.16-2ubuntu1.3.dsc' lshw_02.16-2ubuntu1.3.dsc 1789 SHA256:6b4c81cb838dab7a11b83098dfed3b22c6edc2ea8e2c84d608a64e0de6a44346
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lshw/lshw_02.16.orig.tar.gz' lshw_02.16.orig.tar.gz 1845891 SHA256:809882429555b93259785cc261dbff04c16c93d064db5f445a51945bc47157cb
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lshw/lshw_02.16-2ubuntu1.3.diff.gz' lshw_02.16-2ubuntu1.3.diff.gz 17536 SHA256:970b0bf1a5922488b4c1595c46bcf3b2b7edcaa74413452baaa477c404245365
-```
 
 ### `dpkg` source package: `lsof=4.86+dfsg-1ubuntu2`
 
