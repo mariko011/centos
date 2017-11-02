@@ -1,7 +1,7 @@
 ## `buildpack-deps:zesty-scm`
 
 ```console
-$ docker pull buildpack-deps@sha256:fe6ab3f1f6b940da39f7b463b86731bc3e21e9b9225cb660f1b63b7aedab01e2
+$ docker pull buildpack-deps@sha256:80e76d177ba1bfb7cb445956b07b6525bf5ae56d42bcebc1949e096384abc28d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -336,14 +336,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		m
 ### `buildpack-deps:zesty-scm` - linux; s390x
 
 ```console
-$ docker pull buildpack-deps@sha256:e8b3946c9f363e11d2d2e45a49f172792329a8cb42df0126ccc89ff16fa1b84d
+$ docker pull buildpack-deps@sha256:0e1238c27d131d3efc40b84cf0627c0bfffefbce43a22b9b4a8c7fbc268c35eb
 ```
 
 -	Docker Version: 17.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **89.0 MB (88992568 bytes)**  
+-	Total Size: **89.0 MB (88993485 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:67716f7fc5b27768b55ab49289bd54f61ce608b2b89bc562ac21e7c3c2975366`
+-	Image ID: `sha256:7d2ff499c775650c379e3014aae65e30a4d38f2e2d1d0069c378965aecb21afd`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -361,9 +361,9 @@ RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 CMD ["/bin/bash"]
 # Mon, 18 Sep 2017 23:59:19 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 18 Sep 2017 23:59:20 GMT
-RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 19 Sep 2017 00:00:03 GMT
+# Thu, 02 Nov 2017 16:49:33 GMT
+RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
+# Thu, 02 Nov 2017 16:50:01 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 ```
 
@@ -392,7 +392,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		m
 		Last Modified: Tue, 19 Sep 2017 00:05:51 GMT  
 		Size: 7.3 MB (7258238 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:61d3d294ffe6b7896403aded8089e7f96b592b489f18b756bf848dc56ffebf41`  
-		Last Modified: Tue, 19 Sep 2017 00:06:06 GMT  
-		Size: 44.1 MB (44126823 bytes)  
+	-	`sha256:4bdb542aedfac0bd237208f3ef74832548048fe70f845e629d1c1c55967f4f79`  
+		Last Modified: Thu, 02 Nov 2017 16:59:58 GMT  
+		Size: 44.1 MB (44127740 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

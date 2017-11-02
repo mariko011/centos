@@ -1,7 +1,7 @@
 ## `buildpack-deps:jessie-curl`
 
 ```console
-$ docker pull buildpack-deps@sha256:68e3a2708f4e7bb8b70d931d04ff3864865fbeb729109b762cd4d3511520bd63
+$ docker pull buildpack-deps@sha256:c441edf2f5bf08aa056125c01159076810812f243c352533453e5f2b3e2ed549
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -221,14 +221,14 @@ RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get 
 ### `buildpack-deps:jessie-curl` - linux; s390x
 
 ```console
-$ docker pull buildpack-deps@sha256:9b1078138a28825c4b486579dc27b091929f7d4e50a3b0fbe38eb170ed4beac8
+$ docker pull buildpack-deps@sha256:b2f431ac837dc10c620193123a3a0890fd3b31fb8da23326c669fe81e037c21a
 ```
 
 -	Docker Version: 17.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **72.3 MB (72259646 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:623c39e9ae5913eda6d3968e34034a0089d78eabee12cb7fe53b9c059cc0d814`
+-	Image ID: `sha256:04f2ac57071d5a89173b2aa3523c76e626c26334b3ef0f422602fccd77dcb5c4`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -238,8 +238,8 @@ ADD file:1c306ad85a0adf89bf603a6f6a34a1059ddfa0811704a847df3e785c487ee58f in /
 CMD ["bash"]
 # Mon, 09 Oct 2017 22:10:29 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 09 Oct 2017 22:10:31 GMT
-RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
+# Thu, 02 Nov 2017 16:40:55 GMT
+RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 ```
 
 -	Layers:
