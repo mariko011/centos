@@ -1,7 +1,7 @@
 ## `node:4-stretch`
 
 ```console
-$ docker pull node@sha256:d5613fc5802f723061c530202c7832bfe19701caf5bfd6657ad4e543cf6289bd
+$ docker pull node@sha256:aaf9fd12926c3d8f01a1ba5fb1ed493588f09a9a757857387e435675ddafd5ff
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -174,14 +174,14 @@ CMD ["node"]
 ### `node:4-stretch` - linux; arm64 variant v8
 
 ```console
-$ docker pull node@sha256:34bbe245c6964efc777a98a06da9734fe2d31b021b6d3f003d61c062c3cea345
+$ docker pull node@sha256:28c9f0d1ecd1d1262e36481c5ab528b1a5822d0d9a13f87d2341aafdcdc16814
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **319.1 MB (319118124 bytes)**  
+-	Total Size: **319.9 MB (319931773 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bdcf4e0c26633bb623c3ee696c1c173d55ca6fa0459bc1f19cbf66383e7ba2cf`
+-	Image ID: `sha256:3b0e8ac27fe15e5cfb5287df3fad9daa15688008b14dd14c22d7b3de6f800eee`
 -	Default Command: `["node"]`
 
 ```dockerfile
@@ -195,21 +195,21 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Mon, 09 Oct 2017 23:07:33 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 09 Oct 2017 23:17:34 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 10 Oct 2017 09:10:54 GMT
+# Thu, 02 Nov 2017 10:12:27 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Thu, 02 Nov 2017 15:16:35 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node
-# Wed, 01 Nov 2017 23:44:22 GMT
+# Thu, 02 Nov 2017 15:16:44 GMT
 RUN set -ex   && for key in     94AE36675C464D64BAFA68DD7434390BDBE9B9C5     FD3A5288F042B6850C66B31F09FE44734EB7990E     71DCFD284A79C3B38668286BC97EC7A07EDE3FC1     DD8F2338BAE7501E3DD5AC78C273792F7D83545D     C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8     B9AE9905FFD7803F25714661B63B535A4C206CA9     56730D5401028683275BD23C23EFEFE93C4CFFFE     77984A986EBC2AA786BC0F66B01FBB92821C587A   ; do     gpg --keyserver pgp.mit.edu --recv-keys "$key" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$key" ||     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key" ;   done
-# Thu, 02 Nov 2017 00:21:00 GMT
+# Thu, 02 Nov 2017 15:23:25 GMT
 ENV NODE_VERSION=4.8.5
-# Thu, 02 Nov 2017 00:21:06 GMT
+# Thu, 02 Nov 2017 15:23:35 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)"   && case "${dpkgArch##*-}" in     amd64) ARCH='x64';;     ppc64el) ARCH='ppc64le';;     s390x) ARCH='s390x';;     arm64) ARCH='arm64';;     armhf) ARCH='armv7l';;     *) echo "unsupported architecture"; exit 1 ;;   esac   && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"   && curl -SLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"   && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc   && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -   && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1   && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt   && ln -s /usr/local/bin/node /usr/local/bin/nodejs
-# Thu, 02 Nov 2017 00:21:07 GMT
+# Thu, 02 Nov 2017 15:23:36 GMT
 ENV YARN_VERSION=1.2.1
-# Thu, 02 Nov 2017 00:21:13 GMT
+# Thu, 02 Nov 2017 15:23:50 GMT
 RUN set -ex   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --keyserver pgp.mit.edu --recv-keys "$key" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$key" ||     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key" ;   done   && curl -fSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && mkdir -p /opt/yarn   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/yarn --strip-components=1   && ln -s /opt/yarn/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn/bin/yarn /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz
-# Thu, 02 Nov 2017 00:21:14 GMT
+# Thu, 02 Nov 2017 15:23:51 GMT
 CMD ["node"]
 ```
 
@@ -230,25 +230,25 @@ CMD ["node"]
 		Last Modified: Mon, 09 Oct 2017 23:35:03 GMT  
 		Size: 48.0 MB (47973994 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:26c91ac7b9fdc4fd9893504b5d1e6211a77ba8286a16d9dce779f8e04abc6894`  
-		Last Modified: Mon, 09 Oct 2017 23:37:20 GMT  
-		Size: 200.3 MB (200256724 bytes)  
+	-	`sha256:79f285b7cd8ee1a7158533202cee624a4d830f95af91f40b4cd2a33dc35ff943`  
+		Last Modified: Thu, 02 Nov 2017 10:36:28 GMT  
+		Size: 201.1 MB (201070402 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:123915eb97c8a5a5dfa8a9906a987b1343b3591922c2c8d3892bd079902afcb6`  
-		Last Modified: Tue, 10 Oct 2017 09:20:53 GMT  
-		Size: 4.2 KB (4171 bytes)  
+	-	`sha256:96938dad7b66b20ed36b11a49974161cac6a4dc11bd0ebf5ab7afdf1f9216b7c`  
+		Last Modified: Thu, 02 Nov 2017 15:28:32 GMT  
+		Size: 4.2 KB (4178 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ad6cc52f8701e8bbf2f748dda5ef3542dd5bbcd98a8762e9fe5bc45caea56467`  
-		Last Modified: Thu, 02 Nov 2017 00:26:43 GMT  
-		Size: 113.6 KB (113595 bytes)  
+	-	`sha256:d574fdd9b8a8bbc3700b84277b713bd319d1a97100dcab014c7c847d9f1e6f8d`  
+		Last Modified: Thu, 02 Nov 2017 15:28:33 GMT  
+		Size: 113.6 KB (113585 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:60963b7da17de7a4ac1b94f34f86acbf89c8d8b840168f6d1a67fa6ee357b4c9`  
-		Last Modified: Thu, 02 Nov 2017 00:41:54 GMT  
-		Size: 12.4 MB (12395895 bytes)  
+	-	`sha256:61e6a2394ddbd9118a48d8d8930b13c07b1fa1014439d62d276f4e4114824355`  
+		Last Modified: Thu, 02 Nov 2017 15:45:21 GMT  
+		Size: 12.4 MB (12395870 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9b0f0ae372463708830c59179744d8c872090a88a10d24e2c685f6538dfc2255`  
-		Last Modified: Thu, 02 Nov 2017 00:41:54 GMT  
-		Size: 1.0 MB (1010380 bytes)  
+	-	`sha256:65ab9a8533463635bc931f0913882dbbbcd32d58209e4d164a3da85d8eb9effa`  
+		Last Modified: Thu, 02 Nov 2017 15:45:11 GMT  
+		Size: 1.0 MB (1010379 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `node:4-stretch` - linux; ppc64le
