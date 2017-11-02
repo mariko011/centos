@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:188351f00031f80235570e6d6c514c3f7dada7342047ced42ef2f58de68594ee`
-- Created: `2017-10-13T20:09:17.987489627Z`
+- Image ID: `sha256:b90da56d699a07d703bec426fc11d5e1571c8dbfcb7520e613e5064f2b078ea8`
+- Created: `2017-11-01T22:19:41.646766327Z`
 - Virtual Size: ~ 1.15 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,8 +11,9 @@
 - Command: `["odoo"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+  - `LANG=C.UTF-8`
   - `ODOO_VERSION=11.0`
-  - `ODOO_RELEASE=20171013`
+  - `ODOO_RELEASE=20171030`
   - `ODOO_RC=/etc/odoo/odoo.conf`
 
 ## `dpkg` (`.deb`-based packages)
@@ -426,12 +427,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/coreutils/8.26-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/coreutils/8.26-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `curl=7.52.1-5+deb9u1`
+### `dpkg` source package: `curl=7.52.1-5+deb9u2`
 
 Binary Packages:
 
-- `curl=7.52.1-5+deb9u1`
-- `libcurl3:amd64=7.52.1-5+deb9u1`
+- `curl=7.52.1-5+deb9u2`
+- `libcurl3:amd64=7.52.1-5+deb9u2`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`)
 
@@ -442,13 +443,20 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris curl=7.52.1-5+deb9u2
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.52.1-5+deb9u2.dsc' curl_7.52.1-5+deb9u2.dsc 2818 SHA256:f73c8a248b9c883064f2a6e3641810338ed4fd5e22e30e85e8d4e40427ff00bd
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.52.1.orig.tar.gz' curl_7.52.1.orig.tar.gz 3504621 SHA256:a8984e8b20880b621f61a62d95ff3c0763a3152093a9f9ce4287cfd614add6ae
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.52.1-5+deb9u2.debian.tar.xz' curl_7.52.1-5+deb9u2.debian.tar.xz 35048 SHA256:42d3e01db23a7d5e763f17e4d3aa32f97acfaf3154f246e3be0cbb38a1707450
+```
 
-- http://snapshot.debian.org/package/curl/7.52.1-5+deb9u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/curl/7.52.1-5+deb9u2/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.52.1-5+deb9u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.52.1-5+deb9u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3`
 
@@ -3077,11 +3085,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nodejs/4.8.2~dfsg-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nodejs/4.8.2~dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `odoo=11.0.20171013`
+### `dpkg` source package: `odoo=11.0.20171030`
 
 Binary Packages:
 
-- `odoo=11.0.20171013`
+- `odoo=11.0.20171030`
 
 Licenses: (parsed from: `/usr/share/doc/odoo/copyright`)
 
