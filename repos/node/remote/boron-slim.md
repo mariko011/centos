@@ -1,7 +1,7 @@
 ## `node:boron-slim`
 
 ```console
-$ docker pull node@sha256:9ffb720864d823ae11b714a2945e30ac606cc93aec07b356797e816ae5c24f61
+$ docker pull node@sha256:0280a46be9f2b39fcb54054b73c7f10c48e40c6ff222e4d7433a61aba9911874
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -143,14 +143,14 @@ CMD ["node"]
 ### `node:boron-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull node@sha256:610f93fe740a07377bcf0f3bc3ca190d9701b92b74bb480c587ad296978bdc7d
+$ docker pull node@sha256:027c35e627518c41cb895f8252421b4cb483fcc745155663fdd646f85c27a229
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **84.5 MB (84496017 bytes)**  
+-	Total Size: **84.5 MB (84502493 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:19e6f9c20fd8e7d0cf3d5801789733c5ea1e97333271d1f703d3831a643a29cb`
+-	Image ID: `sha256:55ad8e5ca20bb45a25dec06ce392f5ca10ded1ff8d9e25956fa5e4150735e360`
 -	Default Command: `["node"]`
 
 ```dockerfile
@@ -164,17 +164,17 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Tue, 10 Oct 2017 09:09:19 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node
-# Thu, 26 Oct 2017 12:05:07 GMT
-RUN set -ex   && for key in     94AE36675C464D64BAFA68DD7434390BDBE9B9C5     FD3A5288F042B6850C66B31F09FE44734EB7990E     71DCFD284A79C3B38668286BC97EC7A07EDE3FC1     DD8F2338BAE7501E3DD5AC78C273792F7D83545D     C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8     B9AE9905FFD7803F25714661B63B535A4C206CA9     56730D5401028683275BD23C23EFEFE93C4CFFFE   ; do     gpg --keyserver pgp.mit.edu --recv-keys "$key" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$key" ||     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key" ;   done
-# Thu, 26 Oct 2017 12:07:25 GMT
+# Wed, 01 Nov 2017 23:43:22 GMT
+RUN set -ex   && for key in     94AE36675C464D64BAFA68DD7434390BDBE9B9C5     FD3A5288F042B6850C66B31F09FE44734EB7990E     71DCFD284A79C3B38668286BC97EC7A07EDE3FC1     DD8F2338BAE7501E3DD5AC78C273792F7D83545D     C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8     B9AE9905FFD7803F25714661B63B535A4C206CA9     56730D5401028683275BD23C23EFEFE93C4CFFFE     77984A986EBC2AA786BC0F66B01FBB92821C587A   ; do     gpg --keyserver pgp.mit.edu --recv-keys "$key" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$key" ||     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key" ;   done
+# Thu, 02 Nov 2017 00:17:57 GMT
 ENV NODE_VERSION=6.11.5
-# Thu, 26 Oct 2017 12:07:53 GMT
+# Thu, 02 Nov 2017 00:18:23 GMT
 RUN buildDeps='xz-utils'     && ARCH= && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in       amd64) ARCH='x64';;       ppc64el) ARCH='ppc64le';;       s390x) ARCH='s390x';;       arm64) ARCH='arm64';;       armhf) ARCH='armv7l';;       *) echo "unsupported architecture"; exit 1 ;;     esac     && set -x     && apt-get update && apt-get install -y $buildDeps --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"     && curl -SLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1     && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && apt-get purge -y --auto-remove $buildDeps     && ln -s /usr/local/bin/node /usr/local/bin/nodejs
-# Thu, 26 Oct 2017 12:07:54 GMT
+# Thu, 02 Nov 2017 00:18:24 GMT
 ENV YARN_VERSION=1.2.1
-# Thu, 26 Oct 2017 12:07:59 GMT
+# Thu, 02 Nov 2017 00:18:28 GMT
 RUN set -ex   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --keyserver pgp.mit.edu --recv-keys "$key" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$key" ||     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key" ;   done   && curl -fSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && mkdir -p /opt/yarn   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/yarn --strip-components=1   && ln -s /opt/yarn/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn/bin/yarn /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz
-# Thu, 26 Oct 2017 12:07:59 GMT
+# Thu, 02 Nov 2017 00:18:29 GMT
 CMD ["node"]
 ```
 
@@ -191,17 +191,17 @@ CMD ["node"]
 		Last Modified: Tue, 10 Oct 2017 09:19:48 GMT  
 		Size: 4.4 KB (4407 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3f88065c04d684bd603d739538dd2f159d57eb10fd441928f10104a836ee0e73`  
-		Last Modified: Thu, 26 Oct 2017 12:13:30 GMT  
-		Size: 114.3 KB (114297 bytes)  
+	-	`sha256:c5446afda637c84f3791ccb0db5e123ffde24130b37d5cbb7f606fa12a19b7be`  
+		Last Modified: Thu, 02 Nov 2017 00:25:25 GMT  
+		Size: 116.5 KB (116487 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f4f045821bee3a5b4f24ec12b23ee75dbe2fcafc7ab5423cf11d17aa04d63b7`  
-		Last Modified: Thu, 26 Oct 2017 12:18:14 GMT  
-		Size: 14.7 MB (14705772 bytes)  
+	-	`sha256:2a476d6cf6f1e7fa489e59b424177d587190253fcef09195d85178bc94eb9645`  
+		Last Modified: Thu, 02 Nov 2017 00:35:58 GMT  
+		Size: 14.7 MB (14705786 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:437dc6c7153e8206e1091f63d47e4ddfde61671cf409f6291f90294920f80ab1`  
-		Last Modified: Thu, 26 Oct 2017 12:18:09 GMT  
-		Size: 1.0 MB (1004173 bytes)  
+	-	`sha256:15e38876d55b7b198c78e8e5cc8ca862a4654ebf71c2a10b220615589e7e004f`  
+		Last Modified: Thu, 02 Nov 2017 00:35:53 GMT  
+		Size: 1.0 MB (1008445 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `node:boron-slim` - linux; ppc64le

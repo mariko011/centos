@@ -1,7 +1,7 @@
 ## `busybox:musl`
 
 ```console
-$ docker pull busybox@sha256:bb76178dbdc440b9c7898334a4e49ee4dcad6a88410e22aa8a6bf9f451a22ee4
+$ docker pull busybox@sha256:f5a8c19ba6dde6ea8fcfffa320fe5f5f7911d8d930376035c82c7dea68469f2c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16,27 +16,27 @@ $ docker pull busybox@sha256:bb76178dbdc440b9c7898334a4e49ee4dcad6a88410e22aa8a6
 ### `busybox:musl` - linux; amd64
 
 ```console
-$ docker pull busybox@sha256:4831b0e3611d831c0bb5c9e44b0a538adfacb4ec3cab0ff2077423ce37273055
+$ docker pull busybox@sha256:2eca0373ab211b402758ed5b6d4cc605a7e87596a54f1f635d38864fb069f47a
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **760.1 KB (760117 bytes)**  
+-	Total Size: **760.1 KB (760150 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:625ee5f9b576ba938b00fba2b5e79d226f5fb5a2fc502ba1fa426760cfa72127`
+-	Image ID: `sha256:52892566d9275b38a4667d7089294171e1498b40ae39dbf9536a8143068bf992`
 -	Default Command: `["sh"]`
 
 ```dockerfile
-# Wed, 13 Sep 2017 10:14:21 GMT
-ADD file:44743c3a1ce2289b7722d89e5a3e9c639d87b40801377fd32df7c38549238983 in / 
-# Wed, 13 Sep 2017 10:14:21 GMT
+# Thu, 02 Nov 2017 00:21:01 GMT
+ADD file:f1a345f200de55fa1e09d94dc4a48bbcaea3c253266209dcb79a6d78e3b8d2b6 in / 
+# Thu, 02 Nov 2017 00:21:01 GMT
 CMD ["sh"]
 ```
 
 -	Layers:
-	-	`sha256:60d9832c6cd121c4f0ee360f497f1936deace5eb63e8b0f9654af063283a143f`  
-		Last Modified: Wed, 13 Sep 2017 10:15:01 GMT  
-		Size: 760.1 KB (760117 bytes)  
+	-	`sha256:b9367f5400f82d24c27768efa2a5d4a9e945a80fc16799772ea3b4bf2670c243`  
+		Last Modified: Thu, 02 Nov 2017 00:22:39 GMT  
+		Size: 760.1 KB (760150 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `busybox:musl` - linux; arm variant v6
