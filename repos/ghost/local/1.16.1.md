@@ -1,10 +1,10 @@
-# `ghost:1.16.0`
+# `ghost:1.16.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ea3d66911d488b69a990d2028347859dcb09588d8798dda6d1a645d776209508`
-- Created: `2017-10-26T17:40:13.207079347Z`
-- Virtual Size: ~ 617.28 Mb  
+- Image ID: `sha256:2f9b137d778e93510eb00f57f702e41ba3f97795fd1f261cd7d0111b46966104`
+- Created: `2017-11-01T21:35:17.666547584Z`
+- Virtual Size: ~ 621.45 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,8 +16,8 @@
   - `GOSU_VERSION=1.10`
   - `NPM_CONFIG_LOGLEVEL=warn`
   - `NODE_ENV=production`
-  - `GHOST_CLI_VERSION=1.1.3`
-  - `GHOST_VERSION=1.16.0`
+  - `GHOST_CLI_VERSION=1.2.0`
+  - `GHOST_VERSION=1.16.1`
   - `GHOST_INSTALL=/var/lib/ghost`
   - `GHOST_CONTENT=/var/lib/ghost/content`
 
