@@ -4253,14 +4253,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `GPL-2`
 - `redpine-signals`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=4.4.0-97.120
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-97.120.dsc' linux_4.4.0-97.120.dsc 9290 SHA256:d8d97533064b742f094029c6d1b5abd113556cac17051b957053c6de0cb7cf98
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-97.120.diff.gz' linux_4.4.0-97.120.diff.gz 13634106 SHA256:67ee211d2797504a5b374b5319cfa515c6f2d4eebe1b4a8a7017013570ce7dd8
-```
 
 ### `dpkg` source package: `llvm-toolchain-4.0=1:4.0-1ubuntu1~16.04.2`
 
@@ -5259,14 +5254,9 @@ Licenses: (parsed from: `/usr/share/doc/libpoppler58/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris poppler=0.41.0-0ubuntu1.4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.41.0-0ubuntu1.4.dsc' poppler_0.41.0-0ubuntu1.4.dsc 3356 SHA256:64eee2509d6518be2aad8758df57748358bde0ebf1066cffa1cfdea5ac843486
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.41.0.orig.tar.xz' poppler_0.41.0.orig.tar.xz 1655448 SHA256:420abaab63caed9e1ee28964a0ba216d1979506726164bc99ad5ade289192a1b
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.41.0-0ubuntu1.4.debian.tar.xz' poppler_0.41.0-0ubuntu1.4.debian.tar.xz 43568 SHA256:cde92c419dd6046066f8c88e4c71eee1ee37b2bfed1147c680d393c3ed9ff8f9
-```
 
 ### `dpkg` source package: `postgresql-9.5=9.5.9-0ubuntu0.16.04`
 

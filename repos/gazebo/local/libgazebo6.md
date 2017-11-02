@@ -5630,14 +5630,9 @@ Licenses: (parsed from: `/usr/share/doc/libpoppler44/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris poppler=0.24.5-2ubuntu4.7
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.24.5-2ubuntu4.7.dsc' poppler_0.24.5-2ubuntu4.7.dsc 3328 SHA256:3b981d5bfaae772ccb37016a5695e35a9eab6b2f9343b89cce810f812b33ba3f
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.24.5.orig.tar.xz' poppler_0.24.5.orig.tar.xz 1512476 SHA256:a2654910100c923c44e366242495e226db2798254f2fa2781138867348759f84
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.24.5-2ubuntu4.7.debian.tar.gz' poppler_0.24.5-2ubuntu4.7.debian.tar.gz 57322 SHA256:966e130ea6ea05ad84c11906309a7c7310ddb8ea12de0d6b17a00bc77b3c4dc5
-```
 
 ### `dpkg` source package: `popt=1.16-8ubuntu1`
 
