@@ -1,10 +1,10 @@
-# `mariadb:10.2.9`
+# `mariadb:10.2.10`
 
 ## Docker Metadata
 
-- Image ID: `sha256:629d7f88b09c5328285c74d09c3d35dd5e61bcbcb71f4427f66534fcc5d012c1`
-- Created: `2017-10-25T18:57:48.172172996Z`
-- Virtual Size: ~ 396.92 Mb  
+- Image ID: `sha256:9b862fc94ed2b428db4ffb1d7451d49b6158411426bb13a628be91a870df7d49`
+- Created: `2017-11-02T01:12:18.300969349Z`
+- Virtual Size: ~ 397.18 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -14,7 +14,7 @@
   - `GOSU_VERSION=1.7`
   - `GPG_KEYS=199369E5404BD5FC7D2FE43BCBCB082A1BB943DB 	430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 	4D1BB29D63D98E422B2113B19334A25F8507EFA5`
   - `MARIADB_MAJOR=10.2`
-  - `MARIADB_VERSION=10.2.9+maria~jessie`
+  - `MARIADB_VERSION=10.2.10+maria~jessie`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -353,10 +353,9 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libcurl3:amd64=7.38.0-4+deb8u6`
 - `libcurl3-gnutls:amd64=7.38.0-4+deb8u6`
 
-Licenses: (parsed from: `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`)
 
 - `BSD-3-Clause`
 - `BSD-4-Clause`
@@ -370,6 +369,34 @@ The source package *may* still be available for download from:
 
 - http://snapshot.debian.org/package/curl/7.38.0-4+deb8u6/
 
+
+### `dpkg` source package: `curl=7.38.0-4+deb8u7`
+
+Binary Packages:
+
+- `libcurl3:amd64=7.38.0-4+deb8u7`
+
+Licenses: (parsed from: `/usr/share/doc/libcurl3/copyright`)
+
+- `BSD-3-Clause`
+- `BSD-4-Clause`
+- `ISC`
+- `curl`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris curl=7.38.0-4+deb8u7
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0-4+deb8u7.dsc' curl_7.38.0-4+deb8u7.dsc 2694 SHA256:b5bca99d184cfd436d441457df6c5eb660071dab4ff913fc5680278f39c80aa5
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0.orig.tar.gz' curl_7.38.0.orig.tar.gz 4094034 SHA256:5661028aa6532882fa228cd23c99ddbb8b87643dbb1a7ea55c068d34a943dff1
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0-4+deb8u7.debian.tar.xz' curl_7.38.0-4+deb8u7.debian.tar.xz 42300 SHA256:62f8e051409ecbe312a88ba9d4982784742d472d176eec16b4dd19859ae1398d
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/curl/7.38.0-4+deb8u7/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.38.0-4+deb8u7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.38.0-4+deb8u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-13+deb8u1`
 
@@ -2580,19 +2607,19 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/lvm2/2.02.111-2.2+deb8u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/lvm2/2.02.111-2.2+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `mariadb-10.2=10.2.9+maria~jessie`
+### `dpkg` source package: `mariadb-10.2=10.2.10+maria~jessie`
 
 Binary Packages:
 
-- `libmariadb3=10.2.9+maria~jessie`
-- `libmysqlclient18=10.2.9+maria~jessie`
-- `mariadb-client-10.2=10.2.9+maria~jessie`
-- `mariadb-client-core-10.2=10.2.9+maria~jessie`
-- `mariadb-common=10.2.9+maria~jessie`
-- `mariadb-server=10.2.9+maria~jessie`
-- `mariadb-server-10.2=10.2.9+maria~jessie`
-- `mariadb-server-core-10.2=10.2.9+maria~jessie`
-- `mysql-common=10.2.9+maria~jessie`
+- `libmariadb3=10.2.10+maria~jessie`
+- `libmysqlclient18=10.2.10+maria~jessie`
+- `mariadb-client-10.2=10.2.10+maria~jessie`
+- `mariadb-client-core-10.2=10.2.10+maria~jessie`
+- `mariadb-common=10.2.10+maria~jessie`
+- `mariadb-server=10.2.10+maria~jessie`
+- `mariadb-server-10.2=10.2.10+maria~jessie`
+- `mariadb-server-core-10.2=10.2.10+maria~jessie`
+- `mysql-common=10.2.10+maria~jessie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
