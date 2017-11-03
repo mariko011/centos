@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7d0be440f193ed22162f1cf844a67b49d985b9a0293ffba1d93c76aa53107512`
-- Created: `2017-10-10T11:46:30.271104108Z`
-- Virtual Size: ~ 898.77 Mb  
+- Image ID: `sha256:0877e3468d5db905c6a5d2467b8e5f88a89590cd3482e089be16a1e783595d06`
+- Created: `2017-11-02T01:04:06.143161537Z`
+- Virtual Size: ~ 900.89 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["python2"]`
@@ -666,12 +666,9 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `curl=7.52.1-5+deb9u1`
-- `libcurl3:amd64=7.52.1-5+deb9u1`
 - `libcurl3-gnutls:amd64=7.52.1-5+deb9u1`
-- `libcurl4-openssl-dev:amd64=7.52.1-5+deb9u1`
 
-Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`)
 
 - `BSD-3-Clause`
 - `BSD-4-Clause`
@@ -687,6 +684,38 @@ The source package *may* still be available for download from:
 
 - http://snapshot.debian.org/package/curl/7.52.1-5+deb9u1/
 
+
+### `dpkg` source package: `curl=7.52.1-5+deb9u2`
+
+Binary Packages:
+
+- `curl=7.52.1-5+deb9u2`
+- `libcurl3:amd64=7.52.1-5+deb9u2`
+- `libcurl4-openssl-dev:amd64=7.52.1-5+deb9u2`
+
+Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
+
+- `BSD-3-Clause`
+- `BSD-4-Clause`
+- `ISC`
+- `curl`
+- `other`
+- `public-domain`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris curl=7.52.1-5+deb9u2
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.52.1-5+deb9u2.dsc' curl_7.52.1-5+deb9u2.dsc 2818 SHA256:f73c8a248b9c883064f2a6e3641810338ed4fd5e22e30e85e8d4e40427ff00bd
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.52.1.orig.tar.gz' curl_7.52.1.orig.tar.gz 3504621 SHA256:a8984e8b20880b621f61a62d95ff3c0763a3152093a9f9ce4287cfd614add6ae
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.52.1-5+deb9u2.debian.tar.xz' curl_7.52.1-5+deb9u2.debian.tar.xz 35048 SHA256:42d3e01db23a7d5e763f17e4d3aa32f97acfaf3154f246e3be0cbb38a1707450
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/curl/7.52.1-5+deb9u2/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.52.1-5+deb9u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.52.1-5+deb9u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3`
 
@@ -4247,6 +4276,7 @@ Binary Packages:
 - `libncurses5:amd64=6.0+20161126-1+deb9u1`
 - `libncurses5-dev:amd64=6.0+20161126-1+deb9u1`
 - `libncursesw5:amd64=6.0+20161126-1+deb9u1`
+- `libncursesw5-dev:amd64=6.0+20161126-1+deb9u1`
 - `libtinfo-dev:amd64=6.0+20161126-1+deb9u1`
 - `libtinfo5:amd64=6.0+20161126-1+deb9u1`
 - `ncurses-base=6.0+20161126-1+deb9u1`
@@ -4416,12 +4446,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openexr/2.2.0-11/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openexr/2.2.0-11/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openjpeg2=2.1.2-1.1`
+### `dpkg` source package: `openjpeg2=2.1.2-1.1+deb9u2`
 
 Binary Packages:
 
-- `libopenjp2-7:amd64=2.1.2-1.1`
-- `libopenjp2-7-dev=2.1.2-1.1`
+- `libopenjp2-7:amd64=2.1.2-1.1+deb9u2`
+- `libopenjp2-7-dev=2.1.2-1.1+deb9u2`
 
 Licenses: (parsed from: `/usr/share/doc/libopenjp2-7/copyright`, `/usr/share/doc/libopenjp2-7-dev/copyright`)
 
@@ -4438,17 +4468,17 @@ Licenses: (parsed from: `/usr/share/doc/libopenjp2-7/copyright`, `/usr/share/doc
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openjpeg2=2.1.2-1.1
-'http://deb.debian.org/debian/pool/main/o/openjpeg2/openjpeg2_2.1.2-1.1.dsc' openjpeg2_2.1.2-1.1.dsc 2924 SHA256:103af13df834b24267c86617944f1fe1204a30b3053a1a4b032bb131ef23b126
-'http://deb.debian.org/debian/pool/main/o/openjpeg2/openjpeg2_2.1.2.orig.tar.gz' openjpeg2_2.1.2.orig.tar.gz 1987071 SHA256:4ce77b6ef538ef090d9bde1d5eeff8b3069ab56c4906f083475517c2c023dfa7
-'http://deb.debian.org/debian/pool/main/o/openjpeg2/openjpeg2_2.1.2-1.1.debian.tar.xz' openjpeg2_2.1.2-1.1.debian.tar.xz 19364 SHA256:b19b15ac6306c19734f0626f974c8863e4dc21a1df849a8ae81008479b5b0daf
+$ apt-get source -qq --print-uris openjpeg2=2.1.2-1.1+deb9u2
+'http://security.debian.org/pool/updates/main/o/openjpeg2/openjpeg2_2.1.2-1.1+deb9u2.dsc' openjpeg2_2.1.2-1.1+deb9u2.dsc 2822 SHA256:fd31da5b80939520c938deada3826ac99a55bdd0500d73cef4d2072b0a2ea03c
+'http://security.debian.org/pool/updates/main/o/openjpeg2/openjpeg2_2.1.2.orig.tar.gz' openjpeg2_2.1.2.orig.tar.gz 1987071 SHA256:4ce77b6ef538ef090d9bde1d5eeff8b3069ab56c4906f083475517c2c023dfa7
+'http://security.debian.org/pool/updates/main/o/openjpeg2/openjpeg2_2.1.2-1.1+deb9u2.debian.tar.xz' openjpeg2_2.1.2-1.1+deb9u2.debian.tar.xz 23292 SHA256:be99a498bcb48176168f012e014fb8308d7543c2a163ae40830fbe2d78a36359
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openjpeg2/2.1.2-1.1/ (for browsing the source)
-- https://sources.debian.net/src/openjpeg2/2.1.2-1.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openjpeg2/2.1.2-1.1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openjpeg2/2.1.2-1.1+deb9u2/ (for browsing the source)
+- https://sources.debian.net/src/openjpeg2/2.1.2-1.1+deb9u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openjpeg2/2.1.2-1.1+deb9u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.4.44+dfsg-5+deb9u1`
 

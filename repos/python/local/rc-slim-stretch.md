@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2296985bb809811da6b687c74bb5651bdfcb4a0b76ae13db9ae63cd9420e3d19`
-- Created: `2017-10-23T20:26:18.363068795Z`
-- Virtual Size: ~ 142.04 Mb  
+- Image ID: `sha256:ce33900089fa470dd4237a35f7dd7d62d298f84eb2f8be42c13cebd4c8d2c136`
+- Created: `2017-11-02T00:27:20.457858704Z`
+- Virtual Size: ~ 141.76 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["python3"]`
@@ -1124,7 +1124,6 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libncurses5:amd64=6.0+20161126-1+deb9u1`
 - `libncursesw5:amd64=6.0+20161126-1+deb9u1`
 - `libtinfo5:amd64=6.0+20161126-1+deb9u1`
 - `ncurses-base=6.0+20161126-1+deb9u1`
