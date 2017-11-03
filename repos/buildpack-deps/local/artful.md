@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:879ac9c4574da33e3d676f80fac33a8fe68f555f17c0c7b4888070ec5f49d2d9`
-- Created: `2017-10-19T17:13:57.964934915Z`
-- Virtual Size: ~ 741.08 Mb  
+- Image ID: `sha256:588d454aee8b1a56f06bbfb064e912f64276b7d754a8cf602c827ceeb072a62b`
+- Created: `2017-11-02T00:28:40.109695014Z`
+- Virtual Size: ~ 744.05 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -551,12 +551,9 @@ $ apt-get source -qq --print-uris cups=2.2.4-7ubuntu2
 
 Binary Packages:
 
-- `curl=7.55.1-1ubuntu2`
-- `libcurl3:amd64=7.55.1-1ubuntu2`
 - `libcurl3-gnutls:amd64=7.55.1-1ubuntu2`
-- `libcurl4-openssl-dev:amd64=7.55.1-1ubuntu2`
 
-Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`)
 
 - `BSD-3-Clause`
 - `BSD-4-Clause`
@@ -572,6 +569,32 @@ $ apt-get source -qq --print-uris curl=7.55.1-1ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.55.1-1ubuntu2.dsc' curl_7.55.1-1ubuntu2.dsc 2774 SHA256:ad35822cd453e8d8d0d089a63a1454005dd7a445b869754f1e683afb46fb98ee
 'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.55.1.orig.tar.gz' curl_7.55.1.orig.tar.gz 3736406 SHA256:09576ea5e66672648d83dce3af16d0cb294d4cba2b5d166ade39655c495f4a20
 'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.55.1-1ubuntu2.debian.tar.xz' curl_7.55.1-1ubuntu2.debian.tar.xz 33016 SHA256:f51f583c9fa19f80d35e8b47ef8ebdd62e02b3f11d1a8319f5a0c83385c85226
+```
+
+### `dpkg` source package: `curl=7.55.1-1ubuntu2.1`
+
+Binary Packages:
+
+- `curl=7.55.1-1ubuntu2.1`
+- `libcurl3:amd64=7.55.1-1ubuntu2.1`
+- `libcurl4-openssl-dev:amd64=7.55.1-1ubuntu2.1`
+
+Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
+
+- `BSD-3-Clause`
+- `BSD-4-Clause`
+- `ISC`
+- `curl`
+- `other`
+- `public-domain`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris curl=7.55.1-1ubuntu2.1
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.55.1-1ubuntu2.1.dsc' curl_7.55.1-1ubuntu2.1.dsc 2782 SHA256:8d8813d9332c983cf33adc99b7fd9301d1c62d7b1daf1895da04653b4c90b0a9
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.55.1.orig.tar.gz' curl_7.55.1.orig.tar.gz 3736406 SHA256:09576ea5e66672648d83dce3af16d0cb294d4cba2b5d166ade39655c495f4a20
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.55.1-1ubuntu2.1.debian.tar.xz' curl_7.55.1-1ubuntu2.1.debian.tar.xz 33384 SHA256:9f60bab7a607e29545c0f4f80bd7f10c23373fd191f0202bc70ff5516080abf8
 ```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3ubuntu1`
@@ -1582,13 +1605,13 @@ $ apt-get source -qq --print-uris humanity-icon-theme=0.6.13
 'http://archive.ubuntu.com/ubuntu/pool/main/h/humanity-icon-theme/humanity-icon-theme_0.6.13.tar.xz' humanity-icon-theme_0.6.13.tar.xz 1804180 SHA256:fbc20e8b347b82404f78c56d9f3e1baf01de8e1c9bf6cc72f5fe78157e6a9acf
 ```
 
-### `dpkg` source package: `icu=57.1-6`
+### `dpkg` source package: `icu=57.1-6ubuntu0.2`
 
 Binary Packages:
 
-- `icu-devtools=57.1-6`
-- `libicu-dev=57.1-6`
-- `libicu57:amd64=57.1-6`
+- `icu-devtools=57.1-6ubuntu0.2`
+- `libicu-dev=57.1-6ubuntu0.2`
+- `libicu57:amd64=57.1-6ubuntu0.2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1597,10 +1620,10 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris icu=57.1-6
-'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_57.1-6.dsc' icu_57.1-6.dsc 2105 SHA256:6d3979c7e13e23d4de31e0ff3b83c34e4824e4982cfed9887b21ab6b6c272e6b
+$ apt-get source -qq --print-uris icu=57.1-6ubuntu0.2
+'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_57.1-6ubuntu0.2.dsc' icu_57.1-6ubuntu0.2.dsc 2204 SHA256:5dfe65bba0c3025adca401daf7e2916f6b489da4f84715077ffb909b53a909d3
 'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_57.1.orig.tar.gz' icu_57.1.orig.tar.gz 22360664 SHA256:ff8c67cb65949b1e7808f2359f2b80f722697048e90e7cfc382ec1fe229e9581
-'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_57.1-6.debian.tar.xz' icu_57.1-6.debian.tar.xz 32768 SHA256:9c1239e6c395aa44880617a8f67f1f9936a9536ad0c85b8c0ceedf4c0bf40819
+'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_57.1-6ubuntu0.2.debian.tar.xz' icu_57.1-6ubuntu0.2.debian.tar.xz 33184 SHA256:30471133aa8e74df0f5042bf097c5a24b5ca68a12e3ac0c44432856765605d52
 ```
 
 ### `dpkg` source package: `ilmbase=2.2.0-11ubuntu2`
@@ -3219,12 +3242,12 @@ $ apt-get source -qq --print-uris mpfr4=3.1.6-1
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mpfr4/mpfr4_3.1.6-1.debian.tar.xz' mpfr4_3.1.6-1.debian.tar.xz 9724 SHA256:1ce306a388ab312eb1c62f4c52dc468ae55d8205e124d19eb231ef7d42fc836a
 ```
 
-### `dpkg` source package: `mysql-5.7=5.7.19-0ubuntu1`
+### `dpkg` source package: `mysql-5.7=5.7.20-0ubuntu0.17.10.1`
 
 Binary Packages:
 
-- `libmysqlclient-dev=5.7.19-0ubuntu1`
-- `libmysqlclient20:amd64=5.7.19-0ubuntu1`
+- `libmysqlclient-dev=5.7.20-0ubuntu0.17.10.1`
+- `libmysqlclient20:amd64=5.7.20-0ubuntu0.17.10.1`
 
 Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/share/doc/libmysqlclient20/copyright`)
 
@@ -3245,10 +3268,10 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 Source:
 
 ```console
-$ apt-get source -qq --print-uris mysql-5.7=5.7.19-0ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.19-0ubuntu1.dsc' mysql-5.7_5.7.19-0ubuntu1.dsc 3303 SHA256:1ad42e1bbb4eebce787f950e2a3e082281f685e6cfb62fb29ce42fdc987be2a9
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.19.orig.tar.gz' mysql-5.7_5.7.19.orig.tar.gz 48799895 SHA256:22e5034e40e0731eff521b7aaf7584b76297a69875ee50026b12f2bfac3e1bca
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.19-0ubuntu1.debian.tar.xz' mysql-5.7_5.7.19-0ubuntu1.debian.tar.xz 249624 SHA256:d699fe60cb6518d4956ae2534fd0bf7f97e37a58e66f2f768e1e6c08db035616
+$ apt-get source -qq --print-uris mysql-5.7=5.7.20-0ubuntu0.17.10.1
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.20-0ubuntu0.17.10.1.dsc' mysql-5.7_5.7.20-0ubuntu0.17.10.1.dsc 3335 SHA256:85ba3db766203bd5086e8ecd0c59f6eaa69be54393ce7d92c246d318c61b267b
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.20.orig.tar.gz' mysql-5.7_5.7.20.orig.tar.gz 48833145 SHA256:260582844ac18222ce2826f48b6c7ca387990b19ddb88331af26738b394e42a4
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.20-0ubuntu0.17.10.1.debian.tar.xz' mysql-5.7_5.7.20-0ubuntu0.17.10.1.debian.tar.xz 249548 SHA256:36fc538a19fbaff5e365bdab9cd5df426cc48663a391746f7cc78463a67996ad
 ```
 
 ### `dpkg` source package: `mysql-defaults=1.0.2ubuntu1`
@@ -3278,6 +3301,7 @@ Binary Packages:
 - `libncurses5:amd64=6.0+20160625-1ubuntu1`
 - `libncurses5-dev:amd64=6.0+20160625-1ubuntu1`
 - `libncursesw5:amd64=6.0+20160625-1ubuntu1`
+- `libncursesw5-dev:amd64=6.0+20160625-1ubuntu1`
 - `libtinfo-dev:amd64=6.0+20160625-1ubuntu1`
 - `libtinfo5:amd64=6.0+20160625-1ubuntu1`
 - `ncurses-base=6.0+20160625-1ubuntu1`
