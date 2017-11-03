@@ -1030,14 +1030,9 @@ Licenses: (parsed from: `/usr/share/doc/iproute2/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris iproute2=4.3.0-1ubuntu3.16.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/i/iproute2/iproute2_4.3.0-1ubuntu3.16.04.1.dsc' iproute2_4.3.0-1ubuntu3.16.04.1.dsc 2477 SHA256:96bec45636dc099bf337e9501fa8230b870a9b2cd960a69942244a6e61b3221b
-'http://archive.ubuntu.com/ubuntu/pool/main/i/iproute2/iproute2_4.3.0.orig.tar.xz' iproute2_4.3.0.orig.tar.xz 525364 SHA256:f03b1188dd6c039512424de82ff7a8f3b446680bd4e908ff42a7b9b137422995
-'http://archive.ubuntu.com/ubuntu/pool/main/i/iproute2/iproute2_4.3.0-1ubuntu3.16.04.1.debian.tar.xz' iproute2_4.3.0-1ubuntu3.16.04.1.debian.tar.xz 30572 SHA256:7f956b07cd707cdcc3a757923ddb849afccf080bdb8b2ddb446b9a692bf9f542
-```
 
 ### `dpkg` source package: `iptables=1.6.0-2ubuntu3`
 
