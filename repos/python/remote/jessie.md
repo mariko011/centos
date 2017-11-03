@@ -1,7 +1,7 @@
 ## `python:jessie`
 
 ```console
-$ docker pull python@sha256:106af2a8d73e63325e80fe53a496ac10654463850679dec4da724e2a86a37a64
+$ docker pull python@sha256:d5d0fc8e56a0b4a6c8a17b1088deb534f3c267122140a23e5fb5584525cfa284
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -99,14 +99,14 @@ CMD ["python3"]
 ### `python:jessie` - linux; arm variant v5
 
 ```console
-$ docker pull python@sha256:e84f50ae1f7da298c0a3d489d5f20558ea9beb32b022618d211f109c273d3f1e
+$ docker pull python@sha256:cd1ed25122ee9d6e39f02beeb39764e700557c199108a67457aac65ee8b0af1d
 ```
 
 -	Docker Version: 17.06.0-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **250.7 MB (250714157 bytes)**  
+-	Total Size: **250.7 MB (250714289 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f50502e7642462946c842a9099405ad2556c0c31e00b3888cfd7dd62d7f1c971`
+-	Image ID: `sha256:78e425f1127c0aa5158fc972067a3ed58df21ac968de7a45059d8a7e22257dc9`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -116,31 +116,31 @@ ADD file:cfee2e008c8ea154a9e6408e017dd40cc1b53f7c31932cec7fa8e1dc14649764 in /
 CMD ["bash"]
 # Mon, 09 Oct 2017 22:12:46 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 09 Oct 2017 22:12:47 GMT
-RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Mon, 09 Oct 2017 22:13:47 GMT
+# Fri, 03 Nov 2017 07:48:10 GMT
+RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
+# Fri, 03 Nov 2017 07:49:04 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 02 Nov 2017 07:49:03 GMT
+# Fri, 03 Nov 2017 07:50:43 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 02 Nov 2017 08:56:30 GMT
+# Fri, 03 Nov 2017 09:04:28 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 02 Nov 2017 08:56:31 GMT
+# Fri, 03 Nov 2017 09:04:28 GMT
 ENV LANG=C.UTF-8
-# Thu, 02 Nov 2017 08:57:47 GMT
+# Fri, 03 Nov 2017 09:04:59 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 02 Nov 2017 08:57:48 GMT
+# Fri, 03 Nov 2017 09:14:10 GMT
 ENV GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D
-# Thu, 02 Nov 2017 08:57:48 GMT
+# Fri, 03 Nov 2017 09:14:10 GMT
 ENV PYTHON_VERSION=3.6.3
-# Thu, 02 Nov 2017 09:00:21 GMT
+# Fri, 03 Nov 2017 09:16:36 GMT
 RUN set -ex 	&& buildDeps=' 		dpkg-dev 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Thu, 02 Nov 2017 09:00:22 GMT
+# Fri, 03 Nov 2017 09:16:37 GMT
 RUN cd /usr/local/bin 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Thu, 02 Nov 2017 09:00:23 GMT
+# Fri, 03 Nov 2017 09:16:37 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Thu, 02 Nov 2017 09:00:31 GMT
+# Fri, 03 Nov 2017 09:16:47 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Thu, 02 Nov 2017 09:00:31 GMT
+# Fri, 03 Nov 2017 09:16:47 GMT
 CMD ["python3"]
 ```
 
@@ -153,29 +153,29 @@ CMD ["python3"]
 		Last Modified: Mon, 09 Oct 2017 22:24:37 GMT  
 		Size: 18.7 MB (18654351 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d25a8d00f5623c0cf6540a91059805ce464addb2a5a50059f743796346302529`  
-		Last Modified: Mon, 09 Oct 2017 22:24:46 GMT  
-		Size: 41.1 MB (41071202 bytes)  
+	-	`sha256:67413b538ee39b6ca8eb4271f4206189eea93cc81ac13afe21d0b4c34e114cfe`  
+		Last Modified: Fri, 03 Nov 2017 08:00:21 GMT  
+		Size: 41.1 MB (41072145 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a6787f0586a1399023eecb3052ed8b4f8a30995180b97fa44c6947f258a0c81`  
-		Last Modified: Thu, 02 Nov 2017 07:56:35 GMT  
-		Size: 116.2 MB (116189021 bytes)  
+	-	`sha256:fe0a0f4edececd7b4748d78c5c53d045cde60edc186deddbfa031ae0151cf9ce`  
+		Last Modified: Fri, 03 Nov 2017 08:00:58 GMT  
+		Size: 116.2 MB (116188542 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9e56f9f8fa7a6dfdd5b373b9f0b35c668ebd533e24514af3d9f1afbc7c41d374`  
-		Last Modified: Thu, 02 Nov 2017 09:47:50 GMT  
-		Size: 3.0 MB (3020813 bytes)  
+	-	`sha256:80874105d462030e1728feb7bce3dbc90ea402f01697c12c20d9b0950f9aa294`  
+		Last Modified: Fri, 03 Nov 2017 09:06:05 GMT  
+		Size: 3.0 MB (3020771 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:447f66ea094fb1a90e7f592e937954b139eba4e57de91e447eece9d23da0ea9a`  
-		Last Modified: Thu, 02 Nov 2017 09:47:56 GMT  
-		Size: 19.2 MB (19235561 bytes)  
+	-	`sha256:3be7eda8a9bde27bc58bc019bbe59c6acfa574ebe4dd3c051f96af4a99031443`  
+		Last Modified: Fri, 03 Nov 2017 09:39:35 GMT  
+		Size: 19.2 MB (19235356 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:88ad1a822cd7264d0de91f6392b9120872ccdc24fd387903291d7f7910ce5556`  
-		Last Modified: Thu, 02 Nov 2017 09:47:49 GMT  
-		Size: 241.0 B  
+	-	`sha256:d6b7e464fd8a4d82c7e2309d8bc84b368f6fe83024a859433b8474a1255a70fd`  
+		Last Modified: Fri, 03 Nov 2017 09:39:26 GMT  
+		Size: 242.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:290e2470fe4fe830bc08b5e4650db0289c03b1df998f4b21f4cf6ccdd9d95781`  
-		Last Modified: Thu, 02 Nov 2017 09:47:50 GMT  
-		Size: 1.7 MB (1663074 bytes)  
+	-	`sha256:34e499e362920ee40e8f645f13fbe4908f1ae7bbd473132e61dcc1f4b12767a8`  
+		Last Modified: Fri, 03 Nov 2017 09:39:27 GMT  
+		Size: 1.7 MB (1662988 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `python:jessie` - linux; arm variant v7
