@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a509465213ef424bc17bee0949d364af16517cee2f1414869d1f364e80bfd56d`
-- Created: `2017-10-09T22:07:13.783694906Z`
-- Virtual Size: ~ 113.36 Mb  
+- Image ID: `sha256:5d754f2f51cce895da9129417cd7455902f16ed43a3b898702b6224b73553ed3`
+- Created: `2017-11-01T23:57:42.660405764Z`
+- Virtual Size: ~ 113.05 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -672,10 +672,9 @@ Binary Packages:
 - `dirmngr=2.1.18-8~deb9u1`
 - `gnupg=2.1.18-8~deb9u1`
 - `gnupg-agent=2.1.18-8~deb9u1`
-- `gnupg2=2.1.18-8~deb9u1`
 - `gpgv=2.1.18-8~deb9u1`
 
-Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gnupg-agent/copyright`, `/usr/share/doc/gnupg2/copyright`, `/usr/share/doc/gpgv/copyright`)
+Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gnupg-agent/copyright`, `/usr/share/doc/gpgv/copyright`)
 
 - `BSD-3-clause`
 - `Expat`

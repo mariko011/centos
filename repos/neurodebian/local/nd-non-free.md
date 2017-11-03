@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c8659fe1638adb4a84d0e673d4f0407735f0598f806d97ad3463dd883cd6c7c7`
-- Created: `2017-10-09T22:08:17.899875972Z`
-- Virtual Size: ~ 121.04 Mb  
+- Image ID: `sha256:a6eba2d8378cc36449a1bf7bb39903987b92cdfe0f54026e2233f330b1ae6d58`
+- Created: `2017-11-01T23:59:01.579588546Z`
+- Virtual Size: ~ 121.48 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -685,24 +685,23 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gmp/2:6.1.2+dfsg-1.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gmp/2:6.1.2+dfsg-1.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gnupg2=2.2.1-1`
+### `dpkg` source package: `gnupg2=2.2.1-5`
 
 Binary Packages:
 
-- `dirmngr=2.2.1-1`
-- `gnupg=2.2.1-1`
-- `gnupg-l10n=2.2.1-1`
-- `gnupg-utils=2.2.1-1`
-- `gnupg2=2.2.1-1`
-- `gpg=2.2.1-1`
-- `gpg-agent=2.2.1-1`
-- `gpg-wks-client=2.2.1-1`
-- `gpg-wks-server=2.2.1-1`
-- `gpgconf=2.2.1-1`
-- `gpgsm=2.2.1-1`
-- `gpgv=2.2.1-1`
+- `dirmngr=2.2.1-5`
+- `gnupg=2.2.1-5`
+- `gnupg-l10n=2.2.1-5`
+- `gnupg-utils=2.2.1-5`
+- `gpg=2.2.1-5`
+- `gpg-agent=2.2.1-5`
+- `gpg-wks-client=2.2.1-5`
+- `gpg-wks-server=2.2.1-5`
+- `gpgconf=2.2.1-5`
+- `gpgsm=2.2.1-5`
+- `gpgv=2.2.1-5`
 
-Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gnupg-l10n/copyright`, `/usr/share/doc/gnupg-utils/copyright`, `/usr/share/doc/gnupg2/copyright`, `/usr/share/doc/gpg/copyright`, `/usr/share/doc/gpg-agent/copyright`, `/usr/share/doc/gpg-wks-client/copyright`, `/usr/share/doc/gpg-wks-server/copyright`, `/usr/share/doc/gpgconf/copyright`, `/usr/share/doc/gpgsm/copyright`, `/usr/share/doc/gpgv/copyright`)
+Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gnupg-l10n/copyright`, `/usr/share/doc/gnupg-utils/copyright`, `/usr/share/doc/gpg/copyright`, `/usr/share/doc/gpg-agent/copyright`, `/usr/share/doc/gpg-wks-client/copyright`, `/usr/share/doc/gpg-wks-server/copyright`, `/usr/share/doc/gpgconf/copyright`, `/usr/share/doc/gpgsm/copyright`, `/usr/share/doc/gpgv/copyright`)
 
 - `BSD-3-clause`
 - `Expat`
@@ -716,13 +715,21 @@ Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnup
 - `TinySCHEME`
 - `permissive`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris gnupg2=2.2.1-5
+'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.1-5.dsc' gnupg2_2.2.1-5.dsc 3701 SHA256:97b1e6001a1bf84812d93600c34dc163d2240d4285f29c95309b504b773b9100
+'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.1.orig.tar.bz2' gnupg2_2.2.1.orig.tar.bz2 6537959 SHA256:34d70cd65b9c95f3f2f90a9f5c1e0b6a0fe039a8d685e2d66d69c33d1cbf62fb
+'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.1.orig.tar.bz2.asc' gnupg2_2.2.1.orig.tar.bz2.asc 310 SHA256:ca8e0be202fd6b66e7ccb4366af5fc4a432a60c7d42a89552b707f2cd7ccc8c6
+'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.1-5.debian.tar.bz2' gnupg2_2.2.1-5.debian.tar.bz2 69578 SHA256:0f6af862fcf63026d83018f288036422b7bed2939f017ca6f3ba371e2de8cffa
+```
 
-- http://snapshot.debian.org/package/gnupg2/2.2.1-1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/gnupg2/2.2.1-5/ (for browsing the source)
+- https://sources.debian.net/src/gnupg2/2.2.1-5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gnupg2/2.2.1-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gnutls28=3.5.15-2`
 
@@ -1737,11 +1744,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/shadow/1:4.5-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/shadow/1:4.5-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `sqlite3=3.20.1-1`
+### `dpkg` source package: `sqlite3=3.20.1-2`
 
 Binary Packages:
 
-- `libsqlite3-0:amd64=3.20.1-1`
+- `libsqlite3-0:amd64=3.20.1-2`
 
 Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 
@@ -1749,13 +1756,21 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris sqlite3=3.20.1-2
+'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.20.1-2.dsc' sqlite3_3.20.1-2.dsc 2476 SHA256:4fae287ad662bb4958273e9d09d1d4efcd8230e8cc7fb89978d47b22e8b5602b
+'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.20.1.orig-www.tar.xz' sqlite3_3.20.1.orig-www.tar.xz 3485848 SHA256:c31a1ad382c331c0507a5992c6d1697450ffc3410209ae992ead1c34344b5654
+'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.20.1.orig.tar.xz' sqlite3_3.20.1.orig.tar.xz 5900940 SHA256:0ed8da87222d3e0d45afcd9dac3b91a453eee4ea6eaf1287b78a6f0fb5274437
+'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.20.1-2.debian.tar.xz' sqlite3_3.20.1-2.debian.tar.xz 17892 SHA256:7d68706ea8703932dc82157067374a804370ef115ae9f5fd3e33f6bb359ea978
+```
 
-- http://snapshot.debian.org/package/sqlite3/3.20.1-1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/sqlite3/3.20.1-2/ (for browsing the source)
+- https://sources.debian.net/src/sqlite3/3.20.1-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/sqlite3/3.20.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=234-3`
 
