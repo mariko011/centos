@@ -1,7 +1,7 @@
 ## `buildpack-deps:xenial-curl`
 
 ```console
-$ docker pull buildpack-deps@sha256:25cef3c46208a5ad79cd158884a1f3e426ab76f9a4a5411a22631bbb139444ec
+$ docker pull buildpack-deps@sha256:fb85b62cfa49e036f1901f750973d1afa7c52219af936ae2dc6059ae97f38e6c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -132,14 +132,14 @@ RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get 
 ### `buildpack-deps:xenial-curl` - linux; arm64 variant v8
 
 ```console
-$ docker pull buildpack-deps@sha256:4c051aea75498fc88c996a5fcfbe010134c8d6ef4d224f60ae3df3ed86d3354d
+$ docker pull buildpack-deps@sha256:2f0e82ae4fbb81ea53e63d703c8ca8194116ab335bd1831b67d728ac96bb1151
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **49.8 MB (49799620 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4dafb82cbf8586a6fe47cbf1181f0be32222358e8d359bcfcd95f39dc6f3b0bc`
+-	Image ID: `sha256:fb53a1aa6d5ab30d89563ed8e6394a330afba6d954ca21e723d1efe618a900fa`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -157,8 +157,8 @@ RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 CMD ["/bin/bash"]
 # Wed, 11 Oct 2017 14:41:13 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 11 Oct 2017 14:41:15 GMT
-RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
+# Fri, 03 Nov 2017 10:22:56 GMT
+RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 ```
 
 -	Layers:
