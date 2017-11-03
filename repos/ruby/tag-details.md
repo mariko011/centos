@@ -682,7 +682,7 @@ CMD ["irb"]
 ## `ruby:2.2`
 
 ```console
-$ docker pull ruby@sha256:dc28c3fb0d9c981cafcd30189378bae5c34ebe80899d06d7a72b991db6649a5a
+$ docker pull ruby@sha256:b2972ca306d41fce52e86de3c92ae713ef4f6c0f70e479b174322fcd035528c9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1026,14 +1026,14 @@ CMD ["irb"]
 ### `ruby:2.2` - linux; 386
 
 ```console
-$ docker pull ruby@sha256:392d96dd86ae5d64ef825f0ba69ef994977e375f4e967f24b399741ff1c97111
+$ docker pull ruby@sha256:131e13da8efdf19504fa3b0e1d48242d51356ff6f83d276d392106b6e2eef10a
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **285.4 MB (285410222 bytes)**  
+-	Total Size: **286.2 MB (286190394 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b92a4bc8b01304006d796dd9608b38733b78a9b6beb761b58cf751669c408b78`
+-	Image ID: `sha256:d2cc7b692e96df156f5c2a6276f5b9eaf7646473ad2864f3a4b3aab4fed26879`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -1043,35 +1043,35 @@ ADD file:69555c5f78a887c075ee9d9449d85a723324e07872867c7f577e7fa99f6d41c0 in /
 CMD ["bash"]
 # Mon, 09 Oct 2017 22:58:19 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 09 Oct 2017 22:58:20 GMT
-RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Mon, 09 Oct 2017 23:01:12 GMT
+# Thu, 02 Nov 2017 23:22:35 GMT
+RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
+# Thu, 02 Nov 2017 23:23:36 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 09 Oct 2017 23:06:34 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 10 Oct 2017 02:44:48 GMT
+# Thu, 02 Nov 2017 23:25:59 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Fri, 03 Nov 2017 02:41:29 GMT
 RUN mkdir -p /usr/local/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /usr/local/etc/gemrc
-# Tue, 10 Oct 2017 03:12:23 GMT
+# Fri, 03 Nov 2017 02:57:02 GMT
 ENV RUBY_MAJOR=2.2
-# Tue, 10 Oct 2017 03:12:23 GMT
+# Fri, 03 Nov 2017 02:57:02 GMT
 ENV RUBY_VERSION=2.2.8
-# Tue, 10 Oct 2017 03:12:23 GMT
+# Fri, 03 Nov 2017 02:57:02 GMT
 ENV RUBY_DOWNLOAD_SHA256=37eafc15037396c26870f6a6c5bcd0658d14b46cd5e191a3b56d89dd22d561b0
-# Wed, 11 Oct 2017 03:05:54 GMT
+# Fri, 03 Nov 2017 02:57:02 GMT
 ENV RUBYGEMS_VERSION=2.6.14
-# Thu, 02 Nov 2017 03:13:51 GMT
+# Fri, 03 Nov 2017 02:57:02 GMT
 ENV BUNDLER_VERSION=1.16.0
-# Thu, 02 Nov 2017 03:16:53 GMT
+# Fri, 03 Nov 2017 03:00:35 GMT
 RUN set -ex 		&& buildDeps=' 		bison 		dpkg-dev 		libgdbm-dev 		ruby 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& rm -rf /var/lib/apt/lists/* 		&& wget -O ruby.tar.xz "https://cache.ruby-lang.org/pub/ruby/${RUBY_MAJOR%-rc}/ruby-$RUBY_VERSION.tar.xz" 	&& echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum -c - 		&& mkdir -p /usr/src/ruby 	&& tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1 	&& rm ruby.tar.xz 		&& cd /usr/src/ruby 		&& { 		echo '#define ENABLE_PATH_CHECK 0'; 		echo; 		cat file.c; 	} > file.c.new 	&& mv file.c.new file.c 		&& autoconf 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 	&& make -j "$(nproc)" 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& cd / 	&& rm -r /usr/src/ruby 		&& gem update --system "$RUBYGEMS_VERSION" 	&& gem install bundler --version "$BUNDLER_VERSION" --force
-# Thu, 02 Nov 2017 03:16:53 GMT
+# Fri, 03 Nov 2017 03:00:36 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Thu, 02 Nov 2017 03:16:53 GMT
+# Fri, 03 Nov 2017 03:00:36 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Thu, 02 Nov 2017 03:16:53 GMT
+# Fri, 03 Nov 2017 03:00:36 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 02 Nov 2017 03:16:54 GMT
+# Fri, 03 Nov 2017 03:00:37 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" 	&& chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Thu, 02 Nov 2017 03:16:54 GMT
+# Fri, 03 Nov 2017 03:00:37 GMT
 CMD ["irb"]
 ```
 
@@ -1084,24 +1084,24 @@ CMD ["irb"]
 		Last Modified: Mon, 09 Oct 2017 23:37:27 GMT  
 		Size: 21.6 MB (21594870 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84c5e5ef1f110977e0931f2fcbc49c9f550e6b93813727de7e4432f85d99218c`  
-		Last Modified: Mon, 09 Oct 2017 23:37:53 GMT  
-		Size: 43.9 MB (43880551 bytes)  
+	-	`sha256:3ec8fb3b38011f25ce0ec5107fd54f417d6ee1e616150484f80244db339b8545`  
+		Last Modified: Fri, 03 Nov 2017 00:11:48 GMT  
+		Size: 43.9 MB (43880494 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14ef7f1a844c0d564af306374096859157d25cb6572aa66d2f3317201233a842`  
-		Last Modified: Mon, 09 Oct 2017 23:38:30 GMT  
-		Size: 134.9 MB (134858795 bytes)  
+	-	`sha256:e9ca1792f5a4fd3ba559486d5c4abd10b98da6df752100345877a4f933f8acf2`  
+		Last Modified: Fri, 03 Nov 2017 00:12:26 GMT  
+		Size: 135.6 MB (135638282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90302bac7dbd205509ba97139d55d72036c4787a67c4718c313bc2153555058f`  
-		Last Modified: Tue, 10 Oct 2017 03:23:33 GMT  
-		Size: 205.0 B  
+	-	`sha256:26633b0ed2789a768c89f956c4f8c905ea0397c278246caa924e473efb69255f`  
+		Last Modified: Fri, 03 Nov 2017 03:02:54 GMT  
+		Size: 207.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cdf31285ec890a039cac340f7360558db4a7a08462e87133e525c3e8d7481683`  
-		Last Modified: Thu, 02 Nov 2017 03:31:59 GMT  
-		Size: 32.3 MB (32301789 bytes)  
+	-	`sha256:60bd87d4f5f2abde320c1b43f07b000a37ddec888acc5a8d8f7aef470c30d437`  
+		Last Modified: Fri, 03 Nov 2017 03:06:07 GMT  
+		Size: 32.3 MB (32302529 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b27526cf21bdba874fec82a76304f8b8782fb6f00215239b343793dd8d59844e`  
-		Last Modified: Thu, 02 Nov 2017 03:31:50 GMT  
+	-	`sha256:0914d8bc6091c38aa7b35708f634f732edca2d4d0327eb35c831a4f7a28a6fe7`  
+		Last Modified: Fri, 03 Nov 2017 03:05:59 GMT  
 		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -1272,7 +1272,7 @@ CMD ["irb"]
 ## `ruby:2.2.8`
 
 ```console
-$ docker pull ruby@sha256:dc28c3fb0d9c981cafcd30189378bae5c34ebe80899d06d7a72b991db6649a5a
+$ docker pull ruby@sha256:b2972ca306d41fce52e86de3c92ae713ef4f6c0f70e479b174322fcd035528c9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1616,14 +1616,14 @@ CMD ["irb"]
 ### `ruby:2.2.8` - linux; 386
 
 ```console
-$ docker pull ruby@sha256:392d96dd86ae5d64ef825f0ba69ef994977e375f4e967f24b399741ff1c97111
+$ docker pull ruby@sha256:131e13da8efdf19504fa3b0e1d48242d51356ff6f83d276d392106b6e2eef10a
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **285.4 MB (285410222 bytes)**  
+-	Total Size: **286.2 MB (286190394 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b92a4bc8b01304006d796dd9608b38733b78a9b6beb761b58cf751669c408b78`
+-	Image ID: `sha256:d2cc7b692e96df156f5c2a6276f5b9eaf7646473ad2864f3a4b3aab4fed26879`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -1633,35 +1633,35 @@ ADD file:69555c5f78a887c075ee9d9449d85a723324e07872867c7f577e7fa99f6d41c0 in /
 CMD ["bash"]
 # Mon, 09 Oct 2017 22:58:19 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 09 Oct 2017 22:58:20 GMT
-RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Mon, 09 Oct 2017 23:01:12 GMT
+# Thu, 02 Nov 2017 23:22:35 GMT
+RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
+# Thu, 02 Nov 2017 23:23:36 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 09 Oct 2017 23:06:34 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 10 Oct 2017 02:44:48 GMT
+# Thu, 02 Nov 2017 23:25:59 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Fri, 03 Nov 2017 02:41:29 GMT
 RUN mkdir -p /usr/local/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /usr/local/etc/gemrc
-# Tue, 10 Oct 2017 03:12:23 GMT
+# Fri, 03 Nov 2017 02:57:02 GMT
 ENV RUBY_MAJOR=2.2
-# Tue, 10 Oct 2017 03:12:23 GMT
+# Fri, 03 Nov 2017 02:57:02 GMT
 ENV RUBY_VERSION=2.2.8
-# Tue, 10 Oct 2017 03:12:23 GMT
+# Fri, 03 Nov 2017 02:57:02 GMT
 ENV RUBY_DOWNLOAD_SHA256=37eafc15037396c26870f6a6c5bcd0658d14b46cd5e191a3b56d89dd22d561b0
-# Wed, 11 Oct 2017 03:05:54 GMT
+# Fri, 03 Nov 2017 02:57:02 GMT
 ENV RUBYGEMS_VERSION=2.6.14
-# Thu, 02 Nov 2017 03:13:51 GMT
+# Fri, 03 Nov 2017 02:57:02 GMT
 ENV BUNDLER_VERSION=1.16.0
-# Thu, 02 Nov 2017 03:16:53 GMT
+# Fri, 03 Nov 2017 03:00:35 GMT
 RUN set -ex 		&& buildDeps=' 		bison 		dpkg-dev 		libgdbm-dev 		ruby 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& rm -rf /var/lib/apt/lists/* 		&& wget -O ruby.tar.xz "https://cache.ruby-lang.org/pub/ruby/${RUBY_MAJOR%-rc}/ruby-$RUBY_VERSION.tar.xz" 	&& echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum -c - 		&& mkdir -p /usr/src/ruby 	&& tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1 	&& rm ruby.tar.xz 		&& cd /usr/src/ruby 		&& { 		echo '#define ENABLE_PATH_CHECK 0'; 		echo; 		cat file.c; 	} > file.c.new 	&& mv file.c.new file.c 		&& autoconf 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 	&& make -j "$(nproc)" 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& cd / 	&& rm -r /usr/src/ruby 		&& gem update --system "$RUBYGEMS_VERSION" 	&& gem install bundler --version "$BUNDLER_VERSION" --force
-# Thu, 02 Nov 2017 03:16:53 GMT
+# Fri, 03 Nov 2017 03:00:36 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Thu, 02 Nov 2017 03:16:53 GMT
+# Fri, 03 Nov 2017 03:00:36 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Thu, 02 Nov 2017 03:16:53 GMT
+# Fri, 03 Nov 2017 03:00:36 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 02 Nov 2017 03:16:54 GMT
+# Fri, 03 Nov 2017 03:00:37 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" 	&& chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Thu, 02 Nov 2017 03:16:54 GMT
+# Fri, 03 Nov 2017 03:00:37 GMT
 CMD ["irb"]
 ```
 
@@ -1674,24 +1674,24 @@ CMD ["irb"]
 		Last Modified: Mon, 09 Oct 2017 23:37:27 GMT  
 		Size: 21.6 MB (21594870 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84c5e5ef1f110977e0931f2fcbc49c9f550e6b93813727de7e4432f85d99218c`  
-		Last Modified: Mon, 09 Oct 2017 23:37:53 GMT  
-		Size: 43.9 MB (43880551 bytes)  
+	-	`sha256:3ec8fb3b38011f25ce0ec5107fd54f417d6ee1e616150484f80244db339b8545`  
+		Last Modified: Fri, 03 Nov 2017 00:11:48 GMT  
+		Size: 43.9 MB (43880494 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14ef7f1a844c0d564af306374096859157d25cb6572aa66d2f3317201233a842`  
-		Last Modified: Mon, 09 Oct 2017 23:38:30 GMT  
-		Size: 134.9 MB (134858795 bytes)  
+	-	`sha256:e9ca1792f5a4fd3ba559486d5c4abd10b98da6df752100345877a4f933f8acf2`  
+		Last Modified: Fri, 03 Nov 2017 00:12:26 GMT  
+		Size: 135.6 MB (135638282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90302bac7dbd205509ba97139d55d72036c4787a67c4718c313bc2153555058f`  
-		Last Modified: Tue, 10 Oct 2017 03:23:33 GMT  
-		Size: 205.0 B  
+	-	`sha256:26633b0ed2789a768c89f956c4f8c905ea0397c278246caa924e473efb69255f`  
+		Last Modified: Fri, 03 Nov 2017 03:02:54 GMT  
+		Size: 207.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cdf31285ec890a039cac340f7360558db4a7a08462e87133e525c3e8d7481683`  
-		Last Modified: Thu, 02 Nov 2017 03:31:59 GMT  
-		Size: 32.3 MB (32301789 bytes)  
+	-	`sha256:60bd87d4f5f2abde320c1b43f07b000a37ddec888acc5a8d8f7aef470c30d437`  
+		Last Modified: Fri, 03 Nov 2017 03:06:07 GMT  
+		Size: 32.3 MB (32302529 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b27526cf21bdba874fec82a76304f8b8782fb6f00215239b343793dd8d59844e`  
-		Last Modified: Thu, 02 Nov 2017 03:31:50 GMT  
+	-	`sha256:0914d8bc6091c38aa7b35708f634f732edca2d4d0327eb35c831a4f7a28a6fe7`  
+		Last Modified: Fri, 03 Nov 2017 03:05:59 GMT  
 		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -2006,7 +2006,7 @@ CMD ["irb"]
 ## `ruby:2.2.8-jessie`
 
 ```console
-$ docker pull ruby@sha256:dc28c3fb0d9c981cafcd30189378bae5c34ebe80899d06d7a72b991db6649a5a
+$ docker pull ruby@sha256:b2972ca306d41fce52e86de3c92ae713ef4f6c0f70e479b174322fcd035528c9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2350,14 +2350,14 @@ CMD ["irb"]
 ### `ruby:2.2.8-jessie` - linux; 386
 
 ```console
-$ docker pull ruby@sha256:392d96dd86ae5d64ef825f0ba69ef994977e375f4e967f24b399741ff1c97111
+$ docker pull ruby@sha256:131e13da8efdf19504fa3b0e1d48242d51356ff6f83d276d392106b6e2eef10a
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **285.4 MB (285410222 bytes)**  
+-	Total Size: **286.2 MB (286190394 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b92a4bc8b01304006d796dd9608b38733b78a9b6beb761b58cf751669c408b78`
+-	Image ID: `sha256:d2cc7b692e96df156f5c2a6276f5b9eaf7646473ad2864f3a4b3aab4fed26879`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -2367,35 +2367,35 @@ ADD file:69555c5f78a887c075ee9d9449d85a723324e07872867c7f577e7fa99f6d41c0 in /
 CMD ["bash"]
 # Mon, 09 Oct 2017 22:58:19 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 09 Oct 2017 22:58:20 GMT
-RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Mon, 09 Oct 2017 23:01:12 GMT
+# Thu, 02 Nov 2017 23:22:35 GMT
+RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
+# Thu, 02 Nov 2017 23:23:36 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 09 Oct 2017 23:06:34 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 10 Oct 2017 02:44:48 GMT
+# Thu, 02 Nov 2017 23:25:59 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Fri, 03 Nov 2017 02:41:29 GMT
 RUN mkdir -p /usr/local/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /usr/local/etc/gemrc
-# Tue, 10 Oct 2017 03:12:23 GMT
+# Fri, 03 Nov 2017 02:57:02 GMT
 ENV RUBY_MAJOR=2.2
-# Tue, 10 Oct 2017 03:12:23 GMT
+# Fri, 03 Nov 2017 02:57:02 GMT
 ENV RUBY_VERSION=2.2.8
-# Tue, 10 Oct 2017 03:12:23 GMT
+# Fri, 03 Nov 2017 02:57:02 GMT
 ENV RUBY_DOWNLOAD_SHA256=37eafc15037396c26870f6a6c5bcd0658d14b46cd5e191a3b56d89dd22d561b0
-# Wed, 11 Oct 2017 03:05:54 GMT
+# Fri, 03 Nov 2017 02:57:02 GMT
 ENV RUBYGEMS_VERSION=2.6.14
-# Thu, 02 Nov 2017 03:13:51 GMT
+# Fri, 03 Nov 2017 02:57:02 GMT
 ENV BUNDLER_VERSION=1.16.0
-# Thu, 02 Nov 2017 03:16:53 GMT
+# Fri, 03 Nov 2017 03:00:35 GMT
 RUN set -ex 		&& buildDeps=' 		bison 		dpkg-dev 		libgdbm-dev 		ruby 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& rm -rf /var/lib/apt/lists/* 		&& wget -O ruby.tar.xz "https://cache.ruby-lang.org/pub/ruby/${RUBY_MAJOR%-rc}/ruby-$RUBY_VERSION.tar.xz" 	&& echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum -c - 		&& mkdir -p /usr/src/ruby 	&& tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1 	&& rm ruby.tar.xz 		&& cd /usr/src/ruby 		&& { 		echo '#define ENABLE_PATH_CHECK 0'; 		echo; 		cat file.c; 	} > file.c.new 	&& mv file.c.new file.c 		&& autoconf 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 	&& make -j "$(nproc)" 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& cd / 	&& rm -r /usr/src/ruby 		&& gem update --system "$RUBYGEMS_VERSION" 	&& gem install bundler --version "$BUNDLER_VERSION" --force
-# Thu, 02 Nov 2017 03:16:53 GMT
+# Fri, 03 Nov 2017 03:00:36 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Thu, 02 Nov 2017 03:16:53 GMT
+# Fri, 03 Nov 2017 03:00:36 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Thu, 02 Nov 2017 03:16:53 GMT
+# Fri, 03 Nov 2017 03:00:36 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 02 Nov 2017 03:16:54 GMT
+# Fri, 03 Nov 2017 03:00:37 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" 	&& chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Thu, 02 Nov 2017 03:16:54 GMT
+# Fri, 03 Nov 2017 03:00:37 GMT
 CMD ["irb"]
 ```
 
@@ -2408,24 +2408,24 @@ CMD ["irb"]
 		Last Modified: Mon, 09 Oct 2017 23:37:27 GMT  
 		Size: 21.6 MB (21594870 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84c5e5ef1f110977e0931f2fcbc49c9f550e6b93813727de7e4432f85d99218c`  
-		Last Modified: Mon, 09 Oct 2017 23:37:53 GMT  
-		Size: 43.9 MB (43880551 bytes)  
+	-	`sha256:3ec8fb3b38011f25ce0ec5107fd54f417d6ee1e616150484f80244db339b8545`  
+		Last Modified: Fri, 03 Nov 2017 00:11:48 GMT  
+		Size: 43.9 MB (43880494 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14ef7f1a844c0d564af306374096859157d25cb6572aa66d2f3317201233a842`  
-		Last Modified: Mon, 09 Oct 2017 23:38:30 GMT  
-		Size: 134.9 MB (134858795 bytes)  
+	-	`sha256:e9ca1792f5a4fd3ba559486d5c4abd10b98da6df752100345877a4f933f8acf2`  
+		Last Modified: Fri, 03 Nov 2017 00:12:26 GMT  
+		Size: 135.6 MB (135638282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90302bac7dbd205509ba97139d55d72036c4787a67c4718c313bc2153555058f`  
-		Last Modified: Tue, 10 Oct 2017 03:23:33 GMT  
-		Size: 205.0 B  
+	-	`sha256:26633b0ed2789a768c89f956c4f8c905ea0397c278246caa924e473efb69255f`  
+		Last Modified: Fri, 03 Nov 2017 03:02:54 GMT  
+		Size: 207.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cdf31285ec890a039cac340f7360558db4a7a08462e87133e525c3e8d7481683`  
-		Last Modified: Thu, 02 Nov 2017 03:31:59 GMT  
-		Size: 32.3 MB (32301789 bytes)  
+	-	`sha256:60bd87d4f5f2abde320c1b43f07b000a37ddec888acc5a8d8f7aef470c30d437`  
+		Last Modified: Fri, 03 Nov 2017 03:06:07 GMT  
+		Size: 32.3 MB (32302529 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b27526cf21bdba874fec82a76304f8b8782fb6f00215239b343793dd8d59844e`  
-		Last Modified: Thu, 02 Nov 2017 03:31:50 GMT  
+	-	`sha256:0914d8bc6091c38aa7b35708f634f732edca2d4d0327eb35c831a4f7a28a6fe7`  
+		Last Modified: Fri, 03 Nov 2017 03:05:59 GMT  
 		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -2596,7 +2596,7 @@ CMD ["irb"]
 ## `ruby:2.2.8-onbuild`
 
 ```console
-$ docker pull ruby@sha256:ad7c7ccae5006bd218e57ea9d85694f7ef7f2da06cfb79bff35c1070e59c5f25
+$ docker pull ruby@sha256:8e06600797c165bfb53fe9b30e95a28aa864cf29fd733cf903a5a858b8c01038
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3028,14 +3028,14 @@ ONBUILD COPY . /usr/src/app
 ### `ruby:2.2.8-onbuild` - linux; 386
 
 ```console
-$ docker pull ruby@sha256:b70c9a668ac41174571824137174c2e1935dbe2a469d20e7c600646ce00ecd40
+$ docker pull ruby@sha256:1c63086962fc99d4f3e4adefaac21e27f2f7fc357e2b1236622c7451f2ad0fac
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **285.4 MB (285410538 bytes)**  
+-	Total Size: **286.2 MB (286190713 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2189a096336edded61451452e4ca029481e0b73cb08dcb3152f949fea617683f`
+-	Image ID: `sha256:4e447653bc558ed9478d692d49833845102b9da9bd3d592f9f9d01858839a087`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -3045,49 +3045,49 @@ ADD file:69555c5f78a887c075ee9d9449d85a723324e07872867c7f577e7fa99f6d41c0 in /
 CMD ["bash"]
 # Mon, 09 Oct 2017 22:58:19 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 09 Oct 2017 22:58:20 GMT
-RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Mon, 09 Oct 2017 23:01:12 GMT
+# Thu, 02 Nov 2017 23:22:35 GMT
+RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
+# Thu, 02 Nov 2017 23:23:36 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 09 Oct 2017 23:06:34 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 10 Oct 2017 02:44:48 GMT
+# Thu, 02 Nov 2017 23:25:59 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Fri, 03 Nov 2017 02:41:29 GMT
 RUN mkdir -p /usr/local/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /usr/local/etc/gemrc
-# Tue, 10 Oct 2017 03:12:23 GMT
+# Fri, 03 Nov 2017 02:57:02 GMT
 ENV RUBY_MAJOR=2.2
-# Tue, 10 Oct 2017 03:12:23 GMT
+# Fri, 03 Nov 2017 02:57:02 GMT
 ENV RUBY_VERSION=2.2.8
-# Tue, 10 Oct 2017 03:12:23 GMT
+# Fri, 03 Nov 2017 02:57:02 GMT
 ENV RUBY_DOWNLOAD_SHA256=37eafc15037396c26870f6a6c5bcd0658d14b46cd5e191a3b56d89dd22d561b0
-# Wed, 11 Oct 2017 03:05:54 GMT
+# Fri, 03 Nov 2017 02:57:02 GMT
 ENV RUBYGEMS_VERSION=2.6.14
-# Thu, 02 Nov 2017 03:13:51 GMT
+# Fri, 03 Nov 2017 02:57:02 GMT
 ENV BUNDLER_VERSION=1.16.0
-# Thu, 02 Nov 2017 03:16:53 GMT
+# Fri, 03 Nov 2017 03:00:35 GMT
 RUN set -ex 		&& buildDeps=' 		bison 		dpkg-dev 		libgdbm-dev 		ruby 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& rm -rf /var/lib/apt/lists/* 		&& wget -O ruby.tar.xz "https://cache.ruby-lang.org/pub/ruby/${RUBY_MAJOR%-rc}/ruby-$RUBY_VERSION.tar.xz" 	&& echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum -c - 		&& mkdir -p /usr/src/ruby 	&& tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1 	&& rm ruby.tar.xz 		&& cd /usr/src/ruby 		&& { 		echo '#define ENABLE_PATH_CHECK 0'; 		echo; 		cat file.c; 	} > file.c.new 	&& mv file.c.new file.c 		&& autoconf 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 	&& make -j "$(nproc)" 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& cd / 	&& rm -r /usr/src/ruby 		&& gem update --system "$RUBYGEMS_VERSION" 	&& gem install bundler --version "$BUNDLER_VERSION" --force
-# Thu, 02 Nov 2017 03:16:53 GMT
+# Fri, 03 Nov 2017 03:00:36 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Thu, 02 Nov 2017 03:16:53 GMT
+# Fri, 03 Nov 2017 03:00:36 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Thu, 02 Nov 2017 03:16:53 GMT
+# Fri, 03 Nov 2017 03:00:36 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 02 Nov 2017 03:16:54 GMT
+# Fri, 03 Nov 2017 03:00:37 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" 	&& chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Thu, 02 Nov 2017 03:16:54 GMT
+# Fri, 03 Nov 2017 03:00:37 GMT
 CMD ["irb"]
-# Thu, 02 Nov 2017 03:22:35 GMT
+# Fri, 03 Nov 2017 03:00:57 GMT
 RUN bundle config --global frozen 1
-# Thu, 02 Nov 2017 03:22:36 GMT
+# Fri, 03 Nov 2017 03:00:58 GMT
 RUN mkdir -p /usr/src/app
-# Thu, 02 Nov 2017 03:22:36 GMT
+# Fri, 03 Nov 2017 03:00:59 GMT
 WORKDIR /usr/src/app
-# Thu, 02 Nov 2017 03:22:36 GMT
+# Fri, 03 Nov 2017 03:00:59 GMT
 ONBUILD COPY Gemfile /usr/src/app/
-# Thu, 02 Nov 2017 03:22:37 GMT
+# Fri, 03 Nov 2017 03:00:59 GMT
 ONBUILD COPY Gemfile.lock /usr/src/app/
-# Thu, 02 Nov 2017 03:22:37 GMT
+# Fri, 03 Nov 2017 03:00:59 GMT
 ONBUILD RUN bundle install
-# Thu, 02 Nov 2017 03:22:37 GMT
+# Fri, 03 Nov 2017 03:01:00 GMT
 ONBUILD COPY . /usr/src/app
 ```
 
@@ -3100,33 +3100,33 @@ ONBUILD COPY . /usr/src/app
 		Last Modified: Mon, 09 Oct 2017 23:37:27 GMT  
 		Size: 21.6 MB (21594870 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84c5e5ef1f110977e0931f2fcbc49c9f550e6b93813727de7e4432f85d99218c`  
-		Last Modified: Mon, 09 Oct 2017 23:37:53 GMT  
-		Size: 43.9 MB (43880551 bytes)  
+	-	`sha256:3ec8fb3b38011f25ce0ec5107fd54f417d6ee1e616150484f80244db339b8545`  
+		Last Modified: Fri, 03 Nov 2017 00:11:48 GMT  
+		Size: 43.9 MB (43880494 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14ef7f1a844c0d564af306374096859157d25cb6572aa66d2f3317201233a842`  
-		Last Modified: Mon, 09 Oct 2017 23:38:30 GMT  
-		Size: 134.9 MB (134858795 bytes)  
+	-	`sha256:e9ca1792f5a4fd3ba559486d5c4abd10b98da6df752100345877a4f933f8acf2`  
+		Last Modified: Fri, 03 Nov 2017 00:12:26 GMT  
+		Size: 135.6 MB (135638282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90302bac7dbd205509ba97139d55d72036c4787a67c4718c313bc2153555058f`  
-		Last Modified: Tue, 10 Oct 2017 03:23:33 GMT  
-		Size: 205.0 B  
+	-	`sha256:26633b0ed2789a768c89f956c4f8c905ea0397c278246caa924e473efb69255f`  
+		Last Modified: Fri, 03 Nov 2017 03:02:54 GMT  
+		Size: 207.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cdf31285ec890a039cac340f7360558db4a7a08462e87133e525c3e8d7481683`  
-		Last Modified: Thu, 02 Nov 2017 03:31:59 GMT  
-		Size: 32.3 MB (32301789 bytes)  
+	-	`sha256:60bd87d4f5f2abde320c1b43f07b000a37ddec888acc5a8d8f7aef470c30d437`  
+		Last Modified: Fri, 03 Nov 2017 03:06:07 GMT  
+		Size: 32.3 MB (32302529 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b27526cf21bdba874fec82a76304f8b8782fb6f00215239b343793dd8d59844e`  
-		Last Modified: Thu, 02 Nov 2017 03:31:50 GMT  
+	-	`sha256:0914d8bc6091c38aa7b35708f634f732edca2d4d0327eb35c831a4f7a28a6fe7`  
+		Last Modified: Fri, 03 Nov 2017 03:05:59 GMT  
 		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d8b6caa27e9affb7e34d412cc12120270f65b2568204ddddeec4ea03cda19204`  
-		Last Modified: Thu, 02 Nov 2017 03:33:12 GMT  
+	-	`sha256:73497d621e9564e7f2242ad4b1ee01eed213c2d9b72654cc958e097038f1e2b9`  
+		Last Modified: Fri, 03 Nov 2017 03:06:42 GMT  
 		Size: 186.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:37cacadef5e1bdb44be5b140525bf69a270f21c869770045fc219b4b0d52a674`  
-		Last Modified: Thu, 02 Nov 2017 03:33:11 GMT  
-		Size: 130.0 B  
+	-	`sha256:bb61fa8ea5ba2e8fa7dac57d5f84a9e95a912341d2ff8d0daa9117bff5749698`  
+		Last Modified: Fri, 03 Nov 2017 03:06:43 GMT  
+		Size: 133.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ruby:2.2.8-onbuild` - linux; ppc64le
@@ -4468,7 +4468,7 @@ CMD ["irb"]
 ## `ruby:2.2-jessie`
 
 ```console
-$ docker pull ruby@sha256:dc28c3fb0d9c981cafcd30189378bae5c34ebe80899d06d7a72b991db6649a5a
+$ docker pull ruby@sha256:b2972ca306d41fce52e86de3c92ae713ef4f6c0f70e479b174322fcd035528c9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4812,14 +4812,14 @@ CMD ["irb"]
 ### `ruby:2.2-jessie` - linux; 386
 
 ```console
-$ docker pull ruby@sha256:392d96dd86ae5d64ef825f0ba69ef994977e375f4e967f24b399741ff1c97111
+$ docker pull ruby@sha256:131e13da8efdf19504fa3b0e1d48242d51356ff6f83d276d392106b6e2eef10a
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **285.4 MB (285410222 bytes)**  
+-	Total Size: **286.2 MB (286190394 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b92a4bc8b01304006d796dd9608b38733b78a9b6beb761b58cf751669c408b78`
+-	Image ID: `sha256:d2cc7b692e96df156f5c2a6276f5b9eaf7646473ad2864f3a4b3aab4fed26879`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -4829,35 +4829,35 @@ ADD file:69555c5f78a887c075ee9d9449d85a723324e07872867c7f577e7fa99f6d41c0 in /
 CMD ["bash"]
 # Mon, 09 Oct 2017 22:58:19 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 09 Oct 2017 22:58:20 GMT
-RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Mon, 09 Oct 2017 23:01:12 GMT
+# Thu, 02 Nov 2017 23:22:35 GMT
+RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
+# Thu, 02 Nov 2017 23:23:36 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 09 Oct 2017 23:06:34 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 10 Oct 2017 02:44:48 GMT
+# Thu, 02 Nov 2017 23:25:59 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Fri, 03 Nov 2017 02:41:29 GMT
 RUN mkdir -p /usr/local/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /usr/local/etc/gemrc
-# Tue, 10 Oct 2017 03:12:23 GMT
+# Fri, 03 Nov 2017 02:57:02 GMT
 ENV RUBY_MAJOR=2.2
-# Tue, 10 Oct 2017 03:12:23 GMT
+# Fri, 03 Nov 2017 02:57:02 GMT
 ENV RUBY_VERSION=2.2.8
-# Tue, 10 Oct 2017 03:12:23 GMT
+# Fri, 03 Nov 2017 02:57:02 GMT
 ENV RUBY_DOWNLOAD_SHA256=37eafc15037396c26870f6a6c5bcd0658d14b46cd5e191a3b56d89dd22d561b0
-# Wed, 11 Oct 2017 03:05:54 GMT
+# Fri, 03 Nov 2017 02:57:02 GMT
 ENV RUBYGEMS_VERSION=2.6.14
-# Thu, 02 Nov 2017 03:13:51 GMT
+# Fri, 03 Nov 2017 02:57:02 GMT
 ENV BUNDLER_VERSION=1.16.0
-# Thu, 02 Nov 2017 03:16:53 GMT
+# Fri, 03 Nov 2017 03:00:35 GMT
 RUN set -ex 		&& buildDeps=' 		bison 		dpkg-dev 		libgdbm-dev 		ruby 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& rm -rf /var/lib/apt/lists/* 		&& wget -O ruby.tar.xz "https://cache.ruby-lang.org/pub/ruby/${RUBY_MAJOR%-rc}/ruby-$RUBY_VERSION.tar.xz" 	&& echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum -c - 		&& mkdir -p /usr/src/ruby 	&& tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1 	&& rm ruby.tar.xz 		&& cd /usr/src/ruby 		&& { 		echo '#define ENABLE_PATH_CHECK 0'; 		echo; 		cat file.c; 	} > file.c.new 	&& mv file.c.new file.c 		&& autoconf 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 	&& make -j "$(nproc)" 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& cd / 	&& rm -r /usr/src/ruby 		&& gem update --system "$RUBYGEMS_VERSION" 	&& gem install bundler --version "$BUNDLER_VERSION" --force
-# Thu, 02 Nov 2017 03:16:53 GMT
+# Fri, 03 Nov 2017 03:00:36 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Thu, 02 Nov 2017 03:16:53 GMT
+# Fri, 03 Nov 2017 03:00:36 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Thu, 02 Nov 2017 03:16:53 GMT
+# Fri, 03 Nov 2017 03:00:36 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 02 Nov 2017 03:16:54 GMT
+# Fri, 03 Nov 2017 03:00:37 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" 	&& chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Thu, 02 Nov 2017 03:16:54 GMT
+# Fri, 03 Nov 2017 03:00:37 GMT
 CMD ["irb"]
 ```
 
@@ -4870,24 +4870,24 @@ CMD ["irb"]
 		Last Modified: Mon, 09 Oct 2017 23:37:27 GMT  
 		Size: 21.6 MB (21594870 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84c5e5ef1f110977e0931f2fcbc49c9f550e6b93813727de7e4432f85d99218c`  
-		Last Modified: Mon, 09 Oct 2017 23:37:53 GMT  
-		Size: 43.9 MB (43880551 bytes)  
+	-	`sha256:3ec8fb3b38011f25ce0ec5107fd54f417d6ee1e616150484f80244db339b8545`  
+		Last Modified: Fri, 03 Nov 2017 00:11:48 GMT  
+		Size: 43.9 MB (43880494 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14ef7f1a844c0d564af306374096859157d25cb6572aa66d2f3317201233a842`  
-		Last Modified: Mon, 09 Oct 2017 23:38:30 GMT  
-		Size: 134.9 MB (134858795 bytes)  
+	-	`sha256:e9ca1792f5a4fd3ba559486d5c4abd10b98da6df752100345877a4f933f8acf2`  
+		Last Modified: Fri, 03 Nov 2017 00:12:26 GMT  
+		Size: 135.6 MB (135638282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90302bac7dbd205509ba97139d55d72036c4787a67c4718c313bc2153555058f`  
-		Last Modified: Tue, 10 Oct 2017 03:23:33 GMT  
-		Size: 205.0 B  
+	-	`sha256:26633b0ed2789a768c89f956c4f8c905ea0397c278246caa924e473efb69255f`  
+		Last Modified: Fri, 03 Nov 2017 03:02:54 GMT  
+		Size: 207.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cdf31285ec890a039cac340f7360558db4a7a08462e87133e525c3e8d7481683`  
-		Last Modified: Thu, 02 Nov 2017 03:31:59 GMT  
-		Size: 32.3 MB (32301789 bytes)  
+	-	`sha256:60bd87d4f5f2abde320c1b43f07b000a37ddec888acc5a8d8f7aef470c30d437`  
+		Last Modified: Fri, 03 Nov 2017 03:06:07 GMT  
+		Size: 32.3 MB (32302529 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b27526cf21bdba874fec82a76304f8b8782fb6f00215239b343793dd8d59844e`  
-		Last Modified: Thu, 02 Nov 2017 03:31:50 GMT  
+	-	`sha256:0914d8bc6091c38aa7b35708f634f732edca2d4d0327eb35c831a4f7a28a6fe7`  
+		Last Modified: Fri, 03 Nov 2017 03:05:59 GMT  
 		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -5058,7 +5058,7 @@ CMD ["irb"]
 ## `ruby:2.2-onbuild`
 
 ```console
-$ docker pull ruby@sha256:ad7c7ccae5006bd218e57ea9d85694f7ef7f2da06cfb79bff35c1070e59c5f25
+$ docker pull ruby@sha256:8e06600797c165bfb53fe9b30e95a28aa864cf29fd733cf903a5a858b8c01038
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5490,14 +5490,14 @@ ONBUILD COPY . /usr/src/app
 ### `ruby:2.2-onbuild` - linux; 386
 
 ```console
-$ docker pull ruby@sha256:b70c9a668ac41174571824137174c2e1935dbe2a469d20e7c600646ce00ecd40
+$ docker pull ruby@sha256:1c63086962fc99d4f3e4adefaac21e27f2f7fc357e2b1236622c7451f2ad0fac
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **285.4 MB (285410538 bytes)**  
+-	Total Size: **286.2 MB (286190713 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2189a096336edded61451452e4ca029481e0b73cb08dcb3152f949fea617683f`
+-	Image ID: `sha256:4e447653bc558ed9478d692d49833845102b9da9bd3d592f9f9d01858839a087`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -5507,49 +5507,49 @@ ADD file:69555c5f78a887c075ee9d9449d85a723324e07872867c7f577e7fa99f6d41c0 in /
 CMD ["bash"]
 # Mon, 09 Oct 2017 22:58:19 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 09 Oct 2017 22:58:20 GMT
-RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Mon, 09 Oct 2017 23:01:12 GMT
+# Thu, 02 Nov 2017 23:22:35 GMT
+RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
+# Thu, 02 Nov 2017 23:23:36 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 09 Oct 2017 23:06:34 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 10 Oct 2017 02:44:48 GMT
+# Thu, 02 Nov 2017 23:25:59 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Fri, 03 Nov 2017 02:41:29 GMT
 RUN mkdir -p /usr/local/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /usr/local/etc/gemrc
-# Tue, 10 Oct 2017 03:12:23 GMT
+# Fri, 03 Nov 2017 02:57:02 GMT
 ENV RUBY_MAJOR=2.2
-# Tue, 10 Oct 2017 03:12:23 GMT
+# Fri, 03 Nov 2017 02:57:02 GMT
 ENV RUBY_VERSION=2.2.8
-# Tue, 10 Oct 2017 03:12:23 GMT
+# Fri, 03 Nov 2017 02:57:02 GMT
 ENV RUBY_DOWNLOAD_SHA256=37eafc15037396c26870f6a6c5bcd0658d14b46cd5e191a3b56d89dd22d561b0
-# Wed, 11 Oct 2017 03:05:54 GMT
+# Fri, 03 Nov 2017 02:57:02 GMT
 ENV RUBYGEMS_VERSION=2.6.14
-# Thu, 02 Nov 2017 03:13:51 GMT
+# Fri, 03 Nov 2017 02:57:02 GMT
 ENV BUNDLER_VERSION=1.16.0
-# Thu, 02 Nov 2017 03:16:53 GMT
+# Fri, 03 Nov 2017 03:00:35 GMT
 RUN set -ex 		&& buildDeps=' 		bison 		dpkg-dev 		libgdbm-dev 		ruby 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& rm -rf /var/lib/apt/lists/* 		&& wget -O ruby.tar.xz "https://cache.ruby-lang.org/pub/ruby/${RUBY_MAJOR%-rc}/ruby-$RUBY_VERSION.tar.xz" 	&& echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum -c - 		&& mkdir -p /usr/src/ruby 	&& tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1 	&& rm ruby.tar.xz 		&& cd /usr/src/ruby 		&& { 		echo '#define ENABLE_PATH_CHECK 0'; 		echo; 		cat file.c; 	} > file.c.new 	&& mv file.c.new file.c 		&& autoconf 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 	&& make -j "$(nproc)" 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& cd / 	&& rm -r /usr/src/ruby 		&& gem update --system "$RUBYGEMS_VERSION" 	&& gem install bundler --version "$BUNDLER_VERSION" --force
-# Thu, 02 Nov 2017 03:16:53 GMT
+# Fri, 03 Nov 2017 03:00:36 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Thu, 02 Nov 2017 03:16:53 GMT
+# Fri, 03 Nov 2017 03:00:36 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Thu, 02 Nov 2017 03:16:53 GMT
+# Fri, 03 Nov 2017 03:00:36 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 02 Nov 2017 03:16:54 GMT
+# Fri, 03 Nov 2017 03:00:37 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" 	&& chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Thu, 02 Nov 2017 03:16:54 GMT
+# Fri, 03 Nov 2017 03:00:37 GMT
 CMD ["irb"]
-# Thu, 02 Nov 2017 03:22:35 GMT
+# Fri, 03 Nov 2017 03:00:57 GMT
 RUN bundle config --global frozen 1
-# Thu, 02 Nov 2017 03:22:36 GMT
+# Fri, 03 Nov 2017 03:00:58 GMT
 RUN mkdir -p /usr/src/app
-# Thu, 02 Nov 2017 03:22:36 GMT
+# Fri, 03 Nov 2017 03:00:59 GMT
 WORKDIR /usr/src/app
-# Thu, 02 Nov 2017 03:22:36 GMT
+# Fri, 03 Nov 2017 03:00:59 GMT
 ONBUILD COPY Gemfile /usr/src/app/
-# Thu, 02 Nov 2017 03:22:37 GMT
+# Fri, 03 Nov 2017 03:00:59 GMT
 ONBUILD COPY Gemfile.lock /usr/src/app/
-# Thu, 02 Nov 2017 03:22:37 GMT
+# Fri, 03 Nov 2017 03:00:59 GMT
 ONBUILD RUN bundle install
-# Thu, 02 Nov 2017 03:22:37 GMT
+# Fri, 03 Nov 2017 03:01:00 GMT
 ONBUILD COPY . /usr/src/app
 ```
 
@@ -5562,33 +5562,33 @@ ONBUILD COPY . /usr/src/app
 		Last Modified: Mon, 09 Oct 2017 23:37:27 GMT  
 		Size: 21.6 MB (21594870 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84c5e5ef1f110977e0931f2fcbc49c9f550e6b93813727de7e4432f85d99218c`  
-		Last Modified: Mon, 09 Oct 2017 23:37:53 GMT  
-		Size: 43.9 MB (43880551 bytes)  
+	-	`sha256:3ec8fb3b38011f25ce0ec5107fd54f417d6ee1e616150484f80244db339b8545`  
+		Last Modified: Fri, 03 Nov 2017 00:11:48 GMT  
+		Size: 43.9 MB (43880494 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14ef7f1a844c0d564af306374096859157d25cb6572aa66d2f3317201233a842`  
-		Last Modified: Mon, 09 Oct 2017 23:38:30 GMT  
-		Size: 134.9 MB (134858795 bytes)  
+	-	`sha256:e9ca1792f5a4fd3ba559486d5c4abd10b98da6df752100345877a4f933f8acf2`  
+		Last Modified: Fri, 03 Nov 2017 00:12:26 GMT  
+		Size: 135.6 MB (135638282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90302bac7dbd205509ba97139d55d72036c4787a67c4718c313bc2153555058f`  
-		Last Modified: Tue, 10 Oct 2017 03:23:33 GMT  
-		Size: 205.0 B  
+	-	`sha256:26633b0ed2789a768c89f956c4f8c905ea0397c278246caa924e473efb69255f`  
+		Last Modified: Fri, 03 Nov 2017 03:02:54 GMT  
+		Size: 207.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cdf31285ec890a039cac340f7360558db4a7a08462e87133e525c3e8d7481683`  
-		Last Modified: Thu, 02 Nov 2017 03:31:59 GMT  
-		Size: 32.3 MB (32301789 bytes)  
+	-	`sha256:60bd87d4f5f2abde320c1b43f07b000a37ddec888acc5a8d8f7aef470c30d437`  
+		Last Modified: Fri, 03 Nov 2017 03:06:07 GMT  
+		Size: 32.3 MB (32302529 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b27526cf21bdba874fec82a76304f8b8782fb6f00215239b343793dd8d59844e`  
-		Last Modified: Thu, 02 Nov 2017 03:31:50 GMT  
+	-	`sha256:0914d8bc6091c38aa7b35708f634f732edca2d4d0327eb35c831a4f7a28a6fe7`  
+		Last Modified: Fri, 03 Nov 2017 03:05:59 GMT  
 		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d8b6caa27e9affb7e34d412cc12120270f65b2568204ddddeec4ea03cda19204`  
-		Last Modified: Thu, 02 Nov 2017 03:33:12 GMT  
+	-	`sha256:73497d621e9564e7f2242ad4b1ee01eed213c2d9b72654cc958e097038f1e2b9`  
+		Last Modified: Fri, 03 Nov 2017 03:06:42 GMT  
 		Size: 186.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:37cacadef5e1bdb44be5b140525bf69a270f21c869770045fc219b4b0d52a674`  
-		Last Modified: Thu, 02 Nov 2017 03:33:11 GMT  
-		Size: 130.0 B  
+	-	`sha256:bb61fa8ea5ba2e8fa7dac57d5f84a9e95a912341d2ff8d0daa9117bff5749698`  
+		Last Modified: Fri, 03 Nov 2017 03:06:43 GMT  
+		Size: 133.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ruby:2.2-onbuild` - linux; ppc64le
@@ -6786,7 +6786,7 @@ CMD ["irb"]
 ## `ruby:2.3`
 
 ```console
-$ docker pull ruby@sha256:51d43ca37a2435ddb5244c65feb43bba7335a7f12f97d03072d8288640f3455b
+$ docker pull ruby@sha256:9029cd323d9a49632f70a85c2ac5fcf73014046694a8b2ab9582688e0a1f0b51
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7130,14 +7130,14 @@ CMD ["irb"]
 ### `ruby:2.3` - linux; 386
 
 ```console
-$ docker pull ruby@sha256:6b3b5c7f7945bb6b7628f40b66febcbe639ad49adf60309162425e2a85f55292
+$ docker pull ruby@sha256:013f7e492187c877741251aff8f0de8ecb7023cb38eb2c022ce4523a840cc140
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **287.2 MB (287182595 bytes)**  
+-	Total Size: **288.0 MB (287961571 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cf6ff01122b487aaafa6be2379a860c936358b33b29345e39e44f1f664b6f790`
+-	Image ID: `sha256:3fba8e2be62d9017a5a398b965208b79b99f68bb8056fa454cc409ff74b61549`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -7147,35 +7147,35 @@ ADD file:69555c5f78a887c075ee9d9449d85a723324e07872867c7f577e7fa99f6d41c0 in /
 CMD ["bash"]
 # Mon, 09 Oct 2017 22:58:19 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 09 Oct 2017 22:58:20 GMT
-RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Mon, 09 Oct 2017 23:01:12 GMT
+# Thu, 02 Nov 2017 23:22:35 GMT
+RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
+# Thu, 02 Nov 2017 23:23:36 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 09 Oct 2017 23:06:34 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 10 Oct 2017 02:44:48 GMT
+# Thu, 02 Nov 2017 23:25:59 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Fri, 03 Nov 2017 02:41:29 GMT
 RUN mkdir -p /usr/local/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /usr/local/etc/gemrc
-# Tue, 10 Oct 2017 02:57:49 GMT
+# Fri, 03 Nov 2017 02:49:53 GMT
 ENV RUBY_MAJOR=2.3
-# Tue, 10 Oct 2017 02:57:49 GMT
+# Fri, 03 Nov 2017 02:49:54 GMT
 ENV RUBY_VERSION=2.3.5
-# Tue, 10 Oct 2017 02:57:50 GMT
+# Fri, 03 Nov 2017 02:49:54 GMT
 ENV RUBY_DOWNLOAD_SHA256=7d3a7dabb190c2da06c963063342ca9a214bcd26f2158e904f0ec059b065ffda
-# Wed, 11 Oct 2017 02:55:40 GMT
+# Fri, 03 Nov 2017 02:49:54 GMT
 ENV RUBYGEMS_VERSION=2.6.14
-# Thu, 02 Nov 2017 03:06:33 GMT
+# Fri, 03 Nov 2017 02:49:54 GMT
 ENV BUNDLER_VERSION=1.16.0
-# Thu, 02 Nov 2017 03:09:52 GMT
+# Fri, 03 Nov 2017 02:53:25 GMT
 RUN set -ex 		&& buildDeps=' 		bison 		dpkg-dev 		libgdbm-dev 		ruby 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& rm -rf /var/lib/apt/lists/* 		&& wget -O ruby.tar.xz "https://cache.ruby-lang.org/pub/ruby/${RUBY_MAJOR%-rc}/ruby-$RUBY_VERSION.tar.xz" 	&& echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum -c - 		&& mkdir -p /usr/src/ruby 	&& tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1 	&& rm ruby.tar.xz 		&& cd /usr/src/ruby 		&& { 		echo '#define ENABLE_PATH_CHECK 0'; 		echo; 		cat file.c; 	} > file.c.new 	&& mv file.c.new file.c 		&& autoconf 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 	&& make -j "$(nproc)" 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& cd / 	&& rm -r /usr/src/ruby 		&& gem update --system "$RUBYGEMS_VERSION" 	&& gem install bundler --version "$BUNDLER_VERSION" --force
-# Thu, 02 Nov 2017 03:09:53 GMT
+# Fri, 03 Nov 2017 02:56:17 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Thu, 02 Nov 2017 03:09:53 GMT
+# Fri, 03 Nov 2017 02:56:17 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Thu, 02 Nov 2017 03:09:53 GMT
+# Fri, 03 Nov 2017 02:56:17 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 02 Nov 2017 03:09:54 GMT
+# Fri, 03 Nov 2017 02:56:18 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" 	&& chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Thu, 02 Nov 2017 03:09:54 GMT
+# Fri, 03 Nov 2017 02:56:22 GMT
 CMD ["irb"]
 ```
 
@@ -7188,24 +7188,24 @@ CMD ["irb"]
 		Last Modified: Mon, 09 Oct 2017 23:37:27 GMT  
 		Size: 21.6 MB (21594870 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84c5e5ef1f110977e0931f2fcbc49c9f550e6b93813727de7e4432f85d99218c`  
-		Last Modified: Mon, 09 Oct 2017 23:37:53 GMT  
-		Size: 43.9 MB (43880551 bytes)  
+	-	`sha256:3ec8fb3b38011f25ce0ec5107fd54f417d6ee1e616150484f80244db339b8545`  
+		Last Modified: Fri, 03 Nov 2017 00:11:48 GMT  
+		Size: 43.9 MB (43880494 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14ef7f1a844c0d564af306374096859157d25cb6572aa66d2f3317201233a842`  
-		Last Modified: Mon, 09 Oct 2017 23:38:30 GMT  
-		Size: 134.9 MB (134858795 bytes)  
+	-	`sha256:e9ca1792f5a4fd3ba559486d5c4abd10b98da6df752100345877a4f933f8acf2`  
+		Last Modified: Fri, 03 Nov 2017 00:12:26 GMT  
+		Size: 135.6 MB (135638282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90302bac7dbd205509ba97139d55d72036c4787a67c4718c313bc2153555058f`  
-		Last Modified: Tue, 10 Oct 2017 03:23:33 GMT  
-		Size: 205.0 B  
+	-	`sha256:26633b0ed2789a768c89f956c4f8c905ea0397c278246caa924e473efb69255f`  
+		Last Modified: Fri, 03 Nov 2017 03:02:54 GMT  
+		Size: 207.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8d2b8207a6fe4de24a528ff8e1ae319edc37166135fe5ecb96f14ca2bea5b9a`  
-		Last Modified: Thu, 02 Nov 2017 03:30:20 GMT  
-		Size: 34.1 MB (34074162 bytes)  
+	-	`sha256:e317af7371fee9e58bfad314503dae27c10f55e4557327ecd778a634adb2519e`  
+		Last Modified: Fri, 03 Nov 2017 03:04:59 GMT  
+		Size: 34.1 MB (34073706 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7488b26562ddd8b15b7e88aa07343fedfb1d68c8f48b6fdd01ab263e2ba5c687`  
-		Last Modified: Thu, 02 Nov 2017 03:30:13 GMT  
+	-	`sha256:a0ce7e7b83c9f0f5b0e262905a01d38582d2b8e939c557ba17d136332c3d53a3`  
+		Last Modified: Fri, 03 Nov 2017 03:04:50 GMT  
 		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -7376,7 +7376,7 @@ CMD ["irb"]
 ## `ruby:2.3.5`
 
 ```console
-$ docker pull ruby@sha256:51d43ca37a2435ddb5244c65feb43bba7335a7f12f97d03072d8288640f3455b
+$ docker pull ruby@sha256:9029cd323d9a49632f70a85c2ac5fcf73014046694a8b2ab9582688e0a1f0b51
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7720,14 +7720,14 @@ CMD ["irb"]
 ### `ruby:2.3.5` - linux; 386
 
 ```console
-$ docker pull ruby@sha256:6b3b5c7f7945bb6b7628f40b66febcbe639ad49adf60309162425e2a85f55292
+$ docker pull ruby@sha256:013f7e492187c877741251aff8f0de8ecb7023cb38eb2c022ce4523a840cc140
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **287.2 MB (287182595 bytes)**  
+-	Total Size: **288.0 MB (287961571 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cf6ff01122b487aaafa6be2379a860c936358b33b29345e39e44f1f664b6f790`
+-	Image ID: `sha256:3fba8e2be62d9017a5a398b965208b79b99f68bb8056fa454cc409ff74b61549`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -7737,35 +7737,35 @@ ADD file:69555c5f78a887c075ee9d9449d85a723324e07872867c7f577e7fa99f6d41c0 in /
 CMD ["bash"]
 # Mon, 09 Oct 2017 22:58:19 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 09 Oct 2017 22:58:20 GMT
-RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Mon, 09 Oct 2017 23:01:12 GMT
+# Thu, 02 Nov 2017 23:22:35 GMT
+RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
+# Thu, 02 Nov 2017 23:23:36 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 09 Oct 2017 23:06:34 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 10 Oct 2017 02:44:48 GMT
+# Thu, 02 Nov 2017 23:25:59 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Fri, 03 Nov 2017 02:41:29 GMT
 RUN mkdir -p /usr/local/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /usr/local/etc/gemrc
-# Tue, 10 Oct 2017 02:57:49 GMT
+# Fri, 03 Nov 2017 02:49:53 GMT
 ENV RUBY_MAJOR=2.3
-# Tue, 10 Oct 2017 02:57:49 GMT
+# Fri, 03 Nov 2017 02:49:54 GMT
 ENV RUBY_VERSION=2.3.5
-# Tue, 10 Oct 2017 02:57:50 GMT
+# Fri, 03 Nov 2017 02:49:54 GMT
 ENV RUBY_DOWNLOAD_SHA256=7d3a7dabb190c2da06c963063342ca9a214bcd26f2158e904f0ec059b065ffda
-# Wed, 11 Oct 2017 02:55:40 GMT
+# Fri, 03 Nov 2017 02:49:54 GMT
 ENV RUBYGEMS_VERSION=2.6.14
-# Thu, 02 Nov 2017 03:06:33 GMT
+# Fri, 03 Nov 2017 02:49:54 GMT
 ENV BUNDLER_VERSION=1.16.0
-# Thu, 02 Nov 2017 03:09:52 GMT
+# Fri, 03 Nov 2017 02:53:25 GMT
 RUN set -ex 		&& buildDeps=' 		bison 		dpkg-dev 		libgdbm-dev 		ruby 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& rm -rf /var/lib/apt/lists/* 		&& wget -O ruby.tar.xz "https://cache.ruby-lang.org/pub/ruby/${RUBY_MAJOR%-rc}/ruby-$RUBY_VERSION.tar.xz" 	&& echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum -c - 		&& mkdir -p /usr/src/ruby 	&& tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1 	&& rm ruby.tar.xz 		&& cd /usr/src/ruby 		&& { 		echo '#define ENABLE_PATH_CHECK 0'; 		echo; 		cat file.c; 	} > file.c.new 	&& mv file.c.new file.c 		&& autoconf 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 	&& make -j "$(nproc)" 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& cd / 	&& rm -r /usr/src/ruby 		&& gem update --system "$RUBYGEMS_VERSION" 	&& gem install bundler --version "$BUNDLER_VERSION" --force
-# Thu, 02 Nov 2017 03:09:53 GMT
+# Fri, 03 Nov 2017 02:56:17 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Thu, 02 Nov 2017 03:09:53 GMT
+# Fri, 03 Nov 2017 02:56:17 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Thu, 02 Nov 2017 03:09:53 GMT
+# Fri, 03 Nov 2017 02:56:17 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 02 Nov 2017 03:09:54 GMT
+# Fri, 03 Nov 2017 02:56:18 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" 	&& chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Thu, 02 Nov 2017 03:09:54 GMT
+# Fri, 03 Nov 2017 02:56:22 GMT
 CMD ["irb"]
 ```
 
@@ -7778,24 +7778,24 @@ CMD ["irb"]
 		Last Modified: Mon, 09 Oct 2017 23:37:27 GMT  
 		Size: 21.6 MB (21594870 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84c5e5ef1f110977e0931f2fcbc49c9f550e6b93813727de7e4432f85d99218c`  
-		Last Modified: Mon, 09 Oct 2017 23:37:53 GMT  
-		Size: 43.9 MB (43880551 bytes)  
+	-	`sha256:3ec8fb3b38011f25ce0ec5107fd54f417d6ee1e616150484f80244db339b8545`  
+		Last Modified: Fri, 03 Nov 2017 00:11:48 GMT  
+		Size: 43.9 MB (43880494 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14ef7f1a844c0d564af306374096859157d25cb6572aa66d2f3317201233a842`  
-		Last Modified: Mon, 09 Oct 2017 23:38:30 GMT  
-		Size: 134.9 MB (134858795 bytes)  
+	-	`sha256:e9ca1792f5a4fd3ba559486d5c4abd10b98da6df752100345877a4f933f8acf2`  
+		Last Modified: Fri, 03 Nov 2017 00:12:26 GMT  
+		Size: 135.6 MB (135638282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90302bac7dbd205509ba97139d55d72036c4787a67c4718c313bc2153555058f`  
-		Last Modified: Tue, 10 Oct 2017 03:23:33 GMT  
-		Size: 205.0 B  
+	-	`sha256:26633b0ed2789a768c89f956c4f8c905ea0397c278246caa924e473efb69255f`  
+		Last Modified: Fri, 03 Nov 2017 03:02:54 GMT  
+		Size: 207.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8d2b8207a6fe4de24a528ff8e1ae319edc37166135fe5ecb96f14ca2bea5b9a`  
-		Last Modified: Thu, 02 Nov 2017 03:30:20 GMT  
-		Size: 34.1 MB (34074162 bytes)  
+	-	`sha256:e317af7371fee9e58bfad314503dae27c10f55e4557327ecd778a634adb2519e`  
+		Last Modified: Fri, 03 Nov 2017 03:04:59 GMT  
+		Size: 34.1 MB (34073706 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7488b26562ddd8b15b7e88aa07343fedfb1d68c8f48b6fdd01ab263e2ba5c687`  
-		Last Modified: Thu, 02 Nov 2017 03:30:13 GMT  
+	-	`sha256:a0ce7e7b83c9f0f5b0e262905a01d38582d2b8e939c557ba17d136332c3d53a3`  
+		Last Modified: Fri, 03 Nov 2017 03:04:50 GMT  
 		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -8110,7 +8110,7 @@ CMD ["irb"]
 ## `ruby:2.3.5-jessie`
 
 ```console
-$ docker pull ruby@sha256:51d43ca37a2435ddb5244c65feb43bba7335a7f12f97d03072d8288640f3455b
+$ docker pull ruby@sha256:9029cd323d9a49632f70a85c2ac5fcf73014046694a8b2ab9582688e0a1f0b51
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8454,14 +8454,14 @@ CMD ["irb"]
 ### `ruby:2.3.5-jessie` - linux; 386
 
 ```console
-$ docker pull ruby@sha256:6b3b5c7f7945bb6b7628f40b66febcbe639ad49adf60309162425e2a85f55292
+$ docker pull ruby@sha256:013f7e492187c877741251aff8f0de8ecb7023cb38eb2c022ce4523a840cc140
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **287.2 MB (287182595 bytes)**  
+-	Total Size: **288.0 MB (287961571 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cf6ff01122b487aaafa6be2379a860c936358b33b29345e39e44f1f664b6f790`
+-	Image ID: `sha256:3fba8e2be62d9017a5a398b965208b79b99f68bb8056fa454cc409ff74b61549`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -8471,35 +8471,35 @@ ADD file:69555c5f78a887c075ee9d9449d85a723324e07872867c7f577e7fa99f6d41c0 in /
 CMD ["bash"]
 # Mon, 09 Oct 2017 22:58:19 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 09 Oct 2017 22:58:20 GMT
-RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Mon, 09 Oct 2017 23:01:12 GMT
+# Thu, 02 Nov 2017 23:22:35 GMT
+RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
+# Thu, 02 Nov 2017 23:23:36 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 09 Oct 2017 23:06:34 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 10 Oct 2017 02:44:48 GMT
+# Thu, 02 Nov 2017 23:25:59 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Fri, 03 Nov 2017 02:41:29 GMT
 RUN mkdir -p /usr/local/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /usr/local/etc/gemrc
-# Tue, 10 Oct 2017 02:57:49 GMT
+# Fri, 03 Nov 2017 02:49:53 GMT
 ENV RUBY_MAJOR=2.3
-# Tue, 10 Oct 2017 02:57:49 GMT
+# Fri, 03 Nov 2017 02:49:54 GMT
 ENV RUBY_VERSION=2.3.5
-# Tue, 10 Oct 2017 02:57:50 GMT
+# Fri, 03 Nov 2017 02:49:54 GMT
 ENV RUBY_DOWNLOAD_SHA256=7d3a7dabb190c2da06c963063342ca9a214bcd26f2158e904f0ec059b065ffda
-# Wed, 11 Oct 2017 02:55:40 GMT
+# Fri, 03 Nov 2017 02:49:54 GMT
 ENV RUBYGEMS_VERSION=2.6.14
-# Thu, 02 Nov 2017 03:06:33 GMT
+# Fri, 03 Nov 2017 02:49:54 GMT
 ENV BUNDLER_VERSION=1.16.0
-# Thu, 02 Nov 2017 03:09:52 GMT
+# Fri, 03 Nov 2017 02:53:25 GMT
 RUN set -ex 		&& buildDeps=' 		bison 		dpkg-dev 		libgdbm-dev 		ruby 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& rm -rf /var/lib/apt/lists/* 		&& wget -O ruby.tar.xz "https://cache.ruby-lang.org/pub/ruby/${RUBY_MAJOR%-rc}/ruby-$RUBY_VERSION.tar.xz" 	&& echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum -c - 		&& mkdir -p /usr/src/ruby 	&& tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1 	&& rm ruby.tar.xz 		&& cd /usr/src/ruby 		&& { 		echo '#define ENABLE_PATH_CHECK 0'; 		echo; 		cat file.c; 	} > file.c.new 	&& mv file.c.new file.c 		&& autoconf 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 	&& make -j "$(nproc)" 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& cd / 	&& rm -r /usr/src/ruby 		&& gem update --system "$RUBYGEMS_VERSION" 	&& gem install bundler --version "$BUNDLER_VERSION" --force
-# Thu, 02 Nov 2017 03:09:53 GMT
+# Fri, 03 Nov 2017 02:56:17 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Thu, 02 Nov 2017 03:09:53 GMT
+# Fri, 03 Nov 2017 02:56:17 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Thu, 02 Nov 2017 03:09:53 GMT
+# Fri, 03 Nov 2017 02:56:17 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 02 Nov 2017 03:09:54 GMT
+# Fri, 03 Nov 2017 02:56:18 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" 	&& chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Thu, 02 Nov 2017 03:09:54 GMT
+# Fri, 03 Nov 2017 02:56:22 GMT
 CMD ["irb"]
 ```
 
@@ -8512,24 +8512,24 @@ CMD ["irb"]
 		Last Modified: Mon, 09 Oct 2017 23:37:27 GMT  
 		Size: 21.6 MB (21594870 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84c5e5ef1f110977e0931f2fcbc49c9f550e6b93813727de7e4432f85d99218c`  
-		Last Modified: Mon, 09 Oct 2017 23:37:53 GMT  
-		Size: 43.9 MB (43880551 bytes)  
+	-	`sha256:3ec8fb3b38011f25ce0ec5107fd54f417d6ee1e616150484f80244db339b8545`  
+		Last Modified: Fri, 03 Nov 2017 00:11:48 GMT  
+		Size: 43.9 MB (43880494 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14ef7f1a844c0d564af306374096859157d25cb6572aa66d2f3317201233a842`  
-		Last Modified: Mon, 09 Oct 2017 23:38:30 GMT  
-		Size: 134.9 MB (134858795 bytes)  
+	-	`sha256:e9ca1792f5a4fd3ba559486d5c4abd10b98da6df752100345877a4f933f8acf2`  
+		Last Modified: Fri, 03 Nov 2017 00:12:26 GMT  
+		Size: 135.6 MB (135638282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90302bac7dbd205509ba97139d55d72036c4787a67c4718c313bc2153555058f`  
-		Last Modified: Tue, 10 Oct 2017 03:23:33 GMT  
-		Size: 205.0 B  
+	-	`sha256:26633b0ed2789a768c89f956c4f8c905ea0397c278246caa924e473efb69255f`  
+		Last Modified: Fri, 03 Nov 2017 03:02:54 GMT  
+		Size: 207.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8d2b8207a6fe4de24a528ff8e1ae319edc37166135fe5ecb96f14ca2bea5b9a`  
-		Last Modified: Thu, 02 Nov 2017 03:30:20 GMT  
-		Size: 34.1 MB (34074162 bytes)  
+	-	`sha256:e317af7371fee9e58bfad314503dae27c10f55e4557327ecd778a634adb2519e`  
+		Last Modified: Fri, 03 Nov 2017 03:04:59 GMT  
+		Size: 34.1 MB (34073706 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7488b26562ddd8b15b7e88aa07343fedfb1d68c8f48b6fdd01ab263e2ba5c687`  
-		Last Modified: Thu, 02 Nov 2017 03:30:13 GMT  
+	-	`sha256:a0ce7e7b83c9f0f5b0e262905a01d38582d2b8e939c557ba17d136332c3d53a3`  
+		Last Modified: Fri, 03 Nov 2017 03:04:50 GMT  
 		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -8700,7 +8700,7 @@ CMD ["irb"]
 ## `ruby:2.3.5-onbuild`
 
 ```console
-$ docker pull ruby@sha256:9b6d14f8e945a8fb25620905e4955acd583e7e3ae46e8a4f85a3856d7950d1d2
+$ docker pull ruby@sha256:4ea268861b546382b9b8bde79a078c03bc240b4498b2aff30f34c201a66671cb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9132,14 +9132,14 @@ ONBUILD COPY . /usr/src/app
 ### `ruby:2.3.5-onbuild` - linux; 386
 
 ```console
-$ docker pull ruby@sha256:334526194a986e78616945cb6473107fed144ca644b92b317ef60eaec30d783d
+$ docker pull ruby@sha256:005ff7ca8ea882e4f76bc0e4c197609af8709fb542de35e75bafdf9069348cba
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **287.2 MB (287182910 bytes)**  
+-	Total Size: **288.0 MB (287961889 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:14e6b74e82570eb8ded57d40a38c609f1001e969fdad2ab45d353e0b74ea26b7`
+-	Image ID: `sha256:5e9b2761e84f679df1e5872cb690fcbdfca866f82970dbb8402b1b840afb571c`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -9149,49 +9149,49 @@ ADD file:69555c5f78a887c075ee9d9449d85a723324e07872867c7f577e7fa99f6d41c0 in /
 CMD ["bash"]
 # Mon, 09 Oct 2017 22:58:19 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 09 Oct 2017 22:58:20 GMT
-RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Mon, 09 Oct 2017 23:01:12 GMT
+# Thu, 02 Nov 2017 23:22:35 GMT
+RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
+# Thu, 02 Nov 2017 23:23:36 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 09 Oct 2017 23:06:34 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 10 Oct 2017 02:44:48 GMT
+# Thu, 02 Nov 2017 23:25:59 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Fri, 03 Nov 2017 02:41:29 GMT
 RUN mkdir -p /usr/local/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /usr/local/etc/gemrc
-# Tue, 10 Oct 2017 02:57:49 GMT
+# Fri, 03 Nov 2017 02:49:53 GMT
 ENV RUBY_MAJOR=2.3
-# Tue, 10 Oct 2017 02:57:49 GMT
+# Fri, 03 Nov 2017 02:49:54 GMT
 ENV RUBY_VERSION=2.3.5
-# Tue, 10 Oct 2017 02:57:50 GMT
+# Fri, 03 Nov 2017 02:49:54 GMT
 ENV RUBY_DOWNLOAD_SHA256=7d3a7dabb190c2da06c963063342ca9a214bcd26f2158e904f0ec059b065ffda
-# Wed, 11 Oct 2017 02:55:40 GMT
+# Fri, 03 Nov 2017 02:49:54 GMT
 ENV RUBYGEMS_VERSION=2.6.14
-# Thu, 02 Nov 2017 03:06:33 GMT
+# Fri, 03 Nov 2017 02:49:54 GMT
 ENV BUNDLER_VERSION=1.16.0
-# Thu, 02 Nov 2017 03:09:52 GMT
+# Fri, 03 Nov 2017 02:53:25 GMT
 RUN set -ex 		&& buildDeps=' 		bison 		dpkg-dev 		libgdbm-dev 		ruby 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& rm -rf /var/lib/apt/lists/* 		&& wget -O ruby.tar.xz "https://cache.ruby-lang.org/pub/ruby/${RUBY_MAJOR%-rc}/ruby-$RUBY_VERSION.tar.xz" 	&& echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum -c - 		&& mkdir -p /usr/src/ruby 	&& tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1 	&& rm ruby.tar.xz 		&& cd /usr/src/ruby 		&& { 		echo '#define ENABLE_PATH_CHECK 0'; 		echo; 		cat file.c; 	} > file.c.new 	&& mv file.c.new file.c 		&& autoconf 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 	&& make -j "$(nproc)" 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& cd / 	&& rm -r /usr/src/ruby 		&& gem update --system "$RUBYGEMS_VERSION" 	&& gem install bundler --version "$BUNDLER_VERSION" --force
-# Thu, 02 Nov 2017 03:09:53 GMT
+# Fri, 03 Nov 2017 02:56:17 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Thu, 02 Nov 2017 03:09:53 GMT
+# Fri, 03 Nov 2017 02:56:17 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Thu, 02 Nov 2017 03:09:53 GMT
+# Fri, 03 Nov 2017 02:56:17 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 02 Nov 2017 03:09:54 GMT
+# Fri, 03 Nov 2017 02:56:18 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" 	&& chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Thu, 02 Nov 2017 03:09:54 GMT
+# Fri, 03 Nov 2017 02:56:22 GMT
 CMD ["irb"]
-# Thu, 02 Nov 2017 03:13:44 GMT
+# Fri, 03 Nov 2017 02:56:38 GMT
 RUN bundle config --global frozen 1
-# Thu, 02 Nov 2017 03:13:45 GMT
+# Fri, 03 Nov 2017 02:56:38 GMT
 RUN mkdir -p /usr/src/app
-# Thu, 02 Nov 2017 03:13:45 GMT
+# Fri, 03 Nov 2017 02:56:42 GMT
 WORKDIR /usr/src/app
-# Thu, 02 Nov 2017 03:13:45 GMT
+# Fri, 03 Nov 2017 02:56:43 GMT
 ONBUILD COPY Gemfile /usr/src/app/
-# Thu, 02 Nov 2017 03:13:45 GMT
+# Fri, 03 Nov 2017 02:56:43 GMT
 ONBUILD COPY Gemfile.lock /usr/src/app/
-# Thu, 02 Nov 2017 03:13:45 GMT
+# Fri, 03 Nov 2017 02:56:43 GMT
 ONBUILD RUN bundle install
-# Thu, 02 Nov 2017 03:13:46 GMT
+# Fri, 03 Nov 2017 02:56:43 GMT
 ONBUILD COPY . /usr/src/app
 ```
 
@@ -9204,33 +9204,33 @@ ONBUILD COPY . /usr/src/app
 		Last Modified: Mon, 09 Oct 2017 23:37:27 GMT  
 		Size: 21.6 MB (21594870 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84c5e5ef1f110977e0931f2fcbc49c9f550e6b93813727de7e4432f85d99218c`  
-		Last Modified: Mon, 09 Oct 2017 23:37:53 GMT  
-		Size: 43.9 MB (43880551 bytes)  
+	-	`sha256:3ec8fb3b38011f25ce0ec5107fd54f417d6ee1e616150484f80244db339b8545`  
+		Last Modified: Fri, 03 Nov 2017 00:11:48 GMT  
+		Size: 43.9 MB (43880494 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14ef7f1a844c0d564af306374096859157d25cb6572aa66d2f3317201233a842`  
-		Last Modified: Mon, 09 Oct 2017 23:38:30 GMT  
-		Size: 134.9 MB (134858795 bytes)  
+	-	`sha256:e9ca1792f5a4fd3ba559486d5c4abd10b98da6df752100345877a4f933f8acf2`  
+		Last Modified: Fri, 03 Nov 2017 00:12:26 GMT  
+		Size: 135.6 MB (135638282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90302bac7dbd205509ba97139d55d72036c4787a67c4718c313bc2153555058f`  
-		Last Modified: Tue, 10 Oct 2017 03:23:33 GMT  
-		Size: 205.0 B  
+	-	`sha256:26633b0ed2789a768c89f956c4f8c905ea0397c278246caa924e473efb69255f`  
+		Last Modified: Fri, 03 Nov 2017 03:02:54 GMT  
+		Size: 207.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8d2b8207a6fe4de24a528ff8e1ae319edc37166135fe5ecb96f14ca2bea5b9a`  
-		Last Modified: Thu, 02 Nov 2017 03:30:20 GMT  
-		Size: 34.1 MB (34074162 bytes)  
+	-	`sha256:e317af7371fee9e58bfad314503dae27c10f55e4557327ecd778a634adb2519e`  
+		Last Modified: Fri, 03 Nov 2017 03:04:59 GMT  
+		Size: 34.1 MB (34073706 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7488b26562ddd8b15b7e88aa07343fedfb1d68c8f48b6fdd01ab263e2ba5c687`  
-		Last Modified: Thu, 02 Nov 2017 03:30:13 GMT  
+	-	`sha256:a0ce7e7b83c9f0f5b0e262905a01d38582d2b8e939c557ba17d136332c3d53a3`  
+		Last Modified: Fri, 03 Nov 2017 03:04:50 GMT  
 		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:21898d2f8491732f52c84f95920de82f1bc8682d575ffd2ab4a1826a92dd1448`  
-		Last Modified: Thu, 02 Nov 2017 03:31:32 GMT  
-		Size: 186.0 B  
+	-	`sha256:28e3bc294c01b25d5b9ad6d720f44fa35d28851bf1958c4d45f3bda3c54c04a5`  
+		Last Modified: Fri, 03 Nov 2017 03:05:41 GMT  
+		Size: 187.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7b7a8d4fb11034d912178446a514bf9dd7445324867e7ef1f41af0ba1a3a9232`  
-		Last Modified: Thu, 02 Nov 2017 03:31:32 GMT  
-		Size: 129.0 B  
+	-	`sha256:553f3b3b16b2ea7b54803752457e8a824563985ef2c9eea4a5c929152015006b`  
+		Last Modified: Fri, 03 Nov 2017 03:05:40 GMT  
+		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ruby:2.3.5-onbuild` - linux; ppc64le
@@ -10572,7 +10572,7 @@ CMD ["irb"]
 ## `ruby:2.3-jessie`
 
 ```console
-$ docker pull ruby@sha256:51d43ca37a2435ddb5244c65feb43bba7335a7f12f97d03072d8288640f3455b
+$ docker pull ruby@sha256:9029cd323d9a49632f70a85c2ac5fcf73014046694a8b2ab9582688e0a1f0b51
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -10916,14 +10916,14 @@ CMD ["irb"]
 ### `ruby:2.3-jessie` - linux; 386
 
 ```console
-$ docker pull ruby@sha256:6b3b5c7f7945bb6b7628f40b66febcbe639ad49adf60309162425e2a85f55292
+$ docker pull ruby@sha256:013f7e492187c877741251aff8f0de8ecb7023cb38eb2c022ce4523a840cc140
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **287.2 MB (287182595 bytes)**  
+-	Total Size: **288.0 MB (287961571 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cf6ff01122b487aaafa6be2379a860c936358b33b29345e39e44f1f664b6f790`
+-	Image ID: `sha256:3fba8e2be62d9017a5a398b965208b79b99f68bb8056fa454cc409ff74b61549`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -10933,35 +10933,35 @@ ADD file:69555c5f78a887c075ee9d9449d85a723324e07872867c7f577e7fa99f6d41c0 in /
 CMD ["bash"]
 # Mon, 09 Oct 2017 22:58:19 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 09 Oct 2017 22:58:20 GMT
-RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Mon, 09 Oct 2017 23:01:12 GMT
+# Thu, 02 Nov 2017 23:22:35 GMT
+RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
+# Thu, 02 Nov 2017 23:23:36 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 09 Oct 2017 23:06:34 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 10 Oct 2017 02:44:48 GMT
+# Thu, 02 Nov 2017 23:25:59 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Fri, 03 Nov 2017 02:41:29 GMT
 RUN mkdir -p /usr/local/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /usr/local/etc/gemrc
-# Tue, 10 Oct 2017 02:57:49 GMT
+# Fri, 03 Nov 2017 02:49:53 GMT
 ENV RUBY_MAJOR=2.3
-# Tue, 10 Oct 2017 02:57:49 GMT
+# Fri, 03 Nov 2017 02:49:54 GMT
 ENV RUBY_VERSION=2.3.5
-# Tue, 10 Oct 2017 02:57:50 GMT
+# Fri, 03 Nov 2017 02:49:54 GMT
 ENV RUBY_DOWNLOAD_SHA256=7d3a7dabb190c2da06c963063342ca9a214bcd26f2158e904f0ec059b065ffda
-# Wed, 11 Oct 2017 02:55:40 GMT
+# Fri, 03 Nov 2017 02:49:54 GMT
 ENV RUBYGEMS_VERSION=2.6.14
-# Thu, 02 Nov 2017 03:06:33 GMT
+# Fri, 03 Nov 2017 02:49:54 GMT
 ENV BUNDLER_VERSION=1.16.0
-# Thu, 02 Nov 2017 03:09:52 GMT
+# Fri, 03 Nov 2017 02:53:25 GMT
 RUN set -ex 		&& buildDeps=' 		bison 		dpkg-dev 		libgdbm-dev 		ruby 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& rm -rf /var/lib/apt/lists/* 		&& wget -O ruby.tar.xz "https://cache.ruby-lang.org/pub/ruby/${RUBY_MAJOR%-rc}/ruby-$RUBY_VERSION.tar.xz" 	&& echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum -c - 		&& mkdir -p /usr/src/ruby 	&& tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1 	&& rm ruby.tar.xz 		&& cd /usr/src/ruby 		&& { 		echo '#define ENABLE_PATH_CHECK 0'; 		echo; 		cat file.c; 	} > file.c.new 	&& mv file.c.new file.c 		&& autoconf 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 	&& make -j "$(nproc)" 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& cd / 	&& rm -r /usr/src/ruby 		&& gem update --system "$RUBYGEMS_VERSION" 	&& gem install bundler --version "$BUNDLER_VERSION" --force
-# Thu, 02 Nov 2017 03:09:53 GMT
+# Fri, 03 Nov 2017 02:56:17 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Thu, 02 Nov 2017 03:09:53 GMT
+# Fri, 03 Nov 2017 02:56:17 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Thu, 02 Nov 2017 03:09:53 GMT
+# Fri, 03 Nov 2017 02:56:17 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 02 Nov 2017 03:09:54 GMT
+# Fri, 03 Nov 2017 02:56:18 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" 	&& chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Thu, 02 Nov 2017 03:09:54 GMT
+# Fri, 03 Nov 2017 02:56:22 GMT
 CMD ["irb"]
 ```
 
@@ -10974,24 +10974,24 @@ CMD ["irb"]
 		Last Modified: Mon, 09 Oct 2017 23:37:27 GMT  
 		Size: 21.6 MB (21594870 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84c5e5ef1f110977e0931f2fcbc49c9f550e6b93813727de7e4432f85d99218c`  
-		Last Modified: Mon, 09 Oct 2017 23:37:53 GMT  
-		Size: 43.9 MB (43880551 bytes)  
+	-	`sha256:3ec8fb3b38011f25ce0ec5107fd54f417d6ee1e616150484f80244db339b8545`  
+		Last Modified: Fri, 03 Nov 2017 00:11:48 GMT  
+		Size: 43.9 MB (43880494 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14ef7f1a844c0d564af306374096859157d25cb6572aa66d2f3317201233a842`  
-		Last Modified: Mon, 09 Oct 2017 23:38:30 GMT  
-		Size: 134.9 MB (134858795 bytes)  
+	-	`sha256:e9ca1792f5a4fd3ba559486d5c4abd10b98da6df752100345877a4f933f8acf2`  
+		Last Modified: Fri, 03 Nov 2017 00:12:26 GMT  
+		Size: 135.6 MB (135638282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90302bac7dbd205509ba97139d55d72036c4787a67c4718c313bc2153555058f`  
-		Last Modified: Tue, 10 Oct 2017 03:23:33 GMT  
-		Size: 205.0 B  
+	-	`sha256:26633b0ed2789a768c89f956c4f8c905ea0397c278246caa924e473efb69255f`  
+		Last Modified: Fri, 03 Nov 2017 03:02:54 GMT  
+		Size: 207.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8d2b8207a6fe4de24a528ff8e1ae319edc37166135fe5ecb96f14ca2bea5b9a`  
-		Last Modified: Thu, 02 Nov 2017 03:30:20 GMT  
-		Size: 34.1 MB (34074162 bytes)  
+	-	`sha256:e317af7371fee9e58bfad314503dae27c10f55e4557327ecd778a634adb2519e`  
+		Last Modified: Fri, 03 Nov 2017 03:04:59 GMT  
+		Size: 34.1 MB (34073706 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7488b26562ddd8b15b7e88aa07343fedfb1d68c8f48b6fdd01ab263e2ba5c687`  
-		Last Modified: Thu, 02 Nov 2017 03:30:13 GMT  
+	-	`sha256:a0ce7e7b83c9f0f5b0e262905a01d38582d2b8e939c557ba17d136332c3d53a3`  
+		Last Modified: Fri, 03 Nov 2017 03:04:50 GMT  
 		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -11162,7 +11162,7 @@ CMD ["irb"]
 ## `ruby:2.3-onbuild`
 
 ```console
-$ docker pull ruby@sha256:9b6d14f8e945a8fb25620905e4955acd583e7e3ae46e8a4f85a3856d7950d1d2
+$ docker pull ruby@sha256:4ea268861b546382b9b8bde79a078c03bc240b4498b2aff30f34c201a66671cb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11594,14 +11594,14 @@ ONBUILD COPY . /usr/src/app
 ### `ruby:2.3-onbuild` - linux; 386
 
 ```console
-$ docker pull ruby@sha256:334526194a986e78616945cb6473107fed144ca644b92b317ef60eaec30d783d
+$ docker pull ruby@sha256:005ff7ca8ea882e4f76bc0e4c197609af8709fb542de35e75bafdf9069348cba
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **287.2 MB (287182910 bytes)**  
+-	Total Size: **288.0 MB (287961889 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:14e6b74e82570eb8ded57d40a38c609f1001e969fdad2ab45d353e0b74ea26b7`
+-	Image ID: `sha256:5e9b2761e84f679df1e5872cb690fcbdfca866f82970dbb8402b1b840afb571c`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -11611,49 +11611,49 @@ ADD file:69555c5f78a887c075ee9d9449d85a723324e07872867c7f577e7fa99f6d41c0 in /
 CMD ["bash"]
 # Mon, 09 Oct 2017 22:58:19 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 09 Oct 2017 22:58:20 GMT
-RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Mon, 09 Oct 2017 23:01:12 GMT
+# Thu, 02 Nov 2017 23:22:35 GMT
+RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
+# Thu, 02 Nov 2017 23:23:36 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 09 Oct 2017 23:06:34 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 10 Oct 2017 02:44:48 GMT
+# Thu, 02 Nov 2017 23:25:59 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Fri, 03 Nov 2017 02:41:29 GMT
 RUN mkdir -p /usr/local/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /usr/local/etc/gemrc
-# Tue, 10 Oct 2017 02:57:49 GMT
+# Fri, 03 Nov 2017 02:49:53 GMT
 ENV RUBY_MAJOR=2.3
-# Tue, 10 Oct 2017 02:57:49 GMT
+# Fri, 03 Nov 2017 02:49:54 GMT
 ENV RUBY_VERSION=2.3.5
-# Tue, 10 Oct 2017 02:57:50 GMT
+# Fri, 03 Nov 2017 02:49:54 GMT
 ENV RUBY_DOWNLOAD_SHA256=7d3a7dabb190c2da06c963063342ca9a214bcd26f2158e904f0ec059b065ffda
-# Wed, 11 Oct 2017 02:55:40 GMT
+# Fri, 03 Nov 2017 02:49:54 GMT
 ENV RUBYGEMS_VERSION=2.6.14
-# Thu, 02 Nov 2017 03:06:33 GMT
+# Fri, 03 Nov 2017 02:49:54 GMT
 ENV BUNDLER_VERSION=1.16.0
-# Thu, 02 Nov 2017 03:09:52 GMT
+# Fri, 03 Nov 2017 02:53:25 GMT
 RUN set -ex 		&& buildDeps=' 		bison 		dpkg-dev 		libgdbm-dev 		ruby 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& rm -rf /var/lib/apt/lists/* 		&& wget -O ruby.tar.xz "https://cache.ruby-lang.org/pub/ruby/${RUBY_MAJOR%-rc}/ruby-$RUBY_VERSION.tar.xz" 	&& echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum -c - 		&& mkdir -p /usr/src/ruby 	&& tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1 	&& rm ruby.tar.xz 		&& cd /usr/src/ruby 		&& { 		echo '#define ENABLE_PATH_CHECK 0'; 		echo; 		cat file.c; 	} > file.c.new 	&& mv file.c.new file.c 		&& autoconf 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 	&& make -j "$(nproc)" 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& cd / 	&& rm -r /usr/src/ruby 		&& gem update --system "$RUBYGEMS_VERSION" 	&& gem install bundler --version "$BUNDLER_VERSION" --force
-# Thu, 02 Nov 2017 03:09:53 GMT
+# Fri, 03 Nov 2017 02:56:17 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Thu, 02 Nov 2017 03:09:53 GMT
+# Fri, 03 Nov 2017 02:56:17 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Thu, 02 Nov 2017 03:09:53 GMT
+# Fri, 03 Nov 2017 02:56:17 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 02 Nov 2017 03:09:54 GMT
+# Fri, 03 Nov 2017 02:56:18 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" 	&& chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Thu, 02 Nov 2017 03:09:54 GMT
+# Fri, 03 Nov 2017 02:56:22 GMT
 CMD ["irb"]
-# Thu, 02 Nov 2017 03:13:44 GMT
+# Fri, 03 Nov 2017 02:56:38 GMT
 RUN bundle config --global frozen 1
-# Thu, 02 Nov 2017 03:13:45 GMT
+# Fri, 03 Nov 2017 02:56:38 GMT
 RUN mkdir -p /usr/src/app
-# Thu, 02 Nov 2017 03:13:45 GMT
+# Fri, 03 Nov 2017 02:56:42 GMT
 WORKDIR /usr/src/app
-# Thu, 02 Nov 2017 03:13:45 GMT
+# Fri, 03 Nov 2017 02:56:43 GMT
 ONBUILD COPY Gemfile /usr/src/app/
-# Thu, 02 Nov 2017 03:13:45 GMT
+# Fri, 03 Nov 2017 02:56:43 GMT
 ONBUILD COPY Gemfile.lock /usr/src/app/
-# Thu, 02 Nov 2017 03:13:45 GMT
+# Fri, 03 Nov 2017 02:56:43 GMT
 ONBUILD RUN bundle install
-# Thu, 02 Nov 2017 03:13:46 GMT
+# Fri, 03 Nov 2017 02:56:43 GMT
 ONBUILD COPY . /usr/src/app
 ```
 
@@ -11666,33 +11666,33 @@ ONBUILD COPY . /usr/src/app
 		Last Modified: Mon, 09 Oct 2017 23:37:27 GMT  
 		Size: 21.6 MB (21594870 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84c5e5ef1f110977e0931f2fcbc49c9f550e6b93813727de7e4432f85d99218c`  
-		Last Modified: Mon, 09 Oct 2017 23:37:53 GMT  
-		Size: 43.9 MB (43880551 bytes)  
+	-	`sha256:3ec8fb3b38011f25ce0ec5107fd54f417d6ee1e616150484f80244db339b8545`  
+		Last Modified: Fri, 03 Nov 2017 00:11:48 GMT  
+		Size: 43.9 MB (43880494 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14ef7f1a844c0d564af306374096859157d25cb6572aa66d2f3317201233a842`  
-		Last Modified: Mon, 09 Oct 2017 23:38:30 GMT  
-		Size: 134.9 MB (134858795 bytes)  
+	-	`sha256:e9ca1792f5a4fd3ba559486d5c4abd10b98da6df752100345877a4f933f8acf2`  
+		Last Modified: Fri, 03 Nov 2017 00:12:26 GMT  
+		Size: 135.6 MB (135638282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90302bac7dbd205509ba97139d55d72036c4787a67c4718c313bc2153555058f`  
-		Last Modified: Tue, 10 Oct 2017 03:23:33 GMT  
-		Size: 205.0 B  
+	-	`sha256:26633b0ed2789a768c89f956c4f8c905ea0397c278246caa924e473efb69255f`  
+		Last Modified: Fri, 03 Nov 2017 03:02:54 GMT  
+		Size: 207.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8d2b8207a6fe4de24a528ff8e1ae319edc37166135fe5ecb96f14ca2bea5b9a`  
-		Last Modified: Thu, 02 Nov 2017 03:30:20 GMT  
-		Size: 34.1 MB (34074162 bytes)  
+	-	`sha256:e317af7371fee9e58bfad314503dae27c10f55e4557327ecd778a634adb2519e`  
+		Last Modified: Fri, 03 Nov 2017 03:04:59 GMT  
+		Size: 34.1 MB (34073706 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7488b26562ddd8b15b7e88aa07343fedfb1d68c8f48b6fdd01ab263e2ba5c687`  
-		Last Modified: Thu, 02 Nov 2017 03:30:13 GMT  
+	-	`sha256:a0ce7e7b83c9f0f5b0e262905a01d38582d2b8e939c557ba17d136332c3d53a3`  
+		Last Modified: Fri, 03 Nov 2017 03:04:50 GMT  
 		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:21898d2f8491732f52c84f95920de82f1bc8682d575ffd2ab4a1826a92dd1448`  
-		Last Modified: Thu, 02 Nov 2017 03:31:32 GMT  
-		Size: 186.0 B  
+	-	`sha256:28e3bc294c01b25d5b9ad6d720f44fa35d28851bf1958c4d45f3bda3c54c04a5`  
+		Last Modified: Fri, 03 Nov 2017 03:05:41 GMT  
+		Size: 187.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7b7a8d4fb11034d912178446a514bf9dd7445324867e7ef1f41af0ba1a3a9232`  
-		Last Modified: Thu, 02 Nov 2017 03:31:32 GMT  
-		Size: 129.0 B  
+	-	`sha256:553f3b3b16b2ea7b54803752457e8a824563985ef2c9eea4a5c929152015006b`  
+		Last Modified: Fri, 03 Nov 2017 03:05:40 GMT  
+		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ruby:2.3-onbuild` - linux; ppc64le
@@ -15221,7 +15221,7 @@ CMD ["irb"]
 ## `ruby:2.4.2-onbuild`
 
 ```console
-$ docker pull ruby@sha256:d0c3ada32ae9e05c0b3df68a32ae780d736a60ee2749e7a919eae00d0afe3520
+$ docker pull ruby@sha256:cdb9ebd7d893a8663d0697a942a71529bc0e7ba30517a776b32fe18e836df148
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -15653,14 +15653,14 @@ ONBUILD COPY . /usr/src/app
 ### `ruby:2.4.2-onbuild` - linux; 386
 
 ```console
-$ docker pull ruby@sha256:9cc552ec66be6ac66b6cc0c61b1c0964d4cbc0e93018f930f5fd3d65dd85d8ea
+$ docker pull ruby@sha256:c9ba9dcf8323032bf2040f4275491ce695a8a8a991920716cc4786a96097b00b
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **276.3 MB (276323677 bytes)**  
+-	Total Size: **277.1 MB (277103901 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:560ee70b71f7686338e63038f5dd94548435435733c3d559184db803260d049b`
+-	Image ID: `sha256:6e5bd3ee63d7d9f6cc898ea2b4e9429557772532e3de942551cf8da78bd184da`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -15670,49 +15670,49 @@ ADD file:69555c5f78a887c075ee9d9449d85a723324e07872867c7f577e7fa99f6d41c0 in /
 CMD ["bash"]
 # Mon, 09 Oct 2017 22:58:19 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 09 Oct 2017 22:58:20 GMT
-RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Mon, 09 Oct 2017 23:01:12 GMT
+# Thu, 02 Nov 2017 23:22:35 GMT
+RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
+# Thu, 02 Nov 2017 23:23:36 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 09 Oct 2017 23:06:34 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 10 Oct 2017 02:44:48 GMT
+# Thu, 02 Nov 2017 23:25:59 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Fri, 03 Nov 2017 02:41:29 GMT
 RUN mkdir -p /usr/local/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /usr/local/etc/gemrc
-# Tue, 10 Oct 2017 02:44:48 GMT
+# Fri, 03 Nov 2017 02:41:30 GMT
 ENV RUBY_MAJOR=2.4
-# Tue, 10 Oct 2017 02:44:48 GMT
+# Fri, 03 Nov 2017 02:41:30 GMT
 ENV RUBY_VERSION=2.4.2
-# Tue, 10 Oct 2017 02:44:48 GMT
+# Fri, 03 Nov 2017 02:41:32 GMT
 ENV RUBY_DOWNLOAD_SHA256=748a8980d30141bd1a4124e11745bb105b436fb1890826e0d2b9ea31af27f735
-# Wed, 11 Oct 2017 02:47:15 GMT
+# Fri, 03 Nov 2017 02:41:33 GMT
 ENV RUBYGEMS_VERSION=2.6.14
-# Thu, 02 Nov 2017 02:53:08 GMT
+# Fri, 03 Nov 2017 02:41:33 GMT
 ENV BUNDLER_VERSION=1.16.0
-# Thu, 02 Nov 2017 02:56:55 GMT
+# Fri, 03 Nov 2017 02:45:28 GMT
 RUN set -ex 		&& buildDeps=' 		bison 		dpkg-dev 		libgdbm-dev 		ruby 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& rm -rf /var/lib/apt/lists/* 		&& wget -O ruby.tar.xz "https://cache.ruby-lang.org/pub/ruby/${RUBY_MAJOR%-rc}/ruby-$RUBY_VERSION.tar.xz" 	&& echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum -c - 		&& mkdir -p /usr/src/ruby 	&& tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1 	&& rm ruby.tar.xz 		&& cd /usr/src/ruby 		&& { 		echo '#define ENABLE_PATH_CHECK 0'; 		echo; 		cat file.c; 	} > file.c.new 	&& mv file.c.new file.c 		&& autoconf 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 	&& make -j "$(nproc)" 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& cd / 	&& rm -r /usr/src/ruby 		&& gem update --system "$RUBYGEMS_VERSION" 	&& gem install bundler --version "$BUNDLER_VERSION" --force
-# Thu, 02 Nov 2017 02:56:55 GMT
+# Fri, 03 Nov 2017 02:49:15 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Thu, 02 Nov 2017 02:56:55 GMT
+# Fri, 03 Nov 2017 02:49:16 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Thu, 02 Nov 2017 02:56:56 GMT
+# Fri, 03 Nov 2017 02:49:16 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 02 Nov 2017 02:56:56 GMT
+# Fri, 03 Nov 2017 02:49:17 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" 	&& chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Thu, 02 Nov 2017 02:56:56 GMT
+# Fri, 03 Nov 2017 02:49:17 GMT
 CMD ["irb"]
-# Thu, 02 Nov 2017 03:01:57 GMT
+# Fri, 03 Nov 2017 02:49:32 GMT
 RUN bundle config --global frozen 1
-# Thu, 02 Nov 2017 03:01:57 GMT
+# Fri, 03 Nov 2017 02:49:32 GMT
 RUN mkdir -p /usr/src/app
-# Thu, 02 Nov 2017 03:01:58 GMT
+# Fri, 03 Nov 2017 02:49:33 GMT
 WORKDIR /usr/src/app
-# Thu, 02 Nov 2017 03:01:58 GMT
+# Fri, 03 Nov 2017 02:49:33 GMT
 ONBUILD COPY Gemfile /usr/src/app/
-# Thu, 02 Nov 2017 03:01:58 GMT
+# Fri, 03 Nov 2017 02:49:33 GMT
 ONBUILD COPY Gemfile.lock /usr/src/app/
-# Thu, 02 Nov 2017 03:01:58 GMT
+# Fri, 03 Nov 2017 02:49:33 GMT
 ONBUILD RUN bundle install
-# Thu, 02 Nov 2017 03:01:58 GMT
+# Fri, 03 Nov 2017 02:49:38 GMT
 ONBUILD COPY . /usr/src/app
 ```
 
@@ -15725,32 +15725,32 @@ ONBUILD COPY . /usr/src/app
 		Last Modified: Mon, 09 Oct 2017 23:37:27 GMT  
 		Size: 21.6 MB (21594870 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84c5e5ef1f110977e0931f2fcbc49c9f550e6b93813727de7e4432f85d99218c`  
-		Last Modified: Mon, 09 Oct 2017 23:37:53 GMT  
-		Size: 43.9 MB (43880551 bytes)  
+	-	`sha256:3ec8fb3b38011f25ce0ec5107fd54f417d6ee1e616150484f80244db339b8545`  
+		Last Modified: Fri, 03 Nov 2017 00:11:48 GMT  
+		Size: 43.9 MB (43880494 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14ef7f1a844c0d564af306374096859157d25cb6572aa66d2f3317201233a842`  
-		Last Modified: Mon, 09 Oct 2017 23:38:30 GMT  
-		Size: 134.9 MB (134858795 bytes)  
+	-	`sha256:e9ca1792f5a4fd3ba559486d5c4abd10b98da6df752100345877a4f933f8acf2`  
+		Last Modified: Fri, 03 Nov 2017 00:12:26 GMT  
+		Size: 135.6 MB (135638282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90302bac7dbd205509ba97139d55d72036c4787a67c4718c313bc2153555058f`  
-		Last Modified: Tue, 10 Oct 2017 03:23:33 GMT  
-		Size: 205.0 B  
+	-	`sha256:26633b0ed2789a768c89f956c4f8c905ea0397c278246caa924e473efb69255f`  
+		Last Modified: Fri, 03 Nov 2017 03:02:54 GMT  
+		Size: 207.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1e122f5f9e90a8d5a15d03e0757503b669cc98ec22966fdae1e35ac5f7fb53a0`  
-		Last Modified: Thu, 02 Nov 2017 03:26:56 GMT  
-		Size: 23.2 MB (23214925 bytes)  
+	-	`sha256:e0cd44da89dfb8f8f3c4f465e4e8bece63369f0656e13fa531732337fb20dd52`  
+		Last Modified: Fri, 03 Nov 2017 03:03:01 GMT  
+		Size: 23.2 MB (23215717 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7bd0b416d6e8b8016c5f46a93784b53f7d0f348608338b447598fe5370db0967`  
-		Last Modified: Thu, 02 Nov 2017 03:26:48 GMT  
+	-	`sha256:a7b882903dac048093ae4a7963ca70981f7096eda9096b03ba19238adb438c68`  
+		Last Modified: Fri, 03 Nov 2017 03:02:54 GMT  
 		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9dc473b6b9ae798d5a4ddb87741250c2cbbbaf049b2b2d669d8d7ae0b48210fe`  
-		Last Modified: Thu, 02 Nov 2017 03:29:03 GMT  
+	-	`sha256:a68d216d197efd5ffb687210a08aaa15a95534ca9586ef2ce83f5ac27f5d028c`  
+		Last Modified: Fri, 03 Nov 2017 03:04:07 GMT  
 		Size: 187.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3f61ea006d5fe8445f4540d7c99829bb9b5c3ac7ef757af02afd7c79d8bfc4fe`  
-		Last Modified: Thu, 02 Nov 2017 03:29:03 GMT  
+	-	`sha256:3022aec12a89f1770739d8231a482c091402bb1ce09053ef496e9fb00bcf9bde`  
+		Last Modified: Fri, 03 Nov 2017 03:04:07 GMT  
 		Size: 132.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -33296,7 +33296,7 @@ CMD ["irb"]
 ## `ruby:latest`
 
 ```console
-$ docker pull ruby@sha256:8e34be2594103aec34e0ed533ddf0bd55ab4a29e00fcbbabf1e6e10e9d571a84
+$ docker pull ruby@sha256:a80e0e0df5443f5f6c6690fddeca39adc4fc3614b1dcba2814e7860070a8b02f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -33640,14 +33640,14 @@ CMD ["irb"]
 ### `ruby:latest` - linux; 386
 
 ```console
-$ docker pull ruby@sha256:713176f6be4a149109dd849e94c37c54126adcf4dd63549c74de36aff4b3ba03
+$ docker pull ruby@sha256:58561b1e2f1c27aea31d5136f5e9c116eb0e6ca878bf27a680c902cfbac5d56d
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **276.3 MB (276323358 bytes)**  
+-	Total Size: **277.1 MB (277103582 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f43e5c61345a041f4dfb6beb9b91db1219004508869cd34fd20315b752d5c989`
+-	Image ID: `sha256:c3b9b0612b4d7c49b95f4b42761c8cdea635de4aacf5979724f4082b1b1587f9`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -33657,35 +33657,35 @@ ADD file:69555c5f78a887c075ee9d9449d85a723324e07872867c7f577e7fa99f6d41c0 in /
 CMD ["bash"]
 # Mon, 09 Oct 2017 22:58:19 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 09 Oct 2017 22:58:20 GMT
-RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Mon, 09 Oct 2017 23:01:12 GMT
+# Thu, 02 Nov 2017 23:22:35 GMT
+RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
+# Thu, 02 Nov 2017 23:23:36 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 09 Oct 2017 23:06:34 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 10 Oct 2017 02:44:48 GMT
+# Thu, 02 Nov 2017 23:25:59 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Fri, 03 Nov 2017 02:41:29 GMT
 RUN mkdir -p /usr/local/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /usr/local/etc/gemrc
-# Tue, 10 Oct 2017 02:44:48 GMT
+# Fri, 03 Nov 2017 02:41:30 GMT
 ENV RUBY_MAJOR=2.4
-# Tue, 10 Oct 2017 02:44:48 GMT
+# Fri, 03 Nov 2017 02:41:30 GMT
 ENV RUBY_VERSION=2.4.2
-# Tue, 10 Oct 2017 02:44:48 GMT
+# Fri, 03 Nov 2017 02:41:32 GMT
 ENV RUBY_DOWNLOAD_SHA256=748a8980d30141bd1a4124e11745bb105b436fb1890826e0d2b9ea31af27f735
-# Wed, 11 Oct 2017 02:47:15 GMT
+# Fri, 03 Nov 2017 02:41:33 GMT
 ENV RUBYGEMS_VERSION=2.6.14
-# Thu, 02 Nov 2017 02:53:08 GMT
+# Fri, 03 Nov 2017 02:41:33 GMT
 ENV BUNDLER_VERSION=1.16.0
-# Thu, 02 Nov 2017 02:56:55 GMT
+# Fri, 03 Nov 2017 02:45:28 GMT
 RUN set -ex 		&& buildDeps=' 		bison 		dpkg-dev 		libgdbm-dev 		ruby 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& rm -rf /var/lib/apt/lists/* 		&& wget -O ruby.tar.xz "https://cache.ruby-lang.org/pub/ruby/${RUBY_MAJOR%-rc}/ruby-$RUBY_VERSION.tar.xz" 	&& echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum -c - 		&& mkdir -p /usr/src/ruby 	&& tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1 	&& rm ruby.tar.xz 		&& cd /usr/src/ruby 		&& { 		echo '#define ENABLE_PATH_CHECK 0'; 		echo; 		cat file.c; 	} > file.c.new 	&& mv file.c.new file.c 		&& autoconf 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 	&& make -j "$(nproc)" 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& cd / 	&& rm -r /usr/src/ruby 		&& gem update --system "$RUBYGEMS_VERSION" 	&& gem install bundler --version "$BUNDLER_VERSION" --force
-# Thu, 02 Nov 2017 02:56:55 GMT
+# Fri, 03 Nov 2017 02:49:15 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Thu, 02 Nov 2017 02:56:55 GMT
+# Fri, 03 Nov 2017 02:49:16 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Thu, 02 Nov 2017 02:56:56 GMT
+# Fri, 03 Nov 2017 02:49:16 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 02 Nov 2017 02:56:56 GMT
+# Fri, 03 Nov 2017 02:49:17 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" 	&& chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Thu, 02 Nov 2017 02:56:56 GMT
+# Fri, 03 Nov 2017 02:49:17 GMT
 CMD ["irb"]
 ```
 
@@ -33698,24 +33698,24 @@ CMD ["irb"]
 		Last Modified: Mon, 09 Oct 2017 23:37:27 GMT  
 		Size: 21.6 MB (21594870 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84c5e5ef1f110977e0931f2fcbc49c9f550e6b93813727de7e4432f85d99218c`  
-		Last Modified: Mon, 09 Oct 2017 23:37:53 GMT  
-		Size: 43.9 MB (43880551 bytes)  
+	-	`sha256:3ec8fb3b38011f25ce0ec5107fd54f417d6ee1e616150484f80244db339b8545`  
+		Last Modified: Fri, 03 Nov 2017 00:11:48 GMT  
+		Size: 43.9 MB (43880494 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14ef7f1a844c0d564af306374096859157d25cb6572aa66d2f3317201233a842`  
-		Last Modified: Mon, 09 Oct 2017 23:38:30 GMT  
-		Size: 134.9 MB (134858795 bytes)  
+	-	`sha256:e9ca1792f5a4fd3ba559486d5c4abd10b98da6df752100345877a4f933f8acf2`  
+		Last Modified: Fri, 03 Nov 2017 00:12:26 GMT  
+		Size: 135.6 MB (135638282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90302bac7dbd205509ba97139d55d72036c4787a67c4718c313bc2153555058f`  
-		Last Modified: Tue, 10 Oct 2017 03:23:33 GMT  
-		Size: 205.0 B  
+	-	`sha256:26633b0ed2789a768c89f956c4f8c905ea0397c278246caa924e473efb69255f`  
+		Last Modified: Fri, 03 Nov 2017 03:02:54 GMT  
+		Size: 207.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1e122f5f9e90a8d5a15d03e0757503b669cc98ec22966fdae1e35ac5f7fb53a0`  
-		Last Modified: Thu, 02 Nov 2017 03:26:56 GMT  
-		Size: 23.2 MB (23214925 bytes)  
+	-	`sha256:e0cd44da89dfb8f8f3c4f465e4e8bece63369f0656e13fa531732337fb20dd52`  
+		Last Modified: Fri, 03 Nov 2017 03:03:01 GMT  
+		Size: 23.2 MB (23215717 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7bd0b416d6e8b8016c5f46a93784b53f7d0f348608338b447598fe5370db0967`  
-		Last Modified: Thu, 02 Nov 2017 03:26:48 GMT  
+	-	`sha256:a7b882903dac048093ae4a7963ca70981f7096eda9096b03ba19238adb438c68`  
+		Last Modified: Fri, 03 Nov 2017 03:02:54 GMT  
 		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
