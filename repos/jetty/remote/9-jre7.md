@@ -1,7 +1,7 @@
 ## `jetty:9-jre7`
 
 ```console
-$ docker pull jetty@sha256:302bb4b3b03eaabcf3dfde071091977c275fcd2be2bd45f12e9985305bdd46fc
+$ docker pull jetty@sha256:9573230fa89e82fd1331a3673c2158b634e3fedb44bee70aa26319cd2b1125c8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull jetty@sha256:302bb4b3b03eaabcf3dfde071091977c275fcd2be2bd45f12e998
 ### `jetty:9-jre7` - linux; amd64
 
 ```console
-$ docker pull jetty@sha256:a55fb02a32ed91f9d120e2344c954c6d44dcbf39c275f58b51e3589c5d79fae6
+$ docker pull jetty@sha256:070fb018a6a56220fd23bd7b90b067c5b2d698d34799ffb06753244080a75729
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **199.6 MB (199571564 bytes)**  
+-	Total Size: **199.6 MB (199571542 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b675ea54f86d199075b66fe0393f0250ca89e23b62fa01341afc6dd69aefda97`
+-	Image ID: `sha256:af10386f008fd8ace3ecc8ab758254d97c9a98bf8a885b182a04b8d89efcb128`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -47,45 +47,45 @@ ENV JAVA_VERSION=7u151
 ENV JAVA_DEBIAN_VERSION=7u151-2.6.11-1~deb8u1
 # Tue, 10 Oct 2017 00:47:02 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y 		openjdk-7-jre="$JAVA_DEBIAN_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Tue, 10 Oct 2017 09:00:51 GMT
+# Sat, 04 Nov 2017 01:31:33 GMT
 RUN groupadd -r jetty && useradd -r -g jetty jetty
-# Tue, 10 Oct 2017 09:00:51 GMT
+# Sat, 04 Nov 2017 01:31:33 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Tue, 10 Oct 2017 09:00:51 GMT
+# Sat, 04 Nov 2017 01:31:33 GMT
 ENV PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 10 Oct 2017 09:00:52 GMT
+# Sat, 04 Nov 2017 01:31:34 GMT
 RUN mkdir -p "$JETTY_HOME"
-# Tue, 10 Oct 2017 09:00:57 GMT
+# Sat, 04 Nov 2017 01:31:34 GMT
 WORKDIR /usr/local/jetty
-# Tue, 10 Oct 2017 09:00:57 GMT
+# Sat, 04 Nov 2017 01:31:34 GMT
 ENV JETTY_VERSION=9.2.22.v20170606
-# Tue, 10 Oct 2017 09:00:57 GMT
+# Sat, 04 Nov 2017 01:31:34 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distribution/9.2.22.v20170606/jetty-distribution-9.2.22.v20170606.tar.gz
-# Tue, 10 Oct 2017 09:00:57 GMT
+# Sat, 04 Nov 2017 01:31:34 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	FBA2B18D238AB852DF95745C76157BDF03D0DCD6 	5C9579B3DB2E506429319AAEF33B071B29559E1E
-# Tue, 10 Oct 2017 09:01:03 GMT
+# Sat, 04 Nov 2017 01:31:40 GMT
 RUN set -xe 	&& curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz 	&& curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $JETTY_GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; done 	&& gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz 	&& rm -rf "$GNUPGHOME" 	&& tar -xvf jetty.tar.gz --strip-components=1 	&& sed -i '/jetty-logging/d' etc/jetty.conf 	&& rm -fr demo-base javadoc 	&& rm jetty.tar.gz* 	&& rm -rf /tmp/hsperfdata_root
-# Tue, 10 Oct 2017 09:01:03 GMT
+# Sat, 04 Nov 2017 01:31:40 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Tue, 10 Oct 2017 09:01:04 GMT
+# Sat, 04 Nov 2017 01:31:41 GMT
 RUN mkdir -p "$JETTY_BASE"
-# Tue, 10 Oct 2017 09:01:04 GMT
+# Sat, 04 Nov 2017 01:31:41 GMT
 WORKDIR /var/lib/jetty
-# Tue, 10 Oct 2017 09:01:08 GMT
+# Sat, 04 Nov 2017 01:31:44 GMT
 RUN modules="$(grep -- ^--module= "$JETTY_HOME/start.ini" | cut -d= -f2 | paste -d, -s)" 	&& set -xe 	&& java -jar "$JETTY_HOME/start.jar" --add-to-startd="$modules" 	&& chown -R jetty:jetty "$JETTY_BASE" 	&& rm -rf /tmp/hsperfdata_root
-# Tue, 10 Oct 2017 09:01:11 GMT
+# Sat, 04 Nov 2017 01:31:44 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 10 Oct 2017 09:01:12 GMT
+# Sat, 04 Nov 2017 01:31:45 GMT
 RUN set -xe 	&& mkdir -p "$TMPDIR" 	&& chown -R jetty:jetty "$TMPDIR"
-# Fri, 13 Oct 2017 19:31:24 GMT
+# Sat, 04 Nov 2017 01:31:45 GMT
 COPY multi:4510ce2f7fb9540fb389937165085b97c71d4b0659b22ddb7dfe601528a7461a in / 
-# Fri, 13 Oct 2017 19:31:24 GMT
+# Sat, 04 Nov 2017 01:31:45 GMT
 USER [jetty]
-# Fri, 13 Oct 2017 19:31:24 GMT
+# Sat, 04 Nov 2017 01:31:46 GMT
 EXPOSE 8080/tcp
-# Fri, 13 Oct 2017 19:31:24 GMT
+# Sat, 04 Nov 2017 01:31:46 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 13 Oct 2017 19:31:24 GMT
+# Sat, 04 Nov 2017 01:31:46 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
@@ -114,31 +114,31 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Tue, 10 Oct 2017 01:14:12 GMT  
 		Size: 116.9 MB (116884638 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:670876237f8cf77cdda8878a4f621620363659110a4b496dd6db42ef8d3722a8`  
-		Last Modified: Tue, 10 Oct 2017 09:11:47 GMT  
-		Size: 2.2 KB (2152 bytes)  
+	-	`sha256:0dfd5b48feb61cbd084169757802d2055420b1d349163dc0c1df7b92586fa1dd`  
+		Last Modified: Sat, 04 Nov 2017 01:34:01 GMT  
+		Size: 2.1 KB (2150 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a9492640bec90e8b3302468d8e8770e251f964a00cdd53aae65bbed719d74f6`  
-		Last Modified: Tue, 10 Oct 2017 09:11:47 GMT  
+	-	`sha256:4db3215fdfd9c38c6ae53f904a1ce9b5020fb30bfada3394cd17e2af450c973a`  
+		Last Modified: Sat, 04 Nov 2017 01:34:01 GMT  
 		Size: 151.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8900f5d81a825c71bb7f298da946c2e69dbe19eb35012f753225802103f62a35`  
-		Last Modified: Tue, 10 Oct 2017 09:11:46 GMT  
-		Size: 10.0 MB (10026503 bytes)  
+	-	`sha256:03eaa917512ccf2d6fa5f9ef7c8987b3e4edbb8d9e4ab67f7a128c210896595d`  
+		Last Modified: Sat, 04 Nov 2017 01:34:01 GMT  
+		Size: 10.0 MB (10026482 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4254561ffa2523eb1834a0b62207ea54a8e0a153b4e3a9227d819765bb0640a1`  
-		Last Modified: Tue, 10 Oct 2017 09:11:45 GMT  
-		Size: 135.0 B  
+	-	`sha256:422b444f50c76c4a0316d6218f8e443e314276eec93d31c583074b91d323edac`  
+		Last Modified: Sat, 04 Nov 2017 01:33:59 GMT  
+		Size: 137.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ffcd644227f56b1d94f5d8bedc8aa8dab84a636816c3dec8125f864ee4a46fe0`  
-		Last Modified: Tue, 10 Oct 2017 09:11:45 GMT  
+	-	`sha256:91c5662f5a77cc4e43cd2fcc7522686e946cdb1b20380c6e3db90bb425cb85cc`  
+		Last Modified: Sat, 04 Nov 2017 01:34:00 GMT  
 		Size: 1.5 KB (1464 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d00b7db3c8093e33494032a135c761ea5fca49652fcdf8e5539d7af5edcbf336`  
-		Last Modified: Tue, 10 Oct 2017 09:11:44 GMT  
-		Size: 126.0 B  
+	-	`sha256:5e98b123340ceaf7ffeaa97b0631e1f97911379ec13ea822c773e8c0cc7d714e`  
+		Last Modified: Sat, 04 Nov 2017 01:33:59 GMT  
+		Size: 124.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a9f41a4e205ac376173a4eef8769c578b6bdda8405e27a5ffc5627e144ada263`  
-		Last Modified: Fri, 13 Oct 2017 19:35:47 GMT  
-		Size: 1.4 KB (1388 bytes)  
+	-	`sha256:503cf2e9ff25d778f3b6e1a32f7e0e17b1b7507c67675058fddb8379a9c4c759`  
+		Last Modified: Sat, 04 Nov 2017 01:33:59 GMT  
+		Size: 1.4 KB (1389 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
