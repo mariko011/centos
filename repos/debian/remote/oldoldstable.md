@@ -1,7 +1,7 @@
 ## `debian:oldoldstable`
 
 ```console
-$ docker pull debian@sha256:a18214891f523df81572ad7111cde767b64269c3f40c37e985dea61bc2d1e84f
+$ docker pull debian@sha256:459b6032dfbbd61d4e242e3d96ea35192c9fd0c1631d3c83e9a10eb0da2390d7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14,20 +14,20 @@ $ docker pull debian@sha256:a18214891f523df81572ad7111cde767b64269c3f40c37e985de
 ### `debian:oldoldstable` - linux; amd64
 
 ```console
-$ docker pull debian@sha256:80e64ae77cd95c0ff6c3fead7f2a3d4c6157d3a6b48ba19f836a0abf3851274d
+$ docker pull debian@sha256:c9580d802c99c413e4dc147d1f70e8eda45b1ede03d34ba2c9b5032a7039595d
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **38.1 MB (38103151 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a8441c685c003ebdeebd9de1bb5bae154c3a7ca5148f1ec30ece3f199d1ec88a`
+-	Image ID: `sha256:4ad653f27ef78b4dff02e04a71e5a1025e1f2811df8a0774315956e0eac50b4a`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 09 Oct 2017 21:31:19 GMT
+# Sat, 04 Nov 2017 05:22:47 GMT
 ADD file:b1a1c179e13b294eb1d0ce45a9dd21b3ad8cd71d44dbf95ec525e1220460e266 in / 
-# Mon, 09 Oct 2017 21:31:19 GMT
+# Sat, 04 Nov 2017 05:22:47 GMT
 CMD ["bash"]
 ```
 
