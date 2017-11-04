@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0d307aeb65c536accc6d4ccc3d067b2e35fe6cd357efc7bb3fc74d39418e9bab`
-- Created: `2017-10-10T22:00:47.574910165Z`
+- Image ID: `sha256:8b8352870eb70113615c2c2074270ef6692956583f71d36c5b9371bc7a88002f`
+- Created: `2017-11-04T06:31:01.266083421Z`
 - Virtual Size: ~ 1.46 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1165,11 +1165,11 @@ $ apt-get source -qq --print-uris gnupg=1.4.20-1ubuntu3.1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg/gnupg_1.4.20-1ubuntu3.1.debian.tar.xz' gnupg_1.4.20-1ubuntu3.1.debian.tar.xz 38320 SHA256:a299bedd609dd8a8f488db64c6a13361599ba0f906a805730496f9973257d91c
 ```
 
-### `dpkg` source package: `gnutls28=3.4.10-4ubuntu1.3`
+### `dpkg` source package: `gnutls28=3.4.10-4ubuntu1.4`
 
 Binary Packages:
 
-- `libgnutls30:amd64=3.4.10-4ubuntu1.3`
+- `libgnutls30:amd64=3.4.10-4ubuntu1.4`
 
 Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 
@@ -1187,10 +1187,10 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gnutls28=3.4.10-4ubuntu1.3
-'http://security.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.4.10-4ubuntu1.3.dsc' gnutls28_3.4.10-4ubuntu1.3.dsc 3076 SHA256:fdd0345d4528501ba95271e175b984172ffdb2cfbd7062576be1c6751c7acc6f
-'http://security.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.4.10.orig.tar.xz' gnutls28_3.4.10.orig.tar.xz 6645892 SHA256:6a32c2b4acbd33ff7eefcbd1357009da04c94c60146ef61320b6c076b1bdf59f
-'http://security.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.4.10-4ubuntu1.3.debian.tar.xz' gnutls28_3.4.10-4ubuntu1.3.debian.tar.xz 96112 SHA256:d3609837d6415df3bda609dc4c6eacf657f5e76c4a32cfab606e813ec2e18835
+$ apt-get source -qq --print-uris gnutls28=3.4.10-4ubuntu1.4
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.4.10-4ubuntu1.4.dsc' gnutls28_3.4.10-4ubuntu1.4.dsc 3076 SHA256:48a249686197b4548b2ef1cef1cb71a2ed7c662b2a449fed0987e53c44afc610
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.4.10.orig.tar.xz' gnutls28_3.4.10.orig.tar.xz 6645892 SHA256:6a32c2b4acbd33ff7eefcbd1357009da04c94c60146ef61320b6c076b1bdf59f
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.4.10-4ubuntu1.4.debian.tar.xz' gnutls28_3.4.10-4ubuntu1.4.debian.tar.xz 96568 SHA256:b32bfc6bd9b4c54c83de5ea318e76e5d5e5bfcbd3311179cb472680a7209d880
 ```
 
 ### `dpkg` source package: `graphite2=1.3.10-0ubuntu0.16.04.1`
@@ -1356,19 +1356,24 @@ $ apt-get source -qq --print-uris hostname=3.16ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/h/hostname/hostname_3.16ubuntu2.tar.gz' hostname_3.16ubuntu2.tar.gz 14378 SHA256:e0a38fa03b66abd428e119e5af2cccb78a0462cdb58e2e540e66d964e2719195
 ```
 
-### `dpkg` source package: `icu=55.1-7ubuntu0.2`
+### `dpkg` source package: `icu=55.1-7ubuntu0.3`
 
 Binary Packages:
 
-- `libicu55:amd64=55.1-7ubuntu0.2`
+- `libicu55:amd64=55.1-7ubuntu0.3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris icu=55.1-7ubuntu0.3
+'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_55.1-7ubuntu0.3.dsc' icu_55.1-7ubuntu0.3.dsc 2146 SHA256:209a643d6ae5dd36b1d32a471f48476d4c234154ef80dc930b16b6ce8edfba86
+'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_55.1.orig.tar.gz' icu_55.1.orig.tar.gz 25600847 SHA256:e16b22cbefdd354bec114541f7849a12f8fc2015320ca5282ee4fd787571457b
+'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_55.1-7ubuntu0.3.debian.tar.xz' icu_55.1-7ubuntu0.3.debian.tar.xz 30384 SHA256:818a99068b590c803d1ab524d1dcec2518ced9087cb694549e50304d6891e0bb
+```
 
 ### `dpkg` source package: `ijs=0.35-12`
 
@@ -4711,34 +4716,44 @@ $ apt-get source -qq --print-uris wavpack=4.75.2-2
 'http://archive.ubuntu.com/ubuntu/pool/main/w/wavpack/wavpack_4.75.2-2.debian.tar.xz' wavpack_4.75.2-2.debian.tar.xz 5812 SHA256:d96c3ae7e4715e1743bc6b83f432c954a3512973609b0df717731ba706ffc4a8
 ```
 
-### `dpkg` source package: `wget=1.17.1-1ubuntu1.2`
+### `dpkg` source package: `wget=1.17.1-1ubuntu1.3`
 
 Binary Packages:
 
-- `wget=1.17.1-1ubuntu1.2`
+- `wget=1.17.1-1ubuntu1.3`
 
 Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 
 - `GFDL-1.2`
 - `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris wget=1.17.1-1ubuntu1.3
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.17.1-1ubuntu1.3.dsc' wget_1.17.1-1ubuntu1.3.dsc 1937 SHA256:20bb00897b9aab568f4e35566ac97bdf50189e2a9f680e82f06461fcd5ae340e
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.17.1.orig.tar.gz' wget_1.17.1.orig.tar.gz 3801442 SHA256:029fbb93bdc1c0c5a7507b6076a6ec2f8d34204a85aa87e5b2f61a9405b290f5
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.17.1-1ubuntu1.3.debian.tar.xz' wget_1.17.1-1ubuntu1.3.debian.tar.xz 27900 SHA256:283781ad43de4fa85c1e2266215bb563bbaab5c70e28b0f48e69cfe5f0bb663e
+```
 
-### `dpkg` source package: `x11proto-core=7.0.31-1~ubuntu16.04.1`
+### `dpkg` source package: `x11proto-core=7.0.31-1~ubuntu16.04.2`
 
 Binary Packages:
 
-- `x11proto-core-dev=7.0.31-1~ubuntu16.04.1`
+- `x11proto-core-dev=7.0.31-1~ubuntu16.04.2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris x11proto-core=7.0.31-1~ubuntu16.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/x/x11proto-core/x11proto-core_7.0.31-1~ubuntu16.04.2.dsc' x11proto-core_7.0.31-1~ubuntu16.04.2.dsc 2097 SHA256:b7684cf8bf9107c9a48153020bd4388782468bfd64c5f0711cb2cc5328c4e325
+'http://archive.ubuntu.com/ubuntu/pool/main/x/x11proto-core/x11proto-core_7.0.31.orig.tar.gz' x11proto-core_7.0.31.orig.tar.gz 367979 SHA256:6d755eaae27b45c5cc75529a12855fed5de5969b367ed05003944cf901ed43c7
+'http://archive.ubuntu.com/ubuntu/pool/main/x/x11proto-core/x11proto-core_7.0.31-1~ubuntu16.04.2.diff.gz' x11proto-core_7.0.31-1~ubuntu16.04.2.diff.gz 30062 SHA256:85a4cbb575954e7bfb405c856bf1efb1358af5a14b0b687b86888dac8aa4d3a5
+```
 
 ### `dpkg` source package: `x11proto-input=2.3.1-1`
 
