@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0e3fc60f333faa72a6a98c42e9253691869aafecc7606bd872b2de4bde405a6b`
-- Created: `2017-10-25T15:08:56.004113Z`
-- Virtual Size: ~ 514.95 Mb  
+- Image ID: `sha256:4d9ad7a9f7c5f77f7d75df91845bdf6855a6eabbaa5282d6b9b4655b2425d01e`
+- Created: `2017-11-04T12:51:03.36286186Z`
+- Virtual Size: ~ 517.67 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["node"]`
@@ -514,14 +514,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/coreutils/8.13-3.5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/coreutils/8.13-3.5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `curl=7.26.0-1+wheezy21`
+### `dpkg` source package: `curl=7.26.0-1+wheezy22`
 
 Binary Packages:
 
-- `curl=7.26.0-1+wheezy21`
-- `libcurl3:amd64=7.26.0-1+wheezy21`
-- `libcurl3-gnutls:amd64=7.26.0-1+wheezy21`
-- `libcurl4-openssl-dev=7.26.0-1+wheezy21`
+- `curl=7.26.0-1+wheezy22`
+- `libcurl3:amd64=7.26.0-1+wheezy22`
+- `libcurl3-gnutls:amd64=7.26.0-1+wheezy22`
+- `libcurl4-openssl-dev=7.26.0-1+wheezy22`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
 
@@ -530,13 +530,20 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `ISC`
 - `curl`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris curl=7.26.0-1+wheezy22
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0-1+wheezy22.dsc' curl_7.26.0-1+wheezy22.dsc 2693 SHA256:143b953a75747f74ebe823d791e8838f2081f7110393e8243686b564c0b464a9
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0.orig.tar.gz' curl_7.26.0.orig.tar.gz 3073624 SHA256:79ccce9edb8aee17d20ad4d75e1f83a789f8c2e71e68f468e1bf8abf8933193f
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0-1+wheezy22.debian.tar.gz' curl_7.26.0-1+wheezy22.debian.tar.gz 67478 SHA256:f042740b527f096784b2dcf46d53266f9f634b1a4e5aa6758d20273f29626ffd
+```
 
-- http://snapshot.debian.org/package/curl/7.26.0-1+wheezy21/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/curl/7.26.0-1+wheezy22/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.26.0-1+wheezy22/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.26.0-1+wheezy22/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.25.dfsg1-6+deb7u1`
 
@@ -617,12 +624,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/db-defaults/5.1.6/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/db-defaults/5.1.6/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `db=5.1.29-5`
+### `dpkg` source package: `db=5.1.29-5+deb7u1`
 
 Binary Packages:
 
-- `libdb5.1:amd64=5.1.29-5`
-- `libdb5.1-dev=5.1.29-5`
+- `libdb5.1:amd64=5.1.29-5+deb7u1`
+- `libdb5.1-dev=5.1.29-5+deb7u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -631,17 +638,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris db=5.1.29-5
-'http://deb.debian.org/debian/pool/main/d/db/db_5.1.29-5.dsc' db_5.1.29-5.dsc 2113 SHA256:d619c24fbefef19699929504d0ae1dbd3fe23153f02e975936bd8caa137404c2
-'http://deb.debian.org/debian/pool/main/d/db/db_5.1.29.orig.tar.gz' db_5.1.29.orig.tar.gz 32188074 SHA256:a943cb4920e62df71de1069ddca486d408f6d7a09ddbbb5637afe7a229389182
-'http://deb.debian.org/debian/pool/main/d/db/db_5.1.29-5.debian.tar.gz' db_5.1.29-5.debian.tar.gz 28733 SHA256:7cefa9a9e779b8b3e7432c8f39c4317aa7b6eac9f70703ed0b85f8d9a96d3af9
+$ apt-get source -qq --print-uris db=5.1.29-5+deb7u1
+'http://security.debian.org/pool/updates/main/d/db/db_5.1.29-5+deb7u1.dsc' db_5.1.29-5+deb7u1.dsc 2778 SHA256:3670e531aca8676efcb3ae41ab0256ba25855b460a371ae343964399cc59ac4b
+'http://security.debian.org/pool/updates/main/d/db/db_5.1.29.orig.tar.gz' db_5.1.29.orig.tar.gz 32188074 SHA256:a943cb4920e62df71de1069ddca486d408f6d7a09ddbbb5637afe7a229389182
+'http://security.debian.org/pool/updates/main/d/db/db_5.1.29-5+deb7u1.debian.tar.gz' db_5.1.29-5+deb7u1.debian.tar.gz 29235 SHA256:ae4330a3ee4d253252686c8f56100c434bda137a0f2272f5f36acc81f536227a
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/db/5.1.29-5/ (for browsing the source)
-- https://sources.debian.net/src/db/5.1.29-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/db/5.1.29-5/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/db/5.1.29-5+deb7u1/ (for browsing the source)
+- https://sources.debian.net/src/db/5.1.29-5+deb7u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/db/5.1.29-5+deb7u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debconf=1.5.49`
 
@@ -1508,17 +1515,17 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/ilmbase/1.0.1-4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/ilmbase/1.0.1-4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `imagemagick=8:6.7.7.10-5+deb7u16`
+### `dpkg` source package: `imagemagick=8:6.7.7.10-5+deb7u18`
 
 Binary Packages:
 
-- `imagemagick=8:6.7.7.10-5+deb7u16`
-- `imagemagick-common=8:6.7.7.10-5+deb7u16`
-- `libmagickcore-dev=8:6.7.7.10-5+deb7u16`
-- `libmagickcore5:amd64=8:6.7.7.10-5+deb7u16`
-- `libmagickcore5-extra:amd64=8:6.7.7.10-5+deb7u16`
-- `libmagickwand-dev=8:6.7.7.10-5+deb7u16`
-- `libmagickwand5:amd64=8:6.7.7.10-5+deb7u16`
+- `imagemagick=8:6.7.7.10-5+deb7u18`
+- `imagemagick-common=8:6.7.7.10-5+deb7u18`
+- `libmagickcore-dev=8:6.7.7.10-5+deb7u18`
+- `libmagickcore5:amd64=8:6.7.7.10-5+deb7u18`
+- `libmagickcore5-extra:amd64=8:6.7.7.10-5+deb7u18`
+- `libmagickwand-dev=8:6.7.7.10-5+deb7u18`
+- `libmagickwand5:amd64=8:6.7.7.10-5+deb7u18`
 
 Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/imagemagick-common/copyright`, `/usr/share/doc/libmagickcore-dev/copyright`, `/usr/share/doc/libmagickcore5/copyright`, `/usr/share/doc/libmagickcore5-extra/copyright`, `/usr/share/doc/libmagickwand-dev/copyright`, `/usr/share/doc/libmagickwand5/copyright`)
 
@@ -1539,13 +1546,20 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `TatcherUlrichPublicDomain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris imagemagick=8:6.7.7.10-5+deb7u18
+'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.7.7.10-5+deb7u18.dsc' imagemagick_6.7.7.10-5+deb7u18.dsc 3160 SHA256:de36c2d69e38ce48905480e0390d29bdc424bbdae27b433521f9a6767340eb32
+'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.7.7.10.orig.tar.bz2' imagemagick_6.7.7.10.orig.tar.bz2 10473522 SHA256:05fb23824b1c90ac35259715c94c65fb5cda6969eb597a7637762d8cf3998fda
+'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.7.7.10-5+deb7u18.debian.tar.bz2' imagemagick_6.7.7.10-5+deb7u18.debian.tar.bz2 241994 SHA256:1e9e32a6784158ad036a40258dafd1da6ad3e2ca8001d909798d0a6b05f67086
+```
 
-- http://snapshot.debian.org/package/imagemagick/8:6.7.7.10-5+deb7u16/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/imagemagick/8:6.7.7.10-5+deb7u18/ (for browsing the source)
+- https://sources.debian.net/src/imagemagick/8:6.7.7.10-5+deb7u18/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/imagemagick/8:6.7.7.10-5+deb7u18/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `inetutils=2:1.9-2`
 
@@ -3291,13 +3305,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/mpfr4/3.1.0-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/mpfr4/3.1.0-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `mysql-5.5=5.5.57-0+deb7u1`
+### `dpkg` source package: `mysql-5.5=5.5.58-0+deb7u1`
 
 Binary Packages:
 
-- `libmysqlclient-dev=5.5.57-0+deb7u1`
-- `libmysqlclient18:amd64=5.5.57-0+deb7u1`
-- `mysql-common=5.5.57-0+deb7u1`
+- `libmysqlclient-dev=5.5.58-0+deb7u1`
+- `libmysqlclient18:amd64=5.5.58-0+deb7u1`
+- `mysql-common=5.5.58-0+deb7u1`
 
 Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/share/doc/libmysqlclient18/copyright`, `/usr/share/doc/mysql-common/copyright`)
 
@@ -3315,13 +3329,20 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris mysql-5.5=5.5.58-0+deb7u1
+'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.58-0+deb7u1.dsc' mysql-5.5_5.5.58-0+deb7u1.dsc 2971 SHA256:4ddcebf2f910a550d70ad7f9b9b3e4ff0f7a6e24e887c7f2d50c19aef94f5146
+'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.58.orig.tar.gz' mysql-5.5_5.5.58.orig.tar.gz 21045852 SHA256:9b6912faf261555c8975db24a987f63f36aaa28052a301e85538346ace0009b9
+'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.58-0+deb7u1.debian.tar.gz' mysql-5.5_5.5.58-0+deb7u1.debian.tar.gz 380206 SHA256:53f2817258530052c5c8b6edd66efa846fa2cd231170c54522c8e635d7907437
+```
 
-- http://snapshot.debian.org/package/mysql-5.5/5.5.57-0+deb7u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/mysql-5.5/5.5.58-0+deb7u1/ (for browsing the source)
+- https://sources.debian.net/src/mysql-5.5/5.5.58-0+deb7u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/mysql-5.5/5.5.58-0+deb7u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ncurses=5.9-10`
 
@@ -3330,6 +3351,7 @@ Binary Packages:
 - `libncurses5:amd64=5.9-10`
 - `libncurses5-dev=5.9-10`
 - `libncursesw5:amd64=5.9-10`
+- `libncursesw5-dev=5.9-10`
 - `libtinfo-dev:amd64=5.9-10`
 - `libtinfo5:amd64=5.9-10`
 - `ncurses-base=5.9-10`
@@ -4301,24 +4323,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/util-linux/2.20.1-5.3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/util-linux/2.20.1-5.3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `wget=1.13.4-3+deb7u4`
+### `dpkg` source package: `wget=1.13.4-3+deb7u5`
 
 Binary Packages:
 
-- `wget=1.13.4-3+deb7u4`
+- `wget=1.13.4-3+deb7u5`
 
 Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 
 - `GFDL-1.2`
 - `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris wget=1.13.4-3+deb7u5
+'http://security.debian.org/pool/updates/main/w/wget/wget_1.13.4-3+deb7u5.dsc' wget_1.13.4-3+deb7u5.dsc 1927 SHA256:49e4c5c843f55da833e55faf63acaf551f7475abb83f39b6dfa8d5dd1a21015a
+'http://security.debian.org/pool/updates/main/w/wget/wget_1.13.4.orig.tar.gz' wget_1.13.4.orig.tar.gz 2815185 SHA256:24c7710bc9f220ce23d8a9e0f5673b0efc1cace62db6de0239b5863ecc934dcd
+'http://security.debian.org/pool/updates/main/w/wget/wget_1.13.4-3+deb7u5.debian.tar.gz' wget_1.13.4-3+deb7u5.debian.tar.gz 30248 SHA256:fba01d1621e80d92fef89ed412d22193891add1b23d923d784b293b8d3ef77f0
+```
 
-- http://snapshot.debian.org/package/wget/1.13.4-3+deb7u4/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/wget/1.13.4-3+deb7u5/ (for browsing the source)
+- https://sources.debian.net/src/wget/1.13.4-3+deb7u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/wget/1.13.4-3+deb7u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `x11proto-core=7.0.23-1`
 
