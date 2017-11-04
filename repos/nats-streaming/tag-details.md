@@ -14,7 +14,7 @@
 ## `nats-streaming:0.6.0`
 
 ```console
-$ docker pull nats-streaming@sha256:4d76d6d5310b0287e35f9f5433b1fbf6608d07b2a8d5c13dce8d1b3f495e3a07
+$ docker pull nats-streaming@sha256:fa9cb3139abb55966dd0aabf89db8924c5d863347268e459dbd3ee00cb267fc1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -27,31 +27,31 @@ $ docker pull nats-streaming@sha256:4d76d6d5310b0287e35f9f5433b1fbf6608d07b2a8d5
 ### `nats-streaming:0.6.0` - linux; amd64
 
 ```console
-$ docker pull nats-streaming@sha256:c6562f71ad50278b1655c017bc6affb4a2751c0e10cdc06df49877ea1109327d
+$ docker pull nats-streaming@sha256:97279123669f461b236a4fee74aeb8d2de0de64b1877989657c5c040e77becf3
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.1 MB (3137283 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:adcabc934647370d67a598e615881f54ce4bb6b6dd7e3061aabece832a4128f2`
+-	Image ID: `sha256:7a221f0c6efc47b8078d6d23eceaba9d5c9cb439c1cd8fa3f9ebf0699ce5f07c`
 -	Entrypoint: `["\/nats-streaming-server"]`
 -	Default Command: `["-m","8222"]`
 
 ```dockerfile
-# Fri, 27 Oct 2017 00:24:13 GMT
+# Sat, 04 Nov 2017 09:22:24 GMT
 COPY file:6733e752178c9eb51ed9be40e23ad9c2baf82e81f06b968c37b5037f4155c90a in /nats-streaming-server 
-# Fri, 27 Oct 2017 00:24:14 GMT
+# Sat, 04 Nov 2017 09:22:24 GMT
 EXPOSE 4222/tcp 8222/tcp
-# Fri, 27 Oct 2017 00:24:14 GMT
+# Sat, 04 Nov 2017 09:22:25 GMT
 ENTRYPOINT ["/nats-streaming-server"]
-# Fri, 27 Oct 2017 00:24:14 GMT
+# Sat, 04 Nov 2017 09:22:25 GMT
 CMD ["-m" "8222"]
 ```
 
 -	Layers:
-	-	`sha256:6bc5623d46eeedca137ba7b692234af7c629329ca71736cd1eab0671b4e5d546`  
-		Last Modified: Fri, 27 Oct 2017 00:24:29 GMT  
+	-	`sha256:34f141cd5c7a0c9644d7a3bd20e3adb472b632551c5a151e8b206be369d5967f`  
+		Last Modified: Sat, 04 Nov 2017 09:22:33 GMT  
 		Size: 3.1 MB (3137283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -180,7 +180,7 @@ RUN cmd /S /C #(nop)  CMD ["nats-streaming-server" "-m" "8222"]
 ## `nats-streaming:0.6.0-linux`
 
 ```console
-$ docker pull nats-streaming@sha256:0ff61f4e8be43abc767fd6b837b90463691259acf11ac56b1ffc350f76446701
+$ docker pull nats-streaming@sha256:1e33bc87df7a6bc16ff4b20a99613942e6fff70f0c22c35ec29b8f7155aef98d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -192,31 +192,31 @@ $ docker pull nats-streaming@sha256:0ff61f4e8be43abc767fd6b837b90463691259acf11a
 ### `nats-streaming:0.6.0-linux` - linux; amd64
 
 ```console
-$ docker pull nats-streaming@sha256:c6562f71ad50278b1655c017bc6affb4a2751c0e10cdc06df49877ea1109327d
+$ docker pull nats-streaming@sha256:97279123669f461b236a4fee74aeb8d2de0de64b1877989657c5c040e77becf3
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.1 MB (3137283 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:adcabc934647370d67a598e615881f54ce4bb6b6dd7e3061aabece832a4128f2`
+-	Image ID: `sha256:7a221f0c6efc47b8078d6d23eceaba9d5c9cb439c1cd8fa3f9ebf0699ce5f07c`
 -	Entrypoint: `["\/nats-streaming-server"]`
 -	Default Command: `["-m","8222"]`
 
 ```dockerfile
-# Fri, 27 Oct 2017 00:24:13 GMT
+# Sat, 04 Nov 2017 09:22:24 GMT
 COPY file:6733e752178c9eb51ed9be40e23ad9c2baf82e81f06b968c37b5037f4155c90a in /nats-streaming-server 
-# Fri, 27 Oct 2017 00:24:14 GMT
+# Sat, 04 Nov 2017 09:22:24 GMT
 EXPOSE 4222/tcp 8222/tcp
-# Fri, 27 Oct 2017 00:24:14 GMT
+# Sat, 04 Nov 2017 09:22:25 GMT
 ENTRYPOINT ["/nats-streaming-server"]
-# Fri, 27 Oct 2017 00:24:14 GMT
+# Sat, 04 Nov 2017 09:22:25 GMT
 CMD ["-m" "8222"]
 ```
 
 -	Layers:
-	-	`sha256:6bc5623d46eeedca137ba7b692234af7c629329ca71736cd1eab0671b4e5d546`  
-		Last Modified: Fri, 27 Oct 2017 00:24:29 GMT  
+	-	`sha256:34f141cd5c7a0c9644d7a3bd20e3adb472b632551c5a151e8b206be369d5967f`  
+		Last Modified: Sat, 04 Nov 2017 09:22:33 GMT  
 		Size: 3.1 MB (3137283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -425,7 +425,7 @@ RUN cmd /S /C #(nop)  CMD ["nats-streaming-server" "-m" "8222"]
 ## `nats-streaming:latest`
 
 ```console
-$ docker pull nats-streaming@sha256:4d76d6d5310b0287e35f9f5433b1fbf6608d07b2a8d5c13dce8d1b3f495e3a07
+$ docker pull nats-streaming@sha256:fa9cb3139abb55966dd0aabf89db8924c5d863347268e459dbd3ee00cb267fc1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -438,31 +438,31 @@ $ docker pull nats-streaming@sha256:4d76d6d5310b0287e35f9f5433b1fbf6608d07b2a8d5
 ### `nats-streaming:latest` - linux; amd64
 
 ```console
-$ docker pull nats-streaming@sha256:c6562f71ad50278b1655c017bc6affb4a2751c0e10cdc06df49877ea1109327d
+$ docker pull nats-streaming@sha256:97279123669f461b236a4fee74aeb8d2de0de64b1877989657c5c040e77becf3
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.1 MB (3137283 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:adcabc934647370d67a598e615881f54ce4bb6b6dd7e3061aabece832a4128f2`
+-	Image ID: `sha256:7a221f0c6efc47b8078d6d23eceaba9d5c9cb439c1cd8fa3f9ebf0699ce5f07c`
 -	Entrypoint: `["\/nats-streaming-server"]`
 -	Default Command: `["-m","8222"]`
 
 ```dockerfile
-# Fri, 27 Oct 2017 00:24:13 GMT
+# Sat, 04 Nov 2017 09:22:24 GMT
 COPY file:6733e752178c9eb51ed9be40e23ad9c2baf82e81f06b968c37b5037f4155c90a in /nats-streaming-server 
-# Fri, 27 Oct 2017 00:24:14 GMT
+# Sat, 04 Nov 2017 09:22:24 GMT
 EXPOSE 4222/tcp 8222/tcp
-# Fri, 27 Oct 2017 00:24:14 GMT
+# Sat, 04 Nov 2017 09:22:25 GMT
 ENTRYPOINT ["/nats-streaming-server"]
-# Fri, 27 Oct 2017 00:24:14 GMT
+# Sat, 04 Nov 2017 09:22:25 GMT
 CMD ["-m" "8222"]
 ```
 
 -	Layers:
-	-	`sha256:6bc5623d46eeedca137ba7b692234af7c629329ca71736cd1eab0671b4e5d546`  
-		Last Modified: Fri, 27 Oct 2017 00:24:29 GMT  
+	-	`sha256:34f141cd5c7a0c9644d7a3bd20e3adb472b632551c5a151e8b206be369d5967f`  
+		Last Modified: Sat, 04 Nov 2017 09:22:33 GMT  
 		Size: 3.1 MB (3137283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -591,7 +591,7 @@ RUN cmd /S /C #(nop)  CMD ["nats-streaming-server" "-m" "8222"]
 ## `nats-streaming:linux`
 
 ```console
-$ docker pull nats-streaming@sha256:0ff61f4e8be43abc767fd6b837b90463691259acf11ac56b1ffc350f76446701
+$ docker pull nats-streaming@sha256:1e33bc87df7a6bc16ff4b20a99613942e6fff70f0c22c35ec29b8f7155aef98d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -603,31 +603,31 @@ $ docker pull nats-streaming@sha256:0ff61f4e8be43abc767fd6b837b90463691259acf11a
 ### `nats-streaming:linux` - linux; amd64
 
 ```console
-$ docker pull nats-streaming@sha256:c6562f71ad50278b1655c017bc6affb4a2751c0e10cdc06df49877ea1109327d
+$ docker pull nats-streaming@sha256:97279123669f461b236a4fee74aeb8d2de0de64b1877989657c5c040e77becf3
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.1 MB (3137283 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:adcabc934647370d67a598e615881f54ce4bb6b6dd7e3061aabece832a4128f2`
+-	Image ID: `sha256:7a221f0c6efc47b8078d6d23eceaba9d5c9cb439c1cd8fa3f9ebf0699ce5f07c`
 -	Entrypoint: `["\/nats-streaming-server"]`
 -	Default Command: `["-m","8222"]`
 
 ```dockerfile
-# Fri, 27 Oct 2017 00:24:13 GMT
+# Sat, 04 Nov 2017 09:22:24 GMT
 COPY file:6733e752178c9eb51ed9be40e23ad9c2baf82e81f06b968c37b5037f4155c90a in /nats-streaming-server 
-# Fri, 27 Oct 2017 00:24:14 GMT
+# Sat, 04 Nov 2017 09:22:24 GMT
 EXPOSE 4222/tcp 8222/tcp
-# Fri, 27 Oct 2017 00:24:14 GMT
+# Sat, 04 Nov 2017 09:22:25 GMT
 ENTRYPOINT ["/nats-streaming-server"]
-# Fri, 27 Oct 2017 00:24:14 GMT
+# Sat, 04 Nov 2017 09:22:25 GMT
 CMD ["-m" "8222"]
 ```
 
 -	Layers:
-	-	`sha256:6bc5623d46eeedca137ba7b692234af7c629329ca71736cd1eab0671b4e5d546`  
-		Last Modified: Fri, 27 Oct 2017 00:24:29 GMT  
+	-	`sha256:34f141cd5c7a0c9644d7a3bd20e3adb472b632551c5a151e8b206be369d5967f`  
+		Last Modified: Sat, 04 Nov 2017 09:22:33 GMT  
 		Size: 3.1 MB (3137283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 

@@ -1,7 +1,7 @@
 ## `wordpress:4-apache`
 
 ```console
-$ docker pull wordpress@sha256:066e9c13f5ddb8b16eb47be5e6d3e76d4d5566a5ab097acb7605ae4505489de4
+$ docker pull wordpress@sha256:c9659e1b1c4a73bd6335635127d7b4ac0b630c990d8ab436d8486e4e5289cd81
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -17,14 +17,14 @@ $ docker pull wordpress@sha256:066e9c13f5ddb8b16eb47be5e6d3e76d4d5566a5ab097acb7
 ### `wordpress:4-apache` - linux; amd64
 
 ```console
-$ docker pull wordpress@sha256:303d6a4664d39adc86cb7aa8a02fa62b8d1959a2852e5fa2c59a470e811ea716
+$ docker pull wordpress@sha256:7a7fb60d89d4d8167a88f2e2b1ad5511ee58a123017db5b84909cab2ef7ef915
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **171.0 MB (171024076 bytes)**  
+-	Total Size: **171.0 MB (171024131 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3f3ae7df08ed2ae48a499cb506b388d6d1894951d59ee745e8838de67f464eab`
+-	Image ID: `sha256:5f4df8c0d378aeaa5be02124187cb860d3e3ff76feb6b200ad9b2c55588ed9c1`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -91,25 +91,25 @@ WORKDIR /var/www/html
 EXPOSE 80/tcp
 # Mon, 30 Oct 2017 23:16:20 GMT
 CMD ["apache2-foreground"]
-# Tue, 31 Oct 2017 00:39:04 GMT
+# Sat, 04 Nov 2017 10:12:36 GMT
 RUN set -ex; 		apt-get update; 	apt-get install -y 		libjpeg-dev 		libpng-dev 	; 	rm -rf /var/lib/apt/lists/*; 		docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr; 	docker-php-ext-install gd mysqli opcache
-# Tue, 31 Oct 2017 00:39:05 GMT
+# Sat, 04 Nov 2017 10:12:36 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Tue, 31 Oct 2017 00:39:06 GMT
+# Sat, 04 Nov 2017 10:12:37 GMT
 RUN a2enmod rewrite expires
-# Tue, 31 Oct 2017 00:39:06 GMT
+# Sat, 04 Nov 2017 10:12:37 GMT
 VOLUME [/var/www/html]
-# Tue, 31 Oct 2017 23:04:00 GMT
+# Sat, 04 Nov 2017 10:12:38 GMT
 ENV WORDPRESS_VERSION=4.8.3
-# Tue, 31 Oct 2017 23:04:00 GMT
+# Sat, 04 Nov 2017 10:12:38 GMT
 ENV WORDPRESS_SHA1=8efc0b9f6146e143ed419b5419d7bb8400a696fc
-# Tue, 31 Oct 2017 23:04:02 GMT
+# Sat, 04 Nov 2017 10:12:40 GMT
 RUN set -ex; 	curl -o wordpress.tar.gz -fSL "https://wordpress.org/wordpress-${WORDPRESS_VERSION}.tar.gz"; 	echo "$WORDPRESS_SHA1 *wordpress.tar.gz" | sha1sum -c -; 	tar -xzf wordpress.tar.gz -C /usr/src/; 	rm wordpress.tar.gz; 	chown -R www-data:www-data /usr/src/wordpress
-# Tue, 31 Oct 2017 23:04:03 GMT
+# Sat, 04 Nov 2017 10:12:40 GMT
 COPY file:db1f48c4963a4352b4c31c18f102b71fcc06a1266db6edd17f8f52458fe13130 in /usr/local/bin/ 
-# Tue, 31 Oct 2017 23:04:03 GMT
+# Sat, 04 Nov 2017 10:12:41 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 31 Oct 2017 23:04:03 GMT
+# Sat, 04 Nov 2017 10:12:41 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -166,25 +166,25 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 31 Oct 2017 00:06:24 GMT  
 		Size: 904.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8bf2a146ddc0a6b103248b68d6f2e26d19497e7fa0fb795eb20d5e089ed766aa`  
-		Last Modified: Tue, 31 Oct 2017 00:58:05 GMT  
-		Size: 2.4 MB (2382129 bytes)  
+	-	`sha256:5469ade162dddfab8e9f9ec18f5f64ab91e0de8c0d4f66819eca345a7c1c8621`  
+		Last Modified: Sat, 04 Nov 2017 10:27:57 GMT  
+		Size: 2.4 MB (2382163 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:73cc7d14c1eda78646ec401ed7753f003539a838785070e91604077a9e02a44b`  
-		Last Modified: Tue, 31 Oct 2017 00:58:06 GMT  
+	-	`sha256:6db3854de44b5964cf993ce861e4c4a4fd71e6737fd7ed8559700b21fb33c43a`  
+		Last Modified: Sat, 04 Nov 2017 10:27:56 GMT  
 		Size: 354.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d2b2ef7e52181c4a001db89c55d05f6c7c4c7c434ee2c530a356755a8420250a`  
-		Last Modified: Tue, 31 Oct 2017 00:58:04 GMT  
-		Size: 350.0 B  
+	-	`sha256:45e8f4311506708c27e33a74351ad9c4f298ee6f7ec254573433fcabe34f6f61`  
+		Last Modified: Sat, 04 Nov 2017 10:27:55 GMT  
+		Size: 351.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6dd6734484e20561fd803b9f87f4bff474f61153836a88e59e3ccaa7cd980ac0`  
-		Last Modified: Tue, 31 Oct 2017 23:05:58 GMT  
-		Size: 8.0 MB (8016452 bytes)  
+	-	`sha256:95dd9e9ec4f92642a5eefb28ec1223d646ec97aba02004411c295a0726befacc`  
+		Last Modified: Sat, 04 Nov 2017 10:28:00 GMT  
+		Size: 8.0 MB (8016470 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:725e747b6a5165a6cda70d50325a032d8a69912344453a3e83570e25cce1245f`  
-		Last Modified: Tue, 31 Oct 2017 23:05:56 GMT  
-		Size: 3.2 KB (3223 bytes)  
+	-	`sha256:eb52075d13486f5e21be4d40adb71e87e05ed4ed6aae1e0dfdcd2b2bbc242e48`  
+		Last Modified: Sat, 04 Nov 2017 10:27:55 GMT  
+		Size: 3.2 KB (3225 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `wordpress:4-apache` - linux; arm variant v5

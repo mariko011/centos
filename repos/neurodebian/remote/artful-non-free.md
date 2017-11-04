@@ -1,7 +1,7 @@
 ## `neurodebian:artful-non-free`
 
 ```console
-$ docker pull neurodebian@sha256:06cc1e2e51f0a7ffb1c9d2dd5a8a2d870c7f23159d353a4629a9293df2cc264a
+$ docker pull neurodebian@sha256:9c6be5cd199232c20ff7072b5a4f1025773d6f13b2b3ce537aab557fd11a2c89
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull neurodebian@sha256:06cc1e2e51f0a7ffb1c9d2dd5a8a2d870c7f23159d353a4
 ### `neurodebian:artful-non-free` - linux; amd64
 
 ```console
-$ docker pull neurodebian@sha256:db6a6b5c66ac86764e6a2e77ec36ae9074f062f9a605e0bb31a30261687bab06
+$ docker pull neurodebian@sha256:39a5ecdfd98cee419c049b9a82b74cde4d852118e7ed3ee78e086f75eacb85a4
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **41.1 MB (41054373 bytes)**  
+-	Total Size: **41.1 MB (41054344 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f56dca55ff557281ffcf5e9665afc379f3d7573e283d7cca2706b2b948c6b39f`
+-	Image ID: `sha256:b1da7a7658f7be1f118206bd21e68ea572eac2f023c44eeccacf1e1fb3755edc`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -34,13 +34,13 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 # Thu, 19 Oct 2017 16:49:47 GMT
 CMD ["/bin/bash"]
-# Wed, 01 Nov 2017 23:56:02 GMT
+# Sat, 04 Nov 2017 08:41:34 GMT
 RUN set -x 	&& apt-get update 	&& { 		which gpg 		|| apt-get install -y --no-install-recommends gnupg 	; } 	&& { 		gpg --version | grep -q '^gpg (GnuPG) 1\.' 		|| apt-get install -y --no-install-recommends dirmngr 	; } 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 01 Nov 2017 23:56:06 GMT
+# Sat, 04 Nov 2017 08:41:37 GMT
 RUN set -x 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys DD95CC430502E37EF840ACEEA5D32F012649A5A9 	&& gpg --export DD95CC430502E37EF840ACEEA5D32F012649A5A9 > /etc/apt/trusted.gpg.d/neurodebian.gpg 	&& rm -rf "$GNUPGHOME" 	&& apt-key list | grep neurodebian
-# Wed, 01 Nov 2017 23:56:06 GMT
+# Sat, 04 Nov 2017 08:41:37 GMT
 RUN { 	echo 'deb http://neuro.debian.net/debian artful main'; 	echo 'deb http://neuro.debian.net/debian data main'; 	echo '#deb-src http://neuro.debian.net/debian-devel artful main'; } > /etc/apt/sources.list.d/neurodebian.sources.list
-# Wed, 01 Nov 2017 23:56:15 GMT
+# Sat, 04 Nov 2017 08:41:40 GMT
 RUN sed -i -e 's,main *$,main contrib non-free,g' /etc/apt/sources.list.d/neurodebian.sources.list; grep -q 'deb .* multiverse$' /etc/apt/sources.list || sed -i -e 's,universe *$,universe multiverse,g' /etc/apt/sources.list
 ```
 
@@ -65,19 +65,19 @@ RUN sed -i -e 's,main *$,main contrib non-free,g' /etc/apt/sources.list.d/neurod
 		Last Modified: Thu, 19 Oct 2017 16:50:51 GMT  
 		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1804bc0e461ed55b88cbad7065fd2c4999dd209c5238bbce38513d12006ed605`  
-		Last Modified: Thu, 02 Nov 2017 00:01:33 GMT  
-		Size: 1.8 MB (1832482 bytes)  
+	-	`sha256:cde84f2a3c682a5726e8b35d0d2a3dcf73af99f13a2ce71896cde454e8b21a61`  
+		Last Modified: Sat, 04 Nov 2017 08:44:26 GMT  
+		Size: 1.8 MB (1832455 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2584bc0b4275fb4c68fb1d0d6d8422ac609076c36f93e1cd812ced4272977857`  
-		Last Modified: Thu, 02 Nov 2017 00:01:33 GMT  
-		Size: 3.2 KB (3151 bytes)  
+	-	`sha256:165ca5af35f4bbeb38c817f6ce4f107c0d6a1d05910405de79cd13aebd38aa04`  
+		Last Modified: Sat, 04 Nov 2017 08:44:25 GMT  
+		Size: 3.2 KB (3153 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9f65166af287f149e23eddb8c5ade35fcf8ad8b9b9e807e5ad6f905b2d156134`  
-		Last Modified: Thu, 02 Nov 2017 00:01:34 GMT  
-		Size: 245.0 B  
+	-	`sha256:426aad5c33ebab2359e1b6ff18dcbf3093383484ff07ff0d013d31fe505f3430`  
+		Last Modified: Sat, 04 Nov 2017 08:44:26 GMT  
+		Size: 244.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f1cec1792ae765b8cbc633b7827d99e1e62e2c3995da56f7f01b9c4d65836fda`  
-		Last Modified: Thu, 02 Nov 2017 00:01:56 GMT  
-		Size: 259.0 B  
+	-	`sha256:7aa599ee5fea7e6a61ad65e41f2d5465bf159cf5287583a0da3ca75690fb6a02`  
+		Last Modified: Sat, 04 Nov 2017 08:44:37 GMT  
+		Size: 256.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
