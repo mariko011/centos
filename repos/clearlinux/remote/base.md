@@ -1,7 +1,7 @@
 ## `clearlinux:base`
 
 ```console
-$ docker pull clearlinux@sha256:94ac34c75a3d9edb130e7480389ac75a1458cd4c59d66971d08e3a16a6b5aa0c
+$ docker pull clearlinux@sha256:84ca8f06c4d39c51be0f67f6a0672069bbd0d756b89e7d749f040fa318b9c49d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,24 +11,24 @@ $ docker pull clearlinux@sha256:94ac34c75a3d9edb130e7480389ac75a1458cd4c59d66971
 ### `clearlinux:base` - linux; amd64
 
 ```console
-$ docker pull clearlinux@sha256:b8beb50cd7b8c41d16fac71d25f40d7eb495a44b9dccff5afe9d1284e5eeabc6
+$ docker pull clearlinux@sha256:2de8b0720eda3ee646999d75b0ff7dd413deb0a5f4cb4c7bc563de7a6eda1efc
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **26.8 MB (26837900 bytes)**  
+-	Total Size: **26.8 MB (26838191 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c6f4b894bb780c0dd50910ecfb783718d37e42377f391ae16f6c85f147fb7c73`
+-	Image ID: `sha256:32685d114002f6014b2fddda1379c447f58f9566406eb5a82f7b87fce7fa1ae7`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 13 Sep 2017 08:33:17 GMT
+# Fri, 03 Nov 2017 22:51:09 GMT
 MAINTAINER William Douglas <william.douglas@intel.com>
-# Wed, 18 Oct 2017 23:20:06 GMT
+# Fri, 03 Nov 2017 22:51:11 GMT
 ADD file:773e936a8662922615ab016d5046700f50c91b10fa5815bd43a58e83940faac5 in / 
-# Fri, 20 Oct 2017 20:18:28 GMT
+# Fri, 03 Nov 2017 22:51:13 GMT
 RUN clrtrust generate
-# Fri, 20 Oct 2017 20:18:29 GMT
+# Fri, 03 Nov 2017 22:51:13 GMT
 CMD ["/bin/bash"]
 ```
 
@@ -37,7 +37,7 @@ CMD ["/bin/bash"]
 		Last Modified: Wed, 18 Oct 2017 23:20:21 GMT  
 		Size: 26.4 MB (26387206 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0c216aa6532e49afe1229292efce2471d7054f1b8d072de5d46f83fb4b0dcbe2`  
-		Last Modified: Fri, 20 Oct 2017 20:18:39 GMT  
-		Size: 450.7 KB (450694 bytes)  
+	-	`sha256:fcc3aaa4d240ab365c89b931b1f9c9f3338a01c1ebf7bf57f30d7b4c860bcbab`  
+		Last Modified: Fri, 03 Nov 2017 22:51:19 GMT  
+		Size: 451.0 KB (450985 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

@@ -1,7 +1,7 @@
 ## `amazonlinux:latest`
 
 ```console
-$ docker pull amazonlinux@sha256:845bd16cdd4312b2710a67f4bc0c8bb0466c73a8359e4c742971a7eb66b50b60
+$ docker pull amazonlinux@sha256:b852ce504670f604074bb0a0285849c95541453c39da4a6abe19c096695ccfca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,20 +11,20 @@ $ docker pull amazonlinux@sha256:845bd16cdd4312b2710a67f4bc0c8bb0466c73a8359e4c7
 ### `amazonlinux:latest` - linux; amd64
 
 ```console
-$ docker pull amazonlinux@sha256:8dc72201f4e7602c091812d9337398de445245e66158203cc8ec593e3f310356
+$ docker pull amazonlinux@sha256:359b948ea8866817e94765822787cd482279eed0c17bc674a7707f4256d5d497
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **61.6 MB (61590506 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9dcc89bac702f5046de14cd5d1032578b241545119f2c62990e2ea0840889ec2`
+-	Image ID: `sha256:6133b2c7d7c2fb402770857b7ebaa1eff3613c21cc257aac42a8de49e3c7f74e`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 03 Oct 2017 20:19:35 GMT
+# Fri, 03 Nov 2017 22:51:28 GMT
 ADD file:e4c730c8b22cb23a2b44ff9d7c9d4193909d05c7e7b76c823fbf9d960375f044 in / 
-# Tue, 03 Oct 2017 20:19:35 GMT
+# Fri, 03 Nov 2017 22:51:28 GMT
 CMD ["/bin/bash"]
 ```
 
