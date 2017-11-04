@@ -3690,20 +3690,13 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-9-jre/copyright`, `/usr/share/do
 - `LGPL-2`
 - `LGPL-2-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjdk-9=9~b181-4
-'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b181-4.dsc' openjdk-9_9~b181-4.dsc 4500 SHA256:37dc3e62c9aeecb896e91f281f3a5b64c33b93b9a5a6a3b7cbb31ae86ed29bdb
-'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b181.orig.tar.gz' openjdk-9_9~b181.orig.tar.gz 74709643 SHA256:fae669a3a6ef266bb8bda75bed0d26b861051181ced63609cdef5e30bde93df1
-'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b181-4.debian.tar.xz' openjdk-9_9~b181-4.debian.tar.xz 175152 SHA256:220f579685c4491f1d1be53ec7135eba7f9f646fd19a000c9108379b49b9f160
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openjdk-9/9~b181-4/
 
-- https://sources.debian.net/src/openjdk-9/9~b181-4/ (for browsing the source)
-- https://sources.debian.net/src/openjdk-9/9~b181-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openjdk-9/9~b181-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.4.45+dfsg-1`
 
