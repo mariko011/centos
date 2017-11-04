@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:69520dd3b7c69e9f9a90ed8e9c28165967f250dd97f71cfde2ca4935e21ac9e8`
-- Created: `2017-10-09T22:34:14.331160397Z`
+- Image ID: `sha256:0f713999220be078e3cf932dd3c32633af0de7b004941658007a97b6f32ccedc`
+- Created: `2017-11-03T22:49:01.265675746Z`
 - Virtual Size: ~ 520.83 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -490,12 +490,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/cups/1.7.5-11+deb8u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/cups/1.7.5-11+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `curl=7.38.0-4+deb8u6`
+### `dpkg` source package: `curl=7.38.0-4+deb8u7`
 
 Binary Packages:
 
-- `curl=7.38.0-4+deb8u6`
-- `libcurl3:amd64=7.38.0-4+deb8u6`
+- `curl=7.38.0-4+deb8u7`
+- `libcurl3:amd64=7.38.0-4+deb8u7`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`)
 
@@ -504,13 +504,20 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `ISC`
 - `curl`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris curl=7.38.0-4+deb8u7
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0-4+deb8u7.dsc' curl_7.38.0-4+deb8u7.dsc 2694 SHA256:b5bca99d184cfd436d441457df6c5eb660071dab4ff913fc5680278f39c80aa5
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0.orig.tar.gz' curl_7.38.0.orig.tar.gz 4094034 SHA256:5661028aa6532882fa228cd23c99ddbb8b87643dbb1a7ea55c068d34a943dff1
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0-4+deb8u7.debian.tar.xz' curl_7.38.0-4+deb8u7.debian.tar.xz 42300 SHA256:62f8e051409ecbe312a88ba9d4982784742d472d176eec16b4dd19859ae1398d
+```
 
-- http://snapshot.debian.org/package/curl/7.38.0-4+deb8u6/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/curl/7.38.0-4+deb8u7/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.38.0-4+deb8u7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.38.0-4+deb8u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-13+deb8u1`
 
@@ -2787,12 +2794,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nspr/2:4.12-1+debu8u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nspr/2:4.12-1+debu8u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `nss=2:3.26-1+debu8u2`
+### `dpkg` source package: `nss=2:3.26-1+debu8u3`
 
 Binary Packages:
 
-- `libnss3:amd64=2:3.26-1+debu8u2`
-- `libnss3:i386=2:3.26-1+debu8u2`
+- `libnss3:amd64=2:3.26-1+debu8u3`
+- `libnss3:i386=2:3.26-1+debu8u3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2801,17 +2808,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris nss=2:3.26-1+debu8u2
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.26-1+debu8u2.dsc' nss_3.26-1+debu8u2.dsc 2252 SHA256:0ebeeef9c3c439fee010e2d1222126637b54d52a16dd88a4f194507631ada31b
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.26.orig.tar.gz' nss_3.26.orig.tar.gz 7386943 SHA256:91783a570ab953693eb977ce47c501f04c104cec287fa011c91bcc8970d1c564
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.26-1+debu8u2.debian.tar.xz' nss_3.26-1+debu8u2.debian.tar.xz 27236 SHA256:31008e9f1b73de3ccac32d2c45ec0c7810936e478e98155002c731ab16e1d7af
+$ apt-get source -qq --print-uris nss=2:3.26-1+debu8u3
+'http://security.debian.org/pool/updates/main/n/nss/nss_3.26-1+debu8u3.dsc' nss_3.26-1+debu8u3.dsc 2407 SHA256:f74a3c32145effae8bb6f24b5bbe7ca5f8d9c505aba7cb781f44e781a51fa221
+'http://security.debian.org/pool/updates/main/n/nss/nss_3.26.orig.tar.gz' nss_3.26.orig.tar.gz 7386943 SHA256:91783a570ab953693eb977ce47c501f04c104cec287fa011c91bcc8970d1c564
+'http://security.debian.org/pool/updates/main/n/nss/nss_3.26-1+debu8u3.debian.tar.xz' nss_3.26-1+debu8u3.debian.tar.xz 27984 SHA256:b8ba1f94dfcb08de82d3b752a25ba60db7469f16777b5d62289dbc0a73a1acee
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/nss/2:3.26-1+debu8u2/ (for browsing the source)
-- https://sources.debian.net/src/nss/2:3.26-1+debu8u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nss/2:3.26-1+debu8u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/nss/2:3.26-1+debu8u3/ (for browsing the source)
+- https://sources.debian.net/src/nss/2:3.26-1+debu8u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/nss/2:3.26-1+debu8u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openjdk-8=8u131-b11-1~bpo8+1`
 
