@@ -1,7 +1,7 @@
 ## `ruby:rc`
 
 ```console
-$ docker pull ruby@sha256:80954ec15863d6f2e3ffa0ff2c668740a3141e0eba1239c60a0f29b95a955bdc
+$ docker pull ruby@sha256:35e6a9de73489d88f444ac566ef6918b0c633652c1207b58553987b4621637ff
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -447,14 +447,14 @@ CMD ["irb"]
 ### `ruby:rc` - linux; ppc64le
 
 ```console
-$ docker pull ruby@sha256:ee35e15438ac5f1ec8cef987c5ba381fe102d6ad66c0abbddf09942d2f96d2d9
+$ docker pull ruby@sha256:e682256716c313dab6a39599bd9006d3dfc259f83047c9bd00447e3856db4837
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **342.4 MB (342435362 bytes)**  
+-	Total Size: **344.6 MB (344575634 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:10182e0d093b6db06d6861328ecd39e1c28e56c16748386a02d2719d20c41504`
+-	Image ID: `sha256:79dd338e13b96d1886323004d19f8357b7f0ff9ad342d93ddca5bb7459ae5cdc`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -478,21 +478,21 @@ ENV RUBY_MAJOR=2.5-rc
 ENV RUBY_VERSION=2.5.0-preview1
 # Thu, 02 Nov 2017 19:04:41 GMT
 ENV RUBY_DOWNLOAD_SHA256=c2f518eb04b38bdd562ba5611abd2521248a1608fc466368563dd794ddeddd09
-# Thu, 02 Nov 2017 19:04:45 GMT
-ENV RUBYGEMS_VERSION=2.6.14
-# Thu, 02 Nov 2017 19:04:50 GMT
+# Sat, 04 Nov 2017 00:16:54 GMT
+ENV RUBYGEMS_VERSION=2.7.0
+# Sat, 04 Nov 2017 00:16:55 GMT
 ENV BUNDLER_VERSION=1.16.0
-# Thu, 02 Nov 2017 19:10:51 GMT
+# Sat, 04 Nov 2017 00:19:58 GMT
 RUN set -ex 		&& buildDeps=' 		bison 		dpkg-dev 		libgdbm-dev 		ruby 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& rm -rf /var/lib/apt/lists/* 		&& wget -O ruby.tar.xz "https://cache.ruby-lang.org/pub/ruby/${RUBY_MAJOR%-rc}/ruby-$RUBY_VERSION.tar.xz" 	&& echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum -c - 		&& mkdir -p /usr/src/ruby 	&& tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1 	&& rm ruby.tar.xz 		&& cd /usr/src/ruby 		&& { 		echo '#define ENABLE_PATH_CHECK 0'; 		echo; 		cat file.c; 	} > file.c.new 	&& mv file.c.new file.c 		&& autoconf 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 	&& make -j "$(nproc)" 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& cd / 	&& rm -r /usr/src/ruby 		&& gem update --system "$RUBYGEMS_VERSION" 	&& gem install bundler --version "$BUNDLER_VERSION" --force
-# Thu, 02 Nov 2017 19:10:53 GMT
+# Sat, 04 Nov 2017 00:19:59 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Thu, 02 Nov 2017 19:10:55 GMT
+# Sat, 04 Nov 2017 00:20:00 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Thu, 02 Nov 2017 19:10:57 GMT
+# Sat, 04 Nov 2017 00:20:02 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 02 Nov 2017 19:11:03 GMT
+# Sat, 04 Nov 2017 00:20:05 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" 	&& chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Thu, 02 Nov 2017 19:11:05 GMT
+# Sat, 04 Nov 2017 00:20:06 GMT
 CMD ["irb"]
 ```
 
@@ -521,13 +521,13 @@ CMD ["irb"]
 		Last Modified: Thu, 02 Nov 2017 19:39:57 GMT  
 		Size: 207.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:10615e7da63eeb17d0c24b8be80a905f4ee423e2276fb561ebd7471b1638ab43`  
-		Last Modified: Thu, 02 Nov 2017 19:40:05 GMT  
-		Size: 23.1 MB (23082416 bytes)  
+	-	`sha256:91bafaaa13a5efdcb8c84862418d07f6012bf171b81b4fd8cba45384c1e53d94`  
+		Last Modified: Sat, 04 Nov 2017 01:33:03 GMT  
+		Size: 25.2 MB (25222687 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b2cfbc8ac1a71b18ea52a917c06a4be9504019814812cb2a1c532ce6563512f9`  
-		Last Modified: Thu, 02 Nov 2017 19:39:58 GMT  
-		Size: 195.0 B  
+	-	`sha256:77079b2c58be011e7e07b16180c7e78f793030208a9b3d73ed0b5c37c8271434`  
+		Last Modified: Sat, 04 Nov 2017 01:32:57 GMT  
+		Size: 196.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ruby:rc` - linux; s390x
