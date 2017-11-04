@@ -1,7 +1,7 @@
 ## `clojure:latest`
 
 ```console
-$ docker pull clojure@sha256:99cdde2c528e603bc5404dc1eb9056bb2901e51b0becabbd8ddcbf79de693e58
+$ docker pull clojure@sha256:b05a19863ed1b7d6f263b72e44defe898b0a275f73b57f35a780552c1177e636
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -557,14 +557,14 @@ RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.8.0"]])' >
 ### `clojure:latest` - linux; ppc64le
 
 ```console
-$ docker pull clojure@sha256:71d80518cef1357518db27c183059b173f426c4fd5890b1a22d2730f609a9045
+$ docker pull clojure@sha256:5568accad2f4544c59e51160ee37157996b6aca9f1d6a2ab5d7a9853d0316ee8
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **299.0 MB (299042124 bytes)**  
+-	Total Size: **298.4 MB (298370687 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:65bc78f5357c01d4f5e96a1776c677eaa5bb24a025a1ef4ec9452178cf9a4faf`
+-	Image ID: `sha256:0c6d7ef13259cb9e601e028c3b8d555713e1ea0a245145ae1dc216849c50c81d`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -588,31 +588,31 @@ RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$
 RUN ln -svT "/usr/lib/jvm/java-8-openjdk-$(dpkg --print-architecture)" /docker-java-home
 # Thu, 02 Nov 2017 20:59:48 GMT
 ENV JAVA_HOME=/docker-java-home
-# Thu, 02 Nov 2017 20:59:49 GMT
-ENV JAVA_VERSION=8u141
-# Thu, 02 Nov 2017 20:59:51 GMT
-ENV JAVA_DEBIAN_VERSION=8u141-b15-1~deb9u1
-# Thu, 02 Nov 2017 20:59:53 GMT
+# Sat, 04 Nov 2017 10:48:29 GMT
+ENV JAVA_VERSION=8u151
+# Sat, 04 Nov 2017 10:48:30 GMT
+ENV JAVA_DEBIAN_VERSION=8u151-b12-1~deb9u1
+# Sat, 04 Nov 2017 10:48:32 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1
-# Thu, 02 Nov 2017 21:11:02 GMT
+# Sat, 04 Nov 2017 10:54:18 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Thu, 02 Nov 2017 21:11:30 GMT
+# Sat, 04 Nov 2017 10:54:23 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Thu, 02 Nov 2017 22:00:05 GMT
+# Sat, 04 Nov 2017 12:05:55 GMT
 MAINTAINER Paul Lam <paul@quantisan.com>
-# Thu, 02 Nov 2017 22:00:08 GMT
+# Sat, 04 Nov 2017 12:05:56 GMT
 ENV LEIN_VERSION=2.8.1
-# Thu, 02 Nov 2017 22:00:10 GMT
+# Sat, 04 Nov 2017 12:05:58 GMT
 ENV LEIN_INSTALL=/usr/local/bin/
-# Thu, 02 Nov 2017 22:00:12 GMT
+# Sat, 04 Nov 2017 12:05:59 GMT
 WORKDIR /tmp
-# Thu, 02 Nov 2017 22:00:44 GMT
+# Sat, 04 Nov 2017 12:06:13 GMT
 RUN mkdir -p $LEIN_INSTALL   && wget -q https://raw.githubusercontent.com/technomancy/leiningen/$LEIN_VERSION/bin/lein-pkg   && echo "Comparing lein-pkg checksum ..."   && echo "019faa5f91a463bf9742c3634ee32fb3db8c47f0 *lein-pkg" | sha1sum -c -   && mv lein-pkg $LEIN_INSTALL/lein   && chmod 0755 $LEIN_INSTALL/lein   && wget -q https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip   && wget -q https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip.asc   && gpg --keyserver pool.sks-keyservers.net --recv-key 2B72BF956E23DE5E830D50F6002AF007D1A7CC18   && echo "Verifying Jar file signature ..."   && gpg --verify leiningen-$LEIN_VERSION-standalone.zip.asc   && rm leiningen-$LEIN_VERSION-standalone.zip.asc   && mkdir -p /usr/share/java   && mv leiningen-$LEIN_VERSION-standalone.zip /usr/share/java/leiningen-$LEIN_VERSION-standalone.jar
-# Thu, 02 Nov 2017 22:00:48 GMT
+# Sat, 04 Nov 2017 12:06:15 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
-# Thu, 02 Nov 2017 22:00:52 GMT
+# Sat, 04 Nov 2017 12:06:16 GMT
 ENV LEIN_ROOT=1
-# Thu, 02 Nov 2017 22:01:03 GMT
+# Sat, 04 Nov 2017 12:06:25 GMT
 RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.8.0"]])' > project.clj   && lein deps && rm project.clj
 ```
 
@@ -645,21 +645,21 @@ RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.8.0"]])' >
 		Last Modified: Thu, 02 Nov 2017 21:41:38 GMT  
 		Size: 133.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:587f70d8742651247ff1b8fb00c87101ddf4b4db8671ce08926c0c976f36b9cc`  
-		Last Modified: Thu, 02 Nov 2017 21:42:32 GMT  
-		Size: 172.4 MB (172373119 bytes)  
+	-	`sha256:8d0da024f49e41efcda05c7bbce32719c461fffffcaad2c764c19b0e7ef28249`  
+		Last Modified: Sat, 04 Nov 2017 11:22:16 GMT  
+		Size: 171.7 MB (171701840 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:55e155381c5ee93dfe1e3a382f1a3abc3b9a0e942e797ed06bb3eb43ac3e06a3`  
-		Last Modified: Thu, 02 Nov 2017 21:41:38 GMT  
-		Size: 272.2 KB (272205 bytes)  
+	-	`sha256:e8dff38ddfc55b52ec7c7ae1f4c4a3df13896e476d4852445865b337a93892cf`  
+		Last Modified: Sat, 04 Nov 2017 11:21:39 GMT  
+		Size: 272.1 KB (272056 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d4c7f35688f668710520b653f4ad4ee80720ac037a01617aa9b24231f88590c4`  
-		Last Modified: Thu, 02 Nov 2017 22:04:29 GMT  
+	-	`sha256:ad4f07befe1a377eda9e66cf5ade7d3ccacce5869b165ac7ca85019f7ee7ebc7`  
+		Last Modified: Sat, 04 Nov 2017 12:10:19 GMT  
 		Size: 12.1 MB (12137722 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b8c7c406dc704842338da9117b37cd48aee6ecf8b3d175fe40f1c2d6410553c8`  
-		Last Modified: Thu, 02 Nov 2017 22:04:29 GMT  
-		Size: 3.3 MB (3341115 bytes)  
+	-	`sha256:f1946acfd2cffdbb1f857f95d97af2e6f695f5afa4e87d5aae7dab6c3582a12d`  
+		Last Modified: Sat, 04 Nov 2017 12:10:22 GMT  
+		Size: 3.3 MB (3341106 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `clojure:latest` - linux; s390x
