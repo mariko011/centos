@@ -12,7 +12,7 @@
 ## `convertigo:7.4`
 
 ```console
-$ docker pull convertigo@sha256:1083bec34f1819e045bec609ac6de5569a00633fdd6b1ee5c6efe12c7fd976d8
+$ docker pull convertigo@sha256:3e4c261cc7508acdc952be30de7333a2fd96f650f595503aa20bdbf446a56a90
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -22,14 +22,14 @@ $ docker pull convertigo@sha256:1083bec34f1819e045bec609ac6de5569a00633fdd6b1ee5
 ### `convertigo:7.4` - linux; amd64
 
 ```console
-$ docker pull convertigo@sha256:2ed9cd5a000044a72e425d6d4170632f276e3821f8942b391a5870d2ab00627c
+$ docker pull convertigo@sha256:129498e087a252aaba3e1401f132e925b45605d2531484282567417b17df9762
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **319.2 MB (319235015 bytes)**  
+-	Total Size: **317.2 MB (317156747 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1097bee7b8b7114e19af61b82a3bef623d229c650808a470fbd725b31899d38a`
+-	Image ID: `sha256:b18bd696adfdfad63870c596d23168b68cd355231bee4b6828189cc2ef84944f`
 -	Entrypoint: `["tini","--","\/docker-entrypoint.sh"]`
 -	Default Command: `["convertigo"]`
 
@@ -38,77 +38,77 @@ $ docker pull convertigo@sha256:2ed9cd5a000044a72e425d6d4170632f276e3821f8942b39
 ADD file:a71e077a42995a68ffe4834d85cfe26af4ea12aa8ed43decc03cc487124b1f70 in / 
 # Mon, 09 Oct 2017 21:33:25 GMT
 CMD ["bash"]
-# Mon, 09 Oct 2017 22:37:34 GMT
+# Sat, 04 Nov 2017 00:54:46 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 09 Oct 2017 22:37:38 GMT
-RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 10 Oct 2017 00:50:26 GMT
+# Sat, 04 Nov 2017 00:54:52 GMT
+RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
+# Sat, 04 Nov 2017 05:48:36 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 10 Oct 2017 00:50:26 GMT
+# Sat, 04 Nov 2017 05:48:36 GMT
 ENV LANG=C.UTF-8
-# Tue, 10 Oct 2017 00:50:27 GMT
+# Sat, 04 Nov 2017 05:48:37 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 10 Oct 2017 00:50:27 GMT
+# Sat, 04 Nov 2017 05:48:38 GMT
 RUN ln -svT "/usr/lib/jvm/java-8-openjdk-$(dpkg --print-architecture)" /docker-java-home
-# Tue, 10 Oct 2017 00:50:27 GMT
+# Sat, 04 Nov 2017 05:48:38 GMT
 ENV JAVA_HOME=/docker-java-home/jre
-# Tue, 10 Oct 2017 00:50:28 GMT
-ENV JAVA_VERSION=8u141
-# Tue, 10 Oct 2017 00:50:28 GMT
-ENV JAVA_DEBIAN_VERSION=8u141-b15-1~deb9u1
-# Tue, 10 Oct 2017 00:50:28 GMT
+# Sat, 04 Nov 2017 05:48:38 GMT
+ENV JAVA_VERSION=8u151
+# Sat, 04 Nov 2017 05:48:38 GMT
+ENV JAVA_DEBIAN_VERSION=8u151-b12-1~deb9u1
+# Sat, 04 Nov 2017 05:48:38 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1
-# Tue, 10 Oct 2017 00:51:10 GMT
+# Sat, 04 Nov 2017 05:50:13 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y 		openjdk-8-jre="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Tue, 10 Oct 2017 00:51:12 GMT
+# Sat, 04 Nov 2017 05:50:15 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Fri, 03 Nov 2017 22:45:37 GMT
+# Sat, 04 Nov 2017 18:19:05 GMT
 MAINTAINER Nicolas Albert nicolasa@convertigo.com
-# Fri, 03 Nov 2017 22:45:37 GMT
+# Sat, 04 Nov 2017 18:19:05 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Fri, 03 Nov 2017 22:45:38 GMT
+# Sat, 04 Nov 2017 18:19:06 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Fri, 03 Nov 2017 22:45:39 GMT
+# Sat, 04 Nov 2017 18:19:09 GMT
 WORKDIR /usr/local/tomcat
-# Fri, 03 Nov 2017 22:45:48 GMT
+# Sat, 04 Nov 2017 18:19:13 GMT
 RUN apt-get update -y && apt-get install -y --no-install-recommends     ca-certificates     curl     unzip   && rm -rf /var/lib/apt/lists/*
-# Fri, 03 Nov 2017 22:46:01 GMT
+# Sat, 04 Nov 2017 18:19:23 GMT
 RUN export GNUPGHOME="$(mktemp -d)"   && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4   && curl -o /usr/local/bin/gosu -fSL "https://github.com/tianon/gosu/releases/download/1.7/gosu-$(dpkg --print-architecture)"   && curl -o /usr/local/bin/gosu.asc -fSL "https://github.com/tianon/gosu/releases/download/1.7/gosu-$(dpkg --print-architecture).asc"   && gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu   && rm /usr/local/bin/gosu.asc   && chmod +x /usr/local/bin/gosu   && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5   && curl -o /usr/local/bin/tini -fSL "https://github.com/krallin/tini/releases/download/v0.9.0/tini"   && curl -o /usr/local/bin/tini.asc -fSL "https://github.com/krallin/tini/releases/download/v0.9.0/tini.asc"   && gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini   && rm /usr/local/bin/tini.asc   && chmod +x /usr/local/bin/tini   && rm -rf /tmp/*
-# Fri, 03 Nov 2017 22:46:02 GMT
+# Sat, 04 Nov 2017 18:19:24 GMT
 RUN useradd -s /bin/false -m convertigo     && mkdir -p /workspace/lib /workspace/classes     && chown -R convertigo:convertigo /workspace
-# Fri, 03 Nov 2017 22:46:02 GMT
+# Sat, 04 Nov 2017 18:19:24 GMT
 ENV TOMCAT_MAJOR=7
-# Fri, 03 Nov 2017 22:46:02 GMT
+# Sat, 04 Nov 2017 18:19:24 GMT
 ENV TOMCAT_VERSION=7.0.72
-# Fri, 03 Nov 2017 22:46:02 GMT
+# Sat, 04 Nov 2017 18:19:24 GMT
 ENV TOMCAT_TGZ_URL=https://archive.apache.org/dist/tomcat/tomcat-7/v7.0.72/bin/apache-tomcat-7.0.72.tar.gz
-# Fri, 03 Nov 2017 22:46:02 GMT
+# Sat, 04 Nov 2017 18:19:24 GMT
 ENV TOMCAT_GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 61B832AC2F1C5A90F0F9B00A1C506407564C17A3 713DA88BE50911535FE716F5208B0AB1D63011C7 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23
-# Fri, 03 Nov 2017 22:46:16 GMT
+# Sat, 04 Nov 2017 18:19:52 GMT
 RUN export GNUPGHOME="$(mktemp -d)"     && for key in $TOMCAT_GPG_KEYS; do          gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key";        done;     curl -fSL -o /tmp/tomcat.tar.gz $TOMCAT_TGZ_URL     && curl -fSL -o /tmp/tomcat.tar.gz.asc $TOMCAT_TGZ_URL.asc     && gpg --batch --verify /tmp/tomcat.tar.gz.asc /tmp/tomcat.tar.gz     && tar -xvf /tmp/tomcat.tar.gz --strip-components=1     && sed -i.bak         -e '/protocol="AJP/d'         -e '/AprLifecycleListener/d'         -e '/JasperListener/d'         -e 's/port="8080"/port="28080" maxThreads="64000"/'         conf/server.xml     && rm -rf webapps/* bin/*.bat conf/server.xml.bak /tmp/*     && chown -R convertigo:convertigo conf temp work logs     && chmod -w conf/*
-# Fri, 03 Nov 2017 22:46:16 GMT
+# Sat, 04 Nov 2017 18:19:52 GMT
 ENV CONVERTIGO_VERSION=7.4.6
-# Fri, 03 Nov 2017 22:46:16 GMT
+# Sat, 04 Nov 2017 18:19:52 GMT
 ENV CONVERTIGO_REVISION=43404
-# Fri, 03 Nov 2017 22:46:16 GMT
+# Sat, 04 Nov 2017 18:19:52 GMT
 ENV CONVERTIGO_WAR_URL=https://devplatform.s3.amazonaws.com/refbin/cems/7.4.6/convertigo-7.4.6-v43404-linux64.war
-# Fri, 03 Nov 2017 22:46:17 GMT
+# Sat, 04 Nov 2017 18:19:52 GMT
 ENV CONVERTIGO_GPG_KEYS=6A7779BB78FE368DF74B708FD4DA8FBEB64BF75F
-# Fri, 03 Nov 2017 22:46:40 GMT
+# Sat, 04 Nov 2017 18:20:14 GMT
 RUN export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$CONVERTIGO_GPG_KEYS"     && curl -fSL -o /tmp/convertigo.war $CONVERTIGO_WAR_URL     && curl -fSL -o /tmp/convertigo.war.asc $CONVERTIGO_WAR_URL.asc     && gpg --batch --verify /tmp/convertigo.war.asc /tmp/convertigo.war     && mkdir webapps/ROOT webapps/convertigo     && (cd webapps/convertigo         && unzip -q /tmp/convertigo.war         && rm -rf WEB-INF/xulrunner WEB-INF/xvnc WEB-INF/lib/swt_* /tmp/*)
-# Fri, 03 Nov 2017 22:46:40 GMT
+# Sat, 04 Nov 2017 18:20:14 GMT
 COPY file:eccfef5b39339e2a9ab87231ac8ef2a1783b7ae7fd6f21aa6f0a825520cdb73c in webapps/ROOT/index.html 
-# Fri, 03 Nov 2017 22:46:40 GMT
+# Sat, 04 Nov 2017 18:20:14 GMT
 COPY file:67d755c96109afb6b52870db09484b9a059f689f60852896862881c103c815a5 in / 
-# Fri, 03 Nov 2017 22:46:41 GMT
+# Sat, 04 Nov 2017 18:20:14 GMT
 WORKDIR /workspace
-# Fri, 03 Nov 2017 22:46:41 GMT
+# Sat, 04 Nov 2017 18:20:15 GMT
 VOLUME [/workspace]
-# Fri, 03 Nov 2017 22:46:42 GMT
+# Sat, 04 Nov 2017 18:20:15 GMT
 EXPOSE 28080/tcp
-# Fri, 03 Nov 2017 22:46:42 GMT
+# Sat, 04 Nov 2017 18:20:15 GMT
 ENTRYPOINT ["tini" "--" "/docker-entrypoint.sh"]
-# Fri, 03 Nov 2017 22:46:42 GMT
+# Sat, 04 Nov 2017 18:20:15 GMT
 CMD ["convertigo"]
 ```
 
@@ -117,71 +117,71 @@ CMD ["convertigo"]
 		Last Modified: Mon, 09 Oct 2017 21:41:38 GMT  
 		Size: 45.1 MB (45129088 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:74d44b20f851c8ef0b042070ba8eb018b386f50fdae5c37871d3fe7b4cfb4956`  
-		Last Modified: Mon, 09 Oct 2017 23:01:17 GMT  
-		Size: 11.1 MB (11106736 bytes)  
+	-	`sha256:37c1cae4f87837d9d61448aceb335992065dc5c80585391782500c4346903fba`  
+		Last Modified: Sat, 04 Nov 2017 01:09:20 GMT  
+		Size: 11.1 MB (11106957 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a156217f3fa434b4821b01f0d24be50ead40560053fb5b65982f52507f55bc12`  
-		Last Modified: Mon, 09 Oct 2017 23:01:15 GMT  
-		Size: 4.6 MB (4633218 bytes)  
+	-	`sha256:3d7da8791d1177f333ca323342681219e16b2e3ceff3cc3811b84f20f2d89062`  
+		Last Modified: Sat, 04 Nov 2017 01:09:15 GMT  
+		Size: 4.3 MB (4335249 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8bceb9f576935acd4433bd41017d3b74ea1bcde02593938b3fdba8f594d353f3`  
-		Last Modified: Tue, 10 Oct 2017 01:23:47 GMT  
-		Size: 852.5 KB (852507 bytes)  
+	-	`sha256:5f3adc05996e38a93e8e2585cc5df22a66fac151eee215f3491bee91d0b97e52`  
+		Last Modified: Sat, 04 Nov 2017 06:02:52 GMT  
+		Size: 852.3 KB (852282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:268410abd9cfbc11b635f95ac458e4af7061aec128041149ce86063cfc8d0aa7`  
-		Last Modified: Tue, 10 Oct 2017 01:23:47 GMT  
+	-	`sha256:44753faac15ca98504aa297b8b2bbc354d5cf29045d0915fa02aea4489ec4490`  
+		Last Modified: Sat, 04 Nov 2017 06:02:52 GMT  
 		Size: 248.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c5e2fb2d87cf14b0e5968b7b40cd36663f45d6244a3bd37c1204d928026aa952`  
-		Last Modified: Tue, 10 Oct 2017 01:23:49 GMT  
-		Size: 131.0 B  
+	-	`sha256:e1233f777b5b8e4deb49038055315e320f02e9eb63e2a3ecc4c3c589a61e9009`  
+		Last Modified: Sat, 04 Nov 2017 06:02:52 GMT  
+		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:09681f714a7bf2a3c7453539930f6b768c3733a18457685857ab6a8be93176d4`  
-		Last Modified: Tue, 10 Oct 2017 01:24:32 GMT  
-		Size: 166.2 MB (166170709 bytes)  
+	-	`sha256:843bcc5b1cf03a07e6f520a69fa7663b44c99f0933da944a5d806f9b366f48a3`  
+		Last Modified: Sat, 04 Nov 2017 06:03:40 GMT  
+		Size: 165.4 MB (165393338 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c20de950ce5253aeea1d19e7edfca3d1738e872ab3a0cf6b182bf804e42a3fe8`  
-		Last Modified: Tue, 10 Oct 2017 01:23:47 GMT  
-		Size: 272.0 KB (272003 bytes)  
+	-	`sha256:5bc48ebfa00c33dd298e1517555e5cf90655e3b454abc25690086072c4c43cb5`  
+		Last Modified: Sat, 04 Nov 2017 06:02:52 GMT  
+		Size: 272.1 KB (272062 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5acdf2ade6199e969ef1bb5dab4958992433f2052f56db88399a132576880a46`  
-		Last Modified: Fri, 03 Nov 2017 22:49:15 GMT  
+	-	`sha256:38f3bbe693d1cde5ec11659706d3789a0029a317791dbb14c01677458ee4cae8`  
+		Last Modified: Sat, 04 Nov 2017 18:22:38 GMT  
 		Size: 149.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:82213f46dc687856f66b60d4be2fa30c4dea6309929cd2a5037e978c8659ea76`  
-		Last Modified: Fri, 03 Nov 2017 22:49:15 GMT  
-		Size: 1.0 MB (1003273 bytes)  
+	-	`sha256:3576053470006b2d77345844a3fef8f6c85e3fb4a7cedb39a7bfb10f536eda30`  
+		Last Modified: Sat, 04 Nov 2017 18:22:35 GMT  
+		Size: 331.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:211fff91a4134a95a5c12987f153f2b72e82bc857b1ced88bffe2c78a4c4e235`  
-		Last Modified: Fri, 03 Nov 2017 22:49:15 GMT  
-		Size: 826.1 KB (826144 bytes)  
+	-	`sha256:eee8b0ba7d92ff13bb8b2d2d54fa28ef1d23b61c9e4404274074d53349fc2ef4`  
+		Last Modified: Sat, 04 Nov 2017 18:22:35 GMT  
+		Size: 826.1 KB (826130 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ef2698b4c52e011034f032becb3cd5d4612feea380b58db2fe9c390f2afb08b`  
-		Last Modified: Fri, 03 Nov 2017 22:49:13 GMT  
-		Size: 4.3 KB (4304 bytes)  
+	-	`sha256:e5fd41d2c663d7f8b7a342066cc21b00003b5fcf10be8151ed203cf8f1267a4c`  
+		Last Modified: Sat, 04 Nov 2017 18:22:34 GMT  
+		Size: 4.3 KB (4292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:92182e75944a979e977d0a7a6c7c7ade8069fae4ffb42de4b8c6ffa5b4fbc8f1`  
-		Last Modified: Fri, 03 Nov 2017 22:49:14 GMT  
-		Size: 7.5 MB (7473751 bytes)  
+	-	`sha256:6fee485e695b2a67672f8c3896fb23f2c4cf1cbd550bcef3643e7e39ee97bfc8`  
+		Last Modified: Sat, 04 Nov 2017 18:22:34 GMT  
+		Size: 7.5 MB (7473752 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:651cfffb3a98ee61c66e7525f2632d364100325770ce39b371a96b5cd185fd2f`  
-		Last Modified: Fri, 03 Nov 2017 22:49:19 GMT  
-		Size: 81.8 MB (81761342 bytes)  
+	-	`sha256:058ce3deb79f46f8cc47c4474b71a601a7d2441ffcf22d24aea55e4cacdc3976`  
+		Last Modified: Sat, 04 Nov 2017 18:22:39 GMT  
+		Size: 81.8 MB (81761328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:71f93614bf8115fa9f2d782d000fb96a341b9b3692c83dfcdc91596a6140690c`  
-		Last Modified: Fri, 03 Nov 2017 22:49:13 GMT  
-		Size: 464.0 B  
+	-	`sha256:d84a14303e7abfbca0a4b253cf361c076f35537cf2f4ebafb816cdb0d383b7b7`  
+		Last Modified: Sat, 04 Nov 2017 18:22:33 GMT  
+		Size: 462.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f0818919f80277c618f22bcbee8eae164850b9827ad53e1e8d98dabcd0dd708b`  
-		Last Modified: Fri, 03 Nov 2017 22:49:13 GMT  
-		Size: 948.0 B  
+	-	`sha256:62ca07c9fb3f09ab9fd85519cdcf13836f6e80cf7b70d40dd492e08f6b99c9ed`  
+		Last Modified: Sat, 04 Nov 2017 18:22:33 GMT  
+		Size: 949.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `convertigo:7.4.6`
 
 ```console
-$ docker pull convertigo@sha256:1083bec34f1819e045bec609ac6de5569a00633fdd6b1ee5c6efe12c7fd976d8
+$ docker pull convertigo@sha256:3e4c261cc7508acdc952be30de7333a2fd96f650f595503aa20bdbf446a56a90
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -191,14 +191,14 @@ $ docker pull convertigo@sha256:1083bec34f1819e045bec609ac6de5569a00633fdd6b1ee5
 ### `convertigo:7.4.6` - linux; amd64
 
 ```console
-$ docker pull convertigo@sha256:2ed9cd5a000044a72e425d6d4170632f276e3821f8942b391a5870d2ab00627c
+$ docker pull convertigo@sha256:129498e087a252aaba3e1401f132e925b45605d2531484282567417b17df9762
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **319.2 MB (319235015 bytes)**  
+-	Total Size: **317.2 MB (317156747 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1097bee7b8b7114e19af61b82a3bef623d229c650808a470fbd725b31899d38a`
+-	Image ID: `sha256:b18bd696adfdfad63870c596d23168b68cd355231bee4b6828189cc2ef84944f`
 -	Entrypoint: `["tini","--","\/docker-entrypoint.sh"]`
 -	Default Command: `["convertigo"]`
 
@@ -207,77 +207,77 @@ $ docker pull convertigo@sha256:2ed9cd5a000044a72e425d6d4170632f276e3821f8942b39
 ADD file:a71e077a42995a68ffe4834d85cfe26af4ea12aa8ed43decc03cc487124b1f70 in / 
 # Mon, 09 Oct 2017 21:33:25 GMT
 CMD ["bash"]
-# Mon, 09 Oct 2017 22:37:34 GMT
+# Sat, 04 Nov 2017 00:54:46 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 09 Oct 2017 22:37:38 GMT
-RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 10 Oct 2017 00:50:26 GMT
+# Sat, 04 Nov 2017 00:54:52 GMT
+RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
+# Sat, 04 Nov 2017 05:48:36 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 10 Oct 2017 00:50:26 GMT
+# Sat, 04 Nov 2017 05:48:36 GMT
 ENV LANG=C.UTF-8
-# Tue, 10 Oct 2017 00:50:27 GMT
+# Sat, 04 Nov 2017 05:48:37 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 10 Oct 2017 00:50:27 GMT
+# Sat, 04 Nov 2017 05:48:38 GMT
 RUN ln -svT "/usr/lib/jvm/java-8-openjdk-$(dpkg --print-architecture)" /docker-java-home
-# Tue, 10 Oct 2017 00:50:27 GMT
+# Sat, 04 Nov 2017 05:48:38 GMT
 ENV JAVA_HOME=/docker-java-home/jre
-# Tue, 10 Oct 2017 00:50:28 GMT
-ENV JAVA_VERSION=8u141
-# Tue, 10 Oct 2017 00:50:28 GMT
-ENV JAVA_DEBIAN_VERSION=8u141-b15-1~deb9u1
-# Tue, 10 Oct 2017 00:50:28 GMT
+# Sat, 04 Nov 2017 05:48:38 GMT
+ENV JAVA_VERSION=8u151
+# Sat, 04 Nov 2017 05:48:38 GMT
+ENV JAVA_DEBIAN_VERSION=8u151-b12-1~deb9u1
+# Sat, 04 Nov 2017 05:48:38 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1
-# Tue, 10 Oct 2017 00:51:10 GMT
+# Sat, 04 Nov 2017 05:50:13 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y 		openjdk-8-jre="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Tue, 10 Oct 2017 00:51:12 GMT
+# Sat, 04 Nov 2017 05:50:15 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Fri, 03 Nov 2017 22:45:37 GMT
+# Sat, 04 Nov 2017 18:19:05 GMT
 MAINTAINER Nicolas Albert nicolasa@convertigo.com
-# Fri, 03 Nov 2017 22:45:37 GMT
+# Sat, 04 Nov 2017 18:19:05 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Fri, 03 Nov 2017 22:45:38 GMT
+# Sat, 04 Nov 2017 18:19:06 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Fri, 03 Nov 2017 22:45:39 GMT
+# Sat, 04 Nov 2017 18:19:09 GMT
 WORKDIR /usr/local/tomcat
-# Fri, 03 Nov 2017 22:45:48 GMT
+# Sat, 04 Nov 2017 18:19:13 GMT
 RUN apt-get update -y && apt-get install -y --no-install-recommends     ca-certificates     curl     unzip   && rm -rf /var/lib/apt/lists/*
-# Fri, 03 Nov 2017 22:46:01 GMT
+# Sat, 04 Nov 2017 18:19:23 GMT
 RUN export GNUPGHOME="$(mktemp -d)"   && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4   && curl -o /usr/local/bin/gosu -fSL "https://github.com/tianon/gosu/releases/download/1.7/gosu-$(dpkg --print-architecture)"   && curl -o /usr/local/bin/gosu.asc -fSL "https://github.com/tianon/gosu/releases/download/1.7/gosu-$(dpkg --print-architecture).asc"   && gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu   && rm /usr/local/bin/gosu.asc   && chmod +x /usr/local/bin/gosu   && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5   && curl -o /usr/local/bin/tini -fSL "https://github.com/krallin/tini/releases/download/v0.9.0/tini"   && curl -o /usr/local/bin/tini.asc -fSL "https://github.com/krallin/tini/releases/download/v0.9.0/tini.asc"   && gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini   && rm /usr/local/bin/tini.asc   && chmod +x /usr/local/bin/tini   && rm -rf /tmp/*
-# Fri, 03 Nov 2017 22:46:02 GMT
+# Sat, 04 Nov 2017 18:19:24 GMT
 RUN useradd -s /bin/false -m convertigo     && mkdir -p /workspace/lib /workspace/classes     && chown -R convertigo:convertigo /workspace
-# Fri, 03 Nov 2017 22:46:02 GMT
+# Sat, 04 Nov 2017 18:19:24 GMT
 ENV TOMCAT_MAJOR=7
-# Fri, 03 Nov 2017 22:46:02 GMT
+# Sat, 04 Nov 2017 18:19:24 GMT
 ENV TOMCAT_VERSION=7.0.72
-# Fri, 03 Nov 2017 22:46:02 GMT
+# Sat, 04 Nov 2017 18:19:24 GMT
 ENV TOMCAT_TGZ_URL=https://archive.apache.org/dist/tomcat/tomcat-7/v7.0.72/bin/apache-tomcat-7.0.72.tar.gz
-# Fri, 03 Nov 2017 22:46:02 GMT
+# Sat, 04 Nov 2017 18:19:24 GMT
 ENV TOMCAT_GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 61B832AC2F1C5A90F0F9B00A1C506407564C17A3 713DA88BE50911535FE716F5208B0AB1D63011C7 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23
-# Fri, 03 Nov 2017 22:46:16 GMT
+# Sat, 04 Nov 2017 18:19:52 GMT
 RUN export GNUPGHOME="$(mktemp -d)"     && for key in $TOMCAT_GPG_KEYS; do          gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key";        done;     curl -fSL -o /tmp/tomcat.tar.gz $TOMCAT_TGZ_URL     && curl -fSL -o /tmp/tomcat.tar.gz.asc $TOMCAT_TGZ_URL.asc     && gpg --batch --verify /tmp/tomcat.tar.gz.asc /tmp/tomcat.tar.gz     && tar -xvf /tmp/tomcat.tar.gz --strip-components=1     && sed -i.bak         -e '/protocol="AJP/d'         -e '/AprLifecycleListener/d'         -e '/JasperListener/d'         -e 's/port="8080"/port="28080" maxThreads="64000"/'         conf/server.xml     && rm -rf webapps/* bin/*.bat conf/server.xml.bak /tmp/*     && chown -R convertigo:convertigo conf temp work logs     && chmod -w conf/*
-# Fri, 03 Nov 2017 22:46:16 GMT
+# Sat, 04 Nov 2017 18:19:52 GMT
 ENV CONVERTIGO_VERSION=7.4.6
-# Fri, 03 Nov 2017 22:46:16 GMT
+# Sat, 04 Nov 2017 18:19:52 GMT
 ENV CONVERTIGO_REVISION=43404
-# Fri, 03 Nov 2017 22:46:16 GMT
+# Sat, 04 Nov 2017 18:19:52 GMT
 ENV CONVERTIGO_WAR_URL=https://devplatform.s3.amazonaws.com/refbin/cems/7.4.6/convertigo-7.4.6-v43404-linux64.war
-# Fri, 03 Nov 2017 22:46:17 GMT
+# Sat, 04 Nov 2017 18:19:52 GMT
 ENV CONVERTIGO_GPG_KEYS=6A7779BB78FE368DF74B708FD4DA8FBEB64BF75F
-# Fri, 03 Nov 2017 22:46:40 GMT
+# Sat, 04 Nov 2017 18:20:14 GMT
 RUN export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$CONVERTIGO_GPG_KEYS"     && curl -fSL -o /tmp/convertigo.war $CONVERTIGO_WAR_URL     && curl -fSL -o /tmp/convertigo.war.asc $CONVERTIGO_WAR_URL.asc     && gpg --batch --verify /tmp/convertigo.war.asc /tmp/convertigo.war     && mkdir webapps/ROOT webapps/convertigo     && (cd webapps/convertigo         && unzip -q /tmp/convertigo.war         && rm -rf WEB-INF/xulrunner WEB-INF/xvnc WEB-INF/lib/swt_* /tmp/*)
-# Fri, 03 Nov 2017 22:46:40 GMT
+# Sat, 04 Nov 2017 18:20:14 GMT
 COPY file:eccfef5b39339e2a9ab87231ac8ef2a1783b7ae7fd6f21aa6f0a825520cdb73c in webapps/ROOT/index.html 
-# Fri, 03 Nov 2017 22:46:40 GMT
+# Sat, 04 Nov 2017 18:20:14 GMT
 COPY file:67d755c96109afb6b52870db09484b9a059f689f60852896862881c103c815a5 in / 
-# Fri, 03 Nov 2017 22:46:41 GMT
+# Sat, 04 Nov 2017 18:20:14 GMT
 WORKDIR /workspace
-# Fri, 03 Nov 2017 22:46:41 GMT
+# Sat, 04 Nov 2017 18:20:15 GMT
 VOLUME [/workspace]
-# Fri, 03 Nov 2017 22:46:42 GMT
+# Sat, 04 Nov 2017 18:20:15 GMT
 EXPOSE 28080/tcp
-# Fri, 03 Nov 2017 22:46:42 GMT
+# Sat, 04 Nov 2017 18:20:15 GMT
 ENTRYPOINT ["tini" "--" "/docker-entrypoint.sh"]
-# Fri, 03 Nov 2017 22:46:42 GMT
+# Sat, 04 Nov 2017 18:20:15 GMT
 CMD ["convertigo"]
 ```
 
@@ -286,71 +286,71 @@ CMD ["convertigo"]
 		Last Modified: Mon, 09 Oct 2017 21:41:38 GMT  
 		Size: 45.1 MB (45129088 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:74d44b20f851c8ef0b042070ba8eb018b386f50fdae5c37871d3fe7b4cfb4956`  
-		Last Modified: Mon, 09 Oct 2017 23:01:17 GMT  
-		Size: 11.1 MB (11106736 bytes)  
+	-	`sha256:37c1cae4f87837d9d61448aceb335992065dc5c80585391782500c4346903fba`  
+		Last Modified: Sat, 04 Nov 2017 01:09:20 GMT  
+		Size: 11.1 MB (11106957 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a156217f3fa434b4821b01f0d24be50ead40560053fb5b65982f52507f55bc12`  
-		Last Modified: Mon, 09 Oct 2017 23:01:15 GMT  
-		Size: 4.6 MB (4633218 bytes)  
+	-	`sha256:3d7da8791d1177f333ca323342681219e16b2e3ceff3cc3811b84f20f2d89062`  
+		Last Modified: Sat, 04 Nov 2017 01:09:15 GMT  
+		Size: 4.3 MB (4335249 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8bceb9f576935acd4433bd41017d3b74ea1bcde02593938b3fdba8f594d353f3`  
-		Last Modified: Tue, 10 Oct 2017 01:23:47 GMT  
-		Size: 852.5 KB (852507 bytes)  
+	-	`sha256:5f3adc05996e38a93e8e2585cc5df22a66fac151eee215f3491bee91d0b97e52`  
+		Last Modified: Sat, 04 Nov 2017 06:02:52 GMT  
+		Size: 852.3 KB (852282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:268410abd9cfbc11b635f95ac458e4af7061aec128041149ce86063cfc8d0aa7`  
-		Last Modified: Tue, 10 Oct 2017 01:23:47 GMT  
+	-	`sha256:44753faac15ca98504aa297b8b2bbc354d5cf29045d0915fa02aea4489ec4490`  
+		Last Modified: Sat, 04 Nov 2017 06:02:52 GMT  
 		Size: 248.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c5e2fb2d87cf14b0e5968b7b40cd36663f45d6244a3bd37c1204d928026aa952`  
-		Last Modified: Tue, 10 Oct 2017 01:23:49 GMT  
-		Size: 131.0 B  
+	-	`sha256:e1233f777b5b8e4deb49038055315e320f02e9eb63e2a3ecc4c3c589a61e9009`  
+		Last Modified: Sat, 04 Nov 2017 06:02:52 GMT  
+		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:09681f714a7bf2a3c7453539930f6b768c3733a18457685857ab6a8be93176d4`  
-		Last Modified: Tue, 10 Oct 2017 01:24:32 GMT  
-		Size: 166.2 MB (166170709 bytes)  
+	-	`sha256:843bcc5b1cf03a07e6f520a69fa7663b44c99f0933da944a5d806f9b366f48a3`  
+		Last Modified: Sat, 04 Nov 2017 06:03:40 GMT  
+		Size: 165.4 MB (165393338 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c20de950ce5253aeea1d19e7edfca3d1738e872ab3a0cf6b182bf804e42a3fe8`  
-		Last Modified: Tue, 10 Oct 2017 01:23:47 GMT  
-		Size: 272.0 KB (272003 bytes)  
+	-	`sha256:5bc48ebfa00c33dd298e1517555e5cf90655e3b454abc25690086072c4c43cb5`  
+		Last Modified: Sat, 04 Nov 2017 06:02:52 GMT  
+		Size: 272.1 KB (272062 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5acdf2ade6199e969ef1bb5dab4958992433f2052f56db88399a132576880a46`  
-		Last Modified: Fri, 03 Nov 2017 22:49:15 GMT  
+	-	`sha256:38f3bbe693d1cde5ec11659706d3789a0029a317791dbb14c01677458ee4cae8`  
+		Last Modified: Sat, 04 Nov 2017 18:22:38 GMT  
 		Size: 149.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:82213f46dc687856f66b60d4be2fa30c4dea6309929cd2a5037e978c8659ea76`  
-		Last Modified: Fri, 03 Nov 2017 22:49:15 GMT  
-		Size: 1.0 MB (1003273 bytes)  
+	-	`sha256:3576053470006b2d77345844a3fef8f6c85e3fb4a7cedb39a7bfb10f536eda30`  
+		Last Modified: Sat, 04 Nov 2017 18:22:35 GMT  
+		Size: 331.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:211fff91a4134a95a5c12987f153f2b72e82bc857b1ced88bffe2c78a4c4e235`  
-		Last Modified: Fri, 03 Nov 2017 22:49:15 GMT  
-		Size: 826.1 KB (826144 bytes)  
+	-	`sha256:eee8b0ba7d92ff13bb8b2d2d54fa28ef1d23b61c9e4404274074d53349fc2ef4`  
+		Last Modified: Sat, 04 Nov 2017 18:22:35 GMT  
+		Size: 826.1 KB (826130 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ef2698b4c52e011034f032becb3cd5d4612feea380b58db2fe9c390f2afb08b`  
-		Last Modified: Fri, 03 Nov 2017 22:49:13 GMT  
-		Size: 4.3 KB (4304 bytes)  
+	-	`sha256:e5fd41d2c663d7f8b7a342066cc21b00003b5fcf10be8151ed203cf8f1267a4c`  
+		Last Modified: Sat, 04 Nov 2017 18:22:34 GMT  
+		Size: 4.3 KB (4292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:92182e75944a979e977d0a7a6c7c7ade8069fae4ffb42de4b8c6ffa5b4fbc8f1`  
-		Last Modified: Fri, 03 Nov 2017 22:49:14 GMT  
-		Size: 7.5 MB (7473751 bytes)  
+	-	`sha256:6fee485e695b2a67672f8c3896fb23f2c4cf1cbd550bcef3643e7e39ee97bfc8`  
+		Last Modified: Sat, 04 Nov 2017 18:22:34 GMT  
+		Size: 7.5 MB (7473752 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:651cfffb3a98ee61c66e7525f2632d364100325770ce39b371a96b5cd185fd2f`  
-		Last Modified: Fri, 03 Nov 2017 22:49:19 GMT  
-		Size: 81.8 MB (81761342 bytes)  
+	-	`sha256:058ce3deb79f46f8cc47c4474b71a601a7d2441ffcf22d24aea55e4cacdc3976`  
+		Last Modified: Sat, 04 Nov 2017 18:22:39 GMT  
+		Size: 81.8 MB (81761328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:71f93614bf8115fa9f2d782d000fb96a341b9b3692c83dfcdc91596a6140690c`  
-		Last Modified: Fri, 03 Nov 2017 22:49:13 GMT  
-		Size: 464.0 B  
+	-	`sha256:d84a14303e7abfbca0a4b253cf361c076f35537cf2f4ebafb816cdb0d383b7b7`  
+		Last Modified: Sat, 04 Nov 2017 18:22:33 GMT  
+		Size: 462.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f0818919f80277c618f22bcbee8eae164850b9827ad53e1e8d98dabcd0dd708b`  
-		Last Modified: Fri, 03 Nov 2017 22:49:13 GMT  
-		Size: 948.0 B  
+	-	`sha256:62ca07c9fb3f09ab9fd85519cdcf13836f6e80cf7b70d40dd492e08f6b99c9ed`  
+		Last Modified: Sat, 04 Nov 2017 18:22:33 GMT  
+		Size: 949.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `convertigo:latest`
 
 ```console
-$ docker pull convertigo@sha256:1083bec34f1819e045bec609ac6de5569a00633fdd6b1ee5c6efe12c7fd976d8
+$ docker pull convertigo@sha256:3e4c261cc7508acdc952be30de7333a2fd96f650f595503aa20bdbf446a56a90
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -360,14 +360,14 @@ $ docker pull convertigo@sha256:1083bec34f1819e045bec609ac6de5569a00633fdd6b1ee5
 ### `convertigo:latest` - linux; amd64
 
 ```console
-$ docker pull convertigo@sha256:2ed9cd5a000044a72e425d6d4170632f276e3821f8942b391a5870d2ab00627c
+$ docker pull convertigo@sha256:129498e087a252aaba3e1401f132e925b45605d2531484282567417b17df9762
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **319.2 MB (319235015 bytes)**  
+-	Total Size: **317.2 MB (317156747 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1097bee7b8b7114e19af61b82a3bef623d229c650808a470fbd725b31899d38a`
+-	Image ID: `sha256:b18bd696adfdfad63870c596d23168b68cd355231bee4b6828189cc2ef84944f`
 -	Entrypoint: `["tini","--","\/docker-entrypoint.sh"]`
 -	Default Command: `["convertigo"]`
 
@@ -376,77 +376,77 @@ $ docker pull convertigo@sha256:2ed9cd5a000044a72e425d6d4170632f276e3821f8942b39
 ADD file:a71e077a42995a68ffe4834d85cfe26af4ea12aa8ed43decc03cc487124b1f70 in / 
 # Mon, 09 Oct 2017 21:33:25 GMT
 CMD ["bash"]
-# Mon, 09 Oct 2017 22:37:34 GMT
+# Sat, 04 Nov 2017 00:54:46 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 09 Oct 2017 22:37:38 GMT
-RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 10 Oct 2017 00:50:26 GMT
+# Sat, 04 Nov 2017 00:54:52 GMT
+RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
+# Sat, 04 Nov 2017 05:48:36 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 10 Oct 2017 00:50:26 GMT
+# Sat, 04 Nov 2017 05:48:36 GMT
 ENV LANG=C.UTF-8
-# Tue, 10 Oct 2017 00:50:27 GMT
+# Sat, 04 Nov 2017 05:48:37 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 10 Oct 2017 00:50:27 GMT
+# Sat, 04 Nov 2017 05:48:38 GMT
 RUN ln -svT "/usr/lib/jvm/java-8-openjdk-$(dpkg --print-architecture)" /docker-java-home
-# Tue, 10 Oct 2017 00:50:27 GMT
+# Sat, 04 Nov 2017 05:48:38 GMT
 ENV JAVA_HOME=/docker-java-home/jre
-# Tue, 10 Oct 2017 00:50:28 GMT
-ENV JAVA_VERSION=8u141
-# Tue, 10 Oct 2017 00:50:28 GMT
-ENV JAVA_DEBIAN_VERSION=8u141-b15-1~deb9u1
-# Tue, 10 Oct 2017 00:50:28 GMT
+# Sat, 04 Nov 2017 05:48:38 GMT
+ENV JAVA_VERSION=8u151
+# Sat, 04 Nov 2017 05:48:38 GMT
+ENV JAVA_DEBIAN_VERSION=8u151-b12-1~deb9u1
+# Sat, 04 Nov 2017 05:48:38 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1
-# Tue, 10 Oct 2017 00:51:10 GMT
+# Sat, 04 Nov 2017 05:50:13 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y 		openjdk-8-jre="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Tue, 10 Oct 2017 00:51:12 GMT
+# Sat, 04 Nov 2017 05:50:15 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Fri, 03 Nov 2017 22:45:37 GMT
+# Sat, 04 Nov 2017 18:19:05 GMT
 MAINTAINER Nicolas Albert nicolasa@convertigo.com
-# Fri, 03 Nov 2017 22:45:37 GMT
+# Sat, 04 Nov 2017 18:19:05 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Fri, 03 Nov 2017 22:45:38 GMT
+# Sat, 04 Nov 2017 18:19:06 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Fri, 03 Nov 2017 22:45:39 GMT
+# Sat, 04 Nov 2017 18:19:09 GMT
 WORKDIR /usr/local/tomcat
-# Fri, 03 Nov 2017 22:45:48 GMT
+# Sat, 04 Nov 2017 18:19:13 GMT
 RUN apt-get update -y && apt-get install -y --no-install-recommends     ca-certificates     curl     unzip   && rm -rf /var/lib/apt/lists/*
-# Fri, 03 Nov 2017 22:46:01 GMT
+# Sat, 04 Nov 2017 18:19:23 GMT
 RUN export GNUPGHOME="$(mktemp -d)"   && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4   && curl -o /usr/local/bin/gosu -fSL "https://github.com/tianon/gosu/releases/download/1.7/gosu-$(dpkg --print-architecture)"   && curl -o /usr/local/bin/gosu.asc -fSL "https://github.com/tianon/gosu/releases/download/1.7/gosu-$(dpkg --print-architecture).asc"   && gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu   && rm /usr/local/bin/gosu.asc   && chmod +x /usr/local/bin/gosu   && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5   && curl -o /usr/local/bin/tini -fSL "https://github.com/krallin/tini/releases/download/v0.9.0/tini"   && curl -o /usr/local/bin/tini.asc -fSL "https://github.com/krallin/tini/releases/download/v0.9.0/tini.asc"   && gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini   && rm /usr/local/bin/tini.asc   && chmod +x /usr/local/bin/tini   && rm -rf /tmp/*
-# Fri, 03 Nov 2017 22:46:02 GMT
+# Sat, 04 Nov 2017 18:19:24 GMT
 RUN useradd -s /bin/false -m convertigo     && mkdir -p /workspace/lib /workspace/classes     && chown -R convertigo:convertigo /workspace
-# Fri, 03 Nov 2017 22:46:02 GMT
+# Sat, 04 Nov 2017 18:19:24 GMT
 ENV TOMCAT_MAJOR=7
-# Fri, 03 Nov 2017 22:46:02 GMT
+# Sat, 04 Nov 2017 18:19:24 GMT
 ENV TOMCAT_VERSION=7.0.72
-# Fri, 03 Nov 2017 22:46:02 GMT
+# Sat, 04 Nov 2017 18:19:24 GMT
 ENV TOMCAT_TGZ_URL=https://archive.apache.org/dist/tomcat/tomcat-7/v7.0.72/bin/apache-tomcat-7.0.72.tar.gz
-# Fri, 03 Nov 2017 22:46:02 GMT
+# Sat, 04 Nov 2017 18:19:24 GMT
 ENV TOMCAT_GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 61B832AC2F1C5A90F0F9B00A1C506407564C17A3 713DA88BE50911535FE716F5208B0AB1D63011C7 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23
-# Fri, 03 Nov 2017 22:46:16 GMT
+# Sat, 04 Nov 2017 18:19:52 GMT
 RUN export GNUPGHOME="$(mktemp -d)"     && for key in $TOMCAT_GPG_KEYS; do          gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key";        done;     curl -fSL -o /tmp/tomcat.tar.gz $TOMCAT_TGZ_URL     && curl -fSL -o /tmp/tomcat.tar.gz.asc $TOMCAT_TGZ_URL.asc     && gpg --batch --verify /tmp/tomcat.tar.gz.asc /tmp/tomcat.tar.gz     && tar -xvf /tmp/tomcat.tar.gz --strip-components=1     && sed -i.bak         -e '/protocol="AJP/d'         -e '/AprLifecycleListener/d'         -e '/JasperListener/d'         -e 's/port="8080"/port="28080" maxThreads="64000"/'         conf/server.xml     && rm -rf webapps/* bin/*.bat conf/server.xml.bak /tmp/*     && chown -R convertigo:convertigo conf temp work logs     && chmod -w conf/*
-# Fri, 03 Nov 2017 22:46:16 GMT
+# Sat, 04 Nov 2017 18:19:52 GMT
 ENV CONVERTIGO_VERSION=7.4.6
-# Fri, 03 Nov 2017 22:46:16 GMT
+# Sat, 04 Nov 2017 18:19:52 GMT
 ENV CONVERTIGO_REVISION=43404
-# Fri, 03 Nov 2017 22:46:16 GMT
+# Sat, 04 Nov 2017 18:19:52 GMT
 ENV CONVERTIGO_WAR_URL=https://devplatform.s3.amazonaws.com/refbin/cems/7.4.6/convertigo-7.4.6-v43404-linux64.war
-# Fri, 03 Nov 2017 22:46:17 GMT
+# Sat, 04 Nov 2017 18:19:52 GMT
 ENV CONVERTIGO_GPG_KEYS=6A7779BB78FE368DF74B708FD4DA8FBEB64BF75F
-# Fri, 03 Nov 2017 22:46:40 GMT
+# Sat, 04 Nov 2017 18:20:14 GMT
 RUN export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$CONVERTIGO_GPG_KEYS"     && curl -fSL -o /tmp/convertigo.war $CONVERTIGO_WAR_URL     && curl -fSL -o /tmp/convertigo.war.asc $CONVERTIGO_WAR_URL.asc     && gpg --batch --verify /tmp/convertigo.war.asc /tmp/convertigo.war     && mkdir webapps/ROOT webapps/convertigo     && (cd webapps/convertigo         && unzip -q /tmp/convertigo.war         && rm -rf WEB-INF/xulrunner WEB-INF/xvnc WEB-INF/lib/swt_* /tmp/*)
-# Fri, 03 Nov 2017 22:46:40 GMT
+# Sat, 04 Nov 2017 18:20:14 GMT
 COPY file:eccfef5b39339e2a9ab87231ac8ef2a1783b7ae7fd6f21aa6f0a825520cdb73c in webapps/ROOT/index.html 
-# Fri, 03 Nov 2017 22:46:40 GMT
+# Sat, 04 Nov 2017 18:20:14 GMT
 COPY file:67d755c96109afb6b52870db09484b9a059f689f60852896862881c103c815a5 in / 
-# Fri, 03 Nov 2017 22:46:41 GMT
+# Sat, 04 Nov 2017 18:20:14 GMT
 WORKDIR /workspace
-# Fri, 03 Nov 2017 22:46:41 GMT
+# Sat, 04 Nov 2017 18:20:15 GMT
 VOLUME [/workspace]
-# Fri, 03 Nov 2017 22:46:42 GMT
+# Sat, 04 Nov 2017 18:20:15 GMT
 EXPOSE 28080/tcp
-# Fri, 03 Nov 2017 22:46:42 GMT
+# Sat, 04 Nov 2017 18:20:15 GMT
 ENTRYPOINT ["tini" "--" "/docker-entrypoint.sh"]
-# Fri, 03 Nov 2017 22:46:42 GMT
+# Sat, 04 Nov 2017 18:20:15 GMT
 CMD ["convertigo"]
 ```
 
@@ -455,71 +455,71 @@ CMD ["convertigo"]
 		Last Modified: Mon, 09 Oct 2017 21:41:38 GMT  
 		Size: 45.1 MB (45129088 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:74d44b20f851c8ef0b042070ba8eb018b386f50fdae5c37871d3fe7b4cfb4956`  
-		Last Modified: Mon, 09 Oct 2017 23:01:17 GMT  
-		Size: 11.1 MB (11106736 bytes)  
+	-	`sha256:37c1cae4f87837d9d61448aceb335992065dc5c80585391782500c4346903fba`  
+		Last Modified: Sat, 04 Nov 2017 01:09:20 GMT  
+		Size: 11.1 MB (11106957 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a156217f3fa434b4821b01f0d24be50ead40560053fb5b65982f52507f55bc12`  
-		Last Modified: Mon, 09 Oct 2017 23:01:15 GMT  
-		Size: 4.6 MB (4633218 bytes)  
+	-	`sha256:3d7da8791d1177f333ca323342681219e16b2e3ceff3cc3811b84f20f2d89062`  
+		Last Modified: Sat, 04 Nov 2017 01:09:15 GMT  
+		Size: 4.3 MB (4335249 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8bceb9f576935acd4433bd41017d3b74ea1bcde02593938b3fdba8f594d353f3`  
-		Last Modified: Tue, 10 Oct 2017 01:23:47 GMT  
-		Size: 852.5 KB (852507 bytes)  
+	-	`sha256:5f3adc05996e38a93e8e2585cc5df22a66fac151eee215f3491bee91d0b97e52`  
+		Last Modified: Sat, 04 Nov 2017 06:02:52 GMT  
+		Size: 852.3 KB (852282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:268410abd9cfbc11b635f95ac458e4af7061aec128041149ce86063cfc8d0aa7`  
-		Last Modified: Tue, 10 Oct 2017 01:23:47 GMT  
+	-	`sha256:44753faac15ca98504aa297b8b2bbc354d5cf29045d0915fa02aea4489ec4490`  
+		Last Modified: Sat, 04 Nov 2017 06:02:52 GMT  
 		Size: 248.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c5e2fb2d87cf14b0e5968b7b40cd36663f45d6244a3bd37c1204d928026aa952`  
-		Last Modified: Tue, 10 Oct 2017 01:23:49 GMT  
-		Size: 131.0 B  
+	-	`sha256:e1233f777b5b8e4deb49038055315e320f02e9eb63e2a3ecc4c3c589a61e9009`  
+		Last Modified: Sat, 04 Nov 2017 06:02:52 GMT  
+		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:09681f714a7bf2a3c7453539930f6b768c3733a18457685857ab6a8be93176d4`  
-		Last Modified: Tue, 10 Oct 2017 01:24:32 GMT  
-		Size: 166.2 MB (166170709 bytes)  
+	-	`sha256:843bcc5b1cf03a07e6f520a69fa7663b44c99f0933da944a5d806f9b366f48a3`  
+		Last Modified: Sat, 04 Nov 2017 06:03:40 GMT  
+		Size: 165.4 MB (165393338 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c20de950ce5253aeea1d19e7edfca3d1738e872ab3a0cf6b182bf804e42a3fe8`  
-		Last Modified: Tue, 10 Oct 2017 01:23:47 GMT  
-		Size: 272.0 KB (272003 bytes)  
+	-	`sha256:5bc48ebfa00c33dd298e1517555e5cf90655e3b454abc25690086072c4c43cb5`  
+		Last Modified: Sat, 04 Nov 2017 06:02:52 GMT  
+		Size: 272.1 KB (272062 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5acdf2ade6199e969ef1bb5dab4958992433f2052f56db88399a132576880a46`  
-		Last Modified: Fri, 03 Nov 2017 22:49:15 GMT  
+	-	`sha256:38f3bbe693d1cde5ec11659706d3789a0029a317791dbb14c01677458ee4cae8`  
+		Last Modified: Sat, 04 Nov 2017 18:22:38 GMT  
 		Size: 149.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:82213f46dc687856f66b60d4be2fa30c4dea6309929cd2a5037e978c8659ea76`  
-		Last Modified: Fri, 03 Nov 2017 22:49:15 GMT  
-		Size: 1.0 MB (1003273 bytes)  
+	-	`sha256:3576053470006b2d77345844a3fef8f6c85e3fb4a7cedb39a7bfb10f536eda30`  
+		Last Modified: Sat, 04 Nov 2017 18:22:35 GMT  
+		Size: 331.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:211fff91a4134a95a5c12987f153f2b72e82bc857b1ced88bffe2c78a4c4e235`  
-		Last Modified: Fri, 03 Nov 2017 22:49:15 GMT  
-		Size: 826.1 KB (826144 bytes)  
+	-	`sha256:eee8b0ba7d92ff13bb8b2d2d54fa28ef1d23b61c9e4404274074d53349fc2ef4`  
+		Last Modified: Sat, 04 Nov 2017 18:22:35 GMT  
+		Size: 826.1 KB (826130 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ef2698b4c52e011034f032becb3cd5d4612feea380b58db2fe9c390f2afb08b`  
-		Last Modified: Fri, 03 Nov 2017 22:49:13 GMT  
-		Size: 4.3 KB (4304 bytes)  
+	-	`sha256:e5fd41d2c663d7f8b7a342066cc21b00003b5fcf10be8151ed203cf8f1267a4c`  
+		Last Modified: Sat, 04 Nov 2017 18:22:34 GMT  
+		Size: 4.3 KB (4292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:92182e75944a979e977d0a7a6c7c7ade8069fae4ffb42de4b8c6ffa5b4fbc8f1`  
-		Last Modified: Fri, 03 Nov 2017 22:49:14 GMT  
-		Size: 7.5 MB (7473751 bytes)  
+	-	`sha256:6fee485e695b2a67672f8c3896fb23f2c4cf1cbd550bcef3643e7e39ee97bfc8`  
+		Last Modified: Sat, 04 Nov 2017 18:22:34 GMT  
+		Size: 7.5 MB (7473752 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:651cfffb3a98ee61c66e7525f2632d364100325770ce39b371a96b5cd185fd2f`  
-		Last Modified: Fri, 03 Nov 2017 22:49:19 GMT  
-		Size: 81.8 MB (81761342 bytes)  
+	-	`sha256:058ce3deb79f46f8cc47c4474b71a601a7d2441ffcf22d24aea55e4cacdc3976`  
+		Last Modified: Sat, 04 Nov 2017 18:22:39 GMT  
+		Size: 81.8 MB (81761328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:71f93614bf8115fa9f2d782d000fb96a341b9b3692c83dfcdc91596a6140690c`  
-		Last Modified: Fri, 03 Nov 2017 22:49:13 GMT  
-		Size: 464.0 B  
+	-	`sha256:d84a14303e7abfbca0a4b253cf361c076f35537cf2f4ebafb816cdb0d383b7b7`  
+		Last Modified: Sat, 04 Nov 2017 18:22:33 GMT  
+		Size: 462.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f0818919f80277c618f22bcbee8eae164850b9827ad53e1e8d98dabcd0dd708b`  
-		Last Modified: Fri, 03 Nov 2017 22:49:13 GMT  
-		Size: 948.0 B  
+	-	`sha256:62ca07c9fb3f09ab9fd85519cdcf13836f6e80cf7b70d40dd492e08f6b99c9ed`  
+		Last Modified: Sat, 04 Nov 2017 18:22:33 GMT  
+		Size: 949.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `convertigo:web-connector`
 
 ```console
-$ docker pull convertigo@sha256:b797ded27090ee14a93c926936665baa48b5b5a14b7f189e608c01d15bb9292e
+$ docker pull convertigo@sha256:5002bd88d8beb5fbc4f2fa18b699f6d13beed30d2e97ea88604a8b852cc9d730
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -529,73 +529,73 @@ $ docker pull convertigo@sha256:b797ded27090ee14a93c926936665baa48b5b5a14b7f189e
 ### `convertigo:web-connector` - linux; amd64
 
 ```console
-$ docker pull convertigo@sha256:37744b1f2b6d99e1d8efa01430a1d119a05d81ec4a2f79ebf87929416ebf8da7
+$ docker pull convertigo@sha256:85b62f1c4be350021e86dcb5ee700eb3f21f867379f41ee5f98bec84c46e4ab0
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **254.7 MB (254736497 bytes)**  
+-	Total Size: **254.7 MB (254736564 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f713999220be078e3cf932dd3c32633af0de7b004941658007a97b6f32ccedc`
+-	Image ID: `sha256:4e316a386a95d58f980a2b4107c6ba8a94cf4f71a46b5264502d5bff730a4bfd`
 -	Entrypoint: `["tini","--","\/docker-entrypoint.sh"]`
 -	Default Command: `["convertigo"]`
 
 ```dockerfile
-# Mon, 09 Oct 2017 21:30:05 GMT
+# Sat, 04 Nov 2017 05:21:35 GMT
 ADD file:55b071e2cfc3ea2f4bbf048d7d676e3c06a77a9a98d63f7af291f3decb495ec8 in / 
-# Mon, 09 Oct 2017 21:30:05 GMT
+# Sat, 04 Nov 2017 05:21:36 GMT
 CMD ["bash"]
-# Fri, 03 Nov 2017 22:46:46 GMT
+# Sat, 04 Nov 2017 18:20:22 GMT
 MAINTAINER Nicolas Albert nicolasa@convertigo.com
-# Fri, 03 Nov 2017 22:46:47 GMT
+# Sat, 04 Nov 2017 18:20:22 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Fri, 03 Nov 2017 22:46:48 GMT
+# Sat, 04 Nov 2017 18:20:23 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Fri, 03 Nov 2017 22:46:48 GMT
+# Sat, 04 Nov 2017 18:20:23 GMT
 WORKDIR /usr/local/tomcat
-# Fri, 03 Nov 2017 22:47:37 GMT
+# Sat, 04 Nov 2017 18:21:09 GMT
 RUN dpkg --add-architecture i386   && apt-get update -y   && apt-get install -y --no-install-recommends     ca-certificates     curl     lib32z1     libgtk2.0-0:i386     libstdc++6:i386     libxft2:i386     libxt6:i386     libxtst6:i386     unzip   && rm -rf /var/lib/apt/lists/*
-# Fri, 03 Nov 2017 22:47:37 GMT
+# Sat, 04 Nov 2017 18:21:09 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20161107~bpo8+1
-# Fri, 03 Nov 2017 22:48:18 GMT
+# Sat, 04 Nov 2017 18:21:36 GMT
 RUN echo 'deb http://deb.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list     && apt-get update -y     && apt-get install -y --no-install-recommends         openjdk-8-jre-headless         openjdk-8-jre-headless:i386         ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION"     && update-java-alternatives --jre-headless -s java-1.8.0-openjdk-i386     && rm -rf /usr/lib/jvm/java-8-openjdk-amd64 /var/lib/apt/lists/*
-# Fri, 03 Nov 2017 22:48:24 GMT
+# Sat, 04 Nov 2017 18:21:44 GMT
 RUN export GNUPGHOME="$(mktemp -d)"   && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4   && curl -o /usr/local/bin/gosu -fSL "https://github.com/tianon/gosu/releases/download/1.7/gosu-$(dpkg --print-architecture)"   && curl -o /usr/local/bin/gosu.asc -fSL "https://github.com/tianon/gosu/releases/download/1.7/gosu-$(dpkg --print-architecture).asc"   && gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu   && rm /usr/local/bin/gosu.asc   && chmod +x /usr/local/bin/gosu   && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5   && curl -o /usr/local/bin/tini -fSL "https://github.com/krallin/tini/releases/download/v0.9.0/tini"   && curl -o /usr/local/bin/tini.asc -fSL "https://github.com/krallin/tini/releases/download/v0.9.0/tini.asc"   && gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini   && rm /usr/local/bin/tini.asc   && chmod +x /usr/local/bin/tini   && rm -rf /tmp/*
-# Fri, 03 Nov 2017 22:48:25 GMT
+# Sat, 04 Nov 2017 18:21:45 GMT
 RUN useradd -s /bin/false -m convertigo     && mkdir -p /workspace/lib /workspace/classes     && chown -R convertigo:convertigo /workspace
-# Fri, 03 Nov 2017 22:48:25 GMT
+# Sat, 04 Nov 2017 18:21:45 GMT
 ENV TOMCAT_MAJOR=7
-# Fri, 03 Nov 2017 22:48:26 GMT
+# Sat, 04 Nov 2017 18:21:45 GMT
 ENV TOMCAT_VERSION=7.0.72
-# Fri, 03 Nov 2017 22:48:26 GMT
+# Sat, 04 Nov 2017 18:21:45 GMT
 ENV TOMCAT_TGZ_URL=https://archive.apache.org/dist/tomcat/tomcat-7/v7.0.72/bin/apache-tomcat-7.0.72.tar.gz
-# Fri, 03 Nov 2017 22:48:26 GMT
+# Sat, 04 Nov 2017 18:21:45 GMT
 ENV TOMCAT_GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 61B832AC2F1C5A90F0F9B00A1C506407564C17A3 713DA88BE50911535FE716F5208B0AB1D63011C7 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23
-# Fri, 03 Nov 2017 22:48:40 GMT
+# Sat, 04 Nov 2017 18:21:57 GMT
 RUN export GNUPGHOME="$(mktemp -d)"     && for key in $TOMCAT_GPG_KEYS; do          gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key";        done;     curl -fSL -o /tmp/tomcat.tar.gz $TOMCAT_TGZ_URL     && curl -fSL -o /tmp/tomcat.tar.gz.asc $TOMCAT_TGZ_URL.asc     && gpg --batch --verify /tmp/tomcat.tar.gz.asc /tmp/tomcat.tar.gz     && tar -xvf /tmp/tomcat.tar.gz --strip-components=1     && sed -i.bak         -e '/protocol="AJP/d'         -e '/AprLifecycleListener/d'         -e '/JasperListener/d'         -e 's/port="8080"/port="28080" maxThreads="64000"/'         conf/server.xml     && rm -rf webapps/* bin/*.bat conf/server.xml.bak /tmp/*     && chown -R convertigo:convertigo conf temp work logs     && chmod -w conf/*
-# Fri, 03 Nov 2017 22:48:40 GMT
+# Sat, 04 Nov 2017 18:21:57 GMT
 ENV CONVERTIGO_VERSION=7.4.6
-# Fri, 03 Nov 2017 22:48:41 GMT
+# Sat, 04 Nov 2017 18:21:57 GMT
 ENV CONVERTIGO_REVISION=43404
-# Fri, 03 Nov 2017 22:48:41 GMT
+# Sat, 04 Nov 2017 18:21:57 GMT
 ENV CONVERTIGO_WAR_URL=https://devplatform.s3.amazonaws.com/refbin/cems/7.4.6/convertigo-7.4.6-v43404-linux32.war
-# Fri, 03 Nov 2017 22:48:41 GMT
+# Sat, 04 Nov 2017 18:21:58 GMT
 ENV CONVERTIGO_GPG_KEYS=6A7779BB78FE368DF74B708FD4DA8FBEB64BF75F
-# Fri, 03 Nov 2017 22:48:59 GMT
+# Sat, 04 Nov 2017 18:22:14 GMT
 RUN export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$CONVERTIGO_GPG_KEYS"     && curl -fSL -o /tmp/convertigo.war $CONVERTIGO_WAR_URL     && curl -fSL -o /tmp/convertigo.war.asc $CONVERTIGO_WAR_URL.asc     && gpg --batch --verify /tmp/convertigo.war.asc /tmp/convertigo.war     && mkdir webapps/ROOT webapps/convertigo     && (cd webapps/convertigo         && unzip -q /tmp/convertigo.war         && chmod a+x WEB-INF/xvnc/*)     && rm -rf /tmp/*
-# Fri, 03 Nov 2017 22:48:59 GMT
+# Sat, 04 Nov 2017 18:22:14 GMT
 COPY file:6c901b8550c2906f0c134295c617b19c0877bc00b11aad7930ae1900acf1217f in webapps/ROOT/index.html 
-# Fri, 03 Nov 2017 22:49:00 GMT
+# Sat, 04 Nov 2017 18:22:14 GMT
 COPY file:83d092e0f8a0315a512b0308560e98254364837b07e70fdf51b85fb0b1992efd in / 
-# Fri, 03 Nov 2017 22:49:00 GMT
+# Sat, 04 Nov 2017 18:22:15 GMT
 WORKDIR /workspace
-# Fri, 03 Nov 2017 22:49:00 GMT
+# Sat, 04 Nov 2017 18:22:15 GMT
 VOLUME [/workspace]
-# Fri, 03 Nov 2017 22:49:00 GMT
+# Sat, 04 Nov 2017 18:22:15 GMT
 EXPOSE 28080/tcp
-# Fri, 03 Nov 2017 22:49:01 GMT
+# Sat, 04 Nov 2017 18:22:15 GMT
 ENTRYPOINT ["tini" "--" "/docker-entrypoint.sh"]
-# Fri, 03 Nov 2017 22:49:01 GMT
+# Sat, 04 Nov 2017 18:22:16 GMT
 CMD ["convertigo"]
 ```
 
@@ -604,47 +604,47 @@ CMD ["convertigo"]
 		Last Modified: Mon, 09 Oct 2017 21:36:40 GMT  
 		Size: 52.6 MB (52595124 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:101e8a3bb2809df8a5d183c1e346a8b7dad6ab22391360a393cd7d11ce026a1b`  
-		Last Modified: Fri, 03 Nov 2017 22:49:38 GMT  
+	-	`sha256:26d8037546ab3496d8234455c6026d9d5f86b89b8073d83efe29f1e586eec46d`  
+		Last Modified: Sat, 04 Nov 2017 18:23:04 GMT  
 		Size: 149.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:df8753c74734a27efbbbc3b28861c8ccf77eb0ce08305d4b66e4dcf0d6b85e1d`  
-		Last Modified: Fri, 03 Nov 2017 22:49:46 GMT  
-		Size: 47.5 MB (47513808 bytes)  
+	-	`sha256:eb1e344e7c49595e85f0e1b2272963b86717615d164a9b0a96b8b9c870f9fcb3`  
+		Last Modified: Sat, 04 Nov 2017 18:23:11 GMT  
+		Size: 47.5 MB (47513870 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1db37a4d9c9a8542de4d087e0aa219aa6da237ac88a5445285bd9a15a6a495db`  
-		Last Modified: Fri, 03 Nov 2017 22:49:45 GMT  
-		Size: 50.5 MB (50494219 bytes)  
+	-	`sha256:b1ab74fa05d49096e0e9ec42d84f5abe44fce43db305b07f3473a00c73418739`  
+		Last Modified: Sat, 04 Nov 2017 18:23:11 GMT  
+		Size: 50.5 MB (50494236 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc84f0c92494c520c345060a6e499cc3ae56e36fec3f2a37eb247f7ff88da9ff`  
-		Last Modified: Fri, 03 Nov 2017 22:49:36 GMT  
-		Size: 826.1 KB (826136 bytes)  
+	-	`sha256:2348422c9baaca150aeb8238d0a1397adcc1f149ae5f2a92157156c9693dcb33`  
+		Last Modified: Sat, 04 Nov 2017 18:23:02 GMT  
+		Size: 826.1 KB (826131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11e68717f670159d2790be7bda3af59b73a3e15ec77b4e006198e3be4e82c555`  
-		Last Modified: Fri, 03 Nov 2017 22:49:35 GMT  
+	-	`sha256:72fd7ef6e4c7ec51951bf9f37abfff4474d50a80dba0c1b1abb148cdf867069e`  
+		Last Modified: Sat, 04 Nov 2017 18:23:01 GMT  
 		Size: 4.5 KB (4513 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:01d9402094a93f221d801fa4062e1a7f62305c13d56c6e012e77232cc6a04a63`  
-		Last Modified: Fri, 03 Nov 2017 22:49:34 GMT  
+	-	`sha256:70147fdfb693ffa20e661ca9272e9f73b987459ce4ffe9f89c760689d9044f39`  
+		Last Modified: Sat, 04 Nov 2017 18:23:00 GMT  
 		Size: 7.5 MB (7473747 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fad7b25c320c5d0d7021bb7dcbcf9ab662d8d06eda951e23c5aa6b5bfcb26841`  
-		Last Modified: Fri, 03 Nov 2017 22:49:45 GMT  
-		Size: 95.8 MB (95827393 bytes)  
+	-	`sha256:02cd8097b390d9b34feb79dcebd9532cf0ec28917af0d28c4728602de0cf566e`  
+		Last Modified: Sat, 04 Nov 2017 18:23:08 GMT  
+		Size: 95.8 MB (95827383 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:861b6d5115181d5307c737ce2bc9c4e01d47c1fbbb2c5263da6eab2d7d3ea3f2`  
-		Last Modified: Fri, 03 Nov 2017 22:49:33 GMT  
-		Size: 460.0 B  
+	-	`sha256:ee7f4730c3271e00e2535f389e77aa7719fdd1d93c133e6584d0d88073bab5c1`  
+		Last Modified: Sat, 04 Nov 2017 18:22:59 GMT  
+		Size: 461.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fcb6d3d309556ba0c9503a9ee7e0a678546d70a85390a5b14d80ac2e7d14e55d`  
-		Last Modified: Fri, 03 Nov 2017 22:49:33 GMT  
-		Size: 948.0 B  
+	-	`sha256:c35231e649a106706fb013ed8731461ca36a43ccf42dd68f6a7996610eab3753`  
+		Last Modified: Sat, 04 Nov 2017 18:22:59 GMT  
+		Size: 950.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `convertigo:web-connector-7.4`
 
 ```console
-$ docker pull convertigo@sha256:b797ded27090ee14a93c926936665baa48b5b5a14b7f189e608c01d15bb9292e
+$ docker pull convertigo@sha256:5002bd88d8beb5fbc4f2fa18b699f6d13beed30d2e97ea88604a8b852cc9d730
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -654,73 +654,73 @@ $ docker pull convertigo@sha256:b797ded27090ee14a93c926936665baa48b5b5a14b7f189e
 ### `convertigo:web-connector-7.4` - linux; amd64
 
 ```console
-$ docker pull convertigo@sha256:37744b1f2b6d99e1d8efa01430a1d119a05d81ec4a2f79ebf87929416ebf8da7
+$ docker pull convertigo@sha256:85b62f1c4be350021e86dcb5ee700eb3f21f867379f41ee5f98bec84c46e4ab0
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **254.7 MB (254736497 bytes)**  
+-	Total Size: **254.7 MB (254736564 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f713999220be078e3cf932dd3c32633af0de7b004941658007a97b6f32ccedc`
+-	Image ID: `sha256:4e316a386a95d58f980a2b4107c6ba8a94cf4f71a46b5264502d5bff730a4bfd`
 -	Entrypoint: `["tini","--","\/docker-entrypoint.sh"]`
 -	Default Command: `["convertigo"]`
 
 ```dockerfile
-# Mon, 09 Oct 2017 21:30:05 GMT
+# Sat, 04 Nov 2017 05:21:35 GMT
 ADD file:55b071e2cfc3ea2f4bbf048d7d676e3c06a77a9a98d63f7af291f3decb495ec8 in / 
-# Mon, 09 Oct 2017 21:30:05 GMT
+# Sat, 04 Nov 2017 05:21:36 GMT
 CMD ["bash"]
-# Fri, 03 Nov 2017 22:46:46 GMT
+# Sat, 04 Nov 2017 18:20:22 GMT
 MAINTAINER Nicolas Albert nicolasa@convertigo.com
-# Fri, 03 Nov 2017 22:46:47 GMT
+# Sat, 04 Nov 2017 18:20:22 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Fri, 03 Nov 2017 22:46:48 GMT
+# Sat, 04 Nov 2017 18:20:23 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Fri, 03 Nov 2017 22:46:48 GMT
+# Sat, 04 Nov 2017 18:20:23 GMT
 WORKDIR /usr/local/tomcat
-# Fri, 03 Nov 2017 22:47:37 GMT
+# Sat, 04 Nov 2017 18:21:09 GMT
 RUN dpkg --add-architecture i386   && apt-get update -y   && apt-get install -y --no-install-recommends     ca-certificates     curl     lib32z1     libgtk2.0-0:i386     libstdc++6:i386     libxft2:i386     libxt6:i386     libxtst6:i386     unzip   && rm -rf /var/lib/apt/lists/*
-# Fri, 03 Nov 2017 22:47:37 GMT
+# Sat, 04 Nov 2017 18:21:09 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20161107~bpo8+1
-# Fri, 03 Nov 2017 22:48:18 GMT
+# Sat, 04 Nov 2017 18:21:36 GMT
 RUN echo 'deb http://deb.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list     && apt-get update -y     && apt-get install -y --no-install-recommends         openjdk-8-jre-headless         openjdk-8-jre-headless:i386         ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION"     && update-java-alternatives --jre-headless -s java-1.8.0-openjdk-i386     && rm -rf /usr/lib/jvm/java-8-openjdk-amd64 /var/lib/apt/lists/*
-# Fri, 03 Nov 2017 22:48:24 GMT
+# Sat, 04 Nov 2017 18:21:44 GMT
 RUN export GNUPGHOME="$(mktemp -d)"   && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4   && curl -o /usr/local/bin/gosu -fSL "https://github.com/tianon/gosu/releases/download/1.7/gosu-$(dpkg --print-architecture)"   && curl -o /usr/local/bin/gosu.asc -fSL "https://github.com/tianon/gosu/releases/download/1.7/gosu-$(dpkg --print-architecture).asc"   && gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu   && rm /usr/local/bin/gosu.asc   && chmod +x /usr/local/bin/gosu   && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5   && curl -o /usr/local/bin/tini -fSL "https://github.com/krallin/tini/releases/download/v0.9.0/tini"   && curl -o /usr/local/bin/tini.asc -fSL "https://github.com/krallin/tini/releases/download/v0.9.0/tini.asc"   && gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini   && rm /usr/local/bin/tini.asc   && chmod +x /usr/local/bin/tini   && rm -rf /tmp/*
-# Fri, 03 Nov 2017 22:48:25 GMT
+# Sat, 04 Nov 2017 18:21:45 GMT
 RUN useradd -s /bin/false -m convertigo     && mkdir -p /workspace/lib /workspace/classes     && chown -R convertigo:convertigo /workspace
-# Fri, 03 Nov 2017 22:48:25 GMT
+# Sat, 04 Nov 2017 18:21:45 GMT
 ENV TOMCAT_MAJOR=7
-# Fri, 03 Nov 2017 22:48:26 GMT
+# Sat, 04 Nov 2017 18:21:45 GMT
 ENV TOMCAT_VERSION=7.0.72
-# Fri, 03 Nov 2017 22:48:26 GMT
+# Sat, 04 Nov 2017 18:21:45 GMT
 ENV TOMCAT_TGZ_URL=https://archive.apache.org/dist/tomcat/tomcat-7/v7.0.72/bin/apache-tomcat-7.0.72.tar.gz
-# Fri, 03 Nov 2017 22:48:26 GMT
+# Sat, 04 Nov 2017 18:21:45 GMT
 ENV TOMCAT_GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 61B832AC2F1C5A90F0F9B00A1C506407564C17A3 713DA88BE50911535FE716F5208B0AB1D63011C7 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23
-# Fri, 03 Nov 2017 22:48:40 GMT
+# Sat, 04 Nov 2017 18:21:57 GMT
 RUN export GNUPGHOME="$(mktemp -d)"     && for key in $TOMCAT_GPG_KEYS; do          gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key";        done;     curl -fSL -o /tmp/tomcat.tar.gz $TOMCAT_TGZ_URL     && curl -fSL -o /tmp/tomcat.tar.gz.asc $TOMCAT_TGZ_URL.asc     && gpg --batch --verify /tmp/tomcat.tar.gz.asc /tmp/tomcat.tar.gz     && tar -xvf /tmp/tomcat.tar.gz --strip-components=1     && sed -i.bak         -e '/protocol="AJP/d'         -e '/AprLifecycleListener/d'         -e '/JasperListener/d'         -e 's/port="8080"/port="28080" maxThreads="64000"/'         conf/server.xml     && rm -rf webapps/* bin/*.bat conf/server.xml.bak /tmp/*     && chown -R convertigo:convertigo conf temp work logs     && chmod -w conf/*
-# Fri, 03 Nov 2017 22:48:40 GMT
+# Sat, 04 Nov 2017 18:21:57 GMT
 ENV CONVERTIGO_VERSION=7.4.6
-# Fri, 03 Nov 2017 22:48:41 GMT
+# Sat, 04 Nov 2017 18:21:57 GMT
 ENV CONVERTIGO_REVISION=43404
-# Fri, 03 Nov 2017 22:48:41 GMT
+# Sat, 04 Nov 2017 18:21:57 GMT
 ENV CONVERTIGO_WAR_URL=https://devplatform.s3.amazonaws.com/refbin/cems/7.4.6/convertigo-7.4.6-v43404-linux32.war
-# Fri, 03 Nov 2017 22:48:41 GMT
+# Sat, 04 Nov 2017 18:21:58 GMT
 ENV CONVERTIGO_GPG_KEYS=6A7779BB78FE368DF74B708FD4DA8FBEB64BF75F
-# Fri, 03 Nov 2017 22:48:59 GMT
+# Sat, 04 Nov 2017 18:22:14 GMT
 RUN export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$CONVERTIGO_GPG_KEYS"     && curl -fSL -o /tmp/convertigo.war $CONVERTIGO_WAR_URL     && curl -fSL -o /tmp/convertigo.war.asc $CONVERTIGO_WAR_URL.asc     && gpg --batch --verify /tmp/convertigo.war.asc /tmp/convertigo.war     && mkdir webapps/ROOT webapps/convertigo     && (cd webapps/convertigo         && unzip -q /tmp/convertigo.war         && chmod a+x WEB-INF/xvnc/*)     && rm -rf /tmp/*
-# Fri, 03 Nov 2017 22:48:59 GMT
+# Sat, 04 Nov 2017 18:22:14 GMT
 COPY file:6c901b8550c2906f0c134295c617b19c0877bc00b11aad7930ae1900acf1217f in webapps/ROOT/index.html 
-# Fri, 03 Nov 2017 22:49:00 GMT
+# Sat, 04 Nov 2017 18:22:14 GMT
 COPY file:83d092e0f8a0315a512b0308560e98254364837b07e70fdf51b85fb0b1992efd in / 
-# Fri, 03 Nov 2017 22:49:00 GMT
+# Sat, 04 Nov 2017 18:22:15 GMT
 WORKDIR /workspace
-# Fri, 03 Nov 2017 22:49:00 GMT
+# Sat, 04 Nov 2017 18:22:15 GMT
 VOLUME [/workspace]
-# Fri, 03 Nov 2017 22:49:00 GMT
+# Sat, 04 Nov 2017 18:22:15 GMT
 EXPOSE 28080/tcp
-# Fri, 03 Nov 2017 22:49:01 GMT
+# Sat, 04 Nov 2017 18:22:15 GMT
 ENTRYPOINT ["tini" "--" "/docker-entrypoint.sh"]
-# Fri, 03 Nov 2017 22:49:01 GMT
+# Sat, 04 Nov 2017 18:22:16 GMT
 CMD ["convertigo"]
 ```
 
@@ -729,47 +729,47 @@ CMD ["convertigo"]
 		Last Modified: Mon, 09 Oct 2017 21:36:40 GMT  
 		Size: 52.6 MB (52595124 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:101e8a3bb2809df8a5d183c1e346a8b7dad6ab22391360a393cd7d11ce026a1b`  
-		Last Modified: Fri, 03 Nov 2017 22:49:38 GMT  
+	-	`sha256:26d8037546ab3496d8234455c6026d9d5f86b89b8073d83efe29f1e586eec46d`  
+		Last Modified: Sat, 04 Nov 2017 18:23:04 GMT  
 		Size: 149.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:df8753c74734a27efbbbc3b28861c8ccf77eb0ce08305d4b66e4dcf0d6b85e1d`  
-		Last Modified: Fri, 03 Nov 2017 22:49:46 GMT  
-		Size: 47.5 MB (47513808 bytes)  
+	-	`sha256:eb1e344e7c49595e85f0e1b2272963b86717615d164a9b0a96b8b9c870f9fcb3`  
+		Last Modified: Sat, 04 Nov 2017 18:23:11 GMT  
+		Size: 47.5 MB (47513870 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1db37a4d9c9a8542de4d087e0aa219aa6da237ac88a5445285bd9a15a6a495db`  
-		Last Modified: Fri, 03 Nov 2017 22:49:45 GMT  
-		Size: 50.5 MB (50494219 bytes)  
+	-	`sha256:b1ab74fa05d49096e0e9ec42d84f5abe44fce43db305b07f3473a00c73418739`  
+		Last Modified: Sat, 04 Nov 2017 18:23:11 GMT  
+		Size: 50.5 MB (50494236 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc84f0c92494c520c345060a6e499cc3ae56e36fec3f2a37eb247f7ff88da9ff`  
-		Last Modified: Fri, 03 Nov 2017 22:49:36 GMT  
-		Size: 826.1 KB (826136 bytes)  
+	-	`sha256:2348422c9baaca150aeb8238d0a1397adcc1f149ae5f2a92157156c9693dcb33`  
+		Last Modified: Sat, 04 Nov 2017 18:23:02 GMT  
+		Size: 826.1 KB (826131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11e68717f670159d2790be7bda3af59b73a3e15ec77b4e006198e3be4e82c555`  
-		Last Modified: Fri, 03 Nov 2017 22:49:35 GMT  
+	-	`sha256:72fd7ef6e4c7ec51951bf9f37abfff4474d50a80dba0c1b1abb148cdf867069e`  
+		Last Modified: Sat, 04 Nov 2017 18:23:01 GMT  
 		Size: 4.5 KB (4513 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:01d9402094a93f221d801fa4062e1a7f62305c13d56c6e012e77232cc6a04a63`  
-		Last Modified: Fri, 03 Nov 2017 22:49:34 GMT  
+	-	`sha256:70147fdfb693ffa20e661ca9272e9f73b987459ce4ffe9f89c760689d9044f39`  
+		Last Modified: Sat, 04 Nov 2017 18:23:00 GMT  
 		Size: 7.5 MB (7473747 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fad7b25c320c5d0d7021bb7dcbcf9ab662d8d06eda951e23c5aa6b5bfcb26841`  
-		Last Modified: Fri, 03 Nov 2017 22:49:45 GMT  
-		Size: 95.8 MB (95827393 bytes)  
+	-	`sha256:02cd8097b390d9b34feb79dcebd9532cf0ec28917af0d28c4728602de0cf566e`  
+		Last Modified: Sat, 04 Nov 2017 18:23:08 GMT  
+		Size: 95.8 MB (95827383 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:861b6d5115181d5307c737ce2bc9c4e01d47c1fbbb2c5263da6eab2d7d3ea3f2`  
-		Last Modified: Fri, 03 Nov 2017 22:49:33 GMT  
-		Size: 460.0 B  
+	-	`sha256:ee7f4730c3271e00e2535f389e77aa7719fdd1d93c133e6584d0d88073bab5c1`  
+		Last Modified: Sat, 04 Nov 2017 18:22:59 GMT  
+		Size: 461.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fcb6d3d309556ba0c9503a9ee7e0a678546d70a85390a5b14d80ac2e7d14e55d`  
-		Last Modified: Fri, 03 Nov 2017 22:49:33 GMT  
-		Size: 948.0 B  
+	-	`sha256:c35231e649a106706fb013ed8731461ca36a43ccf42dd68f6a7996610eab3753`  
+		Last Modified: Sat, 04 Nov 2017 18:22:59 GMT  
+		Size: 950.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `convertigo:web-connector-7.4.6`
 
 ```console
-$ docker pull convertigo@sha256:b797ded27090ee14a93c926936665baa48b5b5a14b7f189e608c01d15bb9292e
+$ docker pull convertigo@sha256:5002bd88d8beb5fbc4f2fa18b699f6d13beed30d2e97ea88604a8b852cc9d730
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -779,73 +779,73 @@ $ docker pull convertigo@sha256:b797ded27090ee14a93c926936665baa48b5b5a14b7f189e
 ### `convertigo:web-connector-7.4.6` - linux; amd64
 
 ```console
-$ docker pull convertigo@sha256:37744b1f2b6d99e1d8efa01430a1d119a05d81ec4a2f79ebf87929416ebf8da7
+$ docker pull convertigo@sha256:85b62f1c4be350021e86dcb5ee700eb3f21f867379f41ee5f98bec84c46e4ab0
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **254.7 MB (254736497 bytes)**  
+-	Total Size: **254.7 MB (254736564 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f713999220be078e3cf932dd3c32633af0de7b004941658007a97b6f32ccedc`
+-	Image ID: `sha256:4e316a386a95d58f980a2b4107c6ba8a94cf4f71a46b5264502d5bff730a4bfd`
 -	Entrypoint: `["tini","--","\/docker-entrypoint.sh"]`
 -	Default Command: `["convertigo"]`
 
 ```dockerfile
-# Mon, 09 Oct 2017 21:30:05 GMT
+# Sat, 04 Nov 2017 05:21:35 GMT
 ADD file:55b071e2cfc3ea2f4bbf048d7d676e3c06a77a9a98d63f7af291f3decb495ec8 in / 
-# Mon, 09 Oct 2017 21:30:05 GMT
+# Sat, 04 Nov 2017 05:21:36 GMT
 CMD ["bash"]
-# Fri, 03 Nov 2017 22:46:46 GMT
+# Sat, 04 Nov 2017 18:20:22 GMT
 MAINTAINER Nicolas Albert nicolasa@convertigo.com
-# Fri, 03 Nov 2017 22:46:47 GMT
+# Sat, 04 Nov 2017 18:20:22 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Fri, 03 Nov 2017 22:46:48 GMT
+# Sat, 04 Nov 2017 18:20:23 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Fri, 03 Nov 2017 22:46:48 GMT
+# Sat, 04 Nov 2017 18:20:23 GMT
 WORKDIR /usr/local/tomcat
-# Fri, 03 Nov 2017 22:47:37 GMT
+# Sat, 04 Nov 2017 18:21:09 GMT
 RUN dpkg --add-architecture i386   && apt-get update -y   && apt-get install -y --no-install-recommends     ca-certificates     curl     lib32z1     libgtk2.0-0:i386     libstdc++6:i386     libxft2:i386     libxt6:i386     libxtst6:i386     unzip   && rm -rf /var/lib/apt/lists/*
-# Fri, 03 Nov 2017 22:47:37 GMT
+# Sat, 04 Nov 2017 18:21:09 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20161107~bpo8+1
-# Fri, 03 Nov 2017 22:48:18 GMT
+# Sat, 04 Nov 2017 18:21:36 GMT
 RUN echo 'deb http://deb.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list     && apt-get update -y     && apt-get install -y --no-install-recommends         openjdk-8-jre-headless         openjdk-8-jre-headless:i386         ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION"     && update-java-alternatives --jre-headless -s java-1.8.0-openjdk-i386     && rm -rf /usr/lib/jvm/java-8-openjdk-amd64 /var/lib/apt/lists/*
-# Fri, 03 Nov 2017 22:48:24 GMT
+# Sat, 04 Nov 2017 18:21:44 GMT
 RUN export GNUPGHOME="$(mktemp -d)"   && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4   && curl -o /usr/local/bin/gosu -fSL "https://github.com/tianon/gosu/releases/download/1.7/gosu-$(dpkg --print-architecture)"   && curl -o /usr/local/bin/gosu.asc -fSL "https://github.com/tianon/gosu/releases/download/1.7/gosu-$(dpkg --print-architecture).asc"   && gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu   && rm /usr/local/bin/gosu.asc   && chmod +x /usr/local/bin/gosu   && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5   && curl -o /usr/local/bin/tini -fSL "https://github.com/krallin/tini/releases/download/v0.9.0/tini"   && curl -o /usr/local/bin/tini.asc -fSL "https://github.com/krallin/tini/releases/download/v0.9.0/tini.asc"   && gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini   && rm /usr/local/bin/tini.asc   && chmod +x /usr/local/bin/tini   && rm -rf /tmp/*
-# Fri, 03 Nov 2017 22:48:25 GMT
+# Sat, 04 Nov 2017 18:21:45 GMT
 RUN useradd -s /bin/false -m convertigo     && mkdir -p /workspace/lib /workspace/classes     && chown -R convertigo:convertigo /workspace
-# Fri, 03 Nov 2017 22:48:25 GMT
+# Sat, 04 Nov 2017 18:21:45 GMT
 ENV TOMCAT_MAJOR=7
-# Fri, 03 Nov 2017 22:48:26 GMT
+# Sat, 04 Nov 2017 18:21:45 GMT
 ENV TOMCAT_VERSION=7.0.72
-# Fri, 03 Nov 2017 22:48:26 GMT
+# Sat, 04 Nov 2017 18:21:45 GMT
 ENV TOMCAT_TGZ_URL=https://archive.apache.org/dist/tomcat/tomcat-7/v7.0.72/bin/apache-tomcat-7.0.72.tar.gz
-# Fri, 03 Nov 2017 22:48:26 GMT
+# Sat, 04 Nov 2017 18:21:45 GMT
 ENV TOMCAT_GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 61B832AC2F1C5A90F0F9B00A1C506407564C17A3 713DA88BE50911535FE716F5208B0AB1D63011C7 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23
-# Fri, 03 Nov 2017 22:48:40 GMT
+# Sat, 04 Nov 2017 18:21:57 GMT
 RUN export GNUPGHOME="$(mktemp -d)"     && for key in $TOMCAT_GPG_KEYS; do          gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key";        done;     curl -fSL -o /tmp/tomcat.tar.gz $TOMCAT_TGZ_URL     && curl -fSL -o /tmp/tomcat.tar.gz.asc $TOMCAT_TGZ_URL.asc     && gpg --batch --verify /tmp/tomcat.tar.gz.asc /tmp/tomcat.tar.gz     && tar -xvf /tmp/tomcat.tar.gz --strip-components=1     && sed -i.bak         -e '/protocol="AJP/d'         -e '/AprLifecycleListener/d'         -e '/JasperListener/d'         -e 's/port="8080"/port="28080" maxThreads="64000"/'         conf/server.xml     && rm -rf webapps/* bin/*.bat conf/server.xml.bak /tmp/*     && chown -R convertigo:convertigo conf temp work logs     && chmod -w conf/*
-# Fri, 03 Nov 2017 22:48:40 GMT
+# Sat, 04 Nov 2017 18:21:57 GMT
 ENV CONVERTIGO_VERSION=7.4.6
-# Fri, 03 Nov 2017 22:48:41 GMT
+# Sat, 04 Nov 2017 18:21:57 GMT
 ENV CONVERTIGO_REVISION=43404
-# Fri, 03 Nov 2017 22:48:41 GMT
+# Sat, 04 Nov 2017 18:21:57 GMT
 ENV CONVERTIGO_WAR_URL=https://devplatform.s3.amazonaws.com/refbin/cems/7.4.6/convertigo-7.4.6-v43404-linux32.war
-# Fri, 03 Nov 2017 22:48:41 GMT
+# Sat, 04 Nov 2017 18:21:58 GMT
 ENV CONVERTIGO_GPG_KEYS=6A7779BB78FE368DF74B708FD4DA8FBEB64BF75F
-# Fri, 03 Nov 2017 22:48:59 GMT
+# Sat, 04 Nov 2017 18:22:14 GMT
 RUN export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$CONVERTIGO_GPG_KEYS"     && curl -fSL -o /tmp/convertigo.war $CONVERTIGO_WAR_URL     && curl -fSL -o /tmp/convertigo.war.asc $CONVERTIGO_WAR_URL.asc     && gpg --batch --verify /tmp/convertigo.war.asc /tmp/convertigo.war     && mkdir webapps/ROOT webapps/convertigo     && (cd webapps/convertigo         && unzip -q /tmp/convertigo.war         && chmod a+x WEB-INF/xvnc/*)     && rm -rf /tmp/*
-# Fri, 03 Nov 2017 22:48:59 GMT
+# Sat, 04 Nov 2017 18:22:14 GMT
 COPY file:6c901b8550c2906f0c134295c617b19c0877bc00b11aad7930ae1900acf1217f in webapps/ROOT/index.html 
-# Fri, 03 Nov 2017 22:49:00 GMT
+# Sat, 04 Nov 2017 18:22:14 GMT
 COPY file:83d092e0f8a0315a512b0308560e98254364837b07e70fdf51b85fb0b1992efd in / 
-# Fri, 03 Nov 2017 22:49:00 GMT
+# Sat, 04 Nov 2017 18:22:15 GMT
 WORKDIR /workspace
-# Fri, 03 Nov 2017 22:49:00 GMT
+# Sat, 04 Nov 2017 18:22:15 GMT
 VOLUME [/workspace]
-# Fri, 03 Nov 2017 22:49:00 GMT
+# Sat, 04 Nov 2017 18:22:15 GMT
 EXPOSE 28080/tcp
-# Fri, 03 Nov 2017 22:49:01 GMT
+# Sat, 04 Nov 2017 18:22:15 GMT
 ENTRYPOINT ["tini" "--" "/docker-entrypoint.sh"]
-# Fri, 03 Nov 2017 22:49:01 GMT
+# Sat, 04 Nov 2017 18:22:16 GMT
 CMD ["convertigo"]
 ```
 
@@ -854,39 +854,39 @@ CMD ["convertigo"]
 		Last Modified: Mon, 09 Oct 2017 21:36:40 GMT  
 		Size: 52.6 MB (52595124 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:101e8a3bb2809df8a5d183c1e346a8b7dad6ab22391360a393cd7d11ce026a1b`  
-		Last Modified: Fri, 03 Nov 2017 22:49:38 GMT  
+	-	`sha256:26d8037546ab3496d8234455c6026d9d5f86b89b8073d83efe29f1e586eec46d`  
+		Last Modified: Sat, 04 Nov 2017 18:23:04 GMT  
 		Size: 149.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:df8753c74734a27efbbbc3b28861c8ccf77eb0ce08305d4b66e4dcf0d6b85e1d`  
-		Last Modified: Fri, 03 Nov 2017 22:49:46 GMT  
-		Size: 47.5 MB (47513808 bytes)  
+	-	`sha256:eb1e344e7c49595e85f0e1b2272963b86717615d164a9b0a96b8b9c870f9fcb3`  
+		Last Modified: Sat, 04 Nov 2017 18:23:11 GMT  
+		Size: 47.5 MB (47513870 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1db37a4d9c9a8542de4d087e0aa219aa6da237ac88a5445285bd9a15a6a495db`  
-		Last Modified: Fri, 03 Nov 2017 22:49:45 GMT  
-		Size: 50.5 MB (50494219 bytes)  
+	-	`sha256:b1ab74fa05d49096e0e9ec42d84f5abe44fce43db305b07f3473a00c73418739`  
+		Last Modified: Sat, 04 Nov 2017 18:23:11 GMT  
+		Size: 50.5 MB (50494236 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc84f0c92494c520c345060a6e499cc3ae56e36fec3f2a37eb247f7ff88da9ff`  
-		Last Modified: Fri, 03 Nov 2017 22:49:36 GMT  
-		Size: 826.1 KB (826136 bytes)  
+	-	`sha256:2348422c9baaca150aeb8238d0a1397adcc1f149ae5f2a92157156c9693dcb33`  
+		Last Modified: Sat, 04 Nov 2017 18:23:02 GMT  
+		Size: 826.1 KB (826131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11e68717f670159d2790be7bda3af59b73a3e15ec77b4e006198e3be4e82c555`  
-		Last Modified: Fri, 03 Nov 2017 22:49:35 GMT  
+	-	`sha256:72fd7ef6e4c7ec51951bf9f37abfff4474d50a80dba0c1b1abb148cdf867069e`  
+		Last Modified: Sat, 04 Nov 2017 18:23:01 GMT  
 		Size: 4.5 KB (4513 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:01d9402094a93f221d801fa4062e1a7f62305c13d56c6e012e77232cc6a04a63`  
-		Last Modified: Fri, 03 Nov 2017 22:49:34 GMT  
+	-	`sha256:70147fdfb693ffa20e661ca9272e9f73b987459ce4ffe9f89c760689d9044f39`  
+		Last Modified: Sat, 04 Nov 2017 18:23:00 GMT  
 		Size: 7.5 MB (7473747 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fad7b25c320c5d0d7021bb7dcbcf9ab662d8d06eda951e23c5aa6b5bfcb26841`  
-		Last Modified: Fri, 03 Nov 2017 22:49:45 GMT  
-		Size: 95.8 MB (95827393 bytes)  
+	-	`sha256:02cd8097b390d9b34feb79dcebd9532cf0ec28917af0d28c4728602de0cf566e`  
+		Last Modified: Sat, 04 Nov 2017 18:23:08 GMT  
+		Size: 95.8 MB (95827383 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:861b6d5115181d5307c737ce2bc9c4e01d47c1fbbb2c5263da6eab2d7d3ea3f2`  
-		Last Modified: Fri, 03 Nov 2017 22:49:33 GMT  
-		Size: 460.0 B  
+	-	`sha256:ee7f4730c3271e00e2535f389e77aa7719fdd1d93c133e6584d0d88073bab5c1`  
+		Last Modified: Sat, 04 Nov 2017 18:22:59 GMT  
+		Size: 461.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fcb6d3d309556ba0c9503a9ee7e0a678546d70a85390a5b14d80ac2e7d14e55d`  
-		Last Modified: Fri, 03 Nov 2017 22:49:33 GMT  
-		Size: 948.0 B  
+	-	`sha256:c35231e649a106706fb013ed8731461ca36a43ccf42dd68f6a7996610eab3753`  
+		Last Modified: Sat, 04 Nov 2017 18:22:59 GMT  
+		Size: 950.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
