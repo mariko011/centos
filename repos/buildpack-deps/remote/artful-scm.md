@@ -1,7 +1,7 @@
 ## `buildpack-deps:artful-scm`
 
 ```console
-$ docker pull buildpack-deps@sha256:d3a89bd3ec62df37942a6e0050474cd25db34d0b19071e52c8a42ae6f0b84e7d
+$ docker pull buildpack-deps@sha256:487235a6179edbc397a166e0595e22f8522997a0502869ee39ef26e571a866c1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16,34 +16,34 @@ $ docker pull buildpack-deps@sha256:d3a89bd3ec62df37942a6e0050474cd25db34d0b1907
 ### `buildpack-deps:artful-scm` - linux; amd64
 
 ```console
-$ docker pull buildpack-deps@sha256:22dceebbd12e78c9015b0efcdee3c1e0a8cc371f43e26fd71950129e89a165a1
+$ docker pull buildpack-deps@sha256:52eaef2fa7316654ab6046909855c4e5f886a877579af54618214f07cb892b4b
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **91.0 MB (90954531 bytes)**  
+-	Total Size: **91.0 MB (90953934 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ede8e2bdaff106bbc293eb35901d01e794db089d6e2b9f0dc8f98cf403e07d80`
+-	Image ID: `sha256:56e8e478ce1e6f1898762650727c374a3f0efa4b4bac032117a4f2b727489f36`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 19 Oct 2017 16:49:44 GMT
+# Sat, 04 Nov 2017 09:44:56 GMT
 ADD file:c5fd97d776dc13116460fbfe9516f1a028ba5788ea39ee71d8e9cfe7caed676f in / 
-# Thu, 19 Oct 2017 16:49:45 GMT
+# Sat, 04 Nov 2017 09:44:58 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Thu, 19 Oct 2017 16:49:45 GMT
+# Sat, 04 Nov 2017 09:44:59 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Thu, 19 Oct 2017 16:49:46 GMT
+# Sat, 04 Nov 2017 09:45:00 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Thu, 19 Oct 2017 16:49:47 GMT
+# Sat, 04 Nov 2017 09:45:01 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Thu, 19 Oct 2017 16:49:47 GMT
+# Sat, 04 Nov 2017 09:45:01 GMT
 CMD ["/bin/bash"]
-# Sat, 04 Nov 2017 00:46:04 GMT
+# Sat, 04 Nov 2017 15:16:35 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 04 Nov 2017 00:46:04 GMT
+# Sat, 04 Nov 2017 15:16:36 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Sat, 04 Nov 2017 00:46:29 GMT
+# Sat, 04 Nov 2017 15:17:44 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 ```
 
@@ -52,29 +52,29 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		m
 		Last Modified: Thu, 19 Oct 2017 16:50:57 GMT  
 		Size: 39.2 MB (39215977 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:64e69583643894064c76a95e3d11683364de4efab032b9a5b9fda912300d2ee7`  
-		Last Modified: Thu, 19 Oct 2017 16:50:51 GMT  
-		Size: 847.0 B  
+	-	`sha256:9061f2867f7e61c3f5420eb574ba2fa334667501e4fff59037fff42e236126cf`  
+		Last Modified: Sat, 04 Nov 2017 09:45:56 GMT  
+		Size: 843.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:23612a50167e73f5f4a0835016d48e4d1f3718e475dc7ce034ab1f97f87a4559`  
-		Last Modified: Thu, 19 Oct 2017 16:50:51 GMT  
-		Size: 399.0 B  
+	-	`sha256:916f09e6daf78c64326ce6338926259c67a94bda705094f4f5a4de7ffa760d7b`  
+		Last Modified: Sat, 04 Nov 2017 09:45:57 GMT  
+		Size: 398.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0f87853aa05b46566e39ee0f6a3a98f44a5a9ebcc7d1c70aeaa0652a7dbb55a3`  
-		Last Modified: Thu, 19 Oct 2017 16:50:51 GMT  
-		Size: 851.0 B  
+	-	`sha256:4fae7d54d2d8cfbed3fb28e0d50d4d1c7efc8c74cfe0a932f8de266e9ac19b18`  
+		Last Modified: Sat, 04 Nov 2017 09:45:56 GMT  
+		Size: 850.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:196b8aba5fb6c607ab9d6dacf5cb959ab3852b39648371b4cf3cb1d0de1a1788`  
-		Last Modified: Thu, 19 Oct 2017 16:50:51 GMT  
+	-	`sha256:5e69eda9a0dde47b44b877d1c561a490c6f581f4185be674d0228d0000c5c9c5`  
+		Last Modified: Sat, 04 Nov 2017 09:45:56 GMT  
 		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e7e6f5ab4f7d035fe5e91b47a63595d676f57570c7175283eac7fe8ca758fc5a`  
-		Last Modified: Sat, 04 Nov 2017 01:06:33 GMT  
-		Size: 6.0 MB (6037238 bytes)  
+	-	`sha256:f50e4cf3d1d3f4191a1a4161e180a5f74966b61486552e655b5eec35c0ce21a0`  
+		Last Modified: Sat, 04 Nov 2017 15:41:10 GMT  
+		Size: 6.0 MB (6037253 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aa712f8be8bdd9666464800e8525654cc726ea5c67866ec2248dc9e3211ab86e`  
-		Last Modified: Sat, 04 Nov 2017 01:06:59 GMT  
-		Size: 45.7 MB (45699057 bytes)  
+	-	`sha256:5795a02adb91bb3d50d3a4caf7e511ec2bec283799b0f1f8268585448cb2d666`  
+		Last Modified: Sat, 04 Nov 2017 15:41:38 GMT  
+		Size: 45.7 MB (45698451 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:artful-scm` - linux; arm variant v7

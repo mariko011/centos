@@ -1,7 +1,7 @@
 ## `buildpack-deps:zesty-scm`
 
 ```console
-$ docker pull buildpack-deps@sha256:1cb6410ded02b2fdeaad520adc536a005155d678388447f54fb35a91e98a92e0
+$ docker pull buildpack-deps@sha256:7cbb6172e109e2768196b9d2ea58f0bed288025ba311b0a51fe27ed20c1049b6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16,34 +16,34 @@ $ docker pull buildpack-deps@sha256:1cb6410ded02b2fdeaad520adc536a005155d6783884
 ### `buildpack-deps:zesty-scm` - linux; amd64
 
 ```console
-$ docker pull buildpack-deps@sha256:879e3f6e067a383c20087d3a6f41858299378447a0f4960f5d3998d345b243ac
+$ docker pull buildpack-deps@sha256:37cb071d567fa3507a2ab05138d9beb1e5e5181910a77bd70a801de130c46d76
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **89.9 MB (89918083 bytes)**  
+-	Total Size: **89.9 MB (89919881 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:16aaa2c0464fffa0b391c3bae6e0ba62e1e9693643777b9d5c535edb2f5d3d1f`
+-	Image ID: `sha256:ba7c99550a5ecc335effc28f0553cb46f1101d4222100ce62c25428868db9e10`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 18 Sep 2017 23:31:50 GMT
+# Sat, 04 Nov 2017 09:45:43 GMT
 ADD file:4e2e1f8336bcc64e853e9f3462f0829ce85b34a32755dba06aa7bd0007eda4f0 in / 
-# Mon, 18 Sep 2017 23:31:50 GMT
+# Sat, 04 Nov 2017 09:45:44 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 18 Sep 2017 23:31:51 GMT
+# Sat, 04 Nov 2017 09:45:45 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Mon, 18 Sep 2017 23:31:52 GMT
+# Sat, 04 Nov 2017 09:45:46 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Mon, 18 Sep 2017 23:31:52 GMT
+# Sat, 04 Nov 2017 09:45:46 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 18 Sep 2017 23:31:52 GMT
+# Sat, 04 Nov 2017 09:45:47 GMT
 CMD ["/bin/bash"]
-# Sat, 04 Nov 2017 01:04:23 GMT
+# Sat, 04 Nov 2017 15:38:45 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 04 Nov 2017 01:04:24 GMT
+# Sat, 04 Nov 2017 15:38:46 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Sat, 04 Nov 2017 01:04:53 GMT
+# Sat, 04 Nov 2017 15:39:20 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 ```
 
@@ -52,29 +52,29 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		m
 		Last Modified: Mon, 18 Sep 2017 23:33:09 GMT  
 		Size: 38.4 MB (38437889 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c7feb578947e4b86e0a0cff64b42489dc1305bbacdb3ed36d0afe95a19ebf845`  
-		Last Modified: Mon, 18 Sep 2017 23:33:03 GMT  
-		Size: 847.0 B  
+	-	`sha256:d18b5715fdd4c73948352b439715c4ec71459ba6199ad6d79fd2e2e9a5b24235`  
+		Last Modified: Sat, 04 Nov 2017 09:46:53 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ac836f06379c8d7356e0d2e7dbb3e9f3924616527fa51b95545fb455eec31f08`  
-		Last Modified: Mon, 18 Sep 2017 23:33:03 GMT  
-		Size: 569.0 B  
+	-	`sha256:5ba295b2a11b6c71aaf7ccc1dd4378eabef9b5d32d30a4f3dbd2e4b1fa4eef70`  
+		Last Modified: Sat, 04 Nov 2017 09:46:53 GMT  
+		Size: 568.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:be286dc472df31f16953d34151f836d0186fddeea6cd56dcefd2a6d46a992500`  
-		Last Modified: Mon, 18 Sep 2017 23:33:03 GMT  
+	-	`sha256:31ace8c1d433fa58f410c0680402a0a4b4a2abdf1badd340e136b10f78a5c7b6`  
+		Last Modified: Sat, 04 Nov 2017 09:46:53 GMT  
 		Size: 851.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5533df5f353d9fbcbd081e9dd653fe7d8ddebed958d1f0e56fa4a87b216f13c1`  
-		Last Modified: Mon, 18 Sep 2017 23:33:03 GMT  
-		Size: 162.0 B  
+	-	`sha256:95434b428ba1b404a4bd50c47d42f4ebe291a42974f31ace17e1c9e91c6b64b5`  
+		Last Modified: Sat, 04 Nov 2017 09:46:52 GMT  
+		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f32b8e9cfd77ef7e0ace35aa951a3da2eb1dfa17d43789cea31c3c4c1bcb458d`  
-		Last Modified: Sat, 04 Nov 2017 01:18:50 GMT  
-		Size: 7.5 MB (7521471 bytes)  
+	-	`sha256:4751e7142ff74186cf19be27a53293ed27e1eaa43eddaadf479be40a8513f78f`  
+		Last Modified: Sat, 04 Nov 2017 15:53:21 GMT  
+		Size: 7.5 MB (7521461 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:739ddb26c6c3a081141623d1fd78d09a403269879f2cda68770866e82f0d4a96`  
-		Last Modified: Sat, 04 Nov 2017 01:19:10 GMT  
-		Size: 44.0 MB (43956294 bytes)  
+	-	`sha256:7e73068e3def3ab2905c8609e02f5c4bbc8c09491778bc4b8437479d1bdf2f80`  
+		Last Modified: Sat, 04 Nov 2017 15:53:42 GMT  
+		Size: 44.0 MB (43958096 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:zesty-scm` - linux; arm variant v7

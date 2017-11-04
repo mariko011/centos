@@ -1,7 +1,7 @@
 ## `haskell:latest`
 
 ```console
-$ docker pull haskell@sha256:623d6b6c4fbec8f61fb4bd017083374d07d2e5b78935d8ac2c02e9d7834aacb3
+$ docker pull haskell@sha256:3a246a19539936086a5f6f67d1f79fbf2629947eafdff7c460d78ffd141543fa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,28 +11,28 @@ $ docker pull haskell@sha256:623d6b6c4fbec8f61fb4bd017083374d07d2e5b78935d8ac2c0
 ### `haskell:latest` - linux; amd64
 
 ```console
-$ docker pull haskell@sha256:82dc0ccdad50ddd1c5234ec1acf974c8f2359bfeb418ad3d31a9ad2b70ff906f
+$ docker pull haskell@sha256:a8eab97f29c3a507f816d19229c937bb473149a9a53600e5bd1c8a66d4e5192f
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.6 MB (269594229 bytes)**  
+-	Total Size: **269.6 MB (269594619 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c6544b989b514c6c426c26053f81b7fbe09dabb662e95acea8259589dd3f067f`
+-	Image ID: `sha256:5c2a170680fe4cc46046821d7badbf0a14d2521784cd50f17bd0d10782649424`
 -	Default Command: `["ghci"]`
 
 ```dockerfile
-# Mon, 09 Oct 2017 21:30:05 GMT
+# Sat, 04 Nov 2017 05:21:35 GMT
 ADD file:55b071e2cfc3ea2f4bbf048d7d676e3c06a77a9a98d63f7af291f3decb495ec8 in / 
-# Mon, 09 Oct 2017 21:30:05 GMT
+# Sat, 04 Nov 2017 05:21:36 GMT
 CMD ["bash"]
-# Sat, 04 Nov 2017 01:22:39 GMT
+# Sat, 04 Nov 2017 15:50:58 GMT
 ENV LANG=C.UTF-8
-# Sat, 04 Nov 2017 01:25:47 GMT
+# Sat, 04 Nov 2017 15:55:57 GMT
 RUN echo 'deb http://ppa.launchpad.net/hvr/ghc/ubuntu trusty main' > /etc/apt/sources.list.d/ghc.list &&     apt-key adv --keyserver keyserver.ubuntu.com --recv-keys F6F88286 &&     apt-get update &&     apt-get install -y --no-install-recommends cabal-install-2.0 ghc-8.2.1 happy-1.19.5 alex-3.1.7             zlib1g-dev libtinfo-dev libsqlite3-0 libsqlite3-dev ca-certificates g++ git curl &&     curl -fSL https://github.com/commercialhaskell/stack/releases/download/v1.5.1/stack-1.5.1-linux-x86_64-static.tar.gz -o stack.tar.gz &&     curl -fSL https://github.com/commercialhaskell/stack/releases/download/v1.5.1/stack-1.5.1-linux-x86_64-static.tar.gz.asc -o stack.tar.gz.asc &&     apt-get purge -y --auto-remove curl &&     export GNUPGHOME="$(mktemp -d)" &&     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys C5705533DA4F78D8664B5DC0575159689BEFB442 &&     gpg --batch --verify stack.tar.gz.asc stack.tar.gz &&     tar -xf stack.tar.gz -C /usr/local/bin --strip-components=1 &&     /usr/local/bin/stack config set system-ghc --global true &&     rm -rf "$GNUPGHOME" /var/lib/apt/lists/* /stack.tar.gz.asc /stack.tar.gz
-# Sat, 04 Nov 2017 01:25:47 GMT
+# Sat, 04 Nov 2017 15:55:58 GMT
 ENV PATH=/root/.cabal/bin:/root/.local/bin:/opt/cabal/2.0/bin:/opt/ghc/8.2.1/bin:/opt/happy/1.19.5/bin:/opt/alex/3.1.7/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 04 Nov 2017 01:25:48 GMT
+# Sat, 04 Nov 2017 15:55:58 GMT
 CMD ["ghci"]
 ```
 
@@ -41,7 +41,7 @@ CMD ["ghci"]
 		Last Modified: Mon, 09 Oct 2017 21:36:40 GMT  
 		Size: 52.6 MB (52595124 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8ce5223ee7193df25077589f25d1a397c023e43d704ac544b84f9d515e20ee2d`  
-		Last Modified: Sat, 04 Nov 2017 01:26:46 GMT  
-		Size: 217.0 MB (216999105 bytes)  
+	-	`sha256:04f05fd550d46ea368ed0267eafc2c8f6600a2f00f436527ed1d270e5d1539ea`  
+		Last Modified: Sat, 04 Nov 2017 15:56:49 GMT  
+		Size: 217.0 MB (216999495 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
