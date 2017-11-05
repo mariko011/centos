@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7ee0a1f8bff633cc295fba923035e688be9ac705609cabad6ace80533604f794`
-- Created: `2017-11-01T17:05:53.44733498Z`
-- Virtual Size: ~ 561.15 Mb  
+- Image ID: `sha256:a9814ec02fd301903f501c23a4d033e2bd95ed18eafe45613eecba5ae9bf243f`
+- Created: `2017-11-04T11:31:34.742133751Z`
+- Virtual Size: ~ 561.10 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -210,11 +210,11 @@ $ apt-get source -qq --print-uris bzip2=1.0.6-5
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.6-5.debian.tar.bz2' bzip2_1.0.6-5.debian.tar.bz2 60984 SHA256:182c087bbd173bfcc2b0f4210c790a03f3d49876f6250213332832319b7b5758
 ```
 
-### `dpkg` source package: `ca-certificates=20160104ubuntu0.14.04.1`
+### `dpkg` source package: `ca-certificates=20170717~14.04.1`
 
 Binary Packages:
 
-- `ca-certificates=20160104ubuntu0.14.04.1`
+- `ca-certificates=20170717~14.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -222,9 +222,13 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 - `GPL-2+`
 - `MPL-2.0`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris ca-certificates=20170717~14.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20170717~14.04.1.dsc' ca-certificates_20170717~14.04.1.dsc 1862 SHA256:7216d0b4f25af1b13e5fb81ac61efa72f200cff15ae68e97dd0b9f7f76dec4cc
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20170717~14.04.1.tar.gz' ca-certificates_20170717~14.04.1.tar.gz 369186 SHA256:423a82170776597fb6e37e0207e9fc095a70d30dddb8e817692286c744599f97
+```
 
 ### `dpkg` source package: `cdebconf=0.187ubuntu1`
 
@@ -1261,11 +1265,11 @@ $ apt-get source -qq --print-uris libgpg-error=1.12-0.2ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgpg-error/libgpg-error_1.12-0.2ubuntu1.debian.tar.gz' libgpg-error_1.12-0.2ubuntu1.debian.tar.gz 6293 SHA256:15b955366b8effb49b592a9384e8ab7e1b6ddb9b9f3c804a58a8b69378b16218
 ```
 
-### `dpkg` source package: `libidn=1.28-1ubuntu2.1`
+### `dpkg` source package: `libidn=1.28-1ubuntu2.2`
 
 Binary Packages:
 
-- `libidn11:amd64=1.28-1ubuntu2.1`
+- `libidn11:amd64=1.28-1ubuntu2.2`
 
 Licenses: (parsed from: `/usr/share/doc/libidn11/copyright`)
 
@@ -1281,9 +1285,14 @@ Licenses: (parsed from: `/usr/share/doc/libidn11/copyright`)
 - `LGPL-3`
 - `LGPL-3+ | GPL-2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libidn=1.28-1ubuntu2.2
+'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn/libidn_1.28-1ubuntu2.2.dsc' libidn_1.28-1ubuntu2.2.dsc 2264 SHA256:352e6d646209d73450263b5d28eaa285340a5ef979924720b3ce8f467b2e1992
+'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn/libidn_1.28.orig.tar.gz' libidn_1.28.orig.tar.gz 3476317 SHA256:dd357a968449abc97c7e5fa088a4a384de57cb36564f9d4e0d898ecc6373abfb
+'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn/libidn_1.28-1ubuntu2.2.debian.tar.gz' libidn_1.28-1ubuntu2.2.debian.tar.gz 48795 SHA256:856416d57414dd7737049073e01a0d0b9d0297fde9139f2edf234427d943638e
+```
 
 ### `dpkg` source package: `liblocale-gettext-perl=1.05-7build3`
 
@@ -1729,19 +1738,24 @@ $ apt-get source -qq --print-uris lsb=4.1+Debian11ubuntu6.2
 'http://archive.ubuntu.com/ubuntu/pool/main/l/lsb/lsb_4.1+Debian11ubuntu6.2.tar.xz' lsb_4.1+Debian11ubuntu6.2.tar.xz 66156 SHA256:14eac458299596fd70cde7bb696c1ae9f34df5277491de23d13868489fb4bcb6
 ```
 
-### `dpkg` source package: `lshw=02.16-2ubuntu1.3`
+### `dpkg` source package: `lshw=02.16-2ubuntu1.4`
 
 Binary Packages:
 
-- `lshw=02.16-2ubuntu1.3`
+- `lshw=02.16-2ubuntu1.4`
 
 Licenses: (parsed from: `/usr/share/doc/lshw/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris lshw=02.16-2ubuntu1.4
+'http://archive.ubuntu.com/ubuntu/pool/main/l/lshw/lshw_02.16-2ubuntu1.4.dsc' lshw_02.16-2ubuntu1.4.dsc 1443 SHA256:c293fab5074c809f22a6d39a1ad0e20d15f5cacb07354444d1167620bd8d4e58
+'http://archive.ubuntu.com/ubuntu/pool/main/l/lshw/lshw_02.16.orig.tar.gz' lshw_02.16.orig.tar.gz 1845891 SHA256:809882429555b93259785cc261dbff04c16c93d064db5f445a51945bc47157cb
+'http://archive.ubuntu.com/ubuntu/pool/main/l/lshw/lshw_02.16-2ubuntu1.4.diff.gz' lshw_02.16-2ubuntu1.4.diff.gz 18625 SHA256:7bf7955739c286d34a3ede7abbe029413776d567c0cf5adb9a14d09dcbcaa93d
+```
 
 ### `dpkg` source package: `lsof=4.86+dfsg-1ubuntu2`
 
@@ -2849,20 +2863,25 @@ $ apt-get source -qq --print-uris vim=2:7.4.052-1ubuntu3.1
 'http://archive.ubuntu.com/ubuntu/pool/main/v/vim/vim_7.4.052-1ubuntu3.1.debian.tar.gz' vim_7.4.052-1ubuntu3.1.debian.tar.gz 203077 SHA256:eb89b3af5e9b54b9ad22b6cb7d4cb3eb342811194afbd5329b44cb692da324fa
 ```
 
-### `dpkg` source package: `wget=1.15-1ubuntu1.14.04.2`
+### `dpkg` source package: `wget=1.15-1ubuntu1.14.04.3`
 
 Binary Packages:
 
-- `wget=1.15-1ubuntu1.14.04.2`
+- `wget=1.15-1ubuntu1.14.04.3`
 
 Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 
 - `GFDL-1.2`
 - `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris wget=1.15-1ubuntu1.14.04.3
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.15-1ubuntu1.14.04.3.dsc' wget_1.15-1ubuntu1.14.04.3.dsc 1929 SHA256:adabab3126e8fb6bb732d831b10e32791b3ff75b93fe497116b194d15937510b
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.15.orig.tar.gz' wget_1.15.orig.tar.gz 3417936 SHA256:52126be8cf1bddd7536886e74c053ad7d0ed2aa89b4b630f76785bac21695fcd
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.15-1ubuntu1.14.04.3.debian.tar.gz' wget_1.15-1ubuntu1.14.04.3.debian.tar.gz 31508 SHA256:c0ee9bf16959bc2f5ecfa94216ada0b0e5a34971a0501074e70e019ade6a6319
+```
 
 ### `dpkg` source package: `xkeyboard-config=2.10.1-1ubuntu1`
 
