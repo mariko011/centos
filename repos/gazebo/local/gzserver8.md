@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:dc83896bfda6874ee4af524a990db13d4556c0bc9ad3faaca5ee966b45e62306`
-- Created: `2017-10-10T21:55:44.506908329Z`
+- Image ID: `sha256:f19df9ea85a2a3269ceb1ab5aac86f3223aa863068b2b50f8d8d495d5148789d`
+- Created: `2017-11-04T13:44:30.774295923Z`
 - Virtual Size: ~ 633.36 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -490,12 +490,12 @@ $ apt-get source -qq --print-uris cups=2.1.3-4ubuntu0.3
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.1.3-4ubuntu0.3.debian.tar.xz' cups_2.1.3-4ubuntu0.3.debian.tar.xz 347364 SHA256:6216fcfbe9b7b09ec11424b77444c220609b8425a6341bd860840800dc77a405
 ```
 
-### `dpkg` source package: `curl=7.47.0-1ubuntu2.3`
+### `dpkg` source package: `curl=7.47.0-1ubuntu2.4`
 
 Binary Packages:
 
-- `libcurl3:amd64=7.47.0-1ubuntu2.3`
-- `libcurl3-gnutls:amd64=7.47.0-1ubuntu2.3`
+- `libcurl3:amd64=7.47.0-1ubuntu2.4`
+- `libcurl3-gnutls:amd64=7.47.0-1ubuntu2.4`
 
 Licenses: (parsed from: `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`)
 
@@ -506,9 +506,14 @@ Licenses: (parsed from: `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/lib
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.47.0-1ubuntu2.4
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0-1ubuntu2.4.dsc' curl_7.47.0-1ubuntu2.4.dsc 2715 SHA256:d6fc4c5cc89128855a269c6edf25548708d0ac3f4745ecce195ef896bb46e810
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0.orig.tar.gz' curl_7.47.0.orig.tar.gz 4563163 SHA256:df01bd42af361978d9de7de8529718bcafe01897a544a7650139a1954c55bdfe
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0-1ubuntu2.4.debian.tar.xz' curl_7.47.0-1ubuntu2.4.debian.tar.xz 43268 SHA256:ff240ddb2f1851f14b0e178b118c40de8fabb55f94b8e8781104453d7a6a254e
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-14build1`
 
@@ -1270,11 +1275,11 @@ $ apt-get source -qq --print-uris gnupg=1.4.20-1ubuntu3.1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg/gnupg_1.4.20-1ubuntu3.1.debian.tar.xz' gnupg_1.4.20-1ubuntu3.1.debian.tar.xz 38320 SHA256:a299bedd609dd8a8f488db64c6a13361599ba0f906a805730496f9973257d91c
 ```
 
-### `dpkg` source package: `gnutls28=3.4.10-4ubuntu1.3`
+### `dpkg` source package: `gnutls28=3.4.10-4ubuntu1.4`
 
 Binary Packages:
 
-- `libgnutls30:amd64=3.4.10-4ubuntu1.3`
+- `libgnutls30:amd64=3.4.10-4ubuntu1.4`
 
 Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 
@@ -1292,10 +1297,10 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gnutls28=3.4.10-4ubuntu1.3
-'http://security.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.4.10-4ubuntu1.3.dsc' gnutls28_3.4.10-4ubuntu1.3.dsc 3076 SHA256:fdd0345d4528501ba95271e175b984172ffdb2cfbd7062576be1c6751c7acc6f
-'http://security.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.4.10.orig.tar.xz' gnutls28_3.4.10.orig.tar.xz 6645892 SHA256:6a32c2b4acbd33ff7eefcbd1357009da04c94c60146ef61320b6c076b1bdf59f
-'http://security.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.4.10-4ubuntu1.3.debian.tar.xz' gnutls28_3.4.10-4ubuntu1.3.debian.tar.xz 96112 SHA256:d3609837d6415df3bda609dc4c6eacf657f5e76c4a32cfab606e813ec2e18835
+$ apt-get source -qq --print-uris gnutls28=3.4.10-4ubuntu1.4
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.4.10-4ubuntu1.4.dsc' gnutls28_3.4.10-4ubuntu1.4.dsc 3076 SHA256:48a249686197b4548b2ef1cef1cb71a2ed7c662b2a449fed0987e53c44afc610
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.4.10.orig.tar.xz' gnutls28_3.4.10.orig.tar.xz 6645892 SHA256:6a32c2b4acbd33ff7eefcbd1357009da04c94c60146ef61320b6c076b1bdf59f
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.4.10-4ubuntu1.4.debian.tar.xz' gnutls28_3.4.10-4ubuntu1.4.debian.tar.xz 96568 SHA256:b32bfc6bd9b4c54c83de5ea318e76e5d5e5bfcbd3311179cb472680a7209d880
 ```
 
 ### `dpkg` source package: `graphite2=1.3.10-0ubuntu0.16.04.1`
@@ -1468,19 +1473,24 @@ $ apt-get source -qq --print-uris hostname=3.16ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/h/hostname/hostname_3.16ubuntu2.tar.gz' hostname_3.16ubuntu2.tar.gz 14378 SHA256:e0a38fa03b66abd428e119e5af2cccb78a0462cdb58e2e540e66d964e2719195
 ```
 
-### `dpkg` source package: `icu=55.1-7ubuntu0.2`
+### `dpkg` source package: `icu=55.1-7ubuntu0.3`
 
 Binary Packages:
 
-- `libicu55:amd64=55.1-7ubuntu0.2`
+- `libicu55:amd64=55.1-7ubuntu0.3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris icu=55.1-7ubuntu0.3
+'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_55.1-7ubuntu0.3.dsc' icu_55.1-7ubuntu0.3.dsc 2146 SHA256:209a643d6ae5dd36b1d32a471f48476d4c234154ef80dc930b16b6ce8edfba86
+'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_55.1.orig.tar.gz' icu_55.1.orig.tar.gz 25600847 SHA256:e16b22cbefdd354bec114541f7849a12f8fc2015320ca5282ee4fd787571457b
+'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_55.1-7ubuntu0.3.debian.tar.xz' icu_55.1-7ubuntu0.3.debian.tar.xz 30384 SHA256:818a99068b590c803d1ab524d1dcec2518ced9087cb694549e50304d6891e0bb
+```
 
 ### `dpkg` source package: `ignition-math3=3.2.0-1~xenial`
 
@@ -3774,14 +3784,14 @@ $ apt-get source -qq --print-uris minizip=1.1-8
 'http://archive.ubuntu.com/ubuntu/pool/universe/m/minizip/minizip_1.1-8.debian.tar.xz' minizip_1.1-8.debian.tar.xz 5176 SHA256:29653309f35032c873142dcd555594503710cf27d092b30892408cde922c4e26
 ```
 
-### `dpkg` source package: `mir=0.26.3+16.04.20170605-0ubuntu1`
+### `dpkg` source package: `mir=0.26.3+16.04.20170605-0ubuntu1.1`
 
 Binary Packages:
 
-- `libmirclient9:amd64=0.26.3+16.04.20170605-0ubuntu1`
-- `libmircommon7:amd64=0.26.3+16.04.20170605-0ubuntu1`
-- `libmircore1:amd64=0.26.3+16.04.20170605-0ubuntu1`
-- `libmirprotobuf3:amd64=0.26.3+16.04.20170605-0ubuntu1`
+- `libmirclient9:amd64=0.26.3+16.04.20170605-0ubuntu1.1`
+- `libmircommon7:amd64=0.26.3+16.04.20170605-0ubuntu1.1`
+- `libmircore1:amd64=0.26.3+16.04.20170605-0ubuntu1.1`
+- `libmirprotobuf3:amd64=0.26.3+16.04.20170605-0ubuntu1.1`
 
 Licenses: (parsed from: `/usr/share/doc/libmirclient9/copyright`, `/usr/share/doc/libmircommon7/copyright`, `/usr/share/doc/libmircore1/copyright`, `/usr/share/doc/libmirprotobuf3/copyright`)
 
@@ -3792,9 +3802,14 @@ Licenses: (parsed from: `/usr/share/doc/libmirclient9/copyright`, `/usr/share/do
 - `GPL-3`
 - `LGPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris mir=0.26.3+16.04.20170605-0ubuntu1.1
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mir/mir_0.26.3+16.04.20170605-0ubuntu1.1.dsc' mir_0.26.3+16.04.20170605-0ubuntu1.1.dsc 5199 SHA256:526cd6e739c0ad170393b9846ab7c304db91f15f6ab7ba089b81b8cd13c2b3a1
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mir/mir_0.26.3+16.04.20170605.orig.tar.gz' mir_0.26.3+16.04.20170605.orig.tar.gz 1862434 SHA256:960233f1aa2f134872c130a28b08bce8e8d94d285dd6a319fd40d73b00430f66
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mir/mir_0.26.3+16.04.20170605-0ubuntu1.1.diff.gz' mir_0.26.3+16.04.20170605-0ubuntu1.1.diff.gz 74098 SHA256:4d5d29888003934f4076340e5346bda52ae57f6d34ebbc3d96f5b73dde4e80c0
+```
 
 ### `dpkg` source package: `mtdev=1.1.5-1ubuntu2`
 
@@ -3816,12 +3831,12 @@ $ apt-get source -qq --print-uris mtdev=1.1.5-1ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mtdev/mtdev_1.1.5-1ubuntu2.debian.tar.xz' mtdev_1.1.5-1ubuntu2.debian.tar.xz 6224 SHA256:daf836ba10f7a870df957d1b5fcdb98dca302cbdc901baae91a3d7f6a5b2dd90
 ```
 
-### `dpkg` source package: `mysql-5.7=5.7.19-0ubuntu0.16.04.1`
+### `dpkg` source package: `mysql-5.7=5.7.20-0ubuntu0.16.04.1`
 
 Binary Packages:
 
-- `libmysqlclient20:amd64=5.7.19-0ubuntu0.16.04.1`
-- `mysql-common=5.7.19-0ubuntu0.16.04.1`
+- `libmysqlclient20:amd64=5.7.20-0ubuntu0.16.04.1`
+- `mysql-common=5.7.20-0ubuntu0.16.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libmysqlclient20/copyright`, `/usr/share/doc/mysql-common/copyright`)
 
@@ -3839,9 +3854,14 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient20/copyright`, `/usr/share
 - `public-domain`
 - `zlib/libpng`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris mysql-5.7=5.7.20-0ubuntu0.16.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.20-0ubuntu0.16.04.1.dsc' mysql-5.7_5.7.20-0ubuntu0.16.04.1.dsc 3355 SHA256:eae2eb453b1f0611ec9e8acaa3ff8557237fed9255c7d2c69161bbf72c0c0c20
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.20.orig.tar.gz' mysql-5.7_5.7.20.orig.tar.gz 48833145 SHA256:260582844ac18222ce2826f48b6c7ca387990b19ddb88331af26738b394e42a4
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.20-0ubuntu0.16.04.1.debian.tar.xz' mysql-5.7_5.7.20-0ubuntu0.16.04.1.debian.tar.xz 249780 SHA256:00a6b9a5830fc74033632b771ff3abc07e80c66c8beabcf9167c3942d6ae9b43
+```
 
 ### `dpkg` source package: `ncurses=6.0+20160213-1ubuntu1`
 
@@ -4316,19 +4336,24 @@ $ apt-get source -qq --print-uris perl=5.22.1-9
 'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.22.1-9.debian.tar.xz' perl_5.22.1-9.debian.tar.xz 148292 SHA256:3368488e1d56e9ff69556a2e75cc50858414147afcf5d72f91dbfd71fb5d9127
 ```
 
-### `dpkg` source package: `poppler=0.41.0-0ubuntu1.4`
+### `dpkg` source package: `poppler=0.41.0-0ubuntu1.5`
 
 Binary Packages:
 
-- `libpoppler58:amd64=0.41.0-0ubuntu1.4`
+- `libpoppler58:amd64=0.41.0-0ubuntu1.5`
 
 Licenses: (parsed from: `/usr/share/doc/libpoppler58/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris poppler=0.41.0-0ubuntu1.5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.41.0-0ubuntu1.5.dsc' poppler_0.41.0-0ubuntu1.5.dsc 3356 SHA256:7a7d9003c64efc93f9b2f6f4877912b00e7efdfb04b5f212062ed6faa3e458b1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.41.0.orig.tar.xz' poppler_0.41.0.orig.tar.xz 1655448 SHA256:420abaab63caed9e1ee28964a0ba216d1979506726164bc99ad5ade289192a1b
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.41.0-0ubuntu1.5.debian.tar.xz' poppler_0.41.0-0ubuntu1.5.debian.tar.xz 43752 SHA256:c3b1f60805712060ef636d4668513c7c5f42210a0b411cb96ea77c936c32d36a
+```
 
 ### `dpkg` source package: `postgresql-9.5=9.5.9-0ubuntu0.16.04`
 
@@ -5298,20 +5323,25 @@ $ apt-get source -qq --print-uris wavpack=4.75.2-2
 'http://archive.ubuntu.com/ubuntu/pool/main/w/wavpack/wavpack_4.75.2-2.debian.tar.xz' wavpack_4.75.2-2.debian.tar.xz 5812 SHA256:d96c3ae7e4715e1743bc6b83f432c954a3512973609b0df717731ba706ffc4a8
 ```
 
-### `dpkg` source package: `wayland=1.12.0-1~ubuntu16.04.1`
+### `dpkg` source package: `wayland=1.12.0-1~ubuntu16.04.2`
 
 Binary Packages:
 
-- `libwayland-client0:amd64=1.12.0-1~ubuntu16.04.1`
-- `libwayland-server0:amd64=1.12.0-1~ubuntu16.04.1`
+- `libwayland-client0:amd64=1.12.0-1~ubuntu16.04.2`
+- `libwayland-server0:amd64=1.12.0-1~ubuntu16.04.2`
 
 Licenses: (parsed from: `/usr/share/doc/libwayland-client0/copyright`, `/usr/share/doc/libwayland-server0/copyright`)
 
 - `X11`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris wayland=1.12.0-1~ubuntu16.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wayland/wayland_1.12.0-1~ubuntu16.04.2.dsc' wayland_1.12.0-1~ubuntu16.04.2.dsc 2530 SHA256:aa3a04b982419056632d93825f709e5b4de737a0a5a0b0646ef11ebff2580c16
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wayland/wayland_1.12.0.orig.tar.gz' wayland_1.12.0.orig.tar.gz 575381 SHA256:428537c2887b608cabde189a6450fcade8877e03b063a72c84431b5753a34aef
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wayland/wayland_1.12.0-1~ubuntu16.04.2.diff.gz' wayland_1.12.0-1~ubuntu16.04.2.diff.gz 10457 SHA256:4d21eec0366522d23b961118f404c630106dec9d0f30a656e03aa23727966e24
+```
 
 ### `dpkg` source package: `x264=2:0.148.2643+git5c65704-1`
 

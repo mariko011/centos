@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6fee8c3965aa3adbdc0efbcb8a6eacecc8e23b0462d42fda88dfd2ad9e24aa6f`
-- Created: `2017-10-10T04:18:04.331770415Z`
+- Image ID: `sha256:1273c830bbed71566c174ece857d35d4e685009253c58362d320bd424a925f86`
+- Created: `2017-11-04T13:23:23.6027217Z`
 - Virtual Size: ~ 565.62 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -489,12 +489,12 @@ $ apt-get source -qq --print-uris cups=1.7.2-0ubuntu1.8
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_1.7.2-0ubuntu1.8.debian.tar.gz' cups_1.7.2-0ubuntu1.8.debian.tar.gz 449848 SHA256:252d623db5fed3a3ee38da07d8562995bf0ff33360e290ae7652a2f6ef6cffea
 ```
 
-### `dpkg` source package: `curl=7.35.0-1ubuntu2.10`
+### `dpkg` source package: `curl=7.35.0-1ubuntu2.12`
 
 Binary Packages:
 
-- `libcurl3:amd64=7.35.0-1ubuntu2.10`
-- `libcurl3-gnutls:amd64=7.35.0-1ubuntu2.10`
+- `libcurl3:amd64=7.35.0-1ubuntu2.12`
+- `libcurl3-gnutls:amd64=7.35.0-1ubuntu2.12`
 
 Licenses: (parsed from: `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`)
 
@@ -503,9 +503,14 @@ Licenses: (parsed from: `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/lib
 - `ISC`
 - `curl`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.35.0-1ubuntu2.12
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0-1ubuntu2.12.dsc' curl_7.35.0-1ubuntu2.12.dsc 2741 SHA256:f5f227e98276a594d91ca70a60249b61598eb3765371bbd221dbbbadcfd6fb6f
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0.orig.tar.gz' curl_7.35.0.orig.tar.gz 3544496 SHA256:917d118fc5d61e9dd1538d6519bd93bbebf2e866882419781c2e0fdb2bc42121
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0-1ubuntu2.12.debian.tar.gz' curl_7.35.0-1ubuntu2.12.debian.tar.gz 66603 SHA256:898d89ca9c9d3b4c2242085768bd776e15bc86d93d08a1ddcdab721f71fae998
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.25.dfsg1-17build1`
 
@@ -1332,19 +1337,24 @@ $ apt-get source -qq --print-uris hostname=3.15ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/h/hostname/hostname_3.15ubuntu1.tar.gz' hostname_3.15ubuntu1.tar.gz 13879 SHA256:d85728816111a3eeac24d7e8428a5e907dd4b170544017386111148e86b35ef6
 ```
 
-### `dpkg` source package: `icu=52.1-3ubuntu0.6`
+### `dpkg` source package: `icu=52.1-3ubuntu0.7`
 
 Binary Packages:
 
-- `libicu52:amd64=52.1-3ubuntu0.6`
+- `libicu52:amd64=52.1-3ubuntu0.7`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris icu=52.1-3ubuntu0.7
+'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_52.1-3ubuntu0.7.dsc' icu_52.1-3ubuntu0.7.dsc 2053 SHA256:ea4521c548893944e3f1c86ab050bc77e5c2c2a7af1ef38b7c25d01643e73fa7
+'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_52.1.orig.tar.gz' icu_52.1.orig.tar.gz 23875368 SHA256:2f4d5e68d4698e87759dbdc1a586d053d96935787f79961d192c477b029d8092
+'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_52.1-3ubuntu0.7.debian.tar.gz' icu_52.1-3ubuntu0.7.debian.tar.gz 46620 SHA256:51232b60b934b7baf7da21023a38f881007774e2d03f984d7efbc009c42b46bb
+```
 
 ### `dpkg` source package: `ifupdown=0.7.47.2ubuntu4.4`
 
@@ -3301,12 +3311,12 @@ $ apt-get source -qq --print-uris mpdecimal=2.4.0-6
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mpdecimal/mpdecimal_2.4.0-6.debian.tar.gz' mpdecimal_2.4.0-6.debian.tar.gz 6848 SHA256:26b2b38808550fdd75d59eee5815d49ff0f519f6d68a69072eca4fceda06f876
 ```
 
-### `dpkg` source package: `mysql-5.5=5.5.57-0ubuntu0.14.04.1`
+### `dpkg` source package: `mysql-5.5=5.5.58-0ubuntu0.14.04.1`
 
 Binary Packages:
 
-- `libmysqlclient18:amd64=5.5.57-0ubuntu0.14.04.1`
-- `mysql-common=5.5.57-0ubuntu0.14.04.1`
+- `libmysqlclient18:amd64=5.5.58-0ubuntu0.14.04.1`
+- `mysql-common=5.5.58-0ubuntu0.14.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libmysqlclient18/copyright`, `/usr/share/doc/mysql-common/copyright`)
 
@@ -3324,9 +3334,14 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient18/copyright`, `/usr/share
 - `public-domain`
 - `zlib/libpng`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris mysql-5.5=5.5.58-0ubuntu0.14.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.5/mysql-5.5_5.5.58-0ubuntu0.14.04.1.dsc' mysql-5.5_5.5.58-0ubuntu0.14.04.1.dsc 3173 SHA256:bdb16ce0faae67869b03835359153a9e7fcad78bb669217ba032bfa238406e00
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.5/mysql-5.5_5.5.58.orig.tar.gz' mysql-5.5_5.5.58.orig.tar.gz 21045852 SHA256:9b6912faf261555c8975db24a987f63f36aaa28052a301e85538346ace0009b9
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.5/mysql-5.5_5.5.58-0ubuntu0.14.04.1.debian.tar.gz' mysql-5.5_5.5.58-0ubuntu0.14.04.1.debian.tar.gz 314637 SHA256:a5cac9916bdd34cc91c3126fd4e1c8cdf83c12adf2843179a028069047c9397d
+```
 
 ### `dpkg` source package: `nas=1.9.4-1`
 
@@ -3813,19 +3828,24 @@ $ apt-get source -qq --print-uris plymouth=0.8.8-0ubuntu17.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/plymouth/plymouth_0.8.8-0ubuntu17.1.debian.tar.xz' plymouth_0.8.8-0ubuntu17.1.debian.tar.xz 93684 SHA256:8fc0f5e8cdef374293836932b2edeff58a30ccf157b41a1f7ee68b08ea9af15b
 ```
 
-### `dpkg` source package: `poppler=0.24.5-2ubuntu4.7`
+### `dpkg` source package: `poppler=0.24.5-2ubuntu4.8`
 
 Binary Packages:
 
-- `libpoppler44:amd64=0.24.5-2ubuntu4.7`
+- `libpoppler44:amd64=0.24.5-2ubuntu4.8`
 
 Licenses: (parsed from: `/usr/share/doc/libpoppler44/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris poppler=0.24.5-2ubuntu4.8
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.24.5-2ubuntu4.8.dsc' poppler_0.24.5-2ubuntu4.8.dsc 3328 SHA256:2a982d7e5add65ba68864aea54e8e2806e0a475f0d505818ebbe2cd1f0b60339
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.24.5.orig.tar.xz' poppler_0.24.5.orig.tar.xz 1512476 SHA256:a2654910100c923c44e366242495e226db2798254f2fa2781138867348759f84
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.24.5-2ubuntu4.8.debian.tar.gz' poppler_0.24.5-2ubuntu4.8.debian.tar.gz 57329 SHA256:8e7edcaf84535c64c0f5a04c18ab7e257b0c066cff1387be3b29edd5c319bac0
+```
 
 ### `dpkg` source package: `popt=1.16-8ubuntu1`
 
