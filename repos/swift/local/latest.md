@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:83baa74da88ea5d71d360c6e93eaad06e58ec94b9d224c4a4334ddc988a07a2f`
-- Created: `2017-10-10T21:22:36.943839669Z`
+- Image ID: `sha256:8a4e1bbf1e1b334eb871c35acaa766c6a3d90b1d9d30a62760284b6445b7874e`
+- Created: `2017-11-04T17:31:00.370573901Z`
 - Virtual Size: ~ 1.33 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -370,14 +370,14 @@ $ apt-get source -qq --print-uris cryptsetup=2:1.6.6-5ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cryptsetup/cryptsetup_1.6.6-5ubuntu2.1.debian.tar.xz' cryptsetup_1.6.6-5ubuntu2.1.debian.tar.xz 91808 SHA256:0979ff24a2c4ecc5471a017b286cd7a4ccc497e72854b02aadc21465dcce96e4
 ```
 
-### `dpkg` source package: `curl=7.47.0-1ubuntu2.3`
+### `dpkg` source package: `curl=7.47.0-1ubuntu2.4`
 
 Binary Packages:
 
-- `curl=7.47.0-1ubuntu2.3`
-- `libcurl3:amd64=7.47.0-1ubuntu2.3`
-- `libcurl3-gnutls:amd64=7.47.0-1ubuntu2.3`
-- `libcurl4-openssl-dev:amd64=7.47.0-1ubuntu2.3`
+- `curl=7.47.0-1ubuntu2.4`
+- `libcurl3:amd64=7.47.0-1ubuntu2.4`
+- `libcurl3-gnutls:amd64=7.47.0-1ubuntu2.4`
+- `libcurl4-openssl-dev:amd64=7.47.0-1ubuntu2.4`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
 
@@ -388,9 +388,14 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.47.0-1ubuntu2.4
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0-1ubuntu2.4.dsc' curl_7.47.0-1ubuntu2.4.dsc 2715 SHA256:d6fc4c5cc89128855a269c6edf25548708d0ac3f4745ecce195ef896bb46e810
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0.orig.tar.gz' curl_7.47.0.orig.tar.gz 4563163 SHA256:df01bd42af361978d9de7de8529718bcafe01897a544a7650139a1954c55bdfe
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0-1ubuntu2.4.debian.tar.xz' curl_7.47.0-1ubuntu2.4.debian.tar.xz 43268 SHA256:ff240ddb2f1851f14b0e178b118c40de8fabb55f94b8e8781104453d7a6a254e
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-14build1`
 
@@ -873,11 +878,11 @@ $ apt-get source -qq --print-uris gnupg=1.4.20-1ubuntu3.1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg/gnupg_1.4.20-1ubuntu3.1.debian.tar.xz' gnupg_1.4.20-1ubuntu3.1.debian.tar.xz 38320 SHA256:a299bedd609dd8a8f488db64c6a13361599ba0f906a805730496f9973257d91c
 ```
 
-### `dpkg` source package: `gnutls28=3.4.10-4ubuntu1.3`
+### `dpkg` source package: `gnutls28=3.4.10-4ubuntu1.4`
 
 Binary Packages:
 
-- `libgnutls30:amd64=3.4.10-4ubuntu1.3`
+- `libgnutls30:amd64=3.4.10-4ubuntu1.4`
 
 Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 
@@ -895,10 +900,10 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gnutls28=3.4.10-4ubuntu1.3
-'http://security.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.4.10-4ubuntu1.3.dsc' gnutls28_3.4.10-4ubuntu1.3.dsc 3076 SHA256:fdd0345d4528501ba95271e175b984172ffdb2cfbd7062576be1c6751c7acc6f
-'http://security.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.4.10.orig.tar.xz' gnutls28_3.4.10.orig.tar.xz 6645892 SHA256:6a32c2b4acbd33ff7eefcbd1357009da04c94c60146ef61320b6c076b1bdf59f
-'http://security.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.4.10-4ubuntu1.3.debian.tar.xz' gnutls28_3.4.10-4ubuntu1.3.debian.tar.xz 96112 SHA256:d3609837d6415df3bda609dc4c6eacf657f5e76c4a32cfab606e813ec2e18835
+$ apt-get source -qq --print-uris gnutls28=3.4.10-4ubuntu1.4
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.4.10-4ubuntu1.4.dsc' gnutls28_3.4.10-4ubuntu1.4.dsc 3076 SHA256:48a249686197b4548b2ef1cef1cb71a2ed7c662b2a449fed0987e53c44afc610
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.4.10.orig.tar.xz' gnutls28_3.4.10.orig.tar.xz 6645892 SHA256:6a32c2b4acbd33ff7eefcbd1357009da04c94c60146ef61320b6c076b1bdf59f
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.4.10-4ubuntu1.4.debian.tar.xz' gnutls28_3.4.10-4ubuntu1.4.debian.tar.xz 96568 SHA256:b32bfc6bd9b4c54c83de5ea318e76e5d5e5bfcbd3311179cb472680a7209d880
 ```
 
 ### `dpkg` source package: `grep=2.25-1~16.04.1`
@@ -985,21 +990,26 @@ $ apt-get source -qq --print-uris hostname=3.16ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/h/hostname/hostname_3.16ubuntu2.tar.gz' hostname_3.16ubuntu2.tar.gz 14378 SHA256:e0a38fa03b66abd428e119e5af2cccb78a0462cdb58e2e540e66d964e2719195
 ```
 
-### `dpkg` source package: `icu=55.1-7ubuntu0.2`
+### `dpkg` source package: `icu=55.1-7ubuntu0.3`
 
 Binary Packages:
 
-- `icu-devtools=55.1-7ubuntu0.2`
-- `libicu-dev:amd64=55.1-7ubuntu0.2`
-- `libicu55:amd64=55.1-7ubuntu0.2`
+- `icu-devtools=55.1-7ubuntu0.3`
+- `libicu-dev:amd64=55.1-7ubuntu0.3`
+- `libicu55:amd64=55.1-7ubuntu0.3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris icu=55.1-7ubuntu0.3
+'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_55.1-7ubuntu0.3.dsc' icu_55.1-7ubuntu0.3.dsc 2146 SHA256:209a643d6ae5dd36b1d32a471f48476d4c234154ef80dc930b16b6ce8edfba86
+'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_55.1.orig.tar.gz' icu_55.1.orig.tar.gz 25600847 SHA256:e16b22cbefdd354bec114541f7849a12f8fc2015320ca5282ee4fd787571457b
+'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_55.1-7ubuntu0.3.debian.tar.xz' icu_55.1-7ubuntu0.3.debian.tar.xz 30384 SHA256:818a99068b590c803d1ab524d1dcec2518ced9087cb694549e50304d6891e0bb
+```
 
 ### `dpkg` source package: `ifupdown=0.8.10ubuntu1.2`
 
@@ -1060,11 +1070,11 @@ $ apt-get source -qq --print-uris insserv=1.14.0-5ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/i/insserv/insserv_1.14.0-5ubuntu3.debian.tar.xz' insserv_1.14.0-5ubuntu3.debian.tar.xz 48124 SHA256:a4d0d0703fa398819ab7b4cad573f334feee80aac5520202457519e737b4648a
 ```
 
-### `dpkg` source package: `iproute2=4.3.0-1ubuntu3.16.04.1`
+### `dpkg` source package: `iproute2=4.3.0-1ubuntu3.16.04.2`
 
 Binary Packages:
 
-- `iproute2=4.3.0-1ubuntu3.16.04.1`
+- `iproute2=4.3.0-1ubuntu3.16.04.2`
 
 Licenses: (parsed from: `/usr/share/doc/iproute2/copyright`)
 
@@ -1073,10 +1083,10 @@ Licenses: (parsed from: `/usr/share/doc/iproute2/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris iproute2=4.3.0-1ubuntu3.16.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/i/iproute2/iproute2_4.3.0-1ubuntu3.16.04.1.dsc' iproute2_4.3.0-1ubuntu3.16.04.1.dsc 2477 SHA256:96bec45636dc099bf337e9501fa8230b870a9b2cd960a69942244a6e61b3221b
+$ apt-get source -qq --print-uris iproute2=4.3.0-1ubuntu3.16.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/i/iproute2/iproute2_4.3.0-1ubuntu3.16.04.2.dsc' iproute2_4.3.0-1ubuntu3.16.04.2.dsc 2154 SHA256:305012f91f7e4a9133e50f5af6fcd7e2fa22733c9f40a2222c25809e6bf3e7d7
 'http://archive.ubuntu.com/ubuntu/pool/main/i/iproute2/iproute2_4.3.0.orig.tar.xz' iproute2_4.3.0.orig.tar.xz 525364 SHA256:f03b1188dd6c039512424de82ff7a8f3b446680bd4e908ff42a7b9b137422995
-'http://archive.ubuntu.com/ubuntu/pool/main/i/iproute2/iproute2_4.3.0-1ubuntu3.16.04.1.debian.tar.xz' iproute2_4.3.0-1ubuntu3.16.04.1.debian.tar.xz 30572 SHA256:7f956b07cd707cdcc3a757923ddb849afccf080bdb8b2ddb446b9a692bf9f542
+'http://archive.ubuntu.com/ubuntu/pool/main/i/iproute2/iproute2_4.3.0-1ubuntu3.16.04.2.debian.tar.xz' iproute2_4.3.0-1ubuntu3.16.04.2.debian.tar.xz 30828 SHA256:bf62ded22cf6e998742770f8e40cf4e51805581568bd380600dcebe915f6feef
 ```
 
 ### `dpkg` source package: `iptables=1.6.0-2ubuntu3`
@@ -1836,20 +1846,25 @@ $ apt-get source -qq --print-uris linux-atm=1:2.5.1-1.5
 'http://archive.ubuntu.com/ubuntu/pool/main/l/linux-atm/linux-atm_2.5.1-1.5.debian.tar.gz' linux-atm_2.5.1-1.5.debian.tar.gz 10723 SHA256:9b2325859b3fd008b588a3897e713f52137abae08d1f5a44f5661f45a87f4d29
 ```
 
-### `dpkg` source package: `linux=4.4.0-97.120`
+### `dpkg` source package: `linux=4.4.0-98.121`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.4.0-97.120`
+- `linux-libc-dev:amd64=4.4.0-98.121`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 - `redpine-signals`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=4.4.0-98.121
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-98.121.dsc' linux_4.4.0-98.121.dsc 9286 SHA256:9eef5d7d7b442ef011d8a74ee3557ecea56941c48d3bb8fdda9e6217f6d7e4a8
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-98.121.diff.gz' linux_4.4.0-98.121.diff.gz 13700888 SHA256:8c0a85cef7f045e587354cedc03332c8c5f0e2adf305b74776e5efd3608d55ee
+```
 
 ### `dpkg` source package: `llvm-toolchain-3.8=1:3.8-2ubuntu4`
 
