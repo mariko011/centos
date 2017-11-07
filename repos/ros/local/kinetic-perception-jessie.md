@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:37d246f42af10b05a03379317cb0454578803a1aaf461357df6467bcb8655234`
-- Created: `2017-10-10T03:05:54.814493224Z`
+- Image ID: `sha256:296a82eeba06b53b4fd631e83142e706edfb8b6e1bb52ef1a250aa4e0c8e851c`
+- Created: `2017-11-04T07:29:42.611105376Z`
 - Virtual Size: ~ 1.73 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1017,13 +1017,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/cups/1.7.5-11+deb8u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/cups/1.7.5-11+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `curl=7.38.0-4+deb8u6`
+### `dpkg` source package: `curl=7.38.0-4+deb8u7`
 
 Binary Packages:
 
-- `curl=7.38.0-4+deb8u6`
-- `libcurl3:amd64=7.38.0-4+deb8u6`
-- `libcurl3-gnutls:amd64=7.38.0-4+deb8u6`
+- `curl=7.38.0-4+deb8u7`
+- `libcurl3:amd64=7.38.0-4+deb8u7`
+- `libcurl3-gnutls:amd64=7.38.0-4+deb8u7`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`)
 
@@ -1032,13 +1032,20 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `ISC`
 - `curl`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris curl=7.38.0-4+deb8u7
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0-4+deb8u7.dsc' curl_7.38.0-4+deb8u7.dsc 2694 SHA256:b5bca99d184cfd436d441457df6c5eb660071dab4ff913fc5680278f39c80aa5
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0.orig.tar.gz' curl_7.38.0.orig.tar.gz 4094034 SHA256:5661028aa6532882fa228cd23c99ddbb8b87643dbb1a7ea55c068d34a943dff1
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0-4+deb8u7.debian.tar.xz' curl_7.38.0-4+deb8u7.debian.tar.xz 42300 SHA256:62f8e051409ecbe312a88ba9d4982784742d472d176eec16b4dd19859ae1398d
+```
 
-- http://snapshot.debian.org/package/curl/7.38.0-4+deb8u6/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/curl/7.38.0-4+deb8u7/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.38.0-4+deb8u7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.38.0-4+deb8u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-13+deb8u1`
 
@@ -3353,23 +3360,23 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libasyncns/0.8-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libasyncns/0.8-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libav=6:11.9-1~deb8u1`
+### `dpkg` source package: `libav=6:11.11-1~deb8u1`
 
 Binary Packages:
 
-- `libav-tools=6:11.9-1~deb8u1`
-- `libavcodec-dev=6:11.9-1~deb8u1`
-- `libavcodec56:amd64=6:11.9-1~deb8u1`
-- `libavdevice55:amd64=6:11.9-1~deb8u1`
-- `libavfilter5:amd64=6:11.9-1~deb8u1`
-- `libavformat-dev=6:11.9-1~deb8u1`
-- `libavformat56:amd64=6:11.9-1~deb8u1`
-- `libavresample-dev=6:11.9-1~deb8u1`
-- `libavresample2:amd64=6:11.9-1~deb8u1`
-- `libavutil-dev=6:11.9-1~deb8u1`
-- `libavutil54:amd64=6:11.9-1~deb8u1`
-- `libswscale-dev=6:11.9-1~deb8u1`
-- `libswscale3:amd64=6:11.9-1~deb8u1`
+- `libav-tools=6:11.11-1~deb8u1`
+- `libavcodec-dev=6:11.11-1~deb8u1`
+- `libavcodec56:amd64=6:11.11-1~deb8u1`
+- `libavdevice55:amd64=6:11.11-1~deb8u1`
+- `libavfilter5:amd64=6:11.11-1~deb8u1`
+- `libavformat-dev=6:11.11-1~deb8u1`
+- `libavformat56:amd64=6:11.11-1~deb8u1`
+- `libavresample-dev=6:11.11-1~deb8u1`
+- `libavresample2:amd64=6:11.11-1~deb8u1`
+- `libavutil-dev=6:11.11-1~deb8u1`
+- `libavutil54:amd64=6:11.11-1~deb8u1`
+- `libswscale-dev=6:11.11-1~deb8u1`
+- `libswscale3:amd64=6:11.11-1~deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/libav-tools/copyright`, `/usr/share/doc/libavcodec-dev/copyright`, `/usr/share/doc/libavcodec56/copyright`, `/usr/share/doc/libavdevice55/copyright`, `/usr/share/doc/libavfilter5/copyright`, `/usr/share/doc/libavformat-dev/copyright`, `/usr/share/doc/libavformat56/copyright`, `/usr/share/doc/libavresample-dev/copyright`, `/usr/share/doc/libavresample2/copyright`, `/usr/share/doc/libavutil-dev/copyright`, `/usr/share/doc/libavutil54/copyright`, `/usr/share/doc/libswscale-dev/copyright`, `/usr/share/doc/libswscale3/copyright`)
 
@@ -3388,17 +3395,17 @@ Licenses: (parsed from: `/usr/share/doc/libav-tools/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libav=6:11.9-1~deb8u1
-'http://deb.debian.org/debian/pool/main/liba/libav/libav_11.9-1~deb8u1.dsc' libav_11.9-1~deb8u1.dsc 3987 SHA256:0a2f8959100cdc544408c57992e0993ccc0c540b531f0d1e5f8f612f44ef80a1
-'http://deb.debian.org/debian/pool/main/liba/libav/libav_11.9.orig.tar.xz' libav_11.9.orig.tar.xz 4866404 SHA256:5c41da62f83bf005e34bc7cf862065015bcd821e93bf9df267e870aaac4821f4
-'http://deb.debian.org/debian/pool/main/liba/libav/libav_11.9-1~deb8u1.debian.tar.xz' libav_11.9-1~deb8u1.debian.tar.xz 53360 SHA256:c117f6ee9d973b050f3516e32927687ee7408756cd47e50cef4cecfd334daa6a
+$ apt-get source -qq --print-uris libav=6:11.11-1~deb8u1
+'http://security.debian.org/pool/updates/main/liba/libav/libav_11.11-1~deb8u1.dsc' libav_11.11-1~deb8u1.dsc 3649 SHA256:6596f3a7540cae7233d434de358b62c18bf90bd1a0bd59d6334c9470cf2f4d92
+'http://security.debian.org/pool/updates/main/liba/libav/libav_11.11.orig.tar.gz' libav_11.11.orig.tar.gz 6933011 SHA256:b4f65cbb8d3d96bb02f97b16bd116b3dbc20891cdcd1978907b2fcc564ae57a8
+'http://security.debian.org/pool/updates/main/liba/libav/libav_11.11-1~deb8u1.debian.tar.xz' libav_11.11-1~deb8u1.debian.tar.xz 53856 SHA256:a512eff41fc897e305d63350855f7c9755003a29c01e5054a27c64d1037a99a2
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libav/6:11.9-1~deb8u1/ (for browsing the source)
-- https://sources.debian.net/src/libav/6:11.9-1~deb8u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libav/6:11.9-1~deb8u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libav/6:11.11-1~deb8u1/ (for browsing the source)
+- https://sources.debian.net/src/libav/6:11.11-1~deb8u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libav/6:11.11-1~deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libbsd=0.7.0-2`
 
@@ -6160,13 +6167,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/mpi-defaults/1.0.2+nmu2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/mpi-defaults/1.0.2+nmu2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `mysql-5.5=5.5.57-0+deb8u1`
+### `dpkg` source package: `mysql-5.5=5.5.58-0+deb8u1`
 
 Binary Packages:
 
-- `libmysqlclient-dev=5.5.57-0+deb8u1`
-- `libmysqlclient18:amd64=5.5.57-0+deb8u1`
-- `mysql-common=5.5.57-0+deb8u1`
+- `libmysqlclient-dev=5.5.58-0+deb8u1`
+- `libmysqlclient18:amd64=5.5.58-0+deb8u1`
+- `mysql-common=5.5.58-0+deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/share/doc/libmysqlclient18/copyright`, `/usr/share/doc/mysql-common/copyright`)
 
@@ -6184,13 +6191,20 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris mysql-5.5=5.5.58-0+deb8u1
+'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.58-0+deb8u1.dsc' mysql-5.5_5.5.58-0+deb8u1.dsc 3262 SHA256:5759120be94cf618f8a04595f4c3f82b3d9933c403be6b8b6f567580933f0bd0
+'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.58.orig.tar.gz' mysql-5.5_5.5.58.orig.tar.gz 21045852 SHA256:9b6912faf261555c8975db24a987f63f36aaa28052a301e85538346ace0009b9
+'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.58-0+deb8u1.debian.tar.xz' mysql-5.5_5.5.58-0+deb8u1.debian.tar.xz 232788 SHA256:f1cb1bc0763628a0c076520677a5cac658b8b0b7811d0af1d99433b12a272062
+```
 
-- http://snapshot.debian.org/package/mysql-5.5/5.5.57-0+deb8u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/mysql-5.5/5.5.58-0+deb8u1/ (for browsing the source)
+- https://sources.debian.net/src/mysql-5.5/5.5.58-0+deb8u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/mysql-5.5/5.5.58-0+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `nas=1.9.4-3`
 
@@ -6603,14 +6617,14 @@ $ apt-get source -qq --print-uris openni=1.5.4.0-14~bpo8+1
 'http://packages.ros.org/ros/ubuntu/pool/main/o/openni/openni_1.5.4.0-14~bpo8+1.debian.tar.xz' openni_1.5.4.0-14~bpo8+1.debian.tar.xz 648676 SHA256:f49fc7acc7501e85de8a592aea9e6d8ee195790c024a5a9c52d363bcdd495ed5
 ```
 
-### `dpkg` source package: `openssl=1.0.1t-1+deb8u6`
+### `dpkg` source package: `openssl=1.0.1t-1+deb8u7`
 
 Binary Packages:
 
-- `libssl-dev:amd64=1.0.1t-1+deb8u6`
-- `libssl-doc=1.0.1t-1+deb8u6`
-- `libssl1.0.0:amd64=1.0.1t-1+deb8u6`
-- `openssl=1.0.1t-1+deb8u6`
+- `libssl-dev:amd64=1.0.1t-1+deb8u7`
+- `libssl-doc=1.0.1t-1+deb8u7`
+- `libssl1.0.0:amd64=1.0.1t-1+deb8u7`
+- `openssl=1.0.1t-1+deb8u7`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6619,17 +6633,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=1.0.1t-1+deb8u6
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.0.1t-1+deb8u6.dsc' openssl_1.0.1t-1+deb8u6.dsc 2272 SHA256:c5d2624a9b9de16a8d173c852e84f175757ee838cd3b5efe44683b96a6aa927b
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.0.1t.orig.tar.gz' openssl_1.0.1t.orig.tar.gz 4556447 SHA256:4a6ee491a2fdb22e519c76fdc2a628bb3cec12762cd456861d207996c8a07088
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.0.1t-1+deb8u6.debian.tar.xz' openssl_1.0.1t-1+deb8u6.debian.tar.xz 108424 SHA256:670935107107c20c872174c96c0cd098ffc2c15cac17f5a104af63a1db69cf3a
+$ apt-get source -qq --print-uris openssl=1.0.1t-1+deb8u7
+'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb8u7.dsc' openssl_1.0.1t-1+deb8u7.dsc 2272 SHA256:46829bc5849b471645858281ad9f8560834e143920f40a61798b268714837707
+'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.0.1t.orig.tar.gz' openssl_1.0.1t.orig.tar.gz 4556447 SHA256:4a6ee491a2fdb22e519c76fdc2a628bb3cec12762cd456861d207996c8a07088
+'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb8u7.debian.tar.xz' openssl_1.0.1t-1+deb8u7.debian.tar.xz 108792 SHA256:401809f04158292ad0751b2afe764edabd099cb73cb4395284e1294182de2306
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u6/ (for browsing the source)
-- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/1.0.1t-1+deb8u6/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u7/ (for browsing the source)
+- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/1.0.1t-1+deb8u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `opus=1.1-2`
 
@@ -7248,33 +7262,43 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pulseaudio/5.0-13/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pulseaudio/5.0-13/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `python-catkin-pkg-modules=0.3.7-1`
+### `dpkg` source package: `python-catkin-pkg-modules=0.3.9-1`
 
 Binary Packages:
 
-- `python-catkin-pkg-modules=0.3.7-1`
+- `python-catkin-pkg-modules=0.3.9-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python-catkin-pkg-modules=0.3.9-1
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.3.9-1.dsc' python-catkin-pkg-modules_0.3.9-1.dsc 991 SHA256:8e9173131dd2ebfaf3a73f22749f0291e5e0a473a13a910de0bdb18e547ba442
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.3.9.orig.tar.gz' python-catkin-pkg-modules_0.3.9.orig.tar.gz 45470 SHA256:8c1261c06191cae732c5c264bf6cdddb72815fbd72c4ee0a4cbfa029cda8f3c4
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.3.9-1.debian.tar.xz' python-catkin-pkg-modules_0.3.9-1.debian.tar.xz 1124 SHA256:18642b47fe28503348ed27184540864c98ce09c9222b8904178380e7aa7421e5
+```
 
-### `dpkg` source package: `python-catkin-pkg=0.3.7-100`
+### `dpkg` source package: `python-catkin-pkg=0.3.9-100`
 
 Binary Packages:
 
-- `python-catkin-pkg=0.3.7-100`
+- `python-catkin-pkg=0.3.9-100`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python-catkin-pkg=0.3.9-100
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.3.9-100.dsc' python-catkin-pkg_0.3.9-100.dsc 931 SHA256:f98fda7cef1703292f2041b045455bd5091d57d5e61073bd351ec359e2dab447
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.3.9.orig.tar.gz' python-catkin-pkg_0.3.9.orig.tar.gz 10035 SHA256:e77167ba5bb0757277d8c833692cf8d93ae8fe9ae62e913fb01de5644f385780
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.3.9-100.debian.tar.xz' python-catkin-pkg_0.3.9-100.debian.tar.xz 1120 SHA256:6baab5802fb6390ad641dfae988cf4424f2351bd2e12aac1ab4f6620c2769b7c
+```
 
 ### `dpkg` source package: `python-crypto=2.6.1-5+deb8u1`
 
@@ -7540,33 +7564,43 @@ $ apt-get source -qq --print-uris python-rosinstall=0.7.8-1
 'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosinstall/python-rosinstall_0.7.8-1.debian.tar.gz' python-rosinstall_0.7.8-1.debian.tar.gz 1008 SHA256:218375984f09c4fcfd9febfa9d08af30706a37c83e0c88925e682d84b6d44c7d
 ```
 
-### `dpkg` source package: `python-rospkg-modules=1.1.3-1`
+### `dpkg` source package: `python-rospkg-modules=1.1.4-1`
 
 Binary Packages:
 
-- `python-rospkg-modules=1.1.3-1`
+- `python-rospkg-modules=1.1.4-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python-rospkg-modules=1.1.4-1
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg-modules/python-rospkg-modules_1.1.4-1.dsc' python-rospkg-modules_1.1.4-1.dsc 949 SHA256:ea9de023bfde92f330f5d687b2dd8bee84b70c28d137ce3f5bd9fa73185971ad
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg-modules/python-rospkg-modules_1.1.4.orig.tar.gz' python-rospkg-modules_1.1.4.orig.tar.gz 38432 SHA256:130152ac4fea9ce656e9ade1aca0e663de2363f109e58af8c54d8c871f580ec9
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg-modules/python-rospkg-modules_1.1.4-1.debian.tar.xz' python-rospkg-modules_1.1.4-1.debian.tar.xz 1120 SHA256:b12b5cd1771fb1c71082313d77d4ab1dae01de5144ef8a64117f3f42c7ce0920
+```
 
-### `dpkg` source package: `python-rospkg=1.1.3-100`
+### `dpkg` source package: `python-rospkg=1.1.4-100`
 
 Binary Packages:
 
-- `python-rospkg=1.1.3-100`
+- `python-rospkg=1.1.4-100`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python-rospkg=1.1.4-100
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg/python-rospkg_1.1.4-100.dsc' python-rospkg_1.1.4-100.dsc 889 SHA256:0fb73bd66ace5b3db07430f4d5fe5df18efdee88b400f2b9180b0be5b7715175
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg/python-rospkg_1.1.4.orig.tar.gz' python-rospkg_1.1.4.orig.tar.gz 18041 SHA256:9fbc62a4d919bff3569ff27ee0f07c1edd4b409f0911b6687352aaad8fc77d9e
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg/python-rospkg_1.1.4-100.debian.tar.xz' python-rospkg_1.1.4-100.debian.tar.xz 1092 SHA256:f54bb3e5ed381dcb605f875883120fa83a24f66fde17fd753db2d9cc6770ee6d
+```
 
 ### `dpkg` source package: `python-setuptools=5.5.1-1`
 

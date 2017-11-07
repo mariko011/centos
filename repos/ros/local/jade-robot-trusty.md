@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5e86b502f2f0189a8ab3fee6f922e33fae560eeae118b1fae478adcf152bc238`
-- Created: `2017-09-14T00:37:48.081552701Z`
+- Image ID: `sha256:e07fd6fe0b32ce687b3246b5fbb218e5093495b985099fcf1fc477db0af2f943`
+- Created: `2017-11-04T19:44:42.345828682Z`
 - Virtual Size: ~ 1.05 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -561,11 +561,11 @@ $ apt-get source -qq --print-uris bzr=2.6.0+bzr6593-1ubuntu1.6
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bzr/bzr_2.6.0+bzr6593-1ubuntu1.6.debian.tar.gz' bzr_2.6.0+bzr6593-1ubuntu1.6.debian.tar.gz 53590 SHA256:f1602c6db3ae5f5ba6443a7710c9050631b50a0aa22f1cecce4128f9135d24f6
 ```
 
-### `dpkg` source package: `ca-certificates=20160104ubuntu0.14.04.1`
+### `dpkg` source package: `ca-certificates=20170717~14.04.1`
 
 Binary Packages:
 
-- `ca-certificates=20160104ubuntu0.14.04.1`
+- `ca-certificates=20170717~14.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -573,9 +573,13 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 - `GPL-2+`
 - `MPL-2.0`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris ca-certificates=20170717~14.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20170717~14.04.1.dsc' ca-certificates_20170717~14.04.1.dsc 1862 SHA256:7216d0b4f25af1b13e5fb81ac61efa72f200cff15ae68e97dd0b9f7f76dec4cc
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20170717~14.04.1.tar.gz' ca-certificates_20170717~14.04.1.tar.gz 369186 SHA256:423a82170776597fb6e37e0207e9fc095a70d30dddb8e817692286c744599f97
+```
 
 ### `dpkg` source package: `cairo=1.13.0~20140204-0ubuntu1.1`
 
@@ -839,14 +843,14 @@ $ apt-get source -qq --print-uris cups=1.7.2-0ubuntu1.8
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_1.7.2-0ubuntu1.8.debian.tar.gz' cups_1.7.2-0ubuntu1.8.debian.tar.gz 449848 SHA256:252d623db5fed3a3ee38da07d8562995bf0ff33360e290ae7652a2f6ef6cffea
 ```
 
-### `dpkg` source package: `curl=7.35.0-1ubuntu2.10`
+### `dpkg` source package: `curl=7.35.0-1ubuntu2.12`
 
 Binary Packages:
 
-- `curl=7.35.0-1ubuntu2.10`
-- `libcurl3:amd64=7.35.0-1ubuntu2.10`
-- `libcurl3-gnutls:amd64=7.35.0-1ubuntu2.10`
-- `libcurl4-openssl-dev:amd64=7.35.0-1ubuntu2.10`
+- `curl=7.35.0-1ubuntu2.12`
+- `libcurl3:amd64=7.35.0-1ubuntu2.12`
+- `libcurl3-gnutls:amd64=7.35.0-1ubuntu2.12`
+- `libcurl4-openssl-dev:amd64=7.35.0-1ubuntu2.12`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
 
@@ -855,9 +859,14 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `ISC`
 - `curl`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.35.0-1ubuntu2.12
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0-1ubuntu2.12.dsc' curl_7.35.0-1ubuntu2.12.dsc 2741 SHA256:f5f227e98276a594d91ca70a60249b61598eb3765371bbd221dbbbadcfd6fb6f
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0.orig.tar.gz' curl_7.35.0.orig.tar.gz 3544496 SHA256:917d118fc5d61e9dd1538d6519bd93bbebf2e866882419781c2e0fdb2bc42121
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0-1ubuntu2.12.debian.tar.gz' curl_7.35.0-1ubuntu2.12.debian.tar.gz 66603 SHA256:898d89ca9c9d3b4c2242085768bd776e15bc86d93d08a1ddcdab721f71fae998
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.25.dfsg1-17build1`
 
@@ -1443,29 +1452,34 @@ $ apt-get source -qq --print-uris gdbm=1.8.3-12build1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdbm/gdbm_1.8.3-12build1.debian.tar.bz2' gdbm_1.8.3-12build1.debian.tar.bz2 15091 SHA256:5e511c9a6419501dd31e21af84431f41f8785e0f48d6475ebfc48fa49f20fdba
 ```
 
-### `dpkg` source package: `gdk-pixbuf=2.30.7-0ubuntu1.6`
+### `dpkg` source package: `gdk-pixbuf=2.30.7-0ubuntu1.7`
 
 Binary Packages:
 
-- `libgdk-pixbuf2.0-0:amd64=2.30.7-0ubuntu1.6`
-- `libgdk-pixbuf2.0-common=2.30.7-0ubuntu1.6`
+- `libgdk-pixbuf2.0-0:amd64=2.30.7-0ubuntu1.7`
+- `libgdk-pixbuf2.0-common=2.30.7-0ubuntu1.7`
 
 Licenses: (parsed from: `/usr/share/doc/libgdk-pixbuf2.0-0/copyright`, `/usr/share/doc/libgdk-pixbuf2.0-common/copyright`)
 
 - `GPL-2`
 - `LGPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris gdk-pixbuf=2.30.7-0ubuntu1.7
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.30.7-0ubuntu1.7.dsc' gdk-pixbuf_2.30.7-0ubuntu1.7.dsc 2887 SHA256:700ffa19dd9f232ad42790dd9548f6fcafa24c8fb3299145141ce5074e5e9d7a
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.30.7.orig.tar.xz' gdk-pixbuf_2.30.7.orig.tar.xz 1329096 SHA256:0aafc365eab1083a53f15e4828333b968219ffcb1a995ac6289c0147c9ffad06
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.30.7-0ubuntu1.7.debian.tar.gz' gdk-pixbuf_2.30.7-0ubuntu1.7.debian.tar.gz 24062 SHA256:b77950266789fedc80b3cc9c6d5e4a470f989647831a8fbd3f205a90013d0d5b
+```
 
-### `dpkg` source package: `git=1:1.9.1-1ubuntu0.6`
+### `dpkg` source package: `git=1:1.9.1-1ubuntu0.7`
 
 Binary Packages:
 
-- `git=1:1.9.1-1ubuntu0.6`
-- `git-core=1:1.9.1-1ubuntu0.6`
-- `git-man=1:1.9.1-1ubuntu0.6`
+- `git=1:1.9.1-1ubuntu0.7`
+- `git-core=1:1.9.1-1ubuntu0.7`
+- `git-man=1:1.9.1-1ubuntu0.7`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-core/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -1488,9 +1502,14 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-core
 - `dlmalloc`
 - `mingw-runtime`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris git=1:1.9.1-1ubuntu0.7
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_1.9.1-1ubuntu0.7.dsc' git_1.9.1-1ubuntu0.7.dsc 2794 SHA256:c2ed2e126332c78a7987263fd1cd15612a186fd19d8d172373f760be7f4af64d
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_1.9.1.orig.tar.xz' git_1.9.1.orig.tar.xz 3384080 SHA256:f962fbce8c049f94ece1d1845cba1528c13ff82de7cc8d23cddb3d0c93c3a77b
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_1.9.1-1ubuntu0.7.debian.tar.gz' git_1.9.1-1ubuntu0.7.debian.tar.gz 629149 SHA256:4d65dfaf0e509bfbf54354408bcc329c7073a6dddc6fbe300c6a3bdb41a7ae25
+```
 
 ### `dpkg` source package: `glib2.0=2.40.2-0ubuntu1`
 
@@ -1883,21 +1902,26 @@ $ apt-get source -qq --print-uris hwloc=1.8-1ubuntu1.14.04.1
 'http://archive.ubuntu.com/ubuntu/pool/universe/h/hwloc/hwloc_1.8-1ubuntu1.14.04.1.debian.tar.bz2' hwloc_1.8-1ubuntu1.14.04.1.debian.tar.bz2 9586 SHA256:cbbec6aefa701e7c732284a4abf67c1b3c6f2e8b315406d44a67b695d7a59f9a
 ```
 
-### `dpkg` source package: `icu=52.1-3ubuntu0.6`
+### `dpkg` source package: `icu=52.1-3ubuntu0.7`
 
 Binary Packages:
 
-- `icu-devtools=52.1-3ubuntu0.6`
-- `libicu-dev:amd64=52.1-3ubuntu0.6`
-- `libicu52:amd64=52.1-3ubuntu0.6`
+- `icu-devtools=52.1-3ubuntu0.7`
+- `libicu-dev:amd64=52.1-3ubuntu0.7`
+- `libicu52:amd64=52.1-3ubuntu0.7`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris icu=52.1-3ubuntu0.7
+'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_52.1-3ubuntu0.7.dsc' icu_52.1-3ubuntu0.7.dsc 2053 SHA256:ea4521c548893944e3f1c86ab050bc77e5c2c2a7af1ef38b7c25d01643e73fa7
+'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_52.1.orig.tar.gz' icu_52.1.orig.tar.gz 23875368 SHA256:2f4d5e68d4698e87759dbdc1a586d053d96935787f79961d192c477b029d8092
+'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_52.1-3ubuntu0.7.debian.tar.gz' icu_52.1-3ubuntu0.7.debian.tar.gz 46620 SHA256:51232b60b934b7baf7da21023a38f881007774e2d03f984d7efbc009c42b46bb
+```
 
 ### `dpkg` source package: `ifupdown=0.7.47.2ubuntu4.4`
 
@@ -2599,12 +2623,12 @@ $ apt-get source -qq --print-uris libice=2:1.0.8-2
 'http://archive.ubuntu.com/ubuntu/pool/main/libi/libice/libice_1.0.8-2.diff.gz' libice_1.0.8-2.diff.gz 15480 SHA256:1c0d0174a668ced313c2478d733318ba0769892bbf12def235e2261277916a8a
 ```
 
-### `dpkg` source package: `libidn=1.28-1ubuntu2.1`
+### `dpkg` source package: `libidn=1.28-1ubuntu2.2`
 
 Binary Packages:
 
-- `libidn11:amd64=1.28-1ubuntu2.1`
-- `libidn11-dev=1.28-1ubuntu2.1`
+- `libidn11:amd64=1.28-1ubuntu2.2`
+- `libidn11-dev=1.28-1ubuntu2.2`
 
 Licenses: (parsed from: `/usr/share/doc/libidn11/copyright`, `/usr/share/doc/libidn11-dev/copyright`)
 
@@ -2620,9 +2644,14 @@ Licenses: (parsed from: `/usr/share/doc/libidn11/copyright`, `/usr/share/doc/lib
 - `LGPL-3`
 - `LGPL-3+ | GPL-2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libidn=1.28-1ubuntu2.2
+'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn/libidn_1.28-1ubuntu2.2.dsc' libidn_1.28-1ubuntu2.2.dsc 2264 SHA256:352e6d646209d73450263b5d28eaa285340a5ef979924720b3ce8f467b2e1992
+'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn/libidn_1.28.orig.tar.gz' libidn_1.28.orig.tar.gz 3476317 SHA256:dd357a968449abc97c7e5fa088a4a384de57cb36564f9d4e0d898ecc6373abfb
+'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn/libidn_1.28-1ubuntu2.2.debian.tar.gz' libidn_1.28-1ubuntu2.2.debian.tar.gz 48795 SHA256:856416d57414dd7737049073e01a0d0b9d0297fde9139f2edf234427d943638e
+```
 
 ### `dpkg` source package: `libjpeg-turbo=1.3.0-0ubuntu2`
 
@@ -3390,20 +3419,25 @@ $ apt-get source -qq --print-uris libxinerama=2:1.1.3-1
 'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxinerama/libxinerama_1.1.3-1.diff.gz' libxinerama_1.1.3-1.diff.gz 15738 SHA256:2b1487e3511ddabfec666a62f6e5e8ac4f97536b0d53c51f7bf4cbe07508a130
 ```
 
-### `dpkg` source package: `libxml2=2.9.1+dfsg1-3ubuntu4.9`
+### `dpkg` source package: `libxml2=2.9.1+dfsg1-3ubuntu4.10`
 
 Binary Packages:
 
-- `libxml2:amd64=2.9.1+dfsg1-3ubuntu4.9`
-- `libxml2-dev:amd64=2.9.1+dfsg1-3ubuntu4.9`
+- `libxml2:amd64=2.9.1+dfsg1-3ubuntu4.10`
+- `libxml2-dev:amd64=2.9.1+dfsg1-3ubuntu4.10`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libxml2=2.9.1+dfsg1-3ubuntu4.10
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.1+dfsg1-3ubuntu4.10.dsc' libxml2_2.9.1+dfsg1-3ubuntu4.10.dsc 2717 SHA256:55854e06361d4cdd263aaf22ba784d75cca8cd7ab51468a33b646abc69f8cd04
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.1+dfsg1.orig.tar.gz' libxml2_2.9.1+dfsg1.orig.tar.gz 3793894 SHA256:f3ec5256412192f74833286c4490672500b232ed1c9195214db2c641df064a28
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.1+dfsg1-3ubuntu4.10.debian.tar.gz' libxml2_2.9.1+dfsg1-3ubuntu4.10.debian.tar.gz 80309 SHA256:a48de235efe2f764c488ecddd5f1d73f1bc60fbf900518dc278e6edabcd1874c
+```
 
 ### `dpkg` source package: `libxmu=2:1.1.1-1`
 
@@ -3557,19 +3591,24 @@ $ apt-get source -qq --print-uris libyaml=0.1.4-3ubuntu3.1
 'http://archive.ubuntu.com/ubuntu/pool/main/liby/libyaml/libyaml_0.1.4-3ubuntu3.1.debian.tar.gz' libyaml_0.1.4-3ubuntu3.1.debian.tar.gz 6404 SHA256:816422e1c743180409aff9247f3a298c8f98260d91da29c7315ce8bd576d53c2
 ```
 
-### `dpkg` source package: `linux=3.13.0-129.178`
+### `dpkg` source package: `linux=3.13.0-135.184`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.13.0-129.178`
+- `linux-libc-dev:amd64=3.13.0-135.184`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=3.13.0-135.184
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-135.184.dsc' linux_3.13.0-135.184.dsc 7796 SHA256:165d4163ebdb21909fe3ee31727bbed27527a33521d1db937bc64882cef1fa94
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0.orig.tar.gz' linux_3.13.0.orig.tar.gz 116419243 SHA256:073d6a589655031564407e349c86a316941fc26ef3444bb73a092b43a48347ec
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-135.184.diff.gz' linux_3.13.0-135.184.diff.gz 9517859 SHA256:ba672a31c7e99e564aff5cdbe41f95f840feb71d427f120d927f6c6d1159f0c4
+```
 
 ### `dpkg` source package: `lksctp-tools=1.0.15+dfsg-1`
 
@@ -3996,13 +4035,13 @@ $ apt-get source -qq --print-uris mpi-defaults=1.0.2ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/universe/m/mpi-defaults/mpi-defaults_1.0.2ubuntu1.tar.gz' mpi-defaults_1.0.2ubuntu1.tar.gz 3648 SHA256:9217770e757a716021d24391b24b796bb5e4d7b0a7235a5d8c06acbe9e46106c
 ```
 
-### `dpkg` source package: `mysql-5.5=5.5.57-0ubuntu0.14.04.1`
+### `dpkg` source package: `mysql-5.5=5.5.58-0ubuntu0.14.04.1`
 
 Binary Packages:
 
-- `libmysqlclient-dev=5.5.57-0ubuntu0.14.04.1`
-- `libmysqlclient18:amd64=5.5.57-0ubuntu0.14.04.1`
-- `mysql-common=5.5.57-0ubuntu0.14.04.1`
+- `libmysqlclient-dev=5.5.58-0ubuntu0.14.04.1`
+- `libmysqlclient18:amd64=5.5.58-0ubuntu0.14.04.1`
+- `mysql-common=5.5.58-0ubuntu0.14.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/share/doc/libmysqlclient18/copyright`, `/usr/share/doc/mysql-common/copyright`)
 
@@ -4020,9 +4059,14 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris mysql-5.5=5.5.58-0ubuntu0.14.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.5/mysql-5.5_5.5.58-0ubuntu0.14.04.1.dsc' mysql-5.5_5.5.58-0ubuntu0.14.04.1.dsc 3173 SHA256:bdb16ce0faae67869b03835359153a9e7fcad78bb669217ba032bfa238406e00
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.5/mysql-5.5_5.5.58.orig.tar.gz' mysql-5.5_5.5.58.orig.tar.gz 21045852 SHA256:9b6912faf261555c8975db24a987f63f36aaa28052a301e85538346ace0009b9
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.5/mysql-5.5_5.5.58-0ubuntu0.14.04.1.debian.tar.gz' mysql-5.5_5.5.58-0ubuntu0.14.04.1.debian.tar.gz 314637 SHA256:a5cac9916bdd34cc91c3126fd4e1c8cdf83c12adf2843179a028069047c9397d
+```
 
 ### `dpkg` source package: `ncurses=5.9+20140118-1ubuntu1`
 
@@ -4306,14 +4350,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=1.0.1f-1ubuntu2.22
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1f-1ubuntu2.22.dsc' openssl_1.0.1f-1ubuntu2.22.dsc 2370 SHA256:fdea4b46fcb0fec442fe2538916c82f99f27d8074e3ab34c4a9f3cc58bf9be0c
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1f.orig.tar.gz' openssl_1.0.1f.orig.tar.gz 4509212 SHA256:6cc2a80b17d64de6b7bac985745fdaba971d54ffd7d38d3556f998d7c0c9cb5a
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1f-1ubuntu2.22.debian.tar.gz' openssl_1.0.1f-1ubuntu2.22.debian.tar.gz 267203 SHA256:a38163b80c8d9ecad888676a56d4a4d761937f773495366f836dc0f76f6a9e43
-```
 
 ### `dpkg` source package: `orc=1:0.4.18-1ubuntu1`
 
@@ -4633,12 +4672,12 @@ $ apt-get source -qq --print-uris popt=1.16-8ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/popt/popt_1.16-8ubuntu1.debian.tar.gz' popt_1.16-8ubuntu1.debian.tar.gz 15563 SHA256:f56a14f2dd571a3f14f0d340d54e502b50ae5fcae3f9303b93d9cc0f20c8cf29
 ```
 
-### `dpkg` source package: `postgresql-9.3=9.3.18-0ubuntu0.14.04.1`
+### `dpkg` source package: `postgresql-9.3=9.3.19-0ubuntu0.14.04`
 
 Binary Packages:
 
-- `libpq-dev=9.3.18-0ubuntu0.14.04.1`
-- `libpq5=9.3.18-0ubuntu0.14.04.1`
+- `libpq-dev=9.3.19-0ubuntu0.14.04`
+- `libpq5=9.3.19-0ubuntu0.14.04`
 
 Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/libpq5/copyright`)
 
@@ -4650,10 +4689,10 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 Source:
 
 ```console
-$ apt-get source -qq --print-uris postgresql-9.3=9.3.18-0ubuntu0.14.04.1
-'http://security.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.18-0ubuntu0.14.04.1.dsc' postgresql-9.3_9.3.18-0ubuntu0.14.04.1.dsc 3463 SHA256:91500b2c4f89a0884c1edf59edcd7f3bb3610b3d4bc96470f33e146c7f27b2a9
-'http://security.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.18.orig.tar.bz2' postgresql-9.3_9.3.18.orig.tar.bz2 17194269 SHA256:ad60d12a5a3dd0f6f5904c41b87e43eff49d3f74e45129fe52c5744366ff2fe0
-'http://security.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.18-0ubuntu0.14.04.1.debian.tar.gz' postgresql-9.3_9.3.18-0ubuntu0.14.04.1.debian.tar.gz 33642 SHA256:2786ae82db55203adae022dee359cd8e50c2c5ba6b46421d39cd5fa73b3c6811
+$ apt-get source -qq --print-uris postgresql-9.3=9.3.19-0ubuntu0.14.04
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.19-0ubuntu0.14.04.dsc' postgresql-9.3_9.3.19-0ubuntu0.14.04.dsc 3595 SHA256:b55c927d79067964642e3f049c4b9f7554e0573f6bd5a491fe00faf25ab6898c
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.19.orig.tar.bz2' postgresql-9.3_9.3.19.orig.tar.bz2 17190203 SHA256:fb9e872cd9e927ba331690d86bc63dcb5a596acb7a536fa0518a3c7d43ac2fb5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.19-0ubuntu0.14.04.debian.tar.xz' postgresql-9.3_9.3.19-0ubuntu0.14.04.debian.tar.xz 29520 SHA256:48a64bf817b60d65720fd377e261a6a9c03ed360ffdfed96d94ce94da6fc80d0
 ```
 
 ### `dpkg` source package: `procps=1:3.3.9-1ubuntu2.2`
@@ -4716,33 +4755,43 @@ $ apt-get source -qq --print-uris pycurl=7.19.3-0ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pycurl/pycurl_7.19.3-0ubuntu3.debian.tar.gz' pycurl_7.19.3-0ubuntu3.debian.tar.gz 8117 SHA256:d81d5f56339ed934b1b99aec2b1a0858e530d27b4daf4cf09712aa715c053826
 ```
 
-### `dpkg` source package: `python-catkin-pkg-modules=0.3.6-1`
+### `dpkg` source package: `python-catkin-pkg-modules=0.3.9-1`
 
 Binary Packages:
 
-- `python-catkin-pkg-modules=0.3.6-1`
+- `python-catkin-pkg-modules=0.3.9-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python-catkin-pkg-modules=0.3.9-1
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.3.9-1.dsc' python-catkin-pkg-modules_0.3.9-1.dsc 991 SHA256:8e9173131dd2ebfaf3a73f22749f0291e5e0a473a13a910de0bdb18e547ba442
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.3.9.orig.tar.gz' python-catkin-pkg-modules_0.3.9.orig.tar.gz 45470 SHA256:8c1261c06191cae732c5c264bf6cdddb72815fbd72c4ee0a4cbfa029cda8f3c4
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.3.9-1.debian.tar.xz' python-catkin-pkg-modules_0.3.9-1.debian.tar.xz 1124 SHA256:18642b47fe28503348ed27184540864c98ce09c9222b8904178380e7aa7421e5
+```
 
-### `dpkg` source package: `python-catkin-pkg=0.3.6-1`
+### `dpkg` source package: `python-catkin-pkg=0.3.9-100`
 
 Binary Packages:
 
-- `python-catkin-pkg=0.3.6-1`
+- `python-catkin-pkg=0.3.9-100`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python-catkin-pkg=0.3.9-100
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.3.9-100.dsc' python-catkin-pkg_0.3.9-100.dsc 931 SHA256:f98fda7cef1703292f2041b045455bd5091d57d5e61073bd351ec359e2dab447
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.3.9.orig.tar.gz' python-catkin-pkg_0.3.9.orig.tar.gz 10035 SHA256:e77167ba5bb0757277d8c833692cf8d93ae8fe9ae62e913fb01de5644f385780
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.3.9-100.debian.tar.xz' python-catkin-pkg_0.3.9-100.debian.tar.xz 1120 SHA256:6baab5802fb6390ad641dfae988cf4424f2351bd2e12aac1ab4f6620c2769b7c
+```
 
 ### `dpkg` source package: `python-crypto=2.6.1-4ubuntu0.2`
 
@@ -4961,33 +5010,43 @@ $ apt-get source -qq --print-uris python-rosinstall=0.7.8-1
 'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosinstall/python-rosinstall_0.7.8-1.debian.tar.gz' python-rosinstall_0.7.8-1.debian.tar.gz 1008 SHA256:218375984f09c4fcfd9febfa9d08af30706a37c83e0c88925e682d84b6d44c7d
 ```
 
-### `dpkg` source package: `python-rospkg-modules=1.1.2-1`
+### `dpkg` source package: `python-rospkg-modules=1.1.4-1`
 
 Binary Packages:
 
-- `python-rospkg-modules=1.1.2-1`
+- `python-rospkg-modules=1.1.4-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python-rospkg-modules=1.1.4-1
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg-modules/python-rospkg-modules_1.1.4-1.dsc' python-rospkg-modules_1.1.4-1.dsc 949 SHA256:ea9de023bfde92f330f5d687b2dd8bee84b70c28d137ce3f5bd9fa73185971ad
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg-modules/python-rospkg-modules_1.1.4.orig.tar.gz' python-rospkg-modules_1.1.4.orig.tar.gz 38432 SHA256:130152ac4fea9ce656e9ade1aca0e663de2363f109e58af8c54d8c871f580ec9
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg-modules/python-rospkg-modules_1.1.4-1.debian.tar.xz' python-rospkg-modules_1.1.4-1.debian.tar.xz 1120 SHA256:b12b5cd1771fb1c71082313d77d4ab1dae01de5144ef8a64117f3f42c7ce0920
+```
 
-### `dpkg` source package: `python-rospkg=1.1.2-1`
+### `dpkg` source package: `python-rospkg=1.1.4-100`
 
 Binary Packages:
 
-- `python-rospkg=1.1.2-1`
+- `python-rospkg=1.1.4-100`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python-rospkg=1.1.4-100
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg/python-rospkg_1.1.4-100.dsc' python-rospkg_1.1.4-100.dsc 889 SHA256:0fb73bd66ace5b3db07430f4d5fe5df18efdee88b400f2b9180b0be5b7715175
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg/python-rospkg_1.1.4.orig.tar.gz' python-rospkg_1.1.4.orig.tar.gz 18041 SHA256:9fbc62a4d919bff3569ff27ee0f07c1edd4b409f0911b6687352aaad8fc77d9e
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg/python-rospkg_1.1.4-100.debian.tar.xz' python-rospkg_1.1.4-100.debian.tar.xz 1092 SHA256:f54bb3e5ed381dcb605f875883120fa83a24f66fde17fd753db2d9cc6770ee6d
+```
 
 ### `dpkg` source package: `python-setuptools=3.3-1ubuntu2`
 
