@@ -1,10 +1,10 @@
-# `openjdk:8u141-jdk-slim`
+# `openjdk:8u151-jdk-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4c6a18e83c0d0662588565f2c6b3d175f89f5f83aa2c5ae00c2c191f27ea05c8`
-- Created: `2017-10-10T00:50:14.747202201Z`
-- Virtual Size: ~ 246.56 Mb  
+- Image ID: `sha256:22f79f57057d71c26df8b00993c2bc7164951c064beb5e7b31aebb9785c7e55b`
+- Created: `2017-11-04T05:48:10.986453356Z`
+- Virtual Size: ~ 244.06 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/docker-java-home`
-  - `JAVA_VERSION=8u141`
-  - `JAVA_DEBIAN_VERSION=8u141-b15-1~deb9u1`
+  - `JAVA_VERSION=8u151`
+  - `JAVA_DEBIAN_VERSION=8u151-b12-1~deb9u1`
   - `CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1`
 
 ## `dpkg` (`.deb`-based packages)
@@ -1888,11 +1888,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nspr/2:4.12-6/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nspr/2:4.12-6/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `nss=2:3.26.2-1.1`
+### `dpkg` source package: `nss=2:3.26.2-1.1+deb9u1`
 
 Binary Packages:
 
-- `libnss3:amd64=2:3.26.2-1.1`
+- `libnss3:amd64=2:3.26.2-1.1+deb9u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1901,24 +1901,24 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris nss=2:3.26.2-1.1
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.26.2-1.1.dsc' nss_3.26.2-1.1.dsc 2400 SHA256:78788486311be767ca54f5b72dfd2948db13d659a836d12f157d89aa09bd3043
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.26.2.orig.tar.gz' nss_3.26.2.orig.tar.gz 7388390 SHA256:13a40a2f97edf5fab3d4c7fdd928e77df36dc539cd8354b6b5d79ab93a131a5a
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.26.2-1.1.debian.tar.xz' nss_3.26.2-1.1.debian.tar.xz 29880 SHA256:64ac3a3361bde8f63659b648b32fd8c13a5d8bd2fb924588392168641cbbece9
+$ apt-get source -qq --print-uris nss=2:3.26.2-1.1+deb9u1
+'http://security.debian.org/pool/updates/main/n/nss/nss_3.26.2-1.1+deb9u1.dsc' nss_3.26.2-1.1+deb9u1.dsc 2428 SHA256:4b77f525bb3d67ddec4bf5f108d8fc7873191de997e0c0aec07c494425b089de
+'http://security.debian.org/pool/updates/main/n/nss/nss_3.26.2.orig.tar.gz' nss_3.26.2.orig.tar.gz 7388390 SHA256:13a40a2f97edf5fab3d4c7fdd928e77df36dc539cd8354b6b5d79ab93a131a5a
+'http://security.debian.org/pool/updates/main/n/nss/nss_3.26.2-1.1+deb9u1.debian.tar.xz' nss_3.26.2-1.1+deb9u1.debian.tar.xz 30820 SHA256:f87d64233afcbb25bf9253064a1508c3adf49f01ed6068d4968231d09ff0d87c
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/nss/2:3.26.2-1.1/ (for browsing the source)
-- https://sources.debian.net/src/nss/2:3.26.2-1.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nss/2:3.26.2-1.1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/nss/2:3.26.2-1.1+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/nss/2:3.26.2-1.1+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/nss/2:3.26.2-1.1+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openjdk-8=8u141-b15-1~deb9u1`
+### `dpkg` source package: `openjdk-8=8u151-b12-1~deb9u1`
 
 Binary Packages:
 
-- `openjdk-8-jdk-headless:amd64=8u141-b15-1~deb9u1`
-- `openjdk-8-jre-headless:amd64=8u141-b15-1~deb9u1`
+- `openjdk-8-jdk-headless:amd64=8u151-b12-1~deb9u1`
+- `openjdk-8-jre-headless:amd64=8u151-b12-1~deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-8-jdk-headless/copyright`, `/usr/share/doc/openjdk-8-jre-headless/copyright`)
 
@@ -1930,24 +1930,24 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-8-jdk-headless/copyright`, `/usr
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openjdk-8=8u141-b15-1~deb9u1
-'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u141-b15-1~deb9u1.dsc' openjdk-8_8u141-b15-1~deb9u1.dsc 4486 SHA256:deaca5cb2c51cd0c5b1938ce866b0833e021da48ead87b9fc538bc9e835bb44e
-'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u141-b15.orig.tar.gz' openjdk-8_8u141-b15.orig.tar.gz 64099346 SHA256:906bcbecce35e0bda53d6c431c22282cf5aba9367e842efa82426c7e9214cf64
-'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u141-b15-1~deb9u1.debian.tar.xz' openjdk-8_8u141-b15-1~deb9u1.debian.tar.xz 244640 SHA256:f6f095413a07b92aa48f22405f803424a28abf66a3fb4adc137fc490f978d156
+$ apt-get source -qq --print-uris openjdk-8=8u151-b12-1~deb9u1
+'http://security.debian.org/pool/updates/main/o/openjdk-8/openjdk-8_8u151-b12-1~deb9u1.dsc' openjdk-8_8u151-b12-1~deb9u1.dsc 4492 SHA256:e70cb66087b60c312ba4698f1ebd9b0e5656ecbe34160e859c2f9f20bd500d22
+'http://security.debian.org/pool/updates/main/o/openjdk-8/openjdk-8_8u151-b12.orig.tar.gz' openjdk-8_8u151-b12.orig.tar.gz 70121877 SHA256:3a81eb858ceadaab9a14190aae800aace0f1b5f86b2e9707b9a9e30b7aca248c
+'http://security.debian.org/pool/updates/main/o/openjdk-8/openjdk-8_8u151-b12-1~deb9u1.debian.tar.xz' openjdk-8_8u151-b12-1~deb9u1.debian.tar.xz 252852 SHA256:0783962cae94181a9b1414cddccd5dd1a4d331c8439cf5bacdc76f3a319e658c
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openjdk-8/8u141-b15-1~deb9u1/ (for browsing the source)
-- https://sources.debian.net/src/openjdk-8/8u141-b15-1~deb9u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openjdk-8/8u141-b15-1~deb9u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openjdk-8/8u151-b12-1~deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/openjdk-8/8u151-b12-1~deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openjdk-8/8u151-b12-1~deb9u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=1.1.0f-3`
+### `dpkg` source package: `openssl=1.1.0f-3+deb9u1`
 
 Binary Packages:
 
-- `libssl1.1:amd64=1.1.0f-3`
-- `openssl=1.1.0f-3`
+- `libssl1.1:amd64=1.1.0f-3+deb9u1`
+- `openssl=1.1.0f-3+deb9u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1956,18 +1956,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=1.1.0f-3
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0f-3.dsc' openssl_1.1.0f-3.dsc 2583 SHA256:a4d69ed8c10134374d86fee593e85bb5165e6d539ab86294e40532a3ed276642
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0f.orig.tar.gz' openssl_1.1.0f.orig.tar.gz 5278176 SHA256:12f746f3f2493b2f39da7ecf63d7ee19c6ac9ec6a4fcd8c229da8a522cb12765
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0f.orig.tar.gz.asc' openssl_1.1.0f.orig.tar.gz.asc 455 SHA256:9f2feb0494ebcc1cf152d95a11bc966cb94bc1957d88650285db3966866801b0
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0f-3.debian.tar.xz' openssl_1.1.0f-3.debian.tar.xz 54152 SHA256:2b1ca97264b073345375a69ee95e32a9850f0288462bc58e9054dfa769f14806
+$ apt-get source -qq --print-uris openssl=1.1.0f-3+deb9u1
+'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.1.0f-3+deb9u1.dsc' openssl_1.1.0f-3+deb9u1.dsc 2364 SHA256:cc7066295b79a26159b302eef05d1310c6593a1f2faafe28c2b7783704154489
+'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.1.0f.orig.tar.gz' openssl_1.1.0f.orig.tar.gz 5278176 SHA256:12f746f3f2493b2f39da7ecf63d7ee19c6ac9ec6a4fcd8c229da8a522cb12765
+'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.1.0f-3+deb9u1.debian.tar.xz' openssl_1.1.0f-3+deb9u1.debian.tar.xz 54944 SHA256:d9078cf382dad406a890198efd663e29f5bbacaf2c566ed0d77755989aca2932
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openssl/1.1.0f-3/ (for browsing the source)
-- https://sources.debian.net/src/openssl/1.1.0f-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/1.1.0f-3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openssl/1.1.0f-3+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/openssl/1.1.0f-3+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/1.1.0f-3+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.23.3-2`
 

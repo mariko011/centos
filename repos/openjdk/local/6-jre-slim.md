@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f67d2529816afed3a5d9a6d048f301e9e1d041bace66d269892ccca87932de0b`
-- Created: `2017-10-10T00:36:17.390092682Z`
-- Virtual Size: ~ 147.90 Mb  
+- Image ID: `sha256:0be5d63f60311642930328273720be7833768dcaa6db265cb43487faa616e7f0`
+- Created: `2017-11-04T05:37:20.553516141Z`
+- Virtual Size: ~ 149.56 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -1421,23 +1421,30 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nspr/2:4.12-1+deb7u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nspr/2:4.12-1+deb7u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `nss=2:3.26-1+debu7u4`
+### `dpkg` source package: `nss=2:3.26-1+debu7u5`
 
 Binary Packages:
 
-- `libnss3:amd64=2:3.26-1+debu7u4`
+- `libnss3:amd64=2:3.26-1+debu7u5`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris nss=2:3.26-1+debu7u5
+'http://security.debian.org/pool/updates/main/n/nss/nss_3.26-1+debu7u5.dsc' nss_3.26-1+debu7u5.dsc 2215 SHA256:e8b0c59a24be3cb6154794321a90edc476812b704e76ec4fb0419448b628cd13
+'http://security.debian.org/pool/updates/main/n/nss/nss_3.26.orig.tar.gz' nss_3.26.orig.tar.gz 7386943 SHA256:91783a570ab953693eb977ce47c501f04c104cec287fa011c91bcc8970d1c564
+'http://security.debian.org/pool/updates/main/n/nss/nss_3.26-1+debu7u5.debian.tar.gz' nss_3.26-1+debu7u5.debian.tar.gz 43117 SHA256:87aaea476e18950fdb8c0d882615902558636f56aabb4108edce51554021155f
+```
 
-- http://snapshot.debian.org/package/nss/2:3.26-1+debu7u4/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/nss/2:3.26-1+debu7u5/ (for browsing the source)
+- https://sources.debian.net/src/nss/2:3.26-1+debu7u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/nss/2:3.26-1+debu7u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openjdk-6=6b38-1.13.10-1~deb7u1`
 
@@ -1857,24 +1864,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tar/1.26+dfsg-0.1+deb7u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tar/1.26+dfsg-0.1+deb7u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tzdata=2017b-0+deb7u1`
+### `dpkg` source package: `tzdata=2017c-0+deb7u1`
 
 Binary Packages:
 
-- `tzdata=2017b-0+deb7u1`
-- `tzdata-java=2017b-0+deb7u1`
+- `tzdata=2017c-0+deb7u1`
+- `tzdata-java=2017c-0+deb7u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris tzdata=2017c-0+deb7u1
+'http://security.debian.org/pool/updates/main/t/tzdata/tzdata_2017c-0+deb7u1.dsc' tzdata_2017c-0+deb7u1.dsc 1966 SHA256:8d1398642a537a57ec210bcd39956458b9ff6b148f73a3a28597d042961ff95a
+'http://security.debian.org/pool/updates/main/t/tzdata/tzdata_2017c.orig.tar.gz' tzdata_2017c.orig.tar.gz 335571 SHA256:d6543f92a929826318e2f44ff3a7611ce5f565a43e10250b42599d0ba4cbd90b
+'http://security.debian.org/pool/updates/main/t/tzdata/tzdata_2017c-0+deb7u1.debian.tar.xz' tzdata_2017c-0+deb7u1.debian.tar.xz 102100 SHA256:5da97af6fa8054321d817dacd9ea43bef9b0f343b296554feff1d81b38b181a1
+```
 
-- http://snapshot.debian.org/package/tzdata/2017b-0+deb7u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/tzdata/2017c-0+deb7u1/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2017c-0+deb7u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2017c-0+deb7u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `unzip=6.0-8+deb7u6`
 

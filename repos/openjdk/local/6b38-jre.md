@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4d4cb2cff632c987f88b1ad8c7d432cac78a72288b3eea5a12becd7e1f3dced5`
-- Created: `2017-10-10T00:35:19.285800028Z`
-- Virtual Size: ~ 306.07 Mb  
+- Image ID: `sha256:e032ad41eb409555c647581a45260f507c48390fb043f263230bc55662b04bf5`
+- Created: `2017-11-04T18:49:20.056263199Z`
+- Virtual Size: ~ 307.79 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -424,12 +424,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/cups/1.5.3-5+deb7u6/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/cups/1.5.3-5+deb7u6/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `curl=7.26.0-1+wheezy21`
+### `dpkg` source package: `curl=7.26.0-1+wheezy22`
 
 Binary Packages:
 
-- `curl=7.26.0-1+wheezy21`
-- `libcurl3:amd64=7.26.0-1+wheezy21`
+- `curl=7.26.0-1+wheezy22`
+- `libcurl3:amd64=7.26.0-1+wheezy22`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`)
 
@@ -438,13 +438,20 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `ISC`
 - `curl`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris curl=7.26.0-1+wheezy22
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0-1+wheezy22.dsc' curl_7.26.0-1+wheezy22.dsc 2693 SHA256:143b953a75747f74ebe823d791e8838f2081f7110393e8243686b564c0b464a9
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0.orig.tar.gz' curl_7.26.0.orig.tar.gz 3073624 SHA256:79ccce9edb8aee17d20ad4d75e1f83a789f8c2e71e68f468e1bf8abf8933193f
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0-1+wheezy22.debian.tar.gz' curl_7.26.0-1+wheezy22.debian.tar.gz 67478 SHA256:f042740b527f096784b2dcf46d53266f9f634b1a4e5aa6758d20273f29626ffd
+```
 
-- http://snapshot.debian.org/package/curl/7.26.0-1+wheezy21/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/curl/7.26.0-1+wheezy22/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.26.0-1+wheezy22/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.26.0-1+wheezy22/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.25.dfsg1-6+deb7u1`
 
@@ -2713,23 +2720,30 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nspr/2:4.12-1+deb7u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nspr/2:4.12-1+deb7u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `nss=2:3.26-1+debu7u4`
+### `dpkg` source package: `nss=2:3.26-1+debu7u5`
 
 Binary Packages:
 
-- `libnss3:amd64=2:3.26-1+debu7u4`
+- `libnss3:amd64=2:3.26-1+debu7u5`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris nss=2:3.26-1+debu7u5
+'http://security.debian.org/pool/updates/main/n/nss/nss_3.26-1+debu7u5.dsc' nss_3.26-1+debu7u5.dsc 2215 SHA256:e8b0c59a24be3cb6154794321a90edc476812b704e76ec4fb0419448b628cd13
+'http://security.debian.org/pool/updates/main/n/nss/nss_3.26.orig.tar.gz' nss_3.26.orig.tar.gz 7386943 SHA256:91783a570ab953693eb977ce47c501f04c104cec287fa011c91bcc8970d1c564
+'http://security.debian.org/pool/updates/main/n/nss/nss_3.26-1+debu7u5.debian.tar.gz' nss_3.26-1+debu7u5.debian.tar.gz 43117 SHA256:87aaea476e18950fdb8c0d882615902558636f56aabb4108edce51554021155f
+```
 
-- http://snapshot.debian.org/package/nss/2:3.26-1+debu7u4/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/nss/2:3.26-1+debu7u5/ (for browsing the source)
+- https://sources.debian.net/src/nss/2:3.26-1+debu7u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/nss/2:3.26-1+debu7u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openjdk-6=6b38-1.13.10-1~deb7u1`
 
@@ -3434,24 +3448,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/ttf-dejavu/2.33-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/ttf-dejavu/2.33-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tzdata=2017b-0+deb7u1`
+### `dpkg` source package: `tzdata=2017c-0+deb7u1`
 
 Binary Packages:
 
-- `tzdata=2017b-0+deb7u1`
-- `tzdata-java=2017b-0+deb7u1`
+- `tzdata=2017c-0+deb7u1`
+- `tzdata-java=2017c-0+deb7u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris tzdata=2017c-0+deb7u1
+'http://security.debian.org/pool/updates/main/t/tzdata/tzdata_2017c-0+deb7u1.dsc' tzdata_2017c-0+deb7u1.dsc 1966 SHA256:8d1398642a537a57ec210bcd39956458b9ff6b148f73a3a28597d042961ff95a
+'http://security.debian.org/pool/updates/main/t/tzdata/tzdata_2017c.orig.tar.gz' tzdata_2017c.orig.tar.gz 335571 SHA256:d6543f92a929826318e2f44ff3a7611ce5f565a43e10250b42599d0ba4cbd90b
+'http://security.debian.org/pool/updates/main/t/tzdata/tzdata_2017c-0+deb7u1.debian.tar.xz' tzdata_2017c-0+deb7u1.debian.tar.xz 102100 SHA256:5da97af6fa8054321d817dacd9ea43bef9b0f343b296554feff1d81b38b181a1
+```
 
-- http://snapshot.debian.org/package/tzdata/2017b-0+deb7u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/tzdata/2017c-0+deb7u1/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2017c-0+deb7u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2017c-0+deb7u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0025+nmu3`
 
@@ -3563,24 +3584,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/util-linux/2.20.1-5.3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/util-linux/2.20.1-5.3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `wget=1.13.4-3+deb7u4`
+### `dpkg` source package: `wget=1.13.4-3+deb7u5`
 
 Binary Packages:
 
-- `wget=1.13.4-3+deb7u4`
+- `wget=1.13.4-3+deb7u5`
 
 Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 
 - `GFDL-1.2`
 - `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris wget=1.13.4-3+deb7u5
+'http://security.debian.org/pool/updates/main/w/wget/wget_1.13.4-3+deb7u5.dsc' wget_1.13.4-3+deb7u5.dsc 1927 SHA256:49e4c5c843f55da833e55faf63acaf551f7475abb83f39b6dfa8d5dd1a21015a
+'http://security.debian.org/pool/updates/main/w/wget/wget_1.13.4.orig.tar.gz' wget_1.13.4.orig.tar.gz 2815185 SHA256:24c7710bc9f220ce23d8a9e0f5673b0efc1cace62db6de0239b5863ecc934dcd
+'http://security.debian.org/pool/updates/main/w/wget/wget_1.13.4-3+deb7u5.debian.tar.gz' wget_1.13.4-3+deb7u5.debian.tar.gz 30248 SHA256:fba01d1621e80d92fef89ed412d22193891add1b23d923d784b293b8d3ef77f0
+```
 
-- http://snapshot.debian.org/package/wget/1.13.4-3+deb7u4/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/wget/1.13.4-3+deb7u5/ (for browsing the source)
+- https://sources.debian.net/src/wget/1.13.4-3+deb7u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/wget/1.13.4-3+deb7u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `xft=2.3.1-1`
 
