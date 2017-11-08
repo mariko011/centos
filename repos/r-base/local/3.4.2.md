@@ -2908,14 +2908,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl1.0=1.0.2m-2
-'http://http.debian.net/debian/pool/main/o/openssl1.0/openssl1.0_1.0.2m-2.dsc' openssl1.0_1.0.2m-2.dsc 2273 SHA256:6ebaad42ac46cec91890312d2d23598bbcb2741f396fc99f9b14f7f24dccfa2f
-'http://http.debian.net/debian/pool/main/o/openssl1.0/openssl1.0_1.0.2m.orig.tar.gz' openssl1.0_1.0.2m.orig.tar.gz 5373776 SHA256:8c6ff15ec6b319b50788f42c7abc2890c08ba5a1cdcd3810eb9092deada37b0f
-'http://http.debian.net/debian/pool/main/o/openssl1.0/openssl1.0_1.0.2m-2.debian.tar.xz' openssl1.0_1.0.2m-2.debian.tar.xz 76332 SHA256:861929308ed08a4b7b33ebe49e360268c9d99f5cdb04f94808cfc11ef1a286a7
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/openssl1.0/1.0.2m-2/
+
 
 ### `dpkg` source package: `openssl=1.1.0f-5`
 
@@ -3059,10 +3058,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris pcre3=2:8.39-5
-'http://http.debian.net/debian/pool/main/p/pcre3/pcre3_8.39-5.dsc' pcre3_8.39-5.dsc 2224 SHA256:228e6495d610bb001c66509786f65023bb672db31575157b92c741158019d039
-'http://http.debian.net/debian/pool/main/p/pcre3/pcre3_8.39.orig.tar.bz2' pcre3_8.39.orig.tar.bz2 1560758 SHA256:b858099f82483031ee02092711689e7245586ada49e534a06e678b8ea9549e8b
-'http://http.debian.net/debian/pool/main/p/pcre3/pcre3_8.39-5.debian.tar.gz' pcre3_8.39-5.debian.tar.gz 25511 SHA256:33f51d04b363f20a808f6069955a661be28d29a480adce65458add27b8d11314
+'http://deb.debian.org/debian/pool/main/p/pcre3/pcre3_8.39-5.dsc' pcre3_8.39-5.dsc 2224 SHA256:228e6495d610bb001c66509786f65023bb672db31575157b92c741158019d039
+'http://deb.debian.org/debian/pool/main/p/pcre3/pcre3_8.39.orig.tar.bz2' pcre3_8.39.orig.tar.bz2 1560758 SHA256:b858099f82483031ee02092711689e7245586ada49e534a06e678b8ea9549e8b
+'http://deb.debian.org/debian/pool/main/p/pcre3/pcre3_8.39-5.debian.tar.gz' pcre3_8.39-5.debian.tar.gz 25511 SHA256:33f51d04b363f20a808f6069955a661be28d29a480adce65458add27b8d11314
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/pcre3/2:8.39-5/ (for browsing the source)
+- https://sources.debian.net/src/pcre3/2:8.39-5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/pcre3/2:8.39-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `perl=5.26.1-2`
 
