@@ -3809,14 +3809,9 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-8-jdk/copyright`, `/usr/share/do
 - `LGPL-2`
 - `LGPL-2-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjdk-8=8u131-b11-2ubuntu1.16.04.3
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-8/openjdk-8_8u131-b11-2ubuntu1.16.04.3.dsc' openjdk-8_8u131-b11-2ubuntu1.16.04.3.dsc 4693 SHA256:97a114c2cbdf6dac073a4824099319116d0340e8544bdb13703513e2634c23d1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-8/openjdk-8_8u131-b11.orig.tar.xz' openjdk-8_8u131-b11.orig.tar.xz 63889888 SHA256:8369a083164d66c151de39933b192583ffb0b1b6daf8c7ffe17afc040478f21b
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-8/openjdk-8_8u131-b11-2ubuntu1.16.04.3.debian.tar.xz' openjdk-8_8u131-b11-2ubuntu1.16.04.3.debian.tar.xz 315144 SHA256:fd68021ebcf258d8a12caf608c12565572b6151c6fcafc619c410fe7ddb868f7
-```
 
 ### `dpkg` source package: `openjpeg=1:1.5.2-3.1`
 
@@ -3851,14 +3846,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=1.0.2g-1ubuntu4.8
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu4.8.dsc' openssl_1.0.2g-1ubuntu4.8.dsc 2417 SHA256:0e9c70b6024afc9e8efd065cd174f382f91d615aca0180f0050a4e5a0bccee99
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g.orig.tar.gz' openssl_1.0.2g.orig.tar.gz 5266102 SHA256:b784b1b3907ce39abf4098702dade6365522a253ad1552e267a9a0e89594aa33
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu4.8.debian.tar.xz' openssl_1.0.2g-1ubuntu4.8.debian.tar.xz 110888 SHA256:fcce13675596c269c3b9094fcf62b817e71b95681c22b38c9bb38b254e7b8818
-```
 
 ### `dpkg` source package: `opus=1.1.2-1ubuntu1`
 
