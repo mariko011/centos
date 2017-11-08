@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d4a473027b1d9f0446b33ff886e3e32d83ee77ea9007222441dbcfab5d743a51`
-- Created: `2017-10-30T20:07:11.10693737Z`
-- Virtual Size: ~ 422.58 Mb  
+- Image ID: `sha256:ab3d50db109f39631c3cd893718a7a668a507fdf3af9dcdd6a54b1e02dc67048`
+- Created: `2017-11-04T04:32:41.486491682Z`
+- Virtual Size: ~ 422.62 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -1247,14 +1247,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=1.0.2g-1ubuntu4.8
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu4.8.dsc' openssl_1.0.2g-1ubuntu4.8.dsc 2417 SHA256:0e9c70b6024afc9e8efd065cd174f382f91d615aca0180f0050a4e5a0bccee99
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g.orig.tar.gz' openssl_1.0.2g.orig.tar.gz 5266102 SHA256:b784b1b3907ce39abf4098702dade6365522a253ad1552e267a9a0e89594aa33
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu4.8.debian.tar.xz' openssl_1.0.2g-1ubuntu4.8.debian.tar.xz 110888 SHA256:fcce13675596c269c3b9094fcf62b817e71b95681c22b38c9bb38b254e7b8818
-```
 
 ### `dpkg` source package: `p11-kit=0.23.2-5~ubuntu16.04.1`
 

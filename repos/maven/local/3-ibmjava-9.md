@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6c584e572a093d7dc2b436547c776c7068d89fed1c9357118b896154eb01533b`
-- Created: `2017-10-30T20:07:43.159157167Z`
-- Virtual Size: ~ 608.87 Mb  
+- Image ID: `sha256:82482fb3c1b6ee406a744d7aab61fb42100d8e8383d25d7bb1ff123cae903536`
+- Created: `2017-11-04T17:20:33.734151877Z`
+- Virtual Size: ~ 608.91 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -1247,14 +1247,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=1.0.2g-1ubuntu4.8
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu4.8.dsc' openssl_1.0.2g-1ubuntu4.8.dsc 2417 SHA256:0e9c70b6024afc9e8efd065cd174f382f91d615aca0180f0050a4e5a0bccee99
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g.orig.tar.gz' openssl_1.0.2g.orig.tar.gz 5266102 SHA256:b784b1b3907ce39abf4098702dade6365522a253ad1552e267a9a0e89594aa33
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu4.8.debian.tar.xz' openssl_1.0.2g-1ubuntu4.8.debian.tar.xz 110888 SHA256:fcce13675596c269c3b9094fcf62b817e71b95681c22b38c9bb38b254e7b8818
-```
 
 ### `dpkg` source package: `p11-kit=0.23.2-5~ubuntu16.04.1`
 
@@ -1655,20 +1650,25 @@ $ apt-get source -qq --print-uris util-linux=2.27.1-6ubuntu3.3
 'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1-6ubuntu3.3.debian.tar.xz' util-linux_2.27.1-6ubuntu3.3.debian.tar.xz 83780 SHA256:dd3239be2d471306a110fcf91984d41f5e49a0386a8aacd8647b4811e428c0d9
 ```
 
-### `dpkg` source package: `wget=1.17.1-1ubuntu1.2`
+### `dpkg` source package: `wget=1.17.1-1ubuntu1.3`
 
 Binary Packages:
 
-- `wget=1.17.1-1ubuntu1.2`
+- `wget=1.17.1-1ubuntu1.3`
 
 Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 
 - `GFDL-1.2`
 - `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris wget=1.17.1-1ubuntu1.3
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.17.1-1ubuntu1.3.dsc' wget_1.17.1-1ubuntu1.3.dsc 1937 SHA256:20bb00897b9aab568f4e35566ac97bdf50189e2a9f680e82f06461fcd5ae340e
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.17.1.orig.tar.gz' wget_1.17.1.orig.tar.gz 3801442 SHA256:029fbb93bdc1c0c5a7507b6076a6ec2f8d34204a85aa87e5b2f61a9405b290f5
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.17.1-1ubuntu1.3.debian.tar.xz' wget_1.17.1-1ubuntu1.3.debian.tar.xz 27900 SHA256:283781ad43de4fa85c1e2266215bb563bbaab5c70e28b0f48e69cfe5f0bb663e
+```
 
 ### `dpkg` source package: `xz-utils=5.1.1alpha+20120614-2ubuntu2`
 
