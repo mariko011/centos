@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e4d33dcbf05a5d6c475ced3f9abf49e04d8f9b4cada548e3ac88e988d025b27e`
-- Created: `2017-11-01T23:58:52.579625766Z`
+- Image ID: `sha256:a6d62b01001273dd28beebe237c43d6dd89108045f082f23c0cf9989db29c2d7`
+- Created: `2017-11-04T08:43:02.209304302Z`
 - Virtual Size: ~ 121.48 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -531,20 +531,13 @@ Licenses: (parsed from: `/usr/share/doc/findutils/copyright`)
 - `GFDL-1.3`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris findutils=4.6.0+git+20170729-2
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.6.0+git+20170729-2.dsc' findutils_4.6.0+git+20170729-2.dsc 2220 SHA256:c59d5c89d6d5e794fd27cd2399d52d033629ae22a7551c1029aa8a779acaab56
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.6.0+git+20170729.orig.tar.xz' findutils_4.6.0+git+20170729.orig.tar.xz 1865076 SHA256:a8be399ed28bca5042313dcaa8e6b90550b8da0d6497311fcdb3823259b5d7ac
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.6.0+git+20170729-2.debian.tar.xz' findutils_4.6.0+git+20170729-2.debian.tar.xz 25572 SHA256:aa6d4a9f31870313a807d455bbc98030659ae69985d2e6893619e3997d01f022
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/findutils/4.6.0+git+20170729-2/
 
-- https://sources.debian.net/src/findutils/4.6.0+git+20170729-2/ (for browsing the source)
-- https://sources.debian.net/src/findutils/4.6.0+git+20170729-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/findutils/4.6.0+git+20170729-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-5=5.4.1-14`
 
@@ -1756,21 +1749,13 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.20.1-2
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.20.1-2.dsc' sqlite3_3.20.1-2.dsc 2476 SHA256:4fae287ad662bb4958273e9d09d1d4efcd8230e8cc7fb89978d47b22e8b5602b
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.20.1.orig-www.tar.xz' sqlite3_3.20.1.orig-www.tar.xz 3485848 SHA256:c31a1ad382c331c0507a5992c6d1697450ffc3410209ae992ead1c34344b5654
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.20.1.orig.tar.xz' sqlite3_3.20.1.orig.tar.xz 5900940 SHA256:0ed8da87222d3e0d45afcd9dac3b91a453eee4ea6eaf1287b78a6f0fb5274437
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.20.1-2.debian.tar.xz' sqlite3_3.20.1-2.debian.tar.xz 17892 SHA256:7d68706ea8703932dc82157067374a804370ef115ae9f5fd3e33f6bb359ea978
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sqlite3/3.20.1-2/
 
-- https://sources.debian.net/src/sqlite3/3.20.1-2/ (for browsing the source)
-- https://sources.debian.net/src/sqlite3/3.20.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sqlite3/3.20.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=234-3`
 
