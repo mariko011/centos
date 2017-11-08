@@ -6,6 +6,7 @@
 -	[`fedora:26`](#fedora26)
 -	[`fedora:26-modular`](#fedora26-modular)
 -	[`fedora:latest`](#fedoralatest)
+-	[`fedora:modular`](#fedoramodular)
 -	[`fedora:rawhide`](#fedorarawhide)
 
 ## `fedora:25`
@@ -351,6 +352,10 @@ ADD file:f10fb45128ecc10d68d0e5d12f483a8151e8583673bb097739cce5c0278c0873 in /
 		Last Modified: Fri, 15 Sep 2017 23:29:18 GMT  
 		Size: 86.9 MB (86883267 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `fedora:modular`
+
+**does not exist** (yet?)
 
 ## `fedora:rawhide`
 
