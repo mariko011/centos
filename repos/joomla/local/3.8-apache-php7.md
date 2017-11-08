@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:db5a20edeb924038abe793a6b5818222f0728719913a31eb77c4cf6952fed9c0`
-- Created: `2017-10-26T21:06:31.083532445Z`
+- Image ID: `sha256:e196a8ec0978120f0fcc7a7fc85ac26ff1738f42659eb22a289628ecc867cc8d`
+- Created: `2017-11-04T22:05:06.529812233Z`
 - Virtual Size: ~ 434.51 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -553,12 +553,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/cryptsetup/2:1.6.6-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/cryptsetup/2:1.6.6-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `curl=7.38.0-4+deb8u6`
+### `dpkg` source package: `curl=7.38.0-4+deb8u7`
 
 Binary Packages:
 
-- `curl=7.38.0-4+deb8u6`
-- `libcurl3:amd64=7.38.0-4+deb8u6`
+- `curl=7.38.0-4+deb8u7`
+- `libcurl3:amd64=7.38.0-4+deb8u7`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`)
 
@@ -567,13 +567,20 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `ISC`
 - `curl`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris curl=7.38.0-4+deb8u7
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0-4+deb8u7.dsc' curl_7.38.0-4+deb8u7.dsc 2694 SHA256:b5bca99d184cfd436d441457df6c5eb660071dab4ff913fc5680278f39c80aa5
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0.orig.tar.gz' curl_7.38.0.orig.tar.gz 4094034 SHA256:5661028aa6532882fa228cd23c99ddbb8b87643dbb1a7ea55c068d34a943dff1
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0-4+deb8u7.debian.tar.xz' curl_7.38.0-4+deb8u7.debian.tar.xz 42300 SHA256:62f8e051409ecbe312a88ba9d4982784742d472d176eec16b4dd19859ae1398d
+```
 
-- http://snapshot.debian.org/package/curl/7.38.0-4+deb8u6/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/curl/7.38.0-4+deb8u7/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.38.0-4+deb8u7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.38.0-4+deb8u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-13+deb8u1`
 
@@ -2433,12 +2440,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openldap/2.4.40+dfsg-1+deb8u3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openldap/2.4.40+dfsg-1+deb8u3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=1.0.1t-1+deb8u6`
+### `dpkg` source package: `openssl=1.0.1t-1+deb8u7`
 
 Binary Packages:
 
-- `libssl1.0.0:amd64=1.0.1t-1+deb8u6`
-- `openssl=1.0.1t-1+deb8u6`
+- `libssl1.0.0:amd64=1.0.1t-1+deb8u7`
+- `openssl=1.0.1t-1+deb8u7`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2447,17 +2454,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=1.0.1t-1+deb8u6
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.0.1t-1+deb8u6.dsc' openssl_1.0.1t-1+deb8u6.dsc 2272 SHA256:c5d2624a9b9de16a8d173c852e84f175757ee838cd3b5efe44683b96a6aa927b
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.0.1t.orig.tar.gz' openssl_1.0.1t.orig.tar.gz 4556447 SHA256:4a6ee491a2fdb22e519c76fdc2a628bb3cec12762cd456861d207996c8a07088
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.0.1t-1+deb8u6.debian.tar.xz' openssl_1.0.1t-1+deb8u6.debian.tar.xz 108424 SHA256:670935107107c20c872174c96c0cd098ffc2c15cac17f5a104af63a1db69cf3a
+$ apt-get source -qq --print-uris openssl=1.0.1t-1+deb8u7
+'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb8u7.dsc' openssl_1.0.1t-1+deb8u7.dsc 2272 SHA256:46829bc5849b471645858281ad9f8560834e143920f40a61798b268714837707
+'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.0.1t.orig.tar.gz' openssl_1.0.1t.orig.tar.gz 4556447 SHA256:4a6ee491a2fdb22e519c76fdc2a628bb3cec12762cd456861d207996c8a07088
+'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb8u7.debian.tar.xz' openssl_1.0.1t-1+deb8u7.debian.tar.xz 108792 SHA256:401809f04158292ad0751b2afe764edabd099cb73cb4395284e1294182de2306
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u6/ (for browsing the source)
-- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/1.0.1t-1+deb8u6/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u7/ (for browsing the source)
+- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/1.0.1t-1+deb8u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.20.7-1`
 
