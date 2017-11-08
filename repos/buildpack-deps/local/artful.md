@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:588d454aee8b1a56f06bbfb064e912f64276b7d754a8cf602c827ceeb072a62b`
-- Created: `2017-11-02T00:28:40.109695014Z`
-- Virtual Size: ~ 744.05 Mb  
+- Image ID: `sha256:3028381a8f83935e28fbc5851927f53557259e2e7c8b00b73f2fc7fe93b61bc5`
+- Created: `2017-11-04T15:22:01.129002367Z`
+- Virtual Size: ~ 743.29 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -547,39 +547,16 @@ $ apt-get source -qq --print-uris cups=2.2.4-7ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.2.4-7ubuntu2.debian.tar.xz' cups_2.2.4-7ubuntu2.debian.tar.xz 356980 SHA256:a8615926687505a9bdd68f30fc71dd5fac59d462a75e1a7387cd650c47fd5e92
 ```
 
-### `dpkg` source package: `curl=7.55.1-1ubuntu2`
-
-Binary Packages:
-
-- `libcurl3-gnutls:amd64=7.55.1-1ubuntu2`
-
-Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`)
-
-- `BSD-3-Clause`
-- `BSD-4-Clause`
-- `ISC`
-- `curl`
-- `other`
-- `public-domain`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris curl=7.55.1-1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.55.1-1ubuntu2.dsc' curl_7.55.1-1ubuntu2.dsc 2774 SHA256:ad35822cd453e8d8d0d089a63a1454005dd7a445b869754f1e683afb46fb98ee
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.55.1.orig.tar.gz' curl_7.55.1.orig.tar.gz 3736406 SHA256:09576ea5e66672648d83dce3af16d0cb294d4cba2b5d166ade39655c495f4a20
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.55.1-1ubuntu2.debian.tar.xz' curl_7.55.1-1ubuntu2.debian.tar.xz 33016 SHA256:f51f583c9fa19f80d35e8b47ef8ebdd62e02b3f11d1a8319f5a0c83385c85226
-```
-
 ### `dpkg` source package: `curl=7.55.1-1ubuntu2.1`
 
 Binary Packages:
 
 - `curl=7.55.1-1ubuntu2.1`
 - `libcurl3:amd64=7.55.1-1ubuntu2.1`
+- `libcurl3-gnutls:amd64=7.55.1-1ubuntu2.1`
 - `libcurl4-openssl-dev:amd64=7.55.1-1ubuntu2.1`
 
-Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
+Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
 
 - `BSD-3-Clause`
 - `BSD-4-Clause`
@@ -4241,11 +4218,11 @@ $ apt-get source -qq --print-uris util-linux=2.30.1-0ubuntu4
 'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.30.1-0ubuntu4.debian.tar.xz' util-linux_2.30.1-0ubuntu4.debian.tar.xz 75844 SHA256:c9b8cd7996930fca68c5425ad030c95ba1cb6cda94e07a4b3e42bbb602328976
 ```
 
-### `dpkg` source package: `wget=1.19.1-3ubuntu1`
+### `dpkg` source package: `wget=1.19.1-3ubuntu1.1`
 
 Binary Packages:
 
-- `wget=1.19.1-3ubuntu1`
+- `wget=1.19.1-3ubuntu1.1`
 
 Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 
@@ -4255,10 +4232,10 @@ Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris wget=1.19.1-3ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.19.1-3ubuntu1.dsc' wget_1.19.1-3ubuntu1.dsc 1979 SHA256:cead2dccb9a2458bdbe923a26841e7309f3a4aaf05eaba0109b502cb363b7214
+$ apt-get source -qq --print-uris wget=1.19.1-3ubuntu1.1
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.19.1-3ubuntu1.1.dsc' wget_1.19.1-3ubuntu1.1.dsc 1987 SHA256:ab4454ddc43064a4557622e2d65e886ea8af3a7c345d5434ed5d9050802cd1f6
 'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.19.1.orig.tar.xz' wget_1.19.1.orig.tar.xz 2111756 SHA256:0c950b9671881222a4d385b013c9604e98a8025d1988529dfca0e93617744cd2
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.19.1-3ubuntu1.debian.tar.xz' wget_1.19.1-3ubuntu1.debian.tar.xz 22888 SHA256:61362ad232614c2c6f02b0552bf46852c9e1f70b3d6d0d3e64f7c110e0da8c25
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.19.1-3ubuntu1.1.debian.tar.xz' wget_1.19.1-3ubuntu1.1.debian.tar.xz 23704 SHA256:fd7fb38c8ca7c6e2153b882e755887c154272529fddd353d3347a9d553418c81
 ```
 
 ### `dpkg` source package: `x11proto-core=7.0.31-1`

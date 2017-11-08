@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4aa769f34bbeac11998e83dab01637f2c2f24ac0b170d891449233e52181f861`
-- Created: `2017-11-02T00:47:02.024888296Z`
-- Virtual Size: ~ 554.26 Mb  
+- Image ID: `sha256:c64a08bccc54150d18643856d1f90f117c990b6feb9df7f72c6cb22b25958691`
+- Created: `2017-11-04T15:34:01.101052849Z`
+- Virtual Size: ~ 553.24 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -411,11 +411,11 @@ $ apt-get source -qq --print-uris bzr=2.6.0+bzr6593-1ubuntu1.6
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bzr/bzr_2.6.0+bzr6593-1ubuntu1.6.debian.tar.gz' bzr_2.6.0+bzr6593-1ubuntu1.6.debian.tar.gz 53590 SHA256:f1602c6db3ae5f5ba6443a7710c9050631b50a0aa22f1cecce4128f9135d24f6
 ```
 
-### `dpkg` source package: `ca-certificates=20160104ubuntu0.14.04.1`
+### `dpkg` source package: `ca-certificates=20170717~14.04.1`
 
 Binary Packages:
 
-- `ca-certificates=20160104ubuntu0.14.04.1`
+- `ca-certificates=20170717~14.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -423,9 +423,13 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 - `GPL-2+`
 - `MPL-2.0`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris ca-certificates=20170717~14.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20170717~14.04.1.dsc' ca-certificates_20170717~14.04.1.dsc 1862 SHA256:7216d0b4f25af1b13e5fb81ac61efa72f200cff15ae68e97dd0b9f7f76dec4cc
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20170717~14.04.1.tar.gz' ca-certificates_20170717~14.04.1.tar.gz 369186 SHA256:423a82170776597fb6e37e0207e9fc095a70d30dddb8e817692286c744599f97
+```
 
 ### `dpkg` source package: `cairo=1.13.0~20140204-0ubuntu1.1`
 
@@ -631,32 +635,16 @@ $ apt-get source -qq --print-uris cups=1.7.2-0ubuntu1.8
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_1.7.2-0ubuntu1.8.debian.tar.gz' cups_1.7.2-0ubuntu1.8.debian.tar.gz 449848 SHA256:252d623db5fed3a3ee38da07d8562995bf0ff33360e290ae7652a2f6ef6cffea
 ```
 
-### `dpkg` source package: `curl=7.35.0-1ubuntu2.10`
-
-Binary Packages:
-
-- `libcurl3-gnutls:amd64=7.35.0-1ubuntu2.10`
-
-Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`)
-
-- `BSD-3-Clause`
-- `BSD-4-Clause`
-- `ISC`
-- `curl`
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-
 ### `dpkg` source package: `curl=7.35.0-1ubuntu2.12`
 
 Binary Packages:
 
 - `curl=7.35.0-1ubuntu2.12`
 - `libcurl3:amd64=7.35.0-1ubuntu2.12`
+- `libcurl3-gnutls:amd64=7.35.0-1ubuntu2.12`
 - `libcurl4-openssl-dev:amd64=7.35.0-1ubuntu2.12`
 
-Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
+Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
 
 - `BSD-3-Clause`
 - `BSD-4-Clause`
@@ -1267,12 +1255,12 @@ $ apt-get source -qq --print-uris geoip=1.6.0-1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/geoip/geoip_1.6.0-1.debian.tar.gz' geoip_1.6.0-1.debian.tar.gz 16861 SHA256:47e5eaff3de44e6d1bef6923a257fe12127a577a22962fe52592540971af993d
 ```
 
-### `dpkg` source package: `git=1:1.9.1-1ubuntu0.6`
+### `dpkg` source package: `git=1:1.9.1-1ubuntu0.7`
 
 Binary Packages:
 
-- `git=1:1.9.1-1ubuntu0.6`
-- `git-man=1:1.9.1-1ubuntu0.6`
+- `git=1:1.9.1-1ubuntu0.7`
+- `git-man=1:1.9.1-1ubuntu0.7`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -1295,9 +1283,14 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris git=1:1.9.1-1ubuntu0.7
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_1.9.1-1ubuntu0.7.dsc' git_1.9.1-1ubuntu0.7.dsc 2794 SHA256:c2ed2e126332c78a7987263fd1cd15612a186fd19d8d172373f760be7f4af64d
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_1.9.1.orig.tar.xz' git_1.9.1.orig.tar.xz 3384080 SHA256:f962fbce8c049f94ece1d1845cba1528c13ff82de7cc8d23cddb3d0c93c3a77b
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_1.9.1-1ubuntu0.7.debian.tar.gz' git_1.9.1-1ubuntu0.7.debian.tar.gz 629149 SHA256:4d65dfaf0e509bfbf54354408bcc329c7073a6dddc6fbe300c6a3bdb41a7ae25
+```
 
 ### `dpkg` source package: `glib2.0=2.40.2-0ubuntu1`
 
@@ -3976,14 +3969,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=1.0.1f-1ubuntu2.22
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1f-1ubuntu2.22.dsc' openssl_1.0.1f-1ubuntu2.22.dsc 2370 SHA256:fdea4b46fcb0fec442fe2538916c82f99f27d8074e3ab34c4a9f3cc58bf9be0c
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1f.orig.tar.gz' openssl_1.0.1f.orig.tar.gz 4509212 SHA256:6cc2a80b17d64de6b7bac985745fdaba971d54ffd7d38d3556f998d7c0c9cb5a
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1f-1ubuntu2.22.debian.tar.gz' openssl_1.0.1f-1ubuntu2.22.debian.tar.gz 267203 SHA256:a38163b80c8d9ecad888676a56d4a4d761937f773495366f836dc0f76f6a9e43
-```
 
 ### `dpkg` source package: `p11-kit=0.20.2-2ubuntu2`
 
@@ -4894,20 +4882,25 @@ $ apt-get source -qq --print-uris vim=2:7.4.052-1ubuntu3.1
 'http://archive.ubuntu.com/ubuntu/pool/main/v/vim/vim_7.4.052-1ubuntu3.1.debian.tar.gz' vim_7.4.052-1ubuntu3.1.debian.tar.gz 203077 SHA256:eb89b3af5e9b54b9ad22b6cb7d4cb3eb342811194afbd5329b44cb692da324fa
 ```
 
-### `dpkg` source package: `wget=1.15-1ubuntu1.14.04.2`
+### `dpkg` source package: `wget=1.15-1ubuntu1.14.04.3`
 
 Binary Packages:
 
-- `wget=1.15-1ubuntu1.14.04.2`
+- `wget=1.15-1ubuntu1.14.04.3`
 
 Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 
 - `GFDL-1.2`
 - `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris wget=1.15-1ubuntu1.14.04.3
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.15-1ubuntu1.14.04.3.dsc' wget_1.15-1ubuntu1.14.04.3.dsc 1929 SHA256:adabab3126e8fb6bb732d831b10e32791b3ff75b93fe497116b194d15937510b
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.15.orig.tar.gz' wget_1.15.orig.tar.gz 3417936 SHA256:52126be8cf1bddd7536886e74c053ad7d0ed2aa89b4b630f76785bac21695fcd
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.15-1ubuntu1.14.04.3.debian.tar.gz' wget_1.15-1ubuntu1.14.04.3.debian.tar.gz 31508 SHA256:c0ee9bf16959bc2f5ecfa94216ada0b0e5a34971a0501074e70e019ade6a6319
+```
 
 ### `dpkg` source package: `x11proto-core=7.0.26-1~ubuntu2`
 

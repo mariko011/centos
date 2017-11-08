@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:34b1fc2160588c5d7b9b822f01af0cd8ff6adfedffe14b7c8229064970808f3d`
-- Created: `2017-11-02T00:51:28.752081591Z`
-- Virtual Size: ~ 741.18 Mb  
+- Image ID: `sha256:809a6fa19faaa80e70a0e1f215f2e4f66284551076badc9c35a479c5cdbc5ffa`
+- Created: `2017-11-04T15:40:37.137387656Z`
+- Virtual Size: ~ 740.32 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -420,11 +420,11 @@ $ apt-get source -qq --print-uris bzr=2.7.0+bzr6619-7ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bzr/bzr_2.7.0+bzr6619-7ubuntu0.1.debian.tar.xz' bzr_2.7.0+bzr6619-7ubuntu0.1.debian.tar.xz 69708 SHA256:99d39f6f53815737419c9cd9549423149c495a84008fa1e6f4d28a54d8d7a543
 ```
 
-### `dpkg` source package: `ca-certificates=20161130`
+### `dpkg` source package: `ca-certificates=20170717~17.04.1`
 
 Binary Packages:
 
-- `ca-certificates=20161130`
+- `ca-certificates=20170717~17.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -435,9 +435,9 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ca-certificates=20161130
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20161130.dsc' ca-certificates_20161130.dsc 1506 SHA256:bbba50a4391b33d8f5c8db97e4f077d861ff9f95cc6a3f45ca43fc5be6536617
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20161130.tar.xz' ca-certificates_20161130.tar.xz 298656 SHA256:04bca9e142a90a834aca0311f7ced237368d71fee7bd5c9f68ef7f4611aee471
+$ apt-get source -qq --print-uris ca-certificates=20170717~17.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20170717~17.04.1.dsc' ca-certificates_20170717~17.04.1.dsc 1884 SHA256:471a1f027707a7004b54149b183a17ecf1ab2d1f611907947634a1258d942149
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20170717~17.04.1.tar.xz' ca-certificates_20170717~17.04.1.tar.xz 293036 SHA256:4fe943a96d3d1590017712041ca7af4edfe1c69fd7108e5983d12ea7d53ad890
 ```
 
 ### `dpkg` source package: `cairo=1.14.8-1`
@@ -543,34 +543,16 @@ $ apt-get source -qq --print-uris cups=2.2.2-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.2.2-1ubuntu1.debian.tar.xz' cups_2.2.2-1ubuntu1.debian.tar.xz 362512 SHA256:28fc6f15e6028d7faa2e1eb854311aadeceb62f3a665c73ef2a42c4d1bf92043
 ```
 
-### `dpkg` source package: `curl=7.52.1-4ubuntu1.1`
-
-Binary Packages:
-
-- `libcurl3-gnutls:amd64=7.52.1-4ubuntu1.1`
-
-Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`)
-
-- `BSD-3-Clause`
-- `BSD-4-Clause`
-- `ISC`
-- `curl`
-- `other`
-- `public-domain`
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-
 ### `dpkg` source package: `curl=7.52.1-4ubuntu1.3`
 
 Binary Packages:
 
 - `curl=7.52.1-4ubuntu1.3`
 - `libcurl3:amd64=7.52.1-4ubuntu1.3`
+- `libcurl3-gnutls:amd64=7.52.1-4ubuntu1.3`
 - `libcurl4-openssl-dev:amd64=7.52.1-4ubuntu1.3`
 
-Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
+Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
 
 - `BSD-3-Clause`
 - `BSD-4-Clause`
@@ -1157,12 +1139,12 @@ $ apt-get source -qq --print-uris geoip=1.6.9-4
 'http://archive.ubuntu.com/ubuntu/pool/main/g/geoip/geoip_1.6.9-4.debian.tar.xz' geoip_1.6.9-4.debian.tar.xz 22256 SHA256:6bd311181cd7ad44ea78c9bce4d93e67f6f6aca07de93c1aeefcf44ed928d015
 ```
 
-### `dpkg` source package: `git=1:2.11.0-2ubuntu0.2`
+### `dpkg` source package: `git=1:2.11.0-2ubuntu0.3`
 
 Binary Packages:
 
-- `git=1:2.11.0-2ubuntu0.2`
-- `git-man=1:2.11.0-2ubuntu0.2`
+- `git=1:2.11.0-2ubuntu0.3`
+- `git-man=1:2.11.0-2ubuntu0.3`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -1185,9 +1167,14 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris git=1:2.11.0-2ubuntu0.3
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.11.0-2ubuntu0.3.dsc' git_2.11.0-2ubuntu0.3.dsc 2988 SHA256:51802153404c1d629615fd9813f2467d586df6e354eb3784396869747fdf7aae
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.11.0.orig.tar.xz' git_2.11.0.orig.tar.xz 4197984 SHA256:7e7e8d69d494892373b87007674be5820a4bc1ef596a0117d03ea3169119fd0b
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.11.0-2ubuntu0.3.debian.tar.xz' git_2.11.0-2ubuntu0.3.debian.tar.xz 527824 SHA256:cb62e5e1b8d250ba5d7e900423bbb557d7e685bb25d8696d8b6a001935a5a35e
+```
 
 ### `dpkg` source package: `glib2.0=2.52.0-1`
 
@@ -2149,11 +2136,11 @@ $ apt-get source -qq --print-uris libidn2-0=0.16-1ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn2-0/libidn2-0_0.16-1ubuntu0.1.debian.tar.xz' libidn2-0_0.16-1ubuntu0.1.debian.tar.xz 58136 SHA256:f2a80035fd7e20c5c48e1fd65ec5163331b591eb7508d6d267a7737990cd3869
 ```
 
-### `dpkg` source package: `libidn=1.33-1`
+### `dpkg` source package: `libidn=1.33-1ubuntu0.1`
 
 Binary Packages:
 
-- `libidn11:amd64=1.33-1`
+- `libidn11:amd64=1.33-1ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/libidn11/copyright`)
 
@@ -2173,10 +2160,10 @@ Licenses: (parsed from: `/usr/share/doc/libidn11/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libidn=1.33-1
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn/libidn_1.33-1.dsc' libidn_1.33-1.dsc 1848 SHA256:f076f7dddc45717542a48123d7dddb638beebe8521f5fba29f2d148fdcf12bf0
+$ apt-get source -qq --print-uris libidn=1.33-1ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn/libidn_1.33-1ubuntu0.1.dsc' libidn_1.33-1ubuntu0.1.dsc 2328 SHA256:fd5410aeaff9d51c6a5c0a83245d296a653290f11416ca9b3fde8a0ae657dcee
 'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn/libidn_1.33.orig.tar.gz' libidn_1.33.orig.tar.gz 3501056 SHA256:44a7aab635bb721ceef6beecc4d49dfd19478325e1b47f3196f7d2acc4930e19
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn/libidn_1.33-1.debian.tar.xz' libidn_1.33-1.debian.tar.xz 60264 SHA256:a50ee1e2598670ca1166d218e546c4cc031c658188b1193b73d98175d4405ef0
+'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn/libidn_1.33-1ubuntu0.1.debian.tar.xz' libidn_1.33-1ubuntu0.1.debian.tar.xz 63100 SHA256:31fbbdf04d0ee0258edeb391aae30774cd9fe79716d4de5517d97dcd6fc06cf2
 ```
 
 ### `dpkg` source package: `libjpeg-turbo=1.5.1-0ubuntu1`
@@ -3393,14 +3380,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=1.0.2g-1ubuntu11.2
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu11.2.dsc' openssl_1.0.2g-1ubuntu11.2.dsc 2482 SHA256:92de38375b8a7a4698e8a8ac3e187172ff2192b2f1c622a629979b122b0afd5c
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g.orig.tar.gz' openssl_1.0.2g.orig.tar.gz 5266102 SHA256:b784b1b3907ce39abf4098702dade6365522a253ad1552e267a9a0e89594aa33
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu11.2.debian.tar.xz' openssl_1.0.2g-1ubuntu11.2.debian.tar.xz 110996 SHA256:ac0eeb51f72412ecd989cc50e5ad1fa8e90b3e85b04c2502b0eebe1d079dcf58
-```
 
 ### `dpkg` source package: `p11-kit=0.23.3-5`
 
@@ -4208,11 +4190,11 @@ $ apt-get source -qq --print-uris util-linux=2.29-1ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.29-1ubuntu2.1.debian.tar.xz' util-linux_2.29-1ubuntu2.1.debian.tar.xz 75108 SHA256:642e520addfd9d144b60357acc7f71757ceb9369d31ab362451e18d0064ba58c
 ```
 
-### `dpkg` source package: `wget=1.18-2ubuntu1`
+### `dpkg` source package: `wget=1.18-2ubuntu1.1`
 
 Binary Packages:
 
-- `wget=1.18-2ubuntu1`
+- `wget=1.18-2ubuntu1.1`
 
 Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 
@@ -4222,10 +4204,10 @@ Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris wget=1.18-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.18-2ubuntu1.dsc' wget_1.18-2ubuntu1.dsc 1927 SHA256:910ca159da97ce9e49203cd67885c899ffd4a045d0c03f91baeeb311b59898fb
+$ apt-get source -qq --print-uris wget=1.18-2ubuntu1.1
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.18-2ubuntu1.1.dsc' wget_1.18-2ubuntu1.1.dsc 1935 SHA256:5ca6e93cda5b56d1c8f702a54444eddefc2a478359f2c17499ab1942acd0e7ea
 'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.18.orig.tar.gz' wget_1.18.orig.tar.gz 3865525 SHA256:a00a65fab84cc46e24c53ce88c45604668a7a479276e037dc2f558e34717fb2d
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.18-2ubuntu1.debian.tar.xz' wget_1.18-2ubuntu1.debian.tar.xz 22852 SHA256:9ff6d524f520fcd308cfbb971086f1f769ccb9d1d717a559a5337c5eca765542
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.18-2ubuntu1.1.debian.tar.xz' wget_1.18-2ubuntu1.1.debian.tar.xz 25488 SHA256:0ccfc77de9c602b31bb8f6a517e3ad403ad341ce372e773759c7c68ad7a404a9
 ```
 
 ### `dpkg` source package: `x11proto-core=7.0.31-1`

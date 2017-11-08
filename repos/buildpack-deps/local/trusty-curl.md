@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:35eed5cce7f4eb85fa317831dc1563a36fd83dc55713aa02fc51f028cadc6be5`
-- Created: `2017-09-13T23:52:29.24346603Z`
-- Virtual Size: ~ 199.68 Mb  
+- Image ID: `sha256:5bc643e33cf16cdba4a029fd29a3685207e5c21f473edf08b04de9098a089d3a`
+- Created: `2017-11-04T15:32:10.015918128Z`
+- Virtual Size: ~ 199.58 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -209,11 +209,11 @@ $ apt-get source -qq --print-uris bzip2=1.0.6-5
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.6-5.debian.tar.bz2' bzip2_1.0.6-5.debian.tar.bz2 60984 SHA256:182c087bbd173bfcc2b0f4210c790a03f3d49876f6250213332832319b7b5758
 ```
 
-### `dpkg` source package: `ca-certificates=20160104ubuntu0.14.04.1`
+### `dpkg` source package: `ca-certificates=20170717~14.04.1`
 
 Binary Packages:
 
-- `ca-certificates=20160104ubuntu0.14.04.1`
+- `ca-certificates=20170717~14.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -221,9 +221,13 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 - `GPL-2+`
 - `MPL-2.0`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris ca-certificates=20170717~14.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20170717~14.04.1.dsc' ca-certificates_20170717~14.04.1.dsc 1862 SHA256:7216d0b4f25af1b13e5fb81ac61efa72f200cff15ae68e97dd0b9f7f76dec4cc
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20170717~14.04.1.tar.gz' ca-certificates_20170717~14.04.1.tar.gz 369186 SHA256:423a82170776597fb6e37e0207e9fc095a70d30dddb8e817692286c744599f97
+```
 
 ### `dpkg` source package: `cdebconf=0.187ubuntu1`
 
@@ -344,12 +348,12 @@ $ apt-get source -qq --print-uris cron=3.0pl1-124ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cron/cron_3.0pl1-124ubuntu2.diff.gz' cron_3.0pl1-124ubuntu2.diff.gz 98350 SHA256:282213a327434e44b0f0f6ac23da5f0f4024cf284ca6e008a0b774bb76102dab
 ```
 
-### `dpkg` source package: `curl=7.35.0-1ubuntu2.10`
+### `dpkg` source package: `curl=7.35.0-1ubuntu2.12`
 
 Binary Packages:
 
-- `curl=7.35.0-1ubuntu2.10`
-- `libcurl3:amd64=7.35.0-1ubuntu2.10`
+- `curl=7.35.0-1ubuntu2.12`
+- `libcurl3:amd64=7.35.0-1ubuntu2.12`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`)
 
@@ -358,9 +362,14 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `ISC`
 - `curl`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.35.0-1ubuntu2.12
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0-1ubuntu2.12.dsc' curl_7.35.0-1ubuntu2.12.dsc 2741 SHA256:f5f227e98276a594d91ca70a60249b61598eb3765371bbd221dbbbadcfd6fb6f
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0.orig.tar.gz' curl_7.35.0.orig.tar.gz 3544496 SHA256:917d118fc5d61e9dd1538d6519bd93bbebf2e866882419781c2e0fdb2bc42121
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0-1ubuntu2.12.debian.tar.gz' curl_7.35.0-1ubuntu2.12.debian.tar.gz 66603 SHA256:898d89ca9c9d3b4c2242085768bd776e15bc86d93d08a1ddcdab721f71fae998
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.25.dfsg1-17build1`
 
@@ -1322,11 +1331,11 @@ $ apt-get source -qq --print-uris libgpg-error=1.12-0.2ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgpg-error/libgpg-error_1.12-0.2ubuntu1.debian.tar.gz' libgpg-error_1.12-0.2ubuntu1.debian.tar.gz 6293 SHA256:15b955366b8effb49b592a9384e8ab7e1b6ddb9b9f3c804a58a8b69378b16218
 ```
 
-### `dpkg` source package: `libidn=1.28-1ubuntu2.1`
+### `dpkg` source package: `libidn=1.28-1ubuntu2.2`
 
 Binary Packages:
 
-- `libidn11:amd64=1.28-1ubuntu2.1`
+- `libidn11:amd64=1.28-1ubuntu2.2`
 
 Licenses: (parsed from: `/usr/share/doc/libidn11/copyright`)
 
@@ -1342,9 +1351,14 @@ Licenses: (parsed from: `/usr/share/doc/libidn11/copyright`)
 - `LGPL-3`
 - `LGPL-3+ | GPL-2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libidn=1.28-1ubuntu2.2
+'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn/libidn_1.28-1ubuntu2.2.dsc' libidn_1.28-1ubuntu2.2.dsc 2264 SHA256:352e6d646209d73450263b5d28eaa285340a5ef979924720b3ce8f467b2e1992
+'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn/libidn_1.28.orig.tar.gz' libidn_1.28.orig.tar.gz 3476317 SHA256:dd357a968449abc97c7e5fa088a4a384de57cb36564f9d4e0d898ecc6373abfb
+'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn/libidn_1.28-1ubuntu2.2.debian.tar.gz' libidn_1.28-1ubuntu2.2.debian.tar.gz 48795 SHA256:856416d57414dd7737049073e01a0d0b9d0297fde9139f2edf234427d943638e
+```
 
 ### `dpkg` source package: `liblocale-gettext-perl=1.05-7build3`
 
@@ -2018,14 +2032,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=1.0.1f-1ubuntu2.22
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1f-1ubuntu2.22.dsc' openssl_1.0.1f-1ubuntu2.22.dsc 2370 SHA256:fdea4b46fcb0fec442fe2538916c82f99f27d8074e3ab34c4a9f3cc58bf9be0c
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1f.orig.tar.gz' openssl_1.0.1f.orig.tar.gz 4509212 SHA256:6cc2a80b17d64de6b7bac985745fdaba971d54ffd7d38d3556f998d7c0c9cb5a
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1f-1ubuntu2.22.debian.tar.gz' openssl_1.0.1f-1ubuntu2.22.debian.tar.gz 267203 SHA256:a38163b80c8d9ecad888676a56d4a4d761937f773495366f836dc0f76f6a9e43
-```
 
 ### `dpkg` source package: `p11-kit=0.20.2-2ubuntu2`
 
@@ -2696,20 +2705,25 @@ $ apt-get source -qq --print-uris vim=2:7.4.052-1ubuntu3.1
 'http://archive.ubuntu.com/ubuntu/pool/main/v/vim/vim_7.4.052-1ubuntu3.1.debian.tar.gz' vim_7.4.052-1ubuntu3.1.debian.tar.gz 203077 SHA256:eb89b3af5e9b54b9ad22b6cb7d4cb3eb342811194afbd5329b44cb692da324fa
 ```
 
-### `dpkg` source package: `wget=1.15-1ubuntu1.14.04.2`
+### `dpkg` source package: `wget=1.15-1ubuntu1.14.04.3`
 
 Binary Packages:
 
-- `wget=1.15-1ubuntu1.14.04.2`
+- `wget=1.15-1ubuntu1.14.04.3`
 
 Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 
 - `GFDL-1.2`
 - `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris wget=1.15-1ubuntu1.14.04.3
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.15-1ubuntu1.14.04.3.dsc' wget_1.15-1ubuntu1.14.04.3.dsc 1929 SHA256:adabab3126e8fb6bb732d831b10e32791b3ff75b93fe497116b194d15937510b
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.15.orig.tar.gz' wget_1.15.orig.tar.gz 3417936 SHA256:52126be8cf1bddd7536886e74c053ad7d0ed2aa89b4b630f76785bac21695fcd
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.15-1ubuntu1.14.04.3.debian.tar.gz' wget_1.15-1ubuntu1.14.04.3.debian.tar.gz 31508 SHA256:c0ee9bf16959bc2f5ecfa94216ada0b0e5a34971a0501074e70e019ade6a6319
+```
 
 ### `dpkg` source package: `xkeyboard-config=2.10.1-1ubuntu1`
 

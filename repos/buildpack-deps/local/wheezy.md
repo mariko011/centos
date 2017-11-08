@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0313422b4dcaa002061b8f9c81284cde44057d8672fd469655c6f81f5b3f0770`
-- Created: `2017-11-02T00:48:21.804004695Z`
-- Virtual Size: ~ 471.08 Mb  
+- Image ID: `sha256:71bf801021422fe9ed51f88c77b8d8c20a62678b6e8183bfffb82f96ce2c36a0`
+- Created: `2017-11-04T15:36:01.68870467Z`
+- Virtual Size: ~ 470.16 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -512,36 +512,16 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/coreutils/8.13-3.5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/coreutils/8.13-3.5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `curl=7.26.0-1+wheezy21`
-
-Binary Packages:
-
-- `libcurl3-gnutls:amd64=7.26.0-1+wheezy21`
-
-Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`)
-
-- `BSD-3-Clause`
-- `BSD-4-Clause`
-- `ISC`
-- `curl`
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/curl/7.26.0-1+wheezy21/
-
-
 ### `dpkg` source package: `curl=7.26.0-1+wheezy22`
 
 Binary Packages:
 
 - `curl=7.26.0-1+wheezy22`
 - `libcurl3:amd64=7.26.0-1+wheezy22`
+- `libcurl3-gnutls:amd64=7.26.0-1+wheezy22`
 - `libcurl4-openssl-dev=7.26.0-1+wheezy22`
 
-Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
+Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
 
 - `BSD-3-Clause`
 - `BSD-4-Clause`
@@ -4341,24 +4321,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/util-linux/2.20.1-5.3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/util-linux/2.20.1-5.3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `wget=1.13.4-3+deb7u4`
+### `dpkg` source package: `wget=1.13.4-3+deb7u5`
 
 Binary Packages:
 
-- `wget=1.13.4-3+deb7u4`
+- `wget=1.13.4-3+deb7u5`
 
 Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 
 - `GFDL-1.2`
 - `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris wget=1.13.4-3+deb7u5
+'http://security.debian.org/pool/updates/main/w/wget/wget_1.13.4-3+deb7u5.dsc' wget_1.13.4-3+deb7u5.dsc 1927 SHA256:49e4c5c843f55da833e55faf63acaf551f7475abb83f39b6dfa8d5dd1a21015a
+'http://security.debian.org/pool/updates/main/w/wget/wget_1.13.4.orig.tar.gz' wget_1.13.4.orig.tar.gz 2815185 SHA256:24c7710bc9f220ce23d8a9e0f5673b0efc1cace62db6de0239b5863ecc934dcd
+'http://security.debian.org/pool/updates/main/w/wget/wget_1.13.4-3+deb7u5.debian.tar.gz' wget_1.13.4-3+deb7u5.debian.tar.gz 30248 SHA256:fba01d1621e80d92fef89ed412d22193891add1b23d923d784b293b8d3ef77f0
+```
 
-- http://snapshot.debian.org/package/wget/1.13.4-3+deb7u4/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/wget/1.13.4-3+deb7u5/ (for browsing the source)
+- https://sources.debian.net/src/wget/1.13.4-3+deb7u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/wget/1.13.4-3+deb7u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `x11proto-core=7.0.23-1`
 
