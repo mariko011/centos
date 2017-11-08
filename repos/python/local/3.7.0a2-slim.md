@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ce33900089fa470dd4237a35f7dd7d62d298f84eb2f8be42c13cebd4c8d2c136`
-- Created: `2017-11-02T00:27:20.457858704Z`
-- Virtual Size: ~ 141.76 Mb  
+- Image ID: `sha256:05f1c1f9aa214174779ee1b9b60013ede5b981a3a86c14f6f564f5ee6456defd`
+- Created: `2017-11-04T14:21:25.81632816Z`
+- Virtual Size: ~ 138.83 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["python3"]`
@@ -665,11 +665,9 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `gnupg=2.1.18-8~deb9u1`
-- `gnupg-agent=2.1.18-8~deb9u1`
 - `gpgv=2.1.18-8~deb9u1`
 
-Licenses: (parsed from: `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gnupg-agent/copyright`, `/usr/share/doc/gpgv/copyright`)
+Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 
 - `BSD-3-clause`
 - `Expat`
@@ -799,41 +797,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/init-system-helpers/1.48/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/init-system-helpers/1.48/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libassuan=2.4.3-2`
-
-Binary Packages:
-
-- `libassuan0:amd64=2.4.3-2`
-
-Licenses: (parsed from: `/usr/share/doc/libassuan0/copyright`)
-
-- `GAP`
-- `GAP~FSF`
-- `GPL-2`
-- `GPL-2+`
-- `GPL-2+ with libtool exception`
-- `GPL-3`
-- `GPL-3+`
-- `LGPL-2.1`
-- `LGPL-2.1+`
-- `LGPL-3`
-- `LGPL-3+`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris libassuan=2.4.3-2
-'http://deb.debian.org/debian/pool/main/liba/libassuan/libassuan_2.4.3-2.dsc' libassuan_2.4.3-2.dsc 2412 SHA256:fc057ff6bd548161cd978f7847682928222d31db96bd94d7ec0fc84b176bbcc7
-'http://deb.debian.org/debian/pool/main/liba/libassuan/libassuan_2.4.3.orig.tar.bz2' libassuan_2.4.3.orig.tar.bz2 559867 SHA256:22843a3bdb256f59be49842abf24da76700354293a066d82ade8134bb5aa2b71
-'http://deb.debian.org/debian/pool/main/liba/libassuan/libassuan_2.4.3-2.debian.tar.xz' libassuan_2.4.3-2.debian.tar.xz 15076 SHA256:16dd66909cf3b79c71d5169f35d94be64d079d882f027577c00c23bff3148012
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/libassuan/2.4.3-2/ (for browsing the source)
-- https://sources.debian.net/src/libassuan/2.4.3-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libassuan/2.4.3-2/ (for access to the source package after it no longer exists in the archive)
-
 ### `dpkg` source package: `libcap-ng=0.7.7-3`
 
 Binary Packages:
@@ -937,32 +900,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libgpg-error/1.26-2/ (for browsing the source)
 - https://sources.debian.net/src/libgpg-error/1.26-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libgpg-error/1.26-2/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `libksba=1.3.5-2`
-
-Binary Packages:
-
-- `libksba8:amd64=1.3.5-2`
-
-Licenses: (parsed from: `/usr/share/doc/libksba8/copyright`)
-
-- `GPL-3`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris libksba=1.3.5-2
-'http://deb.debian.org/debian/pool/main/libk/libksba/libksba_1.3.5-2.dsc' libksba_1.3.5-2.dsc 2526 SHA256:4fd08fd129f97ab1df86c220b88b7b2c6e4e04aa90bfd3ae364d18022256bef8
-'http://deb.debian.org/debian/pool/main/libk/libksba/libksba_1.3.5.orig.tar.bz2' libksba_1.3.5.orig.tar.bz2 620649 SHA256:41444fd7a6ff73a79ad9728f985e71c9ba8cd3e5e53358e70d5f066d35c1a340
-'http://deb.debian.org/debian/pool/main/libk/libksba/libksba_1.3.5.orig.tar.bz2.asc' libksba_1.3.5.orig.tar.bz2.asc 287 SHA256:a954b03144ee882c838853da24fd7b6868b78df72a18c71079217d968698a76f
-'http://deb.debian.org/debian/pool/main/libk/libksba/libksba_1.3.5-2.debian.tar.xz' libksba_1.3.5-2.debian.tar.xz 13852 SHA256:98c985bff973be1aecc702fa15887ff1e5b8de481d1dc3e99423a587754eaabd
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/libksba/1.3.5-2/ (for browsing the source)
-- https://sources.debian.net/src/libksba/1.3.5-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libksba/1.3.5-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libselinux=2.6-3`
 
@@ -1148,40 +1085,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/ncurses/6.0+20161126-1+deb9u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/ncurses/6.0+20161126-1+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `npth=1.3-1`
+### `dpkg` source package: `openssl=1.1.0f-3+deb9u1`
 
 Binary Packages:
 
-- `libnpth0:amd64=1.3-1`
-
-Licenses: (parsed from: `/usr/share/doc/libnpth0/copyright`)
-
-- `GPL-2`
-- `GPL-2+`
-- `LGPL-3`
-- `LGPL-3+`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris npth=1.3-1
-'http://deb.debian.org/debian/pool/main/n/npth/npth_1.3-1.dsc' npth_1.3-1.dsc 1949 SHA256:63e2598a3aebe21ef7969a601906a719e923673e04a4d157b6dde605566079be
-'http://deb.debian.org/debian/pool/main/n/npth/npth_1.3.orig.tar.bz2' npth_1.3.orig.tar.bz2 295998 SHA256:bca81940436aed0734eb8d0ff8b179e04cc8c087f5625204419f5f45d736a82a
-'http://deb.debian.org/debian/pool/main/n/npth/npth_1.3-1.debian.tar.xz' npth_1.3-1.debian.tar.xz 10324 SHA256:4910e19597aea46841eaffc6df58ecf91d5d059130ecb1442fee9f5f963b229c
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/npth/1.3-1/ (for browsing the source)
-- https://sources.debian.net/src/npth/1.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/npth/1.3-1/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `openssl=1.1.0f-3`
-
-Binary Packages:
-
-- `libssl1.1:amd64=1.1.0f-3`
-- `openssl=1.1.0f-3`
+- `libssl1.1:amd64=1.1.0f-3+deb9u1`
+- `openssl=1.1.0f-3+deb9u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1190,18 +1099,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=1.1.0f-3
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0f-3.dsc' openssl_1.1.0f-3.dsc 2583 SHA256:a4d69ed8c10134374d86fee593e85bb5165e6d539ab86294e40532a3ed276642
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0f.orig.tar.gz' openssl_1.1.0f.orig.tar.gz 5278176 SHA256:12f746f3f2493b2f39da7ecf63d7ee19c6ac9ec6a4fcd8c229da8a522cb12765
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0f.orig.tar.gz.asc' openssl_1.1.0f.orig.tar.gz.asc 455 SHA256:9f2feb0494ebcc1cf152d95a11bc966cb94bc1957d88650285db3966866801b0
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0f-3.debian.tar.xz' openssl_1.1.0f-3.debian.tar.xz 54152 SHA256:2b1ca97264b073345375a69ee95e32a9850f0288462bc58e9054dfa769f14806
+$ apt-get source -qq --print-uris openssl=1.1.0f-3+deb9u1
+'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.1.0f-3+deb9u1.dsc' openssl_1.1.0f-3+deb9u1.dsc 2364 SHA256:cc7066295b79a26159b302eef05d1310c6593a1f2faafe28c2b7783704154489
+'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.1.0f.orig.tar.gz' openssl_1.1.0f.orig.tar.gz 5278176 SHA256:12f746f3f2493b2f39da7ecf63d7ee19c6ac9ec6a4fcd8c229da8a522cb12765
+'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.1.0f-3+deb9u1.debian.tar.xz' openssl_1.1.0f-3+deb9u1.debian.tar.xz 54944 SHA256:d9078cf382dad406a890198efd663e29f5bbacaf2c566ed0d77755989aca2932
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openssl/1.1.0f-3/ (for browsing the source)
-- https://sources.debian.net/src/openssl/1.1.0f-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/1.1.0f-3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openssl/1.1.0f-3+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/openssl/1.1.0f-3+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/1.1.0f-3+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pam=1.1.8-3.6`
 
@@ -1306,35 +1214,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/perl/5.24.1-3+deb9u2/ (for browsing the source)
 - https://sources.debian.net/src/perl/5.24.1-3+deb9u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/perl/5.24.1-3+deb9u2/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `pinentry=1.0.0-2`
-
-Binary Packages:
-
-- `pinentry-curses=1.0.0-2`
-
-Licenses: (parsed from: `/usr/share/doc/pinentry-curses/copyright`)
-
-- `GPL-2`
-- `GPL-2+`
-- `LGPL-3`
-- `LGPL-3+`
-- `X11`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris pinentry=1.0.0-2
-'http://deb.debian.org/debian/pool/main/p/pinentry/pinentry_1.0.0-2.dsc' pinentry_1.0.0-2.dsc 2591 SHA256:01349d75a92435037a4f4ad252a42cabe7bef774cb8ac6e8c6e24a4107f06e13
-'http://deb.debian.org/debian/pool/main/p/pinentry/pinentry_1.0.0.orig.tar.bz2' pinentry_1.0.0.orig.tar.bz2 436930 SHA256:1672c2edc1feb036075b187c0773787b2afd0544f55025c645a71b4c2f79275a
-'http://deb.debian.org/debian/pool/main/p/pinentry/pinentry_1.0.0-2.debian.tar.xz' pinentry_1.0.0-2.debian.tar.xz 16672 SHA256:85e0b03d74a64a08b51f6ffac58a1a07a42499615aa993f367675ef12d0b47fb
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/pinentry/1.0.0-2/ (for browsing the source)
-- https://sources.debian.net/src/pinentry/1.0.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pinentry/1.0.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=7.0-3`
 
