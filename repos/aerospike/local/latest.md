@@ -1,9 +1,9 @@
-# `aerospike:3.15.0.1`
+# `aerospike:3.15.0.2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:05a1153f191de21ced50e5052e935f2a968011f3370b47c83f50e4d1e692abb6`
-- Created: `2017-11-04T19:18:34.801755369Z`
+- Image ID: `sha256:23cb08632d7e2d525a215857feab6bc0dedffce68e0049b7e4e39a7124633d10`
+- Created: `2017-11-09T03:47:26.329599328Z`
 - Virtual Size: ~ 200.31 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,8 +11,8 @@
 - Command: `["asd"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `AEROSPIKE_VERSION=3.15.0.1`
-  - `AEROSPIKE_SHA256=c3682bbab88d4b72df0e92f6b93850df01fd11deab319e10c75168a02a3ac2ec`
+  - `AEROSPIKE_VERSION=3.15.0.2`
+  - `AEROSPIKE_SHA256=beb45dd20205624e7d8e08456c57cb0b3c18c3a643ef8246f2c6dedf1a964631`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -54,11 +54,11 @@ $ apt-get source -qq --print-uris adduser=3.113+nmu3ubuntu4
 'http://archive.ubuntu.com/ubuntu/pool/main/a/adduser/adduser_3.113+nmu3ubuntu4.tar.gz' adduser_3.113+nmu3ubuntu4.tar.gz 367980 SHA256:6e4d44c8388b9ba85fc175fa4a48ed43bf6500913c2c631fda0e4419ae63c65a
 ```
 
-### `dpkg` source package: `aerospike-server-community=3.15.0.1-1`
+### `dpkg` source package: `aerospike-server-community=3.15.0.2-1`
 
 Binary Packages:
 
-- `aerospike-server-community=3.15.0.1-1`
+- `aerospike-server-community=3.15.0.2-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1343,20 +1343,25 @@ $ apt-get source -qq --print-uris nettle=3.2-1ubuntu0.16.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.2-1ubuntu0.16.04.1.debian.tar.xz' nettle_3.2-1ubuntu0.16.04.1.debian.tar.xz 21340 SHA256:49e9715ec8f211831efeaa90122fb16126e39d2cf0739fecd572621b5e55a097
 ```
 
-### `dpkg` source package: `openssl=1.0.2g-1ubuntu4.8`
+### `dpkg` source package: `openssl=1.0.2g-1ubuntu4.9`
 
 Binary Packages:
 
-- `libssl1.0.0:amd64=1.0.2g-1ubuntu4.8`
-- `openssl=1.0.2g-1ubuntu4.8`
+- `libssl1.0.0:amd64=1.0.2g-1ubuntu4.9`
+- `openssl=1.0.2g-1ubuntu4.9`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=1.0.2g-1ubuntu4.9
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu4.9.dsc' openssl_1.0.2g-1ubuntu4.9.dsc 2435 SHA256:44c61665f4255a9d90cc4e41065a2f24fb8f09bc44093e4429cb4baa97db274b
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g.orig.tar.gz' openssl_1.0.2g.orig.tar.gz 5266102 SHA256:b784b1b3907ce39abf4098702dade6365522a253ad1552e267a9a0e89594aa33
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu4.9.debian.tar.xz' openssl_1.0.2g-1ubuntu4.9.debian.tar.xz 111772 SHA256:63b2893a1a459b9e53b8f3df8669d66baafc66f98d700f756b8594abd046312f
+```
 
 ### `dpkg` source package: `p11-kit=0.23.2-5~ubuntu16.04.1`
 
