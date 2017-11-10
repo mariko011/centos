@@ -569,21 +569,13 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 - `LGPL-2.0 with AOSDL exception`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cups=2.2.5-2
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.5-2.dsc' cups_2.2.5-2.dsc 3372 SHA256:789a1a01c1c1ca2b98ca117c1f50c7396708e57d94eabd4f3257e64cef7991d2
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.5.orig.tar.gz' cups_2.2.5.orig.tar.gz 10314038 SHA256:a8795e2aa54dcfbdc9ff254a770f0d7154e35c981bca5b3369050c5193ab5a21
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.5.orig.tar.gz.asc' cups_2.2.5.orig.tar.gz.asc 847 SHA256:524cf0aac6d2da7f2e92f4107ac2892cc71a4e6e58cd9f199c5e701ddc02a046
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.5-2.debian.tar.xz' cups_2.2.5-2.debian.tar.xz 348584 SHA256:d8f4e3fe8bfcfc289de5c9450e58979646d5556a661eaff947d5151606e94fe3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/cups/2.2.5-2/
 
-- https://sources.debian.net/src/cups/2.2.5-2/ (for browsing the source)
-- https://sources.debian.net/src/cups/2.2.5-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cups/2.2.5-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `curl=7.56.1-1`
 
@@ -1461,20 +1453,13 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris git=1:2.14.2-1
-'http://deb.debian.org/debian/pool/main/g/git/git_2.14.2-1.dsc' git_2.14.2-1.dsc 2845 SHA256:0fa137a90497970e94c05c3bccb5cb93d23a2fa27543456cb5db50c9492c45ce
-'http://deb.debian.org/debian/pool/main/g/git/git_2.14.2.orig.tar.xz' git_2.14.2.orig.tar.xz 4800208 SHA256:50e9723996114ad1eec4dda89960d9fe34461749ae42031008a261fedd03c7a1
-'http://deb.debian.org/debian/pool/main/g/git/git_2.14.2-1.debian.tar.xz' git_2.14.2-1.debian.tar.xz 546660 SHA256:b150a25b6bde086fe4bb10ebe5f90f81e5c075d3fcd8aebe8ce50bdbf3ed5c3d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/git/1:2.14.2-1/
 
-- https://sources.debian.net/src/git/1:2.14.2-1/ (for browsing the source)
-- https://sources.debian.net/src/git/1:2.14.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/git/1:2.14.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glib2.0=2.54.1-1`
 
@@ -3702,20 +3687,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxslt=1.1.29-2.2
-'http://deb.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.29-2.2.dsc' libxslt_1.1.29-2.2.dsc 2430 SHA256:afcd1187f7cd4195096678cef44e14a60d20ea58eccfa93554f5e6e73fe24d37
-'http://deb.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.29.orig.tar.gz' libxslt_1.1.29.orig.tar.gz 3428524 SHA256:b5976e3857837e7617b29f2249ebb5eeac34e249208d31f1fbf7a6ba7a4090ce
-'http://deb.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.29-2.2.debian.tar.xz' libxslt_1.1.29-2.2.debian.tar.xz 28792 SHA256:506481f3050ef68c5faeebb12731071fb49b59ff83a997d3d3e20716c3010f59
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libxslt/1.1.29-2.2/
 
-- https://sources.debian.net/src/libxslt/1.1.29-2.2/ (for browsing the source)
-- https://sources.debian.net/src/libxslt/1.1.29-2.2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxslt/1.1.29-2.2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxt=1:1.1.5-1`
 
@@ -5173,21 +5151,13 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`, `/usr/share/doc
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.20.1-2
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.20.1-2.dsc' sqlite3_3.20.1-2.dsc 2476 SHA256:4fae287ad662bb4958273e9d09d1d4efcd8230e8cc7fb89978d47b22e8b5602b
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.20.1.orig-www.tar.xz' sqlite3_3.20.1.orig-www.tar.xz 3485848 SHA256:c31a1ad382c331c0507a5992c6d1697450ffc3410209ae992ead1c34344b5654
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.20.1.orig.tar.xz' sqlite3_3.20.1.orig.tar.xz 5900940 SHA256:0ed8da87222d3e0d45afcd9dac3b91a453eee4ea6eaf1287b78a6f0fb5274437
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.20.1-2.debian.tar.xz' sqlite3_3.20.1-2.debian.tar.xz 17892 SHA256:7d68706ea8703932dc82157067374a804370ef115ae9f5fd3e33f6bb359ea978
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sqlite3/3.20.1-2/
 
-- https://sources.debian.net/src/sqlite3/3.20.1-2/ (for browsing the source)
-- https://sources.debian.net/src/sqlite3/3.20.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sqlite3/3.20.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `subversion=1.9.7-2`
 
