@@ -81,21 +81,13 @@ Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apparmor=2.11.1-2
-'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.11.1-2.dsc' apparmor_2.11.1-2.dsc 3405 SHA256:aa7a72f0b22158ed33682654838a49fcc3ddbf52e7be6e1479856f2cb466c4dc
-'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.11.1.orig.tar.gz' apparmor_2.11.1.orig.tar.gz 5017646 SHA256:e8e2b22c18e6b6741c1f96942398923b97316b53d86408629f922d5689ec3507
-'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.11.1.orig.tar.gz.asc' apparmor_2.11.1.orig.tar.gz.asc 837 SHA256:aef10725e03660510c7273d5f2e3a86121f76bf9ad3d036d66991235fcb5784d
-'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.11.1-2.debian.tar.xz' apparmor_2.11.1-2.debian.tar.xz 84740 SHA256:b44b5c6ab97f03cd15d6939896d29d5421c25c0ef972bd32119ae673012abc1e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apparmor/2.11.1-2/
 
-- https://sources.debian.net/src/apparmor/2.11.1-2/ (for browsing the source)
-- https://sources.debian.net/src/apparmor/2.11.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apparmor/2.11.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apt=1.5`
 
@@ -708,20 +700,13 @@ Licenses: (parsed from: `/usr/share/doc/findutils/copyright`)
 - `GFDL-1.3`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris findutils=4.6.0+git+20170729-2
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.6.0+git+20170729-2.dsc' findutils_4.6.0+git+20170729-2.dsc 2220 SHA256:c59d5c89d6d5e794fd27cd2399d52d033629ae22a7551c1029aa8a779acaab56
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.6.0+git+20170729.orig.tar.xz' findutils_4.6.0+git+20170729.orig.tar.xz 1865076 SHA256:a8be399ed28bca5042313dcaa8e6b90550b8da0d6497311fcdb3823259b5d7ac
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.6.0+git+20170729-2.debian.tar.xz' findutils_4.6.0+git+20170729-2.debian.tar.xz 25572 SHA256:aa6d4a9f31870313a807d455bbc98030659ae69985d2e6893619e3997d01f022
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/findutils/4.6.0+git+20170729-2/
 
-- https://sources.debian.net/src/findutils/4.6.0+git+20170729-2/ (for browsing the source)
-- https://sources.debian.net/src/findutils/4.6.0+git+20170729-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/findutils/4.6.0+git+20170729-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `freetype=2.8.1-0.1`
 

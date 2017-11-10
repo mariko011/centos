@@ -143,21 +143,13 @@ Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apparmor=2.11.1-2
-'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.11.1-2.dsc' apparmor_2.11.1-2.dsc 3405 SHA256:aa7a72f0b22158ed33682654838a49fcc3ddbf52e7be6e1479856f2cb466c4dc
-'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.11.1.orig.tar.gz' apparmor_2.11.1.orig.tar.gz 5017646 SHA256:e8e2b22c18e6b6741c1f96942398923b97316b53d86408629f922d5689ec3507
-'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.11.1.orig.tar.gz.asc' apparmor_2.11.1.orig.tar.gz.asc 837 SHA256:aef10725e03660510c7273d5f2e3a86121f76bf9ad3d036d66991235fcb5784d
-'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.11.1-2.debian.tar.xz' apparmor_2.11.1-2.debian.tar.xz 84740 SHA256:b44b5c6ab97f03cd15d6939896d29d5421c25c0ef972bd32119ae673012abc1e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apparmor/2.11.1-2/
 
-- https://sources.debian.net/src/apparmor/2.11.1-2/ (for browsing the source)
-- https://sources.debian.net/src/apparmor/2.11.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apparmor/2.11.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apr-util=1.6.0-2`
 
@@ -169,21 +161,13 @@ Licenses: (parsed from: `/usr/share/doc/libaprutil1/copyright`)
 
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apr-util=1.6.0-2
-'http://deb.debian.org/debian/pool/main/a/apr-util/apr-util_1.6.0-2.dsc' apr-util_1.6.0-2.dsc 2865 SHA256:cc129f4e615a3dbdb5aedfda9381cdedb99ced08178610728d09b3ac0e776986
-'http://deb.debian.org/debian/pool/main/a/apr-util/apr-util_1.6.0.orig.tar.bz2' apr-util_1.6.0.orig.tar.bz2 428750 SHA256:8474c93fa74b56ac6ca87449abe3e155723d5f534727f3f33283f6631a48ca4c
-'http://deb.debian.org/debian/pool/main/a/apr-util/apr-util_1.6.0.orig.tar.bz2.asc' apr-util_1.6.0.orig.tar.bz2.asc 859 SHA256:c89a3c69e82678ab28ca72d5c658a5556ed52dd092c11421649a08b048191086
-'http://deb.debian.org/debian/pool/main/a/apr-util/apr-util_1.6.0-2.debian.tar.xz' apr-util_1.6.0-2.debian.tar.xz 210800 SHA256:a8b2d0cee68374738434b09785c5344b16e2a6ad3cc4b1ef7f7e9f852e70c5e6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apr-util/1.6.0-2/
 
-- https://sources.debian.net/src/apr-util/1.6.0-2/ (for browsing the source)
-- https://sources.debian.net/src/apr-util/1.6.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apr-util/1.6.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apr=1.6.2-1`
 
@@ -195,21 +179,13 @@ Licenses: (parsed from: `/usr/share/doc/libapr1/copyright`)
 
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apr=1.6.2-1
-'http://deb.debian.org/debian/pool/main/a/apr/apr_1.6.2-1.dsc' apr_1.6.2-1.dsc 2316 SHA256:c7e14c7a36c02fc416586808637b6797f6e1c7a697abeda63db04989a101fcd2
-'http://deb.debian.org/debian/pool/main/a/apr/apr_1.6.2.orig.tar.bz2' apr_1.6.2.orig.tar.bz2 853363 SHA256:09109cea377bab0028bba19a92b5b0e89603df9eab05c0f7dbd4dd83d48dcebd
-'http://deb.debian.org/debian/pool/main/a/apr/apr_1.6.2.orig.tar.bz2.asc' apr_1.6.2.orig.tar.bz2.asc 801 SHA256:026e3086d6ebdd1fb5b0c82953447b4d1946fdf2a621d4e4a607be2f4131f27c
-'http://deb.debian.org/debian/pool/main/a/apr/apr_1.6.2-1.debian.tar.xz' apr_1.6.2-1.debian.tar.xz 212900 SHA256:d1fdfd94fce25be17e6bb84ef6ef694db5b7bad4be964b39b0195c9926dd0510
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apr/1.6.2-1/
 
-- https://sources.debian.net/src/apr/1.6.2-1/ (for browsing the source)
-- https://sources.debian.net/src/apr/1.6.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apr/1.6.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apt=1.5`
 
@@ -1111,20 +1087,13 @@ Licenses: (parsed from: `/usr/share/doc/findutils/copyright`)
 - `GFDL-1.3`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris findutils=4.6.0+git+20170729-2
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.6.0+git+20170729-2.dsc' findutils_4.6.0+git+20170729-2.dsc 2220 SHA256:c59d5c89d6d5e794fd27cd2399d52d033629ae22a7551c1029aa8a779acaab56
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.6.0+git+20170729.orig.tar.xz' findutils_4.6.0+git+20170729.orig.tar.xz 1865076 SHA256:a8be399ed28bca5042313dcaa8e6b90550b8da0d6497311fcdb3823259b5d7ac
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.6.0+git+20170729-2.debian.tar.xz' findutils_4.6.0+git+20170729-2.debian.tar.xz 25572 SHA256:aa6d4a9f31870313a807d455bbc98030659ae69985d2e6893619e3997d01f022
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/findutils/4.6.0+git+20170729-2/
 
-- https://sources.debian.net/src/findutils/4.6.0+git+20170729-2/ (for browsing the source)
-- https://sources.debian.net/src/findutils/4.6.0+git+20170729-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/findutils/4.6.0+git+20170729-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `fontconfig=2.12.3-0.2`
 
@@ -1585,21 +1554,13 @@ Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnup
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.2.1-5
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.1-5.dsc' gnupg2_2.2.1-5.dsc 3701 SHA256:97b1e6001a1bf84812d93600c34dc163d2240d4285f29c95309b504b773b9100
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.1.orig.tar.bz2' gnupg2_2.2.1.orig.tar.bz2 6537959 SHA256:34d70cd65b9c95f3f2f90a9f5c1e0b6a0fe039a8d685e2d66d69c33d1cbf62fb
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.1.orig.tar.bz2.asc' gnupg2_2.2.1.orig.tar.bz2.asc 310 SHA256:ca8e0be202fd6b66e7ccb4366af5fc4a432a60c7d42a89552b707f2cd7ccc8c6
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.1-5.debian.tar.bz2' gnupg2_2.2.1-5.debian.tar.bz2 69578 SHA256:0f6af862fcf63026d83018f288036422b7bed2939f017ca6f3ba371e2de8cffa
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnupg2/2.2.1-5/
 
-- https://sources.debian.net/src/gnupg2/2.2.1-5/ (for browsing the source)
-- https://sources.debian.net/src/gnupg2/2.2.1-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnupg2/2.2.1-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gnutls28=3.5.15-2`
 
@@ -1812,20 +1773,13 @@ Licenses: (parsed from: `/usr/share/doc/libharfbuzz0b/copyright`)
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris harfbuzz=1.6.2-1
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_1.6.2-1.dsc' harfbuzz_1.6.2-1.dsc 2658 SHA256:b195d0ba924f34d94cee1570c3c7f8c178f5157b24eb4ac3c5aaaeb25a2aae81
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_1.6.2.orig.tar.bz2' harfbuzz_1.6.2.orig.tar.bz2 1639114 SHA256:ceb8cbd652829b5fa680a71d89cb79cac7afa104e9484fbd23a24e71c0d6e80e
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_1.6.2-1.debian.tar.xz' harfbuzz_1.6.2-1.debian.tar.xz 8760 SHA256:eff304c291cc55fc70b243a8993ea5dc0987b1b14c060c8203de6dddadb585e5
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/harfbuzz/1.6.2-1/
 
-- https://sources.debian.net/src/harfbuzz/1.6.2-1/ (for browsing the source)
-- https://sources.debian.net/src/harfbuzz/1.6.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/harfbuzz/1.6.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `hicolor-icon-theme=0.17-1`
 
@@ -1917,20 +1871,13 @@ Licenses: (parsed from: `/usr/share/doc/inetutils-ping/copyright`)
 - `MIT`
 - `Wietse`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris inetutils=2:1.9.4-2
-'http://deb.debian.org/debian/pool/main/i/inetutils/inetutils_1.9.4-2.dsc' inetutils_1.9.4-2.dsc 2662 SHA256:bd38f1018bbb697b6e27235a804f742a7bcd5fffb736479e8084f5214ed45669
-'http://deb.debian.org/debian/pool/main/i/inetutils/inetutils_1.9.4.orig.tar.xz' inetutils_1.9.4.orig.tar.xz 1364408 SHA256:849d96f136effdef69548a940e3e0ec0624fc0c81265296987986a0dd36ded37
-'http://deb.debian.org/debian/pool/main/i/inetutils/inetutils_1.9.4-2.debian.tar.xz' inetutils_1.9.4-2.debian.tar.xz 77188 SHA256:1b67e9197c4205b36e7b05e07eedaf44f9b3971f03ab83b7fed279a692d93a98
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/inetutils/2:1.9.4-2/
 
-- https://sources.debian.net/src/inetutils/2:1.9.4-2/ (for browsing the source)
-- https://sources.debian.net/src/inetutils/2:1.9.4-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/inetutils/2:1.9.4-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `init-system-helpers=1.49`
 
@@ -2584,20 +2531,13 @@ Licenses: (parsed from: `/usr/share/doc/libegl1/copyright`, `/usr/share/doc/libg
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libglvnd=0.2.999+git20170802-5
-'http://deb.debian.org/debian/pool/main/libg/libglvnd/libglvnd_0.2.999+git20170802-5.dsc' libglvnd_0.2.999+git20170802-5.dsc 2386 SHA256:f970f32555c240ec3b2f5e891eea8e6d80ebd435642d0afcd8384d97ff913f38
-'http://deb.debian.org/debian/pool/main/libg/libglvnd/libglvnd_0.2.999+git20170802.orig.tar.gz' libglvnd_0.2.999+git20170802.orig.tar.gz 779148 SHA256:0c2361d2bc6001a4af7fb190cda93ebe7796f40c38bc7ac05f46943e6057a5bb
-'http://deb.debian.org/debian/pool/main/libg/libglvnd/libglvnd_0.2.999+git20170802-5.diff.gz' libglvnd_0.2.999+git20170802-5.diff.gz 22653 SHA256:33fb20aa47f7e215435fb1833dd2a93ee3185e14bdbe7e159c1b43ff5f555f3d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libglvnd/0.2.999+git20170802-5/
 
-- https://sources.debian.net/src/libglvnd/0.2.999+git20170802-5/ (for browsing the source)
-- https://sources.debian.net/src/libglvnd/0.2.999+git20170802-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libglvnd/0.2.999+git20170802-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libgpg-error=1.27-3`
 
