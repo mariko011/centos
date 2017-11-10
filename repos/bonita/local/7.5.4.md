@@ -2100,14 +2100,9 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-8-jre-headless/copyright`)
 - `LGPL-2`
 - `LGPL-2-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjdk-8=8u131-b11-2ubuntu1.16.04.3
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-8/openjdk-8_8u131-b11-2ubuntu1.16.04.3.dsc' openjdk-8_8u131-b11-2ubuntu1.16.04.3.dsc 4693 SHA256:97a114c2cbdf6dac073a4824099319116d0340e8544bdb13703513e2634c23d1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-8/openjdk-8_8u131-b11.orig.tar.xz' openjdk-8_8u131-b11.orig.tar.xz 63889888 SHA256:8369a083164d66c151de39933b192583ffb0b1b6daf8c7ffe17afc040478f21b
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-8/openjdk-8_8u131-b11-2ubuntu1.16.04.3.debian.tar.xz' openjdk-8_8u131-b11-2ubuntu1.16.04.3.debian.tar.xz 315144 SHA256:fd68021ebcf258d8a12caf608c12565572b6151c6fcafc619c410fe7ddb868f7
-```
 
 ### `dpkg` source package: `openldap=2.4.42+dfsg-2ubuntu3.2`
 
