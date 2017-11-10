@@ -708,21 +708,13 @@ Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnup
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.2.1-5
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.1-5.dsc' gnupg2_2.2.1-5.dsc 3701 SHA256:97b1e6001a1bf84812d93600c34dc163d2240d4285f29c95309b504b773b9100
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.1.orig.tar.bz2' gnupg2_2.2.1.orig.tar.bz2 6537959 SHA256:34d70cd65b9c95f3f2f90a9f5c1e0b6a0fe039a8d685e2d66d69c33d1cbf62fb
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.1.orig.tar.bz2.asc' gnupg2_2.2.1.orig.tar.bz2.asc 310 SHA256:ca8e0be202fd6b66e7ccb4366af5fc4a432a60c7d42a89552b707f2cd7ccc8c6
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.1-5.debian.tar.bz2' gnupg2_2.2.1-5.debian.tar.bz2 69578 SHA256:0f6af862fcf63026d83018f288036422b7bed2939f017ca6f3ba371e2de8cffa
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnupg2/2.2.1-5/
 
-- https://sources.debian.net/src/gnupg2/2.2.1-5/ (for browsing the source)
-- https://sources.debian.net/src/gnupg2/2.2.1-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnupg2/2.2.1-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gnutls28=3.5.15-2`
 
@@ -841,20 +833,13 @@ Licenses: (parsed from: `/usr/share/doc/inetutils-ping/copyright`)
 - `MIT`
 - `Wietse`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris inetutils=2:1.9.4-2
-'http://deb.debian.org/debian/pool/main/i/inetutils/inetutils_1.9.4-2.dsc' inetutils_1.9.4-2.dsc 2662 SHA256:bd38f1018bbb697b6e27235a804f742a7bcd5fffb736479e8084f5214ed45669
-'http://deb.debian.org/debian/pool/main/i/inetutils/inetutils_1.9.4.orig.tar.xz' inetutils_1.9.4.orig.tar.xz 1364408 SHA256:849d96f136effdef69548a940e3e0ec0624fc0c81265296987986a0dd36ded37
-'http://deb.debian.org/debian/pool/main/i/inetutils/inetutils_1.9.4-2.debian.tar.xz' inetutils_1.9.4-2.debian.tar.xz 77188 SHA256:1b67e9197c4205b36e7b05e07eedaf44f9b3971f03ab83b7fed279a692d93a98
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/inetutils/2:1.9.4-2/
 
-- https://sources.debian.net/src/inetutils/2:1.9.4-2/ (for browsing the source)
-- https://sources.debian.net/src/inetutils/2:1.9.4-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/inetutils/2:1.9.4-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `init-system-helpers=1.49`
 
