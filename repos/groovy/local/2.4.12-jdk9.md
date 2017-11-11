@@ -1546,21 +1546,13 @@ Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.2.1-5
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.1-5.dsc' gnupg2_2.2.1-5.dsc 3701 SHA256:97b1e6001a1bf84812d93600c34dc163d2240d4285f29c95309b504b773b9100
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.1.orig.tar.bz2' gnupg2_2.2.1.orig.tar.bz2 6537959 SHA256:34d70cd65b9c95f3f2f90a9f5c1e0b6a0fe039a8d685e2d66d69c33d1cbf62fb
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.1.orig.tar.bz2.asc' gnupg2_2.2.1.orig.tar.bz2.asc 310 SHA256:ca8e0be202fd6b66e7ccb4366af5fc4a432a60c7d42a89552b707f2cd7ccc8c6
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.1-5.debian.tar.bz2' gnupg2_2.2.1-5.debian.tar.bz2 69578 SHA256:0f6af862fcf63026d83018f288036422b7bed2939f017ca6f3ba371e2de8cffa
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnupg2/2.2.1-5/
 
-- https://sources.debian.net/src/gnupg2/2.2.1-5/ (for browsing the source)
-- https://sources.debian.net/src/gnupg2/2.2.1-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnupg2/2.2.1-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gnutls28=3.5.15-2`
 
@@ -2496,20 +2488,13 @@ Licenses: (parsed from: `/usr/share/doc/libegl1/copyright`, `/usr/share/doc/libg
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libglvnd=0.2.999+git20170802-5
-'http://deb.debian.org/debian/pool/main/libg/libglvnd/libglvnd_0.2.999+git20170802-5.dsc' libglvnd_0.2.999+git20170802-5.dsc 2386 SHA256:f970f32555c240ec3b2f5e891eea8e6d80ebd435642d0afcd8384d97ff913f38
-'http://deb.debian.org/debian/pool/main/libg/libglvnd/libglvnd_0.2.999+git20170802.orig.tar.gz' libglvnd_0.2.999+git20170802.orig.tar.gz 779148 SHA256:0c2361d2bc6001a4af7fb190cda93ebe7796f40c38bc7ac05f46943e6057a5bb
-'http://deb.debian.org/debian/pool/main/libg/libglvnd/libglvnd_0.2.999+git20170802-5.diff.gz' libglvnd_0.2.999+git20170802-5.diff.gz 22653 SHA256:33fb20aa47f7e215435fb1833dd2a93ee3185e14bdbe7e159c1b43ff5f555f3d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libglvnd/0.2.999+git20170802-5/
 
-- https://sources.debian.net/src/libglvnd/0.2.999+git20170802-5/ (for browsing the source)
-- https://sources.debian.net/src/libglvnd/0.2.999+git20170802-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libglvnd/0.2.999+git20170802-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libgpg-error=1.27-3`
 
@@ -3870,21 +3855,13 @@ Licenses: (parsed from: `/usr/share/doc/dmsetup/copyright`, `/usr/share/doc/libd
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lvm2=2.02.176-1
-'http://deb.debian.org/debian/pool/main/l/lvm2/lvm2_2.02.176-1.dsc' lvm2_2.02.176-1.dsc 3136 SHA256:3ac8a1186d375c2dba74cb32bae25ebb48c3dc1f2ead6b454f6f91494d60fb25
-'http://deb.debian.org/debian/pool/main/l/lvm2/lvm2_2.02.176.orig.tar.gz' lvm2_2.02.176.orig.tar.gz 2371438 SHA256:dece83628c2c78a267a126ce6046d506582185ae5d40fb8d59b56547fccea473
-'http://deb.debian.org/debian/pool/main/l/lvm2/lvm2_2.02.176.orig.tar.gz.asc' lvm2_2.02.176.orig.tar.gz.asc 198 SHA256:51c66e6bdebb6ac5b9882b8082ac9816a8555c2d472d7763e0f867c5c8c10b89
-'http://deb.debian.org/debian/pool/main/l/lvm2/lvm2_2.02.176-1.debian.tar.xz' lvm2_2.02.176-1.debian.tar.xz 31940 SHA256:cfa3e21df32b11486d8420981cc638d6e1850f61dc5f95e2b60ad9a513c0c1dc
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/lvm2/2.02.176-1/
 
-- https://sources.debian.net/src/lvm2/2.02.176-1/ (for browsing the source)
-- https://sources.debian.net/src/lvm2/2.02.176-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/lvm2/2.02.176-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=0.0~r131-2`
 
