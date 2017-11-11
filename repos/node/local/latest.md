@@ -1,17 +1,17 @@
-# `node:9.0.0`
+# `node:9.1.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e89f0021daadc491a27aa3440adb699fb67cea08bae7cd3d11d6d319f83434f4`
-- Created: `2017-11-07T06:09:57.462888134Z`
-- Virtual Size: ~ 675.57 Mb  
+- Image ID: `sha256:cf20b9ab2cbc1b6f76e820839ad5f296b4c9a9fd04f3e74651c16ed49943dbc4`
+- Created: `2017-11-08T20:06:07.778470224Z`
+- Virtual Size: ~ 675.59 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=9.0.0`
-  - `YARN_VERSION=1.2.1`
+  - `NODE_VERSION=9.1.0`
+  - `YARN_VERSION=1.3.2`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -4306,20 +4306,13 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `Tcl`
 - `almost exclusively BSD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-9.4=9.4.13-0+deb8u1
-'http://security.debian.org/pool/updates/main/p/postgresql-9.4/postgresql-9.4_9.4.13-0+deb8u1.dsc' postgresql-9.4_9.4.13-0+deb8u1.dsc 3546 SHA256:b803979189136ce6cd081a51d5c8cc26e5a7d8cb3dbcc31aa9e0eedeaa28e79c
-'http://security.debian.org/pool/updates/main/p/postgresql-9.4/postgresql-9.4_9.4.13.orig.tar.bz2' postgresql-9.4_9.4.13.orig.tar.bz2 17867502 SHA256:0080f55d65194de8b96a2dab153443f8248ff2b2b10e6ab4cda2dcadcac7f2ab
-'http://security.debian.org/pool/updates/main/p/postgresql-9.4/postgresql-9.4_9.4.13-0+deb8u1.debian.tar.xz' postgresql-9.4_9.4.13-0+deb8u1.debian.tar.xz 24760 SHA256:eaba640d7bab6113ba355e774d7e060263dcc7b3a27d4f31bf0478ab87075be7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/postgresql-9.4/9.4.13-0+deb8u1/
 
-- https://sources.debian.net/src/postgresql-9.4/9.4.13-0+deb8u1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-9.4/9.4.13-0+deb8u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-9.4/9.4.13-0+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:3.3.9-9`
 

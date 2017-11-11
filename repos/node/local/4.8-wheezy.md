@@ -1,17 +1,17 @@
-# `node:4.8.5-wheezy`
+# `node:4.8.6-wheezy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4616771dc0098e8bf2597510279327d2ebe4b4374e0869cceb697c5d0e94ff32`
-- Created: `2017-11-04T21:49:08.210489187Z`
-- Virtual Size: ~ 511.55 Mb  
+- Image ID: `sha256:fb97222432ffb4ee1360e2eccbcbe492d25a9469a8464907b1f667a575cdfb3d`
+- Created: `2017-11-08T21:10:04.813531204Z`
+- Virtual Size: ~ 511.59 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=4.8.5`
-  - `YARN_VERSION=1.2.1`
+  - `NODE_VERSION=4.8.6`
+  - `YARN_VERSION=1.3.2`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -3515,20 +3515,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=1.0.1t-1+deb7u2
-'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb7u2.dsc' openssl_1.0.1t-1+deb7u2.dsc 2228 SHA256:eba58257166426d6a9eabe45db353fcc29c18d000c1a7da2a9d26fe765b27048
-'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.0.1t.orig.tar.gz' openssl_1.0.1t.orig.tar.gz 4556447 SHA256:4a6ee491a2fdb22e519c76fdc2a628bb3cec12762cd456861d207996c8a07088
-'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb7u2.debian.tar.gz' openssl_1.0.1t-1+deb7u2.debian.tar.gz 117331 SHA256:0ceea11701c070fff718ad7021d52db1f5a3bbde1b68d508d3f29571678fc69a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssl/1.0.1t-1+deb7u2/
 
-- https://sources.debian.net/src/openssl/1.0.1t-1+deb7u2/ (for browsing the source)
-- https://sources.debian.net/src/openssl/1.0.1t-1+deb7u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/1.0.1t-1+deb7u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.12-3`
 
