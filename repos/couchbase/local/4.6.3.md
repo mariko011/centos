@@ -2669,14 +2669,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2016j-0ubuntu0.14.04
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016j-0ubuntu0.14.04.dsc' tzdata_2016j-0ubuntu0.14.04.dsc 2048 SHA256:baec60d2dc81bef9a522b00ee9679c15a1d93b32fc6c5367203654b46bfebbd5
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016j.orig.tar.gz' tzdata_2016j.orig.tar.gz 321185 SHA256:f5ee4e0f115f6c2faee1c4b16193a97338cbd1b503f2cea6c5a768c82ff39dc8
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016j-0ubuntu0.14.04.debian.tar.xz' tzdata_2016j-0ubuntu0.14.04.debian.tar.xz 100436 SHA256:a4a236571039dcd942e49e86d632908663eabc7a0e5bcdf81ee39aec9746d508
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2012.05.19`
 
