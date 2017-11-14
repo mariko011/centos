@@ -1,7 +1,7 @@
 ## `ruby:rc-stretch`
 
 ```console
-$ docker pull ruby@sha256:ff8897550d15c171303f76791ff0799f73f8949ab9405d80a51804376455094c
+$ docker pull ruby@sha256:c9777424035d8ed8315568d113b7639a18350dfad9601476e83da54d9680724e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -361,14 +361,14 @@ CMD ["irb"]
 ### `ruby:rc-stretch` - linux; 386
 
 ```console
-$ docker pull ruby@sha256:4962a43bc9ba4b05b9e6dacb8e4045a34204544a9a0eac11c19f816d3fe45b39
+$ docker pull ruby@sha256:07e3aef393befc89f533232cf7f5b63d371e2b03330f68d5c2c6160698fab8ad
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **356.4 MB (356413651 bytes)**  
+-	Total Size: **356.4 MB (356430079 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:582c05003fd3d3086c0b21bc1554456399faf4b2787c05a69cca8264568c2a63`
+-	Image ID: `sha256:5769a3824324f80632f71e4730c327a9d84b2b6b75c41a6feb3a063ab7a10c60`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -392,21 +392,21 @@ ENV RUBY_MAJOR=2.5-rc
 ENV RUBY_VERSION=2.5.0-preview1
 # Fri, 03 Nov 2017 02:29:47 GMT
 ENV RUBY_DOWNLOAD_SHA256=c2f518eb04b38bdd562ba5611abd2521248a1608fc466368563dd794ddeddd09
-# Sat, 04 Nov 2017 02:37:13 GMT
-ENV RUBYGEMS_VERSION=2.7.0
-# Sat, 04 Nov 2017 02:37:13 GMT
+# Tue, 14 Nov 2017 03:35:26 GMT
+ENV RUBYGEMS_VERSION=2.7.2
+# Tue, 14 Nov 2017 03:35:26 GMT
 ENV BUNDLER_VERSION=1.16.0
-# Sat, 04 Nov 2017 02:39:39 GMT
+# Tue, 14 Nov 2017 03:37:54 GMT
 RUN set -ex 		&& buildDeps=' 		bison 		dpkg-dev 		libgdbm-dev 		ruby 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& rm -rf /var/lib/apt/lists/* 		&& wget -O ruby.tar.xz "https://cache.ruby-lang.org/pub/ruby/${RUBY_MAJOR%-rc}/ruby-$RUBY_VERSION.tar.xz" 	&& echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum -c - 		&& mkdir -p /usr/src/ruby 	&& tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1 	&& rm ruby.tar.xz 		&& cd /usr/src/ruby 		&& { 		echo '#define ENABLE_PATH_CHECK 0'; 		echo; 		cat file.c; 	} > file.c.new 	&& mv file.c.new file.c 		&& autoconf 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 	&& make -j "$(nproc)" 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& cd / 	&& rm -r /usr/src/ruby 		&& gem update --system "$RUBYGEMS_VERSION" 	&& gem install bundler --version "$BUNDLER_VERSION" --force
-# Sat, 04 Nov 2017 02:39:40 GMT
+# Tue, 14 Nov 2017 03:37:54 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Sat, 04 Nov 2017 02:39:40 GMT
+# Tue, 14 Nov 2017 03:37:54 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Sat, 04 Nov 2017 02:39:40 GMT
+# Tue, 14 Nov 2017 03:37:54 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 04 Nov 2017 02:39:41 GMT
+# Tue, 14 Nov 2017 03:37:55 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" 	&& chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Sat, 04 Nov 2017 02:39:41 GMT
+# Tue, 14 Nov 2017 03:37:55 GMT
 CMD ["irb"]
 ```
 
@@ -435,12 +435,12 @@ CMD ["irb"]
 		Last Modified: Fri, 03 Nov 2017 03:01:21 GMT  
 		Size: 207.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3d69f941a5fb4eb02fb49ce91096902e86501af3963594453d0617b6d35047c3`  
-		Last Modified: Sat, 04 Nov 2017 03:34:29 GMT  
-		Size: 24.6 MB (24574534 bytes)  
+	-	`sha256:7b2ead11d090eef6c30b4455d96b84efb1c2d3cb7830ef87e1948ea4ae22914d`  
+		Last Modified: Tue, 14 Nov 2017 04:45:14 GMT  
+		Size: 24.6 MB (24590962 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:774d51929b5b9df6e5647d37fb9b4290390a0d36fc84b07c009024edc5805848`  
-		Last Modified: Sat, 04 Nov 2017 03:34:23 GMT  
+	-	`sha256:27057c8cfd0dae220f9b79c0b0f396313410a4a396effe93a0e4aef339693d58`  
+		Last Modified: Tue, 14 Nov 2017 04:45:08 GMT  
 		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 

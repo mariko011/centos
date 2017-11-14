@@ -6941,7 +6941,7 @@ RUN $url = ('https://download.docker.com/win/static/{0}/x86_64/docker-{1}.zip' -
 ## `docker:17.11.0-ce-rc2`
 
 ```console
-$ docker pull docker@sha256:8a998cc2c0386fac9f97ad19ba5a4834f144665be17514a91f1ed6656c1844f8
+$ docker pull docker@sha256:a0095138316692e9f0a614db3c0c55e8b4c1bb715c6652e96327e53fef8fc361
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7149,14 +7149,14 @@ CMD ["sh"]
 ### `docker:17.11.0-ce-rc2` - linux; s390x
 
 ```console
-$ docker pull docker@sha256:65684be76beb323fa1017d5c8247cc59f3ac87880143abf7dfcaaa8f41738eb4
+$ docker pull docker@sha256:db7620810ef3fe21719498403a79cc29cd6316c916008c68fe4ac8d267ece318
 ```
 
 -	Docker Version: 17.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **44.0 MB (44014555 bytes)**  
+-	Total Size: **44.0 MB (44015114 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7e3fb3be16decbe5bffe3f24084296cdfd55e591379677b3c96c86856fa1d011`
+-	Image ID: `sha256:3edc7e55e1ddd4b8d9815bafa0ebf845e4737d6496861620dbae69012ddde9ec`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["sh"]`
 
@@ -7177,11 +7177,13 @@ ENV DOCKER_CHANNEL=test
 ENV DOCKER_VERSION=17.11.0-ce-rc2
 # Sat, 04 Nov 2017 03:01:46 GMT
 RUN set -ex; 	apk add --no-cache --virtual .fetch-deps 		curl 		tar 	; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64) dockerArch='x86_64' ;; 		aarch64) dockerArch='aarch64' ;; 		ppc64le) dockerArch='ppc64le' ;; 		s390x) dockerArch='s390x' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 		if ! curl -fL -o docker.tgz "https://download.docker.com/linux/static/${DOCKER_CHANNEL}/${dockerArch}/docker-${DOCKER_VERSION}.tgz"; then 		echo >&2 "error: failed to download 'docker-${DOCKER_VERSION}' from '${DOCKER_CHANNEL}' for '${dockerArch}'"; 		exit 1; 	fi; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 	; 	rm docker.tgz; 		apk del .fetch-deps; 		dockerd -v; 	docker -v
-# Sat, 04 Nov 2017 03:01:46 GMT
+# Tue, 14 Nov 2017 04:01:32 GMT
+COPY file:016ebcc5aefa6b28f6c484a299057d5b236e1d4f3baf44cc76eb4cd578821691 in /usr/local/bin/modprobe 
+# Tue, 14 Nov 2017 04:01:32 GMT
 COPY file:0d94e1cd679f133aab807891a1b00b6aef1a9f1f884108e7a17ddf50ab88f1fb in /usr/local/bin/ 
-# Sat, 04 Nov 2017 03:01:46 GMT
+# Tue, 14 Nov 2017 04:01:32 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 04 Nov 2017 03:01:46 GMT
+# Tue, 14 Nov 2017 04:01:32 GMT
 CMD ["sh"]
 ```
 
@@ -7206,15 +7208,19 @@ CMD ["sh"]
 		Last Modified: Sat, 04 Nov 2017 03:03:21 GMT  
 		Size: 41.6 MB (41595512 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d305d72b5369b9ffc58b51839b340da2a5283e73b972dc77d6a7341f987fc351`  
-		Last Modified: Sat, 04 Nov 2017 03:03:12 GMT  
-		Size: 740.0 B  
+	-	`sha256:2b4497dadd9b8e73f275850a15d9c820aea699281b245d8f377a713f06ed82c5`  
+		Last Modified: Tue, 14 Nov 2017 04:02:43 GMT  
+		Size: 554.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1ce301e52480ebfa52b1c88de19a239da8056e68a28bcb3061d7c596a0c785d4`  
+		Last Modified: Tue, 14 Nov 2017 04:02:44 GMT  
+		Size: 745.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:17.11.0-ce-rc2-dind`
 
 ```console
-$ docker pull docker@sha256:08195c1844af8fa63ece0122fcd096ebb62e55221fede7fdb16d73ad841be9da
+$ docker pull docker@sha256:c586932df7a0ab7a5cb6e465ffbdfc45a845ed4907756009f79205deba0a1f1b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7524,14 +7530,14 @@ CMD []
 ### `docker:17.11.0-ce-rc2-dind` - linux; s390x
 
 ```console
-$ docker pull docker@sha256:4ecc43e0b90b332da1605752fc5981d740697b581f3e46efc60a8e5fe233f1ff
+$ docker pull docker@sha256:31b71cf86df00349b63ec9d842fda720d085741c2bd77d230fee8e1d5785a399
 ```
 
 -	Docker Version: 17.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **48.3 MB (48340868 bytes)**  
+-	Total Size: **48.3 MB (48341414 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c605fd78f2027bcd0d406b82b31df5c7a1ca70f4feab052dd33e64eca4be9345`
+-	Image ID: `sha256:6e5696b69a04c102ffe35d9203e06e176b14cfb893487a6a4b189bc087d77166`
 -	Entrypoint: `["dockerd-entrypoint.sh"]`
 -	Default Command: `[]`
 
@@ -7552,29 +7558,31 @@ ENV DOCKER_CHANNEL=test
 ENV DOCKER_VERSION=17.11.0-ce-rc2
 # Sat, 04 Nov 2017 03:01:46 GMT
 RUN set -ex; 	apk add --no-cache --virtual .fetch-deps 		curl 		tar 	; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64) dockerArch='x86_64' ;; 		aarch64) dockerArch='aarch64' ;; 		ppc64le) dockerArch='ppc64le' ;; 		s390x) dockerArch='s390x' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 		if ! curl -fL -o docker.tgz "https://download.docker.com/linux/static/${DOCKER_CHANNEL}/${dockerArch}/docker-${DOCKER_VERSION}.tgz"; then 		echo >&2 "error: failed to download 'docker-${DOCKER_VERSION}' from '${DOCKER_CHANNEL}' for '${dockerArch}'"; 		exit 1; 	fi; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 	; 	rm docker.tgz; 		apk del .fetch-deps; 		dockerd -v; 	docker -v
-# Sat, 04 Nov 2017 03:01:46 GMT
+# Tue, 14 Nov 2017 04:01:32 GMT
+COPY file:016ebcc5aefa6b28f6c484a299057d5b236e1d4f3baf44cc76eb4cd578821691 in /usr/local/bin/modprobe 
+# Tue, 14 Nov 2017 04:01:32 GMT
 COPY file:0d94e1cd679f133aab807891a1b00b6aef1a9f1f884108e7a17ddf50ab88f1fb in /usr/local/bin/ 
-# Sat, 04 Nov 2017 03:01:46 GMT
+# Tue, 14 Nov 2017 04:01:32 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 04 Nov 2017 03:01:46 GMT
+# Tue, 14 Nov 2017 04:01:32 GMT
 CMD ["sh"]
-# Sat, 04 Nov 2017 03:02:07 GMT
+# Tue, 14 Nov 2017 04:01:53 GMT
 RUN set -eux; 	apk add --no-cache 		btrfs-progs 		e2fsprogs 		e2fsprogs-extra 		iptables 		xfsprogs 		xz 	; 	if zfs="$(apk info --no-cache --quiet zfs)" && [ -n "$zfs" ]; then 		apk add --no-cache zfs; 	fi
-# Sat, 04 Nov 2017 03:02:08 GMT
+# Tue, 14 Nov 2017 04:01:54 GMT
 RUN set -x 	&& addgroup -S dockremap 	&& adduser -S -G dockremap dockremap 	&& echo 'dockremap:165536:65536' >> /etc/subuid 	&& echo 'dockremap:165536:65536' >> /etc/subgid
-# Sat, 04 Nov 2017 03:02:08 GMT
+# Tue, 14 Nov 2017 04:01:54 GMT
 ENV DIND_COMMIT=3b5fac462d21ca164b3778647420016315289034
-# Sat, 04 Nov 2017 03:02:12 GMT
+# Tue, 14 Nov 2017 04:01:57 GMT
 RUN set -ex; 	apk add --no-cache --virtual .fetch-deps libressl; 	wget -O /usr/local/bin/dind "https://raw.githubusercontent.com/docker/docker/${DIND_COMMIT}/hack/dind"; 	chmod +x /usr/local/bin/dind; 	apk del .fetch-deps
-# Sat, 04 Nov 2017 03:02:12 GMT
+# Tue, 14 Nov 2017 04:01:57 GMT
 COPY file:14215a2b157618f9ff66709b019144b953b95bbd7273096e970306475e524820 in /usr/local/bin/ 
-# Sat, 04 Nov 2017 03:02:13 GMT
+# Tue, 14 Nov 2017 04:01:57 GMT
 VOLUME [/var/lib/docker]
-# Sat, 04 Nov 2017 03:02:13 GMT
+# Tue, 14 Nov 2017 04:01:58 GMT
 EXPOSE 2375/tcp
-# Sat, 04 Nov 2017 03:02:13 GMT
+# Tue, 14 Nov 2017 04:01:58 GMT
 ENTRYPOINT ["dockerd-entrypoint.sh"]
-# Sat, 04 Nov 2017 03:02:14 GMT
+# Tue, 14 Nov 2017 04:01:58 GMT
 CMD []
 ```
 
@@ -7599,31 +7607,35 @@ CMD []
 		Last Modified: Sat, 04 Nov 2017 03:03:21 GMT  
 		Size: 41.6 MB (41595512 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d305d72b5369b9ffc58b51839b340da2a5283e73b972dc77d6a7341f987fc351`  
-		Last Modified: Sat, 04 Nov 2017 03:03:12 GMT  
-		Size: 740.0 B  
+	-	`sha256:2b4497dadd9b8e73f275850a15d9c820aea699281b245d8f377a713f06ed82c5`  
+		Last Modified: Tue, 14 Nov 2017 04:02:43 GMT  
+		Size: 554.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bceed957a34110ef90a98e719466ac0ab1eb397202a10efc899061a9e8484d08`  
-		Last Modified: Sat, 04 Nov 2017 03:03:40 GMT  
-		Size: 4.1 MB (4144752 bytes)  
+	-	`sha256:1ce301e52480ebfa52b1c88de19a239da8056e68a28bcb3061d7c596a0c785d4`  
+		Last Modified: Tue, 14 Nov 2017 04:02:44 GMT  
+		Size: 745.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4e91254b014b18319d6615fbd0adae7d4c670e90a77d9b5caee8489e86867683`  
-		Last Modified: Sat, 04 Nov 2017 03:03:40 GMT  
-		Size: 1.3 KB (1308 bytes)  
+	-	`sha256:511ecfcc923af630742b10fd0713619af311a1718befb19cca9c601ff041a0c0`  
+		Last Modified: Tue, 14 Nov 2017 04:03:04 GMT  
+		Size: 4.1 MB (4144734 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c8902499e9bf5d265aba8bb8178e201cc56bbc8ff3beb352505fc2fb1ab08e9b`  
-		Last Modified: Sat, 04 Nov 2017 03:03:40 GMT  
-		Size: 179.8 KB (179774 bytes)  
+	-	`sha256:a9872fdee49943fa4eb8f632e9ada00ac8296be28a3c5a80f72df7760b77d169`  
+		Last Modified: Tue, 14 Nov 2017 04:03:03 GMT  
+		Size: 1.3 KB (1312 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b140940582c24221176da7328b1e67febbea8221fe9357f041fd0f39c8ab3657`  
-		Last Modified: Sat, 04 Nov 2017 03:03:40 GMT  
-		Size: 479.0 B  
+	-	`sha256:f77cf94ea294bb1ef6d323171b9e5af373f81c231e6150474ef6caa7274e355c`  
+		Last Modified: Tue, 14 Nov 2017 04:03:04 GMT  
+		Size: 179.8 KB (179773 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d80055f9f3dbb9fe0957f9d0f7552c1dce6655a4bce4bbd7bd470aa9fd518cd4`  
+		Last Modified: Tue, 14 Nov 2017 04:03:03 GMT  
+		Size: 481.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:17.11.0-ce-rc2-git`
 
 ```console
-$ docker pull docker@sha256:57b758d1531e16a0dc7149a16cfd3a574f74e30f352af5a53436e61f3e6fc5b4
+$ docker pull docker@sha256:e85a269567edd818dac115df04a3fa5c617348184b8801d84b1a232518f139ab
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7849,14 +7861,14 @@ RUN apk add --no-cache 		git 		openssh-client
 ### `docker:17.11.0-ce-rc2-git` - linux; s390x
 
 ```console
-$ docker pull docker@sha256:f226a40a1f4d5916713435f5e398bad27e3ee74071db04bfbf8cfb8f76f97612
+$ docker pull docker@sha256:5e24ca31a100d4c9855963a43bb0bfa98764cbb2452b1fa408cedb428afc1ac1
 ```
 
 -	Docker Version: 17.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **55.8 MB (55801076 bytes)**  
+-	Total Size: **55.8 MB (55801665 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fa0487ff66bed97dccd0124a5d8805dd922b967c6e4fac39db2edcd18de7b0ca`
+-	Image ID: `sha256:d30fc964605b40a29cc6b04d8a09220ccf8cfdfd23d2f5c0df86278c953e1cee`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["sh"]`
 
@@ -7877,13 +7889,15 @@ ENV DOCKER_CHANNEL=test
 ENV DOCKER_VERSION=17.11.0-ce-rc2
 # Sat, 04 Nov 2017 03:01:46 GMT
 RUN set -ex; 	apk add --no-cache --virtual .fetch-deps 		curl 		tar 	; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64) dockerArch='x86_64' ;; 		aarch64) dockerArch='aarch64' ;; 		ppc64le) dockerArch='ppc64le' ;; 		s390x) dockerArch='s390x' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 		if ! curl -fL -o docker.tgz "https://download.docker.com/linux/static/${DOCKER_CHANNEL}/${dockerArch}/docker-${DOCKER_VERSION}.tgz"; then 		echo >&2 "error: failed to download 'docker-${DOCKER_VERSION}' from '${DOCKER_CHANNEL}' for '${dockerArch}'"; 		exit 1; 	fi; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 	; 	rm docker.tgz; 		apk del .fetch-deps; 		dockerd -v; 	docker -v
-# Sat, 04 Nov 2017 03:01:46 GMT
+# Tue, 14 Nov 2017 04:01:32 GMT
+COPY file:016ebcc5aefa6b28f6c484a299057d5b236e1d4f3baf44cc76eb4cd578821691 in /usr/local/bin/modprobe 
+# Tue, 14 Nov 2017 04:01:32 GMT
 COPY file:0d94e1cd679f133aab807891a1b00b6aef1a9f1f884108e7a17ddf50ab88f1fb in /usr/local/bin/ 
-# Sat, 04 Nov 2017 03:01:46 GMT
+# Tue, 14 Nov 2017 04:01:32 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 04 Nov 2017 03:01:46 GMT
+# Tue, 14 Nov 2017 04:01:32 GMT
 CMD ["sh"]
-# Sat, 04 Nov 2017 03:02:28 GMT
+# Tue, 14 Nov 2017 04:02:09 GMT
 RUN apk add --no-cache 		git 		openssh-client
 ```
 
@@ -7908,13 +7922,17 @@ RUN apk add --no-cache 		git 		openssh-client
 		Last Modified: Sat, 04 Nov 2017 03:03:21 GMT  
 		Size: 41.6 MB (41595512 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d305d72b5369b9ffc58b51839b340da2a5283e73b972dc77d6a7341f987fc351`  
-		Last Modified: Sat, 04 Nov 2017 03:03:12 GMT  
-		Size: 740.0 B  
+	-	`sha256:2b4497dadd9b8e73f275850a15d9c820aea699281b245d8f377a713f06ed82c5`  
+		Last Modified: Tue, 14 Nov 2017 04:02:43 GMT  
+		Size: 554.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:82af617a56a313d2686ec79d5eba929cf559ded4e516cbfe68577538c363fca8`  
-		Last Modified: Sat, 04 Nov 2017 03:04:00 GMT  
-		Size: 11.8 MB (11786521 bytes)  
+	-	`sha256:1ce301e52480ebfa52b1c88de19a239da8056e68a28bcb3061d7c596a0c785d4`  
+		Last Modified: Tue, 14 Nov 2017 04:02:44 GMT  
+		Size: 745.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b4696768e5f68c2872cf837f965dea1e7b149141978424901c655bf997f1abbf`  
+		Last Modified: Tue, 14 Nov 2017 04:03:25 GMT  
+		Size: 11.8 MB (11786551 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:17.11.0-ce-rc2-windowsservercore`
@@ -7991,7 +8009,7 @@ RUN $url = ('https://download.docker.com/win/static/{0}/x86_64/docker-{1}.zip' -
 ## `docker:17.11-rc`
 
 ```console
-$ docker pull docker@sha256:8a998cc2c0386fac9f97ad19ba5a4834f144665be17514a91f1ed6656c1844f8
+$ docker pull docker@sha256:a0095138316692e9f0a614db3c0c55e8b4c1bb715c6652e96327e53fef8fc361
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8199,14 +8217,14 @@ CMD ["sh"]
 ### `docker:17.11-rc` - linux; s390x
 
 ```console
-$ docker pull docker@sha256:65684be76beb323fa1017d5c8247cc59f3ac87880143abf7dfcaaa8f41738eb4
+$ docker pull docker@sha256:db7620810ef3fe21719498403a79cc29cd6316c916008c68fe4ac8d267ece318
 ```
 
 -	Docker Version: 17.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **44.0 MB (44014555 bytes)**  
+-	Total Size: **44.0 MB (44015114 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7e3fb3be16decbe5bffe3f24084296cdfd55e591379677b3c96c86856fa1d011`
+-	Image ID: `sha256:3edc7e55e1ddd4b8d9815bafa0ebf845e4737d6496861620dbae69012ddde9ec`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["sh"]`
 
@@ -8227,11 +8245,13 @@ ENV DOCKER_CHANNEL=test
 ENV DOCKER_VERSION=17.11.0-ce-rc2
 # Sat, 04 Nov 2017 03:01:46 GMT
 RUN set -ex; 	apk add --no-cache --virtual .fetch-deps 		curl 		tar 	; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64) dockerArch='x86_64' ;; 		aarch64) dockerArch='aarch64' ;; 		ppc64le) dockerArch='ppc64le' ;; 		s390x) dockerArch='s390x' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 		if ! curl -fL -o docker.tgz "https://download.docker.com/linux/static/${DOCKER_CHANNEL}/${dockerArch}/docker-${DOCKER_VERSION}.tgz"; then 		echo >&2 "error: failed to download 'docker-${DOCKER_VERSION}' from '${DOCKER_CHANNEL}' for '${dockerArch}'"; 		exit 1; 	fi; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 	; 	rm docker.tgz; 		apk del .fetch-deps; 		dockerd -v; 	docker -v
-# Sat, 04 Nov 2017 03:01:46 GMT
+# Tue, 14 Nov 2017 04:01:32 GMT
+COPY file:016ebcc5aefa6b28f6c484a299057d5b236e1d4f3baf44cc76eb4cd578821691 in /usr/local/bin/modprobe 
+# Tue, 14 Nov 2017 04:01:32 GMT
 COPY file:0d94e1cd679f133aab807891a1b00b6aef1a9f1f884108e7a17ddf50ab88f1fb in /usr/local/bin/ 
-# Sat, 04 Nov 2017 03:01:46 GMT
+# Tue, 14 Nov 2017 04:01:32 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 04 Nov 2017 03:01:46 GMT
+# Tue, 14 Nov 2017 04:01:32 GMT
 CMD ["sh"]
 ```
 
@@ -8256,15 +8276,19 @@ CMD ["sh"]
 		Last Modified: Sat, 04 Nov 2017 03:03:21 GMT  
 		Size: 41.6 MB (41595512 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d305d72b5369b9ffc58b51839b340da2a5283e73b972dc77d6a7341f987fc351`  
-		Last Modified: Sat, 04 Nov 2017 03:03:12 GMT  
-		Size: 740.0 B  
+	-	`sha256:2b4497dadd9b8e73f275850a15d9c820aea699281b245d8f377a713f06ed82c5`  
+		Last Modified: Tue, 14 Nov 2017 04:02:43 GMT  
+		Size: 554.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1ce301e52480ebfa52b1c88de19a239da8056e68a28bcb3061d7c596a0c785d4`  
+		Last Modified: Tue, 14 Nov 2017 04:02:44 GMT  
+		Size: 745.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:17.11-rc-dind`
 
 ```console
-$ docker pull docker@sha256:08195c1844af8fa63ece0122fcd096ebb62e55221fede7fdb16d73ad841be9da
+$ docker pull docker@sha256:c586932df7a0ab7a5cb6e465ffbdfc45a845ed4907756009f79205deba0a1f1b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8574,14 +8598,14 @@ CMD []
 ### `docker:17.11-rc-dind` - linux; s390x
 
 ```console
-$ docker pull docker@sha256:4ecc43e0b90b332da1605752fc5981d740697b581f3e46efc60a8e5fe233f1ff
+$ docker pull docker@sha256:31b71cf86df00349b63ec9d842fda720d085741c2bd77d230fee8e1d5785a399
 ```
 
 -	Docker Version: 17.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **48.3 MB (48340868 bytes)**  
+-	Total Size: **48.3 MB (48341414 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c605fd78f2027bcd0d406b82b31df5c7a1ca70f4feab052dd33e64eca4be9345`
+-	Image ID: `sha256:6e5696b69a04c102ffe35d9203e06e176b14cfb893487a6a4b189bc087d77166`
 -	Entrypoint: `["dockerd-entrypoint.sh"]`
 -	Default Command: `[]`
 
@@ -8602,29 +8626,31 @@ ENV DOCKER_CHANNEL=test
 ENV DOCKER_VERSION=17.11.0-ce-rc2
 # Sat, 04 Nov 2017 03:01:46 GMT
 RUN set -ex; 	apk add --no-cache --virtual .fetch-deps 		curl 		tar 	; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64) dockerArch='x86_64' ;; 		aarch64) dockerArch='aarch64' ;; 		ppc64le) dockerArch='ppc64le' ;; 		s390x) dockerArch='s390x' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 		if ! curl -fL -o docker.tgz "https://download.docker.com/linux/static/${DOCKER_CHANNEL}/${dockerArch}/docker-${DOCKER_VERSION}.tgz"; then 		echo >&2 "error: failed to download 'docker-${DOCKER_VERSION}' from '${DOCKER_CHANNEL}' for '${dockerArch}'"; 		exit 1; 	fi; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 	; 	rm docker.tgz; 		apk del .fetch-deps; 		dockerd -v; 	docker -v
-# Sat, 04 Nov 2017 03:01:46 GMT
+# Tue, 14 Nov 2017 04:01:32 GMT
+COPY file:016ebcc5aefa6b28f6c484a299057d5b236e1d4f3baf44cc76eb4cd578821691 in /usr/local/bin/modprobe 
+# Tue, 14 Nov 2017 04:01:32 GMT
 COPY file:0d94e1cd679f133aab807891a1b00b6aef1a9f1f884108e7a17ddf50ab88f1fb in /usr/local/bin/ 
-# Sat, 04 Nov 2017 03:01:46 GMT
+# Tue, 14 Nov 2017 04:01:32 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 04 Nov 2017 03:01:46 GMT
+# Tue, 14 Nov 2017 04:01:32 GMT
 CMD ["sh"]
-# Sat, 04 Nov 2017 03:02:07 GMT
+# Tue, 14 Nov 2017 04:01:53 GMT
 RUN set -eux; 	apk add --no-cache 		btrfs-progs 		e2fsprogs 		e2fsprogs-extra 		iptables 		xfsprogs 		xz 	; 	if zfs="$(apk info --no-cache --quiet zfs)" && [ -n "$zfs" ]; then 		apk add --no-cache zfs; 	fi
-# Sat, 04 Nov 2017 03:02:08 GMT
+# Tue, 14 Nov 2017 04:01:54 GMT
 RUN set -x 	&& addgroup -S dockremap 	&& adduser -S -G dockremap dockremap 	&& echo 'dockremap:165536:65536' >> /etc/subuid 	&& echo 'dockremap:165536:65536' >> /etc/subgid
-# Sat, 04 Nov 2017 03:02:08 GMT
+# Tue, 14 Nov 2017 04:01:54 GMT
 ENV DIND_COMMIT=3b5fac462d21ca164b3778647420016315289034
-# Sat, 04 Nov 2017 03:02:12 GMT
+# Tue, 14 Nov 2017 04:01:57 GMT
 RUN set -ex; 	apk add --no-cache --virtual .fetch-deps libressl; 	wget -O /usr/local/bin/dind "https://raw.githubusercontent.com/docker/docker/${DIND_COMMIT}/hack/dind"; 	chmod +x /usr/local/bin/dind; 	apk del .fetch-deps
-# Sat, 04 Nov 2017 03:02:12 GMT
+# Tue, 14 Nov 2017 04:01:57 GMT
 COPY file:14215a2b157618f9ff66709b019144b953b95bbd7273096e970306475e524820 in /usr/local/bin/ 
-# Sat, 04 Nov 2017 03:02:13 GMT
+# Tue, 14 Nov 2017 04:01:57 GMT
 VOLUME [/var/lib/docker]
-# Sat, 04 Nov 2017 03:02:13 GMT
+# Tue, 14 Nov 2017 04:01:58 GMT
 EXPOSE 2375/tcp
-# Sat, 04 Nov 2017 03:02:13 GMT
+# Tue, 14 Nov 2017 04:01:58 GMT
 ENTRYPOINT ["dockerd-entrypoint.sh"]
-# Sat, 04 Nov 2017 03:02:14 GMT
+# Tue, 14 Nov 2017 04:01:58 GMT
 CMD []
 ```
 
@@ -8649,31 +8675,35 @@ CMD []
 		Last Modified: Sat, 04 Nov 2017 03:03:21 GMT  
 		Size: 41.6 MB (41595512 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d305d72b5369b9ffc58b51839b340da2a5283e73b972dc77d6a7341f987fc351`  
-		Last Modified: Sat, 04 Nov 2017 03:03:12 GMT  
-		Size: 740.0 B  
+	-	`sha256:2b4497dadd9b8e73f275850a15d9c820aea699281b245d8f377a713f06ed82c5`  
+		Last Modified: Tue, 14 Nov 2017 04:02:43 GMT  
+		Size: 554.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bceed957a34110ef90a98e719466ac0ab1eb397202a10efc899061a9e8484d08`  
-		Last Modified: Sat, 04 Nov 2017 03:03:40 GMT  
-		Size: 4.1 MB (4144752 bytes)  
+	-	`sha256:1ce301e52480ebfa52b1c88de19a239da8056e68a28bcb3061d7c596a0c785d4`  
+		Last Modified: Tue, 14 Nov 2017 04:02:44 GMT  
+		Size: 745.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4e91254b014b18319d6615fbd0adae7d4c670e90a77d9b5caee8489e86867683`  
-		Last Modified: Sat, 04 Nov 2017 03:03:40 GMT  
-		Size: 1.3 KB (1308 bytes)  
+	-	`sha256:511ecfcc923af630742b10fd0713619af311a1718befb19cca9c601ff041a0c0`  
+		Last Modified: Tue, 14 Nov 2017 04:03:04 GMT  
+		Size: 4.1 MB (4144734 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c8902499e9bf5d265aba8bb8178e201cc56bbc8ff3beb352505fc2fb1ab08e9b`  
-		Last Modified: Sat, 04 Nov 2017 03:03:40 GMT  
-		Size: 179.8 KB (179774 bytes)  
+	-	`sha256:a9872fdee49943fa4eb8f632e9ada00ac8296be28a3c5a80f72df7760b77d169`  
+		Last Modified: Tue, 14 Nov 2017 04:03:03 GMT  
+		Size: 1.3 KB (1312 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b140940582c24221176da7328b1e67febbea8221fe9357f041fd0f39c8ab3657`  
-		Last Modified: Sat, 04 Nov 2017 03:03:40 GMT  
-		Size: 479.0 B  
+	-	`sha256:f77cf94ea294bb1ef6d323171b9e5af373f81c231e6150474ef6caa7274e355c`  
+		Last Modified: Tue, 14 Nov 2017 04:03:04 GMT  
+		Size: 179.8 KB (179773 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d80055f9f3dbb9fe0957f9d0f7552c1dce6655a4bce4bbd7bd470aa9fd518cd4`  
+		Last Modified: Tue, 14 Nov 2017 04:03:03 GMT  
+		Size: 481.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:17.11-rc-git`
 
 ```console
-$ docker pull docker@sha256:57b758d1531e16a0dc7149a16cfd3a574f74e30f352af5a53436e61f3e6fc5b4
+$ docker pull docker@sha256:e85a269567edd818dac115df04a3fa5c617348184b8801d84b1a232518f139ab
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8899,14 +8929,14 @@ RUN apk add --no-cache 		git 		openssh-client
 ### `docker:17.11-rc-git` - linux; s390x
 
 ```console
-$ docker pull docker@sha256:f226a40a1f4d5916713435f5e398bad27e3ee74071db04bfbf8cfb8f76f97612
+$ docker pull docker@sha256:5e24ca31a100d4c9855963a43bb0bfa98764cbb2452b1fa408cedb428afc1ac1
 ```
 
 -	Docker Version: 17.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **55.8 MB (55801076 bytes)**  
+-	Total Size: **55.8 MB (55801665 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fa0487ff66bed97dccd0124a5d8805dd922b967c6e4fac39db2edcd18de7b0ca`
+-	Image ID: `sha256:d30fc964605b40a29cc6b04d8a09220ccf8cfdfd23d2f5c0df86278c953e1cee`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["sh"]`
 
@@ -8927,13 +8957,15 @@ ENV DOCKER_CHANNEL=test
 ENV DOCKER_VERSION=17.11.0-ce-rc2
 # Sat, 04 Nov 2017 03:01:46 GMT
 RUN set -ex; 	apk add --no-cache --virtual .fetch-deps 		curl 		tar 	; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64) dockerArch='x86_64' ;; 		aarch64) dockerArch='aarch64' ;; 		ppc64le) dockerArch='ppc64le' ;; 		s390x) dockerArch='s390x' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 		if ! curl -fL -o docker.tgz "https://download.docker.com/linux/static/${DOCKER_CHANNEL}/${dockerArch}/docker-${DOCKER_VERSION}.tgz"; then 		echo >&2 "error: failed to download 'docker-${DOCKER_VERSION}' from '${DOCKER_CHANNEL}' for '${dockerArch}'"; 		exit 1; 	fi; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 	; 	rm docker.tgz; 		apk del .fetch-deps; 		dockerd -v; 	docker -v
-# Sat, 04 Nov 2017 03:01:46 GMT
+# Tue, 14 Nov 2017 04:01:32 GMT
+COPY file:016ebcc5aefa6b28f6c484a299057d5b236e1d4f3baf44cc76eb4cd578821691 in /usr/local/bin/modprobe 
+# Tue, 14 Nov 2017 04:01:32 GMT
 COPY file:0d94e1cd679f133aab807891a1b00b6aef1a9f1f884108e7a17ddf50ab88f1fb in /usr/local/bin/ 
-# Sat, 04 Nov 2017 03:01:46 GMT
+# Tue, 14 Nov 2017 04:01:32 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 04 Nov 2017 03:01:46 GMT
+# Tue, 14 Nov 2017 04:01:32 GMT
 CMD ["sh"]
-# Sat, 04 Nov 2017 03:02:28 GMT
+# Tue, 14 Nov 2017 04:02:09 GMT
 RUN apk add --no-cache 		git 		openssh-client
 ```
 
@@ -8958,13 +8990,17 @@ RUN apk add --no-cache 		git 		openssh-client
 		Last Modified: Sat, 04 Nov 2017 03:03:21 GMT  
 		Size: 41.6 MB (41595512 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d305d72b5369b9ffc58b51839b340da2a5283e73b972dc77d6a7341f987fc351`  
-		Last Modified: Sat, 04 Nov 2017 03:03:12 GMT  
-		Size: 740.0 B  
+	-	`sha256:2b4497dadd9b8e73f275850a15d9c820aea699281b245d8f377a713f06ed82c5`  
+		Last Modified: Tue, 14 Nov 2017 04:02:43 GMT  
+		Size: 554.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:82af617a56a313d2686ec79d5eba929cf559ded4e516cbfe68577538c363fca8`  
-		Last Modified: Sat, 04 Nov 2017 03:04:00 GMT  
-		Size: 11.8 MB (11786521 bytes)  
+	-	`sha256:1ce301e52480ebfa52b1c88de19a239da8056e68a28bcb3061d7c596a0c785d4`  
+		Last Modified: Tue, 14 Nov 2017 04:02:44 GMT  
+		Size: 745.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b4696768e5f68c2872cf837f965dea1e7b149141978424901c655bf997f1abbf`  
+		Last Modified: Tue, 14 Nov 2017 04:03:25 GMT  
+		Size: 11.8 MB (11786551 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:17.11-rc-windowsservercore`
@@ -11973,7 +12009,7 @@ CMD ["sh"]
 ## `docker:rc`
 
 ```console
-$ docker pull docker@sha256:8a998cc2c0386fac9f97ad19ba5a4834f144665be17514a91f1ed6656c1844f8
+$ docker pull docker@sha256:a0095138316692e9f0a614db3c0c55e8b4c1bb715c6652e96327e53fef8fc361
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12181,14 +12217,14 @@ CMD ["sh"]
 ### `docker:rc` - linux; s390x
 
 ```console
-$ docker pull docker@sha256:65684be76beb323fa1017d5c8247cc59f3ac87880143abf7dfcaaa8f41738eb4
+$ docker pull docker@sha256:db7620810ef3fe21719498403a79cc29cd6316c916008c68fe4ac8d267ece318
 ```
 
 -	Docker Version: 17.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **44.0 MB (44014555 bytes)**  
+-	Total Size: **44.0 MB (44015114 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7e3fb3be16decbe5bffe3f24084296cdfd55e591379677b3c96c86856fa1d011`
+-	Image ID: `sha256:3edc7e55e1ddd4b8d9815bafa0ebf845e4737d6496861620dbae69012ddde9ec`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["sh"]`
 
@@ -12209,11 +12245,13 @@ ENV DOCKER_CHANNEL=test
 ENV DOCKER_VERSION=17.11.0-ce-rc2
 # Sat, 04 Nov 2017 03:01:46 GMT
 RUN set -ex; 	apk add --no-cache --virtual .fetch-deps 		curl 		tar 	; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64) dockerArch='x86_64' ;; 		aarch64) dockerArch='aarch64' ;; 		ppc64le) dockerArch='ppc64le' ;; 		s390x) dockerArch='s390x' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 		if ! curl -fL -o docker.tgz "https://download.docker.com/linux/static/${DOCKER_CHANNEL}/${dockerArch}/docker-${DOCKER_VERSION}.tgz"; then 		echo >&2 "error: failed to download 'docker-${DOCKER_VERSION}' from '${DOCKER_CHANNEL}' for '${dockerArch}'"; 		exit 1; 	fi; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 	; 	rm docker.tgz; 		apk del .fetch-deps; 		dockerd -v; 	docker -v
-# Sat, 04 Nov 2017 03:01:46 GMT
+# Tue, 14 Nov 2017 04:01:32 GMT
+COPY file:016ebcc5aefa6b28f6c484a299057d5b236e1d4f3baf44cc76eb4cd578821691 in /usr/local/bin/modprobe 
+# Tue, 14 Nov 2017 04:01:32 GMT
 COPY file:0d94e1cd679f133aab807891a1b00b6aef1a9f1f884108e7a17ddf50ab88f1fb in /usr/local/bin/ 
-# Sat, 04 Nov 2017 03:01:46 GMT
+# Tue, 14 Nov 2017 04:01:32 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 04 Nov 2017 03:01:46 GMT
+# Tue, 14 Nov 2017 04:01:32 GMT
 CMD ["sh"]
 ```
 
@@ -12238,15 +12276,19 @@ CMD ["sh"]
 		Last Modified: Sat, 04 Nov 2017 03:03:21 GMT  
 		Size: 41.6 MB (41595512 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d305d72b5369b9ffc58b51839b340da2a5283e73b972dc77d6a7341f987fc351`  
-		Last Modified: Sat, 04 Nov 2017 03:03:12 GMT  
-		Size: 740.0 B  
+	-	`sha256:2b4497dadd9b8e73f275850a15d9c820aea699281b245d8f377a713f06ed82c5`  
+		Last Modified: Tue, 14 Nov 2017 04:02:43 GMT  
+		Size: 554.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1ce301e52480ebfa52b1c88de19a239da8056e68a28bcb3061d7c596a0c785d4`  
+		Last Modified: Tue, 14 Nov 2017 04:02:44 GMT  
+		Size: 745.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:rc-dind`
 
 ```console
-$ docker pull docker@sha256:08195c1844af8fa63ece0122fcd096ebb62e55221fede7fdb16d73ad841be9da
+$ docker pull docker@sha256:c586932df7a0ab7a5cb6e465ffbdfc45a845ed4907756009f79205deba0a1f1b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12556,14 +12598,14 @@ CMD []
 ### `docker:rc-dind` - linux; s390x
 
 ```console
-$ docker pull docker@sha256:4ecc43e0b90b332da1605752fc5981d740697b581f3e46efc60a8e5fe233f1ff
+$ docker pull docker@sha256:31b71cf86df00349b63ec9d842fda720d085741c2bd77d230fee8e1d5785a399
 ```
 
 -	Docker Version: 17.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **48.3 MB (48340868 bytes)**  
+-	Total Size: **48.3 MB (48341414 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c605fd78f2027bcd0d406b82b31df5c7a1ca70f4feab052dd33e64eca4be9345`
+-	Image ID: `sha256:6e5696b69a04c102ffe35d9203e06e176b14cfb893487a6a4b189bc087d77166`
 -	Entrypoint: `["dockerd-entrypoint.sh"]`
 -	Default Command: `[]`
 
@@ -12584,29 +12626,31 @@ ENV DOCKER_CHANNEL=test
 ENV DOCKER_VERSION=17.11.0-ce-rc2
 # Sat, 04 Nov 2017 03:01:46 GMT
 RUN set -ex; 	apk add --no-cache --virtual .fetch-deps 		curl 		tar 	; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64) dockerArch='x86_64' ;; 		aarch64) dockerArch='aarch64' ;; 		ppc64le) dockerArch='ppc64le' ;; 		s390x) dockerArch='s390x' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 		if ! curl -fL -o docker.tgz "https://download.docker.com/linux/static/${DOCKER_CHANNEL}/${dockerArch}/docker-${DOCKER_VERSION}.tgz"; then 		echo >&2 "error: failed to download 'docker-${DOCKER_VERSION}' from '${DOCKER_CHANNEL}' for '${dockerArch}'"; 		exit 1; 	fi; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 	; 	rm docker.tgz; 		apk del .fetch-deps; 		dockerd -v; 	docker -v
-# Sat, 04 Nov 2017 03:01:46 GMT
+# Tue, 14 Nov 2017 04:01:32 GMT
+COPY file:016ebcc5aefa6b28f6c484a299057d5b236e1d4f3baf44cc76eb4cd578821691 in /usr/local/bin/modprobe 
+# Tue, 14 Nov 2017 04:01:32 GMT
 COPY file:0d94e1cd679f133aab807891a1b00b6aef1a9f1f884108e7a17ddf50ab88f1fb in /usr/local/bin/ 
-# Sat, 04 Nov 2017 03:01:46 GMT
+# Tue, 14 Nov 2017 04:01:32 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 04 Nov 2017 03:01:46 GMT
+# Tue, 14 Nov 2017 04:01:32 GMT
 CMD ["sh"]
-# Sat, 04 Nov 2017 03:02:07 GMT
+# Tue, 14 Nov 2017 04:01:53 GMT
 RUN set -eux; 	apk add --no-cache 		btrfs-progs 		e2fsprogs 		e2fsprogs-extra 		iptables 		xfsprogs 		xz 	; 	if zfs="$(apk info --no-cache --quiet zfs)" && [ -n "$zfs" ]; then 		apk add --no-cache zfs; 	fi
-# Sat, 04 Nov 2017 03:02:08 GMT
+# Tue, 14 Nov 2017 04:01:54 GMT
 RUN set -x 	&& addgroup -S dockremap 	&& adduser -S -G dockremap dockremap 	&& echo 'dockremap:165536:65536' >> /etc/subuid 	&& echo 'dockremap:165536:65536' >> /etc/subgid
-# Sat, 04 Nov 2017 03:02:08 GMT
+# Tue, 14 Nov 2017 04:01:54 GMT
 ENV DIND_COMMIT=3b5fac462d21ca164b3778647420016315289034
-# Sat, 04 Nov 2017 03:02:12 GMT
+# Tue, 14 Nov 2017 04:01:57 GMT
 RUN set -ex; 	apk add --no-cache --virtual .fetch-deps libressl; 	wget -O /usr/local/bin/dind "https://raw.githubusercontent.com/docker/docker/${DIND_COMMIT}/hack/dind"; 	chmod +x /usr/local/bin/dind; 	apk del .fetch-deps
-# Sat, 04 Nov 2017 03:02:12 GMT
+# Tue, 14 Nov 2017 04:01:57 GMT
 COPY file:14215a2b157618f9ff66709b019144b953b95bbd7273096e970306475e524820 in /usr/local/bin/ 
-# Sat, 04 Nov 2017 03:02:13 GMT
+# Tue, 14 Nov 2017 04:01:57 GMT
 VOLUME [/var/lib/docker]
-# Sat, 04 Nov 2017 03:02:13 GMT
+# Tue, 14 Nov 2017 04:01:58 GMT
 EXPOSE 2375/tcp
-# Sat, 04 Nov 2017 03:02:13 GMT
+# Tue, 14 Nov 2017 04:01:58 GMT
 ENTRYPOINT ["dockerd-entrypoint.sh"]
-# Sat, 04 Nov 2017 03:02:14 GMT
+# Tue, 14 Nov 2017 04:01:58 GMT
 CMD []
 ```
 
@@ -12631,31 +12675,35 @@ CMD []
 		Last Modified: Sat, 04 Nov 2017 03:03:21 GMT  
 		Size: 41.6 MB (41595512 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d305d72b5369b9ffc58b51839b340da2a5283e73b972dc77d6a7341f987fc351`  
-		Last Modified: Sat, 04 Nov 2017 03:03:12 GMT  
-		Size: 740.0 B  
+	-	`sha256:2b4497dadd9b8e73f275850a15d9c820aea699281b245d8f377a713f06ed82c5`  
+		Last Modified: Tue, 14 Nov 2017 04:02:43 GMT  
+		Size: 554.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bceed957a34110ef90a98e719466ac0ab1eb397202a10efc899061a9e8484d08`  
-		Last Modified: Sat, 04 Nov 2017 03:03:40 GMT  
-		Size: 4.1 MB (4144752 bytes)  
+	-	`sha256:1ce301e52480ebfa52b1c88de19a239da8056e68a28bcb3061d7c596a0c785d4`  
+		Last Modified: Tue, 14 Nov 2017 04:02:44 GMT  
+		Size: 745.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4e91254b014b18319d6615fbd0adae7d4c670e90a77d9b5caee8489e86867683`  
-		Last Modified: Sat, 04 Nov 2017 03:03:40 GMT  
-		Size: 1.3 KB (1308 bytes)  
+	-	`sha256:511ecfcc923af630742b10fd0713619af311a1718befb19cca9c601ff041a0c0`  
+		Last Modified: Tue, 14 Nov 2017 04:03:04 GMT  
+		Size: 4.1 MB (4144734 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c8902499e9bf5d265aba8bb8178e201cc56bbc8ff3beb352505fc2fb1ab08e9b`  
-		Last Modified: Sat, 04 Nov 2017 03:03:40 GMT  
-		Size: 179.8 KB (179774 bytes)  
+	-	`sha256:a9872fdee49943fa4eb8f632e9ada00ac8296be28a3c5a80f72df7760b77d169`  
+		Last Modified: Tue, 14 Nov 2017 04:03:03 GMT  
+		Size: 1.3 KB (1312 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b140940582c24221176da7328b1e67febbea8221fe9357f041fd0f39c8ab3657`  
-		Last Modified: Sat, 04 Nov 2017 03:03:40 GMT  
-		Size: 479.0 B  
+	-	`sha256:f77cf94ea294bb1ef6d323171b9e5af373f81c231e6150474ef6caa7274e355c`  
+		Last Modified: Tue, 14 Nov 2017 04:03:04 GMT  
+		Size: 179.8 KB (179773 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d80055f9f3dbb9fe0957f9d0f7552c1dce6655a4bce4bbd7bd470aa9fd518cd4`  
+		Last Modified: Tue, 14 Nov 2017 04:03:03 GMT  
+		Size: 481.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:rc-git`
 
 ```console
-$ docker pull docker@sha256:57b758d1531e16a0dc7149a16cfd3a574f74e30f352af5a53436e61f3e6fc5b4
+$ docker pull docker@sha256:e85a269567edd818dac115df04a3fa5c617348184b8801d84b1a232518f139ab
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12881,14 +12929,14 @@ RUN apk add --no-cache 		git 		openssh-client
 ### `docker:rc-git` - linux; s390x
 
 ```console
-$ docker pull docker@sha256:f226a40a1f4d5916713435f5e398bad27e3ee74071db04bfbf8cfb8f76f97612
+$ docker pull docker@sha256:5e24ca31a100d4c9855963a43bb0bfa98764cbb2452b1fa408cedb428afc1ac1
 ```
 
 -	Docker Version: 17.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **55.8 MB (55801076 bytes)**  
+-	Total Size: **55.8 MB (55801665 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fa0487ff66bed97dccd0124a5d8805dd922b967c6e4fac39db2edcd18de7b0ca`
+-	Image ID: `sha256:d30fc964605b40a29cc6b04d8a09220ccf8cfdfd23d2f5c0df86278c953e1cee`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["sh"]`
 
@@ -12909,13 +12957,15 @@ ENV DOCKER_CHANNEL=test
 ENV DOCKER_VERSION=17.11.0-ce-rc2
 # Sat, 04 Nov 2017 03:01:46 GMT
 RUN set -ex; 	apk add --no-cache --virtual .fetch-deps 		curl 		tar 	; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64) dockerArch='x86_64' ;; 		aarch64) dockerArch='aarch64' ;; 		ppc64le) dockerArch='ppc64le' ;; 		s390x) dockerArch='s390x' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 		if ! curl -fL -o docker.tgz "https://download.docker.com/linux/static/${DOCKER_CHANNEL}/${dockerArch}/docker-${DOCKER_VERSION}.tgz"; then 		echo >&2 "error: failed to download 'docker-${DOCKER_VERSION}' from '${DOCKER_CHANNEL}' for '${dockerArch}'"; 		exit 1; 	fi; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 	; 	rm docker.tgz; 		apk del .fetch-deps; 		dockerd -v; 	docker -v
-# Sat, 04 Nov 2017 03:01:46 GMT
+# Tue, 14 Nov 2017 04:01:32 GMT
+COPY file:016ebcc5aefa6b28f6c484a299057d5b236e1d4f3baf44cc76eb4cd578821691 in /usr/local/bin/modprobe 
+# Tue, 14 Nov 2017 04:01:32 GMT
 COPY file:0d94e1cd679f133aab807891a1b00b6aef1a9f1f884108e7a17ddf50ab88f1fb in /usr/local/bin/ 
-# Sat, 04 Nov 2017 03:01:46 GMT
+# Tue, 14 Nov 2017 04:01:32 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 04 Nov 2017 03:01:46 GMT
+# Tue, 14 Nov 2017 04:01:32 GMT
 CMD ["sh"]
-# Sat, 04 Nov 2017 03:02:28 GMT
+# Tue, 14 Nov 2017 04:02:09 GMT
 RUN apk add --no-cache 		git 		openssh-client
 ```
 
@@ -12940,13 +12990,17 @@ RUN apk add --no-cache 		git 		openssh-client
 		Last Modified: Sat, 04 Nov 2017 03:03:21 GMT  
 		Size: 41.6 MB (41595512 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d305d72b5369b9ffc58b51839b340da2a5283e73b972dc77d6a7341f987fc351`  
-		Last Modified: Sat, 04 Nov 2017 03:03:12 GMT  
-		Size: 740.0 B  
+	-	`sha256:2b4497dadd9b8e73f275850a15d9c820aea699281b245d8f377a713f06ed82c5`  
+		Last Modified: Tue, 14 Nov 2017 04:02:43 GMT  
+		Size: 554.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:82af617a56a313d2686ec79d5eba929cf559ded4e516cbfe68577538c363fca8`  
-		Last Modified: Sat, 04 Nov 2017 03:04:00 GMT  
-		Size: 11.8 MB (11786521 bytes)  
+	-	`sha256:1ce301e52480ebfa52b1c88de19a239da8056e68a28bcb3061d7c596a0c785d4`  
+		Last Modified: Tue, 14 Nov 2017 04:02:44 GMT  
+		Size: 745.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b4696768e5f68c2872cf837f965dea1e7b149141978424901c655bf997f1abbf`  
+		Last Modified: Tue, 14 Nov 2017 04:03:25 GMT  
+		Size: 11.8 MB (11786551 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:rc-windowsservercore`
@@ -14121,7 +14175,7 @@ RUN $url = ('https://download.docker.com/win/static/{0}/x86_64/docker-{1}.zip' -
 ## `docker:test`
 
 ```console
-$ docker pull docker@sha256:8a998cc2c0386fac9f97ad19ba5a4834f144665be17514a91f1ed6656c1844f8
+$ docker pull docker@sha256:a0095138316692e9f0a614db3c0c55e8b4c1bb715c6652e96327e53fef8fc361
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14329,14 +14383,14 @@ CMD ["sh"]
 ### `docker:test` - linux; s390x
 
 ```console
-$ docker pull docker@sha256:65684be76beb323fa1017d5c8247cc59f3ac87880143abf7dfcaaa8f41738eb4
+$ docker pull docker@sha256:db7620810ef3fe21719498403a79cc29cd6316c916008c68fe4ac8d267ece318
 ```
 
 -	Docker Version: 17.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **44.0 MB (44014555 bytes)**  
+-	Total Size: **44.0 MB (44015114 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7e3fb3be16decbe5bffe3f24084296cdfd55e591379677b3c96c86856fa1d011`
+-	Image ID: `sha256:3edc7e55e1ddd4b8d9815bafa0ebf845e4737d6496861620dbae69012ddde9ec`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["sh"]`
 
@@ -14357,11 +14411,13 @@ ENV DOCKER_CHANNEL=test
 ENV DOCKER_VERSION=17.11.0-ce-rc2
 # Sat, 04 Nov 2017 03:01:46 GMT
 RUN set -ex; 	apk add --no-cache --virtual .fetch-deps 		curl 		tar 	; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64) dockerArch='x86_64' ;; 		aarch64) dockerArch='aarch64' ;; 		ppc64le) dockerArch='ppc64le' ;; 		s390x) dockerArch='s390x' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 		if ! curl -fL -o docker.tgz "https://download.docker.com/linux/static/${DOCKER_CHANNEL}/${dockerArch}/docker-${DOCKER_VERSION}.tgz"; then 		echo >&2 "error: failed to download 'docker-${DOCKER_VERSION}' from '${DOCKER_CHANNEL}' for '${dockerArch}'"; 		exit 1; 	fi; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 	; 	rm docker.tgz; 		apk del .fetch-deps; 		dockerd -v; 	docker -v
-# Sat, 04 Nov 2017 03:01:46 GMT
+# Tue, 14 Nov 2017 04:01:32 GMT
+COPY file:016ebcc5aefa6b28f6c484a299057d5b236e1d4f3baf44cc76eb4cd578821691 in /usr/local/bin/modprobe 
+# Tue, 14 Nov 2017 04:01:32 GMT
 COPY file:0d94e1cd679f133aab807891a1b00b6aef1a9f1f884108e7a17ddf50ab88f1fb in /usr/local/bin/ 
-# Sat, 04 Nov 2017 03:01:46 GMT
+# Tue, 14 Nov 2017 04:01:32 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 04 Nov 2017 03:01:46 GMT
+# Tue, 14 Nov 2017 04:01:32 GMT
 CMD ["sh"]
 ```
 
@@ -14386,15 +14442,19 @@ CMD ["sh"]
 		Last Modified: Sat, 04 Nov 2017 03:03:21 GMT  
 		Size: 41.6 MB (41595512 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d305d72b5369b9ffc58b51839b340da2a5283e73b972dc77d6a7341f987fc351`  
-		Last Modified: Sat, 04 Nov 2017 03:03:12 GMT  
-		Size: 740.0 B  
+	-	`sha256:2b4497dadd9b8e73f275850a15d9c820aea699281b245d8f377a713f06ed82c5`  
+		Last Modified: Tue, 14 Nov 2017 04:02:43 GMT  
+		Size: 554.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1ce301e52480ebfa52b1c88de19a239da8056e68a28bcb3061d7c596a0c785d4`  
+		Last Modified: Tue, 14 Nov 2017 04:02:44 GMT  
+		Size: 745.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:test-dind`
 
 ```console
-$ docker pull docker@sha256:08195c1844af8fa63ece0122fcd096ebb62e55221fede7fdb16d73ad841be9da
+$ docker pull docker@sha256:c586932df7a0ab7a5cb6e465ffbdfc45a845ed4907756009f79205deba0a1f1b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14704,14 +14764,14 @@ CMD []
 ### `docker:test-dind` - linux; s390x
 
 ```console
-$ docker pull docker@sha256:4ecc43e0b90b332da1605752fc5981d740697b581f3e46efc60a8e5fe233f1ff
+$ docker pull docker@sha256:31b71cf86df00349b63ec9d842fda720d085741c2bd77d230fee8e1d5785a399
 ```
 
 -	Docker Version: 17.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **48.3 MB (48340868 bytes)**  
+-	Total Size: **48.3 MB (48341414 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c605fd78f2027bcd0d406b82b31df5c7a1ca70f4feab052dd33e64eca4be9345`
+-	Image ID: `sha256:6e5696b69a04c102ffe35d9203e06e176b14cfb893487a6a4b189bc087d77166`
 -	Entrypoint: `["dockerd-entrypoint.sh"]`
 -	Default Command: `[]`
 
@@ -14732,29 +14792,31 @@ ENV DOCKER_CHANNEL=test
 ENV DOCKER_VERSION=17.11.0-ce-rc2
 # Sat, 04 Nov 2017 03:01:46 GMT
 RUN set -ex; 	apk add --no-cache --virtual .fetch-deps 		curl 		tar 	; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64) dockerArch='x86_64' ;; 		aarch64) dockerArch='aarch64' ;; 		ppc64le) dockerArch='ppc64le' ;; 		s390x) dockerArch='s390x' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 		if ! curl -fL -o docker.tgz "https://download.docker.com/linux/static/${DOCKER_CHANNEL}/${dockerArch}/docker-${DOCKER_VERSION}.tgz"; then 		echo >&2 "error: failed to download 'docker-${DOCKER_VERSION}' from '${DOCKER_CHANNEL}' for '${dockerArch}'"; 		exit 1; 	fi; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 	; 	rm docker.tgz; 		apk del .fetch-deps; 		dockerd -v; 	docker -v
-# Sat, 04 Nov 2017 03:01:46 GMT
+# Tue, 14 Nov 2017 04:01:32 GMT
+COPY file:016ebcc5aefa6b28f6c484a299057d5b236e1d4f3baf44cc76eb4cd578821691 in /usr/local/bin/modprobe 
+# Tue, 14 Nov 2017 04:01:32 GMT
 COPY file:0d94e1cd679f133aab807891a1b00b6aef1a9f1f884108e7a17ddf50ab88f1fb in /usr/local/bin/ 
-# Sat, 04 Nov 2017 03:01:46 GMT
+# Tue, 14 Nov 2017 04:01:32 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 04 Nov 2017 03:01:46 GMT
+# Tue, 14 Nov 2017 04:01:32 GMT
 CMD ["sh"]
-# Sat, 04 Nov 2017 03:02:07 GMT
+# Tue, 14 Nov 2017 04:01:53 GMT
 RUN set -eux; 	apk add --no-cache 		btrfs-progs 		e2fsprogs 		e2fsprogs-extra 		iptables 		xfsprogs 		xz 	; 	if zfs="$(apk info --no-cache --quiet zfs)" && [ -n "$zfs" ]; then 		apk add --no-cache zfs; 	fi
-# Sat, 04 Nov 2017 03:02:08 GMT
+# Tue, 14 Nov 2017 04:01:54 GMT
 RUN set -x 	&& addgroup -S dockremap 	&& adduser -S -G dockremap dockremap 	&& echo 'dockremap:165536:65536' >> /etc/subuid 	&& echo 'dockremap:165536:65536' >> /etc/subgid
-# Sat, 04 Nov 2017 03:02:08 GMT
+# Tue, 14 Nov 2017 04:01:54 GMT
 ENV DIND_COMMIT=3b5fac462d21ca164b3778647420016315289034
-# Sat, 04 Nov 2017 03:02:12 GMT
+# Tue, 14 Nov 2017 04:01:57 GMT
 RUN set -ex; 	apk add --no-cache --virtual .fetch-deps libressl; 	wget -O /usr/local/bin/dind "https://raw.githubusercontent.com/docker/docker/${DIND_COMMIT}/hack/dind"; 	chmod +x /usr/local/bin/dind; 	apk del .fetch-deps
-# Sat, 04 Nov 2017 03:02:12 GMT
+# Tue, 14 Nov 2017 04:01:57 GMT
 COPY file:14215a2b157618f9ff66709b019144b953b95bbd7273096e970306475e524820 in /usr/local/bin/ 
-# Sat, 04 Nov 2017 03:02:13 GMT
+# Tue, 14 Nov 2017 04:01:57 GMT
 VOLUME [/var/lib/docker]
-# Sat, 04 Nov 2017 03:02:13 GMT
+# Tue, 14 Nov 2017 04:01:58 GMT
 EXPOSE 2375/tcp
-# Sat, 04 Nov 2017 03:02:13 GMT
+# Tue, 14 Nov 2017 04:01:58 GMT
 ENTRYPOINT ["dockerd-entrypoint.sh"]
-# Sat, 04 Nov 2017 03:02:14 GMT
+# Tue, 14 Nov 2017 04:01:58 GMT
 CMD []
 ```
 
@@ -14779,31 +14841,35 @@ CMD []
 		Last Modified: Sat, 04 Nov 2017 03:03:21 GMT  
 		Size: 41.6 MB (41595512 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d305d72b5369b9ffc58b51839b340da2a5283e73b972dc77d6a7341f987fc351`  
-		Last Modified: Sat, 04 Nov 2017 03:03:12 GMT  
-		Size: 740.0 B  
+	-	`sha256:2b4497dadd9b8e73f275850a15d9c820aea699281b245d8f377a713f06ed82c5`  
+		Last Modified: Tue, 14 Nov 2017 04:02:43 GMT  
+		Size: 554.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bceed957a34110ef90a98e719466ac0ab1eb397202a10efc899061a9e8484d08`  
-		Last Modified: Sat, 04 Nov 2017 03:03:40 GMT  
-		Size: 4.1 MB (4144752 bytes)  
+	-	`sha256:1ce301e52480ebfa52b1c88de19a239da8056e68a28bcb3061d7c596a0c785d4`  
+		Last Modified: Tue, 14 Nov 2017 04:02:44 GMT  
+		Size: 745.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4e91254b014b18319d6615fbd0adae7d4c670e90a77d9b5caee8489e86867683`  
-		Last Modified: Sat, 04 Nov 2017 03:03:40 GMT  
-		Size: 1.3 KB (1308 bytes)  
+	-	`sha256:511ecfcc923af630742b10fd0713619af311a1718befb19cca9c601ff041a0c0`  
+		Last Modified: Tue, 14 Nov 2017 04:03:04 GMT  
+		Size: 4.1 MB (4144734 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c8902499e9bf5d265aba8bb8178e201cc56bbc8ff3beb352505fc2fb1ab08e9b`  
-		Last Modified: Sat, 04 Nov 2017 03:03:40 GMT  
-		Size: 179.8 KB (179774 bytes)  
+	-	`sha256:a9872fdee49943fa4eb8f632e9ada00ac8296be28a3c5a80f72df7760b77d169`  
+		Last Modified: Tue, 14 Nov 2017 04:03:03 GMT  
+		Size: 1.3 KB (1312 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b140940582c24221176da7328b1e67febbea8221fe9357f041fd0f39c8ab3657`  
-		Last Modified: Sat, 04 Nov 2017 03:03:40 GMT  
-		Size: 479.0 B  
+	-	`sha256:f77cf94ea294bb1ef6d323171b9e5af373f81c231e6150474ef6caa7274e355c`  
+		Last Modified: Tue, 14 Nov 2017 04:03:04 GMT  
+		Size: 179.8 KB (179773 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d80055f9f3dbb9fe0957f9d0f7552c1dce6655a4bce4bbd7bd470aa9fd518cd4`  
+		Last Modified: Tue, 14 Nov 2017 04:03:03 GMT  
+		Size: 481.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:test-git`
 
 ```console
-$ docker pull docker@sha256:57b758d1531e16a0dc7149a16cfd3a574f74e30f352af5a53436e61f3e6fc5b4
+$ docker pull docker@sha256:e85a269567edd818dac115df04a3fa5c617348184b8801d84b1a232518f139ab
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -15029,14 +15095,14 @@ RUN apk add --no-cache 		git 		openssh-client
 ### `docker:test-git` - linux; s390x
 
 ```console
-$ docker pull docker@sha256:f226a40a1f4d5916713435f5e398bad27e3ee74071db04bfbf8cfb8f76f97612
+$ docker pull docker@sha256:5e24ca31a100d4c9855963a43bb0bfa98764cbb2452b1fa408cedb428afc1ac1
 ```
 
 -	Docker Version: 17.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **55.8 MB (55801076 bytes)**  
+-	Total Size: **55.8 MB (55801665 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fa0487ff66bed97dccd0124a5d8805dd922b967c6e4fac39db2edcd18de7b0ca`
+-	Image ID: `sha256:d30fc964605b40a29cc6b04d8a09220ccf8cfdfd23d2f5c0df86278c953e1cee`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["sh"]`
 
@@ -15057,13 +15123,15 @@ ENV DOCKER_CHANNEL=test
 ENV DOCKER_VERSION=17.11.0-ce-rc2
 # Sat, 04 Nov 2017 03:01:46 GMT
 RUN set -ex; 	apk add --no-cache --virtual .fetch-deps 		curl 		tar 	; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64) dockerArch='x86_64' ;; 		aarch64) dockerArch='aarch64' ;; 		ppc64le) dockerArch='ppc64le' ;; 		s390x) dockerArch='s390x' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 		if ! curl -fL -o docker.tgz "https://download.docker.com/linux/static/${DOCKER_CHANNEL}/${dockerArch}/docker-${DOCKER_VERSION}.tgz"; then 		echo >&2 "error: failed to download 'docker-${DOCKER_VERSION}' from '${DOCKER_CHANNEL}' for '${dockerArch}'"; 		exit 1; 	fi; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 	; 	rm docker.tgz; 		apk del .fetch-deps; 		dockerd -v; 	docker -v
-# Sat, 04 Nov 2017 03:01:46 GMT
+# Tue, 14 Nov 2017 04:01:32 GMT
+COPY file:016ebcc5aefa6b28f6c484a299057d5b236e1d4f3baf44cc76eb4cd578821691 in /usr/local/bin/modprobe 
+# Tue, 14 Nov 2017 04:01:32 GMT
 COPY file:0d94e1cd679f133aab807891a1b00b6aef1a9f1f884108e7a17ddf50ab88f1fb in /usr/local/bin/ 
-# Sat, 04 Nov 2017 03:01:46 GMT
+# Tue, 14 Nov 2017 04:01:32 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 04 Nov 2017 03:01:46 GMT
+# Tue, 14 Nov 2017 04:01:32 GMT
 CMD ["sh"]
-# Sat, 04 Nov 2017 03:02:28 GMT
+# Tue, 14 Nov 2017 04:02:09 GMT
 RUN apk add --no-cache 		git 		openssh-client
 ```
 
@@ -15088,13 +15156,17 @@ RUN apk add --no-cache 		git 		openssh-client
 		Last Modified: Sat, 04 Nov 2017 03:03:21 GMT  
 		Size: 41.6 MB (41595512 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d305d72b5369b9ffc58b51839b340da2a5283e73b972dc77d6a7341f987fc351`  
-		Last Modified: Sat, 04 Nov 2017 03:03:12 GMT  
-		Size: 740.0 B  
+	-	`sha256:2b4497dadd9b8e73f275850a15d9c820aea699281b245d8f377a713f06ed82c5`  
+		Last Modified: Tue, 14 Nov 2017 04:02:43 GMT  
+		Size: 554.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:82af617a56a313d2686ec79d5eba929cf559ded4e516cbfe68577538c363fca8`  
-		Last Modified: Sat, 04 Nov 2017 03:04:00 GMT  
-		Size: 11.8 MB (11786521 bytes)  
+	-	`sha256:1ce301e52480ebfa52b1c88de19a239da8056e68a28bcb3061d7c596a0c785d4`  
+		Last Modified: Tue, 14 Nov 2017 04:02:44 GMT  
+		Size: 745.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b4696768e5f68c2872cf837f965dea1e7b149141978424901c655bf997f1abbf`  
+		Last Modified: Tue, 14 Nov 2017 04:03:25 GMT  
+		Size: 11.8 MB (11786551 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:test-windowsservercore`
