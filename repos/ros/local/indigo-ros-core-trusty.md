@@ -4034,14 +4034,9 @@ Licenses: (parsed from: `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-ba
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.18.2-2ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.18.2-2ubuntu1.1.dsc' perl_5.18.2-2ubuntu1.1.dsc 2451 SHA256:44026bc08b17a300869534d616b4363c67e5abacc7ece347a52185517c5a3c44
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.18.2.orig.tar.bz2' perl_5.18.2.orig.tar.bz2 14058513 SHA256:06a0cd490be36d829606aa41d8c9c4c72ae70542f8d4f23ec554335b3d9e2746
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.18.2-2ubuntu1.1.debian.tar.gz' perl_5.18.2-2ubuntu1.1.debian.tar.gz 133848 SHA256:973ede6565447dd29d1bfc4e36aac804cc3caab64e074ca4516af743abe55ea8
-```
 
 ### `dpkg` source package: `pinentry=0.8.3-1ubuntu1`
 
@@ -5956,14 +5951,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2016j-0ubuntu0.14.04
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016j-0ubuntu0.14.04.dsc' tzdata_2016j-0ubuntu0.14.04.dsc 2048 SHA256:baec60d2dc81bef9a522b00ee9679c15a1d93b32fc6c5367203654b46bfebbd5
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016j.orig.tar.gz' tzdata_2016j.orig.tar.gz 321185 SHA256:f5ee4e0f115f6c2faee1c4b16193a97338cbd1b503f2cea6c5a768c82ff39dc8
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016j-0ubuntu0.14.04.debian.tar.xz' tzdata_2016j-0ubuntu0.14.04.debian.tar.xz 100436 SHA256:a4a236571039dcd942e49e86d632908663eabc7a0e5bcdf81ee39aec9746d508
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2012.05.19`
 
