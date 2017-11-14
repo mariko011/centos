@@ -1,10 +1,10 @@
-# `sonarqube:lts-alpine`
+# `sonarqube:alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1d7a4c28b94bf08d94d45788974f9fc8fad5ec711e4746082838091bd69ef7e0`
-- Created: `2017-11-04T09:00:42.293314299Z`
-- Virtual Size: ~ 249.18 Mb  
+- Image ID: `sha256:671b01a734a2caaea7988fbf98af60a9dc7158db026b7efcfd56fed698899c9b`
+- Created: `2017-11-13T16:09:59.245998936Z`
+- Virtual Size: ~ 309.87 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["./bin/run.sh"]`
@@ -14,7 +14,7 @@
   - `JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk`
   - `JAVA_VERSION=8u131`
   - `JAVA_ALPINE_VERSION=8.131.11-r2`
-  - `SONAR_VERSION=5.6.7`
+  - `SONAR_VERSION=6.7`
   - `SONARQUBE_HOME=/opt/sonarqube`
   - `SONARQUBE_JDBC_USERNAME=sonar`
   - `SONARQUBE_JDBC_PASSWORD=sonar`
