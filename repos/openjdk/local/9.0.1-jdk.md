@@ -841,21 +841,13 @@ Licenses: (parsed from: `/usr/share/doc/dbus/copyright`, `/usr/share/doc/dbus-us
 - `Tcl-BSDish`
 - `g10-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dbus=1.12.0-1
-'http://deb.debian.org/debian/pool/main/d/dbus/dbus_1.12.0-1.dsc' dbus_1.12.0-1.dsc 3687 SHA256:f2725d7fba22bd681741defea267d1860235ec5e8eaead575e89b0ceff488eda
-'http://deb.debian.org/debian/pool/main/d/dbus/dbus_1.12.0.orig.tar.gz' dbus_1.12.0.orig.tar.gz 2062151 SHA256:39af0d9267391434b549c5c4adc001b735518c96f7630c3fe7162af1d13ef3c0
-'http://deb.debian.org/debian/pool/main/d/dbus/dbus_1.12.0.orig.tar.gz.asc' dbus_1.12.0.orig.tar.gz.asc 1666 SHA256:4a6be38dceb74ce0d5c93db2a4e1f97cc63866f644a78dd46ddaf1f8a22135dd
-'http://deb.debian.org/debian/pool/main/d/dbus/dbus_1.12.0-1.debian.tar.xz' dbus_1.12.0-1.debian.tar.xz 59688 SHA256:a385709c6738cd4d56510a7c784b5107c103772883b2c15d7957e01922fb8acd
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/dbus/1.12.0-1/
 
-- https://sources.debian.net/src/dbus/1.12.0-1/ (for browsing the source)
-- https://sources.debian.net/src/dbus/1.12.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dbus/1.12.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debconf=1.5.63`
 
@@ -909,19 +901,13 @@ Licenses: (parsed from: `/usr/share/doc/debianutils/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debianutils=4.8.2
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_4.8.2.dsc' debianutils_4.8.2.dsc 1731 SHA256:175edfd4a94f20d34784b36c644cf8c23ee23686ebee6ad0c10c32b76e41c34f
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_4.8.2.tar.xz' debianutils_4.8.2.tar.xz 155944 SHA256:4deb5f293fd3e43c5d4a625a30b18d0fb07662ff77f769e3272841cdb61e7c68
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/debianutils/4.8.2/
 
-- https://sources.debian.net/src/debianutils/4.8.2/ (for browsing the source)
-- https://sources.debian.net/src/debianutils/4.8.2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/debianutils/4.8.2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `diffutils=1:3.6-1`
 
@@ -1723,20 +1709,13 @@ Licenses: (parsed from: `/usr/share/doc/gtk-update-icon-cache/copyright`, `/usr/
 - `SWL`
 - `other`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gtk+3.0=3.22.25-1
-'http://deb.debian.org/debian/pool/main/g/gtk+3.0/gtk+3.0_3.22.25-1.dsc' gtk+3.0_3.22.25-1.dsc 3868 SHA256:d0ec8fe7a1da570dd2f719d894dcd603edca8d5f85c2071c6e2b7d593a13dae2
-'http://deb.debian.org/debian/pool/main/g/gtk+3.0/gtk+3.0_3.22.25.orig.tar.xz' gtk+3.0_3.22.25.orig.tar.xz 18909656 SHA256:e25eaed5ab0775ddc211898fbfdc873b19e4a7ab03c0dbe88dff1938b433739e
-'http://deb.debian.org/debian/pool/main/g/gtk+3.0/gtk+3.0_3.22.25-1.debian.tar.xz' gtk+3.0_3.22.25-1.debian.tar.xz 146404 SHA256:94c0da120481027c9513d10ddd0f86613cdca5b8fa2fd8272d230a92843e5d73
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gtk+3.0/3.22.25-1/
 
-- https://sources.debian.net/src/gtk+3.0/3.22.25-1/ (for browsing the source)
-- https://sources.debian.net/src/gtk+3.0/3.22.25-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gtk+3.0/3.22.25-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gzip=1.6-5`
 
@@ -2394,20 +2373,13 @@ Licenses: (parsed from: `/usr/share/doc/libepoxy0/copyright`)
 
 - `Expat`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libepoxy=1.3.1-3
-'http://deb.debian.org/debian/pool/main/libe/libepoxy/libepoxy_1.3.1-3.dsc' libepoxy_1.3.1-3.dsc 2064 SHA256:c315108eb771e4d83811f7d47150b074b482f7b921064a87e93a5c47bbd3ebce
-'http://deb.debian.org/debian/pool/main/libe/libepoxy/libepoxy_1.3.1.orig.tar.bz2' libepoxy_1.3.1.orig.tar.bz2 820119 SHA256:1d8668b0a259c709899e1c4bab62d756d9002d546ce4f59c9665e2fc5f001a64
-'http://deb.debian.org/debian/pool/main/libe/libepoxy/libepoxy_1.3.1-3.debian.tar.xz' libepoxy_1.3.1-3.debian.tar.xz 16900 SHA256:b264b8efee446bcdd7762d11231c25c4316a8c18a800fce2225c0c524a204d98
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libepoxy/1.3.1-3/
 
-- https://sources.debian.net/src/libepoxy/1.3.1-3/ (for browsing the source)
-- https://sources.debian.net/src/libepoxy/1.3.1-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libepoxy/1.3.1-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `liberror-perl=0.17025-1`
 
@@ -2830,20 +2802,13 @@ Licenses: (parsed from: `/usr/share/doc/libpsl5/copyright`)
 - `Chromium`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libpsl=0.18.0-4
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.18.0-4.dsc' libpsl_0.18.0-4.dsc 2190 SHA256:b62d3ad4472795fa8a81fcdc938aae7e8fa542835873c730463b280931abae75
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.18.0.orig.tar.gz' libpsl_0.18.0.orig.tar.gz 10330130 SHA256:29d76f49fe58f36a23d8eeb863e545767ab6ebbddb3356fc63af9728739edb3f
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.18.0-4.debian.tar.xz' libpsl_0.18.0-4.debian.tar.xz 9240 SHA256:d46f48e6b9ed75702b13d1e8d9c39c0898f8f76c956e430a71ee4fbecff09138
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libpsl/0.18.0-4/
 
-- https://sources.debian.net/src/libpsl/0.18.0-4/ (for browsing the source)
-- https://sources.debian.net/src/libpsl/0.18.0-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libpsl/0.18.0-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libpthread-stubs=0.3-4`
 
@@ -3924,21 +3889,13 @@ Licenses: (parsed from: `/usr/share/doc/dmsetup/copyright`, `/usr/share/doc/libd
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lvm2=2.02.176-1
-'http://deb.debian.org/debian/pool/main/l/lvm2/lvm2_2.02.176-1.dsc' lvm2_2.02.176-1.dsc 3136 SHA256:3ac8a1186d375c2dba74cb32bae25ebb48c3dc1f2ead6b454f6f91494d60fb25
-'http://deb.debian.org/debian/pool/main/l/lvm2/lvm2_2.02.176.orig.tar.gz' lvm2_2.02.176.orig.tar.gz 2371438 SHA256:dece83628c2c78a267a126ce6046d506582185ae5d40fb8d59b56547fccea473
-'http://deb.debian.org/debian/pool/main/l/lvm2/lvm2_2.02.176.orig.tar.gz.asc' lvm2_2.02.176.orig.tar.gz.asc 198 SHA256:51c66e6bdebb6ac5b9882b8082ac9816a8555c2d472d7763e0f867c5c8c10b89
-'http://deb.debian.org/debian/pool/main/l/lvm2/lvm2_2.02.176-1.debian.tar.xz' lvm2_2.02.176-1.debian.tar.xz 31940 SHA256:cfa3e21df32b11486d8420981cc638d6e1850f61dc5f95e2b60ad9a513c0c1dc
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/lvm2/2.02.176-1/
 
-- https://sources.debian.net/src/lvm2/2.02.176-1/ (for browsing the source)
-- https://sources.debian.net/src/lvm2/2.02.176-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/lvm2/2.02.176-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=0.0~r131-2`
 
@@ -4208,20 +4165,13 @@ Licenses: (parsed from: `/usr/share/doc/libnpth0/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris npth=1.5-2
-'http://deb.debian.org/debian/pool/main/n/npth/npth_1.5-2.dsc' npth_1.5-2.dsc 1949 SHA256:6f4e78f1ccb9ef5f062f973f937ea27e36e168a41c7b5c0d65d4775b0daf676f
-'http://deb.debian.org/debian/pool/main/n/npth/npth_1.5.orig.tar.bz2' npth_1.5.orig.tar.bz2 299308 SHA256:294a690c1f537b92ed829d867bee537e46be93fbd60b16c04630fbbfcd9db3c2
-'http://deb.debian.org/debian/pool/main/n/npth/npth_1.5-2.debian.tar.xz' npth_1.5-2.debian.tar.xz 10416 SHA256:c1140dacd332ca38dcc4ae6f0cb69baab25474fd58370a6432f55c2d52bf1e6d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/npth/1.5-2/
 
-- https://sources.debian.net/src/npth/1.5-2/ (for browsing the source)
-- https://sources.debian.net/src/npth/1.5-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/npth/1.5-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `nspr=2:4.16-1`
 
