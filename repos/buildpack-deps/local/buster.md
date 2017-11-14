@@ -99,21 +99,13 @@ Licenses: (parsed from: `/usr/share/doc/libapr1/copyright`)
 
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apr=1.6.2-1
-'http://deb.debian.org/debian/pool/main/a/apr/apr_1.6.2-1.dsc' apr_1.6.2-1.dsc 2316 SHA256:c7e14c7a36c02fc416586808637b6797f6e1c7a697abeda63db04989a101fcd2
-'http://deb.debian.org/debian/pool/main/a/apr/apr_1.6.2.orig.tar.bz2' apr_1.6.2.orig.tar.bz2 853363 SHA256:09109cea377bab0028bba19a92b5b0e89603df9eab05c0f7dbd4dd83d48dcebd
-'http://deb.debian.org/debian/pool/main/a/apr/apr_1.6.2.orig.tar.bz2.asc' apr_1.6.2.orig.tar.bz2.asc 801 SHA256:026e3086d6ebdd1fb5b0c82953447b4d1946fdf2a621d4e4a607be2f4131f27c
-'http://deb.debian.org/debian/pool/main/a/apr/apr_1.6.2-1.debian.tar.xz' apr_1.6.2-1.debian.tar.xz 212900 SHA256:d1fdfd94fce25be17e6bb84ef6ef694db5b7bad4be964b39b0195c9926dd0510
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apr/1.6.2-1/
 
-- https://sources.debian.net/src/apr/1.6.2-1/ (for browsing the source)
-- https://sources.debian.net/src/apr/1.6.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apr/1.6.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apt=1.5`
 
@@ -1297,20 +1289,13 @@ Licenses: (parsed from: `/usr/share/doc/cpp-7/copyright`, `/usr/share/doc/g++-7/
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-7=7.2.0-12
-'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.2.0-12.dsc' gcc-7_7.2.0-12.dsc 26585 SHA256:7dcb6c90fb2ac7a5176175c353e8a40560779e6edf303a48e72d722621c145d9
-'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.2.0.orig.tar.gz' gcc-7_7.2.0.orig.tar.gz 70028185 SHA256:a1050ca96c2b931ad82da3caf2868cd68b95a62151ac9af53fbe9b69b6e9b651
-'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.2.0-12.diff.gz' gcc-7_7.2.0-12.diff.gz 3129599 SHA256:d3a4b22abfdaae516dc174f5a96e5e6f19f9003e5ec7835dc1ff575ddd0cc152
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-7/7.2.0-12/
 
-- https://sources.debian.net/src/gcc-7/7.2.0-12/ (for browsing the source)
-- https://sources.debian.net/src/gcc-7/7.2.0-12/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-7/7.2.0-12/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-defaults=1.173d1`
 
@@ -1410,20 +1395,13 @@ Licenses: (parsed from: `/usr/share/doc/geoip-bin/copyright`, `/usr/share/doc/li
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris geoip=1.6.11-2
-'http://deb.debian.org/debian/pool/main/g/geoip/geoip_1.6.11-2.dsc' geoip_1.6.11-2.dsc 1859 SHA256:773d289b9856e669045dce915da275042300968cef5b9dd8d1f4e9b7b017c39d
-'http://deb.debian.org/debian/pool/main/g/geoip/geoip_1.6.11.orig.tar.gz' geoip_1.6.11.orig.tar.gz 161934 SHA256:8859cb7c9cb63e77f4aedb40a4622024359b956b251aba46b255acbe190c34e0
-'http://deb.debian.org/debian/pool/main/g/geoip/geoip_1.6.11-2.debian.tar.xz' geoip_1.6.11-2.debian.tar.xz 22248 SHA256:ffef6c4b1ce9f0f35bb5e7b3bf778d60b68aa2e25b1a1095edc5e9516e87c686
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/geoip/1.6.11-2/
 
-- https://sources.debian.net/src/geoip/1.6.11-2/ (for browsing the source)
-- https://sources.debian.net/src/geoip/1.6.11-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/geoip/1.6.11-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `git=1:2.14.2-1`
 
@@ -1596,21 +1574,13 @@ Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnup
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.2.1-5
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.1-5.dsc' gnupg2_2.2.1-5.dsc 3701 SHA256:97b1e6001a1bf84812d93600c34dc163d2240d4285f29c95309b504b773b9100
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.1.orig.tar.bz2' gnupg2_2.2.1.orig.tar.bz2 6537959 SHA256:34d70cd65b9c95f3f2f90a9f5c1e0b6a0fe039a8d685e2d66d69c33d1cbf62fb
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.1.orig.tar.bz2.asc' gnupg2_2.2.1.orig.tar.bz2.asc 310 SHA256:ca8e0be202fd6b66e7ccb4366af5fc4a432a60c7d42a89552b707f2cd7ccc8c6
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.1-5.debian.tar.bz2' gnupg2_2.2.1-5.debian.tar.bz2 69578 SHA256:0f6af862fcf63026d83018f288036422b7bed2939f017ca6f3ba371e2de8cffa
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnupg2/2.2.1-5/
 
-- https://sources.debian.net/src/gnupg2/2.2.1-5/ (for browsing the source)
-- https://sources.debian.net/src/gnupg2/2.2.1-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnupg2/2.2.1-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gnutls28=3.5.15-2`
 
@@ -2077,20 +2047,13 @@ Licenses: (parsed from: `/usr/share/doc/inetutils-ping/copyright`)
 - `MIT`
 - `Wietse`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris inetutils=2:1.9.4-2
-'http://deb.debian.org/debian/pool/main/i/inetutils/inetutils_1.9.4-2.dsc' inetutils_1.9.4-2.dsc 2662 SHA256:bd38f1018bbb697b6e27235a804f742a7bcd5fffb736479e8084f5214ed45669
-'http://deb.debian.org/debian/pool/main/i/inetutils/inetutils_1.9.4.orig.tar.xz' inetutils_1.9.4.orig.tar.xz 1364408 SHA256:849d96f136effdef69548a940e3e0ec0624fc0c81265296987986a0dd36ded37
-'http://deb.debian.org/debian/pool/main/i/inetutils/inetutils_1.9.4-2.debian.tar.xz' inetutils_1.9.4-2.debian.tar.xz 77188 SHA256:1b67e9197c4205b36e7b05e07eedaf44f9b3971f03ab83b7fed279a692d93a98
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/inetutils/2:1.9.4-2/
 
-- https://sources.debian.net/src/inetutils/2:1.9.4-2/ (for browsing the source)
-- https://sources.debian.net/src/inetutils/2:1.9.4-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/inetutils/2:1.9.4-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `init-system-helpers=1.49`
 
@@ -2370,21 +2333,13 @@ Licenses: (parsed from: `/usr/share/doc/libbsd0/copyright`)
 - `public-domain`
 - `public-domain-Colin-Plumb`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libbsd=0.8.6-2
-'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.8.6-2.dsc' libbsd_0.8.6-2.dsc 2181 SHA256:8adbd1e8bd9e36248be2530eb2ceb4ed0ebd6d16ad108f9620483a1f9b6ed055
-'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.8.6.orig.tar.xz' libbsd_0.8.6.orig.tar.xz 371112 SHA256:467fbf9df1f49af11f7f686691057c8c0a7613ae5a870577bef9155de39f9687
-'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.8.6.orig.tar.xz.asc' libbsd_0.8.6.orig.tar.xz.asc 833 SHA256:8b579470e8249b2ad24134989cc77404e3620e8ccda3d57650cfbcc7c50c26ce
-'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.8.6-2.debian.tar.xz' libbsd_0.8.6-2.debian.tar.xz 15684 SHA256:3ba08d93c36002737c4707b2dfdc13118d302487a53f1789d8ee22ed7107c491
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libbsd/0.8.6-2/
 
-- https://sources.debian.net/src/libbsd/0.8.6-2/ (for browsing the source)
-- https://sources.debian.net/src/libbsd/0.8.6-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libbsd/0.8.6-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libcap-ng=0.7.7-3`
 

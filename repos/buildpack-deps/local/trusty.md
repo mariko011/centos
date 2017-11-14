@@ -4115,14 +4115,9 @@ Licenses: (parsed from: `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-ba
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.18.2-2ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.18.2-2ubuntu1.1.dsc' perl_5.18.2-2ubuntu1.1.dsc 2451 SHA256:44026bc08b17a300869534d616b4363c67e5abacc7ece347a52185517c5a3c44
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.18.2.orig.tar.bz2' perl_5.18.2.orig.tar.bz2 14058513 SHA256:06a0cd490be36d829606aa41d8c9c4c72ae70542f8d4f23ec554335b3d9e2746
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.18.2-2ubuntu1.1.debian.tar.gz' perl_5.18.2-2ubuntu1.1.debian.tar.gz 133848 SHA256:973ede6565447dd29d1bfc4e36aac804cc3caab64e074ca4516af743abe55ea8
-```
 
 ### `dpkg` source package: `pixman=0.30.2-2ubuntu1.1`
 
@@ -4218,14 +4213,9 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `GPL-1`
 - `Tcl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-9.3=9.3.19-0ubuntu0.14.04
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.19-0ubuntu0.14.04.dsc' postgresql-9.3_9.3.19-0ubuntu0.14.04.dsc 3595 SHA256:b55c927d79067964642e3f049c4b9f7554e0573f6bd5a491fe00faf25ab6898c
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.19.orig.tar.bz2' postgresql-9.3_9.3.19.orig.tar.bz2 17190203 SHA256:fb9e872cd9e927ba331690d86bc63dcb5a596acb7a536fa0518a3c7d43ac2fb5
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.19-0ubuntu0.14.04.debian.tar.xz' postgresql-9.3_9.3.19-0ubuntu0.14.04.debian.tar.xz 29520 SHA256:48a64bf817b60d65720fd377e261a6a9c03ed360ffdfed96d94ce94da6fc80d0
-```
 
 ### `dpkg` source package: `procps=1:3.3.9-1ubuntu2.2`
 
