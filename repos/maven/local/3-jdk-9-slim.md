@@ -542,21 +542,13 @@ Licenses: (parsed from: `/usr/share/doc/dbus/copyright`, `/usr/share/doc/libdbus
 - `Tcl-BSDish`
 - `g10-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dbus=1.12.0-1
-'http://deb.debian.org/debian/pool/main/d/dbus/dbus_1.12.0-1.dsc' dbus_1.12.0-1.dsc 3687 SHA256:f2725d7fba22bd681741defea267d1860235ec5e8eaead575e89b0ceff488eda
-'http://deb.debian.org/debian/pool/main/d/dbus/dbus_1.12.0.orig.tar.gz' dbus_1.12.0.orig.tar.gz 2062151 SHA256:39af0d9267391434b549c5c4adc001b735518c96f7630c3fe7162af1d13ef3c0
-'http://deb.debian.org/debian/pool/main/d/dbus/dbus_1.12.0.orig.tar.gz.asc' dbus_1.12.0.orig.tar.gz.asc 1666 SHA256:4a6be38dceb74ce0d5c93db2a4e1f97cc63866f644a78dd46ddaf1f8a22135dd
-'http://deb.debian.org/debian/pool/main/d/dbus/dbus_1.12.0-1.debian.tar.xz' dbus_1.12.0-1.debian.tar.xz 59688 SHA256:a385709c6738cd4d56510a7c784b5107c103772883b2c15d7957e01922fb8acd
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/dbus/1.12.0-1/
 
-- https://sources.debian.net/src/dbus/1.12.0-1/ (for browsing the source)
-- https://sources.debian.net/src/dbus/1.12.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dbus/1.12.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debconf=1.5.63`
 
@@ -610,19 +602,13 @@ Licenses: (parsed from: `/usr/share/doc/debianutils/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debianutils=4.8.2
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_4.8.2.dsc' debianutils_4.8.2.dsc 1731 SHA256:175edfd4a94f20d34784b36c644cf8c23ee23686ebee6ad0c10c32b76e41c34f
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_4.8.2.tar.xz' debianutils_4.8.2.tar.xz 155944 SHA256:4deb5f293fd3e43c5d4a625a30b18d0fb07662ff77f769e3272841cdb61e7c68
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/debianutils/4.8.2/
 
-- https://sources.debian.net/src/debianutils/4.8.2/ (for browsing the source)
-- https://sources.debian.net/src/debianutils/4.8.2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/debianutils/4.8.2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `diffutils=1:3.6-1`
 
@@ -1431,20 +1417,13 @@ Licenses: (parsed from: `/usr/share/doc/libpsl5/copyright`)
 - `Chromium`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libpsl=0.18.0-4
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.18.0-4.dsc' libpsl_0.18.0-4.dsc 2190 SHA256:b62d3ad4472795fa8a81fcdc938aae7e8fa542835873c730463b280931abae75
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.18.0.orig.tar.gz' libpsl_0.18.0.orig.tar.gz 10330130 SHA256:29d76f49fe58f36a23d8eeb863e545767ab6ebbddb3356fc63af9728739edb3f
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.18.0-4.debian.tar.xz' libpsl_0.18.0-4.debian.tar.xz 9240 SHA256:d46f48e6b9ed75702b13d1e8d9c39c0898f8f76c956e430a71ee4fbecff09138
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libpsl/0.18.0-4/
 
-- https://sources.debian.net/src/libpsl/0.18.0-4/ (for browsing the source)
-- https://sources.debian.net/src/libpsl/0.18.0-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libpsl/0.18.0-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libselinux=2.7-2`
 
@@ -2295,20 +2274,13 @@ Licenses: (parsed from: `/usr/share/doc/publicsuffix/copyright`)
 - `CC0`
 - `MPL-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris publicsuffix=20170910.1557-1
-'http://deb.debian.org/debian/pool/main/p/publicsuffix/publicsuffix_20170910.1557-1.dsc' publicsuffix_20170910.1557-1.dsc 1976 SHA256:1aa310ea811c75836dfc6f3b5233f2297cda3a33f2a2cb07d6e110f39a25b695
-'http://deb.debian.org/debian/pool/main/p/publicsuffix/publicsuffix_20170910.1557.orig.tar.gz' publicsuffix_20170910.1557.orig.tar.gz 83328 SHA256:85ccd3cb28ea0c3bcb4c6ef21a3dc26a2c1d06b4fd5156935cb8fe9f2dd18402
-'http://deb.debian.org/debian/pool/main/p/publicsuffix/publicsuffix_20170910.1557-1.debian.tar.xz' publicsuffix_20170910.1557-1.debian.tar.xz 14060 SHA256:334d6b40b4680b82d2a7cad775af9f3e6bdc534424b3c06fd5c9fee1731ec633
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/publicsuffix/20170910.1557-1/
 
-- https://sources.debian.net/src/publicsuffix/20170910.1557-1/ (for browsing the source)
-- https://sources.debian.net/src/publicsuffix/20170910.1557-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/publicsuffix/20170910.1557-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rtmpdump=2.4+20151223.gitfa8646d.1-1`
 
