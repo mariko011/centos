@@ -1962,41 +1962,41 @@ RUN apk add --no-cache 		git 		openssh-client
 ## `docker:17.09.0-ce-windowsservercore`
 
 ```console
-$ docker pull docker@sha256:ea452afe34d1c2bd8c07decc001d584263cd053c7476c05e997f8e3ffb6f3642
+$ docker pull docker@sha256:59b883d2119f22a5da9d0f64f26e92f2e1959918c5dbffe04d6c4cd939efcd08
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
-	-	windows version 10.0.14393.1770; amd64
+	-	windows version 10.0.14393.1884; amd64
 
-### `docker:17.09.0-ce-windowsservercore` - windows version 10.0.14393.1770; amd64
+### `docker:17.09.0-ce-windowsservercore` - windows version 10.0.14393.1884; amd64
 
 ```console
-$ docker pull docker@sha256:f47902fb56120f35b2098bd7db92d4d638eaa5f2be973188429ea66f0da8f2eb
+$ docker pull docker@sha256:c0b9d7bdb2e5d2a44f3b77af0f31e67f7869db4ad897c3c935c0b013b5402175
 ```
 
 -	Docker Version: 17.06.1-ee-2
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 GB (5366250235 bytes)**  
+-	Total Size: **5.4 GB (5372744261 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:480fe73f076dc2b22f398c4980005696b098a4598ab463b78cf3a8b533c4e2f0`
+-	Image ID: `sha256:83ccc7aee8c4df6c6a44158f810d53389b86c07f8e7d4ff974c18a81c0466f6e`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Tue, 13 Dec 2016 10:53:31 GMT
 RUN Apply image 10.0.14393.0
-# Mon, 09 Oct 2017 19:23:50 GMT
-RUN Install update 10.0.14393.1770
-# Wed, 01 Nov 2017 18:45:43 GMT
+# Mon, 13 Nov 2017 21:42:13 GMT
+RUN Install update 10.0.14393.1884
+# Wed, 15 Nov 2017 03:14:47 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 01 Nov 2017 20:53:33 GMT
+# Wed, 15 Nov 2017 19:27:10 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Wed, 01 Nov 2017 20:54:42 GMT
+# Wed, 15 Nov 2017 19:29:33 GMT
 ENV DOCKER_CHANNEL=stable
-# Wed, 01 Nov 2017 20:54:43 GMT
+# Wed, 15 Nov 2017 19:29:34 GMT
 ENV DOCKER_VERSION=17.09.0-ce
-# Wed, 01 Nov 2017 20:55:43 GMT
+# Wed, 15 Nov 2017 19:30:32 GMT
 RUN $url = ('https://download.docker.com/win/static/{0}/x86_64/docker-{1}.zip' -f $env:DOCKER_CHANNEL, $env:DOCKER_VERSION); 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
 ```
 
@@ -2005,29 +2005,29 @@ RUN $url = ('https://download.docker.com/win/static/{0}/x86_64/docker-{1}.zip' -
 		Last Modified: Tue, 13 Dec 2016 10:53:31 GMT  
 		Size: 4.1 GB (4069985900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:8df8e568af76c1c311a1251f6f7402e2a09d14629840c97091beb9ba55419464`  
-		Last Modified: Mon, 09 Oct 2017 19:23:50 GMT  
-		Size: 1.3 GB (1280521235 bytes)  
+	-	`sha256:ead9f4ead3c5a712cb213a5318f4a8bf3604bc16e16ce4f7cf0b66f7d2073282`  
+		Last Modified: Mon, 13 Nov 2017 21:42:13 GMT  
+		Size: 1.3 GB (1286993027 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:a2549da2a20282ababf948c27e5a82ee060275fa04614875c1c5c0c0e11f5e32`  
-		Last Modified: Wed, 01 Nov 2017 19:04:06 GMT  
-		Size: 1.2 KB (1170 bytes)  
+	-	`sha256:a4bd6cd94ee2a374930b7554f113d83a6d2d7c4fc6059acd6f2f60e0f29d2f26`  
+		Last Modified: Wed, 15 Nov 2017 10:26:12 GMT  
+		Size: 1.2 KB (1195 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1de3b6e915d299aec66dd74b8c50b6cabbc2bb666361d63f36930add87b9dff`  
-		Last Modified: Wed, 01 Nov 2017 20:57:04 GMT  
-		Size: 4.9 MB (4865441 bytes)  
+	-	`sha256:e6a6bca6ca4a5af1b9ecee7c5d06eed25aaf7d650400c816faf8118c069fcdc6`  
+		Last Modified: Wed, 15 Nov 2017 19:30:54 GMT  
+		Size: 4.9 MB (4876193 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a69b2b1ac11bd966d2144059796046400e5ece65bc28774e60edd3ec43014d0`  
-		Last Modified: Wed, 01 Nov 2017 20:57:28 GMT  
-		Size: 1.2 KB (1194 bytes)  
+	-	`sha256:7fb6b2b405db1939f469cfdc82be7294c8efcc5291e58bca7d7a78d5015df066`  
+		Last Modified: Wed, 15 Nov 2017 19:31:31 GMT  
+		Size: 1.2 KB (1186 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d2481db9c8c89fb83553e0975bd6eea863ea06cbccd0e6e07035c5f9659b1a85`  
-		Last Modified: Wed, 01 Nov 2017 20:57:29 GMT  
-		Size: 1.2 KB (1192 bytes)  
+	-	`sha256:28f0adecc3b2cff9340d4757031977afdd167b5862229bb8001bcbdef097e189`  
+		Last Modified: Wed, 15 Nov 2017 19:31:31 GMT  
+		Size: 1.2 KB (1195 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8b05276fed727371543a2b6c8bfd1561d51d28026fa39be566a09e17d54bb324`  
-		Last Modified: Wed, 01 Nov 2017 20:58:01 GMT  
-		Size: 10.9 MB (10874103 bytes)  
+	-	`sha256:1701850b8fe8b0c3952b6115177a13f169c0bc56555f4ea846664b1c54992e66`  
+		Last Modified: Wed, 15 Nov 2017 19:31:34 GMT  
+		Size: 10.9 MB (10885565 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:17.09.0-dind`
@@ -2769,41 +2769,41 @@ RUN apk add --no-cache 		git 		openssh-client
 ## `docker:17.09.0-windowsservercore`
 
 ```console
-$ docker pull docker@sha256:ea452afe34d1c2bd8c07decc001d584263cd053c7476c05e997f8e3ffb6f3642
+$ docker pull docker@sha256:59b883d2119f22a5da9d0f64f26e92f2e1959918c5dbffe04d6c4cd939efcd08
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
-	-	windows version 10.0.14393.1770; amd64
+	-	windows version 10.0.14393.1884; amd64
 
-### `docker:17.09.0-windowsservercore` - windows version 10.0.14393.1770; amd64
+### `docker:17.09.0-windowsservercore` - windows version 10.0.14393.1884; amd64
 
 ```console
-$ docker pull docker@sha256:f47902fb56120f35b2098bd7db92d4d638eaa5f2be973188429ea66f0da8f2eb
+$ docker pull docker@sha256:c0b9d7bdb2e5d2a44f3b77af0f31e67f7869db4ad897c3c935c0b013b5402175
 ```
 
 -	Docker Version: 17.06.1-ee-2
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 GB (5366250235 bytes)**  
+-	Total Size: **5.4 GB (5372744261 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:480fe73f076dc2b22f398c4980005696b098a4598ab463b78cf3a8b533c4e2f0`
+-	Image ID: `sha256:83ccc7aee8c4df6c6a44158f810d53389b86c07f8e7d4ff974c18a81c0466f6e`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Tue, 13 Dec 2016 10:53:31 GMT
 RUN Apply image 10.0.14393.0
-# Mon, 09 Oct 2017 19:23:50 GMT
-RUN Install update 10.0.14393.1770
-# Wed, 01 Nov 2017 18:45:43 GMT
+# Mon, 13 Nov 2017 21:42:13 GMT
+RUN Install update 10.0.14393.1884
+# Wed, 15 Nov 2017 03:14:47 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 01 Nov 2017 20:53:33 GMT
+# Wed, 15 Nov 2017 19:27:10 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Wed, 01 Nov 2017 20:54:42 GMT
+# Wed, 15 Nov 2017 19:29:33 GMT
 ENV DOCKER_CHANNEL=stable
-# Wed, 01 Nov 2017 20:54:43 GMT
+# Wed, 15 Nov 2017 19:29:34 GMT
 ENV DOCKER_VERSION=17.09.0-ce
-# Wed, 01 Nov 2017 20:55:43 GMT
+# Wed, 15 Nov 2017 19:30:32 GMT
 RUN $url = ('https://download.docker.com/win/static/{0}/x86_64/docker-{1}.zip' -f $env:DOCKER_CHANNEL, $env:DOCKER_VERSION); 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
 ```
 
@@ -2812,29 +2812,29 @@ RUN $url = ('https://download.docker.com/win/static/{0}/x86_64/docker-{1}.zip' -
 		Last Modified: Tue, 13 Dec 2016 10:53:31 GMT  
 		Size: 4.1 GB (4069985900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:8df8e568af76c1c311a1251f6f7402e2a09d14629840c97091beb9ba55419464`  
-		Last Modified: Mon, 09 Oct 2017 19:23:50 GMT  
-		Size: 1.3 GB (1280521235 bytes)  
+	-	`sha256:ead9f4ead3c5a712cb213a5318f4a8bf3604bc16e16ce4f7cf0b66f7d2073282`  
+		Last Modified: Mon, 13 Nov 2017 21:42:13 GMT  
+		Size: 1.3 GB (1286993027 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:a2549da2a20282ababf948c27e5a82ee060275fa04614875c1c5c0c0e11f5e32`  
-		Last Modified: Wed, 01 Nov 2017 19:04:06 GMT  
-		Size: 1.2 KB (1170 bytes)  
+	-	`sha256:a4bd6cd94ee2a374930b7554f113d83a6d2d7c4fc6059acd6f2f60e0f29d2f26`  
+		Last Modified: Wed, 15 Nov 2017 10:26:12 GMT  
+		Size: 1.2 KB (1195 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1de3b6e915d299aec66dd74b8c50b6cabbc2bb666361d63f36930add87b9dff`  
-		Last Modified: Wed, 01 Nov 2017 20:57:04 GMT  
-		Size: 4.9 MB (4865441 bytes)  
+	-	`sha256:e6a6bca6ca4a5af1b9ecee7c5d06eed25aaf7d650400c816faf8118c069fcdc6`  
+		Last Modified: Wed, 15 Nov 2017 19:30:54 GMT  
+		Size: 4.9 MB (4876193 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a69b2b1ac11bd966d2144059796046400e5ece65bc28774e60edd3ec43014d0`  
-		Last Modified: Wed, 01 Nov 2017 20:57:28 GMT  
-		Size: 1.2 KB (1194 bytes)  
+	-	`sha256:7fb6b2b405db1939f469cfdc82be7294c8efcc5291e58bca7d7a78d5015df066`  
+		Last Modified: Wed, 15 Nov 2017 19:31:31 GMT  
+		Size: 1.2 KB (1186 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d2481db9c8c89fb83553e0975bd6eea863ea06cbccd0e6e07035c5f9659b1a85`  
-		Last Modified: Wed, 01 Nov 2017 20:57:29 GMT  
-		Size: 1.2 KB (1192 bytes)  
+	-	`sha256:28f0adecc3b2cff9340d4757031977afdd167b5862229bb8001bcbdef097e189`  
+		Last Modified: Wed, 15 Nov 2017 19:31:31 GMT  
+		Size: 1.2 KB (1195 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8b05276fed727371543a2b6c8bfd1561d51d28026fa39be566a09e17d54bb324`  
-		Last Modified: Wed, 01 Nov 2017 20:58:01 GMT  
-		Size: 10.9 MB (10874103 bytes)  
+	-	`sha256:1701850b8fe8b0c3952b6115177a13f169c0bc56555f4ea846664b1c54992e66`  
+		Last Modified: Wed, 15 Nov 2017 19:31:34 GMT  
+		Size: 10.9 MB (10885565 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:17.09-dind`
@@ -3576,41 +3576,41 @@ RUN apk add --no-cache 		git 		openssh-client
 ## `docker:17.09-windowsservercore`
 
 ```console
-$ docker pull docker@sha256:ea452afe34d1c2bd8c07decc001d584263cd053c7476c05e997f8e3ffb6f3642
+$ docker pull docker@sha256:59b883d2119f22a5da9d0f64f26e92f2e1959918c5dbffe04d6c4cd939efcd08
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
-	-	windows version 10.0.14393.1770; amd64
+	-	windows version 10.0.14393.1884; amd64
 
-### `docker:17.09-windowsservercore` - windows version 10.0.14393.1770; amd64
+### `docker:17.09-windowsservercore` - windows version 10.0.14393.1884; amd64
 
 ```console
-$ docker pull docker@sha256:f47902fb56120f35b2098bd7db92d4d638eaa5f2be973188429ea66f0da8f2eb
+$ docker pull docker@sha256:c0b9d7bdb2e5d2a44f3b77af0f31e67f7869db4ad897c3c935c0b013b5402175
 ```
 
 -	Docker Version: 17.06.1-ee-2
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 GB (5366250235 bytes)**  
+-	Total Size: **5.4 GB (5372744261 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:480fe73f076dc2b22f398c4980005696b098a4598ab463b78cf3a8b533c4e2f0`
+-	Image ID: `sha256:83ccc7aee8c4df6c6a44158f810d53389b86c07f8e7d4ff974c18a81c0466f6e`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Tue, 13 Dec 2016 10:53:31 GMT
 RUN Apply image 10.0.14393.0
-# Mon, 09 Oct 2017 19:23:50 GMT
-RUN Install update 10.0.14393.1770
-# Wed, 01 Nov 2017 18:45:43 GMT
+# Mon, 13 Nov 2017 21:42:13 GMT
+RUN Install update 10.0.14393.1884
+# Wed, 15 Nov 2017 03:14:47 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 01 Nov 2017 20:53:33 GMT
+# Wed, 15 Nov 2017 19:27:10 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Wed, 01 Nov 2017 20:54:42 GMT
+# Wed, 15 Nov 2017 19:29:33 GMT
 ENV DOCKER_CHANNEL=stable
-# Wed, 01 Nov 2017 20:54:43 GMT
+# Wed, 15 Nov 2017 19:29:34 GMT
 ENV DOCKER_VERSION=17.09.0-ce
-# Wed, 01 Nov 2017 20:55:43 GMT
+# Wed, 15 Nov 2017 19:30:32 GMT
 RUN $url = ('https://download.docker.com/win/static/{0}/x86_64/docker-{1}.zip' -f $env:DOCKER_CHANNEL, $env:DOCKER_VERSION); 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
 ```
 
@@ -3619,29 +3619,29 @@ RUN $url = ('https://download.docker.com/win/static/{0}/x86_64/docker-{1}.zip' -
 		Last Modified: Tue, 13 Dec 2016 10:53:31 GMT  
 		Size: 4.1 GB (4069985900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:8df8e568af76c1c311a1251f6f7402e2a09d14629840c97091beb9ba55419464`  
-		Last Modified: Mon, 09 Oct 2017 19:23:50 GMT  
-		Size: 1.3 GB (1280521235 bytes)  
+	-	`sha256:ead9f4ead3c5a712cb213a5318f4a8bf3604bc16e16ce4f7cf0b66f7d2073282`  
+		Last Modified: Mon, 13 Nov 2017 21:42:13 GMT  
+		Size: 1.3 GB (1286993027 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:a2549da2a20282ababf948c27e5a82ee060275fa04614875c1c5c0c0e11f5e32`  
-		Last Modified: Wed, 01 Nov 2017 19:04:06 GMT  
-		Size: 1.2 KB (1170 bytes)  
+	-	`sha256:a4bd6cd94ee2a374930b7554f113d83a6d2d7c4fc6059acd6f2f60e0f29d2f26`  
+		Last Modified: Wed, 15 Nov 2017 10:26:12 GMT  
+		Size: 1.2 KB (1195 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1de3b6e915d299aec66dd74b8c50b6cabbc2bb666361d63f36930add87b9dff`  
-		Last Modified: Wed, 01 Nov 2017 20:57:04 GMT  
-		Size: 4.9 MB (4865441 bytes)  
+	-	`sha256:e6a6bca6ca4a5af1b9ecee7c5d06eed25aaf7d650400c816faf8118c069fcdc6`  
+		Last Modified: Wed, 15 Nov 2017 19:30:54 GMT  
+		Size: 4.9 MB (4876193 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a69b2b1ac11bd966d2144059796046400e5ece65bc28774e60edd3ec43014d0`  
-		Last Modified: Wed, 01 Nov 2017 20:57:28 GMT  
-		Size: 1.2 KB (1194 bytes)  
+	-	`sha256:7fb6b2b405db1939f469cfdc82be7294c8efcc5291e58bca7d7a78d5015df066`  
+		Last Modified: Wed, 15 Nov 2017 19:31:31 GMT  
+		Size: 1.2 KB (1186 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d2481db9c8c89fb83553e0975bd6eea863ea06cbccd0e6e07035c5f9659b1a85`  
-		Last Modified: Wed, 01 Nov 2017 20:57:29 GMT  
-		Size: 1.2 KB (1192 bytes)  
+	-	`sha256:28f0adecc3b2cff9340d4757031977afdd167b5862229bb8001bcbdef097e189`  
+		Last Modified: Wed, 15 Nov 2017 19:31:31 GMT  
+		Size: 1.2 KB (1195 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8b05276fed727371543a2b6c8bfd1561d51d28026fa39be566a09e17d54bb324`  
-		Last Modified: Wed, 01 Nov 2017 20:58:01 GMT  
-		Size: 10.9 MB (10874103 bytes)  
+	-	`sha256:1701850b8fe8b0c3952b6115177a13f169c0bc56555f4ea846664b1c54992e66`  
+		Last Modified: Wed, 15 Nov 2017 19:31:34 GMT  
+		Size: 10.9 MB (10885565 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:17.10`
@@ -5256,41 +5256,41 @@ RUN apk add --no-cache 		git 		openssh-client
 ## `docker:17.10.0-ce-windowsservercore`
 
 ```console
-$ docker pull docker@sha256:1c5f56e41aed62125d3dc1034936c8785304cdc0c86fdf423e2cd732c156fba9
+$ docker pull docker@sha256:228fdcc312888e6ab28d13d3c531037f0b575143453bfb305a5254a5927745f6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
-	-	windows version 10.0.14393.1770; amd64
+	-	windows version 10.0.14393.1884; amd64
 
-### `docker:17.10.0-ce-windowsservercore` - windows version 10.0.14393.1770; amd64
+### `docker:17.10.0-ce-windowsservercore` - windows version 10.0.14393.1884; amd64
 
 ```console
-$ docker pull docker@sha256:492123d1b01f0181d3a026f5652c9f680572081becf5b8b8aa7e9d38d1a58980
+$ docker pull docker@sha256:21db37d852bd9c2cbb9d3c15506cca28352d610a285d7fca6f9e5a04bd9b359d
 ```
 
 -	Docker Version: 17.06.1-ee-2
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 GB (5366289491 bytes)**  
+-	Total Size: **5.4 GB (5372784316 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0616e64b8e1c5424578d01b62e5ee9218d5db422d73959596682c9576924f260`
+-	Image ID: `sha256:29fdc4b34ab49ae8300e7b38bb88b2806fbbbd2bb742e514941126577639a851`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Tue, 13 Dec 2016 10:53:31 GMT
 RUN Apply image 10.0.14393.0
-# Mon, 09 Oct 2017 19:23:50 GMT
-RUN Install update 10.0.14393.1770
-# Wed, 01 Nov 2017 18:45:43 GMT
+# Mon, 13 Nov 2017 21:42:13 GMT
+RUN Install update 10.0.14393.1884
+# Wed, 15 Nov 2017 03:14:47 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 01 Nov 2017 20:53:33 GMT
+# Wed, 15 Nov 2017 19:27:10 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Wed, 01 Nov 2017 20:53:33 GMT
+# Wed, 15 Nov 2017 19:28:21 GMT
 ENV DOCKER_CHANNEL=edge
-# Wed, 01 Nov 2017 20:53:34 GMT
+# Wed, 15 Nov 2017 19:28:22 GMT
 ENV DOCKER_VERSION=17.10.0-ce
-# Wed, 01 Nov 2017 20:54:34 GMT
+# Wed, 15 Nov 2017 19:29:22 GMT
 RUN $url = ('https://download.docker.com/win/static/{0}/x86_64/docker-{1}.zip' -f $env:DOCKER_CHANNEL, $env:DOCKER_VERSION); 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
 ```
 
@@ -5299,29 +5299,29 @@ RUN $url = ('https://download.docker.com/win/static/{0}/x86_64/docker-{1}.zip' -
 		Last Modified: Tue, 13 Dec 2016 10:53:31 GMT  
 		Size: 4.1 GB (4069985900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:8df8e568af76c1c311a1251f6f7402e2a09d14629840c97091beb9ba55419464`  
-		Last Modified: Mon, 09 Oct 2017 19:23:50 GMT  
-		Size: 1.3 GB (1280521235 bytes)  
+	-	`sha256:ead9f4ead3c5a712cb213a5318f4a8bf3604bc16e16ce4f7cf0b66f7d2073282`  
+		Last Modified: Mon, 13 Nov 2017 21:42:13 GMT  
+		Size: 1.3 GB (1286993027 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:a2549da2a20282ababf948c27e5a82ee060275fa04614875c1c5c0c0e11f5e32`  
-		Last Modified: Wed, 01 Nov 2017 19:04:06 GMT  
-		Size: 1.2 KB (1170 bytes)  
+	-	`sha256:a4bd6cd94ee2a374930b7554f113d83a6d2d7c4fc6059acd6f2f60e0f29d2f26`  
+		Last Modified: Wed, 15 Nov 2017 10:26:12 GMT  
+		Size: 1.2 KB (1195 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1de3b6e915d299aec66dd74b8c50b6cabbc2bb666361d63f36930add87b9dff`  
-		Last Modified: Wed, 01 Nov 2017 20:57:04 GMT  
-		Size: 4.9 MB (4865441 bytes)  
+	-	`sha256:e6a6bca6ca4a5af1b9ecee7c5d06eed25aaf7d650400c816faf8118c069fcdc6`  
+		Last Modified: Wed, 15 Nov 2017 19:30:54 GMT  
+		Size: 4.9 MB (4876193 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9e5e7b764f30cfc198a9acddc92cb56f148600791a02959734a7c209dca381da`  
-		Last Modified: Wed, 01 Nov 2017 20:57:02 GMT  
-		Size: 1.2 KB (1171 bytes)  
+	-	`sha256:c2e9ab64986909c068dc2857a226a7306c66b0886b4188a45326451353bbefc6`  
+		Last Modified: Wed, 15 Nov 2017 19:31:09 GMT  
+		Size: 1.2 KB (1193 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2e8b795d1db0a20efb88a6741d710702e534ef92a2e89f9ad07e4d4f5fed9c68`  
-		Last Modified: Wed, 01 Nov 2017 20:57:03 GMT  
-		Size: 1.2 KB (1186 bytes)  
+	-	`sha256:ace09faad1484ea00b77472a107bb8d897ed5148a03b616e3e26534e6a0cf6d5`  
+		Last Modified: Wed, 15 Nov 2017 19:31:09 GMT  
+		Size: 1.2 KB (1194 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11fbc459ad0d583fe3479f0cfd11452664ba70d8df3fa1fb3f1a0cc71be97df5`  
-		Last Modified: Wed, 01 Nov 2017 20:57:06 GMT  
-		Size: 10.9 MB (10913388 bytes)  
+	-	`sha256:d0819518f5cfaae76f1f1c16a9851b5618eb09d3afee47e4865364b7898a3764`  
+		Last Modified: Wed, 15 Nov 2017 19:31:12 GMT  
+		Size: 10.9 MB (10925614 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:17.10.0-dind`
@@ -6063,41 +6063,41 @@ RUN apk add --no-cache 		git 		openssh-client
 ## `docker:17.10.0-windowsservercore`
 
 ```console
-$ docker pull docker@sha256:1c5f56e41aed62125d3dc1034936c8785304cdc0c86fdf423e2cd732c156fba9
+$ docker pull docker@sha256:228fdcc312888e6ab28d13d3c531037f0b575143453bfb305a5254a5927745f6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
-	-	windows version 10.0.14393.1770; amd64
+	-	windows version 10.0.14393.1884; amd64
 
-### `docker:17.10.0-windowsservercore` - windows version 10.0.14393.1770; amd64
+### `docker:17.10.0-windowsservercore` - windows version 10.0.14393.1884; amd64
 
 ```console
-$ docker pull docker@sha256:492123d1b01f0181d3a026f5652c9f680572081becf5b8b8aa7e9d38d1a58980
+$ docker pull docker@sha256:21db37d852bd9c2cbb9d3c15506cca28352d610a285d7fca6f9e5a04bd9b359d
 ```
 
 -	Docker Version: 17.06.1-ee-2
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 GB (5366289491 bytes)**  
+-	Total Size: **5.4 GB (5372784316 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0616e64b8e1c5424578d01b62e5ee9218d5db422d73959596682c9576924f260`
+-	Image ID: `sha256:29fdc4b34ab49ae8300e7b38bb88b2806fbbbd2bb742e514941126577639a851`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Tue, 13 Dec 2016 10:53:31 GMT
 RUN Apply image 10.0.14393.0
-# Mon, 09 Oct 2017 19:23:50 GMT
-RUN Install update 10.0.14393.1770
-# Wed, 01 Nov 2017 18:45:43 GMT
+# Mon, 13 Nov 2017 21:42:13 GMT
+RUN Install update 10.0.14393.1884
+# Wed, 15 Nov 2017 03:14:47 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 01 Nov 2017 20:53:33 GMT
+# Wed, 15 Nov 2017 19:27:10 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Wed, 01 Nov 2017 20:53:33 GMT
+# Wed, 15 Nov 2017 19:28:21 GMT
 ENV DOCKER_CHANNEL=edge
-# Wed, 01 Nov 2017 20:53:34 GMT
+# Wed, 15 Nov 2017 19:28:22 GMT
 ENV DOCKER_VERSION=17.10.0-ce
-# Wed, 01 Nov 2017 20:54:34 GMT
+# Wed, 15 Nov 2017 19:29:22 GMT
 RUN $url = ('https://download.docker.com/win/static/{0}/x86_64/docker-{1}.zip' -f $env:DOCKER_CHANNEL, $env:DOCKER_VERSION); 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
 ```
 
@@ -6106,29 +6106,29 @@ RUN $url = ('https://download.docker.com/win/static/{0}/x86_64/docker-{1}.zip' -
 		Last Modified: Tue, 13 Dec 2016 10:53:31 GMT  
 		Size: 4.1 GB (4069985900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:8df8e568af76c1c311a1251f6f7402e2a09d14629840c97091beb9ba55419464`  
-		Last Modified: Mon, 09 Oct 2017 19:23:50 GMT  
-		Size: 1.3 GB (1280521235 bytes)  
+	-	`sha256:ead9f4ead3c5a712cb213a5318f4a8bf3604bc16e16ce4f7cf0b66f7d2073282`  
+		Last Modified: Mon, 13 Nov 2017 21:42:13 GMT  
+		Size: 1.3 GB (1286993027 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:a2549da2a20282ababf948c27e5a82ee060275fa04614875c1c5c0c0e11f5e32`  
-		Last Modified: Wed, 01 Nov 2017 19:04:06 GMT  
-		Size: 1.2 KB (1170 bytes)  
+	-	`sha256:a4bd6cd94ee2a374930b7554f113d83a6d2d7c4fc6059acd6f2f60e0f29d2f26`  
+		Last Modified: Wed, 15 Nov 2017 10:26:12 GMT  
+		Size: 1.2 KB (1195 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1de3b6e915d299aec66dd74b8c50b6cabbc2bb666361d63f36930add87b9dff`  
-		Last Modified: Wed, 01 Nov 2017 20:57:04 GMT  
-		Size: 4.9 MB (4865441 bytes)  
+	-	`sha256:e6a6bca6ca4a5af1b9ecee7c5d06eed25aaf7d650400c816faf8118c069fcdc6`  
+		Last Modified: Wed, 15 Nov 2017 19:30:54 GMT  
+		Size: 4.9 MB (4876193 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9e5e7b764f30cfc198a9acddc92cb56f148600791a02959734a7c209dca381da`  
-		Last Modified: Wed, 01 Nov 2017 20:57:02 GMT  
-		Size: 1.2 KB (1171 bytes)  
+	-	`sha256:c2e9ab64986909c068dc2857a226a7306c66b0886b4188a45326451353bbefc6`  
+		Last Modified: Wed, 15 Nov 2017 19:31:09 GMT  
+		Size: 1.2 KB (1193 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2e8b795d1db0a20efb88a6741d710702e534ef92a2e89f9ad07e4d4f5fed9c68`  
-		Last Modified: Wed, 01 Nov 2017 20:57:03 GMT  
-		Size: 1.2 KB (1186 bytes)  
+	-	`sha256:ace09faad1484ea00b77472a107bb8d897ed5148a03b616e3e26534e6a0cf6d5`  
+		Last Modified: Wed, 15 Nov 2017 19:31:09 GMT  
+		Size: 1.2 KB (1194 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11fbc459ad0d583fe3479f0cfd11452664ba70d8df3fa1fb3f1a0cc71be97df5`  
-		Last Modified: Wed, 01 Nov 2017 20:57:06 GMT  
-		Size: 10.9 MB (10913388 bytes)  
+	-	`sha256:d0819518f5cfaae76f1f1c16a9851b5618eb09d3afee47e4865364b7898a3764`  
+		Last Modified: Wed, 15 Nov 2017 19:31:12 GMT  
+		Size: 10.9 MB (10925614 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:17.10-dind`
@@ -6870,41 +6870,41 @@ RUN apk add --no-cache 		git 		openssh-client
 ## `docker:17.10-windowsservercore`
 
 ```console
-$ docker pull docker@sha256:1c5f56e41aed62125d3dc1034936c8785304cdc0c86fdf423e2cd732c156fba9
+$ docker pull docker@sha256:228fdcc312888e6ab28d13d3c531037f0b575143453bfb305a5254a5927745f6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
-	-	windows version 10.0.14393.1770; amd64
+	-	windows version 10.0.14393.1884; amd64
 
-### `docker:17.10-windowsservercore` - windows version 10.0.14393.1770; amd64
+### `docker:17.10-windowsservercore` - windows version 10.0.14393.1884; amd64
 
 ```console
-$ docker pull docker@sha256:492123d1b01f0181d3a026f5652c9f680572081becf5b8b8aa7e9d38d1a58980
+$ docker pull docker@sha256:21db37d852bd9c2cbb9d3c15506cca28352d610a285d7fca6f9e5a04bd9b359d
 ```
 
 -	Docker Version: 17.06.1-ee-2
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 GB (5366289491 bytes)**  
+-	Total Size: **5.4 GB (5372784316 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0616e64b8e1c5424578d01b62e5ee9218d5db422d73959596682c9576924f260`
+-	Image ID: `sha256:29fdc4b34ab49ae8300e7b38bb88b2806fbbbd2bb742e514941126577639a851`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Tue, 13 Dec 2016 10:53:31 GMT
 RUN Apply image 10.0.14393.0
-# Mon, 09 Oct 2017 19:23:50 GMT
-RUN Install update 10.0.14393.1770
-# Wed, 01 Nov 2017 18:45:43 GMT
+# Mon, 13 Nov 2017 21:42:13 GMT
+RUN Install update 10.0.14393.1884
+# Wed, 15 Nov 2017 03:14:47 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 01 Nov 2017 20:53:33 GMT
+# Wed, 15 Nov 2017 19:27:10 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Wed, 01 Nov 2017 20:53:33 GMT
+# Wed, 15 Nov 2017 19:28:21 GMT
 ENV DOCKER_CHANNEL=edge
-# Wed, 01 Nov 2017 20:53:34 GMT
+# Wed, 15 Nov 2017 19:28:22 GMT
 ENV DOCKER_VERSION=17.10.0-ce
-# Wed, 01 Nov 2017 20:54:34 GMT
+# Wed, 15 Nov 2017 19:29:22 GMT
 RUN $url = ('https://download.docker.com/win/static/{0}/x86_64/docker-{1}.zip' -f $env:DOCKER_CHANNEL, $env:DOCKER_VERSION); 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
 ```
 
@@ -6913,29 +6913,29 @@ RUN $url = ('https://download.docker.com/win/static/{0}/x86_64/docker-{1}.zip' -
 		Last Modified: Tue, 13 Dec 2016 10:53:31 GMT  
 		Size: 4.1 GB (4069985900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:8df8e568af76c1c311a1251f6f7402e2a09d14629840c97091beb9ba55419464`  
-		Last Modified: Mon, 09 Oct 2017 19:23:50 GMT  
-		Size: 1.3 GB (1280521235 bytes)  
+	-	`sha256:ead9f4ead3c5a712cb213a5318f4a8bf3604bc16e16ce4f7cf0b66f7d2073282`  
+		Last Modified: Mon, 13 Nov 2017 21:42:13 GMT  
+		Size: 1.3 GB (1286993027 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:a2549da2a20282ababf948c27e5a82ee060275fa04614875c1c5c0c0e11f5e32`  
-		Last Modified: Wed, 01 Nov 2017 19:04:06 GMT  
-		Size: 1.2 KB (1170 bytes)  
+	-	`sha256:a4bd6cd94ee2a374930b7554f113d83a6d2d7c4fc6059acd6f2f60e0f29d2f26`  
+		Last Modified: Wed, 15 Nov 2017 10:26:12 GMT  
+		Size: 1.2 KB (1195 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1de3b6e915d299aec66dd74b8c50b6cabbc2bb666361d63f36930add87b9dff`  
-		Last Modified: Wed, 01 Nov 2017 20:57:04 GMT  
-		Size: 4.9 MB (4865441 bytes)  
+	-	`sha256:e6a6bca6ca4a5af1b9ecee7c5d06eed25aaf7d650400c816faf8118c069fcdc6`  
+		Last Modified: Wed, 15 Nov 2017 19:30:54 GMT  
+		Size: 4.9 MB (4876193 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9e5e7b764f30cfc198a9acddc92cb56f148600791a02959734a7c209dca381da`  
-		Last Modified: Wed, 01 Nov 2017 20:57:02 GMT  
-		Size: 1.2 KB (1171 bytes)  
+	-	`sha256:c2e9ab64986909c068dc2857a226a7306c66b0886b4188a45326451353bbefc6`  
+		Last Modified: Wed, 15 Nov 2017 19:31:09 GMT  
+		Size: 1.2 KB (1193 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2e8b795d1db0a20efb88a6741d710702e534ef92a2e89f9ad07e4d4f5fed9c68`  
-		Last Modified: Wed, 01 Nov 2017 20:57:03 GMT  
-		Size: 1.2 KB (1186 bytes)  
+	-	`sha256:ace09faad1484ea00b77472a107bb8d897ed5148a03b616e3e26534e6a0cf6d5`  
+		Last Modified: Wed, 15 Nov 2017 19:31:09 GMT  
+		Size: 1.2 KB (1194 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11fbc459ad0d583fe3479f0cfd11452664ba70d8df3fa1fb3f1a0cc71be97df5`  
-		Last Modified: Wed, 01 Nov 2017 20:57:06 GMT  
-		Size: 10.9 MB (10913388 bytes)  
+	-	`sha256:d0819518f5cfaae76f1f1c16a9851b5618eb09d3afee47e4865364b7898a3764`  
+		Last Modified: Wed, 15 Nov 2017 19:31:12 GMT  
+		Size: 10.9 MB (10925614 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:17.11.0-ce-rc3`
@@ -7718,41 +7718,41 @@ RUN apk add --no-cache 		git 		openssh-client
 ## `docker:17.11.0-ce-rc3-windowsservercore`
 
 ```console
-$ docker pull docker@sha256:b7ed6ba23014b6a807fb53ada73a2316fc373535bc8afed749330d9b9d037bda
+$ docker pull docker@sha256:9d8a8d97c2c15e56f7d60f2dd0dd4e39081dbd83fa68c123763ab767c755f293
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
-	-	windows version 10.0.14393.1770; amd64
+	-	windows version 10.0.14393.1884; amd64
 
-### `docker:17.11.0-ce-rc3-windowsservercore` - windows version 10.0.14393.1770; amd64
+### `docker:17.11.0-ce-rc3-windowsservercore` - windows version 10.0.14393.1884; amd64
 
 ```console
-$ docker pull docker@sha256:45da588d358bf563f7b59869ff197dd1764176bc658793807b140695b222eff7
+$ docker pull docker@sha256:ecb33e06762179b8a50fc3204702e18b0d5631710f3c5f51e865103eea6a4413
 ```
 
 -	Docker Version: 17.06.1-ee-2
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 GB (5366306336 bytes)**  
+-	Total Size: **5.4 GB (5372790933 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ce039ac8e7a33b0b777c8cec1b3117facb2679f64ef1a77a1a0d94e080e624bd`
+-	Image ID: `sha256:03cd7d97ead7d0f7646b6c4466ae43a81295dbb77a1330ef15034c0a5df311fe`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Tue, 13 Dec 2016 10:53:31 GMT
 RUN Apply image 10.0.14393.0
-# Mon, 09 Oct 2017 19:23:50 GMT
-RUN Install update 10.0.14393.1770
-# Wed, 01 Nov 2017 18:45:43 GMT
+# Mon, 13 Nov 2017 21:42:13 GMT
+RUN Install update 10.0.14393.1884
+# Wed, 15 Nov 2017 03:14:47 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 01 Nov 2017 20:53:33 GMT
+# Wed, 15 Nov 2017 19:27:10 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Sat, 04 Nov 2017 17:56:46 GMT
+# Wed, 15 Nov 2017 19:27:11 GMT
 ENV DOCKER_CHANNEL=test
-# Tue, 14 Nov 2017 18:55:48 GMT
+# Wed, 15 Nov 2017 19:27:12 GMT
 ENV DOCKER_VERSION=17.11.0-ce-rc3
-# Tue, 14 Nov 2017 18:57:19 GMT
+# Wed, 15 Nov 2017 19:28:13 GMT
 RUN $url = ('https://download.docker.com/win/static/{0}/x86_64/docker-{1}.zip' -f $env:DOCKER_CHANNEL, $env:DOCKER_VERSION); 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
 ```
 
@@ -7761,29 +7761,29 @@ RUN $url = ('https://download.docker.com/win/static/{0}/x86_64/docker-{1}.zip' -
 		Last Modified: Tue, 13 Dec 2016 10:53:31 GMT  
 		Size: 4.1 GB (4069985900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:8df8e568af76c1c311a1251f6f7402e2a09d14629840c97091beb9ba55419464`  
-		Last Modified: Mon, 09 Oct 2017 19:23:50 GMT  
-		Size: 1.3 GB (1280521235 bytes)  
+	-	`sha256:ead9f4ead3c5a712cb213a5318f4a8bf3604bc16e16ce4f7cf0b66f7d2073282`  
+		Last Modified: Mon, 13 Nov 2017 21:42:13 GMT  
+		Size: 1.3 GB (1286993027 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:a2549da2a20282ababf948c27e5a82ee060275fa04614875c1c5c0c0e11f5e32`  
-		Last Modified: Wed, 01 Nov 2017 19:04:06 GMT  
-		Size: 1.2 KB (1170 bytes)  
+	-	`sha256:a4bd6cd94ee2a374930b7554f113d83a6d2d7c4fc6059acd6f2f60e0f29d2f26`  
+		Last Modified: Wed, 15 Nov 2017 10:26:12 GMT  
+		Size: 1.2 KB (1195 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1de3b6e915d299aec66dd74b8c50b6cabbc2bb666361d63f36930add87b9dff`  
-		Last Modified: Wed, 01 Nov 2017 20:57:04 GMT  
-		Size: 4.9 MB (4865441 bytes)  
+	-	`sha256:e6a6bca6ca4a5af1b9ecee7c5d06eed25aaf7d650400c816faf8118c069fcdc6`  
+		Last Modified: Wed, 15 Nov 2017 19:30:54 GMT  
+		Size: 4.9 MB (4876193 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:54fd47d08aefc9eecd367c1c4f48f2603ebc0871a61cd3a1cd4350de8d964110`  
-		Last Modified: Sat, 04 Nov 2017 17:58:11 GMT  
-		Size: 1.2 KB (1197 bytes)  
+	-	`sha256:d5674b5976285ba892ab4f5b91e7a35ff744c5cf8dbb16ed3b48c2218b651af0`  
+		Last Modified: Wed, 15 Nov 2017 19:30:53 GMT  
+		Size: 1.2 KB (1202 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a91fa0be8b96a7881593bd2816573aae367af22feec0f5c1c3d1e92a630cf591`  
-		Last Modified: Tue, 14 Nov 2017 18:57:41 GMT  
-		Size: 1.2 KB (1172 bytes)  
+	-	`sha256:1f7e6c9be57254dd1dd8a2fe6f99bf9322b4fdb1bc8e76149adf4d0e3619786b`  
+		Last Modified: Wed, 15 Nov 2017 19:30:53 GMT  
+		Size: 1.2 KB (1196 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a4d01c08a36468ee8537715ebb75539fa9b9d09fd48bea9a366f27f8e3b6a374`  
-		Last Modified: Tue, 14 Nov 2017 18:57:43 GMT  
-		Size: 10.9 MB (10930221 bytes)  
+	-	`sha256:40a52471cc70e65173105c24345a376c017bf2459a5152685139bdca4ee598ff`  
+		Last Modified: Wed, 15 Nov 2017 19:30:56 GMT  
+		Size: 10.9 MB (10932220 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:17.11-rc`
@@ -8566,41 +8566,41 @@ RUN apk add --no-cache 		git 		openssh-client
 ## `docker:17.11-rc-windowsservercore`
 
 ```console
-$ docker pull docker@sha256:b7ed6ba23014b6a807fb53ada73a2316fc373535bc8afed749330d9b9d037bda
+$ docker pull docker@sha256:9d8a8d97c2c15e56f7d60f2dd0dd4e39081dbd83fa68c123763ab767c755f293
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
-	-	windows version 10.0.14393.1770; amd64
+	-	windows version 10.0.14393.1884; amd64
 
-### `docker:17.11-rc-windowsservercore` - windows version 10.0.14393.1770; amd64
+### `docker:17.11-rc-windowsservercore` - windows version 10.0.14393.1884; amd64
 
 ```console
-$ docker pull docker@sha256:45da588d358bf563f7b59869ff197dd1764176bc658793807b140695b222eff7
+$ docker pull docker@sha256:ecb33e06762179b8a50fc3204702e18b0d5631710f3c5f51e865103eea6a4413
 ```
 
 -	Docker Version: 17.06.1-ee-2
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 GB (5366306336 bytes)**  
+-	Total Size: **5.4 GB (5372790933 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ce039ac8e7a33b0b777c8cec1b3117facb2679f64ef1a77a1a0d94e080e624bd`
+-	Image ID: `sha256:03cd7d97ead7d0f7646b6c4466ae43a81295dbb77a1330ef15034c0a5df311fe`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Tue, 13 Dec 2016 10:53:31 GMT
 RUN Apply image 10.0.14393.0
-# Mon, 09 Oct 2017 19:23:50 GMT
-RUN Install update 10.0.14393.1770
-# Wed, 01 Nov 2017 18:45:43 GMT
+# Mon, 13 Nov 2017 21:42:13 GMT
+RUN Install update 10.0.14393.1884
+# Wed, 15 Nov 2017 03:14:47 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 01 Nov 2017 20:53:33 GMT
+# Wed, 15 Nov 2017 19:27:10 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Sat, 04 Nov 2017 17:56:46 GMT
+# Wed, 15 Nov 2017 19:27:11 GMT
 ENV DOCKER_CHANNEL=test
-# Tue, 14 Nov 2017 18:55:48 GMT
+# Wed, 15 Nov 2017 19:27:12 GMT
 ENV DOCKER_VERSION=17.11.0-ce-rc3
-# Tue, 14 Nov 2017 18:57:19 GMT
+# Wed, 15 Nov 2017 19:28:13 GMT
 RUN $url = ('https://download.docker.com/win/static/{0}/x86_64/docker-{1}.zip' -f $env:DOCKER_CHANNEL, $env:DOCKER_VERSION); 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
 ```
 
@@ -8609,29 +8609,29 @@ RUN $url = ('https://download.docker.com/win/static/{0}/x86_64/docker-{1}.zip' -
 		Last Modified: Tue, 13 Dec 2016 10:53:31 GMT  
 		Size: 4.1 GB (4069985900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:8df8e568af76c1c311a1251f6f7402e2a09d14629840c97091beb9ba55419464`  
-		Last Modified: Mon, 09 Oct 2017 19:23:50 GMT  
-		Size: 1.3 GB (1280521235 bytes)  
+	-	`sha256:ead9f4ead3c5a712cb213a5318f4a8bf3604bc16e16ce4f7cf0b66f7d2073282`  
+		Last Modified: Mon, 13 Nov 2017 21:42:13 GMT  
+		Size: 1.3 GB (1286993027 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:a2549da2a20282ababf948c27e5a82ee060275fa04614875c1c5c0c0e11f5e32`  
-		Last Modified: Wed, 01 Nov 2017 19:04:06 GMT  
-		Size: 1.2 KB (1170 bytes)  
+	-	`sha256:a4bd6cd94ee2a374930b7554f113d83a6d2d7c4fc6059acd6f2f60e0f29d2f26`  
+		Last Modified: Wed, 15 Nov 2017 10:26:12 GMT  
+		Size: 1.2 KB (1195 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1de3b6e915d299aec66dd74b8c50b6cabbc2bb666361d63f36930add87b9dff`  
-		Last Modified: Wed, 01 Nov 2017 20:57:04 GMT  
-		Size: 4.9 MB (4865441 bytes)  
+	-	`sha256:e6a6bca6ca4a5af1b9ecee7c5d06eed25aaf7d650400c816faf8118c069fcdc6`  
+		Last Modified: Wed, 15 Nov 2017 19:30:54 GMT  
+		Size: 4.9 MB (4876193 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:54fd47d08aefc9eecd367c1c4f48f2603ebc0871a61cd3a1cd4350de8d964110`  
-		Last Modified: Sat, 04 Nov 2017 17:58:11 GMT  
-		Size: 1.2 KB (1197 bytes)  
+	-	`sha256:d5674b5976285ba892ab4f5b91e7a35ff744c5cf8dbb16ed3b48c2218b651af0`  
+		Last Modified: Wed, 15 Nov 2017 19:30:53 GMT  
+		Size: 1.2 KB (1202 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a91fa0be8b96a7881593bd2816573aae367af22feec0f5c1c3d1e92a630cf591`  
-		Last Modified: Tue, 14 Nov 2017 18:57:41 GMT  
-		Size: 1.2 KB (1172 bytes)  
+	-	`sha256:1f7e6c9be57254dd1dd8a2fe6f99bf9322b4fdb1bc8e76149adf4d0e3619786b`  
+		Last Modified: Wed, 15 Nov 2017 19:30:53 GMT  
+		Size: 1.2 KB (1196 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a4d01c08a36468ee8537715ebb75539fa9b9d09fd48bea9a366f27f8e3b6a374`  
-		Last Modified: Tue, 14 Nov 2017 18:57:43 GMT  
-		Size: 10.9 MB (10930221 bytes)  
+	-	`sha256:40a52471cc70e65173105c24345a376c017bf2459a5152685139bdca4ee598ff`  
+		Last Modified: Wed, 15 Nov 2017 19:30:56 GMT  
+		Size: 10.9 MB (10932220 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:17-dind`
@@ -9373,41 +9373,41 @@ RUN apk add --no-cache 		git 		openssh-client
 ## `docker:17-windowsservercore`
 
 ```console
-$ docker pull docker@sha256:1c5f56e41aed62125d3dc1034936c8785304cdc0c86fdf423e2cd732c156fba9
+$ docker pull docker@sha256:228fdcc312888e6ab28d13d3c531037f0b575143453bfb305a5254a5927745f6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
-	-	windows version 10.0.14393.1770; amd64
+	-	windows version 10.0.14393.1884; amd64
 
-### `docker:17-windowsservercore` - windows version 10.0.14393.1770; amd64
+### `docker:17-windowsservercore` - windows version 10.0.14393.1884; amd64
 
 ```console
-$ docker pull docker@sha256:492123d1b01f0181d3a026f5652c9f680572081becf5b8b8aa7e9d38d1a58980
+$ docker pull docker@sha256:21db37d852bd9c2cbb9d3c15506cca28352d610a285d7fca6f9e5a04bd9b359d
 ```
 
 -	Docker Version: 17.06.1-ee-2
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 GB (5366289491 bytes)**  
+-	Total Size: **5.4 GB (5372784316 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0616e64b8e1c5424578d01b62e5ee9218d5db422d73959596682c9576924f260`
+-	Image ID: `sha256:29fdc4b34ab49ae8300e7b38bb88b2806fbbbd2bb742e514941126577639a851`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Tue, 13 Dec 2016 10:53:31 GMT
 RUN Apply image 10.0.14393.0
-# Mon, 09 Oct 2017 19:23:50 GMT
-RUN Install update 10.0.14393.1770
-# Wed, 01 Nov 2017 18:45:43 GMT
+# Mon, 13 Nov 2017 21:42:13 GMT
+RUN Install update 10.0.14393.1884
+# Wed, 15 Nov 2017 03:14:47 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 01 Nov 2017 20:53:33 GMT
+# Wed, 15 Nov 2017 19:27:10 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Wed, 01 Nov 2017 20:53:33 GMT
+# Wed, 15 Nov 2017 19:28:21 GMT
 ENV DOCKER_CHANNEL=edge
-# Wed, 01 Nov 2017 20:53:34 GMT
+# Wed, 15 Nov 2017 19:28:22 GMT
 ENV DOCKER_VERSION=17.10.0-ce
-# Wed, 01 Nov 2017 20:54:34 GMT
+# Wed, 15 Nov 2017 19:29:22 GMT
 RUN $url = ('https://download.docker.com/win/static/{0}/x86_64/docker-{1}.zip' -f $env:DOCKER_CHANNEL, $env:DOCKER_VERSION); 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
 ```
 
@@ -9416,29 +9416,29 @@ RUN $url = ('https://download.docker.com/win/static/{0}/x86_64/docker-{1}.zip' -
 		Last Modified: Tue, 13 Dec 2016 10:53:31 GMT  
 		Size: 4.1 GB (4069985900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:8df8e568af76c1c311a1251f6f7402e2a09d14629840c97091beb9ba55419464`  
-		Last Modified: Mon, 09 Oct 2017 19:23:50 GMT  
-		Size: 1.3 GB (1280521235 bytes)  
+	-	`sha256:ead9f4ead3c5a712cb213a5318f4a8bf3604bc16e16ce4f7cf0b66f7d2073282`  
+		Last Modified: Mon, 13 Nov 2017 21:42:13 GMT  
+		Size: 1.3 GB (1286993027 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:a2549da2a20282ababf948c27e5a82ee060275fa04614875c1c5c0c0e11f5e32`  
-		Last Modified: Wed, 01 Nov 2017 19:04:06 GMT  
-		Size: 1.2 KB (1170 bytes)  
+	-	`sha256:a4bd6cd94ee2a374930b7554f113d83a6d2d7c4fc6059acd6f2f60e0f29d2f26`  
+		Last Modified: Wed, 15 Nov 2017 10:26:12 GMT  
+		Size: 1.2 KB (1195 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1de3b6e915d299aec66dd74b8c50b6cabbc2bb666361d63f36930add87b9dff`  
-		Last Modified: Wed, 01 Nov 2017 20:57:04 GMT  
-		Size: 4.9 MB (4865441 bytes)  
+	-	`sha256:e6a6bca6ca4a5af1b9ecee7c5d06eed25aaf7d650400c816faf8118c069fcdc6`  
+		Last Modified: Wed, 15 Nov 2017 19:30:54 GMT  
+		Size: 4.9 MB (4876193 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9e5e7b764f30cfc198a9acddc92cb56f148600791a02959734a7c209dca381da`  
-		Last Modified: Wed, 01 Nov 2017 20:57:02 GMT  
-		Size: 1.2 KB (1171 bytes)  
+	-	`sha256:c2e9ab64986909c068dc2857a226a7306c66b0886b4188a45326451353bbefc6`  
+		Last Modified: Wed, 15 Nov 2017 19:31:09 GMT  
+		Size: 1.2 KB (1193 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2e8b795d1db0a20efb88a6741d710702e534ef92a2e89f9ad07e4d4f5fed9c68`  
-		Last Modified: Wed, 01 Nov 2017 20:57:03 GMT  
-		Size: 1.2 KB (1186 bytes)  
+	-	`sha256:ace09faad1484ea00b77472a107bb8d897ed5148a03b616e3e26534e6a0cf6d5`  
+		Last Modified: Wed, 15 Nov 2017 19:31:09 GMT  
+		Size: 1.2 KB (1194 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11fbc459ad0d583fe3479f0cfd11452664ba70d8df3fa1fb3f1a0cc71be97df5`  
-		Last Modified: Wed, 01 Nov 2017 20:57:06 GMT  
-		Size: 10.9 MB (10913388 bytes)  
+	-	`sha256:d0819518f5cfaae76f1f1c16a9851b5618eb09d3afee47e4865364b7898a3764`  
+		Last Modified: Wed, 15 Nov 2017 19:31:12 GMT  
+		Size: 10.9 MB (10925614 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:dind`
@@ -10898,41 +10898,41 @@ RUN apk add --no-cache 		git 		openssh-client
 ## `docker:edge-windowsservercore`
 
 ```console
-$ docker pull docker@sha256:1c5f56e41aed62125d3dc1034936c8785304cdc0c86fdf423e2cd732c156fba9
+$ docker pull docker@sha256:228fdcc312888e6ab28d13d3c531037f0b575143453bfb305a5254a5927745f6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
-	-	windows version 10.0.14393.1770; amd64
+	-	windows version 10.0.14393.1884; amd64
 
-### `docker:edge-windowsservercore` - windows version 10.0.14393.1770; amd64
+### `docker:edge-windowsservercore` - windows version 10.0.14393.1884; amd64
 
 ```console
-$ docker pull docker@sha256:492123d1b01f0181d3a026f5652c9f680572081becf5b8b8aa7e9d38d1a58980
+$ docker pull docker@sha256:21db37d852bd9c2cbb9d3c15506cca28352d610a285d7fca6f9e5a04bd9b359d
 ```
 
 -	Docker Version: 17.06.1-ee-2
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 GB (5366289491 bytes)**  
+-	Total Size: **5.4 GB (5372784316 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0616e64b8e1c5424578d01b62e5ee9218d5db422d73959596682c9576924f260`
+-	Image ID: `sha256:29fdc4b34ab49ae8300e7b38bb88b2806fbbbd2bb742e514941126577639a851`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Tue, 13 Dec 2016 10:53:31 GMT
 RUN Apply image 10.0.14393.0
-# Mon, 09 Oct 2017 19:23:50 GMT
-RUN Install update 10.0.14393.1770
-# Wed, 01 Nov 2017 18:45:43 GMT
+# Mon, 13 Nov 2017 21:42:13 GMT
+RUN Install update 10.0.14393.1884
+# Wed, 15 Nov 2017 03:14:47 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 01 Nov 2017 20:53:33 GMT
+# Wed, 15 Nov 2017 19:27:10 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Wed, 01 Nov 2017 20:53:33 GMT
+# Wed, 15 Nov 2017 19:28:21 GMT
 ENV DOCKER_CHANNEL=edge
-# Wed, 01 Nov 2017 20:53:34 GMT
+# Wed, 15 Nov 2017 19:28:22 GMT
 ENV DOCKER_VERSION=17.10.0-ce
-# Wed, 01 Nov 2017 20:54:34 GMT
+# Wed, 15 Nov 2017 19:29:22 GMT
 RUN $url = ('https://download.docker.com/win/static/{0}/x86_64/docker-{1}.zip' -f $env:DOCKER_CHANNEL, $env:DOCKER_VERSION); 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
 ```
 
@@ -10941,29 +10941,29 @@ RUN $url = ('https://download.docker.com/win/static/{0}/x86_64/docker-{1}.zip' -
 		Last Modified: Tue, 13 Dec 2016 10:53:31 GMT  
 		Size: 4.1 GB (4069985900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:8df8e568af76c1c311a1251f6f7402e2a09d14629840c97091beb9ba55419464`  
-		Last Modified: Mon, 09 Oct 2017 19:23:50 GMT  
-		Size: 1.3 GB (1280521235 bytes)  
+	-	`sha256:ead9f4ead3c5a712cb213a5318f4a8bf3604bc16e16ce4f7cf0b66f7d2073282`  
+		Last Modified: Mon, 13 Nov 2017 21:42:13 GMT  
+		Size: 1.3 GB (1286993027 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:a2549da2a20282ababf948c27e5a82ee060275fa04614875c1c5c0c0e11f5e32`  
-		Last Modified: Wed, 01 Nov 2017 19:04:06 GMT  
-		Size: 1.2 KB (1170 bytes)  
+	-	`sha256:a4bd6cd94ee2a374930b7554f113d83a6d2d7c4fc6059acd6f2f60e0f29d2f26`  
+		Last Modified: Wed, 15 Nov 2017 10:26:12 GMT  
+		Size: 1.2 KB (1195 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1de3b6e915d299aec66dd74b8c50b6cabbc2bb666361d63f36930add87b9dff`  
-		Last Modified: Wed, 01 Nov 2017 20:57:04 GMT  
-		Size: 4.9 MB (4865441 bytes)  
+	-	`sha256:e6a6bca6ca4a5af1b9ecee7c5d06eed25aaf7d650400c816faf8118c069fcdc6`  
+		Last Modified: Wed, 15 Nov 2017 19:30:54 GMT  
+		Size: 4.9 MB (4876193 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9e5e7b764f30cfc198a9acddc92cb56f148600791a02959734a7c209dca381da`  
-		Last Modified: Wed, 01 Nov 2017 20:57:02 GMT  
-		Size: 1.2 KB (1171 bytes)  
+	-	`sha256:c2e9ab64986909c068dc2857a226a7306c66b0886b4188a45326451353bbefc6`  
+		Last Modified: Wed, 15 Nov 2017 19:31:09 GMT  
+		Size: 1.2 KB (1193 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2e8b795d1db0a20efb88a6741d710702e534ef92a2e89f9ad07e4d4f5fed9c68`  
-		Last Modified: Wed, 01 Nov 2017 20:57:03 GMT  
-		Size: 1.2 KB (1186 bytes)  
+	-	`sha256:ace09faad1484ea00b77472a107bb8d897ed5148a03b616e3e26534e6a0cf6d5`  
+		Last Modified: Wed, 15 Nov 2017 19:31:09 GMT  
+		Size: 1.2 KB (1194 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11fbc459ad0d583fe3479f0cfd11452664ba70d8df3fa1fb3f1a0cc71be97df5`  
-		Last Modified: Wed, 01 Nov 2017 20:57:06 GMT  
-		Size: 10.9 MB (10913388 bytes)  
+	-	`sha256:d0819518f5cfaae76f1f1c16a9851b5618eb09d3afee47e4865364b7898a3764`  
+		Last Modified: Wed, 15 Nov 2017 19:31:12 GMT  
+		Size: 10.9 MB (10925614 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:git`
@@ -12346,41 +12346,41 @@ RUN apk add --no-cache 		git 		openssh-client
 ## `docker:rc-windowsservercore`
 
 ```console
-$ docker pull docker@sha256:b7ed6ba23014b6a807fb53ada73a2316fc373535bc8afed749330d9b9d037bda
+$ docker pull docker@sha256:9d8a8d97c2c15e56f7d60f2dd0dd4e39081dbd83fa68c123763ab767c755f293
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
-	-	windows version 10.0.14393.1770; amd64
+	-	windows version 10.0.14393.1884; amd64
 
-### `docker:rc-windowsservercore` - windows version 10.0.14393.1770; amd64
+### `docker:rc-windowsservercore` - windows version 10.0.14393.1884; amd64
 
 ```console
-$ docker pull docker@sha256:45da588d358bf563f7b59869ff197dd1764176bc658793807b140695b222eff7
+$ docker pull docker@sha256:ecb33e06762179b8a50fc3204702e18b0d5631710f3c5f51e865103eea6a4413
 ```
 
 -	Docker Version: 17.06.1-ee-2
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 GB (5366306336 bytes)**  
+-	Total Size: **5.4 GB (5372790933 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ce039ac8e7a33b0b777c8cec1b3117facb2679f64ef1a77a1a0d94e080e624bd`
+-	Image ID: `sha256:03cd7d97ead7d0f7646b6c4466ae43a81295dbb77a1330ef15034c0a5df311fe`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Tue, 13 Dec 2016 10:53:31 GMT
 RUN Apply image 10.0.14393.0
-# Mon, 09 Oct 2017 19:23:50 GMT
-RUN Install update 10.0.14393.1770
-# Wed, 01 Nov 2017 18:45:43 GMT
+# Mon, 13 Nov 2017 21:42:13 GMT
+RUN Install update 10.0.14393.1884
+# Wed, 15 Nov 2017 03:14:47 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 01 Nov 2017 20:53:33 GMT
+# Wed, 15 Nov 2017 19:27:10 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Sat, 04 Nov 2017 17:56:46 GMT
+# Wed, 15 Nov 2017 19:27:11 GMT
 ENV DOCKER_CHANNEL=test
-# Tue, 14 Nov 2017 18:55:48 GMT
+# Wed, 15 Nov 2017 19:27:12 GMT
 ENV DOCKER_VERSION=17.11.0-ce-rc3
-# Tue, 14 Nov 2017 18:57:19 GMT
+# Wed, 15 Nov 2017 19:28:13 GMT
 RUN $url = ('https://download.docker.com/win/static/{0}/x86_64/docker-{1}.zip' -f $env:DOCKER_CHANNEL, $env:DOCKER_VERSION); 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
 ```
 
@@ -12389,29 +12389,29 @@ RUN $url = ('https://download.docker.com/win/static/{0}/x86_64/docker-{1}.zip' -
 		Last Modified: Tue, 13 Dec 2016 10:53:31 GMT  
 		Size: 4.1 GB (4069985900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:8df8e568af76c1c311a1251f6f7402e2a09d14629840c97091beb9ba55419464`  
-		Last Modified: Mon, 09 Oct 2017 19:23:50 GMT  
-		Size: 1.3 GB (1280521235 bytes)  
+	-	`sha256:ead9f4ead3c5a712cb213a5318f4a8bf3604bc16e16ce4f7cf0b66f7d2073282`  
+		Last Modified: Mon, 13 Nov 2017 21:42:13 GMT  
+		Size: 1.3 GB (1286993027 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:a2549da2a20282ababf948c27e5a82ee060275fa04614875c1c5c0c0e11f5e32`  
-		Last Modified: Wed, 01 Nov 2017 19:04:06 GMT  
-		Size: 1.2 KB (1170 bytes)  
+	-	`sha256:a4bd6cd94ee2a374930b7554f113d83a6d2d7c4fc6059acd6f2f60e0f29d2f26`  
+		Last Modified: Wed, 15 Nov 2017 10:26:12 GMT  
+		Size: 1.2 KB (1195 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1de3b6e915d299aec66dd74b8c50b6cabbc2bb666361d63f36930add87b9dff`  
-		Last Modified: Wed, 01 Nov 2017 20:57:04 GMT  
-		Size: 4.9 MB (4865441 bytes)  
+	-	`sha256:e6a6bca6ca4a5af1b9ecee7c5d06eed25aaf7d650400c816faf8118c069fcdc6`  
+		Last Modified: Wed, 15 Nov 2017 19:30:54 GMT  
+		Size: 4.9 MB (4876193 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:54fd47d08aefc9eecd367c1c4f48f2603ebc0871a61cd3a1cd4350de8d964110`  
-		Last Modified: Sat, 04 Nov 2017 17:58:11 GMT  
-		Size: 1.2 KB (1197 bytes)  
+	-	`sha256:d5674b5976285ba892ab4f5b91e7a35ff744c5cf8dbb16ed3b48c2218b651af0`  
+		Last Modified: Wed, 15 Nov 2017 19:30:53 GMT  
+		Size: 1.2 KB (1202 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a91fa0be8b96a7881593bd2816573aae367af22feec0f5c1c3d1e92a630cf591`  
-		Last Modified: Tue, 14 Nov 2017 18:57:41 GMT  
-		Size: 1.2 KB (1172 bytes)  
+	-	`sha256:1f7e6c9be57254dd1dd8a2fe6f99bf9322b4fdb1bc8e76149adf4d0e3619786b`  
+		Last Modified: Wed, 15 Nov 2017 19:30:53 GMT  
+		Size: 1.2 KB (1196 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a4d01c08a36468ee8537715ebb75539fa9b9d09fd48bea9a366f27f8e3b6a374`  
-		Last Modified: Tue, 14 Nov 2017 18:57:43 GMT  
-		Size: 10.9 MB (10930221 bytes)  
+	-	`sha256:40a52471cc70e65173105c24345a376c017bf2459a5152685139bdca4ee598ff`  
+		Last Modified: Wed, 15 Nov 2017 19:30:56 GMT  
+		Size: 10.9 MB (10932220 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:stable`
@@ -13444,41 +13444,41 @@ RUN apk add --no-cache 		git 		openssh-client
 ## `docker:stable-windowsservercore`
 
 ```console
-$ docker pull docker@sha256:ea452afe34d1c2bd8c07decc001d584263cd053c7476c05e997f8e3ffb6f3642
+$ docker pull docker@sha256:59b883d2119f22a5da9d0f64f26e92f2e1959918c5dbffe04d6c4cd939efcd08
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
-	-	windows version 10.0.14393.1770; amd64
+	-	windows version 10.0.14393.1884; amd64
 
-### `docker:stable-windowsservercore` - windows version 10.0.14393.1770; amd64
+### `docker:stable-windowsservercore` - windows version 10.0.14393.1884; amd64
 
 ```console
-$ docker pull docker@sha256:f47902fb56120f35b2098bd7db92d4d638eaa5f2be973188429ea66f0da8f2eb
+$ docker pull docker@sha256:c0b9d7bdb2e5d2a44f3b77af0f31e67f7869db4ad897c3c935c0b013b5402175
 ```
 
 -	Docker Version: 17.06.1-ee-2
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 GB (5366250235 bytes)**  
+-	Total Size: **5.4 GB (5372744261 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:480fe73f076dc2b22f398c4980005696b098a4598ab463b78cf3a8b533c4e2f0`
+-	Image ID: `sha256:83ccc7aee8c4df6c6a44158f810d53389b86c07f8e7d4ff974c18a81c0466f6e`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Tue, 13 Dec 2016 10:53:31 GMT
 RUN Apply image 10.0.14393.0
-# Mon, 09 Oct 2017 19:23:50 GMT
-RUN Install update 10.0.14393.1770
-# Wed, 01 Nov 2017 18:45:43 GMT
+# Mon, 13 Nov 2017 21:42:13 GMT
+RUN Install update 10.0.14393.1884
+# Wed, 15 Nov 2017 03:14:47 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 01 Nov 2017 20:53:33 GMT
+# Wed, 15 Nov 2017 19:27:10 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Wed, 01 Nov 2017 20:54:42 GMT
+# Wed, 15 Nov 2017 19:29:33 GMT
 ENV DOCKER_CHANNEL=stable
-# Wed, 01 Nov 2017 20:54:43 GMT
+# Wed, 15 Nov 2017 19:29:34 GMT
 ENV DOCKER_VERSION=17.09.0-ce
-# Wed, 01 Nov 2017 20:55:43 GMT
+# Wed, 15 Nov 2017 19:30:32 GMT
 RUN $url = ('https://download.docker.com/win/static/{0}/x86_64/docker-{1}.zip' -f $env:DOCKER_CHANNEL, $env:DOCKER_VERSION); 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
 ```
 
@@ -13487,29 +13487,29 @@ RUN $url = ('https://download.docker.com/win/static/{0}/x86_64/docker-{1}.zip' -
 		Last Modified: Tue, 13 Dec 2016 10:53:31 GMT  
 		Size: 4.1 GB (4069985900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:8df8e568af76c1c311a1251f6f7402e2a09d14629840c97091beb9ba55419464`  
-		Last Modified: Mon, 09 Oct 2017 19:23:50 GMT  
-		Size: 1.3 GB (1280521235 bytes)  
+	-	`sha256:ead9f4ead3c5a712cb213a5318f4a8bf3604bc16e16ce4f7cf0b66f7d2073282`  
+		Last Modified: Mon, 13 Nov 2017 21:42:13 GMT  
+		Size: 1.3 GB (1286993027 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:a2549da2a20282ababf948c27e5a82ee060275fa04614875c1c5c0c0e11f5e32`  
-		Last Modified: Wed, 01 Nov 2017 19:04:06 GMT  
-		Size: 1.2 KB (1170 bytes)  
+	-	`sha256:a4bd6cd94ee2a374930b7554f113d83a6d2d7c4fc6059acd6f2f60e0f29d2f26`  
+		Last Modified: Wed, 15 Nov 2017 10:26:12 GMT  
+		Size: 1.2 KB (1195 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1de3b6e915d299aec66dd74b8c50b6cabbc2bb666361d63f36930add87b9dff`  
-		Last Modified: Wed, 01 Nov 2017 20:57:04 GMT  
-		Size: 4.9 MB (4865441 bytes)  
+	-	`sha256:e6a6bca6ca4a5af1b9ecee7c5d06eed25aaf7d650400c816faf8118c069fcdc6`  
+		Last Modified: Wed, 15 Nov 2017 19:30:54 GMT  
+		Size: 4.9 MB (4876193 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a69b2b1ac11bd966d2144059796046400e5ece65bc28774e60edd3ec43014d0`  
-		Last Modified: Wed, 01 Nov 2017 20:57:28 GMT  
-		Size: 1.2 KB (1194 bytes)  
+	-	`sha256:7fb6b2b405db1939f469cfdc82be7294c8efcc5291e58bca7d7a78d5015df066`  
+		Last Modified: Wed, 15 Nov 2017 19:31:31 GMT  
+		Size: 1.2 KB (1186 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d2481db9c8c89fb83553e0975bd6eea863ea06cbccd0e6e07035c5f9659b1a85`  
-		Last Modified: Wed, 01 Nov 2017 20:57:29 GMT  
-		Size: 1.2 KB (1192 bytes)  
+	-	`sha256:28f0adecc3b2cff9340d4757031977afdd167b5862229bb8001bcbdef097e189`  
+		Last Modified: Wed, 15 Nov 2017 19:31:31 GMT  
+		Size: 1.2 KB (1195 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8b05276fed727371543a2b6c8bfd1561d51d28026fa39be566a09e17d54bb324`  
-		Last Modified: Wed, 01 Nov 2017 20:58:01 GMT  
-		Size: 10.9 MB (10874103 bytes)  
+	-	`sha256:1701850b8fe8b0c3952b6115177a13f169c0bc56555f4ea846664b1c54992e66`  
+		Last Modified: Wed, 15 Nov 2017 19:31:34 GMT  
+		Size: 10.9 MB (10885565 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:test`
@@ -14292,41 +14292,41 @@ RUN apk add --no-cache 		git 		openssh-client
 ## `docker:test-windowsservercore`
 
 ```console
-$ docker pull docker@sha256:b7ed6ba23014b6a807fb53ada73a2316fc373535bc8afed749330d9b9d037bda
+$ docker pull docker@sha256:9d8a8d97c2c15e56f7d60f2dd0dd4e39081dbd83fa68c123763ab767c755f293
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
-	-	windows version 10.0.14393.1770; amd64
+	-	windows version 10.0.14393.1884; amd64
 
-### `docker:test-windowsservercore` - windows version 10.0.14393.1770; amd64
+### `docker:test-windowsservercore` - windows version 10.0.14393.1884; amd64
 
 ```console
-$ docker pull docker@sha256:45da588d358bf563f7b59869ff197dd1764176bc658793807b140695b222eff7
+$ docker pull docker@sha256:ecb33e06762179b8a50fc3204702e18b0d5631710f3c5f51e865103eea6a4413
 ```
 
 -	Docker Version: 17.06.1-ee-2
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 GB (5366306336 bytes)**  
+-	Total Size: **5.4 GB (5372790933 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ce039ac8e7a33b0b777c8cec1b3117facb2679f64ef1a77a1a0d94e080e624bd`
+-	Image ID: `sha256:03cd7d97ead7d0f7646b6c4466ae43a81295dbb77a1330ef15034c0a5df311fe`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Tue, 13 Dec 2016 10:53:31 GMT
 RUN Apply image 10.0.14393.0
-# Mon, 09 Oct 2017 19:23:50 GMT
-RUN Install update 10.0.14393.1770
-# Wed, 01 Nov 2017 18:45:43 GMT
+# Mon, 13 Nov 2017 21:42:13 GMT
+RUN Install update 10.0.14393.1884
+# Wed, 15 Nov 2017 03:14:47 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 01 Nov 2017 20:53:33 GMT
+# Wed, 15 Nov 2017 19:27:10 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Sat, 04 Nov 2017 17:56:46 GMT
+# Wed, 15 Nov 2017 19:27:11 GMT
 ENV DOCKER_CHANNEL=test
-# Tue, 14 Nov 2017 18:55:48 GMT
+# Wed, 15 Nov 2017 19:27:12 GMT
 ENV DOCKER_VERSION=17.11.0-ce-rc3
-# Tue, 14 Nov 2017 18:57:19 GMT
+# Wed, 15 Nov 2017 19:28:13 GMT
 RUN $url = ('https://download.docker.com/win/static/{0}/x86_64/docker-{1}.zip' -f $env:DOCKER_CHANNEL, $env:DOCKER_VERSION); 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
 ```
 
@@ -14335,69 +14335,69 @@ RUN $url = ('https://download.docker.com/win/static/{0}/x86_64/docker-{1}.zip' -
 		Last Modified: Tue, 13 Dec 2016 10:53:31 GMT  
 		Size: 4.1 GB (4069985900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:8df8e568af76c1c311a1251f6f7402e2a09d14629840c97091beb9ba55419464`  
-		Last Modified: Mon, 09 Oct 2017 19:23:50 GMT  
-		Size: 1.3 GB (1280521235 bytes)  
+	-	`sha256:ead9f4ead3c5a712cb213a5318f4a8bf3604bc16e16ce4f7cf0b66f7d2073282`  
+		Last Modified: Mon, 13 Nov 2017 21:42:13 GMT  
+		Size: 1.3 GB (1286993027 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:a2549da2a20282ababf948c27e5a82ee060275fa04614875c1c5c0c0e11f5e32`  
-		Last Modified: Wed, 01 Nov 2017 19:04:06 GMT  
-		Size: 1.2 KB (1170 bytes)  
+	-	`sha256:a4bd6cd94ee2a374930b7554f113d83a6d2d7c4fc6059acd6f2f60e0f29d2f26`  
+		Last Modified: Wed, 15 Nov 2017 10:26:12 GMT  
+		Size: 1.2 KB (1195 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1de3b6e915d299aec66dd74b8c50b6cabbc2bb666361d63f36930add87b9dff`  
-		Last Modified: Wed, 01 Nov 2017 20:57:04 GMT  
-		Size: 4.9 MB (4865441 bytes)  
+	-	`sha256:e6a6bca6ca4a5af1b9ecee7c5d06eed25aaf7d650400c816faf8118c069fcdc6`  
+		Last Modified: Wed, 15 Nov 2017 19:30:54 GMT  
+		Size: 4.9 MB (4876193 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:54fd47d08aefc9eecd367c1c4f48f2603ebc0871a61cd3a1cd4350de8d964110`  
-		Last Modified: Sat, 04 Nov 2017 17:58:11 GMT  
-		Size: 1.2 KB (1197 bytes)  
+	-	`sha256:d5674b5976285ba892ab4f5b91e7a35ff744c5cf8dbb16ed3b48c2218b651af0`  
+		Last Modified: Wed, 15 Nov 2017 19:30:53 GMT  
+		Size: 1.2 KB (1202 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a91fa0be8b96a7881593bd2816573aae367af22feec0f5c1c3d1e92a630cf591`  
-		Last Modified: Tue, 14 Nov 2017 18:57:41 GMT  
-		Size: 1.2 KB (1172 bytes)  
+	-	`sha256:1f7e6c9be57254dd1dd8a2fe6f99bf9322b4fdb1bc8e76149adf4d0e3619786b`  
+		Last Modified: Wed, 15 Nov 2017 19:30:53 GMT  
+		Size: 1.2 KB (1196 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a4d01c08a36468ee8537715ebb75539fa9b9d09fd48bea9a366f27f8e3b6a374`  
-		Last Modified: Tue, 14 Nov 2017 18:57:43 GMT  
-		Size: 10.9 MB (10930221 bytes)  
+	-	`sha256:40a52471cc70e65173105c24345a376c017bf2459a5152685139bdca4ee598ff`  
+		Last Modified: Wed, 15 Nov 2017 19:30:56 GMT  
+		Size: 10.9 MB (10932220 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:windowsservercore`
 
 ```console
-$ docker pull docker@sha256:1c5f56e41aed62125d3dc1034936c8785304cdc0c86fdf423e2cd732c156fba9
+$ docker pull docker@sha256:228fdcc312888e6ab28d13d3c531037f0b575143453bfb305a5254a5927745f6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
-	-	windows version 10.0.14393.1770; amd64
+	-	windows version 10.0.14393.1884; amd64
 
-### `docker:windowsservercore` - windows version 10.0.14393.1770; amd64
+### `docker:windowsservercore` - windows version 10.0.14393.1884; amd64
 
 ```console
-$ docker pull docker@sha256:492123d1b01f0181d3a026f5652c9f680572081becf5b8b8aa7e9d38d1a58980
+$ docker pull docker@sha256:21db37d852bd9c2cbb9d3c15506cca28352d610a285d7fca6f9e5a04bd9b359d
 ```
 
 -	Docker Version: 17.06.1-ee-2
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 GB (5366289491 bytes)**  
+-	Total Size: **5.4 GB (5372784316 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0616e64b8e1c5424578d01b62e5ee9218d5db422d73959596682c9576924f260`
+-	Image ID: `sha256:29fdc4b34ab49ae8300e7b38bb88b2806fbbbd2bb742e514941126577639a851`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Tue, 13 Dec 2016 10:53:31 GMT
 RUN Apply image 10.0.14393.0
-# Mon, 09 Oct 2017 19:23:50 GMT
-RUN Install update 10.0.14393.1770
-# Wed, 01 Nov 2017 18:45:43 GMT
+# Mon, 13 Nov 2017 21:42:13 GMT
+RUN Install update 10.0.14393.1884
+# Wed, 15 Nov 2017 03:14:47 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 01 Nov 2017 20:53:33 GMT
+# Wed, 15 Nov 2017 19:27:10 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Wed, 01 Nov 2017 20:53:33 GMT
+# Wed, 15 Nov 2017 19:28:21 GMT
 ENV DOCKER_CHANNEL=edge
-# Wed, 01 Nov 2017 20:53:34 GMT
+# Wed, 15 Nov 2017 19:28:22 GMT
 ENV DOCKER_VERSION=17.10.0-ce
-# Wed, 01 Nov 2017 20:54:34 GMT
+# Wed, 15 Nov 2017 19:29:22 GMT
 RUN $url = ('https://download.docker.com/win/static/{0}/x86_64/docker-{1}.zip' -f $env:DOCKER_CHANNEL, $env:DOCKER_VERSION); 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
 ```
 
@@ -14406,27 +14406,27 @@ RUN $url = ('https://download.docker.com/win/static/{0}/x86_64/docker-{1}.zip' -
 		Last Modified: Tue, 13 Dec 2016 10:53:31 GMT  
 		Size: 4.1 GB (4069985900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:8df8e568af76c1c311a1251f6f7402e2a09d14629840c97091beb9ba55419464`  
-		Last Modified: Mon, 09 Oct 2017 19:23:50 GMT  
-		Size: 1.3 GB (1280521235 bytes)  
+	-	`sha256:ead9f4ead3c5a712cb213a5318f4a8bf3604bc16e16ce4f7cf0b66f7d2073282`  
+		Last Modified: Mon, 13 Nov 2017 21:42:13 GMT  
+		Size: 1.3 GB (1286993027 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:a2549da2a20282ababf948c27e5a82ee060275fa04614875c1c5c0c0e11f5e32`  
-		Last Modified: Wed, 01 Nov 2017 19:04:06 GMT  
-		Size: 1.2 KB (1170 bytes)  
+	-	`sha256:a4bd6cd94ee2a374930b7554f113d83a6d2d7c4fc6059acd6f2f60e0f29d2f26`  
+		Last Modified: Wed, 15 Nov 2017 10:26:12 GMT  
+		Size: 1.2 KB (1195 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1de3b6e915d299aec66dd74b8c50b6cabbc2bb666361d63f36930add87b9dff`  
-		Last Modified: Wed, 01 Nov 2017 20:57:04 GMT  
-		Size: 4.9 MB (4865441 bytes)  
+	-	`sha256:e6a6bca6ca4a5af1b9ecee7c5d06eed25aaf7d650400c816faf8118c069fcdc6`  
+		Last Modified: Wed, 15 Nov 2017 19:30:54 GMT  
+		Size: 4.9 MB (4876193 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9e5e7b764f30cfc198a9acddc92cb56f148600791a02959734a7c209dca381da`  
-		Last Modified: Wed, 01 Nov 2017 20:57:02 GMT  
-		Size: 1.2 KB (1171 bytes)  
+	-	`sha256:c2e9ab64986909c068dc2857a226a7306c66b0886b4188a45326451353bbefc6`  
+		Last Modified: Wed, 15 Nov 2017 19:31:09 GMT  
+		Size: 1.2 KB (1193 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2e8b795d1db0a20efb88a6741d710702e534ef92a2e89f9ad07e4d4f5fed9c68`  
-		Last Modified: Wed, 01 Nov 2017 20:57:03 GMT  
-		Size: 1.2 KB (1186 bytes)  
+	-	`sha256:ace09faad1484ea00b77472a107bb8d897ed5148a03b616e3e26534e6a0cf6d5`  
+		Last Modified: Wed, 15 Nov 2017 19:31:09 GMT  
+		Size: 1.2 KB (1194 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11fbc459ad0d583fe3479f0cfd11452664ba70d8df3fa1fb3f1a0cc71be97df5`  
-		Last Modified: Wed, 01 Nov 2017 20:57:06 GMT  
-		Size: 10.9 MB (10913388 bytes)  
+	-	`sha256:d0819518f5cfaae76f1f1c16a9851b5618eb09d3afee47e4865364b7898a3764`  
+		Last Modified: Wed, 15 Nov 2017 19:31:12 GMT  
+		Size: 10.9 MB (10925614 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
