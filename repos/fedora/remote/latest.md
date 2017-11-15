@@ -1,7 +1,7 @@
 ## `fedora:latest`
 
 ```console
-$ docker pull fedora@sha256:01a966aa71ad50f860af11fcb7368fedc4b2c54fdda16e01c1d031275b8f9926
+$ docker pull fedora@sha256:9da0b56fd7f8b7ad3c1f5bb43548f4f943f52c89aed97a9a0c13e6ea528bf92b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -68,28 +68,28 @@ ADD file:7f5cee23393752269148b9c16df36ad063cf5d876787e03bd3632849b76b69d7 in /
 ### `fedora:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull fedora@sha256:9567cff3fef07fa82c918d54bbb6cdf7d7db4b078889adc7fe7882e3d4b290e6
+$ docker pull fedora@sha256:f94151550b7ddb53c05628be64af148a74e54581d0c76005cdc407d1e64ba2cc
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **81.6 MB (81571632 bytes)**  
+-	Total Size: **88.0 MB (88012794 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:80475097eb47b04f93fa88a1b414a956b58ee62836b7e6c1038bda1c4790876e`
+-	Image ID: `sha256:81bb27f49e75a996fe54526875e60199010cf8551cbe7901f5e9f15f8d9df192`
 
 ```dockerfile
 # Fri, 21 Jul 2017 05:00:22 GMT
 MAINTAINER [Adam Miller <maxamillion@fedoraproject.org>] [Patrick Uiterwijk <patrick@puiterwijk.org>]
-# Fri, 21 Jul 2017 05:00:22 GMT
-ENV DISTTAG=f26container FGC=f26 FBR=f26
-# Tue, 07 Nov 2017 06:01:35 GMT
-ADD file:3f4fb598430c477378280096f51adae39c9402912bc6a9d1568715f8f65546c9 in / 
+# Wed, 15 Nov 2017 06:00:49 GMT
+ENV DISTTAG=f27container FGC=f27 FBR=f27
+# Wed, 15 Nov 2017 06:01:07 GMT
+ADD file:86a07c3fcf96110a75f6fc456d44574386192d83761f9ce9a0e8e981cab97e63 in / 
 ```
 
 -	Layers:
-	-	`sha256:e774bc699c88f003b4db4ec3d195d200e38e9efb220c13ecd4097d29d8ec3e33`  
-		Last Modified: Tue, 07 Nov 2017 06:02:33 GMT  
-		Size: 81.6 MB (81571632 bytes)  
+	-	`sha256:970fee9b3ce5669750cfdb1150003c76ae80684b757f9fcce414b6d8cec4adb0`  
+		Last Modified: Wed, 15 Nov 2017 06:03:53 GMT  
+		Size: 88.0 MB (88012794 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `fedora:latest` - linux; ppc64le
