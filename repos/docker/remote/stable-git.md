@@ -1,7 +1,7 @@
 ## `docker:stable-git`
 
 ```console
-$ docker pull docker@sha256:a48b364c223e53a69d9d442a1958bf599c53320389046d520b71f9f80a7885ff
+$ docker pull docker@sha256:7c7fc2f5299a4d89d9179ee34bbd98af4e27e876cf3c2695f11a0923944674ad
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -162,14 +162,14 @@ RUN apk add --no-cache 		git 		openssh-client
 ### `docker:stable-git` - linux; ppc64le
 
 ```console
-$ docker pull docker@sha256:979f926a28f423f5794ec77eaf226fed3a97ec3357dcda1de25c70bf211f65cb
+$ docker pull docker@sha256:bf03756f19d13ed76cdc41b01a6e0e17acd6234ef4864f4ea60c56cacb2cdea9
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **42.5 MB (42455449 bytes)**  
+-	Total Size: **42.5 MB (42456023 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ab37a2c00928773b4fcfd300cd597a2704c08f777553c23a3bac40379b9ece35`
+-	Image ID: `sha256:f70c6fb422dac09c2951d3dbe74a53edcc34ab6a28a1723e8a541c62bff81ee4`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["sh"]`
 
@@ -190,13 +190,15 @@ ENV DOCKER_CHANNEL=stable
 ENV DOCKER_VERSION=17.09.0-ce
 # Thu, 26 Oct 2017 05:17:24 GMT
 RUN set -ex; 	apk add --no-cache --virtual .fetch-deps 		curl 		tar 	; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64) dockerArch='x86_64' ;; 		aarch64) dockerArch='aarch64' ;; 		ppc64le) dockerArch='ppc64le' ;; 		s390x) dockerArch='s390x' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 		if ! curl -fL -o docker.tgz "https://download.docker.com/linux/static/${DOCKER_CHANNEL}/${dockerArch}/docker-${DOCKER_VERSION}.tgz"; then 		echo >&2 "error: failed to download 'docker-${DOCKER_VERSION}' from '${DOCKER_CHANNEL}' for '${dockerArch}'"; 		exit 1; 	fi; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 	; 	rm docker.tgz; 		apk del .fetch-deps; 		dockerd -v; 	docker -v
-# Thu, 26 Oct 2017 05:17:26 GMT
+# Thu, 09 Nov 2017 11:37:57 GMT
+COPY file:016ebcc5aefa6b28f6c484a299057d5b236e1d4f3baf44cc76eb4cd578821691 in /usr/local/bin/modprobe 
+# Thu, 09 Nov 2017 11:37:58 GMT
 COPY file:0d94e1cd679f133aab807891a1b00b6aef1a9f1f884108e7a17ddf50ab88f1fb in /usr/local/bin/ 
-# Thu, 26 Oct 2017 05:17:29 GMT
+# Thu, 09 Nov 2017 11:38:00 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 26 Oct 2017 05:17:32 GMT
+# Thu, 09 Nov 2017 11:38:01 GMT
 CMD ["sh"]
-# Thu, 26 Oct 2017 05:18:34 GMT
+# Wed, 15 Nov 2017 21:15:33 GMT
 RUN apk add --no-cache 		git 		openssh-client
 ```
 
@@ -221,13 +223,17 @@ RUN apk add --no-cache 		git 		openssh-client
 		Last Modified: Thu, 26 Oct 2017 05:21:21 GMT  
 		Size: 28.5 MB (28472300 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:88ccf0f36229d7d33de3e3dcf8e8687481775fc41e50ce30a5e6d667d4a38cd8`  
-		Last Modified: Thu, 26 Oct 2017 05:21:12 GMT  
-		Size: 739.0 B  
+	-	`sha256:4796cd44f4618a37e5b932c2216b58abcc679ea58ee6e4b2f962d4b8fc65ba81`  
+		Last Modified: Thu, 09 Nov 2017 11:41:01 GMT  
+		Size: 551.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:052b46566f8eb5e9b44090e99bea4aca060cbc52f37724f4b0c4bc8aa1531a0c`  
-		Last Modified: Thu, 26 Oct 2017 05:22:16 GMT  
-		Size: 11.6 MB (11619265 bytes)  
+	-	`sha256:17f04525e460630d3d67e9fca6902af9560e45ed202b7b1c82d15eca404d7fc7`  
+		Last Modified: Thu, 09 Nov 2017 11:41:00 GMT  
+		Size: 745.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:671d5a469f283af102982efde3d066d3124fda438ffc16e6aa3c5686948da6bc`  
+		Last Modified: Wed, 15 Nov 2017 21:26:23 GMT  
+		Size: 11.6 MB (11619282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `docker:stable-git` - linux; s390x
