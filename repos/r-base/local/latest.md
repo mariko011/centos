@@ -1045,20 +1045,13 @@ Licenses: (parsed from: `/usr/share/doc/cpp-7/copyright`, `/usr/share/doc/g++-7/
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-7=7.2.0-12
-'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.2.0-12.dsc' gcc-7_7.2.0-12.dsc 26585 SHA256:7dcb6c90fb2ac7a5176175c353e8a40560779e6edf303a48e72d722621c145d9
-'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.2.0.orig.tar.gz' gcc-7_7.2.0.orig.tar.gz 70028185 SHA256:a1050ca96c2b931ad82da3caf2868cd68b95a62151ac9af53fbe9b69b6e9b651
-'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.2.0-12.diff.gz' gcc-7_7.2.0-12.diff.gz 3129599 SHA256:d3a4b22abfdaae516dc174f5a96e5e6f19f9003e5ec7835dc1ff575ddd0cc152
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-7/7.2.0-12/
 
-- https://sources.debian.net/src/gcc-7/7.2.0-12/ (for browsing the source)
-- https://sources.debian.net/src/gcc-7/7.2.0-12/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-7/7.2.0-12/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-defaults=1.173d1`
 
@@ -2498,10 +2491,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris linux=4.13.10-1
-'http://http.debian.net/debian/pool/main/l/linux/linux_4.13.10-1.dsc' linux_4.13.10-1.dsc 133773 SHA256:6d27d891633b95d552b3c676f500f214cf0abc1b8ca0373000d62ba3398da3fb
-'http://http.debian.net/debian/pool/main/l/linux/linux_4.13.10.orig.tar.xz' linux_4.13.10.orig.tar.xz 102083232 SHA256:ac7532ab1c1f938b2d634beaf038a311c9da52ac575ef47e5898189833b35516
-'http://http.debian.net/debian/pool/main/l/linux/linux_4.13.10-1.debian.tar.xz' linux_4.13.10-1.debian.tar.xz 3063976 SHA256:3b2a273f7c4e9da9cbe2d1656ad6e60735bad15c2a0b30c0a4903a70464ee2be
+'http://deb.debian.org/debian/pool/main/l/linux/linux_4.13.10-1.dsc' linux_4.13.10-1.dsc 133773 SHA256:6d27d891633b95d552b3c676f500f214cf0abc1b8ca0373000d62ba3398da3fb
+'http://deb.debian.org/debian/pool/main/l/linux/linux_4.13.10.orig.tar.xz' linux_4.13.10.orig.tar.xz 102083232 SHA256:ac7532ab1c1f938b2d634beaf038a311c9da52ac575ef47e5898189833b35516
+'http://deb.debian.org/debian/pool/main/l/linux/linux_4.13.10-1.debian.tar.xz' linux_4.13.10-1.debian.tar.xz 3063976 SHA256:3b2a273f7c4e9da9cbe2d1656ad6e60735bad15c2a0b30c0a4903a70464ee2be
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/linux/4.13.10-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/4.13.10-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/4.13.10-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `littler=0.3.2-1`
 
