@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7fcf8c1a96d211687e889530078079d1ee67d04a9eef4c16aa3e2566e71abdcf`
-- Created: `2017-11-04T16:58:46.869986028Z`
-- Virtual Size: ~ 397.18 Mb  
+- Image ID: `sha256:abcee1d29aacc1a5fcf0cb7de90badcbb43063c522cbb3315ba3db92e6d965ed`
+- Created: `2017-11-16T00:41:51.821128445Z`
+- Virtual Size: ~ 395.77 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["mysqld"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `GOSU_VERSION=1.7`
+  - `GOSU_VERSION=1.10`
   - `GPG_KEYS=199369E5404BD5FC7D2FE43BCBCB082A1BB943DB 	430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 	4D1BB29D63D98E422B2113B19334A25F8507EFA5`
   - `MARIADB_MAJOR=10.2`
   - `MARIADB_VERSION=10.2.10+maria~jessie`
