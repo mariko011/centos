@@ -1,7 +1,7 @@
 ## `fedora:latest`
 
 ```console
-$ docker pull fedora@sha256:9da0b56fd7f8b7ad3c1f5bb43548f4f943f52c89aed97a9a0c13e6ea528bf92b
+$ docker pull fedora@sha256:25f7dac76b2c88d8b7e0b1d6213d3406e77c7f230bfa1e66bd1cbb81a944eaaf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -95,26 +95,26 @@ ADD file:86a07c3fcf96110a75f6fc456d44574386192d83761f9ce9a0e8e981cab97e63 in /
 ### `fedora:latest` - linux; ppc64le
 
 ```console
-$ docker pull fedora@sha256:5cf894b495a9d6207c6172af35ee03ab48a2cc3194a8298dc95edb29df9a8d07
+$ docker pull fedora@sha256:b1c7cd487cfe5f551a84c5de8f42a626d80952f0dcc3d324c4a0efeaf2bd98cb
 ```
 
--	Docker Version: 17.06.1-ce
+-	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **86.9 MB (86883267 bytes)**  
+-	Total Size: **93.9 MB (93882155 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2c4f2007216a816d23e5f361b821568ee313d9986b9a1b09141bf3e2b177df28`
+-	Image ID: `sha256:f7995fd995edbb2558b9ef8891ff2f4aa5acd44300296b9a9ec59e1713ee053a`
 
 ```dockerfile
 # Fri, 21 Jul 2017 12:02:14 GMT
 MAINTAINER [Adam Miller <maxamillion@fedoraproject.org>] [Patrick Uiterwijk <patrick@puiterwijk.org>]
-# Fri, 21 Jul 2017 12:02:14 GMT
-ENV DISTTAG=f26container FGC=f26 FBR=f26
-# Fri, 15 Sep 2017 23:28:11 GMT
-ADD file:f10fb45128ecc10d68d0e5d12f483a8151e8583673bb097739cce5c0278c0873 in / 
+# Thu, 16 Nov 2017 15:27:22 GMT
+ENV DISTTAG=f27container FGC=f27 FBR=f27
+# Thu, 16 Nov 2017 15:27:37 GMT
+ADD file:22d3906edefaa32d245020dd0d4f539c9b66bb64548b771abee0e03fb140a5b7 in / 
 ```
 
 -	Layers:
-	-	`sha256:f2b28938bb6b380f5d6c7a09c7ae844a79002e4796a3be52f268de0952804ef0`  
-		Last Modified: Fri, 15 Sep 2017 23:29:18 GMT  
-		Size: 86.9 MB (86883267 bytes)  
+	-	`sha256:6d6f7937d49c5f9843500b2c76981737bce42673c9c3a64cc12e17d019337dbf`  
+		Last Modified: Thu, 16 Nov 2017 15:29:04 GMT  
+		Size: 93.9 MB (93882155 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
