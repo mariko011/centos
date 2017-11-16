@@ -1,18 +1,18 @@
-# `swift:4.0`
+# `swift:4.0.2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8a4e1bbf1e1b334eb871c35acaa766c6a3d90b1d9d30a62760284b6445b7874e`
-- Created: `2017-11-04T17:31:00.370573901Z`
-- Virtual Size: ~ 1.33 Gb  
+- Image ID: `sha256:f5499eb615d1a8eb8161b5db612d1d89d91a15ec1769f4b01536b59033726688`
+- Created: `2017-11-13T15:48:42.757890385Z`
+- Virtual Size: ~ 1.31 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `SWIFT_PLATFORM=ubuntu16.04`
-  - `SWIFT_BRANCH=swift-4.0-release`
-  - `SWIFT_VERSION=swift-4.0-RELEASE`
+  - `SWIFT_BRANCH=swift-4.0.2-release`
+  - `SWIFT_VERSION=swift-4.0.2-RELEASE`
 
 ## `dpkg` (`.deb`-based packages)
 
