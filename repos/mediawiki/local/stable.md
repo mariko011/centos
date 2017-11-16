@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bf3d1409f6ab23a3893a632d7b4adad902c6a5f562e31b205d33764b3be8cecc`
-- Created: `2017-11-04T19:22:39.169704635Z`
-- Virtual Size: ~ 686.41 Mb  
+- Image ID: `sha256:163baaf79db1180ed38efb0245ab3d99b458cd4f99e2fd3932747fe5647b21d8`
+- Created: `2017-11-15T00:44:35.851556443Z`
+- Virtual Size: ~ 686.42 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -28,8 +28,8 @@
   - `PHP_MD5=`
   - `MEDIAWIKI_MAJOR_VERSION=1.29`
   - `MEDIAWIKI_BRANCH=REL1_29`
-  - `MEDIAWIKI_VERSION=1.29.1`
-  - `MEDIAWIKI_SHA512=c4e04c4fb665c3d8299f3e03e608904aaf0e06381240c7259813eb670c3e32cde919353dd19993250cf49be81d604ac5f6d468bc563116a4b268e5011d34119f`
+  - `MEDIAWIKI_VERSION=1.29.2`
+  - `MEDIAWIKI_SHA512=53c6ca82280938d1e3281aa296f44c86dcfbbdf82710b7de578e73e1ef3150db145e059c8c8208859bc437f7a7f7a13eed896be9d44fd364a0ee6d78893fbe86`
 
 ## `dpkg` (`.deb`-based packages)
 
