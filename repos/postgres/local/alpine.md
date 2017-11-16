@@ -1,9 +1,9 @@
-# `postgres:10.0-alpine`
+# `postgres:10.1-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0f0ff37589e948e31d9e64bb6c1b31cdbd4d7d0336b656cb6094be568e54ad04`
-- Created: `2017-11-04T09:08:55.710253956Z`
+- Image ID: `sha256:3ad2b1691e46afcf96842aeccffa84c6353639a7249350d3ce519052bbde5d5b`
+- Created: `2017-11-15T23:57:49.605876374Z`
 - Virtual Size: ~ 38.18 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -13,6 +13,6 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=en_US.utf8`
   - `PG_MAJOR=10`
-  - `PG_VERSION=10.0`
-  - `PG_SHA256=712f5592e27b81c5b454df96b258c14d94b6b03836831e015c65d6deeae57fd1`
+  - `PG_VERSION=10.1`
+  - `PG_SHA256=3ccb4e25fe7a7ea6308dea103cac202963e6b746697366d72ec2900449a5e713`
   - `PGDATA=/var/lib/postgresql/data`

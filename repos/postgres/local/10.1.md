@@ -1,10 +1,10 @@
-# `postgres:10.0`
+# `postgres:10.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4860bdf1a517b2538cb5e9d4c742285eef811afc335bc63f78e0aba6313e1622`
-- Created: `2017-11-04T09:05:51.76553248Z`
-- Virtual Size: ~ 286.88 Mb  
+- Image ID: `sha256:599272bf538f91189cf10f8e8c7d412381a1a2d5d59d92ac979b9fe86cefc093`
+- Created: `2017-11-15T23:57:43.741291768Z`
+- Virtual Size: ~ 286.89 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -14,7 +14,7 @@
   - `GOSU_VERSION=1.10`
   - `LANG=en_US.utf8`
   - `PG_MAJOR=10`
-  - `PG_VERSION=10.0-1.pgdg90+1`
+  - `PG_VERSION=10.1-1.pgdg90+1`
   - `PGDATA=/var/lib/postgresql/data`
 
 ## `dpkg` (`.deb`-based packages)
@@ -2457,19 +2457,23 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/perl/5.24.1-3+deb9u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/perl/5.24.1-3+deb9u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `pgdg-keyring=2017.2`
+### `dpkg` source package: `pgdg-keyring=2017.3`
 
 Binary Packages:
 
-- `pgdg-keyring=2017.2`
+- `pgdg-keyring=2017.3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris pgdg-keyring=2017.3
+'http://apt.postgresql.org/pub/repos/apt/pool/main/p/pgdg-keyring/pgdg-keyring_2017.3.dsc' pgdg-keyring_2017.3.dsc 1672 SHA256:6337162c6d4220da11e5352104b3d6caf3f4faa6afdbdfe728479f8f26d66dfb
+'http://apt.postgresql.org/pub/repos/apt/pool/main/p/pgdg-keyring/pgdg-keyring_2017.3.tar.xz' pgdg-keyring_2017.3.tar.xz 9948 SHA256:239f29a9759e2136df707a99e380549f754d1c93ec9415ecf3c42c6bf825e426
+```
 
 ### `dpkg` source package: `pinentry=1.0.0-2`
 
@@ -2527,13 +2531,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/popt/1.16-10/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/popt/1.16-10/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `postgresql-10=10.0-1.pgdg90+1`
+### `dpkg` source package: `postgresql-10=10.1-1.pgdg90+1`
 
 Binary Packages:
 
-- `libpq5:amd64=10.0-1.pgdg90+1`
-- `postgresql-10=10.0-1.pgdg90+1`
-- `postgresql-client-10=10.0-1.pgdg90+1`
+- `libpq5:amd64=10.1-1.pgdg90+1`
+- `postgresql-10=10.1-1.pgdg90+1`
+- `postgresql-client-10=10.1-1.pgdg90+1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postgresql-10/copyright`, `/usr/share/doc/postgresql-client-10/copyright`)
 
@@ -2552,25 +2556,34 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postg
 - `nagaysau-ishii`
 - `rijndael`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris postgresql-10=10.1-1.pgdg90+1
+'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-10/postgresql-10_10.1-1.pgdg90+1.dsc' postgresql-10_10.1-1.pgdg90+1.dsc 2611 SHA256:c5af61d84bcc97d065d219706248e14bd0cdf263a11bb7468b5abfc1503b02a1
+'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-10/postgresql-10_10.1.orig.tar.bz2' postgresql-10_10.1.orig.tar.bz2 19669989 SHA256:3ccb4e25fe7a7ea6308dea103cac202963e6b746697366d72ec2900449a5e713
+'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-10/postgresql-10_10.1-1.pgdg90+1.debian.tar.xz' postgresql-10_10.1-1.pgdg90+1.debian.tar.xz 18000 SHA256:1ec0aba88c0d3546670fa08da7aecfa8360b9273f89be08a8c46d7fe3a52cd4d
+```
 
-### `dpkg` source package: `postgresql-common=187.pgdg90+1`
+### `dpkg` source package: `postgresql-common=188.pgdg90+1`
 
 Binary Packages:
 
-- `postgresql-client-common=187.pgdg90+1`
-- `postgresql-common=187.pgdg90+1`
+- `postgresql-client-common=188.pgdg90+1`
+- `postgresql-common=188.pgdg90+1`
 
 Licenses: (parsed from: `/usr/share/doc/postgresql-client-common/copyright`, `/usr/share/doc/postgresql-common/copyright`)
 
 - `GPL-2`
 - `GPL-2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris postgresql-common=188.pgdg90+1
+'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-common/postgresql-common_188.pgdg90+1.dsc' postgresql-common_188.pgdg90+1.dsc 1492 SHA256:e0aac040269a52f29e86eab3a8f870de2f1b1e1c667599211171b97764227572
+'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-common/postgresql-common_188.pgdg90+1.tar.xz' postgresql-common_188.pgdg90+1.tar.xz 206956 SHA256:8bdac78fedefacd695827c1a8e32840f71198219892994c2f4079af151939f70
+```
 
 ### `dpkg` source package: `procps=2:3.3.12-3`
 
