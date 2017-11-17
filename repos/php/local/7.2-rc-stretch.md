@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c21fcd4e5ac17dc1046f8b47ef50ab77534eba3f5b98212ca9a720c7ae562f0c`
-- Created: `2017-11-13T16:49:18.32268376Z`
-- Virtual Size: ~ 354.29 Mb  
+- Image ID: `sha256:d32f1a65ad897aa7ec3ef34449df436383532b1298762abea45e872dc0bec193`
+- Created: `2017-11-16T00:03:37.450932725Z`
+- Virtual Size: ~ 354.36 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -100,6 +100,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/apt/1.4.8/ (for browsing the source)
 - https://sources.debian.net/src/apt/1.4.8/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/apt/1.4.8/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `argon2=0~20160821-1`
+
+Binary Packages:
+
+- `libargon2-0:amd64=0~20160821-1+b1`
+
+Licenses: (parsed from: `/usr/share/doc/libargon2-0/copyright`)
+
+- `CC0`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris argon2=0~20160821-1
+'http://deb.debian.org/debian/pool/main/a/argon2/argon2_0~20160821-1.dsc' argon2_0~20160821-1.dsc 1985 SHA256:a930d20b8ed485a7907c9ebf9774e3f6e10b732c19b3e363f5ac236373ff1227
+'http://deb.debian.org/debian/pool/main/a/argon2/argon2_0~20160821.orig.tar.gz' argon2_0~20160821.orig.tar.gz 1170019 SHA256:f81456ae31337a13a1a1b8ffe994d71ace741833a97a75f0c1a76259639bf3b8
+'http://deb.debian.org/debian/pool/main/a/argon2/argon2_0~20160821-1.debian.tar.xz' argon2_0~20160821-1.debian.tar.xz 5728 SHA256:062ab159a0bbc442e7a80c0c91a19d71b27aca17544635c348032e707f95f84e
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/argon2/0~20160821-1/ (for browsing the source)
+- https://sources.debian.net/src/argon2/0~20160821-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/argon2/0~20160821-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
