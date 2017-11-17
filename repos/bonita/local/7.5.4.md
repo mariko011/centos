@@ -233,9 +233,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris bind9=1:9.10.3.dfsg.P4-8ubuntu1.8
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.10.3.dfsg.P4-8ubuntu1.8.dsc' bind9_9.10.3.dfsg.P4-8ubuntu1.8.dsc 3852 SHA256:2f9a532c9bbc2b0122f7735521fdc4d713625e3a13e6a1e4b210fd1b63019cf6
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.10.3.dfsg.P4.orig.tar.gz' bind9_9.10.3.dfsg.P4.orig.tar.gz 8641072 SHA256:895077c868d06eea39c1526624f2278a3b51a3358b5aa50f48a0f1c16a7ab6e6
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.10.3.dfsg.P4-8ubuntu1.8.debian.tar.xz' bind9_9.10.3.dfsg.P4-8ubuntu1.8.debian.tar.xz 90536 SHA256:82a1f5c29e216cada35a316860f4beaf0e89f2f88bb1bf5b7b98a9305946e3f3
+'http://security.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.10.3.dfsg.P4-8ubuntu1.8.dsc' bind9_9.10.3.dfsg.P4-8ubuntu1.8.dsc 3852 SHA256:2f9a532c9bbc2b0122f7735521fdc4d713625e3a13e6a1e4b210fd1b63019cf6
+'http://security.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.10.3.dfsg.P4.orig.tar.gz' bind9_9.10.3.dfsg.P4.orig.tar.gz 8641072 SHA256:895077c868d06eea39c1526624f2278a3b51a3358b5aa50f48a0f1c16a7ab6e6
+'http://security.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.10.3.dfsg.P4-8ubuntu1.8.debian.tar.xz' bind9_9.10.3.dfsg.P4-8ubuntu1.8.debian.tar.xz 90536 SHA256:82a1f5c29e216cada35a316860f4beaf0e89f2f88bb1bf5b7b98a9305946e3f3
 ```
 
 ### `dpkg` source package: `bzip2=1.0.6-8`
@@ -2285,14 +2285,9 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postg
 - `Tcl`
 - `almost exclusively BSD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-9.5=9.5.9-0ubuntu0.16.04
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.9-0ubuntu0.16.04.dsc' postgresql-9.5_9.5.9-0ubuntu0.16.04.dsc 3649 SHA256:a7a2e3e4830a15154b3639d45569bdb674c597e43e958adf726933c2d849fddf
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.9.orig.tar.bz2' postgresql-9.5_9.5.9.orig.tar.bz2 18677113 SHA256:e98cd5c664ab5a05cb83618ba8078647815cb71f7a60437f0322c7518727cdd4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.9-0ubuntu0.16.04.debian.tar.xz' postgresql-9.5_9.5.9-0ubuntu0.16.04.debian.tar.xz 23000 SHA256:aaf8713f31796edbf50335430b07badddb9e72d7c389b358923420fe4cc4d3a5
-```
 
 ### `dpkg` source package: `postgresql-common=173`
 
