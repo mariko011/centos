@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:fcd56eb4fd82895b5caa076e2824cdccb29d2a3863803b2dd9f8df7263e8857b`
-- Created: `2017-11-04T02:59:15.712268234Z`
+- Image ID: `sha256:f190c4d455f7b431d130488d5a9d9d2dc8cea00ab63386c1b097e0ebc4ba0332`
+- Created: `2017-11-14T18:32:35.045627746Z`
 - Virtual Size: ~ 1.30 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -13,13 +13,13 @@
   - `PATH=/usr/local/tomcat/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/docker-java-home/jre`
-  - `JAVA_VERSION=8u141`
-  - `JAVA_DEBIAN_VERSION=8u141-b15-1~deb9u1`
+  - `JAVA_VERSION=8u151`
+  - `JAVA_DEBIAN_VERSION=8u151-b12-1~deb9u1`
   - `CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1`
   - `CATALINA_HOME=/usr/local/tomcat`
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
-  - `OPENSSL_VERSION=1.1.0f-3`
+  - `OPENSSL_VERSION=1.1.0f-3+deb9u1`
   - `GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 61B832AC2F1C5A90F0F9B00A1C506407564C17A3 713DA88BE50911535FE716F5208B0AB1D63011C7 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23`
   - `TOMCAT_MAJOR=8`
   - `TOMCAT_VERSION=8.5.23`
@@ -1728,10 +1728,9 @@ Binary Packages:
 - `dirmngr=2.1.18-8~deb9u1`
 - `gnupg=2.1.18-8~deb9u1`
 - `gnupg-agent=2.1.18-8~deb9u1`
-- `gnupg2=2.1.18-8~deb9u1`
 - `gpgv=2.1.18-8~deb9u1`
 
-Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gnupg-agent/copyright`, `/usr/share/doc/gnupg2/copyright`, `/usr/share/doc/gpgv/copyright`)
+Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gnupg-agent/copyright`, `/usr/share/doc/gpgv/copyright`)
 
 - `BSD-3-clause`
 - `Expat`
@@ -5383,11 +5382,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nspr/2:4.12-6/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nspr/2:4.12-6/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `nss=2:3.26.2-1.1`
+### `dpkg` source package: `nss=2:3.26.2-1.1+deb9u1`
 
 Binary Packages:
 
-- `libnss3:amd64=2:3.26.2-1.1`
+- `libnss3:amd64=2:3.26.2-1.1+deb9u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5396,24 +5395,24 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris nss=2:3.26.2-1.1
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.26.2-1.1.dsc' nss_3.26.2-1.1.dsc 2400 SHA256:78788486311be767ca54f5b72dfd2948db13d659a836d12f157d89aa09bd3043
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.26.2.orig.tar.gz' nss_3.26.2.orig.tar.gz 7388390 SHA256:13a40a2f97edf5fab3d4c7fdd928e77df36dc539cd8354b6b5d79ab93a131a5a
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.26.2-1.1.debian.tar.xz' nss_3.26.2-1.1.debian.tar.xz 29880 SHA256:64ac3a3361bde8f63659b648b32fd8c13a5d8bd2fb924588392168641cbbece9
+$ apt-get source -qq --print-uris nss=2:3.26.2-1.1+deb9u1
+'http://security.debian.org/pool/updates/main/n/nss/nss_3.26.2-1.1+deb9u1.dsc' nss_3.26.2-1.1+deb9u1.dsc 2428 SHA256:4b77f525bb3d67ddec4bf5f108d8fc7873191de997e0c0aec07c494425b089de
+'http://security.debian.org/pool/updates/main/n/nss/nss_3.26.2.orig.tar.gz' nss_3.26.2.orig.tar.gz 7388390 SHA256:13a40a2f97edf5fab3d4c7fdd928e77df36dc539cd8354b6b5d79ab93a131a5a
+'http://security.debian.org/pool/updates/main/n/nss/nss_3.26.2-1.1+deb9u1.debian.tar.xz' nss_3.26.2-1.1+deb9u1.debian.tar.xz 30820 SHA256:f87d64233afcbb25bf9253064a1508c3adf49f01ed6068d4968231d09ff0d87c
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/nss/2:3.26.2-1.1/ (for browsing the source)
-- https://sources.debian.net/src/nss/2:3.26.2-1.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nss/2:3.26.2-1.1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/nss/2:3.26.2-1.1+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/nss/2:3.26.2-1.1+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/nss/2:3.26.2-1.1+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openjdk-8=8u141-b15-1~deb9u1`
+### `dpkg` source package: `openjdk-8=8u151-b12-1~deb9u1`
 
 Binary Packages:
 
-- `openjdk-8-jre:amd64=8u141-b15-1~deb9u1`
-- `openjdk-8-jre-headless:amd64=8u141-b15-1~deb9u1`
+- `openjdk-8-jre:amd64=8u151-b12-1~deb9u1`
+- `openjdk-8-jre-headless:amd64=8u151-b12-1~deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-8-jre/copyright`, `/usr/share/doc/openjdk-8-jre-headless/copyright`)
 
@@ -5425,17 +5424,17 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-8-jre/copyright`, `/usr/share/do
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openjdk-8=8u141-b15-1~deb9u1
-'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u141-b15-1~deb9u1.dsc' openjdk-8_8u141-b15-1~deb9u1.dsc 4486 SHA256:deaca5cb2c51cd0c5b1938ce866b0833e021da48ead87b9fc538bc9e835bb44e
-'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u141-b15.orig.tar.gz' openjdk-8_8u141-b15.orig.tar.gz 64099346 SHA256:906bcbecce35e0bda53d6c431c22282cf5aba9367e842efa82426c7e9214cf64
-'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u141-b15-1~deb9u1.debian.tar.xz' openjdk-8_8u141-b15-1~deb9u1.debian.tar.xz 244640 SHA256:f6f095413a07b92aa48f22405f803424a28abf66a3fb4adc137fc490f978d156
+$ apt-get source -qq --print-uris openjdk-8=8u151-b12-1~deb9u1
+'http://security.debian.org/pool/updates/main/o/openjdk-8/openjdk-8_8u151-b12-1~deb9u1.dsc' openjdk-8_8u151-b12-1~deb9u1.dsc 4492 SHA256:e70cb66087b60c312ba4698f1ebd9b0e5656ecbe34160e859c2f9f20bd500d22
+'http://security.debian.org/pool/updates/main/o/openjdk-8/openjdk-8_8u151-b12.orig.tar.gz' openjdk-8_8u151-b12.orig.tar.gz 70121877 SHA256:3a81eb858ceadaab9a14190aae800aace0f1b5f86b2e9707b9a9e30b7aca248c
+'http://security.debian.org/pool/updates/main/o/openjdk-8/openjdk-8_8u151-b12-1~deb9u1.debian.tar.xz' openjdk-8_8u151-b12-1~deb9u1.debian.tar.xz 252852 SHA256:0783962cae94181a9b1414cddccd5dd1a4d331c8439cf5bacdc76f3a319e658c
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openjdk-8/8u141-b15-1~deb9u1/ (for browsing the source)
-- https://sources.debian.net/src/openjdk-8/8u141-b15-1~deb9u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openjdk-8/8u141-b15-1~deb9u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openjdk-8/8u151-b12-1~deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/openjdk-8/8u151-b12-1~deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openjdk-8/8u151-b12-1~deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.4.44+dfsg-5+deb9u1`
 
@@ -5463,11 +5462,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openldap/2.4.44+dfsg-5+deb9u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openldap/2.4.44+dfsg-5+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl1.0=1.0.2l-2`
+### `dpkg` source package: `openssl1.0=1.0.2l-2+deb9u1`
 
 Binary Packages:
 
-- `libssl1.0.2:amd64=1.0.2l-2`
+- `libssl1.0.2:amd64=1.0.2l-2+deb9u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5476,25 +5475,24 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl1.0=1.0.2l-2
-'http://deb.debian.org/debian/pool/main/o/openssl1.0/openssl1.0_1.0.2l-2.dsc' openssl1.0_1.0.2l-2.dsc 2529 SHA256:51aa8afa8157b209a647f5476e72ba06720c33b8f6e46be79e91a0dc9349efcf
-'http://deb.debian.org/debian/pool/main/o/openssl1.0/openssl1.0_1.0.2l.orig.tar.gz' openssl1.0_1.0.2l.orig.tar.gz 5365054 SHA256:ce07195b659e75f4e1db43552860070061f156a98bb37b672b101ba6e3ddf30c
-'http://deb.debian.org/debian/pool/main/o/openssl1.0/openssl1.0_1.0.2l.orig.tar.gz.asc' openssl1.0_1.0.2l.orig.tar.gz.asc 455 SHA256:ad459d4de6c30c1889272e38144598847c8ba8e5f0892797543607e8d6d9be5f
-'http://deb.debian.org/debian/pool/main/o/openssl1.0/openssl1.0_1.0.2l-2.debian.tar.xz' openssl1.0_1.0.2l-2.debian.tar.xz 75888 SHA256:8e0dc8d55df49bf85cc8a991774fbdf4186886307acc167054355edd7c77ed1e
+$ apt-get source -qq --print-uris openssl1.0=1.0.2l-2+deb9u1
+'http://security.debian.org/pool/updates/main/o/openssl1.0/openssl1.0_1.0.2l-2+deb9u1.dsc' openssl1.0_1.0.2l-2+deb9u1.dsc 2301 SHA256:2bcc1aada698db527c9dc13ed5e8bc0631790edc9c57c268a4107badddc9be77
+'http://security.debian.org/pool/updates/main/o/openssl1.0/openssl1.0_1.0.2l.orig.tar.gz' openssl1.0_1.0.2l.orig.tar.gz 5365054 SHA256:ce07195b659e75f4e1db43552860070061f156a98bb37b672b101ba6e3ddf30c
+'http://security.debian.org/pool/updates/main/o/openssl1.0/openssl1.0_1.0.2l-2+deb9u1.debian.tar.xz' openssl1.0_1.0.2l-2+deb9u1.debian.tar.xz 76724 SHA256:d4e3935069f4d35af0b155917eefc14a6a382f44c53e364642e02f951f97ec53
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openssl1.0/1.0.2l-2/ (for browsing the source)
-- https://sources.debian.net/src/openssl1.0/1.0.2l-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl1.0/1.0.2l-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openssl1.0/1.0.2l-2+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/openssl1.0/1.0.2l-2+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl1.0/1.0.2l-2+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=1.1.0f-3`
+### `dpkg` source package: `openssl=1.1.0f-3+deb9u1`
 
 Binary Packages:
 
-- `libssl1.1:amd64=1.1.0f-3`
-- `openssl=1.1.0f-3`
+- `libssl1.1:amd64=1.1.0f-3+deb9u1`
+- `openssl=1.1.0f-3+deb9u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5503,18 +5501,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=1.1.0f-3
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0f-3.dsc' openssl_1.1.0f-3.dsc 2583 SHA256:a4d69ed8c10134374d86fee593e85bb5165e6d539ab86294e40532a3ed276642
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0f.orig.tar.gz' openssl_1.1.0f.orig.tar.gz 5278176 SHA256:12f746f3f2493b2f39da7ecf63d7ee19c6ac9ec6a4fcd8c229da8a522cb12765
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0f.orig.tar.gz.asc' openssl_1.1.0f.orig.tar.gz.asc 455 SHA256:9f2feb0494ebcc1cf152d95a11bc966cb94bc1957d88650285db3966866801b0
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0f-3.debian.tar.xz' openssl_1.1.0f-3.debian.tar.xz 54152 SHA256:2b1ca97264b073345375a69ee95e32a9850f0288462bc58e9054dfa769f14806
+$ apt-get source -qq --print-uris openssl=1.1.0f-3+deb9u1
+'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.1.0f-3+deb9u1.dsc' openssl_1.1.0f-3+deb9u1.dsc 2364 SHA256:cc7066295b79a26159b302eef05d1310c6593a1f2faafe28c2b7783704154489
+'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.1.0f.orig.tar.gz' openssl_1.1.0f.orig.tar.gz 5278176 SHA256:12f746f3f2493b2f39da7ecf63d7ee19c6ac9ec6a4fcd8c229da8a522cb12765
+'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.1.0f-3+deb9u1.debian.tar.xz' openssl_1.1.0f-3+deb9u1.debian.tar.xz 54944 SHA256:d9078cf382dad406a890198efd663e29f5bbacaf2c566ed0d77755989aca2932
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openssl/1.1.0f-3/ (for browsing the source)
-- https://sources.debian.net/src/openssl/1.1.0f-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/1.1.0f-3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openssl/1.1.0f-3+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/openssl/1.1.0f-3+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/1.1.0f-3+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `orc=1:0.4.26-2`
 
@@ -6591,11 +6588,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/wayland/1.12.0-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/wayland/1.12.0-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `wget=1.18-5`
+### `dpkg` source package: `wget=1.18-5+deb9u1`
 
 Binary Packages:
 
-- `wget=1.18-5`
+- `wget=1.18-5+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 
@@ -6605,17 +6602,17 @@ Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris wget=1.18-5
-'http://deb.debian.org/debian/pool/main/w/wget/wget_1.18-5.dsc' wget_1.18-5.dsc 1902 SHA256:3aabc0aeb73b151e9e6433db98270cb88629197dec6cfd7b811f237402b27fdb
-'http://deb.debian.org/debian/pool/main/w/wget/wget_1.18.orig.tar.gz' wget_1.18.orig.tar.gz 3865525 SHA256:a00a65fab84cc46e24c53ce88c45604668a7a479276e037dc2f558e34717fb2d
-'http://deb.debian.org/debian/pool/main/w/wget/wget_1.18-5.debian.tar.xz' wget_1.18-5.debian.tar.xz 21940 SHA256:398296b9ac72a8471ad3478370d4ed674be478572ccb70f6b61950d9b1d8044f
+$ apt-get source -qq --print-uris wget=1.18-5+deb9u1
+'http://security.debian.org/pool/updates/main/w/wget/wget_1.18-5+deb9u1.dsc' wget_1.18-5+deb9u1.dsc 1930 SHA256:d73144e86cad1915bec0319d8be45bb1e10ca44b7fc97ac2f4f3452242a511dd
+'http://security.debian.org/pool/updates/main/w/wget/wget_1.18.orig.tar.gz' wget_1.18.orig.tar.gz 3865525 SHA256:a00a65fab84cc46e24c53ce88c45604668a7a479276e037dc2f558e34717fb2d
+'http://security.debian.org/pool/updates/main/w/wget/wget_1.18-5+deb9u1.debian.tar.xz' wget_1.18-5+deb9u1.debian.tar.xz 22708 SHA256:037cc58f8732ed396abb995feb5b6e685aabe7c682273fc12fc20f756228b1ea
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/wget/1.18-5/ (for browsing the source)
-- https://sources.debian.net/src/wget/1.18-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/wget/1.18-5/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/wget/1.18-5+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/wget/1.18-5+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/wget/1.18-5+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `x11-utils=7.7+3`
 
