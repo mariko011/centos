@@ -7124,14 +7124,9 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `nagaysau-ishii`
 - `rijndael`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-9.6=9.6.5-0ubuntu0.17.04
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.5-0ubuntu0.17.04.dsc' postgresql-9.6_9.6.5-0ubuntu0.17.04.dsc 3678 SHA256:90306447a0d1abf9c4b73c42760ed4d7d7c2f522adff0308318da251c3f5267f
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.5.orig.tar.bz2' postgresql-9.6_9.6.5.orig.tar.bz2 19576132 SHA256:06da12a7e3dddeb803962af8309fa06da9d6989f49e22865335f0a14bad0744c
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.5-0ubuntu0.17.04.debian.tar.xz' postgresql-9.6_9.6.5-0ubuntu0.17.04.debian.tar.xz 21168 SHA256:130e45aebde0c6d0cf67ce8f42ffee539e1d8510ad770e811cd02f0de911ee5f
-```
 
 ### `dpkg` source package: `procps=2:3.3.12-1ubuntu2`
 
