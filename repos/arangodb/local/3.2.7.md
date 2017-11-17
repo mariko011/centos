@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:045bdfb689839bd176559faaeb08426c72588743de41033d372fead5f7b74968`
-- Created: `2017-11-04T18:10:36.701769894Z`
-- Virtual Size: ~ 271.76 Mb  
+- Image ID: `sha256:b90c5f043758c6a98b1b7336b7a151d5bb6db03acc744d658ade9fdd3703bf79`
+- Created: `2017-11-15T19:22:27.578278185Z`
+- Virtual Size: ~ 271.84 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -13,11 +13,11 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `ARCHITECTURE=amd64`
   - `DEB_PACKAGE_VERSION=1`
-  - `ARANGO_VERSION=3.2.6`
+  - `ARANGO_VERSION=3.2.7`
   - `ARANGO_URL=https://download.arangodb.com/arangodb32/Debian_9.0`
-  - `ARANGO_PACKAGE=arangodb3-3.2.6-1_amd64.deb`
-  - `ARANGO_PACKAGE_URL=https://download.arangodb.com/arangodb32/Debian_9.0/amd64/arangodb3-3.2.6-1_amd64.deb`
-  - `ARANGO_SIGNATURE_URL=https://download.arangodb.com/arangodb32/Debian_9.0/amd64/arangodb3-3.2.6-1_amd64.deb.asc`
+  - `ARANGO_PACKAGE=arangodb3-3.2.7-1_amd64.deb`
+  - `ARANGO_PACKAGE_URL=https://download.arangodb.com/arangodb32/Debian_9.0/amd64/arangodb3-3.2.7-1_amd64.deb`
+  - `ARANGO_SIGNATURE_URL=https://download.arangodb.com/arangodb32/Debian_9.0/amd64/arangodb3-3.2.7-1_amd64.deb.asc`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -97,11 +97,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/apt/1.4.8/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/apt/1.4.8/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `arangodb3=3.2.6`
+### `dpkg` source package: `arangodb3=3.2.7`
 
 Binary Packages:
 
-- `arangodb3=3.2.6`
+- `arangodb3=3.2.7`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
