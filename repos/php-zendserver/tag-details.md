@@ -15,7 +15,7 @@
 ## `php-zendserver:5.4`
 
 ```console
-$ docker pull php-zendserver@sha256:899771ad05753dd6aba32305bc725892c926de1e8dc940c5f872f9ae257ff9f5
+$ docker pull php-zendserver@sha256:3e26a96e1a6bbbfc7781178c8b87c77d5873d6baa88c6521037054cb84cf0d3b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -25,129 +25,129 @@ $ docker pull php-zendserver@sha256:899771ad05753dd6aba32305bc725892c926de1e8dc9
 ### `php-zendserver:5.4` - linux; amd64
 
 ```console
-$ docker pull php-zendserver@sha256:ec4730800f62eefe1dddf08e3236d74f8095b9dd80b34271e82f2edce755c86c
+$ docker pull php-zendserver@sha256:6d6b23b1de2b13d86c5f4706acdd53a49191eff861e7c1e0f1d3893291412a84
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **296.0 MB (296042376 bytes)**  
+-	Total Size: **301.8 MB (301758040 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7c303b6db43acd55a56a1fe259c97d29ebc33573c4d7f86e3a1cd56716cd1659`
+-	Image ID: `sha256:ffa89a4a7f45afde8c6c9aba386fd93b45007a3a2bacddaf62afe4c4cf8cae00`
 -	Default Command: `["\/usr\/local\/bin\/run"]`
 
 ```dockerfile
-# Sat, 04 Nov 2017 09:45:18 GMT
-ADD file:8f997234193c2f587ac17bb4a8db2657103d2924813edb281eec7ba9883a2806 in / 
-# Sat, 04 Nov 2017 09:45:19 GMT
+# Fri, 17 Nov 2017 21:59:07 GMT
+ADD file:f5013009a258adf002575679e2f6a2fbfe5fd61bf45179e2fb9864683874b2b2 in / 
+# Fri, 17 Nov 2017 21:59:08 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Sat, 04 Nov 2017 09:45:20 GMT
+# Fri, 17 Nov 2017 21:59:08 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Sat, 04 Nov 2017 09:45:20 GMT
+# Fri, 17 Nov 2017 21:59:09 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Sat, 04 Nov 2017 09:45:21 GMT
+# Fri, 17 Nov 2017 21:59:10 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Sat, 04 Nov 2017 09:45:21 GMT
+# Fri, 17 Nov 2017 21:59:10 GMT
 CMD ["/bin/bash"]
-# Sat, 04 Nov 2017 12:40:08 GMT
+# Fri, 17 Nov 2017 22:29:40 GMT
 COPY file:8ff89bee5e81bba8ef4ec2b47592da80b6d37bab7b410dc4e79f831ec488c79c in /usr/local/bin/run 
-# Sat, 04 Nov 2017 12:40:08 GMT
+# Fri, 17 Nov 2017 22:29:40 GMT
 COPY file:912eb834561b6f3501a6e6cf6c0fb8e572ff47f775f09d60fb2bf1c9376719c6 in /usr/local/bin/nothing 
-# Sat, 04 Nov 2017 12:40:09 GMT
+# Fri, 17 Nov 2017 22:29:41 GMT
 COPY file:0b83de880883c5fe59b43b34902295d1c3d7d008c3a84b32c82285fb29414a96 in /usr/lib/x86_64-linux-gnu/ 
-# Sat, 04 Nov 2017 12:40:13 GMT
+# Fri, 17 Nov 2017 22:29:43 GMT
 RUN apt-key adv --keyserver pgp.mit.edu --recv-key 799058698E65316A2E7A4FF42EAE1437F7D2C623
-# Sat, 04 Nov 2017 12:40:14 GMT
+# Fri, 17 Nov 2017 22:29:44 GMT
 RUN echo "deb http://repos.zend.com/zend-server/7.0/deb_apache2.4 server non-free" >> /etc/apt/sources.list.d/zend-server.list
-# Sat, 04 Nov 2017 12:42:29 GMT
+# Fri, 17 Nov 2017 22:31:30 GMT
 RUN apt-get update && apt-get install -y zend-server-php-5.4 && /usr/local/zend/bin/zendctl.sh stop
-# Sat, 04 Nov 2017 12:42:30 GMT
+# Fri, 17 Nov 2017 22:31:32 GMT
 COPY file:82de006e31874ac4e03685b3e87e988446f42138aaaf0fc5faad9cddb48040ba in /etc/apache2/conf-available 
-# Sat, 04 Nov 2017 12:42:32 GMT
+# Fri, 17 Nov 2017 22:31:33 GMT
 RUN /usr/sbin/a2enconf drop-http-proxy-header
-# Sat, 04 Nov 2017 12:42:33 GMT
+# Fri, 17 Nov 2017 22:31:33 GMT
 RUN /usr/sbin/a2enmod headers
-# Sat, 04 Nov 2017 12:42:33 GMT
+# Fri, 17 Nov 2017 22:31:34 GMT
 EXPOSE 80/tcp
-# Sat, 04 Nov 2017 12:42:34 GMT
+# Fri, 17 Nov 2017 22:31:34 GMT
 EXPOSE 443/tcp
-# Sat, 04 Nov 2017 12:42:34 GMT
+# Fri, 17 Nov 2017 22:31:34 GMT
 EXPOSE 10081/tcp
-# Sat, 04 Nov 2017 12:42:34 GMT
+# Fri, 17 Nov 2017 22:31:34 GMT
 EXPOSE 10082/tcp
-# Sat, 04 Nov 2017 12:42:35 GMT
+# Fri, 17 Nov 2017 22:31:34 GMT
 EXPOSE 10060/tcp
-# Sat, 04 Nov 2017 12:42:35 GMT
+# Fri, 17 Nov 2017 22:31:35 GMT
 EXPOSE 10061/tcp
-# Sat, 04 Nov 2017 12:42:35 GMT
+# Fri, 17 Nov 2017 22:31:35 GMT
 EXPOSE 10062/tcp
-# Sat, 04 Nov 2017 12:42:35 GMT
+# Fri, 17 Nov 2017 22:31:35 GMT
 WORKDIR /var/www/html
-# Sat, 04 Nov 2017 12:42:36 GMT
+# Fri, 17 Nov 2017 22:31:35 GMT
 CMD ["/usr/local/bin/run"]
 ```
 
 -	Layers:
-	-	`sha256:bae382666908fd87a3a3646d7eb7176fa42226027d3256cac38ee0b79bdb0491`  
-		Last Modified: Wed, 13 Sep 2017 22:04:42 GMT  
-		Size: 67.1 MB (67114903 bytes)  
+	-	`sha256:01a4f83874576563b6cd843ab7c105d92ab000fe0cb114a645ba99e89b970b77`  
+		Last Modified: Fri, 17 Nov 2017 22:01:08 GMT  
+		Size: 72.8 MB (72825073 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f1ddd5e846a849fff877e4d61dc1002ca5d51de8521cced522e9503312b4c4e7`  
-		Last Modified: Sat, 04 Nov 2017 09:46:17 GMT  
-		Size: 72.7 KB (72653 bytes)  
+	-	`sha256:c887940e680c6729f0c52a833ea44ae2323e4611752bf248da7f0ed9dce573c9`  
+		Last Modified: Fri, 17 Nov 2017 22:00:57 GMT  
+		Size: 72.6 KB (72644 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90d12f864ab9d4cfe6475fc7ba508327c26d3d624344d6584a1fd860c3f0fefa`  
-		Last Modified: Sat, 04 Nov 2017 09:46:18 GMT  
-		Size: 364.0 B  
+	-	`sha256:5432573ac160367250f315604a27532a28e12b6b25c8d8aff68d45533c52f8a7`  
+		Last Modified: Fri, 17 Nov 2017 22:00:57 GMT  
+		Size: 629.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a57ea72e31769e58f0c36db12d25683eba8fa14aaab0518729f28b3766b01112`  
-		Last Modified: Sat, 04 Nov 2017 09:46:19 GMT  
+	-	`sha256:027ee9a9665e446b635a4874018e2685491914be7d8a3fb240dc80dc96af12c7`  
+		Last Modified: Fri, 17 Nov 2017 22:00:57 GMT  
 		Size: 852.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:783a14252520746e3f7fee937b5f14ac1a84ef248ea0b1343d8b58b96df3fa9f`  
-		Last Modified: Sat, 04 Nov 2017 09:46:17 GMT  
-		Size: 162.0 B  
+	-	`sha256:5611db80430d159f886e5b556217e6b94bdbd08ec98862074fe6bec4a9d4253e`  
+		Last Modified: Fri, 17 Nov 2017 22:00:57 GMT  
+		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2943214fbb1e745d21bf68471b9a84485ccadf588497d347315a22849f4c6afc`  
-		Last Modified: Sat, 04 Nov 2017 12:54:17 GMT  
-		Size: 1.0 KB (1007 bytes)  
+	-	`sha256:43e79f0502c2b6b9524684528ab033e712b815afafa3552b6a196a0890d8abdc`  
+		Last Modified: Fri, 17 Nov 2017 22:48:16 GMT  
+		Size: 1.0 KB (1002 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc15dc3ed1aa71201f458199bc686e20f8776ba708927504c0cd64e50ef0366d`  
-		Last Modified: Sat, 04 Nov 2017 12:54:16 GMT  
-		Size: 11.9 KB (11912 bytes)  
+	-	`sha256:c827767ed3fb155645331b59f6829d204db61a373712113284f5614eea84d7cc`  
+		Last Modified: Fri, 17 Nov 2017 22:48:16 GMT  
+		Size: 11.9 KB (11899 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2a091674095f7d66f061ed19036fd07255444ce565f83a04f63db8ae8ec2784d`  
-		Last Modified: Sat, 04 Nov 2017 12:54:17 GMT  
-		Size: 938.4 KB (938423 bytes)  
+	-	`sha256:0a48acc510eabfde2c1f5df3133a662d0dffbb71b2eb59d93c46ecc520488e22`  
+		Last Modified: Fri, 17 Nov 2017 22:48:15 GMT  
+		Size: 938.4 KB (938393 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cdf3e9f5f21e5741e43b720397f92559b95bc78bdc029d802a916a83466d33e9`  
-		Last Modified: Sat, 04 Nov 2017 12:54:17 GMT  
-		Size: 13.1 KB (13063 bytes)  
+	-	`sha256:f7d243c18f0944c32cf2649231a4726ae2e0a70e5f40409755a3397af2b57d5b`  
+		Last Modified: Fri, 17 Nov 2017 22:48:15 GMT  
+		Size: 13.1 KB (13059 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d1b27dee75bd8bc9d97160d752815fb975cc93ea358237682eeafbbad9af7b1a`  
-		Last Modified: Sat, 04 Nov 2017 12:54:14 GMT  
-		Size: 230.0 B  
+	-	`sha256:fb6b0c0a3a29ff680a61327f63c0175d50cae5a2153c218e8caf594ecf815e59`  
+		Last Modified: Fri, 17 Nov 2017 22:48:13 GMT  
+		Size: 233.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dd063eb4e7977771e37061113aad5bcea1f3f4b202d1bebc105841fc7b251299`  
-		Last Modified: Sat, 04 Nov 2017 12:56:54 GMT  
-		Size: 227.9 MB (227887925 bytes)  
+	-	`sha256:9258e9eb900fe7d184d1518fd73f95f9851506c0159c26b1b9b79201f4c526f9`  
+		Last Modified: Fri, 17 Nov 2017 22:48:59 GMT  
+		Size: 227.9 MB (227893215 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ee177e4d9f13829553a9737f7fa2876113c42ffd101c7448eed9d688ea3ce22c`  
-		Last Modified: Sat, 04 Nov 2017 12:54:14 GMT  
-		Size: 261.0 B  
+	-	`sha256:0016386d8735198283870059e1ac35a25142301618b955ab558aea1414b28bdc`  
+		Last Modified: Fri, 17 Nov 2017 22:48:13 GMT  
+		Size: 263.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a030c6ad7ae4e2f0867d76fd7745981d26d5eb3acbfd9a3e0ad0561b5d411a17`  
-		Last Modified: Sat, 04 Nov 2017 12:54:14 GMT  
-		Size: 315.0 B  
+	-	`sha256:f2d7d62383c09236a04ec061b3ad74f9d2558f15530f30df246521c9228073ed`  
+		Last Modified: Fri, 17 Nov 2017 22:48:13 GMT  
+		Size: 311.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:228dfabbcb26edbdad9db79f0b4339837f5f2fb77724eaa7fc1007b3490c485c`  
-		Last Modified: Sat, 04 Nov 2017 12:54:14 GMT  
-		Size: 306.0 B  
+	-	`sha256:234c4a81eabbf13586b0cbe7de748728089d71c9bdf202c0f9d5f9a59d7ebbbd`  
+		Last Modified: Fri, 17 Nov 2017 22:48:13 GMT  
+		Size: 304.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php-zendserver:5.5`
 
 ```console
-$ docker pull php-zendserver@sha256:d3b3fd61f40e5018a14eef6906bb4c04e1f697d6ca12484518d4947fbecd2fa9
+$ docker pull php-zendserver@sha256:8454f5b14bddf632b74faf315f10d6f8994331718cc2a6c97e0d852c28ea9a50
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -157,158 +157,158 @@ $ docker pull php-zendserver@sha256:d3b3fd61f40e5018a14eef6906bb4c04e1f697d6ca12
 ### `php-zendserver:5.5` - linux; amd64
 
 ```console
-$ docker pull php-zendserver@sha256:d2c7392b964d3f9e8e123f92e40ff496025ccf4beca75432fcdea1dfa0a5fc7d
+$ docker pull php-zendserver@sha256:387786c5c6466ea60cc358c9f7b9fb075c795ac018a9c05a279b7039fb56d210
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **337.9 MB (337949050 bytes)**  
+-	Total Size: **342.0 MB (341993546 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fee8d216da70b275f64824e3cae6adb6d7f5617452c5b3e67567be0bfc45dc7c`
+-	Image ID: `sha256:3c2003a8db5314b94a1c3b38525751e1b8de251a579533e30a04a19fea71766b`
 -	Default Command: `["\/usr\/local\/bin\/run"]`
 
 ```dockerfile
-# Sat, 04 Nov 2017 09:45:18 GMT
-ADD file:8f997234193c2f587ac17bb4a8db2657103d2924813edb281eec7ba9883a2806 in / 
-# Sat, 04 Nov 2017 09:45:19 GMT
+# Fri, 17 Nov 2017 21:59:07 GMT
+ADD file:f5013009a258adf002575679e2f6a2fbfe5fd61bf45179e2fb9864683874b2b2 in / 
+# Fri, 17 Nov 2017 21:59:08 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Sat, 04 Nov 2017 09:45:20 GMT
+# Fri, 17 Nov 2017 21:59:08 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Sat, 04 Nov 2017 09:45:20 GMT
+# Fri, 17 Nov 2017 21:59:09 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Sat, 04 Nov 2017 09:45:21 GMT
+# Fri, 17 Nov 2017 21:59:10 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Sat, 04 Nov 2017 09:45:21 GMT
+# Fri, 17 Nov 2017 21:59:10 GMT
 CMD ["/bin/bash"]
-# Sat, 04 Nov 2017 12:28:43 GMT
+# Fri, 17 Nov 2017 22:21:35 GMT
 RUN apt-key adv --keyserver pgp.mit.edu --recv-key 799058698E65316A2E7A4FF42EAE1437F7D2C623
-# Sat, 04 Nov 2017 12:28:44 GMT
+# Fri, 17 Nov 2017 22:21:36 GMT
 RUN echo "deb http://repos.zend.com/zend-server/8.5/deb_apache2.4 server non-free" >> /etc/apt/sources.list.d/zend-server.list
-# Sat, 04 Nov 2017 12:31:08 GMT
+# Fri, 17 Nov 2017 22:23:26 GMT
 RUN apt-get update && apt-get install -y libmysqlclient18 unzip git zend-server-php-5.5 && /usr/local/zend/bin/zendctl.sh stop
-# Sat, 04 Nov 2017 12:31:09 GMT
+# Fri, 17 Nov 2017 22:24:59 GMT
 COPY file:9067f1585f25b36ab3a81514a2f158ba0d6e0431cad7de2ea9c4b4249a6c134f in /etc/ 
-# Sat, 04 Nov 2017 12:31:10 GMT
+# Fri, 17 Nov 2017 22:25:00 GMT
 COPY file:82de006e31874ac4e03685b3e87e988446f42138aaaf0fc5faad9cddb48040ba in /etc/apache2/conf-available 
-# Sat, 04 Nov 2017 12:31:11 GMT
+# Fri, 17 Nov 2017 22:25:01 GMT
 RUN /usr/sbin/a2enconf drop-http-proxy-header
-# Sat, 04 Nov 2017 12:31:12 GMT
+# Fri, 17 Nov 2017 22:25:02 GMT
 RUN /usr/sbin/a2enmod headers
-# Sat, 04 Nov 2017 12:31:12 GMT
+# Fri, 17 Nov 2017 22:25:02 GMT
 ENV ZS_INIT_VERSION=0.3
-# Sat, 04 Nov 2017 12:31:13 GMT
+# Fri, 17 Nov 2017 22:25:02 GMT
 ENV ZS_INIT_SHA256=e8d441d8503808e9fc0fafc762b2cb80d4a6e68b94fede0fe41efdeac10800cb
-# Sat, 04 Nov 2017 12:31:20 GMT
+# Fri, 17 Nov 2017 22:25:07 GMT
 RUN apt-get install -y curl
-# Sat, 04 Nov 2017 12:31:22 GMT
+# Fri, 17 Nov 2017 22:25:09 GMT
 RUN curl -fSL -o zs-init.tar.gz "http://repos.zend.com/zs-init/zs-init-docker-${ZS_INIT_VERSION}.tar.gz"     && echo "${ZS_INIT_SHA256} *zs-init.tar.gz" | sha256sum -c -     && mkdir /usr/local/zs-init     && tar xzf zs-init.tar.gz --strip-components=1 -C /usr/local/zs-init     && rm zs-init.tar.gz
-# Sat, 04 Nov 2017 12:31:22 GMT
+# Fri, 17 Nov 2017 22:25:09 GMT
 WORKDIR /usr/local/zs-init
-# Sat, 04 Nov 2017 12:31:28 GMT
+# Fri, 17 Nov 2017 22:25:14 GMT
 RUN /usr/local/zend/bin/php -r "readfile('https://getcomposer.org/installer');" | /usr/local/zend/bin/php
-# Sat, 04 Nov 2017 12:32:01 GMT
+# Fri, 17 Nov 2017 22:25:42 GMT
 RUN /usr/local/zend/bin/php composer.phar update
-# Sat, 04 Nov 2017 12:32:02 GMT
+# Fri, 17 Nov 2017 22:25:42 GMT
 COPY dir:6174d7fdcd8142a1b143e80efd2994e57dd5d7610a8fbfee3a7288ddf495dfdf in /usr/local/bin 
-# Sat, 04 Nov 2017 12:32:02 GMT
+# Fri, 17 Nov 2017 22:25:42 GMT
 COPY dir:b14dbc48195e4d5367d3aea2ed0fb26985bacb8d8229d24961363db2e2edf8f0 in /usr/local/zend/var/plugins/ 
-# Sat, 04 Nov 2017 12:32:03 GMT
+# Fri, 17 Nov 2017 22:25:43 GMT
 RUN rm /var/www/html/index.html
-# Sat, 04 Nov 2017 12:32:04 GMT
+# Fri, 17 Nov 2017 22:25:43 GMT
 COPY dir:9f1a7f23dfcf85f3c7148d98ae7914654fe8acfc4e4651f3a08427c09af24198 in /var/www/html 
-# Sat, 04 Nov 2017 12:32:04 GMT
+# Fri, 17 Nov 2017 22:25:44 GMT
 EXPOSE 80/tcp
-# Sat, 04 Nov 2017 12:32:04 GMT
+# Fri, 17 Nov 2017 22:25:44 GMT
 EXPOSE 443/tcp
-# Sat, 04 Nov 2017 12:32:04 GMT
+# Fri, 17 Nov 2017 22:25:44 GMT
 EXPOSE 10081/tcp
-# Sat, 04 Nov 2017 12:32:05 GMT
+# Fri, 17 Nov 2017 22:25:44 GMT
 EXPOSE 10082/tcp
-# Sat, 04 Nov 2017 12:32:05 GMT
+# Fri, 17 Nov 2017 22:25:44 GMT
 WORKDIR /var/www/html
-# Sat, 04 Nov 2017 12:32:05 GMT
+# Fri, 17 Nov 2017 22:25:45 GMT
 CMD ["/usr/local/bin/run"]
 ```
 
 -	Layers:
-	-	`sha256:bae382666908fd87a3a3646d7eb7176fa42226027d3256cac38ee0b79bdb0491`  
-		Last Modified: Wed, 13 Sep 2017 22:04:42 GMT  
-		Size: 67.1 MB (67114903 bytes)  
+	-	`sha256:01a4f83874576563b6cd843ab7c105d92ab000fe0cb114a645ba99e89b970b77`  
+		Last Modified: Fri, 17 Nov 2017 22:01:08 GMT  
+		Size: 72.8 MB (72825073 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f1ddd5e846a849fff877e4d61dc1002ca5d51de8521cced522e9503312b4c4e7`  
-		Last Modified: Sat, 04 Nov 2017 09:46:17 GMT  
-		Size: 72.7 KB (72653 bytes)  
+	-	`sha256:c887940e680c6729f0c52a833ea44ae2323e4611752bf248da7f0ed9dce573c9`  
+		Last Modified: Fri, 17 Nov 2017 22:00:57 GMT  
+		Size: 72.6 KB (72644 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90d12f864ab9d4cfe6475fc7ba508327c26d3d624344d6584a1fd860c3f0fefa`  
-		Last Modified: Sat, 04 Nov 2017 09:46:18 GMT  
-		Size: 364.0 B  
+	-	`sha256:5432573ac160367250f315604a27532a28e12b6b25c8d8aff68d45533c52f8a7`  
+		Last Modified: Fri, 17 Nov 2017 22:00:57 GMT  
+		Size: 629.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a57ea72e31769e58f0c36db12d25683eba8fa14aaab0518729f28b3766b01112`  
-		Last Modified: Sat, 04 Nov 2017 09:46:19 GMT  
+	-	`sha256:027ee9a9665e446b635a4874018e2685491914be7d8a3fb240dc80dc96af12c7`  
+		Last Modified: Fri, 17 Nov 2017 22:00:57 GMT  
 		Size: 852.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:783a14252520746e3f7fee937b5f14ac1a84ef248ea0b1343d8b58b96df3fa9f`  
-		Last Modified: Sat, 04 Nov 2017 09:46:17 GMT  
-		Size: 162.0 B  
+	-	`sha256:5611db80430d159f886e5b556217e6b94bdbd08ec98862074fe6bec4a9d4253e`  
+		Last Modified: Fri, 17 Nov 2017 22:00:57 GMT  
+		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8e4ea7a3ab6d6bfbdf47e2f77efac8ece288f6dbd112ff65558833520aa56a16`  
-		Last Modified: Sat, 04 Nov 2017 12:49:55 GMT  
-		Size: 13.1 KB (13064 bytes)  
+	-	`sha256:019a793896af3201b8f8152cd2b8bdb2b5e0e86960e95120a12224977ed00ead`  
+		Last Modified: Fri, 17 Nov 2017 22:42:06 GMT  
+		Size: 13.1 KB (13059 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c459c74d2fdc7c537f1fd721d449de7145ef4c4c20818383a41d3bcfc76b7f41`  
-		Last Modified: Sat, 04 Nov 2017 12:49:55 GMT  
-		Size: 232.0 B  
+	-	`sha256:7083fd52cc37325a7410c9b440752c23eec66e1ff2909304c1b8e71997b79bfd`  
+		Last Modified: Fri, 17 Nov 2017 22:42:06 GMT  
+		Size: 233.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:32ad7962e9277d40f5d6433c374587bde67cc42a7c46862c657fd82134635584`  
-		Last Modified: Sat, 04 Nov 2017 12:50:41 GMT  
-		Size: 255.5 MB (255513779 bytes)  
+	-	`sha256:b84e7ee6b3e751fe1d418745300b1141b00286719723dd93490070748b5f448f`  
+		Last Modified: Fri, 17 Nov 2017 22:42:54 GMT  
+		Size: 253.7 MB (253684155 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a85d14f6655ba82e8eb386d5951e87f4303a54b0c7f76aade9154087de015637`  
-		Last Modified: Sat, 04 Nov 2017 12:49:53 GMT  
-		Size: 220.0 B  
+	-	`sha256:6b3d80549a9a8a0d57130e483b2766df2f29825ede38ccea36e5564b623f1928`  
+		Last Modified: Fri, 17 Nov 2017 22:42:05 GMT  
+		Size: 218.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2c0beedfe08be95878aaa1d56ced29d820713180af8ac11e645681f97d825329`  
-		Last Modified: Sat, 04 Nov 2017 12:49:53 GMT  
-		Size: 263.0 B  
+	-	`sha256:5bafca90fe92af71f16567a089fef3164acfba7de3f89fe1280fd26329b0dda3`  
+		Last Modified: Fri, 17 Nov 2017 22:42:04 GMT  
+		Size: 260.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5ad8a4341e4aa081c46b7c2a920e2c535ea23797c3ac4cb91ed84aa7f3218d40`  
-		Last Modified: Sat, 04 Nov 2017 12:49:53 GMT  
-		Size: 314.0 B  
+	-	`sha256:75bc148ed969a661dd021ae04544c9f6c38b806e4a3f3ae86cd47d2526676839`  
+		Last Modified: Fri, 17 Nov 2017 22:42:03 GMT  
+		Size: 316.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dba622038378507005ec62f45f1f643faf2f0cd219ee54e14fb998c65131f1bf`  
-		Last Modified: Sat, 04 Nov 2017 12:49:50 GMT  
-		Size: 310.0 B  
+	-	`sha256:05c6ee3df7a353279675eb427e3939fe05f919688bd9ad701d80326f32cc5340`  
+		Last Modified: Fri, 17 Nov 2017 22:42:01 GMT  
+		Size: 305.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6b59f2f58c0d461c281000a7e022953fc85a3f59e1f90c4fac7cc9e3734b01e1`  
-		Last Modified: Sat, 04 Nov 2017 12:49:51 GMT  
-		Size: 911.7 KB (911692 bytes)  
+	-	`sha256:ae8127489ec0c2597db72c3589662347871286f35d5ce1530b8a4987b39a9e61`  
+		Last Modified: Fri, 17 Nov 2017 22:42:02 GMT  
+		Size: 912.2 KB (912169 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c48aba28deff60158e3544cf6e16eea7c5c6b6b4072f32cbd1c0fbd85138e602`  
-		Last Modified: Sat, 04 Nov 2017 12:49:50 GMT  
-		Size: 18.8 KB (18831 bytes)  
+	-	`sha256:6a3f2c22b44eadf32a753d0b19a2e579b2b5f1da6a6c6e02e559a509284057f3`  
+		Last Modified: Fri, 17 Nov 2017 22:42:01 GMT  
+		Size: 18.8 KB (18829 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e48b0853de5ab2c1e9b875b42e914c4e01ae1ebdab27745b533c0eb750d0aa60`  
-		Last Modified: Sat, 04 Nov 2017 12:49:51 GMT  
-		Size: 494.1 KB (494092 bytes)  
+	-	`sha256:e3ea6cefa98cbfc676991762613c7ba1158a87f8366667311c5771825c300e31`  
+		Last Modified: Fri, 17 Nov 2017 22:42:01 GMT  
+		Size: 494.1 KB (494076 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:26676647a569bb044a6017b4357eb384b40a66a4a1d8e02258b23c6832475bdd`  
-		Last Modified: Sat, 04 Nov 2017 12:49:53 GMT  
-		Size: 13.8 MB (13789995 bytes)  
+	-	`sha256:18c4595e33ceb9543b16bf151d33dbf7d50b7c9e1ff703cdf75d2b9fa4e9b029`  
+		Last Modified: Fri, 17 Nov 2017 22:42:02 GMT  
+		Size: 14.0 MB (13953258 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4a41f2c5dd9051925e4e10c31f99896f1a86993a97e48b1710b7a202f5372deb`  
-		Last Modified: Sat, 04 Nov 2017 12:49:48 GMT  
-		Size: 13.4 KB (13362 bytes)  
+	-	`sha256:2d72991987058bddfe29979c7c99757a1d09c3ad8a2b99bc3a7aca7fa79d9a24`  
+		Last Modified: Fri, 17 Nov 2017 22:41:59 GMT  
+		Size: 13.4 KB (13354 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e5b1ec91a08e2dd2c1fb3b2701219470c4a6f7c06c88c9f30236421a67dd2cb6`  
-		Last Modified: Sat, 04 Nov 2017 12:49:48 GMT  
-		Size: 2.5 KB (2542 bytes)  
+	-	`sha256:149f055feb8411911189ee93a016486f2e2eb079d8fb35f8ab4111aed751de1d`  
+		Last Modified: Fri, 17 Nov 2017 22:41:59 GMT  
+		Size: 2.5 KB (2534 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5121f2977180e77246add455bd0babdd85bb6947cc2c3020d32e6c23c9391395`  
-		Last Modified: Sat, 04 Nov 2017 12:49:48 GMT  
-		Size: 170.0 B  
+	-	`sha256:2d20a320b1c6c2fb94e9ea3be43732f185d1aa685b33f4dde8c3381ce919dcc8`  
+		Last Modified: Fri, 17 Nov 2017 22:41:59 GMT  
+		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35193fb0203070edc71c161eeae5643037b8d9631fad423dd83e05210211b2c8`  
-		Last Modified: Sat, 04 Nov 2017 12:49:48 GMT  
+	-	`sha256:099d972c77d4a0e699156bb922ebdc3d32234aed24b19606629e83a60769bdc0`  
+		Last Modified: Fri, 17 Nov 2017 22:41:59 GMT  
 		Size: 1.2 KB (1250 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -483,7 +483,7 @@ CMD ["/usr/local/bin/run"]
 ## `php-zendserver:7.0-php5.4`
 
 ```console
-$ docker pull php-zendserver@sha256:899771ad05753dd6aba32305bc725892c926de1e8dc940c5f872f9ae257ff9f5
+$ docker pull php-zendserver@sha256:3e26a96e1a6bbbfc7781178c8b87c77d5873d6baa88c6521037054cb84cf0d3b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -493,123 +493,123 @@ $ docker pull php-zendserver@sha256:899771ad05753dd6aba32305bc725892c926de1e8dc9
 ### `php-zendserver:7.0-php5.4` - linux; amd64
 
 ```console
-$ docker pull php-zendserver@sha256:ec4730800f62eefe1dddf08e3236d74f8095b9dd80b34271e82f2edce755c86c
+$ docker pull php-zendserver@sha256:6d6b23b1de2b13d86c5f4706acdd53a49191eff861e7c1e0f1d3893291412a84
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **296.0 MB (296042376 bytes)**  
+-	Total Size: **301.8 MB (301758040 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7c303b6db43acd55a56a1fe259c97d29ebc33573c4d7f86e3a1cd56716cd1659`
+-	Image ID: `sha256:ffa89a4a7f45afde8c6c9aba386fd93b45007a3a2bacddaf62afe4c4cf8cae00`
 -	Default Command: `["\/usr\/local\/bin\/run"]`
 
 ```dockerfile
-# Sat, 04 Nov 2017 09:45:18 GMT
-ADD file:8f997234193c2f587ac17bb4a8db2657103d2924813edb281eec7ba9883a2806 in / 
-# Sat, 04 Nov 2017 09:45:19 GMT
+# Fri, 17 Nov 2017 21:59:07 GMT
+ADD file:f5013009a258adf002575679e2f6a2fbfe5fd61bf45179e2fb9864683874b2b2 in / 
+# Fri, 17 Nov 2017 21:59:08 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Sat, 04 Nov 2017 09:45:20 GMT
+# Fri, 17 Nov 2017 21:59:08 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Sat, 04 Nov 2017 09:45:20 GMT
+# Fri, 17 Nov 2017 21:59:09 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Sat, 04 Nov 2017 09:45:21 GMT
+# Fri, 17 Nov 2017 21:59:10 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Sat, 04 Nov 2017 09:45:21 GMT
+# Fri, 17 Nov 2017 21:59:10 GMT
 CMD ["/bin/bash"]
-# Sat, 04 Nov 2017 12:40:08 GMT
+# Fri, 17 Nov 2017 22:29:40 GMT
 COPY file:8ff89bee5e81bba8ef4ec2b47592da80b6d37bab7b410dc4e79f831ec488c79c in /usr/local/bin/run 
-# Sat, 04 Nov 2017 12:40:08 GMT
+# Fri, 17 Nov 2017 22:29:40 GMT
 COPY file:912eb834561b6f3501a6e6cf6c0fb8e572ff47f775f09d60fb2bf1c9376719c6 in /usr/local/bin/nothing 
-# Sat, 04 Nov 2017 12:40:09 GMT
+# Fri, 17 Nov 2017 22:29:41 GMT
 COPY file:0b83de880883c5fe59b43b34902295d1c3d7d008c3a84b32c82285fb29414a96 in /usr/lib/x86_64-linux-gnu/ 
-# Sat, 04 Nov 2017 12:40:13 GMT
+# Fri, 17 Nov 2017 22:29:43 GMT
 RUN apt-key adv --keyserver pgp.mit.edu --recv-key 799058698E65316A2E7A4FF42EAE1437F7D2C623
-# Sat, 04 Nov 2017 12:40:14 GMT
+# Fri, 17 Nov 2017 22:29:44 GMT
 RUN echo "deb http://repos.zend.com/zend-server/7.0/deb_apache2.4 server non-free" >> /etc/apt/sources.list.d/zend-server.list
-# Sat, 04 Nov 2017 12:42:29 GMT
+# Fri, 17 Nov 2017 22:31:30 GMT
 RUN apt-get update && apt-get install -y zend-server-php-5.4 && /usr/local/zend/bin/zendctl.sh stop
-# Sat, 04 Nov 2017 12:42:30 GMT
+# Fri, 17 Nov 2017 22:31:32 GMT
 COPY file:82de006e31874ac4e03685b3e87e988446f42138aaaf0fc5faad9cddb48040ba in /etc/apache2/conf-available 
-# Sat, 04 Nov 2017 12:42:32 GMT
+# Fri, 17 Nov 2017 22:31:33 GMT
 RUN /usr/sbin/a2enconf drop-http-proxy-header
-# Sat, 04 Nov 2017 12:42:33 GMT
+# Fri, 17 Nov 2017 22:31:33 GMT
 RUN /usr/sbin/a2enmod headers
-# Sat, 04 Nov 2017 12:42:33 GMT
+# Fri, 17 Nov 2017 22:31:34 GMT
 EXPOSE 80/tcp
-# Sat, 04 Nov 2017 12:42:34 GMT
+# Fri, 17 Nov 2017 22:31:34 GMT
 EXPOSE 443/tcp
-# Sat, 04 Nov 2017 12:42:34 GMT
+# Fri, 17 Nov 2017 22:31:34 GMT
 EXPOSE 10081/tcp
-# Sat, 04 Nov 2017 12:42:34 GMT
+# Fri, 17 Nov 2017 22:31:34 GMT
 EXPOSE 10082/tcp
-# Sat, 04 Nov 2017 12:42:35 GMT
+# Fri, 17 Nov 2017 22:31:34 GMT
 EXPOSE 10060/tcp
-# Sat, 04 Nov 2017 12:42:35 GMT
+# Fri, 17 Nov 2017 22:31:35 GMT
 EXPOSE 10061/tcp
-# Sat, 04 Nov 2017 12:42:35 GMT
+# Fri, 17 Nov 2017 22:31:35 GMT
 EXPOSE 10062/tcp
-# Sat, 04 Nov 2017 12:42:35 GMT
+# Fri, 17 Nov 2017 22:31:35 GMT
 WORKDIR /var/www/html
-# Sat, 04 Nov 2017 12:42:36 GMT
+# Fri, 17 Nov 2017 22:31:35 GMT
 CMD ["/usr/local/bin/run"]
 ```
 
 -	Layers:
-	-	`sha256:bae382666908fd87a3a3646d7eb7176fa42226027d3256cac38ee0b79bdb0491`  
-		Last Modified: Wed, 13 Sep 2017 22:04:42 GMT  
-		Size: 67.1 MB (67114903 bytes)  
+	-	`sha256:01a4f83874576563b6cd843ab7c105d92ab000fe0cb114a645ba99e89b970b77`  
+		Last Modified: Fri, 17 Nov 2017 22:01:08 GMT  
+		Size: 72.8 MB (72825073 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f1ddd5e846a849fff877e4d61dc1002ca5d51de8521cced522e9503312b4c4e7`  
-		Last Modified: Sat, 04 Nov 2017 09:46:17 GMT  
-		Size: 72.7 KB (72653 bytes)  
+	-	`sha256:c887940e680c6729f0c52a833ea44ae2323e4611752bf248da7f0ed9dce573c9`  
+		Last Modified: Fri, 17 Nov 2017 22:00:57 GMT  
+		Size: 72.6 KB (72644 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90d12f864ab9d4cfe6475fc7ba508327c26d3d624344d6584a1fd860c3f0fefa`  
-		Last Modified: Sat, 04 Nov 2017 09:46:18 GMT  
-		Size: 364.0 B  
+	-	`sha256:5432573ac160367250f315604a27532a28e12b6b25c8d8aff68d45533c52f8a7`  
+		Last Modified: Fri, 17 Nov 2017 22:00:57 GMT  
+		Size: 629.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a57ea72e31769e58f0c36db12d25683eba8fa14aaab0518729f28b3766b01112`  
-		Last Modified: Sat, 04 Nov 2017 09:46:19 GMT  
+	-	`sha256:027ee9a9665e446b635a4874018e2685491914be7d8a3fb240dc80dc96af12c7`  
+		Last Modified: Fri, 17 Nov 2017 22:00:57 GMT  
 		Size: 852.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:783a14252520746e3f7fee937b5f14ac1a84ef248ea0b1343d8b58b96df3fa9f`  
-		Last Modified: Sat, 04 Nov 2017 09:46:17 GMT  
-		Size: 162.0 B  
+	-	`sha256:5611db80430d159f886e5b556217e6b94bdbd08ec98862074fe6bec4a9d4253e`  
+		Last Modified: Fri, 17 Nov 2017 22:00:57 GMT  
+		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2943214fbb1e745d21bf68471b9a84485ccadf588497d347315a22849f4c6afc`  
-		Last Modified: Sat, 04 Nov 2017 12:54:17 GMT  
-		Size: 1.0 KB (1007 bytes)  
+	-	`sha256:43e79f0502c2b6b9524684528ab033e712b815afafa3552b6a196a0890d8abdc`  
+		Last Modified: Fri, 17 Nov 2017 22:48:16 GMT  
+		Size: 1.0 KB (1002 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc15dc3ed1aa71201f458199bc686e20f8776ba708927504c0cd64e50ef0366d`  
-		Last Modified: Sat, 04 Nov 2017 12:54:16 GMT  
-		Size: 11.9 KB (11912 bytes)  
+	-	`sha256:c827767ed3fb155645331b59f6829d204db61a373712113284f5614eea84d7cc`  
+		Last Modified: Fri, 17 Nov 2017 22:48:16 GMT  
+		Size: 11.9 KB (11899 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2a091674095f7d66f061ed19036fd07255444ce565f83a04f63db8ae8ec2784d`  
-		Last Modified: Sat, 04 Nov 2017 12:54:17 GMT  
-		Size: 938.4 KB (938423 bytes)  
+	-	`sha256:0a48acc510eabfde2c1f5df3133a662d0dffbb71b2eb59d93c46ecc520488e22`  
+		Last Modified: Fri, 17 Nov 2017 22:48:15 GMT  
+		Size: 938.4 KB (938393 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cdf3e9f5f21e5741e43b720397f92559b95bc78bdc029d802a916a83466d33e9`  
-		Last Modified: Sat, 04 Nov 2017 12:54:17 GMT  
-		Size: 13.1 KB (13063 bytes)  
+	-	`sha256:f7d243c18f0944c32cf2649231a4726ae2e0a70e5f40409755a3397af2b57d5b`  
+		Last Modified: Fri, 17 Nov 2017 22:48:15 GMT  
+		Size: 13.1 KB (13059 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d1b27dee75bd8bc9d97160d752815fb975cc93ea358237682eeafbbad9af7b1a`  
-		Last Modified: Sat, 04 Nov 2017 12:54:14 GMT  
-		Size: 230.0 B  
+	-	`sha256:fb6b0c0a3a29ff680a61327f63c0175d50cae5a2153c218e8caf594ecf815e59`  
+		Last Modified: Fri, 17 Nov 2017 22:48:13 GMT  
+		Size: 233.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dd063eb4e7977771e37061113aad5bcea1f3f4b202d1bebc105841fc7b251299`  
-		Last Modified: Sat, 04 Nov 2017 12:56:54 GMT  
-		Size: 227.9 MB (227887925 bytes)  
+	-	`sha256:9258e9eb900fe7d184d1518fd73f95f9851506c0159c26b1b9b79201f4c526f9`  
+		Last Modified: Fri, 17 Nov 2017 22:48:59 GMT  
+		Size: 227.9 MB (227893215 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ee177e4d9f13829553a9737f7fa2876113c42ffd101c7448eed9d688ea3ce22c`  
-		Last Modified: Sat, 04 Nov 2017 12:54:14 GMT  
-		Size: 261.0 B  
+	-	`sha256:0016386d8735198283870059e1ac35a25142301618b955ab558aea1414b28bdc`  
+		Last Modified: Fri, 17 Nov 2017 22:48:13 GMT  
+		Size: 263.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a030c6ad7ae4e2f0867d76fd7745981d26d5eb3acbfd9a3e0ad0561b5d411a17`  
-		Last Modified: Sat, 04 Nov 2017 12:54:14 GMT  
-		Size: 315.0 B  
+	-	`sha256:f2d7d62383c09236a04ec061b3ad74f9d2558f15530f30df246521c9228073ed`  
+		Last Modified: Fri, 17 Nov 2017 22:48:13 GMT  
+		Size: 311.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:228dfabbcb26edbdad9db79f0b4339837f5f2fb77724eaa7fc1007b3490c485c`  
-		Last Modified: Sat, 04 Nov 2017 12:54:14 GMT  
-		Size: 306.0 B  
+	-	`sha256:234c4a81eabbf13586b0cbe7de748728089d71c9bdf202c0f9d5f9a59d7ebbbd`  
+		Last Modified: Fri, 17 Nov 2017 22:48:13 GMT  
+		Size: 304.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php-zendserver:8.5`
@@ -783,7 +783,7 @@ CMD ["/usr/local/bin/run"]
 ## `php-zendserver:8.5-php5.5`
 
 ```console
-$ docker pull php-zendserver@sha256:d3b3fd61f40e5018a14eef6906bb4c04e1f697d6ca12484518d4947fbecd2fa9
+$ docker pull php-zendserver@sha256:8454f5b14bddf632b74faf315f10d6f8994331718cc2a6c97e0d852c28ea9a50
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -793,158 +793,158 @@ $ docker pull php-zendserver@sha256:d3b3fd61f40e5018a14eef6906bb4c04e1f697d6ca12
 ### `php-zendserver:8.5-php5.5` - linux; amd64
 
 ```console
-$ docker pull php-zendserver@sha256:d2c7392b964d3f9e8e123f92e40ff496025ccf4beca75432fcdea1dfa0a5fc7d
+$ docker pull php-zendserver@sha256:387786c5c6466ea60cc358c9f7b9fb075c795ac018a9c05a279b7039fb56d210
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **337.9 MB (337949050 bytes)**  
+-	Total Size: **342.0 MB (341993546 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fee8d216da70b275f64824e3cae6adb6d7f5617452c5b3e67567be0bfc45dc7c`
+-	Image ID: `sha256:3c2003a8db5314b94a1c3b38525751e1b8de251a579533e30a04a19fea71766b`
 -	Default Command: `["\/usr\/local\/bin\/run"]`
 
 ```dockerfile
-# Sat, 04 Nov 2017 09:45:18 GMT
-ADD file:8f997234193c2f587ac17bb4a8db2657103d2924813edb281eec7ba9883a2806 in / 
-# Sat, 04 Nov 2017 09:45:19 GMT
+# Fri, 17 Nov 2017 21:59:07 GMT
+ADD file:f5013009a258adf002575679e2f6a2fbfe5fd61bf45179e2fb9864683874b2b2 in / 
+# Fri, 17 Nov 2017 21:59:08 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Sat, 04 Nov 2017 09:45:20 GMT
+# Fri, 17 Nov 2017 21:59:08 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Sat, 04 Nov 2017 09:45:20 GMT
+# Fri, 17 Nov 2017 21:59:09 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Sat, 04 Nov 2017 09:45:21 GMT
+# Fri, 17 Nov 2017 21:59:10 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Sat, 04 Nov 2017 09:45:21 GMT
+# Fri, 17 Nov 2017 21:59:10 GMT
 CMD ["/bin/bash"]
-# Sat, 04 Nov 2017 12:28:43 GMT
+# Fri, 17 Nov 2017 22:21:35 GMT
 RUN apt-key adv --keyserver pgp.mit.edu --recv-key 799058698E65316A2E7A4FF42EAE1437F7D2C623
-# Sat, 04 Nov 2017 12:28:44 GMT
+# Fri, 17 Nov 2017 22:21:36 GMT
 RUN echo "deb http://repos.zend.com/zend-server/8.5/deb_apache2.4 server non-free" >> /etc/apt/sources.list.d/zend-server.list
-# Sat, 04 Nov 2017 12:31:08 GMT
+# Fri, 17 Nov 2017 22:23:26 GMT
 RUN apt-get update && apt-get install -y libmysqlclient18 unzip git zend-server-php-5.5 && /usr/local/zend/bin/zendctl.sh stop
-# Sat, 04 Nov 2017 12:31:09 GMT
+# Fri, 17 Nov 2017 22:24:59 GMT
 COPY file:9067f1585f25b36ab3a81514a2f158ba0d6e0431cad7de2ea9c4b4249a6c134f in /etc/ 
-# Sat, 04 Nov 2017 12:31:10 GMT
+# Fri, 17 Nov 2017 22:25:00 GMT
 COPY file:82de006e31874ac4e03685b3e87e988446f42138aaaf0fc5faad9cddb48040ba in /etc/apache2/conf-available 
-# Sat, 04 Nov 2017 12:31:11 GMT
+# Fri, 17 Nov 2017 22:25:01 GMT
 RUN /usr/sbin/a2enconf drop-http-proxy-header
-# Sat, 04 Nov 2017 12:31:12 GMT
+# Fri, 17 Nov 2017 22:25:02 GMT
 RUN /usr/sbin/a2enmod headers
-# Sat, 04 Nov 2017 12:31:12 GMT
+# Fri, 17 Nov 2017 22:25:02 GMT
 ENV ZS_INIT_VERSION=0.3
-# Sat, 04 Nov 2017 12:31:13 GMT
+# Fri, 17 Nov 2017 22:25:02 GMT
 ENV ZS_INIT_SHA256=e8d441d8503808e9fc0fafc762b2cb80d4a6e68b94fede0fe41efdeac10800cb
-# Sat, 04 Nov 2017 12:31:20 GMT
+# Fri, 17 Nov 2017 22:25:07 GMT
 RUN apt-get install -y curl
-# Sat, 04 Nov 2017 12:31:22 GMT
+# Fri, 17 Nov 2017 22:25:09 GMT
 RUN curl -fSL -o zs-init.tar.gz "http://repos.zend.com/zs-init/zs-init-docker-${ZS_INIT_VERSION}.tar.gz"     && echo "${ZS_INIT_SHA256} *zs-init.tar.gz" | sha256sum -c -     && mkdir /usr/local/zs-init     && tar xzf zs-init.tar.gz --strip-components=1 -C /usr/local/zs-init     && rm zs-init.tar.gz
-# Sat, 04 Nov 2017 12:31:22 GMT
+# Fri, 17 Nov 2017 22:25:09 GMT
 WORKDIR /usr/local/zs-init
-# Sat, 04 Nov 2017 12:31:28 GMT
+# Fri, 17 Nov 2017 22:25:14 GMT
 RUN /usr/local/zend/bin/php -r "readfile('https://getcomposer.org/installer');" | /usr/local/zend/bin/php
-# Sat, 04 Nov 2017 12:32:01 GMT
+# Fri, 17 Nov 2017 22:25:42 GMT
 RUN /usr/local/zend/bin/php composer.phar update
-# Sat, 04 Nov 2017 12:32:02 GMT
+# Fri, 17 Nov 2017 22:25:42 GMT
 COPY dir:6174d7fdcd8142a1b143e80efd2994e57dd5d7610a8fbfee3a7288ddf495dfdf in /usr/local/bin 
-# Sat, 04 Nov 2017 12:32:02 GMT
+# Fri, 17 Nov 2017 22:25:42 GMT
 COPY dir:b14dbc48195e4d5367d3aea2ed0fb26985bacb8d8229d24961363db2e2edf8f0 in /usr/local/zend/var/plugins/ 
-# Sat, 04 Nov 2017 12:32:03 GMT
+# Fri, 17 Nov 2017 22:25:43 GMT
 RUN rm /var/www/html/index.html
-# Sat, 04 Nov 2017 12:32:04 GMT
+# Fri, 17 Nov 2017 22:25:43 GMT
 COPY dir:9f1a7f23dfcf85f3c7148d98ae7914654fe8acfc4e4651f3a08427c09af24198 in /var/www/html 
-# Sat, 04 Nov 2017 12:32:04 GMT
+# Fri, 17 Nov 2017 22:25:44 GMT
 EXPOSE 80/tcp
-# Sat, 04 Nov 2017 12:32:04 GMT
+# Fri, 17 Nov 2017 22:25:44 GMT
 EXPOSE 443/tcp
-# Sat, 04 Nov 2017 12:32:04 GMT
+# Fri, 17 Nov 2017 22:25:44 GMT
 EXPOSE 10081/tcp
-# Sat, 04 Nov 2017 12:32:05 GMT
+# Fri, 17 Nov 2017 22:25:44 GMT
 EXPOSE 10082/tcp
-# Sat, 04 Nov 2017 12:32:05 GMT
+# Fri, 17 Nov 2017 22:25:44 GMT
 WORKDIR /var/www/html
-# Sat, 04 Nov 2017 12:32:05 GMT
+# Fri, 17 Nov 2017 22:25:45 GMT
 CMD ["/usr/local/bin/run"]
 ```
 
 -	Layers:
-	-	`sha256:bae382666908fd87a3a3646d7eb7176fa42226027d3256cac38ee0b79bdb0491`  
-		Last Modified: Wed, 13 Sep 2017 22:04:42 GMT  
-		Size: 67.1 MB (67114903 bytes)  
+	-	`sha256:01a4f83874576563b6cd843ab7c105d92ab000fe0cb114a645ba99e89b970b77`  
+		Last Modified: Fri, 17 Nov 2017 22:01:08 GMT  
+		Size: 72.8 MB (72825073 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f1ddd5e846a849fff877e4d61dc1002ca5d51de8521cced522e9503312b4c4e7`  
-		Last Modified: Sat, 04 Nov 2017 09:46:17 GMT  
-		Size: 72.7 KB (72653 bytes)  
+	-	`sha256:c887940e680c6729f0c52a833ea44ae2323e4611752bf248da7f0ed9dce573c9`  
+		Last Modified: Fri, 17 Nov 2017 22:00:57 GMT  
+		Size: 72.6 KB (72644 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90d12f864ab9d4cfe6475fc7ba508327c26d3d624344d6584a1fd860c3f0fefa`  
-		Last Modified: Sat, 04 Nov 2017 09:46:18 GMT  
-		Size: 364.0 B  
+	-	`sha256:5432573ac160367250f315604a27532a28e12b6b25c8d8aff68d45533c52f8a7`  
+		Last Modified: Fri, 17 Nov 2017 22:00:57 GMT  
+		Size: 629.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a57ea72e31769e58f0c36db12d25683eba8fa14aaab0518729f28b3766b01112`  
-		Last Modified: Sat, 04 Nov 2017 09:46:19 GMT  
+	-	`sha256:027ee9a9665e446b635a4874018e2685491914be7d8a3fb240dc80dc96af12c7`  
+		Last Modified: Fri, 17 Nov 2017 22:00:57 GMT  
 		Size: 852.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:783a14252520746e3f7fee937b5f14ac1a84ef248ea0b1343d8b58b96df3fa9f`  
-		Last Modified: Sat, 04 Nov 2017 09:46:17 GMT  
-		Size: 162.0 B  
+	-	`sha256:5611db80430d159f886e5b556217e6b94bdbd08ec98862074fe6bec4a9d4253e`  
+		Last Modified: Fri, 17 Nov 2017 22:00:57 GMT  
+		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8e4ea7a3ab6d6bfbdf47e2f77efac8ece288f6dbd112ff65558833520aa56a16`  
-		Last Modified: Sat, 04 Nov 2017 12:49:55 GMT  
-		Size: 13.1 KB (13064 bytes)  
+	-	`sha256:019a793896af3201b8f8152cd2b8bdb2b5e0e86960e95120a12224977ed00ead`  
+		Last Modified: Fri, 17 Nov 2017 22:42:06 GMT  
+		Size: 13.1 KB (13059 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c459c74d2fdc7c537f1fd721d449de7145ef4c4c20818383a41d3bcfc76b7f41`  
-		Last Modified: Sat, 04 Nov 2017 12:49:55 GMT  
-		Size: 232.0 B  
+	-	`sha256:7083fd52cc37325a7410c9b440752c23eec66e1ff2909304c1b8e71997b79bfd`  
+		Last Modified: Fri, 17 Nov 2017 22:42:06 GMT  
+		Size: 233.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:32ad7962e9277d40f5d6433c374587bde67cc42a7c46862c657fd82134635584`  
-		Last Modified: Sat, 04 Nov 2017 12:50:41 GMT  
-		Size: 255.5 MB (255513779 bytes)  
+	-	`sha256:b84e7ee6b3e751fe1d418745300b1141b00286719723dd93490070748b5f448f`  
+		Last Modified: Fri, 17 Nov 2017 22:42:54 GMT  
+		Size: 253.7 MB (253684155 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a85d14f6655ba82e8eb386d5951e87f4303a54b0c7f76aade9154087de015637`  
-		Last Modified: Sat, 04 Nov 2017 12:49:53 GMT  
-		Size: 220.0 B  
+	-	`sha256:6b3d80549a9a8a0d57130e483b2766df2f29825ede38ccea36e5564b623f1928`  
+		Last Modified: Fri, 17 Nov 2017 22:42:05 GMT  
+		Size: 218.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2c0beedfe08be95878aaa1d56ced29d820713180af8ac11e645681f97d825329`  
-		Last Modified: Sat, 04 Nov 2017 12:49:53 GMT  
-		Size: 263.0 B  
+	-	`sha256:5bafca90fe92af71f16567a089fef3164acfba7de3f89fe1280fd26329b0dda3`  
+		Last Modified: Fri, 17 Nov 2017 22:42:04 GMT  
+		Size: 260.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5ad8a4341e4aa081c46b7c2a920e2c535ea23797c3ac4cb91ed84aa7f3218d40`  
-		Last Modified: Sat, 04 Nov 2017 12:49:53 GMT  
-		Size: 314.0 B  
+	-	`sha256:75bc148ed969a661dd021ae04544c9f6c38b806e4a3f3ae86cd47d2526676839`  
+		Last Modified: Fri, 17 Nov 2017 22:42:03 GMT  
+		Size: 316.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dba622038378507005ec62f45f1f643faf2f0cd219ee54e14fb998c65131f1bf`  
-		Last Modified: Sat, 04 Nov 2017 12:49:50 GMT  
-		Size: 310.0 B  
+	-	`sha256:05c6ee3df7a353279675eb427e3939fe05f919688bd9ad701d80326f32cc5340`  
+		Last Modified: Fri, 17 Nov 2017 22:42:01 GMT  
+		Size: 305.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6b59f2f58c0d461c281000a7e022953fc85a3f59e1f90c4fac7cc9e3734b01e1`  
-		Last Modified: Sat, 04 Nov 2017 12:49:51 GMT  
-		Size: 911.7 KB (911692 bytes)  
+	-	`sha256:ae8127489ec0c2597db72c3589662347871286f35d5ce1530b8a4987b39a9e61`  
+		Last Modified: Fri, 17 Nov 2017 22:42:02 GMT  
+		Size: 912.2 KB (912169 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c48aba28deff60158e3544cf6e16eea7c5c6b6b4072f32cbd1c0fbd85138e602`  
-		Last Modified: Sat, 04 Nov 2017 12:49:50 GMT  
-		Size: 18.8 KB (18831 bytes)  
+	-	`sha256:6a3f2c22b44eadf32a753d0b19a2e579b2b5f1da6a6c6e02e559a509284057f3`  
+		Last Modified: Fri, 17 Nov 2017 22:42:01 GMT  
+		Size: 18.8 KB (18829 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e48b0853de5ab2c1e9b875b42e914c4e01ae1ebdab27745b533c0eb750d0aa60`  
-		Last Modified: Sat, 04 Nov 2017 12:49:51 GMT  
-		Size: 494.1 KB (494092 bytes)  
+	-	`sha256:e3ea6cefa98cbfc676991762613c7ba1158a87f8366667311c5771825c300e31`  
+		Last Modified: Fri, 17 Nov 2017 22:42:01 GMT  
+		Size: 494.1 KB (494076 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:26676647a569bb044a6017b4357eb384b40a66a4a1d8e02258b23c6832475bdd`  
-		Last Modified: Sat, 04 Nov 2017 12:49:53 GMT  
-		Size: 13.8 MB (13789995 bytes)  
+	-	`sha256:18c4595e33ceb9543b16bf151d33dbf7d50b7c9e1ff703cdf75d2b9fa4e9b029`  
+		Last Modified: Fri, 17 Nov 2017 22:42:02 GMT  
+		Size: 14.0 MB (13953258 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4a41f2c5dd9051925e4e10c31f99896f1a86993a97e48b1710b7a202f5372deb`  
-		Last Modified: Sat, 04 Nov 2017 12:49:48 GMT  
-		Size: 13.4 KB (13362 bytes)  
+	-	`sha256:2d72991987058bddfe29979c7c99757a1d09c3ad8a2b99bc3a7aca7fa79d9a24`  
+		Last Modified: Fri, 17 Nov 2017 22:41:59 GMT  
+		Size: 13.4 KB (13354 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e5b1ec91a08e2dd2c1fb3b2701219470c4a6f7c06c88c9f30236421a67dd2cb6`  
-		Last Modified: Sat, 04 Nov 2017 12:49:48 GMT  
-		Size: 2.5 KB (2542 bytes)  
+	-	`sha256:149f055feb8411911189ee93a016486f2e2eb079d8fb35f8ab4111aed751de1d`  
+		Last Modified: Fri, 17 Nov 2017 22:41:59 GMT  
+		Size: 2.5 KB (2534 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5121f2977180e77246add455bd0babdd85bb6947cc2c3020d32e6c23c9391395`  
-		Last Modified: Sat, 04 Nov 2017 12:49:48 GMT  
-		Size: 170.0 B  
+	-	`sha256:2d20a320b1c6c2fb94e9ea3be43732f185d1aa685b33f4dde8c3381ce919dcc8`  
+		Last Modified: Fri, 17 Nov 2017 22:41:59 GMT  
+		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35193fb0203070edc71c161eeae5643037b8d9631fad423dd83e05210211b2c8`  
-		Last Modified: Sat, 04 Nov 2017 12:49:48 GMT  
+	-	`sha256:099d972c77d4a0e699156bb922ebdc3d32234aed24b19606629e83a60769bdc0`  
+		Last Modified: Fri, 17 Nov 2017 22:41:59 GMT  
 		Size: 1.2 KB (1250 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -1119,7 +1119,7 @@ CMD ["/usr/local/bin/run"]
 ## `php-zendserver:9.1`
 
 ```console
-$ docker pull php-zendserver@sha256:49d201d896154016908e1d0502aebeb33d1287e0be12e141863c5276781c61a8
+$ docker pull php-zendserver@sha256:1ed65fac6f01daedf440e74411f38f7692cdea9d4ff548c57630f087013d8f7d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1129,159 +1129,159 @@ $ docker pull php-zendserver@sha256:49d201d896154016908e1d0502aebeb33d1287e0be12
 ### `php-zendserver:9.1` - linux; amd64
 
 ```console
-$ docker pull php-zendserver@sha256:3dd7cb7007868e3c49e9167b4797d8d4feb91fc4afdcfa71f878b3d18f7d62d5
+$ docker pull php-zendserver@sha256:0f4ac221ff348c70484cd64057333178fa35135a8da9ee56aea91a3bdefdcdec
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **419.1 MB (419140199 bytes)**  
+-	Total Size: **425.0 MB (424985701 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9118725a99c10b0290e30496b25768ce3a06d3bcc8abf1322f7e303a20f3d05c`
+-	Image ID: `sha256:648bdf82226948fbd54aa3ec055a1e4bb4eefa629c33737ae1d7a5bb75a8c703`
 -	Default Command: `["\/usr\/local\/bin\/run"]`
 
 ```dockerfile
-# Sat, 04 Nov 2017 09:45:18 GMT
-ADD file:8f997234193c2f587ac17bb4a8db2657103d2924813edb281eec7ba9883a2806 in / 
-# Sat, 04 Nov 2017 09:45:19 GMT
+# Fri, 17 Nov 2017 21:59:07 GMT
+ADD file:f5013009a258adf002575679e2f6a2fbfe5fd61bf45179e2fb9864683874b2b2 in / 
+# Fri, 17 Nov 2017 21:59:08 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Sat, 04 Nov 2017 09:45:20 GMT
+# Fri, 17 Nov 2017 21:59:08 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Sat, 04 Nov 2017 09:45:20 GMT
+# Fri, 17 Nov 2017 21:59:09 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Sat, 04 Nov 2017 09:45:21 GMT
+# Fri, 17 Nov 2017 21:59:10 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Sat, 04 Nov 2017 09:45:21 GMT
+# Fri, 17 Nov 2017 21:59:10 GMT
 CMD ["/bin/bash"]
-# Sat, 04 Nov 2017 12:28:43 GMT
+# Fri, 17 Nov 2017 22:21:35 GMT
 RUN apt-key adv --keyserver pgp.mit.edu --recv-key 799058698E65316A2E7A4FF42EAE1437F7D2C623
-# Sat, 04 Nov 2017 12:44:26 GMT
+# Fri, 17 Nov 2017 22:34:17 GMT
 RUN echo "deb http://repos.zend.com/zend-server/9.1/deb_apache2.4 server non-free" >> /etc/apt/sources.list.d/zend-server.list
-# Sat, 04 Nov 2017 12:46:54 GMT
+# Fri, 17 Nov 2017 22:36:14 GMT
 RUN apt-get update && apt-get install -y libmysqlclient18 unzip git zend-server-php-7.1=9.1.1+b119 && /usr/local/zend/bin/zendctl.sh stop
-# Sat, 04 Nov 2017 12:46:56 GMT
+# Fri, 17 Nov 2017 22:37:32 GMT
 COPY file:9067f1585f25b36ab3a81514a2f158ba0d6e0431cad7de2ea9c4b4249a6c134f in /etc/ 
-# Sat, 04 Nov 2017 12:46:56 GMT
+# Fri, 17 Nov 2017 22:37:32 GMT
 COPY file:82de006e31874ac4e03685b3e87e988446f42138aaaf0fc5faad9cddb48040ba in /etc/apache2/conf-available 
-# Sat, 04 Nov 2017 12:46:58 GMT
+# Fri, 17 Nov 2017 22:37:33 GMT
 RUN /usr/sbin/a2enconf drop-http-proxy-header
-# Sat, 04 Nov 2017 12:46:59 GMT
+# Fri, 17 Nov 2017 22:37:34 GMT
 RUN /usr/sbin/a2enmod headers
-# Sat, 04 Nov 2017 12:47:00 GMT
+# Fri, 17 Nov 2017 22:37:34 GMT
 ENV ZS_INIT_VERSION=0.3
-# Sat, 04 Nov 2017 12:47:00 GMT
+# Fri, 17 Nov 2017 22:37:34 GMT
 ENV ZS_INIT_SHA256=e8d441d8503808e9fc0fafc762b2cb80d4a6e68b94fede0fe41efdeac10800cb
-# Sat, 04 Nov 2017 12:47:08 GMT
+# Fri, 17 Nov 2017 22:37:39 GMT
 RUN apt-get install -y curl
-# Sat, 04 Nov 2017 12:47:09 GMT
+# Fri, 17 Nov 2017 22:37:40 GMT
 RUN curl -fSL -o zs-init.tar.gz "http://repos.zend.com/zs-init/zs-init-docker-${ZS_INIT_VERSION}.tar.gz"     && echo "${ZS_INIT_SHA256} *zs-init.tar.gz" | sha256sum -c -     && mkdir /usr/local/zs-init     && tar xzf zs-init.tar.gz --strip-components=1 -C /usr/local/zs-init     && rm zs-init.tar.gz
-# Sat, 04 Nov 2017 12:47:10 GMT
+# Fri, 17 Nov 2017 22:37:40 GMT
 WORKDIR /usr/local/zs-init
-# Sat, 04 Nov 2017 12:47:16 GMT
+# Fri, 17 Nov 2017 22:37:45 GMT
 RUN /usr/local/zend/bin/php -r "readfile('https://getcomposer.org/installer');" | /usr/local/zend/bin/php
-# Sat, 04 Nov 2017 12:47:43 GMT
+# Fri, 17 Nov 2017 22:38:07 GMT
 RUN /usr/local/zend/bin/php composer.phar update
-# Sat, 04 Nov 2017 12:47:43 GMT
+# Fri, 17 Nov 2017 22:38:07 GMT
 COPY dir:6174d7fdcd8142a1b143e80efd2994e57dd5d7610a8fbfee3a7288ddf495dfdf in /usr/local/bin 
-# Sat, 04 Nov 2017 12:47:44 GMT
+# Fri, 17 Nov 2017 22:38:08 GMT
 COPY dir:b14dbc48195e4d5367d3aea2ed0fb26985bacb8d8229d24961363db2e2edf8f0 in /usr/local/zend/var/plugins/ 
-# Sat, 04 Nov 2017 12:47:45 GMT
+# Fri, 17 Nov 2017 22:38:08 GMT
 RUN rm /var/www/html/index.html
-# Sat, 04 Nov 2017 12:47:45 GMT
+# Fri, 17 Nov 2017 22:38:09 GMT
 COPY dir:9f1a7f23dfcf85f3c7148d98ae7914654fe8acfc4e4651f3a08427c09af24198 in /var/www/html 
-# Sat, 04 Nov 2017 12:47:46 GMT
+# Fri, 17 Nov 2017 22:38:09 GMT
 EXPOSE 80/tcp
-# Sat, 04 Nov 2017 12:47:46 GMT
+# Fri, 17 Nov 2017 22:38:09 GMT
 EXPOSE 443/tcp
-# Sat, 04 Nov 2017 12:47:46 GMT
+# Fri, 17 Nov 2017 22:38:09 GMT
 EXPOSE 10081/tcp
-# Sat, 04 Nov 2017 12:47:46 GMT
+# Fri, 17 Nov 2017 22:38:09 GMT
 EXPOSE 10082/tcp
-# Sat, 04 Nov 2017 12:47:47 GMT
+# Fri, 17 Nov 2017 22:38:09 GMT
 WORKDIR /var/www/html
-# Sat, 04 Nov 2017 12:47:47 GMT
+# Fri, 17 Nov 2017 22:38:10 GMT
 CMD ["/usr/local/bin/run"]
 ```
 
 -	Layers:
-	-	`sha256:bae382666908fd87a3a3646d7eb7176fa42226027d3256cac38ee0b79bdb0491`  
-		Last Modified: Wed, 13 Sep 2017 22:04:42 GMT  
-		Size: 67.1 MB (67114903 bytes)  
+	-	`sha256:01a4f83874576563b6cd843ab7c105d92ab000fe0cb114a645ba99e89b970b77`  
+		Last Modified: Fri, 17 Nov 2017 22:01:08 GMT  
+		Size: 72.8 MB (72825073 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f1ddd5e846a849fff877e4d61dc1002ca5d51de8521cced522e9503312b4c4e7`  
-		Last Modified: Sat, 04 Nov 2017 09:46:17 GMT  
-		Size: 72.7 KB (72653 bytes)  
+	-	`sha256:c887940e680c6729f0c52a833ea44ae2323e4611752bf248da7f0ed9dce573c9`  
+		Last Modified: Fri, 17 Nov 2017 22:00:57 GMT  
+		Size: 72.6 KB (72644 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90d12f864ab9d4cfe6475fc7ba508327c26d3d624344d6584a1fd860c3f0fefa`  
-		Last Modified: Sat, 04 Nov 2017 09:46:18 GMT  
-		Size: 364.0 B  
+	-	`sha256:5432573ac160367250f315604a27532a28e12b6b25c8d8aff68d45533c52f8a7`  
+		Last Modified: Fri, 17 Nov 2017 22:00:57 GMT  
+		Size: 629.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a57ea72e31769e58f0c36db12d25683eba8fa14aaab0518729f28b3766b01112`  
-		Last Modified: Sat, 04 Nov 2017 09:46:19 GMT  
+	-	`sha256:027ee9a9665e446b635a4874018e2685491914be7d8a3fb240dc80dc96af12c7`  
+		Last Modified: Fri, 17 Nov 2017 22:00:57 GMT  
 		Size: 852.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:783a14252520746e3f7fee937b5f14ac1a84ef248ea0b1343d8b58b96df3fa9f`  
-		Last Modified: Sat, 04 Nov 2017 09:46:17 GMT  
-		Size: 162.0 B  
+	-	`sha256:5611db80430d159f886e5b556217e6b94bdbd08ec98862074fe6bec4a9d4253e`  
+		Last Modified: Fri, 17 Nov 2017 22:00:57 GMT  
+		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8e4ea7a3ab6d6bfbdf47e2f77efac8ece288f6dbd112ff65558833520aa56a16`  
-		Last Modified: Sat, 04 Nov 2017 12:49:55 GMT  
-		Size: 13.1 KB (13064 bytes)  
+	-	`sha256:019a793896af3201b8f8152cd2b8bdb2b5e0e86960e95120a12224977ed00ead`  
+		Last Modified: Fri, 17 Nov 2017 22:42:06 GMT  
+		Size: 13.1 KB (13059 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9bec6160e27ed6ca0e6a174b2957b2535b9950c804bcb47e19704b7d885fe3d3`  
-		Last Modified: Sat, 04 Nov 2017 12:57:18 GMT  
+	-	`sha256:e9502e60bb8f09c4430938212ffe6093b4995a7f8368118a160137b876901d55`  
+		Last Modified: Fri, 17 Nov 2017 22:49:33 GMT  
 		Size: 237.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1500a9d7c945e722623a86b2e6ee74ceb201674bc46a6744966ceae365ea5b8b`  
-		Last Modified: Sat, 04 Nov 2017 12:58:57 GMT  
-		Size: 336.7 MB (336708610 bytes)  
+	-	`sha256:47482df3eb14f76f8dc488b6377c5a795c4540ff485387e1a8bfa7ebe9d1e12a`  
+		Last Modified: Fri, 17 Nov 2017 22:50:29 GMT  
+		Size: 336.7 MB (336680593 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b4fcdaac63bd0bb74b2c804338b56c63ea7a4403c5170432b223cae4479e6a2d`  
-		Last Modified: Sat, 04 Nov 2017 12:57:17 GMT  
-		Size: 218.0 B  
+	-	`sha256:fdda26109ef65a2fce9b81f5cde31dc75b3ccf16f5a3db86c7b0bd831971512c`  
+		Last Modified: Fri, 17 Nov 2017 22:49:30 GMT  
+		Size: 221.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d2c947cecfaa0b18f0e46ca4566192435c52e854693a3519ce0115c350f4c9ee`  
-		Last Modified: Sat, 04 Nov 2017 12:57:17 GMT  
-		Size: 259.0 B  
+	-	`sha256:4d50f5a99c6e8560698b39b8b65a2cf1475dd66ec2f2d368467719eb23429b84`  
+		Last Modified: Fri, 17 Nov 2017 22:49:29 GMT  
+		Size: 262.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1fccd56ffa4bca466384679a77723e30abe9c17db0eaecfcfca4c44114a1560a`  
-		Last Modified: Sat, 04 Nov 2017 12:57:16 GMT  
-		Size: 319.0 B  
+	-	`sha256:50b3b85c8800102c99f26a978354f39dc63ee9a1fe475c9625ff5c07a62b7950`  
+		Last Modified: Fri, 17 Nov 2017 22:49:27 GMT  
+		Size: 317.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aad293872ccaa9d8cce3592a79202f92fa541fa5ae8f5474855a0287ac1c7ff7`  
-		Last Modified: Sat, 04 Nov 2017 12:57:15 GMT  
-		Size: 308.0 B  
+	-	`sha256:3657aa8ec7376d01b795915774f395214586156297ce6138554f7dde3c4c89fb`  
+		Last Modified: Fri, 17 Nov 2017 22:49:29 GMT  
+		Size: 307.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0068f186b99598fb991289ae1a9ae821fdbda41cc21658f8ad90e77319dc67d0`  
-		Last Modified: Sat, 04 Nov 2017 12:57:14 GMT  
-		Size: 907.4 KB (907399 bytes)  
+	-	`sha256:9e2a155ae0622212491c0308a56e07401c8f7b8870b5c038d1dd7f750579ada3`  
+		Last Modified: Fri, 17 Nov 2017 22:49:25 GMT  
+		Size: 907.9 KB (907867 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cfc93af8a58b88880c003c39592b30a7fa1a58d700c3bc66b350a85d55edbb09`  
-		Last Modified: Sat, 04 Nov 2017 12:57:14 GMT  
-		Size: 18.8 KB (18832 bytes)  
+	-	`sha256:2812a879100eb2c00c9a386b29b16f55f4b4ebfe422f92c6df869c4e1d546a38`  
+		Last Modified: Fri, 17 Nov 2017 22:49:25 GMT  
+		Size: 18.8 KB (18828 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:310f1085bd650107a317a3eeb587139e1270a7bf7e4f5045a9e1d16f3765ea5d`  
-		Last Modified: Sat, 04 Nov 2017 12:57:14 GMT  
-		Size: 495.9 KB (495871 bytes)  
+	-	`sha256:0e2b44a7fd10c1423f5584530d5b95100625e8835c2f6cc5f97f3b2822910c7b`  
+		Last Modified: Fri, 17 Nov 2017 22:49:25 GMT  
+		Size: 495.9 KB (495853 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d2a36b85821fed410344d6cfd4fedfcd648f79c0fa141e76aa1a3a23eb749cbc`  
-		Last Modified: Sat, 04 Nov 2017 12:57:20 GMT  
-		Size: 13.8 MB (13788834 bytes)  
+	-	`sha256:acfeb39550dc74fe83945dc2f7bb982ead3f37b0d2e16c6e447055c4672ac86b`  
+		Last Modified: Fri, 17 Nov 2017 22:49:29 GMT  
+		Size: 14.0 MB (13951483 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8eebd0917efc04225b2ab6bfc11ff459d62b619c9ee7ab5508e3996454b352e3`  
-		Last Modified: Sat, 04 Nov 2017 12:57:11 GMT  
-		Size: 13.4 KB (13362 bytes)  
+	-	`sha256:2dc01882bd4863004a461bacf5cf39d796b3fabe29430370fff4809a911cd0a7`  
+		Last Modified: Fri, 17 Nov 2017 22:49:22 GMT  
+		Size: 13.4 KB (13357 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:136c91e3776d6eb502ecb99ae7224ba0a2c4abd85cfb1684542fdc3895309c56`  
-		Last Modified: Sat, 04 Nov 2017 12:57:12 GMT  
+	-	`sha256:ee6f1e846ad090f65f07715e88a19c2654f0c9ad537a9aa4f425bf8e5a5bbd5c`  
+		Last Modified: Fri, 17 Nov 2017 22:49:22 GMT  
 		Size: 2.5 KB (2535 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6490d9c1c05f175dbae6b3f38bfe5fe5551aa3ce9d6d92ebaaa620d7fc5b2392`  
-		Last Modified: Sat, 04 Nov 2017 12:57:12 GMT  
-		Size: 169.0 B  
+	-	`sha256:80084a3f3fcdc3e5e4b703c1f0ed38f96053fbe4dab510a15f00f53fb3678623`  
+		Last Modified: Fri, 17 Nov 2017 22:49:22 GMT  
+		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:86afdbb9d92b4113007568d773a914cac2fd4dd16653bcdd9fce4a894b7c3387`  
-		Last Modified: Sat, 04 Nov 2017 12:57:12 GMT  
-		Size: 1.2 KB (1248 bytes)  
+	-	`sha256:ac0d5e4e2ccedfb9b6032b3473665912f1ed32439e56d8e1f7d5b13cd3213b32`  
+		Last Modified: Fri, 17 Nov 2017 22:49:22 GMT  
+		Size: 1.2 KB (1250 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php-zendserver:latest`
