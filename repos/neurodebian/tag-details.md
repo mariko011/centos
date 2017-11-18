@@ -44,7 +44,7 @@
 ## `neurodebian:artful`
 
 ```console
-$ docker pull neurodebian@sha256:69c4d621aa240598497275c7591e233857cab49e8faadb29172d3086aedd276a
+$ docker pull neurodebian@sha256:e8ab1113fbee2442fed6130f37320e6351d5eb48d022b43becf8eb1a50628654
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -54,75 +54,75 @@ $ docker pull neurodebian@sha256:69c4d621aa240598497275c7591e233857cab49e8faadb2
 ### `neurodebian:artful` - linux; amd64
 
 ```console
-$ docker pull neurodebian@sha256:bee3ca6129db916137e3d25c7e2851ed795bf32f3be97e4e1f99b4cac849bb0b
+$ docker pull neurodebian@sha256:6bb862e46c9fd0d238d31cdb1e45e5c1c315fda216e4efec9cc42f0038f6d639
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **41.1 MB (41054060 bytes)**  
+-	Total Size: **41.3 MB (41299685 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:227ecb7ff8978395b2c91baaede7277001589990e62a110d0385d4dcadc9b210`
+-	Image ID: `sha256:14e0caa6e6ab65d00ff4b7fcf19c13567283019a819f8171ec17b70d332edec2`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Sat, 04 Nov 2017 09:44:56 GMT
-ADD file:c5fd97d776dc13116460fbfe9516f1a028ba5788ea39ee71d8e9cfe7caed676f in / 
-# Sat, 04 Nov 2017 09:44:58 GMT
+# Fri, 17 Nov 2017 21:58:35 GMT
+ADD file:047722d7788dcfac5b7a78a4cc06def4f7fb1bb8a6b47ca42e2d27cf1a7a57d7 in / 
+# Fri, 17 Nov 2017 21:58:35 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Sat, 04 Nov 2017 09:44:59 GMT
+# Fri, 17 Nov 2017 21:58:36 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Sat, 04 Nov 2017 09:45:00 GMT
+# Fri, 17 Nov 2017 21:58:37 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Sat, 04 Nov 2017 09:45:01 GMT
+# Fri, 17 Nov 2017 21:58:37 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Sat, 04 Nov 2017 09:45:01 GMT
+# Fri, 17 Nov 2017 21:58:37 GMT
 CMD ["/bin/bash"]
-# Sat, 04 Nov 2017 20:28:26 GMT
+# Sat, 18 Nov 2017 00:39:41 GMT
 RUN set -x 	&& apt-get update 	&& { 		which gpg 		|| apt-get install -y --no-install-recommends gnupg 	; } 	&& { 		gpg --version | grep -q '^gpg (GnuPG) 1\.' 		|| apt-get install -y --no-install-recommends dirmngr 	; } 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 04 Nov 2017 20:28:29 GMT
+# Sat, 18 Nov 2017 00:39:47 GMT
 RUN set -x 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys DD95CC430502E37EF840ACEEA5D32F012649A5A9 	&& gpg --export DD95CC430502E37EF840ACEEA5D32F012649A5A9 > /etc/apt/trusted.gpg.d/neurodebian.gpg 	&& rm -rf "$GNUPGHOME" 	&& apt-key list | grep neurodebian
-# Sat, 04 Nov 2017 20:28:30 GMT
+# Sat, 18 Nov 2017 00:39:48 GMT
 RUN { 	echo 'deb http://neuro.debian.net/debian artful main'; 	echo 'deb http://neuro.debian.net/debian data main'; 	echo '#deb-src http://neuro.debian.net/debian-devel artful main'; } > /etc/apt/sources.list.d/neurodebian.sources.list
 ```
 
 -	Layers:
-	-	`sha256:d26cfb4142faf488780cb8080f737aa1e5db91805163d83448842f64084bb724`  
-		Last Modified: Thu, 19 Oct 2017 16:50:57 GMT  
-		Size: 39.2 MB (39215977 bytes)  
+	-	`sha256:0bd63934764237a418825f5e7b9af3f1c851e6025f1a0d68e782f28747b34ef2`  
+		Last Modified: Fri, 17 Nov 2017 21:59:56 GMT  
+		Size: 39.5 MB (39461067 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9061f2867f7e61c3f5420eb574ba2fa334667501e4fff59037fff42e236126cf`  
-		Last Modified: Sat, 04 Nov 2017 09:45:56 GMT  
-		Size: 843.0 B  
+	-	`sha256:15f827925d02310413c83844aa65e7abe0142fb23cced5eddf6cad5f7e5ba361`  
+		Last Modified: Fri, 17 Nov 2017 21:59:50 GMT  
+		Size: 838.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:916f09e6daf78c64326ce6338926259c67a94bda705094f4f5a4de7ffa760d7b`  
-		Last Modified: Sat, 04 Nov 2017 09:45:57 GMT  
-		Size: 398.0 B  
+	-	`sha256:8d4e9883d6b52ae085bf9f385dc9a53a56339ac8b01a17e876e688307878441f`  
+		Last Modified: Fri, 17 Nov 2017 21:59:50 GMT  
+		Size: 541.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4fae7d54d2d8cfbed3fb28e0d50d4d1c7efc8c74cfe0a932f8de266e9ac19b18`  
-		Last Modified: Sat, 04 Nov 2017 09:45:56 GMT  
-		Size: 850.0 B  
+	-	`sha256:c754e879539bb2497aad4300c1e9c962ba2b163435cbc241ac5f75baba16474a`  
+		Last Modified: Fri, 17 Nov 2017 21:59:50 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e69eda9a0dde47b44b877d1c561a490c6f581f4185be674d0228d0000c5c9c5`  
-		Last Modified: Sat, 04 Nov 2017 09:45:56 GMT  
+	-	`sha256:85f5abd03ce77b2cb8db972665604e99bdd341aae1ce07ba37fbc2b5ecd63d0c`  
+		Last Modified: Fri, 17 Nov 2017 21:59:50 GMT  
 		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:92bc52b07e6286b6d7514cd4e23aa394cf681d30c48496fb9beaafff96cd688c`  
-		Last Modified: Sat, 04 Nov 2017 20:32:44 GMT  
-		Size: 1.8 MB (1832435 bytes)  
+	-	`sha256:75aaadba6c3abdf079739a487c47ef5bff2c7fe8c75a5f977c7009bd1f018f24`  
+		Last Modified: Sat, 18 Nov 2017 00:42:13 GMT  
+		Size: 1.8 MB (1832834 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:748167c81d66948c0948893152e7261a1f07e1a4d812c5508bf565bc16a00940`  
-		Last Modified: Sat, 04 Nov 2017 20:32:43 GMT  
+	-	`sha256:6332f2540669e3b11a7fff954cb661056c441fdb05775b97ad4dcdbdca631d99`  
+		Last Modified: Sat, 18 Nov 2017 00:42:13 GMT  
 		Size: 3.2 KB (3151 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:02bd1faac35cb4af1455eed56c91d79756763ed5a14983e3a06afe5b3f4a3d69`  
-		Last Modified: Sat, 04 Nov 2017 20:32:43 GMT  
-		Size: 244.0 B  
+	-	`sha256:2c17b939c48fb2aa6ca2602d2bccb0cdd4fa159a7a708993b69043c16c0e657c`  
+		Last Modified: Sat, 18 Nov 2017 00:42:12 GMT  
+		Size: 243.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `neurodebian:artful-non-free`
 
 ```console
-$ docker pull neurodebian@sha256:e1ee71f87d67d495c4e54e49c2f3549e610e6b57f593d431d6faf5e785efa06c
+$ docker pull neurodebian@sha256:4c18c0a5292d45c608ebac9ec37eb8dcd553cd8f858baa1fa8a99ab7184ff8dc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -132,74 +132,74 @@ $ docker pull neurodebian@sha256:e1ee71f87d67d495c4e54e49c2f3549e610e6b57f593d43
 ### `neurodebian:artful-non-free` - linux; amd64
 
 ```console
-$ docker pull neurodebian@sha256:30a521ca7e137689d06863d4571eca4f0e249fad515e742aa14db6cd33a388c2
+$ docker pull neurodebian@sha256:07659a833b25fbf824e4dd75c1aee2e899f47bf123108f61bb38a41fba43a4d4
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **41.1 MB (41054317 bytes)**  
+-	Total Size: **41.3 MB (41299942 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d95a20697cccdd80c57607a4dd0f83f473e226c050ae13719e85f581e8f4577e`
+-	Image ID: `sha256:d973bcf623d557f206cd2b39a16c9b72f621babc1a8e1a6678131dab6bf338f4`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Sat, 04 Nov 2017 09:44:56 GMT
-ADD file:c5fd97d776dc13116460fbfe9516f1a028ba5788ea39ee71d8e9cfe7caed676f in / 
-# Sat, 04 Nov 2017 09:44:58 GMT
+# Fri, 17 Nov 2017 21:58:35 GMT
+ADD file:047722d7788dcfac5b7a78a4cc06def4f7fb1bb8a6b47ca42e2d27cf1a7a57d7 in / 
+# Fri, 17 Nov 2017 21:58:35 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Sat, 04 Nov 2017 09:44:59 GMT
+# Fri, 17 Nov 2017 21:58:36 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Sat, 04 Nov 2017 09:45:00 GMT
+# Fri, 17 Nov 2017 21:58:37 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Sat, 04 Nov 2017 09:45:01 GMT
+# Fri, 17 Nov 2017 21:58:37 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Sat, 04 Nov 2017 09:45:01 GMT
+# Fri, 17 Nov 2017 21:58:37 GMT
 CMD ["/bin/bash"]
-# Sat, 04 Nov 2017 20:28:26 GMT
+# Sat, 18 Nov 2017 00:39:41 GMT
 RUN set -x 	&& apt-get update 	&& { 		which gpg 		|| apt-get install -y --no-install-recommends gnupg 	; } 	&& { 		gpg --version | grep -q '^gpg (GnuPG) 1\.' 		|| apt-get install -y --no-install-recommends dirmngr 	; } 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 04 Nov 2017 20:28:29 GMT
+# Sat, 18 Nov 2017 00:39:47 GMT
 RUN set -x 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys DD95CC430502E37EF840ACEEA5D32F012649A5A9 	&& gpg --export DD95CC430502E37EF840ACEEA5D32F012649A5A9 > /etc/apt/trusted.gpg.d/neurodebian.gpg 	&& rm -rf "$GNUPGHOME" 	&& apt-key list | grep neurodebian
-# Sat, 04 Nov 2017 20:28:30 GMT
+# Sat, 18 Nov 2017 00:39:48 GMT
 RUN { 	echo 'deb http://neuro.debian.net/debian artful main'; 	echo 'deb http://neuro.debian.net/debian data main'; 	echo '#deb-src http://neuro.debian.net/debian-devel artful main'; } > /etc/apt/sources.list.d/neurodebian.sources.list
-# Sat, 04 Nov 2017 20:28:35 GMT
+# Sat, 18 Nov 2017 00:39:54 GMT
 RUN sed -i -e 's,main *$,main contrib non-free,g' /etc/apt/sources.list.d/neurodebian.sources.list; grep -q 'deb .* multiverse$' /etc/apt/sources.list || sed -i -e 's,universe *$,universe multiverse,g' /etc/apt/sources.list
 ```
 
 -	Layers:
-	-	`sha256:d26cfb4142faf488780cb8080f737aa1e5db91805163d83448842f64084bb724`  
-		Last Modified: Thu, 19 Oct 2017 16:50:57 GMT  
-		Size: 39.2 MB (39215977 bytes)  
+	-	`sha256:0bd63934764237a418825f5e7b9af3f1c851e6025f1a0d68e782f28747b34ef2`  
+		Last Modified: Fri, 17 Nov 2017 21:59:56 GMT  
+		Size: 39.5 MB (39461067 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9061f2867f7e61c3f5420eb574ba2fa334667501e4fff59037fff42e236126cf`  
-		Last Modified: Sat, 04 Nov 2017 09:45:56 GMT  
-		Size: 843.0 B  
+	-	`sha256:15f827925d02310413c83844aa65e7abe0142fb23cced5eddf6cad5f7e5ba361`  
+		Last Modified: Fri, 17 Nov 2017 21:59:50 GMT  
+		Size: 838.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:916f09e6daf78c64326ce6338926259c67a94bda705094f4f5a4de7ffa760d7b`  
-		Last Modified: Sat, 04 Nov 2017 09:45:57 GMT  
-		Size: 398.0 B  
+	-	`sha256:8d4e9883d6b52ae085bf9f385dc9a53a56339ac8b01a17e876e688307878441f`  
+		Last Modified: Fri, 17 Nov 2017 21:59:50 GMT  
+		Size: 541.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4fae7d54d2d8cfbed3fb28e0d50d4d1c7efc8c74cfe0a932f8de266e9ac19b18`  
-		Last Modified: Sat, 04 Nov 2017 09:45:56 GMT  
-		Size: 850.0 B  
+	-	`sha256:c754e879539bb2497aad4300c1e9c962ba2b163435cbc241ac5f75baba16474a`  
+		Last Modified: Fri, 17 Nov 2017 21:59:50 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e69eda9a0dde47b44b877d1c561a490c6f581f4185be674d0228d0000c5c9c5`  
-		Last Modified: Sat, 04 Nov 2017 09:45:56 GMT  
+	-	`sha256:85f5abd03ce77b2cb8db972665604e99bdd341aae1ce07ba37fbc2b5ecd63d0c`  
+		Last Modified: Fri, 17 Nov 2017 21:59:50 GMT  
 		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:92bc52b07e6286b6d7514cd4e23aa394cf681d30c48496fb9beaafff96cd688c`  
-		Last Modified: Sat, 04 Nov 2017 20:32:44 GMT  
-		Size: 1.8 MB (1832435 bytes)  
+	-	`sha256:75aaadba6c3abdf079739a487c47ef5bff2c7fe8c75a5f977c7009bd1f018f24`  
+		Last Modified: Sat, 18 Nov 2017 00:42:13 GMT  
+		Size: 1.8 MB (1832834 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:748167c81d66948c0948893152e7261a1f07e1a4d812c5508bf565bc16a00940`  
-		Last Modified: Sat, 04 Nov 2017 20:32:43 GMT  
+	-	`sha256:6332f2540669e3b11a7fff954cb661056c441fdb05775b97ad4dcdbdca631d99`  
+		Last Modified: Sat, 18 Nov 2017 00:42:13 GMT  
 		Size: 3.2 KB (3151 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:02bd1faac35cb4af1455eed56c91d79756763ed5a14983e3a06afe5b3f4a3d69`  
-		Last Modified: Sat, 04 Nov 2017 20:32:43 GMT  
-		Size: 244.0 B  
+	-	`sha256:2c17b939c48fb2aa6ca2602d2bccb0cdd4fa159a7a708993b69043c16c0e657c`  
+		Last Modified: Sat, 18 Nov 2017 00:42:12 GMT  
+		Size: 243.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d2d4aa6b25338aedb4d372e78c872457db6f407bccf5c4758ab6a70f0129cc4f`  
-		Last Modified: Sat, 04 Nov 2017 20:32:58 GMT  
+	-	`sha256:dcfd0630640b4ed5fbf693fa16484255da2dbceba1bebf1271d27377059902c0`  
+		Last Modified: Sat, 18 Nov 2017 00:42:30 GMT  
 		Size: 257.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -656,7 +656,7 @@ RUN sed -i -e 's,main *$,main contrib non-free,g' /etc/apt/sources.list.d/neurod
 ## `neurodebian:nd14.04`
 
 ```console
-$ docker pull neurodebian@sha256:8e8ea5c5ff4624a44032e06a53ba434172a19c5506a8c7a55c7b411134367ec7
+$ docker pull neurodebian@sha256:765ab53222a0076c574ac32c5492b047b590f12f9f6f72ad5a26e0ab0e8233f6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -666,75 +666,75 @@ $ docker pull neurodebian@sha256:8e8ea5c5ff4624a44032e06a53ba434172a19c5506a8c7a
 ### `neurodebian:nd14.04` - linux; amd64
 
 ```console
-$ docker pull neurodebian@sha256:00ef6ee58926f71c0bd7f8da6cbfc5a009a86ad622f7c9a5a00a321dbe0277ed
+$ docker pull neurodebian@sha256:cb2b0eccd887321f93ef6ad03a3f0bee77ff90e1e12f6282fa715ce182f9f980
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **67.2 MB (67192636 bytes)**  
+-	Total Size: **72.9 MB (72903067 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c1dd3a81cbf76064599694c7b6ea0569ed61c84b4ffe533ab690523563d1f023`
+-	Image ID: `sha256:c069b0cf4e9e2eb193d978b272fbd147eb0d5dd0db2c4bd81a3dc9132fcf874a`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Sat, 04 Nov 2017 09:45:18 GMT
-ADD file:8f997234193c2f587ac17bb4a8db2657103d2924813edb281eec7ba9883a2806 in / 
-# Sat, 04 Nov 2017 09:45:19 GMT
+# Fri, 17 Nov 2017 21:59:07 GMT
+ADD file:f5013009a258adf002575679e2f6a2fbfe5fd61bf45179e2fb9864683874b2b2 in / 
+# Fri, 17 Nov 2017 21:59:08 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Sat, 04 Nov 2017 09:45:20 GMT
+# Fri, 17 Nov 2017 21:59:08 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Sat, 04 Nov 2017 09:45:20 GMT
+# Fri, 17 Nov 2017 21:59:09 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Sat, 04 Nov 2017 09:45:21 GMT
+# Fri, 17 Nov 2017 21:59:10 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Sat, 04 Nov 2017 09:45:21 GMT
+# Fri, 17 Nov 2017 21:59:10 GMT
 CMD ["/bin/bash"]
-# Sat, 04 Nov 2017 20:27:18 GMT
+# Sat, 18 Nov 2017 00:38:21 GMT
 RUN set -x 	&& apt-get update 	&& { 		which gpg 		|| apt-get install -y --no-install-recommends gnupg 	; } 	&& { 		gpg --version | grep -q '^gpg (GnuPG) 1\.' 		|| apt-get install -y --no-install-recommends dirmngr 	; } 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 04 Nov 2017 20:27:22 GMT
+# Sat, 18 Nov 2017 00:38:27 GMT
 RUN set -x 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys DD95CC430502E37EF840ACEEA5D32F012649A5A9 	&& gpg --export DD95CC430502E37EF840ACEEA5D32F012649A5A9 > /etc/apt/trusted.gpg.d/neurodebian.gpg 	&& rm -rf "$GNUPGHOME" 	&& apt-key list | grep neurodebian
-# Sat, 04 Nov 2017 20:27:22 GMT
+# Sat, 18 Nov 2017 00:38:27 GMT
 RUN { 	echo 'deb http://neuro.debian.net/debian trusty main'; 	echo 'deb http://neuro.debian.net/debian data main'; 	echo '#deb-src http://neuro.debian.net/debian-devel trusty main'; } > /etc/apt/sources.list.d/neurodebian.sources.list
 ```
 
 -	Layers:
-	-	`sha256:bae382666908fd87a3a3646d7eb7176fa42226027d3256cac38ee0b79bdb0491`  
-		Last Modified: Wed, 13 Sep 2017 22:04:42 GMT  
-		Size: 67.1 MB (67114903 bytes)  
+	-	`sha256:01a4f83874576563b6cd843ab7c105d92ab000fe0cb114a645ba99e89b970b77`  
+		Last Modified: Fri, 17 Nov 2017 22:01:08 GMT  
+		Size: 72.8 MB (72825073 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f1ddd5e846a849fff877e4d61dc1002ca5d51de8521cced522e9503312b4c4e7`  
-		Last Modified: Sat, 04 Nov 2017 09:46:17 GMT  
-		Size: 72.7 KB (72653 bytes)  
+	-	`sha256:c887940e680c6729f0c52a833ea44ae2323e4611752bf248da7f0ed9dce573c9`  
+		Last Modified: Fri, 17 Nov 2017 22:00:57 GMT  
+		Size: 72.6 KB (72644 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90d12f864ab9d4cfe6475fc7ba508327c26d3d624344d6584a1fd860c3f0fefa`  
-		Last Modified: Sat, 04 Nov 2017 09:46:18 GMT  
-		Size: 364.0 B  
+	-	`sha256:5432573ac160367250f315604a27532a28e12b6b25c8d8aff68d45533c52f8a7`  
+		Last Modified: Fri, 17 Nov 2017 22:00:57 GMT  
+		Size: 629.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a57ea72e31769e58f0c36db12d25683eba8fa14aaab0518729f28b3766b01112`  
-		Last Modified: Sat, 04 Nov 2017 09:46:19 GMT  
+	-	`sha256:027ee9a9665e446b635a4874018e2685491914be7d8a3fb240dc80dc96af12c7`  
+		Last Modified: Fri, 17 Nov 2017 22:00:57 GMT  
 		Size: 852.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:783a14252520746e3f7fee937b5f14ac1a84ef248ea0b1343d8b58b96df3fa9f`  
-		Last Modified: Sat, 04 Nov 2017 09:46:17 GMT  
-		Size: 162.0 B  
+	-	`sha256:5611db80430d159f886e5b556217e6b94bdbd08ec98862074fe6bec4a9d4253e`  
+		Last Modified: Fri, 17 Nov 2017 22:00:57 GMT  
+		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4ab45ac9f34218f56cbadb0760f0746033808f3aa4de394cdb08b36f47f4dfd7`  
-		Last Modified: Sat, 04 Nov 2017 20:28:53 GMT  
-		Size: 305.0 B  
+	-	`sha256:301bfd866c0329b1fc7919e51e9ce7a1157090b28f88422b0f75e88ef521426f`  
+		Last Modified: Sat, 18 Nov 2017 00:40:20 GMT  
+		Size: 309.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9d3a13f213154c3a696a4e9a952e41d717f1e7ff4eabeee8ee108c7fda472be8`  
-		Last Modified: Sat, 04 Nov 2017 20:28:53 GMT  
-		Size: 3.2 KB (3152 bytes)  
+	-	`sha256:226c29d73ea54ea045f8983508e97502e69476122ae4f4681045b6d4c1efae02`  
+		Last Modified: Sat, 18 Nov 2017 00:40:19 GMT  
+		Size: 3.2 KB (3153 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:be79a850ef28fd9bbec860e23de18d8701ee74498dbdc464c737f6ce17fd7511`  
-		Last Modified: Sat, 04 Nov 2017 20:28:53 GMT  
-		Size: 245.0 B  
+	-	`sha256:6fcf7deb1a61c4948199a5e0ce05fb987a73b703b44459ddf6e6ed6749745f39`  
+		Last Modified: Sat, 18 Nov 2017 00:40:19 GMT  
+		Size: 244.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `neurodebian:nd14.04-non-free`
 
 ```console
-$ docker pull neurodebian@sha256:068e0d1b25e4362304a353d0bfe19e5208ba73fc93ccb376a53782c53af3145f
+$ docker pull neurodebian@sha256:6088b8016b76f00d1bdae71b5306a1561172c075974b0c39a28895f1de11f503
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -744,81 +744,81 @@ $ docker pull neurodebian@sha256:068e0d1b25e4362304a353d0bfe19e5208ba73fc93ccb37
 ### `neurodebian:nd14.04-non-free` - linux; amd64
 
 ```console
-$ docker pull neurodebian@sha256:1402350dc34bf1d0a99bffec05c218dc4c7d857893da26bd9cd578d80fbc7a53
+$ docker pull neurodebian@sha256:2d1e5b3b278f9b8aba0de8be946be7da3047fffed622abb4da36f5cec3338457
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **67.2 MB (67192893 bytes)**  
+-	Total Size: **72.9 MB (72903323 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0670c904f2fbd2fd71e63f66a943ac17fff1c108d6fc7821dac8d91efdea49a9`
+-	Image ID: `sha256:58a95c454f21ca61c8ecb0af319d9fa9c13b2a19d688e0d75bc4a92a6baf6501`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Sat, 04 Nov 2017 09:45:18 GMT
-ADD file:8f997234193c2f587ac17bb4a8db2657103d2924813edb281eec7ba9883a2806 in / 
-# Sat, 04 Nov 2017 09:45:19 GMT
+# Fri, 17 Nov 2017 21:59:07 GMT
+ADD file:f5013009a258adf002575679e2f6a2fbfe5fd61bf45179e2fb9864683874b2b2 in / 
+# Fri, 17 Nov 2017 21:59:08 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Sat, 04 Nov 2017 09:45:20 GMT
+# Fri, 17 Nov 2017 21:59:08 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Sat, 04 Nov 2017 09:45:20 GMT
+# Fri, 17 Nov 2017 21:59:09 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Sat, 04 Nov 2017 09:45:21 GMT
+# Fri, 17 Nov 2017 21:59:10 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Sat, 04 Nov 2017 09:45:21 GMT
+# Fri, 17 Nov 2017 21:59:10 GMT
 CMD ["/bin/bash"]
-# Sat, 04 Nov 2017 20:27:18 GMT
+# Sat, 18 Nov 2017 00:38:21 GMT
 RUN set -x 	&& apt-get update 	&& { 		which gpg 		|| apt-get install -y --no-install-recommends gnupg 	; } 	&& { 		gpg --version | grep -q '^gpg (GnuPG) 1\.' 		|| apt-get install -y --no-install-recommends dirmngr 	; } 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 04 Nov 2017 20:27:22 GMT
+# Sat, 18 Nov 2017 00:38:27 GMT
 RUN set -x 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys DD95CC430502E37EF840ACEEA5D32F012649A5A9 	&& gpg --export DD95CC430502E37EF840ACEEA5D32F012649A5A9 > /etc/apt/trusted.gpg.d/neurodebian.gpg 	&& rm -rf "$GNUPGHOME" 	&& apt-key list | grep neurodebian
-# Sat, 04 Nov 2017 20:27:22 GMT
+# Sat, 18 Nov 2017 00:38:27 GMT
 RUN { 	echo 'deb http://neuro.debian.net/debian trusty main'; 	echo 'deb http://neuro.debian.net/debian data main'; 	echo '#deb-src http://neuro.debian.net/debian-devel trusty main'; } > /etc/apt/sources.list.d/neurodebian.sources.list
-# Sat, 04 Nov 2017 20:27:29 GMT
+# Sat, 18 Nov 2017 00:38:35 GMT
 RUN sed -i -e 's,main *$,main contrib non-free,g' /etc/apt/sources.list.d/neurodebian.sources.list; grep -q 'deb .* multiverse$' /etc/apt/sources.list || sed -i -e 's,universe *$,universe multiverse,g' /etc/apt/sources.list
 ```
 
 -	Layers:
-	-	`sha256:bae382666908fd87a3a3646d7eb7176fa42226027d3256cac38ee0b79bdb0491`  
-		Last Modified: Wed, 13 Sep 2017 22:04:42 GMT  
-		Size: 67.1 MB (67114903 bytes)  
+	-	`sha256:01a4f83874576563b6cd843ab7c105d92ab000fe0cb114a645ba99e89b970b77`  
+		Last Modified: Fri, 17 Nov 2017 22:01:08 GMT  
+		Size: 72.8 MB (72825073 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f1ddd5e846a849fff877e4d61dc1002ca5d51de8521cced522e9503312b4c4e7`  
-		Last Modified: Sat, 04 Nov 2017 09:46:17 GMT  
-		Size: 72.7 KB (72653 bytes)  
+	-	`sha256:c887940e680c6729f0c52a833ea44ae2323e4611752bf248da7f0ed9dce573c9`  
+		Last Modified: Fri, 17 Nov 2017 22:00:57 GMT  
+		Size: 72.6 KB (72644 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90d12f864ab9d4cfe6475fc7ba508327c26d3d624344d6584a1fd860c3f0fefa`  
-		Last Modified: Sat, 04 Nov 2017 09:46:18 GMT  
-		Size: 364.0 B  
+	-	`sha256:5432573ac160367250f315604a27532a28e12b6b25c8d8aff68d45533c52f8a7`  
+		Last Modified: Fri, 17 Nov 2017 22:00:57 GMT  
+		Size: 629.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a57ea72e31769e58f0c36db12d25683eba8fa14aaab0518729f28b3766b01112`  
-		Last Modified: Sat, 04 Nov 2017 09:46:19 GMT  
+	-	`sha256:027ee9a9665e446b635a4874018e2685491914be7d8a3fb240dc80dc96af12c7`  
+		Last Modified: Fri, 17 Nov 2017 22:00:57 GMT  
 		Size: 852.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:783a14252520746e3f7fee937b5f14ac1a84ef248ea0b1343d8b58b96df3fa9f`  
-		Last Modified: Sat, 04 Nov 2017 09:46:17 GMT  
-		Size: 162.0 B  
+	-	`sha256:5611db80430d159f886e5b556217e6b94bdbd08ec98862074fe6bec4a9d4253e`  
+		Last Modified: Fri, 17 Nov 2017 22:00:57 GMT  
+		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4ab45ac9f34218f56cbadb0760f0746033808f3aa4de394cdb08b36f47f4dfd7`  
-		Last Modified: Sat, 04 Nov 2017 20:28:53 GMT  
-		Size: 305.0 B  
+	-	`sha256:301bfd866c0329b1fc7919e51e9ce7a1157090b28f88422b0f75e88ef521426f`  
+		Last Modified: Sat, 18 Nov 2017 00:40:20 GMT  
+		Size: 309.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9d3a13f213154c3a696a4e9a952e41d717f1e7ff4eabeee8ee108c7fda472be8`  
-		Last Modified: Sat, 04 Nov 2017 20:28:53 GMT  
-		Size: 3.2 KB (3152 bytes)  
+	-	`sha256:226c29d73ea54ea045f8983508e97502e69476122ae4f4681045b6d4c1efae02`  
+		Last Modified: Sat, 18 Nov 2017 00:40:19 GMT  
+		Size: 3.2 KB (3153 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:be79a850ef28fd9bbec860e23de18d8701ee74498dbdc464c737f6ce17fd7511`  
-		Last Modified: Sat, 04 Nov 2017 20:28:53 GMT  
-		Size: 245.0 B  
+	-	`sha256:6fcf7deb1a61c4948199a5e0ce05fb987a73b703b44459ddf6e6ed6749745f39`  
+		Last Modified: Sat, 18 Nov 2017 00:40:19 GMT  
+		Size: 244.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3af5e9e6c0a426f4b676e2d38185d1bc722cd8465c82466651807473abbb87ea`  
-		Last Modified: Sat, 04 Nov 2017 20:29:08 GMT  
-		Size: 257.0 B  
+	-	`sha256:72d42674b053eef31c28bdf53752a1714b422710a19789172073da005a53210c`  
+		Last Modified: Sat, 18 Nov 2017 00:40:40 GMT  
+		Size: 256.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `neurodebian:nd16.04`
 
 ```console
-$ docker pull neurodebian@sha256:8de2b8c1a1f40b4de5a3f1af25a149006d168f07966558b8c44c65764cd673fd
+$ docker pull neurodebian@sha256:c65bd26e36628e2ac7be01d8409ffa036eed4a2fb452415d5104fd1e00e1dc09
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -828,75 +828,75 @@ $ docker pull neurodebian@sha256:8de2b8c1a1f40b4de5a3f1af25a149006d168f07966558b
 ### `neurodebian:nd16.04` - linux; amd64
 
 ```console
-$ docker pull neurodebian@sha256:61e20c456f3ae6fad1802b0f01ac6fbb89f202c5d3c62e70d42b5362337075a0
+$ docker pull neurodebian@sha256:7cf58e6e01506c54437abeac7fc6322f704b80d3a53ac6c94fd04234a037642a
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **47.6 MB (47623285 bytes)**  
+-	Total Size: **47.8 MB (47765868 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5fb2043ffe8cc85ad3786cf160f703f72f0b05a24875cf76767891a167290676`
+-	Image ID: `sha256:8882f147a0cb62fcd5d3caffb5c077e88fa66b718fea6e0cb55b835a77021c64`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Sat, 04 Nov 2017 09:45:32 GMT
-ADD file:5b334adf9d9a2256add2a801b49d4b23c93b0973ec22bb798973d571c948f102 in / 
-# Sat, 04 Nov 2017 09:45:33 GMT
+# Fri, 17 Nov 2017 21:59:22 GMT
+ADD file:280a445783f309c90ab928883d98e4326c1fbe19927c8a555da41bcb74c71a45 in / 
+# Fri, 17 Nov 2017 21:59:22 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Sat, 04 Nov 2017 09:45:33 GMT
+# Fri, 17 Nov 2017 21:59:23 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Sat, 04 Nov 2017 09:45:34 GMT
+# Fri, 17 Nov 2017 21:59:24 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Sat, 04 Nov 2017 09:45:35 GMT
+# Fri, 17 Nov 2017 21:59:24 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Sat, 04 Nov 2017 09:45:35 GMT
+# Fri, 17 Nov 2017 21:59:25 GMT
 CMD ["/bin/bash"]
-# Sat, 04 Nov 2017 20:27:39 GMT
+# Sat, 18 Nov 2017 00:38:46 GMT
 RUN set -x 	&& apt-get update 	&& { 		which gpg 		|| apt-get install -y --no-install-recommends gnupg 	; } 	&& { 		gpg --version | grep -q '^gpg (GnuPG) 1\.' 		|| apt-get install -y --no-install-recommends dirmngr 	; } 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 04 Nov 2017 20:27:40 GMT
+# Sat, 18 Nov 2017 00:38:49 GMT
 RUN set -x 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys DD95CC430502E37EF840ACEEA5D32F012649A5A9 	&& gpg --export DD95CC430502E37EF840ACEEA5D32F012649A5A9 > /etc/apt/trusted.gpg.d/neurodebian.gpg 	&& rm -rf "$GNUPGHOME" 	&& apt-key list | grep neurodebian
-# Sat, 04 Nov 2017 20:27:41 GMT
+# Sat, 18 Nov 2017 00:38:50 GMT
 RUN { 	echo 'deb http://neuro.debian.net/debian xenial main'; 	echo 'deb http://neuro.debian.net/debian data main'; 	echo '#deb-src http://neuro.debian.net/debian-devel xenial main'; } > /etc/apt/sources.list.d/neurodebian.sources.list
 ```
 
 -	Layers:
-	-	`sha256:ae79f251470513c2a0ec750117a81f2d58a50727901ca416efecf297b8a03913`  
-		Last Modified: Fri, 06 Oct 2017 13:04:44 GMT  
-		Size: 47.6 MB (47617129 bytes)  
+	-	`sha256:660c48dd555dcbfdfe19c80a30f557ac57a15f595250e67bfad1e5663c1725bb`  
+		Last Modified: Fri, 17 Nov 2017 22:01:36 GMT  
+		Size: 47.8 MB (47759720 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c59d01a7e4caf1aba785eb33192fec3f96e4ab01975962bcec10f4989a6edcc6`  
-		Last Modified: Sat, 04 Nov 2017 09:46:34 GMT  
-		Size: 848.0 B  
+	-	`sha256:4c7380416e7816a5ab1f840482c9c3ca8de58c6f3ee7f95e55ad299abbfe599f`  
+		Last Modified: Fri, 17 Nov 2017 22:01:29 GMT  
+		Size: 846.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:41ba73a9054d231e1f555c40a74762276900cc6487f5c6cf13b89c7606635c67`  
-		Last Modified: Sat, 04 Nov 2017 09:46:33 GMT  
-		Size: 619.0 B  
+	-	`sha256:421e436b5f80d876128b74139531693be9b4e59e4f1081c9a3c379c95094e375`  
+		Last Modified: Fri, 17 Nov 2017 22:01:29 GMT  
+		Size: 620.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f1bbfd495cc1112b503350686641ee4fa2cea8ccd13fb8a8a302c81dae61d418`  
-		Last Modified: Sat, 04 Nov 2017 09:46:33 GMT  
-		Size: 854.0 B  
+	-	`sha256:e4ce6c3651b3a090bb43688f512f687ea6e3e533132bcbc4a83fb97e7046cea3`  
+		Last Modified: Fri, 17 Nov 2017 22:01:29 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0c346f7223e24b517358f52c4a3f5f9af1c86e5ddeaee5659c8889846e46d1e2`  
-		Last Modified: Sat, 04 Nov 2017 09:46:34 GMT  
+	-	`sha256:be588e74bd348ce48bb7161350f4b9d783c331f37a853a80b0b4abc0a33c569e`  
+		Last Modified: Fri, 17 Nov 2017 22:01:29 GMT  
 		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:89c3ac294f412ca3cde26ba64606d8da59e204c6679746ffa863307007e0a22b`  
-		Last Modified: Sat, 04 Nov 2017 20:29:21 GMT  
+	-	`sha256:9d4210fc7bf6520d73706bdd3079dfab6b9e2c0637f2ec1389e8de262faa2be6`  
+		Last Modified: Sat, 18 Nov 2017 00:40:58 GMT  
 		Size: 268.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:65531f52f13e39fe2554f3102c038e9a51d1b72d390387ef0686f56421d6eb1b`  
-		Last Modified: Sat, 04 Nov 2017 20:29:21 GMT  
-		Size: 3.2 KB (3151 bytes)  
+	-	`sha256:5f4e9d560e6fe0463bbd681262d35b0b86a86e0bffe2c13b57a468abb59c2159`  
+		Last Modified: Sat, 18 Nov 2017 00:40:57 GMT  
+		Size: 3.1 KB (3150 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1eb3938c6526f393491a7a50195731bbc5f9e22c029e658f72f67f2787332c1b`  
-		Last Modified: Sat, 04 Nov 2017 20:29:21 GMT  
-		Size: 247.0 B  
+	-	`sha256:176a714121eeb0a9ee2bc430dc87a9e9b3903f49bdfdee0b92f9f26620c448a7`  
+		Last Modified: Sat, 18 Nov 2017 00:40:58 GMT  
+		Size: 246.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `neurodebian:nd16.04-non-free`
 
 ```console
-$ docker pull neurodebian@sha256:1a2798f4c28711b762ce276a6eb77aab8ac25d8cbb969063ad19f26581d16aad
+$ docker pull neurodebian@sha256:bdb0f59ba14925d5982933adfd928f0c653d14e0d3be73b30f4b32ed5fea0cf5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -906,81 +906,81 @@ $ docker pull neurodebian@sha256:1a2798f4c28711b762ce276a6eb77aab8ac25d8cbb96906
 ### `neurodebian:nd16.04-non-free` - linux; amd64
 
 ```console
-$ docker pull neurodebian@sha256:0cef639e71aa74cac8a5b966513dbdaebd018166ff3fd8bed5ef078c9c3ca30f
+$ docker pull neurodebian@sha256:f7a7b691c15766bbbbdb7d090d5476e1e25d22eb3a47d324eb569c6b6ec0e61a
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **47.6 MB (47623540 bytes)**  
+-	Total Size: **47.8 MB (47766123 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eedca28c7fe40049c1ccd34ead83c09010ad78d4b8ab8ddeae457ecd35e36b9d`
+-	Image ID: `sha256:83e2b787fff235677c21ded636af88097062dcef1aeded045fda1bfee967a237`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Sat, 04 Nov 2017 09:45:32 GMT
-ADD file:5b334adf9d9a2256add2a801b49d4b23c93b0973ec22bb798973d571c948f102 in / 
-# Sat, 04 Nov 2017 09:45:33 GMT
+# Fri, 17 Nov 2017 21:59:22 GMT
+ADD file:280a445783f309c90ab928883d98e4326c1fbe19927c8a555da41bcb74c71a45 in / 
+# Fri, 17 Nov 2017 21:59:22 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Sat, 04 Nov 2017 09:45:33 GMT
+# Fri, 17 Nov 2017 21:59:23 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Sat, 04 Nov 2017 09:45:34 GMT
+# Fri, 17 Nov 2017 21:59:24 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Sat, 04 Nov 2017 09:45:35 GMT
+# Fri, 17 Nov 2017 21:59:24 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Sat, 04 Nov 2017 09:45:35 GMT
+# Fri, 17 Nov 2017 21:59:25 GMT
 CMD ["/bin/bash"]
-# Sat, 04 Nov 2017 20:27:39 GMT
+# Sat, 18 Nov 2017 00:38:46 GMT
 RUN set -x 	&& apt-get update 	&& { 		which gpg 		|| apt-get install -y --no-install-recommends gnupg 	; } 	&& { 		gpg --version | grep -q '^gpg (GnuPG) 1\.' 		|| apt-get install -y --no-install-recommends dirmngr 	; } 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 04 Nov 2017 20:27:40 GMT
+# Sat, 18 Nov 2017 00:38:49 GMT
 RUN set -x 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys DD95CC430502E37EF840ACEEA5D32F012649A5A9 	&& gpg --export DD95CC430502E37EF840ACEEA5D32F012649A5A9 > /etc/apt/trusted.gpg.d/neurodebian.gpg 	&& rm -rf "$GNUPGHOME" 	&& apt-key list | grep neurodebian
-# Sat, 04 Nov 2017 20:27:41 GMT
+# Sat, 18 Nov 2017 00:38:50 GMT
 RUN { 	echo 'deb http://neuro.debian.net/debian xenial main'; 	echo 'deb http://neuro.debian.net/debian data main'; 	echo '#deb-src http://neuro.debian.net/debian-devel xenial main'; } > /etc/apt/sources.list.d/neurodebian.sources.list
-# Sat, 04 Nov 2017 20:27:46 GMT
+# Sat, 18 Nov 2017 00:38:56 GMT
 RUN sed -i -e 's,main *$,main contrib non-free,g' /etc/apt/sources.list.d/neurodebian.sources.list; grep -q 'deb .* multiverse$' /etc/apt/sources.list || sed -i -e 's,universe *$,universe multiverse,g' /etc/apt/sources.list
 ```
 
 -	Layers:
-	-	`sha256:ae79f251470513c2a0ec750117a81f2d58a50727901ca416efecf297b8a03913`  
-		Last Modified: Fri, 06 Oct 2017 13:04:44 GMT  
-		Size: 47.6 MB (47617129 bytes)  
+	-	`sha256:660c48dd555dcbfdfe19c80a30f557ac57a15f595250e67bfad1e5663c1725bb`  
+		Last Modified: Fri, 17 Nov 2017 22:01:36 GMT  
+		Size: 47.8 MB (47759720 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c59d01a7e4caf1aba785eb33192fec3f96e4ab01975962bcec10f4989a6edcc6`  
-		Last Modified: Sat, 04 Nov 2017 09:46:34 GMT  
-		Size: 848.0 B  
+	-	`sha256:4c7380416e7816a5ab1f840482c9c3ca8de58c6f3ee7f95e55ad299abbfe599f`  
+		Last Modified: Fri, 17 Nov 2017 22:01:29 GMT  
+		Size: 846.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:41ba73a9054d231e1f555c40a74762276900cc6487f5c6cf13b89c7606635c67`  
-		Last Modified: Sat, 04 Nov 2017 09:46:33 GMT  
-		Size: 619.0 B  
+	-	`sha256:421e436b5f80d876128b74139531693be9b4e59e4f1081c9a3c379c95094e375`  
+		Last Modified: Fri, 17 Nov 2017 22:01:29 GMT  
+		Size: 620.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f1bbfd495cc1112b503350686641ee4fa2cea8ccd13fb8a8a302c81dae61d418`  
-		Last Modified: Sat, 04 Nov 2017 09:46:33 GMT  
-		Size: 854.0 B  
+	-	`sha256:e4ce6c3651b3a090bb43688f512f687ea6e3e533132bcbc4a83fb97e7046cea3`  
+		Last Modified: Fri, 17 Nov 2017 22:01:29 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0c346f7223e24b517358f52c4a3f5f9af1c86e5ddeaee5659c8889846e46d1e2`  
-		Last Modified: Sat, 04 Nov 2017 09:46:34 GMT  
+	-	`sha256:be588e74bd348ce48bb7161350f4b9d783c331f37a853a80b0b4abc0a33c569e`  
+		Last Modified: Fri, 17 Nov 2017 22:01:29 GMT  
 		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:89c3ac294f412ca3cde26ba64606d8da59e204c6679746ffa863307007e0a22b`  
-		Last Modified: Sat, 04 Nov 2017 20:29:21 GMT  
+	-	`sha256:9d4210fc7bf6520d73706bdd3079dfab6b9e2c0637f2ec1389e8de262faa2be6`  
+		Last Modified: Sat, 18 Nov 2017 00:40:58 GMT  
 		Size: 268.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:65531f52f13e39fe2554f3102c038e9a51d1b72d390387ef0686f56421d6eb1b`  
-		Last Modified: Sat, 04 Nov 2017 20:29:21 GMT  
-		Size: 3.2 KB (3151 bytes)  
+	-	`sha256:5f4e9d560e6fe0463bbd681262d35b0b86a86e0bffe2c13b57a468abb59c2159`  
+		Last Modified: Sat, 18 Nov 2017 00:40:57 GMT  
+		Size: 3.1 KB (3150 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1eb3938c6526f393491a7a50195731bbc5f9e22c029e658f72f67f2787332c1b`  
-		Last Modified: Sat, 04 Nov 2017 20:29:21 GMT  
-		Size: 247.0 B  
+	-	`sha256:176a714121eeb0a9ee2bc430dc87a9e9b3903f49bdfdee0b92f9f26620c448a7`  
+		Last Modified: Sat, 18 Nov 2017 00:40:58 GMT  
+		Size: 246.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1c74a07c90a8da584f8cd8c53c229f62ba287d8a7ce84e7e06357b1594f5f947`  
-		Last Modified: Sat, 04 Nov 2017 20:29:36 GMT  
+	-	`sha256:2e7298996724d124cb9e89929815ad4ed23eca616675e0c3ed00bc43194ed981`  
+		Last Modified: Sat, 18 Nov 2017 00:41:16 GMT  
 		Size: 255.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `neurodebian:nd17.04`
 
 ```console
-$ docker pull neurodebian@sha256:39ac1314ec9a0d0cca94c24564800e3cc9f5b1c1392664ce6126e7618d4b9a5b
+$ docker pull neurodebian@sha256:f28cfc14c6a5dece025ab1e232fb7c4621d7c0ec29b1cc7458c6abda9eb578cf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -990,75 +990,75 @@ $ docker pull neurodebian@sha256:39ac1314ec9a0d0cca94c24564800e3cc9f5b1c1392664c
 ### `neurodebian:nd17.04` - linux; amd64
 
 ```console
-$ docker pull neurodebian@sha256:19e0714569fcf384ecb79af3dcee4cebfb082dce52a82ece357567c063bf824b
+$ docker pull neurodebian@sha256:576b6002637efbe6f162de46dee9c3cb12473289652d2a7109a896fe2e34d863
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **41.8 MB (41844354 bytes)**  
+-	Total Size: **42.0 MB (42007342 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8042f3a919888f86ef5a00cf72cc7c882c61bd8ac84692eeabd17642c6bfbc92`
+-	Image ID: `sha256:b527426d69b273541de70a5a29a58ea09e3d148084a38554143c903accc0db3f`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Sat, 04 Nov 2017 09:45:43 GMT
-ADD file:4e2e1f8336bcc64e853e9f3462f0829ce85b34a32755dba06aa7bd0007eda4f0 in / 
-# Sat, 04 Nov 2017 09:45:44 GMT
+# Fri, 17 Nov 2017 21:59:35 GMT
+ADD file:7695c82efcabf2b3ad4c608b200c506d9a16d22ebb6a823742a83fc3b5bc1f31 in / 
+# Fri, 17 Nov 2017 21:59:36 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Sat, 04 Nov 2017 09:45:45 GMT
+# Fri, 17 Nov 2017 21:59:37 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Sat, 04 Nov 2017 09:45:46 GMT
+# Fri, 17 Nov 2017 21:59:37 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Sat, 04 Nov 2017 09:45:46 GMT
+# Fri, 17 Nov 2017 21:59:38 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Sat, 04 Nov 2017 09:45:47 GMT
+# Fri, 17 Nov 2017 21:59:38 GMT
 CMD ["/bin/bash"]
-# Sat, 04 Nov 2017 20:28:00 GMT
+# Sat, 18 Nov 2017 00:39:10 GMT
 RUN set -x 	&& apt-get update 	&& { 		which gpg 		|| apt-get install -y --no-install-recommends gnupg 	; } 	&& { 		gpg --version | grep -q '^gpg (GnuPG) 1\.' 		|| apt-get install -y --no-install-recommends dirmngr 	; } 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 04 Nov 2017 20:28:06 GMT
+# Sat, 18 Nov 2017 00:39:15 GMT
 RUN set -x 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys DD95CC430502E37EF840ACEEA5D32F012649A5A9 	&& gpg --export DD95CC430502E37EF840ACEEA5D32F012649A5A9 > /etc/apt/trusted.gpg.d/neurodebian.gpg 	&& rm -rf "$GNUPGHOME" 	&& apt-key list | grep neurodebian
-# Sat, 04 Nov 2017 20:28:07 GMT
+# Sat, 18 Nov 2017 00:39:16 GMT
 RUN { 	echo 'deb http://neuro.debian.net/debian zesty main'; 	echo 'deb http://neuro.debian.net/debian data main'; 	echo '#deb-src http://neuro.debian.net/debian-devel zesty main'; } > /etc/apt/sources.list.d/neurodebian.sources.list
 ```
 
 -	Layers:
-	-	`sha256:8b23367590c32dbb6954ab3cc9b6c451b9763556c72a893538efe88583f6a5dc`  
-		Last Modified: Mon, 18 Sep 2017 23:33:09 GMT  
-		Size: 38.4 MB (38437889 bytes)  
+	-	`sha256:0bbeb3f34b714172c2d2a30a26bec5f9f179d3714ae36e192b66cb2c0d8d0594`  
+		Last Modified: Fri, 17 Nov 2017 22:02:10 GMT  
+		Size: 38.6 MB (38600735 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d18b5715fdd4c73948352b439715c4ec71459ba6199ad6d79fd2e2e9a5b24235`  
-		Last Modified: Sat, 04 Nov 2017 09:46:53 GMT  
-		Size: 853.0 B  
+	-	`sha256:fb8d5f4c517a89e3d5ad5da69592d7d67fa9fa6fff5e0d2ffb6d73b2c2436fa5`  
+		Last Modified: Fri, 17 Nov 2017 22:02:06 GMT  
+		Size: 846.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5ba295b2a11b6c71aaf7ccc1dd4378eabef9b5d32d30a4f3dbd2e4b1fa4eef70`  
-		Last Modified: Sat, 04 Nov 2017 09:46:53 GMT  
-		Size: 568.0 B  
+	-	`sha256:c4cd377f217253b5f29a3e014c6b5852cc5d5fbd5ffe30c6a5cf48d999e65aee`  
+		Last Modified: Fri, 17 Nov 2017 22:02:04 GMT  
+		Size: 567.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:31ace8c1d433fa58f410c0680402a0a4b4a2abdf1badd340e136b10f78a5c7b6`  
-		Last Modified: Sat, 04 Nov 2017 09:46:53 GMT  
+	-	`sha256:968d05a759781ff464a9b2aa8167a99877ce8803341bff8dfc337840227f9ca4`  
+		Last Modified: Fri, 17 Nov 2017 22:02:05 GMT  
 		Size: 851.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95434b428ba1b404a4bd50c47d42f4ebe291a42974f31ace17e1c9e91c6b64b5`  
-		Last Modified: Sat, 04 Nov 2017 09:46:52 GMT  
-		Size: 163.0 B  
+	-	`sha256:f358380db9ed7655eeba0f239421be152c9140ee0aaf5d3aaeb92bcd2e065937`  
+		Last Modified: Fri, 17 Nov 2017 22:02:04 GMT  
+		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dd8a97ffc8f5ed6bbea173326ae5b4908b5214193b4dc9e9218b323cee031347`  
-		Last Modified: Sat, 04 Nov 2017 20:29:52 GMT  
-		Size: 3.4 MB (3400636 bytes)  
+	-	`sha256:490f1e6359849698d9bc92d3317ce1046818216f53fbec72bccc63a90ca4f1ab`  
+		Last Modified: Sat, 18 Nov 2017 00:41:37 GMT  
+		Size: 3.4 MB (3400784 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4245cbc24241af245f8fc3b1cc8b5499bebc8a8b9adecb2748aff4153da45fdd`  
-		Last Modified: Sat, 04 Nov 2017 20:29:52 GMT  
-		Size: 3.1 KB (3149 bytes)  
+	-	`sha256:44996e769418080b72083f58924077a3279d0f516acf0a62018500404e90b29c`  
+		Last Modified: Sat, 18 Nov 2017 00:41:37 GMT  
+		Size: 3.2 KB (3151 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7e45c062d693d2449bf9d2a5097efa9ed8a84a081c41ac960ecd0537b8fc2b0a`  
-		Last Modified: Sat, 04 Nov 2017 20:29:52 GMT  
-		Size: 245.0 B  
+	-	`sha256:f843ca5b7aed09bbf3b77efa8341c0a267bd4cd3cfeed3bf8d3e7627aefb7e9b`  
+		Last Modified: Sat, 18 Nov 2017 00:41:36 GMT  
+		Size: 246.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `neurodebian:nd17.04-non-free`
 
 ```console
-$ docker pull neurodebian@sha256:d1cabd2a3722a3f47daf10498d51b8ea1a25bba8daeaac4d7c7a31a7e5bb571c
+$ docker pull neurodebian@sha256:d3c4ba78adfa0e557cbf60008794039e28d76a27d716e992977eb454fa619c4f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1068,81 +1068,81 @@ $ docker pull neurodebian@sha256:d1cabd2a3722a3f47daf10498d51b8ea1a25bba8daeaac4
 ### `neurodebian:nd17.04-non-free` - linux; amd64
 
 ```console
-$ docker pull neurodebian@sha256:bd6bc8db362f66f23a2faaf40937bc4f33b4ab899b3cfd5a2597359d9cb4fc38
+$ docker pull neurodebian@sha256:94fcb4395f962c958bd4be858c9cfb5d02e1d4da7b771f2564a35ae8d36168bf
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **41.8 MB (41844612 bytes)**  
+-	Total Size: **42.0 MB (42007598 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:602f568f91b1373232755fac13e1a2639b69df9804c66339ae2921e82d30960b`
+-	Image ID: `sha256:e211f813697dc5d758282d2de5c3655cb3b17609369517aba29302fd87e526c5`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Sat, 04 Nov 2017 09:45:43 GMT
-ADD file:4e2e1f8336bcc64e853e9f3462f0829ce85b34a32755dba06aa7bd0007eda4f0 in / 
-# Sat, 04 Nov 2017 09:45:44 GMT
+# Fri, 17 Nov 2017 21:59:35 GMT
+ADD file:7695c82efcabf2b3ad4c608b200c506d9a16d22ebb6a823742a83fc3b5bc1f31 in / 
+# Fri, 17 Nov 2017 21:59:36 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Sat, 04 Nov 2017 09:45:45 GMT
+# Fri, 17 Nov 2017 21:59:37 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Sat, 04 Nov 2017 09:45:46 GMT
+# Fri, 17 Nov 2017 21:59:37 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Sat, 04 Nov 2017 09:45:46 GMT
+# Fri, 17 Nov 2017 21:59:38 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Sat, 04 Nov 2017 09:45:47 GMT
+# Fri, 17 Nov 2017 21:59:38 GMT
 CMD ["/bin/bash"]
-# Sat, 04 Nov 2017 20:28:00 GMT
+# Sat, 18 Nov 2017 00:39:10 GMT
 RUN set -x 	&& apt-get update 	&& { 		which gpg 		|| apt-get install -y --no-install-recommends gnupg 	; } 	&& { 		gpg --version | grep -q '^gpg (GnuPG) 1\.' 		|| apt-get install -y --no-install-recommends dirmngr 	; } 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 04 Nov 2017 20:28:06 GMT
+# Sat, 18 Nov 2017 00:39:15 GMT
 RUN set -x 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys DD95CC430502E37EF840ACEEA5D32F012649A5A9 	&& gpg --export DD95CC430502E37EF840ACEEA5D32F012649A5A9 > /etc/apt/trusted.gpg.d/neurodebian.gpg 	&& rm -rf "$GNUPGHOME" 	&& apt-key list | grep neurodebian
-# Sat, 04 Nov 2017 20:28:07 GMT
+# Sat, 18 Nov 2017 00:39:16 GMT
 RUN { 	echo 'deb http://neuro.debian.net/debian zesty main'; 	echo 'deb http://neuro.debian.net/debian data main'; 	echo '#deb-src http://neuro.debian.net/debian-devel zesty main'; } > /etc/apt/sources.list.d/neurodebian.sources.list
-# Sat, 04 Nov 2017 20:28:12 GMT
+# Sat, 18 Nov 2017 00:39:25 GMT
 RUN sed -i -e 's,main *$,main contrib non-free,g' /etc/apt/sources.list.d/neurodebian.sources.list; grep -q 'deb .* multiverse$' /etc/apt/sources.list || sed -i -e 's,universe *$,universe multiverse,g' /etc/apt/sources.list
 ```
 
 -	Layers:
-	-	`sha256:8b23367590c32dbb6954ab3cc9b6c451b9763556c72a893538efe88583f6a5dc`  
-		Last Modified: Mon, 18 Sep 2017 23:33:09 GMT  
-		Size: 38.4 MB (38437889 bytes)  
+	-	`sha256:0bbeb3f34b714172c2d2a30a26bec5f9f179d3714ae36e192b66cb2c0d8d0594`  
+		Last Modified: Fri, 17 Nov 2017 22:02:10 GMT  
+		Size: 38.6 MB (38600735 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d18b5715fdd4c73948352b439715c4ec71459ba6199ad6d79fd2e2e9a5b24235`  
-		Last Modified: Sat, 04 Nov 2017 09:46:53 GMT  
-		Size: 853.0 B  
+	-	`sha256:fb8d5f4c517a89e3d5ad5da69592d7d67fa9fa6fff5e0d2ffb6d73b2c2436fa5`  
+		Last Modified: Fri, 17 Nov 2017 22:02:06 GMT  
+		Size: 846.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5ba295b2a11b6c71aaf7ccc1dd4378eabef9b5d32d30a4f3dbd2e4b1fa4eef70`  
-		Last Modified: Sat, 04 Nov 2017 09:46:53 GMT  
-		Size: 568.0 B  
+	-	`sha256:c4cd377f217253b5f29a3e014c6b5852cc5d5fbd5ffe30c6a5cf48d999e65aee`  
+		Last Modified: Fri, 17 Nov 2017 22:02:04 GMT  
+		Size: 567.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:31ace8c1d433fa58f410c0680402a0a4b4a2abdf1badd340e136b10f78a5c7b6`  
-		Last Modified: Sat, 04 Nov 2017 09:46:53 GMT  
+	-	`sha256:968d05a759781ff464a9b2aa8167a99877ce8803341bff8dfc337840227f9ca4`  
+		Last Modified: Fri, 17 Nov 2017 22:02:05 GMT  
 		Size: 851.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95434b428ba1b404a4bd50c47d42f4ebe291a42974f31ace17e1c9e91c6b64b5`  
-		Last Modified: Sat, 04 Nov 2017 09:46:52 GMT  
-		Size: 163.0 B  
+	-	`sha256:f358380db9ed7655eeba0f239421be152c9140ee0aaf5d3aaeb92bcd2e065937`  
+		Last Modified: Fri, 17 Nov 2017 22:02:04 GMT  
+		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dd8a97ffc8f5ed6bbea173326ae5b4908b5214193b4dc9e9218b323cee031347`  
-		Last Modified: Sat, 04 Nov 2017 20:29:52 GMT  
-		Size: 3.4 MB (3400636 bytes)  
+	-	`sha256:490f1e6359849698d9bc92d3317ce1046818216f53fbec72bccc63a90ca4f1ab`  
+		Last Modified: Sat, 18 Nov 2017 00:41:37 GMT  
+		Size: 3.4 MB (3400784 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4245cbc24241af245f8fc3b1cc8b5499bebc8a8b9adecb2748aff4153da45fdd`  
-		Last Modified: Sat, 04 Nov 2017 20:29:52 GMT  
-		Size: 3.1 KB (3149 bytes)  
+	-	`sha256:44996e769418080b72083f58924077a3279d0f516acf0a62018500404e90b29c`  
+		Last Modified: Sat, 18 Nov 2017 00:41:37 GMT  
+		Size: 3.2 KB (3151 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7e45c062d693d2449bf9d2a5097efa9ed8a84a081c41ac960ecd0537b8fc2b0a`  
-		Last Modified: Sat, 04 Nov 2017 20:29:52 GMT  
-		Size: 245.0 B  
+	-	`sha256:f843ca5b7aed09bbf3b77efa8341c0a267bd4cd3cfeed3bf8d3e7627aefb7e9b`  
+		Last Modified: Sat, 18 Nov 2017 00:41:36 GMT  
+		Size: 246.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e7b6d7965d0c123a59c45b90d3c2dfee757608c657c4cfaee8ee30d0793ffb4`  
-		Last Modified: Sat, 04 Nov 2017 20:32:29 GMT  
-		Size: 258.0 B  
+	-	`sha256:405e0adebe50cab92a20d35299da690cd8a47fe80b1852dcf20c8e4b7a21f309`  
+		Last Modified: Sat, 18 Nov 2017 00:41:56 GMT  
+		Size: 256.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `neurodebian:nd17.10`
 
 ```console
-$ docker pull neurodebian@sha256:69c4d621aa240598497275c7591e233857cab49e8faadb29172d3086aedd276a
+$ docker pull neurodebian@sha256:e8ab1113fbee2442fed6130f37320e6351d5eb48d022b43becf8eb1a50628654
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1152,75 +1152,75 @@ $ docker pull neurodebian@sha256:69c4d621aa240598497275c7591e233857cab49e8faadb2
 ### `neurodebian:nd17.10` - linux; amd64
 
 ```console
-$ docker pull neurodebian@sha256:bee3ca6129db916137e3d25c7e2851ed795bf32f3be97e4e1f99b4cac849bb0b
+$ docker pull neurodebian@sha256:6bb862e46c9fd0d238d31cdb1e45e5c1c315fda216e4efec9cc42f0038f6d639
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **41.1 MB (41054060 bytes)**  
+-	Total Size: **41.3 MB (41299685 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:227ecb7ff8978395b2c91baaede7277001589990e62a110d0385d4dcadc9b210`
+-	Image ID: `sha256:14e0caa6e6ab65d00ff4b7fcf19c13567283019a819f8171ec17b70d332edec2`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Sat, 04 Nov 2017 09:44:56 GMT
-ADD file:c5fd97d776dc13116460fbfe9516f1a028ba5788ea39ee71d8e9cfe7caed676f in / 
-# Sat, 04 Nov 2017 09:44:58 GMT
+# Fri, 17 Nov 2017 21:58:35 GMT
+ADD file:047722d7788dcfac5b7a78a4cc06def4f7fb1bb8a6b47ca42e2d27cf1a7a57d7 in / 
+# Fri, 17 Nov 2017 21:58:35 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Sat, 04 Nov 2017 09:44:59 GMT
+# Fri, 17 Nov 2017 21:58:36 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Sat, 04 Nov 2017 09:45:00 GMT
+# Fri, 17 Nov 2017 21:58:37 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Sat, 04 Nov 2017 09:45:01 GMT
+# Fri, 17 Nov 2017 21:58:37 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Sat, 04 Nov 2017 09:45:01 GMT
+# Fri, 17 Nov 2017 21:58:37 GMT
 CMD ["/bin/bash"]
-# Sat, 04 Nov 2017 20:28:26 GMT
+# Sat, 18 Nov 2017 00:39:41 GMT
 RUN set -x 	&& apt-get update 	&& { 		which gpg 		|| apt-get install -y --no-install-recommends gnupg 	; } 	&& { 		gpg --version | grep -q '^gpg (GnuPG) 1\.' 		|| apt-get install -y --no-install-recommends dirmngr 	; } 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 04 Nov 2017 20:28:29 GMT
+# Sat, 18 Nov 2017 00:39:47 GMT
 RUN set -x 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys DD95CC430502E37EF840ACEEA5D32F012649A5A9 	&& gpg --export DD95CC430502E37EF840ACEEA5D32F012649A5A9 > /etc/apt/trusted.gpg.d/neurodebian.gpg 	&& rm -rf "$GNUPGHOME" 	&& apt-key list | grep neurodebian
-# Sat, 04 Nov 2017 20:28:30 GMT
+# Sat, 18 Nov 2017 00:39:48 GMT
 RUN { 	echo 'deb http://neuro.debian.net/debian artful main'; 	echo 'deb http://neuro.debian.net/debian data main'; 	echo '#deb-src http://neuro.debian.net/debian-devel artful main'; } > /etc/apt/sources.list.d/neurodebian.sources.list
 ```
 
 -	Layers:
-	-	`sha256:d26cfb4142faf488780cb8080f737aa1e5db91805163d83448842f64084bb724`  
-		Last Modified: Thu, 19 Oct 2017 16:50:57 GMT  
-		Size: 39.2 MB (39215977 bytes)  
+	-	`sha256:0bd63934764237a418825f5e7b9af3f1c851e6025f1a0d68e782f28747b34ef2`  
+		Last Modified: Fri, 17 Nov 2017 21:59:56 GMT  
+		Size: 39.5 MB (39461067 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9061f2867f7e61c3f5420eb574ba2fa334667501e4fff59037fff42e236126cf`  
-		Last Modified: Sat, 04 Nov 2017 09:45:56 GMT  
-		Size: 843.0 B  
+	-	`sha256:15f827925d02310413c83844aa65e7abe0142fb23cced5eddf6cad5f7e5ba361`  
+		Last Modified: Fri, 17 Nov 2017 21:59:50 GMT  
+		Size: 838.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:916f09e6daf78c64326ce6338926259c67a94bda705094f4f5a4de7ffa760d7b`  
-		Last Modified: Sat, 04 Nov 2017 09:45:57 GMT  
-		Size: 398.0 B  
+	-	`sha256:8d4e9883d6b52ae085bf9f385dc9a53a56339ac8b01a17e876e688307878441f`  
+		Last Modified: Fri, 17 Nov 2017 21:59:50 GMT  
+		Size: 541.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4fae7d54d2d8cfbed3fb28e0d50d4d1c7efc8c74cfe0a932f8de266e9ac19b18`  
-		Last Modified: Sat, 04 Nov 2017 09:45:56 GMT  
-		Size: 850.0 B  
+	-	`sha256:c754e879539bb2497aad4300c1e9c962ba2b163435cbc241ac5f75baba16474a`  
+		Last Modified: Fri, 17 Nov 2017 21:59:50 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e69eda9a0dde47b44b877d1c561a490c6f581f4185be674d0228d0000c5c9c5`  
-		Last Modified: Sat, 04 Nov 2017 09:45:56 GMT  
+	-	`sha256:85f5abd03ce77b2cb8db972665604e99bdd341aae1ce07ba37fbc2b5ecd63d0c`  
+		Last Modified: Fri, 17 Nov 2017 21:59:50 GMT  
 		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:92bc52b07e6286b6d7514cd4e23aa394cf681d30c48496fb9beaafff96cd688c`  
-		Last Modified: Sat, 04 Nov 2017 20:32:44 GMT  
-		Size: 1.8 MB (1832435 bytes)  
+	-	`sha256:75aaadba6c3abdf079739a487c47ef5bff2c7fe8c75a5f977c7009bd1f018f24`  
+		Last Modified: Sat, 18 Nov 2017 00:42:13 GMT  
+		Size: 1.8 MB (1832834 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:748167c81d66948c0948893152e7261a1f07e1a4d812c5508bf565bc16a00940`  
-		Last Modified: Sat, 04 Nov 2017 20:32:43 GMT  
+	-	`sha256:6332f2540669e3b11a7fff954cb661056c441fdb05775b97ad4dcdbdca631d99`  
+		Last Modified: Sat, 18 Nov 2017 00:42:13 GMT  
 		Size: 3.2 KB (3151 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:02bd1faac35cb4af1455eed56c91d79756763ed5a14983e3a06afe5b3f4a3d69`  
-		Last Modified: Sat, 04 Nov 2017 20:32:43 GMT  
-		Size: 244.0 B  
+	-	`sha256:2c17b939c48fb2aa6ca2602d2bccb0cdd4fa159a7a708993b69043c16c0e657c`  
+		Last Modified: Sat, 18 Nov 2017 00:42:12 GMT  
+		Size: 243.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `neurodebian:nd17.10-non-free`
 
 ```console
-$ docker pull neurodebian@sha256:e1ee71f87d67d495c4e54e49c2f3549e610e6b57f593d431d6faf5e785efa06c
+$ docker pull neurodebian@sha256:4c18c0a5292d45c608ebac9ec37eb8dcd553cd8f858baa1fa8a99ab7184ff8dc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1230,74 +1230,74 @@ $ docker pull neurodebian@sha256:e1ee71f87d67d495c4e54e49c2f3549e610e6b57f593d43
 ### `neurodebian:nd17.10-non-free` - linux; amd64
 
 ```console
-$ docker pull neurodebian@sha256:30a521ca7e137689d06863d4571eca4f0e249fad515e742aa14db6cd33a388c2
+$ docker pull neurodebian@sha256:07659a833b25fbf824e4dd75c1aee2e899f47bf123108f61bb38a41fba43a4d4
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **41.1 MB (41054317 bytes)**  
+-	Total Size: **41.3 MB (41299942 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d95a20697cccdd80c57607a4dd0f83f473e226c050ae13719e85f581e8f4577e`
+-	Image ID: `sha256:d973bcf623d557f206cd2b39a16c9b72f621babc1a8e1a6678131dab6bf338f4`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Sat, 04 Nov 2017 09:44:56 GMT
-ADD file:c5fd97d776dc13116460fbfe9516f1a028ba5788ea39ee71d8e9cfe7caed676f in / 
-# Sat, 04 Nov 2017 09:44:58 GMT
+# Fri, 17 Nov 2017 21:58:35 GMT
+ADD file:047722d7788dcfac5b7a78a4cc06def4f7fb1bb8a6b47ca42e2d27cf1a7a57d7 in / 
+# Fri, 17 Nov 2017 21:58:35 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Sat, 04 Nov 2017 09:44:59 GMT
+# Fri, 17 Nov 2017 21:58:36 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Sat, 04 Nov 2017 09:45:00 GMT
+# Fri, 17 Nov 2017 21:58:37 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Sat, 04 Nov 2017 09:45:01 GMT
+# Fri, 17 Nov 2017 21:58:37 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Sat, 04 Nov 2017 09:45:01 GMT
+# Fri, 17 Nov 2017 21:58:37 GMT
 CMD ["/bin/bash"]
-# Sat, 04 Nov 2017 20:28:26 GMT
+# Sat, 18 Nov 2017 00:39:41 GMT
 RUN set -x 	&& apt-get update 	&& { 		which gpg 		|| apt-get install -y --no-install-recommends gnupg 	; } 	&& { 		gpg --version | grep -q '^gpg (GnuPG) 1\.' 		|| apt-get install -y --no-install-recommends dirmngr 	; } 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 04 Nov 2017 20:28:29 GMT
+# Sat, 18 Nov 2017 00:39:47 GMT
 RUN set -x 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys DD95CC430502E37EF840ACEEA5D32F012649A5A9 	&& gpg --export DD95CC430502E37EF840ACEEA5D32F012649A5A9 > /etc/apt/trusted.gpg.d/neurodebian.gpg 	&& rm -rf "$GNUPGHOME" 	&& apt-key list | grep neurodebian
-# Sat, 04 Nov 2017 20:28:30 GMT
+# Sat, 18 Nov 2017 00:39:48 GMT
 RUN { 	echo 'deb http://neuro.debian.net/debian artful main'; 	echo 'deb http://neuro.debian.net/debian data main'; 	echo '#deb-src http://neuro.debian.net/debian-devel artful main'; } > /etc/apt/sources.list.d/neurodebian.sources.list
-# Sat, 04 Nov 2017 20:28:35 GMT
+# Sat, 18 Nov 2017 00:39:54 GMT
 RUN sed -i -e 's,main *$,main contrib non-free,g' /etc/apt/sources.list.d/neurodebian.sources.list; grep -q 'deb .* multiverse$' /etc/apt/sources.list || sed -i -e 's,universe *$,universe multiverse,g' /etc/apt/sources.list
 ```
 
 -	Layers:
-	-	`sha256:d26cfb4142faf488780cb8080f737aa1e5db91805163d83448842f64084bb724`  
-		Last Modified: Thu, 19 Oct 2017 16:50:57 GMT  
-		Size: 39.2 MB (39215977 bytes)  
+	-	`sha256:0bd63934764237a418825f5e7b9af3f1c851e6025f1a0d68e782f28747b34ef2`  
+		Last Modified: Fri, 17 Nov 2017 21:59:56 GMT  
+		Size: 39.5 MB (39461067 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9061f2867f7e61c3f5420eb574ba2fa334667501e4fff59037fff42e236126cf`  
-		Last Modified: Sat, 04 Nov 2017 09:45:56 GMT  
-		Size: 843.0 B  
+	-	`sha256:15f827925d02310413c83844aa65e7abe0142fb23cced5eddf6cad5f7e5ba361`  
+		Last Modified: Fri, 17 Nov 2017 21:59:50 GMT  
+		Size: 838.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:916f09e6daf78c64326ce6338926259c67a94bda705094f4f5a4de7ffa760d7b`  
-		Last Modified: Sat, 04 Nov 2017 09:45:57 GMT  
-		Size: 398.0 B  
+	-	`sha256:8d4e9883d6b52ae085bf9f385dc9a53a56339ac8b01a17e876e688307878441f`  
+		Last Modified: Fri, 17 Nov 2017 21:59:50 GMT  
+		Size: 541.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4fae7d54d2d8cfbed3fb28e0d50d4d1c7efc8c74cfe0a932f8de266e9ac19b18`  
-		Last Modified: Sat, 04 Nov 2017 09:45:56 GMT  
-		Size: 850.0 B  
+	-	`sha256:c754e879539bb2497aad4300c1e9c962ba2b163435cbc241ac5f75baba16474a`  
+		Last Modified: Fri, 17 Nov 2017 21:59:50 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e69eda9a0dde47b44b877d1c561a490c6f581f4185be674d0228d0000c5c9c5`  
-		Last Modified: Sat, 04 Nov 2017 09:45:56 GMT  
+	-	`sha256:85f5abd03ce77b2cb8db972665604e99bdd341aae1ce07ba37fbc2b5ecd63d0c`  
+		Last Modified: Fri, 17 Nov 2017 21:59:50 GMT  
 		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:92bc52b07e6286b6d7514cd4e23aa394cf681d30c48496fb9beaafff96cd688c`  
-		Last Modified: Sat, 04 Nov 2017 20:32:44 GMT  
-		Size: 1.8 MB (1832435 bytes)  
+	-	`sha256:75aaadba6c3abdf079739a487c47ef5bff2c7fe8c75a5f977c7009bd1f018f24`  
+		Last Modified: Sat, 18 Nov 2017 00:42:13 GMT  
+		Size: 1.8 MB (1832834 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:748167c81d66948c0948893152e7261a1f07e1a4d812c5508bf565bc16a00940`  
-		Last Modified: Sat, 04 Nov 2017 20:32:43 GMT  
+	-	`sha256:6332f2540669e3b11a7fff954cb661056c441fdb05775b97ad4dcdbdca631d99`  
+		Last Modified: Sat, 18 Nov 2017 00:42:13 GMT  
 		Size: 3.2 KB (3151 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:02bd1faac35cb4af1455eed56c91d79756763ed5a14983e3a06afe5b3f4a3d69`  
-		Last Modified: Sat, 04 Nov 2017 20:32:43 GMT  
-		Size: 244.0 B  
+	-	`sha256:2c17b939c48fb2aa6ca2602d2bccb0cdd4fa159a7a708993b69043c16c0e657c`  
+		Last Modified: Sat, 18 Nov 2017 00:42:12 GMT  
+		Size: 243.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d2d4aa6b25338aedb4d372e78c872457db6f407bccf5c4758ab6a70f0129cc4f`  
-		Last Modified: Sat, 04 Nov 2017 20:32:58 GMT  
+	-	`sha256:dcfd0630640b4ed5fbf693fa16484255da2dbceba1bebf1271d27377059902c0`  
+		Last Modified: Sat, 18 Nov 2017 00:42:30 GMT  
 		Size: 257.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -1994,7 +1994,7 @@ RUN sed -i -e 's,main *$,main contrib non-free,g' /etc/apt/sources.list.d/neurod
 ## `neurodebian:trusty`
 
 ```console
-$ docker pull neurodebian@sha256:8e8ea5c5ff4624a44032e06a53ba434172a19c5506a8c7a55c7b411134367ec7
+$ docker pull neurodebian@sha256:765ab53222a0076c574ac32c5492b047b590f12f9f6f72ad5a26e0ab0e8233f6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2004,75 +2004,75 @@ $ docker pull neurodebian@sha256:8e8ea5c5ff4624a44032e06a53ba434172a19c5506a8c7a
 ### `neurodebian:trusty` - linux; amd64
 
 ```console
-$ docker pull neurodebian@sha256:00ef6ee58926f71c0bd7f8da6cbfc5a009a86ad622f7c9a5a00a321dbe0277ed
+$ docker pull neurodebian@sha256:cb2b0eccd887321f93ef6ad03a3f0bee77ff90e1e12f6282fa715ce182f9f980
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **67.2 MB (67192636 bytes)**  
+-	Total Size: **72.9 MB (72903067 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c1dd3a81cbf76064599694c7b6ea0569ed61c84b4ffe533ab690523563d1f023`
+-	Image ID: `sha256:c069b0cf4e9e2eb193d978b272fbd147eb0d5dd0db2c4bd81a3dc9132fcf874a`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Sat, 04 Nov 2017 09:45:18 GMT
-ADD file:8f997234193c2f587ac17bb4a8db2657103d2924813edb281eec7ba9883a2806 in / 
-# Sat, 04 Nov 2017 09:45:19 GMT
+# Fri, 17 Nov 2017 21:59:07 GMT
+ADD file:f5013009a258adf002575679e2f6a2fbfe5fd61bf45179e2fb9864683874b2b2 in / 
+# Fri, 17 Nov 2017 21:59:08 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Sat, 04 Nov 2017 09:45:20 GMT
+# Fri, 17 Nov 2017 21:59:08 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Sat, 04 Nov 2017 09:45:20 GMT
+# Fri, 17 Nov 2017 21:59:09 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Sat, 04 Nov 2017 09:45:21 GMT
+# Fri, 17 Nov 2017 21:59:10 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Sat, 04 Nov 2017 09:45:21 GMT
+# Fri, 17 Nov 2017 21:59:10 GMT
 CMD ["/bin/bash"]
-# Sat, 04 Nov 2017 20:27:18 GMT
+# Sat, 18 Nov 2017 00:38:21 GMT
 RUN set -x 	&& apt-get update 	&& { 		which gpg 		|| apt-get install -y --no-install-recommends gnupg 	; } 	&& { 		gpg --version | grep -q '^gpg (GnuPG) 1\.' 		|| apt-get install -y --no-install-recommends dirmngr 	; } 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 04 Nov 2017 20:27:22 GMT
+# Sat, 18 Nov 2017 00:38:27 GMT
 RUN set -x 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys DD95CC430502E37EF840ACEEA5D32F012649A5A9 	&& gpg --export DD95CC430502E37EF840ACEEA5D32F012649A5A9 > /etc/apt/trusted.gpg.d/neurodebian.gpg 	&& rm -rf "$GNUPGHOME" 	&& apt-key list | grep neurodebian
-# Sat, 04 Nov 2017 20:27:22 GMT
+# Sat, 18 Nov 2017 00:38:27 GMT
 RUN { 	echo 'deb http://neuro.debian.net/debian trusty main'; 	echo 'deb http://neuro.debian.net/debian data main'; 	echo '#deb-src http://neuro.debian.net/debian-devel trusty main'; } > /etc/apt/sources.list.d/neurodebian.sources.list
 ```
 
 -	Layers:
-	-	`sha256:bae382666908fd87a3a3646d7eb7176fa42226027d3256cac38ee0b79bdb0491`  
-		Last Modified: Wed, 13 Sep 2017 22:04:42 GMT  
-		Size: 67.1 MB (67114903 bytes)  
+	-	`sha256:01a4f83874576563b6cd843ab7c105d92ab000fe0cb114a645ba99e89b970b77`  
+		Last Modified: Fri, 17 Nov 2017 22:01:08 GMT  
+		Size: 72.8 MB (72825073 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f1ddd5e846a849fff877e4d61dc1002ca5d51de8521cced522e9503312b4c4e7`  
-		Last Modified: Sat, 04 Nov 2017 09:46:17 GMT  
-		Size: 72.7 KB (72653 bytes)  
+	-	`sha256:c887940e680c6729f0c52a833ea44ae2323e4611752bf248da7f0ed9dce573c9`  
+		Last Modified: Fri, 17 Nov 2017 22:00:57 GMT  
+		Size: 72.6 KB (72644 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90d12f864ab9d4cfe6475fc7ba508327c26d3d624344d6584a1fd860c3f0fefa`  
-		Last Modified: Sat, 04 Nov 2017 09:46:18 GMT  
-		Size: 364.0 B  
+	-	`sha256:5432573ac160367250f315604a27532a28e12b6b25c8d8aff68d45533c52f8a7`  
+		Last Modified: Fri, 17 Nov 2017 22:00:57 GMT  
+		Size: 629.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a57ea72e31769e58f0c36db12d25683eba8fa14aaab0518729f28b3766b01112`  
-		Last Modified: Sat, 04 Nov 2017 09:46:19 GMT  
+	-	`sha256:027ee9a9665e446b635a4874018e2685491914be7d8a3fb240dc80dc96af12c7`  
+		Last Modified: Fri, 17 Nov 2017 22:00:57 GMT  
 		Size: 852.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:783a14252520746e3f7fee937b5f14ac1a84ef248ea0b1343d8b58b96df3fa9f`  
-		Last Modified: Sat, 04 Nov 2017 09:46:17 GMT  
-		Size: 162.0 B  
+	-	`sha256:5611db80430d159f886e5b556217e6b94bdbd08ec98862074fe6bec4a9d4253e`  
+		Last Modified: Fri, 17 Nov 2017 22:00:57 GMT  
+		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4ab45ac9f34218f56cbadb0760f0746033808f3aa4de394cdb08b36f47f4dfd7`  
-		Last Modified: Sat, 04 Nov 2017 20:28:53 GMT  
-		Size: 305.0 B  
+	-	`sha256:301bfd866c0329b1fc7919e51e9ce7a1157090b28f88422b0f75e88ef521426f`  
+		Last Modified: Sat, 18 Nov 2017 00:40:20 GMT  
+		Size: 309.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9d3a13f213154c3a696a4e9a952e41d717f1e7ff4eabeee8ee108c7fda472be8`  
-		Last Modified: Sat, 04 Nov 2017 20:28:53 GMT  
-		Size: 3.2 KB (3152 bytes)  
+	-	`sha256:226c29d73ea54ea045f8983508e97502e69476122ae4f4681045b6d4c1efae02`  
+		Last Modified: Sat, 18 Nov 2017 00:40:19 GMT  
+		Size: 3.2 KB (3153 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:be79a850ef28fd9bbec860e23de18d8701ee74498dbdc464c737f6ce17fd7511`  
-		Last Modified: Sat, 04 Nov 2017 20:28:53 GMT  
-		Size: 245.0 B  
+	-	`sha256:6fcf7deb1a61c4948199a5e0ce05fb987a73b703b44459ddf6e6ed6749745f39`  
+		Last Modified: Sat, 18 Nov 2017 00:40:19 GMT  
+		Size: 244.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `neurodebian:trusty-non-free`
 
 ```console
-$ docker pull neurodebian@sha256:068e0d1b25e4362304a353d0bfe19e5208ba73fc93ccb376a53782c53af3145f
+$ docker pull neurodebian@sha256:6088b8016b76f00d1bdae71b5306a1561172c075974b0c39a28895f1de11f503
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2082,75 +2082,75 @@ $ docker pull neurodebian@sha256:068e0d1b25e4362304a353d0bfe19e5208ba73fc93ccb37
 ### `neurodebian:trusty-non-free` - linux; amd64
 
 ```console
-$ docker pull neurodebian@sha256:1402350dc34bf1d0a99bffec05c218dc4c7d857893da26bd9cd578d80fbc7a53
+$ docker pull neurodebian@sha256:2d1e5b3b278f9b8aba0de8be946be7da3047fffed622abb4da36f5cec3338457
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **67.2 MB (67192893 bytes)**  
+-	Total Size: **72.9 MB (72903323 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0670c904f2fbd2fd71e63f66a943ac17fff1c108d6fc7821dac8d91efdea49a9`
+-	Image ID: `sha256:58a95c454f21ca61c8ecb0af319d9fa9c13b2a19d688e0d75bc4a92a6baf6501`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Sat, 04 Nov 2017 09:45:18 GMT
-ADD file:8f997234193c2f587ac17bb4a8db2657103d2924813edb281eec7ba9883a2806 in / 
-# Sat, 04 Nov 2017 09:45:19 GMT
+# Fri, 17 Nov 2017 21:59:07 GMT
+ADD file:f5013009a258adf002575679e2f6a2fbfe5fd61bf45179e2fb9864683874b2b2 in / 
+# Fri, 17 Nov 2017 21:59:08 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Sat, 04 Nov 2017 09:45:20 GMT
+# Fri, 17 Nov 2017 21:59:08 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Sat, 04 Nov 2017 09:45:20 GMT
+# Fri, 17 Nov 2017 21:59:09 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Sat, 04 Nov 2017 09:45:21 GMT
+# Fri, 17 Nov 2017 21:59:10 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Sat, 04 Nov 2017 09:45:21 GMT
+# Fri, 17 Nov 2017 21:59:10 GMT
 CMD ["/bin/bash"]
-# Sat, 04 Nov 2017 20:27:18 GMT
+# Sat, 18 Nov 2017 00:38:21 GMT
 RUN set -x 	&& apt-get update 	&& { 		which gpg 		|| apt-get install -y --no-install-recommends gnupg 	; } 	&& { 		gpg --version | grep -q '^gpg (GnuPG) 1\.' 		|| apt-get install -y --no-install-recommends dirmngr 	; } 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 04 Nov 2017 20:27:22 GMT
+# Sat, 18 Nov 2017 00:38:27 GMT
 RUN set -x 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys DD95CC430502E37EF840ACEEA5D32F012649A5A9 	&& gpg --export DD95CC430502E37EF840ACEEA5D32F012649A5A9 > /etc/apt/trusted.gpg.d/neurodebian.gpg 	&& rm -rf "$GNUPGHOME" 	&& apt-key list | grep neurodebian
-# Sat, 04 Nov 2017 20:27:22 GMT
+# Sat, 18 Nov 2017 00:38:27 GMT
 RUN { 	echo 'deb http://neuro.debian.net/debian trusty main'; 	echo 'deb http://neuro.debian.net/debian data main'; 	echo '#deb-src http://neuro.debian.net/debian-devel trusty main'; } > /etc/apt/sources.list.d/neurodebian.sources.list
-# Sat, 04 Nov 2017 20:27:29 GMT
+# Sat, 18 Nov 2017 00:38:35 GMT
 RUN sed -i -e 's,main *$,main contrib non-free,g' /etc/apt/sources.list.d/neurodebian.sources.list; grep -q 'deb .* multiverse$' /etc/apt/sources.list || sed -i -e 's,universe *$,universe multiverse,g' /etc/apt/sources.list
 ```
 
 -	Layers:
-	-	`sha256:bae382666908fd87a3a3646d7eb7176fa42226027d3256cac38ee0b79bdb0491`  
-		Last Modified: Wed, 13 Sep 2017 22:04:42 GMT  
-		Size: 67.1 MB (67114903 bytes)  
+	-	`sha256:01a4f83874576563b6cd843ab7c105d92ab000fe0cb114a645ba99e89b970b77`  
+		Last Modified: Fri, 17 Nov 2017 22:01:08 GMT  
+		Size: 72.8 MB (72825073 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f1ddd5e846a849fff877e4d61dc1002ca5d51de8521cced522e9503312b4c4e7`  
-		Last Modified: Sat, 04 Nov 2017 09:46:17 GMT  
-		Size: 72.7 KB (72653 bytes)  
+	-	`sha256:c887940e680c6729f0c52a833ea44ae2323e4611752bf248da7f0ed9dce573c9`  
+		Last Modified: Fri, 17 Nov 2017 22:00:57 GMT  
+		Size: 72.6 KB (72644 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90d12f864ab9d4cfe6475fc7ba508327c26d3d624344d6584a1fd860c3f0fefa`  
-		Last Modified: Sat, 04 Nov 2017 09:46:18 GMT  
-		Size: 364.0 B  
+	-	`sha256:5432573ac160367250f315604a27532a28e12b6b25c8d8aff68d45533c52f8a7`  
+		Last Modified: Fri, 17 Nov 2017 22:00:57 GMT  
+		Size: 629.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a57ea72e31769e58f0c36db12d25683eba8fa14aaab0518729f28b3766b01112`  
-		Last Modified: Sat, 04 Nov 2017 09:46:19 GMT  
+	-	`sha256:027ee9a9665e446b635a4874018e2685491914be7d8a3fb240dc80dc96af12c7`  
+		Last Modified: Fri, 17 Nov 2017 22:00:57 GMT  
 		Size: 852.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:783a14252520746e3f7fee937b5f14ac1a84ef248ea0b1343d8b58b96df3fa9f`  
-		Last Modified: Sat, 04 Nov 2017 09:46:17 GMT  
-		Size: 162.0 B  
+	-	`sha256:5611db80430d159f886e5b556217e6b94bdbd08ec98862074fe6bec4a9d4253e`  
+		Last Modified: Fri, 17 Nov 2017 22:00:57 GMT  
+		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4ab45ac9f34218f56cbadb0760f0746033808f3aa4de394cdb08b36f47f4dfd7`  
-		Last Modified: Sat, 04 Nov 2017 20:28:53 GMT  
-		Size: 305.0 B  
+	-	`sha256:301bfd866c0329b1fc7919e51e9ce7a1157090b28f88422b0f75e88ef521426f`  
+		Last Modified: Sat, 18 Nov 2017 00:40:20 GMT  
+		Size: 309.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9d3a13f213154c3a696a4e9a952e41d717f1e7ff4eabeee8ee108c7fda472be8`  
-		Last Modified: Sat, 04 Nov 2017 20:28:53 GMT  
-		Size: 3.2 KB (3152 bytes)  
+	-	`sha256:226c29d73ea54ea045f8983508e97502e69476122ae4f4681045b6d4c1efae02`  
+		Last Modified: Sat, 18 Nov 2017 00:40:19 GMT  
+		Size: 3.2 KB (3153 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:be79a850ef28fd9bbec860e23de18d8701ee74498dbdc464c737f6ce17fd7511`  
-		Last Modified: Sat, 04 Nov 2017 20:28:53 GMT  
-		Size: 245.0 B  
+	-	`sha256:6fcf7deb1a61c4948199a5e0ce05fb987a73b703b44459ddf6e6ed6749745f39`  
+		Last Modified: Sat, 18 Nov 2017 00:40:19 GMT  
+		Size: 244.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3af5e9e6c0a426f4b676e2d38185d1bc722cd8465c82466651807473abbb87ea`  
-		Last Modified: Sat, 04 Nov 2017 20:29:08 GMT  
-		Size: 257.0 B  
+	-	`sha256:72d42674b053eef31c28bdf53752a1714b422710a19789172073da005a53210c`  
+		Last Modified: Sat, 18 Nov 2017 00:40:40 GMT  
+		Size: 256.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `neurodebian:wheezy`
@@ -2270,7 +2270,7 @@ RUN sed -i -e 's,main *$,main contrib non-free,g' /etc/apt/sources.list.d/neurod
 ## `neurodebian:xenial`
 
 ```console
-$ docker pull neurodebian@sha256:8de2b8c1a1f40b4de5a3f1af25a149006d168f07966558b8c44c65764cd673fd
+$ docker pull neurodebian@sha256:c65bd26e36628e2ac7be01d8409ffa036eed4a2fb452415d5104fd1e00e1dc09
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2280,75 +2280,75 @@ $ docker pull neurodebian@sha256:8de2b8c1a1f40b4de5a3f1af25a149006d168f07966558b
 ### `neurodebian:xenial` - linux; amd64
 
 ```console
-$ docker pull neurodebian@sha256:61e20c456f3ae6fad1802b0f01ac6fbb89f202c5d3c62e70d42b5362337075a0
+$ docker pull neurodebian@sha256:7cf58e6e01506c54437abeac7fc6322f704b80d3a53ac6c94fd04234a037642a
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **47.6 MB (47623285 bytes)**  
+-	Total Size: **47.8 MB (47765868 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5fb2043ffe8cc85ad3786cf160f703f72f0b05a24875cf76767891a167290676`
+-	Image ID: `sha256:8882f147a0cb62fcd5d3caffb5c077e88fa66b718fea6e0cb55b835a77021c64`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Sat, 04 Nov 2017 09:45:32 GMT
-ADD file:5b334adf9d9a2256add2a801b49d4b23c93b0973ec22bb798973d571c948f102 in / 
-# Sat, 04 Nov 2017 09:45:33 GMT
+# Fri, 17 Nov 2017 21:59:22 GMT
+ADD file:280a445783f309c90ab928883d98e4326c1fbe19927c8a555da41bcb74c71a45 in / 
+# Fri, 17 Nov 2017 21:59:22 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Sat, 04 Nov 2017 09:45:33 GMT
+# Fri, 17 Nov 2017 21:59:23 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Sat, 04 Nov 2017 09:45:34 GMT
+# Fri, 17 Nov 2017 21:59:24 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Sat, 04 Nov 2017 09:45:35 GMT
+# Fri, 17 Nov 2017 21:59:24 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Sat, 04 Nov 2017 09:45:35 GMT
+# Fri, 17 Nov 2017 21:59:25 GMT
 CMD ["/bin/bash"]
-# Sat, 04 Nov 2017 20:27:39 GMT
+# Sat, 18 Nov 2017 00:38:46 GMT
 RUN set -x 	&& apt-get update 	&& { 		which gpg 		|| apt-get install -y --no-install-recommends gnupg 	; } 	&& { 		gpg --version | grep -q '^gpg (GnuPG) 1\.' 		|| apt-get install -y --no-install-recommends dirmngr 	; } 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 04 Nov 2017 20:27:40 GMT
+# Sat, 18 Nov 2017 00:38:49 GMT
 RUN set -x 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys DD95CC430502E37EF840ACEEA5D32F012649A5A9 	&& gpg --export DD95CC430502E37EF840ACEEA5D32F012649A5A9 > /etc/apt/trusted.gpg.d/neurodebian.gpg 	&& rm -rf "$GNUPGHOME" 	&& apt-key list | grep neurodebian
-# Sat, 04 Nov 2017 20:27:41 GMT
+# Sat, 18 Nov 2017 00:38:50 GMT
 RUN { 	echo 'deb http://neuro.debian.net/debian xenial main'; 	echo 'deb http://neuro.debian.net/debian data main'; 	echo '#deb-src http://neuro.debian.net/debian-devel xenial main'; } > /etc/apt/sources.list.d/neurodebian.sources.list
 ```
 
 -	Layers:
-	-	`sha256:ae79f251470513c2a0ec750117a81f2d58a50727901ca416efecf297b8a03913`  
-		Last Modified: Fri, 06 Oct 2017 13:04:44 GMT  
-		Size: 47.6 MB (47617129 bytes)  
+	-	`sha256:660c48dd555dcbfdfe19c80a30f557ac57a15f595250e67bfad1e5663c1725bb`  
+		Last Modified: Fri, 17 Nov 2017 22:01:36 GMT  
+		Size: 47.8 MB (47759720 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c59d01a7e4caf1aba785eb33192fec3f96e4ab01975962bcec10f4989a6edcc6`  
-		Last Modified: Sat, 04 Nov 2017 09:46:34 GMT  
-		Size: 848.0 B  
+	-	`sha256:4c7380416e7816a5ab1f840482c9c3ca8de58c6f3ee7f95e55ad299abbfe599f`  
+		Last Modified: Fri, 17 Nov 2017 22:01:29 GMT  
+		Size: 846.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:41ba73a9054d231e1f555c40a74762276900cc6487f5c6cf13b89c7606635c67`  
-		Last Modified: Sat, 04 Nov 2017 09:46:33 GMT  
-		Size: 619.0 B  
+	-	`sha256:421e436b5f80d876128b74139531693be9b4e59e4f1081c9a3c379c95094e375`  
+		Last Modified: Fri, 17 Nov 2017 22:01:29 GMT  
+		Size: 620.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f1bbfd495cc1112b503350686641ee4fa2cea8ccd13fb8a8a302c81dae61d418`  
-		Last Modified: Sat, 04 Nov 2017 09:46:33 GMT  
-		Size: 854.0 B  
+	-	`sha256:e4ce6c3651b3a090bb43688f512f687ea6e3e533132bcbc4a83fb97e7046cea3`  
+		Last Modified: Fri, 17 Nov 2017 22:01:29 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0c346f7223e24b517358f52c4a3f5f9af1c86e5ddeaee5659c8889846e46d1e2`  
-		Last Modified: Sat, 04 Nov 2017 09:46:34 GMT  
+	-	`sha256:be588e74bd348ce48bb7161350f4b9d783c331f37a853a80b0b4abc0a33c569e`  
+		Last Modified: Fri, 17 Nov 2017 22:01:29 GMT  
 		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:89c3ac294f412ca3cde26ba64606d8da59e204c6679746ffa863307007e0a22b`  
-		Last Modified: Sat, 04 Nov 2017 20:29:21 GMT  
+	-	`sha256:9d4210fc7bf6520d73706bdd3079dfab6b9e2c0637f2ec1389e8de262faa2be6`  
+		Last Modified: Sat, 18 Nov 2017 00:40:58 GMT  
 		Size: 268.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:65531f52f13e39fe2554f3102c038e9a51d1b72d390387ef0686f56421d6eb1b`  
-		Last Modified: Sat, 04 Nov 2017 20:29:21 GMT  
-		Size: 3.2 KB (3151 bytes)  
+	-	`sha256:5f4e9d560e6fe0463bbd681262d35b0b86a86e0bffe2c13b57a468abb59c2159`  
+		Last Modified: Sat, 18 Nov 2017 00:40:57 GMT  
+		Size: 3.1 KB (3150 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1eb3938c6526f393491a7a50195731bbc5f9e22c029e658f72f67f2787332c1b`  
-		Last Modified: Sat, 04 Nov 2017 20:29:21 GMT  
-		Size: 247.0 B  
+	-	`sha256:176a714121eeb0a9ee2bc430dc87a9e9b3903f49bdfdee0b92f9f26620c448a7`  
+		Last Modified: Sat, 18 Nov 2017 00:40:58 GMT  
+		Size: 246.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `neurodebian:xenial-non-free`
 
 ```console
-$ docker pull neurodebian@sha256:1a2798f4c28711b762ce276a6eb77aab8ac25d8cbb969063ad19f26581d16aad
+$ docker pull neurodebian@sha256:bdb0f59ba14925d5982933adfd928f0c653d14e0d3be73b30f4b32ed5fea0cf5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2358,81 +2358,81 @@ $ docker pull neurodebian@sha256:1a2798f4c28711b762ce276a6eb77aab8ac25d8cbb96906
 ### `neurodebian:xenial-non-free` - linux; amd64
 
 ```console
-$ docker pull neurodebian@sha256:0cef639e71aa74cac8a5b966513dbdaebd018166ff3fd8bed5ef078c9c3ca30f
+$ docker pull neurodebian@sha256:f7a7b691c15766bbbbdb7d090d5476e1e25d22eb3a47d324eb569c6b6ec0e61a
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **47.6 MB (47623540 bytes)**  
+-	Total Size: **47.8 MB (47766123 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eedca28c7fe40049c1ccd34ead83c09010ad78d4b8ab8ddeae457ecd35e36b9d`
+-	Image ID: `sha256:83e2b787fff235677c21ded636af88097062dcef1aeded045fda1bfee967a237`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Sat, 04 Nov 2017 09:45:32 GMT
-ADD file:5b334adf9d9a2256add2a801b49d4b23c93b0973ec22bb798973d571c948f102 in / 
-# Sat, 04 Nov 2017 09:45:33 GMT
+# Fri, 17 Nov 2017 21:59:22 GMT
+ADD file:280a445783f309c90ab928883d98e4326c1fbe19927c8a555da41bcb74c71a45 in / 
+# Fri, 17 Nov 2017 21:59:22 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Sat, 04 Nov 2017 09:45:33 GMT
+# Fri, 17 Nov 2017 21:59:23 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Sat, 04 Nov 2017 09:45:34 GMT
+# Fri, 17 Nov 2017 21:59:24 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Sat, 04 Nov 2017 09:45:35 GMT
+# Fri, 17 Nov 2017 21:59:24 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Sat, 04 Nov 2017 09:45:35 GMT
+# Fri, 17 Nov 2017 21:59:25 GMT
 CMD ["/bin/bash"]
-# Sat, 04 Nov 2017 20:27:39 GMT
+# Sat, 18 Nov 2017 00:38:46 GMT
 RUN set -x 	&& apt-get update 	&& { 		which gpg 		|| apt-get install -y --no-install-recommends gnupg 	; } 	&& { 		gpg --version | grep -q '^gpg (GnuPG) 1\.' 		|| apt-get install -y --no-install-recommends dirmngr 	; } 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 04 Nov 2017 20:27:40 GMT
+# Sat, 18 Nov 2017 00:38:49 GMT
 RUN set -x 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys DD95CC430502E37EF840ACEEA5D32F012649A5A9 	&& gpg --export DD95CC430502E37EF840ACEEA5D32F012649A5A9 > /etc/apt/trusted.gpg.d/neurodebian.gpg 	&& rm -rf "$GNUPGHOME" 	&& apt-key list | grep neurodebian
-# Sat, 04 Nov 2017 20:27:41 GMT
+# Sat, 18 Nov 2017 00:38:50 GMT
 RUN { 	echo 'deb http://neuro.debian.net/debian xenial main'; 	echo 'deb http://neuro.debian.net/debian data main'; 	echo '#deb-src http://neuro.debian.net/debian-devel xenial main'; } > /etc/apt/sources.list.d/neurodebian.sources.list
-# Sat, 04 Nov 2017 20:27:46 GMT
+# Sat, 18 Nov 2017 00:38:56 GMT
 RUN sed -i -e 's,main *$,main contrib non-free,g' /etc/apt/sources.list.d/neurodebian.sources.list; grep -q 'deb .* multiverse$' /etc/apt/sources.list || sed -i -e 's,universe *$,universe multiverse,g' /etc/apt/sources.list
 ```
 
 -	Layers:
-	-	`sha256:ae79f251470513c2a0ec750117a81f2d58a50727901ca416efecf297b8a03913`  
-		Last Modified: Fri, 06 Oct 2017 13:04:44 GMT  
-		Size: 47.6 MB (47617129 bytes)  
+	-	`sha256:660c48dd555dcbfdfe19c80a30f557ac57a15f595250e67bfad1e5663c1725bb`  
+		Last Modified: Fri, 17 Nov 2017 22:01:36 GMT  
+		Size: 47.8 MB (47759720 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c59d01a7e4caf1aba785eb33192fec3f96e4ab01975962bcec10f4989a6edcc6`  
-		Last Modified: Sat, 04 Nov 2017 09:46:34 GMT  
-		Size: 848.0 B  
+	-	`sha256:4c7380416e7816a5ab1f840482c9c3ca8de58c6f3ee7f95e55ad299abbfe599f`  
+		Last Modified: Fri, 17 Nov 2017 22:01:29 GMT  
+		Size: 846.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:41ba73a9054d231e1f555c40a74762276900cc6487f5c6cf13b89c7606635c67`  
-		Last Modified: Sat, 04 Nov 2017 09:46:33 GMT  
-		Size: 619.0 B  
+	-	`sha256:421e436b5f80d876128b74139531693be9b4e59e4f1081c9a3c379c95094e375`  
+		Last Modified: Fri, 17 Nov 2017 22:01:29 GMT  
+		Size: 620.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f1bbfd495cc1112b503350686641ee4fa2cea8ccd13fb8a8a302c81dae61d418`  
-		Last Modified: Sat, 04 Nov 2017 09:46:33 GMT  
-		Size: 854.0 B  
+	-	`sha256:e4ce6c3651b3a090bb43688f512f687ea6e3e533132bcbc4a83fb97e7046cea3`  
+		Last Modified: Fri, 17 Nov 2017 22:01:29 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0c346f7223e24b517358f52c4a3f5f9af1c86e5ddeaee5659c8889846e46d1e2`  
-		Last Modified: Sat, 04 Nov 2017 09:46:34 GMT  
+	-	`sha256:be588e74bd348ce48bb7161350f4b9d783c331f37a853a80b0b4abc0a33c569e`  
+		Last Modified: Fri, 17 Nov 2017 22:01:29 GMT  
 		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:89c3ac294f412ca3cde26ba64606d8da59e204c6679746ffa863307007e0a22b`  
-		Last Modified: Sat, 04 Nov 2017 20:29:21 GMT  
+	-	`sha256:9d4210fc7bf6520d73706bdd3079dfab6b9e2c0637f2ec1389e8de262faa2be6`  
+		Last Modified: Sat, 18 Nov 2017 00:40:58 GMT  
 		Size: 268.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:65531f52f13e39fe2554f3102c038e9a51d1b72d390387ef0686f56421d6eb1b`  
-		Last Modified: Sat, 04 Nov 2017 20:29:21 GMT  
-		Size: 3.2 KB (3151 bytes)  
+	-	`sha256:5f4e9d560e6fe0463bbd681262d35b0b86a86e0bffe2c13b57a468abb59c2159`  
+		Last Modified: Sat, 18 Nov 2017 00:40:57 GMT  
+		Size: 3.1 KB (3150 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1eb3938c6526f393491a7a50195731bbc5f9e22c029e658f72f67f2787332c1b`  
-		Last Modified: Sat, 04 Nov 2017 20:29:21 GMT  
-		Size: 247.0 B  
+	-	`sha256:176a714121eeb0a9ee2bc430dc87a9e9b3903f49bdfdee0b92f9f26620c448a7`  
+		Last Modified: Sat, 18 Nov 2017 00:40:58 GMT  
+		Size: 246.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1c74a07c90a8da584f8cd8c53c229f62ba287d8a7ce84e7e06357b1594f5f947`  
-		Last Modified: Sat, 04 Nov 2017 20:29:36 GMT  
+	-	`sha256:2e7298996724d124cb9e89929815ad4ed23eca616675e0c3ed00bc43194ed981`  
+		Last Modified: Sat, 18 Nov 2017 00:41:16 GMT  
 		Size: 255.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `neurodebian:zesty`
 
 ```console
-$ docker pull neurodebian@sha256:39ac1314ec9a0d0cca94c24564800e3cc9f5b1c1392664ce6126e7618d4b9a5b
+$ docker pull neurodebian@sha256:f28cfc14c6a5dece025ab1e232fb7c4621d7c0ec29b1cc7458c6abda9eb578cf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2442,75 +2442,75 @@ $ docker pull neurodebian@sha256:39ac1314ec9a0d0cca94c24564800e3cc9f5b1c1392664c
 ### `neurodebian:zesty` - linux; amd64
 
 ```console
-$ docker pull neurodebian@sha256:19e0714569fcf384ecb79af3dcee4cebfb082dce52a82ece357567c063bf824b
+$ docker pull neurodebian@sha256:576b6002637efbe6f162de46dee9c3cb12473289652d2a7109a896fe2e34d863
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **41.8 MB (41844354 bytes)**  
+-	Total Size: **42.0 MB (42007342 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8042f3a919888f86ef5a00cf72cc7c882c61bd8ac84692eeabd17642c6bfbc92`
+-	Image ID: `sha256:b527426d69b273541de70a5a29a58ea09e3d148084a38554143c903accc0db3f`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Sat, 04 Nov 2017 09:45:43 GMT
-ADD file:4e2e1f8336bcc64e853e9f3462f0829ce85b34a32755dba06aa7bd0007eda4f0 in / 
-# Sat, 04 Nov 2017 09:45:44 GMT
+# Fri, 17 Nov 2017 21:59:35 GMT
+ADD file:7695c82efcabf2b3ad4c608b200c506d9a16d22ebb6a823742a83fc3b5bc1f31 in / 
+# Fri, 17 Nov 2017 21:59:36 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Sat, 04 Nov 2017 09:45:45 GMT
+# Fri, 17 Nov 2017 21:59:37 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Sat, 04 Nov 2017 09:45:46 GMT
+# Fri, 17 Nov 2017 21:59:37 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Sat, 04 Nov 2017 09:45:46 GMT
+# Fri, 17 Nov 2017 21:59:38 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Sat, 04 Nov 2017 09:45:47 GMT
+# Fri, 17 Nov 2017 21:59:38 GMT
 CMD ["/bin/bash"]
-# Sat, 04 Nov 2017 20:28:00 GMT
+# Sat, 18 Nov 2017 00:39:10 GMT
 RUN set -x 	&& apt-get update 	&& { 		which gpg 		|| apt-get install -y --no-install-recommends gnupg 	; } 	&& { 		gpg --version | grep -q '^gpg (GnuPG) 1\.' 		|| apt-get install -y --no-install-recommends dirmngr 	; } 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 04 Nov 2017 20:28:06 GMT
+# Sat, 18 Nov 2017 00:39:15 GMT
 RUN set -x 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys DD95CC430502E37EF840ACEEA5D32F012649A5A9 	&& gpg --export DD95CC430502E37EF840ACEEA5D32F012649A5A9 > /etc/apt/trusted.gpg.d/neurodebian.gpg 	&& rm -rf "$GNUPGHOME" 	&& apt-key list | grep neurodebian
-# Sat, 04 Nov 2017 20:28:07 GMT
+# Sat, 18 Nov 2017 00:39:16 GMT
 RUN { 	echo 'deb http://neuro.debian.net/debian zesty main'; 	echo 'deb http://neuro.debian.net/debian data main'; 	echo '#deb-src http://neuro.debian.net/debian-devel zesty main'; } > /etc/apt/sources.list.d/neurodebian.sources.list
 ```
 
 -	Layers:
-	-	`sha256:8b23367590c32dbb6954ab3cc9b6c451b9763556c72a893538efe88583f6a5dc`  
-		Last Modified: Mon, 18 Sep 2017 23:33:09 GMT  
-		Size: 38.4 MB (38437889 bytes)  
+	-	`sha256:0bbeb3f34b714172c2d2a30a26bec5f9f179d3714ae36e192b66cb2c0d8d0594`  
+		Last Modified: Fri, 17 Nov 2017 22:02:10 GMT  
+		Size: 38.6 MB (38600735 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d18b5715fdd4c73948352b439715c4ec71459ba6199ad6d79fd2e2e9a5b24235`  
-		Last Modified: Sat, 04 Nov 2017 09:46:53 GMT  
-		Size: 853.0 B  
+	-	`sha256:fb8d5f4c517a89e3d5ad5da69592d7d67fa9fa6fff5e0d2ffb6d73b2c2436fa5`  
+		Last Modified: Fri, 17 Nov 2017 22:02:06 GMT  
+		Size: 846.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5ba295b2a11b6c71aaf7ccc1dd4378eabef9b5d32d30a4f3dbd2e4b1fa4eef70`  
-		Last Modified: Sat, 04 Nov 2017 09:46:53 GMT  
-		Size: 568.0 B  
+	-	`sha256:c4cd377f217253b5f29a3e014c6b5852cc5d5fbd5ffe30c6a5cf48d999e65aee`  
+		Last Modified: Fri, 17 Nov 2017 22:02:04 GMT  
+		Size: 567.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:31ace8c1d433fa58f410c0680402a0a4b4a2abdf1badd340e136b10f78a5c7b6`  
-		Last Modified: Sat, 04 Nov 2017 09:46:53 GMT  
+	-	`sha256:968d05a759781ff464a9b2aa8167a99877ce8803341bff8dfc337840227f9ca4`  
+		Last Modified: Fri, 17 Nov 2017 22:02:05 GMT  
 		Size: 851.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95434b428ba1b404a4bd50c47d42f4ebe291a42974f31ace17e1c9e91c6b64b5`  
-		Last Modified: Sat, 04 Nov 2017 09:46:52 GMT  
-		Size: 163.0 B  
+	-	`sha256:f358380db9ed7655eeba0f239421be152c9140ee0aaf5d3aaeb92bcd2e065937`  
+		Last Modified: Fri, 17 Nov 2017 22:02:04 GMT  
+		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dd8a97ffc8f5ed6bbea173326ae5b4908b5214193b4dc9e9218b323cee031347`  
-		Last Modified: Sat, 04 Nov 2017 20:29:52 GMT  
-		Size: 3.4 MB (3400636 bytes)  
+	-	`sha256:490f1e6359849698d9bc92d3317ce1046818216f53fbec72bccc63a90ca4f1ab`  
+		Last Modified: Sat, 18 Nov 2017 00:41:37 GMT  
+		Size: 3.4 MB (3400784 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4245cbc24241af245f8fc3b1cc8b5499bebc8a8b9adecb2748aff4153da45fdd`  
-		Last Modified: Sat, 04 Nov 2017 20:29:52 GMT  
-		Size: 3.1 KB (3149 bytes)  
+	-	`sha256:44996e769418080b72083f58924077a3279d0f516acf0a62018500404e90b29c`  
+		Last Modified: Sat, 18 Nov 2017 00:41:37 GMT  
+		Size: 3.2 KB (3151 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7e45c062d693d2449bf9d2a5097efa9ed8a84a081c41ac960ecd0537b8fc2b0a`  
-		Last Modified: Sat, 04 Nov 2017 20:29:52 GMT  
-		Size: 245.0 B  
+	-	`sha256:f843ca5b7aed09bbf3b77efa8341c0a267bd4cd3cfeed3bf8d3e7627aefb7e9b`  
+		Last Modified: Sat, 18 Nov 2017 00:41:36 GMT  
+		Size: 246.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `neurodebian:zesty-non-free`
 
 ```console
-$ docker pull neurodebian@sha256:d1cabd2a3722a3f47daf10498d51b8ea1a25bba8daeaac4d7c7a31a7e5bb571c
+$ docker pull neurodebian@sha256:d3c4ba78adfa0e557cbf60008794039e28d76a27d716e992977eb454fa619c4f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2520,73 +2520,73 @@ $ docker pull neurodebian@sha256:d1cabd2a3722a3f47daf10498d51b8ea1a25bba8daeaac4
 ### `neurodebian:zesty-non-free` - linux; amd64
 
 ```console
-$ docker pull neurodebian@sha256:bd6bc8db362f66f23a2faaf40937bc4f33b4ab899b3cfd5a2597359d9cb4fc38
+$ docker pull neurodebian@sha256:94fcb4395f962c958bd4be858c9cfb5d02e1d4da7b771f2564a35ae8d36168bf
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **41.8 MB (41844612 bytes)**  
+-	Total Size: **42.0 MB (42007598 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:602f568f91b1373232755fac13e1a2639b69df9804c66339ae2921e82d30960b`
+-	Image ID: `sha256:e211f813697dc5d758282d2de5c3655cb3b17609369517aba29302fd87e526c5`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Sat, 04 Nov 2017 09:45:43 GMT
-ADD file:4e2e1f8336bcc64e853e9f3462f0829ce85b34a32755dba06aa7bd0007eda4f0 in / 
-# Sat, 04 Nov 2017 09:45:44 GMT
+# Fri, 17 Nov 2017 21:59:35 GMT
+ADD file:7695c82efcabf2b3ad4c608b200c506d9a16d22ebb6a823742a83fc3b5bc1f31 in / 
+# Fri, 17 Nov 2017 21:59:36 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Sat, 04 Nov 2017 09:45:45 GMT
+# Fri, 17 Nov 2017 21:59:37 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Sat, 04 Nov 2017 09:45:46 GMT
+# Fri, 17 Nov 2017 21:59:37 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Sat, 04 Nov 2017 09:45:46 GMT
+# Fri, 17 Nov 2017 21:59:38 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Sat, 04 Nov 2017 09:45:47 GMT
+# Fri, 17 Nov 2017 21:59:38 GMT
 CMD ["/bin/bash"]
-# Sat, 04 Nov 2017 20:28:00 GMT
+# Sat, 18 Nov 2017 00:39:10 GMT
 RUN set -x 	&& apt-get update 	&& { 		which gpg 		|| apt-get install -y --no-install-recommends gnupg 	; } 	&& { 		gpg --version | grep -q '^gpg (GnuPG) 1\.' 		|| apt-get install -y --no-install-recommends dirmngr 	; } 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 04 Nov 2017 20:28:06 GMT
+# Sat, 18 Nov 2017 00:39:15 GMT
 RUN set -x 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys DD95CC430502E37EF840ACEEA5D32F012649A5A9 	&& gpg --export DD95CC430502E37EF840ACEEA5D32F012649A5A9 > /etc/apt/trusted.gpg.d/neurodebian.gpg 	&& rm -rf "$GNUPGHOME" 	&& apt-key list | grep neurodebian
-# Sat, 04 Nov 2017 20:28:07 GMT
+# Sat, 18 Nov 2017 00:39:16 GMT
 RUN { 	echo 'deb http://neuro.debian.net/debian zesty main'; 	echo 'deb http://neuro.debian.net/debian data main'; 	echo '#deb-src http://neuro.debian.net/debian-devel zesty main'; } > /etc/apt/sources.list.d/neurodebian.sources.list
-# Sat, 04 Nov 2017 20:28:12 GMT
+# Sat, 18 Nov 2017 00:39:25 GMT
 RUN sed -i -e 's,main *$,main contrib non-free,g' /etc/apt/sources.list.d/neurodebian.sources.list; grep -q 'deb .* multiverse$' /etc/apt/sources.list || sed -i -e 's,universe *$,universe multiverse,g' /etc/apt/sources.list
 ```
 
 -	Layers:
-	-	`sha256:8b23367590c32dbb6954ab3cc9b6c451b9763556c72a893538efe88583f6a5dc`  
-		Last Modified: Mon, 18 Sep 2017 23:33:09 GMT  
-		Size: 38.4 MB (38437889 bytes)  
+	-	`sha256:0bbeb3f34b714172c2d2a30a26bec5f9f179d3714ae36e192b66cb2c0d8d0594`  
+		Last Modified: Fri, 17 Nov 2017 22:02:10 GMT  
+		Size: 38.6 MB (38600735 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d18b5715fdd4c73948352b439715c4ec71459ba6199ad6d79fd2e2e9a5b24235`  
-		Last Modified: Sat, 04 Nov 2017 09:46:53 GMT  
-		Size: 853.0 B  
+	-	`sha256:fb8d5f4c517a89e3d5ad5da69592d7d67fa9fa6fff5e0d2ffb6d73b2c2436fa5`  
+		Last Modified: Fri, 17 Nov 2017 22:02:06 GMT  
+		Size: 846.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5ba295b2a11b6c71aaf7ccc1dd4378eabef9b5d32d30a4f3dbd2e4b1fa4eef70`  
-		Last Modified: Sat, 04 Nov 2017 09:46:53 GMT  
-		Size: 568.0 B  
+	-	`sha256:c4cd377f217253b5f29a3e014c6b5852cc5d5fbd5ffe30c6a5cf48d999e65aee`  
+		Last Modified: Fri, 17 Nov 2017 22:02:04 GMT  
+		Size: 567.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:31ace8c1d433fa58f410c0680402a0a4b4a2abdf1badd340e136b10f78a5c7b6`  
-		Last Modified: Sat, 04 Nov 2017 09:46:53 GMT  
+	-	`sha256:968d05a759781ff464a9b2aa8167a99877ce8803341bff8dfc337840227f9ca4`  
+		Last Modified: Fri, 17 Nov 2017 22:02:05 GMT  
 		Size: 851.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95434b428ba1b404a4bd50c47d42f4ebe291a42974f31ace17e1c9e91c6b64b5`  
-		Last Modified: Sat, 04 Nov 2017 09:46:52 GMT  
-		Size: 163.0 B  
+	-	`sha256:f358380db9ed7655eeba0f239421be152c9140ee0aaf5d3aaeb92bcd2e065937`  
+		Last Modified: Fri, 17 Nov 2017 22:02:04 GMT  
+		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dd8a97ffc8f5ed6bbea173326ae5b4908b5214193b4dc9e9218b323cee031347`  
-		Last Modified: Sat, 04 Nov 2017 20:29:52 GMT  
-		Size: 3.4 MB (3400636 bytes)  
+	-	`sha256:490f1e6359849698d9bc92d3317ce1046818216f53fbec72bccc63a90ca4f1ab`  
+		Last Modified: Sat, 18 Nov 2017 00:41:37 GMT  
+		Size: 3.4 MB (3400784 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4245cbc24241af245f8fc3b1cc8b5499bebc8a8b9adecb2748aff4153da45fdd`  
-		Last Modified: Sat, 04 Nov 2017 20:29:52 GMT  
-		Size: 3.1 KB (3149 bytes)  
+	-	`sha256:44996e769418080b72083f58924077a3279d0f516acf0a62018500404e90b29c`  
+		Last Modified: Sat, 18 Nov 2017 00:41:37 GMT  
+		Size: 3.2 KB (3151 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7e45c062d693d2449bf9d2a5097efa9ed8a84a081c41ac960ecd0537b8fc2b0a`  
-		Last Modified: Sat, 04 Nov 2017 20:29:52 GMT  
-		Size: 245.0 B  
+	-	`sha256:f843ca5b7aed09bbf3b77efa8341c0a267bd4cd3cfeed3bf8d3e7627aefb7e9b`  
+		Last Modified: Sat, 18 Nov 2017 00:41:36 GMT  
+		Size: 246.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e7b6d7965d0c123a59c45b90d3c2dfee757608c657c4cfaee8ee30d0793ffb4`  
-		Last Modified: Sat, 04 Nov 2017 20:32:29 GMT  
-		Size: 258.0 B  
+	-	`sha256:405e0adebe50cab92a20d35299da690cd8a47fe80b1852dcf20c8e4b7a21f309`  
+		Last Modified: Sat, 18 Nov 2017 00:41:56 GMT  
+		Size: 256.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
