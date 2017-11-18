@@ -1,16 +1,16 @@
-# `node:9.1.0`
+# `node:9.2.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:cf20b9ab2cbc1b6f76e820839ad5f296b4c9a9fd04f3e74651c16ed49943dbc4`
-- Created: `2017-11-08T20:06:07.778470224Z`
-- Virtual Size: ~ 675.59 Mb  
+- Image ID: `sha256:c1d02ac1d9b4de08d3a39fdacde10427d1c4d8505172d31dd2b4ef78048559f8`
+- Created: `2017-11-15T19:07:54.521546207Z`
+- Virtual Size: ~ 675.67 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=9.1.0`
+  - `NODE_VERSION=9.2.0`
   - `YARN_VERSION=1.3.2`
 
 ## `dpkg` (`.deb`-based packages)
@@ -1845,20 +1845,13 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `TatcherUlrichPublicDomain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:6.8.9.9-5+deb8u10
-'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.8.9.9-5+deb8u10.dsc' imagemagick_6.8.9.9-5+deb8u10.dsc 4228 SHA256:96bae3c6468f12c6292e99e8e8fdb5e0ed66e58843b803e52bcbaf13a3dc715b
-'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.8.9.9.orig.tar.xz' imagemagick_6.8.9.9.orig.tar.xz 7891624 SHA256:a4cccc70179ff2c67550e063cdcb2e62907338ef3e68b45bb1c41931e515b3eb
-'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.8.9.9-5+deb8u10.debian.tar.xz' imagemagick_6.8.9.9-5+deb8u10.debian.tar.xz 286116 SHA256:a9664cde38586f09a7d29718136c5a083fc0b854ca862d7cbd5b6151a5009452
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/imagemagick/8:6.8.9.9-5+deb8u10/
 
-- https://sources.debian.net/src/imagemagick/8:6.8.9.9-5+deb8u10/ (for browsing the source)
-- https://sources.debian.net/src/imagemagick/8:6.8.9.9-5+deb8u10/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/imagemagick/8:6.8.9.9-5+deb8u10/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `inetutils=2:1.9.2.39.3a460-3`
 
