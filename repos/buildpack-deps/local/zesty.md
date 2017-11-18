@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:809a6fa19faaa80e70a0e1f215f2e4f66284551076badc9c35a479c5cdbc5ffa`
-- Created: `2017-11-04T15:40:37.137387656Z`
-- Virtual Size: ~ 740.32 Mb  
+- Image ID: `sha256:769eddeace364ed90a9253119fdb32a2a684a273c454e426650f4fe8d83507fe`
+- Created: `2017-11-17T22:39:36.678271339Z`
+- Virtual Size: ~ 741.05 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -301,11 +301,11 @@ $ apt-get source -qq --print-uris avahi=0.6.32-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.6.32-1ubuntu1.debian.tar.xz' avahi_0.6.32-1ubuntu1.debian.tar.xz 32084 SHA256:e441694e2ae27544015ccf3d919350dbcc872698d56ebc731bdd30b4cc3ff349
 ```
 
-### `dpkg` source package: `base-files=9.6ubuntu13`
+### `dpkg` source package: `base-files=9.6ubuntu13.1`
 
 Binary Packages:
 
-- `base-files=9.6ubuntu13`
+- `base-files=9.6ubuntu13.1`
 
 Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
@@ -314,9 +314,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris base-files=9.6ubuntu13
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_9.6ubuntu13.dsc' base-files_9.6ubuntu13.dsc 1580 SHA256:feb612af23635b8ff5428b6632d981069404539a4cca415179b5dd1807144da4
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_9.6ubuntu13.tar.xz' base-files_9.6ubuntu13.tar.xz 65712 SHA256:93f382c0c8e6119545cae76da8a640a9f3980067b2801e293553f1307118cc6a
+$ apt-get source -qq --print-uris base-files=9.6ubuntu13.1
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_9.6ubuntu13.1.dsc' base-files_9.6ubuntu13.1.dsc 1606 SHA256:eafbbf24969326b96ccfb5692113cc90d4c112c2450cb997d5fca1c88c5086b4
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_9.6ubuntu13.1.tar.xz' base-files_9.6ubuntu13.1.tar.xz 65768 SHA256:2a334426ae04e04f5a3bc46babb983401808796ab6736b9aebd4ab3f2dcde0d0
 ```
 
 ### `dpkg` source package: `base-passwd=3.5.43`
@@ -3368,21 +3368,26 @@ $ apt-get source -qq --print-uris openssh=1:7.4p1-10
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.4p1-10.debian.tar.xz' openssh_7.4p1-10.debian.tar.xz 160804 SHA256:e6f5dd27d051f34b642439ddd03fc12d371168e7ea5afedcb2ee2f9fd436fe7c
 ```
 
-### `dpkg` source package: `openssl=1.0.2g-1ubuntu11.2`
+### `dpkg` source package: `openssl=1.0.2g-1ubuntu11.3`
 
 Binary Packages:
 
-- `libssl-dev:amd64=1.0.2g-1ubuntu11.2`
-- `libssl1.0.0:amd64=1.0.2g-1ubuntu11.2`
-- `openssl=1.0.2g-1ubuntu11.2`
+- `libssl-dev:amd64=1.0.2g-1ubuntu11.3`
+- `libssl1.0.0:amd64=1.0.2g-1ubuntu11.3`
+- `openssl=1.0.2g-1ubuntu11.3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=1.0.2g-1ubuntu11.3
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu11.3.dsc' openssl_1.0.2g-1ubuntu11.3.dsc 2500 SHA256:7625cabd0120d9f74e8b6739587b13b04345c76e2cbe8e5ae80665f99ee6dd21
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g.orig.tar.gz' openssl_1.0.2g.orig.tar.gz 5266102 SHA256:b784b1b3907ce39abf4098702dade6365522a253ad1552e267a9a0e89594aa33
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu11.3.debian.tar.xz' openssl_1.0.2g-1ubuntu11.3.debian.tar.xz 111924 SHA256:9f7939f5d968745ff171f0eb53510fdcc81df4f326794e2d0e5033c85f2bf23f
+```
 
 ### `dpkg` source package: `p11-kit=0.23.3-5`
 
@@ -3494,14 +3499,14 @@ $ apt-get source -qq --print-uris pcre3=2:8.39-3
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre3/pcre3_8.39-3.debian.tar.gz' pcre3_8.39-3.debian.tar.gz 25025 SHA256:a9f0e1a96b6a017965fe69233e267682c289f2cfeb33b46fb78aedcb8cf2c16a
 ```
 
-### `dpkg` source package: `perl=5.24.1-2ubuntu1`
+### `dpkg` source package: `perl=5.24.1-2ubuntu1.1`
 
 Binary Packages:
 
-- `libperl5.24:amd64=5.24.1-2ubuntu1`
-- `perl=5.24.1-2ubuntu1`
-- `perl-base=5.24.1-2ubuntu1`
-- `perl-modules-5.24=5.24.1-2ubuntu1`
+- `libperl5.24:amd64=5.24.1-2ubuntu1.1`
+- `perl=5.24.1-2ubuntu1.1`
+- `perl-base=5.24.1-2ubuntu1.1`
+- `perl-modules-5.24=5.24.1-2ubuntu1.1`
 
 Licenses: (parsed from: `/usr/share/doc/libperl5.24/copyright`, `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-base/copyright`, `/usr/share/doc/perl-modules-5.24/copyright`)
 
@@ -3536,10 +3541,10 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.24/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris perl=5.24.1-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.24.1-2ubuntu1.dsc' perl_5.24.1-2ubuntu1.dsc 2437 SHA256:938ee8f0ee7710bd9d783ff207ce72150a948a7ff4b623555c468d5b4add211b
+$ apt-get source -qq --print-uris perl=5.24.1-2ubuntu1.1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.24.1-2ubuntu1.1.dsc' perl_5.24.1-2ubuntu1.1.dsc 2443 SHA256:8b1c256f0438df4544623cfe78f4746c814d7c13cf4efbebe2ecad68a5d15954
 'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.24.1.orig.tar.xz' perl_5.24.1.orig.tar.xz 11569284 SHA256:03a77bac4505c270f1890ece75afc7d4b555090b41aa41ea478747e23b2afb3f
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.24.1-2ubuntu1.debian.tar.xz' perl_5.24.1-2ubuntu1.debian.tar.xz 167592 SHA256:49573499fb822910e83bf8b1a38d8824fdde5c7d6b6a7fe100c35d061a6c4b00
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.24.1-2ubuntu1.1.debian.tar.xz' perl_5.24.1-2ubuntu1.1.debian.tar.xz 168000 SHA256:602d34b983f6b367d29361b3061a979e4acdfa6431180cab625a42e0560e9532
 ```
 
 ### `dpkg` source package: `pinentry=1.0.0-2`
@@ -3604,12 +3609,12 @@ $ apt-get source -qq --print-uris pkg-config=0.29.1-0ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pkg-config/pkg-config_0.29.1-0ubuntu1.diff.gz' pkg-config_0.29.1-0ubuntu1.diff.gz 12597 SHA256:1c44aeeec1896a69f21861e9b9e18bb783258d57f4bd678b173b3890f1a209bf
 ```
 
-### `dpkg` source package: `postgresql-9.6=9.6.5-0ubuntu0.17.04`
+### `dpkg` source package: `postgresql-9.6=9.6.6-0ubuntu0.17.04`
 
 Binary Packages:
 
-- `libpq-dev=9.6.5-0ubuntu0.17.04`
-- `libpq5:amd64=9.6.5-0ubuntu0.17.04`
+- `libpq-dev=9.6.6-0ubuntu0.17.04`
+- `libpq5:amd64=9.6.6-0ubuntu0.17.04`
 
 Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/libpq5/copyright`)
 
@@ -3628,9 +3633,14 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `nagaysau-ishii`
 - `rijndael`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris postgresql-9.6=9.6.6-0ubuntu0.17.04
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.6-0ubuntu0.17.04.dsc' postgresql-9.6_9.6.6-0ubuntu0.17.04.dsc 3780 SHA256:87099ae36b8e55991dfdeadcaba0a64e7695cbe804359721445fedbf2d562539
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.6.orig.tar.gz' postgresql-9.6_9.6.6.orig.tar.gz 25709021 SHA256:53e1cd5fdff5f45415ae9d5b645177275265a3e800c86becbb94ce183a3a5061
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.6-0ubuntu0.17.04.debian.tar.xz' postgresql-9.6_9.6.6-0ubuntu0.17.04.debian.tar.xz 21248 SHA256:89530b8ba90c0b1ab0ff028fc0448d9623df5bfd9ce6ecee6e59c6d601bf2848
+```
 
 ### `dpkg` source package: `procps=2:3.3.12-1ubuntu2`
 
@@ -3983,12 +3993,12 @@ $ apt-get source -qq --print-uris subversion=1.9.5-1ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/subversion/subversion_1.9.5-1ubuntu1.1.diff.gz' subversion_1.9.5-1ubuntu1.1.diff.gz 2543226 SHA256:9673c7ff07c377123b14ed4bbd0f9e6ca60318fe6e8c4842f942c81dc6dffb4a
 ```
 
-### `dpkg` source package: `systemd=232-21ubuntu5`
+### `dpkg` source package: `systemd=232-21ubuntu7.1`
 
 Binary Packages:
 
-- `libsystemd0:amd64=232-21ubuntu5`
-- `libudev1:amd64=232-21ubuntu5`
+- `libsystemd0:amd64=232-21ubuntu7.1`
+- `libudev1:amd64=232-21ubuntu7.1`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -4000,9 +4010,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=232-21ubuntu7.1
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_232-21ubuntu7.1.dsc' systemd_232-21ubuntu7.1.dsc 4870 SHA256:014b7dd9c89736d347ec6c38f165d58530f8119877354aa2a9a6a6e2144766ca
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_232.orig.tar.gz' systemd_232.orig.tar.gz 4529048 SHA256:1172c7c7d5d72fbded53186e7599d5272231f04cc8b72f9a0fb2c5c20dfc4880
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_232-21ubuntu7.1.debian.tar.xz' systemd_232-21ubuntu7.1.debian.tar.xz 211748 SHA256:923506740bd8fbf157d4c34f441a4da036c2ec3a31b7e7d53cce917d0cfe3825
+```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.8git1`
 

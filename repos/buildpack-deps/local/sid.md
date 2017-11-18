@@ -4443,20 +4443,13 @@ Licenses: (parsed from: `/usr/share/doc/libpango-1.0-0/copyright`, `/usr/share/d
 - `LGPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pango1.0=1.40.13-1
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.40.13-1.dsc' pango1.0_1.40.13-1.dsc 3368 SHA256:1eb5b6b648443f2e9f1023d3089d7a8b2ab867a68658ef93faa8142b802503be
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.40.13.orig.tar.xz' pango1.0_1.40.13.orig.tar.xz 858044 SHA256:f84e98db1078772ff4935b40a1629ff82ef0dfdd08d2cbcc0130c8c437857196
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.40.13-1.debian.tar.xz' pango1.0_1.40.13-1.debian.tar.xz 27584 SHA256:c9183092c24be6741da6884d3360afb023b3aeafb11de0dec955f3e7d9506ccc
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pango1.0/1.40.13-1/
 
-- https://sources.debian.net/src/pango1.0/1.40.13-1/ (for browsing the source)
-- https://sources.debian.net/src/pango1.0/1.40.13-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pango1.0/1.40.13-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `patch=2.7.5-1`
 
@@ -4969,19 +4962,13 @@ Licenses: (parsed from: `/usr/share/doc/sensible-utils/copyright`)
 - `configure`
 - `installsh`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sensible-utils=0.0.10
-'http://deb.debian.org/debian/pool/main/s/sensible-utils/sensible-utils_0.0.10.dsc' sensible-utils_0.0.10.dsc 1671 SHA256:9f19f464d6edc9c086a92c7ac03cc72b285dccd56f9d640b9979a3e5aac3457e
-'http://deb.debian.org/debian/pool/main/s/sensible-utils/sensible-utils_0.0.10.tar.xz' sensible-utils_0.0.10.tar.xz 57140 SHA256:137f67f34cbe2066407889d6ee15f4e51440e0f1378e9763da5922388a6510f3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sensible-utils/0.0.10/
 
-- https://sources.debian.net/src/sensible-utils/0.0.10/ (for browsing the source)
-- https://sources.debian.net/src/sensible-utils/0.0.10/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sensible-utils/0.0.10/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `serf=1.3.9-3`
 
