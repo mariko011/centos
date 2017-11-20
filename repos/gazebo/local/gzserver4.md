@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6d49b090de53ea1a6d5513ebba7b494d72262008dd847a6da090866e2589527b`
-- Created: `2017-11-04T13:14:12.102860971Z`
-- Virtual Size: ~ 529.16 Mb  
+- Image ID: `sha256:17b7e2764380083d190a05b88678b9bf0368788c1027d8e0fc6d89f3de0bed7b`
+- Created: `2017-11-17T23:34:11.289837826Z`
+- Virtual Size: ~ 562.20 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/gzserver_entrypoint.sh"]`
@@ -1369,20 +1369,24 @@ $ apt-get source -qq --print-uris init-system-helpers=1.14ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.14ubuntu1.tar.xz' init-system-helpers_1.14ubuntu1.tar.xz 15436 SHA256:c9f7e8c0d1ee2cdfb12b7a82ffee5a5c90e3d70478591d28803e011e8053a252
 ```
 
-### `dpkg` source package: `initramfs-tools=0.103ubuntu4.7`
+### `dpkg` source package: `initramfs-tools=0.103ubuntu4.9`
 
 Binary Packages:
 
-- `initramfs-tools=0.103ubuntu4.7`
-- `initramfs-tools-bin=0.103ubuntu4.7`
+- `initramfs-tools=0.103ubuntu4.9`
+- `initramfs-tools-bin=0.103ubuntu4.9`
 
 Licenses: (parsed from: `/usr/share/doc/initramfs-tools/copyright`, `/usr/share/doc/initramfs-tools-bin/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris initramfs-tools=0.103ubuntu4.9
+'http://archive.ubuntu.com/ubuntu/pool/main/i/initramfs-tools/initramfs-tools_0.103ubuntu4.9.dsc' initramfs-tools_0.103ubuntu4.9.dsc 1840 SHA256:f6c0fe9aaca028a706c9bee7e5c0e723426ab0d2336a76b28c58844140b87430
+'http://archive.ubuntu.com/ubuntu/pool/main/i/initramfs-tools/initramfs-tools_0.103ubuntu4.9.tar.xz' initramfs-tools_0.103ubuntu4.9.tar.xz 94552 SHA256:7fcd5e53f00c8edf022353605c8fb950120a78dad7b6e6c8af2ef45178517c04
+```
 
 ### `dpkg` source package: `insserv=1.14.0-5ubuntu2`
 
@@ -1922,19 +1926,24 @@ $ apt-get source -qq --print-uris libestr=0.1.9-0ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/libe/libestr/libestr_0.1.9-0ubuntu2.debian.tar.gz' libestr_0.1.9-0ubuntu2.debian.tar.gz 2662 SHA256:27445d455d55d9eb090473844b1f035e93d7ba9cf0c7d2338130b3c2af279d7e
 ```
 
-### `dpkg` source package: `libffi=3.1~rc1+r3.0.13-12ubuntu0.1`
+### `dpkg` source package: `libffi=3.1~rc1+r3.0.13-12ubuntu0.2`
 
 Binary Packages:
 
-- `libffi6:amd64=3.1~rc1+r3.0.13-12ubuntu0.1`
+- `libffi6:amd64=3.1~rc1+r3.0.13-12ubuntu0.2`
 
 Licenses: (parsed from: `/usr/share/doc/libffi6/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libffi=3.1~rc1+r3.0.13-12ubuntu0.2
+'http://archive.ubuntu.com/ubuntu/pool/main/libf/libffi/libffi_3.1~rc1+r3.0.13-12ubuntu0.2.dsc' libffi_3.1~rc1+r3.0.13-12ubuntu0.2.dsc 2168 SHA256:7a49a8dc6661f4642483075e8d03161f632d45d7fc30e37a63474170ab249c91
+'http://archive.ubuntu.com/ubuntu/pool/main/libf/libffi/libffi_3.1~rc1+r3.0.13.orig.tar.gz' libffi_3.1~rc1+r3.0.13.orig.tar.gz 845747 SHA256:1dddde1400c3bcb7749d398071af88c3e4754058d2d4c0b3696c2f82dc5cf11c
+'http://archive.ubuntu.com/ubuntu/pool/main/libf/libffi/libffi_3.1~rc1+r3.0.13-12ubuntu0.2.debian.tar.gz' libffi_3.1~rc1+r3.0.13-12ubuntu0.2.debian.tar.gz 63181 SHA256:55272a1f2115fd44020dab8d032b6eb71e07a1fa1eb93c2e0faa2f2f060aed79
+```
 
 ### `dpkg` source package: `libgcrypt11=1.5.3-2ubuntu4.5`
 
@@ -3571,20 +3580,25 @@ $ apt-get source -qq --print-uris openldap=2.4.31-1+nmu2ubuntu8.4
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.31-1+nmu2ubuntu8.4.diff.gz' openldap_2.4.31-1+nmu2ubuntu8.4.diff.gz 176512 SHA256:5bbd0a7eb5123bdf875c794a48634da4b89264cd2d980422cf58e4f408753a59
 ```
 
-### `dpkg` source package: `openssl=1.0.1f-1ubuntu2.22`
+### `dpkg` source package: `openssl=1.0.1f-1ubuntu2.23`
 
 Binary Packages:
 
-- `libssl1.0.0:amd64=1.0.1f-1ubuntu2.22`
-- `openssl=1.0.1f-1ubuntu2.22`
+- `libssl1.0.0:amd64=1.0.1f-1ubuntu2.23`
+- `openssl=1.0.1f-1ubuntu2.23`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=1.0.1f-1ubuntu2.23
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1f-1ubuntu2.23.dsc' openssl_1.0.1f-1ubuntu2.23.dsc 2370 SHA256:4b63e784559305b7f46d14ac680a3fc99aed2132c8f39fbe0a207477eb3844d3
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1f.orig.tar.gz' openssl_1.0.1f.orig.tar.gz 4509212 SHA256:6cc2a80b17d64de6b7bac985745fdaba971d54ffd7d38d3556f998d7c0c9cb5a
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1f-1ubuntu2.23.debian.tar.gz' openssl_1.0.1f-1ubuntu2.23.debian.tar.gz 267818 SHA256:23912788808e19d9af99f7bcf12b726de0ff9c56ed95db886720aab1a89959ba
+```
 
 ### `dpkg` source package: `opus=1.1-0ubuntu1`
 
@@ -3686,13 +3700,13 @@ $ apt-get source -qq --print-uris pcre3=1:8.31-2ubuntu2.3
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre3/pcre3_8.31-2ubuntu2.3.debian.tar.gz' pcre3_8.31-2ubuntu2.3.debian.tar.gz 32334 SHA256:abd464618602848585b85bcf6ed197839f1359e3dbe887d7d8aed856f277ed9f
 ```
 
-### `dpkg` source package: `perl=5.18.2-2ubuntu1.1`
+### `dpkg` source package: `perl=5.18.2-2ubuntu1.3`
 
 Binary Packages:
 
-- `perl=5.18.2-2ubuntu1.1`
-- `perl-base=5.18.2-2ubuntu1.1`
-- `perl-modules=5.18.2-2ubuntu1.1`
+- `perl=5.18.2-2ubuntu1.3`
+- `perl-base=5.18.2-2ubuntu1.3`
+- `perl-modules=5.18.2-2ubuntu1.3`
 
 Licenses: (parsed from: `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-base/copyright`, `/usr/share/doc/perl-modules/copyright`)
 
@@ -3722,9 +3736,14 @@ Licenses: (parsed from: `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-ba
 - `Unicode`
 - `ZLIB`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris perl=5.18.2-2ubuntu1.3
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.18.2-2ubuntu1.3.dsc' perl_5.18.2-2ubuntu1.3.dsc 2449 SHA256:85aaf555d04c8ae644c59220b6f4278848c0bed82660a3fccacbe703237bd3fd
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.18.2.orig.tar.bz2' perl_5.18.2.orig.tar.bz2 14058513 SHA256:06a0cd490be36d829606aa41d8c9c4c72ae70542f8d4f23ec554335b3d9e2746
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.18.2-2ubuntu1.3.debian.tar.gz' perl_5.18.2-2ubuntu1.3.debian.tar.gz 134778 SHA256:6a6e0750a579b38b9131b41fa385057402381cc79ca50628a7febfb49a324bd2
+```
 
 ### `dpkg` source package: `player=3.0.2+dfsg-4.1ubuntu3`
 
@@ -4082,11 +4101,11 @@ Licenses: (parsed from: `/usr/share/doc/libsdformat2/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `sdformat5=5.2.0-1~trusty`
+### `dpkg` source package: `sdformat5=5.3.0-1~trusty`
 
 Binary Packages:
 
-- `sdformat-sdf=5.2.0-1~trusty`
+- `sdformat-sdf=5.3.0-1~trusty`
 
 Licenses: (parsed from: `/usr/share/doc/sdformat-sdf/copyright`)
 
@@ -4311,12 +4330,12 @@ $ apt-get source -qq --print-uris sudo=1.8.9p5-1ubuntu1.4
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.8.9p5-1ubuntu1.4.debian.tar.gz' sudo_1.8.9p5-1ubuntu1.4.debian.tar.gz 42099 SHA256:0dd793cc146e8b00f8d5e26d543333c68a6fdf8f612c159151cd9c5f90281686
 ```
 
-### `dpkg` source package: `systemd=204-5ubuntu20.24`
+### `dpkg` source package: `systemd=204-5ubuntu20.25`
 
 Binary Packages:
 
-- `libudev1:amd64=204-5ubuntu20.24`
-- `udev=204-5ubuntu20.24`
+- `libudev1:amd64=204-5ubuntu20.25`
+- `udev=204-5ubuntu20.25`
 
 Licenses: (parsed from: `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/udev/copyright`)
 
@@ -4327,9 +4346,14 @@ Licenses: (parsed from: `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/ude
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=204-5ubuntu20.25
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_204-5ubuntu20.25.dsc' systemd_204-5ubuntu20.25.dsc 3660 SHA256:690adb730da9d61e25f5756df55bad9786392812f1523aa790fbb9148f0fc24b
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_204.orig.tar.xz' systemd_204.orig.tar.xz 2186264 SHA256:072c393503c7c1e55ca7acf3db659cbd28c7fe5fa94fab3db95360bafd96731b
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_204-5ubuntu20.25.debian.tar.xz' systemd_204-5ubuntu20.25.debian.tar.xz 144408 SHA256:a3c88344900e1e5ac99e5c1324af970ed34081bf2ea7f38a17d99c1bad026cbc
+```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-41ubuntu6.3`
 
@@ -4449,19 +4473,24 @@ $ apt-get source -qq --print-uris tinyxml=2.6.2-2
 'http://archive.ubuntu.com/ubuntu/pool/universe/t/tinyxml/tinyxml_2.6.2-2.debian.tar.gz' tinyxml_2.6.2-2.debian.tar.gz 4199 SHA256:ed1bfa866785a203486ba57a73687e3965865f65d8fb789ab2fe5bb00edb3af0
 ```
 
-### `dpkg` source package: `tzdata=2016j-0ubuntu0.14.04`
+### `dpkg` source package: `tzdata=2017c-0ubuntu0.14.04`
 
 Binary Packages:
 
-- `tzdata=2016j-0ubuntu0.14.04`
+- `tzdata=2017c-0ubuntu0.14.04`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2017c-0ubuntu0.14.04
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2017c-0ubuntu0.14.04.dsc' tzdata_2017c-0ubuntu0.14.04.dsc 2048 SHA256:983c0276590541ca19b1c4b970065187b3912439f6a761450d5a02de1e1fac8c
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2017c.orig.tar.gz' tzdata_2017c.orig.tar.gz 335571 SHA256:d6543f92a929826318e2f44ff3a7611ce5f565a43e10250b42599d0ba4cbd90b
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2017c-0ubuntu0.14.04.debian.tar.xz' tzdata_2017c-0ubuntu0.14.04.debian.tar.xz 100356 SHA256:65122bc9ae09c8620a4420ef56b0e6047306676d9f451ca28911adc3323a6c44
+```
 
 ### `dpkg` source package: `ubuntu-keyring=2012.05.19`
 
