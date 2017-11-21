@@ -1,7 +1,7 @@
 ## `rabbitmq:management`
 
 ```console
-$ docker pull rabbitmq@sha256:112fb26cf75c71ad01c68e76e7f4d6e2acb71a49b62fb8b59e0543c741aad0b2
+$ docker pull rabbitmq@sha256:341fee00847bcb9c85b06ba7438fab78ba7fd0d5f9e4a3f8a4f3256a43611b52
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -261,14 +261,14 @@ EXPOSE 15671/tcp 15672/tcp
 ### `rabbitmq:management` - linux; arm variant v7
 
 ```console
-$ docker pull rabbitmq@sha256:5aeed246ab3e099bcc50cdb679a8cfb8f68f8da50670f7a4e79cda2e4d383f36
+$ docker pull rabbitmq@sha256:91bdb49065b1ce6c2ffe027afc1979a37fc01f4c93cc31a5d9eb8c368c75bf3c
 ```
 
 -	Docker Version: 17.06.0-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **55.8 MB (55780565 bytes)**  
+-	Total Size: **63.0 MB (62975946 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:816c908a9f1f090d8c4b39e78f44e6740ad32a178987f0241e7b6a835ce21968`
+-	Image ID: `sha256:b923d093ecc4baa204e86acf91859957ca9638e7538ba9992b33f7213bb9e4dd`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -323,7 +323,9 @@ EXPOSE 25672/tcp 4369/tcp 5671/tcp 5672/tcp
 CMD ["rabbitmq-server"]
 # Wed, 08 Nov 2017 14:08:18 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Wed, 08 Nov 2017 14:08:18 GMT
+# Tue, 21 Nov 2017 14:07:54 GMT
+RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; 	apt-get install -y --no-install-recommends python; 	rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
+# Tue, 21 Nov 2017 14:07:54 GMT
 EXPOSE 15671/tcp 15672/tcp
 ```
 
@@ -375,6 +377,10 @@ EXPOSE 15671/tcp 15672/tcp
 	-	`sha256:73711d6f4f3b9cb591f9e5bae5b009927eeb8bf1a3079980b59ba0b8d5372547`  
 		Last Modified: Wed, 08 Nov 2017 14:09:12 GMT  
 		Size: 192.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:88a04cf2ec59a8143435f108ec15c2ee4945da030c76a97662af417f9544bd6a`  
+		Last Modified: Tue, 21 Nov 2017 14:08:13 GMT  
+		Size: 7.2 MB (7195381 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:management` - linux; arm64 variant v8
