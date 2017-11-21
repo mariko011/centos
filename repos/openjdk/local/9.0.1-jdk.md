@@ -3514,9 +3514,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libxml2=2.9.4+dfsg1-5
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1-5.dsc' libxml2_2.9.4+dfsg1-5.dsc 2968 SHA256:90afd882dcff5b103b337460cada64ac8b3667412dfdc9edba6aaaa272039c34
+'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1-5.1.dsc' libxml2_2.9.4+dfsg1-5.1.dsc 3131 SHA256:7a43531fcb67956df3973605720b02c09044594c9e7434edb80d336449557826
 'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1.orig.tar.xz' libxml2_2.9.4+dfsg1.orig.tar.xz 2446412 SHA256:a74ad55e346aa0b2b41903e66d21f8f3d2a736b3f41e32496376861ab484184e
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1-5.debian.tar.xz' libxml2_2.9.4+dfsg1-5.debian.tar.xz 34156 SHA256:2be27117e7a7f3f3d0a69ff8e414af8fd57adb2c99dbea8e8fde95edc0ba83b5
+'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1-5.1.debian.tar.xz' libxml2_2.9.4+dfsg1-5.1.debian.tar.xz 35444 SHA256:0a900d807f5de69cb27ddca74db8d6bb83d37abcdfee1c9b2f8a8ddb7ea028f4
 ```
 
 Other potentially useful URLs:
@@ -3986,20 +3986,13 @@ Licenses: (parsed from: `/usr/share/doc/libegl-mesa0/copyright`, `/usr/share/doc
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mesa=17.2.4-1
-'http://deb.debian.org/debian/pool/main/m/mesa/mesa_17.2.4-1.dsc' mesa_17.2.4-1.dsc 4929 SHA256:e4eda668569c436de7989e00375446f1e3de0d3f08352eb9eebf9078f1b145d0
-'http://deb.debian.org/debian/pool/main/m/mesa/mesa_17.2.4.orig.tar.gz' mesa_17.2.4.orig.tar.gz 17737608 SHA256:cb266edc5cf7226219ebaf556ca2e03dff282e0324d20afd80423a5754d1272c
-'http://deb.debian.org/debian/pool/main/m/mesa/mesa_17.2.4-1.diff.gz' mesa_17.2.4-1.diff.gz 115794 SHA256:8968963753da0e4cd883f34eb5cd2093566ab91a4378254daea662a971d8a462
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mesa/17.2.4-1/
 
-- https://sources.debian.net/src/mesa/17.2.4-1/ (for browsing the source)
-- https://sources.debian.net/src/mesa/17.2.4-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mesa/17.2.4-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mime-support=3.60`
 
