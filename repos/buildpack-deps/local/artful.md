@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3028381a8f83935e28fbc5851927f53557259e2e7c8b00b73f2fc7fe93b61bc5`
-- Created: `2017-11-04T15:22:01.129002367Z`
-- Virtual Size: ~ 743.29 Mb  
+- Image ID: `sha256:38aa50b602618c54491ef2a4901cff1e64ffe1c613544d02a0e6331ab3ce0cbc`
+- Created: `2017-11-17T22:22:08.419219807Z`
+- Virtual Size: ~ 744.10 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -120,12 +120,12 @@ $ apt-get source -qq --print-uris apr=1.6.2-1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/apr/apr_1.6.2-1.debian.tar.xz' apr_1.6.2-1.debian.tar.xz 212900 SHA256:d1fdfd94fce25be17e6bb84ef6ef694db5b7bad4be964b39b0195c9926dd0510
 ```
 
-### `dpkg` source package: `apt=1.5`
+### `dpkg` source package: `apt=1.5.1`
 
 Binary Packages:
 
-- `apt=1.5`
-- `libapt-pkg5.0:amd64=1.5`
+- `apt=1.5.1`
+- `libapt-pkg5.0:amd64=1.5.1`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg5.0/copyright`)
 
@@ -135,9 +135,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apt=1.5
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.5.dsc' apt_1.5.dsc 2599 SHA256:6e4600cf5e30c4aeba4203f0c869a60be6296ef35504b39a217a18f8b0f963cf
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.5.tar.xz' apt_1.5.tar.xz 2095240 SHA256:7d9a4daf7a4ae87de7ff4b1423e951ce66fe0535944f0774c8890d8f2a23e920
+$ apt-get source -qq --print-uris apt=1.5.1
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.5.1.dsc' apt_1.5.1.dsc 2467 SHA256:e9687579e7eeddd387cf964b84fff59181e12e4120a357a522b6bccbf0b41459
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.5.1.tar.xz' apt_1.5.1.tar.xz 2101424 SHA256:a527b4ad0f3916427d8d452271a4b89b3d0537d7c9e9d18a4f88f40664d887dd
 ```
 
 ### `dpkg` source package: `atk1.0=2.26.0-2ubuntu1`
@@ -1435,11 +1435,11 @@ $ apt-get source -qq --print-uris gtk+2.0=2.24.31-2ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+2.0/gtk+2.0_2.24.31-2ubuntu1.debian.tar.xz' gtk+2.0_2.24.31-2ubuntu1.debian.tar.xz 107156 SHA256:967bf923d0c2e04997075042d474d9ae35947ca18b89fc976a0e7cc049ef2b7f
 ```
 
-### `dpkg` source package: `gtk+3.0=3.22.24-0ubuntu1`
+### `dpkg` source package: `gtk+3.0=3.22.25-0ubuntu0.1`
 
 Binary Packages:
 
-- `gtk-update-icon-cache=3.22.24-0ubuntu1`
+- `gtk-update-icon-cache=3.22.25-0ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/gtk-update-icon-cache/copyright`)
 
@@ -1454,10 +1454,10 @@ Licenses: (parsed from: `/usr/share/doc/gtk-update-icon-cache/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gtk+3.0=3.22.24-0ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+3.0/gtk+3.0_3.22.24-0ubuntu1.dsc' gtk+3.0_3.22.24-0ubuntu1.dsc 4182 SHA256:ea970f5e639db58f79ca98f10f9b5425f9133df403e1537e15fb9307ba9dabe4
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+3.0/gtk+3.0_3.22.24.orig.tar.xz' gtk+3.0_3.22.24.orig.tar.xz 18866048 SHA256:cbb16e4cfc928ab8f5f22f7290616f95f6ebc8c97cc724a2007b07ced833592b
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+3.0/gtk+3.0_3.22.24-0ubuntu1.debian.tar.xz' gtk+3.0_3.22.24-0ubuntu1.debian.tar.xz 179016 SHA256:e4651214d9d4e0d4fc94300e360f8c69808ad4c93cc29ae656408a90b77d9505
+$ apt-get source -qq --print-uris gtk+3.0=3.22.25-0ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+3.0/gtk+3.0_3.22.25-0ubuntu0.1.dsc' gtk+3.0_3.22.25-0ubuntu0.1.dsc 4190 SHA256:c861993588cc7f6896e8ce2c559a39441ae86de64fe0656f06bf174f1f7bd11f
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+3.0/gtk+3.0_3.22.25.orig.tar.xz' gtk+3.0_3.22.25.orig.tar.xz 18909656 SHA256:e25eaed5ab0775ddc211898fbfdc873b19e4a7ab03c0dbe88dff1938b433739e
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+3.0/gtk+3.0_3.22.25-0ubuntu0.1.debian.tar.xz' gtk+3.0_3.22.25-0ubuntu0.1.debian.tar.xz 164896 SHA256:eace929eb42dc316be01738075d8b2bbc6e68dbe4e2e27ecf6960437fbac2626
 ```
 
 ### `dpkg` source package: `gzip=1.6-5ubuntu1`
@@ -3414,13 +3414,13 @@ $ apt-get source -qq --print-uris openssh=1:7.5p1-10
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.5p1-10.debian.tar.xz' openssh_7.5p1-10.debian.tar.xz 159252 SHA256:2eda9f24b25b306cae15a8080018ee4f06679e98e2574725459be0d7e0c7db53
 ```
 
-### `dpkg` source package: `openssl=1.0.2g-1ubuntu13`
+### `dpkg` source package: `openssl=1.0.2g-1ubuntu13.2`
 
 Binary Packages:
 
-- `libssl-dev:amd64=1.0.2g-1ubuntu13`
-- `libssl1.0.0:amd64=1.0.2g-1ubuntu13`
-- `openssl=1.0.2g-1ubuntu13`
+- `libssl-dev:amd64=1.0.2g-1ubuntu13.2`
+- `libssl1.0.0:amd64=1.0.2g-1ubuntu13.2`
+- `openssl=1.0.2g-1ubuntu13.2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3429,10 +3429,10 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=1.0.2g-1ubuntu13
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu13.dsc' openssl_1.0.2g-1ubuntu13.dsc 2474 SHA256:41fe4ad0310b952c533b4c7ce315016fd97df040f8e6f8bed040037831609582
+$ apt-get source -qq --print-uris openssl=1.0.2g-1ubuntu13.2
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu13.2.dsc' openssl_1.0.2g-1ubuntu13.2.dsc 2500 SHA256:60375080412e47445663c2bdab4906e179e03b0d243eac02f60a61fb440382c9
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g.orig.tar.gz' openssl_1.0.2g.orig.tar.gz 5266102 SHA256:b784b1b3907ce39abf4098702dade6365522a253ad1552e267a9a0e89594aa33
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu13.debian.tar.xz' openssl_1.0.2g-1ubuntu13.debian.tar.xz 111012 SHA256:1bcd2aff0b517b0255d7267b58800521dfc81e3c953bfae996e15fdeb2121759
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu13.2.debian.tar.xz' openssl_1.0.2g-1ubuntu13.2.debian.tar.xz 112340 SHA256:4afea02d42af6f94d8bc78cd35a5c42f9233c4d23fe59ee5bb30756d3d64c560
 ```
 
 ### `dpkg` source package: `p11-kit=0.23.7-3`
@@ -3655,12 +3655,12 @@ $ apt-get source -qq --print-uris pkg-config=0.29.1-0ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pkg-config/pkg-config_0.29.1-0ubuntu2.diff.gz' pkg-config_0.29.1-0ubuntu2.diff.gz 12715 SHA256:8d5645ccad7bdbcaf3bd83b1b18c7f7d0e2a813e9813b5d4603aa646fc5ff5ea
 ```
 
-### `dpkg` source package: `postgresql-9.6=9.6.5-1`
+### `dpkg` source package: `postgresql-9.6=9.6.6-0ubuntu0.17.10`
 
 Binary Packages:
 
-- `libpq-dev=9.6.5-1`
-- `libpq5:amd64=9.6.5-1`
+- `libpq-dev=9.6.6-0ubuntu0.17.10`
+- `libpq5:amd64=9.6.6-0ubuntu0.17.10`
 
 Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/libpq5/copyright`)
 
@@ -3682,10 +3682,10 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 Source:
 
 ```console
-$ apt-get source -qq --print-uris postgresql-9.6=9.6.5-1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.5-1.dsc' postgresql-9.6_9.6.5-1.dsc 3666 SHA256:81162a163a72c9635a41c98e1267a080eb62cc8fb55bcbc0668ee5bbac5d4cf5
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.5.orig.tar.bz2' postgresql-9.6_9.6.5.orig.tar.bz2 19576132 SHA256:06da12a7e3dddeb803962af8309fa06da9d6989f49e22865335f0a14bad0744c
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.5-1.debian.tar.xz' postgresql-9.6_9.6.5-1.debian.tar.xz 21244 SHA256:747eff28b74219fbb31a84b1484d9e1c76994ede5357beca712c019d328f4f52
+$ apt-get source -qq --print-uris postgresql-9.6=9.6.6-0ubuntu0.17.10
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.6-0ubuntu0.17.10.dsc' postgresql-9.6_9.6.6-0ubuntu0.17.10.dsc 3780 SHA256:cb7fe387787a1338a15dabf1893f71380aeb2c61a765140f4714a11a2e302dff
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.6.orig.tar.gz' postgresql-9.6_9.6.6.orig.tar.gz 25709021 SHA256:53e1cd5fdff5f45415ae9d5b645177275265a3e800c86becbb94ce183a3a5061
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.6-0ubuntu0.17.10.debian.tar.xz' postgresql-9.6_9.6.6-0ubuntu0.17.10.debian.tar.xz 21476 SHA256:b6fd47dc6a0411969f41531f8807217718ef9546e9f5e4e4c5214971f0c40c1c
 ```
 
 ### `dpkg` source package: `procps=2:3.3.12-1ubuntu2`
@@ -4034,12 +4034,12 @@ $ apt-get source -qq --print-uris subversion=1.9.7-2ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/subversion/subversion_1.9.7-2ubuntu1.diff.gz' subversion_1.9.7-2ubuntu1.diff.gz 2640150 SHA256:94934b0bf132ca724a7861d1db777f82a6371df26fc72d714cf10c27fcfed479
 ```
 
-### `dpkg` source package: `systemd=234-2ubuntu12`
+### `dpkg` source package: `systemd=234-2ubuntu12.1`
 
 Binary Packages:
 
-- `libsystemd0:amd64=234-2ubuntu12`
-- `libudev1:amd64=234-2ubuntu12`
+- `libsystemd0:amd64=234-2ubuntu12.1`
+- `libudev1:amd64=234-2ubuntu12.1`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -4054,10 +4054,10 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris systemd=234-2ubuntu12
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_234-2ubuntu12.dsc' systemd_234-2ubuntu12.dsc 4122 SHA256:335d5a06dee3082d126845410aa87347bc0518003092e4ee8bcb8b3c22d35f0d
+$ apt-get source -qq --print-uris systemd=234-2ubuntu12.1
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_234-2ubuntu12.1.dsc' systemd_234-2ubuntu12.1.dsc 4876 SHA256:8a948401456f5acb5c804707ba2b61be335a448b296dab540ed27d04604796bb
 'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_234.orig.tar.gz' systemd_234.orig.tar.gz 4800186 SHA256:da3e69d10aa1c983d33833372ad4929037b411ac421fb085c8cee79ae1d80b6a
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_234-2ubuntu12.debian.tar.xz' systemd_234-2ubuntu12.debian.tar.xz 143360 SHA256:1563471e3066d5a8c3d17f8fcfdd9ae6220193f029ba034de5f3638ba99832a1
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_234-2ubuntu12.1.debian.tar.xz' systemd_234-2ubuntu12.1.debian.tar.xz 143308 SHA256:701220661af3c102053ff14675be25d95f03860a4c5d064c6c570ec5990066a7
 ```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.8git1`

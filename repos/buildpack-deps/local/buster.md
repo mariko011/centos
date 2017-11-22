@@ -414,20 +414,13 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris binutils=2.29.1-6
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.29.1-6.dsc' binutils_2.29.1-6.dsc 9192 SHA256:dc3841302f58b507d5def62591b76442ddfb9cbf0386f393afdab6e8f1be9dcc
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.29.1.orig.tar.xz' binutils_2.29.1.orig.tar.xz 19923564 SHA256:0e993857e2e9b006fb541a3e1ce319d00770b27d3c50af2ee9c779388da1915c
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.29.1-6.debian.tar.xz' binutils_2.29.1-6.debian.tar.xz 174456 SHA256:a3a975b7346cda781e5f05ca5b1c9addae2403e74a24f819084c6ab13fa50500
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/binutils/2.29.1-6/
 
-- https://sources.debian.net/src/binutils/2.29.1-6/ (for browsing the source)
-- https://sources.debian.net/src/binutils/2.29.1-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/binutils/2.29.1-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `bzip2=1.0.6-8.1`
 
@@ -4967,19 +4960,13 @@ Licenses: (parsed from: `/usr/share/doc/sensible-utils/copyright`)
 - `configure`
 - `installsh`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sensible-utils=0.0.10
-'http://deb.debian.org/debian/pool/main/s/sensible-utils/sensible-utils_0.0.10.dsc' sensible-utils_0.0.10.dsc 1671 SHA256:9f19f464d6edc9c086a92c7ac03cc72b285dccd56f9d640b9979a3e5aac3457e
-'http://deb.debian.org/debian/pool/main/s/sensible-utils/sensible-utils_0.0.10.tar.xz' sensible-utils_0.0.10.tar.xz 57140 SHA256:137f67f34cbe2066407889d6ee15f4e51440e0f1378e9763da5922388a6510f3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sensible-utils/0.0.10/
 
-- https://sources.debian.net/src/sensible-utils/0.0.10/ (for browsing the source)
-- https://sources.debian.net/src/sensible-utils/0.0.10/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sensible-utils/0.0.10/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `serf=1.3.9-3`
 

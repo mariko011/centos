@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:00ca252b1cbbff8e50471fcb6f5e757431e95a6cf0bffe8d597b86cd75bd0e4d`
-- Created: `2017-11-04T15:16:36.320544003Z`
-- Virtual Size: ~ 108.06 Mb  
+- Image ID: `sha256:ac157e5ae6cb417686d195c22648cfab66b2587df0c762fc1a7801340df3d53e`
+- Created: `2017-11-17T22:19:33.001535197Z`
+- Virtual Size: ~ 108.85 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -51,12 +51,12 @@ $ apt-get source -qq --print-uris adduser=3.113+nmu3ubuntu5
 'http://archive.ubuntu.com/ubuntu/pool/main/a/adduser/adduser_3.113+nmu3ubuntu5.tar.gz' adduser_3.113+nmu3ubuntu5.tar.gz 362722 SHA256:03221563714d853cda454deabbd6eb87c41fbc87509e929828f8b670560f129f
 ```
 
-### `dpkg` source package: `apt=1.5`
+### `dpkg` source package: `apt=1.5.1`
 
 Binary Packages:
 
-- `apt=1.5`
-- `libapt-pkg5.0:amd64=1.5`
+- `apt=1.5.1`
+- `libapt-pkg5.0:amd64=1.5.1`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg5.0/copyright`)
 
@@ -66,9 +66,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apt=1.5
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.5.dsc' apt_1.5.dsc 2599 SHA256:6e4600cf5e30c4aeba4203f0c869a60be6296ef35504b39a217a18f8b0f963cf
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.5.tar.xz' apt_1.5.tar.xz 2095240 SHA256:7d9a4daf7a4ae87de7ff4b1423e951ce66fe0535944f0774c8890d8f2a23e920
+$ apt-get source -qq --print-uris apt=1.5.1
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.5.1.dsc' apt_1.5.1.dsc 2467 SHA256:e9687579e7eeddd387cf964b84fff59181e12e4120a357a522b6bccbf0b41459
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.5.1.tar.xz' apt_1.5.1.tar.xz 2101424 SHA256:a527b4ad0f3916427d8d452271a4b89b3d0537d7c9e9d18a4f88f40664d887dd
 ```
 
 ### `dpkg` source package: `attr=1:2.4.47-2build1`
@@ -1193,12 +1193,12 @@ $ apt-get source -qq --print-uris openldap=2.4.45+dfsg-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.45+dfsg-1ubuntu1.debian.tar.xz' openldap_2.4.45+dfsg-1ubuntu1.debian.tar.xz 175800 SHA256:2f6ddef561e986db9ecbf91ee89b9224c81089d2d5ad7c06cb3629539e95ec66
 ```
 
-### `dpkg` source package: `openssl=1.0.2g-1ubuntu13`
+### `dpkg` source package: `openssl=1.0.2g-1ubuntu13.2`
 
 Binary Packages:
 
-- `libssl1.0.0:amd64=1.0.2g-1ubuntu13`
-- `openssl=1.0.2g-1ubuntu13`
+- `libssl1.0.0:amd64=1.0.2g-1ubuntu13.2`
+- `openssl=1.0.2g-1ubuntu13.2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1207,10 +1207,10 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=1.0.2g-1ubuntu13
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu13.dsc' openssl_1.0.2g-1ubuntu13.dsc 2474 SHA256:41fe4ad0310b952c533b4c7ce315016fd97df040f8e6f8bed040037831609582
+$ apt-get source -qq --print-uris openssl=1.0.2g-1ubuntu13.2
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu13.2.dsc' openssl_1.0.2g-1ubuntu13.2.dsc 2500 SHA256:60375080412e47445663c2bdab4906e179e03b0d243eac02f60a61fb440382c9
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g.orig.tar.gz' openssl_1.0.2g.orig.tar.gz 5266102 SHA256:b784b1b3907ce39abf4098702dade6365522a253ad1552e267a9a0e89594aa33
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu13.debian.tar.xz' openssl_1.0.2g-1ubuntu13.debian.tar.xz 111012 SHA256:1bcd2aff0b517b0255d7267b58800521dfc81e3c953bfae996e15fdeb2121759
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu13.2.debian.tar.xz' openssl_1.0.2g-1ubuntu13.2.debian.tar.xz 112340 SHA256:4afea02d42af6f94d8bc78cd35a5c42f9233c4d23fe59ee5bb30756d3d64c560
 ```
 
 ### `dpkg` source package: `p11-kit=0.23.7-3`
@@ -1495,12 +1495,12 @@ $ apt-get source -qq --print-uris sqlite3=3.19.3-3
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.19.3-3.debian.tar.xz' sqlite3_3.19.3-3.debian.tar.xz 17564 SHA256:c6b49b43acfbbddf51cfe3cd2b8001dd036c3b0b0dd67d8c522055cf8affdd39
 ```
 
-### `dpkg` source package: `systemd=234-2ubuntu12`
+### `dpkg` source package: `systemd=234-2ubuntu12.1`
 
 Binary Packages:
 
-- `libsystemd0:amd64=234-2ubuntu12`
-- `libudev1:amd64=234-2ubuntu12`
+- `libsystemd0:amd64=234-2ubuntu12.1`
+- `libudev1:amd64=234-2ubuntu12.1`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -1515,10 +1515,10 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris systemd=234-2ubuntu12
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_234-2ubuntu12.dsc' systemd_234-2ubuntu12.dsc 4122 SHA256:335d5a06dee3082d126845410aa87347bc0518003092e4ee8bcb8b3c22d35f0d
+$ apt-get source -qq --print-uris systemd=234-2ubuntu12.1
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_234-2ubuntu12.1.dsc' systemd_234-2ubuntu12.1.dsc 4876 SHA256:8a948401456f5acb5c804707ba2b61be335a448b296dab540ed27d04604796bb
 'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_234.orig.tar.gz' systemd_234.orig.tar.gz 4800186 SHA256:da3e69d10aa1c983d33833372ad4929037b411ac421fb085c8cee79ae1d80b6a
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_234-2ubuntu12.debian.tar.xz' systemd_234-2ubuntu12.debian.tar.xz 143360 SHA256:1563471e3066d5a8c3d17f8fcfdd9ae6220193f029ba034de5f3638ba99832a1
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_234-2ubuntu12.1.debian.tar.xz' systemd_234-2ubuntu12.1.debian.tar.xz 143308 SHA256:701220661af3c102053ff14675be25d95f03860a4c5d064c6c570ec5990066a7
 ```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.8git1`

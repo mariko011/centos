@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:56e8e478ce1e6f1898762650727c374a3f0efa4b4bac032117a4f2b727489f36`
-- Created: `2017-11-04T15:17:44.920109783Z`
-- Virtual Size: ~ 241.04 Mb  
+- Image ID: `sha256:9cddaafd0a17b5d2d6456f571093a8631a96280f7f7e6ebad7fa05b429f95935`
+- Created: `2017-11-17T22:20:30.355106823Z`
+- Virtual Size: ~ 241.84 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -91,12 +91,12 @@ $ apt-get source -qq --print-uris apr=1.6.2-1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/apr/apr_1.6.2-1.debian.tar.xz' apr_1.6.2-1.debian.tar.xz 212900 SHA256:d1fdfd94fce25be17e6bb84ef6ef694db5b7bad4be964b39b0195c9926dd0510
 ```
 
-### `dpkg` source package: `apt=1.5`
+### `dpkg` source package: `apt=1.5.1`
 
 Binary Packages:
 
-- `apt=1.5`
-- `libapt-pkg5.0:amd64=1.5`
+- `apt=1.5.1`
+- `libapt-pkg5.0:amd64=1.5.1`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg5.0/copyright`)
 
@@ -106,9 +106,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apt=1.5
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.5.dsc' apt_1.5.dsc 2599 SHA256:6e4600cf5e30c4aeba4203f0c869a60be6296ef35504b39a217a18f8b0f963cf
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.5.tar.xz' apt_1.5.tar.xz 2095240 SHA256:7d9a4daf7a4ae87de7ff4b1423e951ce66fe0535944f0774c8890d8f2a23e920
+$ apt-get source -qq --print-uris apt=1.5.1
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.5.1.dsc' apt_1.5.1.dsc 2467 SHA256:e9687579e7eeddd387cf964b84fff59181e12e4120a357a522b6bccbf0b41459
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.5.1.tar.xz' apt_1.5.1.tar.xz 2101424 SHA256:a527b4ad0f3916427d8d452271a4b89b3d0537d7c9e9d18a4f88f40664d887dd
 ```
 
 ### `dpkg` source package: `attr=1:2.4.47-2build1`
@@ -1476,12 +1476,12 @@ $ apt-get source -qq --print-uris openssh=1:7.5p1-10
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.5p1-10.debian.tar.xz' openssh_7.5p1-10.debian.tar.xz 159252 SHA256:2eda9f24b25b306cae15a8080018ee4f06679e98e2574725459be0d7e0c7db53
 ```
 
-### `dpkg` source package: `openssl=1.0.2g-1ubuntu13`
+### `dpkg` source package: `openssl=1.0.2g-1ubuntu13.2`
 
 Binary Packages:
 
-- `libssl1.0.0:amd64=1.0.2g-1ubuntu13`
-- `openssl=1.0.2g-1ubuntu13`
+- `libssl1.0.0:amd64=1.0.2g-1ubuntu13.2`
+- `openssl=1.0.2g-1ubuntu13.2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1490,10 +1490,10 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=1.0.2g-1ubuntu13
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu13.dsc' openssl_1.0.2g-1ubuntu13.dsc 2474 SHA256:41fe4ad0310b952c533b4c7ce315016fd97df040f8e6f8bed040037831609582
+$ apt-get source -qq --print-uris openssl=1.0.2g-1ubuntu13.2
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu13.2.dsc' openssl_1.0.2g-1ubuntu13.2.dsc 2500 SHA256:60375080412e47445663c2bdab4906e179e03b0d243eac02f60a61fb440382c9
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g.orig.tar.gz' openssl_1.0.2g.orig.tar.gz 5266102 SHA256:b784b1b3907ce39abf4098702dade6365522a253ad1552e267a9a0e89594aa33
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu13.debian.tar.xz' openssl_1.0.2g-1ubuntu13.debian.tar.xz 111012 SHA256:1bcd2aff0b517b0255d7267b58800521dfc81e3c953bfae996e15fdeb2121759
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu13.2.debian.tar.xz' openssl_1.0.2g-1ubuntu13.2.debian.tar.xz 112340 SHA256:4afea02d42af6f94d8bc78cd35a5c42f9233c4d23fe59ee5bb30756d3d64c560
 ```
 
 ### `dpkg` source package: `p11-kit=0.23.7-3`
@@ -1899,12 +1899,12 @@ $ apt-get source -qq --print-uris subversion=1.9.7-2ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/subversion/subversion_1.9.7-2ubuntu1.diff.gz' subversion_1.9.7-2ubuntu1.diff.gz 2640150 SHA256:94934b0bf132ca724a7861d1db777f82a6371df26fc72d714cf10c27fcfed479
 ```
 
-### `dpkg` source package: `systemd=234-2ubuntu12`
+### `dpkg` source package: `systemd=234-2ubuntu12.1`
 
 Binary Packages:
 
-- `libsystemd0:amd64=234-2ubuntu12`
-- `libudev1:amd64=234-2ubuntu12`
+- `libsystemd0:amd64=234-2ubuntu12.1`
+- `libudev1:amd64=234-2ubuntu12.1`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -1919,10 +1919,10 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris systemd=234-2ubuntu12
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_234-2ubuntu12.dsc' systemd_234-2ubuntu12.dsc 4122 SHA256:335d5a06dee3082d126845410aa87347bc0518003092e4ee8bcb8b3c22d35f0d
+$ apt-get source -qq --print-uris systemd=234-2ubuntu12.1
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_234-2ubuntu12.1.dsc' systemd_234-2ubuntu12.1.dsc 4876 SHA256:8a948401456f5acb5c804707ba2b61be335a448b296dab540ed27d04604796bb
 'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_234.orig.tar.gz' systemd_234.orig.tar.gz 4800186 SHA256:da3e69d10aa1c983d33833372ad4929037b411ac421fb085c8cee79ae1d80b6a
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_234-2ubuntu12.debian.tar.xz' systemd_234-2ubuntu12.debian.tar.xz 143360 SHA256:1563471e3066d5a8c3d17f8fcfdd9ae6220193f029ba034de5f3638ba99832a1
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_234-2ubuntu12.1.debian.tar.xz' systemd_234-2ubuntu12.1.debian.tar.xz 143308 SHA256:701220661af3c102053ff14675be25d95f03860a4c5d064c6c570ec5990066a7
 ```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.8git1`
