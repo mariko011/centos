@@ -222,20 +222,13 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris binutils=2.29.1-6
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.29.1-6.dsc' binutils_2.29.1-6.dsc 9192 SHA256:dc3841302f58b507d5def62591b76442ddfb9cbf0386f393afdab6e8f1be9dcc
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.29.1.orig.tar.xz' binutils_2.29.1.orig.tar.xz 19923564 SHA256:0e993857e2e9b006fb541a3e1ce319d00770b27d3c50af2ee9c779388da1915c
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.29.1-6.debian.tar.xz' binutils_2.29.1-6.debian.tar.xz 174456 SHA256:a3a975b7346cda781e5f05ca5b1c9addae2403e74a24f819084c6ab13fa50500
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/binutils/2.29.1-6/
 
-- https://sources.debian.net/src/binutils/2.29.1-6/ (for browsing the source)
-- https://sources.debian.net/src/binutils/2.29.1-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/binutils/2.29.1-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `boot=1.3-20-1.1`
 
@@ -1539,14 +1532,13 @@ Licenses: (parsed from: `/usr/share/doc/libkeyutils1/copyright`)
 - `LGPL-2`
 - `LGPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris keyutils=1.5.9-9.1
-'http://http.debian.net/debian/pool/main/k/keyutils/keyutils_1.5.9-9.1.dsc' keyutils_1.5.9-9.1.dsc 2118 SHA256:a16d70de62b984b7064d6517884438846f4270948ff4680761112301beb0a20e
-'http://http.debian.net/debian/pool/main/k/keyutils/keyutils_1.5.9.orig.tar.bz2' keyutils_1.5.9.orig.tar.bz2 74683 SHA256:4da2c5552c688b65ab14d4fd40fbdf720c8b396d8ece643e040cf6e707e083ae
-'http://http.debian.net/debian/pool/main/k/keyutils/keyutils_1.5.9-9.1.debian.tar.xz' keyutils_1.5.9-9.1.debian.tar.xz 17644 SHA256:899184c857c9acdc62bd704666def7e7e733fc17b9da4f23d891ea31ce543127
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/keyutils/1.5.9-9.1/
+
 
 ### `dpkg` source package: `krb5=1.15.2-2`
 
@@ -3316,20 +3308,13 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-matrix/copyright`)
 - `GPL-2+`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris rmatrix=1.2-11-1
-'http://deb.debian.org/debian/pool/main/r/rmatrix/rmatrix_1.2-11-1.dsc' rmatrix_1.2-11-1.dsc 1674 SHA256:277b45919177eaab5b186d52d51b2e71f201631466780ee366baf9c2144a5874
-'http://deb.debian.org/debian/pool/main/r/rmatrix/rmatrix_1.2-11.orig.tar.gz' rmatrix_1.2-11.orig.tar.gz 1819378 SHA256:cf8ccba0a89eaa261f6332ce013c82255f34a21ce4d9fcf72332253bba336dfb
-'http://deb.debian.org/debian/pool/main/r/rmatrix/rmatrix_1.2-11-1.diff.gz' rmatrix_1.2-11-1.diff.gz 5416 SHA256:6f8bf5caa024c3c7f874f468a2f8e969b3e92491b567476eae0ceec4acd57a52
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/rmatrix/1.2-11-1/
 
-- https://sources.debian.net/src/rmatrix/1.2-11-1/ (for browsing the source)
-- https://sources.debian.net/src/rmatrix/1.2-11-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/rmatrix/1.2-11-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rpart=4.1-11-1`
 
