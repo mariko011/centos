@@ -19,9 +19,15 @@
 -	[`haproxy:1.7.9`](#haproxy179)
 -	[`haproxy:1.7.9-alpine`](#haproxy179-alpine)
 -	[`haproxy:1.7-alpine`](#haproxy17-alpine)
+-	[`haproxy:1.8-rc`](#haproxy18-rc)
+-	[`haproxy:1.8-rc4`](#haproxy18-rc4)
+-	[`haproxy:1.8-rc4-alpine`](#haproxy18-rc4-alpine)
+-	[`haproxy:1.8-rc-alpine`](#haproxy18-rc-alpine)
 -	[`haproxy:1-alpine`](#haproxy1-alpine)
 -	[`haproxy:alpine`](#haproxyalpine)
 -	[`haproxy:latest`](#haproxylatest)
+-	[`haproxy:rc`](#haproxyrc)
+-	[`haproxy:rc-alpine`](#haproxyrc-alpine)
 
 ## `haproxy:1`
 
@@ -4322,6 +4328,22 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 		Size: 345.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `haproxy:1.8-rc`
+
+**does not exist** (yet?)
+
+## `haproxy:1.8-rc4`
+
+**does not exist** (yet?)
+
+## `haproxy:1.8-rc4-alpine`
+
+**does not exist** (yet?)
+
+## `haproxy:1.8-rc-alpine`
+
+**does not exist** (yet?)
+
 ## `haproxy:1-alpine`
 
 ```console
@@ -4886,3 +4908,11 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 		Last Modified: Mon, 09 Oct 2017 22:33:11 GMT  
 		Size: 346.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `haproxy:rc`
+
+**does not exist** (yet?)
+
+## `haproxy:rc-alpine`
+
+**does not exist** (yet?)
