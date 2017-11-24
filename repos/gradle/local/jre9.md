@@ -1,10 +1,10 @@
-# `gradle:4.3.0-jre9`
+# `gradle:4.3.1-jre9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0f44456b13f8728e8f3ed12777d36b69234baa56dcdb0734f23b89f5e2b2d5c8`
-- Created: `2017-11-08T20:13:14.754603638Z`
-- Virtual Size: ~ 737.64 Mb  
+- Image ID: `sha256:e16b498396150e30083097911534c19121d2c72272c7f83bc47edfba1f281714`
+- Created: `2017-11-22T18:09:30.679197709Z`
+- Virtual Size: ~ 737.76 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["gradle"]`
@@ -15,7 +15,7 @@
   - `JAVA_VERSION=9.0.1+11`
   - `JAVA_DEBIAN_VERSION=9.0.1+11-1`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=4.3`
+  - `GRADLE_VERSION=4.3.1`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1785,20 +1785,13 @@ Licenses: (parsed from: `/usr/share/doc/iproute2/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris iproute2=4.9.0-2
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.9.0-2.dsc' iproute2_4.9.0-2.dsc 2298 SHA256:3842bc9bbc2529d3a14077a649ce086a0bad6bb4a579b1bb1592d011c3f1c84e
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.9.0.orig.tar.xz' iproute2_4.9.0.orig.tar.xz 613032 SHA256:c0f30f043f7767cc1b2cd2197b08d4e9b2392c95823fabe30bbce308c30116c4
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.9.0-2.debian.tar.xz' iproute2_4.9.0-2.debian.tar.xz 145200 SHA256:2ce0448dabe5a0ab99792ea510e9b2a02454c195d0b2ab83e33a9ca0a988da00
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/iproute2/4.9.0-2/
 
-- https://sources.debian.net/src/iproute2/4.9.0-2/ (for browsing the source)
-- https://sources.debian.net/src/iproute2/4.9.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/iproute2/4.9.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `iptables=1.6.1-2`
 
