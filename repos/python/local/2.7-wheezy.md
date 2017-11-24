@@ -2931,20 +2931,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.8.0+dfsg1-7+wheezy9
-'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.8.0+dfsg1-7+wheezy9.dsc' libxml2_2.8.0+dfsg1-7+wheezy9.dsc 2673 SHA256:71377bf46751adfbfaecf0428de6bac3fc5cfbc3c1a18dbbb00b0677cb0e3d72
-'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.8.0+dfsg1.orig.tar.gz' libxml2_2.8.0+dfsg1.orig.tar.gz 3554683 SHA256:46f339843967e861e81f8427373ff2a3d0a8cb608022dea16aa1d345ddcee338
-'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.8.0+dfsg1-7+wheezy9.debian.tar.gz' libxml2_2.8.0+dfsg1-7+wheezy9.debian.tar.gz 74726 SHA256:b2a873ae7edae2ac04acccea346ecace4d4432e40ac47c878d6dd65347fbdf9f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libxml2/2.8.0+dfsg1-7+wheezy9/
 
-- https://sources.debian.net/src/libxml2/2.8.0+dfsg1-7+wheezy9/ (for browsing the source)
-- https://sources.debian.net/src/libxml2/2.8.0+dfsg1-7+wheezy9/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxml2/2.8.0+dfsg1-7+wheezy9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxrender=1:0.9.7-1+deb7u3`
 
@@ -3879,20 +3872,13 @@ Licenses: (parsed from: `/usr/share/doc/python2.7/copyright`, `/usr/share/doc/py
 - `This software is provided as-is, without express`
 - `implied`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python2.7=2.7.3-6+deb7u3
-'http://security.debian.org/pool/updates/main/p/python2.7/python2.7_2.7.3-6+deb7u3.dsc' python2.7_2.7.3-6+deb7u3.dsc 2838 SHA256:84bb99b355a0ffcb82c06e9251cba8d189e925310b7acb4bf38ee3876335d323
-'http://security.debian.org/pool/updates/main/p/python2.7/python2.7_2.7.3.orig.tar.gz' python2.7_2.7.3.orig.tar.gz 14216076 SHA256:68bddd390a22ce9a9946ad711fc0042c831889be1f8ff79c0945f7a973e05bda
-'http://security.debian.org/pool/updates/main/p/python2.7/python2.7_2.7.3-6+deb7u3.diff.gz' python2.7_2.7.3-6+deb7u3.diff.gz 543919 SHA256:341663a1c9f9ec6df1974824e46bfecc4ad6454d1b77c735cecaa81ca095ec2f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python2.7/2.7.3-6+deb7u3/
 
-- https://sources.debian.net/src/python2.7/2.7.3-6+deb7u3/ (for browsing the source)
-- https://sources.debian.net/src/python2.7/2.7.3-6+deb7u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python2.7/2.7.3-6+deb7u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline6=6.2+dfsg-0.1`
 
