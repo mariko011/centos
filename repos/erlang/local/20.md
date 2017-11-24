@@ -1,18 +1,18 @@
-# `erlang:20.1.5`
+# `erlang:20.1.6`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3101ae64e0e26ea067d77906249e123d3d6abb0ff7e03e409cfadaf1ea6f104d`
-- Created: `2017-11-14T18:56:49.227969778Z`
-- Virtual Size: ~ 876.52 Mb  
+- Image ID: `sha256:53f6229e146d41c1a77d1ea9aa72a6bc0e2ec3949c919214ed2eec54cb58a298`
+- Created: `2017-11-22T18:55:36.477296361Z`
+- Virtual Size: ~ 876.56 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["erl"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `OTP_VERSION=20.1.5`
+  - `OTP_VERSION=20.1.6`
   - `REBAR_VERSION=2.6.4`
-  - `REBAR3_VERSION=3.4.4`
+  - `REBAR3_VERSION=3.4.6`
 
 ## `dpkg` (`.deb`-based packages)
 
