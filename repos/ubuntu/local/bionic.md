@@ -294,6 +294,10 @@ Licenses: (parsed from: `/usr/share/doc/debianutils/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/debianutils/4.8.2/
+
 
 ### `dpkg` source package: `diffutils=1:3.6-1`
 
@@ -659,15 +663,13 @@ Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 - `GPL-2`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libgcrypt20=1.7.9-1
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.7.9-1.dsc' libgcrypt20_1.7.9-1.dsc 2914 SHA256:d922d12b25a64cd25601b34380bed9c9ca3c8fd4c9625951641fcc8766c7796d
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.7.9.orig.tar.bz2' libgcrypt20_1.7.9.orig.tar.bz2 2897137 SHA256:bfe9bb703c1126c3647da2810fd23039c2f09d46969f71612c2065dc3fa9373b
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.7.9.orig.tar.bz2.asc' libgcrypt20_1.7.9.orig.tar.bz2.asc 310 SHA256:96108d1701cd3c8a6826d7d2a27056de79421fe20bf9ef447e8c12e982f64414
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.7.9-1.debian.tar.xz' libgcrypt20_1.7.9-1.debian.tar.xz 26020 SHA256:1a0775f8e8921aa537db92c06cca82780cb24adf04775e2f944a23d867414d55
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libgcrypt20/1.7.9-1/
+
 
 ### `dpkg` source package: `libgpg-error=1.27-3`
 
@@ -682,6 +684,10 @@ Licenses: (parsed from: `/usr/share/doc/libgpg-error0/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libgpg-error/1.27-3/
 
 
 ### `dpkg` source package: `libidn=1.33-2`
@@ -1069,14 +1075,9 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.26.0-8ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.0-8ubuntu1.dsc' perl_5.26.0-8ubuntu1.dsc 2350 SHA256:b18d5ba3ffba402ce05b3a37c94c4bbb9519eb0720906431beacdce276d0551b
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.0.orig.tar.xz' perl_5.26.0.orig.tar.xz 11961692 SHA256:9bf2e3d0d72aad77865c3bdbc20d3b576d769c5c255c4ceb30fdb9335266bf55
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.0-8ubuntu1.debian.tar.xz' perl_5.26.0-8ubuntu1.debian.tar.xz 160068 SHA256:c5f6a0952ce17e3b8eaccd047d7f5b6d8ffa3007634d0e2adc3ded4d67931ade
-```
 
 ### `dpkg` source package: `pinentry=1.0.0-3`
 
