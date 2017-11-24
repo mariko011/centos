@@ -1052,20 +1052,13 @@ Licenses: (parsed from: `/usr/share/doc/libkeyutils1/copyright`)
 - `LGPL-2`
 - `LGPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris keyutils=1.5.9-9.1
-'http://deb.debian.org/debian/pool/main/k/keyutils/keyutils_1.5.9-9.1.dsc' keyutils_1.5.9-9.1.dsc 2118 SHA256:a16d70de62b984b7064d6517884438846f4270948ff4680761112301beb0a20e
-'http://deb.debian.org/debian/pool/main/k/keyutils/keyutils_1.5.9.orig.tar.bz2' keyutils_1.5.9.orig.tar.bz2 74683 SHA256:4da2c5552c688b65ab14d4fd40fbdf720c8b396d8ece643e040cf6e707e083ae
-'http://deb.debian.org/debian/pool/main/k/keyutils/keyutils_1.5.9-9.1.debian.tar.xz' keyutils_1.5.9-9.1.debian.tar.xz 17644 SHA256:899184c857c9acdc62bd704666def7e7e733fc17b9da4f23d891ea31ce543127
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/keyutils/1.5.9-9.1/
 
-- https://sources.debian.net/src/keyutils/1.5.9-9.1/ (for browsing the source)
-- https://sources.debian.net/src/keyutils/1.5.9-9.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/keyutils/1.5.9-9.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `krb5=1.15.2-2`
 
