@@ -1848,10 +1848,6 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/imagemagick/8:6.8.9.9-5+deb8u10/
-
 
 ### `dpkg` source package: `inetutils=2:1.9.2.39.3a460-3`
 
@@ -4301,10 +4297,6 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/postgresql-9.4/9.4.13-0+deb8u1/
 
 
 ### `dpkg` source package: `procps=2:3.3.9-9`
