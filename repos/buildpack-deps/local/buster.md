@@ -3510,9 +3510,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libxml2=2.9.4+dfsg1-5
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1-5.dsc' libxml2_2.9.4+dfsg1-5.dsc 2968 SHA256:90afd882dcff5b103b337460cada64ac8b3667412dfdc9edba6aaaa272039c34
+'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1-5.1.dsc' libxml2_2.9.4+dfsg1-5.1.dsc 3131 SHA256:7a43531fcb67956df3973605720b02c09044594c9e7434edb80d336449557826
 'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1.orig.tar.xz' libxml2_2.9.4+dfsg1.orig.tar.xz 2446412 SHA256:a74ad55e346aa0b2b41903e66d21f8f3d2a736b3f41e32496376861ab484184e
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1-5.debian.tar.xz' libxml2_2.9.4+dfsg1-5.debian.tar.xz 34156 SHA256:2be27117e7a7f3f3d0a69ff8e414af8fd57adb2c99dbea8e8fde95edc0ba83b5
+'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1-5.1.debian.tar.xz' libxml2_2.9.4+dfsg1-5.1.debian.tar.xz 35444 SHA256:0a900d807f5de69cb27ddca74db8d6bb83d37abcdfee1c9b2f8a8ddb7ea028f4
 ```
 
 Other potentially useful URLs:
