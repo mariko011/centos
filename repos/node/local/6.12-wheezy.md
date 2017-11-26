@@ -3511,6 +3511,10 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/openssl/1.0.1t-1+deb7u2/
+
 
 ### `dpkg` source package: `p11-kit=0.12-3`
 
@@ -3872,6 +3876,10 @@ Licenses: (parsed from: `/usr/share/doc/python2.7/copyright`, `/usr/share/doc/py
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/python2.7/2.7.3-6+deb7u3/
 
 
 ### `dpkg` source package: `readline6=6.2+dfsg-0.1`
