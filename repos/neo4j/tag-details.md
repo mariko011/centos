@@ -89,6 +89,8 @@
 -	[`neo4j:3.2.6-enterprise`](#neo4j326-enterprise)
 -	[`neo4j:3.2.7`](#neo4j327)
 -	[`neo4j:3.2.7-enterprise`](#neo4j327-enterprise)
+-	[`neo4j:3.2.8`](#neo4j328)
+-	[`neo4j:3.2.8-enterprise`](#neo4j328-enterprise)
 -	[`neo4j:3.2-enterprise`](#neo4j32-enterprise)
 -	[`neo4j:3.3`](#neo4j33)
 -	[`neo4j:3.3.0`](#neo4j330)
@@ -10654,6 +10656,14 @@ CMD ["neo4j"]
 		Last Modified: Mon, 13 Nov 2017 15:47:07 GMT  
 		Size: 1.7 KB (1730 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `neo4j:3.2.8`
+
+**does not exist** (yet?)
+
+## `neo4j:3.2.8-enterprise`
+
+**does not exist** (yet?)
 
 ## `neo4j:3.2-enterprise`
 
