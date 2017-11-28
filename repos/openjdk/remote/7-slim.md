@@ -1,7 +1,7 @@
 ## `openjdk:7-slim`
 
 ```console
-$ docker pull openjdk@sha256:f5151f837d61d79a7a28fa39481a1248400df3bf1639f213653cdd6d3abc52f8
+$ docker pull openjdk@sha256:0db3fb29be160e9586d43b4d932a243d2ac28779d1e0bce1aae59d7af61de672
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -17,14 +17,14 @@ $ docker pull openjdk@sha256:f5151f837d61d79a7a28fa39481a1248400df3bf1639f213653
 ### `openjdk:7-slim` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:9347e284258062fdfcd7bb143896c9058cd9ba8e8347791608078a7c1a1e71de
+$ docker pull openjdk@sha256:0a1b55ac6ff73a10524a8e43458ad0aff24340a4493e12001c5a8367d62ad4e0
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **149.2 MB (149208398 bytes)**  
+-	Total Size: **149.2 MB (149226216 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d37df3a561c4d673112abb813b5be93fcfe3bdee8aca0ebefb105e4aa8f58c98`
+-	Image ID: `sha256:2f8e20f7460b11599ffb4006557ece36b23311052a9d16b038d0210a52391015`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -44,9 +44,9 @@ RUN ln -svT "/usr/lib/jvm/java-7-openjdk-$(dpkg --print-architecture)" /docker-j
 ENV JAVA_HOME=/docker-java-home
 # Sat, 04 Nov 2017 05:40:02 GMT
 ENV JAVA_VERSION=7u151
-# Sat, 04 Nov 2017 05:40:02 GMT
-ENV JAVA_DEBIAN_VERSION=7u151-2.6.11-1~deb8u1
-# Sat, 04 Nov 2017 05:41:27 GMT
+# Mon, 27 Nov 2017 23:45:21 GMT
+ENV JAVA_DEBIAN_VERSION=7u151-2.6.11-2~deb8u1
+# Mon, 27 Nov 2017 23:46:55 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y 		openjdk-7-jdk="$JAVA_DEBIAN_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
 ```
 
@@ -67,9 +67,9 @@ RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/m
 		Last Modified: Sat, 04 Nov 2017 05:57:53 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a40d03de995662bbe30d7eb9c35d8c7ddc2c5f4ffb2c9854e7f0b8bf1c76f90a`  
-		Last Modified: Sat, 04 Nov 2017 05:58:13 GMT  
-		Size: 118.6 MB (118630996 bytes)  
+	-	`sha256:b12939658fb9465d00f6eb6bdcb7c00c4003892060692c04bfcbf2bb185d181b`  
+		Last Modified: Mon, 27 Nov 2017 23:50:55 GMT  
+		Size: 118.6 MB (118648814 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:7-slim` - linux; arm variant v5
