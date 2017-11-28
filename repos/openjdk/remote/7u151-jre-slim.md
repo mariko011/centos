@@ -1,7 +1,7 @@
 ## `openjdk:7u151-jre-slim`
 
 ```console
-$ docker pull openjdk@sha256:8819c70f5665efdc9d11c46f9f1ced37f40a34da4c895dd71cd709ae4b6e634a
+$ docker pull openjdk@sha256:24dfdc171d58e66906b50190f73f081bf70b8feb1cc1a970cf0e17667139e7c9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -307,14 +307,14 @@ RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/m
 ### `openjdk:7u151-jre-slim` - linux; ppc64le
 
 ```console
-$ docker pull openjdk@sha256:053fc09d8ed7c1bed9aa0e2ec140b0513ee9b2891225f448513c821cc939e16f
+$ docker pull openjdk@sha256:b5b8479ee6500876878e67ab8346b4c31390e2ac10719e434a17a093aa8d317b
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **95.2 MB (95159346 bytes)**  
+-	Total Size: **95.6 MB (95626050 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:98bacd651a78612b4faa55479c6a603a7b57283ab67f5aaebce47da3e4b7b101`
+-	Image ID: `sha256:251952dce06f707a04bd377250c22798a32f97f935428cdbfe75719bec980dfc`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -334,9 +334,9 @@ RUN ln -svT "/usr/lib/jvm/java-7-openjdk-$(dpkg --print-architecture)" /docker-j
 ENV JAVA_HOME=/docker-java-home/jre
 # Tue, 10 Oct 2017 02:56:23 GMT
 ENV JAVA_VERSION=7u151
-# Tue, 10 Oct 2017 02:56:28 GMT
-ENV JAVA_DEBIAN_VERSION=7u151-2.6.11-1~deb8u1
-# Tue, 10 Oct 2017 03:13:27 GMT
+# Tue, 28 Nov 2017 12:07:13 GMT
+ENV JAVA_DEBIAN_VERSION=7u151-2.6.11-2~deb8u1
+# Tue, 28 Nov 2017 12:12:22 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y 		openjdk-7-jre-headless="$JAVA_DEBIAN_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
 ```
 
@@ -357,9 +357,9 @@ RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/m
 		Last Modified: Tue, 10 Oct 2017 05:09:11 GMT  
 		Size: 132.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:27572842616a15a3e7d5a72300155cecb41f14bf9625d10bcf7da0c84d158a0e`  
-		Last Modified: Tue, 10 Oct 2017 05:11:06 GMT  
-		Size: 65.4 MB (65392177 bytes)  
+	-	`sha256:aa31d287af3f0f80fa2aaa409adcd7035cabec529bf5c51b6dee0c192b2702c3`  
+		Last Modified: Tue, 28 Nov 2017 12:15:26 GMT  
+		Size: 65.9 MB (65858881 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:7u151-jre-slim` - linux; s390x
