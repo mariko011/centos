@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:01f81ed39921bb56158b3d3c9007c94a2a0ba5860d07cbef58f1ea954d9f6d19`
-- Created: `2017-11-04T18:50:30.467910776Z`
-- Virtual Size: ~ 555.51 Mb  
+- Image ID: `sha256:a16bac14547bead2431767d86f814ed2de79af50070d4990488cb26c9b5970dc`
+- Created: `2017-11-27T23:45:05.332976553Z`
+- Virtual Size: ~ 555.52 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -13,7 +13,7 @@
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/docker-java-home`
   - `JAVA_VERSION=7u151`
-  - `JAVA_DEBIAN_VERSION=7u151-2.6.11-1~deb8u1`
+  - `JAVA_DEBIAN_VERSION=7u151-2.6.11-2~deb8u1`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -3698,13 +3698,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nss/2:3.26-1+debu8u3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nss/2:3.26-1+debu8u3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openjdk-7=7u151-2.6.11-1~deb8u1`
+### `dpkg` source package: `openjdk-7=7u151-2.6.11-2~deb8u1`
 
 Binary Packages:
 
-- `openjdk-7-jdk:amd64=7u151-2.6.11-1~deb8u1`
-- `openjdk-7-jre:amd64=7u151-2.6.11-1~deb8u1`
-- `openjdk-7-jre-headless:amd64=7u151-2.6.11-1~deb8u1`
+- `openjdk-7-jdk:amd64=7u151-2.6.11-2~deb8u1`
+- `openjdk-7-jre:amd64=7u151-2.6.11-2~deb8u1`
+- `openjdk-7-jre-headless:amd64=7u151-2.6.11-2~deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-7-jdk/copyright`, `/usr/share/doc/openjdk-7-jre/copyright`, `/usr/share/doc/openjdk-7-jre-headless/copyright`)
 
@@ -3715,17 +3715,17 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-7-jdk/copyright`, `/usr/share/do
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openjdk-7=7u151-2.6.11-1~deb8u1
-'http://security.debian.org/pool/updates/main/o/openjdk-7/openjdk-7_7u151-2.6.11-1~deb8u1.dsc' openjdk-7_7u151-2.6.11-1~deb8u1.dsc 4698 SHA256:3538de073299fb1fa159fea2d26977383bb427e3ce4bff8f89082b2ff9aa92d3
+$ apt-get source -qq --print-uris openjdk-7=7u151-2.6.11-2~deb8u1
+'http://security.debian.org/pool/updates/main/o/openjdk-7/openjdk-7_7u151-2.6.11-2~deb8u1.dsc' openjdk-7_7u151-2.6.11-2~deb8u1.dsc 4698 SHA256:af5734448a343d13ee00a0cdb6260ef5d48de67a9180a3ff1b0d8a33d9fd25a1
 'http://security.debian.org/pool/updates/main/o/openjdk-7/openjdk-7_7u151-2.6.11.orig.tar.gz' openjdk-7_7u151-2.6.11.orig.tar.gz 53829152 SHA256:9c77d10e23f1d6105a71e18d330a4397fe418e9d0ad63cde65b4b7bac9a144b6
-'http://security.debian.org/pool/updates/main/o/openjdk-7/openjdk-7_7u151-2.6.11-1~deb8u1.debian.tar.xz' openjdk-7_7u151-2.6.11-1~deb8u1.debian.tar.xz 167664 SHA256:c1dd83269c6862676a3f33b6fb6770cfba82aedf523e71a88937a8b650735008
+'http://security.debian.org/pool/updates/main/o/openjdk-7/openjdk-7_7u151-2.6.11-2~deb8u1.debian.tar.xz' openjdk-7_7u151-2.6.11-2~deb8u1.debian.tar.xz 194972 SHA256:cb38680a883b00b91e9e23fe8a5b40eb5f8921adc7e72bf1c99f47e9ef838254
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openjdk-7/7u151-2.6.11-1~deb8u1/ (for browsing the source)
-- https://sources.debian.net/src/openjdk-7/7u151-2.6.11-1~deb8u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openjdk-7/7u151-2.6.11-1~deb8u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openjdk-7/7u151-2.6.11-2~deb8u1/ (for browsing the source)
+- https://sources.debian.net/src/openjdk-7/7u151-2.6.11-2~deb8u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openjdk-7/7u151-2.6.11-2~deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.4.40+dfsg-1+deb8u3`
 
