@@ -1,7 +1,7 @@
 ## `openjdk:7-slim`
 
 ```console
-$ docker pull openjdk@sha256:0db3fb29be160e9586d43b4d932a243d2ac28779d1e0bce1aae59d7af61de672
+$ docker pull openjdk@sha256:5453e5593fedb854684f4d25431cade02dc27f7d60c233401ecd51c3ea368b19
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -133,14 +133,14 @@ RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/m
 ### `openjdk:7-slim` - linux; arm variant v7
 
 ```console
-$ docker pull openjdk@sha256:b86e30f537bbf9177e27a93f80d1f614ace83ba6451cf81e2272493dce157d76
+$ docker pull openjdk@sha256:440eaccebc1561efb6f05be000dda9a6e0de2869a107ba917e679f2aee652b5a
 ```
 
 -	Docker Version: 17.06.0-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **127.2 MB (127165299 bytes)**  
+-	Total Size: **127.6 MB (127623936 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1d868dbdd3e23061fe0c03aef3b23b757e52026e69aac15ff37932e782d64ed2`
+-	Image ID: `sha256:5fdfc1c76dd6338f888003bdc9d7fe834e795d2557b4b6cffefc6565b0575ab2`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -160,9 +160,9 @@ RUN ln -svT "/usr/lib/jvm/java-7-openjdk-$(dpkg --print-architecture)" /docker-j
 ENV JAVA_HOME=/docker-java-home
 # Mon, 09 Oct 2017 22:58:07 GMT
 ENV JAVA_VERSION=7u151
-# Mon, 09 Oct 2017 22:58:07 GMT
-ENV JAVA_DEBIAN_VERSION=7u151-2.6.11-1~deb8u1
-# Mon, 09 Oct 2017 22:59:38 GMT
+# Tue, 28 Nov 2017 02:25:52 GMT
+ENV JAVA_DEBIAN_VERSION=7u151-2.6.11-2~deb8u1
+# Tue, 28 Nov 2017 02:27:29 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y 		openjdk-7-jdk="$JAVA_DEBIAN_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
 ```
 
@@ -183,9 +183,9 @@ RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/m
 		Last Modified: Mon, 09 Oct 2017 23:19:27 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6e706b682e397b17a4b642e758aad62d1ce7244566c6613157d7e60a40ed8212`  
-		Last Modified: Mon, 09 Oct 2017 23:20:53 GMT  
-		Size: 100.5 MB (100451622 bytes)  
+	-	`sha256:b9aff0955f3aa9773d74d78e903fe8097726dd2df087de47f1f0c116ed856e65`  
+		Last Modified: Tue, 28 Nov 2017 02:35:41 GMT  
+		Size: 100.9 MB (100910259 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:7-slim` - linux; arm64 variant v8
