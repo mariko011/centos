@@ -1,7 +1,7 @@
 ## `golang:1-alpine3.6`
 
 ```console
-$ docker pull golang@sha256:c3f6f57152837924487f0c8ebc17f0acd470bbc19cacec368110c91fa242f87a
+$ docker pull golang@sha256:fbde9fade2af865d7b537fba4eb4fee344960232f0019a2dfd325c0672f25e13
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -290,14 +290,14 @@ COPY file:ea7c9f4702f94a0df05f60648914e97f7876c4a7c5163e7870dd98fa896ff722 in /u
 ### `golang:1-alpine3.6` - linux; ppc64le
 
 ```console
-$ docker pull golang@sha256:4fffbe557bb9fd3b58a712a72bbffdb3b9afdf1c4925f5940938cc3d0cdfc11d
+$ docker pull golang@sha256:0546c11a622ca8f222cf44d444b5d89e79bf091bdbaac85977e01e21241ca193
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **78.3 MB (78270072 bytes)**  
+-	Total Size: **78.3 MB (78271803 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:af99557b2d1656157af8056c7fba73d1b1f0d1174a5a8fc715807c48911a39ae`
+-	Image ID: `sha256:758a8a59684e5d3f86aa335700c742bb90321c155c341f55a8d01162c26e44aa`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -313,17 +313,17 @@ RUN apk add --no-cache ca-certificates
 ENV GOLANG_VERSION=1.9.2
 # Thu, 26 Oct 2017 18:15:32 GMT
 COPY multi:5340852d126c59a835fc30c4253b181919d512298cbb0226c1562e4ec4eba94c in /go-alpine-patches/ 
-# Thu, 26 Oct 2017 18:16:25 GMT
-RUN set -eux; 	apk add --no-cache --virtual .build-deps 		bash 		gcc 		musl-dev 		openssl 		go 	; 	export 		GOROOT_BOOTSTRAP="$(go env GOROOT)" 		GOOS="$(go env GOOS)" 		GOARCH="$(go env GOARCH)" 		GO386="$(go env GO386)" 		GOARM="$(go env GOARM)" 		GOHOSTOS="$(go env GOHOSTOS)" 		GOHOSTARCH="$(go env GOHOSTARCH)" 	; 		wget -O go.tgz "https://golang.org/dl/go$GOLANG_VERSION.src.tar.gz"; 	echo '665f184bf8ac89986cfd5a4460736976f60b57df6b320ad71ad4cef53bb143dc *go.tgz' | sha256sum -c -; 	tar -C /usr/local -xzf go.tgz; 	rm go.tgz; 		cd /usr/local/go/src; 	for p in /go-alpine-patches/*.patch; do 		[ -f "$p" ] || continue; 		patch -p2 -i "$p"; 	done; 	./make.bash; 		rm -rf /go-alpine-patches; 	apk del .build-deps; 		export PATH="/usr/local/go/bin:$PATH"; 	go version
-# Thu, 26 Oct 2017 18:16:27 GMT
+# Tue, 28 Nov 2017 16:51:53 GMT
+RUN set -eux; 	apk add --no-cache --virtual .build-deps 		bash 		gcc 		musl-dev 		openssl 		go 	; 	export 		GOROOT_BOOTSTRAP="$(go env GOROOT)" 		GOOS="$(go env GOOS)" 		GOARCH="$(go env GOARCH)" 		GOHOSTOS="$(go env GOHOSTOS)" 		GOHOSTARCH="$(go env GOHOSTARCH)" 	; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		armhf) export GOARM='6' ;; 		x86) export GO386='387' ;; 	esac; 		wget -O go.tgz "https://golang.org/dl/go$GOLANG_VERSION.src.tar.gz"; 	echo '665f184bf8ac89986cfd5a4460736976f60b57df6b320ad71ad4cef53bb143dc *go.tgz' | sha256sum -c -; 	tar -C /usr/local -xzf go.tgz; 	rm go.tgz; 		cd /usr/local/go/src; 	for p in /go-alpine-patches/*.patch; do 		[ -f "$p" ] || continue; 		patch -p2 -i "$p"; 	done; 	./make.bash; 		rm -rf /go-alpine-patches; 	apk del .build-deps; 		export PATH="/usr/local/go/bin:$PATH"; 	go version
+# Tue, 28 Nov 2017 16:51:54 GMT
 ENV GOPATH=/go
-# Thu, 26 Oct 2017 18:16:29 GMT
+# Tue, 28 Nov 2017 16:51:55 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 26 Oct 2017 18:16:33 GMT
+# Tue, 28 Nov 2017 16:51:59 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-# Thu, 26 Oct 2017 18:16:34 GMT
+# Tue, 28 Nov 2017 16:52:00 GMT
 WORKDIR /go
-# Thu, 26 Oct 2017 18:16:36 GMT
+# Tue, 28 Nov 2017 16:52:01 GMT
 COPY file:ea7c9f4702f94a0df05f60648914e97f7876c4a7c5163e7870dd98fa896ff722 in /usr/local/bin/ 
 ```
 
@@ -344,17 +344,17 @@ COPY file:ea7c9f4702f94a0df05f60648914e97f7876c4a7c5163e7870dd98fa896ff722 in /u
 		Last Modified: Thu, 26 Oct 2017 18:17:03 GMT  
 		Size: 1.1 KB (1143 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8ec34c15827fe0b54e4f00034f8f098a469bc0cbccb810e2499469bfacb58cd6`  
-		Last Modified: Thu, 26 Oct 2017 18:17:27 GMT  
-		Size: 75.9 MB (75904423 bytes)  
+	-	`sha256:d014673b1d56ceb5c64b21cbafd57b278bc19569791a11338584f60e539573ce`  
+		Last Modified: Tue, 28 Nov 2017 16:54:13 GMT  
+		Size: 75.9 MB (75906149 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c8af871c88de609a0123558b5ea9edec17bf5911ffb3d6cd9ce00f5fd93edfbd`  
-		Last Modified: Thu, 26 Oct 2017 18:17:03 GMT  
+	-	`sha256:53b645c8b0a80b5d2e20a88251d3ccb99b745c08429e451cf77fb1e45f1385c6`  
+		Last Modified: Tue, 28 Nov 2017 16:53:52 GMT  
 		Size: 156.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:24756efaba8f33afe3cdef7a3e3fe37e4f43b519a3c497285458975619e7d66a`  
-		Last Modified: Thu, 26 Oct 2017 18:17:03 GMT  
-		Size: 1.4 KB (1354 bytes)  
+	-	`sha256:43833fa3fd471d1c2239161d54bb2287a0e3f5285295134b39347955f085d620`  
+		Last Modified: Tue, 28 Nov 2017 16:53:53 GMT  
+		Size: 1.4 KB (1359 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `golang:1-alpine3.6` - linux; s390x

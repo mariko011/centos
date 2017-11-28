@@ -6,7 +6,13 @@
 -	[`traefik:1.4.4`](#traefik144)
 -	[`traefik:1.4.4-alpine`](#traefik144-alpine)
 -	[`traefik:1.4-alpine`](#traefik14-alpine)
+-	[`traefik:1.5`](#traefik15)
+-	[`traefik:1.5.0-rc1`](#traefik150-rc1)
+-	[`traefik:1.5.0-rc1-alpine`](#traefik150-rc1-alpine)
+-	[`traefik:1.5-alpine`](#traefik15-alpine)
 -	[`traefik:alpine`](#traefikalpine)
+-	[`traefik:cancoillotte`](#traefikcancoillotte)
+-	[`traefik:cancoillotte-alpine`](#traefikcancoillotte-alpine)
 -	[`traefik:latest`](#traefiklatest)
 -	[`traefik:roquefort`](#traefikroquefort)
 -	[`traefik:roquefort-alpine`](#traefikroquefort-alpine)
@@ -14,6 +20,10 @@
 -	[`traefik:v1.4.4`](#traefikv144)
 -	[`traefik:v1.4.4-alpine`](#traefikv144-alpine)
 -	[`traefik:v1.4-alpine`](#traefikv14-alpine)
+-	[`traefik:v1.5`](#traefikv15)
+-	[`traefik:v1.5.0-rc1`](#traefikv150-rc1)
+-	[`traefik:v1.5.0-rc1-alpine`](#traefikv150-rc1-alpine)
+-	[`traefik:v1.5-alpine`](#traefikv15-alpine)
 
 ## `traefik:1.4`
 
@@ -621,6 +631,22 @@ LABEL org.label-schema.vendor=Containous org.label-schema.url=https://traefik.io
 		Size: 339.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `traefik:1.5`
+
+**does not exist** (yet?)
+
+## `traefik:1.5.0-rc1`
+
+**does not exist** (yet?)
+
+## `traefik:1.5.0-rc1-alpine`
+
+**does not exist** (yet?)
+
+## `traefik:1.5-alpine`
+
+**does not exist** (yet?)
+
 ## `traefik:alpine`
 
 ```console
@@ -803,6 +829,14 @@ LABEL org.label-schema.vendor=Containous org.label-schema.url=https://traefik.io
 		Last Modified: Tue, 28 Nov 2017 05:57:53 GMT  
 		Size: 339.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `traefik:cancoillotte`
+
+**does not exist** (yet?)
+
+## `traefik:cancoillotte-alpine`
+
+**does not exist** (yet?)
 
 ## `traefik:latest`
 
@@ -1832,3 +1866,19 @@ LABEL org.label-schema.vendor=Containous org.label-schema.url=https://traefik.io
 		Last Modified: Tue, 28 Nov 2017 05:57:53 GMT  
 		Size: 339.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `traefik:v1.5`
+
+**does not exist** (yet?)
+
+## `traefik:v1.5.0-rc1`
+
+**does not exist** (yet?)
+
+## `traefik:v1.5.0-rc1-alpine`
+
+**does not exist** (yet?)
+
+## `traefik:v1.5-alpine`
+
+**does not exist** (yet?)
