@@ -3777,14 +3777,9 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.5-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.5=3.5.3-1ubuntu0~17.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.5/python3.5_3.5.3-1ubuntu0~17.04.1.dsc' python3.5_3.5.3-1ubuntu0~17.04.1.dsc 2798 SHA256:4c5c0d3b497cabbe63ffb0d5a331e4413eb4ef51314ec072ebe1a49855f484fc
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.5/python3.5_3.5.3.orig.tar.xz' python3.5_3.5.3.orig.tar.xz 15213396 SHA256:eefe2ad6575855423ab630f5b51a8ef6e5556f774584c06beab4926f930ddbb0
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.5/python3.5_3.5.3-1ubuntu0~17.04.1.debian.tar.xz' python3.5_3.5.3-1ubuntu0~17.04.1.debian.tar.xz 220492 SHA256:d1a09c76cbefeb3bb3b0459860bfa26afaa4a2173a9cfb4a5eb553b88feeda04
-```
 
 ### `dpkg` source package: `readline=7.0-0ubuntu2`
 
