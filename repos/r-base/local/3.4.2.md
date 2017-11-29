@@ -1843,16 +1843,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libidn2-0=2.0.2-5
-'http://deb.debian.org/debian/pool/main/libi/libidn2-0/libidn2-0_2.0.2-5.dsc' libidn2-0_2.0.2-5.dsc 2325 SHA256:59ae6b2cfb8a49f09710e3b42c1c3a5a48136051ed49445bd6925473dcfe1af5
-'http://deb.debian.org/debian/pool/main/libi/libidn2-0/libidn2-0_2.0.2.orig.tar.gz' libidn2-0_2.0.2.orig.tar.gz 1925342 SHA256:8cd62828b2ab0171e0f35a302f3ad60c3a3fffb45733318b3a8205f9d187eeab
-'http://deb.debian.org/debian/pool/main/libi/libidn2-0/libidn2-0_2.0.2-5.debian.tar.xz' libidn2-0_2.0.2-5.debian.tar.xz 60940 SHA256:5cf1e578a3bb2d302bd6276401e1d6bbea78b82c9acb0828e3d995d4ad4357eb
+'http://http.debian.net/debian/pool/main/libi/libidn2-0/libidn2-0_2.0.2-5.dsc' libidn2-0_2.0.2-5.dsc 2325 SHA256:59ae6b2cfb8a49f09710e3b42c1c3a5a48136051ed49445bd6925473dcfe1af5
+'http://http.debian.net/debian/pool/main/libi/libidn2-0/libidn2-0_2.0.2.orig.tar.gz' libidn2-0_2.0.2.orig.tar.gz 1925342 SHA256:8cd62828b2ab0171e0f35a302f3ad60c3a3fffb45733318b3a8205f9d187eeab
+'http://http.debian.net/debian/pool/main/libi/libidn2-0/libidn2-0_2.0.2-5.debian.tar.xz' libidn2-0_2.0.2-5.debian.tar.xz 60940 SHA256:5cf1e578a3bb2d302bd6276401e1d6bbea78b82c9acb0828e3d995d4ad4357eb
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/libidn2-0/2.0.2-5/ (for browsing the source)
-- https://sources.debian.net/src/libidn2-0/2.0.2-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libidn2-0/2.0.2-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libjpeg-turbo=1:1.5.2-2`
 
@@ -3142,20 +3136,13 @@ Licenses: (parsed from: `/usr/share/doc/r-base/copyright`, `/usr/share/doc/r-bas
 - `LGPL-2.1`
 - `LGPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris r-base=3.4.2-2
-'http://deb.debian.org/debian/pool/main/r/r-base/r-base_3.4.2-2.dsc' r-base_3.4.2-2.dsc 2854 SHA256:c94737dd5dd71021944ed3018cf17f8fac8d69bec43b9fbf3ed7ffeaea971457
-'http://deb.debian.org/debian/pool/main/r/r-base/r-base_3.4.2.orig.tar.gz' r-base_3.4.2.orig.tar.gz 30255544 SHA256:971e30c2436cf645f58552905105d75788bd9733bddbcb7c4fbff4c1a6d80c64
-'http://deb.debian.org/debian/pool/main/r/r-base/r-base_3.4.2-2.debian.tar.xz' r-base_3.4.2-2.debian.tar.xz 87464 SHA256:8840afa69f78ed05f2f47f319c590cef331cc078f82779ecfaf73c3706c116d7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/r-base/3.4.2-2/
 
-- https://sources.debian.net/src/r-base/3.4.2-2/ (for browsing the source)
-- https://sources.debian.net/src/r-base/3.4.2-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/r-base/3.4.2-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `r-cran-class=7.3-14-2`
 
@@ -3826,20 +3813,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris xauth=1:1.0.9-1
-'http://deb.debian.org/debian/pool/main/x/xauth/xauth_1.0.9-1.dsc' xauth_1.0.9-1.dsc 1868 SHA256:87b1388c0904478a90abad8c83266bc704a18c985a0cdd11f4f69ba60b368bf5
-'http://deb.debian.org/debian/pool/main/x/xauth/xauth_1.0.9.orig.tar.gz' xauth_1.0.9.orig.tar.gz 197309 SHA256:0709070caf23ba2fb99536907b75be1fe31853999c62d3e87a6a8d26ba8a8cdb
-'http://deb.debian.org/debian/pool/main/x/xauth/xauth_1.0.9-1.diff.gz' xauth_1.0.9-1.diff.gz 8914 SHA256:b4596b9efc0e579259a41b3fb89cd954f007fb953b262eb6e2f09ba8aebacef6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/xauth/1:1.0.9-1/
 
-- https://sources.debian.net/src/xauth/1:1.0.9-1/ (for browsing the source)
-- https://sources.debian.net/src/xauth/1:1.0.9-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/xauth/1:1.0.9-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `xdg-utils=1.1.2-1`
 
