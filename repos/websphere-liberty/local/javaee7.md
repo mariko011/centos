@@ -2,15 +2,15 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f3b3050ada14bcf2479e4c7df066b5b9b4c8bc14b431e1bf3ad80d009210d704`
-- Created: `2017-11-04T10:48:28.330656725Z`
-- Virtual Size: ~ 453.24 Mb  
+- Image ID: `sha256:56f4a971e06855de0133fcd6c89396eb0d44106b81af1b4a478e7262e4e5b834`
+- Created: `2017-11-27T19:10:32.97706261Z`
+- Virtual Size: ~ 453.62 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/opt/ibm/docker/docker-server","run","defaultServer"]`
 - Environment:
   - `PATH=/opt/ibm/wlp/bin:/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_VERSION=1.8.0_sr5`
+  - `JAVA_VERSION=1.8.0_sr5fp5`
   - `JAVA_HOME=/opt/ibm/java/jre`
   - `LIBERTY_VERSION=17.0.0_03`
   - `LOG_DIR=/logs`
@@ -973,20 +973,25 @@ $ apt-get source -qq --print-uris ncurses=6.0+20160213-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/ncurses_6.0+20160213-1ubuntu1.debian.tar.xz' ncurses_6.0+20160213-1ubuntu1.debian.tar.xz 54496 SHA256:9551738e1bdc425d12897cc459ce5ce40b5e12530b144b731c0a7b3e077c07c7
 ```
 
-### `dpkg` source package: `openssl=1.0.2g-1ubuntu4.8`
+### `dpkg` source package: `openssl=1.0.2g-1ubuntu4.9`
 
 Binary Packages:
 
-- `libssl1.0.0:amd64=1.0.2g-1ubuntu4.8`
-- `openssl=1.0.2g-1ubuntu4.8`
+- `libssl1.0.0:amd64=1.0.2g-1ubuntu4.9`
+- `openssl=1.0.2g-1ubuntu4.9`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=1.0.2g-1ubuntu4.9
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu4.9.dsc' openssl_1.0.2g-1ubuntu4.9.dsc 2435 SHA256:44c61665f4255a9d90cc4e41065a2f24fb8f09bc44093e4429cb4baa97db274b
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g.orig.tar.gz' openssl_1.0.2g.orig.tar.gz 5266102 SHA256:b784b1b3907ce39abf4098702dade6365522a253ad1552e267a9a0e89594aa33
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu4.9.debian.tar.xz' openssl_1.0.2g-1ubuntu4.9.debian.tar.xz 111772 SHA256:63b2893a1a459b9e53b8f3df8669d66baafc66f98d700f756b8594abd046312f
+```
 
 ### `dpkg` source package: `pam=1.1.8-3.2ubuntu2`
 
@@ -1029,11 +1034,11 @@ $ apt-get source -qq --print-uris pcre3=2:8.38-3.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre3/pcre3_8.38-3.1.debian.tar.gz' pcre3_8.38-3.1.debian.tar.gz 32289 SHA256:9ee1b838c1de50cb5f6641016d0dd21b06f1038b9b7c3b1098e0a89b9c24b39f
 ```
 
-### `dpkg` source package: `perl=5.22.1-9`
+### `dpkg` source package: `perl=5.22.1-9ubuntu0.2`
 
 Binary Packages:
 
-- `perl-base=5.22.1-9`
+- `perl-base=5.22.1-9ubuntu0.2`
 
 Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 
@@ -1067,10 +1072,10 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris perl=5.22.1-9
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.22.1-9.dsc' perl_5.22.1-9.dsc 2351 SHA256:bbc9a0f7b17926621cf7324c265e633444d1f05022f42ae32190dbb960457217
+$ apt-get source -qq --print-uris perl=5.22.1-9ubuntu0.2
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.22.1-9ubuntu0.2.dsc' perl_5.22.1-9ubuntu0.2.dsc 2464 SHA256:1269621f0ad5574a2fa3a4d956b4036df134d372ab6508650dc60a3b31c2d5d2
 'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.22.1.orig.tar.xz' perl_5.22.1.orig.tar.xz 11223940 SHA256:9e87317d693ce828095204be0d09af8d60b8785533fadea1a82b6f0e071e5c79
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.22.1-9.debian.tar.xz' perl_5.22.1-9.debian.tar.xz 148292 SHA256:3368488e1d56e9ff69556a2e75cc50858414147afcf5d72f91dbfd71fb5d9127
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.22.1-9ubuntu0.2.debian.tar.xz' perl_5.22.1-9ubuntu0.2.debian.tar.xz 148764 SHA256:f90b2dbff5a3b38c94730a9bb5d369d720b89d88cbe06f319e53683c9d9bdd50
 ```
 
 ### `dpkg` source package: `procps=2:3.3.10-4ubuntu2.3`
@@ -1175,14 +1180,14 @@ $ apt-get source -qq --print-uris shadow=1:4.2-3.1ubuntu5.3
 'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.2-3.1ubuntu5.3.debian.tar.xz' shadow_4.2-3.1ubuntu5.3.debian.tar.xz 505880 SHA256:654fb836e170a8395532ff589c644da6306745d4f630130082971b532bdd68f6
 ```
 
-### `dpkg` source package: `systemd=229-4ubuntu19`
+### `dpkg` source package: `systemd=229-4ubuntu21`
 
 Binary Packages:
 
-- `libsystemd0:amd64=229-4ubuntu19`
-- `libudev1:amd64=229-4ubuntu19`
-- `systemd=229-4ubuntu19`
-- `systemd-sysv=229-4ubuntu19`
+- `libsystemd0:amd64=229-4ubuntu21`
+- `libudev1:amd64=229-4ubuntu21`
+- `systemd=229-4ubuntu21`
+- `systemd-sysv=229-4ubuntu21`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/systemd/copyright`, `/usr/share/doc/systemd-sysv/copyright`)
 
@@ -1194,9 +1199,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=229-4ubuntu21
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu21.dsc' systemd_229-4ubuntu21.dsc 3838 SHA256:cad6080ce64048b404962d550b8af7ae41fa47a2362814a3e05cb21ef0b679f6
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229.orig.tar.gz' systemd_229.orig.tar.gz 4319173 SHA256:b51b0a48d1beb388d95bd6a98d62be05490335d4bb388aefecdcb576e91e0741
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu21.debian.tar.xz' systemd_229-4ubuntu21.debian.tar.xz 252804 SHA256:57752270ac035d2d24096cea3478128352da520f160ca4a68ca8986caceb665e
+```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.3ubuntu2`
 
@@ -1341,20 +1351,25 @@ $ apt-get source -qq --print-uris util-linux=2.27.1-6ubuntu3.3
 'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1-6ubuntu3.3.debian.tar.xz' util-linux_2.27.1-6ubuntu3.3.debian.tar.xz 83780 SHA256:dd3239be2d471306a110fcf91984d41f5e49a0386a8aacd8647b4811e428c0d9
 ```
 
-### `dpkg` source package: `wget=1.17.1-1ubuntu1.2`
+### `dpkg` source package: `wget=1.17.1-1ubuntu1.3`
 
 Binary Packages:
 
-- `wget=1.17.1-1ubuntu1.2`
+- `wget=1.17.1-1ubuntu1.3`
 
 Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 
 - `GFDL-1.2`
 - `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris wget=1.17.1-1ubuntu1.3
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.17.1-1ubuntu1.3.dsc' wget_1.17.1-1ubuntu1.3.dsc 1937 SHA256:20bb00897b9aab568f4e35566ac97bdf50189e2a9f680e82f06461fcd5ae340e
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.17.1.orig.tar.gz' wget_1.17.1.orig.tar.gz 3801442 SHA256:029fbb93bdc1c0c5a7507b6076a6ec2f8d34204a85aa87e5b2f61a9405b290f5
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.17.1-1ubuntu1.3.debian.tar.xz' wget_1.17.1-1ubuntu1.3.debian.tar.xz 27900 SHA256:283781ad43de4fa85c1e2266215bb563bbaab5c70e28b0f48e69cfe5f0bb663e
+```
 
 ### `dpkg` source package: `xz-utils=5.1.1alpha+20120614-2ubuntu2`
 
