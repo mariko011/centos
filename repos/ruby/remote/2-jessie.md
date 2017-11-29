@@ -1,7 +1,7 @@
 ## `ruby:2-jessie`
 
 ```console
-$ docker pull ruby@sha256:c75d177b25560ab7fee680906e19775cfaf640f554536d075078cb932361f047
+$ docker pull ruby@sha256:83a868d36ee4447808f8711fcd333cf761778b9e976f60f1a72f279ba7ba2a35
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -263,14 +263,14 @@ CMD ["irb"]
 ### `ruby:2-jessie` - linux; arm64 variant v8
 
 ```console
-$ docker pull ruby@sha256:109b1b2d405ee4a4b5a14d4355dbef76e78c379ab2014df3b0023c49f258f606
+$ docker pull ruby@sha256:881e95bbcc12c552824dc5ef73c077055739fc5f18a48271383386ef261d39a2
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **250.6 MB (250585009 bytes)**  
+-	Total Size: **250.6 MB (250607977 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4ec45ff3b60bad2d2c24f4a2baaaf4b671db62fa131b40bb35133c2a9c37497f`
+-	Image ID: `sha256:3c983552834721420c4ad01849d5fceea89bfeb9e8318c1c63abbbccc47a43ad`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -294,21 +294,21 @@ ENV RUBY_MAJOR=2.4
 ENV RUBY_VERSION=2.4.2
 # Sat, 04 Nov 2017 16:59:30 GMT
 ENV RUBY_DOWNLOAD_SHA256=748a8980d30141bd1a4124e11745bb105b436fb1890826e0d2b9ea31af27f735
-# Mon, 13 Nov 2017 22:13:23 GMT
-ENV RUBYGEMS_VERSION=2.7.2
-# Mon, 13 Nov 2017 22:13:23 GMT
+# Wed, 29 Nov 2017 22:13:45 GMT
+ENV RUBYGEMS_VERSION=2.7.3
+# Wed, 29 Nov 2017 22:13:46 GMT
 ENV BUNDLER_VERSION=1.16.0
-# Mon, 13 Nov 2017 22:20:55 GMT
+# Wed, 29 Nov 2017 22:21:20 GMT
 RUN set -ex 		&& buildDeps=' 		bison 		dpkg-dev 		libgdbm-dev 		ruby 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& rm -rf /var/lib/apt/lists/* 		&& wget -O ruby.tar.xz "https://cache.ruby-lang.org/pub/ruby/${RUBY_MAJOR%-rc}/ruby-$RUBY_VERSION.tar.xz" 	&& echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum -c - 		&& mkdir -p /usr/src/ruby 	&& tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1 	&& rm ruby.tar.xz 		&& cd /usr/src/ruby 		&& { 		echo '#define ENABLE_PATH_CHECK 0'; 		echo; 		cat file.c; 	} > file.c.new 	&& mv file.c.new file.c 		&& autoconf 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 	&& make -j "$(nproc)" 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& cd / 	&& rm -r /usr/src/ruby 		&& gem update --system "$RUBYGEMS_VERSION" 	&& gem install bundler --version "$BUNDLER_VERSION" --force
-# Mon, 13 Nov 2017 22:20:55 GMT
+# Wed, 29 Nov 2017 22:21:21 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Mon, 13 Nov 2017 22:20:56 GMT
+# Wed, 29 Nov 2017 22:21:22 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Mon, 13 Nov 2017 22:20:57 GMT
+# Wed, 29 Nov 2017 22:21:22 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 13 Nov 2017 22:20:58 GMT
+# Wed, 29 Nov 2017 22:21:24 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" 	&& chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Mon, 13 Nov 2017 22:20:59 GMT
+# Wed, 29 Nov 2017 22:21:24 GMT
 CMD ["irb"]
 ```
 
@@ -333,13 +333,13 @@ CMD ["irb"]
 		Last Modified: Sat, 04 Nov 2017 18:16:42 GMT  
 		Size: 206.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ac420ea20364d4185c99206dd0586e97bcd18ea777bb0cdc95df145a4092ddf7`  
-		Last Modified: Mon, 13 Nov 2017 23:16:38 GMT  
-		Size: 24.5 MB (24549968 bytes)  
+	-	`sha256:46cb0e63c7d18134f89488c6fb4c287f40d11e78b853e5ed7399306f497ce772`  
+		Last Modified: Wed, 29 Nov 2017 23:18:41 GMT  
+		Size: 24.6 MB (24572937 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2ef75583e2c89777179a0aaafc22fd52c7e6045c8c3ed3eb4614f90ca1b630b7`  
-		Last Modified: Mon, 13 Nov 2017 23:16:27 GMT  
-		Size: 165.0 B  
+	-	`sha256:149a0c1c8a7439d4ffac970ecec31e8443b91e0d11ccfe25c7ec26e4c0b75e9f`  
+		Last Modified: Wed, 29 Nov 2017 23:18:31 GMT  
+		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ruby:2-jessie` - linux; 386
