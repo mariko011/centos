@@ -1,10 +1,10 @@
-# `groovy:2.4.12-jre7`
+# `groovy:2.4.13-jre7`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0917ef6e81194e0653cff7738428fc21f641fe764679da7970c15892ee549fe0`
-- Created: `2017-11-04T20:10:52.667321959Z`
-- Virtual Size: ~ 471.22 Mb  
+- Image ID: `sha256:f9e278919c1797b6cc456ef9a3c28fbc27a480b017f72fa051a50eb97bb3adb2`
+- Created: `2017-11-28T01:02:54.534553104Z`
+- Virtual Size: ~ 471.32 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["groovysh"]`
@@ -13,9 +13,9 @@
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/docker-java-home/jre`
   - `JAVA_VERSION=7u151`
-  - `JAVA_DEBIAN_VERSION=7u151-2.6.11-1~deb8u1`
+  - `JAVA_DEBIAN_VERSION=7u151-2.6.11-2~deb8u1`
   - `GROOVY_HOME=/opt/groovy`
-  - `GROOVY_VERSION=2.4.12`
+  - `GROOVY_VERSION=2.4.13`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -522,20 +522,13 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `ISC`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.38.0-4+deb8u7
-'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0-4+deb8u7.dsc' curl_7.38.0-4+deb8u7.dsc 2694 SHA256:b5bca99d184cfd436d441457df6c5eb660071dab4ff913fc5680278f39c80aa5
-'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0.orig.tar.gz' curl_7.38.0.orig.tar.gz 4094034 SHA256:5661028aa6532882fa228cd23c99ddbb8b87643dbb1a7ea55c068d34a943dff1
-'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0-4+deb8u7.debian.tar.xz' curl_7.38.0-4+deb8u7.debian.tar.xz 42300 SHA256:62f8e051409ecbe312a88ba9d4982784742d472d176eec16b4dd19859ae1398d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/7.38.0-4+deb8u7/
 
-- https://sources.debian.net/src/curl/7.38.0-4+deb8u7/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.38.0-4+deb8u7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.38.0-4+deb8u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-13+deb8u1`
 
@@ -4128,12 +4121,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nss/2:3.26-1+debu8u3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nss/2:3.26-1+debu8u3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openjdk-7=7u151-2.6.11-1~deb8u1`
+### `dpkg` source package: `openjdk-7=7u151-2.6.11-2~deb8u1`
 
 Binary Packages:
 
-- `openjdk-7-jre:amd64=7u151-2.6.11-1~deb8u1`
-- `openjdk-7-jre-headless:amd64=7u151-2.6.11-1~deb8u1`
+- `openjdk-7-jre:amd64=7u151-2.6.11-2~deb8u1`
+- `openjdk-7-jre-headless:amd64=7u151-2.6.11-2~deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-7-jre/copyright`, `/usr/share/doc/openjdk-7-jre-headless/copyright`)
 
@@ -4144,17 +4137,17 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-7-jre/copyright`, `/usr/share/do
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openjdk-7=7u151-2.6.11-1~deb8u1
-'http://security.debian.org/pool/updates/main/o/openjdk-7/openjdk-7_7u151-2.6.11-1~deb8u1.dsc' openjdk-7_7u151-2.6.11-1~deb8u1.dsc 4698 SHA256:3538de073299fb1fa159fea2d26977383bb427e3ce4bff8f89082b2ff9aa92d3
+$ apt-get source -qq --print-uris openjdk-7=7u151-2.6.11-2~deb8u1
+'http://security.debian.org/pool/updates/main/o/openjdk-7/openjdk-7_7u151-2.6.11-2~deb8u1.dsc' openjdk-7_7u151-2.6.11-2~deb8u1.dsc 4698 SHA256:af5734448a343d13ee00a0cdb6260ef5d48de67a9180a3ff1b0d8a33d9fd25a1
 'http://security.debian.org/pool/updates/main/o/openjdk-7/openjdk-7_7u151-2.6.11.orig.tar.gz' openjdk-7_7u151-2.6.11.orig.tar.gz 53829152 SHA256:9c77d10e23f1d6105a71e18d330a4397fe418e9d0ad63cde65b4b7bac9a144b6
-'http://security.debian.org/pool/updates/main/o/openjdk-7/openjdk-7_7u151-2.6.11-1~deb8u1.debian.tar.xz' openjdk-7_7u151-2.6.11-1~deb8u1.debian.tar.xz 167664 SHA256:c1dd83269c6862676a3f33b6fb6770cfba82aedf523e71a88937a8b650735008
+'http://security.debian.org/pool/updates/main/o/openjdk-7/openjdk-7_7u151-2.6.11-2~deb8u1.debian.tar.xz' openjdk-7_7u151-2.6.11-2~deb8u1.debian.tar.xz 194972 SHA256:cb38680a883b00b91e9e23fe8a5b40eb5f8921adc7e72bf1c99f47e9ef838254
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openjdk-7/7u151-2.6.11-1~deb8u1/ (for browsing the source)
-- https://sources.debian.net/src/openjdk-7/7u151-2.6.11-1~deb8u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openjdk-7/7u151-2.6.11-1~deb8u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openjdk-7/7u151-2.6.11-2~deb8u1/ (for browsing the source)
+- https://sources.debian.net/src/openjdk-7/7u151-2.6.11-2~deb8u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openjdk-7/7u151-2.6.11-2~deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.4.40+dfsg-1+deb8u3`
 

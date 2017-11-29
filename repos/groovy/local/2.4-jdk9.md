@@ -1,10 +1,10 @@
-# `groovy:2.4.12-jdk9`
+# `groovy:2.4.13-jdk9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:89aea09ea738e9d5b31015ace5cd1f3045b3ca2031668d5986b58e5bc2962724`
-- Created: `2017-11-04T20:11:46.601834394Z`
-- Virtual Size: ~ 941.25 Mb  
+- Image ID: `sha256:9b973c031098e17c25cea363d54114471fdb9f9654541ad58a70d270710d4111`
+- Created: `2017-11-27T18:55:17.602056095Z`
+- Virtual Size: ~ 942.27 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["groovysh"]`
@@ -15,7 +15,7 @@
   - `JAVA_VERSION=9.0.1+11`
   - `JAVA_DEBIAN_VERSION=9.0.1+11-1`
   - `GROOVY_HOME=/opt/groovy`
-  - `GROOVY_VERSION=2.4.12`
+  - `GROOVY_VERSION=2.4.13`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -89,20 +89,13 @@ Licenses: (parsed from: `/usr/share/doc/adwaita-icon-theme/copyright`)
 - `GPL-unspecified`
 - `LGPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris adwaita-icon-theme=3.26.0-1
-'http://deb.debian.org/debian/pool/main/a/adwaita-icon-theme/adwaita-icon-theme_3.26.0-1.dsc' adwaita-icon-theme_3.26.0-1.dsc 2255 SHA256:8c6775a6ae2dcbfbcd1d27cf749447b7d73e5c58c203d4b363aafdb0438ddc1f
-'http://deb.debian.org/debian/pool/main/a/adwaita-icon-theme/adwaita-icon-theme_3.26.0.orig.tar.xz' adwaita-icon-theme_3.26.0.orig.tar.xz 20755152 SHA256:9cad85de19313f5885497aceab0acbb3f08c60fcd5fa5610aeafff37a1d12212
-'http://deb.debian.org/debian/pool/main/a/adwaita-icon-theme/adwaita-icon-theme_3.26.0-1.debian.tar.xz' adwaita-icon-theme_3.26.0-1.debian.tar.xz 27588 SHA256:25e4b622b5ae85d259a2bb4cd8b4718c8d648487e14d441eb04ef7ad2ff7d421
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/adwaita-icon-theme/3.26.0-1/
 
-- https://sources.debian.net/src/adwaita-icon-theme/3.26.0-1/ (for browsing the source)
-- https://sources.debian.net/src/adwaita-icon-theme/3.26.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/adwaita-icon-theme/3.26.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `alsa-lib=1.1.3-5`
 
@@ -225,20 +218,13 @@ Licenses: (parsed from: `/usr/share/doc/libatk-bridge2.0-0/copyright`)
 - `LGPL-2+`
 - `Unlimited`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris at-spi2-atk=2.26.0-2
-'http://deb.debian.org/debian/pool/main/a/at-spi2-atk/at-spi2-atk_2.26.0-2.dsc' at-spi2-atk_2.26.0-2.dsc 2426 SHA256:c52bd135dc313ae1be1272b8ccf22f3917343de6051c92b4e694fb98879c9fdc
-'http://deb.debian.org/debian/pool/main/a/at-spi2-atk/at-spi2-atk_2.26.0.orig.tar.xz' at-spi2-atk_2.26.0.orig.tar.xz 322468 SHA256:d25e528e1406a10c7d9b675aa15e638bcbf0a122ca3681f655a30cce83272fb9
-'http://deb.debian.org/debian/pool/main/a/at-spi2-atk/at-spi2-atk_2.26.0-2.debian.tar.xz' at-spi2-atk_2.26.0-2.debian.tar.xz 9232 SHA256:95e70f010d07a729f5665087e40b20f6dd592f30ee3e56910dd81624d85aae77
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/at-spi2-atk/2.26.0-2/
 
-- https://sources.debian.net/src/at-spi2-atk/2.26.0-2/ (for browsing the source)
-- https://sources.debian.net/src/at-spi2-atk/2.26.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/at-spi2-atk/2.26.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `at-spi2-core=2.26.2-1`
 
@@ -259,20 +245,13 @@ Licenses: (parsed from: `/usr/share/doc/at-spi2-core/copyright`, `/usr/share/doc
 - `Unlimited`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris at-spi2-core=2.26.2-1
-'http://deb.debian.org/debian/pool/main/a/at-spi2-core/at-spi2-core_2.26.2-1.dsc' at-spi2-core_2.26.2-1.dsc 2600 SHA256:9e2db7ec8060b6d4c33d37be9f92534db1e3bd2136996af1607143fcd580d8d1
-'http://deb.debian.org/debian/pool/main/a/at-spi2-core/at-spi2-core_2.26.2.orig.tar.xz' at-spi2-core_2.26.2.orig.tar.xz 494484 SHA256:c80e0cdf5e3d713400315b63c7deffa561032a6c37289211d8afcfaa267c2615
-'http://deb.debian.org/debian/pool/main/a/at-spi2-core/at-spi2-core_2.26.2-1.debian.tar.xz' at-spi2-core_2.26.2-1.debian.tar.xz 8684 SHA256:65d6167159a0d58c280defb8de1dbe2829d115ffcd9e2612bfca6b4e0b07a110
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/at-spi2-core/2.26.2-1/
 
-- https://sources.debian.net/src/at-spi2-core/2.26.2-1/ (for browsing the source)
-- https://sources.debian.net/src/at-spi2-core/2.26.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/at-spi2-core/2.26.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `atk1.0=2.26.1-1`
 
@@ -1512,11 +1491,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gnome-icon-theme/3.12.0-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gnome-icon-theme/3.12.0-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gnupg2=2.2.1-5`
+### `dpkg` source package: `gnupg2=2.2.2-1`
 
 Binary Packages:
 
-- `gpgv=2.2.1-5`
+- `gpgv=2.2.2-1`
 
 Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 
@@ -1532,13 +1511,21 @@ Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 - `TinySCHEME`
 - `permissive`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris gnupg2=2.2.2-1
+'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.2-1.dsc' gnupg2_2.2.2-1.dsc 3701 SHA256:e45c00e5791fc44763dbc99507ac5ba1c04e73e9c3252d5d3bf9529677ae7eb8
+'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.2.orig.tar.bz2' gnupg2_2.2.2.orig.tar.bz2 6546951 SHA256:bfb62c7412ceb3b9422c6c7134a34ff01a560f98eb981c2d96829c1517c08197
+'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.2.orig.tar.bz2.asc' gnupg2_2.2.2.orig.tar.bz2.asc 952 SHA256:8c1bfd7eab707fc2eb58fa880c3a22b4bc495ff5b0e655d4d654b22c11435e5c
+'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.2-1.debian.tar.bz2' gnupg2_2.2.2-1.debian.tar.bz2 67456 SHA256:6e2e20b7b4f2db7b986e55d11353e0ca10655dc30d1d75c2d42a4453282c20ed
+```
 
-- http://snapshot.debian.org/package/gnupg2/2.2.1-5/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/gnupg2/2.2.2-1/ (for browsing the source)
+- https://sources.debian.net/src/gnupg2/2.2.2-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gnupg2/2.2.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gnutls28=3.5.15-2`
 
@@ -2997,20 +2984,13 @@ Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`)
 - `LGPL`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libtasn1-6=4.12-2.1
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.12-2.1.dsc' libtasn1-6_4.12-2.1.dsc 2586 SHA256:0f762f07bbb39e9a49687e8bd7a18a5d3cc435d6c226eaecfcda7a8d325c2cef
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.12.orig.tar.gz' libtasn1-6_4.12.orig.tar.gz 1888450 SHA256:6753da2e621257f33f5b051cc114d417e5206a0818fe0b1ecfd6153f70934753
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.12-2.1.debian.tar.xz' libtasn1-6_4.12-2.1.debian.tar.xz 58728 SHA256:df32c448a8472eff20fa6989f939cbc0e2caf0d4bb712e54b31b39bbd6d8b781
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libtasn1-6/4.12-2.1/
 
-- https://sources.debian.net/src/libtasn1-6/4.12-2.1/ (for browsing the source)
-- https://sources.debian.net/src/libtasn1-6/4.12-2.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libtasn1-6/4.12-2.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libthai=0.1.27-1`
 
