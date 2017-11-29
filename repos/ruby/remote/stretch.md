@@ -1,7 +1,7 @@
 ## `ruby:stretch`
 
 ```console
-$ docker pull ruby@sha256:f0a23174a084376c399ba87eb9de48795eaad56376b08bcae124686fc01c7f17
+$ docker pull ruby@sha256:f9038a5d7124d494d14c37ce4ac5556f30999f11b71c761a012a3200b5bc3e84
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -533,14 +533,14 @@ CMD ["irb"]
 ### `ruby:stretch` - linux; s390x
 
 ```console
-$ docker pull ruby@sha256:5ec1c4f9b67482969de449356d410893002fdb6434565eecff070bd4bb04dcdd
+$ docker pull ruby@sha256:2bf8c4cadc00fa49b32786feb3333e96a6b00f9e63070d2dcf500eacaa857528
 ```
 
 -	Docker Version: 17.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **341.0 MB (341046890 bytes)**  
+-	Total Size: **341.1 MB (341075204 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b133300f3781b54dd97f872b320ca2b0b22e39c29f2c9fed7295cfed0b44ca2b`
+-	Image ID: `sha256:a41af78d6058052166883691b62145066948059240cdcd3942e1c8a6a51d6f38`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -564,21 +564,21 @@ ENV RUBY_MAJOR=2.4
 ENV RUBY_VERSION=2.4.2
 # Thu, 02 Nov 2017 19:38:44 GMT
 ENV RUBY_DOWNLOAD_SHA256=748a8980d30141bd1a4124e11745bb105b436fb1890826e0d2b9ea31af27f735
-# Tue, 14 Nov 2017 09:36:48 GMT
-ENV RUBYGEMS_VERSION=2.7.2
-# Tue, 14 Nov 2017 09:36:48 GMT
+# Wed, 29 Nov 2017 09:36:29 GMT
+ENV RUBYGEMS_VERSION=2.7.3
+# Wed, 29 Nov 2017 09:36:29 GMT
 ENV BUNDLER_VERSION=1.16.0
-# Tue, 14 Nov 2017 09:39:29 GMT
+# Wed, 29 Nov 2017 09:39:11 GMT
 RUN set -ex 		&& buildDeps=' 		bison 		dpkg-dev 		libgdbm-dev 		ruby 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& rm -rf /var/lib/apt/lists/* 		&& wget -O ruby.tar.xz "https://cache.ruby-lang.org/pub/ruby/${RUBY_MAJOR%-rc}/ruby-$RUBY_VERSION.tar.xz" 	&& echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum -c - 		&& mkdir -p /usr/src/ruby 	&& tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1 	&& rm ruby.tar.xz 		&& cd /usr/src/ruby 		&& { 		echo '#define ENABLE_PATH_CHECK 0'; 		echo; 		cat file.c; 	} > file.c.new 	&& mv file.c.new file.c 		&& autoconf 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 	&& make -j "$(nproc)" 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& cd / 	&& rm -r /usr/src/ruby 		&& gem update --system "$RUBYGEMS_VERSION" 	&& gem install bundler --version "$BUNDLER_VERSION" --force
-# Tue, 14 Nov 2017 09:39:29 GMT
+# Wed, 29 Nov 2017 09:39:11 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 14 Nov 2017 09:39:29 GMT
+# Wed, 29 Nov 2017 09:39:11 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 14 Nov 2017 09:39:30 GMT
+# Wed, 29 Nov 2017 09:39:12 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 14 Nov 2017 09:39:30 GMT
+# Wed, 29 Nov 2017 09:39:12 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" 	&& chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Tue, 14 Nov 2017 09:39:30 GMT
+# Wed, 29 Nov 2017 09:39:12 GMT
 CMD ["irb"]
 ```
 
@@ -607,11 +607,11 @@ CMD ["irb"]
 		Last Modified: Thu, 02 Nov 2017 20:17:12 GMT  
 		Size: 207.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0fede9f61f8f3710acff4155420c79292d5e365d83afaac06b00eb5e4a97766e`  
-		Last Modified: Tue, 14 Nov 2017 10:06:38 GMT  
-		Size: 24.9 MB (24906961 bytes)  
+	-	`sha256:e9d08216f0fe3f9cae8b8fa658da155a7211ad6cab89a5600881cdbed28677f9`  
+		Last Modified: Wed, 29 Nov 2017 10:05:28 GMT  
+		Size: 24.9 MB (24935276 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:66f665488ebfb14c83d1766a1fe24f9a3dcb7369fd0c7b860445a6a4893a2c7c`  
-		Last Modified: Tue, 14 Nov 2017 10:06:33 GMT  
-		Size: 165.0 B  
+	-	`sha256:fee2b7e40efa2582a34354238eab81903261054fc2e22a2b42dbf2300da02cb0`  
+		Last Modified: Wed, 29 Nov 2017 10:05:25 GMT  
+		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
