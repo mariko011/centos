@@ -1,10 +1,10 @@
-# `convertigo:web-connector-7.4.6`
+# `convertigo:web-connector-7.4.7`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4e316a386a95d58f980a2b4107c6ba8a94cf4f71a46b5264502d5bff730a4bfd`
-- Created: `2017-11-04T18:22:16.198363142Z`
-- Virtual Size: ~ 520.83 Mb  
+- Image ID: `sha256:6972b24c39ea08ce40e0d7f6e47e2ccd2b2745a0030fe28f1e476f4fa70a5e6d`
+- Created: `2017-11-27T22:18:04.437679755Z`
+- Virtual Size: ~ 520.75 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","--","/docker-entrypoint.sh"]`
@@ -14,12 +14,12 @@
   - `CATALINA_HOME=/usr/local/tomcat`
   - `CA_CERTIFICATES_JAVA_VERSION=20161107~bpo8+1`
   - `TOMCAT_MAJOR=7`
-  - `TOMCAT_VERSION=7.0.72`
-  - `TOMCAT_TGZ_URL=https://archive.apache.org/dist/tomcat/tomcat-7/v7.0.72/bin/apache-tomcat-7.0.72.tar.gz`
+  - `TOMCAT_VERSION=7.0.82`
+  - `TOMCAT_TGZ_URL=https://archive.apache.org/dist/tomcat/tomcat-7/v7.0.82/bin/apache-tomcat-7.0.82.tar.gz`
   - `TOMCAT_GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 61B832AC2F1C5A90F0F9B00A1C506407564C17A3 713DA88BE50911535FE716F5208B0AB1D63011C7 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23`
-  - `CONVERTIGO_VERSION=7.4.6`
-  - `CONVERTIGO_REVISION=43404`
-  - `CONVERTIGO_WAR_URL=https://devplatform.s3.amazonaws.com/refbin/cems/7.4.6/convertigo-7.4.6-v43404-linux32.war`
+  - `CONVERTIGO_VERSION=7.4.7`
+  - `CONVERTIGO_REVISION=43946`
+  - `CONVERTIGO_WAR_URL=https://devplatform.s3.amazonaws.com/refbin/cems/7.4.7/convertigo-7.4.7-v43946-linux32.war`
   - `CONVERTIGO_GPG_KEYS=6A7779BB78FE368DF74B708FD4DA8FBEB64BF75F`
 
 ## `dpkg` (`.deb`-based packages)
@@ -504,20 +504,13 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `ISC`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.38.0-4+deb8u7
-'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0-4+deb8u7.dsc' curl_7.38.0-4+deb8u7.dsc 2694 SHA256:b5bca99d184cfd436d441457df6c5eb660071dab4ff913fc5680278f39c80aa5
-'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0.orig.tar.gz' curl_7.38.0.orig.tar.gz 4094034 SHA256:5661028aa6532882fa228cd23c99ddbb8b87643dbb1a7ea55c068d34a943dff1
-'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0-4+deb8u7.debian.tar.xz' curl_7.38.0-4+deb8u7.debian.tar.xz 42300 SHA256:62f8e051409ecbe312a88ba9d4982784742d472d176eec16b4dd19859ae1398d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/7.38.0-4+deb8u7/
 
-- https://sources.debian.net/src/curl/7.38.0-4+deb8u7/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.38.0-4+deb8u7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.38.0-4+deb8u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-13+deb8u1`
 

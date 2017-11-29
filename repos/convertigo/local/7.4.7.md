@@ -1,29 +1,34 @@
-# `convertigo:7.4.6`
+# `convertigo:7.4.7`
 
 ## Docker Metadata
 
-- Image ID: `sha256:186403e861a4b14fd091400ce720c40f978609dc8a8134d2dd4ca0a94b3a532a`
-- Created: `2017-11-07T17:45:46.558117911Z`
-- Virtual Size: ~ 664.74 Mb  
+- Image ID: `sha256:e3bb0c7ccb032270f206b7aa8baf543355bb970c8066f8ad8a1f741fc7748e6d`
+- Created: `2017-11-27T22:17:11.666595033Z`
+- Virtual Size: ~ 676.90 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","--","/docker-entrypoint.sh"]`
 - Command: `["convertigo"]`
 - Environment:
-  - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+  - `PATH=/usr/local/tomcat/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/docker-java-home/jre`
   - `JAVA_VERSION=8u151`
   - `JAVA_DEBIAN_VERSION=8u151-b12-1~deb9u1`
   - `CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1`
   - `CATALINA_HOME=/usr/local/tomcat`
+  - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
+  - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
+  - `OPENSSL_VERSION=1.1.0f-3+deb9u1`
+  - `GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 61B832AC2F1C5A90F0F9B00A1C506407564C17A3 713DA88BE50911535FE716F5208B0AB1D63011C7 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23`
   - `TOMCAT_MAJOR=7`
-  - `TOMCAT_VERSION=7.0.72`
-  - `TOMCAT_TGZ_URL=https://archive.apache.org/dist/tomcat/tomcat-7/v7.0.72/bin/apache-tomcat-7.0.72.tar.gz`
-  - `TOMCAT_GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 61B832AC2F1C5A90F0F9B00A1C506407564C17A3 713DA88BE50911535FE716F5208B0AB1D63011C7 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23`
-  - `CONVERTIGO_VERSION=7.4.6`
-  - `CONVERTIGO_REVISION=43404`
-  - `CONVERTIGO_WAR_URL=https://devplatform.s3.amazonaws.com/refbin/cems/7.4.6/convertigo-7.4.6-v43404-linux64.war`
+  - `TOMCAT_VERSION=7.0.82`
+  - `TOMCAT_SHA1=4681bfbc86bb4da76a7aabbb3c545475eb9a8075`
+  - `TOMCAT_TGZ_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-7/v7.0.82/bin/apache-tomcat-7.0.82.tar.gz 	https://www-us.apache.org/dist/tomcat/tomcat-7/v7.0.82/bin/apache-tomcat-7.0.82.tar.gz 	https://www.apache.org/dist/tomcat/tomcat-7/v7.0.82/bin/apache-tomcat-7.0.82.tar.gz 	https://archive.apache.org/dist/tomcat/tomcat-7/v7.0.82/bin/apache-tomcat-7.0.82.tar.gz`
+  - `TOMCAT_ASC_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-7/v7.0.82/bin/apache-tomcat-7.0.82.tar.gz.asc 	https://www-us.apache.org/dist/tomcat/tomcat-7/v7.0.82/bin/apache-tomcat-7.0.82.tar.gz.asc 	https://www.apache.org/dist/tomcat/tomcat-7/v7.0.82/bin/apache-tomcat-7.0.82.tar.gz.asc 	https://archive.apache.org/dist/tomcat/tomcat-7/v7.0.82/bin/apache-tomcat-7.0.82.tar.gz.asc`
+  - `CONVERTIGO_VERSION=7.4.7`
+  - `CONVERTIGO_REVISION=43946`
+  - `CONVERTIGO_WAR_URL=https://devplatform.s3.amazonaws.com/refbin/cems/7.4.7/convertigo-7.4.7-v43946-linux64.war`
   - `CONVERTIGO_GPG_KEYS=6A7779BB78FE368DF74B708FD4DA8FBEB64BF75F`
 
 ## `dpkg` (`.deb`-based packages)
@@ -168,6 +173,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/apparmor/2.11.0-3/ (for browsing the source)
 - https://sources.debian.net/src/apparmor/2.11.0-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/apparmor/2.11.0-3/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `apr=1.5.2-5`
+
+Binary Packages:
+
+- `libapr1:amd64=1.5.2-5`
+
+Licenses: (parsed from: `/usr/share/doc/libapr1/copyright`)
+
+- `Apache-2.0`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris apr=1.5.2-5
+'http://deb.debian.org/debian/pool/main/a/apr/apr_1.5.2-5.dsc' apr_1.5.2-5.dsc 2115 SHA256:b58bb3209c8a28bff47666de6a9bf32292303fdc2433c9fafb15f2a9e6c16ca6
+'http://deb.debian.org/debian/pool/main/a/apr/apr_1.5.2.orig.tar.bz2' apr_1.5.2.orig.tar.bz2 826885 SHA256:7d03ed29c22a7152be45b8e50431063736df9e1daa1ddf93f6a547ba7a28f67a
+'http://deb.debian.org/debian/pool/main/a/apr/apr_1.5.2-5.debian.tar.xz' apr_1.5.2-5.debian.tar.xz 212856 SHA256:5b253cd3acc284241c3cb4a84d9d16f9c5c7775c8f7a26b3a0068ff174bacf76
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/apr/1.5.2-5/ (for browsing the source)
+- https://sources.debian.net/src/apr/1.5.2-5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/apr/1.5.2-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apt=1.4.8`
 
@@ -661,20 +691,13 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.52.1-5+deb9u2
-'http://security.debian.org/pool/updates/main/c/curl/curl_7.52.1-5+deb9u2.dsc' curl_7.52.1-5+deb9u2.dsc 2818 SHA256:f73c8a248b9c883064f2a6e3641810338ed4fd5e22e30e85e8d4e40427ff00bd
-'http://security.debian.org/pool/updates/main/c/curl/curl_7.52.1.orig.tar.gz' curl_7.52.1.orig.tar.gz 3504621 SHA256:a8984e8b20880b621f61a62d95ff3c0763a3152093a9f9ce4287cfd614add6ae
-'http://security.debian.org/pool/updates/main/c/curl/curl_7.52.1-5+deb9u2.debian.tar.xz' curl_7.52.1-5+deb9u2.debian.tar.xz 35048 SHA256:42d3e01db23a7d5e763f17e4d3aa32f97acfaf3154f246e3be0cbb38a1707450
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/7.52.1-5+deb9u2/
 
-- https://sources.debian.net/src/curl/7.52.1-5+deb9u2/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.52.1-5+deb9u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.52.1-5+deb9u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3`
 
