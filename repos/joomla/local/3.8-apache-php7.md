@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b0b97c5b8642d11e4bb9c17178bcd6d10955c8d498a41c5cc1394ea294130769`
-- Created: `2017-11-15T19:09:53.134504499Z`
-- Virtual Size: ~ 434.59 Mb  
+- Image ID: `sha256:28d98528bfc2022679caaaafdc5856a209eb0241a6d31d962dc8787f0f6d227a`
+- Created: `2017-11-28T02:33:04.201800779Z`
+- Virtual Size: ~ 434.44 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -21,10 +21,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
   - `GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3`
-  - `PHP_VERSION=7.0.25`
-  - `PHP_URL=https://secure.php.net/get/php-7.0.25.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://secure.php.net/get/php-7.0.25.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=5cc14bd20fb2226f6d34465662425cd100441bde9042ea1cef2e4506d6ded8cc`
+  - `PHP_VERSION=7.0.26`
+  - `PHP_URL=https://secure.php.net/get/php-7.0.26.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://secure.php.net/get/php-7.0.26.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=ed5cbb4bbb0ddef8985f100bba2e94002ad22a230b5da2dccfe148915df5f199`
   - `PHP_MD5=`
   - `JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1`
   - `JOOMLA_VERSION=3.8.2`
@@ -567,20 +567,13 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `ISC`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.38.0-4+deb8u7
-'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0-4+deb8u7.dsc' curl_7.38.0-4+deb8u7.dsc 2694 SHA256:b5bca99d184cfd436d441457df6c5eb660071dab4ff913fc5680278f39c80aa5
-'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0.orig.tar.gz' curl_7.38.0.orig.tar.gz 4094034 SHA256:5661028aa6532882fa228cd23c99ddbb8b87643dbb1a7ea55c068d34a943dff1
-'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0-4+deb8u7.debian.tar.xz' curl_7.38.0-4+deb8u7.debian.tar.xz 42300 SHA256:62f8e051409ecbe312a88ba9d4982784742d472d176eec16b4dd19859ae1398d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/7.38.0-4+deb8u7/
 
-- https://sources.debian.net/src/curl/7.38.0-4+deb8u7/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.38.0-4+deb8u7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.38.0-4+deb8u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-13+deb8u1`
 
