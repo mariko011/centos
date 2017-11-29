@@ -1,7 +1,7 @@
 ## `ruby:latest`
 
 ```console
-$ docker pull ruby@sha256:7ac9ef3c94d7a94a3ac93cccb1d4e2afbd72e802ac2ac1873ecd83f16292554b
+$ docker pull ruby@sha256:6a1f3f91b30e34f92bbdd45a7f4fc885c857d6b487b483f51a63db293445bfe5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -345,14 +345,14 @@ CMD ["irb"]
 ### `ruby:latest` - linux; 386
 
 ```console
-$ docker pull ruby@sha256:1fe27caf63ca740f70148b88a95f03afc1c4bc1d8faf08ead0515eb5f262a4fc
+$ docker pull ruby@sha256:1a101b7289edb5b31ece293aa7254d60d3ff64fc9446e2bcf3299dcbd1e3a489
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **277.5 MB (277471184 bytes)**  
+-	Total Size: **277.5 MB (277493053 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:314d314d1d584e841f062eada8615e63bf22e56c16c84163253e545cb4667089`
+-	Image ID: `sha256:d59a0a7baf2118e4c0d2bc70de2bb589e79a285a9bf63721ea117b6e97ac9133`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -376,21 +376,21 @@ ENV RUBY_MAJOR=2.4
 ENV RUBY_VERSION=2.4.2
 # Fri, 03 Nov 2017 02:41:32 GMT
 ENV RUBY_DOWNLOAD_SHA256=748a8980d30141bd1a4124e11745bb105b436fb1890826e0d2b9ea31af27f735
-# Tue, 14 Nov 2017 04:01:31 GMT
-ENV RUBYGEMS_VERSION=2.7.2
-# Tue, 14 Nov 2017 04:01:31 GMT
+# Wed, 29 Nov 2017 04:03:18 GMT
+ENV RUBYGEMS_VERSION=2.7.3
+# Wed, 29 Nov 2017 04:03:19 GMT
 ENV BUNDLER_VERSION=1.16.0
-# Tue, 14 Nov 2017 04:05:21 GMT
+# Wed, 29 Nov 2017 04:06:50 GMT
 RUN set -ex 		&& buildDeps=' 		bison 		dpkg-dev 		libgdbm-dev 		ruby 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& rm -rf /var/lib/apt/lists/* 		&& wget -O ruby.tar.xz "https://cache.ruby-lang.org/pub/ruby/${RUBY_MAJOR%-rc}/ruby-$RUBY_VERSION.tar.xz" 	&& echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum -c - 		&& mkdir -p /usr/src/ruby 	&& tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1 	&& rm ruby.tar.xz 		&& cd /usr/src/ruby 		&& { 		echo '#define ENABLE_PATH_CHECK 0'; 		echo; 		cat file.c; 	} > file.c.new 	&& mv file.c.new file.c 		&& autoconf 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 	&& make -j "$(nproc)" 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& cd / 	&& rm -r /usr/src/ruby 		&& gem update --system "$RUBYGEMS_VERSION" 	&& gem install bundler --version "$BUNDLER_VERSION" --force
-# Tue, 14 Nov 2017 04:05:22 GMT
+# Wed, 29 Nov 2017 04:06:51 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 14 Nov 2017 04:05:22 GMT
+# Wed, 29 Nov 2017 04:06:51 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 14 Nov 2017 04:05:22 GMT
+# Wed, 29 Nov 2017 04:06:51 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 14 Nov 2017 04:05:23 GMT
+# Wed, 29 Nov 2017 04:06:51 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" 	&& chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Tue, 14 Nov 2017 04:05:23 GMT
+# Wed, 29 Nov 2017 04:06:52 GMT
 CMD ["irb"]
 ```
 
@@ -415,13 +415,13 @@ CMD ["irb"]
 		Last Modified: Fri, 03 Nov 2017 03:02:54 GMT  
 		Size: 207.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e407c89e994f56945822fedf3674a21a7cd79541cc484eef4518989d07f30a44`  
-		Last Modified: Tue, 14 Nov 2017 04:49:21 GMT  
-		Size: 23.6 MB (23583319 bytes)  
+	-	`sha256:6bc55bef92ad7e36316859aa2f78e275fc3802ff508a558f6e0085aeca62e4ba`  
+		Last Modified: Wed, 29 Nov 2017 04:46:12 GMT  
+		Size: 23.6 MB (23605187 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a770952f7de41e809aedf3a02531df0bba7b766b90c799712991c776c3038a33`  
-		Last Modified: Tue, 14 Nov 2017 04:49:13 GMT  
-		Size: 164.0 B  
+	-	`sha256:76abeaa13ae28ecaeef2a8344a0f0ed49a80fddc0e3bfb9c3dfb34eaeaa421dc`  
+		Last Modified: Wed, 29 Nov 2017 04:46:03 GMT  
+		Size: 165.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ruby:latest` - linux; ppc64le
