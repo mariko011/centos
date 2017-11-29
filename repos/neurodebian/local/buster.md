@@ -828,20 +828,13 @@ Licenses: (parsed from: `/usr/share/doc/iproute2/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris iproute2=4.9.0-2
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.9.0-2.dsc' iproute2_4.9.0-2.dsc 2298 SHA256:3842bc9bbc2529d3a14077a649ce086a0bad6bb4a579b1bb1592d011c3f1c84e
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.9.0.orig.tar.xz' iproute2_4.9.0.orig.tar.xz 613032 SHA256:c0f30f043f7767cc1b2cd2197b08d4e9b2392c95823fabe30bbce308c30116c4
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.9.0-2.debian.tar.xz' iproute2_4.9.0-2.debian.tar.xz 145200 SHA256:2ce0448dabe5a0ab99792ea510e9b2a02454c195d0b2ab83e33a9ca0a988da00
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/iproute2/4.9.0-2/
 
-- https://sources.debian.net/src/iproute2/4.9.0-2/ (for browsing the source)
-- https://sources.debian.net/src/iproute2/4.9.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/iproute2/4.9.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libassuan=2.4.3-3`
 
@@ -990,20 +983,13 @@ Licenses: (parsed from: `/usr/share/doc/libidn2-0/copyright`)
 - `LGPL-3+`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libidn2-0=2.0.2-5
-'http://deb.debian.org/debian/pool/main/libi/libidn2-0/libidn2-0_2.0.2-5.dsc' libidn2-0_2.0.2-5.dsc 2325 SHA256:59ae6b2cfb8a49f09710e3b42c1c3a5a48136051ed49445bd6925473dcfe1af5
-'http://deb.debian.org/debian/pool/main/libi/libidn2-0/libidn2-0_2.0.2.orig.tar.gz' libidn2-0_2.0.2.orig.tar.gz 1925342 SHA256:8cd62828b2ab0171e0f35a302f3ad60c3a3fffb45733318b3a8205f9d187eeab
-'http://deb.debian.org/debian/pool/main/libi/libidn2-0/libidn2-0_2.0.2-5.debian.tar.xz' libidn2-0_2.0.2-5.debian.tar.xz 60940 SHA256:5cf1e578a3bb2d302bd6276401e1d6bbea78b82c9acb0828e3d995d4ad4357eb
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libidn2-0/2.0.2-5/
 
-- https://sources.debian.net/src/libidn2-0/2.0.2-5/ (for browsing the source)
-- https://sources.debian.net/src/libidn2-0/2.0.2-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libidn2-0/2.0.2-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libksba=1.3.5-2`
 
