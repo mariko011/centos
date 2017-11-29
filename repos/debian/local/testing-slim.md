@@ -841,20 +841,13 @@ Licenses: (parsed from: `/usr/share/doc/libidn2-0/copyright`)
 - `LGPL-3+`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libidn2-0=2.0.2-5
-'http://deb.debian.org/debian/pool/main/libi/libidn2-0/libidn2-0_2.0.2-5.dsc' libidn2-0_2.0.2-5.dsc 2325 SHA256:59ae6b2cfb8a49f09710e3b42c1c3a5a48136051ed49445bd6925473dcfe1af5
-'http://deb.debian.org/debian/pool/main/libi/libidn2-0/libidn2-0_2.0.2.orig.tar.gz' libidn2-0_2.0.2.orig.tar.gz 1925342 SHA256:8cd62828b2ab0171e0f35a302f3ad60c3a3fffb45733318b3a8205f9d187eeab
-'http://deb.debian.org/debian/pool/main/libi/libidn2-0/libidn2-0_2.0.2-5.debian.tar.xz' libidn2-0_2.0.2-5.debian.tar.xz 60940 SHA256:5cf1e578a3bb2d302bd6276401e1d6bbea78b82c9acb0828e3d995d4ad4357eb
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libidn2-0/2.0.2-5/
 
-- https://sources.debian.net/src/libidn2-0/2.0.2-5/ (for browsing the source)
-- https://sources.debian.net/src/libidn2-0/2.0.2-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libidn2-0/2.0.2-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libselinux=2.7-2`
 
