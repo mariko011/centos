@@ -1,7 +1,7 @@
 ## `centos:centos6`
 
 ```console
-$ docker pull centos@sha256:ddb5ab83f18fb3d619c262b2c3aeb553857c9cab6aa864b5b6e7d7abf738d0b0
+$ docker pull centos@sha256:5cee5f23110807d4d0f2b1577c4073e2cc5acf0729f31a6b60fa800efac30240
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,27 +11,27 @@ $ docker pull centos@sha256:ddb5ab83f18fb3d619c262b2c3aeb553857c9cab6aa864b5b6e7
 ### `centos:centos6` - linux; amd64
 
 ```console
-$ docker pull centos@sha256:6b50244c9fdf0c6d251b80ee0e76dc6e9f0f29da59f91629019e464737f83e2d
+$ docker pull centos@sha256:82adb6d4b857ffd254af8041957df8481c84a9a1b9fdcc6efc4ba6432b1d6940
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **70.0 MB (70043497 bytes)**  
+-	Total Size: **70.0 MB (70045681 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ea096efd33ccd679c464ed1a15765e44e336e404e040b9369745c5c366154c7e`
+-	Image ID: `sha256:df3764b1d215410469ca2bf0875970e0054546a71c49969c9107440ae02d627f`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 03 Nov 2017 22:32:12 GMT
-ADD file:e253dfb8c4027c89ad743a5c1f226c9d86fdc322d12c51001e6abeb84827899b in / 
-# Fri, 03 Nov 2017 22:32:12 GMT
-LABEL name=CentOS Base Image vendor=CentOS license=GPLv2 build-date=20170801
-# Fri, 03 Nov 2017 22:32:12 GMT
+# Thu, 30 Nov 2017 00:13:50 GMT
+ADD file:c32955e5fd79dfac0a0c3cd95771f683326a34f01c4b6300d221826d7934a72b in / 
+# Thu, 30 Nov 2017 00:13:50 GMT
+LABEL name=CentOS Base Image vendor=CentOS license=GPLv2 build-date=20171128
+# Thu, 30 Nov 2017 00:13:50 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:b26de5a391adbcb4cee01569eeba26a1597f177230e16b38e4bc096c39eba3c9`  
-		Last Modified: Wed, 16 Aug 2017 11:37:03 GMT  
-		Size: 70.0 MB (70043497 bytes)  
+	-	`sha256:d47c6c3d155aa0a361b78655db9d49de6ed6b6454c8751697817c9099ce5834e`  
+		Last Modified: Thu, 30 Nov 2017 00:20:00 GMT  
+		Size: 70.0 MB (70045681 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

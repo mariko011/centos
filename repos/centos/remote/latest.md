@@ -1,7 +1,7 @@
 ## `centos:latest`
 
 ```console
-$ docker pull centos@sha256:4565fe2dd7f4770e825d4bd9c761a81b26e49cc9e3c9631c58cfc3188be9505a
+$ docker pull centos@sha256:7ce971e2495e1708709d8e3d7fd21f4e0502be31a0c73e3029653c77c34c06eb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,29 +12,29 @@ $ docker pull centos@sha256:4565fe2dd7f4770e825d4bd9c761a81b26e49cc9e3c9631c58cf
 ### `centos:latest` - linux; amd64
 
 ```console
-$ docker pull centos@sha256:224d7b12549c04bba833d4626a5c51113290e55bd754d39f72d1a437539b3c68
+$ docker pull centos@sha256:3a32a170c945ffe18334b3f514fcb66f9c14001b2266c9ed8504c72db0acde11
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **73.4 MB (73386947 bytes)**  
+-	Total Size: **73.4 MB (73426838 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d123f4e55e1200156d9cbcf4421ff6d818576e4f1e29320a408c72f022cfd0b1`
+-	Image ID: `sha256:3fa822599e10c5f2080dcf647068c72022b111d31bbec0c5adb8a96e7eb5379b`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 03 Nov 2017 22:32:02 GMT
-ADD file:1ed4d1a29d09a636dd6c60c6187679adb26c877b6be6968e14272e75ad240073 in / 
-# Fri, 03 Nov 2017 22:32:02 GMT
-LABEL name=CentOS Base Image vendor=CentOS license=GPLv2 build-date=20170911
-# Fri, 03 Nov 2017 22:32:02 GMT
+# Thu, 30 Nov 2017 00:13:33 GMT
+ADD file:7441d818786942af845a9a1ecdd284f3d9ff7a63909dd076302cebb4d83df781 in / 
+# Thu, 30 Nov 2017 00:13:33 GMT
+LABEL name=CentOS Base Image vendor=CentOS license=GPLv2 build-date=20171128
+# Thu, 30 Nov 2017 00:13:33 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:d9aaf4d82f249dc101a6638ff5177fe926cdebfa6c42d874dfa5029533da0e72`  
-		Last Modified: Thu, 14 Sep 2017 15:14:02 GMT  
-		Size: 73.4 MB (73386947 bytes)  
+	-	`sha256:85432449fd0fabb6bef4772246d9b7948723275a4c7e4dee18728f28d79f1c2c`  
+		Last Modified: Thu, 30 Nov 2017 00:19:24 GMT  
+		Size: 73.4 MB (73426838 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `centos:latest` - linux; arm64 variant v8
