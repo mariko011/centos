@@ -1,10 +1,10 @@
-# `couchbase:4.6.3`
+# `couchbase:4.6.4`
 
 ## Docker Metadata
 
-- Image ID: `sha256:daf312b87dc59d0f7364bf981bcc8036c5063d0d36c26486cc7f32cf369691a0`
-- Created: `2017-11-18T00:43:09.44923274Z`
-- Virtual Size: ~ 605.90 Mb  
+- Image ID: `sha256:c5ccb75dec035886b916e7fa0b7dec59283978cb4f51f20e9392aeb3e9c8a9c1`
+- Created: `2017-11-28T01:40:52.973465955Z`
+- Virtual Size: ~ 605.99 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -326,11 +326,11 @@ $ apt-get source -qq --print-uris coreutils=8.21-1ubuntu5.4
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.21-1ubuntu5.4.diff.gz' coreutils_8.21-1ubuntu5.4.diff.gz 44759 SHA256:0d2690aab7f9d8aa65861b5648c3bebc8a5d872fe68a694aae70ddf9393d8372
 ```
 
-### `dpkg` source package: `couchbase-server=4.6.3-4136-1`
+### `dpkg` source package: `couchbase-server=4.6.4-4590-1`
 
 Binary Packages:
 
-- `couchbase-server=4.6.3-4136-1`
+- `couchbase-server=4.6.4-4590-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2325,14 +2325,9 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/s
 - `This software is provided as-is, without express`
 - `implied`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python2.7=2.7.6-8ubuntu0.3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.6-8ubuntu0.3.dsc' python2.7_2.7.6-8ubuntu0.3.dsc 3217 SHA256:a6e62c005c7485d8e52f5ac5e0067efa8289620294a5371b37375e7640db0ba8
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.6.orig.tar.gz' python2.7_2.7.6.orig.tar.gz 14823209 SHA256:b6eeafea7ffaa8c25e2169ba5f5f66bedfa504a51cf62ae7df58a424c3f3fc02
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.6-8ubuntu0.3.diff.gz' python2.7_2.7.6-8ubuntu0.3.diff.gz 635006 SHA256:5de000aae55948b4715a0c69a387fc70d46bbd426bcb14b619f4b96596b28a29
-```
 
 ### `dpkg` source package: `python3-defaults=3.4.0-0ubuntu2`
 
@@ -2383,14 +2378,9 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.4-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.4=3.4.3-1ubuntu1~14.04.5
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.4/python3.4_3.4.3-1ubuntu1~14.04.5.dsc' python3.4_3.4.3-1ubuntu1~14.04.5.dsc 3229 SHA256:3a7cec814f5eefc88160d094fdc1e09a636c032c4b7f5f0208f21c305b5584c4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.4/python3.4_3.4.3.orig.tar.xz' python3.4_3.4.3.orig.tar.xz 12690456 SHA256:9151f6d2975471e6b6189aa2de836b48ba0361b145dd8fc143e986efbbed9f3a
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.4/python3.4_3.4.3-1ubuntu1~14.04.5.debian.tar.gz' python3.4_3.4.3-1ubuntu1~14.04.5.debian.tar.gz 261768 SHA256:362683d41b7174234dd815eb872c25e971f96f567d164d33a5405f5a41d4b1c9
-```
 
 ### `dpkg` source package: `readline6=6.3-4ubuntu2`
 
