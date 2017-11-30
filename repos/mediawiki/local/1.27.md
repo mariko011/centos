@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:45a8bc89dde226b67a273039e0b1b5e795d49ebf2b7a6ed6950f1199dba2770e`
-- Created: `2017-11-15T00:44:46.519517159Z`
-- Virtual Size: ~ 650.68 Mb  
+- Image ID: `sha256:edb7627fe5c6fa49c1efbc21aff0287f0659ec796b9321c7178bf9bec7e45656`
+- Created: `2017-11-28T02:50:26.328077409Z`
+- Virtual Size: ~ 650.53 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -21,10 +21,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
   - `GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3`
-  - `PHP_VERSION=7.0.25`
-  - `PHP_URL=https://secure.php.net/get/php-7.0.25.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://secure.php.net/get/php-7.0.25.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=5cc14bd20fb2226f6d34465662425cd100441bde9042ea1cef2e4506d6ded8cc`
+  - `PHP_VERSION=7.0.26`
+  - `PHP_URL=https://secure.php.net/get/php-7.0.26.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://secure.php.net/get/php-7.0.26.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=ed5cbb4bbb0ddef8985f100bba2e94002ad22a230b5da2dccfe148915df5f199`
   - `PHP_MD5=`
   - `MEDIAWIKI_MAJOR_VERSION=1.27`
   - `MEDIAWIKI_BRANCH=REL1_27`
@@ -569,20 +569,13 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `ISC`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.38.0-4+deb8u7
-'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0-4+deb8u7.dsc' curl_7.38.0-4+deb8u7.dsc 2694 SHA256:b5bca99d184cfd436d441457df6c5eb660071dab4ff913fc5680278f39c80aa5
-'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0.orig.tar.gz' curl_7.38.0.orig.tar.gz 4094034 SHA256:5661028aa6532882fa228cd23c99ddbb8b87643dbb1a7ea55c068d34a943dff1
-'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0-4+deb8u7.debian.tar.xz' curl_7.38.0-4+deb8u7.debian.tar.xz 42300 SHA256:62f8e051409ecbe312a88ba9d4982784742d472d176eec16b4dd19859ae1398d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/7.38.0-4+deb8u7/
 
-- https://sources.debian.net/src/curl/7.38.0-4+deb8u7/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.38.0-4+deb8u7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.38.0-4+deb8u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-13+deb8u1`
 
@@ -1450,15 +1443,15 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/icu/52.1-8+deb8u5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/icu/52.1-8+deb8u5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `imagemagick=8:6.8.9.9-5+deb8u10`
+### `dpkg` source package: `imagemagick=8:6.8.9.9-5+deb8u11`
 
 Binary Packages:
 
-- `imagemagick=8:6.8.9.9-5+deb8u10`
-- `imagemagick-6.q16=8:6.8.9.9-5+deb8u10`
-- `imagemagick-common=8:6.8.9.9-5+deb8u10`
-- `libmagickcore-6.q16-2:amd64=8:6.8.9.9-5+deb8u10`
-- `libmagickwand-6.q16-2:amd64=8:6.8.9.9-5+deb8u10`
+- `imagemagick=8:6.8.9.9-5+deb8u11`
+- `imagemagick-6.q16=8:6.8.9.9-5+deb8u11`
+- `imagemagick-common=8:6.8.9.9-5+deb8u11`
+- `libmagickcore-6.q16-2:amd64=8:6.8.9.9-5+deb8u11`
+- `libmagickwand-6.q16-2:amd64=8:6.8.9.9-5+deb8u11`
 
 Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/imagemagick-6.q16/copyright`, `/usr/share/doc/imagemagick-common/copyright`, `/usr/share/doc/libmagickcore-6.q16-2/copyright`, `/usr/share/doc/libmagickwand-6.q16-2/copyright`)
 
@@ -1476,13 +1469,20 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `TatcherUlrichPublicDomain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris imagemagick=8:6.8.9.9-5+deb8u11
+'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.8.9.9-5+deb8u11.dsc' imagemagick_6.8.9.9-5+deb8u11.dsc 4228 SHA256:837016302c1eec0140dad8fe37a88acc2e3f48ee058ea467e15b6c8d692c90e0
+'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.8.9.9.orig.tar.xz' imagemagick_6.8.9.9.orig.tar.xz 7891624 SHA256:a4cccc70179ff2c67550e063cdcb2e62907338ef3e68b45bb1c41931e515b3eb
+'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.8.9.9-5+deb8u11.debian.tar.xz' imagemagick_6.8.9.9-5+deb8u11.debian.tar.xz 293332 SHA256:efac665d5c7864cbd83ca913ccce82be03a858c4770a0020a1d0ac43e9f47ada
+```
 
-- http://snapshot.debian.org/package/imagemagick/8:6.8.9.9-5+deb8u10/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/imagemagick/8:6.8.9.9-5+deb8u11/ (for browsing the source)
+- https://sources.debian.net/src/imagemagick/8:6.8.9.9-5+deb8u11/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/imagemagick/8:6.8.9.9-5+deb8u11/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `inetutils=2:1.9.2.39.3a460-3`
 
