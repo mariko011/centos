@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:84563e8d7714f4233d176b7de478d3c9a34dd80eb5d3f59e1f067ef1394f460f`
-- Created: `2017-11-13T15:56:28.3941093Z`
-- Virtual Size: ~ 881.28 Mb  
+- Image ID: `sha256:0a0e0943a0da0a313f107a7c60b676b4e20278d507581d097bcdbfce8959a4dc`
+- Created: `2017-11-29T01:45:02.577607213Z`
+- Virtual Size: ~ 881.35 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["irb"]`
@@ -13,7 +13,7 @@
   - `RUBY_MAJOR=2.5-rc`
   - `RUBY_VERSION=2.5.0-preview1`
   - `RUBY_DOWNLOAD_SHA256=c2f518eb04b38bdd562ba5611abd2521248a1608fc466368563dd794ddeddd09`
-  - `RUBYGEMS_VERSION=2.7.2`
+  - `RUBYGEMS_VERSION=2.7.3`
   - `BUNDLER_VERSION=1.16.0`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_PATH=/usr/local/bundle`
@@ -686,20 +686,13 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.52.1-5+deb9u2
-'http://security.debian.org/pool/updates/main/c/curl/curl_7.52.1-5+deb9u2.dsc' curl_7.52.1-5+deb9u2.dsc 2818 SHA256:f73c8a248b9c883064f2a6e3641810338ed4fd5e22e30e85e8d4e40427ff00bd
-'http://security.debian.org/pool/updates/main/c/curl/curl_7.52.1.orig.tar.gz' curl_7.52.1.orig.tar.gz 3504621 SHA256:a8984e8b20880b621f61a62d95ff3c0763a3152093a9f9ce4287cfd614add6ae
-'http://security.debian.org/pool/updates/main/c/curl/curl_7.52.1-5+deb9u2.debian.tar.xz' curl_7.52.1-5+deb9u2.debian.tar.xz 35048 SHA256:42d3e01db23a7d5e763f17e4d3aa32f97acfaf3154f246e3be0cbb38a1707450
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/7.52.1-5+deb9u2/
 
-- https://sources.debian.net/src/curl/7.52.1-5+deb9u2/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.52.1-5+deb9u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.52.1-5+deb9u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3`
 
