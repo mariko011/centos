@@ -13,7 +13,7 @@
 ## `crate:2.0`
 
 ```console
-$ docker pull crate@sha256:b05e702ba61f290a958d46874ea57879fd1ef31c9637068657c4e6fce44ed09b
+$ docker pull crate@sha256:196f6355de0f1d7b73a9d59a23964295f751ee74a78648a12e5957f49cc697c3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -23,92 +23,92 @@ $ docker pull crate@sha256:b05e702ba61f290a958d46874ea57879fd1ef31c9637068657c4e
 ### `crate:2.0` - linux; amd64
 
 ```console
-$ docker pull crate@sha256:687c8f80dc80efb796005d3b79cb400667294665dfdc52dfb07b7202e747ba02
+$ docker pull crate@sha256:6a22884c2aa1ba124b7194843fef027e0c86c66b0c659ad50c4d24afbbe2b202
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **126.5 MB (126529266 bytes)**  
+-	Total Size: **126.5 MB (126532697 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b7d4ffc14d50165292cc752470853cd07625d6d87137c49df1a92eaf9f06beb8`
+-	Image ID: `sha256:af63f6ced8e0bedb1435d701009cec570965c5bc85cd68d78bffcc4604f95c9d`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["crate"]`
 
 ```dockerfile
-# Fri, 03 Nov 2017 22:10:27 GMT
-ADD file:92bfed3f8dfbee01eab85c6a1d6bc6894c5a75f9a4e2c414e9b4d05b9fcd19d0 in / 
-# Fri, 03 Nov 2017 22:10:27 GMT
+# Fri, 01 Dec 2017 18:49:59 GMT
+ADD file:5595f8b7042388f1c3d5642b8581698548f99ea2f0b9324f797d2396e03e00cb in / 
+# Fri, 01 Dec 2017 18:49:59 GMT
 CMD ["/bin/sh"]
-# Sat, 04 Nov 2017 06:52:42 GMT
+# Fri, 01 Dec 2017 19:16:04 GMT
 MAINTAINER Crate.IO GmbH office@crate.io
-# Sat, 04 Nov 2017 06:52:42 GMT
+# Fri, 01 Dec 2017 19:16:05 GMT
 ENV GOSU_VERSION=1.9
-# Sat, 04 Nov 2017 06:53:07 GMT
+# Fri, 01 Dec 2017 19:16:55 GMT
 RUN set -x     && apk add --no-cache --virtual .gosu-deps         dpkg         gnupg         curl     && export ARCH=$(echo $(dpkg --print-architecture) | cut -d"-" -f3)     && curl -o /usr/local/bin/gosu -fSL "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$ARCH"     && curl -o /usr/local/bin/gosu.asc -fSL "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$ARCH.asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4     && gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu     && rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc     && chmod +x /usr/local/bin/gosu     && gosu nobody true     && apk del .gosu-deps
-# Sat, 04 Nov 2017 06:53:08 GMT
+# Fri, 01 Dec 2017 19:16:56 GMT
 RUN addgroup crate && adduser -G crate -H crate -D
-# Sat, 04 Nov 2017 06:53:40 GMT
+# Fri, 01 Dec 2017 19:22:34 GMT
 ENV CRATE_VERSION=2.0.7
-# Sat, 04 Nov 2017 06:54:15 GMT
+# Fri, 01 Dec 2017 19:23:09 GMT
 RUN apk add --no-cache --virtual .crate-rundeps         openjdk8-jre-base         python3         openssl         sigar     && apk add --no-cache --virtual .build-deps         curl         gnupg         tar     && curl -fSL -O https://cdn.crate.io/downloads/releases/crate-$CRATE_VERSION.tar.gz     && curl -fSL -O https://cdn.crate.io/downloads/releases/crate-$CRATE_VERSION.tar.gz.asc     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 90C23FC6585BC0717F8FBFC37FAAE51A06F6EAEB     && gpg --batch --verify crate-$CRATE_VERSION.tar.gz.asc crate-$CRATE_VERSION.tar.gz     && rm -r "$GNUPGHOME" crate-$CRATE_VERSION.tar.gz.asc     && mkdir /crate     && tar -xf crate-$CRATE_VERSION.tar.gz -C /crate --strip-components=1     && rm crate-$CRATE_VERSION.tar.gz     && ln -s /usr/bin/python3 /usr/bin/python     && rm /crate/plugins/crate-sigar/libsigar-amd64-linux.so     && apk del .build-deps
-# Sat, 04 Nov 2017 06:54:15 GMT
+# Fri, 01 Dec 2017 19:23:10 GMT
 ENV PATH=/crate/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 04 Nov 2017 06:54:15 GMT
+# Fri, 01 Dec 2017 19:23:10 GMT
 VOLUME [/data]
-# Sat, 04 Nov 2017 06:54:15 GMT
+# Fri, 01 Dec 2017 19:23:10 GMT
 ADD file:f6ed1d4a953eca6984e33a751c11c6838562c006ffa19ab36d121906728e94db in /crate/config/crate.yml 
-# Sat, 04 Nov 2017 06:54:16 GMT
+# Fri, 01 Dec 2017 19:23:10 GMT
 ADD file:10c08bc017b942a11ef7f1221f33b8224b4549e98c74b9f84e2495fcfb60d8ce in /crate/config/log4j2.properties 
-# Sat, 04 Nov 2017 06:54:16 GMT
+# Fri, 01 Dec 2017 19:23:11 GMT
 COPY file:9517f117528edc569ebb34a2c1d3d7bcf342cb124f3b833a681768549d61ebfb in / 
-# Sat, 04 Nov 2017 06:54:16 GMT
+# Fri, 01 Dec 2017 19:23:11 GMT
 WORKDIR /data
-# Sat, 04 Nov 2017 06:54:16 GMT
+# Fri, 01 Dec 2017 19:23:11 GMT
 EXPOSE 4200/tcp 4300/tcp 5432/tcp 5433/tcp 5434/tcp 5435/tcp 5436/tcp 5437/tcp 5438/tcp 5439/tcp 5440/tcp 5441/tcp 5442/tcp 5443/tcp 5444/tcp 5445/tcp 5446/tcp 5447/tcp 5448/tcp 5449/tcp 5450/tcp 5451/tcp 5452/tcp 5453/tcp 5454/tcp 5455/tcp 5456/tcp 5457/tcp 5458/tcp 5459/tcp 5460/tcp 5461/tcp 5462/tcp 5463/tcp 5464/tcp 5465/tcp 5466/tcp 5467/tcp 5468/tcp 5469/tcp 5470/tcp 5471/tcp 5472/tcp 5473/tcp 5474/tcp 5475/tcp 5476/tcp 5477/tcp 5478/tcp 5479/tcp 5480/tcp 5481/tcp 5482/tcp 5483/tcp 5484/tcp 5485/tcp 5486/tcp 5487/tcp 5488/tcp 5489/tcp 5490/tcp 5491/tcp 5492/tcp 5493/tcp 5494/tcp 5495/tcp 5496/tcp 5497/tcp 5498/tcp 5499/tcp 5500/tcp 5501/tcp 5502/tcp 5503/tcp 5504/tcp 5505/tcp 5506/tcp 5507/tcp 5508/tcp 5509/tcp 5510/tcp 5511/tcp 5512/tcp 5513/tcp 5514/tcp 5515/tcp 5516/tcp 5517/tcp 5518/tcp 5519/tcp 5520/tcp 5521/tcp 5522/tcp 5523/tcp 5524/tcp 5525/tcp 5526/tcp 5527/tcp 5528/tcp 5529/tcp 5530/tcp 5531/tcp 5532/tcp
-# Sat, 04 Nov 2017 06:54:17 GMT
+# Fri, 01 Dec 2017 19:23:12 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 04 Nov 2017 06:54:17 GMT
+# Fri, 01 Dec 2017 19:23:12 GMT
 CMD ["crate"]
 ```
 
 -	Layers:
-	-	`sha256:b1f00a6a160cd3696edba6f13ebd1d6a5808216a78ec4b753444ab8f30483b1f`  
-		Last Modified: Wed, 25 Oct 2017 23:22:48 GMT  
-		Size: 2.0 MB (1970236 bytes)  
+	-	`sha256:128191993b8a5e9d949346160926359ad02df93bde62f5af8a7bc3573f53553e`  
+		Last Modified: Fri, 01 Dec 2017 18:58:25 GMT  
+		Size: 2.0 MB (1970107 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d0cc29f953de9dbd81ba60f38d391e14c549fca71fac26979c8a1004eae6ef6e`  
-		Last Modified: Sat, 04 Nov 2017 06:54:27 GMT  
-		Size: 592.4 KB (592359 bytes)  
+	-	`sha256:09c038e711b52a557f0d28614697ca50a42e549e71984fb325a4c9efc4d8a065`  
+		Last Modified: Fri, 01 Dec 2017 19:23:32 GMT  
+		Size: 592.4 KB (592369 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4d2d49dc6f2b7793edd41d187af9928d502dfc87ee17f50e80febb09501c2085`  
-		Last Modified: Sat, 04 Nov 2017 06:54:26 GMT  
-		Size: 1.2 KB (1204 bytes)  
+	-	`sha256:c09752f23776bfcb6517f469d64e9d99e24dfa5a0683c4712eb74343d75626a9`  
+		Last Modified: Fri, 01 Dec 2017 19:23:31 GMT  
+		Size: 1.2 KB (1205 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3945f957c9432e32315bbe98241703ec2bd5ecc7ca2628936c27b34e571e77fb`  
-		Last Modified: Sat, 04 Nov 2017 06:55:39 GMT  
-		Size: 124.0 MB (123963981 bytes)  
+	-	`sha256:d81b19e0dc89a00c77677c2f05a2d3a66539a96103e45b42c3586f32561d5948`  
+		Last Modified: Fri, 01 Dec 2017 19:30:59 GMT  
+		Size: 124.0 MB (123967524 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:07696d6cb20a404abf676406011a2c5fe0adac4121fe108b0ac1b8b776b7ed3e`  
-		Last Modified: Sat, 04 Nov 2017 06:55:22 GMT  
-		Size: 228.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:75f8f0d8f83a3046cace80239aba1e6b2169f6884ac7d4a543370fa5deee7802`  
-		Last Modified: Sat, 04 Nov 2017 06:55:22 GMT  
-		Size: 934.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ffbc960faed8d3d5f3e2ad5bbe5152d2119e91f23a86a0468ee8a1c8917dabf2`  
-		Last Modified: Sat, 04 Nov 2017 06:55:21 GMT  
+	-	`sha256:a6b51a99a1d3799eb8a233ef2fe0f3aa85222b207ada9a467672e8f74e0d793f`  
+		Last Modified: Fri, 01 Dec 2017 19:30:37 GMT  
 		Size: 231.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e2d06f5a9ec7d4be293ba538244c187d97ea03eacaa2695abba5f146ec34fe05`  
-		Last Modified: Sat, 04 Nov 2017 06:55:21 GMT  
+	-	`sha256:009dbb0dcba149c05610a14df4ed9dd8f687468537f00d1a8189cbd55c10db02`  
+		Last Modified: Fri, 01 Dec 2017 19:30:37 GMT  
+		Size: 936.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:561d8bad6f1a3a72dc66f7e52fe392753c2bec16f487f2d5f576047dc18a1303`  
+		Last Modified: Fri, 01 Dec 2017 19:30:36 GMT  
+		Size: 232.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6668a0e1c9fc930eebbde36b3f28247220005e26b0119ec41b0c7479b78d505b`  
+		Last Modified: Fri, 01 Dec 2017 19:30:36 GMT  
 		Size: 93.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `crate:2.0.7`
 
 ```console
-$ docker pull crate@sha256:b05e702ba61f290a958d46874ea57879fd1ef31c9637068657c4e6fce44ed09b
+$ docker pull crate@sha256:196f6355de0f1d7b73a9d59a23964295f751ee74a78648a12e5957f49cc697c3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -118,92 +118,92 @@ $ docker pull crate@sha256:b05e702ba61f290a958d46874ea57879fd1ef31c9637068657c4e
 ### `crate:2.0.7` - linux; amd64
 
 ```console
-$ docker pull crate@sha256:687c8f80dc80efb796005d3b79cb400667294665dfdc52dfb07b7202e747ba02
+$ docker pull crate@sha256:6a22884c2aa1ba124b7194843fef027e0c86c66b0c659ad50c4d24afbbe2b202
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **126.5 MB (126529266 bytes)**  
+-	Total Size: **126.5 MB (126532697 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b7d4ffc14d50165292cc752470853cd07625d6d87137c49df1a92eaf9f06beb8`
+-	Image ID: `sha256:af63f6ced8e0bedb1435d701009cec570965c5bc85cd68d78bffcc4604f95c9d`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["crate"]`
 
 ```dockerfile
-# Fri, 03 Nov 2017 22:10:27 GMT
-ADD file:92bfed3f8dfbee01eab85c6a1d6bc6894c5a75f9a4e2c414e9b4d05b9fcd19d0 in / 
-# Fri, 03 Nov 2017 22:10:27 GMT
+# Fri, 01 Dec 2017 18:49:59 GMT
+ADD file:5595f8b7042388f1c3d5642b8581698548f99ea2f0b9324f797d2396e03e00cb in / 
+# Fri, 01 Dec 2017 18:49:59 GMT
 CMD ["/bin/sh"]
-# Sat, 04 Nov 2017 06:52:42 GMT
+# Fri, 01 Dec 2017 19:16:04 GMT
 MAINTAINER Crate.IO GmbH office@crate.io
-# Sat, 04 Nov 2017 06:52:42 GMT
+# Fri, 01 Dec 2017 19:16:05 GMT
 ENV GOSU_VERSION=1.9
-# Sat, 04 Nov 2017 06:53:07 GMT
+# Fri, 01 Dec 2017 19:16:55 GMT
 RUN set -x     && apk add --no-cache --virtual .gosu-deps         dpkg         gnupg         curl     && export ARCH=$(echo $(dpkg --print-architecture) | cut -d"-" -f3)     && curl -o /usr/local/bin/gosu -fSL "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$ARCH"     && curl -o /usr/local/bin/gosu.asc -fSL "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$ARCH.asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4     && gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu     && rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc     && chmod +x /usr/local/bin/gosu     && gosu nobody true     && apk del .gosu-deps
-# Sat, 04 Nov 2017 06:53:08 GMT
+# Fri, 01 Dec 2017 19:16:56 GMT
 RUN addgroup crate && adduser -G crate -H crate -D
-# Sat, 04 Nov 2017 06:53:40 GMT
+# Fri, 01 Dec 2017 19:22:34 GMT
 ENV CRATE_VERSION=2.0.7
-# Sat, 04 Nov 2017 06:54:15 GMT
+# Fri, 01 Dec 2017 19:23:09 GMT
 RUN apk add --no-cache --virtual .crate-rundeps         openjdk8-jre-base         python3         openssl         sigar     && apk add --no-cache --virtual .build-deps         curl         gnupg         tar     && curl -fSL -O https://cdn.crate.io/downloads/releases/crate-$CRATE_VERSION.tar.gz     && curl -fSL -O https://cdn.crate.io/downloads/releases/crate-$CRATE_VERSION.tar.gz.asc     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 90C23FC6585BC0717F8FBFC37FAAE51A06F6EAEB     && gpg --batch --verify crate-$CRATE_VERSION.tar.gz.asc crate-$CRATE_VERSION.tar.gz     && rm -r "$GNUPGHOME" crate-$CRATE_VERSION.tar.gz.asc     && mkdir /crate     && tar -xf crate-$CRATE_VERSION.tar.gz -C /crate --strip-components=1     && rm crate-$CRATE_VERSION.tar.gz     && ln -s /usr/bin/python3 /usr/bin/python     && rm /crate/plugins/crate-sigar/libsigar-amd64-linux.so     && apk del .build-deps
-# Sat, 04 Nov 2017 06:54:15 GMT
+# Fri, 01 Dec 2017 19:23:10 GMT
 ENV PATH=/crate/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 04 Nov 2017 06:54:15 GMT
+# Fri, 01 Dec 2017 19:23:10 GMT
 VOLUME [/data]
-# Sat, 04 Nov 2017 06:54:15 GMT
+# Fri, 01 Dec 2017 19:23:10 GMT
 ADD file:f6ed1d4a953eca6984e33a751c11c6838562c006ffa19ab36d121906728e94db in /crate/config/crate.yml 
-# Sat, 04 Nov 2017 06:54:16 GMT
+# Fri, 01 Dec 2017 19:23:10 GMT
 ADD file:10c08bc017b942a11ef7f1221f33b8224b4549e98c74b9f84e2495fcfb60d8ce in /crate/config/log4j2.properties 
-# Sat, 04 Nov 2017 06:54:16 GMT
+# Fri, 01 Dec 2017 19:23:11 GMT
 COPY file:9517f117528edc569ebb34a2c1d3d7bcf342cb124f3b833a681768549d61ebfb in / 
-# Sat, 04 Nov 2017 06:54:16 GMT
+# Fri, 01 Dec 2017 19:23:11 GMT
 WORKDIR /data
-# Sat, 04 Nov 2017 06:54:16 GMT
+# Fri, 01 Dec 2017 19:23:11 GMT
 EXPOSE 4200/tcp 4300/tcp 5432/tcp 5433/tcp 5434/tcp 5435/tcp 5436/tcp 5437/tcp 5438/tcp 5439/tcp 5440/tcp 5441/tcp 5442/tcp 5443/tcp 5444/tcp 5445/tcp 5446/tcp 5447/tcp 5448/tcp 5449/tcp 5450/tcp 5451/tcp 5452/tcp 5453/tcp 5454/tcp 5455/tcp 5456/tcp 5457/tcp 5458/tcp 5459/tcp 5460/tcp 5461/tcp 5462/tcp 5463/tcp 5464/tcp 5465/tcp 5466/tcp 5467/tcp 5468/tcp 5469/tcp 5470/tcp 5471/tcp 5472/tcp 5473/tcp 5474/tcp 5475/tcp 5476/tcp 5477/tcp 5478/tcp 5479/tcp 5480/tcp 5481/tcp 5482/tcp 5483/tcp 5484/tcp 5485/tcp 5486/tcp 5487/tcp 5488/tcp 5489/tcp 5490/tcp 5491/tcp 5492/tcp 5493/tcp 5494/tcp 5495/tcp 5496/tcp 5497/tcp 5498/tcp 5499/tcp 5500/tcp 5501/tcp 5502/tcp 5503/tcp 5504/tcp 5505/tcp 5506/tcp 5507/tcp 5508/tcp 5509/tcp 5510/tcp 5511/tcp 5512/tcp 5513/tcp 5514/tcp 5515/tcp 5516/tcp 5517/tcp 5518/tcp 5519/tcp 5520/tcp 5521/tcp 5522/tcp 5523/tcp 5524/tcp 5525/tcp 5526/tcp 5527/tcp 5528/tcp 5529/tcp 5530/tcp 5531/tcp 5532/tcp
-# Sat, 04 Nov 2017 06:54:17 GMT
+# Fri, 01 Dec 2017 19:23:12 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 04 Nov 2017 06:54:17 GMT
+# Fri, 01 Dec 2017 19:23:12 GMT
 CMD ["crate"]
 ```
 
 -	Layers:
-	-	`sha256:b1f00a6a160cd3696edba6f13ebd1d6a5808216a78ec4b753444ab8f30483b1f`  
-		Last Modified: Wed, 25 Oct 2017 23:22:48 GMT  
-		Size: 2.0 MB (1970236 bytes)  
+	-	`sha256:128191993b8a5e9d949346160926359ad02df93bde62f5af8a7bc3573f53553e`  
+		Last Modified: Fri, 01 Dec 2017 18:58:25 GMT  
+		Size: 2.0 MB (1970107 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d0cc29f953de9dbd81ba60f38d391e14c549fca71fac26979c8a1004eae6ef6e`  
-		Last Modified: Sat, 04 Nov 2017 06:54:27 GMT  
-		Size: 592.4 KB (592359 bytes)  
+	-	`sha256:09c038e711b52a557f0d28614697ca50a42e549e71984fb325a4c9efc4d8a065`  
+		Last Modified: Fri, 01 Dec 2017 19:23:32 GMT  
+		Size: 592.4 KB (592369 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4d2d49dc6f2b7793edd41d187af9928d502dfc87ee17f50e80febb09501c2085`  
-		Last Modified: Sat, 04 Nov 2017 06:54:26 GMT  
-		Size: 1.2 KB (1204 bytes)  
+	-	`sha256:c09752f23776bfcb6517f469d64e9d99e24dfa5a0683c4712eb74343d75626a9`  
+		Last Modified: Fri, 01 Dec 2017 19:23:31 GMT  
+		Size: 1.2 KB (1205 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3945f957c9432e32315bbe98241703ec2bd5ecc7ca2628936c27b34e571e77fb`  
-		Last Modified: Sat, 04 Nov 2017 06:55:39 GMT  
-		Size: 124.0 MB (123963981 bytes)  
+	-	`sha256:d81b19e0dc89a00c77677c2f05a2d3a66539a96103e45b42c3586f32561d5948`  
+		Last Modified: Fri, 01 Dec 2017 19:30:59 GMT  
+		Size: 124.0 MB (123967524 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:07696d6cb20a404abf676406011a2c5fe0adac4121fe108b0ac1b8b776b7ed3e`  
-		Last Modified: Sat, 04 Nov 2017 06:55:22 GMT  
-		Size: 228.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:75f8f0d8f83a3046cace80239aba1e6b2169f6884ac7d4a543370fa5deee7802`  
-		Last Modified: Sat, 04 Nov 2017 06:55:22 GMT  
-		Size: 934.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ffbc960faed8d3d5f3e2ad5bbe5152d2119e91f23a86a0468ee8a1c8917dabf2`  
-		Last Modified: Sat, 04 Nov 2017 06:55:21 GMT  
+	-	`sha256:a6b51a99a1d3799eb8a233ef2fe0f3aa85222b207ada9a467672e8f74e0d793f`  
+		Last Modified: Fri, 01 Dec 2017 19:30:37 GMT  
 		Size: 231.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e2d06f5a9ec7d4be293ba538244c187d97ea03eacaa2695abba5f146ec34fe05`  
-		Last Modified: Sat, 04 Nov 2017 06:55:21 GMT  
+	-	`sha256:009dbb0dcba149c05610a14df4ed9dd8f687468537f00d1a8189cbd55c10db02`  
+		Last Modified: Fri, 01 Dec 2017 19:30:37 GMT  
+		Size: 936.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:561d8bad6f1a3a72dc66f7e52fe392753c2bec16f487f2d5f576047dc18a1303`  
+		Last Modified: Fri, 01 Dec 2017 19:30:36 GMT  
+		Size: 232.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6668a0e1c9fc930eebbde36b3f28247220005e26b0119ec41b0c7479b78d505b`  
+		Last Modified: Fri, 01 Dec 2017 19:30:36 GMT  
 		Size: 93.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `crate:2.1`
 
 ```console
-$ docker pull crate@sha256:6077d33f841cc5f5e22b9a781578b95f2896c2e6eb2e14f1b2fc68e16cca06fa
+$ docker pull crate@sha256:06f9498f93c490d5bd9fa9eebd19bbc7bd4b035828269c777467521b898db980
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -213,94 +213,94 @@ $ docker pull crate@sha256:6077d33f841cc5f5e22b9a781578b95f2896c2e6eb2e14f1b2fc6
 ### `crate:2.1` - linux; amd64
 
 ```console
-$ docker pull crate@sha256:3222bf9be4975946e881cdb25c29a49a60c3343a4cd7ece452950b51d79c89e4
+$ docker pull crate@sha256:d4217cb3f7a2fed740054b63e7e46f7edb9aae32c72a29004d857766728f9b74
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **129.1 MB (129127218 bytes)**  
+-	Total Size: **129.1 MB (129127245 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bcbac2b55912b96ae8dfe7216d51e06364144d45dabd6642f8d5e53af0f5b3db`
+-	Image ID: `sha256:4c36348642f0e7aa03cb5efc36851ab0c0fb6daf3cdc6097f27a43ed633e698d`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["crate"]`
 
 ```dockerfile
-# Fri, 03 Nov 2017 22:10:27 GMT
-ADD file:92bfed3f8dfbee01eab85c6a1d6bc6894c5a75f9a4e2c414e9b4d05b9fcd19d0 in / 
-# Fri, 03 Nov 2017 22:10:27 GMT
+# Fri, 01 Dec 2017 18:49:59 GMT
+ADD file:5595f8b7042388f1c3d5642b8581698548f99ea2f0b9324f797d2396e03e00cb in / 
+# Fri, 01 Dec 2017 18:49:59 GMT
 CMD ["/bin/sh"]
-# Sat, 04 Nov 2017 06:52:42 GMT
+# Fri, 01 Dec 2017 19:16:04 GMT
 MAINTAINER Crate.IO GmbH office@crate.io
-# Sat, 04 Nov 2017 06:52:42 GMT
+# Fri, 01 Dec 2017 19:16:05 GMT
 ENV GOSU_VERSION=1.9
-# Sat, 04 Nov 2017 06:53:07 GMT
+# Fri, 01 Dec 2017 19:16:55 GMT
 RUN set -x     && apk add --no-cache --virtual .gosu-deps         dpkg         gnupg         curl     && export ARCH=$(echo $(dpkg --print-architecture) | cut -d"-" -f3)     && curl -o /usr/local/bin/gosu -fSL "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$ARCH"     && curl -o /usr/local/bin/gosu.asc -fSL "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$ARCH.asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4     && gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu     && rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc     && chmod +x /usr/local/bin/gosu     && gosu nobody true     && apk del .gosu-deps
-# Sat, 04 Nov 2017 06:53:08 GMT
+# Fri, 01 Dec 2017 19:16:56 GMT
 RUN addgroup crate && adduser -G crate -H crate -D
-# Wed, 15 Nov 2017 18:48:22 GMT
+# Fri, 01 Dec 2017 19:20:46 GMT
 ENV CRATE_VERSION=2.1.10
-# Wed, 15 Nov 2017 18:49:45 GMT
+# Fri, 01 Dec 2017 19:21:09 GMT
 RUN apk add --no-cache --virtual .crate-rundeps         openjdk8-jre-base         python3         openssl         sigar     && apk add --no-cache --virtual .build-deps         curl         gnupg         tar     && curl -fSL -O https://cdn.crate.io/downloads/releases/crate-$CRATE_VERSION.tar.gz     && curl -fSL -O https://cdn.crate.io/downloads/releases/crate-$CRATE_VERSION.tar.gz.asc     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 90C23FC6585BC0717F8FBFC37FAAE51A06F6EAEB     && gpg --batch --verify crate-$CRATE_VERSION.tar.gz.asc crate-$CRATE_VERSION.tar.gz     && rm -r "$GNUPGHOME" crate-$CRATE_VERSION.tar.gz.asc     && mkdir /crate     && tar -xf crate-$CRATE_VERSION.tar.gz -C /crate --strip-components=1     && rm crate-$CRATE_VERSION.tar.gz     && ln -s /usr/bin/python3 /usr/bin/python     && rm /crate/lib/sigar/libsigar-amd64-linux.so     && apk del .build-deps
-# Wed, 15 Nov 2017 18:49:46 GMT
+# Fri, 01 Dec 2017 19:22:20 GMT
 ENV PATH=/crate/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 15 Nov 2017 18:49:46 GMT
+# Fri, 01 Dec 2017 19:22:20 GMT
 ENV CRATE_HEAP_SIZE=512M
-# Wed, 15 Nov 2017 18:49:46 GMT
+# Fri, 01 Dec 2017 19:22:20 GMT
 VOLUME [/data]
-# Wed, 15 Nov 2017 18:49:46 GMT
+# Fri, 01 Dec 2017 19:22:21 GMT
 ADD file:c0b3bba944a2572094279072da088c4f681b13f9bed768ebd567555831729fab in /crate/config/crate.yml 
-# Wed, 15 Nov 2017 18:49:47 GMT
+# Fri, 01 Dec 2017 19:22:21 GMT
 ADD file:10c08bc017b942a11ef7f1221f33b8224b4549e98c74b9f84e2495fcfb60d8ce in /crate/config/log4j2.properties 
-# Wed, 15 Nov 2017 18:49:47 GMT
+# Fri, 01 Dec 2017 19:22:21 GMT
 COPY file:9517f117528edc569ebb34a2c1d3d7bcf342cb124f3b833a681768549d61ebfb in / 
-# Wed, 15 Nov 2017 18:49:47 GMT
+# Fri, 01 Dec 2017 19:22:22 GMT
 WORKDIR /data
-# Wed, 15 Nov 2017 18:49:47 GMT
+# Fri, 01 Dec 2017 19:22:22 GMT
 EXPOSE 4200/tcp 4300/tcp 5432/tcp
-# Wed, 15 Nov 2017 18:49:48 GMT
+# Fri, 01 Dec 2017 19:22:22 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Wed, 15 Nov 2017 18:49:48 GMT
+# Fri, 01 Dec 2017 19:22:22 GMT
 CMD ["crate"]
 ```
 
 -	Layers:
-	-	`sha256:b1f00a6a160cd3696edba6f13ebd1d6a5808216a78ec4b753444ab8f30483b1f`  
-		Last Modified: Wed, 25 Oct 2017 23:22:48 GMT  
-		Size: 2.0 MB (1970236 bytes)  
+	-	`sha256:128191993b8a5e9d949346160926359ad02df93bde62f5af8a7bc3573f53553e`  
+		Last Modified: Fri, 01 Dec 2017 18:58:25 GMT  
+		Size: 2.0 MB (1970107 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d0cc29f953de9dbd81ba60f38d391e14c549fca71fac26979c8a1004eae6ef6e`  
-		Last Modified: Sat, 04 Nov 2017 06:54:27 GMT  
-		Size: 592.4 KB (592359 bytes)  
+	-	`sha256:09c038e711b52a557f0d28614697ca50a42e549e71984fb325a4c9efc4d8a065`  
+		Last Modified: Fri, 01 Dec 2017 19:23:32 GMT  
+		Size: 592.4 KB (592369 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4d2d49dc6f2b7793edd41d187af9928d502dfc87ee17f50e80febb09501c2085`  
-		Last Modified: Sat, 04 Nov 2017 06:54:26 GMT  
-		Size: 1.2 KB (1204 bytes)  
+	-	`sha256:c09752f23776bfcb6517f469d64e9d99e24dfa5a0683c4712eb74343d75626a9`  
+		Last Modified: Fri, 01 Dec 2017 19:23:31 GMT  
+		Size: 1.2 KB (1205 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2234c1f2ab511f53e13aa962cbef0977253f7d29fa9cc335fce56b9653e4c743`  
-		Last Modified: Wed, 15 Nov 2017 18:53:18 GMT  
-		Size: 126.6 MB (126561913 bytes)  
+	-	`sha256:a8572b0a6de2c22b383e76b23c457d318e8a8b50ad6720f950e6968d95f42b55`  
+		Last Modified: Fri, 01 Dec 2017 19:29:51 GMT  
+		Size: 126.6 MB (126562062 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c78d32af35958d292ae5275140af5a1eefadeeda22c825c339a7e94844ef1d97`  
-		Last Modified: Wed, 15 Nov 2017 18:53:08 GMT  
-		Size: 247.0 B  
+	-	`sha256:ded92d9c52061f5c81071ad59aacd478c27aca4c22d3641a84f49acf7775be8e`  
+		Last Modified: Fri, 01 Dec 2017 19:29:34 GMT  
+		Size: 248.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0c5cad8ce37d8f7ba1d10ea9de83e631383cd37e8ad972121a1b3ebb3b7b0f2`  
-		Last Modified: Wed, 15 Nov 2017 18:53:08 GMT  
-		Size: 934.0 B  
+	-	`sha256:25e84979d920ad2adf9d3cf619d8d2b420d4b38a99810b066501c8e1ecc3fc5e`  
+		Last Modified: Fri, 01 Dec 2017 19:29:34 GMT  
+		Size: 932.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:57b2544f3ed9ad53e48278d287f1ce34b110692705d4709d78631fbc5df48a65`  
-		Last Modified: Wed, 15 Nov 2017 18:53:08 GMT  
+	-	`sha256:89b4ee4467066386ec04a0e7dbfafbc01c5adb981dbbd039ee3cff94561600e4`  
+		Last Modified: Fri, 01 Dec 2017 19:29:34 GMT  
 		Size: 232.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d3e46c85b76d04ca572d974f28eeefbb25ceefb21d5f4a64218fc1f94e53e76d`  
-		Last Modified: Wed, 15 Nov 2017 18:53:08 GMT  
-		Size: 93.0 B  
+	-	`sha256:179af19366d9f9c7831df103216d14319cc089f949c98436f79867bb31fe4ee5`  
+		Last Modified: Fri, 01 Dec 2017 19:29:34 GMT  
+		Size: 90.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `crate:2.1.10`
 
 ```console
-$ docker pull crate@sha256:6077d33f841cc5f5e22b9a781578b95f2896c2e6eb2e14f1b2fc68e16cca06fa
+$ docker pull crate@sha256:06f9498f93c490d5bd9fa9eebd19bbc7bd4b035828269c777467521b898db980
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -310,94 +310,94 @@ $ docker pull crate@sha256:6077d33f841cc5f5e22b9a781578b95f2896c2e6eb2e14f1b2fc6
 ### `crate:2.1.10` - linux; amd64
 
 ```console
-$ docker pull crate@sha256:3222bf9be4975946e881cdb25c29a49a60c3343a4cd7ece452950b51d79c89e4
+$ docker pull crate@sha256:d4217cb3f7a2fed740054b63e7e46f7edb9aae32c72a29004d857766728f9b74
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **129.1 MB (129127218 bytes)**  
+-	Total Size: **129.1 MB (129127245 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bcbac2b55912b96ae8dfe7216d51e06364144d45dabd6642f8d5e53af0f5b3db`
+-	Image ID: `sha256:4c36348642f0e7aa03cb5efc36851ab0c0fb6daf3cdc6097f27a43ed633e698d`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["crate"]`
 
 ```dockerfile
-# Fri, 03 Nov 2017 22:10:27 GMT
-ADD file:92bfed3f8dfbee01eab85c6a1d6bc6894c5a75f9a4e2c414e9b4d05b9fcd19d0 in / 
-# Fri, 03 Nov 2017 22:10:27 GMT
+# Fri, 01 Dec 2017 18:49:59 GMT
+ADD file:5595f8b7042388f1c3d5642b8581698548f99ea2f0b9324f797d2396e03e00cb in / 
+# Fri, 01 Dec 2017 18:49:59 GMT
 CMD ["/bin/sh"]
-# Sat, 04 Nov 2017 06:52:42 GMT
+# Fri, 01 Dec 2017 19:16:04 GMT
 MAINTAINER Crate.IO GmbH office@crate.io
-# Sat, 04 Nov 2017 06:52:42 GMT
+# Fri, 01 Dec 2017 19:16:05 GMT
 ENV GOSU_VERSION=1.9
-# Sat, 04 Nov 2017 06:53:07 GMT
+# Fri, 01 Dec 2017 19:16:55 GMT
 RUN set -x     && apk add --no-cache --virtual .gosu-deps         dpkg         gnupg         curl     && export ARCH=$(echo $(dpkg --print-architecture) | cut -d"-" -f3)     && curl -o /usr/local/bin/gosu -fSL "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$ARCH"     && curl -o /usr/local/bin/gosu.asc -fSL "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$ARCH.asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4     && gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu     && rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc     && chmod +x /usr/local/bin/gosu     && gosu nobody true     && apk del .gosu-deps
-# Sat, 04 Nov 2017 06:53:08 GMT
+# Fri, 01 Dec 2017 19:16:56 GMT
 RUN addgroup crate && adduser -G crate -H crate -D
-# Wed, 15 Nov 2017 18:48:22 GMT
+# Fri, 01 Dec 2017 19:20:46 GMT
 ENV CRATE_VERSION=2.1.10
-# Wed, 15 Nov 2017 18:49:45 GMT
+# Fri, 01 Dec 2017 19:21:09 GMT
 RUN apk add --no-cache --virtual .crate-rundeps         openjdk8-jre-base         python3         openssl         sigar     && apk add --no-cache --virtual .build-deps         curl         gnupg         tar     && curl -fSL -O https://cdn.crate.io/downloads/releases/crate-$CRATE_VERSION.tar.gz     && curl -fSL -O https://cdn.crate.io/downloads/releases/crate-$CRATE_VERSION.tar.gz.asc     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 90C23FC6585BC0717F8FBFC37FAAE51A06F6EAEB     && gpg --batch --verify crate-$CRATE_VERSION.tar.gz.asc crate-$CRATE_VERSION.tar.gz     && rm -r "$GNUPGHOME" crate-$CRATE_VERSION.tar.gz.asc     && mkdir /crate     && tar -xf crate-$CRATE_VERSION.tar.gz -C /crate --strip-components=1     && rm crate-$CRATE_VERSION.tar.gz     && ln -s /usr/bin/python3 /usr/bin/python     && rm /crate/lib/sigar/libsigar-amd64-linux.so     && apk del .build-deps
-# Wed, 15 Nov 2017 18:49:46 GMT
+# Fri, 01 Dec 2017 19:22:20 GMT
 ENV PATH=/crate/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 15 Nov 2017 18:49:46 GMT
+# Fri, 01 Dec 2017 19:22:20 GMT
 ENV CRATE_HEAP_SIZE=512M
-# Wed, 15 Nov 2017 18:49:46 GMT
+# Fri, 01 Dec 2017 19:22:20 GMT
 VOLUME [/data]
-# Wed, 15 Nov 2017 18:49:46 GMT
+# Fri, 01 Dec 2017 19:22:21 GMT
 ADD file:c0b3bba944a2572094279072da088c4f681b13f9bed768ebd567555831729fab in /crate/config/crate.yml 
-# Wed, 15 Nov 2017 18:49:47 GMT
+# Fri, 01 Dec 2017 19:22:21 GMT
 ADD file:10c08bc017b942a11ef7f1221f33b8224b4549e98c74b9f84e2495fcfb60d8ce in /crate/config/log4j2.properties 
-# Wed, 15 Nov 2017 18:49:47 GMT
+# Fri, 01 Dec 2017 19:22:21 GMT
 COPY file:9517f117528edc569ebb34a2c1d3d7bcf342cb124f3b833a681768549d61ebfb in / 
-# Wed, 15 Nov 2017 18:49:47 GMT
+# Fri, 01 Dec 2017 19:22:22 GMT
 WORKDIR /data
-# Wed, 15 Nov 2017 18:49:47 GMT
+# Fri, 01 Dec 2017 19:22:22 GMT
 EXPOSE 4200/tcp 4300/tcp 5432/tcp
-# Wed, 15 Nov 2017 18:49:48 GMT
+# Fri, 01 Dec 2017 19:22:22 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Wed, 15 Nov 2017 18:49:48 GMT
+# Fri, 01 Dec 2017 19:22:22 GMT
 CMD ["crate"]
 ```
 
 -	Layers:
-	-	`sha256:b1f00a6a160cd3696edba6f13ebd1d6a5808216a78ec4b753444ab8f30483b1f`  
-		Last Modified: Wed, 25 Oct 2017 23:22:48 GMT  
-		Size: 2.0 MB (1970236 bytes)  
+	-	`sha256:128191993b8a5e9d949346160926359ad02df93bde62f5af8a7bc3573f53553e`  
+		Last Modified: Fri, 01 Dec 2017 18:58:25 GMT  
+		Size: 2.0 MB (1970107 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d0cc29f953de9dbd81ba60f38d391e14c549fca71fac26979c8a1004eae6ef6e`  
-		Last Modified: Sat, 04 Nov 2017 06:54:27 GMT  
-		Size: 592.4 KB (592359 bytes)  
+	-	`sha256:09c038e711b52a557f0d28614697ca50a42e549e71984fb325a4c9efc4d8a065`  
+		Last Modified: Fri, 01 Dec 2017 19:23:32 GMT  
+		Size: 592.4 KB (592369 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4d2d49dc6f2b7793edd41d187af9928d502dfc87ee17f50e80febb09501c2085`  
-		Last Modified: Sat, 04 Nov 2017 06:54:26 GMT  
-		Size: 1.2 KB (1204 bytes)  
+	-	`sha256:c09752f23776bfcb6517f469d64e9d99e24dfa5a0683c4712eb74343d75626a9`  
+		Last Modified: Fri, 01 Dec 2017 19:23:31 GMT  
+		Size: 1.2 KB (1205 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2234c1f2ab511f53e13aa962cbef0977253f7d29fa9cc335fce56b9653e4c743`  
-		Last Modified: Wed, 15 Nov 2017 18:53:18 GMT  
-		Size: 126.6 MB (126561913 bytes)  
+	-	`sha256:a8572b0a6de2c22b383e76b23c457d318e8a8b50ad6720f950e6968d95f42b55`  
+		Last Modified: Fri, 01 Dec 2017 19:29:51 GMT  
+		Size: 126.6 MB (126562062 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c78d32af35958d292ae5275140af5a1eefadeeda22c825c339a7e94844ef1d97`  
-		Last Modified: Wed, 15 Nov 2017 18:53:08 GMT  
-		Size: 247.0 B  
+	-	`sha256:ded92d9c52061f5c81071ad59aacd478c27aca4c22d3641a84f49acf7775be8e`  
+		Last Modified: Fri, 01 Dec 2017 19:29:34 GMT  
+		Size: 248.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0c5cad8ce37d8f7ba1d10ea9de83e631383cd37e8ad972121a1b3ebb3b7b0f2`  
-		Last Modified: Wed, 15 Nov 2017 18:53:08 GMT  
-		Size: 934.0 B  
+	-	`sha256:25e84979d920ad2adf9d3cf619d8d2b420d4b38a99810b066501c8e1ecc3fc5e`  
+		Last Modified: Fri, 01 Dec 2017 19:29:34 GMT  
+		Size: 932.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:57b2544f3ed9ad53e48278d287f1ce34b110692705d4709d78631fbc5df48a65`  
-		Last Modified: Wed, 15 Nov 2017 18:53:08 GMT  
+	-	`sha256:89b4ee4467066386ec04a0e7dbfafbc01c5adb981dbbd039ee3cff94561600e4`  
+		Last Modified: Fri, 01 Dec 2017 19:29:34 GMT  
 		Size: 232.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d3e46c85b76d04ca572d974f28eeefbb25ceefb21d5f4a64218fc1f94e53e76d`  
-		Last Modified: Wed, 15 Nov 2017 18:53:08 GMT  
-		Size: 93.0 B  
+	-	`sha256:179af19366d9f9c7831df103216d14319cc089f949c98436f79867bb31fe4ee5`  
+		Last Modified: Fri, 01 Dec 2017 19:29:34 GMT  
+		Size: 90.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `crate:2.2`
 
 ```console
-$ docker pull crate@sha256:78c37c65c9ce751d4df2cd91187f6cbe4747d47f33553a020881ec780f05109d
+$ docker pull crate@sha256:5a2f09c6820fc00c12e14bfb37d488ecc65ddff908af80eaf6f74eea32de6e34
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -407,94 +407,94 @@ $ docker pull crate@sha256:78c37c65c9ce751d4df2cd91187f6cbe4747d47f33553a020881e
 ### `crate:2.2` - linux; amd64
 
 ```console
-$ docker pull crate@sha256:f9c9385b9cf4fc7ad5bb313e21d437d9fc8329299fa30c95514efabda0687a7a
+$ docker pull crate@sha256:bbce12264b6e451e8810ca08f855744e02ec9b19226d8567e605131f0d076788
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **129.5 MB (129495615 bytes)**  
+-	Total Size: **129.5 MB (129495605 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eb8b815cf0eefc3563c858755092546fd0d868986e7df2b6ba2ad34e06cc5c69`
+-	Image ID: `sha256:3c17690d10a4fd5a7fef23ffc1d9eaacb7bc055ceb18a458c96107030184fa33`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["crate"]`
 
 ```dockerfile
-# Fri, 03 Nov 2017 22:10:27 GMT
-ADD file:92bfed3f8dfbee01eab85c6a1d6bc6894c5a75f9a4e2c414e9b4d05b9fcd19d0 in / 
-# Fri, 03 Nov 2017 22:10:27 GMT
+# Fri, 01 Dec 2017 18:49:59 GMT
+ADD file:5595f8b7042388f1c3d5642b8581698548f99ea2f0b9324f797d2396e03e00cb in / 
+# Fri, 01 Dec 2017 18:49:59 GMT
 CMD ["/bin/sh"]
-# Sat, 04 Nov 2017 06:52:42 GMT
+# Fri, 01 Dec 2017 19:16:04 GMT
 MAINTAINER Crate.IO GmbH office@crate.io
-# Sat, 04 Nov 2017 06:52:42 GMT
+# Fri, 01 Dec 2017 19:16:05 GMT
 ENV GOSU_VERSION=1.9
-# Sat, 04 Nov 2017 06:53:07 GMT
+# Fri, 01 Dec 2017 19:16:55 GMT
 RUN set -x     && apk add --no-cache --virtual .gosu-deps         dpkg         gnupg         curl     && export ARCH=$(echo $(dpkg --print-architecture) | cut -d"-" -f3)     && curl -o /usr/local/bin/gosu -fSL "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$ARCH"     && curl -o /usr/local/bin/gosu.asc -fSL "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$ARCH.asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4     && gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu     && rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc     && chmod +x /usr/local/bin/gosu     && gosu nobody true     && apk del .gosu-deps
-# Sat, 04 Nov 2017 06:53:08 GMT
+# Fri, 01 Dec 2017 19:16:56 GMT
 RUN addgroup crate && adduser -G crate -H crate -D
-# Tue, 28 Nov 2017 21:49:14 GMT
+# Fri, 01 Dec 2017 19:16:56 GMT
 ENV CRATE_VERSION=2.2.4
-# Tue, 28 Nov 2017 21:49:43 GMT
+# Fri, 01 Dec 2017 19:17:21 GMT
 RUN apk add --no-cache --virtual .crate-rundeps         openjdk8-jre-base         python3         openssl         sigar     && apk add --no-cache --virtual .build-deps         curl         gnupg         tar     && curl -fSL -O https://cdn.crate.io/downloads/releases/crate-$CRATE_VERSION.tar.gz     && curl -fSL -O https://cdn.crate.io/downloads/releases/crate-$CRATE_VERSION.tar.gz.asc     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 90C23FC6585BC0717F8FBFC37FAAE51A06F6EAEB     && gpg --batch --verify crate-$CRATE_VERSION.tar.gz.asc crate-$CRATE_VERSION.tar.gz     && rm -r "$GNUPGHOME" crate-$CRATE_VERSION.tar.gz.asc     && mkdir /crate     && tar -xf crate-$CRATE_VERSION.tar.gz -C /crate --strip-components=1     && rm crate-$CRATE_VERSION.tar.gz     && ln -s /usr/bin/python3 /usr/bin/python     && rm /crate/lib/sigar/libsigar-amd64-linux.so     && apk del .build-deps
-# Tue, 28 Nov 2017 21:49:45 GMT
+# Fri, 01 Dec 2017 19:17:22 GMT
 ENV PATH=/crate/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 28 Nov 2017 21:49:45 GMT
+# Fri, 01 Dec 2017 19:17:22 GMT
 ENV CRATE_HEAP_SIZE=512M
-# Tue, 28 Nov 2017 21:49:45 GMT
+# Fri, 01 Dec 2017 19:17:22 GMT
 VOLUME [/data]
-# Tue, 28 Nov 2017 21:49:45 GMT
+# Fri, 01 Dec 2017 19:17:23 GMT
 ADD file:c0b3bba944a2572094279072da088c4f681b13f9bed768ebd567555831729fab in /crate/config/crate.yml 
-# Tue, 28 Nov 2017 21:49:46 GMT
+# Fri, 01 Dec 2017 19:17:23 GMT
 ADD file:10c08bc017b942a11ef7f1221f33b8224b4549e98c74b9f84e2495fcfb60d8ce in /crate/config/log4j2.properties 
-# Tue, 28 Nov 2017 21:49:50 GMT
+# Fri, 01 Dec 2017 19:17:24 GMT
 COPY file:9517f117528edc569ebb34a2c1d3d7bcf342cb124f3b833a681768549d61ebfb in / 
-# Tue, 28 Nov 2017 21:49:50 GMT
+# Fri, 01 Dec 2017 19:17:24 GMT
 WORKDIR /data
-# Tue, 28 Nov 2017 21:49:50 GMT
+# Fri, 01 Dec 2017 19:17:24 GMT
 EXPOSE 4200/tcp 4300/tcp 5432/tcp
-# Tue, 28 Nov 2017 21:49:51 GMT
+# Fri, 01 Dec 2017 19:17:25 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 28 Nov 2017 21:49:51 GMT
+# Fri, 01 Dec 2017 19:17:25 GMT
 CMD ["crate"]
 ```
 
 -	Layers:
-	-	`sha256:b1f00a6a160cd3696edba6f13ebd1d6a5808216a78ec4b753444ab8f30483b1f`  
-		Last Modified: Wed, 25 Oct 2017 23:22:48 GMT  
-		Size: 2.0 MB (1970236 bytes)  
+	-	`sha256:128191993b8a5e9d949346160926359ad02df93bde62f5af8a7bc3573f53553e`  
+		Last Modified: Fri, 01 Dec 2017 18:58:25 GMT  
+		Size: 2.0 MB (1970107 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d0cc29f953de9dbd81ba60f38d391e14c549fca71fac26979c8a1004eae6ef6e`  
-		Last Modified: Sat, 04 Nov 2017 06:54:27 GMT  
-		Size: 592.4 KB (592359 bytes)  
+	-	`sha256:09c038e711b52a557f0d28614697ca50a42e549e71984fb325a4c9efc4d8a065`  
+		Last Modified: Fri, 01 Dec 2017 19:23:32 GMT  
+		Size: 592.4 KB (592369 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4d2d49dc6f2b7793edd41d187af9928d502dfc87ee17f50e80febb09501c2085`  
-		Last Modified: Sat, 04 Nov 2017 06:54:26 GMT  
-		Size: 1.2 KB (1204 bytes)  
+	-	`sha256:c09752f23776bfcb6517f469d64e9d99e24dfa5a0683c4712eb74343d75626a9`  
+		Last Modified: Fri, 01 Dec 2017 19:23:31 GMT  
+		Size: 1.2 KB (1205 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b23ef3fe0107ed46b56f1bc19b9dd5b2484eaaf195ef7d9ba82e1df7133ea987`  
-		Last Modified: Tue, 28 Nov 2017 21:50:18 GMT  
-		Size: 126.9 MB (126930308 bytes)  
+	-	`sha256:81ee64dad1dc410234c0fd8278fa6aab077f2c19e054623ff9219f75926021b3`  
+		Last Modified: Fri, 01 Dec 2017 19:23:56 GMT  
+		Size: 126.9 MB (126930416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dc3c68ce2b01e00b1d0bc972cc23f32b00e13cf92099ca5a00a9469b9a5ceb44`  
-		Last Modified: Tue, 28 Nov 2017 21:50:07 GMT  
+	-	`sha256:cab3cf5fcdfb715337eab616a31f5e48174f7b4c384ac26a061894c3453ec574`  
+		Last Modified: Fri, 01 Dec 2017 19:23:29 GMT  
 		Size: 249.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8b9146975d83b0379c0ef1ab0b8fb9ebdf7753098e2efa3d5b759646f3a35642`  
-		Last Modified: Tue, 28 Nov 2017 21:50:09 GMT  
+	-	`sha256:06ed773de358b216d43a2b7cb8e33331061f185c9cf9b9c648f1e4520d71059c`  
+		Last Modified: Fri, 01 Dec 2017 19:23:29 GMT  
 		Size: 935.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:122808fe2018d7ebbfef070ca95d939ab478faaf512f7c2431518b1c2f4ec34d`  
-		Last Modified: Tue, 28 Nov 2017 21:50:07 GMT  
+	-	`sha256:03928f1857b70dbe23080eb6445704af18b4c7c1224c43b0baabd03fc4a63515`  
+		Last Modified: Fri, 01 Dec 2017 19:23:29 GMT  
 		Size: 231.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:83a9385a241e9b1b7c553b3377fc564f50e2809419862dc3fac3f41c35515fd9`  
-		Last Modified: Tue, 28 Nov 2017 21:50:07 GMT  
+	-	`sha256:1d7a014c4a65bd89c2c558029a8b868f7b8081bee2c4097da6ba922b17581bf4`  
+		Last Modified: Fri, 01 Dec 2017 19:23:29 GMT  
 		Size: 93.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `crate:2.2.4`
 
 ```console
-$ docker pull crate@sha256:78c37c65c9ce751d4df2cd91187f6cbe4747d47f33553a020881ec780f05109d
+$ docker pull crate@sha256:5a2f09c6820fc00c12e14bfb37d488ecc65ddff908af80eaf6f74eea32de6e34
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -504,94 +504,94 @@ $ docker pull crate@sha256:78c37c65c9ce751d4df2cd91187f6cbe4747d47f33553a020881e
 ### `crate:2.2.4` - linux; amd64
 
 ```console
-$ docker pull crate@sha256:f9c9385b9cf4fc7ad5bb313e21d437d9fc8329299fa30c95514efabda0687a7a
+$ docker pull crate@sha256:bbce12264b6e451e8810ca08f855744e02ec9b19226d8567e605131f0d076788
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **129.5 MB (129495615 bytes)**  
+-	Total Size: **129.5 MB (129495605 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eb8b815cf0eefc3563c858755092546fd0d868986e7df2b6ba2ad34e06cc5c69`
+-	Image ID: `sha256:3c17690d10a4fd5a7fef23ffc1d9eaacb7bc055ceb18a458c96107030184fa33`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["crate"]`
 
 ```dockerfile
-# Fri, 03 Nov 2017 22:10:27 GMT
-ADD file:92bfed3f8dfbee01eab85c6a1d6bc6894c5a75f9a4e2c414e9b4d05b9fcd19d0 in / 
-# Fri, 03 Nov 2017 22:10:27 GMT
+# Fri, 01 Dec 2017 18:49:59 GMT
+ADD file:5595f8b7042388f1c3d5642b8581698548f99ea2f0b9324f797d2396e03e00cb in / 
+# Fri, 01 Dec 2017 18:49:59 GMT
 CMD ["/bin/sh"]
-# Sat, 04 Nov 2017 06:52:42 GMT
+# Fri, 01 Dec 2017 19:16:04 GMT
 MAINTAINER Crate.IO GmbH office@crate.io
-# Sat, 04 Nov 2017 06:52:42 GMT
+# Fri, 01 Dec 2017 19:16:05 GMT
 ENV GOSU_VERSION=1.9
-# Sat, 04 Nov 2017 06:53:07 GMT
+# Fri, 01 Dec 2017 19:16:55 GMT
 RUN set -x     && apk add --no-cache --virtual .gosu-deps         dpkg         gnupg         curl     && export ARCH=$(echo $(dpkg --print-architecture) | cut -d"-" -f3)     && curl -o /usr/local/bin/gosu -fSL "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$ARCH"     && curl -o /usr/local/bin/gosu.asc -fSL "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$ARCH.asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4     && gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu     && rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc     && chmod +x /usr/local/bin/gosu     && gosu nobody true     && apk del .gosu-deps
-# Sat, 04 Nov 2017 06:53:08 GMT
+# Fri, 01 Dec 2017 19:16:56 GMT
 RUN addgroup crate && adduser -G crate -H crate -D
-# Tue, 28 Nov 2017 21:49:14 GMT
+# Fri, 01 Dec 2017 19:16:56 GMT
 ENV CRATE_VERSION=2.2.4
-# Tue, 28 Nov 2017 21:49:43 GMT
+# Fri, 01 Dec 2017 19:17:21 GMT
 RUN apk add --no-cache --virtual .crate-rundeps         openjdk8-jre-base         python3         openssl         sigar     && apk add --no-cache --virtual .build-deps         curl         gnupg         tar     && curl -fSL -O https://cdn.crate.io/downloads/releases/crate-$CRATE_VERSION.tar.gz     && curl -fSL -O https://cdn.crate.io/downloads/releases/crate-$CRATE_VERSION.tar.gz.asc     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 90C23FC6585BC0717F8FBFC37FAAE51A06F6EAEB     && gpg --batch --verify crate-$CRATE_VERSION.tar.gz.asc crate-$CRATE_VERSION.tar.gz     && rm -r "$GNUPGHOME" crate-$CRATE_VERSION.tar.gz.asc     && mkdir /crate     && tar -xf crate-$CRATE_VERSION.tar.gz -C /crate --strip-components=1     && rm crate-$CRATE_VERSION.tar.gz     && ln -s /usr/bin/python3 /usr/bin/python     && rm /crate/lib/sigar/libsigar-amd64-linux.so     && apk del .build-deps
-# Tue, 28 Nov 2017 21:49:45 GMT
+# Fri, 01 Dec 2017 19:17:22 GMT
 ENV PATH=/crate/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 28 Nov 2017 21:49:45 GMT
+# Fri, 01 Dec 2017 19:17:22 GMT
 ENV CRATE_HEAP_SIZE=512M
-# Tue, 28 Nov 2017 21:49:45 GMT
+# Fri, 01 Dec 2017 19:17:22 GMT
 VOLUME [/data]
-# Tue, 28 Nov 2017 21:49:45 GMT
+# Fri, 01 Dec 2017 19:17:23 GMT
 ADD file:c0b3bba944a2572094279072da088c4f681b13f9bed768ebd567555831729fab in /crate/config/crate.yml 
-# Tue, 28 Nov 2017 21:49:46 GMT
+# Fri, 01 Dec 2017 19:17:23 GMT
 ADD file:10c08bc017b942a11ef7f1221f33b8224b4549e98c74b9f84e2495fcfb60d8ce in /crate/config/log4j2.properties 
-# Tue, 28 Nov 2017 21:49:50 GMT
+# Fri, 01 Dec 2017 19:17:24 GMT
 COPY file:9517f117528edc569ebb34a2c1d3d7bcf342cb124f3b833a681768549d61ebfb in / 
-# Tue, 28 Nov 2017 21:49:50 GMT
+# Fri, 01 Dec 2017 19:17:24 GMT
 WORKDIR /data
-# Tue, 28 Nov 2017 21:49:50 GMT
+# Fri, 01 Dec 2017 19:17:24 GMT
 EXPOSE 4200/tcp 4300/tcp 5432/tcp
-# Tue, 28 Nov 2017 21:49:51 GMT
+# Fri, 01 Dec 2017 19:17:25 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 28 Nov 2017 21:49:51 GMT
+# Fri, 01 Dec 2017 19:17:25 GMT
 CMD ["crate"]
 ```
 
 -	Layers:
-	-	`sha256:b1f00a6a160cd3696edba6f13ebd1d6a5808216a78ec4b753444ab8f30483b1f`  
-		Last Modified: Wed, 25 Oct 2017 23:22:48 GMT  
-		Size: 2.0 MB (1970236 bytes)  
+	-	`sha256:128191993b8a5e9d949346160926359ad02df93bde62f5af8a7bc3573f53553e`  
+		Last Modified: Fri, 01 Dec 2017 18:58:25 GMT  
+		Size: 2.0 MB (1970107 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d0cc29f953de9dbd81ba60f38d391e14c549fca71fac26979c8a1004eae6ef6e`  
-		Last Modified: Sat, 04 Nov 2017 06:54:27 GMT  
-		Size: 592.4 KB (592359 bytes)  
+	-	`sha256:09c038e711b52a557f0d28614697ca50a42e549e71984fb325a4c9efc4d8a065`  
+		Last Modified: Fri, 01 Dec 2017 19:23:32 GMT  
+		Size: 592.4 KB (592369 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4d2d49dc6f2b7793edd41d187af9928d502dfc87ee17f50e80febb09501c2085`  
-		Last Modified: Sat, 04 Nov 2017 06:54:26 GMT  
-		Size: 1.2 KB (1204 bytes)  
+	-	`sha256:c09752f23776bfcb6517f469d64e9d99e24dfa5a0683c4712eb74343d75626a9`  
+		Last Modified: Fri, 01 Dec 2017 19:23:31 GMT  
+		Size: 1.2 KB (1205 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b23ef3fe0107ed46b56f1bc19b9dd5b2484eaaf195ef7d9ba82e1df7133ea987`  
-		Last Modified: Tue, 28 Nov 2017 21:50:18 GMT  
-		Size: 126.9 MB (126930308 bytes)  
+	-	`sha256:81ee64dad1dc410234c0fd8278fa6aab077f2c19e054623ff9219f75926021b3`  
+		Last Modified: Fri, 01 Dec 2017 19:23:56 GMT  
+		Size: 126.9 MB (126930416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dc3c68ce2b01e00b1d0bc972cc23f32b00e13cf92099ca5a00a9469b9a5ceb44`  
-		Last Modified: Tue, 28 Nov 2017 21:50:07 GMT  
+	-	`sha256:cab3cf5fcdfb715337eab616a31f5e48174f7b4c384ac26a061894c3453ec574`  
+		Last Modified: Fri, 01 Dec 2017 19:23:29 GMT  
 		Size: 249.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8b9146975d83b0379c0ef1ab0b8fb9ebdf7753098e2efa3d5b759646f3a35642`  
-		Last Modified: Tue, 28 Nov 2017 21:50:09 GMT  
+	-	`sha256:06ed773de358b216d43a2b7cb8e33331061f185c9cf9b9c648f1e4520d71059c`  
+		Last Modified: Fri, 01 Dec 2017 19:23:29 GMT  
 		Size: 935.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:122808fe2018d7ebbfef070ca95d939ab478faaf512f7c2431518b1c2f4ec34d`  
-		Last Modified: Tue, 28 Nov 2017 21:50:07 GMT  
+	-	`sha256:03928f1857b70dbe23080eb6445704af18b4c7c1224c43b0baabd03fc4a63515`  
+		Last Modified: Fri, 01 Dec 2017 19:23:29 GMT  
 		Size: 231.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:83a9385a241e9b1b7c553b3377fc564f50e2809419862dc3fac3f41c35515fd9`  
-		Last Modified: Tue, 28 Nov 2017 21:50:07 GMT  
+	-	`sha256:1d7a014c4a65bd89c2c558029a8b868f7b8081bee2c4097da6ba922b17581bf4`  
+		Last Modified: Fri, 01 Dec 2017 19:23:29 GMT  
 		Size: 93.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `crate:latest`
 
 ```console
-$ docker pull crate@sha256:78c37c65c9ce751d4df2cd91187f6cbe4747d47f33553a020881ec780f05109d
+$ docker pull crate@sha256:5a2f09c6820fc00c12e14bfb37d488ecc65ddff908af80eaf6f74eea32de6e34
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -601,86 +601,86 @@ $ docker pull crate@sha256:78c37c65c9ce751d4df2cd91187f6cbe4747d47f33553a020881e
 ### `crate:latest` - linux; amd64
 
 ```console
-$ docker pull crate@sha256:f9c9385b9cf4fc7ad5bb313e21d437d9fc8329299fa30c95514efabda0687a7a
+$ docker pull crate@sha256:bbce12264b6e451e8810ca08f855744e02ec9b19226d8567e605131f0d076788
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **129.5 MB (129495615 bytes)**  
+-	Total Size: **129.5 MB (129495605 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eb8b815cf0eefc3563c858755092546fd0d868986e7df2b6ba2ad34e06cc5c69`
+-	Image ID: `sha256:3c17690d10a4fd5a7fef23ffc1d9eaacb7bc055ceb18a458c96107030184fa33`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["crate"]`
 
 ```dockerfile
-# Fri, 03 Nov 2017 22:10:27 GMT
-ADD file:92bfed3f8dfbee01eab85c6a1d6bc6894c5a75f9a4e2c414e9b4d05b9fcd19d0 in / 
-# Fri, 03 Nov 2017 22:10:27 GMT
+# Fri, 01 Dec 2017 18:49:59 GMT
+ADD file:5595f8b7042388f1c3d5642b8581698548f99ea2f0b9324f797d2396e03e00cb in / 
+# Fri, 01 Dec 2017 18:49:59 GMT
 CMD ["/bin/sh"]
-# Sat, 04 Nov 2017 06:52:42 GMT
+# Fri, 01 Dec 2017 19:16:04 GMT
 MAINTAINER Crate.IO GmbH office@crate.io
-# Sat, 04 Nov 2017 06:52:42 GMT
+# Fri, 01 Dec 2017 19:16:05 GMT
 ENV GOSU_VERSION=1.9
-# Sat, 04 Nov 2017 06:53:07 GMT
+# Fri, 01 Dec 2017 19:16:55 GMT
 RUN set -x     && apk add --no-cache --virtual .gosu-deps         dpkg         gnupg         curl     && export ARCH=$(echo $(dpkg --print-architecture) | cut -d"-" -f3)     && curl -o /usr/local/bin/gosu -fSL "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$ARCH"     && curl -o /usr/local/bin/gosu.asc -fSL "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$ARCH.asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4     && gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu     && rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc     && chmod +x /usr/local/bin/gosu     && gosu nobody true     && apk del .gosu-deps
-# Sat, 04 Nov 2017 06:53:08 GMT
+# Fri, 01 Dec 2017 19:16:56 GMT
 RUN addgroup crate && adduser -G crate -H crate -D
-# Tue, 28 Nov 2017 21:49:14 GMT
+# Fri, 01 Dec 2017 19:16:56 GMT
 ENV CRATE_VERSION=2.2.4
-# Tue, 28 Nov 2017 21:49:43 GMT
+# Fri, 01 Dec 2017 19:17:21 GMT
 RUN apk add --no-cache --virtual .crate-rundeps         openjdk8-jre-base         python3         openssl         sigar     && apk add --no-cache --virtual .build-deps         curl         gnupg         tar     && curl -fSL -O https://cdn.crate.io/downloads/releases/crate-$CRATE_VERSION.tar.gz     && curl -fSL -O https://cdn.crate.io/downloads/releases/crate-$CRATE_VERSION.tar.gz.asc     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 90C23FC6585BC0717F8FBFC37FAAE51A06F6EAEB     && gpg --batch --verify crate-$CRATE_VERSION.tar.gz.asc crate-$CRATE_VERSION.tar.gz     && rm -r "$GNUPGHOME" crate-$CRATE_VERSION.tar.gz.asc     && mkdir /crate     && tar -xf crate-$CRATE_VERSION.tar.gz -C /crate --strip-components=1     && rm crate-$CRATE_VERSION.tar.gz     && ln -s /usr/bin/python3 /usr/bin/python     && rm /crate/lib/sigar/libsigar-amd64-linux.so     && apk del .build-deps
-# Tue, 28 Nov 2017 21:49:45 GMT
+# Fri, 01 Dec 2017 19:17:22 GMT
 ENV PATH=/crate/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 28 Nov 2017 21:49:45 GMT
+# Fri, 01 Dec 2017 19:17:22 GMT
 ENV CRATE_HEAP_SIZE=512M
-# Tue, 28 Nov 2017 21:49:45 GMT
+# Fri, 01 Dec 2017 19:17:22 GMT
 VOLUME [/data]
-# Tue, 28 Nov 2017 21:49:45 GMT
+# Fri, 01 Dec 2017 19:17:23 GMT
 ADD file:c0b3bba944a2572094279072da088c4f681b13f9bed768ebd567555831729fab in /crate/config/crate.yml 
-# Tue, 28 Nov 2017 21:49:46 GMT
+# Fri, 01 Dec 2017 19:17:23 GMT
 ADD file:10c08bc017b942a11ef7f1221f33b8224b4549e98c74b9f84e2495fcfb60d8ce in /crate/config/log4j2.properties 
-# Tue, 28 Nov 2017 21:49:50 GMT
+# Fri, 01 Dec 2017 19:17:24 GMT
 COPY file:9517f117528edc569ebb34a2c1d3d7bcf342cb124f3b833a681768549d61ebfb in / 
-# Tue, 28 Nov 2017 21:49:50 GMT
+# Fri, 01 Dec 2017 19:17:24 GMT
 WORKDIR /data
-# Tue, 28 Nov 2017 21:49:50 GMT
+# Fri, 01 Dec 2017 19:17:24 GMT
 EXPOSE 4200/tcp 4300/tcp 5432/tcp
-# Tue, 28 Nov 2017 21:49:51 GMT
+# Fri, 01 Dec 2017 19:17:25 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 28 Nov 2017 21:49:51 GMT
+# Fri, 01 Dec 2017 19:17:25 GMT
 CMD ["crate"]
 ```
 
 -	Layers:
-	-	`sha256:b1f00a6a160cd3696edba6f13ebd1d6a5808216a78ec4b753444ab8f30483b1f`  
-		Last Modified: Wed, 25 Oct 2017 23:22:48 GMT  
-		Size: 2.0 MB (1970236 bytes)  
+	-	`sha256:128191993b8a5e9d949346160926359ad02df93bde62f5af8a7bc3573f53553e`  
+		Last Modified: Fri, 01 Dec 2017 18:58:25 GMT  
+		Size: 2.0 MB (1970107 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d0cc29f953de9dbd81ba60f38d391e14c549fca71fac26979c8a1004eae6ef6e`  
-		Last Modified: Sat, 04 Nov 2017 06:54:27 GMT  
-		Size: 592.4 KB (592359 bytes)  
+	-	`sha256:09c038e711b52a557f0d28614697ca50a42e549e71984fb325a4c9efc4d8a065`  
+		Last Modified: Fri, 01 Dec 2017 19:23:32 GMT  
+		Size: 592.4 KB (592369 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4d2d49dc6f2b7793edd41d187af9928d502dfc87ee17f50e80febb09501c2085`  
-		Last Modified: Sat, 04 Nov 2017 06:54:26 GMT  
-		Size: 1.2 KB (1204 bytes)  
+	-	`sha256:c09752f23776bfcb6517f469d64e9d99e24dfa5a0683c4712eb74343d75626a9`  
+		Last Modified: Fri, 01 Dec 2017 19:23:31 GMT  
+		Size: 1.2 KB (1205 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b23ef3fe0107ed46b56f1bc19b9dd5b2484eaaf195ef7d9ba82e1df7133ea987`  
-		Last Modified: Tue, 28 Nov 2017 21:50:18 GMT  
-		Size: 126.9 MB (126930308 bytes)  
+	-	`sha256:81ee64dad1dc410234c0fd8278fa6aab077f2c19e054623ff9219f75926021b3`  
+		Last Modified: Fri, 01 Dec 2017 19:23:56 GMT  
+		Size: 126.9 MB (126930416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dc3c68ce2b01e00b1d0bc972cc23f32b00e13cf92099ca5a00a9469b9a5ceb44`  
-		Last Modified: Tue, 28 Nov 2017 21:50:07 GMT  
+	-	`sha256:cab3cf5fcdfb715337eab616a31f5e48174f7b4c384ac26a061894c3453ec574`  
+		Last Modified: Fri, 01 Dec 2017 19:23:29 GMT  
 		Size: 249.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8b9146975d83b0379c0ef1ab0b8fb9ebdf7753098e2efa3d5b759646f3a35642`  
-		Last Modified: Tue, 28 Nov 2017 21:50:09 GMT  
+	-	`sha256:06ed773de358b216d43a2b7cb8e33331061f185c9cf9b9c648f1e4520d71059c`  
+		Last Modified: Fri, 01 Dec 2017 19:23:29 GMT  
 		Size: 935.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:122808fe2018d7ebbfef070ca95d939ab478faaf512f7c2431518b1c2f4ec34d`  
-		Last Modified: Tue, 28 Nov 2017 21:50:07 GMT  
+	-	`sha256:03928f1857b70dbe23080eb6445704af18b4c7c1224c43b0baabd03fc4a63515`  
+		Last Modified: Fri, 01 Dec 2017 19:23:29 GMT  
 		Size: 231.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:83a9385a241e9b1b7c553b3377fc564f50e2809419862dc3fac3f41c35515fd9`  
-		Last Modified: Tue, 28 Nov 2017 21:50:07 GMT  
+	-	`sha256:1d7a014c4a65bd89c2c558029a8b868f7b8081bee2c4097da6ba922b17581bf4`  
+		Last Modified: Fri, 01 Dec 2017 19:23:29 GMT  
 		Size: 93.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
