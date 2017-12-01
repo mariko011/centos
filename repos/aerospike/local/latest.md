@@ -429,13 +429,9 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `public-domain-md5`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.18.4ubuntu1.2
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.18.4ubuntu1.2.dsc' dpkg_1.18.4ubuntu1.2.dsc 2150 SHA256:86e45565f450f567a458cbf06a0d8196956075a15cf6d98c7ea245541d449858
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.18.4ubuntu1.2.tar.xz' dpkg_1.18.4ubuntu1.2.tar.xz 4374284 SHA256:404736c0827ef8c893a81380768a5db90533e5430a43a96c3b25a57dfafe6752
-```
 
 ### `dpkg` source package: `e2fsprogs=1.42.13-1ubuntu1`
 
@@ -1729,14 +1725,9 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/s
 - `implied`
 - `see above, some license as Python`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python2.7=2.7.12-1ubuntu0~16.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.12-1ubuntu0~16.04.1.dsc' python2.7_2.7.12-1ubuntu0~16.04.1.dsc 3373 SHA256:bbce59e2156e66efcc5bed1b5aab437c9bf1121311ed4f1939bd14fbc8e57c81
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.12.orig.tar.gz' python2.7_2.7.12.orig.tar.gz 16935960 SHA256:3cb522d17463dfa69a155ab18cffa399b358c966c0363d6c8b5b3bf1384da4b6
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.12-1ubuntu0~16.04.1.diff.gz' python2.7_2.7.12-1ubuntu0~16.04.1.diff.gz 276670 SHA256:a75d6cf1e97289ac88d506628626bfbdc4a6376581d7c761067044c27b45c9e2
-```
 
 ### `dpkg` source package: `readline6=6.3-8ubuntu2`
 
