@@ -1058,14 +1058,9 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.52.1-4ubuntu1.3
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.52.1-4ubuntu1.3.dsc' curl_7.52.1-4ubuntu1.3.dsc 2835 SHA256:a002dce096a87b9e1c21ee5aa6e487366a478a4a0ef0a823b6195897e728d922
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.52.1.orig.tar.gz' curl_7.52.1.orig.tar.gz 3504621 SHA256:a8984e8b20880b621f61a62d95ff3c0763a3152093a9f9ce4287cfd614add6ae
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.52.1-4ubuntu1.3.debian.tar.xz' curl_7.52.1-4ubuntu1.3.debian.tar.xz 40532 SHA256:0797ee5aa1aa244bf80eff8f267ddd26117e9aad295b3225d70468729049a12e
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-2ubuntu1`
 
@@ -8055,14 +8050,9 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.5/copyright`, `/usr/share/doc
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.5=3.5.3-1ubuntu0~17.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.5/python3.5_3.5.3-1ubuntu0~17.04.1.dsc' python3.5_3.5.3-1ubuntu0~17.04.1.dsc 2798 SHA256:4c5c0d3b497cabbe63ffb0d5a331e4413eb4ef51314ec072ebe1a49855f484fc
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.5/python3.5_3.5.3.orig.tar.xz' python3.5_3.5.3.orig.tar.xz 15213396 SHA256:eefe2ad6575855423ab630f5b51a8ef6e5556f774584c06beab4926f930ddbb0
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.5/python3.5_3.5.3-1ubuntu0~17.04.1.debian.tar.xz' python3.5_3.5.3-1ubuntu0~17.04.1.debian.tar.xz 220492 SHA256:d1a09c76cbefeb3bb3b0459860bfa26afaa4a2173a9cfb4a5eb553b88feeda04
-```
 
 ### `dpkg` source package: `pyyaml=3.12-1`
 
