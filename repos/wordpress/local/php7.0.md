@@ -1,17 +1,17 @@
-# `wordpress:4.9.0-php7.0-apache`
+# `wordpress:4.9.1-php7.0-apache`
 
 ## Docker Metadata
 
-- Image ID: `sha256:542300a762713dc68368df237b33a834fb2029c010349fd58c41fd2cdcf16484`
-- Created: `2017-11-28T02:05:26.359960397Z`
-- Virtual Size: ~ 425.03 Mb  
+- Image ID: `sha256:0b8cf44165b398532a46adb515d6c5ac0d1224924187a004b599e2244e8993e0`
+- Created: `2017-12-01T05:18:26.517908651Z`
+- Virtual Size: ~ 425.24 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["apache2-foreground"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		libpcre3-dev 		make 		pkg-config 		re2c`
+  - `PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c`
   - `PHP_INI_DIR=/usr/local/etc/php`
   - `APACHE_CONFDIR=/etc/apache2`
   - `APACHE_ENVVARS=/etc/apache2/envvars`
@@ -26,8 +26,8 @@
   - `PHP_ASC_URL=https://secure.php.net/get/php-7.0.26.tar.xz.asc/from/this/mirror`
   - `PHP_SHA256=ed5cbb4bbb0ddef8985f100bba2e94002ad22a230b5da2dccfe148915df5f199`
   - `PHP_MD5=`
-  - `WORDPRESS_VERSION=4.9`
-  - `WORDPRESS_SHA1=6127bd2aed7b7c0a2c1789c8f17a2222a9081d6c`
+  - `WORDPRESS_VERSION=4.9.1`
+  - `WORDPRESS_SHA1=892d2c23b9d458ec3d44de59b753adb41012e903`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -552,12 +552,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/cryptsetup/2:1.6.6-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/cryptsetup/2:1.6.6-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `curl=7.38.0-4+deb8u7`
+### `dpkg` source package: `curl=7.38.0-4+deb8u8`
 
 Binary Packages:
 
-- `curl=7.38.0-4+deb8u7`
-- `libcurl3:amd64=7.38.0-4+deb8u7`
+- `curl=7.38.0-4+deb8u8`
+- `libcurl3:amd64=7.38.0-4+deb8u8`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`)
 
@@ -569,17 +569,17 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 Source:
 
 ```console
-$ apt-get source -qq --print-uris curl=7.38.0-4+deb8u7
-'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0-4+deb8u7.dsc' curl_7.38.0-4+deb8u7.dsc 2694 SHA256:b5bca99d184cfd436d441457df6c5eb660071dab4ff913fc5680278f39c80aa5
+$ apt-get source -qq --print-uris curl=7.38.0-4+deb8u8
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0-4+deb8u8.dsc' curl_7.38.0-4+deb8u8.dsc 2324 SHA256:d160ead196ea8eefe7f465599f6328a4b90b4d09e934d03f54f5588c0ce45fd8
 'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0.orig.tar.gz' curl_7.38.0.orig.tar.gz 4094034 SHA256:5661028aa6532882fa228cd23c99ddbb8b87643dbb1a7ea55c068d34a943dff1
-'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0-4+deb8u7.debian.tar.xz' curl_7.38.0-4+deb8u7.debian.tar.xz 42300 SHA256:62f8e051409ecbe312a88ba9d4982784742d472d176eec16b4dd19859ae1398d
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0-4+deb8u8.debian.tar.xz' curl_7.38.0-4+deb8u8.debian.tar.xz 43632 SHA256:ec846b7e120206cc60f906ed0d846e94bdeb5eada86ed091749208f87d1f20c6
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/curl/7.38.0-4+deb8u7/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.38.0-4+deb8u7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.38.0-4+deb8u7/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/curl/7.38.0-4+deb8u8/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.38.0-4+deb8u8/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.38.0-4+deb8u8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-13+deb8u1`
 
@@ -2524,8 +2524,6 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `libpcre3:amd64=2:8.35-3.3+deb8u4`
-- `libpcre3-dev:amd64=2:8.35-3.3+deb8u4`
-- `libpcrecpp0:amd64=2:8.35-3.3+deb8u4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.

@@ -1,17 +1,17 @@
-# `wordpress:4.9.0-php7.0-fpm-alpine`
+# `wordpress:4.9.1-php7.0-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:68f978a81b6a61028dcca1305a056f8e670b6a119eef3c02ac11382e1ddc09b0`
-- Created: `2017-11-28T02:11:19.750478993Z`
-- Virtual Size: ~ 101.02 Mb  
+- Image ID: `sha256:27da864680a73ed9e7228891522229c3e2d379d8983c4221cee4866f5a368ada`
+- Created: `2017-12-01T05:20:12.674539414Z`
+- Virtual Size: ~ 102.05 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["php-fpm"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `PHPIZE_DEPS=autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pcre-dev 		pkgconf 		re2c`
+  - `PHPIZE_DEPS=autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c`
   - `PHP_INI_DIR=/usr/local/etc/php`
   - `PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data`
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2`
@@ -23,5 +23,5 @@
   - `PHP_ASC_URL=https://secure.php.net/get/php-7.0.26.tar.xz.asc/from/this/mirror`
   - `PHP_SHA256=ed5cbb4bbb0ddef8985f100bba2e94002ad22a230b5da2dccfe148915df5f199`
   - `PHP_MD5=`
-  - `WORDPRESS_VERSION=4.9`
-  - `WORDPRESS_SHA1=6127bd2aed7b7c0a2c1789c8f17a2222a9081d6c`
+  - `WORDPRESS_VERSION=4.9.1`
+  - `WORDPRESS_SHA1=892d2c23b9d458ec3d44de59b753adb41012e903`
