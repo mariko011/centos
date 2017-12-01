@@ -4108,10 +4108,6 @@ Licenses: (parsed from: `/usr/share/doc/libpango-1.0-0/copyright`, `/usr/share/d
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/pango1.0/1.40.13-1/
-
 
 ### `dpkg` source package: `pcre3=2:8.39-5`
 
