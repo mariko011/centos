@@ -1341,20 +1341,13 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris git=1:2.15.0-1
-'http://deb.debian.org/debian/pool/main/g/git/git_2.15.0-1.dsc' git_2.15.0-1.dsc 2842 SHA256:61352e3b3504cee3d1d4bcfd746cdd95934ebf0b2adad3b2da24ccc1d1e83307
-'http://deb.debian.org/debian/pool/main/g/git/git_2.15.0.orig.tar.xz' git_2.15.0.orig.tar.xz 4892056 SHA256:107116489f10b758b51af1c5dbdb9a274917b0fb67dc8eaefcdabc7bc3eb3e6a
-'http://deb.debian.org/debian/pool/main/g/git/git_2.15.0-1.debian.tar.xz' git_2.15.0-1.debian.tar.xz 554456 SHA256:9da1d596d368c08f691e38ed2b8d45b47dee41b9ef284dfdac144e6b999ec8af
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/git/1:2.15.0-1/
 
-- https://sources.debian.net/src/git/1:2.15.0-1/ (for browsing the source)
-- https://sources.debian.net/src/git/1:2.15.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/git/1:2.15.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glib-networking=2.54.1-1`
 
@@ -1511,21 +1504,13 @@ Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.2.2-1
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.2-1.dsc' gnupg2_2.2.2-1.dsc 3701 SHA256:e45c00e5791fc44763dbc99507ac5ba1c04e73e9c3252d5d3bf9529677ae7eb8
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.2.orig.tar.bz2' gnupg2_2.2.2.orig.tar.bz2 6546951 SHA256:bfb62c7412ceb3b9422c6c7134a34ff01a560f98eb981c2d96829c1517c08197
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.2.orig.tar.bz2.asc' gnupg2_2.2.2.orig.tar.bz2.asc 952 SHA256:8c1bfd7eab707fc2eb58fa880c3a22b4bc495ff5b0e655d4d654b22c11435e5c
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.2-1.debian.tar.bz2' gnupg2_2.2.2-1.debian.tar.bz2 67456 SHA256:6e2e20b7b4f2db7b986e55d11353e0ca10655dc30d1d75c2d42a4453282c20ed
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnupg2/2.2.2-1/
 
-- https://sources.debian.net/src/gnupg2/2.2.2-1/ (for browsing the source)
-- https://sources.debian.net/src/gnupg2/2.2.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnupg2/2.2.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gnutls28=3.5.15-2`
 
@@ -3851,20 +3836,13 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mercurial=4.3.1-3
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_4.3.1-3.dsc' mercurial_4.3.1-3.dsc 2225 SHA256:26d0e605823e9c7abc5cb34c9e9af6f28f4021d4eb8440a0bd5501cd55e3bf1c
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_4.3.1.orig.tar.gz' mercurial_4.3.1.orig.tar.gz 5475042 SHA256:2b12f02e3a452adff4ec9cf007017bab0cadb3f37eaf12f4b25a662df73618a2
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_4.3.1-3.debian.tar.xz' mercurial_4.3.1-3.debian.tar.xz 54916 SHA256:196363132773e9f32766c99a4abb1844b0e216093df84044aac341f735d6559c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mercurial/4.3.1-3/
 
-- https://sources.debian.net/src/mercurial/4.3.1-3/ (for browsing the source)
-- https://sources.debian.net/src/mercurial/4.3.1-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mercurial/4.3.1-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mesa=17.2.4-1`
 
