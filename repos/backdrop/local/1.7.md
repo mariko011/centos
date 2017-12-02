@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:15a4e80b9c49394314a50d8ac0530d21481d47d965998663fc1de28c34fc3a35`
-- Created: `2017-11-04T14:07:49.287059015Z`
-- Virtual Size: ~ 428.34 Mb  
+- Image ID: `sha256:443b0d8fc0a93769c3bca11c11ae3db1904c415ab0d27506c6f90e69df1d88c6`
+- Created: `2017-12-01T04:22:40.237525486Z`
+- Virtual Size: ~ 428.14 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["apache2-foreground"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		libpcre3-dev 		make 		pkg-config 		re2c`
+  - `PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c`
   - `PHP_INI_DIR=/usr/local/etc/php`
   - `APACHE_CONFDIR=/etc/apache2`
   - `APACHE_ENVVARS=/etc/apache2/envvars`
@@ -552,12 +552,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/cryptsetup/2:1.6.6-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/cryptsetup/2:1.6.6-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `curl=7.38.0-4+deb8u7`
+### `dpkg` source package: `curl=7.38.0-4+deb8u8`
 
 Binary Packages:
 
-- `curl=7.38.0-4+deb8u7`
-- `libcurl3:amd64=7.38.0-4+deb8u7`
+- `curl=7.38.0-4+deb8u8`
+- `libcurl3:amd64=7.38.0-4+deb8u8`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`)
 
@@ -566,13 +566,20 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `ISC`
 - `curl`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris curl=7.38.0-4+deb8u8
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0-4+deb8u8.dsc' curl_7.38.0-4+deb8u8.dsc 2324 SHA256:d160ead196ea8eefe7f465599f6328a4b90b4d09e934d03f54f5588c0ce45fd8
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0.orig.tar.gz' curl_7.38.0.orig.tar.gz 4094034 SHA256:5661028aa6532882fa228cd23c99ddbb8b87643dbb1a7ea55c068d34a943dff1
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0-4+deb8u8.debian.tar.xz' curl_7.38.0-4+deb8u8.debian.tar.xz 43632 SHA256:ec846b7e120206cc60f906ed0d846e94bdeb5eada86ed091749208f87d1f20c6
+```
 
-- http://snapshot.debian.org/package/curl/7.38.0-4+deb8u7/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/curl/7.38.0-4+deb8u8/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.38.0-4+deb8u8/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.38.0-4+deb8u8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-13+deb8u1`
 
@@ -2525,8 +2532,6 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `libpcre3:amd64=2:8.35-3.3+deb8u4`
-- `libpcre3-dev:amd64=2:8.35-3.3+deb8u4`
-- `libpcrecpp0:amd64=2:8.35-3.3+deb8u4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2622,25 +2627,32 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pkg-config/0.28-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pkg-config/0.28-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `postgresql-9.4=9.4.13-0+deb8u1`
+### `dpkg` source package: `postgresql-9.4=9.4.15-0+deb8u1`
 
 Binary Packages:
 
-- `libpq-dev=9.4.13-0+deb8u1`
-- `libpq5:amd64=9.4.13-0+deb8u1`
+- `libpq-dev=9.4.15-0+deb8u1`
+- `libpq5:amd64=9.4.15-0+deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/libpq5/copyright`)
 
 - `Tcl`
 - `almost exclusively BSD`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris postgresql-9.4=9.4.15-0+deb8u1
+'http://security.debian.org/pool/updates/main/p/postgresql-9.4/postgresql-9.4_9.4.15-0+deb8u1.dsc' postgresql-9.4_9.4.15-0+deb8u1.dsc 3546 SHA256:f435e4079f6fe0214be82e69c1379b6534b094e3d0e8b6e551ed24f9f33ac770
+'http://security.debian.org/pool/updates/main/p/postgresql-9.4/postgresql-9.4_9.4.15.orig.tar.bz2' postgresql-9.4_9.4.15.orig.tar.bz2 17921677 SHA256:12bfb3c7e8e45515ef921ad365e122682a5c4935dcc0032644433af2de31acc4
+'http://security.debian.org/pool/updates/main/p/postgresql-9.4/postgresql-9.4_9.4.15-0+deb8u1.debian.tar.xz' postgresql-9.4_9.4.15-0+deb8u1.debian.tar.xz 24916 SHA256:8f6a115c7d04e2831a20c32fd5c338a07a37fe7a00de9d4f2229886b49d04989
+```
 
-- http://snapshot.debian.org/package/postgresql-9.4/9.4.13-0+deb8u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/postgresql-9.4/9.4.15-0+deb8u1/ (for browsing the source)
+- https://sources.debian.net/src/postgresql-9.4/9.4.15-0+deb8u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/postgresql-9.4/9.4.15-0+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:3.3.9-9`
 
