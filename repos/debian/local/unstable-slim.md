@@ -1492,6 +1492,10 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/fdi
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/util-linux/2.29.2-5/
+
 
 ### `dpkg` source package: `xz-utils=5.2.2-1.3`
 
