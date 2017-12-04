@@ -2,30 +2,30 @@
 
 # Tags of `r-base`
 
--	[`r-base:3.4.2`](#r-base342)
+-	[`r-base:3.4.3`](#r-base343)
 -	[`r-base:latest`](#r-baselatest)
 
-## `r-base:3.4.2`
+## `r-base:3.4.3`
 
 ```console
-$ docker pull r-base@sha256:909f337dc78803f2d648ba6e256e73f45897f83c7d34831d3a980a7b52fbb39d
+$ docker pull r-base@sha256:f09cc19b31ee2942653a611923ecdd509e29ffb9ffec99f68b636c6f63ba08ba
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
 
-### `r-base:3.4.2` - linux; amd64
+### `r-base:3.4.3` - linux; amd64
 
 ```console
-$ docker pull r-base@sha256:c01605d1324cb6fff5809fa45f3e600bb32846a7714d4888018a664a47d9f3d2
+$ docker pull r-base@sha256:cf835beae8d8360f024028265c9edfd5441766bfa6e50e1b9fdb14abcad067cf
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **273.0 MB (273045262 bytes)**  
+-	Total Size: **286.5 MB (286489914 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:02d3b7e00020d8eafa73445c771a7e3c7567aa2da5445d05d1ff2982f742c717`
+-	Image ID: `sha256:46d9ba0d335c5744629900d2a14d79849ee0ddacfa764f09295c436654fcbddf`
 -	Default Command: `["R"]`
 
 ```dockerfile
@@ -47,11 +47,11 @@ ENV LC_ALL=en_US.UTF-8
 ENV LANG=en_US.UTF-8
 # Sat, 04 Nov 2017 06:19:28 GMT
 RUN echo "deb http://http.debian.net/debian sid main" > /etc/apt/sources.list.d/debian-unstable.list 	&& echo 'APT::Default-Release "testing";' > /etc/apt/apt.conf.d/default
-# Sat, 04 Nov 2017 06:19:29 GMT
-ENV R_BASE_VERSION=3.4.2
-# Sat, 04 Nov 2017 06:21:37 GMT
+# Mon, 04 Dec 2017 20:43:23 GMT
+ENV R_BASE_VERSION=3.4.3
+# Mon, 04 Dec 2017 20:45:10 GMT
 RUN apt-get update 	&& apt-get install -t unstable -y --no-install-recommends 		littler                 r-cran-littler 		r-base=${R_BASE_VERSION}* 		r-base-dev=${R_BASE_VERSION}* 		r-recommended=${R_BASE_VERSION}*         && echo 'options(repos = c(CRAN = "https://cran.rstudio.com/"), download.file.method = "libcurl")' >> /etc/R/Rprofile.site         && echo 'source("/etc/R/Rprofile.site")' >> /etc/littler.r 	&& ln -s /usr/share/doc/littler/examples/install.r /usr/local/bin/install.r 	&& ln -s /usr/share/doc/littler/examples/install2.r /usr/local/bin/install2.r 	&& ln -s /usr/share/doc/littler/examples/installGithub.r /usr/local/bin/installGithub.r 	&& ln -s /usr/share/doc/littler/examples/testInstalled.r /usr/local/bin/testInstalled.r 	&& install.r docopt 	&& rm -rf /tmp/downloaded_packages/ /tmp/*.rds 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 04 Nov 2017 06:21:37 GMT
+# Mon, 04 Dec 2017 20:45:10 GMT
 CMD ["R"]
 ```
 
@@ -76,9 +76,9 @@ CMD ["R"]
 		Last Modified: Sat, 04 Nov 2017 06:21:50 GMT  
 		Size: 294.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9f7a01d6fde47aa24f6780e059c0dca1de29efc3d3cad0571852acae5371b241`  
-		Last Modified: Sat, 04 Nov 2017 06:22:38 GMT  
-		Size: 201.7 MB (201652835 bytes)  
+	-	`sha256:eb9ebc4f24cbc6604fe2b7782d6bd576b7ebb24dbff8d7f47324cd614c0d1d4e`  
+		Last Modified: Mon, 04 Dec 2017 20:45:58 GMT  
+		Size: 215.1 MB (215097487 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `r-base:latest`
