@@ -1,10 +1,10 @@
-# `openjdk:7u131-jdk-alpine`
+# `openjdk:7u151-jdk-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b6bec13008bde0cc03df5002b7ef21818a18dc0a35e7d44ac06a4e1142160c5e`
-- Created: `2017-11-04T05:41:52.563176678Z`
-- Virtual Size: ~ 142.38 Mb  
+- Image ID: `sha256:cd442f82e53d7b9b7bfd7f0005120baf09ae82e57ad0385d0cecb311122841cc`
+- Created: `2017-12-05T03:43:03.241201428Z`
+- Virtual Size: ~ 142.42 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/sh"]`
@@ -12,5 +12,5 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.7-openjdk/jre/bin:/usr/lib/jvm/java-1.7-openjdk/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/lib/jvm/java-1.7-openjdk`
-  - `JAVA_VERSION=7u131`
-  - `JAVA_ALPINE_VERSION=7.131.2.6.9-r1`
+  - `JAVA_VERSION=7u151`
+  - `JAVA_ALPINE_VERSION=7.151.2.6.11-r0`
