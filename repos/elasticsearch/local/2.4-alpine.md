@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7b224d08e5b1d5bb5a768e6004008e2b1dd5bb73a93d8b42931468b1bc692af2`
-- Created: `2017-11-04T06:51:07.021788048Z`
-- Virtual Size: ~ 116.59 Mb  
+- Image ID: `sha256:2a9e6c1db61fc4eb46619e31b167bfc58ca774d877e814dd771bf56b95f29be4`
+- Created: `2017-12-05T04:12:30.098995848Z`
+- Virtual Size: ~ 117.63 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -13,8 +13,8 @@
   - `PATH=/usr/share/elasticsearch/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre`
-  - `JAVA_VERSION=8u131`
-  - `JAVA_ALPINE_VERSION=8.131.11-r2`
+  - `JAVA_VERSION=8u151`
+  - `JAVA_ALPINE_VERSION=8.151.12-r0`
   - `GPG_KEY=46095ACC8548582C1A2699A9D27D666CD88E42B4`
   - `ELASTICSEARCH_VERSION=2.4.6`
   - `ELASTICSEARCH_TARBALL=https://download.elastic.co/elasticsearch/elasticsearch/elasticsearch-2.4.6.tar.gz`
