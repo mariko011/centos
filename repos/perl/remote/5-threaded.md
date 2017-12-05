@@ -1,7 +1,7 @@
 ## `perl:5-threaded`
 
 ```console
-$ docker pull perl@sha256:0e0ef8a8ea30a45e015539cb9cd350ed8d3e27bdbf81abdc2b911baec8cb705b
+$ docker pull perl@sha256:d4e052a47f9f461dc682e1500cb6844cc92f79ec15b9c4eace4c28bdb6c3c144
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -156,15 +156,15 @@ CMD ["perl5.26.1" "-de0"]
 ### `perl:5-threaded` - linux; arm64 variant v8
 
 ```console
-$ docker pull perl@sha256:19b2757f2a4f7e1b69f868724dd4a9f843319d9a308eb257f744d26f505dec1f
+$ docker pull perl@sha256:3add9a07b7953a1cf28d405b98b92d484098da6f64c47ba45d0226b6025d500e
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **319.1 MB (319115484 bytes)**  
+-	Total Size: **319.1 MB (319090719 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:05aa9451fb9b89f4d53ced9630582bdd967f4bb10abb4aea3a5a21471d2e1d57`
--	Default Command: `["perl5.26.0","-de0"]`
+-	Image ID: `sha256:17677d7ff98575eda04efba34b888e322262d77d7836cf89084601ff3edabc99`
+-	Default Command: `["perl5.26.1","-de0"]`
 
 ```dockerfile
 # Mon, 09 Oct 2017 21:47:18 GMT
@@ -185,12 +185,12 @@ LABEL maintainer=Peter Martini <PeterCMartini@GMail.com>, Zak B. Elep <zakame@cp
 COPY file:2be96a0b9a6d4b3ea837439f6ea05fc01b773b4b26dd6bd7635bd489469d0075 in /usr/src/perl/ 
 # Sat, 04 Nov 2017 13:26:48 GMT
 WORKDIR /usr/src/perl
-# Sat, 04 Nov 2017 14:18:15 GMT
-RUN curl -SL https://www.cpan.org/src/5.0/perl-5.26.0.tar.bz2 -o perl-5.26.0.tar.bz2     && echo 'f21d66de84982175e95ad15fd8d0e22fed2cc2de7e4394f5d48dbe451be2f6f2 *perl-5.26.0.tar.bz2' | sha256sum -c -     && tar --strip-components=1 -xjf perl-5.26.0.tar.bz2 -C /usr/src/perl     && rm perl-5.26.0.tar.bz2     && cat *.patch | patch -p1     && ./Configure -Dusethreads -Duse64bitall -Duseshrplib -Dvendorprefix=/usr/local  -des     && make -j$(nproc)     && TEST_JOBS=$(nproc) make test_harness     && make install     && cd /usr/src     && curl -LO http://www.cpan.org/authors/id/M/MI/MIYAGAWA/App-cpanminus-1.7043.tar.gz     && echo '68a06f7da80882a95bc02c92c7ee305846fb6ab648cf83678ea945e44ad65c65 *App-cpanminus-1.7043.tar.gz' | sha256sum -c -     && tar -xzf App-cpanminus-1.7043.tar.gz && cd App-cpanminus-1.7043 && perl bin/cpanm . && cd /root     && rm -fr ./cpanm /root/.cpanm /usr/src/perl /usr/src/App-cpanminus-1.7043* /tmp/*
-# Sat, 04 Nov 2017 14:18:16 GMT
+# Tue, 05 Dec 2017 09:38:46 GMT
+RUN curl -SL https://www.cpan.org/src/5.0/perl-5.26.1.tar.bz2 -o perl-5.26.1.tar.bz2     && echo '2812a01dd4d4cd7650cb70abfe259ee572bf6a0f1ee95763422ba7e54c68d12d *perl-5.26.1.tar.bz2' | sha256sum -c -     && tar --strip-components=1 -xjf perl-5.26.1.tar.bz2 -C /usr/src/perl     && rm perl-5.26.1.tar.bz2     && cat *.patch | patch -p1     && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"     && archBits="$(dpkg-architecture --query DEB_BUILD_ARCH_BITS)"     && archFlag="$([ "$archBits" = '64' ] && echo '-Duse64bitall' || echo '-Duse64bitint')"     && ./Configure -Darchname="$gnuArch" "$archFlag" -Dusethreads -Duseshrplib -Dvendorprefix=/usr/local  -des     && make -j$(nproc)     && TEST_JOBS=$(nproc) make test_harness     && make install     && cd /usr/src     && curl -LO http://www.cpan.org/authors/id/M/MI/MIYAGAWA/App-cpanminus-1.7043.tar.gz     && echo '68a06f7da80882a95bc02c92c7ee305846fb6ab648cf83678ea945e44ad65c65 *App-cpanminus-1.7043.tar.gz' | sha256sum -c -     && tar -xzf App-cpanminus-1.7043.tar.gz && cd App-cpanminus-1.7043 && perl bin/cpanm . && cd /root     && rm -fr ./cpanm /root/.cpanm /usr/src/perl /usr/src/App-cpanminus-1.7043* /tmp/*
+# Tue, 05 Dec 2017 09:38:47 GMT
 WORKDIR /root
-# Sat, 04 Nov 2017 14:18:17 GMT
-CMD ["perl5.26.0" "-de0"]
+# Tue, 05 Dec 2017 09:38:48 GMT
+CMD ["perl5.26.1" "-de0"]
 ```
 
 -	Layers:
@@ -218,9 +218,9 @@ CMD ["perl5.26.0" "-de0"]
 		Last Modified: Sat, 04 Nov 2017 15:35:47 GMT  
 		Size: 178.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b33d21462f4dffd3f8891a803f0de5e3e5cd8011d1d53f220b4bb459de02a2c0`  
-		Last Modified: Sat, 04 Nov 2017 15:37:12 GMT  
-		Size: 13.0 MB (13009444 bytes)  
+	-	`sha256:9568fc553ed13e0bbbaef7b0fa43d5b3a2342bf174395210c9fb27edd2dbb3ff`  
+		Last Modified: Tue, 05 Dec 2017 10:21:29 GMT  
+		Size: 13.0 MB (12984679 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `perl:5-threaded` - linux; 386
