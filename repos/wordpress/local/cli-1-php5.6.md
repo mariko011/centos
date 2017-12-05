@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8bbb841d3bcbe49b470b258fcfeebc2b8e8d4d891d5aea79bde88eca61ee43fb`
-- Created: `2017-11-14T18:03:32.953300968Z`
-- Virtual Size: ~ 79.75 Mb  
+- Image ID: `sha256:e777bdc319800cf891a5fef669a73bf49b1dae25064025f08865b5972e98ab0a`
+- Created: `2017-12-01T23:05:56.769860673Z`
+- Virtual Size: ~ 79.97 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["wp","shell"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `PHPIZE_DEPS=autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pcre-dev 		pkgconf 		re2c`
+  - `PHPIZE_DEPS=autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c`
   - `PHP_INI_DIR=/usr/local/etc/php`
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`

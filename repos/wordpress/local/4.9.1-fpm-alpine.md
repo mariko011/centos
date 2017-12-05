@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bedba8998ffd7da6228e5569005d10195fc436c9d86b72b6094ca9081a3bb343`
-- Created: `2017-12-01T01:09:40.466295353Z`
-- Virtual Size: ~ 85.65 Mb  
+- Image ID: `sha256:bf564bc7ee7943036d042502c1d79473a3d5e7cefa5de0848cf1f16719a903eb`
+- Created: `2017-12-01T22:58:12.017424947Z`
+- Virtual Size: ~ 86.28 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["php-fpm"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `PHPIZE_DEPS=autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pcre-dev 		pkgconf 		re2c`
+  - `PHPIZE_DEPS=autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c`
   - `PHP_INI_DIR=/usr/local/etc/php`
   - `PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data`
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2`
