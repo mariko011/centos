@@ -1003,20 +1003,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris expat=2.2.3-1
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.2.3-1.dsc' expat_2.2.3-1.dsc 2284 SHA256:c5f2c77f5b69361a38fbf9b2b3044cf823b6243d1029ca9e5754da2bd08f936d
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.2.3.orig.tar.bz2' expat_2.2.3.orig.tar.bz2 435593 SHA256:b31890fb02f85c002a67491923f89bda5028a880fd6c374f707193ad81aace5f
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.2.3-1.debian.tar.xz' expat_2.2.3-1.debian.tar.xz 10640 SHA256:885dda6baf300f15ef2c75f225d10736236056c7a9bf9405d1d3d138fbb7c63e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/expat/2.2.3-1/
 
-- https://sources.debian.net/src/expat/2.2.3-1/ (for browsing the source)
-- https://sources.debian.net/src/expat/2.2.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/expat/2.2.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `explorercanvas=0.r3-4`
 
@@ -1074,20 +1067,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris fontconfig=2.12.3-0.2
-'http://deb.debian.org/debian/pool/main/f/fontconfig/fontconfig_2.12.3-0.2.dsc' fontconfig_2.12.3-0.2.dsc 1881 SHA256:888337c0285864ecb786bda45170f26592d68b5851206cd9cdd2caffc4ab4d3a
-'http://deb.debian.org/debian/pool/main/f/fontconfig/fontconfig_2.12.3.orig.tar.bz2' fontconfig_2.12.3.orig.tar.bz2 1600509 SHA256:bd24bf6602731a11295c025909d918180e98385625182d3b999fd6f1ab34f8bd
-'http://deb.debian.org/debian/pool/main/f/fontconfig/fontconfig_2.12.3-0.2.debian.tar.xz' fontconfig_2.12.3-0.2.debian.tar.xz 49376 SHA256:dedc410fa6efa87adb51ca2274915b7e1cb9b637172a1b87b4b06c16fc558294
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/fontconfig/2.12.3-0.2/
 
-- https://sources.debian.net/src/fontconfig/2.12.3-0.2/ (for browsing the source)
-- https://sources.debian.net/src/fontconfig/2.12.3-0.2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/fontconfig/2.12.3-0.2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `fonts-dejavu=2.37-1`
 
@@ -1726,13 +1712,20 @@ Licenses: (parsed from: `/usr/share/doc/libharfbuzz0b/copyright`)
 
 - `MIT`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris harfbuzz=1.6.2-1
+'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_1.6.2-1.dsc' harfbuzz_1.6.2-1.dsc 2658 SHA256:b195d0ba924f34d94cee1570c3c7f8c178f5157b24eb4ac3c5aaaeb25a2aae81
+'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_1.6.2.orig.tar.bz2' harfbuzz_1.6.2.orig.tar.bz2 1639114 SHA256:ceb8cbd652829b5fa680a71d89cb79cac7afa104e9484fbd23a24e71c0d6e80e
+'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_1.6.2-1.debian.tar.xz' harfbuzz_1.6.2-1.debian.tar.xz 8760 SHA256:eff304c291cc55fc70b243a8993ea5dc0987b1b14c060c8203de6dddadb585e5
+```
 
-- http://snapshot.debian.org/package/harfbuzz/1.6.2-1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/harfbuzz/1.6.2-1/ (for browsing the source)
+- https://sources.debian.net/src/harfbuzz/1.6.2-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/harfbuzz/1.6.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `hicolor-icon-theme=0.17-1`
 
@@ -2416,21 +2409,13 @@ Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 - `GPL-2`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libgcrypt20=1.7.9-1
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.7.9-1.dsc' libgcrypt20_1.7.9-1.dsc 2914 SHA256:d922d12b25a64cd25601b34380bed9c9ca3c8fd4c9625951641fcc8766c7796d
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.7.9.orig.tar.bz2' libgcrypt20_1.7.9.orig.tar.bz2 2897137 SHA256:bfe9bb703c1126c3647da2810fd23039c2f09d46969f71612c2065dc3fa9373b
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.7.9.orig.tar.bz2.asc' libgcrypt20_1.7.9.orig.tar.bz2.asc 310 SHA256:96108d1701cd3c8a6826d7d2a27056de79421fe20bf9ef447e8c12e982f64414
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.7.9-1.debian.tar.xz' libgcrypt20_1.7.9-1.debian.tar.xz 26020 SHA256:1a0775f8e8921aa537db92c06cca82780cb24adf04775e2f944a23d867414d55
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libgcrypt20/1.7.9-1/
 
-- https://sources.debian.net/src/libgcrypt20/1.7.9-1/ (for browsing the source)
-- https://sources.debian.net/src/libgcrypt20/1.7.9-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libgcrypt20/1.7.9-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libglvnd=0.2.999+git20170802-5`
 
@@ -2468,20 +2453,13 @@ Licenses: (parsed from: `/usr/share/doc/libgpg-error0/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libgpg-error=1.27-3
-'http://deb.debian.org/debian/pool/main/libg/libgpg-error/libgpg-error_1.27-3.dsc' libgpg-error_1.27-3.dsc 2377 SHA256:427eba727e5ff13b1f29493edc281cfa811aabe4c0d0f07f747ab11bc8e9574f
-'http://deb.debian.org/debian/pool/main/libg/libgpg-error/libgpg-error_1.27.orig.tar.bz2' libgpg-error_1.27.orig.tar.bz2 813060 SHA256:4f93aac6fecb7da2b92871bb9ee33032be6a87b174f54abf8ddf0911a22d29d2
-'http://deb.debian.org/debian/pool/main/libg/libgpg-error/libgpg-error_1.27-3.debian.tar.xz' libgpg-error_1.27-3.debian.tar.xz 15856 SHA256:c1a17ea7066c955be7f7117efdd0961cd43f3fd81152854e53a60cb08fba0a10
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libgpg-error/1.27-3/
 
-- https://sources.debian.net/src/libgpg-error/1.27-3/ (for browsing the source)
-- https://sources.debian.net/src/libgpg-error/1.27-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libgpg-error/1.27-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libice=2:1.0.9-2`
 
@@ -4064,20 +4042,13 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.27.0-1
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.27.0-1.dsc' nghttp2_1.27.0-1.dsc 2311 SHA256:de36f3508ed53e3b090cf06b1b3efe1080907229a5e0192367ca92e9fc651c3a
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.27.0.orig.tar.bz2' nghttp2_1.27.0.orig.tar.bz2 1840935 SHA256:d3c9542e26c3819c50963e02d285973b38ec1dd2816133c852a224f0bd911952
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.27.0-1.debian.tar.xz' nghttp2_1.27.0-1.debian.tar.xz 12024 SHA256:cc34f00f32a7022dc26b158328dfd72de69e079efd47468bd2c8b3cb40ad65f3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nghttp2/1.27.0-1/
 
-- https://sources.debian.net/src/nghttp2/1.27.0-1/ (for browsing the source)
-- https://sources.debian.net/src/nghttp2/1.27.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nghttp2/1.27.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `npth=1.5-2`
 
@@ -4364,20 +4335,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pcre2=10.22-3
-'http://deb.debian.org/debian/pool/main/p/pcre2/pcre2_10.22-3.dsc' pcre2_10.22-3.dsc 2041 SHA256:c4458656524614e1bbe2992c5452c04eb971c22a2b27e64d64e1034ddcc2562b
-'http://deb.debian.org/debian/pool/main/p/pcre2/pcre2_10.22.orig.tar.gz' pcre2_10.22.orig.tar.gz 1985688 SHA256:e44d8a6f31bb33cce01ed43743f464290f1d96f60b5fd838786e632d3624a7bd
-'http://deb.debian.org/debian/pool/main/p/pcre2/pcre2_10.22-3.diff.gz' pcre2_10.22-3.diff.gz 4857 SHA256:d48a0afdd9e84aad0fcf2dc0d5e4a66fb2872cce565519371c4882235aad76de
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pcre2/10.22-3/
 
-- https://sources.debian.net/src/pcre2/10.22-3/ (for browsing the source)
-- https://sources.debian.net/src/pcre2/10.22-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pcre2/10.22-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pcre3=2:8.39-5`
 
