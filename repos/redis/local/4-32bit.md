@@ -1,9 +1,9 @@
-# `redis:4.0.5-32bit`
+# `redis:4.0.6-32bit`
 
 ## Docker Metadata
 
-- Image ID: `sha256:803b0744b03125fff4415f61c6a59df6769cdb618fb5ec112559c3d5dbedbce8`
-- Created: `2017-12-01T22:14:00.92967421Z`
+- Image ID: `sha256:07f5d9500276cdd3881662b03c88e7d95952db2161f999d469a31ce2403b18ea`
+- Created: `2017-12-05T02:52:14.039361355Z`
 - Virtual Size: ~ 111.40 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,9 +12,9 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GOSU_VERSION=1.10`
-  - `REDIS_VERSION=4.0.5`
-  - `REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-4.0.5.tar.gz`
-  - `REDIS_DOWNLOAD_SHA=d52bf355b96e20905916482962235e0442634c849934adb034f85362b31ed978`
+  - `REDIS_VERSION=4.0.6`
+  - `REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-4.0.6.tar.gz`
+  - `REDIS_DOWNLOAD_SHA=769b5d69ec237c3e0481a262ff5306ce30db9b5c8ceb14d1023491ca7be5f6fa`
 
 ## `dpkg` (`.deb`-based packages)
 
