@@ -1,7 +1,7 @@
 ## `maven:slim`
 
 ```console
-$ docker pull maven@sha256:dd1e3078b1219e06957f031154373e79ba4c5df62b5c2c1d4edf7fa7f276412b
+$ docker pull maven@sha256:d372c0787325d412db58ff866718c658926dfe94444af97374af99e243e9a25a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -459,14 +459,14 @@ CMD ["mvn"]
 ### `maven:slim` - linux; 386
 
 ```console
-$ docker pull maven@sha256:2818363ba732f8ccd2e503d430d5e3c329ae06f11509d261ca182ee5c5cb1886
+$ docker pull maven@sha256:9c475123e49937d6480800fb7b3a5cfa487407278488cac4f6195db8e3e9305f
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **103.0 MB (103019611 bytes)**  
+-	Total Size: **103.0 MB (103019626 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:772b56f0dce3165da942504d6252506060171ed0eb8f4940453b3085b71948ab`
+-	Image ID: `sha256:b82cbe06f9ef5a18db822b68b2f7493b8ef2473cf37895b1e5f3b3824f4e1190`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -513,15 +513,13 @@ RUN mkdir -p /usr/share/maven /usr/share/maven/ref   && curl -fsSL -o /tmp/apach
 ENV MAVEN_HOME=/usr/share/maven
 # Sat, 04 Nov 2017 11:21:34 GMT
 ENV MAVEN_CONFIG=/root/.m2
-# Sat, 04 Nov 2017 11:21:34 GMT
-COPY file:e4099db07053a2301f4263d416cab324c1f89ee74c752bebec511d8b59464cb6 in /usr/local/bin/mvn-entrypoint.sh 
-# Sat, 04 Nov 2017 11:21:34 GMT
+# Thu, 07 Dec 2017 02:47:10 GMT
+COPY file:fb726a12bbbf8ff54c8d9fceef4fa3018c11a435bfa04ee5f73156c544907861 in /usr/local/bin/mvn-entrypoint.sh 
+# Thu, 07 Dec 2017 02:47:10 GMT
 COPY file:b3fc14e8337e0079a4e97eace880b4b7cddc0dc0ea733de80749f78fe1eb089a in /usr/share/maven/ref/ 
-# Sat, 04 Nov 2017 11:21:34 GMT
-VOLUME [/root/.m2]
-# Sat, 04 Nov 2017 11:21:35 GMT
+# Thu, 07 Dec 2017 02:47:10 GMT
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Sat, 04 Nov 2017 11:21:35 GMT
+# Thu, 07 Dec 2017 02:47:10 GMT
 CMD ["mvn"]
 ```
 
@@ -558,13 +556,13 @@ CMD ["mvn"]
 		Last Modified: Sat, 04 Nov 2017 11:25:13 GMT  
 		Size: 8.9 MB (8883822 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3be64b322b9ef889c08429ccd018bd4d45858011a11ff564d2304a4bd30c9162`  
-		Last Modified: Sat, 04 Nov 2017 11:25:11 GMT  
-		Size: 735.0 B  
+	-	`sha256:1e9c8641f2beb529f8cb5d47968918742463afa5da951dba2f590cdaafd08e56`  
+		Last Modified: Thu, 07 Dec 2017 02:50:22 GMT  
+		Size: 747.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6ab87abc1496bd4857790007cadda1b1b2669da328ab1439e693081c10cc4fa4`  
-		Last Modified: Sat, 04 Nov 2017 11:25:11 GMT  
-		Size: 359.0 B  
+	-	`sha256:82d11606c3c09de7b6ab18bf6a821f65be895ccd830da39b7da435d09c10f461`  
+		Last Modified: Thu, 07 Dec 2017 02:50:22 GMT  
+		Size: 362.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `maven:slim` - linux; ppc64le
