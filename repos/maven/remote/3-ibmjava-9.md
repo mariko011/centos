@@ -1,7 +1,7 @@
 ## `maven:3-ibmjava-9`
 
 ```console
-$ docker pull maven@sha256:adaa1a17385e51aac10fc3e67ea2af0203982291886298af92496ebd65b7cd11
+$ docker pull maven@sha256:46577d0191bee40c15b95e9bb15ac6e939b64ca4ec10ecd3a4c5e78672379faf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -222,14 +222,14 @@ CMD ["mvn"]
 ### `maven:3-ibmjava-9` - linux; ppc64le
 
 ```console
-$ docker pull maven@sha256:962443f1fd1cad47013116991c333a675f211de4c69196ca9697e4ecb956d7cb
+$ docker pull maven@sha256:c6bf6fc4fb1e50feaf6fa7455863d169db8c325bf55ca5d9e109dad55cb972d3
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **386.1 MB (386087636 bytes)**  
+-	Total Size: **386.1 MB (386087656 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b90ef11e2d1a154a4a29f40d4dce1b6ca9c1f72ec310c6129408c8fcd345ba27`
+-	Image ID: `sha256:bbc8184d38c88026768db9be8c9c1bd157211a442402beab6f838c833efaa557`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -271,15 +271,13 @@ RUN apt-get update && apt-get install -y curl   && mkdir -p /usr/share/maven /us
 ENV MAVEN_HOME=/usr/share/maven
 # Fri, 17 Nov 2017 23:08:06 GMT
 ENV MAVEN_CONFIG=/root/.m2
-# Fri, 17 Nov 2017 23:08:11 GMT
-COPY file:e4099db07053a2301f4263d416cab324c1f89ee74c752bebec511d8b59464cb6 in /usr/local/bin/mvn-entrypoint.sh 
-# Fri, 17 Nov 2017 23:08:14 GMT
+# Thu, 07 Dec 2017 11:02:22 GMT
+COPY file:fb726a12bbbf8ff54c8d9fceef4fa3018c11a435bfa04ee5f73156c544907861 in /usr/local/bin/mvn-entrypoint.sh 
+# Thu, 07 Dec 2017 11:02:25 GMT
 COPY file:b3fc14e8337e0079a4e97eace880b4b7cddc0dc0ea733de80749f78fe1eb089a in /usr/share/maven/ref/ 
-# Fri, 17 Nov 2017 23:08:15 GMT
-VOLUME [/root/.m2]
-# Fri, 17 Nov 2017 23:08:17 GMT
+# Thu, 07 Dec 2017 11:02:26 GMT
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Fri, 17 Nov 2017 23:08:20 GMT
+# Thu, 07 Dec 2017 11:02:27 GMT
 CMD ["mvn"]
 ```
 
@@ -316,13 +314,13 @@ CMD ["mvn"]
 		Last Modified: Fri, 17 Nov 2017 23:10:39 GMT  
 		Size: 41.5 MB (41528388 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2325c77b2885c8a6c577bbb0cc93edb18d6476fed245358339f36ef4832b4956`  
-		Last Modified: Fri, 17 Nov 2017 23:09:48 GMT  
-		Size: 728.0 B  
+	-	`sha256:7736bd1f639bd3879b33e57123df716f3a38ea882b3500f86149b074aea2442d`  
+		Last Modified: Thu, 07 Dec 2017 11:06:21 GMT  
+		Size: 744.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc7acbf76c334997affdc7928c370c86c4c2eaebb88ddc38acdd39e5e346e1f6`  
-		Last Modified: Fri, 17 Nov 2017 23:09:48 GMT  
-		Size: 358.0 B  
+	-	`sha256:25959c74dceca5ef4769438036ab295d6339be0c83bac0f05406ca1867070a17`  
+		Last Modified: Thu, 07 Dec 2017 11:06:21 GMT  
+		Size: 362.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `maven:3-ibmjava-9` - linux; s390x
