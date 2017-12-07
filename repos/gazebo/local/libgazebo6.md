@@ -2239,14 +2239,9 @@ Licenses: (parsed from: `/usr/share/doc/iproute2/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris iproute2=3.12.0-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/i/iproute2/iproute2_3.12.0-2ubuntu1.dsc' iproute2_3.12.0-2ubuntu1.dsc 2326 SHA256:5f9287e750a3e6dfbc272af3d2b35846939526262f776a2b32b8362ab77da663
-'http://archive.ubuntu.com/ubuntu/pool/main/i/iproute2/iproute2_3.12.0.orig.tar.xz' iproute2_3.12.0.orig.tar.xz 425192 SHA256:44f600475d27a421688cda2294efec38513473a740c24ead78eb20005f08f111
-'http://archive.ubuntu.com/ubuntu/pool/main/i/iproute2/iproute2_3.12.0-2ubuntu1.debian.tar.xz' iproute2_3.12.0-2ubuntu1.debian.tar.xz 27828 SHA256:859ceade5d3bc317a9085b5b98f17050025eef26607fe671c5b13a4abe2c312e
-```
 
 ### `dpkg` source package: `iputils=3:20121221-4ubuntu1.1`
 
@@ -4303,14 +4298,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.1+dfsg1-3ubuntu4.10
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.1+dfsg1-3ubuntu4.10.dsc' libxml2_2.9.1+dfsg1-3ubuntu4.10.dsc 2717 SHA256:55854e06361d4cdd263aaf22ba784d75cca8cd7ab51468a33b646abc69f8cd04
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.1+dfsg1.orig.tar.gz' libxml2_2.9.1+dfsg1.orig.tar.gz 3793894 SHA256:f3ec5256412192f74833286c4490672500b232ed1c9195214db2c641df064a28
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.1+dfsg1-3ubuntu4.10.debian.tar.gz' libxml2_2.9.1+dfsg1-3ubuntu4.10.debian.tar.gz 80309 SHA256:a48de235efe2f764c488ecddd5f1d73f1bc60fbf900518dc278e6edabcd1874c
-```
 
 ### `dpkg` source package: `libxmu=2:1.1.1-1`
 
