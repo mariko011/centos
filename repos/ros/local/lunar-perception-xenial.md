@@ -5045,14 +5045,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.3+dfsg1-1ubuntu0.3
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.3+dfsg1-1ubuntu0.3.dsc' libxml2_2.9.3+dfsg1-1ubuntu0.3.dsc 2758 SHA256:1d43ec9ed28989f2f4e92b0384e09d9e172f8704248dd7897fe3afd63fcc5316
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.3+dfsg1.orig.tar.xz' libxml2_2.9.3+dfsg1.orig.tar.xz 2475440 SHA256:d6b7686fa12c70dd9ce7c7d97c84471b5afed1c176538df8c670754d8c206079
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.3+dfsg1-1ubuntu0.3.debian.tar.xz' libxml2_2.9.3+dfsg1-1ubuntu0.3.debian.tar.xz 54572 SHA256:511e88200df5175a6e2bb1873e4b0fb02d331f3d1ed6729b5e815f0d5d9f0471
-```
 
 ### `dpkg` source package: `libxmu=2:1.1.2-2`
 
