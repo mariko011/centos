@@ -1,9 +1,9 @@
-# `maven:3.5.2-jdk-9-slim`
+# `maven:3.5-jdk-9-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5d4d0fb48d11f22d2bf51bb2105fb122aadfca782c2893e879a1f0ccba7b9ffa`
-- Created: `2017-11-04T17:20:02.199024246Z`
+- Image ID: `sha256:23fbc41ba83b751c64c8dd2405c1ce9e29b45e398f06d2a155c14d84ca8acc43`
+- Created: `2017-12-07T00:40:54.273470799Z`
 - Virtual Size: ~ 391.17 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`

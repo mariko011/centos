@@ -1,9 +1,9 @@
-# `maven:3.5.2-jdk-9`
+# `maven:3.5-jdk-9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d1d309de822a6fe93067dc218691d50647863bdfc8c191e557d673bf272eb10b`
-- Created: `2017-11-04T22:58:53.157298105Z`
+- Image ID: `sha256:aeb41c0a42c6388856f9ec8cf36f8289d7e5770d18920246c5ecb2aa07512099`
+- Created: `2017-12-07T00:41:02.241363125Z`
 - Virtual Size: ~ 908.77 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -4594,20 +4594,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/s
 - `implied`
 - `see above, some license as Python`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python2.7=2.7.14-2
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.14-2.dsc' python2.7_2.7.14-2.dsc 3312 SHA256:8c61b0f2ff28ceb5b42b16f180033355231089d2dab7434fde3abb63526a4e90
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.14.orig.tar.gz' python2.7_2.7.14.orig.tar.gz 17176758 SHA256:304c9b202ea6fbd0a4a8e0ad3733715fbd4749f2204a9173a58ec53c32ea73e8
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.14-2.diff.gz' python2.7_2.7.14-2.diff.gz 286150 SHA256:3a35d872751a66f0ec880d4ad5b5c70f5d7b1bfeee817724701d5c4988f54943
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python2.7/2.7.14-2/
 
-- https://sources.debian.net/src/python2.7/2.7.14-2/ (for browsing the source)
-- https://sources.debian.net/src/python2.7/2.7.14-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python2.7/2.7.14-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=7.0-3`
 

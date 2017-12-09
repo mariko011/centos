@@ -1,9 +1,9 @@
-# `maven:3.5.2-ibmjava-8`
+# `maven:3.5-ibmjava-8`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1a448afd589a6edc3f4017aff1fcb027a6d40cf1830e92ca50d01738e7353e13`
-- Created: `2017-12-04T22:05:28.505893082Z`
+- Image ID: `sha256:8fcb6a9ef503c52b7a29a055a2bca5fb384a67eac1b65edc73ecf5e067402926`
+- Created: `2017-12-07T00:41:17.085980675Z`
 - Virtual Size: ~ 423.22 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`

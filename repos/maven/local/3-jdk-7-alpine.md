@@ -1,9 +1,9 @@
-# `maven:3.5.2-jdk-7-alpine`
+# `maven:3.5-jdk-7-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0612991e61e43f230f9c4765154760aaa5fe2af825337a2dcac8e5668fa69ddf`
-- Created: `2017-12-05T04:56:21.224138112Z`
+- Image ID: `sha256:5c6f7123235a0de60a18d86c81c03cac7970e67776abc3a9c49102e5f84e334e`
+- Created: `2017-12-07T00:40:01.553947107Z`
 - Virtual Size: ~ 158.54 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
