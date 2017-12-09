@@ -5,6 +5,9 @@
 -	[`buildpack-deps:artful`](#buildpack-depsartful)
 -	[`buildpack-deps:artful-curl`](#buildpack-depsartful-curl)
 -	[`buildpack-deps:artful-scm`](#buildpack-depsartful-scm)
+-	[`buildpack-deps:bionic`](#buildpack-depsbionic)
+-	[`buildpack-deps:bionic-curl`](#buildpack-depsbionic-curl)
+-	[`buildpack-deps:bionic-scm`](#buildpack-depsbionic-scm)
 -	[`buildpack-deps:buster`](#buildpack-depsbuster)
 -	[`buildpack-deps:buster-curl`](#buildpack-depsbuster-curl)
 -	[`buildpack-deps:buster-scm`](#buildpack-depsbuster-scm)
@@ -1229,6 +1232,18 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		m
 		Last Modified: Fri, 17 Nov 2017 22:34:37 GMT  
 		Size: 45.6 MB (45633745 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `buildpack-deps:bionic`
+
+**does not exist** (yet?)
+
+## `buildpack-deps:bionic-curl`
+
+**does not exist** (yet?)
+
+## `buildpack-deps:bionic-scm`
+
+**does not exist** (yet?)
 
 ## `buildpack-deps:buster`
 

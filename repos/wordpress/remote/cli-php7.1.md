@@ -1,7 +1,7 @@
 ## `wordpress:cli-php7.1`
 
 ```console
-$ docker pull wordpress@sha256:0daf06d2b51cfa80af75fd05c94d44c7decf3e8e488d8117c62feab9c07f2879
+$ docker pull wordpress@sha256:49557214f7490c0277c56be7ffef3653c3fbae277beeda9ac78442fd81b3aaa7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull wordpress@sha256:0daf06d2b51cfa80af75fd05c94d44c7decf3e8e488d8117c
 ### `wordpress:cli-php7.1` - linux; amd64
 
 ```console
-$ docker pull wordpress@sha256:78a345efeb15eaf2c5ecd07ef3598ab15d0e4f709194e23fd3f5b8e61c48ab23
+$ docker pull wordpress@sha256:0c3cc210135c099dd4a7bacc6f24519b9fcd3c6e5d02d48f730f26435ddec3b1
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **36.5 MB (36457102 bytes)**  
+-	Total Size: **36.5 MB (36457118 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c3ca63bfbc9ca81bc51d2867e1b783175eaa1348f300430959e3a202865ab905`
+-	Image ID: `sha256:ad91453173ef0ca912425831aab0648d7bae3bb2c335e4fd6e21facc86364f30`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["wp","shell"]`
 
@@ -81,15 +81,15 @@ ENV WORDPRESS_CLI_GPG_KEY=3B9191625F3B1F1BF5DD3B47673A02042F6B6B7F
 ENV WORDPRESS_CLI_VERSION=1.4.1
 # Fri, 01 Dec 2017 23:07:14 GMT
 ENV WORDPRESS_CLI_SHA512=f861b5499e0b555a791ab6d76a0f3b1f033ae22aaee63dcdfaf8a0bd44886876690d40c6c95366d60f32d55f6282273e55f8ecdfa8787aec7b435cffe45790e7
-# Fri, 01 Dec 2017 23:07:27 GMT
-RUN set -ex; 		apk add --no-cache --virtual .fetch-deps 		gnupg 	; 		curl -o /usr/local/bin/wp.gpg -fSL "https://github.com/wp-cli/wp-cli/releases/download/v${WORDPRESS_CLI_VERSION}/wp-cli-${WORDPRESS_CLI_VERSION}.phar.gpg"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$WORDPRESS_CLI_GPG_KEY"; 	gpg --batch --decrypt --output /usr/local/bin/wp /usr/local/bin/wp.gpg; 	rm -r "$GNUPGHOME" /usr/local/bin/wp.gpg; 		echo "$WORDPRESS_CLI_SHA512 */usr/local/bin/wp" | sha512sum -c -; 	chmod +x /usr/local/bin/wp; 		apk del .fetch-deps; 		wp --allow-root --version
-# Fri, 01 Dec 2017 23:11:47 GMT
+# Sat, 09 Dec 2017 01:23:57 GMT
+RUN set -ex; 		apk add --no-cache --virtual .fetch-deps 		gnupg 	; 		curl -o /usr/local/bin/wp.gpg -fSL "https://github.com/wp-cli/wp-cli/releases/download/v${WORDPRESS_CLI_VERSION}/wp-cli-${WORDPRESS_CLI_VERSION}.phar.gpg"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$WORDPRESS_CLI_GPG_KEY"; 	gpg --batch --decrypt --output /usr/local/bin/wp /usr/local/bin/wp.gpg; 	rm -rf "$GNUPGHOME" /usr/local/bin/wp.gpg; 		echo "$WORDPRESS_CLI_SHA512 */usr/local/bin/wp" | sha512sum -c -; 	chmod +x /usr/local/bin/wp; 		apk del .fetch-deps; 		wp --allow-root --version
+# Sat, 09 Dec 2017 01:23:57 GMT
 COPY file:6439ebdee069987b41eac0b67f3829c60f8dc168426dc92872b5e95a5f4d8213 in /usr/local/bin/ 
-# Fri, 01 Dec 2017 23:11:47 GMT
+# Sat, 09 Dec 2017 01:23:57 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 01 Dec 2017 23:11:48 GMT
+# Sat, 09 Dec 2017 01:23:57 GMT
 USER [www-data]
-# Fri, 01 Dec 2017 23:11:48 GMT
+# Sat, 09 Dec 2017 01:23:58 GMT
 CMD ["wp" "shell"]
 ```
 
@@ -142,11 +142,11 @@ CMD ["wp" "shell"]
 		Last Modified: Fri, 01 Dec 2017 23:17:20 GMT  
 		Size: 136.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e6c125fbd38841eeafa2874671ec7d6ed3a8deff5ade9fcd96633828a3a2f015`  
-		Last Modified: Fri, 01 Dec 2017 23:17:21 GMT  
-		Size: 1.0 MB (1041295 bytes)  
+	-	`sha256:f84b561b721706512fbcf372a477f3aade37ff0a2730172d99b6c7032e503968`  
+		Last Modified: Sat, 09 Dec 2017 01:38:45 GMT  
+		Size: 1.0 MB (1041311 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0c5ea808ead81cf2302f55c1d253f87491cb8e31755b171cc0c339dc0710a3ef`  
-		Last Modified: Fri, 01 Dec 2017 23:17:20 GMT  
+	-	`sha256:8b0eeadc76c082504cf33d498f79fe5ddd9c6ac7b7678301db0c0d6621a21420`  
+		Last Modified: Sat, 09 Dec 2017 01:38:44 GMT  
 		Size: 417.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
