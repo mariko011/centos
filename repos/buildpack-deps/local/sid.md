@@ -4692,20 +4692,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/s
 - `implied`
 - `see above, some license as Python`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python2.7=2.7.14-2
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.14-2.dsc' python2.7_2.7.14-2.dsc 3312 SHA256:8c61b0f2ff28ceb5b42b16f180033355231089d2dab7434fde3abb63526a4e90
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.14.orig.tar.gz' python2.7_2.7.14.orig.tar.gz 17176758 SHA256:304c9b202ea6fbd0a4a8e0ad3733715fbd4749f2204a9173a58ec53c32ea73e8
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.14-2.diff.gz' python2.7_2.7.14-2.diff.gz 286150 SHA256:3a35d872751a66f0ec880d4ad5b5c70f5d7b1bfeee817724701d5c4988f54943
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python2.7/2.7.14-2/
 
-- https://sources.debian.net/src/python2.7/2.7.14-2/ (for browsing the source)
-- https://sources.debian.net/src/python2.7/2.7.14-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python2.7/2.7.14-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python3-defaults=3.6.3-2`
 
@@ -4762,20 +4755,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.6-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.6=3.6.3-1
-'http://deb.debian.org/debian/pool/main/p/python3.6/python3.6_3.6.3-1.dsc' python3.6_3.6.3-1.dsc 3318 SHA256:4e17390244f7bf310a68f007199dbc0ec4fcb3ae36eaa88831f51d46cff98374
-'http://deb.debian.org/debian/pool/main/p/python3.6/python3.6_3.6.3.orig.tar.xz' python3.6_3.6.3.orig.tar.xz 16974296 SHA256:cda7d967c9a4bfa52337cdf551bcc5cff026b6ac50a8834e568ce4a794ca81da
-'http://deb.debian.org/debian/pool/main/p/python3.6/python3.6_3.6.3-1.debian.tar.xz' python3.6_3.6.3-1.debian.tar.xz 205080 SHA256:c5df2f42f6e1dc69cba9cfa7bbe5c95b4016a8203e5367208b54b1387c6c963a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3.6/3.6.3-1/
 
-- https://sources.debian.net/src/python3.6/3.6.3-1/ (for browsing the source)
-- https://sources.debian.net/src/python3.6/3.6.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3.6/3.6.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=7.0-3`
 

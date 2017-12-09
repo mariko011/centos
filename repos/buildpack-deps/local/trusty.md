@@ -1741,14 +1741,9 @@ Licenses: (parsed from: `/usr/share/doc/iproute2/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris iproute2=3.12.0-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/i/iproute2/iproute2_3.12.0-2ubuntu1.dsc' iproute2_3.12.0-2ubuntu1.dsc 2326 SHA256:5f9287e750a3e6dfbc272af3d2b35846939526262f776a2b32b8362ab77da663
-'http://archive.ubuntu.com/ubuntu/pool/main/i/iproute2/iproute2_3.12.0.orig.tar.xz' iproute2_3.12.0.orig.tar.xz 425192 SHA256:44f600475d27a421688cda2294efec38513473a740c24ead78eb20005f08f111
-'http://archive.ubuntu.com/ubuntu/pool/main/i/iproute2/iproute2_3.12.0-2ubuntu1.debian.tar.xz' iproute2_3.12.0-2ubuntu1.debian.tar.xz 27828 SHA256:859ceade5d3bc317a9085b5b98f17050025eef26607fe671c5b13a4abe2c312e
-```
 
 ### `dpkg` source package: `iputils=3:20121221-4ubuntu1.1`
 
@@ -3435,14 +3430,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=3.13.0-135.184
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-135.184.dsc' linux_3.13.0-135.184.dsc 7796 SHA256:165d4163ebdb21909fe3ee31727bbed27527a33521d1db937bc64882cef1fa94
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0.orig.tar.gz' linux_3.13.0.orig.tar.gz 116419243 SHA256:073d6a589655031564407e349c86a316941fc26ef3444bb73a092b43a48347ec
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-135.184.diff.gz' linux_3.13.0-135.184.diff.gz 9517859 SHA256:ba672a31c7e99e564aff5cdbe41f95f840feb71d427f120d927f6c6d1159f0c4
-```
 
 ### `dpkg` source package: `lockfile-progs=0.1.17`
 
