@@ -1,16 +1,16 @@
-# `node:6.12.1-wheezy`
+# `node:6.12.2-wheezy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6ba96da73d529fa8a9ce6c11cf5d2bf3e1dc01b10102a6964d07aa5f1d45f005`
-- Created: `2017-12-05T23:34:07.94998335Z`
+- Image ID: `sha256:b79b4f5e2f8e9d55c259145280ea10a21b4738e901a529f389ee9db3a80c2fe9`
+- Created: `2017-12-09T00:12:21.290570899Z`
 - Virtual Size: ~ 517.73 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=6.12.1`
+  - `NODE_VERSION=6.12.2`
   - `YARN_VERSION=1.3.2`
 
 ## `dpkg` (`.deb`-based packages)
