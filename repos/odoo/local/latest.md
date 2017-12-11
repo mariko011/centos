@@ -1308,20 +1308,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris icu=57.1-6
-'http://deb.debian.org/debian/pool/main/i/icu/icu_57.1-6.dsc' icu_57.1-6.dsc 2105 SHA256:6d3979c7e13e23d4de31e0ff3b83c34e4824e4982cfed9887b21ab6b6c272e6b
-'http://deb.debian.org/debian/pool/main/i/icu/icu_57.1.orig.tar.gz' icu_57.1.orig.tar.gz 22360664 SHA256:ff8c67cb65949b1e7808f2359f2b80f722697048e90e7cfc382ec1fe229e9581
-'http://deb.debian.org/debian/pool/main/i/icu/icu_57.1-6.debian.tar.xz' icu_57.1-6.debian.tar.xz 32768 SHA256:9c1239e6c395aa44880617a8f67f1f9936a9536ad0c85b8c0ceedf4c0bf40819
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/icu/57.1-6/
 
-- https://sources.debian.net/src/icu/57.1-6/ (for browsing the source)
-- https://sources.debian.net/src/icu/57.1-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/icu/57.1-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `inetutils=2:1.9.4-2`
 
@@ -1390,20 +1383,13 @@ Licenses: (parsed from: `/usr/share/doc/iproute2/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris iproute2=4.9.0-1
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.9.0-1.dsc' iproute2_4.9.0-1.dsc 2397 SHA256:30ead60a56ff3d3a2ba61079790292952d66b5a74b1685133b7a69ef14a82e2e
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.9.0.orig.tar.xz' iproute2_4.9.0.orig.tar.xz 613032 SHA256:c0f30f043f7767cc1b2cd2197b08d4e9b2392c95823fabe30bbce308c30116c4
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.9.0-1.debian.tar.xz' iproute2_4.9.0-1.debian.tar.xz 26752 SHA256:1926348d3c8c9e90f7826f5d409d5dc17a2cbf5d247206f1bc4b9a584c672be2
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/iproute2/4.9.0-1/
 
-- https://sources.debian.net/src/iproute2/4.9.0-1/ (for browsing the source)
-- https://sources.debian.net/src/iproute2/4.9.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/iproute2/4.9.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `jbigkit=2.1-3.1`
 
@@ -3142,9 +3128,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris openssl1.0=1.0.2l-2+deb9u1
-'http://security.debian.org/pool/updates/main/o/openssl1.0/openssl1.0_1.0.2l-2+deb9u1.dsc' openssl1.0_1.0.2l-2+deb9u1.dsc 2301 SHA256:2bcc1aada698db527c9dc13ed5e8bc0631790edc9c57c268a4107badddc9be77
-'http://security.debian.org/pool/updates/main/o/openssl1.0/openssl1.0_1.0.2l.orig.tar.gz' openssl1.0_1.0.2l.orig.tar.gz 5365054 SHA256:ce07195b659e75f4e1db43552860070061f156a98bb37b672b101ba6e3ddf30c
-'http://security.debian.org/pool/updates/main/o/openssl1.0/openssl1.0_1.0.2l-2+deb9u1.debian.tar.xz' openssl1.0_1.0.2l-2+deb9u1.debian.tar.xz 76724 SHA256:d4e3935069f4d35af0b155917eefc14a6a382f44c53e364642e02f951f97ec53
+'http://deb.debian.org/debian/pool/main/o/openssl1.0/openssl1.0_1.0.2l-2+deb9u1.dsc' openssl1.0_1.0.2l-2+deb9u1.dsc 2301 SHA256:2bcc1aada698db527c9dc13ed5e8bc0631790edc9c57c268a4107badddc9be77
+'http://deb.debian.org/debian/pool/main/o/openssl1.0/openssl1.0_1.0.2l.orig.tar.gz' openssl1.0_1.0.2l.orig.tar.gz 5365054 SHA256:ce07195b659e75f4e1db43552860070061f156a98bb37b672b101ba6e3ddf30c
+'http://deb.debian.org/debian/pool/main/o/openssl1.0/openssl1.0_1.0.2l-2+deb9u1.debian.tar.xz' openssl1.0_1.0.2l-2+deb9u1.debian.tar.xz 76724 SHA256:d4e3935069f4d35af0b155917eefc14a6a382f44c53e364642e02f951f97ec53
 ```
 
 Other potentially useful URLs:
@@ -3168,9 +3154,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris openssl=1.1.0f-3+deb9u1
-'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.1.0f-3+deb9u1.dsc' openssl_1.1.0f-3+deb9u1.dsc 2364 SHA256:cc7066295b79a26159b302eef05d1310c6593a1f2faafe28c2b7783704154489
-'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.1.0f.orig.tar.gz' openssl_1.1.0f.orig.tar.gz 5278176 SHA256:12f746f3f2493b2f39da7ecf63d7ee19c6ac9ec6a4fcd8c229da8a522cb12765
-'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.1.0f-3+deb9u1.debian.tar.xz' openssl_1.1.0f-3+deb9u1.debian.tar.xz 54944 SHA256:d9078cf382dad406a890198efd663e29f5bbacaf2c566ed0d77755989aca2932
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0f-3+deb9u1.dsc' openssl_1.1.0f-3+deb9u1.dsc 2364 SHA256:cc7066295b79a26159b302eef05d1310c6593a1f2faafe28c2b7783704154489
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0f.orig.tar.gz' openssl_1.1.0f.orig.tar.gz 5278176 SHA256:12f746f3f2493b2f39da7ecf63d7ee19c6ac9ec6a4fcd8c229da8a522cb12765
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0f-3+deb9u1.debian.tar.xz' openssl_1.1.0f-3+deb9u1.debian.tar.xz 54944 SHA256:d9078cf382dad406a890198efd663e29f5bbacaf2c566ed0d77755989aca2932
 ```
 
 Other potentially useful URLs:
@@ -3415,20 +3401,13 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postg
 - `nagaysau-ishii`
 - `rijndael`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-9.6=9.6.4-0+deb9u1
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.4-0+deb9u1.dsc' postgresql-9.6_9.6.4-0+deb9u1.dsc 3694 SHA256:baf59e5e050f2ae3108226fcd5937e323da34828231fec1eb3d8a58c99d724c0
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.4.orig.tar.bz2' postgresql-9.6_9.6.4.orig.tar.bz2 19566875 SHA256:2b3ab16d82e21cead54c08b95ce3ac480696944a68603b6c11b3205b7376ce13
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.4-0+deb9u1.debian.tar.xz' postgresql-9.6_9.6.4-0+deb9u1.debian.tar.xz 21072 SHA256:d2aee3d5cf7d150c0117f0a0f5c3a65bcd47b9dd7a95387b6b9aad166f770f44
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/postgresql-9.6/9.6.4-0+deb9u1/
 
-- https://sources.debian.net/src/postgresql-9.6/9.6.4-0+deb9u1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-9.6/9.6.4-0+deb9u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-9.6/9.6.4-0+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `postgresql-common=181`
 
@@ -3446,8 +3425,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris postgresql-common=181
-'http://deb.debian.org/debian/pool/main/p/postgresql-common/postgresql-common_181.dsc' postgresql-common_181.dsc 2344 SHA256:9b3369a549a6929bd57d4412d2c34fa7ef6d8ea8e10cdd6919a1ef63efa1d1fa
-'http://deb.debian.org/debian/pool/main/p/postgresql-common/postgresql-common_181.tar.xz' postgresql-common_181.tar.xz 201868 SHA256:fe340964e0ca66e364ca2ee6690432b1bfb26bbaba81a46fba5525631b93e43c
+'http://deb.debian.org/debian/pool/main/p/postgresql-common/postgresql-common_181+deb9u1.dsc' postgresql-common_181+deb9u1.dsc 2372 SHA256:c21965f1adabf78feb1890cd3c342091c78f6f83e4238e03cdca201018481e28
+'http://deb.debian.org/debian/pool/main/p/postgresql-common/postgresql-common_181+deb9u1.tar.xz' postgresql-common_181+deb9u1.tar.xz 201804 SHA256:4852c182eb397e075b49e3aa65b07c3fb21a23788bccce4d72bc7332ca5fc157
 ```
 
 Other potentially useful URLs:
@@ -4475,10 +4454,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris sqlite3=3.16.2-5
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.16.2-5.dsc' sqlite3_3.16.2-5.dsc 2510 SHA256:21a2d432ace9ecf50ca5d64580af78d4414a0cfcc8b8a4f15222e11cf105da09
+'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.16.2-5+deb9u1.dsc' sqlite3_3.16.2-5+deb9u1.dsc 2538 SHA256:aafd7c33e9091a0c8703a9b2dbfaf1b1592d8fc1df18bf92d3bfd2ffc350cc96
 'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.16.2.orig-www.tar.xz' sqlite3_3.16.2.orig-www.tar.xz 3383968 SHA256:d5dd3de405c55c63c9f99fbfcf3defc91a54a81b5656c510cd46544aaed134fa
 'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.16.2.orig.tar.xz' sqlite3_3.16.2.orig.tar.xz 5634120 SHA256:bf7b1e8ea7577253b7f8a8287d111d542d1792cf1768edc66541ac851ff92453
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.16.2-5.debian.tar.xz' sqlite3_3.16.2-5.debian.tar.xz 21688 SHA256:a517fd9e479509cf861d9e916455e0195aebb2ec286c993f74a2cb0de889bd3e
+'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.16.2-5+deb9u1.debian.tar.xz' sqlite3_3.16.2-5+deb9u1.debian.tar.xz 22128 SHA256:66358aca4f46ead86ba909bc5899bd312c10c46e620ad017120efe3b8714d44e
 ```
 
 Other potentially useful URLs:
@@ -4631,20 +4610,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2017b-1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017b-1.dsc' tzdata_2017b-1.dsc 2005 SHA256:ab26ea2d019b6db54abd8ee17c90aeb717641dc8900ab19dca8d5faa4b66d852
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017b.orig.tar.gz' tzdata_2017b.orig.tar.gz 324317 SHA256:f8242a522ea3496b0ce4ff4f2e75a049178da21001a08b8e666d8cbe07d18086
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017b-1.debian.tar.xz' tzdata_2017b-1.debian.tar.xz 101168 SHA256:b7ed1f68343a5463aa2efbc527a05b89461e93b5626337d8d581c78e8fdf180c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2017b-1/
 
-- https://sources.debian.net/src/tzdata/2017b-1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2017b-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2017b-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0036`
 
