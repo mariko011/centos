@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d026c396cb4f49cc84ff5a96fadbf9e211e6625292b1acc151eab28bf4350383`
-- Created: `2017-11-04T05:36:08.569783371Z`
-- Virtual Size: ~ 248.89 Mb  
+- Image ID: `sha256:1b55adf5c5f6ba3bb127c4f87a57052a06e9f21ab708c6a83059ad40b705e0e4`
+- Created: `2017-12-12T05:22:53.011852034Z`
+- Virtual Size: ~ 247.19 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -449,11 +449,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/dash/0.5.7-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/dash/0.5.7-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `db=5.1.29-5`
+### `dpkg` source package: `db=5.1.29-5+deb7u1`
 
 Binary Packages:
 
-- `libdb5.1:amd64=5.1.29-5`
+- `libdb5.1:amd64=5.1.29-5+deb7u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -462,17 +462,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris db=5.1.29-5
-'http://deb.debian.org/debian/pool/main/d/db/db_5.1.29-5.dsc' db_5.1.29-5.dsc 2113 SHA256:d619c24fbefef19699929504d0ae1dbd3fe23153f02e975936bd8caa137404c2
-'http://deb.debian.org/debian/pool/main/d/db/db_5.1.29.orig.tar.gz' db_5.1.29.orig.tar.gz 32188074 SHA256:a943cb4920e62df71de1069ddca486d408f6d7a09ddbbb5637afe7a229389182
-'http://deb.debian.org/debian/pool/main/d/db/db_5.1.29-5.debian.tar.gz' db_5.1.29-5.debian.tar.gz 28733 SHA256:7cefa9a9e779b8b3e7432c8f39c4317aa7b6eac9f70703ed0b85f8d9a96d3af9
+$ apt-get source -qq --print-uris db=5.1.29-5+deb7u1
+'http://security.debian.org/pool/updates/main/d/db/db_5.1.29-5+deb7u1.dsc' db_5.1.29-5+deb7u1.dsc 2778 SHA256:3670e531aca8676efcb3ae41ab0256ba25855b460a371ae343964399cc59ac4b
+'http://security.debian.org/pool/updates/main/d/db/db_5.1.29.orig.tar.gz' db_5.1.29.orig.tar.gz 32188074 SHA256:a943cb4920e62df71de1069ddca486d408f6d7a09ddbbb5637afe7a229389182
+'http://security.debian.org/pool/updates/main/d/db/db_5.1.29-5+deb7u1.debian.tar.gz' db_5.1.29-5+deb7u1.debian.tar.gz 29235 SHA256:ae4330a3ee4d253252686c8f56100c434bda137a0f2272f5f36acc81f536227a
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/db/5.1.29-5/ (for browsing the source)
-- https://sources.debian.net/src/db/5.1.29-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/db/5.1.29-5/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/db/5.1.29-5+deb7u1/ (for browsing the source)
+- https://sources.debian.net/src/db/5.1.29-5+deb7u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/db/5.1.29-5+deb7u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `dbus=1.6.8-1+deb7u6`
 
@@ -2230,11 +2230,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libxcomposite/1:0.4.3-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libxcomposite/1:0.4.3-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libxcursor=1:1.1.13-1+deb7u1`
+### `dpkg` source package: `libxcursor=1:1.1.13-1+deb7u2`
 
 Binary Packages:
 
-- `libxcursor1:amd64=1:1.1.13-1+deb7u1`
+- `libxcursor1:amd64=1:1.1.13-1+deb7u2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2243,17 +2243,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libxcursor=1:1.1.13-1+deb7u1
-'http://deb.debian.org/debian/pool/main/libx/libxcursor/libxcursor_1.1.13-1+deb7u1.dsc' libxcursor_1.1.13-1+deb7u1.dsc 2283 SHA256:61d5c088d7b320de87c442d99016b0051ca5ed570990d3a576c46128e82afe48
-'http://deb.debian.org/debian/pool/main/libx/libxcursor/libxcursor_1.1.13.orig.tar.gz' libxcursor_1.1.13.orig.tar.gz 365362 SHA256:df4475096192ad60c1300df7b5e2509019ad1a733a0cadcad13b5d3f4b7d615b
-'http://deb.debian.org/debian/pool/main/libx/libxcursor/libxcursor_1.1.13-1+deb7u1.diff.gz' libxcursor_1.1.13-1+deb7u1.diff.gz 18083 SHA256:d0edf9a850d49b149f16ccc17b6a6138647ea715291aa81f65201759952ef7b2
+$ apt-get source -qq --print-uris libxcursor=1:1.1.13-1+deb7u2
+'http://security.debian.org/pool/updates/main/libx/libxcursor/libxcursor_1.1.13-1+deb7u2.dsc' libxcursor_1.1.13-1+deb7u2.dsc 2280 SHA256:871166db7939440100819a85a077ba3f90df0a0460baf959eb259c3e0ec15361
+'http://security.debian.org/pool/updates/main/libx/libxcursor/libxcursor_1.1.13.orig.tar.gz' libxcursor_1.1.13.orig.tar.gz 365362 SHA256:df4475096192ad60c1300df7b5e2509019ad1a733a0cadcad13b5d3f4b7d615b
+'http://security.debian.org/pool/updates/main/libx/libxcursor/libxcursor_1.1.13-1+deb7u2.diff.gz' libxcursor_1.1.13-1+deb7u2.diff.gz 19179 SHA256:8c285f6493bbccc9f0d0d18ec36245f32ff0779e61800904ef9222ce7dff9f39
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libxcursor/1:1.1.13-1+deb7u1/ (for browsing the source)
-- https://sources.debian.net/src/libxcursor/1:1.1.13-1+deb7u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxcursor/1:1.1.13-1+deb7u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libxcursor/1:1.1.13-1+deb7u2/ (for browsing the source)
+- https://sources.debian.net/src/libxcursor/1:1.1.13-1+deb7u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libxcursor/1:1.1.13-1+deb7u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxdamage=1:1.1.3-2`
 
@@ -2406,23 +2406,30 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libxinerama/2:1.1.2-1+deb7u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libxinerama/2:1.1.2-1+deb7u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libxml2=2.8.0+dfsg1-7+wheezy9`
+### `dpkg` source package: `libxml2=2.8.0+dfsg1-7+wheezy11`
 
 Binary Packages:
 
-- `libxml2:amd64=2.8.0+dfsg1-7+wheezy9`
+- `libxml2:amd64=2.8.0+dfsg1-7+wheezy11`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris libxml2=2.8.0+dfsg1-7+wheezy11
+'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.8.0+dfsg1-7+wheezy11.dsc' libxml2_2.8.0+dfsg1-7+wheezy11.dsc 2677 SHA256:f78d122c23f94e5e71d1d825ed95626cf793600fdc9494e0a04ba8abc8c630c1
+'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.8.0+dfsg1.orig.tar.gz' libxml2_2.8.0+dfsg1.orig.tar.gz 3554683 SHA256:46f339843967e861e81f8427373ff2a3d0a8cb608022dea16aa1d345ddcee338
+'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.8.0+dfsg1-7+wheezy11.debian.tar.gz' libxml2_2.8.0+dfsg1-7+wheezy11.debian.tar.gz 76428 SHA256:57b35fd778ee0c11e3cfcc9795d699d8193ea128c101ecdc3e3d94dadd5b705d
+```
 
-- http://snapshot.debian.org/package/libxml2/2.8.0+dfsg1-7+wheezy9/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/libxml2/2.8.0+dfsg1-7+wheezy11/ (for browsing the source)
+- https://sources.debian.net/src/libxml2/2.8.0+dfsg1-7+wheezy11/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libxml2/2.8.0+dfsg1-7+wheezy11/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxrandr=2:1.3.2-2+deb7u2`
 
@@ -2734,24 +2741,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openjdk-6/6b38-1.13.10-1~deb7u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openjdk-6/6b38-1.13.10-1~deb7u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=1.0.1t-1+deb7u2`
+### `dpkg` source package: `openssl=1.0.1t-1+deb7u3`
 
 Binary Packages:
 
-- `libssl1.0.0:amd64=1.0.1t-1+deb7u2`
-- `openssl=1.0.1t-1+deb7u2`
+- `libssl1.0.0:amd64=1.0.1t-1+deb7u3`
+- `openssl=1.0.1t-1+deb7u3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris openssl=1.0.1t-1+deb7u3
+'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb7u3.dsc' openssl_1.0.1t-1+deb7u3.dsc 2379 SHA256:9d5033078fb978566600ae0dd365b452ff20fb126e94b0a5cf74006d3b1a672e
+'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.0.1t.orig.tar.gz' openssl_1.0.1t.orig.tar.gz 4556447 SHA256:4a6ee491a2fdb22e519c76fdc2a628bb3cec12762cd456861d207996c8a07088
+'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb7u3.debian.tar.gz' openssl_1.0.1t-1+deb7u3.debian.tar.gz 117754 SHA256:1c3bc3ac4098755d5bebb38d3000cf958410ebccda62099a904142a60339aa49
+```
 
-- http://snapshot.debian.org/package/openssl/1.0.1t-1+deb7u2/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/openssl/1.0.1t-1+deb7u3/ (for browsing the source)
+- https://sources.debian.net/src/openssl/1.0.1t-1+deb7u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/1.0.1t-1+deb7u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.12-3`
 

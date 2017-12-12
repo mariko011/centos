@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0be5d63f60311642930328273720be7833768dcaa6db265cb43487faa616e7f0`
-- Created: `2017-11-04T05:37:20.553516141Z`
-- Virtual Size: ~ 149.56 Mb  
+- Image ID: `sha256:5c965c40963257be4a7eebac33822db398215f5e7e78fe3f409541fd22254cfa`
+- Created: `2017-12-12T05:23:39.101171214Z`
+- Virtual Size: ~ 147.91 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -373,11 +373,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/dash/0.5.7-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/dash/0.5.7-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `db=5.1.29-5`
+### `dpkg` source package: `db=5.1.29-5+deb7u1`
 
 Binary Packages:
 
-- `libdb5.1:amd64=5.1.29-5`
+- `libdb5.1:amd64=5.1.29-5+deb7u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -386,17 +386,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris db=5.1.29-5
-'http://deb.debian.org/debian/pool/main/d/db/db_5.1.29-5.dsc' db_5.1.29-5.dsc 2113 SHA256:d619c24fbefef19699929504d0ae1dbd3fe23153f02e975936bd8caa137404c2
-'http://deb.debian.org/debian/pool/main/d/db/db_5.1.29.orig.tar.gz' db_5.1.29.orig.tar.gz 32188074 SHA256:a943cb4920e62df71de1069ddca486d408f6d7a09ddbbb5637afe7a229389182
-'http://deb.debian.org/debian/pool/main/d/db/db_5.1.29-5.debian.tar.gz' db_5.1.29-5.debian.tar.gz 28733 SHA256:7cefa9a9e779b8b3e7432c8f39c4317aa7b6eac9f70703ed0b85f8d9a96d3af9
+$ apt-get source -qq --print-uris db=5.1.29-5+deb7u1
+'http://security.debian.org/pool/updates/main/d/db/db_5.1.29-5+deb7u1.dsc' db_5.1.29-5+deb7u1.dsc 2778 SHA256:3670e531aca8676efcb3ae41ab0256ba25855b460a371ae343964399cc59ac4b
+'http://security.debian.org/pool/updates/main/d/db/db_5.1.29.orig.tar.gz' db_5.1.29.orig.tar.gz 32188074 SHA256:a943cb4920e62df71de1069ddca486d408f6d7a09ddbbb5637afe7a229389182
+'http://security.debian.org/pool/updates/main/d/db/db_5.1.29-5+deb7u1.debian.tar.gz' db_5.1.29-5+deb7u1.debian.tar.gz 29235 SHA256:ae4330a3ee4d253252686c8f56100c434bda137a0f2272f5f36acc81f536227a
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/db/5.1.29-5/ (for browsing the source)
-- https://sources.debian.net/src/db/5.1.29-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/db/5.1.29-5/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/db/5.1.29-5+deb7u1/ (for browsing the source)
+- https://sources.debian.net/src/db/5.1.29-5+deb7u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/db/5.1.29-5+deb7u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `dbus=1.6.8-1+deb7u6`
 
@@ -1476,24 +1476,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openjdk-6/6b38-1.13.10-1~deb7u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openjdk-6/6b38-1.13.10-1~deb7u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=1.0.1t-1+deb7u2`
+### `dpkg` source package: `openssl=1.0.1t-1+deb7u3`
 
 Binary Packages:
 
-- `libssl1.0.0:amd64=1.0.1t-1+deb7u2`
-- `openssl=1.0.1t-1+deb7u2`
+- `libssl1.0.0:amd64=1.0.1t-1+deb7u3`
+- `openssl=1.0.1t-1+deb7u3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris openssl=1.0.1t-1+deb7u3
+'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb7u3.dsc' openssl_1.0.1t-1+deb7u3.dsc 2379 SHA256:9d5033078fb978566600ae0dd365b452ff20fb126e94b0a5cf74006d3b1a672e
+'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.0.1t.orig.tar.gz' openssl_1.0.1t.orig.tar.gz 4556447 SHA256:4a6ee491a2fdb22e519c76fdc2a628bb3cec12762cd456861d207996c8a07088
+'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb7u3.debian.tar.gz' openssl_1.0.1t-1+deb7u3.debian.tar.gz 117754 SHA256:1c3bc3ac4098755d5bebb38d3000cf958410ebccda62099a904142a60339aa49
+```
 
-- http://snapshot.debian.org/package/openssl/1.0.1t-1+deb7u2/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/openssl/1.0.1t-1+deb7u3/ (for browsing the source)
+- https://sources.debian.net/src/openssl/1.0.1t-1+deb7u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/1.0.1t-1+deb7u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.12-3`
 
