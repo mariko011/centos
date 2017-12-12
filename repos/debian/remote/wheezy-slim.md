@@ -1,7 +1,7 @@
 ## `debian:wheezy-slim`
 
 ```console
-$ docker pull debian@sha256:162620990e96a8eee273aee8fa830330947c9306652de18db21de88a3bbd7c50
+$ docker pull debian@sha256:7b5a3a82c86ca1ee950a7a8704ee619ca734f4a0b6bc7434328765ad0b3c2b28
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -66,27 +66,27 @@ CMD ["bash"]
 ### `debian:wheezy-slim` - linux; arm variant v7
 
 ```console
-$ docker pull debian@sha256:a246f4be5347a2f6f32cd999a6992aadf21eabd03c01b2bdfb2f989b524fba6c
+$ docker pull debian@sha256:6ba5e0dd53fdc35d691e3e6effab455df7b374a5699c6a683109ee2f983a46dd
 ```
 
 -	Docker Version: 17.06.0-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **16.8 MB (16756444 bytes)**  
+-	Total Size: **16.8 MB (16762408 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0c6cc5eaba06537b26de771ff02edfac34c81449c3e05d68f8abda56f3336f10`
+-	Image ID: `sha256:0fed573661b10235703a7a0598edd58ebc500e2911a2b2e05d3109f0dec10c9f`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 09 Oct 2017 21:47:23 GMT
-ADD file:b266d990ce55ec965e222a1be7b95fbe01c6d99821fa22199415e21a96fa0d01 in / 
-# Mon, 09 Oct 2017 21:47:23 GMT
+# Tue, 12 Dec 2017 13:36:52 GMT
+ADD file:52eaf771571129528a0836b8ecc4fbee481902e6a38fbf1d40a9353131575be0 in / 
+# Tue, 12 Dec 2017 13:36:52 GMT
 CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:c4e53cb9c74291ac4a5a1f7db0b5f789031b91fb7247c48559b64cdd85af2b6c`  
-		Last Modified: Mon, 09 Oct 2017 21:57:13 GMT  
-		Size: 16.8 MB (16756444 bytes)  
+	-	`sha256:adf381d5b09feaa2e2e96c85bb8c1f1d9ea18b076cc45d5fcbaa8afa7c5d4a31`  
+		Last Modified: Tue, 12 Dec 2017 13:49:05 GMT  
+		Size: 16.8 MB (16762408 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `debian:wheezy-slim` - linux; 386
