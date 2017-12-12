@@ -1,7 +1,7 @@
 ## `debian:sid-slim`
 
 ```console
-$ docker pull debian@sha256:b33dc0c808e5c659af0be0c00970c7d4575df17db232547cc655c1769b85f625
+$ docker pull debian@sha256:6996f637a28e4d3497904d30893b72e9bd88a8f862306ffbcb28b12f5fce8b1f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -147,27 +147,27 @@ CMD ["bash"]
 ### `debian:sid-slim` - linux; ppc64le
 
 ```console
-$ docker pull debian@sha256:4359361b04b47f8dfa8d5ec9aa85dafc6adc5359b2d7ff3826004e3765205146
+$ docker pull debian@sha256:2461f6e60578fefe81c6056e0a9cbc2ad746120748cafea9db5409298da70eca
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **25.9 MB (25935856 bytes)**  
+-	Total Size: **26.3 MB (26299327 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:af7d681bc21b7a030eca657cbdaabb81b7f1d2e7901ac4027ee151d63aba9fa6`
+-	Image ID: `sha256:d3347d7ae5227b58fe2107d359898e60a3312cebc1b190a9ff4a2e7859860c7f`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 09 Oct 2017 21:44:35 GMT
-ADD file:975af260e7927569ddcee28239226e9deaf2ba539f038b467169340d69bc7072 in / 
-# Mon, 09 Oct 2017 21:44:37 GMT
+# Tue, 12 Dec 2017 01:34:28 GMT
+ADD file:4189fa121fbbf89150ccba6e8e9ccea8dd3a28956bf0fb4eedba7d0782093698 in / 
+# Tue, 12 Dec 2017 01:34:31 GMT
 CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:58316d9a92e4d6154c1ca7f3d20c3fe96a2931387507b6226b9bcb094ebf13a1`  
-		Last Modified: Mon, 09 Oct 2017 21:51:05 GMT  
-		Size: 25.9 MB (25935856 bytes)  
+	-	`sha256:79df2038e61de125ab6fdf8c9740f0bebfe5e218d0f5e30fed081e642f3bbec3`  
+		Last Modified: Tue, 12 Dec 2017 01:40:53 GMT  
+		Size: 26.3 MB (26299327 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `debian:sid-slim` - linux; s390x
