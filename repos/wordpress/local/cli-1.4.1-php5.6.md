@@ -1,9 +1,9 @@
-# `wordpress:cli-1.4.1`
+# `wordpress:cli-1.4.1-php5.6`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e777bdc319800cf891a5fef669a73bf49b1dae25064025f08865b5972e98ab0a`
-- Created: `2017-12-01T23:05:56.769860673Z`
+- Image ID: `sha256:b7386afd8db87370e933707c6825ebd367f47bdec06047b4a514ebe9f7ee3919`
+- Created: `2017-12-09T01:22:35.225917392Z`
 - Virtual Size: ~ 79.97 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
