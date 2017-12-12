@@ -18,7 +18,7 @@
 ## `httpd:2`
 
 ```console
-$ docker pull httpd@sha256:4d14289f67e8068ba534fe3dad36eba663173b6c063250aeddfa93792cbcbb35
+$ docker pull httpd@sha256:caa83dda236f8774754285bf2b6f2a20416068e438eba740e0f6d1c23e7ecf87
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -538,91 +538,91 @@ CMD ["httpd-foreground"]
 ### `httpd:2` - linux; s390x
 
 ```console
-$ docker pull httpd@sha256:8b576bfda0ffff78f1a7e626c6766cf020d019b6efb8007aeb6f3caf14146e6b
+$ docker pull httpd@sha256:81563bf279fa1b5904540f66c54e786235e79ecfc92ada7b5613360a01af0dff
 ```
 
 -	Docker Version: 17.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **68.8 MB (68839148 bytes)**  
+-	Total Size: **68.9 MB (68862335 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9172100cec217a7b06fe7fc620c68e3018a40d4df8ea22e456f2d3a04ce96c33`
+-	Image ID: `sha256:dce4ed8ed8fb316d31f418c4ddfc08d519701f95504727d918ffd94c35066528`
 -	Default Command: `["httpd-foreground"]`
 
 ```dockerfile
-# Mon, 09 Oct 2017 21:42:23 GMT
-ADD file:1c306ad85a0adf89bf603a6f6a34a1059ddfa0811704a847df3e785c487ee58f in / 
-# Mon, 09 Oct 2017 21:42:24 GMT
+# Tue, 12 Dec 2017 06:22:40 GMT
+ADD file:f85dc45c68f6f29cc10d6ef236674dedc10522f11b6fa2e8a6b10a4409ca0bc7 in / 
+# Tue, 12 Dec 2017 06:22:40 GMT
 CMD ["bash"]
-# Mon, 09 Oct 2017 21:42:30 GMT
+# Tue, 12 Dec 2017 06:22:50 GMT
 RUN echo 'deb http://deb.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/backports.list
-# Mon, 09 Oct 2017 22:25:11 GMT
+# Tue, 12 Dec 2017 07:26:11 GMT
 ENV HTTPD_PREFIX=/usr/local/apache2
-# Mon, 09 Oct 2017 22:25:11 GMT
+# Tue, 12 Dec 2017 07:26:11 GMT
 ENV PATH=/usr/local/apache2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 09 Oct 2017 22:25:12 GMT
+# Tue, 12 Dec 2017 07:26:12 GMT
 RUN mkdir -p "$HTTPD_PREFIX" 	&& chown www-data:www-data "$HTTPD_PREFIX"
-# Mon, 09 Oct 2017 22:25:12 GMT
+# Tue, 12 Dec 2017 07:26:16 GMT
 WORKDIR /usr/local/apache2
-# Mon, 09 Oct 2017 22:25:12 GMT
+# Tue, 12 Dec 2017 07:26:16 GMT
 ENV NGHTTP2_VERSION=1.18.1-1
-# Mon, 09 Oct 2017 22:25:12 GMT
+# Tue, 12 Dec 2017 07:26:16 GMT
 ENV OPENSSL_VERSION=1.0.2l-1~bpo8+1
-# Mon, 09 Oct 2017 22:25:13 GMT
+# Tue, 12 Dec 2017 07:26:17 GMT
 RUN { 		echo 'deb http://deb.debian.org/debian stretch main'; 	} > /etc/apt/sources.list.d/stretch.list 	&& { 		echo 'Package: *'; 		echo 'Pin: release n=stretch'; 		echo 'Pin-Priority: -10'; 		echo; 		echo 'Package: libnghttp2*'; 		echo "Pin: version $NGHTTP2_VERSION"; 		echo 'Pin-Priority: 990'; 		echo; 	} > /etc/apt/preferences.d/unstable-nghttp2
-# Mon, 09 Oct 2017 22:25:37 GMT
+# Tue, 12 Dec 2017 07:26:43 GMT
 RUN apt-get update 	&& apt-get install -y --no-install-recommends 		libapr1 		libaprutil1 		libaprutil1-ldap 		libapr1-dev 		libaprutil1-dev 		liblua5.2-0 		libnghttp2-14=$NGHTTP2_VERSION 		libpcre++0 		libssl1.0.0=$OPENSSL_VERSION 		libxml2 	&& rm -r /var/lib/apt/lists/*
-# Mon, 23 Oct 2017 20:31:33 GMT
+# Tue, 12 Dec 2017 07:26:47 GMT
 ENV HTTPD_VERSION=2.4.29
-# Mon, 23 Oct 2017 20:31:34 GMT
+# Tue, 12 Dec 2017 07:26:47 GMT
 ENV HTTPD_SHA256=777753a5a25568a2a27428b2214980564bc1c38c1abf9ccc7630b639991f7f00
-# Mon, 23 Oct 2017 20:31:34 GMT
+# Tue, 12 Dec 2017 07:26:47 GMT
 ENV HTTPD_PATCHES=
-# Mon, 23 Oct 2017 20:31:34 GMT
+# Tue, 12 Dec 2017 07:26:51 GMT
 ENV APACHE_DIST_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename= 	https://www-us.apache.org/dist/ 	https://www.apache.org/dist/ 	https://archive.apache.org/dist/
-# Mon, 23 Oct 2017 20:33:01 GMT
+# Tue, 12 Dec 2017 07:28:16 GMT
 RUN set -eux; 		buildDeps=" 		bzip2 		ca-certificates 		dpkg-dev 		gcc 		liblua5.2-dev 		libnghttp2-dev=$NGHTTP2_VERSION 		libpcre++-dev 		libssl-dev=$OPENSSL_VERSION 		libxml2-dev 		zlib1g-dev 		make 		wget 	"; 	apt-get update; 	apt-get install -y --no-install-recommends -V $buildDeps; 	rm -r /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in $APACHE_DIST_URLS; do 			if wget -O "$f" "$distUrl$distFile"; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'httpd.tar.bz2' "httpd/httpd-$HTTPD_VERSION.tar.bz2"; 	echo "$HTTPD_SHA256 *httpd.tar.bz2" | sha256sum -c -; 		ddist 'httpd.tar.bz2.asc' "httpd/httpd-$HTTPD_VERSION.tar.bz2.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys A93D62ECC3C8EA12DB220EC934EA76E6791485A8; 	gpg --batch --verify httpd.tar.bz2.asc httpd.tar.bz2; 	rm -rf "$GNUPGHOME" httpd.tar.bz2.asc; 		mkdir -p src; 	tar -xf httpd.tar.bz2 -C src --strip-components=1; 	rm httpd.tar.bz2; 	cd src; 		patches() { 		while [ "$#" -gt 0 ]; do 			local patchFile="$1"; shift; 			local patchSha256="$1"; shift; 			ddist "$patchFile" "httpd/patches/apply_to_$HTTPD_VERSION/$patchFile"; 			echo "$patchSha256 *$patchFile" | sha256sum -c -; 			patch -p0 < "$patchFile"; 			rm -f "$patchFile"; 		done; 	}; 	patches $HTTPD_PATCHES; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--prefix="$HTTPD_PREFIX" 		--enable-mods-shared=reallyall 	; 	make -j "$(nproc)"; 	make install; 		cd ..; 	rm -r src man manual; 		sed -ri 		-e 's!^(\s*CustomLog)\s+\S+!\1 /proc/self/fd/1!g' 		-e 's!^(\s*ErrorLog)\s+\S+!\1 /proc/self/fd/2!g' 		"$HTTPD_PREFIX/conf/httpd.conf"; 		apt-get purge -y --auto-remove $buildDeps
-# Mon, 23 Oct 2017 20:33:02 GMT
+# Tue, 12 Dec 2017 07:28:16 GMT
 COPY file:761e313354b918b6cd7ea99975a4f6b53ff5381ba689bab2984aec4dab597215 in /usr/local/bin/ 
-# Mon, 23 Oct 2017 20:33:02 GMT
+# Tue, 12 Dec 2017 07:28:17 GMT
 EXPOSE 80/tcp
-# Mon, 23 Oct 2017 20:33:02 GMT
+# Tue, 12 Dec 2017 07:28:17 GMT
 CMD ["httpd-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:a0a92d62c165393786de44f21509e9a71868aa7c2765f0334d285aa2aa19a58f`  
-		Last Modified: Mon, 09 Oct 2017 21:46:27 GMT  
-		Size: 52.8 MB (52788868 bytes)  
+	-	`sha256:98cfcbfa76c6d2a42223dc7a44505bdd260000bffd3ecbb983cb33213128499b`  
+		Last Modified: Tue, 12 Dec 2017 06:28:05 GMT  
+		Size: 52.8 MB (52790322 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d56e777c3379067dfad13d2aaa5da26ed5cb65dcad165a9176c44b8b2c561cb3`  
-		Last Modified: Mon, 09 Oct 2017 21:46:40 GMT  
-		Size: 220.0 B  
+	-	`sha256:cb0e1e2f6239d123dd1874e47c815a8ced217ce56da7f381d273a4a389d04d56`  
+		Last Modified: Tue, 12 Dec 2017 06:28:29 GMT  
+		Size: 224.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:55eb40f78ad84854b825a5bb4be4ff02c743ef29084a21c454098452027ececc`  
-		Last Modified: Mon, 09 Oct 2017 22:28:05 GMT  
-		Size: 154.0 B  
+	-	`sha256:1886d0b296ec8c62b7dde7efb15ec54bae39a25ad1d41b04514e6a34a58dd339`  
+		Last Modified: Tue, 12 Dec 2017 07:28:49 GMT  
+		Size: 155.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ddf8204313ff55d04e061e6d7b41358db31c2b6ab1a2a20d3da35a9c564ddf82`  
-		Last Modified: Mon, 09 Oct 2017 22:28:05 GMT  
-		Size: 341.0 B  
+	-	`sha256:a59a6f7e6534bcdbe86e9ceef21ddd8241ff1556c6b7a7c048d0c132b2e52adc`  
+		Last Modified: Tue, 12 Dec 2017 07:28:49 GMT  
+		Size: 340.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:83931eca269058b77bd2172a5a6898347d4dd233eac42105ff6a00a7f93ff608`  
-		Last Modified: Mon, 09 Oct 2017 22:28:08 GMT  
-		Size: 13.0 MB (13004860 bytes)  
+	-	`sha256:4423fb2aa36ada8eb9c272e06f30f4c41cd9fa682f06eb0f253fb10f3076670b`  
+		Last Modified: Tue, 12 Dec 2017 07:28:53 GMT  
+		Size: 13.0 MB (13026679 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:07d5bd42f5aa511ba01be83cdf54dedc7eb1c9a3e66b770646fa711051f4442c`  
-		Last Modified: Mon, 23 Oct 2017 20:33:12 GMT  
-		Size: 3.0 MB (3044403 bytes)  
+	-	`sha256:0b923b0f01949a8d9509f6b3b18cfa7fd542dd85134fc9ab5f643f53a034945f`  
+		Last Modified: Tue, 12 Dec 2017 07:28:50 GMT  
+		Size: 3.0 MB (3044315 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80834b45ecc40633b34f0f1eb1ea1e1795c53c5ad3289c3275ec71753f5f1af7`  
-		Last Modified: Mon, 23 Oct 2017 20:33:13 GMT  
-		Size: 302.0 B  
+	-	`sha256:6b74c3130b0fb23c8c7f32429f839e6ba8333ae00a486cfc437cebe6e2aa61ab`  
+		Last Modified: Tue, 12 Dec 2017 07:28:49 GMT  
+		Size: 300.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `httpd:2.2`
 
 ```console
-$ docker pull httpd@sha256:fa34fd50601b4533ba093c8d7bdef840e0cbd852ad33ed600562a7c161f687e5
+$ docker pull httpd@sha256:8f6e7b01966c9d76596c0f399124366f587318676606ab3c7c93a226e97491c9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1046,75 +1046,75 @@ CMD ["httpd-foreground"]
 ### `httpd:2.2` - linux; s390x
 
 ```console
-$ docker pull httpd@sha256:39928f91f48aa5a845e89f6f478bcbc8340a3432b3c2936b29015e3a44adfd85
+$ docker pull httpd@sha256:fa00fdc69558b0e4e52f84fe602baad7cc46b70afdaab10baec9222f7a443e69
 ```
 
 -	Docker Version: 17.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **66.7 MB (66670696 bytes)**  
+-	Total Size: **66.7 MB (66690528 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a6eb14250c54a370fc0f0771407a4655178ffbaefcdf04da746b516b1c55d015`
+-	Image ID: `sha256:2ef535d4dd96f527bb919b969758430a9401910c071a4c187cc21897a9e9160e`
 -	Default Command: `["httpd-foreground"]`
 
 ```dockerfile
-# Mon, 09 Oct 2017 21:42:23 GMT
-ADD file:1c306ad85a0adf89bf603a6f6a34a1059ddfa0811704a847df3e785c487ee58f in / 
-# Mon, 09 Oct 2017 21:42:24 GMT
+# Tue, 12 Dec 2017 06:22:40 GMT
+ADD file:f85dc45c68f6f29cc10d6ef236674dedc10522f11b6fa2e8a6b10a4409ca0bc7 in / 
+# Tue, 12 Dec 2017 06:22:40 GMT
 CMD ["bash"]
-# Mon, 09 Oct 2017 22:23:37 GMT
+# Tue, 12 Dec 2017 07:24:19 GMT
 ENV HTTPD_PREFIX=/usr/local/apache2
-# Mon, 09 Oct 2017 22:23:38 GMT
+# Tue, 12 Dec 2017 07:24:19 GMT
 ENV PATH=/usr/local/apache2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 09 Oct 2017 22:23:38 GMT
+# Tue, 12 Dec 2017 07:24:19 GMT
 RUN mkdir -p "$HTTPD_PREFIX" 	&& chown www-data:www-data "$HTTPD_PREFIX"
-# Mon, 09 Oct 2017 22:23:39 GMT
+# Tue, 12 Dec 2017 07:24:24 GMT
 WORKDIR /usr/local/apache2
-# Mon, 09 Oct 2017 22:23:59 GMT
+# Tue, 12 Dec 2017 07:24:42 GMT
 RUN apt-get update 	&& apt-get install -y --no-install-recommends 		libapr1 		libaprutil1 		libaprutil1-ldap 		libapr1-dev 		libaprutil1-dev 		libpcre++0 		libssl1.0.0 	&& rm -r /var/lib/apt/lists/*
-# Mon, 09 Oct 2017 22:23:59 GMT
+# Tue, 12 Dec 2017 07:24:43 GMT
 ENV HTTPD_VERSION=2.2.34
-# Fri, 13 Oct 2017 20:31:29 GMT
+# Tue, 12 Dec 2017 07:24:43 GMT
 ENV HTTPD_SHA256=e53183d5dfac5740d768b4c9bea193b1099f4b06b57e5f28d7caaf9ea7498160
-# Fri, 13 Oct 2017 20:31:29 GMT
+# Tue, 12 Dec 2017 07:24:43 GMT
 ENV HTTPD_PATCHES=CVE-2017-9798-patch-2.2.patch 42c610f8a8f8d4d08664db6d9857120c2c252c9b388d56f238718854e6013e46
-# Fri, 13 Oct 2017 20:31:30 GMT
+# Tue, 12 Dec 2017 07:24:43 GMT
 ENV APACHE_DIST_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename= 	https://www-us.apache.org/dist/ 	https://www.apache.org/dist/ 	https://archive.apache.org/dist/
-# Fri, 13 Oct 2017 20:32:26 GMT
+# Tue, 12 Dec 2017 07:25:44 GMT
 RUN set -eux; 		buildDeps=' 		bzip2 		ca-certificates 		dpkg-dev 		gcc 		libpcre++-dev 		libssl-dev 		make 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends -V $buildDeps; 	rm -r /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in $APACHE_DIST_URLS; do 			if wget -O "$f" "$distUrl$distFile"; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'httpd.tar.bz2' "httpd/httpd-$HTTPD_VERSION.tar.bz2"; 	echo "$HTTPD_SHA256 *httpd.tar.bz2" | sha256sum -c -; 		ddist 'httpd.tar.bz2.asc' "httpd/httpd-$HTTPD_VERSION.tar.bz2.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B1B96F45DFBDCCF974019235193F180AB55D9977; 	gpg --batch --verify httpd.tar.bz2.asc httpd.tar.bz2; 	rm -rf "$GNUPGHOME" httpd.tar.bz2.asc; 		mkdir -p src; 	tar -xf httpd.tar.bz2 -C src --strip-components=1; 	rm httpd.tar.bz2; 	cd src; 		patches() { 		while [ "$#" -gt 0 ]; do 			local patchFile="$1"; shift; 			local patchSha256="$1"; shift; 			ddist "$patchFile" "httpd/patches/apply_to_$HTTPD_VERSION/$patchFile"; 			echo "$patchSha256 *$patchFile" | sha256sum -c -; 			patch -p0 < "$patchFile"; 			rm -f "$patchFile"; 		done; 	}; 	patches $HTTPD_PATCHES; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--prefix="$HTTPD_PREFIX" 		--enable-mods-shared='all ssl ldap cache proxy authn_alias mem_cache file_cache authnz_ldap charset_lite dav_lock disk_cache' 	; 	make -j "$(nproc)"; 	make install; 		cd ..; 	rm -r src man manual; 		sed -ri 		-e 's!^(\s*CustomLog)\s+\S+!\1 /proc/self/fd/1!g' 		-e 's!^(\s*ErrorLog)\s+\S+!\1 /proc/self/fd/2!g' 		"$HTTPD_PREFIX/conf/httpd.conf"; 		apt-get purge -y --auto-remove $buildDeps
-# Fri, 13 Oct 2017 20:32:27 GMT
+# Tue, 12 Dec 2017 07:25:44 GMT
 COPY file:13dfb9d570a3d651eb22e29b4d6b853be966d83b41885bf3a40ca64840fd3db2 in /usr/local/bin/ 
-# Fri, 13 Oct 2017 20:32:27 GMT
+# Tue, 12 Dec 2017 07:25:44 GMT
 EXPOSE 80/tcp
-# Fri, 13 Oct 2017 20:32:27 GMT
+# Tue, 12 Dec 2017 07:25:44 GMT
 CMD ["httpd-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:a0a92d62c165393786de44f21509e9a71868aa7c2765f0334d285aa2aa19a58f`  
-		Last Modified: Mon, 09 Oct 2017 21:46:27 GMT  
-		Size: 52.8 MB (52788868 bytes)  
+	-	`sha256:98cfcbfa76c6d2a42223dc7a44505bdd260000bffd3ecbb983cb33213128499b`  
+		Last Modified: Tue, 12 Dec 2017 06:28:05 GMT  
+		Size: 52.8 MB (52790322 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:69376e19590b2d5790d0bed6d6e3fb0067787852357440f646ec7915f830f9c4`  
-		Last Modified: Mon, 09 Oct 2017 22:27:51 GMT  
+	-	`sha256:4f0e3fa4627f7ea6ebd0c943061ff53bb2b4a3a08c6d1a5b393d2236356b6fce`  
+		Last Modified: Tue, 12 Dec 2017 07:28:35 GMT  
 		Size: 155.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:183ca600949cbc43d4477e1050f62b4f4214302d41648b3b5e125cb2af8f3ee8`  
-		Last Modified: Mon, 09 Oct 2017 22:27:54 GMT  
-		Size: 11.8 MB (11794168 bytes)  
+	-	`sha256:7bfb902d872bfede805d096227b2ffeb094431847b996df3c6522f5fb505a12e`  
+		Last Modified: Tue, 12 Dec 2017 07:28:37 GMT  
+		Size: 11.8 MB (11812697 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b91ae2937f9c68292578ee8402df74ca2d94459ac4c90c9750b082b968ffecff`  
-		Last Modified: Fri, 13 Oct 2017 20:36:20 GMT  
-		Size: 2.1 MB (2087201 bytes)  
+	-	`sha256:2b05f42015e866e2ecb7640f9bdad2af05f5befce6db4fd5648df8effec73f52`  
+		Last Modified: Tue, 12 Dec 2017 07:28:35 GMT  
+		Size: 2.1 MB (2087053 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eab800ed5d9af27d3bcd70d15c96cb782197dd773564412b2fcd047b86d9cc47`  
-		Last Modified: Fri, 13 Oct 2017 20:36:19 GMT  
-		Size: 304.0 B  
+	-	`sha256:d1c92941f8353ce09083ff0d83951757a79c38dc8b98c2a3b91d2dae4b2f7387`  
+		Last Modified: Tue, 12 Dec 2017 07:28:34 GMT  
+		Size: 301.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `httpd:2.2.34`
 
 ```console
-$ docker pull httpd@sha256:fa34fd50601b4533ba093c8d7bdef840e0cbd852ad33ed600562a7c161f687e5
+$ docker pull httpd@sha256:8f6e7b01966c9d76596c0f399124366f587318676606ab3c7c93a226e97491c9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1538,69 +1538,69 @@ CMD ["httpd-foreground"]
 ### `httpd:2.2.34` - linux; s390x
 
 ```console
-$ docker pull httpd@sha256:39928f91f48aa5a845e89f6f478bcbc8340a3432b3c2936b29015e3a44adfd85
+$ docker pull httpd@sha256:fa00fdc69558b0e4e52f84fe602baad7cc46b70afdaab10baec9222f7a443e69
 ```
 
 -	Docker Version: 17.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **66.7 MB (66670696 bytes)**  
+-	Total Size: **66.7 MB (66690528 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a6eb14250c54a370fc0f0771407a4655178ffbaefcdf04da746b516b1c55d015`
+-	Image ID: `sha256:2ef535d4dd96f527bb919b969758430a9401910c071a4c187cc21897a9e9160e`
 -	Default Command: `["httpd-foreground"]`
 
 ```dockerfile
-# Mon, 09 Oct 2017 21:42:23 GMT
-ADD file:1c306ad85a0adf89bf603a6f6a34a1059ddfa0811704a847df3e785c487ee58f in / 
-# Mon, 09 Oct 2017 21:42:24 GMT
+# Tue, 12 Dec 2017 06:22:40 GMT
+ADD file:f85dc45c68f6f29cc10d6ef236674dedc10522f11b6fa2e8a6b10a4409ca0bc7 in / 
+# Tue, 12 Dec 2017 06:22:40 GMT
 CMD ["bash"]
-# Mon, 09 Oct 2017 22:23:37 GMT
+# Tue, 12 Dec 2017 07:24:19 GMT
 ENV HTTPD_PREFIX=/usr/local/apache2
-# Mon, 09 Oct 2017 22:23:38 GMT
+# Tue, 12 Dec 2017 07:24:19 GMT
 ENV PATH=/usr/local/apache2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 09 Oct 2017 22:23:38 GMT
+# Tue, 12 Dec 2017 07:24:19 GMT
 RUN mkdir -p "$HTTPD_PREFIX" 	&& chown www-data:www-data "$HTTPD_PREFIX"
-# Mon, 09 Oct 2017 22:23:39 GMT
+# Tue, 12 Dec 2017 07:24:24 GMT
 WORKDIR /usr/local/apache2
-# Mon, 09 Oct 2017 22:23:59 GMT
+# Tue, 12 Dec 2017 07:24:42 GMT
 RUN apt-get update 	&& apt-get install -y --no-install-recommends 		libapr1 		libaprutil1 		libaprutil1-ldap 		libapr1-dev 		libaprutil1-dev 		libpcre++0 		libssl1.0.0 	&& rm -r /var/lib/apt/lists/*
-# Mon, 09 Oct 2017 22:23:59 GMT
+# Tue, 12 Dec 2017 07:24:43 GMT
 ENV HTTPD_VERSION=2.2.34
-# Fri, 13 Oct 2017 20:31:29 GMT
+# Tue, 12 Dec 2017 07:24:43 GMT
 ENV HTTPD_SHA256=e53183d5dfac5740d768b4c9bea193b1099f4b06b57e5f28d7caaf9ea7498160
-# Fri, 13 Oct 2017 20:31:29 GMT
+# Tue, 12 Dec 2017 07:24:43 GMT
 ENV HTTPD_PATCHES=CVE-2017-9798-patch-2.2.patch 42c610f8a8f8d4d08664db6d9857120c2c252c9b388d56f238718854e6013e46
-# Fri, 13 Oct 2017 20:31:30 GMT
+# Tue, 12 Dec 2017 07:24:43 GMT
 ENV APACHE_DIST_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename= 	https://www-us.apache.org/dist/ 	https://www.apache.org/dist/ 	https://archive.apache.org/dist/
-# Fri, 13 Oct 2017 20:32:26 GMT
+# Tue, 12 Dec 2017 07:25:44 GMT
 RUN set -eux; 		buildDeps=' 		bzip2 		ca-certificates 		dpkg-dev 		gcc 		libpcre++-dev 		libssl-dev 		make 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends -V $buildDeps; 	rm -r /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in $APACHE_DIST_URLS; do 			if wget -O "$f" "$distUrl$distFile"; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'httpd.tar.bz2' "httpd/httpd-$HTTPD_VERSION.tar.bz2"; 	echo "$HTTPD_SHA256 *httpd.tar.bz2" | sha256sum -c -; 		ddist 'httpd.tar.bz2.asc' "httpd/httpd-$HTTPD_VERSION.tar.bz2.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B1B96F45DFBDCCF974019235193F180AB55D9977; 	gpg --batch --verify httpd.tar.bz2.asc httpd.tar.bz2; 	rm -rf "$GNUPGHOME" httpd.tar.bz2.asc; 		mkdir -p src; 	tar -xf httpd.tar.bz2 -C src --strip-components=1; 	rm httpd.tar.bz2; 	cd src; 		patches() { 		while [ "$#" -gt 0 ]; do 			local patchFile="$1"; shift; 			local patchSha256="$1"; shift; 			ddist "$patchFile" "httpd/patches/apply_to_$HTTPD_VERSION/$patchFile"; 			echo "$patchSha256 *$patchFile" | sha256sum -c -; 			patch -p0 < "$patchFile"; 			rm -f "$patchFile"; 		done; 	}; 	patches $HTTPD_PATCHES; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--prefix="$HTTPD_PREFIX" 		--enable-mods-shared='all ssl ldap cache proxy authn_alias mem_cache file_cache authnz_ldap charset_lite dav_lock disk_cache' 	; 	make -j "$(nproc)"; 	make install; 		cd ..; 	rm -r src man manual; 		sed -ri 		-e 's!^(\s*CustomLog)\s+\S+!\1 /proc/self/fd/1!g' 		-e 's!^(\s*ErrorLog)\s+\S+!\1 /proc/self/fd/2!g' 		"$HTTPD_PREFIX/conf/httpd.conf"; 		apt-get purge -y --auto-remove $buildDeps
-# Fri, 13 Oct 2017 20:32:27 GMT
+# Tue, 12 Dec 2017 07:25:44 GMT
 COPY file:13dfb9d570a3d651eb22e29b4d6b853be966d83b41885bf3a40ca64840fd3db2 in /usr/local/bin/ 
-# Fri, 13 Oct 2017 20:32:27 GMT
+# Tue, 12 Dec 2017 07:25:44 GMT
 EXPOSE 80/tcp
-# Fri, 13 Oct 2017 20:32:27 GMT
+# Tue, 12 Dec 2017 07:25:44 GMT
 CMD ["httpd-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:a0a92d62c165393786de44f21509e9a71868aa7c2765f0334d285aa2aa19a58f`  
-		Last Modified: Mon, 09 Oct 2017 21:46:27 GMT  
-		Size: 52.8 MB (52788868 bytes)  
+	-	`sha256:98cfcbfa76c6d2a42223dc7a44505bdd260000bffd3ecbb983cb33213128499b`  
+		Last Modified: Tue, 12 Dec 2017 06:28:05 GMT  
+		Size: 52.8 MB (52790322 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:69376e19590b2d5790d0bed6d6e3fb0067787852357440f646ec7915f830f9c4`  
-		Last Modified: Mon, 09 Oct 2017 22:27:51 GMT  
+	-	`sha256:4f0e3fa4627f7ea6ebd0c943061ff53bb2b4a3a08c6d1a5b393d2236356b6fce`  
+		Last Modified: Tue, 12 Dec 2017 07:28:35 GMT  
 		Size: 155.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:183ca600949cbc43d4477e1050f62b4f4214302d41648b3b5e125cb2af8f3ee8`  
-		Last Modified: Mon, 09 Oct 2017 22:27:54 GMT  
-		Size: 11.8 MB (11794168 bytes)  
+	-	`sha256:7bfb902d872bfede805d096227b2ffeb094431847b996df3c6522f5fb505a12e`  
+		Last Modified: Tue, 12 Dec 2017 07:28:37 GMT  
+		Size: 11.8 MB (11812697 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b91ae2937f9c68292578ee8402df74ca2d94459ac4c90c9750b082b968ffecff`  
-		Last Modified: Fri, 13 Oct 2017 20:36:20 GMT  
-		Size: 2.1 MB (2087201 bytes)  
+	-	`sha256:2b05f42015e866e2ecb7640f9bdad2af05f5befce6db4fd5648df8effec73f52`  
+		Last Modified: Tue, 12 Dec 2017 07:28:35 GMT  
+		Size: 2.1 MB (2087053 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eab800ed5d9af27d3bcd70d15c96cb782197dd773564412b2fcd047b86d9cc47`  
-		Last Modified: Fri, 13 Oct 2017 20:36:19 GMT  
-		Size: 304.0 B  
+	-	`sha256:d1c92941f8353ce09083ff0d83951757a79c38dc8b98c2a3b91d2dae4b2f7387`  
+		Last Modified: Tue, 12 Dec 2017 07:28:34 GMT  
+		Size: 301.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `httpd:2.2.34-alpine`
@@ -1762,7 +1762,7 @@ CMD ["httpd-foreground"]
 ## `httpd:2.4`
 
 ```console
-$ docker pull httpd@sha256:4d14289f67e8068ba534fe3dad36eba663173b6c063250aeddfa93792cbcbb35
+$ docker pull httpd@sha256:caa83dda236f8774754285bf2b6f2a20416068e438eba740e0f6d1c23e7ecf87
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2282,91 +2282,91 @@ CMD ["httpd-foreground"]
 ### `httpd:2.4` - linux; s390x
 
 ```console
-$ docker pull httpd@sha256:8b576bfda0ffff78f1a7e626c6766cf020d019b6efb8007aeb6f3caf14146e6b
+$ docker pull httpd@sha256:81563bf279fa1b5904540f66c54e786235e79ecfc92ada7b5613360a01af0dff
 ```
 
 -	Docker Version: 17.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **68.8 MB (68839148 bytes)**  
+-	Total Size: **68.9 MB (68862335 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9172100cec217a7b06fe7fc620c68e3018a40d4df8ea22e456f2d3a04ce96c33`
+-	Image ID: `sha256:dce4ed8ed8fb316d31f418c4ddfc08d519701f95504727d918ffd94c35066528`
 -	Default Command: `["httpd-foreground"]`
 
 ```dockerfile
-# Mon, 09 Oct 2017 21:42:23 GMT
-ADD file:1c306ad85a0adf89bf603a6f6a34a1059ddfa0811704a847df3e785c487ee58f in / 
-# Mon, 09 Oct 2017 21:42:24 GMT
+# Tue, 12 Dec 2017 06:22:40 GMT
+ADD file:f85dc45c68f6f29cc10d6ef236674dedc10522f11b6fa2e8a6b10a4409ca0bc7 in / 
+# Tue, 12 Dec 2017 06:22:40 GMT
 CMD ["bash"]
-# Mon, 09 Oct 2017 21:42:30 GMT
+# Tue, 12 Dec 2017 06:22:50 GMT
 RUN echo 'deb http://deb.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/backports.list
-# Mon, 09 Oct 2017 22:25:11 GMT
+# Tue, 12 Dec 2017 07:26:11 GMT
 ENV HTTPD_PREFIX=/usr/local/apache2
-# Mon, 09 Oct 2017 22:25:11 GMT
+# Tue, 12 Dec 2017 07:26:11 GMT
 ENV PATH=/usr/local/apache2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 09 Oct 2017 22:25:12 GMT
+# Tue, 12 Dec 2017 07:26:12 GMT
 RUN mkdir -p "$HTTPD_PREFIX" 	&& chown www-data:www-data "$HTTPD_PREFIX"
-# Mon, 09 Oct 2017 22:25:12 GMT
+# Tue, 12 Dec 2017 07:26:16 GMT
 WORKDIR /usr/local/apache2
-# Mon, 09 Oct 2017 22:25:12 GMT
+# Tue, 12 Dec 2017 07:26:16 GMT
 ENV NGHTTP2_VERSION=1.18.1-1
-# Mon, 09 Oct 2017 22:25:12 GMT
+# Tue, 12 Dec 2017 07:26:16 GMT
 ENV OPENSSL_VERSION=1.0.2l-1~bpo8+1
-# Mon, 09 Oct 2017 22:25:13 GMT
+# Tue, 12 Dec 2017 07:26:17 GMT
 RUN { 		echo 'deb http://deb.debian.org/debian stretch main'; 	} > /etc/apt/sources.list.d/stretch.list 	&& { 		echo 'Package: *'; 		echo 'Pin: release n=stretch'; 		echo 'Pin-Priority: -10'; 		echo; 		echo 'Package: libnghttp2*'; 		echo "Pin: version $NGHTTP2_VERSION"; 		echo 'Pin-Priority: 990'; 		echo; 	} > /etc/apt/preferences.d/unstable-nghttp2
-# Mon, 09 Oct 2017 22:25:37 GMT
+# Tue, 12 Dec 2017 07:26:43 GMT
 RUN apt-get update 	&& apt-get install -y --no-install-recommends 		libapr1 		libaprutil1 		libaprutil1-ldap 		libapr1-dev 		libaprutil1-dev 		liblua5.2-0 		libnghttp2-14=$NGHTTP2_VERSION 		libpcre++0 		libssl1.0.0=$OPENSSL_VERSION 		libxml2 	&& rm -r /var/lib/apt/lists/*
-# Mon, 23 Oct 2017 20:31:33 GMT
+# Tue, 12 Dec 2017 07:26:47 GMT
 ENV HTTPD_VERSION=2.4.29
-# Mon, 23 Oct 2017 20:31:34 GMT
+# Tue, 12 Dec 2017 07:26:47 GMT
 ENV HTTPD_SHA256=777753a5a25568a2a27428b2214980564bc1c38c1abf9ccc7630b639991f7f00
-# Mon, 23 Oct 2017 20:31:34 GMT
+# Tue, 12 Dec 2017 07:26:47 GMT
 ENV HTTPD_PATCHES=
-# Mon, 23 Oct 2017 20:31:34 GMT
+# Tue, 12 Dec 2017 07:26:51 GMT
 ENV APACHE_DIST_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename= 	https://www-us.apache.org/dist/ 	https://www.apache.org/dist/ 	https://archive.apache.org/dist/
-# Mon, 23 Oct 2017 20:33:01 GMT
+# Tue, 12 Dec 2017 07:28:16 GMT
 RUN set -eux; 		buildDeps=" 		bzip2 		ca-certificates 		dpkg-dev 		gcc 		liblua5.2-dev 		libnghttp2-dev=$NGHTTP2_VERSION 		libpcre++-dev 		libssl-dev=$OPENSSL_VERSION 		libxml2-dev 		zlib1g-dev 		make 		wget 	"; 	apt-get update; 	apt-get install -y --no-install-recommends -V $buildDeps; 	rm -r /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in $APACHE_DIST_URLS; do 			if wget -O "$f" "$distUrl$distFile"; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'httpd.tar.bz2' "httpd/httpd-$HTTPD_VERSION.tar.bz2"; 	echo "$HTTPD_SHA256 *httpd.tar.bz2" | sha256sum -c -; 		ddist 'httpd.tar.bz2.asc' "httpd/httpd-$HTTPD_VERSION.tar.bz2.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys A93D62ECC3C8EA12DB220EC934EA76E6791485A8; 	gpg --batch --verify httpd.tar.bz2.asc httpd.tar.bz2; 	rm -rf "$GNUPGHOME" httpd.tar.bz2.asc; 		mkdir -p src; 	tar -xf httpd.tar.bz2 -C src --strip-components=1; 	rm httpd.tar.bz2; 	cd src; 		patches() { 		while [ "$#" -gt 0 ]; do 			local patchFile="$1"; shift; 			local patchSha256="$1"; shift; 			ddist "$patchFile" "httpd/patches/apply_to_$HTTPD_VERSION/$patchFile"; 			echo "$patchSha256 *$patchFile" | sha256sum -c -; 			patch -p0 < "$patchFile"; 			rm -f "$patchFile"; 		done; 	}; 	patches $HTTPD_PATCHES; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--prefix="$HTTPD_PREFIX" 		--enable-mods-shared=reallyall 	; 	make -j "$(nproc)"; 	make install; 		cd ..; 	rm -r src man manual; 		sed -ri 		-e 's!^(\s*CustomLog)\s+\S+!\1 /proc/self/fd/1!g' 		-e 's!^(\s*ErrorLog)\s+\S+!\1 /proc/self/fd/2!g' 		"$HTTPD_PREFIX/conf/httpd.conf"; 		apt-get purge -y --auto-remove $buildDeps
-# Mon, 23 Oct 2017 20:33:02 GMT
+# Tue, 12 Dec 2017 07:28:16 GMT
 COPY file:761e313354b918b6cd7ea99975a4f6b53ff5381ba689bab2984aec4dab597215 in /usr/local/bin/ 
-# Mon, 23 Oct 2017 20:33:02 GMT
+# Tue, 12 Dec 2017 07:28:17 GMT
 EXPOSE 80/tcp
-# Mon, 23 Oct 2017 20:33:02 GMT
+# Tue, 12 Dec 2017 07:28:17 GMT
 CMD ["httpd-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:a0a92d62c165393786de44f21509e9a71868aa7c2765f0334d285aa2aa19a58f`  
-		Last Modified: Mon, 09 Oct 2017 21:46:27 GMT  
-		Size: 52.8 MB (52788868 bytes)  
+	-	`sha256:98cfcbfa76c6d2a42223dc7a44505bdd260000bffd3ecbb983cb33213128499b`  
+		Last Modified: Tue, 12 Dec 2017 06:28:05 GMT  
+		Size: 52.8 MB (52790322 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d56e777c3379067dfad13d2aaa5da26ed5cb65dcad165a9176c44b8b2c561cb3`  
-		Last Modified: Mon, 09 Oct 2017 21:46:40 GMT  
-		Size: 220.0 B  
+	-	`sha256:cb0e1e2f6239d123dd1874e47c815a8ced217ce56da7f381d273a4a389d04d56`  
+		Last Modified: Tue, 12 Dec 2017 06:28:29 GMT  
+		Size: 224.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:55eb40f78ad84854b825a5bb4be4ff02c743ef29084a21c454098452027ececc`  
-		Last Modified: Mon, 09 Oct 2017 22:28:05 GMT  
-		Size: 154.0 B  
+	-	`sha256:1886d0b296ec8c62b7dde7efb15ec54bae39a25ad1d41b04514e6a34a58dd339`  
+		Last Modified: Tue, 12 Dec 2017 07:28:49 GMT  
+		Size: 155.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ddf8204313ff55d04e061e6d7b41358db31c2b6ab1a2a20d3da35a9c564ddf82`  
-		Last Modified: Mon, 09 Oct 2017 22:28:05 GMT  
-		Size: 341.0 B  
+	-	`sha256:a59a6f7e6534bcdbe86e9ceef21ddd8241ff1556c6b7a7c048d0c132b2e52adc`  
+		Last Modified: Tue, 12 Dec 2017 07:28:49 GMT  
+		Size: 340.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:83931eca269058b77bd2172a5a6898347d4dd233eac42105ff6a00a7f93ff608`  
-		Last Modified: Mon, 09 Oct 2017 22:28:08 GMT  
-		Size: 13.0 MB (13004860 bytes)  
+	-	`sha256:4423fb2aa36ada8eb9c272e06f30f4c41cd9fa682f06eb0f253fb10f3076670b`  
+		Last Modified: Tue, 12 Dec 2017 07:28:53 GMT  
+		Size: 13.0 MB (13026679 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:07d5bd42f5aa511ba01be83cdf54dedc7eb1c9a3e66b770646fa711051f4442c`  
-		Last Modified: Mon, 23 Oct 2017 20:33:12 GMT  
-		Size: 3.0 MB (3044403 bytes)  
+	-	`sha256:0b923b0f01949a8d9509f6b3b18cfa7fd542dd85134fc9ab5f643f53a034945f`  
+		Last Modified: Tue, 12 Dec 2017 07:28:50 GMT  
+		Size: 3.0 MB (3044315 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80834b45ecc40633b34f0f1eb1ea1e1795c53c5ad3289c3275ec71753f5f1af7`  
-		Last Modified: Mon, 23 Oct 2017 20:33:13 GMT  
-		Size: 302.0 B  
+	-	`sha256:6b74c3130b0fb23c8c7f32429f839e6ba8333ae00a486cfc437cebe6e2aa61ab`  
+		Last Modified: Tue, 12 Dec 2017 07:28:49 GMT  
+		Size: 300.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `httpd:2.4.29`
 
 ```console
-$ docker pull httpd@sha256:4d14289f67e8068ba534fe3dad36eba663173b6c063250aeddfa93792cbcbb35
+$ docker pull httpd@sha256:caa83dda236f8774754285bf2b6f2a20416068e438eba740e0f6d1c23e7ecf87
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2886,85 +2886,85 @@ CMD ["httpd-foreground"]
 ### `httpd:2.4.29` - linux; s390x
 
 ```console
-$ docker pull httpd@sha256:8b576bfda0ffff78f1a7e626c6766cf020d019b6efb8007aeb6f3caf14146e6b
+$ docker pull httpd@sha256:81563bf279fa1b5904540f66c54e786235e79ecfc92ada7b5613360a01af0dff
 ```
 
 -	Docker Version: 17.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **68.8 MB (68839148 bytes)**  
+-	Total Size: **68.9 MB (68862335 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9172100cec217a7b06fe7fc620c68e3018a40d4df8ea22e456f2d3a04ce96c33`
+-	Image ID: `sha256:dce4ed8ed8fb316d31f418c4ddfc08d519701f95504727d918ffd94c35066528`
 -	Default Command: `["httpd-foreground"]`
 
 ```dockerfile
-# Mon, 09 Oct 2017 21:42:23 GMT
-ADD file:1c306ad85a0adf89bf603a6f6a34a1059ddfa0811704a847df3e785c487ee58f in / 
-# Mon, 09 Oct 2017 21:42:24 GMT
+# Tue, 12 Dec 2017 06:22:40 GMT
+ADD file:f85dc45c68f6f29cc10d6ef236674dedc10522f11b6fa2e8a6b10a4409ca0bc7 in / 
+# Tue, 12 Dec 2017 06:22:40 GMT
 CMD ["bash"]
-# Mon, 09 Oct 2017 21:42:30 GMT
+# Tue, 12 Dec 2017 06:22:50 GMT
 RUN echo 'deb http://deb.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/backports.list
-# Mon, 09 Oct 2017 22:25:11 GMT
+# Tue, 12 Dec 2017 07:26:11 GMT
 ENV HTTPD_PREFIX=/usr/local/apache2
-# Mon, 09 Oct 2017 22:25:11 GMT
+# Tue, 12 Dec 2017 07:26:11 GMT
 ENV PATH=/usr/local/apache2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 09 Oct 2017 22:25:12 GMT
+# Tue, 12 Dec 2017 07:26:12 GMT
 RUN mkdir -p "$HTTPD_PREFIX" 	&& chown www-data:www-data "$HTTPD_PREFIX"
-# Mon, 09 Oct 2017 22:25:12 GMT
+# Tue, 12 Dec 2017 07:26:16 GMT
 WORKDIR /usr/local/apache2
-# Mon, 09 Oct 2017 22:25:12 GMT
+# Tue, 12 Dec 2017 07:26:16 GMT
 ENV NGHTTP2_VERSION=1.18.1-1
-# Mon, 09 Oct 2017 22:25:12 GMT
+# Tue, 12 Dec 2017 07:26:16 GMT
 ENV OPENSSL_VERSION=1.0.2l-1~bpo8+1
-# Mon, 09 Oct 2017 22:25:13 GMT
+# Tue, 12 Dec 2017 07:26:17 GMT
 RUN { 		echo 'deb http://deb.debian.org/debian stretch main'; 	} > /etc/apt/sources.list.d/stretch.list 	&& { 		echo 'Package: *'; 		echo 'Pin: release n=stretch'; 		echo 'Pin-Priority: -10'; 		echo; 		echo 'Package: libnghttp2*'; 		echo "Pin: version $NGHTTP2_VERSION"; 		echo 'Pin-Priority: 990'; 		echo; 	} > /etc/apt/preferences.d/unstable-nghttp2
-# Mon, 09 Oct 2017 22:25:37 GMT
+# Tue, 12 Dec 2017 07:26:43 GMT
 RUN apt-get update 	&& apt-get install -y --no-install-recommends 		libapr1 		libaprutil1 		libaprutil1-ldap 		libapr1-dev 		libaprutil1-dev 		liblua5.2-0 		libnghttp2-14=$NGHTTP2_VERSION 		libpcre++0 		libssl1.0.0=$OPENSSL_VERSION 		libxml2 	&& rm -r /var/lib/apt/lists/*
-# Mon, 23 Oct 2017 20:31:33 GMT
+# Tue, 12 Dec 2017 07:26:47 GMT
 ENV HTTPD_VERSION=2.4.29
-# Mon, 23 Oct 2017 20:31:34 GMT
+# Tue, 12 Dec 2017 07:26:47 GMT
 ENV HTTPD_SHA256=777753a5a25568a2a27428b2214980564bc1c38c1abf9ccc7630b639991f7f00
-# Mon, 23 Oct 2017 20:31:34 GMT
+# Tue, 12 Dec 2017 07:26:47 GMT
 ENV HTTPD_PATCHES=
-# Mon, 23 Oct 2017 20:31:34 GMT
+# Tue, 12 Dec 2017 07:26:51 GMT
 ENV APACHE_DIST_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename= 	https://www-us.apache.org/dist/ 	https://www.apache.org/dist/ 	https://archive.apache.org/dist/
-# Mon, 23 Oct 2017 20:33:01 GMT
+# Tue, 12 Dec 2017 07:28:16 GMT
 RUN set -eux; 		buildDeps=" 		bzip2 		ca-certificates 		dpkg-dev 		gcc 		liblua5.2-dev 		libnghttp2-dev=$NGHTTP2_VERSION 		libpcre++-dev 		libssl-dev=$OPENSSL_VERSION 		libxml2-dev 		zlib1g-dev 		make 		wget 	"; 	apt-get update; 	apt-get install -y --no-install-recommends -V $buildDeps; 	rm -r /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in $APACHE_DIST_URLS; do 			if wget -O "$f" "$distUrl$distFile"; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'httpd.tar.bz2' "httpd/httpd-$HTTPD_VERSION.tar.bz2"; 	echo "$HTTPD_SHA256 *httpd.tar.bz2" | sha256sum -c -; 		ddist 'httpd.tar.bz2.asc' "httpd/httpd-$HTTPD_VERSION.tar.bz2.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys A93D62ECC3C8EA12DB220EC934EA76E6791485A8; 	gpg --batch --verify httpd.tar.bz2.asc httpd.tar.bz2; 	rm -rf "$GNUPGHOME" httpd.tar.bz2.asc; 		mkdir -p src; 	tar -xf httpd.tar.bz2 -C src --strip-components=1; 	rm httpd.tar.bz2; 	cd src; 		patches() { 		while [ "$#" -gt 0 ]; do 			local patchFile="$1"; shift; 			local patchSha256="$1"; shift; 			ddist "$patchFile" "httpd/patches/apply_to_$HTTPD_VERSION/$patchFile"; 			echo "$patchSha256 *$patchFile" | sha256sum -c -; 			patch -p0 < "$patchFile"; 			rm -f "$patchFile"; 		done; 	}; 	patches $HTTPD_PATCHES; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--prefix="$HTTPD_PREFIX" 		--enable-mods-shared=reallyall 	; 	make -j "$(nproc)"; 	make install; 		cd ..; 	rm -r src man manual; 		sed -ri 		-e 's!^(\s*CustomLog)\s+\S+!\1 /proc/self/fd/1!g' 		-e 's!^(\s*ErrorLog)\s+\S+!\1 /proc/self/fd/2!g' 		"$HTTPD_PREFIX/conf/httpd.conf"; 		apt-get purge -y --auto-remove $buildDeps
-# Mon, 23 Oct 2017 20:33:02 GMT
+# Tue, 12 Dec 2017 07:28:16 GMT
 COPY file:761e313354b918b6cd7ea99975a4f6b53ff5381ba689bab2984aec4dab597215 in /usr/local/bin/ 
-# Mon, 23 Oct 2017 20:33:02 GMT
+# Tue, 12 Dec 2017 07:28:17 GMT
 EXPOSE 80/tcp
-# Mon, 23 Oct 2017 20:33:02 GMT
+# Tue, 12 Dec 2017 07:28:17 GMT
 CMD ["httpd-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:a0a92d62c165393786de44f21509e9a71868aa7c2765f0334d285aa2aa19a58f`  
-		Last Modified: Mon, 09 Oct 2017 21:46:27 GMT  
-		Size: 52.8 MB (52788868 bytes)  
+	-	`sha256:98cfcbfa76c6d2a42223dc7a44505bdd260000bffd3ecbb983cb33213128499b`  
+		Last Modified: Tue, 12 Dec 2017 06:28:05 GMT  
+		Size: 52.8 MB (52790322 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d56e777c3379067dfad13d2aaa5da26ed5cb65dcad165a9176c44b8b2c561cb3`  
-		Last Modified: Mon, 09 Oct 2017 21:46:40 GMT  
-		Size: 220.0 B  
+	-	`sha256:cb0e1e2f6239d123dd1874e47c815a8ced217ce56da7f381d273a4a389d04d56`  
+		Last Modified: Tue, 12 Dec 2017 06:28:29 GMT  
+		Size: 224.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:55eb40f78ad84854b825a5bb4be4ff02c743ef29084a21c454098452027ececc`  
-		Last Modified: Mon, 09 Oct 2017 22:28:05 GMT  
-		Size: 154.0 B  
+	-	`sha256:1886d0b296ec8c62b7dde7efb15ec54bae39a25ad1d41b04514e6a34a58dd339`  
+		Last Modified: Tue, 12 Dec 2017 07:28:49 GMT  
+		Size: 155.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ddf8204313ff55d04e061e6d7b41358db31c2b6ab1a2a20d3da35a9c564ddf82`  
-		Last Modified: Mon, 09 Oct 2017 22:28:05 GMT  
-		Size: 341.0 B  
+	-	`sha256:a59a6f7e6534bcdbe86e9ceef21ddd8241ff1556c6b7a7c048d0c132b2e52adc`  
+		Last Modified: Tue, 12 Dec 2017 07:28:49 GMT  
+		Size: 340.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:83931eca269058b77bd2172a5a6898347d4dd233eac42105ff6a00a7f93ff608`  
-		Last Modified: Mon, 09 Oct 2017 22:28:08 GMT  
-		Size: 13.0 MB (13004860 bytes)  
+	-	`sha256:4423fb2aa36ada8eb9c272e06f30f4c41cd9fa682f06eb0f253fb10f3076670b`  
+		Last Modified: Tue, 12 Dec 2017 07:28:53 GMT  
+		Size: 13.0 MB (13026679 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:07d5bd42f5aa511ba01be83cdf54dedc7eb1c9a3e66b770646fa711051f4442c`  
-		Last Modified: Mon, 23 Oct 2017 20:33:12 GMT  
-		Size: 3.0 MB (3044403 bytes)  
+	-	`sha256:0b923b0f01949a8d9509f6b3b18cfa7fd542dd85134fc9ab5f643f53a034945f`  
+		Last Modified: Tue, 12 Dec 2017 07:28:50 GMT  
+		Size: 3.0 MB (3044315 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80834b45ecc40633b34f0f1eb1ea1e1795c53c5ad3289c3275ec71753f5f1af7`  
-		Last Modified: Mon, 23 Oct 2017 20:33:13 GMT  
-		Size: 302.0 B  
+	-	`sha256:6b74c3130b0fb23c8c7f32429f839e6ba8333ae00a486cfc437cebe6e2aa61ab`  
+		Last Modified: Tue, 12 Dec 2017 07:28:49 GMT  
+		Size: 300.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `httpd:2.4.29-alpine`
@@ -4782,7 +4782,7 @@ CMD ["httpd-foreground"]
 ## `httpd:latest`
 
 ```console
-$ docker pull httpd@sha256:4d14289f67e8068ba534fe3dad36eba663173b6c063250aeddfa93792cbcbb35
+$ docker pull httpd@sha256:caa83dda236f8774754285bf2b6f2a20416068e438eba740e0f6d1c23e7ecf87
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5302,83 +5302,83 @@ CMD ["httpd-foreground"]
 ### `httpd:latest` - linux; s390x
 
 ```console
-$ docker pull httpd@sha256:8b576bfda0ffff78f1a7e626c6766cf020d019b6efb8007aeb6f3caf14146e6b
+$ docker pull httpd@sha256:81563bf279fa1b5904540f66c54e786235e79ecfc92ada7b5613360a01af0dff
 ```
 
 -	Docker Version: 17.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **68.8 MB (68839148 bytes)**  
+-	Total Size: **68.9 MB (68862335 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9172100cec217a7b06fe7fc620c68e3018a40d4df8ea22e456f2d3a04ce96c33`
+-	Image ID: `sha256:dce4ed8ed8fb316d31f418c4ddfc08d519701f95504727d918ffd94c35066528`
 -	Default Command: `["httpd-foreground"]`
 
 ```dockerfile
-# Mon, 09 Oct 2017 21:42:23 GMT
-ADD file:1c306ad85a0adf89bf603a6f6a34a1059ddfa0811704a847df3e785c487ee58f in / 
-# Mon, 09 Oct 2017 21:42:24 GMT
+# Tue, 12 Dec 2017 06:22:40 GMT
+ADD file:f85dc45c68f6f29cc10d6ef236674dedc10522f11b6fa2e8a6b10a4409ca0bc7 in / 
+# Tue, 12 Dec 2017 06:22:40 GMT
 CMD ["bash"]
-# Mon, 09 Oct 2017 21:42:30 GMT
+# Tue, 12 Dec 2017 06:22:50 GMT
 RUN echo 'deb http://deb.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/backports.list
-# Mon, 09 Oct 2017 22:25:11 GMT
+# Tue, 12 Dec 2017 07:26:11 GMT
 ENV HTTPD_PREFIX=/usr/local/apache2
-# Mon, 09 Oct 2017 22:25:11 GMT
+# Tue, 12 Dec 2017 07:26:11 GMT
 ENV PATH=/usr/local/apache2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 09 Oct 2017 22:25:12 GMT
+# Tue, 12 Dec 2017 07:26:12 GMT
 RUN mkdir -p "$HTTPD_PREFIX" 	&& chown www-data:www-data "$HTTPD_PREFIX"
-# Mon, 09 Oct 2017 22:25:12 GMT
+# Tue, 12 Dec 2017 07:26:16 GMT
 WORKDIR /usr/local/apache2
-# Mon, 09 Oct 2017 22:25:12 GMT
+# Tue, 12 Dec 2017 07:26:16 GMT
 ENV NGHTTP2_VERSION=1.18.1-1
-# Mon, 09 Oct 2017 22:25:12 GMT
+# Tue, 12 Dec 2017 07:26:16 GMT
 ENV OPENSSL_VERSION=1.0.2l-1~bpo8+1
-# Mon, 09 Oct 2017 22:25:13 GMT
+# Tue, 12 Dec 2017 07:26:17 GMT
 RUN { 		echo 'deb http://deb.debian.org/debian stretch main'; 	} > /etc/apt/sources.list.d/stretch.list 	&& { 		echo 'Package: *'; 		echo 'Pin: release n=stretch'; 		echo 'Pin-Priority: -10'; 		echo; 		echo 'Package: libnghttp2*'; 		echo "Pin: version $NGHTTP2_VERSION"; 		echo 'Pin-Priority: 990'; 		echo; 	} > /etc/apt/preferences.d/unstable-nghttp2
-# Mon, 09 Oct 2017 22:25:37 GMT
+# Tue, 12 Dec 2017 07:26:43 GMT
 RUN apt-get update 	&& apt-get install -y --no-install-recommends 		libapr1 		libaprutil1 		libaprutil1-ldap 		libapr1-dev 		libaprutil1-dev 		liblua5.2-0 		libnghttp2-14=$NGHTTP2_VERSION 		libpcre++0 		libssl1.0.0=$OPENSSL_VERSION 		libxml2 	&& rm -r /var/lib/apt/lists/*
-# Mon, 23 Oct 2017 20:31:33 GMT
+# Tue, 12 Dec 2017 07:26:47 GMT
 ENV HTTPD_VERSION=2.4.29
-# Mon, 23 Oct 2017 20:31:34 GMT
+# Tue, 12 Dec 2017 07:26:47 GMT
 ENV HTTPD_SHA256=777753a5a25568a2a27428b2214980564bc1c38c1abf9ccc7630b639991f7f00
-# Mon, 23 Oct 2017 20:31:34 GMT
+# Tue, 12 Dec 2017 07:26:47 GMT
 ENV HTTPD_PATCHES=
-# Mon, 23 Oct 2017 20:31:34 GMT
+# Tue, 12 Dec 2017 07:26:51 GMT
 ENV APACHE_DIST_URLS=https://www.apache.org/dyn/closer.cgi?action=download&filename= 	https://www-us.apache.org/dist/ 	https://www.apache.org/dist/ 	https://archive.apache.org/dist/
-# Mon, 23 Oct 2017 20:33:01 GMT
+# Tue, 12 Dec 2017 07:28:16 GMT
 RUN set -eux; 		buildDeps=" 		bzip2 		ca-certificates 		dpkg-dev 		gcc 		liblua5.2-dev 		libnghttp2-dev=$NGHTTP2_VERSION 		libpcre++-dev 		libssl-dev=$OPENSSL_VERSION 		libxml2-dev 		zlib1g-dev 		make 		wget 	"; 	apt-get update; 	apt-get install -y --no-install-recommends -V $buildDeps; 	rm -r /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in $APACHE_DIST_URLS; do 			if wget -O "$f" "$distUrl$distFile"; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'httpd.tar.bz2' "httpd/httpd-$HTTPD_VERSION.tar.bz2"; 	echo "$HTTPD_SHA256 *httpd.tar.bz2" | sha256sum -c -; 		ddist 'httpd.tar.bz2.asc' "httpd/httpd-$HTTPD_VERSION.tar.bz2.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys A93D62ECC3C8EA12DB220EC934EA76E6791485A8; 	gpg --batch --verify httpd.tar.bz2.asc httpd.tar.bz2; 	rm -rf "$GNUPGHOME" httpd.tar.bz2.asc; 		mkdir -p src; 	tar -xf httpd.tar.bz2 -C src --strip-components=1; 	rm httpd.tar.bz2; 	cd src; 		patches() { 		while [ "$#" -gt 0 ]; do 			local patchFile="$1"; shift; 			local patchSha256="$1"; shift; 			ddist "$patchFile" "httpd/patches/apply_to_$HTTPD_VERSION/$patchFile"; 			echo "$patchSha256 *$patchFile" | sha256sum -c -; 			patch -p0 < "$patchFile"; 			rm -f "$patchFile"; 		done; 	}; 	patches $HTTPD_PATCHES; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--prefix="$HTTPD_PREFIX" 		--enable-mods-shared=reallyall 	; 	make -j "$(nproc)"; 	make install; 		cd ..; 	rm -r src man manual; 		sed -ri 		-e 's!^(\s*CustomLog)\s+\S+!\1 /proc/self/fd/1!g' 		-e 's!^(\s*ErrorLog)\s+\S+!\1 /proc/self/fd/2!g' 		"$HTTPD_PREFIX/conf/httpd.conf"; 		apt-get purge -y --auto-remove $buildDeps
-# Mon, 23 Oct 2017 20:33:02 GMT
+# Tue, 12 Dec 2017 07:28:16 GMT
 COPY file:761e313354b918b6cd7ea99975a4f6b53ff5381ba689bab2984aec4dab597215 in /usr/local/bin/ 
-# Mon, 23 Oct 2017 20:33:02 GMT
+# Tue, 12 Dec 2017 07:28:17 GMT
 EXPOSE 80/tcp
-# Mon, 23 Oct 2017 20:33:02 GMT
+# Tue, 12 Dec 2017 07:28:17 GMT
 CMD ["httpd-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:a0a92d62c165393786de44f21509e9a71868aa7c2765f0334d285aa2aa19a58f`  
-		Last Modified: Mon, 09 Oct 2017 21:46:27 GMT  
-		Size: 52.8 MB (52788868 bytes)  
+	-	`sha256:98cfcbfa76c6d2a42223dc7a44505bdd260000bffd3ecbb983cb33213128499b`  
+		Last Modified: Tue, 12 Dec 2017 06:28:05 GMT  
+		Size: 52.8 MB (52790322 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d56e777c3379067dfad13d2aaa5da26ed5cb65dcad165a9176c44b8b2c561cb3`  
-		Last Modified: Mon, 09 Oct 2017 21:46:40 GMT  
-		Size: 220.0 B  
+	-	`sha256:cb0e1e2f6239d123dd1874e47c815a8ced217ce56da7f381d273a4a389d04d56`  
+		Last Modified: Tue, 12 Dec 2017 06:28:29 GMT  
+		Size: 224.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:55eb40f78ad84854b825a5bb4be4ff02c743ef29084a21c454098452027ececc`  
-		Last Modified: Mon, 09 Oct 2017 22:28:05 GMT  
-		Size: 154.0 B  
+	-	`sha256:1886d0b296ec8c62b7dde7efb15ec54bae39a25ad1d41b04514e6a34a58dd339`  
+		Last Modified: Tue, 12 Dec 2017 07:28:49 GMT  
+		Size: 155.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ddf8204313ff55d04e061e6d7b41358db31c2b6ab1a2a20d3da35a9c564ddf82`  
-		Last Modified: Mon, 09 Oct 2017 22:28:05 GMT  
-		Size: 341.0 B  
+	-	`sha256:a59a6f7e6534bcdbe86e9ceef21ddd8241ff1556c6b7a7c048d0c132b2e52adc`  
+		Last Modified: Tue, 12 Dec 2017 07:28:49 GMT  
+		Size: 340.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:83931eca269058b77bd2172a5a6898347d4dd233eac42105ff6a00a7f93ff608`  
-		Last Modified: Mon, 09 Oct 2017 22:28:08 GMT  
-		Size: 13.0 MB (13004860 bytes)  
+	-	`sha256:4423fb2aa36ada8eb9c272e06f30f4c41cd9fa682f06eb0f253fb10f3076670b`  
+		Last Modified: Tue, 12 Dec 2017 07:28:53 GMT  
+		Size: 13.0 MB (13026679 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:07d5bd42f5aa511ba01be83cdf54dedc7eb1c9a3e66b770646fa711051f4442c`  
-		Last Modified: Mon, 23 Oct 2017 20:33:12 GMT  
-		Size: 3.0 MB (3044403 bytes)  
+	-	`sha256:0b923b0f01949a8d9509f6b3b18cfa7fd542dd85134fc9ab5f643f53a034945f`  
+		Last Modified: Tue, 12 Dec 2017 07:28:50 GMT  
+		Size: 3.0 MB (3044315 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80834b45ecc40633b34f0f1eb1ea1e1795c53c5ad3289c3275ec71753f5f1af7`  
-		Last Modified: Mon, 23 Oct 2017 20:33:13 GMT  
-		Size: 302.0 B  
+	-	`sha256:6b74c3130b0fb23c8c7f32429f839e6ba8333ae00a486cfc437cebe6e2aa61ab`  
+		Last Modified: Tue, 12 Dec 2017 07:28:49 GMT  
+		Size: 300.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
