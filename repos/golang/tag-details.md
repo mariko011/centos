@@ -41,24 +41,28 @@
 -	[`golang:1.9.2`](#golang192)
 -	[`golang:1.9.2-alpine`](#golang192-alpine)
 -	[`golang:1.9.2-alpine3.6`](#golang192-alpine36)
+-	[`golang:1.9.2-alpine3.7`](#golang192-alpine37)
 -	[`golang:1.9.2-nanoserver-sac2016`](#golang192-nanoserver-sac2016)
 -	[`golang:1.9.2-stretch`](#golang192-stretch)
 -	[`golang:1.9.2-windowsservercore-1709`](#golang192-windowsservercore-1709)
 -	[`golang:1.9.2-windowsservercore-ltsc2016`](#golang192-windowsservercore-ltsc2016)
 -	[`golang:1.9-alpine`](#golang19-alpine)
 -	[`golang:1.9-alpine3.6`](#golang19-alpine36)
+-	[`golang:1.9-alpine3.7`](#golang19-alpine37)
 -	[`golang:1.9-nanoserver-sac2016`](#golang19-nanoserver-sac2016)
 -	[`golang:1.9-stretch`](#golang19-stretch)
 -	[`golang:1.9-windowsservercore-1709`](#golang19-windowsservercore-1709)
 -	[`golang:1.9-windowsservercore-ltsc2016`](#golang19-windowsservercore-ltsc2016)
 -	[`golang:1-alpine`](#golang1-alpine)
 -	[`golang:1-alpine3.6`](#golang1-alpine36)
+-	[`golang:1-alpine3.7`](#golang1-alpine37)
 -	[`golang:1-nanoserver-sac2016`](#golang1-nanoserver-sac2016)
 -	[`golang:1-stretch`](#golang1-stretch)
 -	[`golang:1-windowsservercore-1709`](#golang1-windowsservercore-1709)
 -	[`golang:1-windowsservercore-ltsc2016`](#golang1-windowsservercore-ltsc2016)
 -	[`golang:alpine`](#golangalpine)
 -	[`golang:alpine3.6`](#golangalpine36)
+-	[`golang:alpine3.7`](#golangalpine37)
 -	[`golang:latest`](#golanglatest)
 -	[`golang:nanoserver`](#golangnanoserver)
 -	[`golang:nanoserver-sac2016`](#golangnanoserver-sac2016)
@@ -12859,6 +12863,10 @@ COPY file:ea7c9f4702f94a0df05f60648914e97f7876c4a7c5163e7870dd98fa896ff722 in /u
 		Size: 1.4 KB (1354 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `golang:1.9.2-alpine3.7`
+
+**does not exist** (yet?)
+
 ## `golang:1.9.2-nanoserver-sac2016`
 
 ```console
@@ -14478,6 +14486,10 @@ COPY file:ea7c9f4702f94a0df05f60648914e97f7876c4a7c5163e7870dd98fa896ff722 in /u
 		Last Modified: Tue, 28 Nov 2017 11:42:01 GMT  
 		Size: 1.4 KB (1354 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `golang:1.9-alpine3.7`
+
+**does not exist** (yet?)
 
 ## `golang:1.9-nanoserver-sac2016`
 
@@ -16099,6 +16111,10 @@ COPY file:ea7c9f4702f94a0df05f60648914e97f7876c4a7c5163e7870dd98fa896ff722 in /u
 		Size: 1.4 KB (1354 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `golang:1-alpine3.7`
+
+**does not exist** (yet?)
+
 ## `golang:1-nanoserver-sac2016`
 
 ```console
@@ -17718,6 +17734,10 @@ COPY file:ea7c9f4702f94a0df05f60648914e97f7876c4a7c5163e7870dd98fa896ff722 in /u
 		Last Modified: Tue, 28 Nov 2017 11:42:01 GMT  
 		Size: 1.4 KB (1354 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `golang:alpine3.7`
+
+**does not exist** (yet?)
 
 ## `golang:latest`
 
