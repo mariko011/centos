@@ -1,7 +1,7 @@
 ## `erlang:20-slim`
 
 ```console
-$ docker pull erlang@sha256:6d113435f826e1dec6377ef1780a8840a20b48e1d23865a0081ddaad175afd12
+$ docker pull erlang@sha256:12e4eaa7faec956b9830ad6ce14946fb0ff63825022fab15f0a1b8300a04b9c8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16,37 +16,37 @@ $ docker pull erlang@sha256:6d113435f826e1dec6377ef1780a8840a20b48e1d23865a0081d
 ### `erlang:20-slim` - linux; amd64
 
 ```console
-$ docker pull erlang@sha256:818327e94e4064d023f001e9b3edc851900e3f10e1b7b0446cb02baa1adc0735
+$ docker pull erlang@sha256:9e514b9cce317724cbb3e117c81f841f105158458373381f8fa6a8e04ba5a3fc
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **116.5 MB (116451237 bytes)**  
+-	Total Size: **116.5 MB (116482274 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2182c96a85fe4542937316ad732d72ed6cad3666659aef70332d83e593b77adb`
+-	Image ID: `sha256:cbaf6f99a558d896645b8c2c34cb0d784115548afb347ba21a13afb7e6c8abb2`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Sat, 04 Nov 2017 05:21:35 GMT
-ADD file:55b071e2cfc3ea2f4bbf048d7d676e3c06a77a9a98d63f7af291f3decb495ec8 in / 
-# Sat, 04 Nov 2017 05:21:36 GMT
+# Tue, 12 Dec 2017 01:41:12 GMT
+ADD file:1dd78a123212328bdc72ef7888024ea27fe141a72e24e0ea7c3c92b63b73d8d1 in / 
+# Tue, 12 Dec 2017 01:41:12 GMT
 CMD ["bash"]
-# Mon, 27 Nov 2017 23:00:35 GMT
+# Tue, 12 Dec 2017 04:00:09 GMT
 ENV OTP_VERSION=20.1.7
-# Mon, 27 Nov 2017 23:06:14 GMT
+# Tue, 12 Dec 2017 04:06:30 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="4981aa41a78039e8353e3f8b349f5423c582c05ccef46a15420006e8dbb3f502" 	&& fetchDeps=' 		curl 		ca-certificates' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $fetchDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& runtimeDeps=' 		libodbc1 		libssl1.0.0 		libsctp1 	' 	&& buildDeps=' 		autoconf 		dpkg-dev 		gcc 		g++ 		make 		libncurses-dev 		unixodbc-dev 		libssl-dev 		libsctp-dev 	' 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps $fetchDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/*
-# Mon, 27 Nov 2017 23:06:15 GMT
+# Tue, 12 Dec 2017 04:07:04 GMT
 CMD ["erl"]
 ```
 
 -	Layers:
-	-	`sha256:85b1f47fba49da65256f07c8790542a3880e9216f9c491965040f35ce2c6ca7a`  
-		Last Modified: Mon, 09 Oct 2017 21:36:40 GMT  
-		Size: 52.6 MB (52595124 bytes)  
+	-	`sha256:f49cf87b52c10aa83b4f4405800527a74400fb19ea1821d209293bc4d53966aa`  
+		Last Modified: Tue, 12 Dec 2017 01:47:59 GMT  
+		Size: 52.6 MB (52599697 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7d95c4b24350b97078b3d8f65025dece6c1ac9dcfa30ec4eefbb8feaed07ddec`  
-		Last Modified: Mon, 27 Nov 2017 23:45:04 GMT  
-		Size: 63.9 MB (63856113 bytes)  
+	-	`sha256:475e76822c28d7467ded8682e9a22baba3b623af89674de52f05c10c73339728`  
+		Last Modified: Tue, 12 Dec 2017 04:49:52 GMT  
+		Size: 63.9 MB (63882577 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `erlang:20-slim` - linux; arm variant v7

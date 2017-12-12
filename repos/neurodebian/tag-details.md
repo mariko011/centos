@@ -434,7 +434,7 @@ RUN sed -i -e 's,main *$,main contrib non-free,g' /etc/apt/sources.list.d/neurod
 ## `neurodebian:latest`
 
 ```console
-$ docker pull neurodebian@sha256:6c8da4048caaad55169f5003859b0e7b79772e6f70c90000cd6a8dc90ec8567b
+$ docker pull neurodebian@sha256:915b02638c6fa4d5d0be2340814c7839d4215c71bcc9fb4b386b7a97d90cf080
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -444,45 +444,45 @@ $ docker pull neurodebian@sha256:6c8da4048caaad55169f5003859b0e7b79772e6f70c9000
 ### `neurodebian:latest` - linux; amd64
 
 ```console
-$ docker pull neurodebian@sha256:ce50233a0860de42adf008cd0e65c52ddb8e4b57b04c59fc9bb12040aeef2d89
+$ docker pull neurodebian@sha256:b96500728786952b3c3d9388d361c87615dcc40e6177c95334a04249a77ee55d
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **52.1 MB (52053413 bytes)**  
+-	Total Size: **52.0 MB (52046130 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6866a56932ca98c91208657b0c52bd45c9e33a75f985f93406c9ebec75c9a4f1`
+-	Image ID: `sha256:3774bff0d12f887dee9302fd8ee89f86b6daa7c80c854e01b93a42ceef3e0170`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Sat, 04 Nov 2017 05:26:40 GMT
-ADD file:a71e077a42995a68ffe4834d85cfe26af4ea12aa8ed43decc03cc487124b1f70 in / 
-# Sat, 04 Nov 2017 05:26:40 GMT
+# Tue, 12 Dec 2017 01:44:20 GMT
+ADD file:eb2519421c9794ccc99d483c07f59ba305531bc9b4dc294e74d2ddb7de69e52a in / 
+# Tue, 12 Dec 2017 01:44:21 GMT
 CMD ["bash"]
-# Sat, 04 Nov 2017 08:42:16 GMT
+# Tue, 12 Dec 2017 05:11:13 GMT
 RUN set -x 	&& apt-get update 	&& { 		which gpg 		|| apt-get install -y --no-install-recommends gnupg 	; } 	&& { 		gpg --version | grep -q '^gpg (GnuPG) 1\.' 		|| apt-get install -y --no-install-recommends dirmngr 	; } 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 04 Nov 2017 08:42:20 GMT
+# Tue, 12 Dec 2017 05:11:16 GMT
 RUN set -x 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys DD95CC430502E37EF840ACEEA5D32F012649A5A9 	&& gpg --export DD95CC430502E37EF840ACEEA5D32F012649A5A9 > /etc/apt/trusted.gpg.d/neurodebian.gpg 	&& rm -rf "$GNUPGHOME" 	&& apt-key list | grep neurodebian
-# Sat, 04 Nov 2017 08:42:20 GMT
+# Tue, 12 Dec 2017 05:11:17 GMT
 RUN { 	echo 'deb http://neuro.debian.net/debian stretch main'; 	echo 'deb http://neuro.debian.net/debian data main'; 	echo '#deb-src http://neuro.debian.net/debian-devel stretch main'; } > /etc/apt/sources.list.d/neurodebian.sources.list
 ```
 
 -	Layers:
-	-	`sha256:3e17c6eae66cd23c59751c8d8f5eaf7044e0611dc5cebb12b1273be07cdac242`  
-		Last Modified: Mon, 09 Oct 2017 21:41:38 GMT  
-		Size: 45.1 MB (45129088 bytes)  
+	-	`sha256:723254a2c089166d4bcfa917be0181ddbecd94971ebfe85792d96e7e29be9c68`  
+		Last Modified: Tue, 12 Dec 2017 01:53:22 GMT  
+		Size: 45.1 MB (45121631 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:716975cab0bae2269170a233a5f350ad9828a8cf4fefa2de1d1b154855a8a110`  
-		Last Modified: Sat, 04 Nov 2017 08:45:35 GMT  
-		Size: 6.9 MB (6920931 bytes)  
+	-	`sha256:903a3361edfe546347791abd69fdc03964c6e38b677f6e4f4fdc7ea91cad41c2`  
+		Last Modified: Tue, 12 Dec 2017 05:14:53 GMT  
+		Size: 6.9 MB (6921105 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:acc7866957e8d373ac4de1e43736da5bb4d023c712c8d176f20a40fd9d16cada`  
-		Last Modified: Sat, 04 Nov 2017 08:45:34 GMT  
-		Size: 3.1 KB (3150 bytes)  
+	-	`sha256:82044c1dc330875b58c30afacb34137a9638112834e3f2bd7818e3cfd40096bd`  
+		Last Modified: Tue, 12 Dec 2017 05:14:51 GMT  
+		Size: 3.2 KB (3151 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d38d1f1f34f25c25b76f495bfff60c00a0abf2b8ca6ea1db78e2b7e1f1037211`  
-		Last Modified: Sat, 04 Nov 2017 08:45:34 GMT  
-		Size: 244.0 B  
+	-	`sha256:7c2b95a3fe3cfd11eeeaba2b9a149be6425e002b2ce5d332529dd5046d42126e`  
+		Last Modified: Tue, 12 Dec 2017 05:14:51 GMT  
+		Size: 243.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `neurodebian:nd`
