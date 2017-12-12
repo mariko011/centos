@@ -10,6 +10,10 @@
 -	[`geonetwork:3.2.2`](#geonetwork322)
 -	[`geonetwork:3.2.2-postgres`](#geonetwork322-postgres)
 -	[`geonetwork:3.2-postgres`](#geonetwork32-postgres)
+-	[`geonetwork:3.4`](#geonetwork34)
+-	[`geonetwork:3.4.0`](#geonetwork340)
+-	[`geonetwork:3.4.0-postgres`](#geonetwork340-postgres)
+-	[`geonetwork:3.4-postgres`](#geonetwork34-postgres)
 -	[`geonetwork:latest`](#geonetworklatest)
 -	[`geonetwork:postgres`](#geonetworkpostgres)
 
@@ -1508,6 +1512,22 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Tue, 14 Nov 2017 18:35:03 GMT  
 		Size: 927.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `geonetwork:3.4`
+
+**does not exist** (yet?)
+
+## `geonetwork:3.4.0`
+
+**does not exist** (yet?)
+
+## `geonetwork:3.4.0-postgres`
+
+**does not exist** (yet?)
+
+## `geonetwork:3.4-postgres`
+
+**does not exist** (yet?)
 
 ## `geonetwork:latest`
 
