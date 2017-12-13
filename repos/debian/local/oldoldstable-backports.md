@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:90299ebbb1caf4dbd8128d73428f0492614fa7fa2253e76fe47232a22548a7a4`
-- Created: `2017-11-04T05:23:16.6577091Z`
-- Virtual Size: ~ 85.15 Mb  
+- Image ID: `sha256:c0a7a8b43df72831d68769eb845c050b19d975bf965b8c4e0a1b67a0bd800aab`
+- Created: `2017-12-12T01:41:59.469936439Z`
+- Virtual Size: ~ 85.16 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -240,11 +240,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/dash/0.5.7-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/dash/0.5.7-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `db=5.1.29-5`
+### `dpkg` source package: `db=5.1.29-5+deb7u1`
 
 Binary Packages:
 
-- `libdb5.1:amd64=5.1.29-5`
+- `libdb5.1:amd64=5.1.29-5+deb7u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -253,17 +253,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris db=5.1.29-5
-'http://deb.debian.org/debian/pool/main/d/db/db_5.1.29-5.dsc' db_5.1.29-5.dsc 2113 SHA256:d619c24fbefef19699929504d0ae1dbd3fe23153f02e975936bd8caa137404c2
-'http://deb.debian.org/debian/pool/main/d/db/db_5.1.29.orig.tar.gz' db_5.1.29.orig.tar.gz 32188074 SHA256:a943cb4920e62df71de1069ddca486d408f6d7a09ddbbb5637afe7a229389182
-'http://deb.debian.org/debian/pool/main/d/db/db_5.1.29-5.debian.tar.gz' db_5.1.29-5.debian.tar.gz 28733 SHA256:7cefa9a9e779b8b3e7432c8f39c4317aa7b6eac9f70703ed0b85f8d9a96d3af9
+$ apt-get source -qq --print-uris db=5.1.29-5+deb7u1
+'http://security.debian.org/pool/updates/main/d/db/db_5.1.29-5+deb7u1.dsc' db_5.1.29-5+deb7u1.dsc 2778 SHA256:3670e531aca8676efcb3ae41ab0256ba25855b460a371ae343964399cc59ac4b
+'http://security.debian.org/pool/updates/main/d/db/db_5.1.29.orig.tar.gz' db_5.1.29.orig.tar.gz 32188074 SHA256:a943cb4920e62df71de1069ddca486d408f6d7a09ddbbb5637afe7a229389182
+'http://security.debian.org/pool/updates/main/d/db/db_5.1.29-5+deb7u1.debian.tar.gz' db_5.1.29-5+deb7u1.debian.tar.gz 29235 SHA256:ae4330a3ee4d253252686c8f56100c434bda137a0f2272f5f36acc81f536227a
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/db/5.1.29-5/ (for browsing the source)
-- https://sources.debian.net/src/db/5.1.29-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/db/5.1.29-5/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/db/5.1.29-5+deb7u1/ (for browsing the source)
+- https://sources.debian.net/src/db/5.1.29-5+deb7u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/db/5.1.29-5+deb7u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debconf=1.5.49`
 
@@ -1245,23 +1245,30 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tar/1.26+dfsg-0.1+deb7u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tar/1.26+dfsg-0.1+deb7u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tzdata=2017b-0+deb7u1`
+### `dpkg` source package: `tzdata=2017c-0+deb7u1`
 
 Binary Packages:
 
-- `tzdata=2017b-0+deb7u1`
+- `tzdata=2017c-0+deb7u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris tzdata=2017c-0+deb7u1
+'http://security.debian.org/pool/updates/main/t/tzdata/tzdata_2017c-0+deb7u1.dsc' tzdata_2017c-0+deb7u1.dsc 1966 SHA256:8d1398642a537a57ec210bcd39956458b9ff6b148f73a3a28597d042961ff95a
+'http://security.debian.org/pool/updates/main/t/tzdata/tzdata_2017c.orig.tar.gz' tzdata_2017c.orig.tar.gz 335571 SHA256:d6543f92a929826318e2f44ff3a7611ce5f565a43e10250b42599d0ba4cbd90b
+'http://security.debian.org/pool/updates/main/t/tzdata/tzdata_2017c-0+deb7u1.debian.tar.xz' tzdata_2017c-0+deb7u1.debian.tar.xz 102100 SHA256:5da97af6fa8054321d817dacd9ea43bef9b0f343b296554feff1d81b38b181a1
+```
 
-- http://snapshot.debian.org/package/tzdata/2017b-0+deb7u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/tzdata/2017c-0+deb7u1/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2017c-0+deb7u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2017c-0+deb7u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ustr=1.0.4-3`
 
