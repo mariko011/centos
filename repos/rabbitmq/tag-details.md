@@ -30,7 +30,7 @@
 ## `rabbitmq:3`
 
 ```console
-$ docker pull rabbitmq@sha256:8010ce302b32b1e7119c4c313cd4800d8a22db42b30c0fb85de7998ff4cd4bba
+$ docker pull rabbitmq@sha256:eb164f1639649e704cad4238aa53b47d93a8cb8445707246bff80f089a8f3574
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -38,6 +38,7 @@ $ docker pull rabbitmq@sha256:8010ce302b32b1e7119c4c313cd4800d8a22db42b30c0fb85d
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
+	-	linux; arm64 variant v8
 	-	linux; 386
 	-	linux; ppc64le
 
@@ -398,6 +399,125 @@ CMD ["rabbitmq-server"]
 		Size: 119.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+### `rabbitmq:3` - linux; arm64 variant v8
+
+```console
+$ docker pull rabbitmq@sha256:47dc8a9991bce412acd70555960b415de8e64d77f42d70e2e2657a38c1b3d004
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **62.8 MB (62807932 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:108e7d1309f83a8d0edc58d8450c2029738e5923c1c2a644506a69f536889677`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["rabbitmq-server"]`
+
+```dockerfile
+# Tue, 12 Dec 2017 18:34:13 GMT
+ADD file:6e068c7cc5397bfb4ec60dab4d410c5d3ba724f20ad0129d2032fb509f0eadcd in / 
+# Tue, 12 Dec 2017 18:34:14 GMT
+CMD ["bash"]
+# Wed, 13 Dec 2017 14:53:50 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		gnupg 		dirmngr 	; 	rm -rf /var/lib/apt/lists/*
+# Wed, 13 Dec 2017 14:53:52 GMT
+RUN groupadd -r rabbitmq && useradd -r -d /var/lib/rabbitmq -m -g rabbitmq rabbitmq
+# Wed, 13 Dec 2017 14:53:53 GMT
+ENV GOSU_VERSION=1.10
+# Wed, 13 Dec 2017 14:54:26 GMT
+RUN set -eux; 		fetchDeps=' 		ca-certificates 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		chmod +x /usr/local/bin/gosu; 	gosu nobody true; 		apt-get purge -y --auto-remove $fetchDeps
+# Wed, 13 Dec 2017 14:54:27 GMT
+RUN set -eux; 	sed 's/stretch/buster/g' /etc/apt/sources.list 		| tee /etc/apt/sources.list.d/buster.list; 	{ 		echo 'Package: *'; 		echo 'Pin: release n=buster*'; 		echo 'Pin-Priority: -10'; 		echo; 		echo 'Package: erlang*'; 		echo 'Pin: release n=buster*'; 		echo 'Pin-Priority: 999'; 		echo; 		echo 'Package: erlang*'; 		echo 'Pin: release n=stretch*'; 		echo 'Pin-Priority: -10'; 	} | tee /etc/apt/preferences.d/buster-erlang
+# Wed, 13 Dec 2017 14:55:29 GMT
+RUN set -eux; 	apt-get update; 	if apt-cache show erlang-base-hipe 2>/dev/null | grep -q 'Package: erlang-base-hipe'; then 		apt-get install -y --no-install-recommends 			erlang-base-hipe 		; 	fi; 	apt-get install -y --no-install-recommends 		erlang-asn1 		erlang-crypto 		erlang-eldap 		erlang-inets 		erlang-mnesia 		erlang-nox 		erlang-os-mon 		erlang-public-key 		erlang-ssl 		erlang-xmerl 	; 	rm -rf /var/lib/apt/lists/*
+# Wed, 13 Dec 2017 14:55:29 GMT
+ENV RABBITMQ_LOGS=- RABBITMQ_SASL_LOGS=-
+# Wed, 13 Dec 2017 14:55:30 GMT
+ENV PATH=/usr/lib/rabbitmq/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 13 Dec 2017 14:55:31 GMT
+ENV RABBITMQ_GPG_KEY=0A9AF2115F4687BD29803A206B73A36E6026DFCA
+# Wed, 13 Dec 2017 14:55:31 GMT
+ENV RABBITMQ_VERSION=3.7.0
+# Wed, 13 Dec 2017 14:55:32 GMT
+ENV RABBITMQ_GITHUB_TAG=v3.7.0
+# Wed, 13 Dec 2017 14:55:32 GMT
+ENV RABBITMQ_DEBIAN_VERSION=3.7.0-1
+# Wed, 13 Dec 2017 14:56:22 GMT
+RUN set -eux; 		apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O rabbitmq-server.deb.asc "https://github.com/rabbitmq/rabbitmq-server/releases/download/$RABBITMQ_GITHUB_TAG/rabbitmq-server_${RABBITMQ_DEBIAN_VERSION}_all.deb.asc"; 	wget -O rabbitmq-server.deb     "https://github.com/rabbitmq/rabbitmq-server/releases/download/$RABBITMQ_GITHUB_TAG/rabbitmq-server_${RABBITMQ_DEBIAN_VERSION}_all.deb"; 		apt-get purge -y --auto-remove ca-certificates wget; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$RABBITMQ_GPG_KEY"; 	gpg --batch --verify rabbitmq-server.deb.asc rabbitmq-server.deb; 	rm -rf "$GNUPGHOME"; 		apt install -y --no-install-recommends ./rabbitmq-server.deb; 	dpkg -l | grep rabbitmq-server; 	rm -f rabbitmq-server.deb*; 		rm -rf /var/lib/apt/lists/*
+# Wed, 13 Dec 2017 14:56:22 GMT
+ENV LANG=C.UTF-8
+# Wed, 13 Dec 2017 14:56:23 GMT
+ENV HOME=/var/lib/rabbitmq
+# Wed, 13 Dec 2017 14:56:25 GMT
+RUN mkdir -p /var/lib/rabbitmq /etc/rabbitmq 	&& chown -R rabbitmq:rabbitmq /var/lib/rabbitmq /etc/rabbitmq 	&& chmod -R 777 /var/lib/rabbitmq /etc/rabbitmq
+# Wed, 13 Dec 2017 14:56:26 GMT
+VOLUME [/var/lib/rabbitmq]
+# Wed, 13 Dec 2017 14:56:27 GMT
+RUN ln -sf /var/lib/rabbitmq/.erlang.cookie /root/
+# Wed, 13 Dec 2017 14:56:29 GMT
+RUN ln -sf "/usr/lib/rabbitmq/lib/rabbitmq_server-$RABBITMQ_VERSION/plugins" /plugins
+# Wed, 13 Dec 2017 14:56:30 GMT
+COPY file:c105d1b28d0bd0db50deb948b54b2b1680f0db00bb9f24188a595ab6e83d775f in /usr/local/bin/ 
+# Wed, 13 Dec 2017 14:56:32 GMT
+RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
+# Wed, 13 Dec 2017 14:56:33 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 13 Dec 2017 14:56:34 GMT
+EXPOSE 25672/tcp 4369/tcp 5671/tcp 5672/tcp
+# Wed, 13 Dec 2017 14:56:35 GMT
+CMD ["rabbitmq-server"]
+```
+
+-	Layers:
+	-	`sha256:fcad8cfc11c78a53ccf9aafafcb3ded5044dbd181977e6255aea54fbe164f131`  
+		Last Modified: Tue, 12 Dec 2017 18:49:05 GMT  
+		Size: 20.3 MB (20331270 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:afb3f7722e72f404b7e544c9a358cc7390f02c0b391a14ea7dbecd85dca7d195`  
+		Last Modified: Wed, 13 Dec 2017 15:03:22 GMT  
+		Size: 4.1 MB (4073192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:51c72eaa15e586a9eb8cbde84a24922fdabb2aa060ef64831fb867757ac6f83a`  
+		Last Modified: Wed, 13 Dec 2017 15:03:21 GMT  
+		Size: 4.1 KB (4073 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a0ebe8f28a8d2ed828ab5c0431545a097e3f46a3ac45e36976fde6daa9fb405d`  
+		Last Modified: Wed, 13 Dec 2017 15:03:21 GMT  
+		Size: 919.4 KB (919386 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6cf8546d6f1127383410e3244beb4a3873b3305deab0f469ac13d1d0b112dee1`  
+		Last Modified: Wed, 13 Dec 2017 15:03:19 GMT  
+		Size: 353.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:aabe4d57c4c33847b3343b87c3d4b7f0efe523535a70b98185a7237848d3780d`  
+		Last Modified: Wed, 13 Dec 2017 15:03:23 GMT  
+		Size: 24.8 MB (24762935 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e8b0b4bad71865ffd051ae6ae0f91a9b75b0ab3498986501309260ddb9e24fcc`  
+		Last Modified: Wed, 13 Dec 2017 15:03:20 GMT  
+		Size: 12.7 MB (12709876 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:67179561590eee0692c7906da312516abbd25b2b392534f0bfafed9bd0818303`  
+		Last Modified: Wed, 13 Dec 2017 15:03:18 GMT  
+		Size: 2.3 KB (2263 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6b48bfe82561f7d7c44fa56bea46d94cbc0052eb3fb853410c407ecec6a82eaa`  
+		Last Modified: Wed, 13 Dec 2017 15:03:19 GMT  
+		Size: 146.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f8d99729c27cd387b006cb9dc27c0fca1babcbbeed19a6e6c93e977eda0dac93`  
+		Last Modified: Wed, 13 Dec 2017 15:03:17 GMT  
+		Size: 125.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:062cef48f85ee1451a47cf2779222946277e34579b5c3681788187cad29921aa`  
+		Last Modified: Wed, 13 Dec 2017 15:03:16 GMT  
+		Size: 4.2 KB (4192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c81797cfbaec748f0d21ce2d045068057947f2692359c079e912111ae3e02ce2`  
+		Last Modified: Wed, 13 Dec 2017 15:03:16 GMT  
+		Size: 121.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
 ### `rabbitmq:3` - linux; 386
 
 ```console
@@ -639,7 +759,7 @@ CMD ["rabbitmq-server"]
 ## `rabbitmq:3.6`
 
 ```console
-$ docker pull rabbitmq@sha256:bd39e1e2f612d642b66eae59b9bfed547f4058b105e5ba36adf3f14dfebcca2d
+$ docker pull rabbitmq@sha256:bf4b86312459780eda4886b52efd0b12a460ca7a1c6a5cba18a038b7d61c125b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -988,111 +1108,111 @@ CMD ["rabbitmq-server"]
 ### `rabbitmq:3.6` - linux; arm64 variant v8
 
 ```console
-$ docker pull rabbitmq@sha256:4168a3f7ea16661ae4f05ab9fd21c258d590041e233029cfb199a75d55a924c1
+$ docker pull rabbitmq@sha256:19ce0df764449b26b13884ae404f31f7dcec19db5010226c4fb9696e8026b07a
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **57.4 MB (57371113 bytes)**  
+-	Total Size: **57.4 MB (57366215 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:af4cb3ee80c465ed6074b3ecddd1fe0ce3d801423e3017c5e77638f8bcc8fe42`
+-	Image ID: `sha256:cd46b0837db6d01bf821114d6d632d42f6ef5d775ad5a7949cd9dfd86b3717ac`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
 ```dockerfile
-# Mon, 09 Oct 2017 21:47:55 GMT
-ADD file:3a528355cfc75437716aff3b517ef99ae602918d84d26dbafff0ed142248fb93 in / 
-# Mon, 09 Oct 2017 21:47:56 GMT
+# Tue, 12 Dec 2017 18:34:13 GMT
+ADD file:6e068c7cc5397bfb4ec60dab4d410c5d3ba724f20ad0129d2032fb509f0eadcd in / 
+# Tue, 12 Dec 2017 18:34:14 GMT
 CMD ["bash"]
-# Fri, 03 Nov 2017 13:53:20 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		gnupg 		dirmngr 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 03 Nov 2017 13:53:22 GMT
+# Wed, 13 Dec 2017 14:53:50 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		gnupg 		dirmngr 	; 	rm -rf /var/lib/apt/lists/*
+# Wed, 13 Dec 2017 14:53:52 GMT
 RUN groupadd -r rabbitmq && useradd -r -d /var/lib/rabbitmq -m -g rabbitmq rabbitmq
-# Fri, 03 Nov 2017 13:53:23 GMT
+# Wed, 13 Dec 2017 14:53:53 GMT
 ENV GOSU_VERSION=1.10
-# Sat, 04 Nov 2017 19:34:35 GMT
-RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Sat, 04 Nov 2017 19:35:29 GMT
-RUN set -ex; 	apt-get update; 	if apt-cache show erlang-base-hipe 2>/dev/null | grep -q 'Package: erlang-base-hipe'; then 		apt-get install -y --no-install-recommends 			erlang-base-hipe 		; 	fi; 	apt-get install -y --no-install-recommends 		erlang-asn1 		erlang-crypto 		erlang-eldap 		erlang-inets 		erlang-mnesia 		erlang-nox 		erlang-os-mon 		erlang-public-key 		erlang-ssl 		erlang-xmerl 	; 	rm -rf /var/lib/apt/lists/*
-# Sat, 04 Nov 2017 19:35:29 GMT
+# Wed, 13 Dec 2017 15:00:12 GMT
+RUN set -eux 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
+# Wed, 13 Dec 2017 15:00:47 GMT
+RUN set -eux; 	apt-get update; 	if apt-cache show erlang-base-hipe 2>/dev/null | grep -q 'Package: erlang-base-hipe'; then 		apt-get install -y --no-install-recommends 			erlang-base-hipe 		; 	fi; 	apt-get install -y --no-install-recommends 		erlang-asn1 		erlang-crypto 		erlang-eldap 		erlang-inets 		erlang-mnesia 		erlang-nox 		erlang-os-mon 		erlang-public-key 		erlang-ssl 		erlang-xmerl 	; 	rm -rf /var/lib/apt/lists/*
+# Wed, 13 Dec 2017 15:00:48 GMT
 ENV RABBITMQ_LOGS=- RABBITMQ_SASL_LOGS=-
-# Sat, 04 Nov 2017 19:35:30 GMT
+# Wed, 13 Dec 2017 15:00:49 GMT
 ENV PATH=/usr/lib/rabbitmq/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 04 Nov 2017 19:35:31 GMT
+# Wed, 13 Dec 2017 15:00:49 GMT
 ENV RABBITMQ_GPG_KEY=0A9AF2115F4687BD29803A206B73A36E6026DFCA
-# Wed, 08 Nov 2017 14:53:01 GMT
+# Wed, 13 Dec 2017 15:00:50 GMT
 ENV RABBITMQ_VERSION=3.6.14
-# Wed, 08 Nov 2017 14:53:02 GMT
+# Wed, 13 Dec 2017 15:00:51 GMT
 ENV RABBITMQ_GITHUB_TAG=rabbitmq_v3_6_14
-# Wed, 08 Nov 2017 14:53:02 GMT
+# Wed, 13 Dec 2017 15:00:51 GMT
 ENV RABBITMQ_DEBIAN_VERSION=3.6.14-1
-# Wed, 08 Nov 2017 14:55:19 GMT
-RUN set -ex; 		apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O rabbitmq-server.deb.asc "https://github.com/rabbitmq/rabbitmq-server/releases/download/$RABBITMQ_GITHUB_TAG/rabbitmq-server_${RABBITMQ_DEBIAN_VERSION}_all.deb.asc"; 	wget -O rabbitmq-server.deb     "https://github.com/rabbitmq/rabbitmq-server/releases/download/$RABBITMQ_GITHUB_TAG/rabbitmq-server_${RABBITMQ_DEBIAN_VERSION}_all.deb"; 		apt-get purge -y --auto-remove ca-certificates wget; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$RABBITMQ_GPG_KEY"; 	gpg --batch --verify rabbitmq-server.deb.asc rabbitmq-server.deb; 	rm -rf "$GNUPGHOME"; 		apt install -y --no-install-recommends ./rabbitmq-server.deb; 	dpkg -l | grep rabbitmq-server; 	rm -f rabbitmq-server.deb*; 		rm -rf /var/lib/apt/lists/*
-# Wed, 08 Nov 2017 14:55:19 GMT
+# Wed, 13 Dec 2017 15:01:39 GMT
+RUN set -eux; 		apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O rabbitmq-server.deb.asc "https://github.com/rabbitmq/rabbitmq-server/releases/download/$RABBITMQ_GITHUB_TAG/rabbitmq-server_${RABBITMQ_DEBIAN_VERSION}_all.deb.asc"; 	wget -O rabbitmq-server.deb     "https://github.com/rabbitmq/rabbitmq-server/releases/download/$RABBITMQ_GITHUB_TAG/rabbitmq-server_${RABBITMQ_DEBIAN_VERSION}_all.deb"; 		apt-get purge -y --auto-remove ca-certificates wget; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$RABBITMQ_GPG_KEY"; 	gpg --batch --verify rabbitmq-server.deb.asc rabbitmq-server.deb; 	rm -rf "$GNUPGHOME"; 		apt install -y --no-install-recommends ./rabbitmq-server.deb; 	dpkg -l | grep rabbitmq-server; 	rm -f rabbitmq-server.deb*; 		rm -rf /var/lib/apt/lists/*
+# Wed, 13 Dec 2017 15:01:40 GMT
 ENV HOME=/var/lib/rabbitmq
-# Wed, 08 Nov 2017 14:55:21 GMT
+# Wed, 13 Dec 2017 15:01:42 GMT
 RUN mkdir -p /var/lib/rabbitmq /etc/rabbitmq 	&& chown -R rabbitmq:rabbitmq /var/lib/rabbitmq /etc/rabbitmq 	&& chmod -R 777 /var/lib/rabbitmq /etc/rabbitmq
-# Wed, 08 Nov 2017 14:55:22 GMT
+# Wed, 13 Dec 2017 15:01:42 GMT
 VOLUME [/var/lib/rabbitmq]
-# Wed, 08 Nov 2017 14:55:23 GMT
+# Wed, 13 Dec 2017 15:01:44 GMT
 RUN ln -sf /var/lib/rabbitmq/.erlang.cookie /root/
-# Wed, 08 Nov 2017 14:55:25 GMT
+# Wed, 13 Dec 2017 15:01:46 GMT
 RUN ln -sf "/usr/lib/rabbitmq/lib/rabbitmq_server-$RABBITMQ_VERSION/plugins" /plugins
-# Wed, 08 Nov 2017 14:55:26 GMT
+# Wed, 13 Dec 2017 15:01:48 GMT
 COPY file:7f3c1def1757a323e01e9cd9e65a31daea4925bdbddb08efd80abc7fe43d605e in /usr/local/bin/ 
-# Wed, 08 Nov 2017 14:55:28 GMT
+# Wed, 13 Dec 2017 15:01:49 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Wed, 08 Nov 2017 14:55:29 GMT
+# Wed, 13 Dec 2017 15:01:50 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 08 Nov 2017 14:55:30 GMT
+# Wed, 13 Dec 2017 15:01:51 GMT
 EXPOSE 25672/tcp 4369/tcp 5671/tcp 5672/tcp
-# Wed, 08 Nov 2017 14:55:30 GMT
+# Wed, 13 Dec 2017 15:01:52 GMT
 CMD ["rabbitmq-server"]
 ```
 
 -	Layers:
-	-	`sha256:e907afd6e25615a4d3eb554d930cef57b87e79ec82413889c2eac38beb4eb8f7`  
-		Last Modified: Mon, 09 Oct 2017 22:03:08 GMT  
-		Size: 20.3 MB (20337143 bytes)  
+	-	`sha256:fcad8cfc11c78a53ccf9aafafcb3ded5044dbd181977e6255aea54fbe164f131`  
+		Last Modified: Tue, 12 Dec 2017 18:49:05 GMT  
+		Size: 20.3 MB (20331270 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:31f0e65f9ffb0e8a0344de3620c73aa9cd2d1ae973a3cf7588e6441034e9822e`  
-		Last Modified: Sat, 04 Nov 2017 19:40:47 GMT  
-		Size: 4.1 MB (4073213 bytes)  
+	-	`sha256:afb3f7722e72f404b7e544c9a358cc7390f02c0b391a14ea7dbecd85dca7d195`  
+		Last Modified: Wed, 13 Dec 2017 15:03:22 GMT  
+		Size: 4.1 MB (4073192 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6bed6073dce4194deeccf2caa0ec9b97ec2177bc41b7b540c17cdf13fda94ff0`  
-		Last Modified: Sat, 04 Nov 2017 19:40:45 GMT  
-		Size: 4.1 KB (4084 bytes)  
+	-	`sha256:51c72eaa15e586a9eb8cbde84a24922fdabb2aa060ef64831fb867757ac6f83a`  
+		Last Modified: Wed, 13 Dec 2017 15:03:21 GMT  
+		Size: 4.1 KB (4073 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b0596ffaef28f501b64c44c84ad20044e9016acaa66310b575a15244c91f49e`  
-		Last Modified: Sat, 04 Nov 2017 19:40:46 GMT  
-		Size: 919.4 KB (919403 bytes)  
+	-	`sha256:c3c18eddf679a7681dae03db8d58638da8df19f547589ac26050afe59b7fb646`  
+		Last Modified: Wed, 13 Dec 2017 15:08:32 GMT  
+		Size: 919.4 KB (919379 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fda14140ddcfb15fd8d4be24ae1356f497b7833c12233249de7016e1f2daf9f8`  
-		Last Modified: Sat, 04 Nov 2017 19:40:51 GMT  
-		Size: 25.0 MB (25042388 bytes)  
+	-	`sha256:a3bbf6b0234529f306e8b9c63bd36adfc9f44894c706c53e44ab33e30f98d689`  
+		Last Modified: Wed, 13 Dec 2017 15:08:37 GMT  
+		Size: 25.0 MB (25043237 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c78ee2824b70d54b867b533443f6fd14f51e18f23759b80153c869a2968e569b`  
-		Last Modified: Wed, 08 Nov 2017 14:57:26 GMT  
-		Size: 7.0 MB (6988187 bytes)  
+	-	`sha256:f2b670f3e3207e47c2292f6634ac9b74df058702d7b9b672dd89ba01dbd24a9e`  
+		Last Modified: Wed, 13 Dec 2017 15:08:33 GMT  
+		Size: 7.0 MB (6988367 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68ca626918894c95f51ccc210a06699be77ca84210960cd18a30b55d87d56c73`  
-		Last Modified: Wed, 08 Nov 2017 14:57:22 GMT  
-		Size: 2.3 KB (2261 bytes)  
+	-	`sha256:2d014226fc5ee9c5614079bc4a433e8eda4d3d8eb4719ba6d83188e0664c96b6`  
+		Last Modified: Wed, 13 Dec 2017 15:08:29 GMT  
+		Size: 2.3 KB (2264 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8571e229aa778383fbbbdb4c00374d68b5bfafdb419ab20b842307aab4fcedc7`  
-		Last Modified: Wed, 08 Nov 2017 14:57:22 GMT  
+	-	`sha256:c08e0888f257a2149480c9615b72291c7e53b5efffef546cb1ce5a391aa26b0b`  
+		Last Modified: Wed, 13 Dec 2017 15:08:30 GMT  
 		Size: 147.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d2bf9029e48f539b6a5f83c8b3d3dda09c821b3d219d121afa9217295dcde9dd`  
-		Last Modified: Wed, 08 Nov 2017 14:57:22 GMT  
-		Size: 127.0 B  
+	-	`sha256:b7dd022134ec587971e8567258b45afa8c60188a8718f4444e9a3dd786d5ee66`  
+		Last Modified: Wed, 13 Dec 2017 15:08:30 GMT  
+		Size: 125.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e538834de5f58eecf0df7ac787b4c94167bd6a9866534400d2eb04acd9c32e85`  
-		Last Modified: Wed, 08 Nov 2017 14:57:22 GMT  
-		Size: 4.0 KB (4039 bytes)  
+	-	`sha256:04b0e5ab17bac0e50d79bd1d337080c4f6609e6ce423e04b3eecc09137a700e0`  
+		Last Modified: Wed, 13 Dec 2017 15:08:30 GMT  
+		Size: 4.0 KB (4040 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ccf4d77c8deac6d39c639b9f2446f4a57e2d71802b537e300a5d548c6ca98647`  
-		Last Modified: Wed, 08 Nov 2017 14:57:22 GMT  
+	-	`sha256:4bc4d4638b44b5934920b9ed7301d269d5ab12fa2196ab4d43535a95c4925fd8`  
+		Last Modified: Wed, 13 Dec 2017 15:08:29 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -1432,7 +1552,7 @@ CMD ["rabbitmq-server"]
 ## `rabbitmq:3.6.14`
 
 ```console
-$ docker pull rabbitmq@sha256:bd39e1e2f612d642b66eae59b9bfed547f4058b105e5ba36adf3f14dfebcca2d
+$ docker pull rabbitmq@sha256:bf4b86312459780eda4886b52efd0b12a460ca7a1c6a5cba18a038b7d61c125b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1781,111 +1901,111 @@ CMD ["rabbitmq-server"]
 ### `rabbitmq:3.6.14` - linux; arm64 variant v8
 
 ```console
-$ docker pull rabbitmq@sha256:4168a3f7ea16661ae4f05ab9fd21c258d590041e233029cfb199a75d55a924c1
+$ docker pull rabbitmq@sha256:19ce0df764449b26b13884ae404f31f7dcec19db5010226c4fb9696e8026b07a
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **57.4 MB (57371113 bytes)**  
+-	Total Size: **57.4 MB (57366215 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:af4cb3ee80c465ed6074b3ecddd1fe0ce3d801423e3017c5e77638f8bcc8fe42`
+-	Image ID: `sha256:cd46b0837db6d01bf821114d6d632d42f6ef5d775ad5a7949cd9dfd86b3717ac`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
 ```dockerfile
-# Mon, 09 Oct 2017 21:47:55 GMT
-ADD file:3a528355cfc75437716aff3b517ef99ae602918d84d26dbafff0ed142248fb93 in / 
-# Mon, 09 Oct 2017 21:47:56 GMT
+# Tue, 12 Dec 2017 18:34:13 GMT
+ADD file:6e068c7cc5397bfb4ec60dab4d410c5d3ba724f20ad0129d2032fb509f0eadcd in / 
+# Tue, 12 Dec 2017 18:34:14 GMT
 CMD ["bash"]
-# Fri, 03 Nov 2017 13:53:20 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		gnupg 		dirmngr 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 03 Nov 2017 13:53:22 GMT
+# Wed, 13 Dec 2017 14:53:50 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		gnupg 		dirmngr 	; 	rm -rf /var/lib/apt/lists/*
+# Wed, 13 Dec 2017 14:53:52 GMT
 RUN groupadd -r rabbitmq && useradd -r -d /var/lib/rabbitmq -m -g rabbitmq rabbitmq
-# Fri, 03 Nov 2017 13:53:23 GMT
+# Wed, 13 Dec 2017 14:53:53 GMT
 ENV GOSU_VERSION=1.10
-# Sat, 04 Nov 2017 19:34:35 GMT
-RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Sat, 04 Nov 2017 19:35:29 GMT
-RUN set -ex; 	apt-get update; 	if apt-cache show erlang-base-hipe 2>/dev/null | grep -q 'Package: erlang-base-hipe'; then 		apt-get install -y --no-install-recommends 			erlang-base-hipe 		; 	fi; 	apt-get install -y --no-install-recommends 		erlang-asn1 		erlang-crypto 		erlang-eldap 		erlang-inets 		erlang-mnesia 		erlang-nox 		erlang-os-mon 		erlang-public-key 		erlang-ssl 		erlang-xmerl 	; 	rm -rf /var/lib/apt/lists/*
-# Sat, 04 Nov 2017 19:35:29 GMT
+# Wed, 13 Dec 2017 15:00:12 GMT
+RUN set -eux 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
+# Wed, 13 Dec 2017 15:00:47 GMT
+RUN set -eux; 	apt-get update; 	if apt-cache show erlang-base-hipe 2>/dev/null | grep -q 'Package: erlang-base-hipe'; then 		apt-get install -y --no-install-recommends 			erlang-base-hipe 		; 	fi; 	apt-get install -y --no-install-recommends 		erlang-asn1 		erlang-crypto 		erlang-eldap 		erlang-inets 		erlang-mnesia 		erlang-nox 		erlang-os-mon 		erlang-public-key 		erlang-ssl 		erlang-xmerl 	; 	rm -rf /var/lib/apt/lists/*
+# Wed, 13 Dec 2017 15:00:48 GMT
 ENV RABBITMQ_LOGS=- RABBITMQ_SASL_LOGS=-
-# Sat, 04 Nov 2017 19:35:30 GMT
+# Wed, 13 Dec 2017 15:00:49 GMT
 ENV PATH=/usr/lib/rabbitmq/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 04 Nov 2017 19:35:31 GMT
+# Wed, 13 Dec 2017 15:00:49 GMT
 ENV RABBITMQ_GPG_KEY=0A9AF2115F4687BD29803A206B73A36E6026DFCA
-# Wed, 08 Nov 2017 14:53:01 GMT
+# Wed, 13 Dec 2017 15:00:50 GMT
 ENV RABBITMQ_VERSION=3.6.14
-# Wed, 08 Nov 2017 14:53:02 GMT
+# Wed, 13 Dec 2017 15:00:51 GMT
 ENV RABBITMQ_GITHUB_TAG=rabbitmq_v3_6_14
-# Wed, 08 Nov 2017 14:53:02 GMT
+# Wed, 13 Dec 2017 15:00:51 GMT
 ENV RABBITMQ_DEBIAN_VERSION=3.6.14-1
-# Wed, 08 Nov 2017 14:55:19 GMT
-RUN set -ex; 		apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O rabbitmq-server.deb.asc "https://github.com/rabbitmq/rabbitmq-server/releases/download/$RABBITMQ_GITHUB_TAG/rabbitmq-server_${RABBITMQ_DEBIAN_VERSION}_all.deb.asc"; 	wget -O rabbitmq-server.deb     "https://github.com/rabbitmq/rabbitmq-server/releases/download/$RABBITMQ_GITHUB_TAG/rabbitmq-server_${RABBITMQ_DEBIAN_VERSION}_all.deb"; 		apt-get purge -y --auto-remove ca-certificates wget; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$RABBITMQ_GPG_KEY"; 	gpg --batch --verify rabbitmq-server.deb.asc rabbitmq-server.deb; 	rm -rf "$GNUPGHOME"; 		apt install -y --no-install-recommends ./rabbitmq-server.deb; 	dpkg -l | grep rabbitmq-server; 	rm -f rabbitmq-server.deb*; 		rm -rf /var/lib/apt/lists/*
-# Wed, 08 Nov 2017 14:55:19 GMT
+# Wed, 13 Dec 2017 15:01:39 GMT
+RUN set -eux; 		apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O rabbitmq-server.deb.asc "https://github.com/rabbitmq/rabbitmq-server/releases/download/$RABBITMQ_GITHUB_TAG/rabbitmq-server_${RABBITMQ_DEBIAN_VERSION}_all.deb.asc"; 	wget -O rabbitmq-server.deb     "https://github.com/rabbitmq/rabbitmq-server/releases/download/$RABBITMQ_GITHUB_TAG/rabbitmq-server_${RABBITMQ_DEBIAN_VERSION}_all.deb"; 		apt-get purge -y --auto-remove ca-certificates wget; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$RABBITMQ_GPG_KEY"; 	gpg --batch --verify rabbitmq-server.deb.asc rabbitmq-server.deb; 	rm -rf "$GNUPGHOME"; 		apt install -y --no-install-recommends ./rabbitmq-server.deb; 	dpkg -l | grep rabbitmq-server; 	rm -f rabbitmq-server.deb*; 		rm -rf /var/lib/apt/lists/*
+# Wed, 13 Dec 2017 15:01:40 GMT
 ENV HOME=/var/lib/rabbitmq
-# Wed, 08 Nov 2017 14:55:21 GMT
+# Wed, 13 Dec 2017 15:01:42 GMT
 RUN mkdir -p /var/lib/rabbitmq /etc/rabbitmq 	&& chown -R rabbitmq:rabbitmq /var/lib/rabbitmq /etc/rabbitmq 	&& chmod -R 777 /var/lib/rabbitmq /etc/rabbitmq
-# Wed, 08 Nov 2017 14:55:22 GMT
+# Wed, 13 Dec 2017 15:01:42 GMT
 VOLUME [/var/lib/rabbitmq]
-# Wed, 08 Nov 2017 14:55:23 GMT
+# Wed, 13 Dec 2017 15:01:44 GMT
 RUN ln -sf /var/lib/rabbitmq/.erlang.cookie /root/
-# Wed, 08 Nov 2017 14:55:25 GMT
+# Wed, 13 Dec 2017 15:01:46 GMT
 RUN ln -sf "/usr/lib/rabbitmq/lib/rabbitmq_server-$RABBITMQ_VERSION/plugins" /plugins
-# Wed, 08 Nov 2017 14:55:26 GMT
+# Wed, 13 Dec 2017 15:01:48 GMT
 COPY file:7f3c1def1757a323e01e9cd9e65a31daea4925bdbddb08efd80abc7fe43d605e in /usr/local/bin/ 
-# Wed, 08 Nov 2017 14:55:28 GMT
+# Wed, 13 Dec 2017 15:01:49 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Wed, 08 Nov 2017 14:55:29 GMT
+# Wed, 13 Dec 2017 15:01:50 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 08 Nov 2017 14:55:30 GMT
+# Wed, 13 Dec 2017 15:01:51 GMT
 EXPOSE 25672/tcp 4369/tcp 5671/tcp 5672/tcp
-# Wed, 08 Nov 2017 14:55:30 GMT
+# Wed, 13 Dec 2017 15:01:52 GMT
 CMD ["rabbitmq-server"]
 ```
 
 -	Layers:
-	-	`sha256:e907afd6e25615a4d3eb554d930cef57b87e79ec82413889c2eac38beb4eb8f7`  
-		Last Modified: Mon, 09 Oct 2017 22:03:08 GMT  
-		Size: 20.3 MB (20337143 bytes)  
+	-	`sha256:fcad8cfc11c78a53ccf9aafafcb3ded5044dbd181977e6255aea54fbe164f131`  
+		Last Modified: Tue, 12 Dec 2017 18:49:05 GMT  
+		Size: 20.3 MB (20331270 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:31f0e65f9ffb0e8a0344de3620c73aa9cd2d1ae973a3cf7588e6441034e9822e`  
-		Last Modified: Sat, 04 Nov 2017 19:40:47 GMT  
-		Size: 4.1 MB (4073213 bytes)  
+	-	`sha256:afb3f7722e72f404b7e544c9a358cc7390f02c0b391a14ea7dbecd85dca7d195`  
+		Last Modified: Wed, 13 Dec 2017 15:03:22 GMT  
+		Size: 4.1 MB (4073192 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6bed6073dce4194deeccf2caa0ec9b97ec2177bc41b7b540c17cdf13fda94ff0`  
-		Last Modified: Sat, 04 Nov 2017 19:40:45 GMT  
-		Size: 4.1 KB (4084 bytes)  
+	-	`sha256:51c72eaa15e586a9eb8cbde84a24922fdabb2aa060ef64831fb867757ac6f83a`  
+		Last Modified: Wed, 13 Dec 2017 15:03:21 GMT  
+		Size: 4.1 KB (4073 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b0596ffaef28f501b64c44c84ad20044e9016acaa66310b575a15244c91f49e`  
-		Last Modified: Sat, 04 Nov 2017 19:40:46 GMT  
-		Size: 919.4 KB (919403 bytes)  
+	-	`sha256:c3c18eddf679a7681dae03db8d58638da8df19f547589ac26050afe59b7fb646`  
+		Last Modified: Wed, 13 Dec 2017 15:08:32 GMT  
+		Size: 919.4 KB (919379 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fda14140ddcfb15fd8d4be24ae1356f497b7833c12233249de7016e1f2daf9f8`  
-		Last Modified: Sat, 04 Nov 2017 19:40:51 GMT  
-		Size: 25.0 MB (25042388 bytes)  
+	-	`sha256:a3bbf6b0234529f306e8b9c63bd36adfc9f44894c706c53e44ab33e30f98d689`  
+		Last Modified: Wed, 13 Dec 2017 15:08:37 GMT  
+		Size: 25.0 MB (25043237 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c78ee2824b70d54b867b533443f6fd14f51e18f23759b80153c869a2968e569b`  
-		Last Modified: Wed, 08 Nov 2017 14:57:26 GMT  
-		Size: 7.0 MB (6988187 bytes)  
+	-	`sha256:f2b670f3e3207e47c2292f6634ac9b74df058702d7b9b672dd89ba01dbd24a9e`  
+		Last Modified: Wed, 13 Dec 2017 15:08:33 GMT  
+		Size: 7.0 MB (6988367 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68ca626918894c95f51ccc210a06699be77ca84210960cd18a30b55d87d56c73`  
-		Last Modified: Wed, 08 Nov 2017 14:57:22 GMT  
-		Size: 2.3 KB (2261 bytes)  
+	-	`sha256:2d014226fc5ee9c5614079bc4a433e8eda4d3d8eb4719ba6d83188e0664c96b6`  
+		Last Modified: Wed, 13 Dec 2017 15:08:29 GMT  
+		Size: 2.3 KB (2264 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8571e229aa778383fbbbdb4c00374d68b5bfafdb419ab20b842307aab4fcedc7`  
-		Last Modified: Wed, 08 Nov 2017 14:57:22 GMT  
+	-	`sha256:c08e0888f257a2149480c9615b72291c7e53b5efffef546cb1ce5a391aa26b0b`  
+		Last Modified: Wed, 13 Dec 2017 15:08:30 GMT  
 		Size: 147.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d2bf9029e48f539b6a5f83c8b3d3dda09c821b3d219d121afa9217295dcde9dd`  
-		Last Modified: Wed, 08 Nov 2017 14:57:22 GMT  
-		Size: 127.0 B  
+	-	`sha256:b7dd022134ec587971e8567258b45afa8c60188a8718f4444e9a3dd786d5ee66`  
+		Last Modified: Wed, 13 Dec 2017 15:08:30 GMT  
+		Size: 125.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e538834de5f58eecf0df7ac787b4c94167bd6a9866534400d2eb04acd9c32e85`  
-		Last Modified: Wed, 08 Nov 2017 14:57:22 GMT  
-		Size: 4.0 KB (4039 bytes)  
+	-	`sha256:04b0e5ab17bac0e50d79bd1d337080c4f6609e6ce423e04b3eecc09137a700e0`  
+		Last Modified: Wed, 13 Dec 2017 15:08:30 GMT  
+		Size: 4.0 KB (4040 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ccf4d77c8deac6d39c639b9f2446f4a57e2d71802b537e300a5d548c6ca98647`  
-		Last Modified: Wed, 08 Nov 2017 14:57:22 GMT  
+	-	`sha256:4bc4d4638b44b5934920b9ed7301d269d5ab12fa2196ab4d43535a95c4925fd8`  
+		Last Modified: Wed, 13 Dec 2017 15:08:29 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -2852,7 +2972,7 @@ CMD ["rabbitmq-server"]
 ## `rabbitmq:3.6.14-management`
 
 ```console
-$ docker pull rabbitmq@sha256:90b10f2f46940d27d14c604d628655dda151e663bc6b4cee41ac2cc5caae4c18
+$ docker pull rabbitmq@sha256:c5b9550f679eedd99cb08c5760adcb4b58586b9aa4a66d7a8c77672ee043dcd2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3243,126 +3363,126 @@ EXPOSE 15671/tcp 15672/tcp
 ### `rabbitmq:3.6.14-management` - linux; arm64 variant v8
 
 ```console
-$ docker pull rabbitmq@sha256:6fa6294aa8f8f54bdd3e79c0a12f6fde30d0f6a8da3d37b1ceb6ba7d5737d108
+$ docker pull rabbitmq@sha256:760ed6e88403d733a6d56a2c70a2cd63d44c16aff062cc91f1baa0ff7abfe2be
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **64.9 MB (64857570 bytes)**  
+-	Total Size: **64.9 MB (64853869 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2cd58198e9b3205f1357b24c97276066563fc60de75438182b097b8107c7a9af`
+-	Image ID: `sha256:9064fb64bd87b5d37810271c8c0127d7829c257defd526be209817cc60d6e514`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
 ```dockerfile
-# Mon, 09 Oct 2017 21:47:55 GMT
-ADD file:3a528355cfc75437716aff3b517ef99ae602918d84d26dbafff0ed142248fb93 in / 
-# Mon, 09 Oct 2017 21:47:56 GMT
+# Tue, 12 Dec 2017 18:34:13 GMT
+ADD file:6e068c7cc5397bfb4ec60dab4d410c5d3ba724f20ad0129d2032fb509f0eadcd in / 
+# Tue, 12 Dec 2017 18:34:14 GMT
 CMD ["bash"]
-# Fri, 03 Nov 2017 13:53:20 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		gnupg 		dirmngr 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 03 Nov 2017 13:53:22 GMT
+# Wed, 13 Dec 2017 14:53:50 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		gnupg 		dirmngr 	; 	rm -rf /var/lib/apt/lists/*
+# Wed, 13 Dec 2017 14:53:52 GMT
 RUN groupadd -r rabbitmq && useradd -r -d /var/lib/rabbitmq -m -g rabbitmq rabbitmq
-# Fri, 03 Nov 2017 13:53:23 GMT
+# Wed, 13 Dec 2017 14:53:53 GMT
 ENV GOSU_VERSION=1.10
-# Sat, 04 Nov 2017 19:34:35 GMT
-RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Sat, 04 Nov 2017 19:35:29 GMT
-RUN set -ex; 	apt-get update; 	if apt-cache show erlang-base-hipe 2>/dev/null | grep -q 'Package: erlang-base-hipe'; then 		apt-get install -y --no-install-recommends 			erlang-base-hipe 		; 	fi; 	apt-get install -y --no-install-recommends 		erlang-asn1 		erlang-crypto 		erlang-eldap 		erlang-inets 		erlang-mnesia 		erlang-nox 		erlang-os-mon 		erlang-public-key 		erlang-ssl 		erlang-xmerl 	; 	rm -rf /var/lib/apt/lists/*
-# Sat, 04 Nov 2017 19:35:29 GMT
+# Wed, 13 Dec 2017 15:00:12 GMT
+RUN set -eux 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
+# Wed, 13 Dec 2017 15:00:47 GMT
+RUN set -eux; 	apt-get update; 	if apt-cache show erlang-base-hipe 2>/dev/null | grep -q 'Package: erlang-base-hipe'; then 		apt-get install -y --no-install-recommends 			erlang-base-hipe 		; 	fi; 	apt-get install -y --no-install-recommends 		erlang-asn1 		erlang-crypto 		erlang-eldap 		erlang-inets 		erlang-mnesia 		erlang-nox 		erlang-os-mon 		erlang-public-key 		erlang-ssl 		erlang-xmerl 	; 	rm -rf /var/lib/apt/lists/*
+# Wed, 13 Dec 2017 15:00:48 GMT
 ENV RABBITMQ_LOGS=- RABBITMQ_SASL_LOGS=-
-# Sat, 04 Nov 2017 19:35:30 GMT
+# Wed, 13 Dec 2017 15:00:49 GMT
 ENV PATH=/usr/lib/rabbitmq/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 04 Nov 2017 19:35:31 GMT
+# Wed, 13 Dec 2017 15:00:49 GMT
 ENV RABBITMQ_GPG_KEY=0A9AF2115F4687BD29803A206B73A36E6026DFCA
-# Wed, 08 Nov 2017 14:53:01 GMT
+# Wed, 13 Dec 2017 15:00:50 GMT
 ENV RABBITMQ_VERSION=3.6.14
-# Wed, 08 Nov 2017 14:53:02 GMT
+# Wed, 13 Dec 2017 15:00:51 GMT
 ENV RABBITMQ_GITHUB_TAG=rabbitmq_v3_6_14
-# Wed, 08 Nov 2017 14:53:02 GMT
+# Wed, 13 Dec 2017 15:00:51 GMT
 ENV RABBITMQ_DEBIAN_VERSION=3.6.14-1
-# Wed, 08 Nov 2017 14:55:19 GMT
-RUN set -ex; 		apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O rabbitmq-server.deb.asc "https://github.com/rabbitmq/rabbitmq-server/releases/download/$RABBITMQ_GITHUB_TAG/rabbitmq-server_${RABBITMQ_DEBIAN_VERSION}_all.deb.asc"; 	wget -O rabbitmq-server.deb     "https://github.com/rabbitmq/rabbitmq-server/releases/download/$RABBITMQ_GITHUB_TAG/rabbitmq-server_${RABBITMQ_DEBIAN_VERSION}_all.deb"; 		apt-get purge -y --auto-remove ca-certificates wget; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$RABBITMQ_GPG_KEY"; 	gpg --batch --verify rabbitmq-server.deb.asc rabbitmq-server.deb; 	rm -rf "$GNUPGHOME"; 		apt install -y --no-install-recommends ./rabbitmq-server.deb; 	dpkg -l | grep rabbitmq-server; 	rm -f rabbitmq-server.deb*; 		rm -rf /var/lib/apt/lists/*
-# Wed, 08 Nov 2017 14:55:19 GMT
+# Wed, 13 Dec 2017 15:01:39 GMT
+RUN set -eux; 		apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O rabbitmq-server.deb.asc "https://github.com/rabbitmq/rabbitmq-server/releases/download/$RABBITMQ_GITHUB_TAG/rabbitmq-server_${RABBITMQ_DEBIAN_VERSION}_all.deb.asc"; 	wget -O rabbitmq-server.deb     "https://github.com/rabbitmq/rabbitmq-server/releases/download/$RABBITMQ_GITHUB_TAG/rabbitmq-server_${RABBITMQ_DEBIAN_VERSION}_all.deb"; 		apt-get purge -y --auto-remove ca-certificates wget; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$RABBITMQ_GPG_KEY"; 	gpg --batch --verify rabbitmq-server.deb.asc rabbitmq-server.deb; 	rm -rf "$GNUPGHOME"; 		apt install -y --no-install-recommends ./rabbitmq-server.deb; 	dpkg -l | grep rabbitmq-server; 	rm -f rabbitmq-server.deb*; 		rm -rf /var/lib/apt/lists/*
+# Wed, 13 Dec 2017 15:01:40 GMT
 ENV HOME=/var/lib/rabbitmq
-# Wed, 08 Nov 2017 14:55:21 GMT
+# Wed, 13 Dec 2017 15:01:42 GMT
 RUN mkdir -p /var/lib/rabbitmq /etc/rabbitmq 	&& chown -R rabbitmq:rabbitmq /var/lib/rabbitmq /etc/rabbitmq 	&& chmod -R 777 /var/lib/rabbitmq /etc/rabbitmq
-# Wed, 08 Nov 2017 14:55:22 GMT
+# Wed, 13 Dec 2017 15:01:42 GMT
 VOLUME [/var/lib/rabbitmq]
-# Wed, 08 Nov 2017 14:55:23 GMT
+# Wed, 13 Dec 2017 15:01:44 GMT
 RUN ln -sf /var/lib/rabbitmq/.erlang.cookie /root/
-# Wed, 08 Nov 2017 14:55:25 GMT
+# Wed, 13 Dec 2017 15:01:46 GMT
 RUN ln -sf "/usr/lib/rabbitmq/lib/rabbitmq_server-$RABBITMQ_VERSION/plugins" /plugins
-# Wed, 08 Nov 2017 14:55:26 GMT
+# Wed, 13 Dec 2017 15:01:48 GMT
 COPY file:7f3c1def1757a323e01e9cd9e65a31daea4925bdbddb08efd80abc7fe43d605e in /usr/local/bin/ 
-# Wed, 08 Nov 2017 14:55:28 GMT
+# Wed, 13 Dec 2017 15:01:49 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Wed, 08 Nov 2017 14:55:29 GMT
+# Wed, 13 Dec 2017 15:01:50 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 08 Nov 2017 14:55:30 GMT
+# Wed, 13 Dec 2017 15:01:51 GMT
 EXPOSE 25672/tcp 4369/tcp 5671/tcp 5672/tcp
-# Wed, 08 Nov 2017 14:55:30 GMT
+# Wed, 13 Dec 2017 15:01:52 GMT
 CMD ["rabbitmq-server"]
-# Wed, 08 Nov 2017 14:55:55 GMT
+# Wed, 13 Dec 2017 15:02:16 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Tue, 21 Nov 2017 14:53:30 GMT
+# Wed, 13 Dec 2017 15:02:40 GMT
 RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; 	apt-get install -y --no-install-recommends python; 	rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
-# Tue, 21 Nov 2017 14:53:31 GMT
+# Wed, 13 Dec 2017 15:02:41 GMT
 EXPOSE 15671/tcp 15672/tcp
 ```
 
 -	Layers:
-	-	`sha256:e907afd6e25615a4d3eb554d930cef57b87e79ec82413889c2eac38beb4eb8f7`  
-		Last Modified: Mon, 09 Oct 2017 22:03:08 GMT  
-		Size: 20.3 MB (20337143 bytes)  
+	-	`sha256:fcad8cfc11c78a53ccf9aafafcb3ded5044dbd181977e6255aea54fbe164f131`  
+		Last Modified: Tue, 12 Dec 2017 18:49:05 GMT  
+		Size: 20.3 MB (20331270 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:31f0e65f9ffb0e8a0344de3620c73aa9cd2d1ae973a3cf7588e6441034e9822e`  
-		Last Modified: Sat, 04 Nov 2017 19:40:47 GMT  
-		Size: 4.1 MB (4073213 bytes)  
+	-	`sha256:afb3f7722e72f404b7e544c9a358cc7390f02c0b391a14ea7dbecd85dca7d195`  
+		Last Modified: Wed, 13 Dec 2017 15:03:22 GMT  
+		Size: 4.1 MB (4073192 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6bed6073dce4194deeccf2caa0ec9b97ec2177bc41b7b540c17cdf13fda94ff0`  
-		Last Modified: Sat, 04 Nov 2017 19:40:45 GMT  
-		Size: 4.1 KB (4084 bytes)  
+	-	`sha256:51c72eaa15e586a9eb8cbde84a24922fdabb2aa060ef64831fb867757ac6f83a`  
+		Last Modified: Wed, 13 Dec 2017 15:03:21 GMT  
+		Size: 4.1 KB (4073 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b0596ffaef28f501b64c44c84ad20044e9016acaa66310b575a15244c91f49e`  
-		Last Modified: Sat, 04 Nov 2017 19:40:46 GMT  
-		Size: 919.4 KB (919403 bytes)  
+	-	`sha256:c3c18eddf679a7681dae03db8d58638da8df19f547589ac26050afe59b7fb646`  
+		Last Modified: Wed, 13 Dec 2017 15:08:32 GMT  
+		Size: 919.4 KB (919379 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fda14140ddcfb15fd8d4be24ae1356f497b7833c12233249de7016e1f2daf9f8`  
-		Last Modified: Sat, 04 Nov 2017 19:40:51 GMT  
-		Size: 25.0 MB (25042388 bytes)  
+	-	`sha256:a3bbf6b0234529f306e8b9c63bd36adfc9f44894c706c53e44ab33e30f98d689`  
+		Last Modified: Wed, 13 Dec 2017 15:08:37 GMT  
+		Size: 25.0 MB (25043237 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c78ee2824b70d54b867b533443f6fd14f51e18f23759b80153c869a2968e569b`  
-		Last Modified: Wed, 08 Nov 2017 14:57:26 GMT  
-		Size: 7.0 MB (6988187 bytes)  
+	-	`sha256:f2b670f3e3207e47c2292f6634ac9b74df058702d7b9b672dd89ba01dbd24a9e`  
+		Last Modified: Wed, 13 Dec 2017 15:08:33 GMT  
+		Size: 7.0 MB (6988367 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68ca626918894c95f51ccc210a06699be77ca84210960cd18a30b55d87d56c73`  
-		Last Modified: Wed, 08 Nov 2017 14:57:22 GMT  
-		Size: 2.3 KB (2261 bytes)  
+	-	`sha256:2d014226fc5ee9c5614079bc4a433e8eda4d3d8eb4719ba6d83188e0664c96b6`  
+		Last Modified: Wed, 13 Dec 2017 15:08:29 GMT  
+		Size: 2.3 KB (2264 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8571e229aa778383fbbbdb4c00374d68b5bfafdb419ab20b842307aab4fcedc7`  
-		Last Modified: Wed, 08 Nov 2017 14:57:22 GMT  
+	-	`sha256:c08e0888f257a2149480c9615b72291c7e53b5efffef546cb1ce5a391aa26b0b`  
+		Last Modified: Wed, 13 Dec 2017 15:08:30 GMT  
 		Size: 147.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d2bf9029e48f539b6a5f83c8b3d3dda09c821b3d219d121afa9217295dcde9dd`  
-		Last Modified: Wed, 08 Nov 2017 14:57:22 GMT  
-		Size: 127.0 B  
+	-	`sha256:b7dd022134ec587971e8567258b45afa8c60188a8718f4444e9a3dd786d5ee66`  
+		Last Modified: Wed, 13 Dec 2017 15:08:30 GMT  
+		Size: 125.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e538834de5f58eecf0df7ac787b4c94167bd6a9866534400d2eb04acd9c32e85`  
-		Last Modified: Wed, 08 Nov 2017 14:57:22 GMT  
-		Size: 4.0 KB (4039 bytes)  
+	-	`sha256:04b0e5ab17bac0e50d79bd1d337080c4f6609e6ce423e04b3eecc09137a700e0`  
+		Last Modified: Wed, 13 Dec 2017 15:08:30 GMT  
+		Size: 4.0 KB (4040 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ccf4d77c8deac6d39c639b9f2446f4a57e2d71802b537e300a5d548c6ca98647`  
-		Last Modified: Wed, 08 Nov 2017 14:57:22 GMT  
+	-	`sha256:4bc4d4638b44b5934920b9ed7301d269d5ab12fa2196ab4d43535a95c4925fd8`  
+		Last Modified: Wed, 13 Dec 2017 15:08:29 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:93fc97d0e8617141d030a4491d7f41ae04d794e6184b9f24a89ed7a5cebc6284`  
-		Last Modified: Wed, 08 Nov 2017 14:58:31 GMT  
-		Size: 193.0 B  
+	-	`sha256:8146517198824c16d33f85532872fd33291a57691dd9f8e62927790de3aa7a2e`  
+		Last Modified: Wed, 13 Dec 2017 15:09:17 GMT  
+		Size: 191.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:75880e75965b69b92f6e29446d33915b2ae63c269f7c537ca5d94a9bbb18f7e0`  
-		Last Modified: Tue, 21 Nov 2017 14:54:33 GMT  
-		Size: 7.5 MB (7486264 bytes)  
+	-	`sha256:df58833015ade0c3d71caf18bbb07a9fac5023517bc1a3ba014b0cf04f702003`  
+		Last Modified: Wed, 13 Dec 2017 15:09:20 GMT  
+		Size: 7.5 MB (7487463 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.6.14-management` - linux; 386
@@ -5081,7 +5201,7 @@ CMD ["rabbitmq-server"]
 ## `rabbitmq:3.6-management`
 
 ```console
-$ docker pull rabbitmq@sha256:90b10f2f46940d27d14c604d628655dda151e663bc6b4cee41ac2cc5caae4c18
+$ docker pull rabbitmq@sha256:c5b9550f679eedd99cb08c5760adcb4b58586b9aa4a66d7a8c77672ee043dcd2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5472,126 +5592,126 @@ EXPOSE 15671/tcp 15672/tcp
 ### `rabbitmq:3.6-management` - linux; arm64 variant v8
 
 ```console
-$ docker pull rabbitmq@sha256:6fa6294aa8f8f54bdd3e79c0a12f6fde30d0f6a8da3d37b1ceb6ba7d5737d108
+$ docker pull rabbitmq@sha256:760ed6e88403d733a6d56a2c70a2cd63d44c16aff062cc91f1baa0ff7abfe2be
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **64.9 MB (64857570 bytes)**  
+-	Total Size: **64.9 MB (64853869 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2cd58198e9b3205f1357b24c97276066563fc60de75438182b097b8107c7a9af`
+-	Image ID: `sha256:9064fb64bd87b5d37810271c8c0127d7829c257defd526be209817cc60d6e514`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
 ```dockerfile
-# Mon, 09 Oct 2017 21:47:55 GMT
-ADD file:3a528355cfc75437716aff3b517ef99ae602918d84d26dbafff0ed142248fb93 in / 
-# Mon, 09 Oct 2017 21:47:56 GMT
+# Tue, 12 Dec 2017 18:34:13 GMT
+ADD file:6e068c7cc5397bfb4ec60dab4d410c5d3ba724f20ad0129d2032fb509f0eadcd in / 
+# Tue, 12 Dec 2017 18:34:14 GMT
 CMD ["bash"]
-# Fri, 03 Nov 2017 13:53:20 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		gnupg 		dirmngr 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 03 Nov 2017 13:53:22 GMT
+# Wed, 13 Dec 2017 14:53:50 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		gnupg 		dirmngr 	; 	rm -rf /var/lib/apt/lists/*
+# Wed, 13 Dec 2017 14:53:52 GMT
 RUN groupadd -r rabbitmq && useradd -r -d /var/lib/rabbitmq -m -g rabbitmq rabbitmq
-# Fri, 03 Nov 2017 13:53:23 GMT
+# Wed, 13 Dec 2017 14:53:53 GMT
 ENV GOSU_VERSION=1.10
-# Sat, 04 Nov 2017 19:34:35 GMT
-RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Sat, 04 Nov 2017 19:35:29 GMT
-RUN set -ex; 	apt-get update; 	if apt-cache show erlang-base-hipe 2>/dev/null | grep -q 'Package: erlang-base-hipe'; then 		apt-get install -y --no-install-recommends 			erlang-base-hipe 		; 	fi; 	apt-get install -y --no-install-recommends 		erlang-asn1 		erlang-crypto 		erlang-eldap 		erlang-inets 		erlang-mnesia 		erlang-nox 		erlang-os-mon 		erlang-public-key 		erlang-ssl 		erlang-xmerl 	; 	rm -rf /var/lib/apt/lists/*
-# Sat, 04 Nov 2017 19:35:29 GMT
+# Wed, 13 Dec 2017 15:00:12 GMT
+RUN set -eux 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
+# Wed, 13 Dec 2017 15:00:47 GMT
+RUN set -eux; 	apt-get update; 	if apt-cache show erlang-base-hipe 2>/dev/null | grep -q 'Package: erlang-base-hipe'; then 		apt-get install -y --no-install-recommends 			erlang-base-hipe 		; 	fi; 	apt-get install -y --no-install-recommends 		erlang-asn1 		erlang-crypto 		erlang-eldap 		erlang-inets 		erlang-mnesia 		erlang-nox 		erlang-os-mon 		erlang-public-key 		erlang-ssl 		erlang-xmerl 	; 	rm -rf /var/lib/apt/lists/*
+# Wed, 13 Dec 2017 15:00:48 GMT
 ENV RABBITMQ_LOGS=- RABBITMQ_SASL_LOGS=-
-# Sat, 04 Nov 2017 19:35:30 GMT
+# Wed, 13 Dec 2017 15:00:49 GMT
 ENV PATH=/usr/lib/rabbitmq/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 04 Nov 2017 19:35:31 GMT
+# Wed, 13 Dec 2017 15:00:49 GMT
 ENV RABBITMQ_GPG_KEY=0A9AF2115F4687BD29803A206B73A36E6026DFCA
-# Wed, 08 Nov 2017 14:53:01 GMT
+# Wed, 13 Dec 2017 15:00:50 GMT
 ENV RABBITMQ_VERSION=3.6.14
-# Wed, 08 Nov 2017 14:53:02 GMT
+# Wed, 13 Dec 2017 15:00:51 GMT
 ENV RABBITMQ_GITHUB_TAG=rabbitmq_v3_6_14
-# Wed, 08 Nov 2017 14:53:02 GMT
+# Wed, 13 Dec 2017 15:00:51 GMT
 ENV RABBITMQ_DEBIAN_VERSION=3.6.14-1
-# Wed, 08 Nov 2017 14:55:19 GMT
-RUN set -ex; 		apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O rabbitmq-server.deb.asc "https://github.com/rabbitmq/rabbitmq-server/releases/download/$RABBITMQ_GITHUB_TAG/rabbitmq-server_${RABBITMQ_DEBIAN_VERSION}_all.deb.asc"; 	wget -O rabbitmq-server.deb     "https://github.com/rabbitmq/rabbitmq-server/releases/download/$RABBITMQ_GITHUB_TAG/rabbitmq-server_${RABBITMQ_DEBIAN_VERSION}_all.deb"; 		apt-get purge -y --auto-remove ca-certificates wget; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$RABBITMQ_GPG_KEY"; 	gpg --batch --verify rabbitmq-server.deb.asc rabbitmq-server.deb; 	rm -rf "$GNUPGHOME"; 		apt install -y --no-install-recommends ./rabbitmq-server.deb; 	dpkg -l | grep rabbitmq-server; 	rm -f rabbitmq-server.deb*; 		rm -rf /var/lib/apt/lists/*
-# Wed, 08 Nov 2017 14:55:19 GMT
+# Wed, 13 Dec 2017 15:01:39 GMT
+RUN set -eux; 		apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O rabbitmq-server.deb.asc "https://github.com/rabbitmq/rabbitmq-server/releases/download/$RABBITMQ_GITHUB_TAG/rabbitmq-server_${RABBITMQ_DEBIAN_VERSION}_all.deb.asc"; 	wget -O rabbitmq-server.deb     "https://github.com/rabbitmq/rabbitmq-server/releases/download/$RABBITMQ_GITHUB_TAG/rabbitmq-server_${RABBITMQ_DEBIAN_VERSION}_all.deb"; 		apt-get purge -y --auto-remove ca-certificates wget; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$RABBITMQ_GPG_KEY"; 	gpg --batch --verify rabbitmq-server.deb.asc rabbitmq-server.deb; 	rm -rf "$GNUPGHOME"; 		apt install -y --no-install-recommends ./rabbitmq-server.deb; 	dpkg -l | grep rabbitmq-server; 	rm -f rabbitmq-server.deb*; 		rm -rf /var/lib/apt/lists/*
+# Wed, 13 Dec 2017 15:01:40 GMT
 ENV HOME=/var/lib/rabbitmq
-# Wed, 08 Nov 2017 14:55:21 GMT
+# Wed, 13 Dec 2017 15:01:42 GMT
 RUN mkdir -p /var/lib/rabbitmq /etc/rabbitmq 	&& chown -R rabbitmq:rabbitmq /var/lib/rabbitmq /etc/rabbitmq 	&& chmod -R 777 /var/lib/rabbitmq /etc/rabbitmq
-# Wed, 08 Nov 2017 14:55:22 GMT
+# Wed, 13 Dec 2017 15:01:42 GMT
 VOLUME [/var/lib/rabbitmq]
-# Wed, 08 Nov 2017 14:55:23 GMT
+# Wed, 13 Dec 2017 15:01:44 GMT
 RUN ln -sf /var/lib/rabbitmq/.erlang.cookie /root/
-# Wed, 08 Nov 2017 14:55:25 GMT
+# Wed, 13 Dec 2017 15:01:46 GMT
 RUN ln -sf "/usr/lib/rabbitmq/lib/rabbitmq_server-$RABBITMQ_VERSION/plugins" /plugins
-# Wed, 08 Nov 2017 14:55:26 GMT
+# Wed, 13 Dec 2017 15:01:48 GMT
 COPY file:7f3c1def1757a323e01e9cd9e65a31daea4925bdbddb08efd80abc7fe43d605e in /usr/local/bin/ 
-# Wed, 08 Nov 2017 14:55:28 GMT
+# Wed, 13 Dec 2017 15:01:49 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Wed, 08 Nov 2017 14:55:29 GMT
+# Wed, 13 Dec 2017 15:01:50 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 08 Nov 2017 14:55:30 GMT
+# Wed, 13 Dec 2017 15:01:51 GMT
 EXPOSE 25672/tcp 4369/tcp 5671/tcp 5672/tcp
-# Wed, 08 Nov 2017 14:55:30 GMT
+# Wed, 13 Dec 2017 15:01:52 GMT
 CMD ["rabbitmq-server"]
-# Wed, 08 Nov 2017 14:55:55 GMT
+# Wed, 13 Dec 2017 15:02:16 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Tue, 21 Nov 2017 14:53:30 GMT
+# Wed, 13 Dec 2017 15:02:40 GMT
 RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; 	apt-get install -y --no-install-recommends python; 	rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
-# Tue, 21 Nov 2017 14:53:31 GMT
+# Wed, 13 Dec 2017 15:02:41 GMT
 EXPOSE 15671/tcp 15672/tcp
 ```
 
 -	Layers:
-	-	`sha256:e907afd6e25615a4d3eb554d930cef57b87e79ec82413889c2eac38beb4eb8f7`  
-		Last Modified: Mon, 09 Oct 2017 22:03:08 GMT  
-		Size: 20.3 MB (20337143 bytes)  
+	-	`sha256:fcad8cfc11c78a53ccf9aafafcb3ded5044dbd181977e6255aea54fbe164f131`  
+		Last Modified: Tue, 12 Dec 2017 18:49:05 GMT  
+		Size: 20.3 MB (20331270 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:31f0e65f9ffb0e8a0344de3620c73aa9cd2d1ae973a3cf7588e6441034e9822e`  
-		Last Modified: Sat, 04 Nov 2017 19:40:47 GMT  
-		Size: 4.1 MB (4073213 bytes)  
+	-	`sha256:afb3f7722e72f404b7e544c9a358cc7390f02c0b391a14ea7dbecd85dca7d195`  
+		Last Modified: Wed, 13 Dec 2017 15:03:22 GMT  
+		Size: 4.1 MB (4073192 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6bed6073dce4194deeccf2caa0ec9b97ec2177bc41b7b540c17cdf13fda94ff0`  
-		Last Modified: Sat, 04 Nov 2017 19:40:45 GMT  
-		Size: 4.1 KB (4084 bytes)  
+	-	`sha256:51c72eaa15e586a9eb8cbde84a24922fdabb2aa060ef64831fb867757ac6f83a`  
+		Last Modified: Wed, 13 Dec 2017 15:03:21 GMT  
+		Size: 4.1 KB (4073 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b0596ffaef28f501b64c44c84ad20044e9016acaa66310b575a15244c91f49e`  
-		Last Modified: Sat, 04 Nov 2017 19:40:46 GMT  
-		Size: 919.4 KB (919403 bytes)  
+	-	`sha256:c3c18eddf679a7681dae03db8d58638da8df19f547589ac26050afe59b7fb646`  
+		Last Modified: Wed, 13 Dec 2017 15:08:32 GMT  
+		Size: 919.4 KB (919379 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fda14140ddcfb15fd8d4be24ae1356f497b7833c12233249de7016e1f2daf9f8`  
-		Last Modified: Sat, 04 Nov 2017 19:40:51 GMT  
-		Size: 25.0 MB (25042388 bytes)  
+	-	`sha256:a3bbf6b0234529f306e8b9c63bd36adfc9f44894c706c53e44ab33e30f98d689`  
+		Last Modified: Wed, 13 Dec 2017 15:08:37 GMT  
+		Size: 25.0 MB (25043237 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c78ee2824b70d54b867b533443f6fd14f51e18f23759b80153c869a2968e569b`  
-		Last Modified: Wed, 08 Nov 2017 14:57:26 GMT  
-		Size: 7.0 MB (6988187 bytes)  
+	-	`sha256:f2b670f3e3207e47c2292f6634ac9b74df058702d7b9b672dd89ba01dbd24a9e`  
+		Last Modified: Wed, 13 Dec 2017 15:08:33 GMT  
+		Size: 7.0 MB (6988367 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68ca626918894c95f51ccc210a06699be77ca84210960cd18a30b55d87d56c73`  
-		Last Modified: Wed, 08 Nov 2017 14:57:22 GMT  
-		Size: 2.3 KB (2261 bytes)  
+	-	`sha256:2d014226fc5ee9c5614079bc4a433e8eda4d3d8eb4719ba6d83188e0664c96b6`  
+		Last Modified: Wed, 13 Dec 2017 15:08:29 GMT  
+		Size: 2.3 KB (2264 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8571e229aa778383fbbbdb4c00374d68b5bfafdb419ab20b842307aab4fcedc7`  
-		Last Modified: Wed, 08 Nov 2017 14:57:22 GMT  
+	-	`sha256:c08e0888f257a2149480c9615b72291c7e53b5efffef546cb1ce5a391aa26b0b`  
+		Last Modified: Wed, 13 Dec 2017 15:08:30 GMT  
 		Size: 147.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d2bf9029e48f539b6a5f83c8b3d3dda09c821b3d219d121afa9217295dcde9dd`  
-		Last Modified: Wed, 08 Nov 2017 14:57:22 GMT  
-		Size: 127.0 B  
+	-	`sha256:b7dd022134ec587971e8567258b45afa8c60188a8718f4444e9a3dd786d5ee66`  
+		Last Modified: Wed, 13 Dec 2017 15:08:30 GMT  
+		Size: 125.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e538834de5f58eecf0df7ac787b4c94167bd6a9866534400d2eb04acd9c32e85`  
-		Last Modified: Wed, 08 Nov 2017 14:57:22 GMT  
-		Size: 4.0 KB (4039 bytes)  
+	-	`sha256:04b0e5ab17bac0e50d79bd1d337080c4f6609e6ce423e04b3eecc09137a700e0`  
+		Last Modified: Wed, 13 Dec 2017 15:08:30 GMT  
+		Size: 4.0 KB (4040 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ccf4d77c8deac6d39c639b9f2446f4a57e2d71802b537e300a5d548c6ca98647`  
-		Last Modified: Wed, 08 Nov 2017 14:57:22 GMT  
+	-	`sha256:4bc4d4638b44b5934920b9ed7301d269d5ab12fa2196ab4d43535a95c4925fd8`  
+		Last Modified: Wed, 13 Dec 2017 15:08:29 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:93fc97d0e8617141d030a4491d7f41ae04d794e6184b9f24a89ed7a5cebc6284`  
-		Last Modified: Wed, 08 Nov 2017 14:58:31 GMT  
-		Size: 193.0 B  
+	-	`sha256:8146517198824c16d33f85532872fd33291a57691dd9f8e62927790de3aa7a2e`  
+		Last Modified: Wed, 13 Dec 2017 15:09:17 GMT  
+		Size: 191.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:75880e75965b69b92f6e29446d33915b2ae63c269f7c537ca5d94a9bbb18f7e0`  
-		Last Modified: Tue, 21 Nov 2017 14:54:33 GMT  
-		Size: 7.5 MB (7486264 bytes)  
+	-	`sha256:df58833015ade0c3d71caf18bbb07a9fac5023517bc1a3ba014b0cf04f702003`  
+		Last Modified: Wed, 13 Dec 2017 15:09:20 GMT  
+		Size: 7.5 MB (7487463 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.6-management` - linux; 386
@@ -6683,7 +6803,7 @@ EXPOSE 15671/tcp 15672/tcp
 ## `rabbitmq:3.7`
 
 ```console
-$ docker pull rabbitmq@sha256:8010ce302b32b1e7119c4c313cd4800d8a22db42b30c0fb85de7998ff4cd4bba
+$ docker pull rabbitmq@sha256:eb164f1639649e704cad4238aa53b47d93a8cb8445707246bff80f089a8f3574
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6691,6 +6811,7 @@ $ docker pull rabbitmq@sha256:8010ce302b32b1e7119c4c313cd4800d8a22db42b30c0fb85d
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
+	-	linux; arm64 variant v8
 	-	linux; 386
 	-	linux; ppc64le
 
@@ -7051,6 +7172,125 @@ CMD ["rabbitmq-server"]
 		Size: 119.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+### `rabbitmq:3.7` - linux; arm64 variant v8
+
+```console
+$ docker pull rabbitmq@sha256:47dc8a9991bce412acd70555960b415de8e64d77f42d70e2e2657a38c1b3d004
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **62.8 MB (62807932 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:108e7d1309f83a8d0edc58d8450c2029738e5923c1c2a644506a69f536889677`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["rabbitmq-server"]`
+
+```dockerfile
+# Tue, 12 Dec 2017 18:34:13 GMT
+ADD file:6e068c7cc5397bfb4ec60dab4d410c5d3ba724f20ad0129d2032fb509f0eadcd in / 
+# Tue, 12 Dec 2017 18:34:14 GMT
+CMD ["bash"]
+# Wed, 13 Dec 2017 14:53:50 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		gnupg 		dirmngr 	; 	rm -rf /var/lib/apt/lists/*
+# Wed, 13 Dec 2017 14:53:52 GMT
+RUN groupadd -r rabbitmq && useradd -r -d /var/lib/rabbitmq -m -g rabbitmq rabbitmq
+# Wed, 13 Dec 2017 14:53:53 GMT
+ENV GOSU_VERSION=1.10
+# Wed, 13 Dec 2017 14:54:26 GMT
+RUN set -eux; 		fetchDeps=' 		ca-certificates 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		chmod +x /usr/local/bin/gosu; 	gosu nobody true; 		apt-get purge -y --auto-remove $fetchDeps
+# Wed, 13 Dec 2017 14:54:27 GMT
+RUN set -eux; 	sed 's/stretch/buster/g' /etc/apt/sources.list 		| tee /etc/apt/sources.list.d/buster.list; 	{ 		echo 'Package: *'; 		echo 'Pin: release n=buster*'; 		echo 'Pin-Priority: -10'; 		echo; 		echo 'Package: erlang*'; 		echo 'Pin: release n=buster*'; 		echo 'Pin-Priority: 999'; 		echo; 		echo 'Package: erlang*'; 		echo 'Pin: release n=stretch*'; 		echo 'Pin-Priority: -10'; 	} | tee /etc/apt/preferences.d/buster-erlang
+# Wed, 13 Dec 2017 14:55:29 GMT
+RUN set -eux; 	apt-get update; 	if apt-cache show erlang-base-hipe 2>/dev/null | grep -q 'Package: erlang-base-hipe'; then 		apt-get install -y --no-install-recommends 			erlang-base-hipe 		; 	fi; 	apt-get install -y --no-install-recommends 		erlang-asn1 		erlang-crypto 		erlang-eldap 		erlang-inets 		erlang-mnesia 		erlang-nox 		erlang-os-mon 		erlang-public-key 		erlang-ssl 		erlang-xmerl 	; 	rm -rf /var/lib/apt/lists/*
+# Wed, 13 Dec 2017 14:55:29 GMT
+ENV RABBITMQ_LOGS=- RABBITMQ_SASL_LOGS=-
+# Wed, 13 Dec 2017 14:55:30 GMT
+ENV PATH=/usr/lib/rabbitmq/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 13 Dec 2017 14:55:31 GMT
+ENV RABBITMQ_GPG_KEY=0A9AF2115F4687BD29803A206B73A36E6026DFCA
+# Wed, 13 Dec 2017 14:55:31 GMT
+ENV RABBITMQ_VERSION=3.7.0
+# Wed, 13 Dec 2017 14:55:32 GMT
+ENV RABBITMQ_GITHUB_TAG=v3.7.0
+# Wed, 13 Dec 2017 14:55:32 GMT
+ENV RABBITMQ_DEBIAN_VERSION=3.7.0-1
+# Wed, 13 Dec 2017 14:56:22 GMT
+RUN set -eux; 		apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O rabbitmq-server.deb.asc "https://github.com/rabbitmq/rabbitmq-server/releases/download/$RABBITMQ_GITHUB_TAG/rabbitmq-server_${RABBITMQ_DEBIAN_VERSION}_all.deb.asc"; 	wget -O rabbitmq-server.deb     "https://github.com/rabbitmq/rabbitmq-server/releases/download/$RABBITMQ_GITHUB_TAG/rabbitmq-server_${RABBITMQ_DEBIAN_VERSION}_all.deb"; 		apt-get purge -y --auto-remove ca-certificates wget; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$RABBITMQ_GPG_KEY"; 	gpg --batch --verify rabbitmq-server.deb.asc rabbitmq-server.deb; 	rm -rf "$GNUPGHOME"; 		apt install -y --no-install-recommends ./rabbitmq-server.deb; 	dpkg -l | grep rabbitmq-server; 	rm -f rabbitmq-server.deb*; 		rm -rf /var/lib/apt/lists/*
+# Wed, 13 Dec 2017 14:56:22 GMT
+ENV LANG=C.UTF-8
+# Wed, 13 Dec 2017 14:56:23 GMT
+ENV HOME=/var/lib/rabbitmq
+# Wed, 13 Dec 2017 14:56:25 GMT
+RUN mkdir -p /var/lib/rabbitmq /etc/rabbitmq 	&& chown -R rabbitmq:rabbitmq /var/lib/rabbitmq /etc/rabbitmq 	&& chmod -R 777 /var/lib/rabbitmq /etc/rabbitmq
+# Wed, 13 Dec 2017 14:56:26 GMT
+VOLUME [/var/lib/rabbitmq]
+# Wed, 13 Dec 2017 14:56:27 GMT
+RUN ln -sf /var/lib/rabbitmq/.erlang.cookie /root/
+# Wed, 13 Dec 2017 14:56:29 GMT
+RUN ln -sf "/usr/lib/rabbitmq/lib/rabbitmq_server-$RABBITMQ_VERSION/plugins" /plugins
+# Wed, 13 Dec 2017 14:56:30 GMT
+COPY file:c105d1b28d0bd0db50deb948b54b2b1680f0db00bb9f24188a595ab6e83d775f in /usr/local/bin/ 
+# Wed, 13 Dec 2017 14:56:32 GMT
+RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
+# Wed, 13 Dec 2017 14:56:33 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 13 Dec 2017 14:56:34 GMT
+EXPOSE 25672/tcp 4369/tcp 5671/tcp 5672/tcp
+# Wed, 13 Dec 2017 14:56:35 GMT
+CMD ["rabbitmq-server"]
+```
+
+-	Layers:
+	-	`sha256:fcad8cfc11c78a53ccf9aafafcb3ded5044dbd181977e6255aea54fbe164f131`  
+		Last Modified: Tue, 12 Dec 2017 18:49:05 GMT  
+		Size: 20.3 MB (20331270 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:afb3f7722e72f404b7e544c9a358cc7390f02c0b391a14ea7dbecd85dca7d195`  
+		Last Modified: Wed, 13 Dec 2017 15:03:22 GMT  
+		Size: 4.1 MB (4073192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:51c72eaa15e586a9eb8cbde84a24922fdabb2aa060ef64831fb867757ac6f83a`  
+		Last Modified: Wed, 13 Dec 2017 15:03:21 GMT  
+		Size: 4.1 KB (4073 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a0ebe8f28a8d2ed828ab5c0431545a097e3f46a3ac45e36976fde6daa9fb405d`  
+		Last Modified: Wed, 13 Dec 2017 15:03:21 GMT  
+		Size: 919.4 KB (919386 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6cf8546d6f1127383410e3244beb4a3873b3305deab0f469ac13d1d0b112dee1`  
+		Last Modified: Wed, 13 Dec 2017 15:03:19 GMT  
+		Size: 353.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:aabe4d57c4c33847b3343b87c3d4b7f0efe523535a70b98185a7237848d3780d`  
+		Last Modified: Wed, 13 Dec 2017 15:03:23 GMT  
+		Size: 24.8 MB (24762935 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e8b0b4bad71865ffd051ae6ae0f91a9b75b0ab3498986501309260ddb9e24fcc`  
+		Last Modified: Wed, 13 Dec 2017 15:03:20 GMT  
+		Size: 12.7 MB (12709876 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:67179561590eee0692c7906da312516abbd25b2b392534f0bfafed9bd0818303`  
+		Last Modified: Wed, 13 Dec 2017 15:03:18 GMT  
+		Size: 2.3 KB (2263 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6b48bfe82561f7d7c44fa56bea46d94cbc0052eb3fb853410c407ecec6a82eaa`  
+		Last Modified: Wed, 13 Dec 2017 15:03:19 GMT  
+		Size: 146.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f8d99729c27cd387b006cb9dc27c0fca1babcbbeed19a6e6c93e977eda0dac93`  
+		Last Modified: Wed, 13 Dec 2017 15:03:17 GMT  
+		Size: 125.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:062cef48f85ee1451a47cf2779222946277e34579b5c3681788187cad29921aa`  
+		Last Modified: Wed, 13 Dec 2017 15:03:16 GMT  
+		Size: 4.2 KB (4192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c81797cfbaec748f0d21ce2d045068057947f2692359c079e912111ae3e02ce2`  
+		Last Modified: Wed, 13 Dec 2017 15:03:16 GMT  
+		Size: 121.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
 ### `rabbitmq:3.7` - linux; 386
 
 ```console
@@ -7292,7 +7532,7 @@ CMD ["rabbitmq-server"]
 ## `rabbitmq:3.7.0`
 
 ```console
-$ docker pull rabbitmq@sha256:8010ce302b32b1e7119c4c313cd4800d8a22db42b30c0fb85de7998ff4cd4bba
+$ docker pull rabbitmq@sha256:eb164f1639649e704cad4238aa53b47d93a8cb8445707246bff80f089a8f3574
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7300,6 +7540,7 @@ $ docker pull rabbitmq@sha256:8010ce302b32b1e7119c4c313cd4800d8a22db42b30c0fb85d
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
+	-	linux; arm64 variant v8
 	-	linux; 386
 	-	linux; ppc64le
 
@@ -7660,6 +7901,125 @@ CMD ["rabbitmq-server"]
 		Size: 119.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+### `rabbitmq:3.7.0` - linux; arm64 variant v8
+
+```console
+$ docker pull rabbitmq@sha256:47dc8a9991bce412acd70555960b415de8e64d77f42d70e2e2657a38c1b3d004
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **62.8 MB (62807932 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:108e7d1309f83a8d0edc58d8450c2029738e5923c1c2a644506a69f536889677`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["rabbitmq-server"]`
+
+```dockerfile
+# Tue, 12 Dec 2017 18:34:13 GMT
+ADD file:6e068c7cc5397bfb4ec60dab4d410c5d3ba724f20ad0129d2032fb509f0eadcd in / 
+# Tue, 12 Dec 2017 18:34:14 GMT
+CMD ["bash"]
+# Wed, 13 Dec 2017 14:53:50 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		gnupg 		dirmngr 	; 	rm -rf /var/lib/apt/lists/*
+# Wed, 13 Dec 2017 14:53:52 GMT
+RUN groupadd -r rabbitmq && useradd -r -d /var/lib/rabbitmq -m -g rabbitmq rabbitmq
+# Wed, 13 Dec 2017 14:53:53 GMT
+ENV GOSU_VERSION=1.10
+# Wed, 13 Dec 2017 14:54:26 GMT
+RUN set -eux; 		fetchDeps=' 		ca-certificates 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		chmod +x /usr/local/bin/gosu; 	gosu nobody true; 		apt-get purge -y --auto-remove $fetchDeps
+# Wed, 13 Dec 2017 14:54:27 GMT
+RUN set -eux; 	sed 's/stretch/buster/g' /etc/apt/sources.list 		| tee /etc/apt/sources.list.d/buster.list; 	{ 		echo 'Package: *'; 		echo 'Pin: release n=buster*'; 		echo 'Pin-Priority: -10'; 		echo; 		echo 'Package: erlang*'; 		echo 'Pin: release n=buster*'; 		echo 'Pin-Priority: 999'; 		echo; 		echo 'Package: erlang*'; 		echo 'Pin: release n=stretch*'; 		echo 'Pin-Priority: -10'; 	} | tee /etc/apt/preferences.d/buster-erlang
+# Wed, 13 Dec 2017 14:55:29 GMT
+RUN set -eux; 	apt-get update; 	if apt-cache show erlang-base-hipe 2>/dev/null | grep -q 'Package: erlang-base-hipe'; then 		apt-get install -y --no-install-recommends 			erlang-base-hipe 		; 	fi; 	apt-get install -y --no-install-recommends 		erlang-asn1 		erlang-crypto 		erlang-eldap 		erlang-inets 		erlang-mnesia 		erlang-nox 		erlang-os-mon 		erlang-public-key 		erlang-ssl 		erlang-xmerl 	; 	rm -rf /var/lib/apt/lists/*
+# Wed, 13 Dec 2017 14:55:29 GMT
+ENV RABBITMQ_LOGS=- RABBITMQ_SASL_LOGS=-
+# Wed, 13 Dec 2017 14:55:30 GMT
+ENV PATH=/usr/lib/rabbitmq/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 13 Dec 2017 14:55:31 GMT
+ENV RABBITMQ_GPG_KEY=0A9AF2115F4687BD29803A206B73A36E6026DFCA
+# Wed, 13 Dec 2017 14:55:31 GMT
+ENV RABBITMQ_VERSION=3.7.0
+# Wed, 13 Dec 2017 14:55:32 GMT
+ENV RABBITMQ_GITHUB_TAG=v3.7.0
+# Wed, 13 Dec 2017 14:55:32 GMT
+ENV RABBITMQ_DEBIAN_VERSION=3.7.0-1
+# Wed, 13 Dec 2017 14:56:22 GMT
+RUN set -eux; 		apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O rabbitmq-server.deb.asc "https://github.com/rabbitmq/rabbitmq-server/releases/download/$RABBITMQ_GITHUB_TAG/rabbitmq-server_${RABBITMQ_DEBIAN_VERSION}_all.deb.asc"; 	wget -O rabbitmq-server.deb     "https://github.com/rabbitmq/rabbitmq-server/releases/download/$RABBITMQ_GITHUB_TAG/rabbitmq-server_${RABBITMQ_DEBIAN_VERSION}_all.deb"; 		apt-get purge -y --auto-remove ca-certificates wget; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$RABBITMQ_GPG_KEY"; 	gpg --batch --verify rabbitmq-server.deb.asc rabbitmq-server.deb; 	rm -rf "$GNUPGHOME"; 		apt install -y --no-install-recommends ./rabbitmq-server.deb; 	dpkg -l | grep rabbitmq-server; 	rm -f rabbitmq-server.deb*; 		rm -rf /var/lib/apt/lists/*
+# Wed, 13 Dec 2017 14:56:22 GMT
+ENV LANG=C.UTF-8
+# Wed, 13 Dec 2017 14:56:23 GMT
+ENV HOME=/var/lib/rabbitmq
+# Wed, 13 Dec 2017 14:56:25 GMT
+RUN mkdir -p /var/lib/rabbitmq /etc/rabbitmq 	&& chown -R rabbitmq:rabbitmq /var/lib/rabbitmq /etc/rabbitmq 	&& chmod -R 777 /var/lib/rabbitmq /etc/rabbitmq
+# Wed, 13 Dec 2017 14:56:26 GMT
+VOLUME [/var/lib/rabbitmq]
+# Wed, 13 Dec 2017 14:56:27 GMT
+RUN ln -sf /var/lib/rabbitmq/.erlang.cookie /root/
+# Wed, 13 Dec 2017 14:56:29 GMT
+RUN ln -sf "/usr/lib/rabbitmq/lib/rabbitmq_server-$RABBITMQ_VERSION/plugins" /plugins
+# Wed, 13 Dec 2017 14:56:30 GMT
+COPY file:c105d1b28d0bd0db50deb948b54b2b1680f0db00bb9f24188a595ab6e83d775f in /usr/local/bin/ 
+# Wed, 13 Dec 2017 14:56:32 GMT
+RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
+# Wed, 13 Dec 2017 14:56:33 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 13 Dec 2017 14:56:34 GMT
+EXPOSE 25672/tcp 4369/tcp 5671/tcp 5672/tcp
+# Wed, 13 Dec 2017 14:56:35 GMT
+CMD ["rabbitmq-server"]
+```
+
+-	Layers:
+	-	`sha256:fcad8cfc11c78a53ccf9aafafcb3ded5044dbd181977e6255aea54fbe164f131`  
+		Last Modified: Tue, 12 Dec 2017 18:49:05 GMT  
+		Size: 20.3 MB (20331270 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:afb3f7722e72f404b7e544c9a358cc7390f02c0b391a14ea7dbecd85dca7d195`  
+		Last Modified: Wed, 13 Dec 2017 15:03:22 GMT  
+		Size: 4.1 MB (4073192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:51c72eaa15e586a9eb8cbde84a24922fdabb2aa060ef64831fb867757ac6f83a`  
+		Last Modified: Wed, 13 Dec 2017 15:03:21 GMT  
+		Size: 4.1 KB (4073 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a0ebe8f28a8d2ed828ab5c0431545a097e3f46a3ac45e36976fde6daa9fb405d`  
+		Last Modified: Wed, 13 Dec 2017 15:03:21 GMT  
+		Size: 919.4 KB (919386 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6cf8546d6f1127383410e3244beb4a3873b3305deab0f469ac13d1d0b112dee1`  
+		Last Modified: Wed, 13 Dec 2017 15:03:19 GMT  
+		Size: 353.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:aabe4d57c4c33847b3343b87c3d4b7f0efe523535a70b98185a7237848d3780d`  
+		Last Modified: Wed, 13 Dec 2017 15:03:23 GMT  
+		Size: 24.8 MB (24762935 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e8b0b4bad71865ffd051ae6ae0f91a9b75b0ab3498986501309260ddb9e24fcc`  
+		Last Modified: Wed, 13 Dec 2017 15:03:20 GMT  
+		Size: 12.7 MB (12709876 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:67179561590eee0692c7906da312516abbd25b2b392534f0bfafed9bd0818303`  
+		Last Modified: Wed, 13 Dec 2017 15:03:18 GMT  
+		Size: 2.3 KB (2263 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6b48bfe82561f7d7c44fa56bea46d94cbc0052eb3fb853410c407ecec6a82eaa`  
+		Last Modified: Wed, 13 Dec 2017 15:03:19 GMT  
+		Size: 146.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f8d99729c27cd387b006cb9dc27c0fca1babcbbeed19a6e6c93e977eda0dac93`  
+		Last Modified: Wed, 13 Dec 2017 15:03:17 GMT  
+		Size: 125.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:062cef48f85ee1451a47cf2779222946277e34579b5c3681788187cad29921aa`  
+		Last Modified: Wed, 13 Dec 2017 15:03:16 GMT  
+		Size: 4.2 KB (4192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c81797cfbaec748f0d21ce2d045068057947f2692359c079e912111ae3e02ce2`  
+		Last Modified: Wed, 13 Dec 2017 15:03:16 GMT  
+		Size: 121.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
 ### `rabbitmq:3.7.0` - linux; 386
 
 ```console
@@ -7901,13 +8261,14 @@ CMD ["rabbitmq-server"]
 ## `rabbitmq:3.7.0-alpine`
 
 ```console
-$ docker pull rabbitmq@sha256:1ea4fd9875c7f7f2fecc5556f094ccd4e98520548ed02977a5242cbb49689859
+$ docker pull rabbitmq@sha256:b3edaaf67928641765e66dbe7219a91a6e0f9746ccfb2a00d4422865083829c3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
 	-	linux; arm variant v6
+	-	linux; arm64 variant v8
 	-	linux; 386
 	-	linux; ppc64le
 
@@ -8109,6 +8470,109 @@ CMD ["rabbitmq-server"]
 	-	`sha256:0859fcd9294faaf072baacd13a09ca79dfbe128f63f530415134bac1128fafb6`  
 		Last Modified: Wed, 13 Dec 2017 02:05:15 GMT  
 		Size: 4.2 KB (4185 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `rabbitmq:3.7.0-alpine` - linux; arm64 variant v8
+
+```console
+$ docker pull rabbitmq@sha256:89ebb12f9cb5bb2103e1c57fbab93329b0805b7a643c1306d9d86a36c375e3e2
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **30.3 MB (30258779 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:b71c048661ffbd5ff2564826181134b8a758f29480f2c3671270640407988c2f`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["rabbitmq-server"]`
+
+```dockerfile
+# Fri, 01 Dec 2017 18:42:42 GMT
+ADD file:a6ef3cbbb1c0e5dfc6c3e41d70fd93e548594d9cb42c067e52df46d418c10a79 in / 
+# Fri, 01 Dec 2017 18:42:42 GMT
+COPY file:0f1d36dd7d8d53613b275660a88c5bf9b608ea8aa73a8054cb8bdbd73fd971ac in /etc/localtime 
+# Fri, 01 Dec 2017 18:42:43 GMT
+CMD ["/bin/sh"]
+# Wed, 13 Dec 2017 14:57:23 GMT
+RUN addgroup -S rabbitmq && adduser -S -h /var/lib/rabbitmq -G rabbitmq rabbitmq
+# Wed, 13 Dec 2017 14:57:26 GMT
+RUN apk add --no-cache 'su-exec>=0.2'
+# Wed, 13 Dec 2017 14:57:46 GMT
+RUN apk add --no-cache 		bash 		procps 		erlang-asn1 		erlang-hipe 		erlang-crypto 		erlang-eldap 		erlang-inets 		erlang-mnesia 		erlang 		erlang-os-mon 		erlang-public-key 		erlang-sasl 		erlang-ssl 		erlang-syntax-tools 		erlang-xmerl
+# Wed, 13 Dec 2017 14:57:47 GMT
+ENV RABBITMQ_LOGS=- RABBITMQ_SASL_LOGS=-
+# Wed, 13 Dec 2017 14:57:48 GMT
+ENV RABBITMQ_HOME=/opt/rabbitmq
+# Wed, 13 Dec 2017 14:57:48 GMT
+ENV PATH=/opt/rabbitmq/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 13 Dec 2017 14:57:49 GMT
+ENV RABBITMQ_GPG_KEY=0A9AF2115F4687BD29803A206B73A36E6026DFCA
+# Wed, 13 Dec 2017 14:57:50 GMT
+ENV RABBITMQ_VERSION=3.7.0
+# Wed, 13 Dec 2017 14:57:50 GMT
+ENV RABBITMQ_GITHUB_TAG=v3.7.0
+# Wed, 13 Dec 2017 14:58:09 GMT
+RUN set -ex; 		apk add --no-cache --virtual .build-deps 		ca-certificates 		gnupg 		libressl 		xz 	; 		wget -O rabbitmq-server.tar.xz.asc "https://github.com/rabbitmq/rabbitmq-server/releases/download/$RABBITMQ_GITHUB_TAG/rabbitmq-server-generic-unix-${RABBITMQ_VERSION}.tar.xz.asc"; 	wget -O rabbitmq-server.tar.xz     "https://github.com/rabbitmq/rabbitmq-server/releases/download/$RABBITMQ_GITHUB_TAG/rabbitmq-server-generic-unix-${RABBITMQ_VERSION}.tar.xz"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$RABBITMQ_GPG_KEY"; 	gpg --batch --verify rabbitmq-server.tar.xz.asc rabbitmq-server.tar.xz; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$RABBITMQ_HOME"; 	tar 		--extract 		--verbose 		--file rabbitmq-server.tar.xz 		--directory "$RABBITMQ_HOME" 		--strip-components 1 	; 	rm -f rabbitmq-server.tar.xz*; 		grep -qE '^SYS_PREFIX=\$\{RABBITMQ_HOME\}$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	sed -ri 's!^(SYS_PREFIX=).*$!\1!g' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	grep -qE '^SYS_PREFIX=$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 		apk del .build-deps
+# Wed, 13 Dec 2017 14:58:10 GMT
+ENV HOME=/var/lib/rabbitmq
+# Wed, 13 Dec 2017 14:58:12 GMT
+RUN mkdir -p /var/lib/rabbitmq /etc/rabbitmq /var/log/rabbitmq 	&& chown -R rabbitmq:rabbitmq /var/lib/rabbitmq /etc/rabbitmq /var/log/rabbitmq 	&& chmod -R 777 /var/lib/rabbitmq /etc/rabbitmq /var/log/rabbitmq
+# Wed, 13 Dec 2017 14:58:12 GMT
+VOLUME [/var/lib/rabbitmq]
+# Wed, 13 Dec 2017 14:58:14 GMT
+RUN ln -sf /var/lib/rabbitmq/.erlang.cookie /root/
+# Wed, 13 Dec 2017 14:58:16 GMT
+RUN ln -sf "$RABBITMQ_HOME/plugins" /plugins
+# Wed, 13 Dec 2017 14:58:17 GMT
+COPY file:76b73453fb1907cd71df507ce8beca295d8d98a7209ff3db87d1360f53021d59 in /usr/local/bin/ 
+# Wed, 13 Dec 2017 14:58:17 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 13 Dec 2017 14:58:18 GMT
+EXPOSE 25672/tcp 4369/tcp 5671/tcp 5672/tcp
+# Wed, 13 Dec 2017 14:58:19 GMT
+CMD ["rabbitmq-server"]
+```
+
+-	Layers:
+	-	`sha256:b78042c299ad99d1e646b18762d4bc22a84c4f88e5bb491ea6293a10f53ddf79`  
+		Last Modified: Fri, 01 Dec 2017 18:43:42 GMT  
+		Size: 2.0 MB (1988857 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6fd45b97b6c2a3ac869ae5c99e087e97bc29714b165180e06f0c9116f400f2dd`  
+		Last Modified: Fri, 01 Dec 2017 18:43:41 GMT  
+		Size: 175.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ae8c4ed88f638b23b4b44a51af5828b7ca6cf492e10d10b6517f03b2dc5f9c6a`  
+		Last Modified: Wed, 13 Dec 2017 15:05:55 GMT  
+		Size: 1.3 KB (1273 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ec871b8e16217284a5c9467fc885f9330b7cf594b88a9d251f442a31f9b11982`  
+		Last Modified: Wed, 13 Dec 2017 15:05:55 GMT  
+		Size: 8.7 KB (8656 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:bc676aee1200891fd5416055f87903087826e98535cbd81dcb50768900244552`  
+		Last Modified: Wed, 13 Dec 2017 15:06:00 GMT  
+		Size: 16.3 MB (16252090 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:577a9a05a066977770e450f5a317bbe555a9e7cbe22aed78d91c371d0f6078bc`  
+		Last Modified: Wed, 13 Dec 2017 15:05:54 GMT  
+		Size: 12.0 MB (12003080 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7a24fa148ff008b81d86769ff05e09e2ee50fe61c3254089e1a3d3ecc17a765d`  
+		Last Modified: Wed, 13 Dec 2017 15:05:53 GMT  
+		Size: 207.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4f22ee1e3a37e1290768a38199a9b5b15eb4abdbe51f7cfc9e0aaad33ebe6803`  
+		Last Modified: Wed, 13 Dec 2017 15:05:53 GMT  
+		Size: 146.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ef18cbc48101fe73159e8accdc33d71957b834ee331dacd917367fc69b06d03e`  
+		Last Modified: Wed, 13 Dec 2017 15:05:54 GMT  
+		Size: 107.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4781ade18957c78810a910a263829ec09a9e48923d2c936e4d1e969ed7b695e3`  
+		Last Modified: Wed, 13 Dec 2017 15:05:53 GMT  
+		Size: 4.2 KB (4188 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.7.0-alpine` - linux; 386
@@ -8320,7 +8784,7 @@ CMD ["rabbitmq-server"]
 ## `rabbitmq:3.7.0-management`
 
 ```console
-$ docker pull rabbitmq@sha256:89be591ebc9d76c2028d427ae0905b6c6d95cc7596b3e3c2429d71365ee2f769
+$ docker pull rabbitmq@sha256:193ec2dc8d32adbd60547e43faf3cbd96ad3899e99610149f80086d695d69fb4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8328,6 +8792,7 @@ $ docker pull rabbitmq@sha256:89be591ebc9d76c2028d427ae0905b6c6d95cc7596b3e3c242
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
+	-	linux; arm64 variant v8
 	-	linux; 386
 	-	linux; ppc64le
 
@@ -8712,6 +9177,133 @@ EXPOSE 15671/tcp 15672/tcp
 		Size: 194.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+### `rabbitmq:3.7.0-management` - linux; arm64 variant v8
+
+```console
+$ docker pull rabbitmq@sha256:7782fbfea16a905f8e459f778bd2417a1a8f8d3f97561d600cdbf2a043e7e062
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **62.8 MB (62808126 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:7245b2630be897d577191104a3e753430bf4311f08145ffc830f7459d43fda51`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["rabbitmq-server"]`
+
+```dockerfile
+# Tue, 12 Dec 2017 18:34:13 GMT
+ADD file:6e068c7cc5397bfb4ec60dab4d410c5d3ba724f20ad0129d2032fb509f0eadcd in / 
+# Tue, 12 Dec 2017 18:34:14 GMT
+CMD ["bash"]
+# Wed, 13 Dec 2017 14:53:50 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		gnupg 		dirmngr 	; 	rm -rf /var/lib/apt/lists/*
+# Wed, 13 Dec 2017 14:53:52 GMT
+RUN groupadd -r rabbitmq && useradd -r -d /var/lib/rabbitmq -m -g rabbitmq rabbitmq
+# Wed, 13 Dec 2017 14:53:53 GMT
+ENV GOSU_VERSION=1.10
+# Wed, 13 Dec 2017 14:54:26 GMT
+RUN set -eux; 		fetchDeps=' 		ca-certificates 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		chmod +x /usr/local/bin/gosu; 	gosu nobody true; 		apt-get purge -y --auto-remove $fetchDeps
+# Wed, 13 Dec 2017 14:54:27 GMT
+RUN set -eux; 	sed 's/stretch/buster/g' /etc/apt/sources.list 		| tee /etc/apt/sources.list.d/buster.list; 	{ 		echo 'Package: *'; 		echo 'Pin: release n=buster*'; 		echo 'Pin-Priority: -10'; 		echo; 		echo 'Package: erlang*'; 		echo 'Pin: release n=buster*'; 		echo 'Pin-Priority: 999'; 		echo; 		echo 'Package: erlang*'; 		echo 'Pin: release n=stretch*'; 		echo 'Pin-Priority: -10'; 	} | tee /etc/apt/preferences.d/buster-erlang
+# Wed, 13 Dec 2017 14:55:29 GMT
+RUN set -eux; 	apt-get update; 	if apt-cache show erlang-base-hipe 2>/dev/null | grep -q 'Package: erlang-base-hipe'; then 		apt-get install -y --no-install-recommends 			erlang-base-hipe 		; 	fi; 	apt-get install -y --no-install-recommends 		erlang-asn1 		erlang-crypto 		erlang-eldap 		erlang-inets 		erlang-mnesia 		erlang-nox 		erlang-os-mon 		erlang-public-key 		erlang-ssl 		erlang-xmerl 	; 	rm -rf /var/lib/apt/lists/*
+# Wed, 13 Dec 2017 14:55:29 GMT
+ENV RABBITMQ_LOGS=- RABBITMQ_SASL_LOGS=-
+# Wed, 13 Dec 2017 14:55:30 GMT
+ENV PATH=/usr/lib/rabbitmq/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 13 Dec 2017 14:55:31 GMT
+ENV RABBITMQ_GPG_KEY=0A9AF2115F4687BD29803A206B73A36E6026DFCA
+# Wed, 13 Dec 2017 14:55:31 GMT
+ENV RABBITMQ_VERSION=3.7.0
+# Wed, 13 Dec 2017 14:55:32 GMT
+ENV RABBITMQ_GITHUB_TAG=v3.7.0
+# Wed, 13 Dec 2017 14:55:32 GMT
+ENV RABBITMQ_DEBIAN_VERSION=3.7.0-1
+# Wed, 13 Dec 2017 14:56:22 GMT
+RUN set -eux; 		apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O rabbitmq-server.deb.asc "https://github.com/rabbitmq/rabbitmq-server/releases/download/$RABBITMQ_GITHUB_TAG/rabbitmq-server_${RABBITMQ_DEBIAN_VERSION}_all.deb.asc"; 	wget -O rabbitmq-server.deb     "https://github.com/rabbitmq/rabbitmq-server/releases/download/$RABBITMQ_GITHUB_TAG/rabbitmq-server_${RABBITMQ_DEBIAN_VERSION}_all.deb"; 		apt-get purge -y --auto-remove ca-certificates wget; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$RABBITMQ_GPG_KEY"; 	gpg --batch --verify rabbitmq-server.deb.asc rabbitmq-server.deb; 	rm -rf "$GNUPGHOME"; 		apt install -y --no-install-recommends ./rabbitmq-server.deb; 	dpkg -l | grep rabbitmq-server; 	rm -f rabbitmq-server.deb*; 		rm -rf /var/lib/apt/lists/*
+# Wed, 13 Dec 2017 14:56:22 GMT
+ENV LANG=C.UTF-8
+# Wed, 13 Dec 2017 14:56:23 GMT
+ENV HOME=/var/lib/rabbitmq
+# Wed, 13 Dec 2017 14:56:25 GMT
+RUN mkdir -p /var/lib/rabbitmq /etc/rabbitmq 	&& chown -R rabbitmq:rabbitmq /var/lib/rabbitmq /etc/rabbitmq 	&& chmod -R 777 /var/lib/rabbitmq /etc/rabbitmq
+# Wed, 13 Dec 2017 14:56:26 GMT
+VOLUME [/var/lib/rabbitmq]
+# Wed, 13 Dec 2017 14:56:27 GMT
+RUN ln -sf /var/lib/rabbitmq/.erlang.cookie /root/
+# Wed, 13 Dec 2017 14:56:29 GMT
+RUN ln -sf "/usr/lib/rabbitmq/lib/rabbitmq_server-$RABBITMQ_VERSION/plugins" /plugins
+# Wed, 13 Dec 2017 14:56:30 GMT
+COPY file:c105d1b28d0bd0db50deb948b54b2b1680f0db00bb9f24188a595ab6e83d775f in /usr/local/bin/ 
+# Wed, 13 Dec 2017 14:56:32 GMT
+RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
+# Wed, 13 Dec 2017 14:56:33 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 13 Dec 2017 14:56:34 GMT
+EXPOSE 25672/tcp 4369/tcp 5671/tcp 5672/tcp
+# Wed, 13 Dec 2017 14:56:35 GMT
+CMD ["rabbitmq-server"]
+# Wed, 13 Dec 2017 14:57:01 GMT
+RUN rabbitmq-plugins enable --offline rabbitmq_management
+# Wed, 13 Dec 2017 14:57:02 GMT
+EXPOSE 15671/tcp 15672/tcp
+```
+
+-	Layers:
+	-	`sha256:fcad8cfc11c78a53ccf9aafafcb3ded5044dbd181977e6255aea54fbe164f131`  
+		Last Modified: Tue, 12 Dec 2017 18:49:05 GMT  
+		Size: 20.3 MB (20331270 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:afb3f7722e72f404b7e544c9a358cc7390f02c0b391a14ea7dbecd85dca7d195`  
+		Last Modified: Wed, 13 Dec 2017 15:03:22 GMT  
+		Size: 4.1 MB (4073192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:51c72eaa15e586a9eb8cbde84a24922fdabb2aa060ef64831fb867757ac6f83a`  
+		Last Modified: Wed, 13 Dec 2017 15:03:21 GMT  
+		Size: 4.1 KB (4073 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a0ebe8f28a8d2ed828ab5c0431545a097e3f46a3ac45e36976fde6daa9fb405d`  
+		Last Modified: Wed, 13 Dec 2017 15:03:21 GMT  
+		Size: 919.4 KB (919386 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6cf8546d6f1127383410e3244beb4a3873b3305deab0f469ac13d1d0b112dee1`  
+		Last Modified: Wed, 13 Dec 2017 15:03:19 GMT  
+		Size: 353.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:aabe4d57c4c33847b3343b87c3d4b7f0efe523535a70b98185a7237848d3780d`  
+		Last Modified: Wed, 13 Dec 2017 15:03:23 GMT  
+		Size: 24.8 MB (24762935 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e8b0b4bad71865ffd051ae6ae0f91a9b75b0ab3498986501309260ddb9e24fcc`  
+		Last Modified: Wed, 13 Dec 2017 15:03:20 GMT  
+		Size: 12.7 MB (12709876 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:67179561590eee0692c7906da312516abbd25b2b392534f0bfafed9bd0818303`  
+		Last Modified: Wed, 13 Dec 2017 15:03:18 GMT  
+		Size: 2.3 KB (2263 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6b48bfe82561f7d7c44fa56bea46d94cbc0052eb3fb853410c407ecec6a82eaa`  
+		Last Modified: Wed, 13 Dec 2017 15:03:19 GMT  
+		Size: 146.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f8d99729c27cd387b006cb9dc27c0fca1babcbbeed19a6e6c93e977eda0dac93`  
+		Last Modified: Wed, 13 Dec 2017 15:03:17 GMT  
+		Size: 125.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:062cef48f85ee1451a47cf2779222946277e34579b5c3681788187cad29921aa`  
+		Last Modified: Wed, 13 Dec 2017 15:03:16 GMT  
+		Size: 4.2 KB (4192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c81797cfbaec748f0d21ce2d045068057947f2692359c079e912111ae3e02ce2`  
+		Last Modified: Wed, 13 Dec 2017 15:03:16 GMT  
+		Size: 121.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a223420aef72afc6cc650fe92efc9f145fe4609e7916bcd119d6abfbb83bf0e9`  
+		Last Modified: Wed, 13 Dec 2017 15:04:38 GMT  
+		Size: 194.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
 ### `rabbitmq:3.7.0-management` - linux; 386
 
 ```console
@@ -8969,13 +9561,14 @@ EXPOSE 15671/tcp 15672/tcp
 ## `rabbitmq:3.7.0-management-alpine`
 
 ```console
-$ docker pull rabbitmq@sha256:ffdf5cee74707a3ebcd0582117f7ff59609d232b4b429ef0b995f76be89f594e
+$ docker pull rabbitmq@sha256:174c6d452403af69077d67428c87584f9735bf90cbd239ac00743b1e5d3fcc60
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
 	-	linux; arm variant v6
+	-	linux; arm64 variant v8
 	-	linux; 386
 	-	linux; ppc64le
 
@@ -9192,6 +9785,117 @@ EXPOSE 15671/tcp 15672/tcp
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5fb2ea79db64cc3ea3eb160696f5522b7e1cf3ef4c595560c529410093c5d64e`  
 		Last Modified: Wed, 13 Dec 2017 02:05:32 GMT  
+		Size: 192.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `rabbitmq:3.7.0-management-alpine` - linux; arm64 variant v8
+
+```console
+$ docker pull rabbitmq@sha256:9526c662bcd08f9deb40b007691a912b921635d5f96c9ec3dfae4f98249de7b3
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **30.3 MB (30258971 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:db71ce3c1994db5a8a1621a956158e118fa786d5934497b577b4333908050880`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["rabbitmq-server"]`
+
+```dockerfile
+# Fri, 01 Dec 2017 18:42:42 GMT
+ADD file:a6ef3cbbb1c0e5dfc6c3e41d70fd93e548594d9cb42c067e52df46d418c10a79 in / 
+# Fri, 01 Dec 2017 18:42:42 GMT
+COPY file:0f1d36dd7d8d53613b275660a88c5bf9b608ea8aa73a8054cb8bdbd73fd971ac in /etc/localtime 
+# Fri, 01 Dec 2017 18:42:43 GMT
+CMD ["/bin/sh"]
+# Wed, 13 Dec 2017 14:57:23 GMT
+RUN addgroup -S rabbitmq && adduser -S -h /var/lib/rabbitmq -G rabbitmq rabbitmq
+# Wed, 13 Dec 2017 14:57:26 GMT
+RUN apk add --no-cache 'su-exec>=0.2'
+# Wed, 13 Dec 2017 14:57:46 GMT
+RUN apk add --no-cache 		bash 		procps 		erlang-asn1 		erlang-hipe 		erlang-crypto 		erlang-eldap 		erlang-inets 		erlang-mnesia 		erlang 		erlang-os-mon 		erlang-public-key 		erlang-sasl 		erlang-ssl 		erlang-syntax-tools 		erlang-xmerl
+# Wed, 13 Dec 2017 14:57:47 GMT
+ENV RABBITMQ_LOGS=- RABBITMQ_SASL_LOGS=-
+# Wed, 13 Dec 2017 14:57:48 GMT
+ENV RABBITMQ_HOME=/opt/rabbitmq
+# Wed, 13 Dec 2017 14:57:48 GMT
+ENV PATH=/opt/rabbitmq/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 13 Dec 2017 14:57:49 GMT
+ENV RABBITMQ_GPG_KEY=0A9AF2115F4687BD29803A206B73A36E6026DFCA
+# Wed, 13 Dec 2017 14:57:50 GMT
+ENV RABBITMQ_VERSION=3.7.0
+# Wed, 13 Dec 2017 14:57:50 GMT
+ENV RABBITMQ_GITHUB_TAG=v3.7.0
+# Wed, 13 Dec 2017 14:58:09 GMT
+RUN set -ex; 		apk add --no-cache --virtual .build-deps 		ca-certificates 		gnupg 		libressl 		xz 	; 		wget -O rabbitmq-server.tar.xz.asc "https://github.com/rabbitmq/rabbitmq-server/releases/download/$RABBITMQ_GITHUB_TAG/rabbitmq-server-generic-unix-${RABBITMQ_VERSION}.tar.xz.asc"; 	wget -O rabbitmq-server.tar.xz     "https://github.com/rabbitmq/rabbitmq-server/releases/download/$RABBITMQ_GITHUB_TAG/rabbitmq-server-generic-unix-${RABBITMQ_VERSION}.tar.xz"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$RABBITMQ_GPG_KEY"; 	gpg --batch --verify rabbitmq-server.tar.xz.asc rabbitmq-server.tar.xz; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$RABBITMQ_HOME"; 	tar 		--extract 		--verbose 		--file rabbitmq-server.tar.xz 		--directory "$RABBITMQ_HOME" 		--strip-components 1 	; 	rm -f rabbitmq-server.tar.xz*; 		grep -qE '^SYS_PREFIX=\$\{RABBITMQ_HOME\}$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	sed -ri 's!^(SYS_PREFIX=).*$!\1!g' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	grep -qE '^SYS_PREFIX=$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 		apk del .build-deps
+# Wed, 13 Dec 2017 14:58:10 GMT
+ENV HOME=/var/lib/rabbitmq
+# Wed, 13 Dec 2017 14:58:12 GMT
+RUN mkdir -p /var/lib/rabbitmq /etc/rabbitmq /var/log/rabbitmq 	&& chown -R rabbitmq:rabbitmq /var/lib/rabbitmq /etc/rabbitmq /var/log/rabbitmq 	&& chmod -R 777 /var/lib/rabbitmq /etc/rabbitmq /var/log/rabbitmq
+# Wed, 13 Dec 2017 14:58:12 GMT
+VOLUME [/var/lib/rabbitmq]
+# Wed, 13 Dec 2017 14:58:14 GMT
+RUN ln -sf /var/lib/rabbitmq/.erlang.cookie /root/
+# Wed, 13 Dec 2017 14:58:16 GMT
+RUN ln -sf "$RABBITMQ_HOME/plugins" /plugins
+# Wed, 13 Dec 2017 14:58:17 GMT
+COPY file:76b73453fb1907cd71df507ce8beca295d8d98a7209ff3db87d1360f53021d59 in /usr/local/bin/ 
+# Wed, 13 Dec 2017 14:58:17 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 13 Dec 2017 14:58:18 GMT
+EXPOSE 25672/tcp 4369/tcp 5671/tcp 5672/tcp
+# Wed, 13 Dec 2017 14:58:19 GMT
+CMD ["rabbitmq-server"]
+# Wed, 13 Dec 2017 14:58:44 GMT
+RUN rabbitmq-plugins enable --offline rabbitmq_management
+# Wed, 13 Dec 2017 14:58:45 GMT
+EXPOSE 15671/tcp 15672/tcp
+```
+
+-	Layers:
+	-	`sha256:b78042c299ad99d1e646b18762d4bc22a84c4f88e5bb491ea6293a10f53ddf79`  
+		Last Modified: Fri, 01 Dec 2017 18:43:42 GMT  
+		Size: 2.0 MB (1988857 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6fd45b97b6c2a3ac869ae5c99e087e97bc29714b165180e06f0c9116f400f2dd`  
+		Last Modified: Fri, 01 Dec 2017 18:43:41 GMT  
+		Size: 175.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ae8c4ed88f638b23b4b44a51af5828b7ca6cf492e10d10b6517f03b2dc5f9c6a`  
+		Last Modified: Wed, 13 Dec 2017 15:05:55 GMT  
+		Size: 1.3 KB (1273 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ec871b8e16217284a5c9467fc885f9330b7cf594b88a9d251f442a31f9b11982`  
+		Last Modified: Wed, 13 Dec 2017 15:05:55 GMT  
+		Size: 8.7 KB (8656 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:bc676aee1200891fd5416055f87903087826e98535cbd81dcb50768900244552`  
+		Last Modified: Wed, 13 Dec 2017 15:06:00 GMT  
+		Size: 16.3 MB (16252090 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:577a9a05a066977770e450f5a317bbe555a9e7cbe22aed78d91c371d0f6078bc`  
+		Last Modified: Wed, 13 Dec 2017 15:05:54 GMT  
+		Size: 12.0 MB (12003080 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7a24fa148ff008b81d86769ff05e09e2ee50fe61c3254089e1a3d3ecc17a765d`  
+		Last Modified: Wed, 13 Dec 2017 15:05:53 GMT  
+		Size: 207.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4f22ee1e3a37e1290768a38199a9b5b15eb4abdbe51f7cfc9e0aaad33ebe6803`  
+		Last Modified: Wed, 13 Dec 2017 15:05:53 GMT  
+		Size: 146.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ef18cbc48101fe73159e8accdc33d71957b834ee331dacd917367fc69b06d03e`  
+		Last Modified: Wed, 13 Dec 2017 15:05:54 GMT  
+		Size: 107.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4781ade18957c78810a910a263829ec09a9e48923d2c936e4d1e969ed7b695e3`  
+		Last Modified: Wed, 13 Dec 2017 15:05:53 GMT  
+		Size: 4.2 KB (4188 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6f14bee0d74c21f5eb99d870ecc69c6aac18817c43f5f717a51b4406c73a8ef9`  
+		Last Modified: Wed, 13 Dec 2017 15:07:15 GMT  
 		Size: 192.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -9420,13 +10124,14 @@ EXPOSE 15671/tcp 15672/tcp
 ## `rabbitmq:3.7-alpine`
 
 ```console
-$ docker pull rabbitmq@sha256:1ea4fd9875c7f7f2fecc5556f094ccd4e98520548ed02977a5242cbb49689859
+$ docker pull rabbitmq@sha256:b3edaaf67928641765e66dbe7219a91a6e0f9746ccfb2a00d4422865083829c3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
 	-	linux; arm variant v6
+	-	linux; arm64 variant v8
 	-	linux; 386
 	-	linux; ppc64le
 
@@ -9628,6 +10333,109 @@ CMD ["rabbitmq-server"]
 	-	`sha256:0859fcd9294faaf072baacd13a09ca79dfbe128f63f530415134bac1128fafb6`  
 		Last Modified: Wed, 13 Dec 2017 02:05:15 GMT  
 		Size: 4.2 KB (4185 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `rabbitmq:3.7-alpine` - linux; arm64 variant v8
+
+```console
+$ docker pull rabbitmq@sha256:89ebb12f9cb5bb2103e1c57fbab93329b0805b7a643c1306d9d86a36c375e3e2
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **30.3 MB (30258779 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:b71c048661ffbd5ff2564826181134b8a758f29480f2c3671270640407988c2f`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["rabbitmq-server"]`
+
+```dockerfile
+# Fri, 01 Dec 2017 18:42:42 GMT
+ADD file:a6ef3cbbb1c0e5dfc6c3e41d70fd93e548594d9cb42c067e52df46d418c10a79 in / 
+# Fri, 01 Dec 2017 18:42:42 GMT
+COPY file:0f1d36dd7d8d53613b275660a88c5bf9b608ea8aa73a8054cb8bdbd73fd971ac in /etc/localtime 
+# Fri, 01 Dec 2017 18:42:43 GMT
+CMD ["/bin/sh"]
+# Wed, 13 Dec 2017 14:57:23 GMT
+RUN addgroup -S rabbitmq && adduser -S -h /var/lib/rabbitmq -G rabbitmq rabbitmq
+# Wed, 13 Dec 2017 14:57:26 GMT
+RUN apk add --no-cache 'su-exec>=0.2'
+# Wed, 13 Dec 2017 14:57:46 GMT
+RUN apk add --no-cache 		bash 		procps 		erlang-asn1 		erlang-hipe 		erlang-crypto 		erlang-eldap 		erlang-inets 		erlang-mnesia 		erlang 		erlang-os-mon 		erlang-public-key 		erlang-sasl 		erlang-ssl 		erlang-syntax-tools 		erlang-xmerl
+# Wed, 13 Dec 2017 14:57:47 GMT
+ENV RABBITMQ_LOGS=- RABBITMQ_SASL_LOGS=-
+# Wed, 13 Dec 2017 14:57:48 GMT
+ENV RABBITMQ_HOME=/opt/rabbitmq
+# Wed, 13 Dec 2017 14:57:48 GMT
+ENV PATH=/opt/rabbitmq/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 13 Dec 2017 14:57:49 GMT
+ENV RABBITMQ_GPG_KEY=0A9AF2115F4687BD29803A206B73A36E6026DFCA
+# Wed, 13 Dec 2017 14:57:50 GMT
+ENV RABBITMQ_VERSION=3.7.0
+# Wed, 13 Dec 2017 14:57:50 GMT
+ENV RABBITMQ_GITHUB_TAG=v3.7.0
+# Wed, 13 Dec 2017 14:58:09 GMT
+RUN set -ex; 		apk add --no-cache --virtual .build-deps 		ca-certificates 		gnupg 		libressl 		xz 	; 		wget -O rabbitmq-server.tar.xz.asc "https://github.com/rabbitmq/rabbitmq-server/releases/download/$RABBITMQ_GITHUB_TAG/rabbitmq-server-generic-unix-${RABBITMQ_VERSION}.tar.xz.asc"; 	wget -O rabbitmq-server.tar.xz     "https://github.com/rabbitmq/rabbitmq-server/releases/download/$RABBITMQ_GITHUB_TAG/rabbitmq-server-generic-unix-${RABBITMQ_VERSION}.tar.xz"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$RABBITMQ_GPG_KEY"; 	gpg --batch --verify rabbitmq-server.tar.xz.asc rabbitmq-server.tar.xz; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$RABBITMQ_HOME"; 	tar 		--extract 		--verbose 		--file rabbitmq-server.tar.xz 		--directory "$RABBITMQ_HOME" 		--strip-components 1 	; 	rm -f rabbitmq-server.tar.xz*; 		grep -qE '^SYS_PREFIX=\$\{RABBITMQ_HOME\}$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	sed -ri 's!^(SYS_PREFIX=).*$!\1!g' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	grep -qE '^SYS_PREFIX=$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 		apk del .build-deps
+# Wed, 13 Dec 2017 14:58:10 GMT
+ENV HOME=/var/lib/rabbitmq
+# Wed, 13 Dec 2017 14:58:12 GMT
+RUN mkdir -p /var/lib/rabbitmq /etc/rabbitmq /var/log/rabbitmq 	&& chown -R rabbitmq:rabbitmq /var/lib/rabbitmq /etc/rabbitmq /var/log/rabbitmq 	&& chmod -R 777 /var/lib/rabbitmq /etc/rabbitmq /var/log/rabbitmq
+# Wed, 13 Dec 2017 14:58:12 GMT
+VOLUME [/var/lib/rabbitmq]
+# Wed, 13 Dec 2017 14:58:14 GMT
+RUN ln -sf /var/lib/rabbitmq/.erlang.cookie /root/
+# Wed, 13 Dec 2017 14:58:16 GMT
+RUN ln -sf "$RABBITMQ_HOME/plugins" /plugins
+# Wed, 13 Dec 2017 14:58:17 GMT
+COPY file:76b73453fb1907cd71df507ce8beca295d8d98a7209ff3db87d1360f53021d59 in /usr/local/bin/ 
+# Wed, 13 Dec 2017 14:58:17 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 13 Dec 2017 14:58:18 GMT
+EXPOSE 25672/tcp 4369/tcp 5671/tcp 5672/tcp
+# Wed, 13 Dec 2017 14:58:19 GMT
+CMD ["rabbitmq-server"]
+```
+
+-	Layers:
+	-	`sha256:b78042c299ad99d1e646b18762d4bc22a84c4f88e5bb491ea6293a10f53ddf79`  
+		Last Modified: Fri, 01 Dec 2017 18:43:42 GMT  
+		Size: 2.0 MB (1988857 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6fd45b97b6c2a3ac869ae5c99e087e97bc29714b165180e06f0c9116f400f2dd`  
+		Last Modified: Fri, 01 Dec 2017 18:43:41 GMT  
+		Size: 175.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ae8c4ed88f638b23b4b44a51af5828b7ca6cf492e10d10b6517f03b2dc5f9c6a`  
+		Last Modified: Wed, 13 Dec 2017 15:05:55 GMT  
+		Size: 1.3 KB (1273 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ec871b8e16217284a5c9467fc885f9330b7cf594b88a9d251f442a31f9b11982`  
+		Last Modified: Wed, 13 Dec 2017 15:05:55 GMT  
+		Size: 8.7 KB (8656 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:bc676aee1200891fd5416055f87903087826e98535cbd81dcb50768900244552`  
+		Last Modified: Wed, 13 Dec 2017 15:06:00 GMT  
+		Size: 16.3 MB (16252090 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:577a9a05a066977770e450f5a317bbe555a9e7cbe22aed78d91c371d0f6078bc`  
+		Last Modified: Wed, 13 Dec 2017 15:05:54 GMT  
+		Size: 12.0 MB (12003080 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7a24fa148ff008b81d86769ff05e09e2ee50fe61c3254089e1a3d3ecc17a765d`  
+		Last Modified: Wed, 13 Dec 2017 15:05:53 GMT  
+		Size: 207.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4f22ee1e3a37e1290768a38199a9b5b15eb4abdbe51f7cfc9e0aaad33ebe6803`  
+		Last Modified: Wed, 13 Dec 2017 15:05:53 GMT  
+		Size: 146.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ef18cbc48101fe73159e8accdc33d71957b834ee331dacd917367fc69b06d03e`  
+		Last Modified: Wed, 13 Dec 2017 15:05:54 GMT  
+		Size: 107.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4781ade18957c78810a910a263829ec09a9e48923d2c936e4d1e969ed7b695e3`  
+		Last Modified: Wed, 13 Dec 2017 15:05:53 GMT  
+		Size: 4.2 KB (4188 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.7-alpine` - linux; 386
@@ -9839,7 +10647,7 @@ CMD ["rabbitmq-server"]
 ## `rabbitmq:3.7-management`
 
 ```console
-$ docker pull rabbitmq@sha256:89be591ebc9d76c2028d427ae0905b6c6d95cc7596b3e3c2429d71365ee2f769
+$ docker pull rabbitmq@sha256:193ec2dc8d32adbd60547e43faf3cbd96ad3899e99610149f80086d695d69fb4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9847,6 +10655,7 @@ $ docker pull rabbitmq@sha256:89be591ebc9d76c2028d427ae0905b6c6d95cc7596b3e3c242
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
+	-	linux; arm64 variant v8
 	-	linux; 386
 	-	linux; ppc64le
 
@@ -10231,6 +11040,133 @@ EXPOSE 15671/tcp 15672/tcp
 		Size: 194.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+### `rabbitmq:3.7-management` - linux; arm64 variant v8
+
+```console
+$ docker pull rabbitmq@sha256:7782fbfea16a905f8e459f778bd2417a1a8f8d3f97561d600cdbf2a043e7e062
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **62.8 MB (62808126 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:7245b2630be897d577191104a3e753430bf4311f08145ffc830f7459d43fda51`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["rabbitmq-server"]`
+
+```dockerfile
+# Tue, 12 Dec 2017 18:34:13 GMT
+ADD file:6e068c7cc5397bfb4ec60dab4d410c5d3ba724f20ad0129d2032fb509f0eadcd in / 
+# Tue, 12 Dec 2017 18:34:14 GMT
+CMD ["bash"]
+# Wed, 13 Dec 2017 14:53:50 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		gnupg 		dirmngr 	; 	rm -rf /var/lib/apt/lists/*
+# Wed, 13 Dec 2017 14:53:52 GMT
+RUN groupadd -r rabbitmq && useradd -r -d /var/lib/rabbitmq -m -g rabbitmq rabbitmq
+# Wed, 13 Dec 2017 14:53:53 GMT
+ENV GOSU_VERSION=1.10
+# Wed, 13 Dec 2017 14:54:26 GMT
+RUN set -eux; 		fetchDeps=' 		ca-certificates 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		chmod +x /usr/local/bin/gosu; 	gosu nobody true; 		apt-get purge -y --auto-remove $fetchDeps
+# Wed, 13 Dec 2017 14:54:27 GMT
+RUN set -eux; 	sed 's/stretch/buster/g' /etc/apt/sources.list 		| tee /etc/apt/sources.list.d/buster.list; 	{ 		echo 'Package: *'; 		echo 'Pin: release n=buster*'; 		echo 'Pin-Priority: -10'; 		echo; 		echo 'Package: erlang*'; 		echo 'Pin: release n=buster*'; 		echo 'Pin-Priority: 999'; 		echo; 		echo 'Package: erlang*'; 		echo 'Pin: release n=stretch*'; 		echo 'Pin-Priority: -10'; 	} | tee /etc/apt/preferences.d/buster-erlang
+# Wed, 13 Dec 2017 14:55:29 GMT
+RUN set -eux; 	apt-get update; 	if apt-cache show erlang-base-hipe 2>/dev/null | grep -q 'Package: erlang-base-hipe'; then 		apt-get install -y --no-install-recommends 			erlang-base-hipe 		; 	fi; 	apt-get install -y --no-install-recommends 		erlang-asn1 		erlang-crypto 		erlang-eldap 		erlang-inets 		erlang-mnesia 		erlang-nox 		erlang-os-mon 		erlang-public-key 		erlang-ssl 		erlang-xmerl 	; 	rm -rf /var/lib/apt/lists/*
+# Wed, 13 Dec 2017 14:55:29 GMT
+ENV RABBITMQ_LOGS=- RABBITMQ_SASL_LOGS=-
+# Wed, 13 Dec 2017 14:55:30 GMT
+ENV PATH=/usr/lib/rabbitmq/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 13 Dec 2017 14:55:31 GMT
+ENV RABBITMQ_GPG_KEY=0A9AF2115F4687BD29803A206B73A36E6026DFCA
+# Wed, 13 Dec 2017 14:55:31 GMT
+ENV RABBITMQ_VERSION=3.7.0
+# Wed, 13 Dec 2017 14:55:32 GMT
+ENV RABBITMQ_GITHUB_TAG=v3.7.0
+# Wed, 13 Dec 2017 14:55:32 GMT
+ENV RABBITMQ_DEBIAN_VERSION=3.7.0-1
+# Wed, 13 Dec 2017 14:56:22 GMT
+RUN set -eux; 		apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O rabbitmq-server.deb.asc "https://github.com/rabbitmq/rabbitmq-server/releases/download/$RABBITMQ_GITHUB_TAG/rabbitmq-server_${RABBITMQ_DEBIAN_VERSION}_all.deb.asc"; 	wget -O rabbitmq-server.deb     "https://github.com/rabbitmq/rabbitmq-server/releases/download/$RABBITMQ_GITHUB_TAG/rabbitmq-server_${RABBITMQ_DEBIAN_VERSION}_all.deb"; 		apt-get purge -y --auto-remove ca-certificates wget; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$RABBITMQ_GPG_KEY"; 	gpg --batch --verify rabbitmq-server.deb.asc rabbitmq-server.deb; 	rm -rf "$GNUPGHOME"; 		apt install -y --no-install-recommends ./rabbitmq-server.deb; 	dpkg -l | grep rabbitmq-server; 	rm -f rabbitmq-server.deb*; 		rm -rf /var/lib/apt/lists/*
+# Wed, 13 Dec 2017 14:56:22 GMT
+ENV LANG=C.UTF-8
+# Wed, 13 Dec 2017 14:56:23 GMT
+ENV HOME=/var/lib/rabbitmq
+# Wed, 13 Dec 2017 14:56:25 GMT
+RUN mkdir -p /var/lib/rabbitmq /etc/rabbitmq 	&& chown -R rabbitmq:rabbitmq /var/lib/rabbitmq /etc/rabbitmq 	&& chmod -R 777 /var/lib/rabbitmq /etc/rabbitmq
+# Wed, 13 Dec 2017 14:56:26 GMT
+VOLUME [/var/lib/rabbitmq]
+# Wed, 13 Dec 2017 14:56:27 GMT
+RUN ln -sf /var/lib/rabbitmq/.erlang.cookie /root/
+# Wed, 13 Dec 2017 14:56:29 GMT
+RUN ln -sf "/usr/lib/rabbitmq/lib/rabbitmq_server-$RABBITMQ_VERSION/plugins" /plugins
+# Wed, 13 Dec 2017 14:56:30 GMT
+COPY file:c105d1b28d0bd0db50deb948b54b2b1680f0db00bb9f24188a595ab6e83d775f in /usr/local/bin/ 
+# Wed, 13 Dec 2017 14:56:32 GMT
+RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
+# Wed, 13 Dec 2017 14:56:33 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 13 Dec 2017 14:56:34 GMT
+EXPOSE 25672/tcp 4369/tcp 5671/tcp 5672/tcp
+# Wed, 13 Dec 2017 14:56:35 GMT
+CMD ["rabbitmq-server"]
+# Wed, 13 Dec 2017 14:57:01 GMT
+RUN rabbitmq-plugins enable --offline rabbitmq_management
+# Wed, 13 Dec 2017 14:57:02 GMT
+EXPOSE 15671/tcp 15672/tcp
+```
+
+-	Layers:
+	-	`sha256:fcad8cfc11c78a53ccf9aafafcb3ded5044dbd181977e6255aea54fbe164f131`  
+		Last Modified: Tue, 12 Dec 2017 18:49:05 GMT  
+		Size: 20.3 MB (20331270 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:afb3f7722e72f404b7e544c9a358cc7390f02c0b391a14ea7dbecd85dca7d195`  
+		Last Modified: Wed, 13 Dec 2017 15:03:22 GMT  
+		Size: 4.1 MB (4073192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:51c72eaa15e586a9eb8cbde84a24922fdabb2aa060ef64831fb867757ac6f83a`  
+		Last Modified: Wed, 13 Dec 2017 15:03:21 GMT  
+		Size: 4.1 KB (4073 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a0ebe8f28a8d2ed828ab5c0431545a097e3f46a3ac45e36976fde6daa9fb405d`  
+		Last Modified: Wed, 13 Dec 2017 15:03:21 GMT  
+		Size: 919.4 KB (919386 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6cf8546d6f1127383410e3244beb4a3873b3305deab0f469ac13d1d0b112dee1`  
+		Last Modified: Wed, 13 Dec 2017 15:03:19 GMT  
+		Size: 353.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:aabe4d57c4c33847b3343b87c3d4b7f0efe523535a70b98185a7237848d3780d`  
+		Last Modified: Wed, 13 Dec 2017 15:03:23 GMT  
+		Size: 24.8 MB (24762935 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e8b0b4bad71865ffd051ae6ae0f91a9b75b0ab3498986501309260ddb9e24fcc`  
+		Last Modified: Wed, 13 Dec 2017 15:03:20 GMT  
+		Size: 12.7 MB (12709876 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:67179561590eee0692c7906da312516abbd25b2b392534f0bfafed9bd0818303`  
+		Last Modified: Wed, 13 Dec 2017 15:03:18 GMT  
+		Size: 2.3 KB (2263 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6b48bfe82561f7d7c44fa56bea46d94cbc0052eb3fb853410c407ecec6a82eaa`  
+		Last Modified: Wed, 13 Dec 2017 15:03:19 GMT  
+		Size: 146.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f8d99729c27cd387b006cb9dc27c0fca1babcbbeed19a6e6c93e977eda0dac93`  
+		Last Modified: Wed, 13 Dec 2017 15:03:17 GMT  
+		Size: 125.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:062cef48f85ee1451a47cf2779222946277e34579b5c3681788187cad29921aa`  
+		Last Modified: Wed, 13 Dec 2017 15:03:16 GMT  
+		Size: 4.2 KB (4192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c81797cfbaec748f0d21ce2d045068057947f2692359c079e912111ae3e02ce2`  
+		Last Modified: Wed, 13 Dec 2017 15:03:16 GMT  
+		Size: 121.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a223420aef72afc6cc650fe92efc9f145fe4609e7916bcd119d6abfbb83bf0e9`  
+		Last Modified: Wed, 13 Dec 2017 15:04:38 GMT  
+		Size: 194.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
 ### `rabbitmq:3.7-management` - linux; 386
 
 ```console
@@ -10488,13 +11424,14 @@ EXPOSE 15671/tcp 15672/tcp
 ## `rabbitmq:3.7-management-alpine`
 
 ```console
-$ docker pull rabbitmq@sha256:ffdf5cee74707a3ebcd0582117f7ff59609d232b4b429ef0b995f76be89f594e
+$ docker pull rabbitmq@sha256:174c6d452403af69077d67428c87584f9735bf90cbd239ac00743b1e5d3fcc60
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
 	-	linux; arm variant v6
+	-	linux; arm64 variant v8
 	-	linux; 386
 	-	linux; ppc64le
 
@@ -10711,6 +11648,117 @@ EXPOSE 15671/tcp 15672/tcp
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5fb2ea79db64cc3ea3eb160696f5522b7e1cf3ef4c595560c529410093c5d64e`  
 		Last Modified: Wed, 13 Dec 2017 02:05:32 GMT  
+		Size: 192.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `rabbitmq:3.7-management-alpine` - linux; arm64 variant v8
+
+```console
+$ docker pull rabbitmq@sha256:9526c662bcd08f9deb40b007691a912b921635d5f96c9ec3dfae4f98249de7b3
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **30.3 MB (30258971 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:db71ce3c1994db5a8a1621a956158e118fa786d5934497b577b4333908050880`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["rabbitmq-server"]`
+
+```dockerfile
+# Fri, 01 Dec 2017 18:42:42 GMT
+ADD file:a6ef3cbbb1c0e5dfc6c3e41d70fd93e548594d9cb42c067e52df46d418c10a79 in / 
+# Fri, 01 Dec 2017 18:42:42 GMT
+COPY file:0f1d36dd7d8d53613b275660a88c5bf9b608ea8aa73a8054cb8bdbd73fd971ac in /etc/localtime 
+# Fri, 01 Dec 2017 18:42:43 GMT
+CMD ["/bin/sh"]
+# Wed, 13 Dec 2017 14:57:23 GMT
+RUN addgroup -S rabbitmq && adduser -S -h /var/lib/rabbitmq -G rabbitmq rabbitmq
+# Wed, 13 Dec 2017 14:57:26 GMT
+RUN apk add --no-cache 'su-exec>=0.2'
+# Wed, 13 Dec 2017 14:57:46 GMT
+RUN apk add --no-cache 		bash 		procps 		erlang-asn1 		erlang-hipe 		erlang-crypto 		erlang-eldap 		erlang-inets 		erlang-mnesia 		erlang 		erlang-os-mon 		erlang-public-key 		erlang-sasl 		erlang-ssl 		erlang-syntax-tools 		erlang-xmerl
+# Wed, 13 Dec 2017 14:57:47 GMT
+ENV RABBITMQ_LOGS=- RABBITMQ_SASL_LOGS=-
+# Wed, 13 Dec 2017 14:57:48 GMT
+ENV RABBITMQ_HOME=/opt/rabbitmq
+# Wed, 13 Dec 2017 14:57:48 GMT
+ENV PATH=/opt/rabbitmq/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 13 Dec 2017 14:57:49 GMT
+ENV RABBITMQ_GPG_KEY=0A9AF2115F4687BD29803A206B73A36E6026DFCA
+# Wed, 13 Dec 2017 14:57:50 GMT
+ENV RABBITMQ_VERSION=3.7.0
+# Wed, 13 Dec 2017 14:57:50 GMT
+ENV RABBITMQ_GITHUB_TAG=v3.7.0
+# Wed, 13 Dec 2017 14:58:09 GMT
+RUN set -ex; 		apk add --no-cache --virtual .build-deps 		ca-certificates 		gnupg 		libressl 		xz 	; 		wget -O rabbitmq-server.tar.xz.asc "https://github.com/rabbitmq/rabbitmq-server/releases/download/$RABBITMQ_GITHUB_TAG/rabbitmq-server-generic-unix-${RABBITMQ_VERSION}.tar.xz.asc"; 	wget -O rabbitmq-server.tar.xz     "https://github.com/rabbitmq/rabbitmq-server/releases/download/$RABBITMQ_GITHUB_TAG/rabbitmq-server-generic-unix-${RABBITMQ_VERSION}.tar.xz"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$RABBITMQ_GPG_KEY"; 	gpg --batch --verify rabbitmq-server.tar.xz.asc rabbitmq-server.tar.xz; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$RABBITMQ_HOME"; 	tar 		--extract 		--verbose 		--file rabbitmq-server.tar.xz 		--directory "$RABBITMQ_HOME" 		--strip-components 1 	; 	rm -f rabbitmq-server.tar.xz*; 		grep -qE '^SYS_PREFIX=\$\{RABBITMQ_HOME\}$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	sed -ri 's!^(SYS_PREFIX=).*$!\1!g' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	grep -qE '^SYS_PREFIX=$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 		apk del .build-deps
+# Wed, 13 Dec 2017 14:58:10 GMT
+ENV HOME=/var/lib/rabbitmq
+# Wed, 13 Dec 2017 14:58:12 GMT
+RUN mkdir -p /var/lib/rabbitmq /etc/rabbitmq /var/log/rabbitmq 	&& chown -R rabbitmq:rabbitmq /var/lib/rabbitmq /etc/rabbitmq /var/log/rabbitmq 	&& chmod -R 777 /var/lib/rabbitmq /etc/rabbitmq /var/log/rabbitmq
+# Wed, 13 Dec 2017 14:58:12 GMT
+VOLUME [/var/lib/rabbitmq]
+# Wed, 13 Dec 2017 14:58:14 GMT
+RUN ln -sf /var/lib/rabbitmq/.erlang.cookie /root/
+# Wed, 13 Dec 2017 14:58:16 GMT
+RUN ln -sf "$RABBITMQ_HOME/plugins" /plugins
+# Wed, 13 Dec 2017 14:58:17 GMT
+COPY file:76b73453fb1907cd71df507ce8beca295d8d98a7209ff3db87d1360f53021d59 in /usr/local/bin/ 
+# Wed, 13 Dec 2017 14:58:17 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 13 Dec 2017 14:58:18 GMT
+EXPOSE 25672/tcp 4369/tcp 5671/tcp 5672/tcp
+# Wed, 13 Dec 2017 14:58:19 GMT
+CMD ["rabbitmq-server"]
+# Wed, 13 Dec 2017 14:58:44 GMT
+RUN rabbitmq-plugins enable --offline rabbitmq_management
+# Wed, 13 Dec 2017 14:58:45 GMT
+EXPOSE 15671/tcp 15672/tcp
+```
+
+-	Layers:
+	-	`sha256:b78042c299ad99d1e646b18762d4bc22a84c4f88e5bb491ea6293a10f53ddf79`  
+		Last Modified: Fri, 01 Dec 2017 18:43:42 GMT  
+		Size: 2.0 MB (1988857 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6fd45b97b6c2a3ac869ae5c99e087e97bc29714b165180e06f0c9116f400f2dd`  
+		Last Modified: Fri, 01 Dec 2017 18:43:41 GMT  
+		Size: 175.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ae8c4ed88f638b23b4b44a51af5828b7ca6cf492e10d10b6517f03b2dc5f9c6a`  
+		Last Modified: Wed, 13 Dec 2017 15:05:55 GMT  
+		Size: 1.3 KB (1273 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ec871b8e16217284a5c9467fc885f9330b7cf594b88a9d251f442a31f9b11982`  
+		Last Modified: Wed, 13 Dec 2017 15:05:55 GMT  
+		Size: 8.7 KB (8656 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:bc676aee1200891fd5416055f87903087826e98535cbd81dcb50768900244552`  
+		Last Modified: Wed, 13 Dec 2017 15:06:00 GMT  
+		Size: 16.3 MB (16252090 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:577a9a05a066977770e450f5a317bbe555a9e7cbe22aed78d91c371d0f6078bc`  
+		Last Modified: Wed, 13 Dec 2017 15:05:54 GMT  
+		Size: 12.0 MB (12003080 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7a24fa148ff008b81d86769ff05e09e2ee50fe61c3254089e1a3d3ecc17a765d`  
+		Last Modified: Wed, 13 Dec 2017 15:05:53 GMT  
+		Size: 207.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4f22ee1e3a37e1290768a38199a9b5b15eb4abdbe51f7cfc9e0aaad33ebe6803`  
+		Last Modified: Wed, 13 Dec 2017 15:05:53 GMT  
+		Size: 146.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ef18cbc48101fe73159e8accdc33d71957b834ee331dacd917367fc69b06d03e`  
+		Last Modified: Wed, 13 Dec 2017 15:05:54 GMT  
+		Size: 107.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4781ade18957c78810a910a263829ec09a9e48923d2c936e4d1e969ed7b695e3`  
+		Last Modified: Wed, 13 Dec 2017 15:05:53 GMT  
+		Size: 4.2 KB (4188 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6f14bee0d74c21f5eb99d870ecc69c6aac18817c43f5f717a51b4406c73a8ef9`  
+		Last Modified: Wed, 13 Dec 2017 15:07:15 GMT  
 		Size: 192.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -10939,13 +11987,14 @@ EXPOSE 15671/tcp 15672/tcp
 ## `rabbitmq:3-alpine`
 
 ```console
-$ docker pull rabbitmq@sha256:1ea4fd9875c7f7f2fecc5556f094ccd4e98520548ed02977a5242cbb49689859
+$ docker pull rabbitmq@sha256:b3edaaf67928641765e66dbe7219a91a6e0f9746ccfb2a00d4422865083829c3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
 	-	linux; arm variant v6
+	-	linux; arm64 variant v8
 	-	linux; 386
 	-	linux; ppc64le
 
@@ -11147,6 +12196,109 @@ CMD ["rabbitmq-server"]
 	-	`sha256:0859fcd9294faaf072baacd13a09ca79dfbe128f63f530415134bac1128fafb6`  
 		Last Modified: Wed, 13 Dec 2017 02:05:15 GMT  
 		Size: 4.2 KB (4185 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `rabbitmq:3-alpine` - linux; arm64 variant v8
+
+```console
+$ docker pull rabbitmq@sha256:89ebb12f9cb5bb2103e1c57fbab93329b0805b7a643c1306d9d86a36c375e3e2
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **30.3 MB (30258779 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:b71c048661ffbd5ff2564826181134b8a758f29480f2c3671270640407988c2f`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["rabbitmq-server"]`
+
+```dockerfile
+# Fri, 01 Dec 2017 18:42:42 GMT
+ADD file:a6ef3cbbb1c0e5dfc6c3e41d70fd93e548594d9cb42c067e52df46d418c10a79 in / 
+# Fri, 01 Dec 2017 18:42:42 GMT
+COPY file:0f1d36dd7d8d53613b275660a88c5bf9b608ea8aa73a8054cb8bdbd73fd971ac in /etc/localtime 
+# Fri, 01 Dec 2017 18:42:43 GMT
+CMD ["/bin/sh"]
+# Wed, 13 Dec 2017 14:57:23 GMT
+RUN addgroup -S rabbitmq && adduser -S -h /var/lib/rabbitmq -G rabbitmq rabbitmq
+# Wed, 13 Dec 2017 14:57:26 GMT
+RUN apk add --no-cache 'su-exec>=0.2'
+# Wed, 13 Dec 2017 14:57:46 GMT
+RUN apk add --no-cache 		bash 		procps 		erlang-asn1 		erlang-hipe 		erlang-crypto 		erlang-eldap 		erlang-inets 		erlang-mnesia 		erlang 		erlang-os-mon 		erlang-public-key 		erlang-sasl 		erlang-ssl 		erlang-syntax-tools 		erlang-xmerl
+# Wed, 13 Dec 2017 14:57:47 GMT
+ENV RABBITMQ_LOGS=- RABBITMQ_SASL_LOGS=-
+# Wed, 13 Dec 2017 14:57:48 GMT
+ENV RABBITMQ_HOME=/opt/rabbitmq
+# Wed, 13 Dec 2017 14:57:48 GMT
+ENV PATH=/opt/rabbitmq/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 13 Dec 2017 14:57:49 GMT
+ENV RABBITMQ_GPG_KEY=0A9AF2115F4687BD29803A206B73A36E6026DFCA
+# Wed, 13 Dec 2017 14:57:50 GMT
+ENV RABBITMQ_VERSION=3.7.0
+# Wed, 13 Dec 2017 14:57:50 GMT
+ENV RABBITMQ_GITHUB_TAG=v3.7.0
+# Wed, 13 Dec 2017 14:58:09 GMT
+RUN set -ex; 		apk add --no-cache --virtual .build-deps 		ca-certificates 		gnupg 		libressl 		xz 	; 		wget -O rabbitmq-server.tar.xz.asc "https://github.com/rabbitmq/rabbitmq-server/releases/download/$RABBITMQ_GITHUB_TAG/rabbitmq-server-generic-unix-${RABBITMQ_VERSION}.tar.xz.asc"; 	wget -O rabbitmq-server.tar.xz     "https://github.com/rabbitmq/rabbitmq-server/releases/download/$RABBITMQ_GITHUB_TAG/rabbitmq-server-generic-unix-${RABBITMQ_VERSION}.tar.xz"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$RABBITMQ_GPG_KEY"; 	gpg --batch --verify rabbitmq-server.tar.xz.asc rabbitmq-server.tar.xz; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$RABBITMQ_HOME"; 	tar 		--extract 		--verbose 		--file rabbitmq-server.tar.xz 		--directory "$RABBITMQ_HOME" 		--strip-components 1 	; 	rm -f rabbitmq-server.tar.xz*; 		grep -qE '^SYS_PREFIX=\$\{RABBITMQ_HOME\}$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	sed -ri 's!^(SYS_PREFIX=).*$!\1!g' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	grep -qE '^SYS_PREFIX=$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 		apk del .build-deps
+# Wed, 13 Dec 2017 14:58:10 GMT
+ENV HOME=/var/lib/rabbitmq
+# Wed, 13 Dec 2017 14:58:12 GMT
+RUN mkdir -p /var/lib/rabbitmq /etc/rabbitmq /var/log/rabbitmq 	&& chown -R rabbitmq:rabbitmq /var/lib/rabbitmq /etc/rabbitmq /var/log/rabbitmq 	&& chmod -R 777 /var/lib/rabbitmq /etc/rabbitmq /var/log/rabbitmq
+# Wed, 13 Dec 2017 14:58:12 GMT
+VOLUME [/var/lib/rabbitmq]
+# Wed, 13 Dec 2017 14:58:14 GMT
+RUN ln -sf /var/lib/rabbitmq/.erlang.cookie /root/
+# Wed, 13 Dec 2017 14:58:16 GMT
+RUN ln -sf "$RABBITMQ_HOME/plugins" /plugins
+# Wed, 13 Dec 2017 14:58:17 GMT
+COPY file:76b73453fb1907cd71df507ce8beca295d8d98a7209ff3db87d1360f53021d59 in /usr/local/bin/ 
+# Wed, 13 Dec 2017 14:58:17 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 13 Dec 2017 14:58:18 GMT
+EXPOSE 25672/tcp 4369/tcp 5671/tcp 5672/tcp
+# Wed, 13 Dec 2017 14:58:19 GMT
+CMD ["rabbitmq-server"]
+```
+
+-	Layers:
+	-	`sha256:b78042c299ad99d1e646b18762d4bc22a84c4f88e5bb491ea6293a10f53ddf79`  
+		Last Modified: Fri, 01 Dec 2017 18:43:42 GMT  
+		Size: 2.0 MB (1988857 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6fd45b97b6c2a3ac869ae5c99e087e97bc29714b165180e06f0c9116f400f2dd`  
+		Last Modified: Fri, 01 Dec 2017 18:43:41 GMT  
+		Size: 175.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ae8c4ed88f638b23b4b44a51af5828b7ca6cf492e10d10b6517f03b2dc5f9c6a`  
+		Last Modified: Wed, 13 Dec 2017 15:05:55 GMT  
+		Size: 1.3 KB (1273 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ec871b8e16217284a5c9467fc885f9330b7cf594b88a9d251f442a31f9b11982`  
+		Last Modified: Wed, 13 Dec 2017 15:05:55 GMT  
+		Size: 8.7 KB (8656 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:bc676aee1200891fd5416055f87903087826e98535cbd81dcb50768900244552`  
+		Last Modified: Wed, 13 Dec 2017 15:06:00 GMT  
+		Size: 16.3 MB (16252090 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:577a9a05a066977770e450f5a317bbe555a9e7cbe22aed78d91c371d0f6078bc`  
+		Last Modified: Wed, 13 Dec 2017 15:05:54 GMT  
+		Size: 12.0 MB (12003080 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7a24fa148ff008b81d86769ff05e09e2ee50fe61c3254089e1a3d3ecc17a765d`  
+		Last Modified: Wed, 13 Dec 2017 15:05:53 GMT  
+		Size: 207.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4f22ee1e3a37e1290768a38199a9b5b15eb4abdbe51f7cfc9e0aaad33ebe6803`  
+		Last Modified: Wed, 13 Dec 2017 15:05:53 GMT  
+		Size: 146.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ef18cbc48101fe73159e8accdc33d71957b834ee331dacd917367fc69b06d03e`  
+		Last Modified: Wed, 13 Dec 2017 15:05:54 GMT  
+		Size: 107.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4781ade18957c78810a910a263829ec09a9e48923d2c936e4d1e969ed7b695e3`  
+		Last Modified: Wed, 13 Dec 2017 15:05:53 GMT  
+		Size: 4.2 KB (4188 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3-alpine` - linux; 386
@@ -11358,7 +12510,7 @@ CMD ["rabbitmq-server"]
 ## `rabbitmq:3-management`
 
 ```console
-$ docker pull rabbitmq@sha256:89be591ebc9d76c2028d427ae0905b6c6d95cc7596b3e3c2429d71365ee2f769
+$ docker pull rabbitmq@sha256:193ec2dc8d32adbd60547e43faf3cbd96ad3899e99610149f80086d695d69fb4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11366,6 +12518,7 @@ $ docker pull rabbitmq@sha256:89be591ebc9d76c2028d427ae0905b6c6d95cc7596b3e3c242
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
+	-	linux; arm64 variant v8
 	-	linux; 386
 	-	linux; ppc64le
 
@@ -11750,6 +12903,133 @@ EXPOSE 15671/tcp 15672/tcp
 		Size: 194.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+### `rabbitmq:3-management` - linux; arm64 variant v8
+
+```console
+$ docker pull rabbitmq@sha256:7782fbfea16a905f8e459f778bd2417a1a8f8d3f97561d600cdbf2a043e7e062
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **62.8 MB (62808126 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:7245b2630be897d577191104a3e753430bf4311f08145ffc830f7459d43fda51`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["rabbitmq-server"]`
+
+```dockerfile
+# Tue, 12 Dec 2017 18:34:13 GMT
+ADD file:6e068c7cc5397bfb4ec60dab4d410c5d3ba724f20ad0129d2032fb509f0eadcd in / 
+# Tue, 12 Dec 2017 18:34:14 GMT
+CMD ["bash"]
+# Wed, 13 Dec 2017 14:53:50 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		gnupg 		dirmngr 	; 	rm -rf /var/lib/apt/lists/*
+# Wed, 13 Dec 2017 14:53:52 GMT
+RUN groupadd -r rabbitmq && useradd -r -d /var/lib/rabbitmq -m -g rabbitmq rabbitmq
+# Wed, 13 Dec 2017 14:53:53 GMT
+ENV GOSU_VERSION=1.10
+# Wed, 13 Dec 2017 14:54:26 GMT
+RUN set -eux; 		fetchDeps=' 		ca-certificates 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		chmod +x /usr/local/bin/gosu; 	gosu nobody true; 		apt-get purge -y --auto-remove $fetchDeps
+# Wed, 13 Dec 2017 14:54:27 GMT
+RUN set -eux; 	sed 's/stretch/buster/g' /etc/apt/sources.list 		| tee /etc/apt/sources.list.d/buster.list; 	{ 		echo 'Package: *'; 		echo 'Pin: release n=buster*'; 		echo 'Pin-Priority: -10'; 		echo; 		echo 'Package: erlang*'; 		echo 'Pin: release n=buster*'; 		echo 'Pin-Priority: 999'; 		echo; 		echo 'Package: erlang*'; 		echo 'Pin: release n=stretch*'; 		echo 'Pin-Priority: -10'; 	} | tee /etc/apt/preferences.d/buster-erlang
+# Wed, 13 Dec 2017 14:55:29 GMT
+RUN set -eux; 	apt-get update; 	if apt-cache show erlang-base-hipe 2>/dev/null | grep -q 'Package: erlang-base-hipe'; then 		apt-get install -y --no-install-recommends 			erlang-base-hipe 		; 	fi; 	apt-get install -y --no-install-recommends 		erlang-asn1 		erlang-crypto 		erlang-eldap 		erlang-inets 		erlang-mnesia 		erlang-nox 		erlang-os-mon 		erlang-public-key 		erlang-ssl 		erlang-xmerl 	; 	rm -rf /var/lib/apt/lists/*
+# Wed, 13 Dec 2017 14:55:29 GMT
+ENV RABBITMQ_LOGS=- RABBITMQ_SASL_LOGS=-
+# Wed, 13 Dec 2017 14:55:30 GMT
+ENV PATH=/usr/lib/rabbitmq/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 13 Dec 2017 14:55:31 GMT
+ENV RABBITMQ_GPG_KEY=0A9AF2115F4687BD29803A206B73A36E6026DFCA
+# Wed, 13 Dec 2017 14:55:31 GMT
+ENV RABBITMQ_VERSION=3.7.0
+# Wed, 13 Dec 2017 14:55:32 GMT
+ENV RABBITMQ_GITHUB_TAG=v3.7.0
+# Wed, 13 Dec 2017 14:55:32 GMT
+ENV RABBITMQ_DEBIAN_VERSION=3.7.0-1
+# Wed, 13 Dec 2017 14:56:22 GMT
+RUN set -eux; 		apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O rabbitmq-server.deb.asc "https://github.com/rabbitmq/rabbitmq-server/releases/download/$RABBITMQ_GITHUB_TAG/rabbitmq-server_${RABBITMQ_DEBIAN_VERSION}_all.deb.asc"; 	wget -O rabbitmq-server.deb     "https://github.com/rabbitmq/rabbitmq-server/releases/download/$RABBITMQ_GITHUB_TAG/rabbitmq-server_${RABBITMQ_DEBIAN_VERSION}_all.deb"; 		apt-get purge -y --auto-remove ca-certificates wget; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$RABBITMQ_GPG_KEY"; 	gpg --batch --verify rabbitmq-server.deb.asc rabbitmq-server.deb; 	rm -rf "$GNUPGHOME"; 		apt install -y --no-install-recommends ./rabbitmq-server.deb; 	dpkg -l | grep rabbitmq-server; 	rm -f rabbitmq-server.deb*; 		rm -rf /var/lib/apt/lists/*
+# Wed, 13 Dec 2017 14:56:22 GMT
+ENV LANG=C.UTF-8
+# Wed, 13 Dec 2017 14:56:23 GMT
+ENV HOME=/var/lib/rabbitmq
+# Wed, 13 Dec 2017 14:56:25 GMT
+RUN mkdir -p /var/lib/rabbitmq /etc/rabbitmq 	&& chown -R rabbitmq:rabbitmq /var/lib/rabbitmq /etc/rabbitmq 	&& chmod -R 777 /var/lib/rabbitmq /etc/rabbitmq
+# Wed, 13 Dec 2017 14:56:26 GMT
+VOLUME [/var/lib/rabbitmq]
+# Wed, 13 Dec 2017 14:56:27 GMT
+RUN ln -sf /var/lib/rabbitmq/.erlang.cookie /root/
+# Wed, 13 Dec 2017 14:56:29 GMT
+RUN ln -sf "/usr/lib/rabbitmq/lib/rabbitmq_server-$RABBITMQ_VERSION/plugins" /plugins
+# Wed, 13 Dec 2017 14:56:30 GMT
+COPY file:c105d1b28d0bd0db50deb948b54b2b1680f0db00bb9f24188a595ab6e83d775f in /usr/local/bin/ 
+# Wed, 13 Dec 2017 14:56:32 GMT
+RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
+# Wed, 13 Dec 2017 14:56:33 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 13 Dec 2017 14:56:34 GMT
+EXPOSE 25672/tcp 4369/tcp 5671/tcp 5672/tcp
+# Wed, 13 Dec 2017 14:56:35 GMT
+CMD ["rabbitmq-server"]
+# Wed, 13 Dec 2017 14:57:01 GMT
+RUN rabbitmq-plugins enable --offline rabbitmq_management
+# Wed, 13 Dec 2017 14:57:02 GMT
+EXPOSE 15671/tcp 15672/tcp
+```
+
+-	Layers:
+	-	`sha256:fcad8cfc11c78a53ccf9aafafcb3ded5044dbd181977e6255aea54fbe164f131`  
+		Last Modified: Tue, 12 Dec 2017 18:49:05 GMT  
+		Size: 20.3 MB (20331270 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:afb3f7722e72f404b7e544c9a358cc7390f02c0b391a14ea7dbecd85dca7d195`  
+		Last Modified: Wed, 13 Dec 2017 15:03:22 GMT  
+		Size: 4.1 MB (4073192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:51c72eaa15e586a9eb8cbde84a24922fdabb2aa060ef64831fb867757ac6f83a`  
+		Last Modified: Wed, 13 Dec 2017 15:03:21 GMT  
+		Size: 4.1 KB (4073 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a0ebe8f28a8d2ed828ab5c0431545a097e3f46a3ac45e36976fde6daa9fb405d`  
+		Last Modified: Wed, 13 Dec 2017 15:03:21 GMT  
+		Size: 919.4 KB (919386 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6cf8546d6f1127383410e3244beb4a3873b3305deab0f469ac13d1d0b112dee1`  
+		Last Modified: Wed, 13 Dec 2017 15:03:19 GMT  
+		Size: 353.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:aabe4d57c4c33847b3343b87c3d4b7f0efe523535a70b98185a7237848d3780d`  
+		Last Modified: Wed, 13 Dec 2017 15:03:23 GMT  
+		Size: 24.8 MB (24762935 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e8b0b4bad71865ffd051ae6ae0f91a9b75b0ab3498986501309260ddb9e24fcc`  
+		Last Modified: Wed, 13 Dec 2017 15:03:20 GMT  
+		Size: 12.7 MB (12709876 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:67179561590eee0692c7906da312516abbd25b2b392534f0bfafed9bd0818303`  
+		Last Modified: Wed, 13 Dec 2017 15:03:18 GMT  
+		Size: 2.3 KB (2263 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6b48bfe82561f7d7c44fa56bea46d94cbc0052eb3fb853410c407ecec6a82eaa`  
+		Last Modified: Wed, 13 Dec 2017 15:03:19 GMT  
+		Size: 146.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f8d99729c27cd387b006cb9dc27c0fca1babcbbeed19a6e6c93e977eda0dac93`  
+		Last Modified: Wed, 13 Dec 2017 15:03:17 GMT  
+		Size: 125.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:062cef48f85ee1451a47cf2779222946277e34579b5c3681788187cad29921aa`  
+		Last Modified: Wed, 13 Dec 2017 15:03:16 GMT  
+		Size: 4.2 KB (4192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c81797cfbaec748f0d21ce2d045068057947f2692359c079e912111ae3e02ce2`  
+		Last Modified: Wed, 13 Dec 2017 15:03:16 GMT  
+		Size: 121.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a223420aef72afc6cc650fe92efc9f145fe4609e7916bcd119d6abfbb83bf0e9`  
+		Last Modified: Wed, 13 Dec 2017 15:04:38 GMT  
+		Size: 194.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
 ### `rabbitmq:3-management` - linux; 386
 
 ```console
@@ -12007,13 +13287,14 @@ EXPOSE 15671/tcp 15672/tcp
 ## `rabbitmq:3-management-alpine`
 
 ```console
-$ docker pull rabbitmq@sha256:ffdf5cee74707a3ebcd0582117f7ff59609d232b4b429ef0b995f76be89f594e
+$ docker pull rabbitmq@sha256:174c6d452403af69077d67428c87584f9735bf90cbd239ac00743b1e5d3fcc60
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
 	-	linux; arm variant v6
+	-	linux; arm64 variant v8
 	-	linux; 386
 	-	linux; ppc64le
 
@@ -12230,6 +13511,117 @@ EXPOSE 15671/tcp 15672/tcp
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5fb2ea79db64cc3ea3eb160696f5522b7e1cf3ef4c595560c529410093c5d64e`  
 		Last Modified: Wed, 13 Dec 2017 02:05:32 GMT  
+		Size: 192.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `rabbitmq:3-management-alpine` - linux; arm64 variant v8
+
+```console
+$ docker pull rabbitmq@sha256:9526c662bcd08f9deb40b007691a912b921635d5f96c9ec3dfae4f98249de7b3
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **30.3 MB (30258971 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:db71ce3c1994db5a8a1621a956158e118fa786d5934497b577b4333908050880`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["rabbitmq-server"]`
+
+```dockerfile
+# Fri, 01 Dec 2017 18:42:42 GMT
+ADD file:a6ef3cbbb1c0e5dfc6c3e41d70fd93e548594d9cb42c067e52df46d418c10a79 in / 
+# Fri, 01 Dec 2017 18:42:42 GMT
+COPY file:0f1d36dd7d8d53613b275660a88c5bf9b608ea8aa73a8054cb8bdbd73fd971ac in /etc/localtime 
+# Fri, 01 Dec 2017 18:42:43 GMT
+CMD ["/bin/sh"]
+# Wed, 13 Dec 2017 14:57:23 GMT
+RUN addgroup -S rabbitmq && adduser -S -h /var/lib/rabbitmq -G rabbitmq rabbitmq
+# Wed, 13 Dec 2017 14:57:26 GMT
+RUN apk add --no-cache 'su-exec>=0.2'
+# Wed, 13 Dec 2017 14:57:46 GMT
+RUN apk add --no-cache 		bash 		procps 		erlang-asn1 		erlang-hipe 		erlang-crypto 		erlang-eldap 		erlang-inets 		erlang-mnesia 		erlang 		erlang-os-mon 		erlang-public-key 		erlang-sasl 		erlang-ssl 		erlang-syntax-tools 		erlang-xmerl
+# Wed, 13 Dec 2017 14:57:47 GMT
+ENV RABBITMQ_LOGS=- RABBITMQ_SASL_LOGS=-
+# Wed, 13 Dec 2017 14:57:48 GMT
+ENV RABBITMQ_HOME=/opt/rabbitmq
+# Wed, 13 Dec 2017 14:57:48 GMT
+ENV PATH=/opt/rabbitmq/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 13 Dec 2017 14:57:49 GMT
+ENV RABBITMQ_GPG_KEY=0A9AF2115F4687BD29803A206B73A36E6026DFCA
+# Wed, 13 Dec 2017 14:57:50 GMT
+ENV RABBITMQ_VERSION=3.7.0
+# Wed, 13 Dec 2017 14:57:50 GMT
+ENV RABBITMQ_GITHUB_TAG=v3.7.0
+# Wed, 13 Dec 2017 14:58:09 GMT
+RUN set -ex; 		apk add --no-cache --virtual .build-deps 		ca-certificates 		gnupg 		libressl 		xz 	; 		wget -O rabbitmq-server.tar.xz.asc "https://github.com/rabbitmq/rabbitmq-server/releases/download/$RABBITMQ_GITHUB_TAG/rabbitmq-server-generic-unix-${RABBITMQ_VERSION}.tar.xz.asc"; 	wget -O rabbitmq-server.tar.xz     "https://github.com/rabbitmq/rabbitmq-server/releases/download/$RABBITMQ_GITHUB_TAG/rabbitmq-server-generic-unix-${RABBITMQ_VERSION}.tar.xz"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$RABBITMQ_GPG_KEY"; 	gpg --batch --verify rabbitmq-server.tar.xz.asc rabbitmq-server.tar.xz; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$RABBITMQ_HOME"; 	tar 		--extract 		--verbose 		--file rabbitmq-server.tar.xz 		--directory "$RABBITMQ_HOME" 		--strip-components 1 	; 	rm -f rabbitmq-server.tar.xz*; 		grep -qE '^SYS_PREFIX=\$\{RABBITMQ_HOME\}$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	sed -ri 's!^(SYS_PREFIX=).*$!\1!g' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	grep -qE '^SYS_PREFIX=$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 		apk del .build-deps
+# Wed, 13 Dec 2017 14:58:10 GMT
+ENV HOME=/var/lib/rabbitmq
+# Wed, 13 Dec 2017 14:58:12 GMT
+RUN mkdir -p /var/lib/rabbitmq /etc/rabbitmq /var/log/rabbitmq 	&& chown -R rabbitmq:rabbitmq /var/lib/rabbitmq /etc/rabbitmq /var/log/rabbitmq 	&& chmod -R 777 /var/lib/rabbitmq /etc/rabbitmq /var/log/rabbitmq
+# Wed, 13 Dec 2017 14:58:12 GMT
+VOLUME [/var/lib/rabbitmq]
+# Wed, 13 Dec 2017 14:58:14 GMT
+RUN ln -sf /var/lib/rabbitmq/.erlang.cookie /root/
+# Wed, 13 Dec 2017 14:58:16 GMT
+RUN ln -sf "$RABBITMQ_HOME/plugins" /plugins
+# Wed, 13 Dec 2017 14:58:17 GMT
+COPY file:76b73453fb1907cd71df507ce8beca295d8d98a7209ff3db87d1360f53021d59 in /usr/local/bin/ 
+# Wed, 13 Dec 2017 14:58:17 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 13 Dec 2017 14:58:18 GMT
+EXPOSE 25672/tcp 4369/tcp 5671/tcp 5672/tcp
+# Wed, 13 Dec 2017 14:58:19 GMT
+CMD ["rabbitmq-server"]
+# Wed, 13 Dec 2017 14:58:44 GMT
+RUN rabbitmq-plugins enable --offline rabbitmq_management
+# Wed, 13 Dec 2017 14:58:45 GMT
+EXPOSE 15671/tcp 15672/tcp
+```
+
+-	Layers:
+	-	`sha256:b78042c299ad99d1e646b18762d4bc22a84c4f88e5bb491ea6293a10f53ddf79`  
+		Last Modified: Fri, 01 Dec 2017 18:43:42 GMT  
+		Size: 2.0 MB (1988857 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6fd45b97b6c2a3ac869ae5c99e087e97bc29714b165180e06f0c9116f400f2dd`  
+		Last Modified: Fri, 01 Dec 2017 18:43:41 GMT  
+		Size: 175.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ae8c4ed88f638b23b4b44a51af5828b7ca6cf492e10d10b6517f03b2dc5f9c6a`  
+		Last Modified: Wed, 13 Dec 2017 15:05:55 GMT  
+		Size: 1.3 KB (1273 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ec871b8e16217284a5c9467fc885f9330b7cf594b88a9d251f442a31f9b11982`  
+		Last Modified: Wed, 13 Dec 2017 15:05:55 GMT  
+		Size: 8.7 KB (8656 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:bc676aee1200891fd5416055f87903087826e98535cbd81dcb50768900244552`  
+		Last Modified: Wed, 13 Dec 2017 15:06:00 GMT  
+		Size: 16.3 MB (16252090 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:577a9a05a066977770e450f5a317bbe555a9e7cbe22aed78d91c371d0f6078bc`  
+		Last Modified: Wed, 13 Dec 2017 15:05:54 GMT  
+		Size: 12.0 MB (12003080 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7a24fa148ff008b81d86769ff05e09e2ee50fe61c3254089e1a3d3ecc17a765d`  
+		Last Modified: Wed, 13 Dec 2017 15:05:53 GMT  
+		Size: 207.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4f22ee1e3a37e1290768a38199a9b5b15eb4abdbe51f7cfc9e0aaad33ebe6803`  
+		Last Modified: Wed, 13 Dec 2017 15:05:53 GMT  
+		Size: 146.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ef18cbc48101fe73159e8accdc33d71957b834ee331dacd917367fc69b06d03e`  
+		Last Modified: Wed, 13 Dec 2017 15:05:54 GMT  
+		Size: 107.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4781ade18957c78810a910a263829ec09a9e48923d2c936e4d1e969ed7b695e3`  
+		Last Modified: Wed, 13 Dec 2017 15:05:53 GMT  
+		Size: 4.2 KB (4188 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6f14bee0d74c21f5eb99d870ecc69c6aac18817c43f5f717a51b4406c73a8ef9`  
+		Last Modified: Wed, 13 Dec 2017 15:07:15 GMT  
 		Size: 192.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -12458,13 +13850,14 @@ EXPOSE 15671/tcp 15672/tcp
 ## `rabbitmq:alpine`
 
 ```console
-$ docker pull rabbitmq@sha256:1ea4fd9875c7f7f2fecc5556f094ccd4e98520548ed02977a5242cbb49689859
+$ docker pull rabbitmq@sha256:b3edaaf67928641765e66dbe7219a91a6e0f9746ccfb2a00d4422865083829c3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
 	-	linux; arm variant v6
+	-	linux; arm64 variant v8
 	-	linux; 386
 	-	linux; ppc64le
 
@@ -12666,6 +14059,109 @@ CMD ["rabbitmq-server"]
 	-	`sha256:0859fcd9294faaf072baacd13a09ca79dfbe128f63f530415134bac1128fafb6`  
 		Last Modified: Wed, 13 Dec 2017 02:05:15 GMT  
 		Size: 4.2 KB (4185 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `rabbitmq:alpine` - linux; arm64 variant v8
+
+```console
+$ docker pull rabbitmq@sha256:89ebb12f9cb5bb2103e1c57fbab93329b0805b7a643c1306d9d86a36c375e3e2
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **30.3 MB (30258779 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:b71c048661ffbd5ff2564826181134b8a758f29480f2c3671270640407988c2f`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["rabbitmq-server"]`
+
+```dockerfile
+# Fri, 01 Dec 2017 18:42:42 GMT
+ADD file:a6ef3cbbb1c0e5dfc6c3e41d70fd93e548594d9cb42c067e52df46d418c10a79 in / 
+# Fri, 01 Dec 2017 18:42:42 GMT
+COPY file:0f1d36dd7d8d53613b275660a88c5bf9b608ea8aa73a8054cb8bdbd73fd971ac in /etc/localtime 
+# Fri, 01 Dec 2017 18:42:43 GMT
+CMD ["/bin/sh"]
+# Wed, 13 Dec 2017 14:57:23 GMT
+RUN addgroup -S rabbitmq && adduser -S -h /var/lib/rabbitmq -G rabbitmq rabbitmq
+# Wed, 13 Dec 2017 14:57:26 GMT
+RUN apk add --no-cache 'su-exec>=0.2'
+# Wed, 13 Dec 2017 14:57:46 GMT
+RUN apk add --no-cache 		bash 		procps 		erlang-asn1 		erlang-hipe 		erlang-crypto 		erlang-eldap 		erlang-inets 		erlang-mnesia 		erlang 		erlang-os-mon 		erlang-public-key 		erlang-sasl 		erlang-ssl 		erlang-syntax-tools 		erlang-xmerl
+# Wed, 13 Dec 2017 14:57:47 GMT
+ENV RABBITMQ_LOGS=- RABBITMQ_SASL_LOGS=-
+# Wed, 13 Dec 2017 14:57:48 GMT
+ENV RABBITMQ_HOME=/opt/rabbitmq
+# Wed, 13 Dec 2017 14:57:48 GMT
+ENV PATH=/opt/rabbitmq/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 13 Dec 2017 14:57:49 GMT
+ENV RABBITMQ_GPG_KEY=0A9AF2115F4687BD29803A206B73A36E6026DFCA
+# Wed, 13 Dec 2017 14:57:50 GMT
+ENV RABBITMQ_VERSION=3.7.0
+# Wed, 13 Dec 2017 14:57:50 GMT
+ENV RABBITMQ_GITHUB_TAG=v3.7.0
+# Wed, 13 Dec 2017 14:58:09 GMT
+RUN set -ex; 		apk add --no-cache --virtual .build-deps 		ca-certificates 		gnupg 		libressl 		xz 	; 		wget -O rabbitmq-server.tar.xz.asc "https://github.com/rabbitmq/rabbitmq-server/releases/download/$RABBITMQ_GITHUB_TAG/rabbitmq-server-generic-unix-${RABBITMQ_VERSION}.tar.xz.asc"; 	wget -O rabbitmq-server.tar.xz     "https://github.com/rabbitmq/rabbitmq-server/releases/download/$RABBITMQ_GITHUB_TAG/rabbitmq-server-generic-unix-${RABBITMQ_VERSION}.tar.xz"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$RABBITMQ_GPG_KEY"; 	gpg --batch --verify rabbitmq-server.tar.xz.asc rabbitmq-server.tar.xz; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$RABBITMQ_HOME"; 	tar 		--extract 		--verbose 		--file rabbitmq-server.tar.xz 		--directory "$RABBITMQ_HOME" 		--strip-components 1 	; 	rm -f rabbitmq-server.tar.xz*; 		grep -qE '^SYS_PREFIX=\$\{RABBITMQ_HOME\}$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	sed -ri 's!^(SYS_PREFIX=).*$!\1!g' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	grep -qE '^SYS_PREFIX=$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 		apk del .build-deps
+# Wed, 13 Dec 2017 14:58:10 GMT
+ENV HOME=/var/lib/rabbitmq
+# Wed, 13 Dec 2017 14:58:12 GMT
+RUN mkdir -p /var/lib/rabbitmq /etc/rabbitmq /var/log/rabbitmq 	&& chown -R rabbitmq:rabbitmq /var/lib/rabbitmq /etc/rabbitmq /var/log/rabbitmq 	&& chmod -R 777 /var/lib/rabbitmq /etc/rabbitmq /var/log/rabbitmq
+# Wed, 13 Dec 2017 14:58:12 GMT
+VOLUME [/var/lib/rabbitmq]
+# Wed, 13 Dec 2017 14:58:14 GMT
+RUN ln -sf /var/lib/rabbitmq/.erlang.cookie /root/
+# Wed, 13 Dec 2017 14:58:16 GMT
+RUN ln -sf "$RABBITMQ_HOME/plugins" /plugins
+# Wed, 13 Dec 2017 14:58:17 GMT
+COPY file:76b73453fb1907cd71df507ce8beca295d8d98a7209ff3db87d1360f53021d59 in /usr/local/bin/ 
+# Wed, 13 Dec 2017 14:58:17 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 13 Dec 2017 14:58:18 GMT
+EXPOSE 25672/tcp 4369/tcp 5671/tcp 5672/tcp
+# Wed, 13 Dec 2017 14:58:19 GMT
+CMD ["rabbitmq-server"]
+```
+
+-	Layers:
+	-	`sha256:b78042c299ad99d1e646b18762d4bc22a84c4f88e5bb491ea6293a10f53ddf79`  
+		Last Modified: Fri, 01 Dec 2017 18:43:42 GMT  
+		Size: 2.0 MB (1988857 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6fd45b97b6c2a3ac869ae5c99e087e97bc29714b165180e06f0c9116f400f2dd`  
+		Last Modified: Fri, 01 Dec 2017 18:43:41 GMT  
+		Size: 175.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ae8c4ed88f638b23b4b44a51af5828b7ca6cf492e10d10b6517f03b2dc5f9c6a`  
+		Last Modified: Wed, 13 Dec 2017 15:05:55 GMT  
+		Size: 1.3 KB (1273 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ec871b8e16217284a5c9467fc885f9330b7cf594b88a9d251f442a31f9b11982`  
+		Last Modified: Wed, 13 Dec 2017 15:05:55 GMT  
+		Size: 8.7 KB (8656 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:bc676aee1200891fd5416055f87903087826e98535cbd81dcb50768900244552`  
+		Last Modified: Wed, 13 Dec 2017 15:06:00 GMT  
+		Size: 16.3 MB (16252090 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:577a9a05a066977770e450f5a317bbe555a9e7cbe22aed78d91c371d0f6078bc`  
+		Last Modified: Wed, 13 Dec 2017 15:05:54 GMT  
+		Size: 12.0 MB (12003080 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7a24fa148ff008b81d86769ff05e09e2ee50fe61c3254089e1a3d3ecc17a765d`  
+		Last Modified: Wed, 13 Dec 2017 15:05:53 GMT  
+		Size: 207.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4f22ee1e3a37e1290768a38199a9b5b15eb4abdbe51f7cfc9e0aaad33ebe6803`  
+		Last Modified: Wed, 13 Dec 2017 15:05:53 GMT  
+		Size: 146.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ef18cbc48101fe73159e8accdc33d71957b834ee331dacd917367fc69b06d03e`  
+		Last Modified: Wed, 13 Dec 2017 15:05:54 GMT  
+		Size: 107.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4781ade18957c78810a910a263829ec09a9e48923d2c936e4d1e969ed7b695e3`  
+		Last Modified: Wed, 13 Dec 2017 15:05:53 GMT  
+		Size: 4.2 KB (4188 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:alpine` - linux; 386
@@ -12877,7 +14373,7 @@ CMD ["rabbitmq-server"]
 ## `rabbitmq:latest`
 
 ```console
-$ docker pull rabbitmq@sha256:8010ce302b32b1e7119c4c313cd4800d8a22db42b30c0fb85de7998ff4cd4bba
+$ docker pull rabbitmq@sha256:eb164f1639649e704cad4238aa53b47d93a8cb8445707246bff80f089a8f3574
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12885,6 +14381,7 @@ $ docker pull rabbitmq@sha256:8010ce302b32b1e7119c4c313cd4800d8a22db42b30c0fb85d
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
+	-	linux; arm64 variant v8
 	-	linux; 386
 	-	linux; ppc64le
 
@@ -13245,6 +14742,125 @@ CMD ["rabbitmq-server"]
 		Size: 119.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+### `rabbitmq:latest` - linux; arm64 variant v8
+
+```console
+$ docker pull rabbitmq@sha256:47dc8a9991bce412acd70555960b415de8e64d77f42d70e2e2657a38c1b3d004
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **62.8 MB (62807932 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:108e7d1309f83a8d0edc58d8450c2029738e5923c1c2a644506a69f536889677`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["rabbitmq-server"]`
+
+```dockerfile
+# Tue, 12 Dec 2017 18:34:13 GMT
+ADD file:6e068c7cc5397bfb4ec60dab4d410c5d3ba724f20ad0129d2032fb509f0eadcd in / 
+# Tue, 12 Dec 2017 18:34:14 GMT
+CMD ["bash"]
+# Wed, 13 Dec 2017 14:53:50 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		gnupg 		dirmngr 	; 	rm -rf /var/lib/apt/lists/*
+# Wed, 13 Dec 2017 14:53:52 GMT
+RUN groupadd -r rabbitmq && useradd -r -d /var/lib/rabbitmq -m -g rabbitmq rabbitmq
+# Wed, 13 Dec 2017 14:53:53 GMT
+ENV GOSU_VERSION=1.10
+# Wed, 13 Dec 2017 14:54:26 GMT
+RUN set -eux; 		fetchDeps=' 		ca-certificates 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		chmod +x /usr/local/bin/gosu; 	gosu nobody true; 		apt-get purge -y --auto-remove $fetchDeps
+# Wed, 13 Dec 2017 14:54:27 GMT
+RUN set -eux; 	sed 's/stretch/buster/g' /etc/apt/sources.list 		| tee /etc/apt/sources.list.d/buster.list; 	{ 		echo 'Package: *'; 		echo 'Pin: release n=buster*'; 		echo 'Pin-Priority: -10'; 		echo; 		echo 'Package: erlang*'; 		echo 'Pin: release n=buster*'; 		echo 'Pin-Priority: 999'; 		echo; 		echo 'Package: erlang*'; 		echo 'Pin: release n=stretch*'; 		echo 'Pin-Priority: -10'; 	} | tee /etc/apt/preferences.d/buster-erlang
+# Wed, 13 Dec 2017 14:55:29 GMT
+RUN set -eux; 	apt-get update; 	if apt-cache show erlang-base-hipe 2>/dev/null | grep -q 'Package: erlang-base-hipe'; then 		apt-get install -y --no-install-recommends 			erlang-base-hipe 		; 	fi; 	apt-get install -y --no-install-recommends 		erlang-asn1 		erlang-crypto 		erlang-eldap 		erlang-inets 		erlang-mnesia 		erlang-nox 		erlang-os-mon 		erlang-public-key 		erlang-ssl 		erlang-xmerl 	; 	rm -rf /var/lib/apt/lists/*
+# Wed, 13 Dec 2017 14:55:29 GMT
+ENV RABBITMQ_LOGS=- RABBITMQ_SASL_LOGS=-
+# Wed, 13 Dec 2017 14:55:30 GMT
+ENV PATH=/usr/lib/rabbitmq/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 13 Dec 2017 14:55:31 GMT
+ENV RABBITMQ_GPG_KEY=0A9AF2115F4687BD29803A206B73A36E6026DFCA
+# Wed, 13 Dec 2017 14:55:31 GMT
+ENV RABBITMQ_VERSION=3.7.0
+# Wed, 13 Dec 2017 14:55:32 GMT
+ENV RABBITMQ_GITHUB_TAG=v3.7.0
+# Wed, 13 Dec 2017 14:55:32 GMT
+ENV RABBITMQ_DEBIAN_VERSION=3.7.0-1
+# Wed, 13 Dec 2017 14:56:22 GMT
+RUN set -eux; 		apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O rabbitmq-server.deb.asc "https://github.com/rabbitmq/rabbitmq-server/releases/download/$RABBITMQ_GITHUB_TAG/rabbitmq-server_${RABBITMQ_DEBIAN_VERSION}_all.deb.asc"; 	wget -O rabbitmq-server.deb     "https://github.com/rabbitmq/rabbitmq-server/releases/download/$RABBITMQ_GITHUB_TAG/rabbitmq-server_${RABBITMQ_DEBIAN_VERSION}_all.deb"; 		apt-get purge -y --auto-remove ca-certificates wget; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$RABBITMQ_GPG_KEY"; 	gpg --batch --verify rabbitmq-server.deb.asc rabbitmq-server.deb; 	rm -rf "$GNUPGHOME"; 		apt install -y --no-install-recommends ./rabbitmq-server.deb; 	dpkg -l | grep rabbitmq-server; 	rm -f rabbitmq-server.deb*; 		rm -rf /var/lib/apt/lists/*
+# Wed, 13 Dec 2017 14:56:22 GMT
+ENV LANG=C.UTF-8
+# Wed, 13 Dec 2017 14:56:23 GMT
+ENV HOME=/var/lib/rabbitmq
+# Wed, 13 Dec 2017 14:56:25 GMT
+RUN mkdir -p /var/lib/rabbitmq /etc/rabbitmq 	&& chown -R rabbitmq:rabbitmq /var/lib/rabbitmq /etc/rabbitmq 	&& chmod -R 777 /var/lib/rabbitmq /etc/rabbitmq
+# Wed, 13 Dec 2017 14:56:26 GMT
+VOLUME [/var/lib/rabbitmq]
+# Wed, 13 Dec 2017 14:56:27 GMT
+RUN ln -sf /var/lib/rabbitmq/.erlang.cookie /root/
+# Wed, 13 Dec 2017 14:56:29 GMT
+RUN ln -sf "/usr/lib/rabbitmq/lib/rabbitmq_server-$RABBITMQ_VERSION/plugins" /plugins
+# Wed, 13 Dec 2017 14:56:30 GMT
+COPY file:c105d1b28d0bd0db50deb948b54b2b1680f0db00bb9f24188a595ab6e83d775f in /usr/local/bin/ 
+# Wed, 13 Dec 2017 14:56:32 GMT
+RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
+# Wed, 13 Dec 2017 14:56:33 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 13 Dec 2017 14:56:34 GMT
+EXPOSE 25672/tcp 4369/tcp 5671/tcp 5672/tcp
+# Wed, 13 Dec 2017 14:56:35 GMT
+CMD ["rabbitmq-server"]
+```
+
+-	Layers:
+	-	`sha256:fcad8cfc11c78a53ccf9aafafcb3ded5044dbd181977e6255aea54fbe164f131`  
+		Last Modified: Tue, 12 Dec 2017 18:49:05 GMT  
+		Size: 20.3 MB (20331270 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:afb3f7722e72f404b7e544c9a358cc7390f02c0b391a14ea7dbecd85dca7d195`  
+		Last Modified: Wed, 13 Dec 2017 15:03:22 GMT  
+		Size: 4.1 MB (4073192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:51c72eaa15e586a9eb8cbde84a24922fdabb2aa060ef64831fb867757ac6f83a`  
+		Last Modified: Wed, 13 Dec 2017 15:03:21 GMT  
+		Size: 4.1 KB (4073 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a0ebe8f28a8d2ed828ab5c0431545a097e3f46a3ac45e36976fde6daa9fb405d`  
+		Last Modified: Wed, 13 Dec 2017 15:03:21 GMT  
+		Size: 919.4 KB (919386 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6cf8546d6f1127383410e3244beb4a3873b3305deab0f469ac13d1d0b112dee1`  
+		Last Modified: Wed, 13 Dec 2017 15:03:19 GMT  
+		Size: 353.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:aabe4d57c4c33847b3343b87c3d4b7f0efe523535a70b98185a7237848d3780d`  
+		Last Modified: Wed, 13 Dec 2017 15:03:23 GMT  
+		Size: 24.8 MB (24762935 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e8b0b4bad71865ffd051ae6ae0f91a9b75b0ab3498986501309260ddb9e24fcc`  
+		Last Modified: Wed, 13 Dec 2017 15:03:20 GMT  
+		Size: 12.7 MB (12709876 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:67179561590eee0692c7906da312516abbd25b2b392534f0bfafed9bd0818303`  
+		Last Modified: Wed, 13 Dec 2017 15:03:18 GMT  
+		Size: 2.3 KB (2263 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6b48bfe82561f7d7c44fa56bea46d94cbc0052eb3fb853410c407ecec6a82eaa`  
+		Last Modified: Wed, 13 Dec 2017 15:03:19 GMT  
+		Size: 146.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f8d99729c27cd387b006cb9dc27c0fca1babcbbeed19a6e6c93e977eda0dac93`  
+		Last Modified: Wed, 13 Dec 2017 15:03:17 GMT  
+		Size: 125.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:062cef48f85ee1451a47cf2779222946277e34579b5c3681788187cad29921aa`  
+		Last Modified: Wed, 13 Dec 2017 15:03:16 GMT  
+		Size: 4.2 KB (4192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c81797cfbaec748f0d21ce2d045068057947f2692359c079e912111ae3e02ce2`  
+		Last Modified: Wed, 13 Dec 2017 15:03:16 GMT  
+		Size: 121.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
 ### `rabbitmq:latest` - linux; 386
 
 ```console
@@ -13486,7 +15102,7 @@ CMD ["rabbitmq-server"]
 ## `rabbitmq:management`
 
 ```console
-$ docker pull rabbitmq@sha256:89be591ebc9d76c2028d427ae0905b6c6d95cc7596b3e3c2429d71365ee2f769
+$ docker pull rabbitmq@sha256:193ec2dc8d32adbd60547e43faf3cbd96ad3899e99610149f80086d695d69fb4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13494,6 +15110,7 @@ $ docker pull rabbitmq@sha256:89be591ebc9d76c2028d427ae0905b6c6d95cc7596b3e3c242
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
+	-	linux; arm64 variant v8
 	-	linux; 386
 	-	linux; ppc64le
 
@@ -13878,6 +15495,133 @@ EXPOSE 15671/tcp 15672/tcp
 		Size: 194.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+### `rabbitmq:management` - linux; arm64 variant v8
+
+```console
+$ docker pull rabbitmq@sha256:7782fbfea16a905f8e459f778bd2417a1a8f8d3f97561d600cdbf2a043e7e062
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **62.8 MB (62808126 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:7245b2630be897d577191104a3e753430bf4311f08145ffc830f7459d43fda51`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["rabbitmq-server"]`
+
+```dockerfile
+# Tue, 12 Dec 2017 18:34:13 GMT
+ADD file:6e068c7cc5397bfb4ec60dab4d410c5d3ba724f20ad0129d2032fb509f0eadcd in / 
+# Tue, 12 Dec 2017 18:34:14 GMT
+CMD ["bash"]
+# Wed, 13 Dec 2017 14:53:50 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		gnupg 		dirmngr 	; 	rm -rf /var/lib/apt/lists/*
+# Wed, 13 Dec 2017 14:53:52 GMT
+RUN groupadd -r rabbitmq && useradd -r -d /var/lib/rabbitmq -m -g rabbitmq rabbitmq
+# Wed, 13 Dec 2017 14:53:53 GMT
+ENV GOSU_VERSION=1.10
+# Wed, 13 Dec 2017 14:54:26 GMT
+RUN set -eux; 		fetchDeps=' 		ca-certificates 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		chmod +x /usr/local/bin/gosu; 	gosu nobody true; 		apt-get purge -y --auto-remove $fetchDeps
+# Wed, 13 Dec 2017 14:54:27 GMT
+RUN set -eux; 	sed 's/stretch/buster/g' /etc/apt/sources.list 		| tee /etc/apt/sources.list.d/buster.list; 	{ 		echo 'Package: *'; 		echo 'Pin: release n=buster*'; 		echo 'Pin-Priority: -10'; 		echo; 		echo 'Package: erlang*'; 		echo 'Pin: release n=buster*'; 		echo 'Pin-Priority: 999'; 		echo; 		echo 'Package: erlang*'; 		echo 'Pin: release n=stretch*'; 		echo 'Pin-Priority: -10'; 	} | tee /etc/apt/preferences.d/buster-erlang
+# Wed, 13 Dec 2017 14:55:29 GMT
+RUN set -eux; 	apt-get update; 	if apt-cache show erlang-base-hipe 2>/dev/null | grep -q 'Package: erlang-base-hipe'; then 		apt-get install -y --no-install-recommends 			erlang-base-hipe 		; 	fi; 	apt-get install -y --no-install-recommends 		erlang-asn1 		erlang-crypto 		erlang-eldap 		erlang-inets 		erlang-mnesia 		erlang-nox 		erlang-os-mon 		erlang-public-key 		erlang-ssl 		erlang-xmerl 	; 	rm -rf /var/lib/apt/lists/*
+# Wed, 13 Dec 2017 14:55:29 GMT
+ENV RABBITMQ_LOGS=- RABBITMQ_SASL_LOGS=-
+# Wed, 13 Dec 2017 14:55:30 GMT
+ENV PATH=/usr/lib/rabbitmq/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 13 Dec 2017 14:55:31 GMT
+ENV RABBITMQ_GPG_KEY=0A9AF2115F4687BD29803A206B73A36E6026DFCA
+# Wed, 13 Dec 2017 14:55:31 GMT
+ENV RABBITMQ_VERSION=3.7.0
+# Wed, 13 Dec 2017 14:55:32 GMT
+ENV RABBITMQ_GITHUB_TAG=v3.7.0
+# Wed, 13 Dec 2017 14:55:32 GMT
+ENV RABBITMQ_DEBIAN_VERSION=3.7.0-1
+# Wed, 13 Dec 2017 14:56:22 GMT
+RUN set -eux; 		apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O rabbitmq-server.deb.asc "https://github.com/rabbitmq/rabbitmq-server/releases/download/$RABBITMQ_GITHUB_TAG/rabbitmq-server_${RABBITMQ_DEBIAN_VERSION}_all.deb.asc"; 	wget -O rabbitmq-server.deb     "https://github.com/rabbitmq/rabbitmq-server/releases/download/$RABBITMQ_GITHUB_TAG/rabbitmq-server_${RABBITMQ_DEBIAN_VERSION}_all.deb"; 		apt-get purge -y --auto-remove ca-certificates wget; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$RABBITMQ_GPG_KEY"; 	gpg --batch --verify rabbitmq-server.deb.asc rabbitmq-server.deb; 	rm -rf "$GNUPGHOME"; 		apt install -y --no-install-recommends ./rabbitmq-server.deb; 	dpkg -l | grep rabbitmq-server; 	rm -f rabbitmq-server.deb*; 		rm -rf /var/lib/apt/lists/*
+# Wed, 13 Dec 2017 14:56:22 GMT
+ENV LANG=C.UTF-8
+# Wed, 13 Dec 2017 14:56:23 GMT
+ENV HOME=/var/lib/rabbitmq
+# Wed, 13 Dec 2017 14:56:25 GMT
+RUN mkdir -p /var/lib/rabbitmq /etc/rabbitmq 	&& chown -R rabbitmq:rabbitmq /var/lib/rabbitmq /etc/rabbitmq 	&& chmod -R 777 /var/lib/rabbitmq /etc/rabbitmq
+# Wed, 13 Dec 2017 14:56:26 GMT
+VOLUME [/var/lib/rabbitmq]
+# Wed, 13 Dec 2017 14:56:27 GMT
+RUN ln -sf /var/lib/rabbitmq/.erlang.cookie /root/
+# Wed, 13 Dec 2017 14:56:29 GMT
+RUN ln -sf "/usr/lib/rabbitmq/lib/rabbitmq_server-$RABBITMQ_VERSION/plugins" /plugins
+# Wed, 13 Dec 2017 14:56:30 GMT
+COPY file:c105d1b28d0bd0db50deb948b54b2b1680f0db00bb9f24188a595ab6e83d775f in /usr/local/bin/ 
+# Wed, 13 Dec 2017 14:56:32 GMT
+RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
+# Wed, 13 Dec 2017 14:56:33 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 13 Dec 2017 14:56:34 GMT
+EXPOSE 25672/tcp 4369/tcp 5671/tcp 5672/tcp
+# Wed, 13 Dec 2017 14:56:35 GMT
+CMD ["rabbitmq-server"]
+# Wed, 13 Dec 2017 14:57:01 GMT
+RUN rabbitmq-plugins enable --offline rabbitmq_management
+# Wed, 13 Dec 2017 14:57:02 GMT
+EXPOSE 15671/tcp 15672/tcp
+```
+
+-	Layers:
+	-	`sha256:fcad8cfc11c78a53ccf9aafafcb3ded5044dbd181977e6255aea54fbe164f131`  
+		Last Modified: Tue, 12 Dec 2017 18:49:05 GMT  
+		Size: 20.3 MB (20331270 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:afb3f7722e72f404b7e544c9a358cc7390f02c0b391a14ea7dbecd85dca7d195`  
+		Last Modified: Wed, 13 Dec 2017 15:03:22 GMT  
+		Size: 4.1 MB (4073192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:51c72eaa15e586a9eb8cbde84a24922fdabb2aa060ef64831fb867757ac6f83a`  
+		Last Modified: Wed, 13 Dec 2017 15:03:21 GMT  
+		Size: 4.1 KB (4073 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a0ebe8f28a8d2ed828ab5c0431545a097e3f46a3ac45e36976fde6daa9fb405d`  
+		Last Modified: Wed, 13 Dec 2017 15:03:21 GMT  
+		Size: 919.4 KB (919386 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6cf8546d6f1127383410e3244beb4a3873b3305deab0f469ac13d1d0b112dee1`  
+		Last Modified: Wed, 13 Dec 2017 15:03:19 GMT  
+		Size: 353.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:aabe4d57c4c33847b3343b87c3d4b7f0efe523535a70b98185a7237848d3780d`  
+		Last Modified: Wed, 13 Dec 2017 15:03:23 GMT  
+		Size: 24.8 MB (24762935 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e8b0b4bad71865ffd051ae6ae0f91a9b75b0ab3498986501309260ddb9e24fcc`  
+		Last Modified: Wed, 13 Dec 2017 15:03:20 GMT  
+		Size: 12.7 MB (12709876 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:67179561590eee0692c7906da312516abbd25b2b392534f0bfafed9bd0818303`  
+		Last Modified: Wed, 13 Dec 2017 15:03:18 GMT  
+		Size: 2.3 KB (2263 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6b48bfe82561f7d7c44fa56bea46d94cbc0052eb3fb853410c407ecec6a82eaa`  
+		Last Modified: Wed, 13 Dec 2017 15:03:19 GMT  
+		Size: 146.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f8d99729c27cd387b006cb9dc27c0fca1babcbbeed19a6e6c93e977eda0dac93`  
+		Last Modified: Wed, 13 Dec 2017 15:03:17 GMT  
+		Size: 125.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:062cef48f85ee1451a47cf2779222946277e34579b5c3681788187cad29921aa`  
+		Last Modified: Wed, 13 Dec 2017 15:03:16 GMT  
+		Size: 4.2 KB (4192 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c81797cfbaec748f0d21ce2d045068057947f2692359c079e912111ae3e02ce2`  
+		Last Modified: Wed, 13 Dec 2017 15:03:16 GMT  
+		Size: 121.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a223420aef72afc6cc650fe92efc9f145fe4609e7916bcd119d6abfbb83bf0e9`  
+		Last Modified: Wed, 13 Dec 2017 15:04:38 GMT  
+		Size: 194.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
 ### `rabbitmq:management` - linux; 386
 
 ```console
@@ -14135,13 +15879,14 @@ EXPOSE 15671/tcp 15672/tcp
 ## `rabbitmq:management-alpine`
 
 ```console
-$ docker pull rabbitmq@sha256:ffdf5cee74707a3ebcd0582117f7ff59609d232b4b429ef0b995f76be89f594e
+$ docker pull rabbitmq@sha256:174c6d452403af69077d67428c87584f9735bf90cbd239ac00743b1e5d3fcc60
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
 	-	linux; arm variant v6
+	-	linux; arm64 variant v8
 	-	linux; 386
 	-	linux; ppc64le
 
@@ -14358,6 +16103,117 @@ EXPOSE 15671/tcp 15672/tcp
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5fb2ea79db64cc3ea3eb160696f5522b7e1cf3ef4c595560c529410093c5d64e`  
 		Last Modified: Wed, 13 Dec 2017 02:05:32 GMT  
+		Size: 192.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `rabbitmq:management-alpine` - linux; arm64 variant v8
+
+```console
+$ docker pull rabbitmq@sha256:9526c662bcd08f9deb40b007691a912b921635d5f96c9ec3dfae4f98249de7b3
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **30.3 MB (30258971 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:db71ce3c1994db5a8a1621a956158e118fa786d5934497b577b4333908050880`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["rabbitmq-server"]`
+
+```dockerfile
+# Fri, 01 Dec 2017 18:42:42 GMT
+ADD file:a6ef3cbbb1c0e5dfc6c3e41d70fd93e548594d9cb42c067e52df46d418c10a79 in / 
+# Fri, 01 Dec 2017 18:42:42 GMT
+COPY file:0f1d36dd7d8d53613b275660a88c5bf9b608ea8aa73a8054cb8bdbd73fd971ac in /etc/localtime 
+# Fri, 01 Dec 2017 18:42:43 GMT
+CMD ["/bin/sh"]
+# Wed, 13 Dec 2017 14:57:23 GMT
+RUN addgroup -S rabbitmq && adduser -S -h /var/lib/rabbitmq -G rabbitmq rabbitmq
+# Wed, 13 Dec 2017 14:57:26 GMT
+RUN apk add --no-cache 'su-exec>=0.2'
+# Wed, 13 Dec 2017 14:57:46 GMT
+RUN apk add --no-cache 		bash 		procps 		erlang-asn1 		erlang-hipe 		erlang-crypto 		erlang-eldap 		erlang-inets 		erlang-mnesia 		erlang 		erlang-os-mon 		erlang-public-key 		erlang-sasl 		erlang-ssl 		erlang-syntax-tools 		erlang-xmerl
+# Wed, 13 Dec 2017 14:57:47 GMT
+ENV RABBITMQ_LOGS=- RABBITMQ_SASL_LOGS=-
+# Wed, 13 Dec 2017 14:57:48 GMT
+ENV RABBITMQ_HOME=/opt/rabbitmq
+# Wed, 13 Dec 2017 14:57:48 GMT
+ENV PATH=/opt/rabbitmq/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 13 Dec 2017 14:57:49 GMT
+ENV RABBITMQ_GPG_KEY=0A9AF2115F4687BD29803A206B73A36E6026DFCA
+# Wed, 13 Dec 2017 14:57:50 GMT
+ENV RABBITMQ_VERSION=3.7.0
+# Wed, 13 Dec 2017 14:57:50 GMT
+ENV RABBITMQ_GITHUB_TAG=v3.7.0
+# Wed, 13 Dec 2017 14:58:09 GMT
+RUN set -ex; 		apk add --no-cache --virtual .build-deps 		ca-certificates 		gnupg 		libressl 		xz 	; 		wget -O rabbitmq-server.tar.xz.asc "https://github.com/rabbitmq/rabbitmq-server/releases/download/$RABBITMQ_GITHUB_TAG/rabbitmq-server-generic-unix-${RABBITMQ_VERSION}.tar.xz.asc"; 	wget -O rabbitmq-server.tar.xz     "https://github.com/rabbitmq/rabbitmq-server/releases/download/$RABBITMQ_GITHUB_TAG/rabbitmq-server-generic-unix-${RABBITMQ_VERSION}.tar.xz"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$RABBITMQ_GPG_KEY"; 	gpg --batch --verify rabbitmq-server.tar.xz.asc rabbitmq-server.tar.xz; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$RABBITMQ_HOME"; 	tar 		--extract 		--verbose 		--file rabbitmq-server.tar.xz 		--directory "$RABBITMQ_HOME" 		--strip-components 1 	; 	rm -f rabbitmq-server.tar.xz*; 		grep -qE '^SYS_PREFIX=\$\{RABBITMQ_HOME\}$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	sed -ri 's!^(SYS_PREFIX=).*$!\1!g' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	grep -qE '^SYS_PREFIX=$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 		apk del .build-deps
+# Wed, 13 Dec 2017 14:58:10 GMT
+ENV HOME=/var/lib/rabbitmq
+# Wed, 13 Dec 2017 14:58:12 GMT
+RUN mkdir -p /var/lib/rabbitmq /etc/rabbitmq /var/log/rabbitmq 	&& chown -R rabbitmq:rabbitmq /var/lib/rabbitmq /etc/rabbitmq /var/log/rabbitmq 	&& chmod -R 777 /var/lib/rabbitmq /etc/rabbitmq /var/log/rabbitmq
+# Wed, 13 Dec 2017 14:58:12 GMT
+VOLUME [/var/lib/rabbitmq]
+# Wed, 13 Dec 2017 14:58:14 GMT
+RUN ln -sf /var/lib/rabbitmq/.erlang.cookie /root/
+# Wed, 13 Dec 2017 14:58:16 GMT
+RUN ln -sf "$RABBITMQ_HOME/plugins" /plugins
+# Wed, 13 Dec 2017 14:58:17 GMT
+COPY file:76b73453fb1907cd71df507ce8beca295d8d98a7209ff3db87d1360f53021d59 in /usr/local/bin/ 
+# Wed, 13 Dec 2017 14:58:17 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 13 Dec 2017 14:58:18 GMT
+EXPOSE 25672/tcp 4369/tcp 5671/tcp 5672/tcp
+# Wed, 13 Dec 2017 14:58:19 GMT
+CMD ["rabbitmq-server"]
+# Wed, 13 Dec 2017 14:58:44 GMT
+RUN rabbitmq-plugins enable --offline rabbitmq_management
+# Wed, 13 Dec 2017 14:58:45 GMT
+EXPOSE 15671/tcp 15672/tcp
+```
+
+-	Layers:
+	-	`sha256:b78042c299ad99d1e646b18762d4bc22a84c4f88e5bb491ea6293a10f53ddf79`  
+		Last Modified: Fri, 01 Dec 2017 18:43:42 GMT  
+		Size: 2.0 MB (1988857 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6fd45b97b6c2a3ac869ae5c99e087e97bc29714b165180e06f0c9116f400f2dd`  
+		Last Modified: Fri, 01 Dec 2017 18:43:41 GMT  
+		Size: 175.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ae8c4ed88f638b23b4b44a51af5828b7ca6cf492e10d10b6517f03b2dc5f9c6a`  
+		Last Modified: Wed, 13 Dec 2017 15:05:55 GMT  
+		Size: 1.3 KB (1273 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ec871b8e16217284a5c9467fc885f9330b7cf594b88a9d251f442a31f9b11982`  
+		Last Modified: Wed, 13 Dec 2017 15:05:55 GMT  
+		Size: 8.7 KB (8656 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:bc676aee1200891fd5416055f87903087826e98535cbd81dcb50768900244552`  
+		Last Modified: Wed, 13 Dec 2017 15:06:00 GMT  
+		Size: 16.3 MB (16252090 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:577a9a05a066977770e450f5a317bbe555a9e7cbe22aed78d91c371d0f6078bc`  
+		Last Modified: Wed, 13 Dec 2017 15:05:54 GMT  
+		Size: 12.0 MB (12003080 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7a24fa148ff008b81d86769ff05e09e2ee50fe61c3254089e1a3d3ecc17a765d`  
+		Last Modified: Wed, 13 Dec 2017 15:05:53 GMT  
+		Size: 207.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4f22ee1e3a37e1290768a38199a9b5b15eb4abdbe51f7cfc9e0aaad33ebe6803`  
+		Last Modified: Wed, 13 Dec 2017 15:05:53 GMT  
+		Size: 146.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ef18cbc48101fe73159e8accdc33d71957b834ee331dacd917367fc69b06d03e`  
+		Last Modified: Wed, 13 Dec 2017 15:05:54 GMT  
+		Size: 107.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4781ade18957c78810a910a263829ec09a9e48923d2c936e4d1e969ed7b695e3`  
+		Last Modified: Wed, 13 Dec 2017 15:05:53 GMT  
+		Size: 4.2 KB (4188 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6f14bee0d74c21f5eb99d870ecc69c6aac18817c43f5f717a51b4406c73a8ef9`  
+		Last Modified: Wed, 13 Dec 2017 15:07:15 GMT  
 		Size: 192.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
