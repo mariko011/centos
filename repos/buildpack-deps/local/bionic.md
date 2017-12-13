@@ -416,14 +416,13 @@ Licenses: (parsed from: `/usr/share/doc/bzr/copyright`, `/usr/share/doc/python-b
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris bzr=2.7.0+bzr6622-9
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bzr/bzr_2.7.0+bzr6622-9.dsc' bzr_2.7.0+bzr6622-9.dsc 2517 SHA256:dae5e807f871303e79f94921cb34f80ff2b2d61f8e5414282666dea3b8d35687
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bzr/bzr_2.7.0+bzr6622.orig.tar.gz' bzr_2.7.0+bzr6622.orig.tar.gz 10948360 SHA256:08bba3e76cba9beb6b686e71253045beeab9db94753ddbcafa0f8ed1cba377ff
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bzr/bzr_2.7.0+bzr6622-9.debian.tar.xz' bzr_2.7.0+bzr6622-9.debian.tar.xz 91976 SHA256:fef6f9a8c3e2f227bf42d0f2f93ea60251a60cb420f7b561d97f0eb685f6ecb6
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/bzr/2.7.0+bzr6622-9/
+
 
 ### `dpkg` source package: `ca-certificates=20170717`
 
@@ -566,14 +565,9 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.55.1-1ubuntu2.1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.55.1-1ubuntu2.1.dsc' curl_7.55.1-1ubuntu2.1.dsc 2782 SHA256:8d8813d9332c983cf33adc99b7fd9301d1c62d7b1daf1895da04653b4c90b0a9
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.55.1.orig.tar.gz' curl_7.55.1.orig.tar.gz 3736406 SHA256:09576ea5e66672648d83dce3af16d0cb294d4cba2b5d166ade39655c495f4a20
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.55.1-1ubuntu2.1.debian.tar.xz' curl_7.55.1-1ubuntu2.1.debian.tar.xz 33384 SHA256:9f60bab7a607e29545c0f4f80bd7f10c23373fd191f0202bc70ff5516080abf8
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3ubuntu1`
 
@@ -1374,14 +1368,13 @@ Licenses: (parsed from: `/usr/share/doc/libgraphite2-3/copyright`)
 - `MPL-1.1`
 - `custom-sil-open-font-license`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris graphite2=1.3.10-6
-'http://archive.ubuntu.com/ubuntu/pool/main/g/graphite2/graphite2_1.3.10-6.dsc' graphite2_1.3.10-6.dsc 2311 SHA256:5697f2fea433f82904978e7973235c82e34e8dedbe5d46f9c6f7777100d01524
-'http://archive.ubuntu.com/ubuntu/pool/main/g/graphite2/graphite2_1.3.10.orig.tar.gz' graphite2_1.3.10.orig.tar.gz 3889647 SHA256:90fde3b2f9ea95d68ffb19278d07d9b8a7efa5ba0e413bebcea802ce05cda1ae
-'http://archive.ubuntu.com/ubuntu/pool/main/g/graphite2/graphite2_1.3.10-6.debian.tar.xz' graphite2_1.3.10-6.debian.tar.xz 11444 SHA256:ac58bea6ee466258b3d68f1a4ffd502392e5bee9fe9c3db5172554273ace079c
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/graphite2/1.3.10-6/
+
 
 ### `dpkg` source package: `graphviz=2.38.0-18ubuntu1`
 
@@ -1613,14 +1606,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris icu=60.1-1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_60.1-1ubuntu2.dsc' icu_60.1-1ubuntu2.dsc 1985 SHA256:5ffa8617a7c5525a34541042249dee5b24d404bcbf8f8f466543e5c0c93eb45a
-'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_60.1.orig.tar.gz' icu_60.1.orig.tar.gz 23296064 SHA256:f8f5a6c8fbf32c015a467972bdb1477dc5f5d5dfea908b6ed218715eeb5ee225
-'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_60.1-1ubuntu2.debian.tar.xz' icu_60.1-1ubuntu2.debian.tar.xz 28788 SHA256:f756e22e2841e08360d82e6df7351c5e694a3b769dc145c5bdc139869f1d869a
-```
 
 ### `dpkg` source package: `ilmbase=2.2.0-11ubuntu2`
 
@@ -2867,14 +2855,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.4+dfsg1-5ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1-5ubuntu2.dsc' libxml2_2.9.4+dfsg1-5ubuntu2.dsc 3135 SHA256:10ba729657681c6128dedf5e9ddd9bb7c4bf53bf14b7916328362718d0293cad
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1.orig.tar.xz' libxml2_2.9.4+dfsg1.orig.tar.xz 2446412 SHA256:a74ad55e346aa0b2b41903e66d21f8f3d2a736b3f41e32496376861ab484184e
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1-5ubuntu2.debian.tar.xz' libxml2_2.9.4+dfsg1-5ubuntu2.debian.tar.xz 34224 SHA256:c17c4ebfa837b62c952f4238a67af441a7744d0df1832cf7f054e3c11661a0a5
-```
 
 ### `dpkg` source package: `libxpm=1:3.5.12-1`
 
@@ -3776,14 +3759,9 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/s
 - `implied`
 - `see above, some license as Python`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python2.7=2.7.14-2ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.14-2ubuntu2.dsc' python2.7_2.7.14-2ubuntu2.dsc 3430 SHA256:0f415a6eaf2ea45c01511fb105d48f5b407063ea5360cddf4be4ee2eca399454
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.14.orig.tar.gz' python2.7_2.7.14.orig.tar.gz 17176758 SHA256:304c9b202ea6fbd0a4a8e0ad3733715fbd4749f2204a9173a58ec53c32ea73e8
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.14-2ubuntu2.diff.gz' python2.7_2.7.14-2ubuntu2.diff.gz 285380 SHA256:2771714530b7f0c816225688d9c1114a635f49bfaaed07cb46880b9a48229ffe
-```
 
 ### `dpkg` source package: `python3-defaults=3.6.3-0ubuntu2`
 
@@ -4121,14 +4099,13 @@ Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`, `/usr/share/doc/lib
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tiff=4.0.8-6
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.8-6.dsc' tiff_4.0.8-6.dsc 2157 SHA256:710a29a4cbd29583170b294cb1c574cc8bc27b3d4af8b00b47d0c688642b0a92
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.8.orig.tar.gz' tiff_4.0.8.orig.tar.gz 2065574 SHA256:59d7a5a8ccd92059913f246877db95a2918e6c04fb9d43fd74e5c3390dac2910
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.8-6.debian.tar.xz' tiff_4.0.8-6.debian.tar.xz 27344 SHA256:9307f5343882fa0d8229d20f35cd03cf113dc88881bf697b0ee2b3969ffdbe72
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/tiff/4.0.8-6/
+
 
 ### `dpkg` source package: `ubuntu-keyring=2016.10.27`
 
