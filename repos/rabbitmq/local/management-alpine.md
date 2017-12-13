@@ -1,10 +1,10 @@
-# `rabbitmq:3.6.14-management-alpine`
+# `rabbitmq:3.7.0-management-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:159de24b8902baa20023587ef177505254af45d0a9d62dc5c9a3915f249c9146`
-- Created: `2017-12-04T17:09:22.34078058Z`
-- Virtual Size: ~ 74.91 Mb  
+- Image ID: `sha256:ff93c4f745212face0c9c7e831c1af3d2969212ff304217da2853490379bbdcb`
+- Created: `2017-12-12T21:42:32.377350325Z`
+- Virtual Size: ~ 49.13 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -15,6 +15,6 @@
   - `RABBITMQ_SASL_LOGS=-`
   - `RABBITMQ_HOME=/opt/rabbitmq`
   - `RABBITMQ_GPG_KEY=0A9AF2115F4687BD29803A206B73A36E6026DFCA`
-  - `RABBITMQ_VERSION=3.6.14`
-  - `RABBITMQ_GITHUB_TAG=rabbitmq_v3_6_14`
+  - `RABBITMQ_VERSION=3.7.0`
+  - `RABBITMQ_GITHUB_TAG=v3.7.0`
   - `HOME=/var/lib/rabbitmq`
