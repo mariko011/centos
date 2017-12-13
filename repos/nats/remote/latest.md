@@ -1,7 +1,7 @@
 ## `nats:latest`
 
 ```console
-$ docker pull nats@sha256:78cf8dbf2f1e1df7889e05e9c4ea13529aa57dbdcabe358fef7b0b6f723cc033
+$ docker pull nats@sha256:51ab7790f4b8e625e3b9404520971abdbe9bc342b9e0736a05d4d934988727f7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9,7 +9,7 @@ $ docker pull nats@sha256:78cf8dbf2f1e1df7889e05e9c4ea13529aa57dbdcabe358fef7b0b
 	-	linux; amd64
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
-	-	windows version 10.0.14393.1884; amd64
+	-	windows version 10.0.14393.1944; amd64
 
 ### `nats:latest` - linux; amd64
 
@@ -122,38 +122,38 @@ CMD ["-c" "gnatsd.conf"]
 		Size: 477.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `nats:latest` - windows version 10.0.14393.1884; amd64
+### `nats:latest` - windows version 10.0.14393.1944; amd64
 
 ```console
-$ docker pull nats@sha256:e1855a8f0f22895c734e2381aaed3c9e33d65d13c66dcd1957cf1f5181f40b19
+$ docker pull nats@sha256:1508d4c3be06bf8efc4ae27fdcb9d5792e1193fe1f129bde0867bb2e1813717a
 ```
 
 -	Docker Version: 17.06.1-ee-2
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **403.2 MB (403173009 bytes)**  
+-	Total Size: **401.2 MB (401203320 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7df9a84cfccefc7a510235c71e5b9e2f92549048bbd2267a639c5157f2ca90cd`
+-	Image ID: `sha256:8a24ffe0f651fd1f2dbd9510044ea090a31fb8d046696dd9e9dd92ae18a0231b`
 -	Entrypoint: `["gnatsd"]`
 -	Default Command: `["-c","gnatsd.conf"]`
 
 ```dockerfile
 # Tue, 13 Dec 2016 10:47:17 GMT
 RUN Apply image 10.0.14393.0
-# Mon, 13 Nov 2017 21:41:41 GMT
-RUN Install update 10.0.14393.1884
-# Tue, 14 Nov 2017 23:32:04 GMT
+# Mon, 11 Dec 2017 21:42:41 GMT
+RUN Install update 10.0.14393.1944
+# Tue, 12 Dec 2017 23:29:56 GMT
 RUN cmd /S /C #(nop)  ENV NATS_DOCKERIZED=1
-# Wed, 15 Nov 2017 00:24:48 GMT
+# Wed, 13 Dec 2017 00:25:28 GMT
 RUN cmd /S /C #(nop) WORKDIR C:\gnatsd
-# Wed, 15 Nov 2017 00:24:49 GMT
+# Wed, 13 Dec 2017 00:25:30 GMT
 RUN cmd /S /C #(nop) COPY file:61c1931f3ccb93e5489015f8e20111fb3b675785d0003458700c148a3daff2df in gnatsd.exe 
-# Wed, 15 Nov 2017 00:24:51 GMT
+# Wed, 13 Dec 2017 00:25:31 GMT
 RUN cmd /S /C #(nop) COPY file:8fad70d15db71db30b9945fba2b3d29035a631ee4fe410e797aef6981c2a1879 in gnatsd.conf 
-# Wed, 15 Nov 2017 00:24:52 GMT
+# Wed, 13 Dec 2017 00:25:32 GMT
 RUN cmd /S /C #(nop)  EXPOSE 4222/tcp 6222/tcp 8222/tcp
-# Wed, 15 Nov 2017 00:24:53 GMT
+# Wed, 13 Dec 2017 00:25:33 GMT
 RUN cmd /S /C #(nop)  ENTRYPOINT ["gnatsd"]
-# Wed, 15 Nov 2017 00:24:54 GMT
+# Wed, 13 Dec 2017 00:25:34 GMT
 RUN cmd /S /C #(nop)  CMD ["-c" "gnatsd.conf"]
 ```
 
@@ -162,35 +162,35 @@ RUN cmd /S /C #(nop)  CMD ["-c" "gnatsd.conf"]
 		Last Modified: Tue, 13 Dec 2016 10:47:17 GMT  
 		Size: 252.7 MB (252691002 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:53a0ccfb7e6fe326c54359c802287bbe5435ac269242e4883f85a1f305e1d0cb`  
-		Last Modified: Mon, 13 Nov 2017 21:41:41 GMT  
-		Size: 148.0 MB (147993264 bytes)  
+	-	`sha256:4806a44e00a0febaf206c2414777a070782c559757658199cf5e0d8f0ead2bba`  
+		Last Modified: Mon, 11 Dec 2017 21:42:41 GMT  
+		Size: 146.0 MB (146023673 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:257e2c8165f44302fd8136185d3b740bd13c09d084394ed68443f2efd5008feb`  
-		Last Modified: Tue, 14 Nov 2017 23:32:28 GMT  
-		Size: 946.0 B  
+	-	`sha256:2735b5da9778b2ec6c898da8d2a6d18ea0847d7829b0dfeb84c4984ff081b6b2`  
+		Last Modified: Tue, 12 Dec 2017 23:30:21 GMT  
+		Size: 901.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:745f7d66eb4ea53c1de7addc86613869b6e3e5e21f739faf0b99141c42a01ca5`  
-		Last Modified: Wed, 15 Nov 2017 00:25:12 GMT  
+	-	`sha256:9c5a770da952530b8cf459eb92abf45386051025458e4aa2e35735d568c2b63a`  
+		Last Modified: Wed, 13 Dec 2017 00:25:57 GMT  
 		Size: 1.2 KB (1155 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:64d0842fccb2127a82521aeca86b585abf0de912f27297c93e26ad125348207c`  
-		Last Modified: Wed, 15 Nov 2017 00:25:11 GMT  
-		Size: 2.5 MB (2482095 bytes)  
+	-	`sha256:e0bda44e6e21b2c8db683aee15d6b5a2b817625d55f4c493d750d0924d92aa03`  
+		Last Modified: Wed, 13 Dec 2017 00:25:55 GMT  
+		Size: 2.5 MB (2482070 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:343c54942037fe7960e4a1fc4fea332e0d53cb7592427daa3bcf1ceb948f3f98`  
-		Last Modified: Wed, 15 Nov 2017 00:25:11 GMT  
+	-	`sha256:6309656ff58879b80114413cd5827e7b32087417d5cd2071a41c7083cd0d924e`  
+		Last Modified: Wed, 13 Dec 2017 00:25:55 GMT  
 		Size: 1.7 KB (1708 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b3b8d6b7b6d64af454def60d6ab2b2576bfc7263f679591c68bcdab181f41818`  
-		Last Modified: Wed, 15 Nov 2017 00:25:10 GMT  
-		Size: 943.0 B  
+	-	`sha256:1a7aa0937c05897e60155c6cd04cb89de1f59e947e579f78e6f2e53dcbdb373a`  
+		Last Modified: Wed, 13 Dec 2017 00:25:55 GMT  
+		Size: 921.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:40b9366cf757af7ccd6b6ac53092466b159d7a30375c8074b7196b04448851c3`  
-		Last Modified: Wed, 15 Nov 2017 00:25:10 GMT  
-		Size: 949.0 B  
+	-	`sha256:31eae37ef312d505257ca2310fee79f3bce22b337f32e2af828c6217bd8fe8c4`  
+		Last Modified: Wed, 13 Dec 2017 00:25:55 GMT  
+		Size: 946.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a65f5b98bb526d97de92d992ca8cac1b129a23a0307b1ab07bdde2a2d034b53`  
-		Last Modified: Wed, 15 Nov 2017 00:25:11 GMT  
-		Size: 947.0 B  
+	-	`sha256:9a437f06e46fe0bd18433f5a5e18f8644fa74a576a3aaa24271394e3c6128819`  
+		Last Modified: Wed, 13 Dec 2017 00:25:55 GMT  
+		Size: 944.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
