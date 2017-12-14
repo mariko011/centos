@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:510723dd51a74b5d275b2043dae4cfcae5dcd490ddfc0575676c9450e9fc6b79`
-- Created: `2017-12-07T00:53:58.110112069Z`
+- Image ID: `sha256:e7ba01db05b09f79f6d2ffcc9784f7b7853ae33b074ce37e5bbd10c88e416c82`
+- Created: `2017-12-12T08:10:46.838753911Z`
 - Virtual Size: ~ 390.33 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -215,11 +215,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/avahi/0.6.32-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/avahi/0.6.32-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `base-files=9.9+deb9u2`
+### `dpkg` source package: `base-files=9.9+deb9u3`
 
 Binary Packages:
 
-- `base-files=9.9+deb9u2`
+- `base-files=9.9+deb9u3`
 
 Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
@@ -228,16 +228,16 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris base-files=9.9+deb9u2
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_9.9+deb9u2.dsc' base-files_9.9+deb9u2.dsc 1477 SHA256:dcbb884f17178c51ef5e357bbf60290f3bf95c712b2924dea855e0635a5ec97d
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_9.9+deb9u2.tar.xz' base-files_9.9+deb9u2.tar.xz 62960 SHA256:c04d098e91d4711daa324f98f34cbeb3023ce92b63f09f9bd5c4d1137b263285
+$ apt-get source -qq --print-uris base-files=9.9+deb9u3
+'http://deb.debian.org/debian/pool/main/b/base-files/base-files_9.9+deb9u3.dsc' base-files_9.9+deb9u3.dsc 1095 SHA256:ed5fb0ee3885e9f9d13969ac6aad4fecb2f8eab16c4add3cb9a60f41c0125847
+'http://deb.debian.org/debian/pool/main/b/base-files/base-files_9.9+deb9u3.tar.xz' base-files_9.9+deb9u3.tar.xz 62928 SHA256:f627d5b35399c5645576dddf6100d0fc3d80bee97bbb1388715044c0a77ddbb8
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/base-files/9.9+deb9u2/ (for browsing the source)
-- https://sources.debian.net/src/base-files/9.9+deb9u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-files/9.9+deb9u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/base-files/9.9+deb9u3/ (for browsing the source)
+- https://sources.debian.net/src/base-files/9.9+deb9u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/base-files/9.9+deb9u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.5.43`
 
@@ -524,12 +524,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/db5.3/5.3.28-12+deb9u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/db5.3/5.3.28-12+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `dbus=1.10.22-0+deb9u1`
+### `dpkg` source package: `dbus=1.10.24-0+deb9u1`
 
 Binary Packages:
 
-- `dbus=1.10.22-0+deb9u1`
-- `libdbus-1-3:amd64=1.10.22-0+deb9u1`
+- `dbus=1.10.24-0+deb9u1`
+- `libdbus-1-3:amd64=1.10.24-0+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/dbus/copyright`, `/usr/share/doc/libdbus-1-3/copyright`)
 
@@ -543,13 +543,21 @@ Licenses: (parsed from: `/usr/share/doc/dbus/copyright`, `/usr/share/doc/libdbus
 - `Tcl-BSDish`
 - `g10-permissive`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris dbus=1.10.24-0+deb9u1
+'http://deb.debian.org/debian/pool/main/d/dbus/dbus_1.10.24-0+deb9u1.dsc' dbus_1.10.24-0+deb9u1.dsc 3342 SHA256:1df04f5eddb3d4b19c4b8f032e99f6749aaac4492a83e9880ccd8b2578793b47
+'http://deb.debian.org/debian/pool/main/d/dbus/dbus_1.10.24.orig.tar.gz' dbus_1.10.24.orig.tar.gz 1991358 SHA256:71184eb27638e224579ffa998e88f01d0f1fef17a7811406e53350735eaecd1b
+'http://deb.debian.org/debian/pool/main/d/dbus/dbus_1.10.24.orig.tar.gz.asc' dbus_1.10.24.orig.tar.gz.asc 833 SHA256:118f0f3ac8f2669598edab73c65eabaad1ef6c8d75a4827e4cd20f45b7de24f1
+'http://deb.debian.org/debian/pool/main/d/dbus/dbus_1.10.24-0+deb9u1.debian.tar.xz' dbus_1.10.24-0+deb9u1.debian.tar.xz 56644 SHA256:1639c4dd144cd1868e3b3ad64eb8c8ab4357951d467c07ab459e0b0fc7dafc6b
+```
 
-- http://snapshot.debian.org/package/dbus/1.10.22-0+deb9u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/dbus/1.10.24-0+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/dbus/1.10.24-0+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/dbus/1.10.24-0+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debconf=1.5.61`
 
@@ -2512,24 +2520,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/psmisc/22.21-2.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/psmisc/22.21-2.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `publicsuffix=20170424.0717-1`
+### `dpkg` source package: `publicsuffix=20171028.2055-0+deb9u1`
 
 Binary Packages:
 
-- `publicsuffix=20170424.0717-1`
+- `publicsuffix=20171028.2055-0+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/publicsuffix/copyright`)
 
 - `CC0`
 - `MPL-2.0`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris publicsuffix=20171028.2055-0+deb9u1
+'http://deb.debian.org/debian/pool/main/p/publicsuffix/publicsuffix_20171028.2055-0+deb9u1.dsc' publicsuffix_20171028.2055-0+deb9u1.dsc 2000 SHA256:f71490d87d75347c011a403e969752e2bce904748f587d8659cb24d740678550
+'http://deb.debian.org/debian/pool/main/p/publicsuffix/publicsuffix_20171028.2055.orig.tar.gz' publicsuffix_20171028.2055.orig.tar.gz 83310 SHA256:eb139133b0d33e91e5c349887cbd26931373c8b6e8fc4daf35abe0a5fae65964
+'http://deb.debian.org/debian/pool/main/p/publicsuffix/publicsuffix_20171028.2055-0+deb9u1.debian.tar.xz' publicsuffix_20171028.2055-0+deb9u1.debian.tar.xz 14208 SHA256:23def8a08304b3a9b36037e3c663fa396a831e24b7aa77d7e268ad751c598fdb
+```
 
-- http://snapshot.debian.org/package/publicsuffix/20170424.0717-1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/publicsuffix/20171028.2055-0+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/publicsuffix/20171028.2055-0+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/publicsuffix/20171028.2055-0+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=7.0-3`
 
@@ -2633,11 +2648,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/shadow/1:4.4-4.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/shadow/1:4.4-4.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `sqlite3=3.16.2-5`
+### `dpkg` source package: `sqlite3=3.16.2-5+deb9u1`
 
 Binary Packages:
 
-- `libsqlite3-0:amd64=3.16.2-5`
+- `libsqlite3-0:amd64=3.16.2-5+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 
@@ -2648,7 +2663,7 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris sqlite3=3.16.2-5
+$ apt-get source -qq --print-uris sqlite3=3.16.2-5+deb9u1
 'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.16.2-5+deb9u1.dsc' sqlite3_3.16.2-5+deb9u1.dsc 2538 SHA256:aafd7c33e9091a0c8703a9b2dbfaf1b1592d8fc1df18bf92d3bfd2ffc350cc96
 'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.16.2.orig-www.tar.xz' sqlite3_3.16.2.orig-www.tar.xz 3383968 SHA256:d5dd3de405c55c63c9f99fbfcf3defc91a54a81b5656c510cd46544aaed134fa
 'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.16.2.orig.tar.xz' sqlite3_3.16.2.orig.tar.xz 5634120 SHA256:bf7b1e8ea7577253b7f8a8287d111d542d1792cf1768edc66541ac851ff92453
@@ -2657,9 +2672,9 @@ $ apt-get source -qq --print-uris sqlite3=3.16.2-5
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/sqlite3/3.16.2-5/ (for browsing the source)
-- https://sources.debian.net/src/sqlite3/3.16.2-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sqlite3/3.16.2-5/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/sqlite3/3.16.2-5+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/sqlite3/3.16.2-5+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/sqlite3/3.16.2-5+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=232-25+deb9u1`
 
@@ -2744,23 +2759,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tar/1.29b-1.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tar/1.29b-1.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tzdata=2017b-1`
+### `dpkg` source package: `tzdata=2017c-0+deb9u1`
 
 Binary Packages:
 
-- `tzdata=2017b-1`
+- `tzdata=2017c-0+deb9u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris tzdata=2017c-0+deb9u1
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017c-0+deb9u1.dsc' tzdata_2017c-0+deb9u1.dsc 2274 SHA256:1172c3cd89c5c9f93f3ba8bda083d7fb59282dcc55311703f15fb3d7b1835216
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017c.orig.tar.gz' tzdata_2017c.orig.tar.gz 335571 SHA256:d6543f92a929826318e2f44ff3a7611ce5f565a43e10250b42599d0ba4cbd90b
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017c.orig.tar.gz.asc' tzdata_2017c.orig.tar.gz.asc 801 SHA256:89b6e3d1367c2a15bf7e2aabb90fc062b89c398ef5475b00ede3a9602cc1736a
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017c-0+deb9u1.debian.tar.xz' tzdata_2017c-0+deb9u1.debian.tar.xz 101196 SHA256:5e02b85631b57e3a01a61475d947c0c314020cd560bb2a188b9340ea514f6067
+```
 
-- http://snapshot.debian.org/package/tzdata/2017b-1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/tzdata/2017c-0+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2017c-0+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2017c-0+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0036`
 
