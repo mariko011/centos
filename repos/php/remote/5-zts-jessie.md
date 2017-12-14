@@ -1,7 +1,7 @@
 ## `php:5-zts-jessie`
 
 ```console
-$ docker pull php@sha256:30f5af8374da995846f237bd197c23edf7903bf5ce3f570e5e367c9238bb1eaa
+$ docker pull php@sha256:414b0ebb0a0c3ba68c32d475cc5cebca4db5901d5fcee78ba1ecb51a45280aa4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -365,14 +365,14 @@ CMD ["php" "-a"]
 ### `php:5-zts-jessie` - linux; 386
 
 ```console
-$ docker pull php@sha256:ca97577a14e7cd5ae848c66e56222d23be81fce8402a2b723412fbbb9e211ed7
+$ docker pull php@sha256:7c2c72f8aca2b653da62589dd963a08b4417c96d5f579d0d1abcf0e16accaebe
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **154.6 MB (154581521 bytes)**  
+-	Total Size: **154.6 MB (154581531 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5bfc5733925adb46c8af84463af73c6920d2ce7c358b007a178f55470a4588fd`
+-	Image ID: `sha256:7b566b87bf600533393c30220dbc8deccfaca784280b2b21c3e81c6c237ecb9d`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
@@ -411,11 +411,11 @@ RUN set -xe; 		fetchDeps=' 		wget 	'; 	if ! command -v gpg > /dev/null; then 		f
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
 # Wed, 13 Dec 2017 01:21:05 GMT
 RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)" 	&& if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
-# Wed, 13 Dec 2017 01:22:24 GMT
-COPY multi:d237dc13cc37e124ffa6adaa98392420764ea5e4327263182c1b7a749bd736fa in /usr/local/bin/ 
-# Wed, 13 Dec 2017 01:22:24 GMT
+# Thu, 14 Dec 2017 10:21:22 GMT
+COPY multi:711d08781e30442511d0faa82c0629f12aa4e68db820b0570becfca3d657018f in /usr/local/bin/ 
+# Thu, 14 Dec 2017 10:21:22 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Wed, 13 Dec 2017 01:22:24 GMT
+# Thu, 14 Dec 2017 10:21:22 GMT
 CMD ["php" "-a"]
 ```
 
@@ -444,22 +444,22 @@ CMD ["php" "-a"]
 		Last Modified: Wed, 13 Dec 2017 02:17:09 GMT  
 		Size: 5.7 MB (5725968 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9b8493813488cd99cb6df5259d5740ceeea587045061072099ce7d681e97d9b4`  
-		Last Modified: Wed, 13 Dec 2017 02:17:06 GMT  
-		Size: 2.2 KB (2176 bytes)  
+	-	`sha256:2bf260376cfa2f3c8db3f9d7e259f048e510b51726ba7000a736a76ba4813a7f`  
+		Last Modified: Thu, 14 Dec 2017 10:52:28 GMT  
+		Size: 2.2 KB (2186 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `php:5-zts-jessie` - linux; ppc64le
 
 ```console
-$ docker pull php@sha256:f0473be72b87b2e45bd9f2538cab753b6e53596910b8a8156a551811c5f83386
+$ docker pull php@sha256:7a06f9cc9b32208b29364578f731995bbfcb5feb85a7cbf4051a13e5127ad82e
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **139.5 MB (139548455 bytes)**  
+-	Total Size: **139.5 MB (139548465 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8900f0f9657fb02a336ec93139ba8802f6c1dd01fb3567961909588131772e23`
+-	Image ID: `sha256:c27bc2e5a1a12f41b4d2aafbc526373e0b48fe956c58eade6d60248a7a57f745`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
@@ -498,11 +498,11 @@ RUN set -xe; 		fetchDeps=' 		wget 	'; 	if ! command -v gpg > /dev/null; then 		f
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
 # Tue, 12 Dec 2017 06:14:29 GMT
 RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)" 	&& if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
-# Tue, 12 Dec 2017 06:14:31 GMT
-COPY multi:d237dc13cc37e124ffa6adaa98392420764ea5e4327263182c1b7a749bd736fa in /usr/local/bin/ 
-# Tue, 12 Dec 2017 06:14:33 GMT
+# Thu, 14 Dec 2017 10:08:17 GMT
+COPY multi:711d08781e30442511d0faa82c0629f12aa4e68db820b0570becfca3d657018f in /usr/local/bin/ 
+# Thu, 14 Dec 2017 10:08:18 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 12 Dec 2017 06:14:34 GMT
+# Thu, 14 Dec 2017 10:08:21 GMT
 CMD ["php" "-a"]
 ```
 
@@ -531,9 +531,9 @@ CMD ["php" "-a"]
 		Last Modified: Tue, 12 Dec 2017 06:29:03 GMT  
 		Size: 5.5 MB (5487693 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9691e9227e635d183569c744aabf8d032f8fa721f5af89587169b7c64ed74fc2`  
-		Last Modified: Tue, 12 Dec 2017 06:29:01 GMT  
-		Size: 2.2 KB (2173 bytes)  
+	-	`sha256:39361f1a4036ee4769ae320544a42452c41cec72cdb6327bac26376e9f4e1049`  
+		Last Modified: Thu, 14 Dec 2017 10:27:15 GMT  
+		Size: 2.2 KB (2183 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `php:5-zts-jessie` - linux; s390x
