@@ -1237,12 +1237,13 @@ CMD ["kapacitord"]
 ## `kapacitor:latest`
 
 ```console
-$ docker pull kapacitor@sha256:f6b58c62ad1f8c0eaf718d861a3ccab623ae1ec3155f09be83fe84eb84c2c216
+$ docker pull kapacitor@sha256:539c53231a272e55f9f9ee33a56c39072cb00a3a5e784cfe9a40e3c1f75d30e6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
+	-	linux; arm64 variant v8
 
 ### `kapacitor:latest` - linux; amd64
 
@@ -1320,5 +1321,84 @@ CMD ["kapacitord"]
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:54d56672c63ace941e34d22cb9764f0696f4789507f8c957ecacf1f785529cf6`  
 		Last Modified: Wed, 13 Dec 2017 20:13:18 GMT  
+		Size: 231.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `kapacitor:latest` - linux; arm64 variant v8
+
+```console
+$ docker pull kapacitor@sha256:0f775d74ffaf939942830e2c2302ba745f4487a3fe2a032436679c123b7d6096
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **90.7 MB (90743973 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:a106440051e105d1549aa9dbc14a649958d9371ef2d43c06f232807e01fe95c7`
+-	Entrypoint: `["\/entrypoint.sh"]`
+-	Default Command: `["kapacitord"]`
+
+```dockerfile
+# Mon, 09 Oct 2017 21:47:18 GMT
+ADD file:bf097edec8505e5cb1e432319988aeb28a6f918edef706b3c543fa61aaaea4cb in / 
+# Mon, 09 Oct 2017 21:47:19 GMT
+CMD ["bash"]
+# Mon, 09 Oct 2017 23:05:41 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
+# Fri, 03 Nov 2017 10:11:15 GMT
+RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
+# Fri, 03 Nov 2017 11:25:09 GMT
+RUN DEBIAN_FRONTEND=noninteractive apt-get update &&     DEBIAN_FRONTEND=noninteractive apt-get install -y bash-completion &&     awk 'f{if(sub(/^#/,"",$0)==0){f=0}};/^# enable bash completion/{f=1};{print;}' /etc/bash.bashrc > /etc/bash.bashrc.new &&     mv /etc/bash.bashrc.new /etc/bash.bashrc
+# Fri, 03 Nov 2017 11:25:20 GMT
+RUN set -ex &&     for key in         05CE15085FC09D18E99EFB22684A14CF2582E0C5 ;     do         gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key" ||         gpg --keyserver pgp.mit.edu --recv-keys "$key" ||         gpg --keyserver keyserver.pgp.com --recv-keys "$key" ;     done
+# Thu, 14 Dec 2017 01:38:56 GMT
+ENV KAPACITOR_VERSION=1.4.0
+# Thu, 14 Dec 2017 01:39:08 GMT
+RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in       amd64) ARCH='amd64';;       arm64) ARCH='arm64';;       armhf) ARCH='armhf';;       armel) ARCH='armel';;       *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     wget -q https://dl.influxdata.com/kapacitor/releases/kapacitor_${KAPACITOR_VERSION}_${ARCH}.deb.asc &&     wget -q https://dl.influxdata.com/kapacitor/releases/kapacitor_${KAPACITOR_VERSION}_${ARCH}.deb &&     gpg --batch --verify kapacitor_${KAPACITOR_VERSION}_${ARCH}.deb.asc kapacitor_${KAPACITOR_VERSION}_${ARCH}.deb &&     dpkg -i kapacitor_${KAPACITOR_VERSION}_${ARCH}.deb &&     rm -f kapacitor_${KAPACITOR_VERSION}_${ARCH}.deb*
+# Thu, 14 Dec 2017 01:39:09 GMT
+COPY file:4046787774ea4c49703132e9dbc6fb3a19cb54632aa7032dd8379f12b56034d9 in /etc/kapacitor/kapacitor.conf 
+# Thu, 14 Dec 2017 01:39:10 GMT
+EXPOSE 9092/tcp
+# Thu, 14 Dec 2017 01:39:11 GMT
+VOLUME [/var/lib/kapacitor]
+# Thu, 14 Dec 2017 01:39:12 GMT
+COPY file:e5d90b0779cb7845ca3a7981c04a97fd959fea211a2ce19c8da8b949f9d9d04c in /entrypoint.sh 
+# Thu, 14 Dec 2017 01:39:13 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+# Thu, 14 Dec 2017 01:39:15 GMT
+CMD ["kapacitord"]
+```
+
+-	Layers:
+	-	`sha256:0e5a8be23912597ff0d89db096abd4c4383c8cf4ee700d333b86f881ea289875`  
+		Last Modified: Mon, 09 Oct 2017 22:01:04 GMT  
+		Size: 42.9 MB (42911727 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7d7589dd246446eb7fba574b55eeb0810199cb0a935b7d349b8a930f23af9b13`  
+		Last Modified: Mon, 09 Oct 2017 23:34:08 GMT  
+		Size: 10.1 MB (10066395 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8e8cca94ff455471d48d7a5d86fce4995768acce4d272092fd794ce2d0e3bf90`  
+		Last Modified: Fri, 03 Nov 2017 10:53:04 GMT  
+		Size: 4.1 MB (4087641 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:dab33b95bbd010c5adae6393ca2cd8ad9c8ce997fcd95c460dec08372eac217c`  
+		Last Modified: Fri, 03 Nov 2017 11:27:08 GMT  
+		Size: 12.4 MB (12368780 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2289a0d9089dc8f6568e1810815252d1a78ea2287f641c238290f8b6120c4279`  
+		Last Modified: Fri, 03 Nov 2017 11:27:04 GMT  
+		Size: 2.9 KB (2887 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:66d690944660e56c1cc8adefd0da1cfaf8f5337ae92e0ec84440dc5f8514335d`  
+		Last Modified: Thu, 14 Dec 2017 01:39:50 GMT  
+		Size: 21.3 MB (21306088 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e7730028fd1adfe7494024076f28542261cfcb1ee63d8d11fb42f0b7306d1cda`  
+		Last Modified: Thu, 14 Dec 2017 01:39:41 GMT  
+		Size: 224.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:660e9f3b63b08551302c64bc90a320ceaeda8380db24b2b3741935ba2edac5fb`  
+		Last Modified: Thu, 14 Dec 2017 01:39:41 GMT  
 		Size: 231.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
