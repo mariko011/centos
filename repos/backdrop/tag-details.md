@@ -18,7 +18,7 @@
 ## `backdrop:1`
 
 ```console
-$ docker pull backdrop@sha256:61fd92d5d2fb80da89332605800c332c59e3dce69cd544cc86a7995174a93f90
+$ docker pull backdrop@sha256:93892110100e5b0b4e8addfb4f9ee8472eae4f510d459833f6f62f18d39f9cf7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -28,14 +28,14 @@ $ docker pull backdrop@sha256:61fd92d5d2fb80da89332605800c332c59e3dce69cd544cc86
 ### `backdrop:1` - linux; amd64
 
 ```console
-$ docker pull backdrop@sha256:f11e45a13d3f8e108b42a1a3c8eb5243f93830d5902791f3d1d573ec8d72046f
+$ docker pull backdrop@sha256:51b71de18ca97e8d647d5f87d8eea02a3ab0ae4aa6f3372fc5f80910b354fe02
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **175.3 MB (175319280 bytes)**  
+-	Total Size: **175.3 MB (175319377 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cabe7f712bf265224e95af431f040de8b8eea80a393182d68ad9d7f449eb30d0`
+-	Image ID: `sha256:f5d7006aa72169dbb217587d1011a79af545f8a629d7c83d6714bfa83f45385c`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -90,35 +90,35 @@ RUN set -xe; 		fetchDeps=' 		wget 	'; 	if ! command -v gpg > /dev/null; then 		f
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
 # Tue, 12 Dec 2017 06:59:39 GMT
 RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)" 	&& if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
-# Tue, 12 Dec 2017 06:59:45 GMT
-COPY multi:dbabcc0b81566a75f49e7faa9ca5f96cd22a515b80ee7ea1e34fceceee3f9c2a in /usr/local/bin/ 
-# Tue, 12 Dec 2017 06:59:46 GMT
+# Wed, 13 Dec 2017 23:31:29 GMT
+COPY multi:6c3bbfbce55efcbe7075883db5f0dba98b25830060e57a35ce066c0dc58c7f0b in /usr/local/bin/ 
+# Wed, 13 Dec 2017 23:31:29 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 12 Dec 2017 06:59:46 GMT
+# Wed, 13 Dec 2017 23:31:30 GMT
 COPY file:24613ecbb1ce6a09f683b0753da9c26a1af07547326e8a02f6eec80ad6f2774a in /usr/local/bin/ 
-# Tue, 12 Dec 2017 06:59:46 GMT
+# Wed, 13 Dec 2017 23:31:30 GMT
 WORKDIR /var/www/html
-# Tue, 12 Dec 2017 06:59:46 GMT
+# Wed, 13 Dec 2017 23:31:30 GMT
 EXPOSE 80/tcp
-# Tue, 12 Dec 2017 06:59:47 GMT
+# Wed, 13 Dec 2017 23:31:30 GMT
 CMD ["apache2-foreground"]
-# Tue, 12 Dec 2017 08:51:14 GMT
+# Thu, 14 Dec 2017 00:28:35 GMT
 RUN a2enmod rewrite
-# Tue, 12 Dec 2017 08:52:43 GMT
+# Thu, 14 Dec 2017 00:30:06 GMT
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev 	&& rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd mbstring pdo pdo_mysql pdo_pgsql zip
-# Tue, 12 Dec 2017 08:52:48 GMT
+# Thu, 14 Dec 2017 00:30:10 GMT
 WORKDIR /var/www/html
-# Tue, 12 Dec 2017 08:52:48 GMT
+# Thu, 14 Dec 2017 00:30:10 GMT
 ENV BACKDROP_VERSION=1.7.2
-# Tue, 12 Dec 2017 08:52:48 GMT
+# Thu, 14 Dec 2017 00:30:10 GMT
 ENV BACKDROP_MD5=8c83ae79a18d13b2c4f2993cab9f6b37
-# Tue, 12 Dec 2017 08:52:51 GMT
+# Thu, 14 Dec 2017 00:30:14 GMT
 RUN curl -fSL "https://github.com/backdrop/backdrop/archive/${BACKDROP_VERSION}.tar.gz" -o backdrop.tar.gz   && echo "${BACKDROP_MD5} *backdrop.tar.gz" | md5sum -c -   && tar -xz --strip-components=1 -f backdrop.tar.gz   && rm backdrop.tar.gz   && chown -R www-data:www-data sites
-# Tue, 12 Dec 2017 08:52:55 GMT
+# Thu, 14 Dec 2017 00:30:19 GMT
 COPY file:c0486d85988902f1e562ad397588637d225d7c83881bf98527f6b5585f66ee13 in /entrypoint.sh 
-# Tue, 12 Dec 2017 08:52:55 GMT
+# Thu, 14 Dec 2017 00:30:20 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 12 Dec 2017 08:52:55 GMT
+# Thu, 14 Dec 2017 00:30:20 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -167,35 +167,35 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 12 Dec 2017 07:28:26 GMT  
 		Size: 9.5 MB (9534580 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e8593f35b0acb0769fcaf021159e9c05da017204b0fc5ecf6da141c9d815550f`  
-		Last Modified: Tue, 12 Dec 2017 07:28:23 GMT  
-		Size: 2.2 KB (2179 bytes)  
+	-	`sha256:49dcb65cdbe68868a0d7b0b4ad0d3d52804ca149a42f9c35d7709e91a086d770`  
+		Last Modified: Thu, 14 Dec 2017 00:06:03 GMT  
+		Size: 2.2 KB (2190 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:113145dfe2250cbe2522f8cc938e7edeec2e213f71b9fa9505519d07d4d96c23`  
-		Last Modified: Tue, 12 Dec 2017 07:28:23 GMT  
+	-	`sha256:4865c4b3781f8afd2711d771caf34bda2be02cc1c3d0c6ab0fcbfca78c3f10cb`  
+		Last Modified: Thu, 14 Dec 2017 00:06:04 GMT  
 		Size: 903.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2c40cd416ac4b876d6ec793f913c94ff66207554d6edd58d46293c35aab95bf`  
-		Last Modified: Tue, 12 Dec 2017 08:54:57 GMT  
-		Size: 312.0 B  
+	-	`sha256:73dfba5b4f2d8ed6faf67eef61635b276b8be8f0617dadf84f5a173fd99e1fff`  
+		Last Modified: Thu, 14 Dec 2017 00:32:33 GMT  
+		Size: 313.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a34331f845a80b8496a2474090981bed4c7ecd6f9b4f9474d6f79243a6c70907`  
-		Last Modified: Tue, 12 Dec 2017 08:54:58 GMT  
-		Size: 7.2 MB (7200363 bytes)  
+	-	`sha256:39426f28064d3d46bcac542f9d831afc9817a94c37a3491c97af675ae2b5e607`  
+		Last Modified: Thu, 14 Dec 2017 00:32:34 GMT  
+		Size: 7.2 MB (7200447 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a6891d7b80ca3c6288eb28e0506fce1fd902446a74b04bc28519ce91c3bfba7a`  
-		Last Modified: Tue, 12 Dec 2017 08:54:59 GMT  
-		Size: 8.3 MB (8270762 bytes)  
+	-	`sha256:8fcc3296af0c7346615ebcc05a0f28ec37b7c3cdf7bca36061f8480fd8daf273`  
+		Last Modified: Thu, 14 Dec 2017 00:32:34 GMT  
+		Size: 8.3 MB (8270764 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1cb666d722c541cba95a0da53a6409cc170677fe3ef4da8b23502449ef31494e`  
-		Last Modified: Tue, 12 Dec 2017 08:54:57 GMT  
-		Size: 949.0 B  
+	-	`sha256:09ebc094ca32cf05bd628ccdeb70610ea000b52e5e1275bbfbb5f4b1c94b9ba0`  
+		Last Modified: Thu, 14 Dec 2017 00:32:32 GMT  
+		Size: 948.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `backdrop:1.7`
 
 ```console
-$ docker pull backdrop@sha256:61fd92d5d2fb80da89332605800c332c59e3dce69cd544cc86a7995174a93f90
+$ docker pull backdrop@sha256:93892110100e5b0b4e8addfb4f9ee8472eae4f510d459833f6f62f18d39f9cf7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -205,14 +205,14 @@ $ docker pull backdrop@sha256:61fd92d5d2fb80da89332605800c332c59e3dce69cd544cc86
 ### `backdrop:1.7` - linux; amd64
 
 ```console
-$ docker pull backdrop@sha256:f11e45a13d3f8e108b42a1a3c8eb5243f93830d5902791f3d1d573ec8d72046f
+$ docker pull backdrop@sha256:51b71de18ca97e8d647d5f87d8eea02a3ab0ae4aa6f3372fc5f80910b354fe02
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **175.3 MB (175319280 bytes)**  
+-	Total Size: **175.3 MB (175319377 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cabe7f712bf265224e95af431f040de8b8eea80a393182d68ad9d7f449eb30d0`
+-	Image ID: `sha256:f5d7006aa72169dbb217587d1011a79af545f8a629d7c83d6714bfa83f45385c`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -267,35 +267,35 @@ RUN set -xe; 		fetchDeps=' 		wget 	'; 	if ! command -v gpg > /dev/null; then 		f
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
 # Tue, 12 Dec 2017 06:59:39 GMT
 RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)" 	&& if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
-# Tue, 12 Dec 2017 06:59:45 GMT
-COPY multi:dbabcc0b81566a75f49e7faa9ca5f96cd22a515b80ee7ea1e34fceceee3f9c2a in /usr/local/bin/ 
-# Tue, 12 Dec 2017 06:59:46 GMT
+# Wed, 13 Dec 2017 23:31:29 GMT
+COPY multi:6c3bbfbce55efcbe7075883db5f0dba98b25830060e57a35ce066c0dc58c7f0b in /usr/local/bin/ 
+# Wed, 13 Dec 2017 23:31:29 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 12 Dec 2017 06:59:46 GMT
+# Wed, 13 Dec 2017 23:31:30 GMT
 COPY file:24613ecbb1ce6a09f683b0753da9c26a1af07547326e8a02f6eec80ad6f2774a in /usr/local/bin/ 
-# Tue, 12 Dec 2017 06:59:46 GMT
+# Wed, 13 Dec 2017 23:31:30 GMT
 WORKDIR /var/www/html
-# Tue, 12 Dec 2017 06:59:46 GMT
+# Wed, 13 Dec 2017 23:31:30 GMT
 EXPOSE 80/tcp
-# Tue, 12 Dec 2017 06:59:47 GMT
+# Wed, 13 Dec 2017 23:31:30 GMT
 CMD ["apache2-foreground"]
-# Tue, 12 Dec 2017 08:51:14 GMT
+# Thu, 14 Dec 2017 00:28:35 GMT
 RUN a2enmod rewrite
-# Tue, 12 Dec 2017 08:52:43 GMT
+# Thu, 14 Dec 2017 00:30:06 GMT
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev 	&& rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd mbstring pdo pdo_mysql pdo_pgsql zip
-# Tue, 12 Dec 2017 08:52:48 GMT
+# Thu, 14 Dec 2017 00:30:10 GMT
 WORKDIR /var/www/html
-# Tue, 12 Dec 2017 08:52:48 GMT
+# Thu, 14 Dec 2017 00:30:10 GMT
 ENV BACKDROP_VERSION=1.7.2
-# Tue, 12 Dec 2017 08:52:48 GMT
+# Thu, 14 Dec 2017 00:30:10 GMT
 ENV BACKDROP_MD5=8c83ae79a18d13b2c4f2993cab9f6b37
-# Tue, 12 Dec 2017 08:52:51 GMT
+# Thu, 14 Dec 2017 00:30:14 GMT
 RUN curl -fSL "https://github.com/backdrop/backdrop/archive/${BACKDROP_VERSION}.tar.gz" -o backdrop.tar.gz   && echo "${BACKDROP_MD5} *backdrop.tar.gz" | md5sum -c -   && tar -xz --strip-components=1 -f backdrop.tar.gz   && rm backdrop.tar.gz   && chown -R www-data:www-data sites
-# Tue, 12 Dec 2017 08:52:55 GMT
+# Thu, 14 Dec 2017 00:30:19 GMT
 COPY file:c0486d85988902f1e562ad397588637d225d7c83881bf98527f6b5585f66ee13 in /entrypoint.sh 
-# Tue, 12 Dec 2017 08:52:55 GMT
+# Thu, 14 Dec 2017 00:30:20 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 12 Dec 2017 08:52:55 GMT
+# Thu, 14 Dec 2017 00:30:20 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -344,35 +344,35 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 12 Dec 2017 07:28:26 GMT  
 		Size: 9.5 MB (9534580 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e8593f35b0acb0769fcaf021159e9c05da017204b0fc5ecf6da141c9d815550f`  
-		Last Modified: Tue, 12 Dec 2017 07:28:23 GMT  
-		Size: 2.2 KB (2179 bytes)  
+	-	`sha256:49dcb65cdbe68868a0d7b0b4ad0d3d52804ca149a42f9c35d7709e91a086d770`  
+		Last Modified: Thu, 14 Dec 2017 00:06:03 GMT  
+		Size: 2.2 KB (2190 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:113145dfe2250cbe2522f8cc938e7edeec2e213f71b9fa9505519d07d4d96c23`  
-		Last Modified: Tue, 12 Dec 2017 07:28:23 GMT  
+	-	`sha256:4865c4b3781f8afd2711d771caf34bda2be02cc1c3d0c6ab0fcbfca78c3f10cb`  
+		Last Modified: Thu, 14 Dec 2017 00:06:04 GMT  
 		Size: 903.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2c40cd416ac4b876d6ec793f913c94ff66207554d6edd58d46293c35aab95bf`  
-		Last Modified: Tue, 12 Dec 2017 08:54:57 GMT  
-		Size: 312.0 B  
+	-	`sha256:73dfba5b4f2d8ed6faf67eef61635b276b8be8f0617dadf84f5a173fd99e1fff`  
+		Last Modified: Thu, 14 Dec 2017 00:32:33 GMT  
+		Size: 313.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a34331f845a80b8496a2474090981bed4c7ecd6f9b4f9474d6f79243a6c70907`  
-		Last Modified: Tue, 12 Dec 2017 08:54:58 GMT  
-		Size: 7.2 MB (7200363 bytes)  
+	-	`sha256:39426f28064d3d46bcac542f9d831afc9817a94c37a3491c97af675ae2b5e607`  
+		Last Modified: Thu, 14 Dec 2017 00:32:34 GMT  
+		Size: 7.2 MB (7200447 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a6891d7b80ca3c6288eb28e0506fce1fd902446a74b04bc28519ce91c3bfba7a`  
-		Last Modified: Tue, 12 Dec 2017 08:54:59 GMT  
-		Size: 8.3 MB (8270762 bytes)  
+	-	`sha256:8fcc3296af0c7346615ebcc05a0f28ec37b7c3cdf7bca36061f8480fd8daf273`  
+		Last Modified: Thu, 14 Dec 2017 00:32:34 GMT  
+		Size: 8.3 MB (8270764 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1cb666d722c541cba95a0da53a6409cc170677fe3ef4da8b23502449ef31494e`  
-		Last Modified: Tue, 12 Dec 2017 08:54:57 GMT  
-		Size: 949.0 B  
+	-	`sha256:09ebc094ca32cf05bd628ccdeb70610ea000b52e5e1275bbfbb5f4b1c94b9ba0`  
+		Last Modified: Thu, 14 Dec 2017 00:32:32 GMT  
+		Size: 948.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `backdrop:1.7.2`
 
 ```console
-$ docker pull backdrop@sha256:61fd92d5d2fb80da89332605800c332c59e3dce69cd544cc86a7995174a93f90
+$ docker pull backdrop@sha256:93892110100e5b0b4e8addfb4f9ee8472eae4f510d459833f6f62f18d39f9cf7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -382,14 +382,14 @@ $ docker pull backdrop@sha256:61fd92d5d2fb80da89332605800c332c59e3dce69cd544cc86
 ### `backdrop:1.7.2` - linux; amd64
 
 ```console
-$ docker pull backdrop@sha256:f11e45a13d3f8e108b42a1a3c8eb5243f93830d5902791f3d1d573ec8d72046f
+$ docker pull backdrop@sha256:51b71de18ca97e8d647d5f87d8eea02a3ab0ae4aa6f3372fc5f80910b354fe02
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **175.3 MB (175319280 bytes)**  
+-	Total Size: **175.3 MB (175319377 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cabe7f712bf265224e95af431f040de8b8eea80a393182d68ad9d7f449eb30d0`
+-	Image ID: `sha256:f5d7006aa72169dbb217587d1011a79af545f8a629d7c83d6714bfa83f45385c`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -444,35 +444,35 @@ RUN set -xe; 		fetchDeps=' 		wget 	'; 	if ! command -v gpg > /dev/null; then 		f
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
 # Tue, 12 Dec 2017 06:59:39 GMT
 RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)" 	&& if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
-# Tue, 12 Dec 2017 06:59:45 GMT
-COPY multi:dbabcc0b81566a75f49e7faa9ca5f96cd22a515b80ee7ea1e34fceceee3f9c2a in /usr/local/bin/ 
-# Tue, 12 Dec 2017 06:59:46 GMT
+# Wed, 13 Dec 2017 23:31:29 GMT
+COPY multi:6c3bbfbce55efcbe7075883db5f0dba98b25830060e57a35ce066c0dc58c7f0b in /usr/local/bin/ 
+# Wed, 13 Dec 2017 23:31:29 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 12 Dec 2017 06:59:46 GMT
+# Wed, 13 Dec 2017 23:31:30 GMT
 COPY file:24613ecbb1ce6a09f683b0753da9c26a1af07547326e8a02f6eec80ad6f2774a in /usr/local/bin/ 
-# Tue, 12 Dec 2017 06:59:46 GMT
+# Wed, 13 Dec 2017 23:31:30 GMT
 WORKDIR /var/www/html
-# Tue, 12 Dec 2017 06:59:46 GMT
+# Wed, 13 Dec 2017 23:31:30 GMT
 EXPOSE 80/tcp
-# Tue, 12 Dec 2017 06:59:47 GMT
+# Wed, 13 Dec 2017 23:31:30 GMT
 CMD ["apache2-foreground"]
-# Tue, 12 Dec 2017 08:51:14 GMT
+# Thu, 14 Dec 2017 00:28:35 GMT
 RUN a2enmod rewrite
-# Tue, 12 Dec 2017 08:52:43 GMT
+# Thu, 14 Dec 2017 00:30:06 GMT
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev 	&& rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd mbstring pdo pdo_mysql pdo_pgsql zip
-# Tue, 12 Dec 2017 08:52:48 GMT
+# Thu, 14 Dec 2017 00:30:10 GMT
 WORKDIR /var/www/html
-# Tue, 12 Dec 2017 08:52:48 GMT
+# Thu, 14 Dec 2017 00:30:10 GMT
 ENV BACKDROP_VERSION=1.7.2
-# Tue, 12 Dec 2017 08:52:48 GMT
+# Thu, 14 Dec 2017 00:30:10 GMT
 ENV BACKDROP_MD5=8c83ae79a18d13b2c4f2993cab9f6b37
-# Tue, 12 Dec 2017 08:52:51 GMT
+# Thu, 14 Dec 2017 00:30:14 GMT
 RUN curl -fSL "https://github.com/backdrop/backdrop/archive/${BACKDROP_VERSION}.tar.gz" -o backdrop.tar.gz   && echo "${BACKDROP_MD5} *backdrop.tar.gz" | md5sum -c -   && tar -xz --strip-components=1 -f backdrop.tar.gz   && rm backdrop.tar.gz   && chown -R www-data:www-data sites
-# Tue, 12 Dec 2017 08:52:55 GMT
+# Thu, 14 Dec 2017 00:30:19 GMT
 COPY file:c0486d85988902f1e562ad397588637d225d7c83881bf98527f6b5585f66ee13 in /entrypoint.sh 
-# Tue, 12 Dec 2017 08:52:55 GMT
+# Thu, 14 Dec 2017 00:30:20 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 12 Dec 2017 08:52:55 GMT
+# Thu, 14 Dec 2017 00:30:20 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -521,35 +521,35 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 12 Dec 2017 07:28:26 GMT  
 		Size: 9.5 MB (9534580 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e8593f35b0acb0769fcaf021159e9c05da017204b0fc5ecf6da141c9d815550f`  
-		Last Modified: Tue, 12 Dec 2017 07:28:23 GMT  
-		Size: 2.2 KB (2179 bytes)  
+	-	`sha256:49dcb65cdbe68868a0d7b0b4ad0d3d52804ca149a42f9c35d7709e91a086d770`  
+		Last Modified: Thu, 14 Dec 2017 00:06:03 GMT  
+		Size: 2.2 KB (2190 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:113145dfe2250cbe2522f8cc938e7edeec2e213f71b9fa9505519d07d4d96c23`  
-		Last Modified: Tue, 12 Dec 2017 07:28:23 GMT  
+	-	`sha256:4865c4b3781f8afd2711d771caf34bda2be02cc1c3d0c6ab0fcbfca78c3f10cb`  
+		Last Modified: Thu, 14 Dec 2017 00:06:04 GMT  
 		Size: 903.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2c40cd416ac4b876d6ec793f913c94ff66207554d6edd58d46293c35aab95bf`  
-		Last Modified: Tue, 12 Dec 2017 08:54:57 GMT  
-		Size: 312.0 B  
+	-	`sha256:73dfba5b4f2d8ed6faf67eef61635b276b8be8f0617dadf84f5a173fd99e1fff`  
+		Last Modified: Thu, 14 Dec 2017 00:32:33 GMT  
+		Size: 313.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a34331f845a80b8496a2474090981bed4c7ecd6f9b4f9474d6f79243a6c70907`  
-		Last Modified: Tue, 12 Dec 2017 08:54:58 GMT  
-		Size: 7.2 MB (7200363 bytes)  
+	-	`sha256:39426f28064d3d46bcac542f9d831afc9817a94c37a3491c97af675ae2b5e607`  
+		Last Modified: Thu, 14 Dec 2017 00:32:34 GMT  
+		Size: 7.2 MB (7200447 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a6891d7b80ca3c6288eb28e0506fce1fd902446a74b04bc28519ce91c3bfba7a`  
-		Last Modified: Tue, 12 Dec 2017 08:54:59 GMT  
-		Size: 8.3 MB (8270762 bytes)  
+	-	`sha256:8fcc3296af0c7346615ebcc05a0f28ec37b7c3cdf7bca36061f8480fd8daf273`  
+		Last Modified: Thu, 14 Dec 2017 00:32:34 GMT  
+		Size: 8.3 MB (8270764 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1cb666d722c541cba95a0da53a6409cc170677fe3ef4da8b23502449ef31494e`  
-		Last Modified: Tue, 12 Dec 2017 08:54:57 GMT  
-		Size: 949.0 B  
+	-	`sha256:09ebc094ca32cf05bd628ccdeb70610ea000b52e5e1275bbfbb5f4b1c94b9ba0`  
+		Last Modified: Thu, 14 Dec 2017 00:32:32 GMT  
+		Size: 948.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `backdrop:1.7.2-apache`
 
 ```console
-$ docker pull backdrop@sha256:61fd92d5d2fb80da89332605800c332c59e3dce69cd544cc86a7995174a93f90
+$ docker pull backdrop@sha256:93892110100e5b0b4e8addfb4f9ee8472eae4f510d459833f6f62f18d39f9cf7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -559,14 +559,14 @@ $ docker pull backdrop@sha256:61fd92d5d2fb80da89332605800c332c59e3dce69cd544cc86
 ### `backdrop:1.7.2-apache` - linux; amd64
 
 ```console
-$ docker pull backdrop@sha256:f11e45a13d3f8e108b42a1a3c8eb5243f93830d5902791f3d1d573ec8d72046f
+$ docker pull backdrop@sha256:51b71de18ca97e8d647d5f87d8eea02a3ab0ae4aa6f3372fc5f80910b354fe02
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **175.3 MB (175319280 bytes)**  
+-	Total Size: **175.3 MB (175319377 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cabe7f712bf265224e95af431f040de8b8eea80a393182d68ad9d7f449eb30d0`
+-	Image ID: `sha256:f5d7006aa72169dbb217587d1011a79af545f8a629d7c83d6714bfa83f45385c`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -621,35 +621,35 @@ RUN set -xe; 		fetchDeps=' 		wget 	'; 	if ! command -v gpg > /dev/null; then 		f
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
 # Tue, 12 Dec 2017 06:59:39 GMT
 RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)" 	&& if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
-# Tue, 12 Dec 2017 06:59:45 GMT
-COPY multi:dbabcc0b81566a75f49e7faa9ca5f96cd22a515b80ee7ea1e34fceceee3f9c2a in /usr/local/bin/ 
-# Tue, 12 Dec 2017 06:59:46 GMT
+# Wed, 13 Dec 2017 23:31:29 GMT
+COPY multi:6c3bbfbce55efcbe7075883db5f0dba98b25830060e57a35ce066c0dc58c7f0b in /usr/local/bin/ 
+# Wed, 13 Dec 2017 23:31:29 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 12 Dec 2017 06:59:46 GMT
+# Wed, 13 Dec 2017 23:31:30 GMT
 COPY file:24613ecbb1ce6a09f683b0753da9c26a1af07547326e8a02f6eec80ad6f2774a in /usr/local/bin/ 
-# Tue, 12 Dec 2017 06:59:46 GMT
+# Wed, 13 Dec 2017 23:31:30 GMT
 WORKDIR /var/www/html
-# Tue, 12 Dec 2017 06:59:46 GMT
+# Wed, 13 Dec 2017 23:31:30 GMT
 EXPOSE 80/tcp
-# Tue, 12 Dec 2017 06:59:47 GMT
+# Wed, 13 Dec 2017 23:31:30 GMT
 CMD ["apache2-foreground"]
-# Tue, 12 Dec 2017 08:51:14 GMT
+# Thu, 14 Dec 2017 00:28:35 GMT
 RUN a2enmod rewrite
-# Tue, 12 Dec 2017 08:52:43 GMT
+# Thu, 14 Dec 2017 00:30:06 GMT
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev 	&& rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd mbstring pdo pdo_mysql pdo_pgsql zip
-# Tue, 12 Dec 2017 08:52:48 GMT
+# Thu, 14 Dec 2017 00:30:10 GMT
 WORKDIR /var/www/html
-# Tue, 12 Dec 2017 08:52:48 GMT
+# Thu, 14 Dec 2017 00:30:10 GMT
 ENV BACKDROP_VERSION=1.7.2
-# Tue, 12 Dec 2017 08:52:48 GMT
+# Thu, 14 Dec 2017 00:30:10 GMT
 ENV BACKDROP_MD5=8c83ae79a18d13b2c4f2993cab9f6b37
-# Tue, 12 Dec 2017 08:52:51 GMT
+# Thu, 14 Dec 2017 00:30:14 GMT
 RUN curl -fSL "https://github.com/backdrop/backdrop/archive/${BACKDROP_VERSION}.tar.gz" -o backdrop.tar.gz   && echo "${BACKDROP_MD5} *backdrop.tar.gz" | md5sum -c -   && tar -xz --strip-components=1 -f backdrop.tar.gz   && rm backdrop.tar.gz   && chown -R www-data:www-data sites
-# Tue, 12 Dec 2017 08:52:55 GMT
+# Thu, 14 Dec 2017 00:30:19 GMT
 COPY file:c0486d85988902f1e562ad397588637d225d7c83881bf98527f6b5585f66ee13 in /entrypoint.sh 
-# Tue, 12 Dec 2017 08:52:55 GMT
+# Thu, 14 Dec 2017 00:30:20 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 12 Dec 2017 08:52:55 GMT
+# Thu, 14 Dec 2017 00:30:20 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -698,35 +698,35 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 12 Dec 2017 07:28:26 GMT  
 		Size: 9.5 MB (9534580 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e8593f35b0acb0769fcaf021159e9c05da017204b0fc5ecf6da141c9d815550f`  
-		Last Modified: Tue, 12 Dec 2017 07:28:23 GMT  
-		Size: 2.2 KB (2179 bytes)  
+	-	`sha256:49dcb65cdbe68868a0d7b0b4ad0d3d52804ca149a42f9c35d7709e91a086d770`  
+		Last Modified: Thu, 14 Dec 2017 00:06:03 GMT  
+		Size: 2.2 KB (2190 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:113145dfe2250cbe2522f8cc938e7edeec2e213f71b9fa9505519d07d4d96c23`  
-		Last Modified: Tue, 12 Dec 2017 07:28:23 GMT  
+	-	`sha256:4865c4b3781f8afd2711d771caf34bda2be02cc1c3d0c6ab0fcbfca78c3f10cb`  
+		Last Modified: Thu, 14 Dec 2017 00:06:04 GMT  
 		Size: 903.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2c40cd416ac4b876d6ec793f913c94ff66207554d6edd58d46293c35aab95bf`  
-		Last Modified: Tue, 12 Dec 2017 08:54:57 GMT  
-		Size: 312.0 B  
+	-	`sha256:73dfba5b4f2d8ed6faf67eef61635b276b8be8f0617dadf84f5a173fd99e1fff`  
+		Last Modified: Thu, 14 Dec 2017 00:32:33 GMT  
+		Size: 313.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a34331f845a80b8496a2474090981bed4c7ecd6f9b4f9474d6f79243a6c70907`  
-		Last Modified: Tue, 12 Dec 2017 08:54:58 GMT  
-		Size: 7.2 MB (7200363 bytes)  
+	-	`sha256:39426f28064d3d46bcac542f9d831afc9817a94c37a3491c97af675ae2b5e607`  
+		Last Modified: Thu, 14 Dec 2017 00:32:34 GMT  
+		Size: 7.2 MB (7200447 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a6891d7b80ca3c6288eb28e0506fce1fd902446a74b04bc28519ce91c3bfba7a`  
-		Last Modified: Tue, 12 Dec 2017 08:54:59 GMT  
-		Size: 8.3 MB (8270762 bytes)  
+	-	`sha256:8fcc3296af0c7346615ebcc05a0f28ec37b7c3cdf7bca36061f8480fd8daf273`  
+		Last Modified: Thu, 14 Dec 2017 00:32:34 GMT  
+		Size: 8.3 MB (8270764 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1cb666d722c541cba95a0da53a6409cc170677fe3ef4da8b23502449ef31494e`  
-		Last Modified: Tue, 12 Dec 2017 08:54:57 GMT  
-		Size: 949.0 B  
+	-	`sha256:09ebc094ca32cf05bd628ccdeb70610ea000b52e5e1275bbfbb5f4b1c94b9ba0`  
+		Last Modified: Thu, 14 Dec 2017 00:32:32 GMT  
+		Size: 948.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `backdrop:1.7.2-fpm`
 
 ```console
-$ docker pull backdrop@sha256:174bf11cbaab45ccb9d849b3391cd587923198bd7e088871344a708fb285d857
+$ docker pull backdrop@sha256:ee6d04f67bb81469a4c6e1eb980a81eb9b38af6e00252fe5bdc450e27ca71b4c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -736,14 +736,14 @@ $ docker pull backdrop@sha256:174bf11cbaab45ccb9d849b3391cd587923198bd7e08887134
 ### `backdrop:1.7.2-fpm` - linux; amd64
 
 ```console
-$ docker pull backdrop@sha256:75937508173fab63f0b78269f8ed8942ed1b91d3698777e52c5417b08cdf7459
+$ docker pull backdrop@sha256:680f304670499daf57d37f81517035eac617fe075b1dd76b65d93598ecb62deb
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **172.0 MB (171950306 bytes)**  
+-	Total Size: **172.0 MB (171950266 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1d264c80b6e27c668f91b943c534bf155cc30df2b3523e0274bfe45a3f1655c5`
+-	Image ID: `sha256:f72379df68c0fcd2d17494ef521e5833291daa2a6e14361d2459c02ecc854fdd`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -782,33 +782,33 @@ RUN set -xe; 		fetchDeps=' 		wget 	'; 	if ! command -v gpg > /dev/null; then 		f
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
 # Tue, 12 Dec 2017 07:04:30 GMT
 RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)" 	&& if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
-# Tue, 12 Dec 2017 07:04:36 GMT
-COPY multi:3a3ce8aa3891c64454909e9f8257446a1817abe660b49a7baaa26f28bfdc444d in /usr/local/bin/ 
-# Tue, 12 Dec 2017 07:04:36 GMT
+# Wed, 13 Dec 2017 23:31:40 GMT
+COPY multi:2e4df9268ce870f9ed83b38a2784f3778f2c2468c3e7ee600220221534e4e247 in /usr/local/bin/ 
+# Wed, 13 Dec 2017 23:31:40 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 12 Dec 2017 07:04:36 GMT
+# Wed, 13 Dec 2017 23:31:41 GMT
 WORKDIR /var/www/html
-# Tue, 12 Dec 2017 07:04:37 GMT
+# Wed, 13 Dec 2017 23:31:41 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = [::]:9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Tue, 12 Dec 2017 07:04:37 GMT
+# Wed, 13 Dec 2017 23:31:42 GMT
 EXPOSE 9000/tcp
-# Tue, 12 Dec 2017 07:04:37 GMT
+# Wed, 13 Dec 2017 23:31:42 GMT
 CMD ["php-fpm"]
-# Tue, 12 Dec 2017 08:54:38 GMT
+# Thu, 14 Dec 2017 00:32:08 GMT
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev 	&& rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd mbstring pdo pdo_mysql pdo_pgsql zip
-# Tue, 12 Dec 2017 08:54:39 GMT
+# Thu, 14 Dec 2017 00:32:08 GMT
 WORKDIR /var/www/html
-# Tue, 12 Dec 2017 08:54:39 GMT
+# Thu, 14 Dec 2017 00:32:09 GMT
 ENV BACKDROP_VERSION=1.7.2
-# Tue, 12 Dec 2017 08:54:39 GMT
+# Thu, 14 Dec 2017 00:32:09 GMT
 ENV BACKDROP_MD5=8c83ae79a18d13b2c4f2993cab9f6b37
-# Tue, 12 Dec 2017 08:54:41 GMT
+# Thu, 14 Dec 2017 00:32:11 GMT
 RUN curl -fSL "https://github.com/backdrop/backdrop/archive/${BACKDROP_VERSION}.tar.gz" -o backdrop.tar.gz 	&& echo "${BACKDROP_MD5} *backdrop.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f backdrop.tar.gz 	&& rm backdrop.tar.gz 	&& chown -R www-data:www-data sites
-# Tue, 12 Dec 2017 08:54:42 GMT
+# Thu, 14 Dec 2017 00:32:12 GMT
 COPY file:c0486d85988902f1e562ad397588637d225d7c83881bf98527f6b5585f66ee13 in /entrypoint.sh 
-# Tue, 12 Dec 2017 08:54:42 GMT
+# Thu, 14 Dec 2017 00:32:12 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 12 Dec 2017 08:54:42 GMT
+# Thu, 14 Dec 2017 00:32:13 GMT
 CMD ["php-fpm"]
 ```
 
@@ -837,35 +837,35 @@ CMD ["php-fpm"]
 		Last Modified: Tue, 12 Dec 2017 07:29:28 GMT  
 		Size: 9.2 MB (9209496 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7a005301ce437929d5836af989aee358e5c5224c2977fcc45fa7cc19a907b7bd`  
-		Last Modified: Tue, 12 Dec 2017 07:29:25 GMT  
-		Size: 2.2 KB (2176 bytes)  
+	-	`sha256:591e4cd5e5405f0c0c2fb391b4e66ab8aca81cb1a5cbefdd96ea6c6e67c494d0`  
+		Last Modified: Thu, 14 Dec 2017 00:07:07 GMT  
+		Size: 2.2 KB (2184 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:06673dd985c8ce301facd66d269c0029fa3d0d7d3c723cf0d7aae9716c3842e9`  
-		Last Modified: Tue, 12 Dec 2017 07:29:25 GMT  
+	-	`sha256:0392d283e80e6f19f3c2ac441efab479bd64b3eabfdd8c0213c17d3edbfaa336`  
+		Last Modified: Thu, 14 Dec 2017 00:07:07 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:01acddaa56c2ea0ba171f4b27ca820538ec019c22335e8412800622b566aa646`  
-		Last Modified: Tue, 12 Dec 2017 07:29:25 GMT  
-		Size: 7.6 KB (7619 bytes)  
+	-	`sha256:e4c731ebcf97dc1b3dda26519516c6e52d285146eb9b6853c081dfe4711f3cdd`  
+		Last Modified: Thu, 14 Dec 2017 00:07:07 GMT  
+		Size: 7.6 KB (7624 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2c9d4e2e894da6c3bf6fbcf53cb7a83dd66353ff27e0ad3b1eb4b5dc3d9c3f21`  
-		Last Modified: Tue, 12 Dec 2017 08:56:25 GMT  
-		Size: 7.2 MB (7181185 bytes)  
+	-	`sha256:c66c1ef622e196fbce3079b9792b89b13105cdecdca06fcf42afbf13cf409f6c`  
+		Last Modified: Thu, 14 Dec 2017 00:34:17 GMT  
+		Size: 7.2 MB (7181146 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a5d15cf331649ae12bd4c00ee5a6791399a7203b1d3fc7210ec7cc127e7b3ec2`  
-		Last Modified: Tue, 12 Dec 2017 08:56:25 GMT  
-		Size: 8.3 MB (8270742 bytes)  
+	-	`sha256:acb8cc3350626b120c48e2bddc5e50e6bd2fcaeb29c12f64c4fb74b74375cc98`  
+		Last Modified: Thu, 14 Dec 2017 00:34:21 GMT  
+		Size: 8.3 MB (8270728 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:903bac814698c4ac52eed2f67550b83ea362aa76f5988bebcc52e184f4f419e4`  
-		Last Modified: Tue, 12 Dec 2017 08:56:23 GMT  
+	-	`sha256:211b7ed686af486622c7e6bc2f8bfbacd213d0b141071f207881cb27c75df47c`  
+		Last Modified: Thu, 14 Dec 2017 00:34:14 GMT  
 		Size: 948.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `backdrop:1.7-apache`
 
 ```console
-$ docker pull backdrop@sha256:61fd92d5d2fb80da89332605800c332c59e3dce69cd544cc86a7995174a93f90
+$ docker pull backdrop@sha256:93892110100e5b0b4e8addfb4f9ee8472eae4f510d459833f6f62f18d39f9cf7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -875,14 +875,14 @@ $ docker pull backdrop@sha256:61fd92d5d2fb80da89332605800c332c59e3dce69cd544cc86
 ### `backdrop:1.7-apache` - linux; amd64
 
 ```console
-$ docker pull backdrop@sha256:f11e45a13d3f8e108b42a1a3c8eb5243f93830d5902791f3d1d573ec8d72046f
+$ docker pull backdrop@sha256:51b71de18ca97e8d647d5f87d8eea02a3ab0ae4aa6f3372fc5f80910b354fe02
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **175.3 MB (175319280 bytes)**  
+-	Total Size: **175.3 MB (175319377 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cabe7f712bf265224e95af431f040de8b8eea80a393182d68ad9d7f449eb30d0`
+-	Image ID: `sha256:f5d7006aa72169dbb217587d1011a79af545f8a629d7c83d6714bfa83f45385c`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -937,35 +937,35 @@ RUN set -xe; 		fetchDeps=' 		wget 	'; 	if ! command -v gpg > /dev/null; then 		f
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
 # Tue, 12 Dec 2017 06:59:39 GMT
 RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)" 	&& if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
-# Tue, 12 Dec 2017 06:59:45 GMT
-COPY multi:dbabcc0b81566a75f49e7faa9ca5f96cd22a515b80ee7ea1e34fceceee3f9c2a in /usr/local/bin/ 
-# Tue, 12 Dec 2017 06:59:46 GMT
+# Wed, 13 Dec 2017 23:31:29 GMT
+COPY multi:6c3bbfbce55efcbe7075883db5f0dba98b25830060e57a35ce066c0dc58c7f0b in /usr/local/bin/ 
+# Wed, 13 Dec 2017 23:31:29 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 12 Dec 2017 06:59:46 GMT
+# Wed, 13 Dec 2017 23:31:30 GMT
 COPY file:24613ecbb1ce6a09f683b0753da9c26a1af07547326e8a02f6eec80ad6f2774a in /usr/local/bin/ 
-# Tue, 12 Dec 2017 06:59:46 GMT
+# Wed, 13 Dec 2017 23:31:30 GMT
 WORKDIR /var/www/html
-# Tue, 12 Dec 2017 06:59:46 GMT
+# Wed, 13 Dec 2017 23:31:30 GMT
 EXPOSE 80/tcp
-# Tue, 12 Dec 2017 06:59:47 GMT
+# Wed, 13 Dec 2017 23:31:30 GMT
 CMD ["apache2-foreground"]
-# Tue, 12 Dec 2017 08:51:14 GMT
+# Thu, 14 Dec 2017 00:28:35 GMT
 RUN a2enmod rewrite
-# Tue, 12 Dec 2017 08:52:43 GMT
+# Thu, 14 Dec 2017 00:30:06 GMT
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev 	&& rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd mbstring pdo pdo_mysql pdo_pgsql zip
-# Tue, 12 Dec 2017 08:52:48 GMT
+# Thu, 14 Dec 2017 00:30:10 GMT
 WORKDIR /var/www/html
-# Tue, 12 Dec 2017 08:52:48 GMT
+# Thu, 14 Dec 2017 00:30:10 GMT
 ENV BACKDROP_VERSION=1.7.2
-# Tue, 12 Dec 2017 08:52:48 GMT
+# Thu, 14 Dec 2017 00:30:10 GMT
 ENV BACKDROP_MD5=8c83ae79a18d13b2c4f2993cab9f6b37
-# Tue, 12 Dec 2017 08:52:51 GMT
+# Thu, 14 Dec 2017 00:30:14 GMT
 RUN curl -fSL "https://github.com/backdrop/backdrop/archive/${BACKDROP_VERSION}.tar.gz" -o backdrop.tar.gz   && echo "${BACKDROP_MD5} *backdrop.tar.gz" | md5sum -c -   && tar -xz --strip-components=1 -f backdrop.tar.gz   && rm backdrop.tar.gz   && chown -R www-data:www-data sites
-# Tue, 12 Dec 2017 08:52:55 GMT
+# Thu, 14 Dec 2017 00:30:19 GMT
 COPY file:c0486d85988902f1e562ad397588637d225d7c83881bf98527f6b5585f66ee13 in /entrypoint.sh 
-# Tue, 12 Dec 2017 08:52:55 GMT
+# Thu, 14 Dec 2017 00:30:20 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 12 Dec 2017 08:52:55 GMT
+# Thu, 14 Dec 2017 00:30:20 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -1014,35 +1014,35 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 12 Dec 2017 07:28:26 GMT  
 		Size: 9.5 MB (9534580 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e8593f35b0acb0769fcaf021159e9c05da017204b0fc5ecf6da141c9d815550f`  
-		Last Modified: Tue, 12 Dec 2017 07:28:23 GMT  
-		Size: 2.2 KB (2179 bytes)  
+	-	`sha256:49dcb65cdbe68868a0d7b0b4ad0d3d52804ca149a42f9c35d7709e91a086d770`  
+		Last Modified: Thu, 14 Dec 2017 00:06:03 GMT  
+		Size: 2.2 KB (2190 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:113145dfe2250cbe2522f8cc938e7edeec2e213f71b9fa9505519d07d4d96c23`  
-		Last Modified: Tue, 12 Dec 2017 07:28:23 GMT  
+	-	`sha256:4865c4b3781f8afd2711d771caf34bda2be02cc1c3d0c6ab0fcbfca78c3f10cb`  
+		Last Modified: Thu, 14 Dec 2017 00:06:04 GMT  
 		Size: 903.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2c40cd416ac4b876d6ec793f913c94ff66207554d6edd58d46293c35aab95bf`  
-		Last Modified: Tue, 12 Dec 2017 08:54:57 GMT  
-		Size: 312.0 B  
+	-	`sha256:73dfba5b4f2d8ed6faf67eef61635b276b8be8f0617dadf84f5a173fd99e1fff`  
+		Last Modified: Thu, 14 Dec 2017 00:32:33 GMT  
+		Size: 313.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a34331f845a80b8496a2474090981bed4c7ecd6f9b4f9474d6f79243a6c70907`  
-		Last Modified: Tue, 12 Dec 2017 08:54:58 GMT  
-		Size: 7.2 MB (7200363 bytes)  
+	-	`sha256:39426f28064d3d46bcac542f9d831afc9817a94c37a3491c97af675ae2b5e607`  
+		Last Modified: Thu, 14 Dec 2017 00:32:34 GMT  
+		Size: 7.2 MB (7200447 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a6891d7b80ca3c6288eb28e0506fce1fd902446a74b04bc28519ce91c3bfba7a`  
-		Last Modified: Tue, 12 Dec 2017 08:54:59 GMT  
-		Size: 8.3 MB (8270762 bytes)  
+	-	`sha256:8fcc3296af0c7346615ebcc05a0f28ec37b7c3cdf7bca36061f8480fd8daf273`  
+		Last Modified: Thu, 14 Dec 2017 00:32:34 GMT  
+		Size: 8.3 MB (8270764 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1cb666d722c541cba95a0da53a6409cc170677fe3ef4da8b23502449ef31494e`  
-		Last Modified: Tue, 12 Dec 2017 08:54:57 GMT  
-		Size: 949.0 B  
+	-	`sha256:09ebc094ca32cf05bd628ccdeb70610ea000b52e5e1275bbfbb5f4b1c94b9ba0`  
+		Last Modified: Thu, 14 Dec 2017 00:32:32 GMT  
+		Size: 948.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `backdrop:1.7-fpm`
 
 ```console
-$ docker pull backdrop@sha256:174bf11cbaab45ccb9d849b3391cd587923198bd7e088871344a708fb285d857
+$ docker pull backdrop@sha256:ee6d04f67bb81469a4c6e1eb980a81eb9b38af6e00252fe5bdc450e27ca71b4c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1052,14 +1052,14 @@ $ docker pull backdrop@sha256:174bf11cbaab45ccb9d849b3391cd587923198bd7e08887134
 ### `backdrop:1.7-fpm` - linux; amd64
 
 ```console
-$ docker pull backdrop@sha256:75937508173fab63f0b78269f8ed8942ed1b91d3698777e52c5417b08cdf7459
+$ docker pull backdrop@sha256:680f304670499daf57d37f81517035eac617fe075b1dd76b65d93598ecb62deb
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **172.0 MB (171950306 bytes)**  
+-	Total Size: **172.0 MB (171950266 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1d264c80b6e27c668f91b943c534bf155cc30df2b3523e0274bfe45a3f1655c5`
+-	Image ID: `sha256:f72379df68c0fcd2d17494ef521e5833291daa2a6e14361d2459c02ecc854fdd`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -1098,33 +1098,33 @@ RUN set -xe; 		fetchDeps=' 		wget 	'; 	if ! command -v gpg > /dev/null; then 		f
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
 # Tue, 12 Dec 2017 07:04:30 GMT
 RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)" 	&& if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
-# Tue, 12 Dec 2017 07:04:36 GMT
-COPY multi:3a3ce8aa3891c64454909e9f8257446a1817abe660b49a7baaa26f28bfdc444d in /usr/local/bin/ 
-# Tue, 12 Dec 2017 07:04:36 GMT
+# Wed, 13 Dec 2017 23:31:40 GMT
+COPY multi:2e4df9268ce870f9ed83b38a2784f3778f2c2468c3e7ee600220221534e4e247 in /usr/local/bin/ 
+# Wed, 13 Dec 2017 23:31:40 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 12 Dec 2017 07:04:36 GMT
+# Wed, 13 Dec 2017 23:31:41 GMT
 WORKDIR /var/www/html
-# Tue, 12 Dec 2017 07:04:37 GMT
+# Wed, 13 Dec 2017 23:31:41 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = [::]:9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Tue, 12 Dec 2017 07:04:37 GMT
+# Wed, 13 Dec 2017 23:31:42 GMT
 EXPOSE 9000/tcp
-# Tue, 12 Dec 2017 07:04:37 GMT
+# Wed, 13 Dec 2017 23:31:42 GMT
 CMD ["php-fpm"]
-# Tue, 12 Dec 2017 08:54:38 GMT
+# Thu, 14 Dec 2017 00:32:08 GMT
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev 	&& rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd mbstring pdo pdo_mysql pdo_pgsql zip
-# Tue, 12 Dec 2017 08:54:39 GMT
+# Thu, 14 Dec 2017 00:32:08 GMT
 WORKDIR /var/www/html
-# Tue, 12 Dec 2017 08:54:39 GMT
+# Thu, 14 Dec 2017 00:32:09 GMT
 ENV BACKDROP_VERSION=1.7.2
-# Tue, 12 Dec 2017 08:54:39 GMT
+# Thu, 14 Dec 2017 00:32:09 GMT
 ENV BACKDROP_MD5=8c83ae79a18d13b2c4f2993cab9f6b37
-# Tue, 12 Dec 2017 08:54:41 GMT
+# Thu, 14 Dec 2017 00:32:11 GMT
 RUN curl -fSL "https://github.com/backdrop/backdrop/archive/${BACKDROP_VERSION}.tar.gz" -o backdrop.tar.gz 	&& echo "${BACKDROP_MD5} *backdrop.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f backdrop.tar.gz 	&& rm backdrop.tar.gz 	&& chown -R www-data:www-data sites
-# Tue, 12 Dec 2017 08:54:42 GMT
+# Thu, 14 Dec 2017 00:32:12 GMT
 COPY file:c0486d85988902f1e562ad397588637d225d7c83881bf98527f6b5585f66ee13 in /entrypoint.sh 
-# Tue, 12 Dec 2017 08:54:42 GMT
+# Thu, 14 Dec 2017 00:32:12 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 12 Dec 2017 08:54:42 GMT
+# Thu, 14 Dec 2017 00:32:13 GMT
 CMD ["php-fpm"]
 ```
 
@@ -1153,35 +1153,35 @@ CMD ["php-fpm"]
 		Last Modified: Tue, 12 Dec 2017 07:29:28 GMT  
 		Size: 9.2 MB (9209496 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7a005301ce437929d5836af989aee358e5c5224c2977fcc45fa7cc19a907b7bd`  
-		Last Modified: Tue, 12 Dec 2017 07:29:25 GMT  
-		Size: 2.2 KB (2176 bytes)  
+	-	`sha256:591e4cd5e5405f0c0c2fb391b4e66ab8aca81cb1a5cbefdd96ea6c6e67c494d0`  
+		Last Modified: Thu, 14 Dec 2017 00:07:07 GMT  
+		Size: 2.2 KB (2184 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:06673dd985c8ce301facd66d269c0029fa3d0d7d3c723cf0d7aae9716c3842e9`  
-		Last Modified: Tue, 12 Dec 2017 07:29:25 GMT  
+	-	`sha256:0392d283e80e6f19f3c2ac441efab479bd64b3eabfdd8c0213c17d3edbfaa336`  
+		Last Modified: Thu, 14 Dec 2017 00:07:07 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:01acddaa56c2ea0ba171f4b27ca820538ec019c22335e8412800622b566aa646`  
-		Last Modified: Tue, 12 Dec 2017 07:29:25 GMT  
-		Size: 7.6 KB (7619 bytes)  
+	-	`sha256:e4c731ebcf97dc1b3dda26519516c6e52d285146eb9b6853c081dfe4711f3cdd`  
+		Last Modified: Thu, 14 Dec 2017 00:07:07 GMT  
+		Size: 7.6 KB (7624 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2c9d4e2e894da6c3bf6fbcf53cb7a83dd66353ff27e0ad3b1eb4b5dc3d9c3f21`  
-		Last Modified: Tue, 12 Dec 2017 08:56:25 GMT  
-		Size: 7.2 MB (7181185 bytes)  
+	-	`sha256:c66c1ef622e196fbce3079b9792b89b13105cdecdca06fcf42afbf13cf409f6c`  
+		Last Modified: Thu, 14 Dec 2017 00:34:17 GMT  
+		Size: 7.2 MB (7181146 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a5d15cf331649ae12bd4c00ee5a6791399a7203b1d3fc7210ec7cc127e7b3ec2`  
-		Last Modified: Tue, 12 Dec 2017 08:56:25 GMT  
-		Size: 8.3 MB (8270742 bytes)  
+	-	`sha256:acb8cc3350626b120c48e2bddc5e50e6bd2fcaeb29c12f64c4fb74b74375cc98`  
+		Last Modified: Thu, 14 Dec 2017 00:34:21 GMT  
+		Size: 8.3 MB (8270728 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:903bac814698c4ac52eed2f67550b83ea362aa76f5988bebcc52e184f4f419e4`  
-		Last Modified: Tue, 12 Dec 2017 08:56:23 GMT  
+	-	`sha256:211b7ed686af486622c7e6bc2f8bfbacd213d0b141071f207881cb27c75df47c`  
+		Last Modified: Thu, 14 Dec 2017 00:34:14 GMT  
 		Size: 948.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `backdrop:1-apache`
 
 ```console
-$ docker pull backdrop@sha256:61fd92d5d2fb80da89332605800c332c59e3dce69cd544cc86a7995174a93f90
+$ docker pull backdrop@sha256:93892110100e5b0b4e8addfb4f9ee8472eae4f510d459833f6f62f18d39f9cf7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1191,14 +1191,14 @@ $ docker pull backdrop@sha256:61fd92d5d2fb80da89332605800c332c59e3dce69cd544cc86
 ### `backdrop:1-apache` - linux; amd64
 
 ```console
-$ docker pull backdrop@sha256:f11e45a13d3f8e108b42a1a3c8eb5243f93830d5902791f3d1d573ec8d72046f
+$ docker pull backdrop@sha256:51b71de18ca97e8d647d5f87d8eea02a3ab0ae4aa6f3372fc5f80910b354fe02
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **175.3 MB (175319280 bytes)**  
+-	Total Size: **175.3 MB (175319377 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cabe7f712bf265224e95af431f040de8b8eea80a393182d68ad9d7f449eb30d0`
+-	Image ID: `sha256:f5d7006aa72169dbb217587d1011a79af545f8a629d7c83d6714bfa83f45385c`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -1253,35 +1253,35 @@ RUN set -xe; 		fetchDeps=' 		wget 	'; 	if ! command -v gpg > /dev/null; then 		f
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
 # Tue, 12 Dec 2017 06:59:39 GMT
 RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)" 	&& if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
-# Tue, 12 Dec 2017 06:59:45 GMT
-COPY multi:dbabcc0b81566a75f49e7faa9ca5f96cd22a515b80ee7ea1e34fceceee3f9c2a in /usr/local/bin/ 
-# Tue, 12 Dec 2017 06:59:46 GMT
+# Wed, 13 Dec 2017 23:31:29 GMT
+COPY multi:6c3bbfbce55efcbe7075883db5f0dba98b25830060e57a35ce066c0dc58c7f0b in /usr/local/bin/ 
+# Wed, 13 Dec 2017 23:31:29 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 12 Dec 2017 06:59:46 GMT
+# Wed, 13 Dec 2017 23:31:30 GMT
 COPY file:24613ecbb1ce6a09f683b0753da9c26a1af07547326e8a02f6eec80ad6f2774a in /usr/local/bin/ 
-# Tue, 12 Dec 2017 06:59:46 GMT
+# Wed, 13 Dec 2017 23:31:30 GMT
 WORKDIR /var/www/html
-# Tue, 12 Dec 2017 06:59:46 GMT
+# Wed, 13 Dec 2017 23:31:30 GMT
 EXPOSE 80/tcp
-# Tue, 12 Dec 2017 06:59:47 GMT
+# Wed, 13 Dec 2017 23:31:30 GMT
 CMD ["apache2-foreground"]
-# Tue, 12 Dec 2017 08:51:14 GMT
+# Thu, 14 Dec 2017 00:28:35 GMT
 RUN a2enmod rewrite
-# Tue, 12 Dec 2017 08:52:43 GMT
+# Thu, 14 Dec 2017 00:30:06 GMT
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev 	&& rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd mbstring pdo pdo_mysql pdo_pgsql zip
-# Tue, 12 Dec 2017 08:52:48 GMT
+# Thu, 14 Dec 2017 00:30:10 GMT
 WORKDIR /var/www/html
-# Tue, 12 Dec 2017 08:52:48 GMT
+# Thu, 14 Dec 2017 00:30:10 GMT
 ENV BACKDROP_VERSION=1.7.2
-# Tue, 12 Dec 2017 08:52:48 GMT
+# Thu, 14 Dec 2017 00:30:10 GMT
 ENV BACKDROP_MD5=8c83ae79a18d13b2c4f2993cab9f6b37
-# Tue, 12 Dec 2017 08:52:51 GMT
+# Thu, 14 Dec 2017 00:30:14 GMT
 RUN curl -fSL "https://github.com/backdrop/backdrop/archive/${BACKDROP_VERSION}.tar.gz" -o backdrop.tar.gz   && echo "${BACKDROP_MD5} *backdrop.tar.gz" | md5sum -c -   && tar -xz --strip-components=1 -f backdrop.tar.gz   && rm backdrop.tar.gz   && chown -R www-data:www-data sites
-# Tue, 12 Dec 2017 08:52:55 GMT
+# Thu, 14 Dec 2017 00:30:19 GMT
 COPY file:c0486d85988902f1e562ad397588637d225d7c83881bf98527f6b5585f66ee13 in /entrypoint.sh 
-# Tue, 12 Dec 2017 08:52:55 GMT
+# Thu, 14 Dec 2017 00:30:20 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 12 Dec 2017 08:52:55 GMT
+# Thu, 14 Dec 2017 00:30:20 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -1330,35 +1330,35 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 12 Dec 2017 07:28:26 GMT  
 		Size: 9.5 MB (9534580 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e8593f35b0acb0769fcaf021159e9c05da017204b0fc5ecf6da141c9d815550f`  
-		Last Modified: Tue, 12 Dec 2017 07:28:23 GMT  
-		Size: 2.2 KB (2179 bytes)  
+	-	`sha256:49dcb65cdbe68868a0d7b0b4ad0d3d52804ca149a42f9c35d7709e91a086d770`  
+		Last Modified: Thu, 14 Dec 2017 00:06:03 GMT  
+		Size: 2.2 KB (2190 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:113145dfe2250cbe2522f8cc938e7edeec2e213f71b9fa9505519d07d4d96c23`  
-		Last Modified: Tue, 12 Dec 2017 07:28:23 GMT  
+	-	`sha256:4865c4b3781f8afd2711d771caf34bda2be02cc1c3d0c6ab0fcbfca78c3f10cb`  
+		Last Modified: Thu, 14 Dec 2017 00:06:04 GMT  
 		Size: 903.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2c40cd416ac4b876d6ec793f913c94ff66207554d6edd58d46293c35aab95bf`  
-		Last Modified: Tue, 12 Dec 2017 08:54:57 GMT  
-		Size: 312.0 B  
+	-	`sha256:73dfba5b4f2d8ed6faf67eef61635b276b8be8f0617dadf84f5a173fd99e1fff`  
+		Last Modified: Thu, 14 Dec 2017 00:32:33 GMT  
+		Size: 313.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a34331f845a80b8496a2474090981bed4c7ecd6f9b4f9474d6f79243a6c70907`  
-		Last Modified: Tue, 12 Dec 2017 08:54:58 GMT  
-		Size: 7.2 MB (7200363 bytes)  
+	-	`sha256:39426f28064d3d46bcac542f9d831afc9817a94c37a3491c97af675ae2b5e607`  
+		Last Modified: Thu, 14 Dec 2017 00:32:34 GMT  
+		Size: 7.2 MB (7200447 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a6891d7b80ca3c6288eb28e0506fce1fd902446a74b04bc28519ce91c3bfba7a`  
-		Last Modified: Tue, 12 Dec 2017 08:54:59 GMT  
-		Size: 8.3 MB (8270762 bytes)  
+	-	`sha256:8fcc3296af0c7346615ebcc05a0f28ec37b7c3cdf7bca36061f8480fd8daf273`  
+		Last Modified: Thu, 14 Dec 2017 00:32:34 GMT  
+		Size: 8.3 MB (8270764 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1cb666d722c541cba95a0da53a6409cc170677fe3ef4da8b23502449ef31494e`  
-		Last Modified: Tue, 12 Dec 2017 08:54:57 GMT  
-		Size: 949.0 B  
+	-	`sha256:09ebc094ca32cf05bd628ccdeb70610ea000b52e5e1275bbfbb5f4b1c94b9ba0`  
+		Last Modified: Thu, 14 Dec 2017 00:32:32 GMT  
+		Size: 948.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `backdrop:1-fpm`
 
 ```console
-$ docker pull backdrop@sha256:174bf11cbaab45ccb9d849b3391cd587923198bd7e088871344a708fb285d857
+$ docker pull backdrop@sha256:ee6d04f67bb81469a4c6e1eb980a81eb9b38af6e00252fe5bdc450e27ca71b4c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1368,14 +1368,14 @@ $ docker pull backdrop@sha256:174bf11cbaab45ccb9d849b3391cd587923198bd7e08887134
 ### `backdrop:1-fpm` - linux; amd64
 
 ```console
-$ docker pull backdrop@sha256:75937508173fab63f0b78269f8ed8942ed1b91d3698777e52c5417b08cdf7459
+$ docker pull backdrop@sha256:680f304670499daf57d37f81517035eac617fe075b1dd76b65d93598ecb62deb
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **172.0 MB (171950306 bytes)**  
+-	Total Size: **172.0 MB (171950266 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1d264c80b6e27c668f91b943c534bf155cc30df2b3523e0274bfe45a3f1655c5`
+-	Image ID: `sha256:f72379df68c0fcd2d17494ef521e5833291daa2a6e14361d2459c02ecc854fdd`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -1414,33 +1414,33 @@ RUN set -xe; 		fetchDeps=' 		wget 	'; 	if ! command -v gpg > /dev/null; then 		f
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
 # Tue, 12 Dec 2017 07:04:30 GMT
 RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)" 	&& if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
-# Tue, 12 Dec 2017 07:04:36 GMT
-COPY multi:3a3ce8aa3891c64454909e9f8257446a1817abe660b49a7baaa26f28bfdc444d in /usr/local/bin/ 
-# Tue, 12 Dec 2017 07:04:36 GMT
+# Wed, 13 Dec 2017 23:31:40 GMT
+COPY multi:2e4df9268ce870f9ed83b38a2784f3778f2c2468c3e7ee600220221534e4e247 in /usr/local/bin/ 
+# Wed, 13 Dec 2017 23:31:40 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 12 Dec 2017 07:04:36 GMT
+# Wed, 13 Dec 2017 23:31:41 GMT
 WORKDIR /var/www/html
-# Tue, 12 Dec 2017 07:04:37 GMT
+# Wed, 13 Dec 2017 23:31:41 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = [::]:9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Tue, 12 Dec 2017 07:04:37 GMT
+# Wed, 13 Dec 2017 23:31:42 GMT
 EXPOSE 9000/tcp
-# Tue, 12 Dec 2017 07:04:37 GMT
+# Wed, 13 Dec 2017 23:31:42 GMT
 CMD ["php-fpm"]
-# Tue, 12 Dec 2017 08:54:38 GMT
+# Thu, 14 Dec 2017 00:32:08 GMT
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev 	&& rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd mbstring pdo pdo_mysql pdo_pgsql zip
-# Tue, 12 Dec 2017 08:54:39 GMT
+# Thu, 14 Dec 2017 00:32:08 GMT
 WORKDIR /var/www/html
-# Tue, 12 Dec 2017 08:54:39 GMT
+# Thu, 14 Dec 2017 00:32:09 GMT
 ENV BACKDROP_VERSION=1.7.2
-# Tue, 12 Dec 2017 08:54:39 GMT
+# Thu, 14 Dec 2017 00:32:09 GMT
 ENV BACKDROP_MD5=8c83ae79a18d13b2c4f2993cab9f6b37
-# Tue, 12 Dec 2017 08:54:41 GMT
+# Thu, 14 Dec 2017 00:32:11 GMT
 RUN curl -fSL "https://github.com/backdrop/backdrop/archive/${BACKDROP_VERSION}.tar.gz" -o backdrop.tar.gz 	&& echo "${BACKDROP_MD5} *backdrop.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f backdrop.tar.gz 	&& rm backdrop.tar.gz 	&& chown -R www-data:www-data sites
-# Tue, 12 Dec 2017 08:54:42 GMT
+# Thu, 14 Dec 2017 00:32:12 GMT
 COPY file:c0486d85988902f1e562ad397588637d225d7c83881bf98527f6b5585f66ee13 in /entrypoint.sh 
-# Tue, 12 Dec 2017 08:54:42 GMT
+# Thu, 14 Dec 2017 00:32:12 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 12 Dec 2017 08:54:42 GMT
+# Thu, 14 Dec 2017 00:32:13 GMT
 CMD ["php-fpm"]
 ```
 
@@ -1469,35 +1469,35 @@ CMD ["php-fpm"]
 		Last Modified: Tue, 12 Dec 2017 07:29:28 GMT  
 		Size: 9.2 MB (9209496 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7a005301ce437929d5836af989aee358e5c5224c2977fcc45fa7cc19a907b7bd`  
-		Last Modified: Tue, 12 Dec 2017 07:29:25 GMT  
-		Size: 2.2 KB (2176 bytes)  
+	-	`sha256:591e4cd5e5405f0c0c2fb391b4e66ab8aca81cb1a5cbefdd96ea6c6e67c494d0`  
+		Last Modified: Thu, 14 Dec 2017 00:07:07 GMT  
+		Size: 2.2 KB (2184 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:06673dd985c8ce301facd66d269c0029fa3d0d7d3c723cf0d7aae9716c3842e9`  
-		Last Modified: Tue, 12 Dec 2017 07:29:25 GMT  
+	-	`sha256:0392d283e80e6f19f3c2ac441efab479bd64b3eabfdd8c0213c17d3edbfaa336`  
+		Last Modified: Thu, 14 Dec 2017 00:07:07 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:01acddaa56c2ea0ba171f4b27ca820538ec019c22335e8412800622b566aa646`  
-		Last Modified: Tue, 12 Dec 2017 07:29:25 GMT  
-		Size: 7.6 KB (7619 bytes)  
+	-	`sha256:e4c731ebcf97dc1b3dda26519516c6e52d285146eb9b6853c081dfe4711f3cdd`  
+		Last Modified: Thu, 14 Dec 2017 00:07:07 GMT  
+		Size: 7.6 KB (7624 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2c9d4e2e894da6c3bf6fbcf53cb7a83dd66353ff27e0ad3b1eb4b5dc3d9c3f21`  
-		Last Modified: Tue, 12 Dec 2017 08:56:25 GMT  
-		Size: 7.2 MB (7181185 bytes)  
+	-	`sha256:c66c1ef622e196fbce3079b9792b89b13105cdecdca06fcf42afbf13cf409f6c`  
+		Last Modified: Thu, 14 Dec 2017 00:34:17 GMT  
+		Size: 7.2 MB (7181146 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a5d15cf331649ae12bd4c00ee5a6791399a7203b1d3fc7210ec7cc127e7b3ec2`  
-		Last Modified: Tue, 12 Dec 2017 08:56:25 GMT  
-		Size: 8.3 MB (8270742 bytes)  
+	-	`sha256:acb8cc3350626b120c48e2bddc5e50e6bd2fcaeb29c12f64c4fb74b74375cc98`  
+		Last Modified: Thu, 14 Dec 2017 00:34:21 GMT  
+		Size: 8.3 MB (8270728 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:903bac814698c4ac52eed2f67550b83ea362aa76f5988bebcc52e184f4f419e4`  
-		Last Modified: Tue, 12 Dec 2017 08:56:23 GMT  
+	-	`sha256:211b7ed686af486622c7e6bc2f8bfbacd213d0b141071f207881cb27c75df47c`  
+		Last Modified: Thu, 14 Dec 2017 00:34:14 GMT  
 		Size: 948.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `backdrop:apache`
 
 ```console
-$ docker pull backdrop@sha256:61fd92d5d2fb80da89332605800c332c59e3dce69cd544cc86a7995174a93f90
+$ docker pull backdrop@sha256:93892110100e5b0b4e8addfb4f9ee8472eae4f510d459833f6f62f18d39f9cf7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1507,14 +1507,14 @@ $ docker pull backdrop@sha256:61fd92d5d2fb80da89332605800c332c59e3dce69cd544cc86
 ### `backdrop:apache` - linux; amd64
 
 ```console
-$ docker pull backdrop@sha256:f11e45a13d3f8e108b42a1a3c8eb5243f93830d5902791f3d1d573ec8d72046f
+$ docker pull backdrop@sha256:51b71de18ca97e8d647d5f87d8eea02a3ab0ae4aa6f3372fc5f80910b354fe02
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **175.3 MB (175319280 bytes)**  
+-	Total Size: **175.3 MB (175319377 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cabe7f712bf265224e95af431f040de8b8eea80a393182d68ad9d7f449eb30d0`
+-	Image ID: `sha256:f5d7006aa72169dbb217587d1011a79af545f8a629d7c83d6714bfa83f45385c`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -1569,35 +1569,35 @@ RUN set -xe; 		fetchDeps=' 		wget 	'; 	if ! command -v gpg > /dev/null; then 		f
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
 # Tue, 12 Dec 2017 06:59:39 GMT
 RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)" 	&& if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
-# Tue, 12 Dec 2017 06:59:45 GMT
-COPY multi:dbabcc0b81566a75f49e7faa9ca5f96cd22a515b80ee7ea1e34fceceee3f9c2a in /usr/local/bin/ 
-# Tue, 12 Dec 2017 06:59:46 GMT
+# Wed, 13 Dec 2017 23:31:29 GMT
+COPY multi:6c3bbfbce55efcbe7075883db5f0dba98b25830060e57a35ce066c0dc58c7f0b in /usr/local/bin/ 
+# Wed, 13 Dec 2017 23:31:29 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 12 Dec 2017 06:59:46 GMT
+# Wed, 13 Dec 2017 23:31:30 GMT
 COPY file:24613ecbb1ce6a09f683b0753da9c26a1af07547326e8a02f6eec80ad6f2774a in /usr/local/bin/ 
-# Tue, 12 Dec 2017 06:59:46 GMT
+# Wed, 13 Dec 2017 23:31:30 GMT
 WORKDIR /var/www/html
-# Tue, 12 Dec 2017 06:59:46 GMT
+# Wed, 13 Dec 2017 23:31:30 GMT
 EXPOSE 80/tcp
-# Tue, 12 Dec 2017 06:59:47 GMT
+# Wed, 13 Dec 2017 23:31:30 GMT
 CMD ["apache2-foreground"]
-# Tue, 12 Dec 2017 08:51:14 GMT
+# Thu, 14 Dec 2017 00:28:35 GMT
 RUN a2enmod rewrite
-# Tue, 12 Dec 2017 08:52:43 GMT
+# Thu, 14 Dec 2017 00:30:06 GMT
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev 	&& rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd mbstring pdo pdo_mysql pdo_pgsql zip
-# Tue, 12 Dec 2017 08:52:48 GMT
+# Thu, 14 Dec 2017 00:30:10 GMT
 WORKDIR /var/www/html
-# Tue, 12 Dec 2017 08:52:48 GMT
+# Thu, 14 Dec 2017 00:30:10 GMT
 ENV BACKDROP_VERSION=1.7.2
-# Tue, 12 Dec 2017 08:52:48 GMT
+# Thu, 14 Dec 2017 00:30:10 GMT
 ENV BACKDROP_MD5=8c83ae79a18d13b2c4f2993cab9f6b37
-# Tue, 12 Dec 2017 08:52:51 GMT
+# Thu, 14 Dec 2017 00:30:14 GMT
 RUN curl -fSL "https://github.com/backdrop/backdrop/archive/${BACKDROP_VERSION}.tar.gz" -o backdrop.tar.gz   && echo "${BACKDROP_MD5} *backdrop.tar.gz" | md5sum -c -   && tar -xz --strip-components=1 -f backdrop.tar.gz   && rm backdrop.tar.gz   && chown -R www-data:www-data sites
-# Tue, 12 Dec 2017 08:52:55 GMT
+# Thu, 14 Dec 2017 00:30:19 GMT
 COPY file:c0486d85988902f1e562ad397588637d225d7c83881bf98527f6b5585f66ee13 in /entrypoint.sh 
-# Tue, 12 Dec 2017 08:52:55 GMT
+# Thu, 14 Dec 2017 00:30:20 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 12 Dec 2017 08:52:55 GMT
+# Thu, 14 Dec 2017 00:30:20 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -1646,35 +1646,35 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 12 Dec 2017 07:28:26 GMT  
 		Size: 9.5 MB (9534580 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e8593f35b0acb0769fcaf021159e9c05da017204b0fc5ecf6da141c9d815550f`  
-		Last Modified: Tue, 12 Dec 2017 07:28:23 GMT  
-		Size: 2.2 KB (2179 bytes)  
+	-	`sha256:49dcb65cdbe68868a0d7b0b4ad0d3d52804ca149a42f9c35d7709e91a086d770`  
+		Last Modified: Thu, 14 Dec 2017 00:06:03 GMT  
+		Size: 2.2 KB (2190 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:113145dfe2250cbe2522f8cc938e7edeec2e213f71b9fa9505519d07d4d96c23`  
-		Last Modified: Tue, 12 Dec 2017 07:28:23 GMT  
+	-	`sha256:4865c4b3781f8afd2711d771caf34bda2be02cc1c3d0c6ab0fcbfca78c3f10cb`  
+		Last Modified: Thu, 14 Dec 2017 00:06:04 GMT  
 		Size: 903.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2c40cd416ac4b876d6ec793f913c94ff66207554d6edd58d46293c35aab95bf`  
-		Last Modified: Tue, 12 Dec 2017 08:54:57 GMT  
-		Size: 312.0 B  
+	-	`sha256:73dfba5b4f2d8ed6faf67eef61635b276b8be8f0617dadf84f5a173fd99e1fff`  
+		Last Modified: Thu, 14 Dec 2017 00:32:33 GMT  
+		Size: 313.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a34331f845a80b8496a2474090981bed4c7ecd6f9b4f9474d6f79243a6c70907`  
-		Last Modified: Tue, 12 Dec 2017 08:54:58 GMT  
-		Size: 7.2 MB (7200363 bytes)  
+	-	`sha256:39426f28064d3d46bcac542f9d831afc9817a94c37a3491c97af675ae2b5e607`  
+		Last Modified: Thu, 14 Dec 2017 00:32:34 GMT  
+		Size: 7.2 MB (7200447 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a6891d7b80ca3c6288eb28e0506fce1fd902446a74b04bc28519ce91c3bfba7a`  
-		Last Modified: Tue, 12 Dec 2017 08:54:59 GMT  
-		Size: 8.3 MB (8270762 bytes)  
+	-	`sha256:8fcc3296af0c7346615ebcc05a0f28ec37b7c3cdf7bca36061f8480fd8daf273`  
+		Last Modified: Thu, 14 Dec 2017 00:32:34 GMT  
+		Size: 8.3 MB (8270764 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1cb666d722c541cba95a0da53a6409cc170677fe3ef4da8b23502449ef31494e`  
-		Last Modified: Tue, 12 Dec 2017 08:54:57 GMT  
-		Size: 949.0 B  
+	-	`sha256:09ebc094ca32cf05bd628ccdeb70610ea000b52e5e1275bbfbb5f4b1c94b9ba0`  
+		Last Modified: Thu, 14 Dec 2017 00:32:32 GMT  
+		Size: 948.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `backdrop:fpm`
 
 ```console
-$ docker pull backdrop@sha256:174bf11cbaab45ccb9d849b3391cd587923198bd7e088871344a708fb285d857
+$ docker pull backdrop@sha256:ee6d04f67bb81469a4c6e1eb980a81eb9b38af6e00252fe5bdc450e27ca71b4c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1684,14 +1684,14 @@ $ docker pull backdrop@sha256:174bf11cbaab45ccb9d849b3391cd587923198bd7e08887134
 ### `backdrop:fpm` - linux; amd64
 
 ```console
-$ docker pull backdrop@sha256:75937508173fab63f0b78269f8ed8942ed1b91d3698777e52c5417b08cdf7459
+$ docker pull backdrop@sha256:680f304670499daf57d37f81517035eac617fe075b1dd76b65d93598ecb62deb
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **172.0 MB (171950306 bytes)**  
+-	Total Size: **172.0 MB (171950266 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1d264c80b6e27c668f91b943c534bf155cc30df2b3523e0274bfe45a3f1655c5`
+-	Image ID: `sha256:f72379df68c0fcd2d17494ef521e5833291daa2a6e14361d2459c02ecc854fdd`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -1730,33 +1730,33 @@ RUN set -xe; 		fetchDeps=' 		wget 	'; 	if ! command -v gpg > /dev/null; then 		f
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
 # Tue, 12 Dec 2017 07:04:30 GMT
 RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)" 	&& if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
-# Tue, 12 Dec 2017 07:04:36 GMT
-COPY multi:3a3ce8aa3891c64454909e9f8257446a1817abe660b49a7baaa26f28bfdc444d in /usr/local/bin/ 
-# Tue, 12 Dec 2017 07:04:36 GMT
+# Wed, 13 Dec 2017 23:31:40 GMT
+COPY multi:2e4df9268ce870f9ed83b38a2784f3778f2c2468c3e7ee600220221534e4e247 in /usr/local/bin/ 
+# Wed, 13 Dec 2017 23:31:40 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 12 Dec 2017 07:04:36 GMT
+# Wed, 13 Dec 2017 23:31:41 GMT
 WORKDIR /var/www/html
-# Tue, 12 Dec 2017 07:04:37 GMT
+# Wed, 13 Dec 2017 23:31:41 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = [::]:9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Tue, 12 Dec 2017 07:04:37 GMT
+# Wed, 13 Dec 2017 23:31:42 GMT
 EXPOSE 9000/tcp
-# Tue, 12 Dec 2017 07:04:37 GMT
+# Wed, 13 Dec 2017 23:31:42 GMT
 CMD ["php-fpm"]
-# Tue, 12 Dec 2017 08:54:38 GMT
+# Thu, 14 Dec 2017 00:32:08 GMT
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev 	&& rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd mbstring pdo pdo_mysql pdo_pgsql zip
-# Tue, 12 Dec 2017 08:54:39 GMT
+# Thu, 14 Dec 2017 00:32:08 GMT
 WORKDIR /var/www/html
-# Tue, 12 Dec 2017 08:54:39 GMT
+# Thu, 14 Dec 2017 00:32:09 GMT
 ENV BACKDROP_VERSION=1.7.2
-# Tue, 12 Dec 2017 08:54:39 GMT
+# Thu, 14 Dec 2017 00:32:09 GMT
 ENV BACKDROP_MD5=8c83ae79a18d13b2c4f2993cab9f6b37
-# Tue, 12 Dec 2017 08:54:41 GMT
+# Thu, 14 Dec 2017 00:32:11 GMT
 RUN curl -fSL "https://github.com/backdrop/backdrop/archive/${BACKDROP_VERSION}.tar.gz" -o backdrop.tar.gz 	&& echo "${BACKDROP_MD5} *backdrop.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f backdrop.tar.gz 	&& rm backdrop.tar.gz 	&& chown -R www-data:www-data sites
-# Tue, 12 Dec 2017 08:54:42 GMT
+# Thu, 14 Dec 2017 00:32:12 GMT
 COPY file:c0486d85988902f1e562ad397588637d225d7c83881bf98527f6b5585f66ee13 in /entrypoint.sh 
-# Tue, 12 Dec 2017 08:54:42 GMT
+# Thu, 14 Dec 2017 00:32:12 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 12 Dec 2017 08:54:42 GMT
+# Thu, 14 Dec 2017 00:32:13 GMT
 CMD ["php-fpm"]
 ```
 
@@ -1785,35 +1785,35 @@ CMD ["php-fpm"]
 		Last Modified: Tue, 12 Dec 2017 07:29:28 GMT  
 		Size: 9.2 MB (9209496 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7a005301ce437929d5836af989aee358e5c5224c2977fcc45fa7cc19a907b7bd`  
-		Last Modified: Tue, 12 Dec 2017 07:29:25 GMT  
-		Size: 2.2 KB (2176 bytes)  
+	-	`sha256:591e4cd5e5405f0c0c2fb391b4e66ab8aca81cb1a5cbefdd96ea6c6e67c494d0`  
+		Last Modified: Thu, 14 Dec 2017 00:07:07 GMT  
+		Size: 2.2 KB (2184 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:06673dd985c8ce301facd66d269c0029fa3d0d7d3c723cf0d7aae9716c3842e9`  
-		Last Modified: Tue, 12 Dec 2017 07:29:25 GMT  
+	-	`sha256:0392d283e80e6f19f3c2ac441efab479bd64b3eabfdd8c0213c17d3edbfaa336`  
+		Last Modified: Thu, 14 Dec 2017 00:07:07 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:01acddaa56c2ea0ba171f4b27ca820538ec019c22335e8412800622b566aa646`  
-		Last Modified: Tue, 12 Dec 2017 07:29:25 GMT  
-		Size: 7.6 KB (7619 bytes)  
+	-	`sha256:e4c731ebcf97dc1b3dda26519516c6e52d285146eb9b6853c081dfe4711f3cdd`  
+		Last Modified: Thu, 14 Dec 2017 00:07:07 GMT  
+		Size: 7.6 KB (7624 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2c9d4e2e894da6c3bf6fbcf53cb7a83dd66353ff27e0ad3b1eb4b5dc3d9c3f21`  
-		Last Modified: Tue, 12 Dec 2017 08:56:25 GMT  
-		Size: 7.2 MB (7181185 bytes)  
+	-	`sha256:c66c1ef622e196fbce3079b9792b89b13105cdecdca06fcf42afbf13cf409f6c`  
+		Last Modified: Thu, 14 Dec 2017 00:34:17 GMT  
+		Size: 7.2 MB (7181146 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a5d15cf331649ae12bd4c00ee5a6791399a7203b1d3fc7210ec7cc127e7b3ec2`  
-		Last Modified: Tue, 12 Dec 2017 08:56:25 GMT  
-		Size: 8.3 MB (8270742 bytes)  
+	-	`sha256:acb8cc3350626b120c48e2bddc5e50e6bd2fcaeb29c12f64c4fb74b74375cc98`  
+		Last Modified: Thu, 14 Dec 2017 00:34:21 GMT  
+		Size: 8.3 MB (8270728 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:903bac814698c4ac52eed2f67550b83ea362aa76f5988bebcc52e184f4f419e4`  
-		Last Modified: Tue, 12 Dec 2017 08:56:23 GMT  
+	-	`sha256:211b7ed686af486622c7e6bc2f8bfbacd213d0b141071f207881cb27c75df47c`  
+		Last Modified: Thu, 14 Dec 2017 00:34:14 GMT  
 		Size: 948.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `backdrop:latest`
 
 ```console
-$ docker pull backdrop@sha256:61fd92d5d2fb80da89332605800c332c59e3dce69cd544cc86a7995174a93f90
+$ docker pull backdrop@sha256:93892110100e5b0b4e8addfb4f9ee8472eae4f510d459833f6f62f18d39f9cf7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1823,14 +1823,14 @@ $ docker pull backdrop@sha256:61fd92d5d2fb80da89332605800c332c59e3dce69cd544cc86
 ### `backdrop:latest` - linux; amd64
 
 ```console
-$ docker pull backdrop@sha256:f11e45a13d3f8e108b42a1a3c8eb5243f93830d5902791f3d1d573ec8d72046f
+$ docker pull backdrop@sha256:51b71de18ca97e8d647d5f87d8eea02a3ab0ae4aa6f3372fc5f80910b354fe02
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **175.3 MB (175319280 bytes)**  
+-	Total Size: **175.3 MB (175319377 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cabe7f712bf265224e95af431f040de8b8eea80a393182d68ad9d7f449eb30d0`
+-	Image ID: `sha256:f5d7006aa72169dbb217587d1011a79af545f8a629d7c83d6714bfa83f45385c`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -1885,35 +1885,35 @@ RUN set -xe; 		fetchDeps=' 		wget 	'; 	if ! command -v gpg > /dev/null; then 		f
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
 # Tue, 12 Dec 2017 06:59:39 GMT
 RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)" 	&& if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
-# Tue, 12 Dec 2017 06:59:45 GMT
-COPY multi:dbabcc0b81566a75f49e7faa9ca5f96cd22a515b80ee7ea1e34fceceee3f9c2a in /usr/local/bin/ 
-# Tue, 12 Dec 2017 06:59:46 GMT
+# Wed, 13 Dec 2017 23:31:29 GMT
+COPY multi:6c3bbfbce55efcbe7075883db5f0dba98b25830060e57a35ce066c0dc58c7f0b in /usr/local/bin/ 
+# Wed, 13 Dec 2017 23:31:29 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 12 Dec 2017 06:59:46 GMT
+# Wed, 13 Dec 2017 23:31:30 GMT
 COPY file:24613ecbb1ce6a09f683b0753da9c26a1af07547326e8a02f6eec80ad6f2774a in /usr/local/bin/ 
-# Tue, 12 Dec 2017 06:59:46 GMT
+# Wed, 13 Dec 2017 23:31:30 GMT
 WORKDIR /var/www/html
-# Tue, 12 Dec 2017 06:59:46 GMT
+# Wed, 13 Dec 2017 23:31:30 GMT
 EXPOSE 80/tcp
-# Tue, 12 Dec 2017 06:59:47 GMT
+# Wed, 13 Dec 2017 23:31:30 GMT
 CMD ["apache2-foreground"]
-# Tue, 12 Dec 2017 08:51:14 GMT
+# Thu, 14 Dec 2017 00:28:35 GMT
 RUN a2enmod rewrite
-# Tue, 12 Dec 2017 08:52:43 GMT
+# Thu, 14 Dec 2017 00:30:06 GMT
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev 	&& rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd mbstring pdo pdo_mysql pdo_pgsql zip
-# Tue, 12 Dec 2017 08:52:48 GMT
+# Thu, 14 Dec 2017 00:30:10 GMT
 WORKDIR /var/www/html
-# Tue, 12 Dec 2017 08:52:48 GMT
+# Thu, 14 Dec 2017 00:30:10 GMT
 ENV BACKDROP_VERSION=1.7.2
-# Tue, 12 Dec 2017 08:52:48 GMT
+# Thu, 14 Dec 2017 00:30:10 GMT
 ENV BACKDROP_MD5=8c83ae79a18d13b2c4f2993cab9f6b37
-# Tue, 12 Dec 2017 08:52:51 GMT
+# Thu, 14 Dec 2017 00:30:14 GMT
 RUN curl -fSL "https://github.com/backdrop/backdrop/archive/${BACKDROP_VERSION}.tar.gz" -o backdrop.tar.gz   && echo "${BACKDROP_MD5} *backdrop.tar.gz" | md5sum -c -   && tar -xz --strip-components=1 -f backdrop.tar.gz   && rm backdrop.tar.gz   && chown -R www-data:www-data sites
-# Tue, 12 Dec 2017 08:52:55 GMT
+# Thu, 14 Dec 2017 00:30:19 GMT
 COPY file:c0486d85988902f1e562ad397588637d225d7c83881bf98527f6b5585f66ee13 in /entrypoint.sh 
-# Tue, 12 Dec 2017 08:52:55 GMT
+# Thu, 14 Dec 2017 00:30:20 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 12 Dec 2017 08:52:55 GMT
+# Thu, 14 Dec 2017 00:30:20 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -1962,27 +1962,27 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 12 Dec 2017 07:28:26 GMT  
 		Size: 9.5 MB (9534580 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e8593f35b0acb0769fcaf021159e9c05da017204b0fc5ecf6da141c9d815550f`  
-		Last Modified: Tue, 12 Dec 2017 07:28:23 GMT  
-		Size: 2.2 KB (2179 bytes)  
+	-	`sha256:49dcb65cdbe68868a0d7b0b4ad0d3d52804ca149a42f9c35d7709e91a086d770`  
+		Last Modified: Thu, 14 Dec 2017 00:06:03 GMT  
+		Size: 2.2 KB (2190 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:113145dfe2250cbe2522f8cc938e7edeec2e213f71b9fa9505519d07d4d96c23`  
-		Last Modified: Tue, 12 Dec 2017 07:28:23 GMT  
+	-	`sha256:4865c4b3781f8afd2711d771caf34bda2be02cc1c3d0c6ab0fcbfca78c3f10cb`  
+		Last Modified: Thu, 14 Dec 2017 00:06:04 GMT  
 		Size: 903.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2c40cd416ac4b876d6ec793f913c94ff66207554d6edd58d46293c35aab95bf`  
-		Last Modified: Tue, 12 Dec 2017 08:54:57 GMT  
-		Size: 312.0 B  
+	-	`sha256:73dfba5b4f2d8ed6faf67eef61635b276b8be8f0617dadf84f5a173fd99e1fff`  
+		Last Modified: Thu, 14 Dec 2017 00:32:33 GMT  
+		Size: 313.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a34331f845a80b8496a2474090981bed4c7ecd6f9b4f9474d6f79243a6c70907`  
-		Last Modified: Tue, 12 Dec 2017 08:54:58 GMT  
-		Size: 7.2 MB (7200363 bytes)  
+	-	`sha256:39426f28064d3d46bcac542f9d831afc9817a94c37a3491c97af675ae2b5e607`  
+		Last Modified: Thu, 14 Dec 2017 00:32:34 GMT  
+		Size: 7.2 MB (7200447 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a6891d7b80ca3c6288eb28e0506fce1fd902446a74b04bc28519ce91c3bfba7a`  
-		Last Modified: Tue, 12 Dec 2017 08:54:59 GMT  
-		Size: 8.3 MB (8270762 bytes)  
+	-	`sha256:8fcc3296af0c7346615ebcc05a0f28ec37b7c3cdf7bca36061f8480fd8daf273`  
+		Last Modified: Thu, 14 Dec 2017 00:32:34 GMT  
+		Size: 8.3 MB (8270764 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1cb666d722c541cba95a0da53a6409cc170677fe3ef4da8b23502449ef31494e`  
-		Last Modified: Tue, 12 Dec 2017 08:54:57 GMT  
-		Size: 949.0 B  
+	-	`sha256:09ebc094ca32cf05bd628ccdeb70610ea000b52e5e1275bbfbb5f4b1c94b9ba0`  
+		Last Modified: Thu, 14 Dec 2017 00:32:32 GMT  
+		Size: 948.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
