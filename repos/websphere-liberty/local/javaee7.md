@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e480321294efd46c8e0ebcd5b56f839b3c5fc3222ab4a6f1f5df5bbbcf4b39fc`
-- Created: `2017-12-04T22:23:06.330965692Z`
-- Virtual Size: ~ 453.67 Mb  
+- Image ID: `sha256:9d11da3a1b40aa10e47dd5e5dc221e07941bc872c9a8cc7f6a3a07b7914b1057`
+- Created: `2017-12-14T23:14:56.223088471Z`
+- Virtual Size: ~ 441.39 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/opt/ibm/docker/docker-server","run","defaultServer"]`
@@ -311,11 +311,11 @@ $ apt-get source -qq --print-uris dash=0.5.8-2.1ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/d/dash/dash_0.5.8-2.1ubuntu2.diff.gz' dash_0.5.8-2.1ubuntu2.diff.gz 73054 SHA256:3c200a0b9c88b2e421bce9c717bf2ace7a9378c271a9b60463913e312424565a
 ```
 
-### `dpkg` source package: `db5.3=5.3.28-11`
+### `dpkg` source package: `db5.3=5.3.28-11ubuntu0.1`
 
 Binary Packages:
 
-- `libdb5.3:amd64=5.3.28-11`
+- `libdb5.3:amd64=5.3.28-11ubuntu0.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -324,10 +324,10 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris db5.3=5.3.28-11
-'http://archive.ubuntu.com/ubuntu/pool/main/d/db5.3/db5.3_5.3.28-11.dsc' db5.3_5.3.28-11.dsc 3199 SHA256:6179822d8cba6645b46809acf5d46055e10259a8d9d5994e3e2a858da7374724
+$ apt-get source -qq --print-uris db5.3=5.3.28-11ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/d/db5.3/db5.3_5.3.28-11ubuntu0.1.dsc' db5.3_5.3.28-11ubuntu0.1.dsc 3182 SHA256:4abc1ee676134b17eba0d520d2a67884755a3133a6b7d1dcd8a0f533f3c3a52b
 'http://archive.ubuntu.com/ubuntu/pool/main/d/db5.3/db5.3_5.3.28.orig.tar.xz' db5.3_5.3.28.orig.tar.xz 24154920 SHA256:e1f85c8b6ebd0ed3ca72fa0ae97b65006f6d0bd0cd6f4ac24bed103cb5497bf5
-'http://archive.ubuntu.com/ubuntu/pool/main/d/db5.3/db5.3_5.3.28-11.debian.tar.xz' db5.3_5.3.28-11.debian.tar.xz 27776 SHA256:19b81208770caa2be61343a4f6b005a7c3ce65acc1f63c83dc77d474dffffb22
+'http://archive.ubuntu.com/ubuntu/pool/main/d/db5.3/db5.3_5.3.28-11ubuntu0.1.debian.tar.xz' db5.3_5.3.28-11ubuntu0.1.debian.tar.xz 28480 SHA256:50a062f6e1fcf7e3c9db15380f346773d6a9871daedbd72ea2ee210b9a1216a9
 ```
 
 ### `dpkg` source package: `debconf=1.5.58ubuntu1`
@@ -386,11 +386,11 @@ $ apt-get source -qq --print-uris diffutils=1:3.3-3
 'http://archive.ubuntu.com/ubuntu/pool/main/d/diffutils/diffutils_3.3-3.debian.tar.xz' diffutils_3.3-3.debian.tar.xz 18356 SHA256:a0d1946979196f793a8ca55b21ab7891227de08f15bac2578ed84f4911e8b755
 ```
 
-### `dpkg` source package: `dpkg=1.18.4ubuntu1.2`
+### `dpkg` source package: `dpkg=1.18.4ubuntu1.3`
 
 Binary Packages:
 
-- `dpkg=1.18.4ubuntu1.2`
+- `dpkg=1.18.4ubuntu1.3`
 
 Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 
@@ -400,9 +400,13 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `public-domain-md5`
 - `public-domain-s-s-d`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris dpkg=1.18.4ubuntu1.3
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.18.4ubuntu1.3.dsc' dpkg_1.18.4ubuntu1.3.dsc 1510 SHA256:b7ed29cd148b3bb644cdad8946a396d0ef73ef3457c6e4f15fce2d3659877b82
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.18.4ubuntu1.3.tar.xz' dpkg_1.18.4ubuntu1.3.tar.xz 4297164 SHA256:1a5b94b074c15b7dfe392da27ea80b9e7174f38dc3afdc46a80bb35fd68bdcac
+```
 
 ### `dpkg` source package: `e2fsprogs=1.42.13-1ubuntu1`
 
@@ -969,20 +973,25 @@ $ apt-get source -qq --print-uris ncurses=6.0+20160213-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/ncurses_6.0+20160213-1ubuntu1.debian.tar.xz' ncurses_6.0+20160213-1ubuntu1.debian.tar.xz 54496 SHA256:9551738e1bdc425d12897cc459ce5ce40b5e12530b144b731c0a7b3e077c07c7
 ```
 
-### `dpkg` source package: `openssl=1.0.2g-1ubuntu4.9`
+### `dpkg` source package: `openssl=1.0.2g-1ubuntu4.10`
 
 Binary Packages:
 
-- `libssl1.0.0:amd64=1.0.2g-1ubuntu4.9`
-- `openssl=1.0.2g-1ubuntu4.9`
+- `libssl1.0.0:amd64=1.0.2g-1ubuntu4.10`
+- `openssl=1.0.2g-1ubuntu4.10`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=1.0.2g-1ubuntu4.10
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu4.10.dsc' openssl_1.0.2g-1ubuntu4.10.dsc 2439 SHA256:737010a27d67d3fe25a1c600dabb68b1e39f96953f485d3c3806ce7206e007e0
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g.orig.tar.gz' openssl_1.0.2g.orig.tar.gz 5266102 SHA256:b784b1b3907ce39abf4098702dade6365522a253ad1552e267a9a0e89594aa33
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu4.10.debian.tar.xz' openssl_1.0.2g-1ubuntu4.10.debian.tar.xz 120020 SHA256:0dc7577fa73131647bb69a731724dd3e1e05af645e7d50acb599be614276d865
+```
 
 ### `dpkg` source package: `pam=1.1.8-3.2ubuntu2`
 
