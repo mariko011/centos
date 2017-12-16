@@ -2,15 +2,15 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:419add8096fe14f0e5010c21b04ee172557eae8945fac9923d0305b96667b10f`
-- Created: `2017-12-12T07:48:26.258856691Z`
-- Virtual Size: ~ 284.17 Mb  
+- Image ID: `sha256:36592aca2a7db47602d6ba338d9e15987170042c9d478263aff0656a3f01e875`
+- Created: `2017-12-15T20:34:43.241994658Z`
+- Virtual Size: ~ 284.50 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["iex"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `OTP_VERSION=20.1.7`
+  - `OTP_VERSION=20.2.1`
   - `ELIXIR_VERSION=v1.5.2`
   - `LANG=C.UTF-8`
 
