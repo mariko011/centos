@@ -1230,20 +1230,13 @@ Licenses: (parsed from: `/usr/share/doc/libassuan0/copyright`)
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libassuan=2.4.5-1
-'http://deb.debian.org/debian/pool/main/liba/libassuan/libassuan_2.4.5-1.dsc' libassuan_2.4.5-1.dsc 2237 SHA256:8a3c3392583516efac533ce2ba378317d3679f96a9be3ade71ca5b2cb6dd3b4d
-'http://deb.debian.org/debian/pool/main/liba/libassuan/libassuan_2.4.5.orig.tar.bz2' libassuan_2.4.5.orig.tar.bz2 563915 SHA256:fbfea5d1dbcdee34f2597b0afb3d8bb4eda96c924a1e01b01c2acde68b81625f
-'http://deb.debian.org/debian/pool/main/liba/libassuan/libassuan_2.4.5-1.debian.tar.xz' libassuan_2.4.5-1.debian.tar.xz 15084 SHA256:77ad343efc49d21a2f009aa89606dc6ddad6313a01d243b56eb10f20af8c7119
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libassuan/2.4.5-1/
 
-- https://sources.debian.net/src/libassuan/2.4.5-1/ (for browsing the source)
-- https://sources.debian.net/src/libassuan/2.4.5-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libassuan/2.4.5-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libbsd=0.8.6-3`
 
@@ -1838,20 +1831,13 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mercurial=4.3.1-3
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_4.3.1-3.dsc' mercurial_4.3.1-3.dsc 2225 SHA256:26d0e605823e9c7abc5cb34c9e9af6f28f4021d4eb8440a0bd5501cd55e3bf1c
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_4.3.1.orig.tar.gz' mercurial_4.3.1.orig.tar.gz 5475042 SHA256:2b12f02e3a452adff4ec9cf007017bab0cadb3f37eaf12f4b25a662df73618a2
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_4.3.1-3.debian.tar.xz' mercurial_4.3.1-3.debian.tar.xz 54916 SHA256:196363132773e9f32766c99a4abb1844b0e216093df84044aac341f735d6559c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mercurial/4.3.1-3/
 
-- https://sources.debian.net/src/mercurial/4.3.1-3/ (for browsing the source)
-- https://sources.debian.net/src/mercurial/4.3.1-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mercurial/4.3.1-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mime-support=3.60`
 
@@ -2372,19 +2358,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-defaults=2.7.14-1
-'http://deb.debian.org/debian/pool/main/p/python-defaults/python-defaults_2.7.14-1.dsc' python-defaults_2.7.14-1.dsc 2663 SHA256:ec101082736bce4137bce3b6d68fbc80099612cfd9456715e4f5540689022ec7
-'http://deb.debian.org/debian/pool/main/p/python-defaults/python-defaults_2.7.14-1.tar.gz' python-defaults_2.7.14-1.tar.gz 274978 SHA256:2afd1a578f1415231d9d08cd8e969d54cdb49ff9c015d61f392aa0a9a515a665
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python-defaults/2.7.14-1/
 
-- https://sources.debian.net/src/python-defaults/2.7.14-1/ (for browsing the source)
-- https://sources.debian.net/src/python-defaults/2.7.14-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python-defaults/2.7.14-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python2.7=2.7.14-4`
 
@@ -2622,20 +2602,13 @@ Licenses: (parsed from: `/usr/share/doc/libsvn1/copyright`, `/usr/share/doc/subv
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris subversion=1.9.7-2
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.9.7-2.dsc' subversion_1.9.7-2.dsc 2990 SHA256:10b223085db0e302e4f15f51fa3d8ebabe0603c1a4edfb1f06fabfd77cc919ca
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.9.7.orig.tar.gz' subversion_1.9.7.orig.tar.gz 10643686 SHA256:c72a209c883e20245f14c4e644803f50ae83ae24652e385ff5e82300a0d06c3c
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.9.7-2.diff.gz' subversion_1.9.7-2.diff.gz 2632435 SHA256:d4b243270b601bdf6486bd4c7aefb508b6b55077aece28650d54057f047a92af
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/subversion/1.9.7-2/
 
-- https://sources.debian.net/src/subversion/1.9.7-2/ (for browsing the source)
-- https://sources.debian.net/src/subversion/1.9.7-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/subversion/1.9.7-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=235-3`
 

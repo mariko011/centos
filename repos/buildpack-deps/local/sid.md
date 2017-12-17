@@ -303,19 +303,13 @@ Licenses: (parsed from: `/usr/share/doc/autotools-dev/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris autotools-dev=20161112.1+nmu1
-'http://deb.debian.org/debian/pool/main/a/autotools-dev/autotools-dev_20161112.1+nmu1.dsc' autotools-dev_20161112.1+nmu1.dsc 1675 SHA256:74baa661a78ee3bbcbffb4a92d7e9cd3197867185c3e46537665db77a86854d8
-'http://deb.debian.org/debian/pool/main/a/autotools-dev/autotools-dev_20161112.1+nmu1.tar.xz' autotools-dev_20161112.1+nmu1.tar.xz 65624 SHA256:d4c36e186de8655917b0b8d63712a5dc48493f04a240e77870b1025a1654c890
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/autotools-dev/20161112.1+nmu1/
 
-- https://sources.debian.net/src/autotools-dev/20161112.1+nmu1/ (for browsing the source)
-- https://sources.debian.net/src/autotools-dev/20161112.1+nmu1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/autotools-dev/20161112.1+nmu1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `avahi=0.7-3`
 

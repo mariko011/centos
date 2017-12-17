@@ -1059,20 +1059,13 @@ Licenses: (parsed from: `/usr/share/doc/libassuan0/copyright`)
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libassuan=2.4.5-1
-'http://deb.debian.org/debian/pool/main/liba/libassuan/libassuan_2.4.5-1.dsc' libassuan_2.4.5-1.dsc 2237 SHA256:8a3c3392583516efac533ce2ba378317d3679f96a9be3ade71ca5b2cb6dd3b4d
-'http://deb.debian.org/debian/pool/main/liba/libassuan/libassuan_2.4.5.orig.tar.bz2' libassuan_2.4.5.orig.tar.bz2 563915 SHA256:fbfea5d1dbcdee34f2597b0afb3d8bb4eda96c924a1e01b01c2acde68b81625f
-'http://deb.debian.org/debian/pool/main/liba/libassuan/libassuan_2.4.5-1.debian.tar.xz' libassuan_2.4.5-1.debian.tar.xz 15084 SHA256:77ad343efc49d21a2f009aa89606dc6ddad6313a01d243b56eb10f20af8c7119
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libassuan/2.4.5-1/
 
-- https://sources.debian.net/src/libassuan/2.4.5-1/ (for browsing the source)
-- https://sources.debian.net/src/libassuan/2.4.5-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libassuan/2.4.5-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libcap-ng=0.7.7-3.1`
 
