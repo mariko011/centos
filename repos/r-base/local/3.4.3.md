@@ -1291,10 +1291,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris graphite2=1.3.10-8
-'http://http.debian.net/debian/pool/main/g/graphite2/graphite2_1.3.10-8.dsc' graphite2_1.3.10-8.dsc 2379 SHA256:4fdc372bd74965337a7fd3db9081caf8a349ad41317d95f8f04c257aa71918ad
-'http://http.debian.net/debian/pool/main/g/graphite2/graphite2_1.3.10.orig.tar.gz' graphite2_1.3.10.orig.tar.gz 3889647 SHA256:90fde3b2f9ea95d68ffb19278d07d9b8a7efa5ba0e413bebcea802ce05cda1ae
-'http://http.debian.net/debian/pool/main/g/graphite2/graphite2_1.3.10-8.debian.tar.xz' graphite2_1.3.10-8.debian.tar.xz 11792 SHA256:53ec37195cd657535514da04f2067fed0bed9bab47f4f9101c2d1eb6e3cd5277
+'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.10-8.dsc' graphite2_1.3.10-8.dsc 2379 SHA256:4fdc372bd74965337a7fd3db9081caf8a349ad41317d95f8f04c257aa71918ad
+'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.10.orig.tar.gz' graphite2_1.3.10.orig.tar.gz 3889647 SHA256:90fde3b2f9ea95d68ffb19278d07d9b8a7efa5ba0e413bebcea802ce05cda1ae
+'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.10-8.debian.tar.xz' graphite2_1.3.10-8.debian.tar.xz 11792 SHA256:53ec37195cd657535514da04f2067fed0bed9bab47f4f9101c2d1eb6e3cd5277
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/graphite2/1.3.10-8/ (for browsing the source)
+- https://sources.debian.net/src/graphite2/1.3.10-8/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/graphite2/1.3.10-8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `grep=3.1-2`
 
@@ -3758,10 +3764,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris tiff=4.0.9-1
-'http://http.debian.net/debian/pool/main/t/tiff/tiff_4.0.9-1.dsc' tiff_4.0.9-1.dsc 2184 SHA256:ace4bf1ac168659a23a2c5c07efd44567f6e7a8e8a641a53f91d9964cf4cdcdc
-'http://http.debian.net/debian/pool/main/t/tiff/tiff_4.0.9.orig.tar.gz' tiff_4.0.9.orig.tar.gz 2305681 SHA256:6e7bdeec2c310734e734d19aae3a71ebe37a4d842e0e23dbb1b8921c0026cfcd
-'http://http.debian.net/debian/pool/main/t/tiff/tiff_4.0.9-1.debian.tar.xz' tiff_4.0.9-1.debian.tar.xz 16920 SHA256:c18331f2c794e874fe0d1cdc61f12cb6f9802af3347a46b0559f417a427516df
+'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.9-1.dsc' tiff_4.0.9-1.dsc 2184 SHA256:ace4bf1ac168659a23a2c5c07efd44567f6e7a8e8a641a53f91d9964cf4cdcdc
+'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.9.orig.tar.gz' tiff_4.0.9.orig.tar.gz 2305681 SHA256:6e7bdeec2c310734e734d19aae3a71ebe37a4d842e0e23dbb1b8921c0026cfcd
+'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.9-1.debian.tar.xz' tiff_4.0.9-1.debian.tar.xz 16920 SHA256:c18331f2c794e874fe0d1cdc61f12cb6f9802af3347a46b0559f417a427516df
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/tiff/4.0.9-1/ (for browsing the source)
+- https://sources.debian.net/src/tiff/4.0.9-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tiff/4.0.9-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tk8.6=8.6.7-1`
 
