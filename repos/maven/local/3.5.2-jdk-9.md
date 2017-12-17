@@ -4173,20 +4173,13 @@ Licenses: (parsed from: `/usr/share/doc/libegl-mesa0/copyright`, `/usr/share/doc
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mesa=17.2.5-1
-'http://deb.debian.org/debian/pool/main/m/mesa/mesa_17.2.5-1.dsc' mesa_17.2.5-1.dsc 4929 SHA256:a6e20fc4125820926ac9ff02dce806892665abbff2f8b51a285b8b8e46b7bdf6
-'http://deb.debian.org/debian/pool/main/m/mesa/mesa_17.2.5.orig.tar.gz' mesa_17.2.5.orig.tar.gz 17742132 SHA256:25b40e72fad64b096c2d8d6fe9579369954debe7970d4ad53e5033c7eec2918b
-'http://deb.debian.org/debian/pool/main/m/mesa/mesa_17.2.5-1.diff.gz' mesa_17.2.5-1.diff.gz 116102 SHA256:0a3c8e9f9dfa0700c97d78c0f4745ecc638d40abef6a45db635b579fbc8e6c99
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mesa/17.2.5-1/
 
-- https://sources.debian.net/src/mesa/17.2.5-1/ (for browsing the source)
-- https://sources.debian.net/src/mesa/17.2.5-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mesa/17.2.5-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mime-support=3.60`
 
