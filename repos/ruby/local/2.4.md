@@ -1,18 +1,18 @@
-# `ruby:2.4.2-jessie`
+# `ruby:2.4.3-jessie`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2a867526d4724cf92c845c70b67e53d61e0a76e324a6051262c3731ddcc2f568`
-- Created: `2017-12-12T17:29:53.986376246Z`
-- Virtual Size: ~ 686.91 Mb  
+- Image ID: `sha256:4a2924cdb36330e610f7ccdbd4757b2d99d774349e35e0eaa141d65af401dd85`
+- Created: `2017-12-15T21:00:48.428983667Z`
+- Virtual Size: ~ 686.92 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["irb"]`
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `RUBY_MAJOR=2.4`
-  - `RUBY_VERSION=2.4.2`
-  - `RUBY_DOWNLOAD_SHA256=748a8980d30141bd1a4124e11745bb105b436fb1890826e0d2b9ea31af27f735`
+  - `RUBY_VERSION=2.4.3`
+  - `RUBY_DOWNLOAD_SHA256=23677d40bf3b7621ba64593c978df40b1e026d8653c74a0599f0ead78ed92b51`
   - `RUBYGEMS_VERSION=2.7.3`
   - `BUNDLER_VERSION=1.16.0`
   - `GEM_HOME=/usr/local/bundle`
