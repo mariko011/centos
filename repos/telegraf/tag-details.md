@@ -10,6 +10,10 @@
 -	[`telegraf:1.4.5`](#telegraf145)
 -	[`telegraf:1.4.5-alpine`](#telegraf145-alpine)
 -	[`telegraf:1.4-alpine`](#telegraf14-alpine)
+-	[`telegraf:1.5`](#telegraf15)
+-	[`telegraf:1.5.0`](#telegraf150)
+-	[`telegraf:1.5.0-alpine`](#telegraf150-alpine)
+-	[`telegraf:1.5-alpine`](#telegraf15-alpine)
 -	[`telegraf:alpine`](#telegrafalpine)
 -	[`telegraf:latest`](#telegraflatest)
 
@@ -1188,6 +1192,22 @@ CMD ["telegraf"]
 		Last Modified: Mon, 04 Dec 2017 20:59:52 GMT  
 		Size: 182.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `telegraf:1.5`
+
+**does not exist** (yet?)
+
+## `telegraf:1.5.0`
+
+**does not exist** (yet?)
+
+## `telegraf:1.5.0-alpine`
+
+**does not exist** (yet?)
+
+## `telegraf:1.5-alpine`
+
+**does not exist** (yet?)
 
 ## `telegraf:alpine`
 
