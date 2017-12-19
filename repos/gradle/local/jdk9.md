@@ -705,21 +705,13 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 - `LGPL-2.0 with AOSDL exception`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cups=2.2.6-2
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.6-2.dsc' cups_2.2.6-2.dsc 3372 SHA256:025d5242f449dd3d0fcba6b627fa441711fb62e1281cca7ca79af66204a3543d
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.6.orig.tar.gz' cups_2.2.6.orig.tar.gz 10315433 SHA256:40385778c2b3bdf55030d1c999734e22774c79e3425d91339ce677825620169b
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.6.orig.tar.gz.asc' cups_2.2.6.orig.tar.gz.asc 850 SHA256:1f6cccf87c20951f4181efab9d3767c4747cf5127744aa918156afb9cd0b8ca7
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.6-2.debian.tar.xz' cups_2.2.6-2.debian.tar.xz 350204 SHA256:f91808ebb2c80eac18007d8f99d1e47c3ceb2902c4190cf8635cbd21a95c53f4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/cups/2.2.6-2/
 
-- https://sources.debian.net/src/cups/2.2.6-2/ (for browsing the source)
-- https://sources.debian.net/src/cups/2.2.6-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cups/2.2.6-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `curl=7.57.0-1`
 
@@ -1440,20 +1432,13 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris git=1:2.15.1-1
-'http://deb.debian.org/debian/pool/main/g/git/git_2.15.1-1.dsc' git_2.15.1-1.dsc 2854 SHA256:75812ff92d4ab963fe2f6557554c040a1dd8844c1d181e257432310be52316c9
-'http://deb.debian.org/debian/pool/main/g/git/git_2.15.1.orig.tar.xz' git_2.15.1.orig.tar.xz 4894768 SHA256:999c90fd7d45066992cdb87dda35bdff6dfc1d01496118ea718dfb866da4045c
-'http://deb.debian.org/debian/pool/main/g/git/git_2.15.1-1.debian.tar.xz' git_2.15.1-1.debian.tar.xz 554836 SHA256:0881f060c8b99075fa42450bf2067a98df2c3f09f523c355e7f1109f23f61200
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/git/1:2.15.1-1/
 
-- https://sources.debian.net/src/git/1:2.15.1-1/ (for browsing the source)
-- https://sources.debian.net/src/git/1:2.15.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/git/1:2.15.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glib-networking=2.54.1-1`
 
@@ -2013,20 +1998,13 @@ Licenses: (parsed from: `/usr/share/doc/iproute2/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris iproute2=4.9.0-2.1
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.9.0-2.1.dsc' iproute2_4.9.0-2.1.dsc 2306 SHA256:06ebc3f13ed356aecddfcb3aea626b62edafcd0f77b2cbdf578f17822a345a68
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.9.0.orig.tar.xz' iproute2_4.9.0.orig.tar.xz 613032 SHA256:c0f30f043f7767cc1b2cd2197b08d4e9b2392c95823fabe30bbce308c30116c4
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.9.0-2.1.debian.tar.xz' iproute2_4.9.0-2.1.debian.tar.xz 146824 SHA256:d02a9615e4425fd7e1dcd34b1a6ab33768d127f870d8b6ae549c7705c2eea6cd
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/iproute2/4.9.0-2.1/
 
-- https://sources.debian.net/src/iproute2/4.9.0-2.1/ (for browsing the source)
-- https://sources.debian.net/src/iproute2/4.9.0-2.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/iproute2/4.9.0-2.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `iptables=1.6.1-2`
 
