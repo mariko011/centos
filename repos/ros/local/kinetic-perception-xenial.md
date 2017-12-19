@@ -1193,13 +1193,9 @@ Licenses: (parsed from: `/usr/share/doc/distro-info-data/copyright`)
 
 - `ISC`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris distro-info-data=0.28ubuntu0.5
-'http://archive.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.28ubuntu0.5.dsc' distro-info-data_0.28ubuntu0.5.dsc 1761 SHA256:6bdf2c1170e2413a41f548c3f74d947e2b7d3ebc08ca0fb57bdb7eafcd5ccd03
-'http://archive.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.28ubuntu0.5.tar.xz' distro-info-data_0.28ubuntu0.5.tar.xz 6524 SHA256:d94ed0f2da8ecf2be373e903ad2e8b14c6d55b9b00131310366650106e998350
-```
 
 ### `dpkg` source package: `double-conversion=2.0.1-3ubuntu2`
 
@@ -9838,10 +9834,6 @@ Licenses: (parsed from: `/usr/share/doc/libserf-1-1/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/serf/1.3.8-1/
 
 
 ### `dpkg` source package: `sgml-base=1.26+nmu4ubuntu1`

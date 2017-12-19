@@ -1071,13 +1071,9 @@ Licenses: (parsed from: `/usr/share/doc/distro-info-data/copyright`)
 
 - `ISC`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris distro-info-data=0.33ubuntu0.3
-'http://archive.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.33ubuntu0.3.dsc' distro-info-data_0.33ubuntu0.3.dsc 1762 SHA256:825a6d4f85d647df6e1381234774c9d8de6c715f13303f09bca71dcfa430c1e0
-'http://archive.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.33ubuntu0.3.tar.xz' distro-info-data_0.33ubuntu0.3.tar.xz 6620 SHA256:b13cb8521ca5a43ab2bcc46a97b0eb9a91c3649a0b61d43aaf9b7c348cea013c
-```
 
 ### `dpkg` source package: `dpkg=1.18.10ubuntu2`
 
