@@ -5,7 +5,11 @@
 -	[`influxdb:1.3`](#influxdb13)
 -	[`influxdb:1.3.8`](#influxdb138)
 -	[`influxdb:1.3.8-alpine`](#influxdb138-alpine)
+-	[`influxdb:1.3.8-data`](#influxdb138-data)
+-	[`influxdb:1.3.8-meta`](#influxdb138-meta)
 -	[`influxdb:1.3-alpine`](#influxdb13-alpine)
+-	[`influxdb:1.3-data`](#influxdb13-data)
+-	[`influxdb:1.3-meta`](#influxdb13-meta)
 -	[`influxdb:1.4`](#influxdb14)
 -	[`influxdb:1.4.2`](#influxdb142)
 -	[`influxdb:1.4.2-alpine`](#influxdb142-alpine)
@@ -594,6 +598,14 @@ CMD ["influxd"]
 		Size: 1.2 KB (1166 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `influxdb:1.3.8-data`
+
+**does not exist** (yet?)
+
+## `influxdb:1.3.8-meta`
+
+**does not exist** (yet?)
+
 ## `influxdb:1.3-alpine`
 
 ```console
@@ -676,6 +688,14 @@ CMD ["influxd"]
 		Last Modified: Mon, 04 Dec 2017 21:45:38 GMT  
 		Size: 1.2 KB (1166 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `influxdb:1.3-data`
+
+**does not exist** (yet?)
+
+## `influxdb:1.3-meta`
+
+**does not exist** (yet?)
 
 ## `influxdb:1.4`
 
