@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b84577b2fc7d2748de46341336e99c849a3a9098f9aa87a5684f1a3def1f8fb5`
-- Created: `2017-12-14T01:31:21.769908504Z`
+- Image ID: `sha256:b13e7290e7a724e49db3f31ed63101331c064919f48c5fba0c332b099199eb43`
+- Created: `2017-12-19T23:23:38.191329794Z`
 - Virtual Size: ~ 643.14 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -2050,11 +2050,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libxml2/2.9.1+dfsg1-5+deb8u5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libxml2/2.9.1+dfsg1-5+deb8u5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=3.16.51-2`
+### `dpkg` source package: `linux=3.16.51-3`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.16.51-2`
+- `linux-libc-dev:amd64=3.16.51-3`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2065,17 +2065,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=3.16.51-2
-'http://deb.debian.org/debian/pool/main/l/linux/linux_3.16.51-2.dsc' linux_3.16.51-2.dsc 140581 SHA256:618f97d360516eac28995eec02b15817c44e408d78ae6f022b2bbc189de1b868
+$ apt-get source -qq --print-uris linux=3.16.51-3
+'http://deb.debian.org/debian/pool/main/l/linux/linux_3.16.51-3.dsc' linux_3.16.51-3.dsc 140581 SHA256:3f31a3fc86eadfd2a4961b7ee54eeef16a3a853e7b34ddf09438355653e4d4eb
 'http://deb.debian.org/debian/pool/main/l/linux/linux_3.16.51.orig.tar.xz' linux_3.16.51.orig.tar.xz 81841624 SHA256:302253096f6f15696e3bd72359852e1a7a2488431d203fd6bc89372c35d1d7dc
-'http://deb.debian.org/debian/pool/main/l/linux/linux_3.16.51-2.debian.tar.xz' linux_3.16.51-2.debian.tar.xz 3239396 SHA256:ab51d84088730f4d4079fd01464173f32697d9af6671168c0f99dcc21182ce1d
+'http://deb.debian.org/debian/pool/main/l/linux/linux_3.16.51-3.debian.tar.xz' linux_3.16.51-3.debian.tar.xz 3241412 SHA256:3b180a7af76aaad9ba05fa29357df0012fea11449bde650ae09cb65cec2cb61d
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/3.16.51-2/ (for browsing the source)
-- https://sources.debian.net/src/linux/3.16.51-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/3.16.51-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/3.16.51-3/ (for browsing the source)
+- https://sources.debian.net/src/linux/3.16.51-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/3.16.51-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=4.1+Debian13+nmu1`
 
@@ -2710,11 +2710,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/readline6/6.3-8/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/readline6/6.3-8/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `rsync=3.1.1-3`
+### `dpkg` source package: `rsync=3.1.1-3+deb8u1`
 
 Binary Packages:
 
-- `rsync=3.1.1-3`
+- `rsync=3.1.1-3+deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/rsync/copyright`)
 
@@ -2723,17 +2723,17 @@ Licenses: (parsed from: `/usr/share/doc/rsync/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris rsync=3.1.1-3
-'http://deb.debian.org/debian/pool/main/r/rsync/rsync_3.1.1-3.dsc' rsync_3.1.1-3.dsc 1676 SHA256:1ca6cc2c514d6e82dfde28c3984bea8651f8c197640cbc05aa544c46d2891a69
-'http://deb.debian.org/debian/pool/main/r/rsync/rsync_3.1.1.orig.tar.gz' rsync_3.1.1.orig.tar.gz 890124 SHA256:7de4364fcf5fe42f3bdb514417f1c40d10bbca896abe7e7f2c581c6ea08a2621
-'http://deb.debian.org/debian/pool/main/r/rsync/rsync_3.1.1-3.debian.tar.xz' rsync_3.1.1-3.debian.tar.xz 21968 SHA256:be77fe6d9932e82c4215f6fcd127f813c667d50662a1416be5f4cd854c19c960
+$ apt-get source -qq --print-uris rsync=3.1.1-3+deb8u1
+'http://security.debian.org/pool/updates/main/r/rsync/rsync_3.1.1-3+deb8u1.dsc' rsync_3.1.1-3+deb8u1.dsc 1873 SHA256:c7a26e1e02df66d25ced84be25058bb9f33427c11dec6bd0ede494236c582f51
+'http://security.debian.org/pool/updates/main/r/rsync/rsync_3.1.1.orig.tar.gz' rsync_3.1.1.orig.tar.gz 890124 SHA256:7de4364fcf5fe42f3bdb514417f1c40d10bbca896abe7e7f2c581c6ea08a2621
+'http://security.debian.org/pool/updates/main/r/rsync/rsync_3.1.1-3+deb8u1.debian.tar.xz' rsync_3.1.1-3+deb8u1.debian.tar.xz 23456 SHA256:1d1d20db2ed8fca8c9c9a3a46b099b6ac75a354e8e380eed6e284824f072f935
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/rsync/3.1.1-3/ (for browsing the source)
-- https://sources.debian.net/src/rsync/3.1.1-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/rsync/3.1.1-3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/rsync/3.1.1-3+deb8u1/ (for browsing the source)
+- https://sources.debian.net/src/rsync/3.1.1-3+deb8u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/rsync/3.1.1-3+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rtmpdump=2.4+20150115.gita107cef-1+deb8u1`
 
