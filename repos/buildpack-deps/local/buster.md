@@ -3606,20 +3606,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.4+dfsg1-5.1
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1-5.1.dsc' libxml2_2.9.4+dfsg1-5.1.dsc 3131 SHA256:7a43531fcb67956df3973605720b02c09044594c9e7434edb80d336449557826
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1.orig.tar.xz' libxml2_2.9.4+dfsg1.orig.tar.xz 2446412 SHA256:a74ad55e346aa0b2b41903e66d21f8f3d2a736b3f41e32496376861ab484184e
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1-5.1.debian.tar.xz' libxml2_2.9.4+dfsg1-5.1.debian.tar.xz 35444 SHA256:0a900d807f5de69cb27ddca74db8d6bb83d37abcdfee1c9b2f8a8ddb7ea028f4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libxml2/2.9.4+dfsg1-5.1/
 
-- https://sources.debian.net/src/libxml2/2.9.4+dfsg1-5.1/ (for browsing the source)
-- https://sources.debian.net/src/libxml2/2.9.4+dfsg1-5.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxml2/2.9.4+dfsg1-5.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxpm=1:3.5.12-1`
 
@@ -4802,20 +4795,13 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `nagaysau-ishii`
 - `rijndael`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-10=10.1-1
-'http://deb.debian.org/debian/pool/main/p/postgresql-10/postgresql-10_10.1-1.dsc' postgresql-10_10.1-1.dsc 3563 SHA256:aa3cd69fb9c863bf86c3a2e2bb3f01d1103b4294c62d058fd62d43c860ed714b
-'http://deb.debian.org/debian/pool/main/p/postgresql-10/postgresql-10_10.1.orig.tar.bz2' postgresql-10_10.1.orig.tar.bz2 19669989 SHA256:3ccb4e25fe7a7ea6308dea103cac202963e6b746697366d72ec2900449a5e713
-'http://deb.debian.org/debian/pool/main/p/postgresql-10/postgresql-10_10.1-1.debian.tar.xz' postgresql-10_10.1-1.debian.tar.xz 17816 SHA256:dccaf2da367e55c027b35a02679f35f7868e1f91cc3a208af01c263bd4f5a2fa
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/postgresql-10/10.1-1/
 
-- https://sources.debian.net/src/postgresql-10/10.1-1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-10/10.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-10/10.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:3.3.12-3`
 

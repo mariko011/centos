@@ -538,15 +538,13 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 - `LGPL-2.0 with AOSDL exception`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cups=2.2.6-2
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.2.6-2.dsc' cups_2.2.6-2.dsc 3372 SHA256:025d5242f449dd3d0fcba6b627fa441711fb62e1281cca7ca79af66204a3543d
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.2.6.orig.tar.gz' cups_2.2.6.orig.tar.gz 10315433 SHA256:40385778c2b3bdf55030d1c999734e22774c79e3425d91339ce677825620169b
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.2.6.orig.tar.gz.asc' cups_2.2.6.orig.tar.gz.asc 850 SHA256:1f6cccf87c20951f4181efab9d3767c4747cf5127744aa918156afb9cd0b8ca7
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.2.6-2.debian.tar.xz' cups_2.2.6-2.debian.tar.xz 350204 SHA256:f91808ebb2c80eac18007d8f99d1e47c3ceb2902c4190cf8635cbd21a95c53f4
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/cups/2.2.6-2/
+
 
 ### `dpkg` source package: `curl=7.57.0-1ubuntu1`
 
@@ -1052,14 +1050,9 @@ Licenses: (parsed from: `/usr/share/doc/cpp-7/copyright`, `/usr/share/doc/g++-7/
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-7=7.2.0-17ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.2.0-17ubuntu1.dsc' gcc-7_7.2.0-17ubuntu1.dsc 37381 SHA256:ff5778c77a6acee8e5664b12f41f3a26362fea5c9d3f73fff96681ddc9addb2e
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.2.0.orig.tar.gz' gcc-7_7.2.0.orig.tar.gz 73406637 SHA256:aa50238ecb3a1ae463739e0ff5d31bb2fdf4e339456403bd58b765f57f237aa3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.2.0-17ubuntu1.diff.gz' gcc-7_7.2.0-17ubuntu1.diff.gz 2748588 SHA256:c31cc441b637c62770968202b039fcbeb2ef5933e869a0433587ddd91f3e824b
-```
 
 ### `dpkg` source package: `gcc-defaults=1.173ubuntu1`
 
@@ -1393,9 +1386,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris graphviz=2.38.0-18ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/graphviz/graphviz_2.38.0-18ubuntu1.dsc' graphviz_2.38.0-18ubuntu1.dsc 3305 SHA256:98a2168c88fbac490c8fbf34eaeaa952a34e88f0cbdf968768c9ab7c779700e1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/graphviz/graphviz_2.38.0.orig.tar.gz' graphviz_2.38.0.orig.tar.gz 25848858 SHA256:81aa238d9d4a010afa73a9d2a704fc3221c731e1e06577c2ab3496bdef67859e
-'http://archive.ubuntu.com/ubuntu/pool/main/g/graphviz/graphviz_2.38.0-18ubuntu1.debian.tar.xz' graphviz_2.38.0-18ubuntu1.debian.tar.xz 43572 SHA256:f147d08d315766083c3f11cd1dbd60ced7a254a6a56ee9a05ab708a29459a2c3
+'http://archive.ubuntu.com/ubuntu/pool/universe/g/graphviz/graphviz_2.38.0-18ubuntu1.dsc' graphviz_2.38.0-18ubuntu1.dsc 3305 SHA256:98a2168c88fbac490c8fbf34eaeaa952a34e88f0cbdf968768c9ab7c779700e1
+'http://archive.ubuntu.com/ubuntu/pool/universe/g/graphviz/graphviz_2.38.0.orig.tar.gz' graphviz_2.38.0.orig.tar.gz 25848858 SHA256:81aa238d9d4a010afa73a9d2a704fc3221c731e1e06577c2ab3496bdef67859e
+'http://archive.ubuntu.com/ubuntu/pool/universe/g/graphviz/graphviz_2.38.0-18ubuntu1.debian.tar.xz' graphviz_2.38.0-18ubuntu1.debian.tar.xz 43572 SHA256:f147d08d315766083c3f11cd1dbd60ced7a254a6a56ee9a05ab708a29459a2c3
 ```
 
 ### `dpkg` source package: `grep=3.1-2`
@@ -1827,14 +1820,13 @@ Licenses: (parsed from: `/usr/share/doc/liblcms2-2/copyright`, `/usr/share/doc/l
 - `GPL-2+`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lcms2=2.8-4
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lcms2/lcms2_2.8-4.dsc' lcms2_2.8-4.dsc 1997 SHA256:3b92900948848eef62fa91b78f6b6661bd84eae6c49c224248c7c48a09b5f028
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lcms2/lcms2_2.8.orig.tar.gz' lcms2_2.8.orig.tar.gz 6687005 SHA256:66d02b229d2ea9474e62c2b6cd6720fde946155cd1d0d2bffdab829790a0fb22
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lcms2/lcms2_2.8-4.debian.tar.xz' lcms2_2.8-4.debian.tar.xz 11036 SHA256:50c0040fc92e1f2ca27740f608ae248acdd5b21a633f34cf2fe4d66f1d05c4b4
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/lcms2/2.8-4/
+
 
 ### `dpkg` source package: `libassuan=2.5.1-1`
 
@@ -2206,14 +2198,13 @@ Licenses: (parsed from: `/usr/share/doc/libidn11/copyright`)
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libidn=1.33-2
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn/libidn_1.33-2.dsc' libidn_1.33-2.dsc 2392 SHA256:80fbd163a786f6ea83d983e82afc19b793a0769463802ebfb74fec296f6e3696
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn/libidn_1.33.orig.tar.gz' libidn_1.33.orig.tar.gz 3501056 SHA256:44a7aab635bb721ceef6beecc4d49dfd19478325e1b47f3196f7d2acc4930e19
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn/libidn_1.33-2.debian.tar.xz' libidn_1.33-2.debian.tar.xz 65292 SHA256:13e3e90d34fefcfb81036b28311aa2771a98d998233b615f831df8ee988e4c9e
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libidn/1.33-2/
+
 
 ### `dpkg` source package: `libjpeg-turbo=1.5.2-0ubuntu5`
 
@@ -2873,14 +2864,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.4+dfsg1-5.1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1-5.1ubuntu1.dsc' libxml2_2.9.4+dfsg1-5.1ubuntu1.dsc 3119 SHA256:1d90f9871211c65a78081aa42a6162a413c3cd503410321a6d7577fb677e450e
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1.orig.tar.xz' libxml2_2.9.4+dfsg1.orig.tar.xz 2446412 SHA256:a74ad55e346aa0b2b41903e66d21f8f3d2a736b3f41e32496376861ab484184e
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1-5.1ubuntu1.debian.tar.xz' libxml2_2.9.4+dfsg1-5.1ubuntu1.debian.tar.xz 35596 SHA256:2d8d381020e46536a39c15e8a77c806875b103ecd74dd7f6091b5b22bdaf3a7a
-```
 
 ### `dpkg` source package: `libxpm=1:3.5.12-1`
 
@@ -3668,14 +3654,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pixman=0.34.0-1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pixman/pixman_0.34.0-1.dsc' pixman_0.34.0-1.dsc 2103 SHA256:157e17c323d461a07f48e570a87228098770fd4388324b2dfcf360bf59ac1e11
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pixman/pixman_0.34.0.orig.tar.gz' pixman_0.34.0.orig.tar.gz 878784 SHA256:21b6b249b51c6800dc9553b65106e1e37d0e25df942c90531d4c3997aa20a88e
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pixman/pixman_0.34.0-1.diff.gz' pixman_0.34.0-1.diff.gz 315394 SHA256:a230def25913d56f9f13e4dbb1014214f84e85fe502c943d560f4335cfc1c5cd
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/pixman/0.34.0-1/
+
 
 ### `dpkg` source package: `pkg-config=0.29.1-0ubuntu2`
 
@@ -3720,14 +3705,13 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `nagaysau-ishii`
 - `rijndael`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-10=10.1-1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-10/postgresql-10_10.1-1.dsc' postgresql-10_10.1-1.dsc 3563 SHA256:aa3cd69fb9c863bf86c3a2e2bb3f01d1103b4294c62d058fd62d43c860ed714b
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-10/postgresql-10_10.1.orig.tar.bz2' postgresql-10_10.1.orig.tar.bz2 19669989 SHA256:3ccb4e25fe7a7ea6308dea103cac202963e6b746697366d72ec2900449a5e713
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-10/postgresql-10_10.1-1.debian.tar.xz' postgresql-10_10.1-1.debian.tar.xz 17816 SHA256:dccaf2da367e55c027b35a02679f35f7868e1f91cc3a208af01c263bd4f5a2fa
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/postgresql-10/10.1-1/
+
 
 ### `dpkg` source package: `procps=2:3.3.12-1ubuntu2`
 
