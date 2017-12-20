@@ -909,20 +909,13 @@ Licenses: (parsed from: `/usr/share/doc/iproute2/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris iproute2=4.9.0-2.1
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.9.0-2.1.dsc' iproute2_4.9.0-2.1.dsc 2306 SHA256:06ebc3f13ed356aecddfcb3aea626b62edafcd0f77b2cbdf578f17822a345a68
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.9.0.orig.tar.xz' iproute2_4.9.0.orig.tar.xz 613032 SHA256:c0f30f043f7767cc1b2cd2197b08d4e9b2392c95823fabe30bbce308c30116c4
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.9.0-2.1.debian.tar.xz' iproute2_4.9.0-2.1.debian.tar.xz 146824 SHA256:d02a9615e4425fd7e1dcd34b1a6ab33768d127f870d8b6ae549c7705c2eea6cd
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/iproute2/4.9.0-2.1/
 
-- https://sources.debian.net/src/iproute2/4.9.0-2.1/ (for browsing the source)
-- https://sources.debian.net/src/iproute2/4.9.0-2.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/iproute2/4.9.0-2.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libcap-ng=0.7.7-3.1`
 
