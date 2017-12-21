@@ -1,7 +1,7 @@
 ## `maven:ibmjava`
 
 ```console
-$ docker pull maven@sha256:9e1683b7911e03f993e83977d9e3a91a23986a2efe410d9badf0bc41ef0d08d1
+$ docker pull maven@sha256:006e30dbc9725d14c1c8da9761d19afd1ac839d28e480df378f86c841679ce56
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -222,14 +222,14 @@ CMD ["mvn"]
 ### `maven:ibmjava` - linux; ppc64le
 
 ```console
-$ docker pull maven@sha256:9b7a0e925f100d1af9d69ecbc3a14ea46324eb9028a597c7dde7c8f221a79568
+$ docker pull maven@sha256:424fa140d2cdb4f09530e852f5dec9b6304b4988a425ec49abe49736a2686816
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **265.3 MB (265327641 bytes)**  
+-	Total Size: **265.7 MB (265704874 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2bb64c5b382f405953bcb77f66852c815166f1cc2e759513b5e7f6a6e88ecdce`
+-	Image ID: `sha256:08ccc1a3a5d467c15848a508c117e90e9e2714291c05ee4ea71516f8404b15e4`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -250,34 +250,34 @@ CMD ["/bin/bash"]
 MAINTAINER Dinakar Guniguntala <dinakar.g@in.ibm.com> (@dinogun)
 # Fri, 15 Dec 2017 04:01:58 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends wget ca-certificates     && rm -rf /var/lib/apt/lists/*
-# Fri, 15 Dec 2017 04:02:00 GMT
-ENV JAVA_VERSION=1.8.0_sr5fp6
-# Fri, 15 Dec 2017 04:09:30 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64|x86_64)          ESUM='b5e2824313e62d647c7c7c7c8a6eb8704e445e915da460d379aedd30e6835030';          YML_FILE='sdk/linux/x86_64/index.yml';          ;;        i386)          ESUM='5e2fd0cafeab9c72e8eb038eb22cf911a18607298a47cd3d4684179610ec364c';          YML_FILE='sdk/linux/i386/index.yml';          ;;        ppc64el|ppc64le)          ESUM='c2dc7e1cf3db66f7ea0497b48ecb79048a553eaa82d5595a43c9bd7542610b0b';          YML_FILE='sdk/linux/ppc64le/index.yml';          ;;        s390)          ESUM='5f3f12fefe36502954d69fb1178c2a8bcd88624bc77c4c7bafd9193adcc79398';          YML_FILE='sdk/linux/s390/index.yml';          ;;        s390x)          ESUM='116fbee3c36425056d6310dd6ef54ce3debdd7150fa57e28caf39f04108b3edc';          YML_FILE='sdk/linux/s390x/index.yml';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/";     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE};     JAVA_URL=$(cat /tmp/index.yml | sed -n '/'${JAVA_VERSION}'/{n;p}' | sed -n 's/\s*uri:\s//p' | tr -d '\r');     wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.bin ${JAVA_URL};     echo "${ESUM}  /tmp/ibm-java.bin" | sha256sum -c -;     echo "INSTALLER_UI=silent" > /tmp/response.properties;     echo "USER_INSTALL_DIR=/opt/ibm/java" >> /tmp/response.properties;     echo "LICENSE_ACCEPTED=TRUE" >> /tmp/response.properties;     mkdir -p /opt/ibm;     chmod +x /tmp/ibm-java.bin;     /tmp/ibm-java.bin -i silent -f /tmp/response.properties;     rm -f /tmp/response.properties;     rm -f /tmp/index.yml;     rm -f /tmp/ibm-java.bin;     cd /opt/ibm/java/jre/lib;     rm -rf icc;
-# Fri, 15 Dec 2017 04:09:32 GMT
+# Thu, 21 Dec 2017 16:23:18 GMT
+ENV JAVA_VERSION=1.8.0_sr5fp7
+# Thu, 21 Dec 2017 16:29:34 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64|x86_64)          ESUM='022bd2f108dd63fbaf2259bd4dfc2bc97ca4854f5912f663feace22a504dece3';          YML_FILE='sdk/linux/x86_64/index.yml';          ;;        i386)          ESUM='61e4313e53dcc8a0e6027d748a5897e3261fcad95c7306554c71ca4fdbeadd25';          YML_FILE='sdk/linux/i386/index.yml';          ;;        ppc64el|ppc64le)          ESUM='6dba534ac781d04844e686d510b13b5efff0d1890c5840ab9d3c18a9bacacb0f';          YML_FILE='sdk/linux/ppc64le/index.yml';          ;;        s390)          ESUM='ad4839553ba05ccc0537f4b83b9c482ea2f859ae525fc116645622dee51a1a7f';          YML_FILE='sdk/linux/s390/index.yml';          ;;        s390x)          ESUM='5e0755ef8475920671840bb13b61769901cd632797e3191cddbed0633ae3276d';          YML_FILE='sdk/linux/s390x/index.yml';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/";     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE};     JAVA_URL=$(cat /tmp/index.yml | sed -n '/'${JAVA_VERSION}'/{n;p}' | sed -n 's/\s*uri:\s//p' | tr -d '\r');     wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.bin ${JAVA_URL};     echo "${ESUM}  /tmp/ibm-java.bin" | sha256sum -c -;     echo "INSTALLER_UI=silent" > /tmp/response.properties;     echo "USER_INSTALL_DIR=/opt/ibm/java" >> /tmp/response.properties;     echo "LICENSE_ACCEPTED=TRUE" >> /tmp/response.properties;     mkdir -p /opt/ibm;     chmod +x /tmp/ibm-java.bin;     /tmp/ibm-java.bin -i silent -f /tmp/response.properties;     rm -f /tmp/response.properties;     rm -f /tmp/index.yml;     rm -f /tmp/ibm-java.bin;     cd /opt/ibm/java/jre/lib;     rm -rf icc;
+# Thu, 21 Dec 2017 16:29:36 GMT
 ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 15 Dec 2017 04:38:08 GMT
+# Thu, 21 Dec 2017 16:48:02 GMT
 ARG MAVEN_VERSION=3.5.2
-# Fri, 15 Dec 2017 04:38:10 GMT
+# Thu, 21 Dec 2017 16:48:03 GMT
 ARG USER_HOME_DIR=/root
-# Fri, 15 Dec 2017 04:38:13 GMT
+# Thu, 21 Dec 2017 16:48:06 GMT
 ARG SHA=707b1f6e390a65bde4af4cdaf2a24d45fc19a6ded00fff02e91626e3e42ceaff
-# Fri, 15 Dec 2017 04:38:15 GMT
+# Thu, 21 Dec 2017 16:48:10 GMT
 ARG BASE_URL=https://apache.osuosl.org/maven/maven-3/3.5.2/binaries
-# Fri, 15 Dec 2017 04:43:05 GMT
+# Thu, 21 Dec 2017 16:51:29 GMT
 # ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.5.2/binaries MAVEN_VERSION=3.5.2 SHA=707b1f6e390a65bde4af4cdaf2a24d45fc19a6ded00fff02e91626e3e42ceaff USER_HOME_DIR=/root
 RUN apt-get update && apt-get install -y curl   && mkdir -p /usr/share/maven /usr/share/maven/ref   && curl -fsSL -o /tmp/apache-maven.tar.gz ${BASE_URL}/apache-maven-${MAVEN_VERSION}-bin.tar.gz   && echo "${SHA}  /tmp/apache-maven.tar.gz" | sha256sum -c -   && tar -xzf /tmp/apache-maven.tar.gz -C /usr/share/maven --strip-components=1   && rm -f /tmp/apache-maven.tar.gz   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Fri, 15 Dec 2017 04:43:08 GMT
+# Thu, 21 Dec 2017 16:51:31 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Fri, 15 Dec 2017 04:43:11 GMT
+# Thu, 21 Dec 2017 16:51:33 GMT
 ENV MAVEN_CONFIG=/root/.m2
-# Fri, 15 Dec 2017 04:48:08 GMT
+# Thu, 21 Dec 2017 16:52:31 GMT
 COPY file:fb726a12bbbf8ff54c8d9fceef4fa3018c11a435bfa04ee5f73156c544907861 in /usr/local/bin/mvn-entrypoint.sh 
-# Fri, 15 Dec 2017 04:48:12 GMT
+# Thu, 21 Dec 2017 16:52:37 GMT
 COPY file:b3fc14e8337e0079a4e97eace880b4b7cddc0dc0ea733de80749f78fe1eb089a in /usr/share/maven/ref/ 
-# Fri, 15 Dec 2017 04:48:16 GMT
+# Thu, 21 Dec 2017 16:52:40 GMT
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Fri, 15 Dec 2017 04:48:19 GMT
+# Thu, 21 Dec 2017 16:52:41 GMT
 CMD ["mvn"]
 ```
 
@@ -306,21 +306,21 @@ CMD ["mvn"]
 		Last Modified: Fri, 15 Dec 2017 04:19:04 GMT  
 		Size: 2.9 MB (2878165 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c5111e00e29fd840a635450b37230c02be63a0f230a8444bd4cf8ad57148f1b4`  
-		Last Modified: Fri, 15 Dec 2017 04:20:37 GMT  
-		Size: 175.6 MB (175641723 bytes)  
+	-	`sha256:19a7f85437e412a02efe97671226dec975a08e0b03c6cda7094eea32b64114da`  
+		Last Modified: Thu, 21 Dec 2017 16:31:36 GMT  
+		Size: 176.0 MB (176016936 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f954fe04f8234edbaf44e31483c5abe6c9405b8157de00bc2c8bcd82469f8914`  
-		Last Modified: Fri, 15 Dec 2017 04:49:16 GMT  
-		Size: 41.6 MB (41595537 bytes)  
+	-	`sha256:8d9bb71de810c0f573f55af7bbdd9580756a53081f9df6c5e5ef9a10b996e6fd`  
+		Last Modified: Thu, 21 Dec 2017 16:53:12 GMT  
+		Size: 41.6 MB (41597557 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a8d9f4301560c3176f501bdd2e54429bfb7032fa8537ba65562e4d2e73e68ba0`  
-		Last Modified: Fri, 15 Dec 2017 04:49:49 GMT  
-		Size: 743.0 B  
+	-	`sha256:94aca86e4a7561ac6b7ed59ecf9602bcb50acd111b585e2151fbe00a14971318`  
+		Last Modified: Thu, 21 Dec 2017 16:53:29 GMT  
+		Size: 742.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6225a006fa80be69bc4c6782852d14113e0e961ba6620ace41c5e9fe0e70c54d`  
-		Last Modified: Fri, 15 Dec 2017 04:49:49 GMT  
-		Size: 359.0 B  
+	-	`sha256:8d3f7c23023a3a501fd98f26b9eaebd375afcbd54b2cbe76eec9ac81f61309c9`  
+		Last Modified: Thu, 21 Dec 2017 16:53:29 GMT  
+		Size: 360.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `maven:ibmjava` - linux; s390x
