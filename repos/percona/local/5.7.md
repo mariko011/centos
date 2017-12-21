@@ -1,10 +1,10 @@
-# `percona:5.7.19`
+# `percona:5.7.20`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7b134e1b35081a50a46fc7cd8e2e243632c6f64727b7b94c7bbc741302fbe23b`
-- Created: `2017-12-12T02:39:09.00066142Z`
-- Virtual Size: ~ 393.62 Mb  
+- Image ID: `sha256:c53123ced18b5940fac03982bb08dcd1acb171909169a9d3107583c9f7b1b961`
+- Created: `2017-12-19T17:57:17.062654082Z`
+- Virtual Size: ~ 397.02 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -14,7 +14,7 @@
   - `GOSU_VERSION=1.7`
   - `GPG_KEYS=430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 	4D1BB29D63D98E422B2113B19334A25F8507EFA5`
   - `PERCONA_MAJOR=5.7`
-  - `PERCONA_VERSION=5.7.19-17-1.jessie`
+  - `PERCONA_VERSION=5.7.20-18-1.jessie`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -354,9 +354,10 @@ Other potentially useful URLs:
 
 Binary Packages:
 
+- `libcurl3:amd64=7.38.0-4+deb8u8`
 - `libcurl3-gnutls:amd64=7.38.0-4+deb8u8`
 
-Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`)
 
 - `BSD-3-Clause`
 - `BSD-4-Clause`
@@ -2761,13 +2762,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pcre3/2:8.35-3.3+deb8u4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pcre3/2:8.35-3.3+deb8u4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `percona-server-5.7=5.7.19-17-1.jessie`
+### `dpkg` source package: `percona-server-5.7=5.7.20-18-1.jessie`
 
 Binary Packages:
 
-- `percona-server-client-5.7=5.7.19-17-1.jessie`
-- `percona-server-common-5.7=5.7.19-17-1.jessie`
-- `percona-server-server-5.7=5.7.19-17-1.jessie`
+- `percona-server-client-5.7=5.7.20-18-1.jessie`
+- `percona-server-common-5.7=5.7.20-18-1.jessie`
+- `percona-server-server-5.7=5.7.20-18-1.jessie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
