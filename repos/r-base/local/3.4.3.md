@@ -239,16 +239,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris binutils=2.29.1-11
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.29.1-11.dsc' binutils_2.29.1-11.dsc 10865 SHA256:2cb7bb28c800bc5f357f03b15d863a22d7c12e7c3108ea75d3ca3479be3384b1
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.29.1.orig.tar.xz' binutils_2.29.1.orig.tar.xz 19923564 SHA256:0e993857e2e9b006fb541a3e1ce319d00770b27d3c50af2ee9c779388da1915c
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.29.1-11.debian.tar.xz' binutils_2.29.1-11.debian.tar.xz 184376 SHA256:2d91e68d7f939d1341042488b6e0069b1b017d429f7341c48af72d83df2a0048
+'http://http.debian.net/debian/pool/main/b/binutils/binutils_2.29.1-11.dsc' binutils_2.29.1-11.dsc 10865 SHA256:2cb7bb28c800bc5f357f03b15d863a22d7c12e7c3108ea75d3ca3479be3384b1
+'http://http.debian.net/debian/pool/main/b/binutils/binutils_2.29.1.orig.tar.xz' binutils_2.29.1.orig.tar.xz 19923564 SHA256:0e993857e2e9b006fb541a3e1ce319d00770b27d3c50af2ee9c779388da1915c
+'http://http.debian.net/debian/pool/main/b/binutils/binutils_2.29.1-11.debian.tar.xz' binutils_2.29.1-11.debian.tar.xz 184376 SHA256:2d91e68d7f939d1341042488b6e0069b1b017d429f7341c48af72d83df2a0048
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/binutils/2.29.1-11/ (for browsing the source)
-- https://sources.debian.net/src/binutils/2.29.1-11/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/binutils/2.29.1-11/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `boot=1.3-20-1.1`
 
