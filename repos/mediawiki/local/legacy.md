@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c7031ca96cba6078bc8fda7681f9fa48e4e4101148a9e39eb61076a2f0ccfb20`
-- Created: `2017-12-14T00:56:22.691017205Z`
+- Image ID: `sha256:a5a7c9639b3de3a93cd992518df907890ba06682fe224c758b0fd901ea603e52`
+- Created: `2017-12-20T00:43:48.78117747Z`
 - Virtual Size: ~ 686.57 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -2547,11 +2547,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libxml2/2.9.1+dfsg1-5+deb8u5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libxml2/2.9.1+dfsg1-5+deb8u5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=3.16.51-2`
+### `dpkg` source package: `linux=3.16.51-3`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.16.51-2`
+- `linux-libc-dev:amd64=3.16.51-3`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2562,17 +2562,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=3.16.51-2
-'http://deb.debian.org/debian/pool/main/l/linux/linux_3.16.51-2.dsc' linux_3.16.51-2.dsc 140581 SHA256:618f97d360516eac28995eec02b15817c44e408d78ae6f022b2bbc189de1b868
+$ apt-get source -qq --print-uris linux=3.16.51-3
+'http://deb.debian.org/debian/pool/main/l/linux/linux_3.16.51-3.dsc' linux_3.16.51-3.dsc 140581 SHA256:3f31a3fc86eadfd2a4961b7ee54eeef16a3a853e7b34ddf09438355653e4d4eb
 'http://deb.debian.org/debian/pool/main/l/linux/linux_3.16.51.orig.tar.xz' linux_3.16.51.orig.tar.xz 81841624 SHA256:302253096f6f15696e3bd72359852e1a7a2488431d203fd6bc89372c35d1d7dc
-'http://deb.debian.org/debian/pool/main/l/linux/linux_3.16.51-2.debian.tar.xz' linux_3.16.51-2.debian.tar.xz 3239396 SHA256:ab51d84088730f4d4079fd01464173f32697d9af6671168c0f99dcc21182ce1d
+'http://deb.debian.org/debian/pool/main/l/linux/linux_3.16.51-3.debian.tar.xz' linux_3.16.51-3.debian.tar.xz 3241412 SHA256:3b180a7af76aaad9ba05fa29357df0012fea11449bde650ae09cb65cec2cb61d
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/3.16.51-2/ (for browsing the source)
-- https://sources.debian.net/src/linux/3.16.51-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/3.16.51-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/3.16.51-3/ (for browsing the source)
+- https://sources.debian.net/src/linux/3.16.51-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/3.16.51-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=4.1+Debian13+nmu1`
 
