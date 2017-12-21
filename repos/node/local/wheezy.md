@@ -2958,20 +2958,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.8.0+dfsg1-7+wheezy11
-'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.8.0+dfsg1-7+wheezy11.dsc' libxml2_2.8.0+dfsg1-7+wheezy11.dsc 2677 SHA256:f78d122c23f94e5e71d1d825ed95626cf793600fdc9494e0a04ba8abc8c630c1
-'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.8.0+dfsg1.orig.tar.gz' libxml2_2.8.0+dfsg1.orig.tar.gz 3554683 SHA256:46f339843967e861e81f8427373ff2a3d0a8cb608022dea16aa1d345ddcee338
-'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.8.0+dfsg1-7+wheezy11.debian.tar.gz' libxml2_2.8.0+dfsg1-7+wheezy11.debian.tar.gz 76428 SHA256:57b35fd778ee0c11e3cfcc9795d699d8193ea128c101ecdc3e3d94dadd5b705d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libxml2/2.8.0+dfsg1-7+wheezy11/
 
-- https://sources.debian.net/src/libxml2/2.8.0+dfsg1-7+wheezy11/ (for browsing the source)
-- https://sources.debian.net/src/libxml2/2.8.0+dfsg1-7+wheezy11/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxml2/2.8.0+dfsg1-7+wheezy11/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxrender=1:0.9.7-1+deb7u3`
 
