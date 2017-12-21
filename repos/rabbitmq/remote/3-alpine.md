@@ -1,7 +1,7 @@
 ## `rabbitmq:3-alpine`
 
 ```console
-$ docker pull rabbitmq@sha256:f335e85d4c319c1d933507c819b4de2a7be2376f3f524cf4cb011da974051341
+$ docker pull rabbitmq@sha256:ae2339bfd2154b10af527f0a6d98395f9047efc372f5947df53c9ad77835a6d2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -215,14 +215,14 @@ CMD ["rabbitmq-server"]
 ### `rabbitmq:3-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull rabbitmq@sha256:305d8370624126715acb93784051f034edfa20ce78d5ccb9d97ba474bfe0e042
+$ docker pull rabbitmq@sha256:a2efbb25691fcd412432a7c788f9121a747e6b3e236208a8901fc7ea614d86de
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **30.3 MB (30258779 bytes)**  
+-	Total Size: **30.3 MB (30258803 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c43bd19aa4934391740c7b644b91af094556fd4e83514108640a1089aac5e800`
+-	Image ID: `sha256:7f45d121e52d78b4c37dbe8aeb376bdf2e9257e1f570641a7d17d113b2935cf5`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -263,13 +263,13 @@ VOLUME [/var/lib/rabbitmq]
 RUN ln -sf /var/lib/rabbitmq/.erlang.cookie /root/
 # Wed, 13 Dec 2017 14:58:16 GMT
 RUN ln -sf "$RABBITMQ_HOME/plugins" /plugins
-# Thu, 14 Dec 2017 14:54:50 GMT
-COPY file:fbefc2b109bfcbb0b85bac3dd867f2f7c56fb5f973f64cdecac21aa42b48b676 in /usr/local/bin/ 
-# Thu, 14 Dec 2017 14:54:51 GMT
+# Thu, 21 Dec 2017 14:53:44 GMT
+COPY file:79ec8c98619c7135e6e9c14d6b706cae60e4813a1d7b8a6c4ec4ccf5293c7aa8 in /usr/local/bin/ 
+# Thu, 21 Dec 2017 14:53:45 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 14 Dec 2017 14:54:51 GMT
+# Thu, 21 Dec 2017 14:53:45 GMT
 EXPOSE 25672/tcp 4369/tcp 5671/tcp 5672/tcp
-# Thu, 14 Dec 2017 14:54:52 GMT
+# Thu, 21 Dec 2017 14:53:46 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -310,9 +310,9 @@ CMD ["rabbitmq-server"]
 		Last Modified: Wed, 13 Dec 2017 15:05:54 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a632888662fb3de47edae2aa4ff92130eebfc59de34bb82318dbfdb2c7cc87a3`  
-		Last Modified: Thu, 14 Dec 2017 15:01:54 GMT  
-		Size: 4.2 KB (4188 bytes)  
+	-	`sha256:a61121a42e7b20fe32902650e81a21214c44feeda7680415c72e4f308e439e56`  
+		Last Modified: Thu, 21 Dec 2017 14:55:33 GMT  
+		Size: 4.2 KB (4212 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3-alpine` - linux; 386
