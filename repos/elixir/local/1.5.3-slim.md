@@ -1,17 +1,17 @@
-# `elixir:1.5.2-slim`
+# `elixir:1.5.3-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:36592aca2a7db47602d6ba338d9e15987170042c9d478263aff0656a3f01e875`
-- Created: `2017-12-15T20:34:43.241994658Z`
+- Image ID: `sha256:100417f1f4474959b032afee6d0f6da40511f89149b3a3332e79cad13e82e8f4`
+- Created: `2017-12-20T20:37:09.02608303Z`
 - Virtual Size: ~ 284.50 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["iex"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `OTP_VERSION=20.2.1`
-  - `ELIXIR_VERSION=v1.5.2`
+  - `OTP_VERSION=20.2.2`
+  - `ELIXIR_VERSION=v1.5.3`
   - `LANG=C.UTF-8`
 
 ## `dpkg` (`.deb`-based packages)
@@ -1336,11 +1336,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libusb/2:0.1.12-25/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libusb/2:0.1.12-25/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=3.16.51-2`
+### `dpkg` source package: `linux=3.16.51-3`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.16.51-2`
+- `linux-libc-dev:amd64=3.16.51-3`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1351,17 +1351,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=3.16.51-2
-'http://deb.debian.org/debian/pool/main/l/linux/linux_3.16.51-2.dsc' linux_3.16.51-2.dsc 140581 SHA256:618f97d360516eac28995eec02b15817c44e408d78ae6f022b2bbc189de1b868
+$ apt-get source -qq --print-uris linux=3.16.51-3
+'http://deb.debian.org/debian/pool/main/l/linux/linux_3.16.51-3.dsc' linux_3.16.51-3.dsc 140581 SHA256:3f31a3fc86eadfd2a4961b7ee54eeef16a3a853e7b34ddf09438355653e4d4eb
 'http://deb.debian.org/debian/pool/main/l/linux/linux_3.16.51.orig.tar.xz' linux_3.16.51.orig.tar.xz 81841624 SHA256:302253096f6f15696e3bd72359852e1a7a2488431d203fd6bc89372c35d1d7dc
-'http://deb.debian.org/debian/pool/main/l/linux/linux_3.16.51-2.debian.tar.xz' linux_3.16.51-2.debian.tar.xz 3239396 SHA256:ab51d84088730f4d4079fd01464173f32697d9af6671168c0f99dcc21182ce1d
+'http://deb.debian.org/debian/pool/main/l/linux/linux_3.16.51-3.debian.tar.xz' linux_3.16.51-3.debian.tar.xz 3241412 SHA256:3b180a7af76aaad9ba05fa29357df0012fea11449bde650ae09cb65cec2cb61d
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/3.16.51-2/ (for browsing the source)
-- https://sources.debian.net/src/linux/3.16.51-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/3.16.51-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/3.16.51-3/ (for browsing the source)
+- https://sources.debian.net/src/linux/3.16.51-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/3.16.51-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lksctp-tools=1.0.16+dfsg-2`
 
