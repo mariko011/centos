@@ -6,6 +6,7 @@
 -	[`eggdrop:1.6.21`](#eggdrop1621)
 -	[`eggdrop:1.8`](#eggdrop18)
 -	[`eggdrop:1.8.2`](#eggdrop182)
+-	[`eggdrop:1.8.3rc1`](#eggdrop183rc1)
 -	[`eggdrop:develop`](#eggdropdevelop)
 -	[`eggdrop:latest`](#eggdroplatest)
 -	[`eggdrop:stable`](#eggdropstable)
@@ -389,6 +390,10 @@ CMD ["eggdrop.conf"]
 		Last Modified: Fri, 01 Dec 2017 20:04:50 GMT  
 		Size: 704.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `eggdrop:1.8.3rc1`
+
+**does not exist** (yet?)
 
 ## `eggdrop:develop`
 
