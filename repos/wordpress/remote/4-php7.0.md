@@ -1,7 +1,7 @@
 ## `wordpress:4-php7.0`
 
 ```console
-$ docker pull wordpress@sha256:953dc817536ce22ad2e557425901bd63a0b1494978fd477cafa1a60af9bfda67
+$ docker pull wordpress@sha256:77637fc979898510b17766fb7a7fd9ed33b4e251e5ad1ba96650c105eaa5f94c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -196,14 +196,14 @@ CMD ["apache2-foreground"]
 ### `wordpress:4-php7.0` - linux; arm variant v5
 
 ```console
-$ docker pull wordpress@sha256:79028b3e859f9e9c540c58a38cfc333327c08adab2434b3c76cc034edcf73af1
+$ docker pull wordpress@sha256:6d2ecdf258b0e043a120171124ed9508eb8c5cd66ac269d6f90bdd87bd72b541
 ```
 
 -	Docker Version: 17.06.0-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **153.8 MB (153790132 bytes)**  
+-	Total Size: **153.8 MB (153790266 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4e312724c71d057a3a2d2c5057d145358351e6a616b60d69858bfe49853b4d8b`
+-	Image ID: `sha256:d4e23063973b81f68578c0d3e74ecc9129c845133e423fdc0e4a55aaff774057`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -286,11 +286,11 @@ ENV WORDPRESS_VERSION=4.9.1
 ENV WORDPRESS_SHA1=892d2c23b9d458ec3d44de59b753adb41012e903
 # Wed, 20 Dec 2017 16:23:37 GMT
 RUN set -ex; 	curl -o wordpress.tar.gz -fSL "https://wordpress.org/wordpress-${WORDPRESS_VERSION}.tar.gz"; 	echo "$WORDPRESS_SHA1 *wordpress.tar.gz" | sha1sum -c -; 	tar -xzf wordpress.tar.gz -C /usr/src/; 	rm wordpress.tar.gz; 	chown -R www-data:www-data /usr/src/wordpress
-# Wed, 20 Dec 2017 16:23:39 GMT
-COPY file:db1f48c4963a4352b4c31c18f102b71fcc06a1266db6edd17f8f52458fe13130 in /usr/local/bin/ 
-# Wed, 20 Dec 2017 16:23:39 GMT
+# Sat, 23 Dec 2017 20:06:54 GMT
+COPY file:3d3c99e98daa50fa9919315d4531e921f800fc011486bda46e9d6dcea82dd53c in /usr/local/bin/ 
+# Sat, 23 Dec 2017 20:06:54 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 20 Dec 2017 16:23:40 GMT
+# Sat, 23 Dec 2017 20:06:55 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -367,9 +367,9 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 20 Dec 2017 16:34:19 GMT  
 		Size: 9.5 MB (9471274 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a7fc21ae88bbda3f069e9a569e91849e151f78631216887ab97bb740bf196db2`  
-		Last Modified: Wed, 20 Dec 2017 16:34:15 GMT  
-		Size: 3.2 KB (3221 bytes)  
+	-	`sha256:c1b28acd2ad5926257f00df9c36e9cfbec7e686614183cbcb139fe1ef33d3e48`  
+		Last Modified: Sat, 23 Dec 2017 20:08:21 GMT  
+		Size: 3.4 KB (3355 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `wordpress:4-php7.0` - linux; arm variant v7
