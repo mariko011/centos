@@ -1,10 +1,10 @@
-# `python:3.6.3-jessie`
+# `python:3.6.4-jessie`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a8f7167de3124163e52162d5c690b1daa49e7f88e674bf68d479efa3685713a2`
-- Created: `2017-12-12T16:41:55.207916126Z`
-- Virtual Size: ~ 691.35 Mb  
+- Image ID: `sha256:c1e459c00dc3205dd530a3a688d562dc6d8153beb219c74168823ccb1709b3a7`
+- Created: `2017-12-21T01:36:08.8251997Z`
+- Virtual Size: ~ 691.67 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["python3"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D`
-  - `PYTHON_VERSION=3.6.3`
+  - `PYTHON_VERSION=3.6.4`
   - `PYTHON_PIP_VERSION=9.0.1`
 
 ## `dpkg` (`.deb`-based packages)
