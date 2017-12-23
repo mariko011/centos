@@ -1,10 +1,10 @@
-# `rabbitmq:3.7.0-management`
+# `rabbitmq:3.7.2-management`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a8175b3575a934b9fdd10e5f1e48840a9baa461a132ec7738a4bc1ff27796888`
-- Created: `2017-12-13T22:41:10.877290371Z`
-- Virtual Size: ~ 150.90 Mb  
+- Image ID: `sha256:6cb6e2f951a8f01a9708e97d8d91c1559bb89a703fe1d2e42ccf2699a7fa21fe`
+- Created: `2017-12-23T15:42:41.734142399Z`
+- Virtual Size: ~ 150.94 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -15,9 +15,9 @@
   - `RABBITMQ_LOGS=-`
   - `RABBITMQ_SASL_LOGS=-`
   - `RABBITMQ_GPG_KEY=0A9AF2115F4687BD29803A206B73A36E6026DFCA`
-  - `RABBITMQ_VERSION=3.7.0`
-  - `RABBITMQ_GITHUB_TAG=v3.7.0`
-  - `RABBITMQ_DEBIAN_VERSION=3.7.0-1`
+  - `RABBITMQ_VERSION=3.7.2`
+  - `RABBITMQ_GITHUB_TAG=v3.7.2`
+  - `RABBITMQ_DEBIAN_VERSION=3.7.2-1`
   - `LANG=C.UTF-8`
   - `HOME=/var/lib/rabbitmq`
 
@@ -597,20 +597,13 @@ Licenses: (parsed from: `/usr/share/doc/erlang-asn1/copyright`, `/usr/share/doc/
 - `Apache-2.0`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris erlang=1:20.1.7+dfsg-1
-'http://deb.debian.org/debian/pool/main/e/erlang/erlang_20.1.7+dfsg-1.dsc' erlang_20.1.7+dfsg-1.dsc 5113 SHA256:f4a1111d670da3d11be64904c4d514824787124e4403855b8106e68289418b16
-'http://deb.debian.org/debian/pool/main/e/erlang/erlang_20.1.7+dfsg.orig.tar.xz' erlang_20.1.7+dfsg.orig.tar.xz 42072520 SHA256:30b9b7a26d774451b61f952f872e317d9faca9fa4e9c233581257b55bc44ff72
-'http://deb.debian.org/debian/pool/main/e/erlang/erlang_20.1.7+dfsg-1.debian.tar.xz' erlang_20.1.7+dfsg-1.debian.tar.xz 61360 SHA256:ebd4dcacfe073fb73c68b01cb33a12ac5214ce65b80874954345998f1da6f8d7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/erlang/1:20.1.7+dfsg-1/
 
-- https://sources.debian.net/src/erlang/1:20.1.7+dfsg-1/ (for browsing the source)
-- https://sources.debian.net/src/erlang/1:20.1.7+dfsg-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/erlang/1:20.1.7+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `expat=2.2.0-2+deb9u1`
 
@@ -1819,11 +1812,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/python2.7/2.7.13-2+deb9u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/python2.7/2.7.13-2+deb9u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `rabbitmq-server=3.7.0-1`
+### `dpkg` source package: `rabbitmq-server=3.7.2-1`
 
 Binary Packages:
 
-- `rabbitmq-server=3.7.0-1`
+- `rabbitmq-server=3.7.2-1`
 
 Licenses: (parsed from: `/usr/share/doc/rabbitmq-server/copyright`)
 
