@@ -1,7 +1,7 @@
 ## `ruby:latest`
 
 ```console
-$ docker pull ruby@sha256:7f26c5041ea40b387d8532e128f458e25b937f0b410e76b0e4252a576ad63aa6
+$ docker pull ruby@sha256:78e357e531ceded863204342c990eeb8847fedfe60179a534ba4e6db16b3024a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16,14 +16,14 @@ $ docker pull ruby@sha256:7f26c5041ea40b387d8532e128f458e25b937f0b410e76b0e4252a
 ### `ruby:latest` - linux; amd64
 
 ```console
-$ docker pull ruby@sha256:7b219b5bbdf9977a6eabf566bf7a6a0c783a98f4b05a905ffc9cf8f4f51552d9
+$ docker pull ruby@sha256:3a3ceb2b6de2a4a5acc737c8caf66cdda8628bea69097ea9293c1380106aeec5
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **274.7 MB (274706323 bytes)**  
+-	Total Size: **274.7 MB (274700375 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4a2924cdb36330e610f7ccdbd4757b2d99d774349e35e0eaa141d65af401dd85`
+-	Image ID: `sha256:408a65e8d5ca123a2f93f4f32244f6898ca14c96487c544d09850c939d7041b5`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -49,19 +49,19 @@ ENV RUBY_VERSION=2.4.3
 ENV RUBY_DOWNLOAD_SHA256=23677d40bf3b7621ba64593c978df40b1e026d8653c74a0599f0ead78ed92b51
 # Fri, 15 Dec 2017 20:57:52 GMT
 ENV RUBYGEMS_VERSION=2.7.3
-# Fri, 15 Dec 2017 20:57:52 GMT
-ENV BUNDLER_VERSION=1.16.0
-# Fri, 15 Dec 2017 21:00:46 GMT
+# Sat, 23 Dec 2017 16:14:12 GMT
+ENV BUNDLER_VERSION=1.16.1
+# Sat, 23 Dec 2017 16:17:05 GMT
 RUN set -ex 		&& buildDeps=' 		bison 		dpkg-dev 		libgdbm-dev 		ruby 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& rm -rf /var/lib/apt/lists/* 		&& wget -O ruby.tar.xz "https://cache.ruby-lang.org/pub/ruby/${RUBY_MAJOR%-rc}/ruby-$RUBY_VERSION.tar.xz" 	&& echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum -c - 		&& mkdir -p /usr/src/ruby 	&& tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1 	&& rm ruby.tar.xz 		&& cd /usr/src/ruby 		&& { 		echo '#define ENABLE_PATH_CHECK 0'; 		echo; 		cat file.c; 	} > file.c.new 	&& mv file.c.new file.c 		&& autoconf 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 	&& make -j "$(nproc)" 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& cd / 	&& rm -r /usr/src/ruby 		&& gem update --system "$RUBYGEMS_VERSION" 	&& gem install bundler --version "$BUNDLER_VERSION" --force
-# Fri, 15 Dec 2017 21:00:47 GMT
+# Sat, 23 Dec 2017 16:17:05 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 15 Dec 2017 21:00:47 GMT
+# Sat, 23 Dec 2017 16:17:05 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 15 Dec 2017 21:00:47 GMT
+# Sat, 23 Dec 2017 16:17:06 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 15 Dec 2017 21:00:48 GMT
+# Sat, 23 Dec 2017 16:17:06 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" 	&& chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Fri, 15 Dec 2017 21:00:48 GMT
+# Sat, 23 Dec 2017 16:17:07 GMT
 CMD ["irb"]
 ```
 
@@ -86,13 +86,13 @@ CMD ["irb"]
 		Last Modified: Tue, 12 Dec 2017 17:39:36 GMT  
 		Size: 205.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f5de5a5e0d79e7ae4a5fb0a2b64f681458f2ff3278bf2821d708267c36984aee`  
-		Last Modified: Fri, 15 Dec 2017 21:42:54 GMT  
-		Size: 24.6 MB (24618541 bytes)  
+	-	`sha256:be5e68b075371d4473edcd9ecec537ce1122eb69c26e3c4b85375790f0a9c756`  
+		Last Modified: Sat, 23 Dec 2017 17:04:11 GMT  
+		Size: 24.6 MB (24612595 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cb1471ac91bb897a8e85ac8d502ccf96014e2718f79835ceb7bcd7da197036e0`  
-		Last Modified: Fri, 15 Dec 2017 21:42:46 GMT  
-		Size: 165.0 B  
+	-	`sha256:907309e0b3558b127b50f5eeedeba777036d31644003ff41048e728bf9314478`  
+		Last Modified: Sat, 23 Dec 2017 17:04:02 GMT  
+		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ruby:latest` - linux; arm variant v5
