@@ -523,14 +523,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris expat=2.2.5-0ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.2.5-0ubuntu2.dsc' expat_2.2.5-0ubuntu2.dsc 2307 SHA256:73f342eebc06642cee2488f7ca11d8d464216cdbbf2386802a27b383ef70ac4b
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.2.5.orig.tar.bz2' expat_2.2.5.orig.tar.bz2 510868 SHA256:d9dc32efba7e74f788fcc4f212a43216fc37cf5f23f4c2339664d473353aedf6
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.2.5-0ubuntu2.debian.tar.xz' expat_2.2.5-0ubuntu2.debian.tar.xz 10860 SHA256:ae07abb1187de6bd7cfe5368150311ccff951577d50c1767af50f578087cb173
-```
 
 ### `dpkg` source package: `explorercanvas=0.r3-4`
 

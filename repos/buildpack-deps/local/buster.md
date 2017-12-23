@@ -303,19 +303,13 @@ Licenses: (parsed from: `/usr/share/doc/autotools-dev/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris autotools-dev=20161112.1+nmu1
-'http://deb.debian.org/debian/pool/main/a/autotools-dev/autotools-dev_20161112.1+nmu1.dsc' autotools-dev_20161112.1+nmu1.dsc 1675 SHA256:74baa661a78ee3bbcbffb4a92d7e9cd3197867185c3e46537665db77a86854d8
-'http://deb.debian.org/debian/pool/main/a/autotools-dev/autotools-dev_20161112.1+nmu1.tar.xz' autotools-dev_20161112.1+nmu1.tar.xz 65624 SHA256:d4c36e186de8655917b0b8d63712a5dc48493f04a240e77870b1025a1654c890
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/autotools-dev/20161112.1+nmu1/
 
-- https://sources.debian.net/src/autotools-dev/20161112.1+nmu1/ (for browsing the source)
-- https://sources.debian.net/src/autotools-dev/20161112.1+nmu1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/autotools-dev/20161112.1+nmu1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `avahi=0.7-3`
 
@@ -1668,20 +1662,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-freedesktop/copyright`, `/usr/sha
 - `LGPL-2+`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gobject-introspection=1.54.1-3
-'http://deb.debian.org/debian/pool/main/g/gobject-introspection/gobject-introspection_1.54.1-3.dsc' gobject-introspection_1.54.1-3.dsc 2934 SHA256:eae96487dc27631e1ea8a366ede81e8128f5494031d63d6704c2aeae6b8e083b
-'http://deb.debian.org/debian/pool/main/g/gobject-introspection/gobject-introspection_1.54.1.orig.tar.xz' gobject-introspection_1.54.1.orig.tar.xz 1392504 SHA256:b88ded5e5f064ab58a93aadecd6d58db2ec9d970648534c63807d4f9a7bb877e
-'http://deb.debian.org/debian/pool/main/g/gobject-introspection/gobject-introspection_1.54.1-3.debian.tar.xz' gobject-introspection_1.54.1-3.debian.tar.xz 20140 SHA256:36ecc6f19d15e87145a079db3bf153679b6e4796b236193f90b788855f97c68b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gobject-introspection/1.54.1-3/
 
-- https://sources.debian.net/src/gobject-introspection/1.54.1-3/ (for browsing the source)
-- https://sources.debian.net/src/gobject-introspection/1.54.1-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gobject-introspection/1.54.1-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `graphite2=1.3.10-6`
 
@@ -2134,20 +2121,13 @@ Licenses: (parsed from: `/usr/share/doc/iproute2/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris iproute2=4.9.0-2.1
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.9.0-2.1.dsc' iproute2_4.9.0-2.1.dsc 2306 SHA256:06ebc3f13ed356aecddfcb3aea626b62edafcd0f77b2cbdf578f17822a345a68
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.9.0.orig.tar.xz' iproute2_4.9.0.orig.tar.xz 613032 SHA256:c0f30f043f7767cc1b2cd2197b08d4e9b2392c95823fabe30bbce308c30116c4
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.9.0-2.1.debian.tar.xz' iproute2_4.9.0-2.1.debian.tar.xz 146824 SHA256:d02a9615e4425fd7e1dcd34b1a6ab33768d127f870d8b6ae549c7705c2eea6cd
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/iproute2/4.9.0-2.1/
 
-- https://sources.debian.net/src/iproute2/4.9.0-2.1/ (for browsing the source)
-- https://sources.debian.net/src/iproute2/4.9.0-2.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/iproute2/4.9.0-2.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `isl=0.18-1`
 
@@ -2279,20 +2259,13 @@ Licenses: (parsed from: `/usr/share/doc/liblcms2-2/copyright`, `/usr/share/doc/l
 - `GPL-2+`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lcms2=2.8-4
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.8-4.dsc' lcms2_2.8-4.dsc 1997 SHA256:3b92900948848eef62fa91b78f6b6661bd84eae6c49c224248c7c48a09b5f028
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.8.orig.tar.gz' lcms2_2.8.orig.tar.gz 6687005 SHA256:66d02b229d2ea9474e62c2b6cd6720fde946155cd1d0d2bffdab829790a0fb22
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.8-4.debian.tar.xz' lcms2_2.8-4.debian.tar.xz 11036 SHA256:50c0040fc92e1f2ca27740f608ae248acdd5b21a633f34cf2fe4d66f1d05c4b4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/lcms2/2.8-4/
 
-- https://sources.debian.net/src/lcms2/2.8-4/ (for browsing the source)
-- https://sources.debian.net/src/lcms2/2.8-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/lcms2/2.8-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libassuan=2.4.5-1`
 
@@ -2400,20 +2373,13 @@ Licenses: (parsed from: `/usr/share/doc/libcroco3/copyright`)
 
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libcroco=0.6.12-1
-'http://deb.debian.org/debian/pool/main/libc/libcroco/libcroco_0.6.12-1.dsc' libcroco_0.6.12-1.dsc 2289 SHA256:963f0f4235d7fa3ba79bb9675ec836bcb2430e6adb1072e0f66ba17a1ba06994
-'http://deb.debian.org/debian/pool/main/libc/libcroco/libcroco_0.6.12.orig.tar.xz' libcroco_0.6.12.orig.tar.xz 482028 SHA256:ddc4b5546c9fb4280a5017e2707fbd4839034ed1aba5b7d4372212f34f84f860
-'http://deb.debian.org/debian/pool/main/libc/libcroco/libcroco_0.6.12-1.debian.tar.xz' libcroco_0.6.12-1.debian.tar.xz 7988 SHA256:179700f1a51ebdb786e071d4f189e3725ac818a9105cfad896659a71c71751b0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libcroco/0.6.12-1/
 
-- https://sources.debian.net/src/libcroco/0.6.12-1/ (for browsing the source)
-- https://sources.debian.net/src/libcroco/0.6.12-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libcroco/0.6.12-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libdatrie=0.2.10-5`
 
@@ -4226,20 +4192,13 @@ Licenses: (parsed from: `/usr/share/doc/libhogweed4/copyright`, `/usr/share/doc/
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nettle=3.3-2
-'http://deb.debian.org/debian/pool/main/n/nettle/nettle_3.3-2.dsc' nettle_3.3-2.dsc 2022 SHA256:502530701faa5bcebc73c55aafd53096d650f55c77dec996fab96796a60ac78d
-'http://deb.debian.org/debian/pool/main/n/nettle/nettle_3.3.orig.tar.gz' nettle_3.3.orig.tar.gz 1887927 SHA256:46942627d5d0ca11720fec18d81fc38f7ef837ea4197c1f630e71ce0d470b11e
-'http://deb.debian.org/debian/pool/main/n/nettle/nettle_3.3-2.debian.tar.xz' nettle_3.3-2.debian.tar.xz 19812 SHA256:91b1e04d3d0cc188f3490fe8bc7f2ad9ec60b1c6f6b29f53b6a72dbedb40dc0e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nettle/3.3-2/
 
-- https://sources.debian.net/src/nettle/3.3-2/ (for browsing the source)
-- https://sources.debian.net/src/nettle/3.3-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nettle/3.3-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `nghttp2=1.28.0-1`
 

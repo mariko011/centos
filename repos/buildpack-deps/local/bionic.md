@@ -151,14 +151,13 @@ Licenses: (parsed from: `/usr/share/doc/libatk1.0-0/copyright`, `/usr/share/doc/
 
 - `LGPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris atk1.0=2.26.1-1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/atk1.0/atk1.0_2.26.1-1.dsc' atk1.0_2.26.1-1.dsc 2807 SHA256:e78355857b23d7adad5ce60f20f64c12ddf31db276f846839286d018ed608fbd
-'http://archive.ubuntu.com/ubuntu/pool/main/a/atk1.0/atk1.0_2.26.1.orig.tar.xz' atk1.0_2.26.1.orig.tar.xz 711960 SHA256:ef00ff6b83851dddc8db38b4d9faeffb99572ba150b0664ee02e46f015ea97cb
-'http://archive.ubuntu.com/ubuntu/pool/main/a/atk1.0/atk1.0_2.26.1-1.debian.tar.xz' atk1.0_2.26.1-1.debian.tar.xz 11032 SHA256:863141c12a756c7e746657cfd40ce8f8c7cef7f47f032a4ec2fcc045b4fa2537
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/atk1.0/2.26.1-1/
+
 
 ### `dpkg` source package: `attr=1:2.4.47-2build1`
 
@@ -458,14 +457,13 @@ Licenses: (parsed from: `/usr/share/doc/libcairo-gobject2/copyright`, `/usr/shar
 
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cairo=1.15.8-2
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cairo/cairo_1.15.8-2.dsc' cairo_1.15.8-2.dsc 2558 SHA256:ef943d81052180d6f1bbd0e57802def19758c0c0ad283f3ba0a52f1f326f31f4
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cairo/cairo_1.15.8.orig.tar.xz' cairo_1.15.8.orig.tar.xz 41841808 SHA256:3224260a4f8e22e7ea95faf706ae111b974833dd74185be1db5ebc7618a98464
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cairo/cairo_1.15.8-2.debian.tar.xz' cairo_1.15.8-2.debian.tar.xz 29100 SHA256:8eaa5425060b88e99e35b18a68053bf8442898bc08f6430dd27e5b21c05a6dd7
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/cairo/1.15.8-2/
+
 
 ### `dpkg` source package: `cdebconf=0.213ubuntu1`
 
@@ -855,14 +853,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris expat=2.2.5-0ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.2.5-0ubuntu2.dsc' expat_2.2.5-0ubuntu2.dsc 2307 SHA256:73f342eebc06642cee2488f7ca11d8d464216cdbbf2386802a27b383ef70ac4b
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.2.5.orig.tar.bz2' expat_2.2.5.orig.tar.bz2 510868 SHA256:d9dc32efba7e74f788fcc4f212a43216fc37cf5f23f4c2339664d473353aedf6
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.2.5-0ubuntu2.debian.tar.xz' expat_2.2.5-0ubuntu2.debian.tar.xz 10860 SHA256:ae07abb1187de6bd7cfe5368150311ccff951577d50c1767af50f578087cb173
-```
 
 ### `dpkg` source package: `explorercanvas=0.r3-4`
 
@@ -1323,14 +1316,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-freedesktop/copyright`, `/usr/sha
 - `LGPL-2+`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gobject-introspection=1.54.1-3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gobject-introspection/gobject-introspection_1.54.1-3.dsc' gobject-introspection_1.54.1-3.dsc 2934 SHA256:eae96487dc27631e1ea8a366ede81e8128f5494031d63d6704c2aeae6b8e083b
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gobject-introspection/gobject-introspection_1.54.1.orig.tar.xz' gobject-introspection_1.54.1.orig.tar.xz 1392504 SHA256:b88ded5e5f064ab58a93aadecd6d58db2ec9d970648534c63807d4f9a7bb877e
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gobject-introspection/gobject-introspection_1.54.1-3.debian.tar.xz' gobject-introspection_1.54.1-3.debian.tar.xz 20140 SHA256:36ecc6f19d15e87145a079db3bf153679b6e4796b236193f90b788855f97c68b
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/gobject-introspection/1.54.1-3/
+
 
 ### `dpkg` source package: `graphite2=1.3.10-8`
 
@@ -3519,14 +3511,13 @@ Licenses: (parsed from: `/usr/share/doc/libpango-1.0-0/copyright`, `/usr/share/d
 - `LGPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pango1.0=1.40.13-2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/pango1.0_1.40.13-2.dsc' pango1.0_1.40.13-2.dsc 3338 SHA256:eea190fd4b7266e13d774c8007bc390f8e4827feb82a88a2b5e6709d322bc45e
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/pango1.0_1.40.13.orig.tar.xz' pango1.0_1.40.13.orig.tar.xz 858044 SHA256:f84e98db1078772ff4935b40a1629ff82ef0dfdd08d2cbcc0130c8c437857196
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/pango1.0_1.40.13-2.debian.tar.xz' pango1.0_1.40.13-2.debian.tar.xz 28312 SHA256:6b98bc1912b6fa19df0888101d8b233a47aceba3583c7ec8f4f1986130ecf632
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/pango1.0/1.40.13-2/
+
 
 ### `dpkg` source package: `patch=2.7.5-1build1`
 
@@ -4131,14 +4122,13 @@ Licenses: (parsed from: `/usr/share/doc/libtiff-dev/copyright`, `/usr/share/doc/
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tiff=4.0.9-1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.9-1.dsc' tiff_4.0.9-1.dsc 2184 SHA256:ace4bf1ac168659a23a2c5c07efd44567f6e7a8e8a641a53f91d9964cf4cdcdc
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.9.orig.tar.gz' tiff_4.0.9.orig.tar.gz 2305681 SHA256:6e7bdeec2c310734e734d19aae3a71ebe37a4d842e0e23dbb1b8921c0026cfcd
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.9-1.debian.tar.xz' tiff_4.0.9-1.debian.tar.xz 16920 SHA256:c18331f2c794e874fe0d1cdc61f12cb6f9802af3347a46b0559f417a427516df
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/tiff/4.0.9-1/
+
 
 ### `dpkg` source package: `ubuntu-keyring=2016.10.27`
 
