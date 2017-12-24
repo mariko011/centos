@@ -1484,20 +1484,13 @@ Licenses: (parsed from: `/usr/share/doc/iproute2/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris iproute2=4.9.0-2.1
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.9.0-2.1.dsc' iproute2_4.9.0-2.1.dsc 2306 SHA256:06ebc3f13ed356aecddfcb3aea626b62edafcd0f77b2cbdf578f17822a345a68
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.9.0.orig.tar.xz' iproute2_4.9.0.orig.tar.xz 613032 SHA256:c0f30f043f7767cc1b2cd2197b08d4e9b2392c95823fabe30bbce308c30116c4
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.9.0-2.1.debian.tar.xz' iproute2_4.9.0-2.1.debian.tar.xz 146824 SHA256:d02a9615e4425fd7e1dcd34b1a6ab33768d127f870d8b6ae549c7705c2eea6cd
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/iproute2/4.9.0-2.1/
 
-- https://sources.debian.net/src/iproute2/4.9.0-2.1/ (for browsing the source)
-- https://sources.debian.net/src/iproute2/4.9.0-2.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/iproute2/4.9.0-2.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `isl=0.18-1`
 
@@ -2606,16 +2599,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris littler=0.3.2-1
-'http://deb.debian.org/debian/pool/main/l/littler/littler_0.3.2-1.dsc' littler_0.3.2-1.dsc 1691 SHA256:d770b4958e43d2d6f4ae324edf48d96a5bda3ecbca5d9190d670178a565de8e7
-'http://deb.debian.org/debian/pool/main/l/littler/littler_0.3.2.orig.tar.gz' littler_0.3.2.orig.tar.gz 87019 SHA256:32e13e9cd0bab43a330e8b48180e0a7c2e3c337dc6ddb118cbaf0b247da7dc2a
-'http://deb.debian.org/debian/pool/main/l/littler/littler_0.3.2-1.diff.gz' littler_0.3.2-1.diff.gz 4425 SHA256:c78710a8f0590ac94e84813d8d8d34798316db7f7ddf3b761576ea51d9e2b78f
+'http://http.debian.net/debian/pool/main/l/littler/littler_0.3.2-1.dsc' littler_0.3.2-1.dsc 1691 SHA256:d770b4958e43d2d6f4ae324edf48d96a5bda3ecbca5d9190d670178a565de8e7
+'http://http.debian.net/debian/pool/main/l/littler/littler_0.3.2.orig.tar.gz' littler_0.3.2.orig.tar.gz 87019 SHA256:32e13e9cd0bab43a330e8b48180e0a7c2e3c337dc6ddb118cbaf0b247da7dc2a
+'http://http.debian.net/debian/pool/main/l/littler/littler_0.3.2-1.diff.gz' littler_0.3.2-1.diff.gz 4425 SHA256:c78710a8f0590ac94e84813d8d8d34798316db7f7ddf3b761576ea51d9e2b78f
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/littler/0.3.2-1/ (for browsing the source)
-- https://sources.debian.net/src/littler/0.3.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/littler/0.3.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=9.20170808`
 
@@ -2877,16 +2864,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris nettle=3.3-2
-'http://deb.debian.org/debian/pool/main/n/nettle/nettle_3.3-2.dsc' nettle_3.3-2.dsc 2022 SHA256:502530701faa5bcebc73c55aafd53096d650f55c77dec996fab96796a60ac78d
-'http://deb.debian.org/debian/pool/main/n/nettle/nettle_3.3.orig.tar.gz' nettle_3.3.orig.tar.gz 1887927 SHA256:46942627d5d0ca11720fec18d81fc38f7ef837ea4197c1f630e71ce0d470b11e
-'http://deb.debian.org/debian/pool/main/n/nettle/nettle_3.3-2.debian.tar.xz' nettle_3.3-2.debian.tar.xz 19812 SHA256:91b1e04d3d0cc188f3490fe8bc7f2ad9ec60b1c6f6b29f53b6a72dbedb40dc0e
+'http://http.debian.net/debian/pool/main/n/nettle/nettle_3.3-2.dsc' nettle_3.3-2.dsc 2022 SHA256:502530701faa5bcebc73c55aafd53096d650f55c77dec996fab96796a60ac78d
+'http://http.debian.net/debian/pool/main/n/nettle/nettle_3.3.orig.tar.gz' nettle_3.3.orig.tar.gz 1887927 SHA256:46942627d5d0ca11720fec18d81fc38f7ef837ea4197c1f630e71ce0d470b11e
+'http://http.debian.net/debian/pool/main/n/nettle/nettle_3.3-2.debian.tar.xz' nettle_3.3-2.debian.tar.xz 19812 SHA256:91b1e04d3d0cc188f3490fe8bc7f2ad9ec60b1c6f6b29f53b6a72dbedb40dc0e
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/nettle/3.3-2/ (for browsing the source)
-- https://sources.debian.net/src/nettle/3.3-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nettle/3.3-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `nghttp2=1.28.0-1`
 
@@ -3758,16 +3739,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris tiff=4.0.9-1
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.9-1.dsc' tiff_4.0.9-1.dsc 2184 SHA256:ace4bf1ac168659a23a2c5c07efd44567f6e7a8e8a641a53f91d9964cf4cdcdc
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.9.orig.tar.gz' tiff_4.0.9.orig.tar.gz 2305681 SHA256:6e7bdeec2c310734e734d19aae3a71ebe37a4d842e0e23dbb1b8921c0026cfcd
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.9-1.debian.tar.xz' tiff_4.0.9-1.debian.tar.xz 16920 SHA256:c18331f2c794e874fe0d1cdc61f12cb6f9802af3347a46b0559f417a427516df
+'http://http.debian.net/debian/pool/main/t/tiff/tiff_4.0.9-1.dsc' tiff_4.0.9-1.dsc 2184 SHA256:ace4bf1ac168659a23a2c5c07efd44567f6e7a8e8a641a53f91d9964cf4cdcdc
+'http://http.debian.net/debian/pool/main/t/tiff/tiff_4.0.9.orig.tar.gz' tiff_4.0.9.orig.tar.gz 2305681 SHA256:6e7bdeec2c310734e734d19aae3a71ebe37a4d842e0e23dbb1b8921c0026cfcd
+'http://http.debian.net/debian/pool/main/t/tiff/tiff_4.0.9-1.debian.tar.xz' tiff_4.0.9-1.debian.tar.xz 16920 SHA256:c18331f2c794e874fe0d1cdc61f12cb6f9802af3347a46b0559f417a427516df
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/tiff/4.0.9-1/ (for browsing the source)
-- https://sources.debian.net/src/tiff/4.0.9-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tiff/4.0.9-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tk8.6=8.6.7-1`
 
@@ -3948,20 +3923,13 @@ Licenses: (parsed from: `/usr/share/doc/vim-common/copyright`, `/usr/share/doc/v
 - `XPM`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris vim=2:8.0.1257-2
-'http://deb.debian.org/debian/pool/main/v/vim/vim_8.0.1257-2.dsc' vim_8.0.1257-2.dsc 2990 SHA256:3c62c511bb700f0aaaf30eec3e7c209a476d27ffb7d098800571b2b0e4c868c6
-'http://deb.debian.org/debian/pool/main/v/vim/vim_8.0.1257.orig.tar.gz' vim_8.0.1257.orig.tar.gz 13383856 SHA256:21636c201b95e75f118e158ecc359323c6f0b927c8e27725559615349fd79a9c
-'http://deb.debian.org/debian/pool/main/v/vim/vim_8.0.1257-2.debian.tar.xz' vim_8.0.1257-2.debian.tar.xz 179416 SHA256:5a01f98a32a3f2d0ee18068f5955715aab1a00601facc843154bc4d70d8f56b0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/vim/2:8.0.1257-2/
 
-- https://sources.debian.net/src/vim/2:8.0.1257-2/ (for browsing the source)
-- https://sources.debian.net/src/vim/2:8.0.1257-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/vim/2:8.0.1257-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.19.2-1`
 
