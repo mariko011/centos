@@ -7351,14 +7351,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-rosdistro=0.6.2-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro/python-rosdistro_0.6.2-1.dsc' python-rosdistro_0.6.2-1.dsc 911 SHA256:89501eb5d73746ca7f8f4cccffeeaa21fd9f3913383046b00dd41988c27dddf9
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro/python-rosdistro_0.6.2.orig.tar.gz' python-rosdistro_0.6.2.orig.tar.gz 9185 SHA256:d3399b3a2a6306477da9222684217ac5820b691311e5391213278d85a693b86e
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro/python-rosdistro_0.6.2-1.debian.tar.xz' python-rosdistro_0.6.2-1.debian.tar.xz 1088 SHA256:3253c798ed57d86f4561287398c54e9de47554f9f945da1cd3171bb0cd9afb80
-```
 
 ### `dpkg` source package: `python-rosinstall=0.7.8-1`
 
