@@ -1,10 +1,10 @@
-# `haproxy:1.8.1-alpine`
+# `haproxy:1.8.2-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:23ee70d2a0924d8e793b0081d936c7f5a1be5a1c0ee2462f84b8f921b8a5d2dc`
-- Created: `2017-12-05T03:23:23.881596673Z`
-- Virtual Size: ~ 16.76 Mb  
+- Image ID: `sha256:05f61f7822a49e4eff882a876edc70b1bd8e4e87583d5ae5ba60ad0cb443d2d4`
+- Created: `2017-12-23T15:29:03.029387986Z`
+- Virtual Size: ~ 16.78 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -12,7 +12,7 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `HAPROXY_MAJOR=1.8`
-  - `HAPROXY_VERSION=1.8.1`
-  - `HAPROXY_MD5=e42892d4b6ee33200fccaa1d81837e49`
+  - `HAPROXY_VERSION=1.8.2`
+  - `HAPROXY_MD5=5e72829793e163bea93da1df6b4aaa1e`
   - `LUA_VERSION=5.3.4`
   - `LUA_SHA1=79790cfd40e09ba796b01a571d4d63b52b1cd950`
