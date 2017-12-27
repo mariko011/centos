@@ -590,21 +590,13 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 - `LGPL-2.0 with AOSDL exception`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cups=2.2.6-2
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.6-2.dsc' cups_2.2.6-2.dsc 3372 SHA256:025d5242f449dd3d0fcba6b627fa441711fb62e1281cca7ca79af66204a3543d
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.6.orig.tar.gz' cups_2.2.6.orig.tar.gz 10315433 SHA256:40385778c2b3bdf55030d1c999734e22774c79e3425d91339ce677825620169b
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.6.orig.tar.gz.asc' cups_2.2.6.orig.tar.gz.asc 850 SHA256:1f6cccf87c20951f4181efab9d3767c4747cf5127744aa918156afb9cd0b8ca7
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.6-2.debian.tar.xz' cups_2.2.6-2.debian.tar.xz 350204 SHA256:f91808ebb2c80eac18007d8f99d1e47c3ceb2902c4190cf8635cbd21a95c53f4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/cups/2.2.6-2/
 
-- https://sources.debian.net/src/cups/2.2.6-2/ (for browsing the source)
-- https://sources.debian.net/src/cups/2.2.6-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cups/2.2.6-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `curl=7.57.0-1`
 
@@ -1801,20 +1793,13 @@ Licenses: (parsed from: `/usr/share/doc/gtk-update-icon-cache/copyright`)
 - `SWL`
 - `other`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gtk+3.0=3.22.24-3
-'http://deb.debian.org/debian/pool/main/g/gtk+3.0/gtk+3.0_3.22.24-3.dsc' gtk+3.0_3.22.24-3.dsc 3893 SHA256:19305930a8b17be2b1558c4b6ff018696d9a912bed51c776a29b1fecbc2bdf36
-'http://deb.debian.org/debian/pool/main/g/gtk+3.0/gtk+3.0_3.22.24.orig.tar.xz' gtk+3.0_3.22.24.orig.tar.xz 18866048 SHA256:cbb16e4cfc928ab8f5f22f7290616f95f6ebc8c97cc724a2007b07ced833592b
-'http://deb.debian.org/debian/pool/main/g/gtk+3.0/gtk+3.0_3.22.24-3.debian.tar.xz' gtk+3.0_3.22.24-3.debian.tar.xz 146880 SHA256:edef2954c6332d55554a53789d7c732e45b6650f6d11f3b6ed616b08a2814efa
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gtk+3.0/3.22.24-3/
 
-- https://sources.debian.net/src/gtk+3.0/3.22.24-3/ (for browsing the source)
-- https://sources.debian.net/src/gtk+3.0/3.22.24-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gtk+3.0/3.22.24-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gts=0.7.6+darcs121130-4`
 
@@ -4868,19 +4853,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-defaults=3.6.3-2
-'http://deb.debian.org/debian/pool/main/p/python3-defaults/python3-defaults_3.6.3-2.dsc' python3-defaults_3.6.3-2.dsc 2784 SHA256:df91831a9a307f5e7f3fabdda52f21eeffd2f683cbeca5a581c37c1c0912549d
-'http://deb.debian.org/debian/pool/main/p/python3-defaults/python3-defaults_3.6.3-2.tar.gz' python3-defaults_3.6.3-2.tar.gz 131122 SHA256:1bb48cb17db5e2a39006c44c8ad6d9c832b1a2a3ac0021122e6d8879b5ee9fba
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3-defaults/3.6.3-2/
 
-- https://sources.debian.net/src/python3-defaults/3.6.3-2/ (for browsing the source)
-- https://sources.debian.net/src/python3-defaults/3.6.3-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3-defaults/3.6.3-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python3.6=3.6.4~rc1-1`
 
@@ -4911,20 +4890,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.6-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.6=3.6.4~rc1-1
-'http://deb.debian.org/debian/pool/main/p/python3.6/python3.6_3.6.4~rc1-1.dsc' python3.6_3.6.4~rc1-1.dsc 3385 SHA256:c2df28bfeb69d6bed2f226b17909c61ef9ec50f25f367bfba0dadf2bc990b4cb
-'http://deb.debian.org/debian/pool/main/p/python3.6/python3.6_3.6.4~rc1.orig.tar.xz' python3.6_3.6.4~rc1.orig.tar.xz 17006764 SHA256:4a86dba99662ad96f293b5ef7f5b00cc0087b466a5422de876857f6ab844397d
-'http://deb.debian.org/debian/pool/main/p/python3.6/python3.6_3.6.4~rc1-1.debian.tar.xz' python3.6_3.6.4~rc1-1.debian.tar.xz 205808 SHA256:43aea5bea5ed0c3f277ec5fdc111165f72894e1df8c2ae8d27b8fc4db11b24a5
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3.6/3.6.4~rc1-1/
 
-- https://sources.debian.net/src/python3.6/3.6.4~rc1-1/ (for browsing the source)
-- https://sources.debian.net/src/python3.6/3.6.4~rc1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3.6/3.6.4~rc1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=7.0-3`
 
