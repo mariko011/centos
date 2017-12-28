@@ -98,6 +98,30 @@
 -	[`groovy:2.6-jre8-alpine`](#groovy26-jre8-alpine)
 -	[`groovy:2.6-jre9`](#groovy26-jre9)
 -	[`groovy:2.6-jre-alpine`](#groovy26-jre-alpine)
+-	[`groovy:3.0`](#groovy30)
+-	[`groovy:3.0.0-alpha-1`](#groovy300-alpha-1)
+-	[`groovy:3.0.0-alpha-1-alpine`](#groovy300-alpha-1-alpine)
+-	[`groovy:3.0.0-alpha-1-jdk`](#groovy300-alpha-1-jdk)
+-	[`groovy:3.0.0-alpha-1-jdk8`](#groovy300-alpha-1-jdk8)
+-	[`groovy:3.0.0-alpha-1-jdk8-alpine`](#groovy300-alpha-1-jdk8-alpine)
+-	[`groovy:3.0.0-alpha-1-jdk9`](#groovy300-alpha-1-jdk9)
+-	[`groovy:3.0.0-alpha-1-jdk-alpine`](#groovy300-alpha-1-jdk-alpine)
+-	[`groovy:3.0.0-alpha-1-jre`](#groovy300-alpha-1-jre)
+-	[`groovy:3.0.0-alpha-1-jre8`](#groovy300-alpha-1-jre8)
+-	[`groovy:3.0.0-alpha-1-jre8-alpine`](#groovy300-alpha-1-jre8-alpine)
+-	[`groovy:3.0.0-alpha-1-jre9`](#groovy300-alpha-1-jre9)
+-	[`groovy:3.0.0-alpha-1-jre-alpine`](#groovy300-alpha-1-jre-alpine)
+-	[`groovy:3.0-alpine`](#groovy30-alpine)
+-	[`groovy:3.0-jdk`](#groovy30-jdk)
+-	[`groovy:3.0-jdk8`](#groovy30-jdk8)
+-	[`groovy:3.0-jdk8-alpine`](#groovy30-jdk8-alpine)
+-	[`groovy:3.0-jdk9`](#groovy30-jdk9)
+-	[`groovy:3.0-jdk-alpine`](#groovy30-jdk-alpine)
+-	[`groovy:3.0-jre`](#groovy30-jre)
+-	[`groovy:3.0-jre8`](#groovy30-jre8)
+-	[`groovy:3.0-jre8-alpine`](#groovy30-jre8-alpine)
+-	[`groovy:3.0-jre9`](#groovy30-jre9)
+-	[`groovy:3.0-jre-alpine`](#groovy30-jre-alpine)
 -	[`groovy:alpine`](#groovyalpine)
 -	[`groovy:jdk`](#groovyjdk)
 -	[`groovy:jdk7`](#groovyjdk7)
@@ -9594,6 +9618,102 @@ RUN set -o errexit -o nounset 	&& echo "Testing Groovy installation" 	&& groovy 
 		Last Modified: Tue, 05 Dec 2017 04:32:31 GMT  
 		Size: 141.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `groovy:3.0`
+
+**does not exist** (yet?)
+
+## `groovy:3.0.0-alpha-1`
+
+**does not exist** (yet?)
+
+## `groovy:3.0.0-alpha-1-alpine`
+
+**does not exist** (yet?)
+
+## `groovy:3.0.0-alpha-1-jdk`
+
+**does not exist** (yet?)
+
+## `groovy:3.0.0-alpha-1-jdk8`
+
+**does not exist** (yet?)
+
+## `groovy:3.0.0-alpha-1-jdk8-alpine`
+
+**does not exist** (yet?)
+
+## `groovy:3.0.0-alpha-1-jdk9`
+
+**does not exist** (yet?)
+
+## `groovy:3.0.0-alpha-1-jdk-alpine`
+
+**does not exist** (yet?)
+
+## `groovy:3.0.0-alpha-1-jre`
+
+**does not exist** (yet?)
+
+## `groovy:3.0.0-alpha-1-jre8`
+
+**does not exist** (yet?)
+
+## `groovy:3.0.0-alpha-1-jre8-alpine`
+
+**does not exist** (yet?)
+
+## `groovy:3.0.0-alpha-1-jre9`
+
+**does not exist** (yet?)
+
+## `groovy:3.0.0-alpha-1-jre-alpine`
+
+**does not exist** (yet?)
+
+## `groovy:3.0-alpine`
+
+**does not exist** (yet?)
+
+## `groovy:3.0-jdk`
+
+**does not exist** (yet?)
+
+## `groovy:3.0-jdk8`
+
+**does not exist** (yet?)
+
+## `groovy:3.0-jdk8-alpine`
+
+**does not exist** (yet?)
+
+## `groovy:3.0-jdk9`
+
+**does not exist** (yet?)
+
+## `groovy:3.0-jdk-alpine`
+
+**does not exist** (yet?)
+
+## `groovy:3.0-jre`
+
+**does not exist** (yet?)
+
+## `groovy:3.0-jre8`
+
+**does not exist** (yet?)
+
+## `groovy:3.0-jre8-alpine`
+
+**does not exist** (yet?)
+
+## `groovy:3.0-jre9`
+
+**does not exist** (yet?)
+
+## `groovy:3.0-jre-alpine`
+
+**does not exist** (yet?)
 
 ## `groovy:alpine`
 
