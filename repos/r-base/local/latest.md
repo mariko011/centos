@@ -1361,10 +1361,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris harfbuzz=1.7.2-1
-'http://http.debian.net/debian/pool/main/h/harfbuzz/harfbuzz_1.7.2-1.dsc' harfbuzz_1.7.2-1.dsc 2280 SHA256:edc57d3aae36501ec509aa20df686539dcb2bf82f25ed43e86f6f9f380d947c4
-'http://http.debian.net/debian/pool/main/h/harfbuzz/harfbuzz_1.7.2.orig.tar.bz2' harfbuzz_1.7.2.orig.tar.bz2 1708416 SHA256:a790585e35c1a87f0dcc23580c84b7cc2324e6f67a2946178d278c2a36c790cb
-'http://http.debian.net/debian/pool/main/h/harfbuzz/harfbuzz_1.7.2-1.debian.tar.xz' harfbuzz_1.7.2-1.debian.tar.xz 8912 SHA256:b7fe86314450d2989e63c3d48d40316d062ef4eedba634431379e5e2d28ffa98
+'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_1.7.2-1.dsc' harfbuzz_1.7.2-1.dsc 2280 SHA256:edc57d3aae36501ec509aa20df686539dcb2bf82f25ed43e86f6f9f380d947c4
+'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_1.7.2.orig.tar.bz2' harfbuzz_1.7.2.orig.tar.bz2 1708416 SHA256:a790585e35c1a87f0dcc23580c84b7cc2324e6f67a2946178d278c2a36c790cb
+'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_1.7.2-1.debian.tar.xz' harfbuzz_1.7.2-1.debian.tar.xz 8912 SHA256:b7fe86314450d2989e63c3d48d40316d062ef4eedba634431379e5e2d28ffa98
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/harfbuzz/1.7.2-1/ (for browsing the source)
+- https://sources.debian.net/src/harfbuzz/1.7.2-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/harfbuzz/1.7.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `hostname=3.18`
 
@@ -3689,16 +3695,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris tcl8.6=8.6.7+dfsg-1
-'http://deb.debian.org/debian/pool/main/t/tcl8.6/tcl8.6_8.6.7+dfsg-1.dsc' tcl8.6_8.6.7+dfsg-1.dsc 2053 SHA256:c0a77a3407eda4225583e0c766cdd46491a7800a52445bf5797e0e24b933549f
-'http://deb.debian.org/debian/pool/main/t/tcl8.6/tcl8.6_8.6.7+dfsg.orig.tar.gz' tcl8.6_8.6.7+dfsg.orig.tar.gz 5873685 SHA256:6a4f0682b08e2823162b6136be9f9b217c49c68387b771a84d80557849c99b78
-'http://deb.debian.org/debian/pool/main/t/tcl8.6/tcl8.6_8.6.7+dfsg-1.debian.tar.xz' tcl8.6_8.6.7+dfsg-1.debian.tar.xz 15116 SHA256:30d42f83c77a15feb45345f8da240790bf5a25bf80e98ad235cbbdcddecddd88
+'http://http.debian.net/debian/pool/main/t/tcl8.6/tcl8.6_8.6.7+dfsg-1.dsc' tcl8.6_8.6.7+dfsg-1.dsc 2053 SHA256:c0a77a3407eda4225583e0c766cdd46491a7800a52445bf5797e0e24b933549f
+'http://http.debian.net/debian/pool/main/t/tcl8.6/tcl8.6_8.6.7+dfsg.orig.tar.gz' tcl8.6_8.6.7+dfsg.orig.tar.gz 5873685 SHA256:6a4f0682b08e2823162b6136be9f9b217c49c68387b771a84d80557849c99b78
+'http://http.debian.net/debian/pool/main/t/tcl8.6/tcl8.6_8.6.7+dfsg-1.debian.tar.xz' tcl8.6_8.6.7+dfsg-1.debian.tar.xz 15116 SHA256:30d42f83c77a15feb45345f8da240790bf5a25bf80e98ad235cbbdcddecddd88
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/tcl8.6/8.6.7+dfsg-1/ (for browsing the source)
-- https://sources.debian.net/src/tcl8.6/8.6.7+dfsg-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tcl8.6/8.6.7+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tex-gyre=20160520-1`
 
@@ -3758,16 +3758,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris tk8.6=8.6.7-1
-'http://deb.debian.org/debian/pool/main/t/tk8.6/tk8.6_8.6.7-1.dsc' tk8.6_8.6.7-1.dsc 2093 SHA256:d605de8f2ccc9e94e4e407924b75ecd4dedafb3f547ed6317c0d5afd75473221
-'http://deb.debian.org/debian/pool/main/t/tk8.6/tk8.6_8.6.7.orig.tar.gz' tk8.6_8.6.7.orig.tar.gz 4282972 SHA256:061de2a354f9b7c7d04de3984c90c9bc6dd3a1b8377bb45509f1ad8a8d6337aa
-'http://deb.debian.org/debian/pool/main/t/tk8.6/tk8.6_8.6.7-1.debian.tar.xz' tk8.6_8.6.7-1.debian.tar.xz 11228 SHA256:b702eb02ad7d5f50ba56462dd266a8521434eeee308822e6d80704ba47ad980a
+'http://http.debian.net/debian/pool/main/t/tk8.6/tk8.6_8.6.7-1.dsc' tk8.6_8.6.7-1.dsc 2093 SHA256:d605de8f2ccc9e94e4e407924b75ecd4dedafb3f547ed6317c0d5afd75473221
+'http://http.debian.net/debian/pool/main/t/tk8.6/tk8.6_8.6.7.orig.tar.gz' tk8.6_8.6.7.orig.tar.gz 4282972 SHA256:061de2a354f9b7c7d04de3984c90c9bc6dd3a1b8377bb45509f1ad8a8d6337aa
+'http://http.debian.net/debian/pool/main/t/tk8.6/tk8.6_8.6.7-1.debian.tar.xz' tk8.6_8.6.7-1.debian.tar.xz 11228 SHA256:b702eb02ad7d5f50ba56462dd266a8521434eeee308822e6d80704ba47ad980a
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/tk8.6/8.6.7-1/ (for browsing the source)
-- https://sources.debian.net/src/tk8.6/8.6.7-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tk8.6/8.6.7-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tzdata=2017c-1`
 
