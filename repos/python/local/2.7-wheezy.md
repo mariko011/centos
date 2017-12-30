@@ -3206,20 +3206,13 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mercurial=2.2.2-4+deb7u5
-'http://security.debian.org/pool/updates/main/m/mercurial/mercurial_2.2.2-4+deb7u5.dsc' mercurial_2.2.2-4+deb7u5.dsc 2178 SHA256:316870a85dae48cddbabce37da77abe1812a773d8ece3c8e5608cb937297fbc0
-'http://security.debian.org/pool/updates/main/m/mercurial/mercurial_2.2.2.orig.tar.gz' mercurial_2.2.2.orig.tar.gz 3430037 SHA256:3489110ec11fefbd2cbdefb8d715d0a869cef3dd729aaf4d5141108f8be1600a
-'http://security.debian.org/pool/updates/main/m/mercurial/mercurial_2.2.2-4+deb7u5.debian.tar.gz' mercurial_2.2.2-4+deb7u5.debian.tar.gz 59366 SHA256:ec9629a6b5b54665178398ed2abe44a45ad87dae34a1cca9d9d23ed7518256b1
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mercurial/2.2.2-4+deb7u5/
 
-- https://sources.debian.net/src/mercurial/2.2.2-4+deb7u5/ (for browsing the source)
-- https://sources.debian.net/src/mercurial/2.2.2-4+deb7u5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mercurial/2.2.2-4+deb7u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mime-support=3.52-1+deb7u1`
 
