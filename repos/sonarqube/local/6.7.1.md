@@ -1,4 +1,4 @@
-# `sonarqube:latest`
+# `sonarqube:6.7.1`
 
 ## Docker Metadata
 

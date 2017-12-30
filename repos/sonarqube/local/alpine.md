@@ -1,4 +1,4 @@
-# `sonarqube:alpine`
+# `sonarqube:6.7.1-alpine`
 
 ## Docker Metadata
 
