@@ -2961,10 +2961,6 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/libxml2/2.8.0+dfsg1-7+wheezy11/
-
 
 ### `dpkg` source package: `libxrender=1:0.9.7-1+deb7u3`
 
