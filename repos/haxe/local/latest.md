@@ -2,15 +2,15 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:135ba42dfd2b78cbfa6b21e39c9b2d43222e40d4b789e0e801ed17b058bfed87`
-- Created: `2017-12-12T11:52:45.090869647Z`
-- Virtual Size: ~ 309.05 Mb  
+- Image ID: `sha256:55883ad13929e0e26842bb9def815bf7b6d732fc65bee66e75259649c94a9b8f`
+- Created: `2017-12-28T19:14:00.360112753Z`
+- Virtual Size: ~ 309.04 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["haxe"]`
 - Environment:
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NEKO_VERSION=2.1.0`
+  - `NEKO_VERSION=2.2.0`
   - `HAXE_VERSION=3.4.4`
 
 ## `dpkg` (`.deb`-based packages)
