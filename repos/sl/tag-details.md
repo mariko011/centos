@@ -85,7 +85,7 @@ CMD ["/bin/bash"]
 ## `sl:latest`
 
 ```console
-$ docker pull sl@sha256:597c1f18385af0129e74e001675ddb56826393c5a636c94ea8c5467dfc6c3b89
+$ docker pull sl@sha256:d1b7ed9459d43c7f2b79549d730f8959a2b2a9d3aafaee9e0d84549f6dafc715
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -95,27 +95,27 @@ $ docker pull sl@sha256:597c1f18385af0129e74e001675ddb56826393c5a636c94ea8c5467d
 ### `sl:latest` - linux; amd64
 
 ```console
-$ docker pull sl@sha256:22c181ecdfa668503fcbc0e842ff0056f2ede6a2a4bce51d867c38ca554e7ec2
+$ docker pull sl@sha256:694bab9ed6f46dbba89d89a00f6be4225ae7589607954af226a49ab53f326434
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **62.4 MB (62366729 bytes)**  
+-	Total Size: **62.4 MB (62373499 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:48d796f2fdf9132f94c2d6388cf01844caafda221886f78ecd239b9e34292d3d`
+-	Image ID: `sha256:c6a67eb0ac65037a406c59fa12640c297158166bda40bb33774a8d6d360ad958`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 29 Dec 2017 00:56:53 GMT
-ADD file:f2158f4a2f2b991d6f89306b757d163d70c3e4ed2bbb10d8c48edf569ffdd499 in / 
-# Fri, 29 Dec 2017 00:56:54 GMT
-LABEL name=SL7 Base Image vendor=Scientific Linux build-date=20171201
-# Fri, 29 Dec 2017 00:56:54 GMT
+# Tue, 02 Jan 2018 19:09:05 GMT
+ADD file:33c41993fa00229ec0a1afa8ab60009e4bdb96804be2b541c0c720b56d636d28 in / 
+# Tue, 02 Jan 2018 19:09:05 GMT
+LABEL name=SL7 Base Image vendor=Scientific Linux build-date=20180102
+# Tue, 02 Jan 2018 19:09:06 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:26b255035f79c09b98409da19e664ca430cb0323f737a43b583aa37976496fdf`  
-		Last Modified: Fri, 01 Dec 2017 17:24:28 GMT  
-		Size: 62.4 MB (62366729 bytes)  
+	-	`sha256:131eeb7b5a4a4fae1caee285521010b9cd5857fca8c69f6bf664a9cd97ed7b7d`  
+		Last Modified: Tue, 02 Jan 2018 16:03:12 GMT  
+		Size: 62.4 MB (62373499 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
