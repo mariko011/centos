@@ -291,13 +291,13 @@ Licenses: (parsed from: `/usr/share/doc/debianutils/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debianutils=4.8.3
-'http://archive.ubuntu.com/ubuntu/pool/main/d/debianutils/debianutils_4.8.3.dsc' debianutils_4.8.3.dsc 1791 SHA256:ace3583a7076d292f2b4897721f3ffab138b4e784ed63379e869513c42824b65
-'http://archive.ubuntu.com/ubuntu/pool/main/d/debianutils/debianutils_4.8.3.tar.xz' debianutils_4.8.3.tar.xz 159292 SHA256:7102246d1c35260ed7f0458a9886acf655c379d14908415574494cdea45e28fb
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/debianutils/4.8.3/
+
 
 ### `dpkg` source package: `diffutils=1:3.6-1`
 
@@ -575,13 +575,9 @@ Licenses: (parsed from: `/usr/share/doc/init-system-helpers/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris init-system-helpers=1.49ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.49ubuntu1.dsc' init-system-helpers_1.49ubuntu1.dsc 2027 SHA256:5c6d580900af449464a4762cbd357a1a3ccb88476710ecb96958be9b8419405d
-'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.49ubuntu1.tar.xz' init-system-helpers_1.49ubuntu1.tar.xz 43008 SHA256:c6fe39f2e5c7436492693e138ef6911add3d61ebe87b6f67d90cdeed1dfaef0f
-```
 
 ### `dpkg` source package: `libassuan=2.5.1-1`
 
