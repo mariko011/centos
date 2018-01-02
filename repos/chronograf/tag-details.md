@@ -8,6 +8,12 @@
 -	[`chronograf:1.3.10.0-alpine`](#chronograf13100-alpine)
 -	[`chronograf:1.3.10-alpine`](#chronograf1310-alpine)
 -	[`chronograf:1.3-alpine`](#chronograf13-alpine)
+-	[`chronograf:1.4`](#chronograf14)
+-	[`chronograf:1.4.0`](#chronograf140)
+-	[`chronograf:1.4.0.0`](#chronograf1400)
+-	[`chronograf:1.4.0.0-alpine`](#chronograf1400-alpine)
+-	[`chronograf:1.4.0-alpine`](#chronograf140-alpine)
+-	[`chronograf:1.4-alpine`](#chronograf14-alpine)
 -	[`chronograf:alpine`](#chronografalpine)
 -	[`chronograf:latest`](#chronograflatest)
 
@@ -898,6 +904,30 @@ CMD ["chronograf"]
 		Last Modified: Fri, 01 Dec 2017 19:57:44 GMT  
 		Size: 237.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `chronograf:1.4`
+
+**does not exist** (yet?)
+
+## `chronograf:1.4.0`
+
+**does not exist** (yet?)
+
+## `chronograf:1.4.0.0`
+
+**does not exist** (yet?)
+
+## `chronograf:1.4.0.0-alpine`
+
+**does not exist** (yet?)
+
+## `chronograf:1.4.0-alpine`
+
+**does not exist** (yet?)
+
+## `chronograf:1.4-alpine`
+
+**does not exist** (yet?)
 
 ## `chronograf:alpine`
 

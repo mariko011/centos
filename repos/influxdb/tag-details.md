@@ -15,7 +15,9 @@
 -	[`influxdb:1.4.2-alpine`](#influxdb142-alpine)
 -	[`influxdb:1.4-alpine`](#influxdb14-alpine)
 -	[`influxdb:alpine`](#influxdbalpine)
+-	[`influxdb:data`](#influxdbdata)
 -	[`influxdb:latest`](#influxdblatest)
+-	[`influxdb:meta`](#influxdbmeta)
 
 ## `influxdb:1.3`
 
@@ -1772,6 +1774,10 @@ CMD ["influxd"]
 		Size: 1.2 KB (1167 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `influxdb:data`
+
+**does not exist** (yet?)
+
 ## `influxdb:latest`
 
 ```console
@@ -2020,3 +2026,7 @@ CMD ["influxd"]
 		Last Modified: Fri, 15 Dec 2017 21:28:37 GMT  
 		Size: 1.2 KB (1166 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `influxdb:meta`
+
+**does not exist** (yet?)
