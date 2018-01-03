@@ -1726,13 +1726,14 @@ LABEL org.label-schema.vendor=Containous org.label-schema.url=https://traefik.io
 ## `traefik:latest`
 
 ```console
-$ docker pull traefik@sha256:6157b4251701ed6fe0ba8d68045d4c59adc7096a56c4fcd607fd8d97534902c1
+$ docker pull traefik@sha256:89cb51b507f84cde07e19c2d0e84ef1273dd81683debc0bc50468dd424880a28
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
 	-	linux; arm variant v6
+	-	linux; arm64 variant v8
 
 ### `traefik:latest` - linux; amd64
 
@@ -1804,6 +1805,42 @@ LABEL org.label-schema.vendor=Containous org.label-schema.url=https://traefik.io
 	-	`sha256:ba5742615afd9b2a4c85a3bc5d64958f845c7e39f31153988dcf77f73a2142eb`  
 		Last Modified: Wed, 03 Jan 2018 00:49:00 GMT  
 		Size: 12.2 MB (12226048 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `traefik:latest` - linux; arm64 variant v8
+
+```console
+$ docker pull traefik@sha256:9984cd9827d1046390e57d098d3438f44aa15440fa8e19a026a3fea5ddc05c87
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **12.1 MB (12065790 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:f285e6f27dc2855f763f6c9d08f5622732b4302c32614806ea54dda3cc0c2174`
+-	Entrypoint: `["\/traefik"]`
+
+```dockerfile
+# Wed, 25 Oct 2017 04:54:39 GMT
+COPY file:d8282341d1fb7d2cc3d5d3523d0d4126066cc1ba8abe3f0047a459b3a63a5653 in /etc/ssl/certs/ 
+# Wed, 03 Jan 2018 05:54:51 GMT
+COPY file:363b0d9c6991ea72b83e798841ea50cca719eccca318e14b662c5ba2cfbd1736 in / 
+# Wed, 03 Jan 2018 05:54:52 GMT
+EXPOSE 80/tcp
+# Wed, 03 Jan 2018 05:54:52 GMT
+ENTRYPOINT ["/traefik"]
+# Wed, 03 Jan 2018 05:54:53 GMT
+LABEL org.label-schema.vendor=Containous org.label-schema.url=https://traefik.io org.label-schema.name=Traefik org.label-schema.description=A modern reverse-proxy org.label-schema.version=v1.4.6 org.label-schema.docker.schema-version=1.0
+```
+
+-	Layers:
+	-	`sha256:78fe135ba97a13abc86dbe373975f0d0712d8aa6e540e09824b715a55d7e2ed3`  
+		Last Modified: Wed, 25 Oct 2017 04:55:01 GMT  
+		Size: 155.2 KB (155151 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e83a6ad999471323d8d6afec2359a0084fdea88c5c2d89ec7e09d121fa4ac728`  
+		Last Modified: Wed, 03 Jan 2018 05:55:45 GMT  
+		Size: 11.9 MB (11910639 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:roquefort`
