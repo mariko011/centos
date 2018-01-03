@@ -1,7 +1,7 @@
 ## `haproxy:latest`
 
 ```console
-$ docker pull haproxy@sha256:5432e8e08b5323c755de8e4ea10bb280d79b1c6d2b8e8f976c8ebb060413d73b
+$ docker pull haproxy@sha256:802c28ba84f9fffffb6a514be03565e557b5d19ab742c1e69e5c573ad6fa5e5c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9,6 +9,7 @@ $ docker pull haproxy@sha256:5432e8e08b5323c755de8e4ea10bb280d79b1c6d2b8e8f976c8
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
+	-	linux; arm64 variant v8
 	-	linux; 386
 	-	linux; ppc64le
 
@@ -175,6 +176,61 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 	-	`sha256:a87af750f8000a13f8446b18cce10f2a6fcb88df77667ec42317b8c9fd2ec354`  
 		Last Modified: Wed, 03 Jan 2018 17:23:26 GMT  
 		Size: 381.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `haproxy:latest` - linux; arm64 variant v8
+
+```console
+$ docker pull haproxy@sha256:5bf98bbd110c46a38704e2d2c6af72fb1ffdd58dc35b64109ca35525f60257e2
+```
+
+-	Docker Version: 17.06.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **25.7 MB (25686701 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:379b17179de86936e9645c5e9b8ea6e9244e09d877055c1acc21c9a1060b0583`
+-	Entrypoint: `["\/docker-entrypoint.sh"]`
+-	Default Command: `["haproxy","-f","\/usr\/local\/etc\/haproxy\/haproxy.cfg"]`
+
+```dockerfile
+# Tue, 12 Dec 2017 18:34:13 GMT
+ADD file:6e068c7cc5397bfb4ec60dab4d410c5d3ba724f20ad0129d2032fb509f0eadcd in / 
+# Tue, 12 Dec 2017 18:34:14 GMT
+CMD ["bash"]
+# Tue, 19 Dec 2017 20:58:50 GMT
+RUN apt-get update 	&& apt-get install -y --no-install-recommends 		liblua5.3-0 		libpcre3 		libssl1.1 	&& rm -rf /var/lib/apt/lists/*
+# Tue, 19 Dec 2017 20:58:51 GMT
+ENV HAPROXY_MAJOR=1.8
+# Wed, 03 Jan 2018 20:41:58 GMT
+ENV HAPROXY_VERSION=1.8.3
+# Wed, 03 Jan 2018 20:41:59 GMT
+ENV HAPROXY_MD5=2e1e3eb42f07983c9303c5622d812862
+# Wed, 03 Jan 2018 20:43:49 GMT
+RUN set -x 		&& buildDeps=' 		gcc 		libc6-dev 		liblua5.3-dev 		libpcre3-dev 		libssl-dev 		zlib1g-dev 		make 		wget 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O haproxy.tar.gz "http://www.haproxy.org/download/${HAPROXY_MAJOR}/src/haproxy-${HAPROXY_VERSION}.tar.gz" 	&& echo "$HAPROXY_MD5 *haproxy.tar.gz" | md5sum -c 	&& mkdir -p /usr/src/haproxy 	&& tar -xzf haproxy.tar.gz -C /usr/src/haproxy --strip-components=1 	&& rm haproxy.tar.gz 		&& makeOpts=' 		TARGET=linux2628 		USE_LUA=1 LUA_INC=/usr/include/lua5.3 		USE_OPENSSL=1 		USE_PCRE=1 PCREDIR= 		USE_ZLIB=1 	' 	&& make -C /usr/src/haproxy -j "$(nproc)" all $makeOpts 	&& make -C /usr/src/haproxy install-bin $makeOpts 		&& mkdir -p /usr/local/etc/haproxy 	&& cp -R /usr/src/haproxy/examples/errorfiles /usr/local/etc/haproxy/errors 	&& rm -rf /usr/src/haproxy 		&& apt-get purge -y --auto-remove $buildDeps
+# Wed, 03 Jan 2018 20:43:49 GMT
+COPY file:9489da093f9bbacb372aa24916cd4607d45b831e8054d997ab55a1be7b595c17 in / 
+# Wed, 03 Jan 2018 20:43:50 GMT
+ENTRYPOINT ["/docker-entrypoint.sh"]
+# Wed, 03 Jan 2018 20:43:51 GMT
+CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
+```
+
+-	Layers:
+	-	`sha256:fcad8cfc11c78a53ccf9aafafcb3ded5044dbd181977e6255aea54fbe164f131`  
+		Last Modified: Tue, 12 Dec 2017 18:49:05 GMT  
+		Size: 20.3 MB (20331270 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:46333d8b6ada4194652a0ceb17abc634c09c7e866202ffbb946654940035b885`  
+		Last Modified: Tue, 19 Dec 2017 21:02:53 GMT  
+		Size: 1.8 MB (1818765 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:fe530cf5283ad436eb70247846285bd9e05e87c185f81dc921358e29c48665b4`  
+		Last Modified: Wed, 03 Jan 2018 20:45:42 GMT  
+		Size: 3.5 MB (3536286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:32ff14b85e440fdc02ed5ddee2c19501f0c2d06c8e930e839fdba5d44f8bf678`  
+		Last Modified: Wed, 03 Jan 2018 20:45:40 GMT  
+		Size: 380.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `haproxy:latest` - linux; 386
