@@ -4302,20 +4302,13 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.28.0-1
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.28.0-1.dsc' nghttp2_1.28.0-1.dsc 2311 SHA256:28aaa8f27bb203ab3795c890996599fd3aab5c649caedc040f99a00e10e98dcb
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.28.0.orig.tar.bz2' nghttp2_1.28.0.orig.tar.bz2 1844457 SHA256:8b7ea0acb6719129798c892c05fd0eb26b02dc5d48e713c5d9496f797652a17f
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.28.0-1.debian.tar.xz' nghttp2_1.28.0-1.debian.tar.xz 12044 SHA256:1f58bce00c9c153478240b080a967d2006b15acce5be3ff3cd00e1e21efb0c15
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nghttp2/1.28.0-1/
 
-- https://sources.debian.net/src/nghttp2/1.28.0-1/ (for browsing the source)
-- https://sources.debian.net/src/nghttp2/1.28.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nghttp2/1.28.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `npth=1.5-3`
 

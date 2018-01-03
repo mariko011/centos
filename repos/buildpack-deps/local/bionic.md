@@ -705,13 +705,13 @@ Licenses: (parsed from: `/usr/share/doc/debianutils/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debianutils=4.8.3
-'http://archive.ubuntu.com/ubuntu/pool/main/d/debianutils/debianutils_4.8.3.dsc' debianutils_4.8.3.dsc 1791 SHA256:ace3583a7076d292f2b4897721f3ffab138b4e784ed63379e869513c42824b65
-'http://archive.ubuntu.com/ubuntu/pool/main/d/debianutils/debianutils_4.8.3.tar.xz' debianutils_4.8.3.tar.xz 159292 SHA256:7102246d1c35260ed7f0458a9886acf655c379d14908415574494cdea45e28fb
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/debianutils/4.8.3/
+
 
 ### `dpkg` source package: `dh-python=2.20170125`
 
@@ -1694,13 +1694,9 @@ Licenses: (parsed from: `/usr/share/doc/init-system-helpers/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris init-system-helpers=1.49ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.49ubuntu1.dsc' init-system-helpers_1.49ubuntu1.dsc 2027 SHA256:5c6d580900af449464a4762cbd357a1a3ccb88476710ecb96958be9b8419405d
-'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.49ubuntu1.tar.xz' init-system-helpers_1.49ubuntu1.tar.xz 43008 SHA256:c6fe39f2e5c7436492693e138ef6911add3d61ebe87b6f67d90cdeed1dfaef0f
-```
 
 ### `dpkg` source package: `isl=0.18-1`
 
@@ -2267,14 +2263,13 @@ Licenses: (parsed from: `/usr/share/doc/liblqr-1-0/copyright`, `/usr/share/doc/l
 - `GPLv3`
 - `LGPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris liblqr=0.4.2-2
-'http://archive.ubuntu.com/ubuntu/pool/main/libl/liblqr/liblqr_0.4.2-2.dsc' liblqr_0.4.2-2.dsc 2024 SHA256:7e203605ebe40cde3e467db4298d7ee3f83f3d3082b05f8984868cdef1606245
-'http://archive.ubuntu.com/ubuntu/pool/main/libl/liblqr/liblqr_0.4.2.orig.tar.gz' liblqr_0.4.2.orig.tar.gz 439884 SHA256:d4c22373432cca749e4326cd41fce365e6ff857c0bfd7a5302b8eb34b69f0336
-'http://archive.ubuntu.com/ubuntu/pool/main/libl/liblqr/liblqr_0.4.2-2.debian.tar.xz' liblqr_0.4.2-2.debian.tar.xz 5860 SHA256:2c886ee88f65eade9e1cd10965bf572a3cc178d6119b9342c8469b6b41d2bb62
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/liblqr/0.4.2-2/
+
 
 ### `dpkg` source package: `libpng1.6=1.6.34-1`
 
@@ -3250,13 +3245,9 @@ Licenses: (parsed from: `/usr/share/doc/default-libmysqlclient-dev/copyright`, `
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mysql-defaults=1.0.2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-defaults/mysql-defaults_1.0.2ubuntu1.dsc' mysql-defaults_1.0.2ubuntu1.dsc 2261 SHA256:3889b6ba385ee1a015bbaa8a68fb08f363143ce86c346c13327b35e380747af5
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-defaults/mysql-defaults_1.0.2ubuntu1.tar.xz' mysql-defaults_1.0.2ubuntu1.tar.xz 5588 SHA256:eeca700a105f2e0a61346f2fe9d3b4956a3e536d5c8e7f759fb1faccea3502d9
-```
 
 ### `dpkg` source package: `ncurses=6.0+20160625-1ubuntu1`
 
@@ -4154,14 +4145,9 @@ Licenses: (parsed from: `/usr/share/doc/ubuntu-mono/copyright`)
 - `CC-BY-SA-3.0`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ubuntu-themes=16.10+18.04.20171115.1-0ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-themes/ubuntu-themes_16.10+18.04.20171115.1-0ubuntu1.dsc' ubuntu-themes_16.10+18.04.20171115.1-0ubuntu1.dsc 2333 SHA256:1131c93739d5e744db63f5d48e0260e9c507582b5831b063ff17c8b40cdbd8de
-'http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-themes/ubuntu-themes_16.10+18.04.20171115.1.orig.tar.gz' ubuntu-themes_16.10+18.04.20171115.1.orig.tar.gz 16037421 SHA256:bdd99864e5386b6878b1765222b46c350297a79b3928e1c39605873bf99c9ac2
-'http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-themes/ubuntu-themes_16.10+18.04.20171115.1-0ubuntu1.diff.gz' ubuntu-themes_16.10+18.04.20171115.1-0ubuntu1.diff.gz 27510 SHA256:cecb388cc082312f91e0ce14a147fd9423364fb88bcac3d85d9b254ba8f1d5df
-```
 
 ### `dpkg` source package: `ucf=3.0036`
 
