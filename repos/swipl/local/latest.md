@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4fda47c260d869496c01d4bb391649bc0c2c0fd3ef93a5e843a9d13008a2c140`
-- Created: `2017-12-30T00:58:41.157416276Z`
-- Virtual Size: ~ 141.77 Mb  
+- Image ID: `sha256:cc325a2f8086febece486d6062525048d11d47b041dcf6454124e02254a06edf`
+- Created: `2017-12-30T20:59:10.72630394Z`
+- Virtual Size: ~ 147.34 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["swipl"]`
@@ -697,6 +697,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/geos/3.5.1-3/ (for browsing the source)
 - https://sources.debian.net/src/geos/3.5.1-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/geos/3.5.1-3/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `gflags=2.1.2-4`
+
+Binary Packages:
+
+- `libgflags2v5=2.1.2-4`
+
+Licenses: (parsed from: `/usr/share/doc/libgflags2v5/copyright`)
+
+- `BSD-3-Clause`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris gflags=2.1.2-4
+'http://deb.debian.org/debian/pool/main/g/gflags/gflags_2.1.2-4.dsc' gflags_2.1.2-4.dsc 1877 SHA256:71efd74017800c8a8ba648e6868dcecb33ae26f587801bb781edae1b4d86c75a
+'http://deb.debian.org/debian/pool/main/g/gflags/gflags_2.1.2.orig.tar.gz' gflags_2.1.2.orig.tar.gz 95716 SHA256:d8331bd0f7367c8afd5fcb5f5e85e96868a00fd24b7276fa5fcee1e5575c2662
+'http://deb.debian.org/debian/pool/main/g/gflags/gflags_2.1.2-4.debian.tar.xz' gflags_2.1.2-4.debian.tar.xz 3160 SHA256:96a0c765f35f63a15ce352ff430d67cd4ad09f8014b622a3fb1ddd4a8d2a2a9b
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/gflags/2.1.2-4/ (for browsing the source)
+- https://sources.debian.net/src/gflags/2.1.2-4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gflags/2.1.2-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.24-11+deb9u1`
 
@@ -2135,6 +2160,35 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/readline/7.0-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/readline/7.0-3/ (for access to the source package after it no longer exists in the archive)
 
+### `dpkg` source package: `rocksdb=4.5.1-2`
+
+Binary Packages:
+
+- `librocksdb4.5=4.5.1-2`
+
+Licenses: (parsed from: `/usr/share/doc/librocksdb4.5/copyright`)
+
+- `Apache-2.0`
+- `BSD-3-Clause`
+- `GPL-2`
+- `GPL-3`
+- `GPL-3+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris rocksdb=4.5.1-2
+'http://deb.debian.org/debian/pool/main/r/rocksdb/rocksdb_4.5.1-2.dsc' rocksdb_4.5.1-2.dsc 2064 SHA256:36f91445f9bfa358671bcbba4c43eb2a3f45f3af68eda7770db762109620b635
+'http://deb.debian.org/debian/pool/main/r/rocksdb/rocksdb_4.5.1.orig.tar.gz' rocksdb_4.5.1.orig.tar.gz 2026145 SHA256:c6a23a82352dd6bb6bd580db51beafe4c5efa382b16b722c100ce2e7d1a5e497
+'http://deb.debian.org/debian/pool/main/r/rocksdb/rocksdb_4.5.1-2.debian.tar.xz' rocksdb_4.5.1-2.debian.tar.xz 47700 SHA256:98e40ed767ee1ae46ffbdc075a1e4781d40e01735b8d6b477677897af0f14238
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/rocksdb/4.5.1-2/ (for browsing the source)
+- https://sources.debian.net/src/rocksdb/4.5.1-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/rocksdb/4.5.1-2/ (for access to the source package after it no longer exists in the archive)
+
 ### `dpkg` source package: `rtmpdump=2.4+20151223.gitfa8646d.1-1`
 
 Binary Packages:
@@ -2261,6 +2315,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/shadow/1:4.4-4.1/ (for browsing the source)
 - https://sources.debian.net/src/shadow/1:4.4-4.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/shadow/1:4.4-4.1/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `snappy=1.1.3-3`
+
+Binary Packages:
+
+- `libsnappy1v5:amd64=1.1.3-3`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris snappy=1.1.3-3
+'http://deb.debian.org/debian/pool/main/s/snappy/snappy_1.1.3-3.dsc' snappy_1.1.3-3.dsc 1803 SHA256:05dceab1ed94b6bc1da1f39468028b31d16607504dd31bb792ff9a08e9b7b8d6
+'http://deb.debian.org/debian/pool/main/s/snappy/snappy_1.1.3.orig.tar.gz' snappy_1.1.3.orig.tar.gz 1509026 SHA256:2f1e82adf0868c9e26a5a7a3115111b6da7e432ddbac268a7ca2fae2a247eef3
+'http://deb.debian.org/debian/pool/main/s/snappy/snappy_1.1.3-3.debian.tar.xz' snappy_1.1.3-3.debian.tar.xz 4360 SHA256:1fce7fccdfaf714065a6ee4ad60943f7f30d004059fd98d5a4dcc464ad998623
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/snappy/1.1.3-3/ (for browsing the source)
+- https://sources.debian.net/src/snappy/1.1.3-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/snappy/1.1.3-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `spatialindex=1.8.5-4`
 
