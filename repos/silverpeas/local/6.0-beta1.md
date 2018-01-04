@@ -2100,14 +2100,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libdrm=2.4.76-1~ubuntu16.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.76-1~ubuntu16.04.1.dsc' libdrm_2.4.76-1~ubuntu16.04.1.dsc 3021 SHA256:7072b973cad6370827705d69311cdc7c97d3094b01b2bf7f06ee74eb93f8d900
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.76.orig.tar.gz' libdrm_2.4.76.orig.tar.gz 1060154 SHA256:6e3fb50d7500acf06f7eed44d5b1d33cda26aef7f5ae6667ddcc626b435c2531
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.76-1~ubuntu16.04.1.diff.gz' libdrm_2.4.76-1~ubuntu16.04.1.diff.gz 46437 SHA256:162087a68e52192d7d5c5ca3a98bdc8ec28c4b24bc484ccfa95918bfe384176c
-```
 
 ### `dpkg` source package: `libedit=3.1-20150325-1ubuntu2`
 
@@ -3565,14 +3560,9 @@ Licenses: (parsed from: `/usr/share/doc/libgl1-mesa-dri/copyright`, `/usr/share/
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mesa=17.0.7-0ubuntu0.16.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_17.0.7-0ubuntu0.16.04.2.dsc' mesa_17.0.7-0ubuntu0.16.04.2.dsc 4959 SHA256:79bdc931970a774dae74d8e14ffdb61f11bb0c0f7ae169550ab9608e70f965c0
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_17.0.7.orig.tar.gz' mesa_17.0.7.orig.tar.gz 15931608 SHA256:bc68d13c6b1a053b855ac453ebf7e62bd89511adf44bad6c613e09f7fa13390a
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_17.0.7-0ubuntu0.16.04.2.diff.gz' mesa_17.0.7-0ubuntu0.16.04.2.diff.gz 123281 SHA256:3190dba5e0d11390876ab9e08ae8f79524accbf3f354ebc88bb91a7c3e0cada9
-```
 
 ### `dpkg` source package: `ncurses=6.0+20160213-1ubuntu1`
 
