@@ -6,64 +6,112 @@
 -	[`openjdk:6b38`](#openjdk6b38)
 -	[`openjdk:6b38-jdk`](#openjdk6b38-jdk)
 -	[`openjdk:6b38-jdk-slim`](#openjdk6b38-jdk-slim)
+-	[`openjdk:6b38-jdk-slim-wheezy`](#openjdk6b38-jdk-slim-wheezy)
+-	[`openjdk:6b38-jdk-wheezy`](#openjdk6b38-jdk-wheezy)
 -	[`openjdk:6b38-jre`](#openjdk6b38-jre)
 -	[`openjdk:6b38-jre-slim`](#openjdk6b38-jre-slim)
+-	[`openjdk:6b38-jre-slim-wheezy`](#openjdk6b38-jre-slim-wheezy)
+-	[`openjdk:6b38-jre-wheezy`](#openjdk6b38-jre-wheezy)
 -	[`openjdk:6b38-slim`](#openjdk6b38-slim)
+-	[`openjdk:6b38-slim-wheezy`](#openjdk6b38-slim-wheezy)
+-	[`openjdk:6b38-wheezy`](#openjdk6b38-wheezy)
 -	[`openjdk:6-jdk`](#openjdk6-jdk)
 -	[`openjdk:6-jdk-slim`](#openjdk6-jdk-slim)
+-	[`openjdk:6-jdk-slim-wheezy`](#openjdk6-jdk-slim-wheezy)
+-	[`openjdk:6-jdk-wheezy`](#openjdk6-jdk-wheezy)
 -	[`openjdk:6-jre`](#openjdk6-jre)
 -	[`openjdk:6-jre-slim`](#openjdk6-jre-slim)
+-	[`openjdk:6-jre-slim-wheezy`](#openjdk6-jre-slim-wheezy)
+-	[`openjdk:6-jre-wheezy`](#openjdk6-jre-wheezy)
 -	[`openjdk:6-slim`](#openjdk6-slim)
+-	[`openjdk:6-slim-wheezy`](#openjdk6-slim-wheezy)
+-	[`openjdk:6-wheezy`](#openjdk6-wheezy)
 -	[`openjdk:7`](#openjdk7)
 -	[`openjdk:7-alpine`](#openjdk7-alpine)
+-	[`openjdk:7-alpine3.7`](#openjdk7-alpine37)
 -	[`openjdk:7-jdk`](#openjdk7-jdk)
 -	[`openjdk:7-jdk-alpine`](#openjdk7-jdk-alpine)
+-	[`openjdk:7-jdk-alpine3.7`](#openjdk7-jdk-alpine37)
+-	[`openjdk:7-jdk-jessie`](#openjdk7-jdk-jessie)
 -	[`openjdk:7-jdk-slim`](#openjdk7-jdk-slim)
+-	[`openjdk:7-jdk-slim-jessie`](#openjdk7-jdk-slim-jessie)
+-	[`openjdk:7-jessie`](#openjdk7-jessie)
 -	[`openjdk:7-jre`](#openjdk7-jre)
 -	[`openjdk:7-jre-alpine`](#openjdk7-jre-alpine)
+-	[`openjdk:7-jre-alpine3.7`](#openjdk7-jre-alpine37)
+-	[`openjdk:7-jre-jessie`](#openjdk7-jre-jessie)
 -	[`openjdk:7-jre-slim`](#openjdk7-jre-slim)
+-	[`openjdk:7-jre-slim-jessie`](#openjdk7-jre-slim-jessie)
 -	[`openjdk:7-slim`](#openjdk7-slim)
+-	[`openjdk:7-slim-jessie`](#openjdk7-slim-jessie)
 -	[`openjdk:7u151`](#openjdk7u151)
 -	[`openjdk:7u151-alpine`](#openjdk7u151-alpine)
+-	[`openjdk:7u151-alpine3.7`](#openjdk7u151-alpine37)
 -	[`openjdk:7u151-jdk`](#openjdk7u151-jdk)
 -	[`openjdk:7u151-jdk-alpine`](#openjdk7u151-jdk-alpine)
+-	[`openjdk:7u151-jdk-alpine3.7`](#openjdk7u151-jdk-alpine37)
+-	[`openjdk:7u151-jdk-jessie`](#openjdk7u151-jdk-jessie)
 -	[`openjdk:7u151-jdk-slim`](#openjdk7u151-jdk-slim)
+-	[`openjdk:7u151-jdk-slim-jessie`](#openjdk7u151-jdk-slim-jessie)
+-	[`openjdk:7u151-jessie`](#openjdk7u151-jessie)
 -	[`openjdk:7u151-jre`](#openjdk7u151-jre)
 -	[`openjdk:7u151-jre-alpine`](#openjdk7u151-jre-alpine)
+-	[`openjdk:7u151-jre-alpine3.7`](#openjdk7u151-jre-alpine37)
+-	[`openjdk:7u151-jre-jessie`](#openjdk7u151-jre-jessie)
 -	[`openjdk:7u151-jre-slim`](#openjdk7u151-jre-slim)
+-	[`openjdk:7u151-jre-slim-jessie`](#openjdk7u151-jre-slim-jessie)
 -	[`openjdk:7u151-slim`](#openjdk7u151-slim)
+-	[`openjdk:7u151-slim-jessie`](#openjdk7u151-slim-jessie)
 -	[`openjdk:8`](#openjdk8)
 -	[`openjdk:8-alpine`](#openjdk8-alpine)
+-	[`openjdk:8-alpine3.7`](#openjdk8-alpine37)
 -	[`openjdk:8-jdk`](#openjdk8-jdk)
 -	[`openjdk:8-jdk-alpine`](#openjdk8-jdk-alpine)
+-	[`openjdk:8-jdk-alpine3.7`](#openjdk8-jdk-alpine37)
 -	[`openjdk:8-jdk-nanoserver`](#openjdk8-jdk-nanoserver)
 -	[`openjdk:8-jdk-nanoserver-sac2016`](#openjdk8-jdk-nanoserver-sac2016)
 -	[`openjdk:8-jdk-slim`](#openjdk8-jdk-slim)
+-	[`openjdk:8-jdk-slim-stretch`](#openjdk8-jdk-slim-stretch)
+-	[`openjdk:8-jdk-stretch`](#openjdk8-jdk-stretch)
 -	[`openjdk:8-jdk-windowsservercore`](#openjdk8-jdk-windowsservercore)
 -	[`openjdk:8-jdk-windowsservercore-1709`](#openjdk8-jdk-windowsservercore-1709)
 -	[`openjdk:8-jdk-windowsservercore-ltsc2016`](#openjdk8-jdk-windowsservercore-ltsc2016)
 -	[`openjdk:8-jre`](#openjdk8-jre)
 -	[`openjdk:8-jre-alpine`](#openjdk8-jre-alpine)
+-	[`openjdk:8-jre-alpine3.7`](#openjdk8-jre-alpine37)
 -	[`openjdk:8-jre-slim`](#openjdk8-jre-slim)
+-	[`openjdk:8-jre-slim-stretch`](#openjdk8-jre-slim-stretch)
+-	[`openjdk:8-jre-stretch`](#openjdk8-jre-stretch)
 -	[`openjdk:8-nanoserver`](#openjdk8-nanoserver)
 -	[`openjdk:8-nanoserver-sac2016`](#openjdk8-nanoserver-sac2016)
 -	[`openjdk:8-slim`](#openjdk8-slim)
+-	[`openjdk:8-slim-stretch`](#openjdk8-slim-stretch)
+-	[`openjdk:8-stretch`](#openjdk8-stretch)
 -	[`openjdk:8u151`](#openjdk8u151)
 -	[`openjdk:8u151-alpine`](#openjdk8u151-alpine)
+-	[`openjdk:8u151-alpine3.7`](#openjdk8u151-alpine37)
 -	[`openjdk:8u151-jdk`](#openjdk8u151-jdk)
 -	[`openjdk:8u151-jdk-alpine`](#openjdk8u151-jdk-alpine)
+-	[`openjdk:8u151-jdk-alpine3.7`](#openjdk8u151-jdk-alpine37)
 -	[`openjdk:8u151-jdk-nanoserver`](#openjdk8u151-jdk-nanoserver)
 -	[`openjdk:8u151-jdk-nanoserver-sac2016`](#openjdk8u151-jdk-nanoserver-sac2016)
 -	[`openjdk:8u151-jdk-slim`](#openjdk8u151-jdk-slim)
+-	[`openjdk:8u151-jdk-slim-stretch`](#openjdk8u151-jdk-slim-stretch)
+-	[`openjdk:8u151-jdk-stretch`](#openjdk8u151-jdk-stretch)
 -	[`openjdk:8u151-jdk-windowsservercore`](#openjdk8u151-jdk-windowsservercore)
 -	[`openjdk:8u151-jdk-windowsservercore-1709`](#openjdk8u151-jdk-windowsservercore-1709)
 -	[`openjdk:8u151-jdk-windowsservercore-ltsc2016`](#openjdk8u151-jdk-windowsservercore-ltsc2016)
 -	[`openjdk:8u151-jre`](#openjdk8u151-jre)
 -	[`openjdk:8u151-jre-alpine`](#openjdk8u151-jre-alpine)
+-	[`openjdk:8u151-jre-alpine3.7`](#openjdk8u151-jre-alpine37)
 -	[`openjdk:8u151-jre-slim`](#openjdk8u151-jre-slim)
+-	[`openjdk:8u151-jre-slim-stretch`](#openjdk8u151-jre-slim-stretch)
+-	[`openjdk:8u151-jre-stretch`](#openjdk8u151-jre-stretch)
 -	[`openjdk:8u151-nanoserver`](#openjdk8u151-nanoserver)
 -	[`openjdk:8u151-nanoserver-sac2016`](#openjdk8u151-nanoserver-sac2016)
 -	[`openjdk:8u151-slim`](#openjdk8u151-slim)
+-	[`openjdk:8u151-slim-stretch`](#openjdk8u151-slim-stretch)
+-	[`openjdk:8u151-stretch`](#openjdk8u151-stretch)
 -	[`openjdk:8u151-windowsservercore`](#openjdk8u151-windowsservercore)
 -	[`openjdk:8u151-windowsservercore-1709`](#openjdk8u151-windowsservercore-1709)
 -	[`openjdk:8u151-windowsservercore-ltsc2016`](#openjdk8u151-windowsservercore-ltsc2016)
@@ -75,71 +123,104 @@
 -	[`openjdk:9.0.1`](#openjdk901)
 -	[`openjdk:9.0.1-11`](#openjdk901-11)
 -	[`openjdk:9.0.1-11-jdk`](#openjdk901-11-jdk)
+-	[`openjdk:9.0.1-11-jdk-sid`](#openjdk901-11-jdk-sid)
 -	[`openjdk:9.0.1-11-jdk-slim`](#openjdk901-11-jdk-slim)
+-	[`openjdk:9.0.1-11-jdk-slim-sid`](#openjdk901-11-jdk-slim-sid)
 -	[`openjdk:9.0.1-11-jre`](#openjdk901-11-jre)
+-	[`openjdk:9.0.1-11-jre-sid`](#openjdk901-11-jre-sid)
 -	[`openjdk:9.0.1-11-jre-slim`](#openjdk901-11-jre-slim)
+-	[`openjdk:9.0.1-11-jre-slim-sid`](#openjdk901-11-jre-slim-sid)
+-	[`openjdk:9.0.1-11-sid`](#openjdk901-11-sid)
 -	[`openjdk:9.0.1-11-slim`](#openjdk901-11-slim)
+-	[`openjdk:9.0.1-11-slim-sid`](#openjdk901-11-slim-sid)
 -	[`openjdk:9.0.1-jdk`](#openjdk901-jdk)
 -	[`openjdk:9.0.1-jdk-nanoserver`](#openjdk901-jdk-nanoserver)
 -	[`openjdk:9.0.1-jdk-nanoserver-sac2016`](#openjdk901-jdk-nanoserver-sac2016)
+-	[`openjdk:9.0.1-jdk-sid`](#openjdk901-jdk-sid)
 -	[`openjdk:9.0.1-jdk-slim`](#openjdk901-jdk-slim)
+-	[`openjdk:9.0.1-jdk-slim-sid`](#openjdk901-jdk-slim-sid)
 -	[`openjdk:9.0.1-jdk-windowsservercore`](#openjdk901-jdk-windowsservercore)
 -	[`openjdk:9.0.1-jdk-windowsservercore-1709`](#openjdk901-jdk-windowsservercore-1709)
 -	[`openjdk:9.0.1-jdk-windowsservercore-ltsc2016`](#openjdk901-jdk-windowsservercore-ltsc2016)
 -	[`openjdk:9.0.1-jre`](#openjdk901-jre)
+-	[`openjdk:9.0.1-jre-sid`](#openjdk901-jre-sid)
 -	[`openjdk:9.0.1-jre-slim`](#openjdk901-jre-slim)
+-	[`openjdk:9.0.1-jre-slim-sid`](#openjdk901-jre-slim-sid)
 -	[`openjdk:9.0.1-nanoserver`](#openjdk901-nanoserver)
 -	[`openjdk:9.0.1-nanoserver-sac2016`](#openjdk901-nanoserver-sac2016)
+-	[`openjdk:9.0.1-sid`](#openjdk901-sid)
 -	[`openjdk:9.0.1-slim`](#openjdk901-slim)
+-	[`openjdk:9.0.1-slim-sid`](#openjdk901-slim-sid)
 -	[`openjdk:9.0.1-windowsservercore`](#openjdk901-windowsservercore)
 -	[`openjdk:9.0.1-windowsservercore-1709`](#openjdk901-windowsservercore-1709)
 -	[`openjdk:9.0.1-windowsservercore-ltsc2016`](#openjdk901-windowsservercore-ltsc2016)
 -	[`openjdk:9.0-jdk`](#openjdk90-jdk)
 -	[`openjdk:9.0-jdk-nanoserver`](#openjdk90-jdk-nanoserver)
 -	[`openjdk:9.0-jdk-nanoserver-sac2016`](#openjdk90-jdk-nanoserver-sac2016)
+-	[`openjdk:9.0-jdk-sid`](#openjdk90-jdk-sid)
 -	[`openjdk:9.0-jdk-slim`](#openjdk90-jdk-slim)
+-	[`openjdk:9.0-jdk-slim-sid`](#openjdk90-jdk-slim-sid)
 -	[`openjdk:9.0-jdk-windowsservercore`](#openjdk90-jdk-windowsservercore)
 -	[`openjdk:9.0-jdk-windowsservercore-1709`](#openjdk90-jdk-windowsservercore-1709)
 -	[`openjdk:9.0-jdk-windowsservercore-ltsc2016`](#openjdk90-jdk-windowsservercore-ltsc2016)
 -	[`openjdk:9.0-jre`](#openjdk90-jre)
+-	[`openjdk:9.0-jre-sid`](#openjdk90-jre-sid)
 -	[`openjdk:9.0-jre-slim`](#openjdk90-jre-slim)
+-	[`openjdk:9.0-jre-slim-sid`](#openjdk90-jre-slim-sid)
 -	[`openjdk:9.0-nanoserver`](#openjdk90-nanoserver)
 -	[`openjdk:9.0-nanoserver-sac2016`](#openjdk90-nanoserver-sac2016)
+-	[`openjdk:9.0-sid`](#openjdk90-sid)
 -	[`openjdk:9.0-slim`](#openjdk90-slim)
+-	[`openjdk:9.0-slim-sid`](#openjdk90-slim-sid)
 -	[`openjdk:9.0-windowsservercore`](#openjdk90-windowsservercore)
 -	[`openjdk:9.0-windowsservercore-1709`](#openjdk90-windowsservercore-1709)
 -	[`openjdk:9.0-windowsservercore-ltsc2016`](#openjdk90-windowsservercore-ltsc2016)
 -	[`openjdk:9-jdk`](#openjdk9-jdk)
 -	[`openjdk:9-jdk-nanoserver`](#openjdk9-jdk-nanoserver)
 -	[`openjdk:9-jdk-nanoserver-sac2016`](#openjdk9-jdk-nanoserver-sac2016)
+-	[`openjdk:9-jdk-sid`](#openjdk9-jdk-sid)
 -	[`openjdk:9-jdk-slim`](#openjdk9-jdk-slim)
+-	[`openjdk:9-jdk-slim-sid`](#openjdk9-jdk-slim-sid)
 -	[`openjdk:9-jdk-windowsservercore`](#openjdk9-jdk-windowsservercore)
 -	[`openjdk:9-jdk-windowsservercore-1709`](#openjdk9-jdk-windowsservercore-1709)
 -	[`openjdk:9-jdk-windowsservercore-ltsc2016`](#openjdk9-jdk-windowsservercore-ltsc2016)
 -	[`openjdk:9-jre`](#openjdk9-jre)
+-	[`openjdk:9-jre-sid`](#openjdk9-jre-sid)
 -	[`openjdk:9-jre-slim`](#openjdk9-jre-slim)
+-	[`openjdk:9-jre-slim-sid`](#openjdk9-jre-slim-sid)
 -	[`openjdk:9-nanoserver`](#openjdk9-nanoserver)
 -	[`openjdk:9-nanoserver-sac2016`](#openjdk9-nanoserver-sac2016)
+-	[`openjdk:9-sid`](#openjdk9-sid)
 -	[`openjdk:9-slim`](#openjdk9-slim)
+-	[`openjdk:9-slim-sid`](#openjdk9-slim-sid)
 -	[`openjdk:9-windowsservercore`](#openjdk9-windowsservercore)
 -	[`openjdk:9-windowsservercore-1709`](#openjdk9-windowsservercore-1709)
 -	[`openjdk:9-windowsservercore-ltsc2016`](#openjdk9-windowsservercore-ltsc2016)
 -	[`openjdk:alpine`](#openjdkalpine)
+-	[`openjdk:alpine3.7`](#openjdkalpine37)
 -	[`openjdk:jdk`](#openjdkjdk)
 -	[`openjdk:jdk-alpine`](#openjdkjdk-alpine)
+-	[`openjdk:jdk-alpine3.7`](#openjdkjdk-alpine37)
 -	[`openjdk:jdk-nanoserver`](#openjdkjdk-nanoserver)
 -	[`openjdk:jdk-nanoserver-sac2016`](#openjdkjdk-nanoserver-sac2016)
 -	[`openjdk:jdk-slim`](#openjdkjdk-slim)
+-	[`openjdk:jdk-slim-stretch`](#openjdkjdk-slim-stretch)
+-	[`openjdk:jdk-stretch`](#openjdkjdk-stretch)
 -	[`openjdk:jdk-windowsservercore`](#openjdkjdk-windowsservercore)
 -	[`openjdk:jdk-windowsservercore-1709`](#openjdkjdk-windowsservercore-1709)
 -	[`openjdk:jdk-windowsservercore-ltsc2016`](#openjdkjdk-windowsservercore-ltsc2016)
 -	[`openjdk:jre`](#openjdkjre)
 -	[`openjdk:jre-alpine`](#openjdkjre-alpine)
+-	[`openjdk:jre-alpine3.7`](#openjdkjre-alpine37)
 -	[`openjdk:jre-slim`](#openjdkjre-slim)
+-	[`openjdk:jre-slim-stretch`](#openjdkjre-slim-stretch)
+-	[`openjdk:jre-stretch`](#openjdkjre-stretch)
 -	[`openjdk:latest`](#openjdklatest)
 -	[`openjdk:nanoserver`](#openjdknanoserver)
 -	[`openjdk:nanoserver-sac2016`](#openjdknanoserver-sac2016)
 -	[`openjdk:slim`](#openjdkslim)
+-	[`openjdk:slim-stretch`](#openjdkslim-stretch)
+-	[`openjdk:stretch`](#openjdkstretch)
 -	[`openjdk:windowsservercore`](#openjdkwindowsservercore)
 -	[`openjdk:windowsservercore-1709`](#openjdkwindowsservercore-1709)
 -	[`openjdk:windowsservercore-ltsc2016`](#openjdkwindowsservercore-ltsc2016)
@@ -1292,6 +1373,14 @@ RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/m
 		Size: 106.3 MB (106329836 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `openjdk:6b38-jdk-slim-wheezy`
+
+**does not exist** (yet?)
+
+## `openjdk:6b38-jdk-wheezy`
+
+**does not exist** (yet?)
+
 ## `openjdk:6b38-jre`
 
 ```console
@@ -1814,6 +1903,14 @@ RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/m
 		Size: 65.0 MB (65003368 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `openjdk:6b38-jre-slim-wheezy`
+
+**does not exist** (yet?)
+
+## `openjdk:6b38-jre-wheezy`
+
+**does not exist** (yet?)
+
 ## `openjdk:6b38-slim`
 
 ```console
@@ -2058,6 +2155,14 @@ RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/m
 		Last Modified: Tue, 12 Dec 2017 19:20:24 GMT  
 		Size: 106.3 MB (106329836 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:6b38-slim-wheezy`
+
+**does not exist** (yet?)
+
+## `openjdk:6b38-wheezy`
+
+**does not exist** (yet?)
 
 ## `openjdk:6-jdk`
 
@@ -2605,6 +2710,14 @@ RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/m
 		Size: 106.3 MB (106329836 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `openjdk:6-jdk-slim-wheezy`
+
+**does not exist** (yet?)
+
+## `openjdk:6-jdk-wheezy`
+
+**does not exist** (yet?)
+
 ## `openjdk:6-jre`
 
 ```console
@@ -3127,6 +3240,14 @@ RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/m
 		Size: 65.0 MB (65003368 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `openjdk:6-jre-slim-wheezy`
+
+**does not exist** (yet?)
+
+## `openjdk:6-jre-wheezy`
+
+**does not exist** (yet?)
+
 ## `openjdk:6-slim`
 
 ```console
@@ -3371,6 +3492,14 @@ RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/m
 		Last Modified: Tue, 12 Dec 2017 19:20:24 GMT  
 		Size: 106.3 MB (106329836 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:6-slim-wheezy`
+
+**does not exist** (yet?)
+
+## `openjdk:6-wheezy`
+
+**does not exist** (yet?)
 
 ## `openjdk:7`
 
@@ -4225,6 +4354,10 @@ RUN set -x 	&& apk add --no-cache 		openjdk7="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA
 		Size: 69.7 MB (69743443 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `openjdk:7-alpine3.7`
+
+**does not exist** (yet?)
+
 ## `openjdk:7-jdk`
 
 ```console
@@ -5078,6 +5211,14 @@ RUN set -x 	&& apk add --no-cache 		openjdk7="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA
 		Size: 69.7 MB (69743443 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `openjdk:7-jdk-alpine3.7`
+
+**does not exist** (yet?)
+
+## `openjdk:7-jdk-jessie`
+
+**does not exist** (yet?)
+
 ## `openjdk:7-jdk-slim`
 
 ```console
@@ -5499,6 +5640,14 @@ RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/m
 		Last Modified: Tue, 28 Nov 2017 18:01:10 GMT  
 		Size: 95.5 MB (95531318 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:7-jdk-slim-jessie`
+
+**does not exist** (yet?)
+
+## `openjdk:7-jessie`
+
+**does not exist** (yet?)
 
 ## `openjdk:7-jre`
 
@@ -6311,6 +6460,14 @@ RUN set -x 	&& apk add --no-cache 		openjdk7-jre="$JAVA_ALPINE_VERSION" 	&& [ "$
 		Size: 53.4 MB (53426108 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `openjdk:7-jre-alpine3.7`
+
+**does not exist** (yet?)
+
+## `openjdk:7-jre-jessie`
+
+**does not exist** (yet?)
+
 ## `openjdk:7-jre-slim`
 
 ```console
@@ -6733,6 +6890,10 @@ RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/m
 		Size: 65.9 MB (65942826 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `openjdk:7-jre-slim-jessie`
+
+**does not exist** (yet?)
+
 ## `openjdk:7-slim`
 
 ```console
@@ -7154,6 +7315,10 @@ RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/m
 		Last Modified: Tue, 28 Nov 2017 18:01:10 GMT  
 		Size: 95.5 MB (95531318 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:7-slim-jessie`
+
+**does not exist** (yet?)
 
 ## `openjdk:7u151`
 
@@ -8008,6 +8173,10 @@ RUN set -x 	&& apk add --no-cache 		openjdk7="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA
 		Size: 69.7 MB (69743443 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `openjdk:7u151-alpine3.7`
+
+**does not exist** (yet?)
+
 ## `openjdk:7u151-jdk`
 
 ```console
@@ -8861,6 +9030,14 @@ RUN set -x 	&& apk add --no-cache 		openjdk7="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA
 		Size: 69.7 MB (69743443 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `openjdk:7u151-jdk-alpine3.7`
+
+**does not exist** (yet?)
+
+## `openjdk:7u151-jdk-jessie`
+
+**does not exist** (yet?)
+
 ## `openjdk:7u151-jdk-slim`
 
 ```console
@@ -9282,6 +9459,14 @@ RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/m
 		Last Modified: Tue, 28 Nov 2017 18:01:10 GMT  
 		Size: 95.5 MB (95531318 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:7u151-jdk-slim-jessie`
+
+**does not exist** (yet?)
+
+## `openjdk:7u151-jessie`
+
+**does not exist** (yet?)
 
 ## `openjdk:7u151-jre`
 
@@ -10094,6 +10279,14 @@ RUN set -x 	&& apk add --no-cache 		openjdk7-jre="$JAVA_ALPINE_VERSION" 	&& [ "$
 		Size: 53.4 MB (53426108 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `openjdk:7u151-jre-alpine3.7`
+
+**does not exist** (yet?)
+
+## `openjdk:7u151-jre-jessie`
+
+**does not exist** (yet?)
+
 ## `openjdk:7u151-jre-slim`
 
 ```console
@@ -10516,6 +10709,10 @@ RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/m
 		Size: 65.9 MB (65942826 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `openjdk:7u151-jre-slim-jessie`
+
+**does not exist** (yet?)
+
 ## `openjdk:7u151-slim`
 
 ```console
@@ -10937,6 +11134,10 @@ RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/m
 		Last Modified: Tue, 28 Nov 2017 18:01:10 GMT  
 		Size: 95.5 MB (95531318 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:7u151-slim-jessie`
+
+**does not exist** (yet?)
 
 ## `openjdk:8`
 
@@ -11875,6 +12076,10 @@ RUN set -x 	&& apk add --no-cache 		openjdk8="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA
 		Size: 69.1 MB (69094273 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `openjdk:8-alpine3.7`
+
+**does not exist** (yet?)
+
 ## `openjdk:8-jdk`
 
 ```console
@@ -12812,6 +13017,10 @@ RUN set -x 	&& apk add --no-cache 		openjdk8="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA
 		Size: 69.1 MB (69094273 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `openjdk:8-jdk-alpine3.7`
+
+**does not exist** (yet?)
+
 ## `openjdk:8-jdk-nanoserver`
 
 ```console
@@ -13400,6 +13609,14 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 		Last Modified: Tue, 12 Dec 2017 07:48:03 GMT  
 		Size: 272.2 KB (272152 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:8-jdk-slim-stretch`
+
+**does not exist** (yet?)
+
+## `openjdk:8-jdk-stretch`
+
+**does not exist** (yet?)
 
 ## `openjdk:8-jdk-windowsservercore`
 
@@ -14643,6 +14860,10 @@ RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$
 		Size: 53.3 MB (53303048 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `openjdk:8-jre-alpine3.7`
+
+**does not exist** (yet?)
+
 ## `openjdk:8-jre-slim`
 
 ```console
@@ -15053,6 +15274,14 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 		Last Modified: Tue, 12 Dec 2017 07:49:22 GMT  
 		Size: 272.2 KB (272151 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:8-jre-slim-stretch`
+
+**does not exist** (yet?)
+
+## `openjdk:8-jre-stretch`
+
+**does not exist** (yet?)
 
 ## `openjdk:8-nanoserver`
 
@@ -15642,6 +15871,14 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 		Last Modified: Tue, 12 Dec 2017 07:48:03 GMT  
 		Size: 272.2 KB (272152 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:8-slim-stretch`
+
+**does not exist** (yet?)
+
+## `openjdk:8-stretch`
+
+**does not exist** (yet?)
 
 ## `openjdk:8u151`
 
@@ -16580,6 +16817,10 @@ RUN set -x 	&& apk add --no-cache 		openjdk8="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA
 		Size: 69.1 MB (69094273 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `openjdk:8u151-alpine3.7`
+
+**does not exist** (yet?)
+
 ## `openjdk:8u151-jdk`
 
 ```console
@@ -17517,6 +17758,10 @@ RUN set -x 	&& apk add --no-cache 		openjdk8="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA
 		Size: 69.1 MB (69094273 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `openjdk:8u151-jdk-alpine3.7`
+
+**does not exist** (yet?)
+
 ## `openjdk:8u151-jdk-nanoserver`
 
 ```console
@@ -18105,6 +18350,14 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 		Last Modified: Tue, 12 Dec 2017 07:48:03 GMT  
 		Size: 272.2 KB (272152 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:8u151-jdk-slim-stretch`
+
+**does not exist** (yet?)
+
+## `openjdk:8u151-jdk-stretch`
+
+**does not exist** (yet?)
 
 ## `openjdk:8u151-jdk-windowsservercore`
 
@@ -19348,6 +19601,10 @@ RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$
 		Size: 53.3 MB (53303048 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `openjdk:8u151-jre-alpine3.7`
+
+**does not exist** (yet?)
+
 ## `openjdk:8u151-jre-slim`
 
 ```console
@@ -19758,6 +20015,14 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 		Last Modified: Tue, 12 Dec 2017 07:49:22 GMT  
 		Size: 272.2 KB (272151 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:8u151-jre-slim-stretch`
+
+**does not exist** (yet?)
+
+## `openjdk:8u151-jre-stretch`
+
+**does not exist** (yet?)
 
 ## `openjdk:8u151-nanoserver`
 
@@ -20347,6 +20612,14 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 		Last Modified: Tue, 12 Dec 2017 07:48:03 GMT  
 		Size: 272.2 KB (272152 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:8u151-slim-stretch`
+
+**does not exist** (yet?)
+
+## `openjdk:8u151-stretch`
+
+**does not exist** (yet?)
 
 ## `openjdk:8u151-windowsservercore`
 
@@ -23852,6 +24125,10 @@ CMD ["jshell"]
 		Size: 245.8 MB (245769316 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `openjdk:9.0.1-11-jdk-sid`
+
+**does not exist** (yet?)
+
 ## `openjdk:9.0.1-11-jdk-slim`
 
 ```console
@@ -24287,6 +24564,10 @@ CMD ["jshell"]
 		Last Modified: Tue, 12 Dec 2017 07:51:21 GMT  
 		Size: 140.8 MB (140777244 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:9.0.1-11-jdk-slim-sid`
+
+**does not exist** (yet?)
 
 ## `openjdk:9.0.1-11-jre`
 
@@ -24794,6 +25075,10 @@ RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/m
 		Size: 166.4 MB (166444866 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `openjdk:9.0.1-11-jre-sid`
+
+**does not exist** (yet?)
+
 ## `openjdk:9.0.1-11-jre-slim`
 
 ```console
@@ -25215,6 +25500,14 @@ RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/m
 		Last Modified: Tue, 12 Dec 2017 07:53:05 GMT  
 		Size: 66.4 MB (66400784 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:9.0.1-11-jre-slim-sid`
+
+**does not exist** (yet?)
+
+## `openjdk:9.0.1-11-sid`
+
+**does not exist** (yet?)
 
 ## `openjdk:9.0.1-11-slim`
 
@@ -25651,6 +25944,10 @@ CMD ["jshell"]
 		Last Modified: Tue, 12 Dec 2017 07:51:21 GMT  
 		Size: 140.8 MB (140777244 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:9.0.1-11-slim-sid`
+
+**does not exist** (yet?)
 
 ## `openjdk:9.0.1-jdk`
 
@@ -26404,6 +26701,10 @@ CMD ["jshell"]
 		Size: 942.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `openjdk:9.0.1-jdk-sid`
+
+**does not exist** (yet?)
+
 ## `openjdk:9.0.1-jdk-slim`
 
 ```console
@@ -26839,6 +27140,10 @@ CMD ["jshell"]
 		Last Modified: Tue, 12 Dec 2017 07:51:21 GMT  
 		Size: 140.8 MB (140777244 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:9.0.1-jdk-slim-sid`
+
+**does not exist** (yet?)
 
 ## `openjdk:9.0.1-jdk-windowsservercore`
 
@@ -27717,6 +28022,10 @@ RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/m
 		Size: 166.4 MB (166444866 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `openjdk:9.0.1-jre-sid`
+
+**does not exist** (yet?)
+
 ## `openjdk:9.0.1-jre-slim`
 
 ```console
@@ -28139,6 +28448,10 @@ RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/m
 		Size: 66.4 MB (66400784 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `openjdk:9.0.1-jre-slim-sid`
+
+**does not exist** (yet?)
+
 ## `openjdk:9.0.1-nanoserver`
 
 ```console
@@ -28328,6 +28641,10 @@ CMD ["jshell"]
 		Last Modified: Thu, 21 Dec 2017 01:07:32 GMT  
 		Size: 942.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:9.0.1-sid`
+
+**does not exist** (yet?)
 
 ## `openjdk:9.0.1-slim`
 
@@ -28764,6 +29081,10 @@ CMD ["jshell"]
 		Last Modified: Tue, 12 Dec 2017 07:51:21 GMT  
 		Size: 140.8 MB (140777244 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:9.0.1-slim-sid`
+
+**does not exist** (yet?)
 
 ## `openjdk:9.0.1-windowsservercore`
 
@@ -29888,6 +30209,10 @@ CMD ["jshell"]
 		Size: 942.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `openjdk:9.0-jdk-sid`
+
+**does not exist** (yet?)
+
 ## `openjdk:9.0-jdk-slim`
 
 ```console
@@ -30323,6 +30648,10 @@ CMD ["jshell"]
 		Last Modified: Tue, 12 Dec 2017 07:51:21 GMT  
 		Size: 140.8 MB (140777244 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:9.0-jdk-slim-sid`
+
+**does not exist** (yet?)
 
 ## `openjdk:9.0-jdk-windowsservercore`
 
@@ -31201,6 +31530,10 @@ RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/m
 		Size: 166.4 MB (166444866 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `openjdk:9.0-jre-sid`
+
+**does not exist** (yet?)
+
 ## `openjdk:9.0-jre-slim`
 
 ```console
@@ -31623,6 +31956,10 @@ RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/m
 		Size: 66.4 MB (66400784 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `openjdk:9.0-jre-slim-sid`
+
+**does not exist** (yet?)
+
 ## `openjdk:9.0-nanoserver`
 
 ```console
@@ -31812,6 +32149,10 @@ CMD ["jshell"]
 		Last Modified: Thu, 21 Dec 2017 01:07:32 GMT  
 		Size: 942.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:9.0-sid`
+
+**does not exist** (yet?)
 
 ## `openjdk:9.0-slim`
 
@@ -32248,6 +32589,10 @@ CMD ["jshell"]
 		Last Modified: Tue, 12 Dec 2017 07:51:21 GMT  
 		Size: 140.8 MB (140777244 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:9.0-slim-sid`
+
+**does not exist** (yet?)
 
 ## `openjdk:9.0-windowsservercore`
 
@@ -33372,6 +33717,10 @@ CMD ["jshell"]
 		Size: 942.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `openjdk:9-jdk-sid`
+
+**does not exist** (yet?)
+
 ## `openjdk:9-jdk-slim`
 
 ```console
@@ -33807,6 +34156,10 @@ CMD ["jshell"]
 		Last Modified: Tue, 12 Dec 2017 07:51:21 GMT  
 		Size: 140.8 MB (140777244 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:9-jdk-slim-sid`
+
+**does not exist** (yet?)
 
 ## `openjdk:9-jdk-windowsservercore`
 
@@ -34685,6 +35038,10 @@ RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/m
 		Size: 166.4 MB (166444866 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `openjdk:9-jre-sid`
+
+**does not exist** (yet?)
+
 ## `openjdk:9-jre-slim`
 
 ```console
@@ -35107,6 +35464,10 @@ RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/m
 		Size: 66.4 MB (66400784 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `openjdk:9-jre-slim-sid`
+
+**does not exist** (yet?)
+
 ## `openjdk:9-nanoserver`
 
 ```console
@@ -35296,6 +35657,10 @@ CMD ["jshell"]
 		Last Modified: Thu, 21 Dec 2017 01:07:32 GMT  
 		Size: 942.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:9-sid`
+
+**does not exist** (yet?)
 
 ## `openjdk:9-slim`
 
@@ -35732,6 +36097,10 @@ CMD ["jshell"]
 		Last Modified: Tue, 12 Dec 2017 07:51:21 GMT  
 		Size: 140.8 MB (140777244 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:9-slim-sid`
+
+**does not exist** (yet?)
 
 ## `openjdk:9-windowsservercore`
 
@@ -36436,6 +36805,10 @@ RUN set -x 	&& apk add --no-cache 		openjdk8="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA
 		Last Modified: Tue, 05 Dec 2017 17:59:20 GMT  
 		Size: 69.1 MB (69094273 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:alpine3.7`
+
+**does not exist** (yet?)
 
 ## `openjdk:jdk`
 
@@ -37374,6 +37747,10 @@ RUN set -x 	&& apk add --no-cache 		openjdk8="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA
 		Size: 69.1 MB (69094273 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `openjdk:jdk-alpine3.7`
+
+**does not exist** (yet?)
+
 ## `openjdk:jdk-nanoserver`
 
 ```console
@@ -37962,6 +38339,14 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 		Last Modified: Tue, 12 Dec 2017 07:48:03 GMT  
 		Size: 272.2 KB (272152 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:jdk-slim-stretch`
+
+**does not exist** (yet?)
+
+## `openjdk:jdk-stretch`
+
+**does not exist** (yet?)
 
 ## `openjdk:jdk-windowsservercore`
 
@@ -39205,6 +39590,10 @@ RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$
 		Size: 53.3 MB (53303048 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `openjdk:jre-alpine3.7`
+
+**does not exist** (yet?)
+
 ## `openjdk:jre-slim`
 
 ```console
@@ -39615,6 +40004,14 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 		Last Modified: Tue, 12 Dec 2017 07:49:22 GMT  
 		Size: 272.2 KB (272151 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:jre-slim-stretch`
+
+**does not exist** (yet?)
+
+## `openjdk:jre-stretch`
+
+**does not exist** (yet?)
 
 ## `openjdk:latest`
 
@@ -40808,6 +41205,14 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 		Last Modified: Tue, 12 Dec 2017 07:48:03 GMT  
 		Size: 272.2 KB (272152 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:slim-stretch`
+
+**does not exist** (yet?)
+
+## `openjdk:stretch`
+
+**does not exist** (yet?)
 
 ## `openjdk:windowsservercore`
 
