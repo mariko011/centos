@@ -2,12 +2,12 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:52a3fa05c05f626a3bdd7098ec64612f75aab97f7bf290e44262674f71a6e897`
-- Created: `2017-12-12T03:36:03.186344558Z`
+- Image ID: `sha256:65a15740ea5dc6335a9b7c43da9ec9ff1b32be5c096b71d498bf80a2f4002b67`
+- Created: `2018-01-03T23:14:13.706785048Z`
 - Virtual Size: ~ 385.41 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Entrypoint: `["/docker-entrypoint.sh"]`
+- Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["cassandra","-f"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
