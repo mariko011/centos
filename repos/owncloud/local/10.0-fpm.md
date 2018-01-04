@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2e94482420d08832a503a298206f49455a56c45f2efc26cd0e375e0ccbf5fdfd`
-- Created: `2017-12-20T00:06:34.790825405Z`
-- Virtual Size: ~ 591.78 Mb  
+- Image ID: `sha256:e82abeb3203922aa9dc03d347f702d535050003c89e3a89746270db952fa5c41`
+- Created: `2018-01-04T09:44:29.750373985Z`
+- Virtual Size: ~ 590.89 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -2808,34 +2808,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/slang2/2.3.0-2/ (for browsing the source)
 - https://sources.debian.net/src/slang2/2.3.0-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/slang2/2.3.0-2/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `sqlite3=3.8.7.1-1+deb8u2`
-
-Binary Packages:
-
-- `libsqlite3-0:amd64=3.8.7.1-1+deb8u2`
-
-Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
-
-- `GPL-2`
-- `GPL-2+`
-- `public-domain`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris sqlite3=3.8.7.1-1+deb8u2
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.8.7.1-1+deb8u2.dsc' sqlite3_3.8.7.1-1+deb8u2.dsc 2540 SHA256:a99074d920a3b6c95bbc55402ff62ccddbfeed2f1a0ed63423bf79e7e4faeff9
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.8.7.1.orig-www.tar.bz2' sqlite3_3.8.7.1.orig-www.tar.bz2 3337784 SHA256:e642657752f20144f42d002895510ea635e0384b14f276f1a2f281b73252bc64
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.8.7.1.orig.tar.bz2' sqlite3_3.8.7.1.orig.tar.bz2 4082068 SHA256:2632a999feba925aa0f1828fa669a091b165a719676765fb542f538345bfa7b9
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.8.7.1-1+deb8u2.debian.tar.xz' sqlite3_3.8.7.1-1+deb8u2.debian.tar.xz 20428 SHA256:e3ef272994d4423c0dbed82c1171d774d7c0a459db44eb1750a4a61d719fbbd2
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/sqlite3/3.8.7.1-1+deb8u2/ (for browsing the source)
-- https://sources.debian.net/src/sqlite3/3.8.7.1-1+deb8u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sqlite3/3.8.7.1-1+deb8u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `startpar=0.59-3`
 
