@@ -1,7 +1,7 @@
 ## `percona:latest`
 
 ```console
-$ docker pull percona@sha256:449f3b46613b52c577c83eaaae6c4b4f1fac70a30011f81cc92318239eef6750
+$ docker pull percona@sha256:d211ef45100813ebce9026163e562e226fecc1fce6b8b1af6baeed54ebf77a25
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull percona@sha256:449f3b46613b52c577c83eaaae6c4b4f1fac70a30011f81cc92
 ### `percona:latest` - linux; amd64
 
 ```console
-$ docker pull percona@sha256:6a647e0600e36a4af2d8161ea3845fa804de80a98e81a5622e230e0347ec6f2e
+$ docker pull percona@sha256:6a7681616af89ee4706b5aace8f2f1a4df93fb988e64a007c9f960a624c5e5e6
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **141.1 MB (141108901 bytes)**  
+-	Total Size: **141.1 MB (141148084 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c53123ced18b5940fac03982bb08dcd1acb171909169a9d3107583c9f7b1b961`
+-	Image ID: `sha256:dc189d65dd082c9976fa8257f3b048f02b4f02d5ea581f0de8d507378b2370d5`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -45,21 +45,21 @@ RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg -
 RUN echo 'deb https://repo.percona.com/apt jessie main' > /etc/apt/sources.list.d/percona.list
 # Tue, 12 Dec 2017 02:38:37 GMT
 ENV PERCONA_MAJOR=5.7
-# Tue, 19 Dec 2017 17:56:29 GMT
-ENV PERCONA_VERSION=5.7.20-18-1.jessie
-# Tue, 19 Dec 2017 17:57:03 GMT
+# Thu, 04 Jan 2018 00:06:34 GMT
+ENV PERCONA_VERSION=5.7.20-19-1.jessie
+# Thu, 04 Jan 2018 00:07:10 GMT
 RUN { 		for key in 			percona-server-server/root_password 			percona-server-server/root_password_again 			"percona-server-server-$PERCONA_MAJOR/root-pass" 			"percona-server-server-$PERCONA_MAJOR/re-root-pass" 		; do 			echo "percona-server-server-$PERCONA_MAJOR" "$key" password 'unused'; 		done; 	} | debconf-set-selections 	&& apt-get update 	&& apt-get install -y 		percona-server-server-$PERCONA_MAJOR=$PERCONA_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& sed -ri 's/^user\s/#&/' /etc/mysql/my.cnf 	&& rm -rf /var/lib/mysql && mkdir -p /var/lib/mysql /var/run/mysqld 	&& chown -R mysql:mysql /var/lib/mysql /var/run/mysqld 	&& chmod 777 /var/run/mysqld 	&& find /etc/mysql/ -name '*.cnf' -print0 		| xargs -0 grep -lZE '^(bind-address|log)' 		| xargs -rt -0 sed -Ei 's/^(bind-address|log)/#&/' 	&& echo '[mysqld]\nskip-host-cache\nskip-name-resolve' > /etc/mysql/conf.d/docker.cnf
-# Tue, 19 Dec 2017 17:57:07 GMT
+# Thu, 04 Jan 2018 00:07:11 GMT
 VOLUME [/var/lib/mysql /var/log/mysql]
-# Tue, 19 Dec 2017 17:57:07 GMT
+# Thu, 04 Jan 2018 00:07:11 GMT
 COPY file:ff55c7472da1028b4f65163094878d7e111bf055794e1db6f6adbc876a67481b in /usr/local/bin/ 
-# Tue, 19 Dec 2017 17:57:08 GMT
+# Thu, 04 Jan 2018 00:07:12 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Tue, 19 Dec 2017 17:57:09 GMT
+# Thu, 04 Jan 2018 00:07:20 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 19 Dec 2017 17:57:16 GMT
+# Thu, 04 Jan 2018 00:07:20 GMT
 EXPOSE 3306/tcp
-# Tue, 19 Dec 2017 17:57:17 GMT
+# Thu, 04 Jan 2018 00:07:20 GMT
 CMD ["mysqld"]
 ```
 
@@ -92,15 +92,15 @@ CMD ["mysqld"]
 		Last Modified: Tue, 12 Dec 2017 02:42:09 GMT  
 		Size: 208.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2bfab51ec1f90f5c2aeaa9006ed8eb55cf44f73a1cb06a0e25e790e485146929`  
-		Last Modified: Tue, 19 Dec 2017 17:57:48 GMT  
-		Size: 80.5 MB (80524589 bytes)  
+	-	`sha256:dce6b7724ec77fcf59037025db7acb7193a2d99b55568a6147f3a82b15909d15`  
+		Last Modified: Thu, 04 Jan 2018 00:08:10 GMT  
+		Size: 80.6 MB (80563772 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3e27aab41b4dc562aca27e331c448f2b53442963cd2dfb7852ad3f0fed221ca9`  
-		Last Modified: Tue, 19 Dec 2017 17:57:35 GMT  
-		Size: 2.4 KB (2448 bytes)  
+	-	`sha256:8df1e8566cce6977ebed1d2cdb4d58d7ad37a9e500a2b4314cc16b6d30994472`  
+		Last Modified: Thu, 04 Jan 2018 00:07:57 GMT  
+		Size: 2.4 KB (2449 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d3b42ede5e813939608af87ddb3c75aa75ab2d5ff70a709f6053940ad1cfa7d`  
-		Last Modified: Tue, 19 Dec 2017 17:57:37 GMT  
-		Size: 121.0 B  
+	-	`sha256:ff57fe82a4ea88e0dca9410719305531fa30793f8f21b4285cf4d2d7578d83d6`  
+		Last Modified: Thu, 04 Jan 2018 00:07:57 GMT  
+		Size: 120.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
