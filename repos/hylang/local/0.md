@@ -1,10 +1,10 @@
-# `hylang:0.13.0`
+# `hylang:0.13.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:efd22736d38f2a6764eca621bf9b0221a8aa45422b8031d62e67a9b8ea2a3a8f`
-- Created: `2017-12-21T02:16:18.190510303Z`
-- Virtual Size: ~ 698.46 Mb  
+- Image ID: `sha256:71cb1b73d6faa69805f8ad82eb47c65266c22e0a93bcfaf4aca420ec42269d36`
+- Created: `2018-01-02T22:05:43.919266852Z`
+- Virtual Size: ~ 698.37 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["hy"]`
