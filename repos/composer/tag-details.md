@@ -7,6 +7,8 @@
 -	[`composer:1.4.3`](#composer143)
 -	[`composer:1.5`](#composer15)
 -	[`composer:1.5.6`](#composer156)
+-	[`composer:1.6`](#composer16)
+-	[`composer:1.6.1`](#composer161)
 -	[`composer:latest`](#composerlatest)
 
 ## `composer:1`
@@ -743,6 +745,14 @@ CMD ["composer"]
 		Last Modified: Thu, 04 Jan 2018 08:37:16 GMT  
 		Size: 92.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `composer:1.6`
+
+**does not exist** (yet?)
+
+## `composer:1.6.1`
+
+**does not exist** (yet?)
 
 ## `composer:latest`
 
