@@ -1,4 +1,4 @@
-# `openjdk:8u151-jre-alpine`
+# `openjdk:8u151-jre-alpine3.7`
 
 ## Docker Metadata
 

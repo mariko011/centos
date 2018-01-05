@@ -1,4 +1,4 @@
-# `openjdk:8u151-jre-slim`
+# `openjdk:8u151-jre-slim-stretch`
 
 ## Docker Metadata
 

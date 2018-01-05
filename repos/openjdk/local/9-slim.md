@@ -1,4 +1,4 @@
-# `openjdk:9.0.1-11-jdk-slim`
+# `openjdk:9.0.1-11-jdk-slim-sid`
 
 ## Docker Metadata
 

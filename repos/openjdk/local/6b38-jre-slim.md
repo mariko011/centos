@@ -1,4 +1,4 @@
-# `openjdk:6b38-jre-slim`
+# `openjdk:6b38-jre-slim-wheezy`
 
 ## Docker Metadata
 

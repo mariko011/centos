@@ -1,4 +1,4 @@
-# `openjdk:8u151-jdk`
+# `openjdk:8u151-jdk-stretch`
 
 ## Docker Metadata
 

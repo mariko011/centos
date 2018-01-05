@@ -1,4 +1,4 @@
-# `openjdk:7u151-jdk-slim`
+# `openjdk:7u151-jdk-slim-jessie`
 
 ## Docker Metadata
 
