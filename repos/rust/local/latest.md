@@ -1,10 +1,10 @@
-# `rust:1.22.1-stretch`
+# `rust:1.23.0-stretch`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0a08c365b9ace151cc69ce7112155e2c4479f57db0d9ffafbefd8a9932caf739`
-- Created: `2017-12-12T17:15:29.314005411Z`
-- Virtual Size: ~ 1.35 Gb  
+- Image ID: `sha256:02f381373aec8d0033cd25bdab8f641b4c847dc2f738432133620c33076b07ed`
+- Created: `2018-01-04T19:13:12.477595969Z`
+- Virtual Size: ~ 1.45 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
