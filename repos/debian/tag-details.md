@@ -4,10 +4,16 @@
 
 -	[`debian:7`](#debian7)
 -	[`debian:7.11`](#debian711)
+-	[`debian:7.11-slim`](#debian711-slim)
+-	[`debian:7-slim`](#debian7-slim)
 -	[`debian:8`](#debian8)
 -	[`debian:8.10`](#debian810)
+-	[`debian:8.10-slim`](#debian810-slim)
+-	[`debian:8-slim`](#debian8-slim)
 -	[`debian:9`](#debian9)
 -	[`debian:9.3`](#debian93)
+-	[`debian:9.3-slim`](#debian93-slim)
+-	[`debian:9-slim`](#debian9-slim)
 -	[`debian:buster`](#debianbuster)
 -	[`debian:buster-20171210`](#debianbuster-20171210)
 -	[`debian:buster-slim`](#debianbuster-slim)
@@ -283,6 +289,14 @@ CMD ["bash"]
 		Last Modified: Tue, 12 Dec 2017 15:09:23 GMT  
 		Size: 37.4 MB (37439308 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `debian:7.11-slim`
+
+**does not exist** (yet?)
+
+## `debian:7-slim`
+
+**does not exist** (yet?)
 
 ## `debian:8`
 
@@ -680,6 +694,14 @@ CMD ["bash"]
 		Size: 52.8 MB (52790322 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `debian:8.10-slim`
+
+**does not exist** (yet?)
+
+## `debian:8-slim`
+
+**does not exist** (yet?)
+
 ## `debian:9`
 
 ```console
@@ -1075,6 +1097,14 @@ CMD ["bash"]
 		Last Modified: Tue, 12 Dec 2017 06:30:44 GMT  
 		Size: 45.0 MB (44967073 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `debian:9.3-slim`
+
+**does not exist** (yet?)
+
+## `debian:9-slim`
+
+**does not exist** (yet?)
 
 ## `debian:buster`
 
