@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d841c1da23b498ef908ef8558cd302127b1e4d25f06987f1c4a2ae228299fe21`
-- Created: `2017-12-23T15:16:44.366867263Z`
-- Virtual Size: ~ 426.86 Mb  
+- Image ID: `sha256:6ff7992d8366b775dad51142399550443f4519181365ba4c545390c5e5346867`
+- Created: `2018-01-04T06:48:37.627553537Z`
+- Virtual Size: ~ 423.02 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -1654,11 +1654,9 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libjpeg-dev=1:1.3.1-12`
 - `libjpeg62-turbo:amd64=1:1.3.1-12`
-- `libjpeg62-turbo-dev:amd64=1:1.3.1-12`
 
-Licenses: (parsed from: `/usr/share/doc/libjpeg-dev/copyright`, `/usr/share/doc/libjpeg62-turbo/copyright`, `/usr/share/doc/libjpeg62-turbo-dev/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libjpeg62-turbo/copyright`)
 
 - `BSD-3`
 - `BSD-BY-LC-NE`
@@ -1711,9 +1709,8 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `libpng12-0:amd64=1.2.50-2+deb8u3`
-- `libpng12-dev:amd64=1.2.50-2+deb8u3`
 
-Licenses: (parsed from: `/usr/share/doc/libpng12-0/copyright`, `/usr/share/doc/libpng12-dev/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libpng12-0/copyright`)
 
 - `GPL-2`
 
@@ -3111,7 +3108,6 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `zlib1g:amd64=1:1.2.8.dfsg-2+b1`
-- `zlib1g-dev:amd64=1:1.2.8.dfsg-2+b1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
