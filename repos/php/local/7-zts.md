@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:08843c6733deea23a11c31e23ac1375a3b1964a61fcd4139fe6039fd52afc7e9`
-- Created: `2017-12-19T20:00:51.989961398Z`
-- Virtual Size: ~ 352.97 Mb  
+- Image ID: `sha256:ba7d3c991db7297d985dda6a9cab4c52d33debdde7b6db1bff4b84c88634f848`
+- Created: `2018-01-04T02:13:43.489366167Z`
+- Virtual Size: ~ 351.87 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -1684,11 +1684,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libxml2/2.9.4+dfsg1-2.2+deb9u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libxml2/2.9.4+dfsg1-2.2+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=4.9.65-3`
+### `dpkg` source package: `linux=4.9.65-3+deb9u1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.9.65-3`
+- `linux-libc-dev:amd64=4.9.65-3+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1701,17 +1701,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=4.9.65-3
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.65-3.dsc' linux_4.9.65-3.dsc 123108 SHA256:5932fa2c59fa79209298560413c06c28006431df7e20e06cacaa22803f171e9e
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.65.orig.tar.xz' linux_4.9.65.orig.tar.xz 94529344 SHA256:09afa20de4d59ec5129216fecbaae36cc199cc61f4ff1ec504eee6454da04617
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.65-3.debian.tar.xz' linux_4.9.65-3.debian.tar.xz 2421100 SHA256:fe51c1ae1cc9cd01642d37c7102d1d934c3953853adaa900613ad7ca00d490a9
+$ apt-get source -qq --print-uris linux=4.9.65-3+deb9u1
+'http://security.debian.org/pool/updates/main/l/linux/linux_4.9.65-3+deb9u1.dsc' linux_4.9.65-3+deb9u1.dsc 123136 SHA256:872d06175dc68abacfc236f3040c64a4949c55cf90af4d7711570e18c9b7c37b
+'http://security.debian.org/pool/updates/main/l/linux/linux_4.9.65.orig.tar.xz' linux_4.9.65.orig.tar.xz 94529344 SHA256:09afa20de4d59ec5129216fecbaae36cc199cc61f4ff1ec504eee6454da04617
+'http://security.debian.org/pool/updates/main/l/linux/linux_4.9.65-3+deb9u1.debian.tar.xz' linux_4.9.65-3+deb9u1.debian.tar.xz 2436096 SHA256:d92f43ec7a9b12be68bf3cba6e18c392dee4089b387b3e69ca880bf69db04502
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/4.9.65-3/ (for browsing the source)
-- https://sources.debian.net/src/linux/4.9.65-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/4.9.65-3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/4.9.65-3+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/linux/4.9.65-3+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/4.9.65-3+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=9.20161125`
 
@@ -2378,34 +2378,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/shadow/1:4.4-4.1/ (for browsing the source)
 - https://sources.debian.net/src/shadow/1:4.4-4.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/shadow/1:4.4-4.1/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `sqlite3=3.16.2-5+deb9u1`
-
-Binary Packages:
-
-- `libsqlite3-0:amd64=3.16.2-5+deb9u1`
-
-Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
-
-- `GPL-2`
-- `GPL-2+`
-- `public-domain`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris sqlite3=3.16.2-5+deb9u1
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.16.2-5+deb9u1.dsc' sqlite3_3.16.2-5+deb9u1.dsc 2538 SHA256:aafd7c33e9091a0c8703a9b2dbfaf1b1592d8fc1df18bf92d3bfd2ffc350cc96
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.16.2.orig-www.tar.xz' sqlite3_3.16.2.orig-www.tar.xz 3383968 SHA256:d5dd3de405c55c63c9f99fbfcf3defc91a54a81b5656c510cd46544aaed134fa
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.16.2.orig.tar.xz' sqlite3_3.16.2.orig.tar.xz 5634120 SHA256:bf7b1e8ea7577253b7f8a8287d111d542d1792cf1768edc66541ac851ff92453
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.16.2-5+deb9u1.debian.tar.xz' sqlite3_3.16.2-5+deb9u1.debian.tar.xz 22128 SHA256:66358aca4f46ead86ba909bc5899bd312c10c46e620ad017120efe3b8714d44e
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/sqlite3/3.16.2-5+deb9u1/ (for browsing the source)
-- https://sources.debian.net/src/sqlite3/3.16.2-5+deb9u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sqlite3/3.16.2-5+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=232-25+deb9u1`
 
