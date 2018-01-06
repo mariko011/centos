@@ -1,7 +1,7 @@
 ## `convertigo:latest`
 
 ```console
-$ docker pull convertigo@sha256:7beec36b7395eaad114c4a97da4cf6d64da779e622e37a5b11838b5c5aba1654
+$ docker pull convertigo@sha256:0e653f3e5c6842a760e719986879c167921691244437efd78d24a67b1c52c4d1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -448,14 +448,14 @@ CMD ["convertigo"]
 ### `convertigo:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull convertigo@sha256:fae449bf0d172c59e155db986707d2ec06bf8f41f461d6f89bbc14e05c227380
+$ docker pull convertigo@sha256:2c7ed3603b52310f9ac4718a8b52f097815ecab8afd2498f007eaa01c51ffafd
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **338.9 MB (338943909 bytes)**  
+-	Total Size: **338.9 MB (338943906 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b701b5ca1d7273d55875cb9d64f1641c02c61155522ca5bd9e7f52a29d423079`
+-	Image ID: `sha256:03e6a9fff701ace17d17cd1fda8e3272621958d72bb1f0a9bfafef882b143181`
 -	Entrypoint: `["tini","--","\/docker-entrypoint.sh"]`
 -	Default Command: `["convertigo"]`
 
@@ -562,21 +562,21 @@ ENV CONVERTIGO_WAR_URL=https://devplatform.s3.amazonaws.com/refbin/cems/7.5.0/co
 ENV CONVERTIGO_GPG_KEYS=6A7779BB78FE368DF74B708FD4DA8FBEB64BF75F
 # Fri, 05 Jan 2018 18:26:12 GMT
 RUN export GNUPGHOME="$(mktemp -d)"     && ( gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$CONVERTIGO_GPG_KEYS"     || gpg --keyserver pgp.mit.edu --recv-keys "$CONVERTIGO_GPG_KEYS"     || gpg --keyserver keyserver.pgp.com --recv-keys "$CONVERTIGO_GPG_KEYS" )     && curl -fSL -o /tmp/convertigo.war $CONVERTIGO_WAR_URL     && curl -fSL -o /tmp/convertigo.war.asc $CONVERTIGO_WAR_URL.asc     && gpg --batch --verify /tmp/convertigo.war.asc /tmp/convertigo.war     && mkdir webapps/ROOT webapps/convertigo     && (cd webapps/convertigo         && unzip -q /tmp/convertigo.war         && chmod a+x WEB-INF/xvnc/*         && (test "$(dpkg --print-architecture)" != "i386" && rm -rf WEB-INF/xulrunner WEB-INF/xvnc WEB-INF/lib/swt_* || true)         && rm -rf /tmp/*)
-# Fri, 05 Jan 2018 18:26:13 GMT
-COPY file:6c901b8550c2906f0c134295c617b19c0877bc00b11aad7930ae1900acf1217f in webapps/ROOT/index.html 
-# Fri, 05 Jan 2018 18:26:14 GMT
-COPY file:4d6653ca1b3348a349f72d73174019bc6689fb60faa86fcae8bc4db7990822c6 in / 
-# Fri, 05 Jan 2018 18:26:14 GMT
+# Sat, 06 Jan 2018 04:58:44 GMT
+COPY file:03a78619febe6c5b17d175b71a6dbe271ce2c70c52e354c6642b986d1b28fc2e in webapps/ROOT/index.html 
+# Sat, 06 Jan 2018 04:58:45 GMT
+COPY file:0a47ea62001ca3cec3ce66ba5a1de976c240bea17f36878bcf94b75e4f0cdf86 in / 
+# Sat, 06 Jan 2018 04:58:45 GMT
 ENV SWT_GTK3=0
-# Fri, 05 Jan 2018 18:26:15 GMT
+# Sat, 06 Jan 2018 04:58:46 GMT
 WORKDIR /workspace
-# Fri, 05 Jan 2018 18:26:16 GMT
+# Sat, 06 Jan 2018 04:58:47 GMT
 VOLUME [/workspace]
-# Fri, 05 Jan 2018 18:26:18 GMT
+# Sat, 06 Jan 2018 04:58:48 GMT
 EXPOSE 28080/tcp
-# Fri, 05 Jan 2018 18:26:19 GMT
+# Sat, 06 Jan 2018 04:58:48 GMT
 ENTRYPOINT ["tini" "--" "/docker-entrypoint.sh"]
-# Fri, 05 Jan 2018 18:26:20 GMT
+# Sat, 06 Jan 2018 04:58:49 GMT
 CMD ["convertigo"]
 ```
 
@@ -653,13 +653,13 @@ CMD ["convertigo"]
 		Last Modified: Fri, 05 Jan 2018 18:27:56 GMT  
 		Size: 116.7 MB (116673401 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e12575d237a69e3b3ea5aa6bddba8238670dfa6011f413d7dd66505e4ffce636`  
-		Last Modified: Fri, 05 Jan 2018 18:27:37 GMT  
-		Size: 470.0 B  
+	-	`sha256:882759356d012e7bd452fa6f8f0acb53b7695cc57821c1615944622df0a5f29b`  
+		Last Modified: Sat, 06 Jan 2018 05:03:38 GMT  
+		Size: 468.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:52618edde0906e0f66fbcaf75dd60b02be871b767de1cf6800a2763ae1ce49f1`  
-		Last Modified: Fri, 05 Jan 2018 18:27:37 GMT  
-		Size: 1.1 KB (1072 bytes)  
+	-	`sha256:d81d8362a27b569a8ce55fd4f9ebdd811a1ad2a076145a86f11d1fd738e7e99c`  
+		Last Modified: Sat, 06 Jan 2018 05:03:38 GMT  
+		Size: 1.1 KB (1071 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `convertigo:latest` - linux; 386
