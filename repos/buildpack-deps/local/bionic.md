@@ -293,14 +293,9 @@ Licenses: (parsed from: `/usr/share/doc/libavahi-client3/copyright`, `/usr/share
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris avahi=0.6.32-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.6.32-1ubuntu1.dsc' avahi_0.6.32-1ubuntu1.dsc 4524 SHA256:195ac62ec73624add3ce9de280380e3afcdd8b4e5ce1e61525d8fa76ecb73549
-'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.6.32.orig.tar.gz' avahi_0.6.32.orig.tar.gz 1297169 SHA256:d54991185d514a0aba54ebeb408d7575b60f5818a772e28fa0e18b98bc1db454
-'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.6.32-1ubuntu1.debian.tar.xz' avahi_0.6.32-1ubuntu1.debian.tar.xz 32084 SHA256:e441694e2ae27544015ccf3d919350dbcc872698d56ebc731bdd30b4cc3ff349
-```
 
 ### `dpkg` source package: `base-files=10ubuntu1`
 
@@ -811,15 +806,13 @@ Licenses: (parsed from: `/usr/share/doc/comerr-dev/copyright`, `/usr/share/doc/e
 - `GPL-2`
 - `LGPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris e2fsprogs=1.43.7-1
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.43.7-1.dsc' e2fsprogs_1.43.7-1.dsc 2328 SHA256:dc4f9463d1c7611e46d35b64d9e6d231528cbb6b28b4cbf3f3573cf46493024a
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.43.7.orig.tar.gz' e2fsprogs_1.43.7.orig.tar.gz 7492811 SHA256:87035f2eae8da5f9869f78ffc177969b4e3cf75a5da489521c1ffe4268e1a1c4
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.43.7.orig.tar.gz.asc' e2fsprogs_1.43.7.orig.tar.gz.asc 488 SHA256:f36ee349b541b7c8d8e3acee920ab2f33bf30d446aa8f94d53b960cb11efd307
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.43.7-1.debian.tar.xz' e2fsprogs_1.43.7-1.debian.tar.xz 75428 SHA256:c184efb5035851cdf192a7ab86823b9e41f3bf11e212ae2861b97f8dcdadb929
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/e2fsprogs/1.43.7-1/
+
 
 ### `dpkg` source package: `elfutils=0.170-0.1`
 
@@ -1164,14 +1157,9 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris git=1:2.14.1-1ubuntu4
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.14.1-1ubuntu4.dsc' git_2.14.1-1ubuntu4.dsc 2934 SHA256:90d2356d869494bff03e2111c2f0ea6ab96ddfc25786693f1a02124bbfef05c8
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.14.1.orig.tar.xz' git_2.14.1.orig.tar.xz 4791876 SHA256:6f724c6d0e9e13114ab35db6f67e1b2c1934b641e89366e6a0e37618231f2cc6
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.14.1-1ubuntu4.debian.tar.xz' git_2.14.1-1ubuntu4.debian.tar.xz 549800 SHA256:0e99c7771e82f1f1500e89304549f23cbd169ab363254f12d3cd9639b91a9832
-```
 
 ### `dpkg` source package: `glib2.0=2.54.1-1ubuntu1`
 
@@ -3321,14 +3309,13 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.28.0-1
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.28.0-1.dsc' nghttp2_1.28.0-1.dsc 2311 SHA256:28aaa8f27bb203ab3795c890996599fd3aab5c649caedc040f99a00e10e98dcb
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.28.0.orig.tar.bz2' nghttp2_1.28.0.orig.tar.bz2 1844457 SHA256:8b7ea0acb6719129798c892c05fd0eb26b02dc5d48e713c5d9496f797652a17f
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.28.0-1.debian.tar.xz' nghttp2_1.28.0-1.debian.tar.xz 12044 SHA256:1f58bce00c9c153478240b080a967d2006b15acce5be3ff3cd00e1e21efb0c15
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/nghttp2/1.28.0-1/
+
 
 ### `dpkg` source package: `npth=1.5-3`
 
@@ -4047,14 +4034,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=235-3ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_235-3ubuntu2.dsc' systemd_235-3ubuntu2.dsc 4116 SHA256:9dae9ccaff87fe166624d313bb3833badd44388fc20eea8874ffd5fc3aa7d4c8
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_235.orig.tar.gz' systemd_235.orig.tar.gz 6586406 SHA256:25811f96f5a027bf2a4c9383495cf5b623e385d84da31e473cf375932b3e9c52
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_235-3ubuntu2.debian.tar.xz' systemd_235-3ubuntu2.debian.tar.xz 151408 SHA256:a1404ba81dd37405ad598311cddd25cbc1b405e3e11b2e1b20db15deaf1aeaae
-```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10ubuntu1`
 
