@@ -1,7 +1,7 @@
 ## `convertigo:latest`
 
 ```console
-$ docker pull convertigo@sha256:0e653f3e5c6842a760e719986879c167921691244437efd78d24a67b1c52c4d1
+$ docker pull convertigo@sha256:c0389d3a264d77390c74a5fd80c486b7146c3f4c992828492fd27f07578bc55a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -665,14 +665,14 @@ CMD ["convertigo"]
 ### `convertigo:latest` - linux; 386
 
 ```console
-$ docker pull convertigo@sha256:c36fcc86670ba057aaf70bbc742d9c5d616abbe550dcc81ea58ed4207f822a72
+$ docker pull convertigo@sha256:fe32a4243415655b67c948bc89ce89b54f3abed601bd38ead0696b51993ebbb4
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **372.8 MB (372809292 bytes)**  
+-	Total Size: **372.8 MB (372809293 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1d9a2e58d517017b5694dba6c307366de6e43a4028211e0c2ca00ce5c456822b`
+-	Image ID: `sha256:5ab3befba8e8c0241c19bf073aa0bb18de02163ab2adab275c3243bd1392e1db`
 -	Entrypoint: `["tini","--","\/docker-entrypoint.sh"]`
 -	Default Command: `["convertigo"]`
 
@@ -779,21 +779,21 @@ ENV CONVERTIGO_WAR_URL=https://devplatform.s3.amazonaws.com/refbin/cems/7.5.0/co
 ENV CONVERTIGO_GPG_KEYS=6A7779BB78FE368DF74B708FD4DA8FBEB64BF75F
 # Fri, 05 Jan 2018 18:29:17 GMT
 RUN export GNUPGHOME="$(mktemp -d)"     && ( gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$CONVERTIGO_GPG_KEYS"     || gpg --keyserver pgp.mit.edu --recv-keys "$CONVERTIGO_GPG_KEYS"     || gpg --keyserver keyserver.pgp.com --recv-keys "$CONVERTIGO_GPG_KEYS" )     && curl -fSL -o /tmp/convertigo.war $CONVERTIGO_WAR_URL     && curl -fSL -o /tmp/convertigo.war.asc $CONVERTIGO_WAR_URL.asc     && gpg --batch --verify /tmp/convertigo.war.asc /tmp/convertigo.war     && mkdir webapps/ROOT webapps/convertigo     && (cd webapps/convertigo         && unzip -q /tmp/convertigo.war         && chmod a+x WEB-INF/xvnc/*         && (test "$(dpkg --print-architecture)" != "i386" && rm -rf WEB-INF/xulrunner WEB-INF/xvnc WEB-INF/lib/swt_* || true)         && rm -rf /tmp/*)
-# Fri, 05 Jan 2018 18:29:18 GMT
-COPY file:6c901b8550c2906f0c134295c617b19c0877bc00b11aad7930ae1900acf1217f in webapps/ROOT/index.html 
-# Fri, 05 Jan 2018 18:29:18 GMT
-COPY file:4d6653ca1b3348a349f72d73174019bc6689fb60faa86fcae8bc4db7990822c6 in / 
-# Fri, 05 Jan 2018 18:29:18 GMT
+# Sat, 06 Jan 2018 12:50:38 GMT
+COPY file:03a78619febe6c5b17d175b71a6dbe271ce2c70c52e354c6642b986d1b28fc2e in webapps/ROOT/index.html 
+# Sat, 06 Jan 2018 12:50:38 GMT
+COPY file:0a47ea62001ca3cec3ce66ba5a1de976c240bea17f36878bcf94b75e4f0cdf86 in / 
+# Sat, 06 Jan 2018 12:50:38 GMT
 ENV SWT_GTK3=0
-# Fri, 05 Jan 2018 18:29:19 GMT
+# Sat, 06 Jan 2018 12:50:39 GMT
 WORKDIR /workspace
-# Fri, 05 Jan 2018 18:29:19 GMT
+# Sat, 06 Jan 2018 12:50:39 GMT
 VOLUME [/workspace]
-# Fri, 05 Jan 2018 18:29:19 GMT
+# Sat, 06 Jan 2018 12:50:39 GMT
 EXPOSE 28080/tcp
-# Fri, 05 Jan 2018 18:29:20 GMT
+# Sat, 06 Jan 2018 12:50:40 GMT
 ENTRYPOINT ["tini" "--" "/docker-entrypoint.sh"]
-# Fri, 05 Jan 2018 18:29:20 GMT
+# Sat, 06 Jan 2018 12:50:40 GMT
 CMD ["convertigo"]
 ```
 
@@ -870,11 +870,11 @@ CMD ["convertigo"]
 		Last Modified: Fri, 05 Jan 2018 18:34:24 GMT  
 		Size: 130.7 MB (130743274 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2a2c7d44086a0dd740feea8d9c504749023e79f4bae3aecf9cbf0738f515fb58`  
-		Last Modified: Fri, 05 Jan 2018 18:34:06 GMT  
+	-	`sha256:238e6b40681ab91428a0d170d13ff53dd7c5974984a19500ea1605a0ddcd2e1e`  
+		Last Modified: Sat, 06 Jan 2018 12:57:01 GMT  
 		Size: 463.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:06e612c6f145d901e041291c647d99b61eb13a2af3c8c67b5b5725b6e967affb`  
-		Last Modified: Fri, 05 Jan 2018 18:34:06 GMT  
-		Size: 1.1 KB (1070 bytes)  
+	-	`sha256:1aee108489cf0fab386b063ec6e63fdd301e0b99e97a75c57406a61b5941f3a8`  
+		Last Modified: Sat, 06 Jan 2018 12:57:01 GMT  
+		Size: 1.1 KB (1071 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
