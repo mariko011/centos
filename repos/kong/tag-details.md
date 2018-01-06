@@ -8,6 +8,8 @@
 -	[`kong:0.11.2`](#kong0112)
 -	[`kong:0.11.2-alpine`](#kong0112-alpine)
 -	[`kong:0.11-alpine`](#kong011-alpine)
+-	[`kong:0.12.0rc2`](#kong0120rc2)
+-	[`kong:0.12.0rc2-alpine`](#kong0120rc2-alpine)
 -	[`kong:0.9`](#kong09)
 -	[`kong:0.9.9`](#kong099)
 -	[`kong:latest`](#konglatest)
@@ -397,6 +399,14 @@ CMD ["/usr/local/openresty/nginx/sbin/nginx" "-c" "/usr/local/kong/nginx.conf" "
 		Last Modified: Fri, 01 Dec 2017 21:02:46 GMT  
 		Size: 324.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `kong:0.12.0rc2`
+
+**does not exist** (yet?)
+
+## `kong:0.12.0rc2-alpine`
+
+**does not exist** (yet?)
 
 ## `kong:0.9`
 
