@@ -675,15 +675,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris debianutils=4.8.3
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_4.8.3.dsc' debianutils_4.8.3.dsc 1791 SHA256:ace3583a7076d292f2b4897721f3ffab138b4e784ed63379e869513c42824b65
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_4.8.3.tar.xz' debianutils_4.8.3.tar.xz 159292 SHA256:7102246d1c35260ed7f0458a9886acf655c379d14908415574494cdea45e28fb
+'http://http.debian.net/debian/pool/main/d/debianutils/debianutils_4.8.3.dsc' debianutils_4.8.3.dsc 1791 SHA256:ace3583a7076d292f2b4897721f3ffab138b4e784ed63379e869513c42824b65
+'http://http.debian.net/debian/pool/main/d/debianutils/debianutils_4.8.3.tar.xz' debianutils_4.8.3.tar.xz 159292 SHA256:7102246d1c35260ed7f0458a9886acf655c379d14908415574494cdea45e28fb
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/debianutils/4.8.3/ (for browsing the source)
-- https://sources.debian.net/src/debianutils/4.8.3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/debianutils/4.8.3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `diffutils=1:3.6-1`
 
@@ -813,16 +807,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris elfutils=0.170-0.1
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.170-0.1.dsc' elfutils_0.170-0.1.dsc 2293 SHA256:a4f4a38b6bbb939080323243584362129b54a1cedc873b3c449067c3055e7523
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.170.orig.tar.bz2' elfutils_0.170.orig.tar.bz2 8358001 SHA256:1f844775576b79bdc9f9c717a50058d08620323c1e935458223a12f249c9e066
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.170-0.1.debian.tar.xz' elfutils_0.170-0.1.debian.tar.xz 37504 SHA256:71accbdfb81c3abe45e746b96bd62cc08d2b3c4c4073acece2e6a354f1595fa2
+'http://http.debian.net/debian/pool/main/e/elfutils/elfutils_0.170-0.1.dsc' elfutils_0.170-0.1.dsc 2293 SHA256:a4f4a38b6bbb939080323243584362129b54a1cedc873b3c449067c3055e7523
+'http://http.debian.net/debian/pool/main/e/elfutils/elfutils_0.170.orig.tar.bz2' elfutils_0.170.orig.tar.bz2 8358001 SHA256:1f844775576b79bdc9f9c717a50058d08620323c1e935458223a12f249c9e066
+'http://http.debian.net/debian/pool/main/e/elfutils/elfutils_0.170-0.1.debian.tar.xz' elfutils_0.170-0.1.debian.tar.xz 37504 SHA256:71accbdfb81c3abe45e746b96bd62cc08d2b3c4c4073acece2e6a354f1595fa2
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/elfutils/0.170-0.1/ (for browsing the source)
-- https://sources.debian.net/src/elfutils/0.170-0.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/elfutils/0.170-0.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `expat=2.2.3-2`
 
@@ -3324,16 +3312,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris r-cran-mass=7.3-47-1
-'http://deb.debian.org/debian/pool/main/r/r-cran-mass/r-cran-mass_7.3-47-1.dsc' r-cran-mass_7.3-47-1.dsc 1729 SHA256:de4b97c5b6e284facb79a8e910a1b56e7be17cdcb86d632f07be43dd16bf7724
-'http://deb.debian.org/debian/pool/main/r/r-cran-mass/r-cran-mass_7.3-47.orig.tar.gz' r-cran-mass_7.3-47.orig.tar.gz 487716 SHA256:ed44cdabe84fff3553122267ade61d5cc68071c435f7645d36c8f2e4e9f9c6bf
-'http://deb.debian.org/debian/pool/main/r/r-cran-mass/r-cran-mass_7.3-47-1.diff.gz' r-cran-mass_7.3-47-1.diff.gz 3464 SHA256:f7f19e3b5e27b76033fb1124901d940351d7e25672c0e0e4a09713a1cc567a60
+'http://http.debian.net/debian/pool/main/r/r-cran-mass/r-cran-mass_7.3-47-1.dsc' r-cran-mass_7.3-47-1.dsc 1729 SHA256:de4b97c5b6e284facb79a8e910a1b56e7be17cdcb86d632f07be43dd16bf7724
+'http://http.debian.net/debian/pool/main/r/r-cran-mass/r-cran-mass_7.3-47.orig.tar.gz' r-cran-mass_7.3-47.orig.tar.gz 487716 SHA256:ed44cdabe84fff3553122267ade61d5cc68071c435f7645d36c8f2e4e9f9c6bf
+'http://http.debian.net/debian/pool/main/r/r-cran-mass/r-cran-mass_7.3-47-1.diff.gz' r-cran-mass_7.3-47-1.diff.gz 3464 SHA256:f7f19e3b5e27b76033fb1124901d940351d7e25672c0e0e4a09713a1cc567a60
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/r-cran-mass/7.3-47-1/ (for browsing the source)
-- https://sources.debian.net/src/r-cran-mass/7.3-47-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/r-cran-mass/7.3-47-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `r-cran-nnet=7.3-12-2`
 
