@@ -1,10 +1,10 @@
-# `mariadb:10.2.11`
+# `mariadb:10.2.12`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b1fe0881b739e15962b491942dcf013e5a69d5c672e1f5d32d704a71cf976e6d`
-- Created: `2017-12-12T02:19:15.9436861Z`
-- Virtual Size: ~ 397.90 Mb  
+- Image ID: `sha256:4f76b7e73b0067f1428af74997b679b678b014cbff5c19ab3b1919cb85cde836`
+- Created: `2018-01-04T21:55:13.175413074Z`
+- Virtual Size: ~ 395.95 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -14,7 +14,7 @@
   - `GOSU_VERSION=1.10`
   - `GPG_KEYS=199369E5404BD5FC7D2FE43BCBCB082A1BB943DB 	430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 	4D1BB29D63D98E422B2113B19334A25F8507EFA5`
   - `MARIADB_MAJOR=10.2`
-  - `MARIADB_VERSION=10.2.11+maria~jessie`
+  - `MARIADB_VERSION=10.2.12+maria~jessie`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -2587,19 +2587,19 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/lvm2/2.02.111-2.2+deb8u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/lvm2/2.02.111-2.2+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `mariadb-10.2=10.2.11+maria~jessie`
+### `dpkg` source package: `mariadb-10.2=10.2.12+maria~jessie`
 
 Binary Packages:
 
-- `libmariadb3=10.2.11+maria~jessie`
-- `libmysqlclient18=10.2.11+maria~jessie`
-- `mariadb-client-10.2=10.2.11+maria~jessie`
-- `mariadb-client-core-10.2=10.2.11+maria~jessie`
-- `mariadb-common=10.2.11+maria~jessie`
-- `mariadb-server=10.2.11+maria~jessie`
-- `mariadb-server-10.2=10.2.11+maria~jessie`
-- `mariadb-server-core-10.2=10.2.11+maria~jessie`
-- `mysql-common=10.2.11+maria~jessie`
+- `libmariadb3=10.2.12+maria~jessie`
+- `libmysqlclient18=10.2.12+maria~jessie`
+- `mariadb-client-10.2=10.2.12+maria~jessie`
+- `mariadb-client-core-10.2=10.2.12+maria~jessie`
+- `mariadb-common=10.2.12+maria~jessie`
+- `mariadb-server=10.2.12+maria~jessie`
+- `mariadb-server-10.2=10.2.12+maria~jessie`
+- `mariadb-server-core-10.2=10.2.12+maria~jessie`
+- `mysql-common=10.2.12+maria~jessie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3172,11 +3172,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/rename/0.20-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/rename/0.20-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `rsync=3.1.1-3`
+### `dpkg` source package: `rsync=3.1.1-3+deb8u1`
 
 Binary Packages:
 
-- `rsync=3.1.1-3`
+- `rsync=3.1.1-3+deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/rsync/copyright`)
 
@@ -3185,17 +3185,17 @@ Licenses: (parsed from: `/usr/share/doc/rsync/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris rsync=3.1.1-3
-'http://deb.debian.org/debian/pool/main/r/rsync/rsync_3.1.1-3.dsc' rsync_3.1.1-3.dsc 1676 SHA256:1ca6cc2c514d6e82dfde28c3984bea8651f8c197640cbc05aa544c46d2891a69
-'http://deb.debian.org/debian/pool/main/r/rsync/rsync_3.1.1.orig.tar.gz' rsync_3.1.1.orig.tar.gz 890124 SHA256:7de4364fcf5fe42f3bdb514417f1c40d10bbca896abe7e7f2c581c6ea08a2621
-'http://deb.debian.org/debian/pool/main/r/rsync/rsync_3.1.1-3.debian.tar.xz' rsync_3.1.1-3.debian.tar.xz 21968 SHA256:be77fe6d9932e82c4215f6fcd127f813c667d50662a1416be5f4cd854c19c960
+$ apt-get source -qq --print-uris rsync=3.1.1-3+deb8u1
+'http://security.debian.org/pool/updates/main/r/rsync/rsync_3.1.1-3+deb8u1.dsc' rsync_3.1.1-3+deb8u1.dsc 1873 SHA256:c7a26e1e02df66d25ced84be25058bb9f33427c11dec6bd0ede494236c582f51
+'http://security.debian.org/pool/updates/main/r/rsync/rsync_3.1.1.orig.tar.gz' rsync_3.1.1.orig.tar.gz 890124 SHA256:7de4364fcf5fe42f3bdb514417f1c40d10bbca896abe7e7f2c581c6ea08a2621
+'http://security.debian.org/pool/updates/main/r/rsync/rsync_3.1.1-3+deb8u1.debian.tar.xz' rsync_3.1.1-3+deb8u1.debian.tar.xz 23456 SHA256:1d1d20db2ed8fca8c9c9a3a46b099b6ac75a354e8e380eed6e284824f072f935
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/rsync/3.1.1-3/ (for browsing the source)
-- https://sources.debian.net/src/rsync/3.1.1-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/rsync/3.1.1-3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/rsync/3.1.1-3+deb8u1/ (for browsing the source)
+- https://sources.debian.net/src/rsync/3.1.1-3+deb8u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/rsync/3.1.1-3+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rtmpdump=2.4+20150115.gita107cef-1+deb8u1`
 
