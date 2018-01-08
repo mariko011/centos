@@ -1,7 +1,7 @@
 ## `centos:centos6`
 
 ```console
-$ docker pull centos@sha256:49eb5ae79fe150278317bb007bb39415479dbb294675b4a9259efa84fd8385c6
+$ docker pull centos@sha256:78ced9aa50c55099f24018cd2b0dfd804257cb3ac039d1f948b2a9fcf4dad9ee
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,29 +12,29 @@ $ docker pull centos@sha256:49eb5ae79fe150278317bb007bb39415479dbb294675b4a9259e
 ### `centos:centos6` - linux; amd64
 
 ```console
-$ docker pull centos@sha256:82adb6d4b857ffd254af8041957df8481c84a9a1b9fdcc6efc4ba6432b1d6940
+$ docker pull centos@sha256:cb359951a2aec569a130e66460835ea71718ceecf17e7522c87ef2dd418803f8
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **70.0 MB (70045681 bytes)**  
+-	Total Size: **70.1 MB (70068267 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:df3764b1d215410469ca2bf0875970e0054546a71c49969c9107440ae02d627f`
+-	Image ID: `sha256:609c1f9b5406a968c8ddeef0cc3384f59908f2ef65c4854ce9f0539acc0b16fb`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 30 Nov 2017 00:13:50 GMT
-ADD file:c32955e5fd79dfac0a0c3cd95771f683326a34f01c4b6300d221826d7934a72b in / 
-# Thu, 30 Nov 2017 00:13:50 GMT
-LABEL name=CentOS Base Image vendor=CentOS license=GPLv2 build-date=20171128
-# Thu, 30 Nov 2017 00:13:50 GMT
+# Mon, 08 Jan 2018 20:08:45 GMT
+ADD file:a492298cd1f5ef632fc80b48747c46defced1ae2e44bb5a8db1b581c5548cf02 in / 
+# Mon, 08 Jan 2018 20:08:45 GMT
+LABEL name=CentOS Base Image vendor=CentOS license=GPLv2 build-date=20180107
+# Mon, 08 Jan 2018 20:08:45 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:d47c6c3d155aa0a361b78655db9d49de6ed6b6454c8751697817c9099ce5834e`  
-		Last Modified: Thu, 30 Nov 2017 00:20:00 GMT  
-		Size: 70.0 MB (70045681 bytes)  
+	-	`sha256:ca9499a209fd9abe7f919a5c99989fd26d3410164e499fe577be504341f0a352`  
+		Last Modified: Mon, 08 Jan 2018 20:10:26 GMT  
+		Size: 70.1 MB (70068267 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `centos:centos6` - linux; 386
