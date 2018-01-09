@@ -29,7 +29,7 @@
 ## `centos:6`
 
 ```console
-$ docker pull centos@sha256:78ced9aa50c55099f24018cd2b0dfd804257cb3ac039d1f948b2a9fcf4dad9ee
+$ docker pull centos@sha256:551de58ca434f5da1c7fc770c32c6a2897de33eb7fde7508e9149758e07d3fe3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -68,29 +68,29 @@ CMD ["/bin/bash"]
 ### `centos:6` - linux; 386
 
 ```console
-$ docker pull centos@sha256:d150fea4c054fd18718bbb3122b4224e467d99dd268c0bfeca1c028ac9adc900
+$ docker pull centos@sha256:8cbdb7c1840fb056355cd6e7c9ab6ef2b359c9812281323143bd614545e3b426
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **70.3 MB (70258187 bytes)**  
+-	Total Size: **70.3 MB (70270900 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dacc53fa9e09dcf95a9f7a180426ca89bc63ad2894b8b2aa836e01c6e51adb08`
+-	Image ID: `sha256:cda930ce91e0f26284e84d35b5285dcfc882b0146b672a04516e7806de121370`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 30 Nov 2017 20:19:42 GMT
-ADD file:34fe168083c313bc124295a205f3ab276fb5873a83ac160ae049fc84a87502b9 in / 
-# Thu, 30 Nov 2017 20:19:43 GMT
-LABEL name=CentOS Base Image vendor=CentOS license=GPLv2 build-date=20171129
-# Thu, 30 Nov 2017 20:19:43 GMT
+# Tue, 09 Jan 2018 19:37:35 GMT
+ADD file:391cabf8e1a038f6d8cbb6e4b836219e80995bc5fd48b1c5314ca5e8449683e5 in / 
+# Tue, 09 Jan 2018 19:43:55 GMT
+LABEL name=CentOS Base Image vendor=CentOS license=GPLv2 build-date=20180107
+# Tue, 09 Jan 2018 19:43:55 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:67abd228b942d5e6f3bbeca634cc6b06970976eeaa0def451c6a626d330a9278`  
-		Last Modified: Thu, 30 Nov 2017 20:20:12 GMT  
-		Size: 70.3 MB (70258187 bytes)  
+	-	`sha256:c094d16b010875da580873fed895f8d2df34b653da944cfd1d4287b80d8be297`  
+		Last Modified: Tue, 09 Jan 2018 19:47:09 GMT  
+		Size: 70.3 MB (70270900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `centos:6.6`
@@ -542,7 +542,7 @@ CMD ["/bin/bash"]
 ## `centos:centos6`
 
 ```console
-$ docker pull centos@sha256:78ced9aa50c55099f24018cd2b0dfd804257cb3ac039d1f948b2a9fcf4dad9ee
+$ docker pull centos@sha256:551de58ca434f5da1c7fc770c32c6a2897de33eb7fde7508e9149758e07d3fe3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -581,29 +581,29 @@ CMD ["/bin/bash"]
 ### `centos:centos6` - linux; 386
 
 ```console
-$ docker pull centos@sha256:d150fea4c054fd18718bbb3122b4224e467d99dd268c0bfeca1c028ac9adc900
+$ docker pull centos@sha256:8cbdb7c1840fb056355cd6e7c9ab6ef2b359c9812281323143bd614545e3b426
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **70.3 MB (70258187 bytes)**  
+-	Total Size: **70.3 MB (70270900 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dacc53fa9e09dcf95a9f7a180426ca89bc63ad2894b8b2aa836e01c6e51adb08`
+-	Image ID: `sha256:cda930ce91e0f26284e84d35b5285dcfc882b0146b672a04516e7806de121370`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 30 Nov 2017 20:19:42 GMT
-ADD file:34fe168083c313bc124295a205f3ab276fb5873a83ac160ae049fc84a87502b9 in / 
-# Thu, 30 Nov 2017 20:19:43 GMT
-LABEL name=CentOS Base Image vendor=CentOS license=GPLv2 build-date=20171129
-# Thu, 30 Nov 2017 20:19:43 GMT
+# Tue, 09 Jan 2018 19:37:35 GMT
+ADD file:391cabf8e1a038f6d8cbb6e4b836219e80995bc5fd48b1c5314ca5e8449683e5 in / 
+# Tue, 09 Jan 2018 19:43:55 GMT
+LABEL name=CentOS Base Image vendor=CentOS license=GPLv2 build-date=20180107
+# Tue, 09 Jan 2018 19:43:55 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:67abd228b942d5e6f3bbeca634cc6b06970976eeaa0def451c6a626d330a9278`  
-		Last Modified: Thu, 30 Nov 2017 20:20:12 GMT  
-		Size: 70.3 MB (70258187 bytes)  
+	-	`sha256:c094d16b010875da580873fed895f8d2df34b653da944cfd1d4287b80d8be297`  
+		Last Modified: Tue, 09 Jan 2018 19:47:09 GMT  
+		Size: 70.3 MB (70270900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `centos:centos6.6`
