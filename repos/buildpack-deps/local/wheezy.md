@@ -1128,20 +1128,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-gdkpixbuf-2.0/copyright`, `/usr/s
 - `GPL-2`
 - `LGPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gdk-pixbuf=2.26.1-1+deb7u6
-'http://security.debian.org/pool/updates/main/g/gdk-pixbuf/gdk-pixbuf_2.26.1-1+deb7u6.dsc' gdk-pixbuf_2.26.1-1+deb7u6.dsc 2713 SHA256:1abba1c5a3f736123de8aefd0b8d7a2e2a6aeb727db0168878eff3901cae019f
-'http://security.debian.org/pool/updates/main/g/gdk-pixbuf/gdk-pixbuf_2.26.1.orig.tar.xz' gdk-pixbuf_2.26.1.orig.tar.xz 1167608 SHA256:a60af12b58d9cc15ba4c680c6730ce5d38e8d664af1d575a379385b94b4ec7ba
-'http://security.debian.org/pool/updates/main/g/gdk-pixbuf/gdk-pixbuf_2.26.1-1+deb7u6.debian.tar.gz' gdk-pixbuf_2.26.1-1+deb7u6.debian.tar.gz 19605 SHA256:609dd2e125d07f9f07bdc2d1ef3029ec72dce3b7697e986f292700bee32a3023
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gdk-pixbuf/2.26.1-1+deb7u6/
 
-- https://sources.debian.net/src/gdk-pixbuf/2.26.1-1+deb7u6/ (for browsing the source)
-- https://sources.debian.net/src/gdk-pixbuf/2.26.1-1+deb7u6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gdk-pixbuf/2.26.1-1+deb7u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `geoip=1.4.8+dfsg-3`
 
