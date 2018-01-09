@@ -4131,20 +4131,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nss=2:3.34-1
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.34-1.dsc' nss_3.34-1.dsc 2223 SHA256:7ba6b7bf40095b7f06179067082ef5eff183b8a7bea96ebe9feb7397f2ba0893
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.34.orig.tar.gz' nss_3.34.orig.tar.gz 9586315 SHA256:0d45954181373023c7cfc33e77c8c636d394ec7e55b93e059149ed7888652af5
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.34-1.debian.tar.xz' nss_3.34-1.debian.tar.xz 24792 SHA256:9b6ac2149c211c610595d3ac3b37881bc2171618a611f79c9ceb4d8762ed3e91
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nss/2:3.34-1/
 
-- https://sources.debian.net/src/nss/2:3.34-1/ (for browsing the source)
-- https://sources.debian.net/src/nss/2:3.34-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nss/2:3.34-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openjdk-9=9.0.1+11-1`
 
