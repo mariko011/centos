@@ -1,10 +1,10 @@
-# `crate:2.2.4`
+# `crate:2.2.5`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3c17690d10a4fd5a7fef23ffc1d9eaacb7bc055ceb18a458c96107030184fa33`
-- Created: `2017-12-01T19:17:25.491204247Z`
-- Virtual Size: ~ 203.04 Mb  
+- Image ID: `sha256:a3a8c92d1f7fb41cc147ef733f8eb9f88207cb831818e1acad2f3e0d49bed4ac`
+- Created: `2018-01-08T18:03:59.674833721Z`
+- Virtual Size: ~ 198.94 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -12,5 +12,5 @@
 - Environment:
   - `PATH=/crate/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GOSU_VERSION=1.9`
-  - `CRATE_VERSION=2.2.4`
+  - `CRATE_VERSION=2.2.5`
   - `CRATE_HEAP_SIZE=512M`
