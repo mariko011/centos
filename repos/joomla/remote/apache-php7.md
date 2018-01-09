@@ -1,7 +1,7 @@
 ## `joomla:apache-php7`
 
 ```console
-$ docker pull joomla@sha256:efab32a2a0c4ad0538d8d695709f8195ccdb40f9e7360f4c3f78ea7c39026f38
+$ docker pull joomla@sha256:4506100c57563dace85302e36caad2db2350c2856ff83337127200c27adbc92c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull joomla@sha256:efab32a2a0c4ad0538d8d695709f8195ccdb40f9e7360f4c3f78
 ### `joomla:apache-php7` - linux; amd64
 
 ```console
-$ docker pull joomla@sha256:10cc50e0ae1cfa0df4d2c7fd587a5193f03d437bc27e7dc35cb64c23b2e1b63b
+$ docker pull joomla@sha256:6e64e80359b9386327f838a451cad14b96271ed68dd735f90c180d8384046467
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **176.1 MB (176101816 bytes)**  
+-	Total Size: **176.1 MB (176052887 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:45215dc4e42d6bf73ce2dec0a26010b14249afb893ee59c0643a5df61a9033a0`
+-	Image ID: `sha256:30c935a1028e2e45c7cd42a0d5c086ca40f5f9fec19781731ff9a3cbd96a38f1`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -63,59 +63,59 @@ ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2
 ENV PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie
 # Thu, 04 Jan 2018 03:15:44 GMT
 ENV GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3
-# Thu, 04 Jan 2018 03:15:44 GMT
-ENV PHP_VERSION=7.0.26
-# Thu, 04 Jan 2018 03:15:45 GMT
-ENV PHP_URL=https://secure.php.net/get/php-7.0.26.tar.xz/from/this/mirror PHP_ASC_URL=https://secure.php.net/get/php-7.0.26.tar.xz.asc/from/this/mirror
-# Thu, 04 Jan 2018 03:15:45 GMT
-ENV PHP_SHA256=ed5cbb4bbb0ddef8985f100bba2e94002ad22a230b5da2dccfe148915df5f199 PHP_MD5=
-# Thu, 04 Jan 2018 03:16:00 GMT
+# Tue, 09 Jan 2018 01:51:56 GMT
+ENV PHP_VERSION=7.0.27
+# Tue, 09 Jan 2018 01:51:57 GMT
+ENV PHP_URL=https://secure.php.net/get/php-7.0.27.tar.xz/from/this/mirror PHP_ASC_URL=https://secure.php.net/get/php-7.0.27.tar.xz.asc/from/this/mirror
+# Tue, 09 Jan 2018 01:51:57 GMT
+ENV PHP_SHA256=4b2bc823e806dbf7b62fe0b92b0d14b0c6e03f88c3fc5d96278416c54ce11f6c PHP_MD5=
+# Tue, 09 Jan 2018 01:52:15 GMT
 RUN set -xe; 		fetchDeps=' 		wget 	'; 	if ! command -v gpg > /dev/null; then 		fetchDeps="$fetchDeps 			dirmngr 			gnupg 		"; 	fi; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps
-# Thu, 04 Jan 2018 03:16:00 GMT
+# Tue, 09 Jan 2018 01:52:22 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Thu, 04 Jan 2018 03:18:48 GMT
+# Tue, 09 Jan 2018 01:55:16 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 		${PHP_EXTRA_BUILD_DEPS:-} 	; 	rm -rf /var/lib/apt/lists/*; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				${PHP_EXTRA_CONFIGURE_ARGS:-} 	; 	make -j "$(nproc)"; 	make install; 	find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; 	make clean; 	cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		php --version; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc
-# Thu, 04 Jan 2018 03:24:46 GMT
+# Tue, 09 Jan 2018 01:57:41 GMT
 COPY multi:cb6c9a453a971f0ed6bdf30b12bc250bbe068005b3c3b084f5048cbf9787fb8d in /usr/local/bin/ 
-# Thu, 04 Jan 2018 03:24:46 GMT
+# Tue, 09 Jan 2018 01:57:41 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Thu, 04 Jan 2018 03:24:47 GMT
+# Tue, 09 Jan 2018 01:57:42 GMT
 COPY file:24613ecbb1ce6a09f683b0753da9c26a1af07547326e8a02f6eec80ad6f2774a in /usr/local/bin/ 
-# Thu, 04 Jan 2018 03:24:47 GMT
+# Tue, 09 Jan 2018 01:57:42 GMT
 WORKDIR /var/www/html
-# Thu, 04 Jan 2018 03:24:47 GMT
+# Tue, 09 Jan 2018 01:57:42 GMT
 EXPOSE 80/tcp
-# Thu, 04 Jan 2018 03:24:47 GMT
+# Tue, 09 Jan 2018 01:57:42 GMT
 CMD ["apache2-foreground"]
-# Thu, 04 Jan 2018 07:21:10 GMT
+# Tue, 09 Jan 2018 05:12:08 GMT
 MAINTAINER Michael Babker <michael.babker@joomla.org> (@mbabker)
-# Thu, 04 Jan 2018 07:21:10 GMT
+# Tue, 09 Jan 2018 05:12:08 GMT
 ENV JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1
-# Thu, 04 Jan 2018 07:21:11 GMT
+# Tue, 09 Jan 2018 05:12:09 GMT
 RUN a2enmod rewrite
-# Thu, 04 Jan 2018 07:21:42 GMT
+# Tue, 09 Jan 2018 05:12:36 GMT
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libmcrypt-dev zip unzip && rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd
-# Thu, 04 Jan 2018 07:21:51 GMT
+# Tue, 09 Jan 2018 05:12:49 GMT
 RUN docker-php-ext-install mysqli
-# Thu, 04 Jan 2018 07:21:57 GMT
+# Tue, 09 Jan 2018 05:12:56 GMT
 RUN docker-php-ext-install mcrypt
-# Thu, 04 Jan 2018 07:22:17 GMT
+# Tue, 09 Jan 2018 05:13:16 GMT
 RUN docker-php-ext-install zip
-# Thu, 04 Jan 2018 07:30:53 GMT
+# Tue, 09 Jan 2018 05:22:48 GMT
 VOLUME [/var/www/html]
-# Thu, 04 Jan 2018 07:30:53 GMT
+# Tue, 09 Jan 2018 05:22:49 GMT
 ENV JOOMLA_VERSION=3.8.2
-# Thu, 04 Jan 2018 07:30:54 GMT
+# Tue, 09 Jan 2018 05:22:49 GMT
 ENV JOOMLA_SHA1=e68745d55cc5b1a7bb46f72f4296c6550e088543
-# Thu, 04 Jan 2018 07:31:04 GMT
+# Tue, 09 Jan 2018 05:22:56 GMT
 RUN curl -o joomla.zip -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.zip 	&& echo "$JOOMLA_SHA1 *joomla.zip" | sha1sum -c - 	&& mkdir /usr/src/joomla 	&& unzip joomla.zip -d /usr/src/joomla 	&& rm joomla.zip 	&& chown -R www-data:www-data /usr/src/joomla
-# Thu, 04 Jan 2018 07:31:04 GMT
+# Tue, 09 Jan 2018 05:22:56 GMT
 COPY file:c1e8bebe69e832de6ba85a02864e7d24ff9e6b5232ea62a31e27a5769c662116 in /entrypoint.sh 
-# Thu, 04 Jan 2018 07:31:05 GMT
+# Tue, 09 Jan 2018 05:22:57 GMT
 COPY file:7328ebe063e26f7b7716dfd8778bb7d46b90702ea38b23b9147ba2fd837ac2c1 in /makedb.php 
-# Thu, 04 Jan 2018 07:31:05 GMT
+# Tue, 09 Jan 2018 05:22:57 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Thu, 04 Jan 2018 07:31:05 GMT
+# Tue, 09 Jan 2018 05:22:57 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -156,55 +156,55 @@ CMD ["apache2-foreground"]
 		Last Modified: Thu, 04 Jan 2018 04:59:24 GMT  
 		Size: 490.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:88a1be059a797f8246a482f6f3eb26301c537a4941b42d2891982be021b1ddba`  
-		Last Modified: Thu, 04 Jan 2018 05:05:49 GMT  
-		Size: 12.3 MB (12319184 bytes)  
+	-	`sha256:d5519147d4e576644ae828f757c525f3bb1448aaa36dbcb4e7135d34a0a33d4a`  
+		Last Modified: Tue, 09 Jan 2018 03:41:23 GMT  
+		Size: 12.3 MB (12269414 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2dcfa0e52b813af63b7f66a6328d68306ff0681f57d99450d7595de28c64fd35`  
-		Last Modified: Thu, 04 Jan 2018 05:05:47 GMT  
-		Size: 499.0 B  
+	-	`sha256:512315391b1a2d1ba0260ae6f190b7879c73380675a1dc5ce9b135f6132583f1`  
+		Last Modified: Tue, 09 Jan 2018 03:41:22 GMT  
+		Size: 502.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bcac0a9d18f31a3ae5f1e65c855228259cf05d610b660fe490d1ae3f572c7fbf`  
-		Last Modified: Thu, 04 Jan 2018 05:05:52 GMT  
-		Size: 13.9 MB (13885366 bytes)  
+	-	`sha256:b32d82403bad85ea6e2e9b0ee6889e8e000ad926fe2d99996f178c1f74e334e1`  
+		Last Modified: Tue, 09 Jan 2018 03:41:25 GMT  
+		Size: 13.9 MB (13886190 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e150dcec9059e552df7a9804cd9add225fe7f4693132be80345be60fbf80000a`  
-		Last Modified: Thu, 04 Jan 2018 05:05:47 GMT  
-		Size: 2.2 KB (2189 bytes)  
+	-	`sha256:b5eb11551d42471c07f4ddd2b07d85e31054503451dae76337c79b12aded84f2`  
+		Last Modified: Tue, 09 Jan 2018 03:41:22 GMT  
+		Size: 2.2 KB (2193 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d6946a8a8631092b349863a075d74ae0af890d83ad5c76b2e6a7741f1bc599a3`  
-		Last Modified: Thu, 04 Jan 2018 05:05:47 GMT  
-		Size: 907.0 B  
+	-	`sha256:02fee8125e6e1eaaf057bce329f4ab2a9dd55d0af7fc7b802099ad42bb04402c`  
+		Last Modified: Tue, 09 Jan 2018 03:41:22 GMT  
+		Size: 905.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e54a17d412af9d957adb42b88be34f98d562ed66de9938a9314ddc397af8a390`  
-		Last Modified: Thu, 04 Jan 2018 07:51:31 GMT  
-		Size: 310.0 B  
+	-	`sha256:63feffb692433c10feaeadf13ee0a407d0bc37382b978915d07e7da394de2898`  
+		Last Modified: Tue, 09 Jan 2018 05:44:10 GMT  
+		Size: 311.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:971724247d1fd41e20d27756633eb3af5da7d83af557c89fc0e79fee744363de`  
-		Last Modified: Thu, 04 Jan 2018 07:51:32 GMT  
-		Size: 3.0 MB (2996183 bytes)  
+	-	`sha256:ed5b763c681f0dd87b6a90bb402d813aefe4080dd0d7532842114bf5be2ff537`  
+		Last Modified: Tue, 09 Jan 2018 05:44:11 GMT  
+		Size: 3.0 MB (2996180 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d2101db894d14876b14fb10e15ad35f0c5a637351159c2524ab2623befeece59`  
-		Last Modified: Thu, 04 Jan 2018 07:51:31 GMT  
-		Size: 56.4 KB (56410 bytes)  
+	-	`sha256:af897f4f3d98ce57ee4f54e71f4bbb0baa5a326d2c76b8dad85b3d1e16169563`  
+		Last Modified: Tue, 09 Jan 2018 05:44:10 GMT  
+		Size: 56.4 KB (56414 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e4a44cdadfa73d5138885d9d1acfe7cbe40262113b151bd324792ffd679033b`  
-		Last Modified: Thu, 04 Jan 2018 07:51:28 GMT  
-		Size: 18.3 KB (18287 bytes)  
+	-	`sha256:8de2c0d24bb97e7e7b6bd0a6b2fa8e183a086bf0a6df8ecb04026bb49d13ed24`  
+		Last Modified: Tue, 09 Jan 2018 05:44:08 GMT  
+		Size: 18.3 KB (18294 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c9ff42e33cf21772f5342025d3aa831a82a45a33f2a24c8e9b549e1228f6e251`  
-		Last Modified: Thu, 04 Jan 2018 07:51:28 GMT  
+	-	`sha256:9214569b8f6195d9bdc75fc60801d713b3664cb7e8ad3e44e71c5d3f968512d2`  
+		Last Modified: Tue, 09 Jan 2018 05:44:08 GMT  
 		Size: 72.8 KB (72761 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:748b93f35bfc162b363e17090abbf91b3d1721abda3dda9ddf17d5307fc5e0db`  
-		Last Modified: Thu, 04 Jan 2018 07:51:35 GMT  
+	-	`sha256:ab69bc62b78fed4b3afc7f64481ec3cccbaa0482a5bcbf00c5893314dd923419`  
+		Last Modified: Tue, 09 Jan 2018 05:44:16 GMT  
 		Size: 9.4 MB (9433102 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4cbc408cf41e7165b3c8ea53ed3245db10b339eec8683747e2c819a57f32a13e`  
-		Last Modified: Thu, 04 Jan 2018 07:51:28 GMT  
-		Size: 1.2 KB (1190 bytes)  
+	-	`sha256:a6d7b158f20f4fe9c6313fefef684c899b5f09d8907112c8cd4514700e7b9621`  
+		Last Modified: Tue, 09 Jan 2018 05:44:08 GMT  
+		Size: 1.2 KB (1192 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7c17277c15fdfb453bb5fdd0f0254d5bf64bf4ca7c6481e89891f63de6c0e968`  
-		Last Modified: Thu, 04 Jan 2018 07:51:28 GMT  
-		Size: 614.0 B  
+	-	`sha256:720db54ba4e734de7df29327e0379b82b421e88397f48438090481cd79c4116a`  
+		Last Modified: Tue, 09 Jan 2018 05:44:08 GMT  
+		Size: 615.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
