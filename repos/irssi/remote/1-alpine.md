@@ -1,13 +1,14 @@
 ## `irssi:1-alpine`
 
 ```console
-$ docker pull irssi@sha256:7f0bb836d232382090494dd637ad698e05d79396e4a8bc91ad9a833f04f18e91
+$ docker pull irssi@sha256:b9b1757044f9bd16bb069cc2970d54bf4f6339ac996f61b42004824d20aa736f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; arm64 variant v8
 	-	linux; ppc64le
+	-	linux; s390x
 
 ### `irssi:1-alpine` - linux; arm64 variant v8
 
@@ -131,4 +132,66 @@ CMD ["irssi"]
 	-	`sha256:87e39a0966d39c1b719d4756f49b79033e98c3b8b638ec97bdc46007cfb5581f`  
 		Last Modified: Tue, 09 Jan 2018 04:23:27 GMT  
 		Size: 16.5 MB (16546561 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `irssi:1-alpine` - linux; s390x
+
+```console
+$ docker pull irssi@sha256:53c1a0787d64f8a6cbd0ca28327257142c67d22004a3578a7e74c911970f807e
+```
+
+-	Docker Version: 17.06.1-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **19.6 MB (19574729 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:324031200b8f88f394c6aa5cc38d4e5857eb7c4d5ff5207d2e4c7d9aec7493a1`
+-	Default Command: `["irssi"]`
+
+```dockerfile
+# Wed, 25 Oct 2017 23:28:40 GMT
+ADD file:6fbdff4b4c08600e192f5da9b67a02c58759237fb40525d70712104c80c34c48 in / 
+# Wed, 25 Oct 2017 23:28:40 GMT
+COPY file:0f1d36dd7d8d53613b275660a88c5bf9b608ea8aa73a8054cb8bdbd73fd971ac in /etc/localtime 
+# Wed, 25 Oct 2017 23:28:40 GMT
+CMD ["/bin/sh"]
+# Fri, 27 Oct 2017 08:45:38 GMT
+RUN apk --no-cache add 	ca-certificates
+# Fri, 27 Oct 2017 08:45:38 GMT
+ENV HOME=/home/user
+# Fri, 27 Oct 2017 08:45:38 GMT
+RUN adduser -u 1001 -D user 	&& mkdir -p $HOME/.irssi 	&& chown -R user:user $HOME
+# Fri, 27 Oct 2017 08:45:39 GMT
+ENV LANG=C.UTF-8
+# Tue, 09 Jan 2018 09:47:37 GMT
+ENV IRSSI_VERSION=1.0.6
+# Tue, 09 Jan 2018 09:48:54 GMT
+RUN set -x 	&& apk add --no-cache --virtual .build-deps 		autoconf 		automake 		coreutils 		dpkg-dev dpkg 		gcc 		glib-dev 		gnupg 		libc-dev 		libtool 		lynx 		make 		ncurses-dev 		openssl 		openssl-dev 		perl-dev 		pkgconf 		tar 	&& wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz 	&& wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1 	&& gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz 	&& rm -rf "$GNUPGHOME" /tmp/irssi.tar.xz.asc 	&& mkdir -p /usr/src/irssi 	&& tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1 	&& rm /tmp/irssi.tar.xz 	&& cd /usr/src/irssi 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-true-color 		--with-bot 		--with-proxy 		--with-socks 	&& make -j "$(nproc)" 	&& make install 	&& rm -rf /usr/src/irssi 	&& runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)" 	&& apk add --no-cache --virtual .irssi-rundeps $runDeps perl-libwww 	&& apk del .build-deps
+# Tue, 09 Jan 2018 09:48:54 GMT
+WORKDIR /home/user
+# Tue, 09 Jan 2018 09:48:55 GMT
+USER [user]
+# Tue, 09 Jan 2018 09:48:55 GMT
+CMD ["irssi"]
+```
+
+-	Layers:
+	-	`sha256:d45fd9d3c4f188ab1f3a4bf6a9f5202b3f1577dbb998f5f28e82d192e0c1f0e7`  
+		Last Modified: Sat, 17 Jun 2017 20:41:42 GMT  
+		Size: 2.1 MB (2065460 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0e5978b6b34b3e943e0fd25dfb50991c0bad82a986cfdaa91c4de756431ba679`  
+		Last Modified: Wed, 25 Oct 2017 23:28:59 GMT  
+		Size: 176.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c748eb210bfc4fad3e92ae03d0da1c4e221b9d448cf37ee416aa33f8129cc0ee`  
+		Last Modified: Fri, 27 Oct 2017 08:46:40 GMT  
+		Size: 352.5 KB (352520 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8cddb23fb031789f9aebce0f717eafa5d3200e0ad8fa81b467b12b03f823c714`  
+		Last Modified: Fri, 27 Oct 2017 08:46:40 GMT  
+		Size: 1.3 KB (1263 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ead50cfef69e1af9fb52329ddb4ef1e8c2912d94d92e0afe5b5a9911c009df5f`  
+		Last Modified: Tue, 09 Jan 2018 09:50:11 GMT  
+		Size: 17.2 MB (17155310 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
