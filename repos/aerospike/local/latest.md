@@ -1,18 +1,18 @@
-# `aerospike:3.15.0.2`
+# `aerospike:3.15.1.4`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3594cd1576db1fc92fe260d0f52b7a0d2c394f941060de5b0c42efab55a44fb1`
-- Created: `2017-12-14T22:44:14.005735278Z`
-- Virtual Size: ~ 188.79 Mb  
+- Image ID: `sha256:0f6cc1041ccafa8cf28e3e5c5c5af11d47e7c5312cb543c0c0ed3a7014e510c8`
+- Created: `2018-01-09T00:49:40.971022048Z`
+- Virtual Size: ~ 188.01 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["asd"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `AEROSPIKE_VERSION=3.15.0.2`
-  - `AEROSPIKE_SHA256=beb45dd20205624e7d8e08456c57cb0b3c18c3a643ef8246f2c6dedf1a964631`
+  - `AEROSPIKE_VERSION=3.15.1.4`
+  - `AEROSPIKE_SHA256=9b533226d4cc5473fc25f6cc4f81fdd5ba0864aeedef7adf14bdaa4ff1a73b2b`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -54,11 +54,11 @@ $ apt-get source -qq --print-uris adduser=3.113+nmu3ubuntu4
 'http://archive.ubuntu.com/ubuntu/pool/main/a/adduser/adduser_3.113+nmu3ubuntu4.tar.gz' adduser_3.113+nmu3ubuntu4.tar.gz 367980 SHA256:6e4d44c8388b9ba85fc175fa4a48ed43bf6500913c2c631fda0e4419ae63c65a
 ```
 
-### `dpkg` source package: `aerospike-server-community=3.15.0.2-1`
+### `dpkg` source package: `aerospike-server-community=3.15.1.4-1`
 
 Binary Packages:
 
-- `aerospike-server-community=3.15.0.2-1`
+- `aerospike-server-community=3.15.1.4-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -68,11 +68,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `aerospike-tools=3.15.0.3`
+### `dpkg` source package: `aerospike-tools=3.15.1.2`
 
 Binary Packages:
 
-- `aerospike-tools=3.15.0.3`
+- `aerospike-tools=3.15.1.2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
