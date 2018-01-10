@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2ea648fce3bf3d1d8b8ee4bcf4bc997078211b4e50d62071067c49f20d29f276`
-- Created: `2018-01-04T06:22:29.559586121Z`
-- Virtual Size: ~ 642.24 Mb  
+- Image ID: `sha256:7ead233f1097cdfa3de4f1db33dbcbb7cbe713b1746f0bff096f01018ced10e3`
+- Created: `2018-01-09T08:57:35.067455637Z`
+- Virtual Size: ~ 577.86 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -17,11 +17,11 @@
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
-  - `GPG_KEYS=A917B1ECDA84AEC2B568FED6F50ABC807BD5DCD0 528995BFEDFBA7191D46839EF9BA0ADA31CBD89E`
-  - `PHP_VERSION=7.1.12`
-  - `PHP_URL=https://secure.php.net/get/php-7.1.12.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://secure.php.net/get/php-7.1.12.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=a0118850774571b1f2d4e30b4fe7a4b958ca66f07d07d65ebdc789c54ba6eeb3`
+  - `GPG_KEYS=A917B1ECDA84AEC2B568FED6F50ABC807BD5DCD0 528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 1729F83938DA44E27BA0F4D3DBDB397470D12172`
+  - `PHP_VERSION=7.1.13`
+  - `PHP_URL=https://secure.php.net/get/php-7.1.13.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://secure.php.net/get/php-7.1.13.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=1a0b3f2fb61959b57a3ee01793a77ed3f19bde5aa90c43dcacc85ea32f64fc10`
   - `PHP_MD5=`
   - `NEXTCLOUD_VERSION=12.0.4`
 
@@ -460,9 +460,8 @@ Binary Packages:
 
 - `curl=7.38.0-4+deb8u8`
 - `libcurl3:amd64=7.38.0-4+deb8u8`
-- `libcurl4-openssl-dev:amd64=7.38.0-4+deb8u8`
 
-Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
+Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`)
 
 - `BSD-3-Clause`
 - `BSD-4-Clause`
@@ -489,10 +488,9 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `libsasl2-2:amd64=2.1.26.dfsg1-13+deb8u1`
-- `libsasl2-dev=2.1.26.dfsg1-13+deb8u1`
 - `libsasl2-modules-db:amd64=2.1.26.dfsg1-13+deb8u1`
 
-Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/libsasl2-dev/copyright`, `/usr/share/doc/libsasl2-modules-db/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/libsasl2-modules-db/copyright`)
 
 - `BSD-2-clause`
 - `BSD-4-clause`
@@ -698,13 +696,12 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `comerr-dev=2.1-1.42.12-2+b1`
 - `e2fslibs:amd64=1.42.12-2+b1`
 - `e2fsprogs=1.42.12-2+b1`
 - `libcomerr2:amd64=1.42.12-2+b1`
 - `libss2:amd64=1.42.12-2+b1`
 
-Licenses: (parsed from: `/usr/share/doc/comerr-dev/copyright`, `/usr/share/doc/e2fslibs/copyright`, `/usr/share/doc/e2fsprogs/copyright`, `/usr/share/doc/libcomerr2/copyright`, `/usr/share/doc/libss2/copyright`)
+Licenses: (parsed from: `/usr/share/doc/e2fslibs/copyright`, `/usr/share/doc/e2fsprogs/copyright`, `/usr/share/doc/libcomerr2/copyright`, `/usr/share/doc/libss2/copyright`)
 
 - `GPL-2`
 - `LGPL-2`
@@ -779,39 +776,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/findutils/4.4.2-9/ (for browsing the source)
 - https://sources.debian.net/src/findutils/4.4.2-9/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/findutils/4.4.2-9/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `freetype=2.5.2-3+deb8u2`
-
-Binary Packages:
-
-- `libfreetype6:amd64=2.5.2-3+deb8u2`
-- `libfreetype6-dev=2.5.2-3+deb8u2`
-
-Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`, `/usr/share/doc/libfreetype6-dev/copyright`)
-
-- `BSD-2-Clause`
-- `BSD-3-Clause`
-- `Catharon-OSL`
-- `FTL`
-- `GPL-2`
-- `GPL-2+`
-- `GZip`
-- `OpenGroup-BSD-like`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris freetype=2.5.2-3+deb8u2
-'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.5.2-3+deb8u2.dsc' freetype_2.5.2-3+deb8u2.dsc 2283 SHA256:e63b0cc18482fe5971880271c2dbacd6957288608fef8c40fe127db79a9008dd
-'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.5.2.orig.tar.gz' freetype_2.5.2.orig.tar.gz 1971155 SHA256:5fda4996e43cfdf9b602a0eb5abde014f1a3c3b2d82bbb9b86942011c63f5c3a
-'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.5.2-3+deb8u2.diff.gz' freetype_2.5.2-3+deb8u2.diff.gz 70170 SHA256:0247f57efcb83b208fc1967520a53ecf21c5aca9ee2c433238914622e6938259
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/freetype/2.5.2-3+deb8u2/ (for browsing the source)
-- https://sources.debian.net/src/freetype/2.5.2-3+deb8u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/freetype/2.5.2-3+deb8u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-4.8=4.8.4-1`
 
@@ -1160,8 +1124,6 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `icu-devtools=52.1-8+deb8u6`
-- `libicu-dev:amd64=52.1-8+deb8u6`
 - `libicu52:amd64=52.1-8+deb8u6`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
@@ -1376,17 +1338,12 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `krb5-multidev=1.12.1+dfsg-19+deb8u4`
 - `libgssapi-krb5-2:amd64=1.12.1+dfsg-19+deb8u4`
-- `libgssrpc4:amd64=1.12.1+dfsg-19+deb8u4`
 - `libk5crypto3:amd64=1.12.1+dfsg-19+deb8u4`
-- `libkadm5clnt-mit9:amd64=1.12.1+dfsg-19+deb8u4`
-- `libkadm5srv-mit9:amd64=1.12.1+dfsg-19+deb8u4`
-- `libkdb5-7:amd64=1.12.1+dfsg-19+deb8u4`
 - `libkrb5-3:amd64=1.12.1+dfsg-19+deb8u4`
 - `libkrb5support0:amd64=1.12.1+dfsg-19+deb8u4`
 
-Licenses: (parsed from: `/usr/share/doc/krb5-multidev/copyright`, `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libgssrpc4/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkadm5clnt-mit9/copyright`, `/usr/share/doc/libkadm5srv-mit9/copyright`, `/usr/share/doc/libkdb5-7/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
 
 - `GPL-2`
 
@@ -1599,11 +1556,9 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libjpeg-dev=1:1.3.1-12`
 - `libjpeg62-turbo:amd64=1:1.3.1-12`
-- `libjpeg62-turbo-dev:amd64=1:1.3.1-12`
 
-Licenses: (parsed from: `/usr/share/doc/libjpeg-dev/copyright`, `/usr/share/doc/libjpeg62-turbo/copyright`, `/usr/share/doc/libjpeg62-turbo-dev/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libjpeg62-turbo/copyright`)
 
 - `BSD-3`
 - `BSD-BY-LC-NE`
@@ -1655,10 +1610,9 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libmcrypt-dev=2.5.8-3.3`
 - `libmcrypt4=2.5.8-3.3`
 
-Licenses: (parsed from: `/usr/share/doc/libmcrypt-dev/copyright`, `/usr/share/doc/libmcrypt4/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libmcrypt4/copyright`)
 
 - `LGPL-2`
 
@@ -1681,13 +1635,10 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libhashkit-dev=1.0.18-4`
-- `libhashkit2:amd64=1.0.18-4`
-- `libmemcached-dev=1.0.18-4`
 - `libmemcached11:amd64=1.0.18-4`
 - `libmemcachedutil2:amd64=1.0.18-4`
 
-Licenses: (parsed from: `/usr/share/doc/libhashkit-dev/copyright`, `/usr/share/doc/libhashkit2/copyright`, `/usr/share/doc/libmemcached-dev/copyright`, `/usr/share/doc/libmemcached11/copyright`, `/usr/share/doc/libmemcachedutil2/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libmemcached11/copyright`, `/usr/share/doc/libmemcachedutil2/copyright`)
 
 - `BSD-3-clause`
 - `BSD-3-clause-Sun`
@@ -1716,9 +1667,8 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `libpng12-0:amd64=1.2.50-2+deb8u3`
-- `libpng12-dev:amd64=1.2.50-2+deb8u3`
 
-Licenses: (parsed from: `/usr/share/doc/libpng12-0/copyright`, `/usr/share/doc/libpng12-dev/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libpng12-0/copyright`)
 
 - `GPL-2`
 
@@ -2029,7 +1979,6 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `libxml2:amd64=2.9.1+dfsg1-5+deb8u5`
-- `libxml2-dev:amd64=2.9.1+dfsg1-5+deb8u5`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2349,7 +2298,6 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `libldap-2.4-2:amd64=2.4.40+dfsg-1+deb8u3`
-- `libldap2-dev:amd64=2.4.40+dfsg-1+deb8u3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2374,8 +2322,6 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libssl-dev:amd64=1.0.1t-1+deb8u7`
-- `libssl-doc=1.0.1t-1+deb8u7`
 - `libssl1.0.0:amd64=1.0.1t-1+deb8u7`
 - `openssl=1.0.1t-1+deb8u7`
 
@@ -2609,10 +2555,9 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libpq-dev=9.4.15-0+deb8u1`
 - `libpq5:amd64=9.4.15-0+deb8u1`
 
-Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/libpq5/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 
 - `Tcl`
 - `almost exclusively BSD`
@@ -3121,7 +3066,6 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `zlib1g:amd64=1:1.2.8.dfsg-2+b1`
-- `zlib1g-dev:amd64=1:1.2.8.dfsg-2+b1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
