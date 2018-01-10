@@ -1,10 +1,10 @@
-# `nuxeo:9.3`
+# `nuxeo:9.10`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a4a3997aa5b38e082741419da321397afaad4c45f4944fef8c1638ab11261e0a`
-- Created: `2017-12-12T19:01:06.163320105Z`
-- Virtual Size: ~ 2.36 Gb  
+- Image ID: `sha256:0a9a3908b350ea5389b061826a63f503e5ff988f7f704d71e81fbdd367f75690`
+- Created: `2018-01-10T05:42:12.543222789Z`
+- Virtual Size: ~ 2.17 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
