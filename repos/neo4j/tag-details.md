@@ -7391,7 +7391,7 @@ CMD ["neo4j"]
 ## `neo4j:3.1.0`
 
 ```console
-$ docker pull neo4j@sha256:5e0750af024ada03cdd0de7c21956c2043ccf94eea8203ddb5db10cc8f422a35
+$ docker pull neo4j@sha256:a4b7d3d4852180bb819d9c3910ac0780ce2976f262efc436e12e49ff30f53200
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7401,104 +7401,104 @@ $ docker pull neo4j@sha256:5e0750af024ada03cdd0de7c21956c2043ccf94eea8203ddb5db1
 ### `neo4j:3.1.0` - linux; amd64
 
 ```console
-$ docker pull neo4j@sha256:8261a35f531c41143015a550fed667e15412c14f88cbf3ca66d3cc9dfb410e74
+$ docker pull neo4j@sha256:06c473a33c1f23af79a2c5e91c425973e726edb6880c662ed8a859b848ecc244
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **135.6 MB (135617664 bytes)**  
+-	Total Size: **135.6 MB (135618348 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c3f18373b93142f81f109e591b52edd0f16105d091b67b2705f13e90273e8011`
+-	Image ID: `sha256:bd3839cc2bad7582b208b642d007c874d8028c6e8f61947ffe405fa72c3895e4`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["neo4j"]`
 
 ```dockerfile
-# Fri, 01 Dec 2017 18:48:48 GMT
-ADD file:2b00f26f6004576e2f8faeb3fb0517a14f79ea89a059fe096b54cbecf5da512e in / 
-# Fri, 01 Dec 2017 18:48:48 GMT
+# Tue, 09 Jan 2018 21:10:58 GMT
+ADD file:093f0723fa46f6cdbd6f7bd146448bb70ecce54254c35701feeceb956414622f in / 
+# Tue, 09 Jan 2018 21:10:58 GMT
 CMD ["/bin/sh"]
-# Tue, 05 Dec 2017 03:42:44 GMT
+# Wed, 10 Jan 2018 04:48:24 GMT
 ENV LANG=C.UTF-8
-# Tue, 05 Dec 2017 03:42:45 GMT
+# Wed, 10 Jan 2018 04:48:25 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 05 Dec 2017 03:43:45 GMT
+# Wed, 10 Jan 2018 04:51:56 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre
-# Tue, 05 Dec 2017 03:43:46 GMT
+# Wed, 10 Jan 2018 04:51:57 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Tue, 05 Dec 2017 03:43:46 GMT
+# Wed, 10 Jan 2018 04:51:57 GMT
 ENV JAVA_VERSION=8u151
-# Tue, 05 Dec 2017 03:43:46 GMT
+# Wed, 10 Jan 2018 04:51:57 GMT
 ENV JAVA_ALPINE_VERSION=8.151.12-r0
-# Tue, 05 Dec 2017 03:43:51 GMT
+# Wed, 10 Jan 2018 04:52:04 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 05 Dec 2017 04:58:02 GMT
+# Wed, 10 Jan 2018 08:41:39 GMT
 RUN apk add --no-cache --quiet     bash     curl
-# Tue, 05 Dec 2017 05:29:07 GMT
+# Wed, 10 Jan 2018 09:26:29 GMT
 ENV NEO4J_SHA256=47317a5a60f72de3d1b4fae4693b5f15514838ff3650bf8f2a965d3ba117dfc2
-# Tue, 05 Dec 2017 05:29:07 GMT
+# Wed, 10 Jan 2018 09:26:29 GMT
 ENV NEO4J_TARBALL=neo4j-community-3.1.0-unix.tar.gz
-# Tue, 05 Dec 2017 05:29:07 GMT
+# Wed, 10 Jan 2018 09:26:29 GMT
 ARG NEO4J_URI=http://dist.neo4j.org/neo4j-community-3.1.0-unix.tar.gz
-# Tue, 05 Dec 2017 05:29:08 GMT
+# Wed, 10 Jan 2018 09:26:30 GMT
 COPY file:2e411d607fa15f91ae6f4b515dde6bf3e158d34c0036556e00553ed1c50cd63d in /tmp/ 
-# Tue, 05 Dec 2017 05:29:21 GMT
+# Wed, 10 Jan 2018 09:26:45 GMT
 # ARGS: NEO4J_URI=http://dist.neo4j.org/neo4j-community-3.1.0-unix.tar.gz
 RUN curl --fail --silent --show-error --location --remote-name ${NEO4J_URI}     && echo "${NEO4J_SHA256}  ${NEO4J_TARBALL}" | sha256sum -csw -     && tar --extract --file ${NEO4J_TARBALL} --directory /var/lib     && mv /var/lib/neo4j-* /var/lib/neo4j     && rm ${NEO4J_TARBALL}
-# Tue, 05 Dec 2017 05:29:21 GMT
+# Wed, 10 Jan 2018 09:26:51 GMT
 WORKDIR /var/lib/neo4j
-# Tue, 05 Dec 2017 05:29:22 GMT
+# Wed, 10 Jan 2018 09:26:51 GMT
 # ARGS: NEO4J_URI=http://dist.neo4j.org/neo4j-community-3.1.0-unix.tar.gz
 RUN mv data /data     && ln -s /data
-# Tue, 05 Dec 2017 05:29:22 GMT
+# Wed, 10 Jan 2018 09:27:01 GMT
 VOLUME [/data]
-# Tue, 05 Dec 2017 05:29:23 GMT
+# Wed, 10 Jan 2018 09:27:02 GMT
 COPY file:77937095ede0ebf8d922e2d061f12dc5de64a045c38a47b59579caac7c90f6f6 in /docker-entrypoint.sh 
-# Tue, 05 Dec 2017 05:29:23 GMT
+# Wed, 10 Jan 2018 09:27:02 GMT
 EXPOSE 7473/tcp 7474/tcp 7687/tcp
-# Tue, 05 Dec 2017 05:29:23 GMT
+# Wed, 10 Jan 2018 09:27:12 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 05 Dec 2017 05:29:24 GMT
+# Wed, 10 Jan 2018 09:27:12 GMT
 CMD ["neo4j"]
 ```
 
 -	Layers:
-	-	`sha256:2fdfe1cd78c20d05774f0919be19bc1a3e4729bce219968e4188e7e0f1af679d`  
-		Last Modified: Fri, 01 Dec 2017 18:50:32 GMT  
-		Size: 2.1 MB (2064911 bytes)  
+	-	`sha256:ff3a5c916c92643ff77519ffa742d3ec61b7f591b6b7504599d95a4a41134e28`  
+		Last Modified: Tue, 09 Jan 2018 21:13:34 GMT  
+		Size: 2.1 MB (2065537 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:82630fd6e5ba7225587bd7986c7b6245801f8c7b001c9db318aecbb7fcb188a4`  
-		Last Modified: Tue, 05 Dec 2017 03:44:19 GMT  
-		Size: 239.0 B  
+	-	`sha256:5de5f69f42d765af6ffb6753242b18dd4a33602ad7d76df52064833e5c527cb4`  
+		Last Modified: Wed, 10 Jan 2018 04:53:02 GMT  
+		Size: 238.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:119d364c885d49cacd5587d152fc93747a1758e1cfdd3d10d627c00091c5b365`  
-		Last Modified: Tue, 05 Dec 2017 03:46:37 GMT  
-		Size: 54.5 MB (54453882 bytes)  
+	-	`sha256:fa7536dd895ade2421a9a0fcf6e16485323f9e2e45e917b1ff18b0f648974626`  
+		Last Modified: Wed, 10 Jan 2018 04:59:33 GMT  
+		Size: 54.5 MB (54453948 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46f8fad107eeaa6f5d69afa710d251ad703ba209a6eca3e7d53ae59afc59ab83`  
-		Last Modified: Tue, 05 Dec 2017 05:38:18 GMT  
-		Size: 1.7 MB (1689198 bytes)  
+	-	`sha256:d58d533cf95026ab735f3e7683b1c3ed8fcb49358044c179adf20595beb7ba71`  
+		Last Modified: Wed, 10 Jan 2018 09:29:33 GMT  
+		Size: 1.7 MB (1689224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2ed6b37511ad93c85ad62cd408b6e9fa2f890a86d2cb334cd09d431dc4f84aa1`  
-		Last Modified: Tue, 05 Dec 2017 05:58:16 GMT  
-		Size: 131.0 B  
+	-	`sha256:1be94bb49a6791a9edfc407e58b3ba385546f73f003908ce899af44237643caa`  
+		Last Modified: Wed, 10 Jan 2018 09:48:42 GMT  
+		Size: 129.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f4504fee6023e3b8aa2e224d1d89e522986868ff768cbbd4c4524aa8e32b5286`  
-		Last Modified: Tue, 05 Dec 2017 05:58:23 GMT  
-		Size: 77.4 MB (77407879 bytes)  
+	-	`sha256:2ba3ba391820bb37f029f5e0079def7780aafb86bc6324d6ceef5e149dde827c`  
+		Last Modified: Wed, 10 Jan 2018 09:48:52 GMT  
+		Size: 77.4 MB (77407848 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:76132f342c7b32d4635986a9aa5d5b14b5b8fdae715541963e8ad2447e2c82ef`  
-		Last Modified: Tue, 05 Dec 2017 05:58:16 GMT  
-		Size: 223.0 B  
+	-	`sha256:32aebeb726caf7d3d1b9a5c739b76b55b072ffe3ab91c0233739dcaa0db3e793`  
+		Last Modified: Wed, 10 Jan 2018 09:48:42 GMT  
+		Size: 225.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8481b95f051fd2189ad6e966b0e78643fe024d1d9b8913637b7b3d8589cfa344`  
-		Last Modified: Tue, 05 Dec 2017 05:58:16 GMT  
-		Size: 1.2 KB (1201 bytes)  
+	-	`sha256:8e06a789fc5c29114af2c0b4752cca28ee319d10c2996915ea28ca79b9f7e327`  
+		Last Modified: Wed, 10 Jan 2018 09:48:43 GMT  
+		Size: 1.2 KB (1199 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `neo4j:3.1.0-enterprise`
 
 ```console
-$ docker pull neo4j@sha256:2c13faeaebe4043cdfb781cf29cfd062a14ba9c42cd724ddd81c3099c399ba93
+$ docker pull neo4j@sha256:8431beb87f289f2371e4bc6eebcb836eb9fbde0487d1508fae928d723270c534
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7508,98 +7508,98 @@ $ docker pull neo4j@sha256:2c13faeaebe4043cdfb781cf29cfd062a14ba9c42cd724ddd81c3
 ### `neo4j:3.1.0-enterprise` - linux; amd64
 
 ```console
-$ docker pull neo4j@sha256:e7096b94268be4f91a9610c9693d8d569fdec73ae44e107bc03ce0ffa277d684
+$ docker pull neo4j@sha256:838285d6f80cdc9d25d1474ae8f34f152c9492f6fc26f07234df4404a5c60f3c
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **146.1 MB (146084407 bytes)**  
+-	Total Size: **146.1 MB (146085125 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:90855a876d0e86d9ed139f1d0886170126cf67271d66bb950dbc1c0c5e30d292`
+-	Image ID: `sha256:94ea7cdb6db506b8972ad3b28290de88d99c52127d01f3482b794c518e11b0ca`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["neo4j"]`
 
 ```dockerfile
-# Fri, 01 Dec 2017 18:48:48 GMT
-ADD file:2b00f26f6004576e2f8faeb3fb0517a14f79ea89a059fe096b54cbecf5da512e in / 
-# Fri, 01 Dec 2017 18:48:48 GMT
+# Tue, 09 Jan 2018 21:10:58 GMT
+ADD file:093f0723fa46f6cdbd6f7bd146448bb70ecce54254c35701feeceb956414622f in / 
+# Tue, 09 Jan 2018 21:10:58 GMT
 CMD ["/bin/sh"]
-# Tue, 05 Dec 2017 03:42:44 GMT
+# Wed, 10 Jan 2018 04:48:24 GMT
 ENV LANG=C.UTF-8
-# Tue, 05 Dec 2017 03:42:45 GMT
+# Wed, 10 Jan 2018 04:48:25 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 05 Dec 2017 03:43:45 GMT
+# Wed, 10 Jan 2018 04:51:56 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre
-# Tue, 05 Dec 2017 03:43:46 GMT
+# Wed, 10 Jan 2018 04:51:57 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Tue, 05 Dec 2017 03:43:46 GMT
+# Wed, 10 Jan 2018 04:51:57 GMT
 ENV JAVA_VERSION=8u151
-# Tue, 05 Dec 2017 03:43:46 GMT
+# Wed, 10 Jan 2018 04:51:57 GMT
 ENV JAVA_ALPINE_VERSION=8.151.12-r0
-# Tue, 05 Dec 2017 03:43:51 GMT
+# Wed, 10 Jan 2018 04:52:04 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 05 Dec 2017 04:58:02 GMT
+# Wed, 10 Jan 2018 08:41:39 GMT
 RUN apk add --no-cache --quiet     bash     curl
-# Tue, 05 Dec 2017 05:29:40 GMT
+# Wed, 10 Jan 2018 09:27:41 GMT
 ENV NEO4J_SHA256=1f289296c23004ace4d37e14f2af433d203dfb028977534429e766bc308d584a
-# Tue, 05 Dec 2017 05:29:40 GMT
+# Wed, 10 Jan 2018 09:27:41 GMT
 ENV NEO4J_TARBALL=neo4j-enterprise-3.1.0-unix.tar.gz
-# Tue, 05 Dec 2017 05:29:41 GMT
+# Wed, 10 Jan 2018 09:27:42 GMT
 ARG NEO4J_URI=http://dist.neo4j.org/neo4j-enterprise-3.1.0-unix.tar.gz
-# Tue, 05 Dec 2017 05:29:41 GMT
+# Wed, 10 Jan 2018 09:27:42 GMT
 COPY file:2e411d607fa15f91ae6f4b515dde6bf3e158d34c0036556e00553ed1c50cd63d in /tmp/ 
-# Tue, 05 Dec 2017 05:29:57 GMT
+# Wed, 10 Jan 2018 09:28:07 GMT
 # ARGS: NEO4J_URI=http://dist.neo4j.org/neo4j-enterprise-3.1.0-unix.tar.gz
 RUN curl --fail --silent --show-error --location --remote-name ${NEO4J_URI}     && echo "${NEO4J_SHA256}  ${NEO4J_TARBALL}" | sha256sum -csw -     && tar --extract --file ${NEO4J_TARBALL} --directory /var/lib     && mv /var/lib/neo4j-* /var/lib/neo4j     && rm ${NEO4J_TARBALL}
-# Tue, 05 Dec 2017 05:30:02 GMT
+# Wed, 10 Jan 2018 09:28:15 GMT
 WORKDIR /var/lib/neo4j
-# Tue, 05 Dec 2017 05:30:02 GMT
+# Wed, 10 Jan 2018 09:28:16 GMT
 # ARGS: NEO4J_URI=http://dist.neo4j.org/neo4j-enterprise-3.1.0-unix.tar.gz
 RUN mv data /data     && ln -s /data
-# Tue, 05 Dec 2017 05:30:03 GMT
+# Wed, 10 Jan 2018 09:28:16 GMT
 VOLUME [/data]
-# Tue, 05 Dec 2017 05:30:03 GMT
+# Wed, 10 Jan 2018 09:28:16 GMT
 COPY file:77937095ede0ebf8d922e2d061f12dc5de64a045c38a47b59579caac7c90f6f6 in /docker-entrypoint.sh 
-# Tue, 05 Dec 2017 05:30:03 GMT
+# Wed, 10 Jan 2018 09:28:17 GMT
 EXPOSE 7473/tcp 7474/tcp 7687/tcp
-# Tue, 05 Dec 2017 05:30:04 GMT
+# Wed, 10 Jan 2018 09:28:17 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 05 Dec 2017 05:30:04 GMT
+# Wed, 10 Jan 2018 09:28:18 GMT
 CMD ["neo4j"]
 ```
 
 -	Layers:
-	-	`sha256:2fdfe1cd78c20d05774f0919be19bc1a3e4729bce219968e4188e7e0f1af679d`  
-		Last Modified: Fri, 01 Dec 2017 18:50:32 GMT  
-		Size: 2.1 MB (2064911 bytes)  
+	-	`sha256:ff3a5c916c92643ff77519ffa742d3ec61b7f591b6b7504599d95a4a41134e28`  
+		Last Modified: Tue, 09 Jan 2018 21:13:34 GMT  
+		Size: 2.1 MB (2065537 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:82630fd6e5ba7225587bd7986c7b6245801f8c7b001c9db318aecbb7fcb188a4`  
-		Last Modified: Tue, 05 Dec 2017 03:44:19 GMT  
-		Size: 239.0 B  
+	-	`sha256:5de5f69f42d765af6ffb6753242b18dd4a33602ad7d76df52064833e5c527cb4`  
+		Last Modified: Wed, 10 Jan 2018 04:53:02 GMT  
+		Size: 238.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:119d364c885d49cacd5587d152fc93747a1758e1cfdd3d10d627c00091c5b365`  
-		Last Modified: Tue, 05 Dec 2017 03:46:37 GMT  
-		Size: 54.5 MB (54453882 bytes)  
+	-	`sha256:fa7536dd895ade2421a9a0fcf6e16485323f9e2e45e917b1ff18b0f648974626`  
+		Last Modified: Wed, 10 Jan 2018 04:59:33 GMT  
+		Size: 54.5 MB (54453948 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46f8fad107eeaa6f5d69afa710d251ad703ba209a6eca3e7d53ae59afc59ab83`  
-		Last Modified: Tue, 05 Dec 2017 05:38:18 GMT  
-		Size: 1.7 MB (1689198 bytes)  
+	-	`sha256:d58d533cf95026ab735f3e7683b1c3ed8fcb49358044c179adf20595beb7ba71`  
+		Last Modified: Wed, 10 Jan 2018 09:29:33 GMT  
+		Size: 1.7 MB (1689224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ceace605d03d555d5a9983170a27e34a347acf80b12d90e0e7a1aeb991eee3ca`  
-		Last Modified: Tue, 05 Dec 2017 05:58:36 GMT  
+	-	`sha256:b1b8abc385dbbe85378b19b02a853c1fade12823216210ae6e76ee4681dfe365`  
+		Last Modified: Wed, 10 Jan 2018 09:49:18 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2e632217a1228fbc7a801900a7463890612a76ecd5d0fa5a86e44ecb4bad26fb`  
-		Last Modified: Tue, 05 Dec 2017 05:58:44 GMT  
-		Size: 87.9 MB (87874622 bytes)  
+	-	`sha256:8e8ec2b5079e02e7b7f28aca86dd5f4641a17b16fea33084137bfa4f80e4f734`  
+		Last Modified: Wed, 10 Jan 2018 09:49:25 GMT  
+		Size: 87.9 MB (87874624 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c7f14b459a1915f06d0dd78eaac042158735e8bcde83ffb9b7953c9106f6857a`  
-		Last Modified: Tue, 05 Dec 2017 05:58:36 GMT  
+	-	`sha256:351f1d9268fc7d6de1e1fe60b2edb426906a119c351b416fc52cf60d889ff69a`  
+		Last Modified: Wed, 10 Jan 2018 09:49:18 GMT  
 		Size: 225.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc03d42370bac708f5f31a9892648f0598ab7b185616405cb82ec0670e051d0e`  
-		Last Modified: Tue, 05 Dec 2017 05:58:36 GMT  
-		Size: 1.2 KB (1200 bytes)  
+	-	`sha256:ab843cfd2041df63f28b6fadebb041f191d4ef636a923363bc63ef32763f17bf`  
+		Last Modified: Wed, 10 Jan 2018 09:49:18 GMT  
+		Size: 1.2 KB (1199 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `neo4j:3.1.1`
@@ -7712,7 +7712,7 @@ CMD ["neo4j"]
 ## `neo4j:3.1.1-enterprise`
 
 ```console
-$ docker pull neo4j@sha256:d676b78af00f3784c50f9a2a3d5f6d0e870f9783db0c73c621160997b65c56db
+$ docker pull neo4j@sha256:90963210000a5b1c787dd9f2af116270a900b8af2d7e609337d94c9c8648326f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7722,97 +7722,97 @@ $ docker pull neo4j@sha256:d676b78af00f3784c50f9a2a3d5f6d0e870f9783db0c73c621160
 ### `neo4j:3.1.1-enterprise` - linux; amd64
 
 ```console
-$ docker pull neo4j@sha256:b64dd261630b5e232b80ac3cf840f691b9b8116c236bae0261c736dae710ef50
+$ docker pull neo4j@sha256:c827c3d5fcb1bcfecc71d0cc624553098288e4b4e8e8c9bc8e4b74baed33f9c2
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **146.1 MB (146141563 bytes)**  
+-	Total Size: **146.1 MB (146142294 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:69b4cf073bc461edb5a4c366b9e3705452589cd34a7cf97e776a4ba5086e2956`
+-	Image ID: `sha256:5eb06a7f0fa872f1e1915cd5bc41144f22bfe2b431a0fa00411d94aebe1ad38e`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["neo4j"]`
 
 ```dockerfile
-# Fri, 01 Dec 2017 18:48:48 GMT
-ADD file:2b00f26f6004576e2f8faeb3fb0517a14f79ea89a059fe096b54cbecf5da512e in / 
-# Fri, 01 Dec 2017 18:48:48 GMT
+# Tue, 09 Jan 2018 21:10:58 GMT
+ADD file:093f0723fa46f6cdbd6f7bd146448bb70ecce54254c35701feeceb956414622f in / 
+# Tue, 09 Jan 2018 21:10:58 GMT
 CMD ["/bin/sh"]
-# Tue, 05 Dec 2017 03:42:44 GMT
+# Wed, 10 Jan 2018 04:48:24 GMT
 ENV LANG=C.UTF-8
-# Tue, 05 Dec 2017 03:42:45 GMT
+# Wed, 10 Jan 2018 04:48:25 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 05 Dec 2017 03:43:45 GMT
+# Wed, 10 Jan 2018 04:51:56 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre
-# Tue, 05 Dec 2017 03:43:46 GMT
+# Wed, 10 Jan 2018 04:51:57 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Tue, 05 Dec 2017 03:43:46 GMT
+# Wed, 10 Jan 2018 04:51:57 GMT
 ENV JAVA_VERSION=8u151
-# Tue, 05 Dec 2017 03:43:46 GMT
+# Wed, 10 Jan 2018 04:51:57 GMT
 ENV JAVA_ALPINE_VERSION=8.151.12-r0
-# Tue, 05 Dec 2017 03:43:51 GMT
+# Wed, 10 Jan 2018 04:52:04 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 05 Dec 2017 04:58:02 GMT
+# Wed, 10 Jan 2018 08:41:39 GMT
 RUN apk add --no-cache --quiet     bash     curl
-# Tue, 05 Dec 2017 05:28:30 GMT
+# Wed, 10 Jan 2018 09:25:49 GMT
 ENV NEO4J_SHA256=20a8cda35d90c518319fdbb7aa8ecb11e306777bf8b8ff7df623cdb473b593a7
-# Tue, 05 Dec 2017 05:28:30 GMT
+# Wed, 10 Jan 2018 09:25:50 GMT
 ENV NEO4J_TARBALL=neo4j-enterprise-3.1.1-unix.tar.gz
-# Tue, 05 Dec 2017 05:28:30 GMT
+# Wed, 10 Jan 2018 09:25:50 GMT
 ARG NEO4J_URI=http://dist.neo4j.org/neo4j-enterprise-3.1.1-unix.tar.gz
-# Tue, 05 Dec 2017 05:28:31 GMT
+# Wed, 10 Jan 2018 09:25:50 GMT
 COPY file:2e411d607fa15f91ae6f4b515dde6bf3e158d34c0036556e00553ed1c50cd63d in /tmp/ 
-# Tue, 05 Dec 2017 05:28:46 GMT
+# Wed, 10 Jan 2018 09:26:06 GMT
 # ARGS: NEO4J_URI=http://dist.neo4j.org/neo4j-enterprise-3.1.1-unix.tar.gz
 RUN curl --fail --silent --show-error --location --remote-name ${NEO4J_URI}     && echo "${NEO4J_SHA256}  ${NEO4J_TARBALL}" | sha256sum -csw -     && tar --extract --file ${NEO4J_TARBALL} --directory /var/lib     && mv /var/lib/neo4j-* /var/lib/neo4j     && rm ${NEO4J_TARBALL}
-# Tue, 05 Dec 2017 05:28:46 GMT
+# Wed, 10 Jan 2018 09:26:14 GMT
 WORKDIR /var/lib/neo4j
-# Tue, 05 Dec 2017 05:28:47 GMT
+# Wed, 10 Jan 2018 09:26:15 GMT
 # ARGS: NEO4J_URI=http://dist.neo4j.org/neo4j-enterprise-3.1.1-unix.tar.gz
 RUN mv data /data     && ln -s /data
-# Tue, 05 Dec 2017 05:28:47 GMT
+# Wed, 10 Jan 2018 09:26:15 GMT
 VOLUME [/data]
-# Tue, 05 Dec 2017 05:28:48 GMT
+# Wed, 10 Jan 2018 09:26:16 GMT
 COPY file:77937095ede0ebf8d922e2d061f12dc5de64a045c38a47b59579caac7c90f6f6 in /docker-entrypoint.sh 
-# Tue, 05 Dec 2017 05:28:48 GMT
+# Wed, 10 Jan 2018 09:26:16 GMT
 EXPOSE 7473/tcp 7474/tcp 7687/tcp
-# Tue, 05 Dec 2017 05:28:48 GMT
+# Wed, 10 Jan 2018 09:26:17 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 05 Dec 2017 05:28:49 GMT
+# Wed, 10 Jan 2018 09:26:17 GMT
 CMD ["neo4j"]
 ```
 
 -	Layers:
-	-	`sha256:2fdfe1cd78c20d05774f0919be19bc1a3e4729bce219968e4188e7e0f1af679d`  
-		Last Modified: Fri, 01 Dec 2017 18:50:32 GMT  
-		Size: 2.1 MB (2064911 bytes)  
+	-	`sha256:ff3a5c916c92643ff77519ffa742d3ec61b7f591b6b7504599d95a4a41134e28`  
+		Last Modified: Tue, 09 Jan 2018 21:13:34 GMT  
+		Size: 2.1 MB (2065537 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:82630fd6e5ba7225587bd7986c7b6245801f8c7b001c9db318aecbb7fcb188a4`  
-		Last Modified: Tue, 05 Dec 2017 03:44:19 GMT  
-		Size: 239.0 B  
+	-	`sha256:5de5f69f42d765af6ffb6753242b18dd4a33602ad7d76df52064833e5c527cb4`  
+		Last Modified: Wed, 10 Jan 2018 04:53:02 GMT  
+		Size: 238.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:119d364c885d49cacd5587d152fc93747a1758e1cfdd3d10d627c00091c5b365`  
-		Last Modified: Tue, 05 Dec 2017 03:46:37 GMT  
-		Size: 54.5 MB (54453882 bytes)  
+	-	`sha256:fa7536dd895ade2421a9a0fcf6e16485323f9e2e45e917b1ff18b0f648974626`  
+		Last Modified: Wed, 10 Jan 2018 04:59:33 GMT  
+		Size: 54.5 MB (54453948 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46f8fad107eeaa6f5d69afa710d251ad703ba209a6eca3e7d53ae59afc59ab83`  
-		Last Modified: Tue, 05 Dec 2017 05:38:18 GMT  
-		Size: 1.7 MB (1689198 bytes)  
+	-	`sha256:d58d533cf95026ab735f3e7683b1c3ed8fcb49358044c179adf20595beb7ba71`  
+		Last Modified: Wed, 10 Jan 2018 09:29:33 GMT  
+		Size: 1.7 MB (1689224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dffcbe0d12ff45985f3d3c7ddca813df3a86f3def81ed6944a922adec58a14a7`  
-		Last Modified: Tue, 05 Dec 2017 05:56:32 GMT  
-		Size: 128.0 B  
+	-	`sha256:7b1ea3d24d4323d5275843ddcf4e9d7b861b834f628a7cac8a5232bf2e451e0b`  
+		Last Modified: Wed, 10 Jan 2018 09:48:15 GMT  
+		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e97d3cf7b4ef69248d85da1380659188137b929161095f2da70413bd1cf29532`  
-		Last Modified: Tue, 05 Dec 2017 05:56:40 GMT  
-		Size: 87.9 MB (87931781 bytes)  
+	-	`sha256:7794410d634682364284333bee9d48b660c2ea980301ef97af517152067e1300`  
+		Last Modified: Wed, 10 Jan 2018 09:48:24 GMT  
+		Size: 87.9 MB (87931793 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:922bb4845ef8badf0f0c877e2bbb4f139c4eca3610edd6700738724b18a61900`  
-		Last Modified: Tue, 05 Dec 2017 05:56:32 GMT  
+	-	`sha256:5ff9ff471b922bb86ca69c864aa3dd0b471fb68e5103ef79cef57a96294035e6`  
+		Last Modified: Wed, 10 Jan 2018 09:48:15 GMT  
 		Size: 225.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:04687f0d39859706be02ef34d199cfd6344ebe14c19cb5f5bb17b7a512363e5c`  
-		Last Modified: Tue, 05 Dec 2017 05:56:32 GMT  
+	-	`sha256:6f105f7c6e62af229c010c36cce2470c4daee7bce7921f408ddf594eb22d55f1`  
+		Last Modified: Wed, 10 Jan 2018 09:48:15 GMT  
 		Size: 1.2 KB (1199 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
