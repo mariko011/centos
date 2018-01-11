@@ -1,10 +1,10 @@
-# `irssi:1.0.5`
+# `irssi:1.0.6`
 
 ## Docker Metadata
 
-- Image ID: `sha256:83fdc842d19cd6b1cab299eccf669ffa5c75956cf8db2f4dcea66138e97c63c8`
-- Created: `2017-12-12T04:53:15.382080567Z`
-- Virtual Size: ~ 257.36 Mb  
+- Image ID: `sha256:b79c42d136e0fe346eea2fd2eaeee9caa79192cd7a8be0ab0d955b8edb985d96`
+- Created: `2018-01-08T22:51:31.153870257Z`
+- Virtual Size: ~ 257.38 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["irssi"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `HOME=/home/user`
   - `LANG=C.UTF-8`
-  - `IRSSI_VERSION=1.0.5`
+  - `IRSSI_VERSION=1.0.6`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -2555,11 +2555,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libwww-robotrules-perl/6.01-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libwww-robotrules-perl/6.01-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=3.16.51-2`
+### `dpkg` source package: `linux=3.16.51-3`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.16.51-2`
+- `linux-libc-dev:amd64=3.16.51-3`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2570,17 +2570,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=3.16.51-2
-'http://deb.debian.org/debian/pool/main/l/linux/linux_3.16.51-2.dsc' linux_3.16.51-2.dsc 140581 SHA256:618f97d360516eac28995eec02b15817c44e408d78ae6f022b2bbc189de1b868
+$ apt-get source -qq --print-uris linux=3.16.51-3
+'http://deb.debian.org/debian/pool/main/l/linux/linux_3.16.51-3.dsc' linux_3.16.51-3.dsc 140581 SHA256:3f31a3fc86eadfd2a4961b7ee54eeef16a3a853e7b34ddf09438355653e4d4eb
 'http://deb.debian.org/debian/pool/main/l/linux/linux_3.16.51.orig.tar.xz' linux_3.16.51.orig.tar.xz 81841624 SHA256:302253096f6f15696e3bd72359852e1a7a2488431d203fd6bc89372c35d1d7dc
-'http://deb.debian.org/debian/pool/main/l/linux/linux_3.16.51-2.debian.tar.xz' linux_3.16.51-2.debian.tar.xz 3239396 SHA256:ab51d84088730f4d4079fd01464173f32697d9af6671168c0f99dcc21182ce1d
+'http://deb.debian.org/debian/pool/main/l/linux/linux_3.16.51-3.debian.tar.xz' linux_3.16.51-3.debian.tar.xz 3241412 SHA256:3b180a7af76aaad9ba05fa29357df0012fea11449bde650ae09cb65cec2cb61d
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/3.16.51-2/ (for browsing the source)
-- https://sources.debian.net/src/linux/3.16.51-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/3.16.51-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/3.16.51-3/ (for browsing the source)
+- https://sources.debian.net/src/linux/3.16.51-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/3.16.51-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=4.1+Debian13+nmu1`
 
