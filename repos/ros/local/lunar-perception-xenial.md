@@ -5299,14 +5299,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `GPL-2`
 - `redpine-signals`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=4.4.0-104.127
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-104.127.dsc' linux_4.4.0-104.127.dsc 9385 SHA256:0cb600bd349483f16a9af6fe07b6b351f3bb203f5dc5f0dda081f463a8289921
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-104.127.diff.gz' linux_4.4.0-104.127.diff.gz 13752992 SHA256:3c40f0493844a1571fb666f46e3223ffe103ac4684371203db5e0237ff675a9d
-```
 
 ### `dpkg` source package: `lksctp-tools=1.0.16+dfsg-3`
 
@@ -7317,14 +7312,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-rosdistro-modules=0.6.2-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro-modules/python-rosdistro-modules_0.6.2-1.dsc' python-rosdistro-modules_0.6.2-1.dsc 982 SHA256:dfd1c8010000b1e11439dcbe984dda37790a330f62aafd1e6e3a8fc81673881b
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro-modules/python-rosdistro-modules_0.6.2.orig.tar.gz' python-rosdistro-modules_0.6.2.orig.tar.gz 38452 SHA256:8f03af173b72ed54dfbc289acf287ef1b4ccf5a4b734c0dcf6a2701fc457e9a2
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro-modules/python-rosdistro-modules_0.6.2-1.debian.tar.xz' python-rosdistro-modules_0.6.2-1.debian.tar.xz 1104 SHA256:79155c0d96f267281b649c3a6c9a143109c4fb726696d6554e99350fc95a5659
-```
 
 ### `dpkg` source package: `python-rosdistro=0.6.2-1`
 
@@ -7504,14 +7494,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-vcstools=0.1.39-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-vcstools/python-vcstools_0.1.39-1.dsc' python-vcstools_0.1.39-1.dsc 935 SHA256:f94fc53f2763be3b2b751ad8a0633d301947daf11e62acdfffa2b4acdb2c5121
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-vcstools/python-vcstools_0.1.39.orig.tar.gz' python-vcstools_0.1.39.orig.tar.gz 51606 SHA256:0570be9318e0bcd33a81a96107b033d86e629868a320f6620f370ba2fc26d44d
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-vcstools/python-vcstools_0.1.39-1.debian.tar.xz' python-vcstools_0.1.39-1.debian.tar.xz 1112 SHA256:47f7c1f5b1d610dd5a95aa73233b79aa4fad16fc0048c4ad2547a1c666346a74
-```
 
 ### `dpkg` source package: `python-wstool=0.1.13-1`
 
@@ -7523,14 +7508,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-wstool=0.1.13-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-wstool/python-wstool_0.1.13-1.dsc' python-wstool_0.1.13-1.dsc 888 SHA256:75be75bb806f95ea71bbd02f5058eb788d16dfd56c7589c6674da8d0b8fa7d55
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-wstool/python-wstool_0.1.13.orig.tar.gz' python-wstool_0.1.13.orig.tar.gz 52903 SHA256:256d7a9053591503be00a36575c31d6344b5769543324256a7835f3e6588245f
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-wstool/python-wstool_0.1.13-1.debian.tar.gz' python-wstool_0.1.13-1.debian.tar.gz 1019 SHA256:ff07e79124a60ea56f826a3b61087168fbe32b48fd7e5ac4b4c4bc9865d8e2fe
-```
 
 ### `dpkg` source package: `python2.7=2.7.12-1ubuntu0~16.04.2`
 
@@ -10400,14 +10380,9 @@ Licenses: (parsed from: `/usr/share/doc/ubuntu-mono/copyright`)
 - `CC-BY-SA-3.0`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ubuntu-themes=14.04+16.04.20161024-0ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-themes/ubuntu-themes_14.04+16.04.20161024-0ubuntu1.dsc' ubuntu-themes_14.04+16.04.20161024-0ubuntu1.dsc 2319 SHA256:f32a2a926c98278905c3aae1111c198ee86a371ee9634c8199b62ec07d165d95
-'http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-themes/ubuntu-themes_14.04+16.04.20161024.orig.tar.gz' ubuntu-themes_14.04+16.04.20161024.orig.tar.gz 12055925 SHA256:e1c4e7e8e9ca6f1c2069d941bfc11d82f4f5fe4bde1841c6691b15729047992f
-'http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-themes/ubuntu-themes_14.04+16.04.20161024-0ubuntu1.diff.gz' ubuntu-themes_14.04+16.04.20161024-0ubuntu1.diff.gz 24566 SHA256:86017bacac6bcd60d182c96eb1210e54c0aeebf58d715a906e63722a8b1357ba
-```
 
 ### `dpkg` source package: `ucf=3.0036`
 
