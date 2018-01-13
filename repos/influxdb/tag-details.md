@@ -6,18 +6,24 @@
 -	[`influxdb:1.3.8`](#influxdb138)
 -	[`influxdb:1.3.8-alpine`](#influxdb138-alpine)
 -	[`influxdb:1.3.8-data`](#influxdb138-data)
+-	[`influxdb:1.3.8-data-alpine`](#influxdb138-data-alpine)
 -	[`influxdb:1.3.8-meta`](#influxdb138-meta)
+-	[`influxdb:1.3.8-meta-alpine`](#influxdb138-meta-alpine)
 -	[`influxdb:1.3-alpine`](#influxdb13-alpine)
 -	[`influxdb:1.3-data`](#influxdb13-data)
+-	[`influxdb:1.3-data-alpine`](#influxdb13-data-alpine)
 -	[`influxdb:1.3-meta`](#influxdb13-meta)
+-	[`influxdb:1.3-meta-alpine`](#influxdb13-meta-alpine)
 -	[`influxdb:1.4`](#influxdb14)
 -	[`influxdb:1.4.2`](#influxdb142)
 -	[`influxdb:1.4.2-alpine`](#influxdb142-alpine)
 -	[`influxdb:1.4-alpine`](#influxdb14-alpine)
 -	[`influxdb:alpine`](#influxdbalpine)
 -	[`influxdb:data`](#influxdbdata)
+-	[`influxdb:data-alpine`](#influxdbdata-alpine)
 -	[`influxdb:latest`](#influxdblatest)
 -	[`influxdb:meta`](#influxdbmeta)
+-	[`influxdb:meta-alpine`](#influxdbmeta-alpine)
 
 ## `influxdb:1.3`
 
@@ -689,6 +695,10 @@ CMD ["influxd"]
 		Size: 1.2 KB (1167 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `influxdb:1.3.8-data-alpine`
+
+**does not exist** (yet?)
+
 ## `influxdb:1.3.8-meta`
 
 ```console
@@ -771,6 +781,10 @@ CMD ["influxd-meta"]
 		Last Modified: Wed, 20 Dec 2017 00:59:14 GMT  
 		Size: 375.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `influxdb:1.3.8-meta-alpine`
+
+**does not exist** (yet?)
 
 ## `influxdb:1.3-alpine`
 
@@ -944,6 +958,10 @@ CMD ["influxd"]
 		Size: 1.2 KB (1167 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `influxdb:1.3-data-alpine`
+
+**does not exist** (yet?)
+
 ## `influxdb:1.3-meta`
 
 ```console
@@ -1026,6 +1044,10 @@ CMD ["influxd-meta"]
 		Last Modified: Wed, 20 Dec 2017 00:59:14 GMT  
 		Size: 375.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `influxdb:1.3-meta-alpine`
+
+**does not exist** (yet?)
 
 ## `influxdb:1.4`
 
@@ -1863,6 +1885,10 @@ CMD ["influxd"]
 		Size: 1.2 KB (1167 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `influxdb:data-alpine`
+
+**does not exist** (yet?)
+
 ## `influxdb:latest`
 
 ```console
@@ -2194,3 +2220,7 @@ CMD ["influxd-meta"]
 		Last Modified: Wed, 20 Dec 2017 00:59:14 GMT  
 		Size: 375.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `influxdb:meta-alpine`
+
+**does not exist** (yet?)
