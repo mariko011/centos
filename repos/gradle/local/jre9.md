@@ -1526,20 +1526,13 @@ Licenses: (parsed from: `/usr/share/doc/libgpm2/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gpm=1.20.4-6.2
-'http://deb.debian.org/debian/pool/main/g/gpm/gpm_1.20.4-6.2.dsc' gpm_1.20.4-6.2.dsc 1812 SHA256:9c81da20a6ec92d139ea758c38cb8fbacc818d1e06082396f69c2e594ab38de5
-'http://deb.debian.org/debian/pool/main/g/gpm/gpm_1.20.4.orig.tar.gz' gpm_1.20.4.orig.tar.gz 1347133 SHA256:d6c87cd0f2c32e2c3435c444728f2ae60324fda60dedda783ea0f24f363e576c
-'http://deb.debian.org/debian/pool/main/g/gpm/gpm_1.20.4-6.2.diff.gz' gpm_1.20.4-6.2.diff.gz 95710 SHA256:05f5303e31e9131cdd64a4c2409ac07f8886eac0d852839d0e464df7528773d2
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gpm/1.20.4-6.2/
 
-- https://sources.debian.net/src/gpm/1.20.4-6.2/ (for browsing the source)
-- https://sources.debian.net/src/gpm/1.20.4-6.2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gpm/1.20.4-6.2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `graphite2=1.3.10-8`
 
