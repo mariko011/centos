@@ -1931,20 +1931,13 @@ Licenses: (parsed from: `/usr/share/doc/libilmbase-dev/copyright`, `/usr/share/d
 - `boost`
 - `ilmbase`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ilmbase=2.2.0-12
-'http://deb.debian.org/debian/pool/main/i/ilmbase/ilmbase_2.2.0-12.dsc' ilmbase_2.2.0-12.dsc 2240 SHA256:0c78cab5f253e016346c7c02b46a8b13c7394d9b0f74ac85d1f544674ceafa31
-'http://deb.debian.org/debian/pool/main/i/ilmbase/ilmbase_2.2.0.orig.tar.gz' ilmbase_2.2.0.orig.tar.gz 525289 SHA256:ecf815b60695555c1fbc73679e84c7c9902f4e8faa6e8000d2f905b8b86cedc7
-'http://deb.debian.org/debian/pool/main/i/ilmbase/ilmbase_2.2.0-12.debian.tar.xz' ilmbase_2.2.0-12.debian.tar.xz 10332 SHA256:0ff9997216660e6312bc52504a8feba1cb62b8eae789e8bb324a1cbc6f49f62c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/ilmbase/2.2.0-12/
 
-- https://sources.debian.net/src/ilmbase/2.2.0-12/ (for browsing the source)
-- https://sources.debian.net/src/ilmbase/2.2.0-12/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ilmbase/2.2.0-12/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `imagemagick=8:6.9.7.4+dfsg-16`
 
