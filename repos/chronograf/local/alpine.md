@@ -2,13 +2,13 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:923e524d43d068bbf56a1660827ae2080bbc3187201004b31c66223fbcdb0e96`
-- Created: `2018-01-10T01:49:18.618986046Z`
-- Virtual Size: ~ 20.00 Mb  
+- Image ID: `sha256:43006dd0b79cd1a6b0a1f9eec693cc014f8b29d5c1d3f3ec140ffb7a44e32d43`
+- Created: `2018-01-11T19:28:33.53118022Z`
+- Virtual Size: ~ 20.01 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["chronograf"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `CHRONOGRAF_VERSION=1.4.0.0`
+  - `CHRONOGRAF_VERSION=1.4.0.1`
