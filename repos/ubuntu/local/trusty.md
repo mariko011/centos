@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:67759a80360cbaef77ec1eee8aa0590f07ba04c26ef496efbc90391f217fd9d6`
-- Created: `2017-12-14T20:59:24.060013808Z`
-- Virtual Size: ~ 221.42 Mb  
+- Image ID: `sha256:02a63d8b2bfa3c8fac2931b6a95582f3cfcf365c92eadb6331e8bfe11839bfda`
+- Created: `2018-01-15T21:11:41.332730303Z`
+- Virtual Size: ~ 221.76 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -826,20 +826,24 @@ $ apt-get source -qq --print-uris init-system-helpers=1.14ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.14ubuntu1.tar.xz' init-system-helpers_1.14ubuntu1.tar.xz 15436 SHA256:c9f7e8c0d1ee2cdfb12b7a82ffee5a5c90e3d70478591d28803e011e8053a252
 ```
 
-### `dpkg` source package: `initramfs-tools=0.103ubuntu4.9`
+### `dpkg` source package: `initramfs-tools=0.103ubuntu4.10`
 
 Binary Packages:
 
-- `initramfs-tools=0.103ubuntu4.9`
-- `initramfs-tools-bin=0.103ubuntu4.9`
+- `initramfs-tools=0.103ubuntu4.10`
+- `initramfs-tools-bin=0.103ubuntu4.10`
 
 Licenses: (parsed from: `/usr/share/doc/initramfs-tools/copyright`, `/usr/share/doc/initramfs-tools-bin/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris initramfs-tools=0.103ubuntu4.10
+'http://archive.ubuntu.com/ubuntu/pool/main/i/initramfs-tools/initramfs-tools_0.103ubuntu4.10.dsc' initramfs-tools_0.103ubuntu4.10.dsc 1204 SHA256:a0307f3a5b8141a9e593b6554feff7d3db32b6fe43aee708b9fe2b922ec07f40
+'http://archive.ubuntu.com/ubuntu/pool/main/i/initramfs-tools/initramfs-tools_0.103ubuntu4.10.tar.xz' initramfs-tools_0.103ubuntu4.10.tar.xz 94700 SHA256:bff96166f409f5a793972f058fff1626caee0a88aacde32bdf8b5ac523f0e8cd
+```
 
 ### `dpkg` source package: `insserv=1.14.0-5ubuntu2`
 

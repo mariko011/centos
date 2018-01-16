@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:cae0c1b0b49a5dd8e5340d32482bbcde6bde5b9889ff7ffbcf79826639244142`
-- Created: `2017-12-14T20:58:59.716847156Z`
-- Virtual Size: ~ 85.08 Mb  
+- Image ID: `sha256:8dcaef637b410c56a0b3714e764cd6ec3b8c36bbef0205bfb760dca28a9d6f49`
+- Created: `2018-01-15T21:00:29.273934219Z`
+- Virtual Size: ~ 85.07 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -383,13 +383,13 @@ $ apt-get source -qq --print-uris findutils=4.6.0+git+20170828-2
 'http://archive.ubuntu.com/ubuntu/pool/main/f/findutils/findutils_4.6.0+git+20170828-2.debian.tar.xz' findutils_4.6.0+git+20170828-2.debian.tar.xz 26532 SHA256:5b13792a14edec982fddcf74fe01b4380b909703d76aaba2860da51c6248de73
 ```
 
-### `dpkg` source package: `gcc-7=7.2.0-17ubuntu1`
+### `dpkg` source package: `gcc-7=7.2.0-18ubuntu2`
 
 Binary Packages:
 
-- `gcc-7-base:amd64=7.2.0-17ubuntu1`
-- `libgcc1:amd64=1:7.2.0-17ubuntu1`
-- `libstdc++6:amd64=7.2.0-17ubuntu1`
+- `gcc-7-base:amd64=7.2.0-18ubuntu2`
+- `libgcc1:amd64=1:7.2.0-18ubuntu2`
+- `libstdc++6:amd64=7.2.0-18ubuntu2`
 
 Licenses: (parsed from: `/usr/share/doc/gcc-7-base/copyright`, `/usr/share/doc/libgcc1/copyright`, `/usr/share/doc/libstdc++6/copyright`)
 
@@ -400,9 +400,14 @@ Licenses: (parsed from: `/usr/share/doc/gcc-7-base/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris gcc-7=7.2.0-18ubuntu2
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.2.0-18ubuntu2.dsc' gcc-7_7.2.0-18ubuntu2.dsc 37381 SHA256:9523ca941bdc81fd43393a9fce0c0232ff775ec7cc12656f71dad0a5a2c0fb50
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.2.0.orig.tar.gz' gcc-7_7.2.0.orig.tar.gz 73406637 SHA256:aa50238ecb3a1ae463739e0ff5d31bb2fdf4e339456403bd58b765f57f237aa3
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.2.0-18ubuntu2.diff.gz' gcc-7_7.2.0-18ubuntu2.diff.gz 2782331 SHA256:4a5b56ff868a3ec279937733d6f93d039a0b871bc5eb2338b729a05a90a12d77
+```
 
 ### `dpkg` source package: `glibc=2.26-0ubuntu2`
 
@@ -687,11 +692,11 @@ $ apt-get source -qq --print-uris libgpg-error=1.27-5
 'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgpg-error/libgpg-error_1.27-5.debian.tar.xz' libgpg-error_1.27-5.debian.tar.xz 17712 SHA256:73f348981bb4ffdfbc25a00325d9a209a7d722a3215a1145716b4a5bbbd6b58a
 ```
 
-### `dpkg` source package: `libidn=1.33-2`
+### `dpkg` source package: `libidn=1.33-2.1`
 
 Binary Packages:
 
-- `libidn11:amd64=1.33-2`
+- `libidn11:amd64=1.33-2.1`
 
 Licenses: (parsed from: `/usr/share/doc/libidn11/copyright`)
 
@@ -708,13 +713,14 @@ Licenses: (parsed from: `/usr/share/doc/libidn11/copyright`)
 - `LGPL-3`
 - `LGPL-3+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/libidn/1.33-2/
-
+```console
+$ apt-get source -qq --print-uris libidn=1.33-2.1
+'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn/libidn_1.33-2.1.dsc' libidn_1.33-2.1.dsc 2202 SHA256:76a26734d5acbe294bd3bac0e0715c1f1e88b8c2ead3eb8004b2d283f2c46660
+'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn/libidn_1.33.orig.tar.gz' libidn_1.33.orig.tar.gz 3501056 SHA256:44a7aab635bb721ceef6beecc4d49dfd19478325e1b47f3196f7d2acc4930e19
+'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn/libidn_1.33-2.1.debian.tar.xz' libidn_1.33-2.1.debian.tar.xz 65368 SHA256:f847492acbcb7e2211cebc66326a640396039aa0b51ad63208a8451003c0f039
+```
 
 ### `dpkg` source package: `libksba=1.3.5-2`
 
