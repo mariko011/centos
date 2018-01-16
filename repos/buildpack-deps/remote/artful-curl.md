@@ -1,7 +1,7 @@
 ## `buildpack-deps:artful-curl`
 
 ```console
-$ docker pull buildpack-deps@sha256:c0473dd26e63b9a132de93f1e2ce3a9d44bcdf7c34c00cacd93b42edfdf69b24
+$ docker pull buildpack-deps@sha256:5d5bc95a47f0e884e1be1cffe07eae3b36f0925f610c33595eff23e26f961d16
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -248,59 +248,59 @@ RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get 
 ### `buildpack-deps:artful-curl` - linux; ppc64le
 
 ```console
-$ docker pull buildpack-deps@sha256:038ff4e05604b250eb1721bc7bda513c3033cc38b03281b0d8ce664156aaa36c
+$ docker pull buildpack-deps@sha256:8367a1c946c63de7d066f01aaf259eaed355330fc1e3615ee2a0029e3c444811
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **48.8 MB (48830181 bytes)**  
+-	Total Size: **49.2 MB (49239489 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:39dc6d05ca36e9ab3b6c84a2d27ac349c1155c546d9d9e40b6bf1a9429b0021f`
+-	Image ID: `sha256:81f3d8165f524f2da13e8f840e0a7ffc987ac879852f042a38a80731bf1ca37d`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 17 Nov 2017 22:07:59 GMT
-ADD file:ab76e44cfcbea9370a941012b1a76c221408fb2ec201c30da8d21caf028cdfb9 in / 
-# Fri, 17 Nov 2017 22:08:03 GMT
+# Tue, 16 Jan 2018 03:39:49 GMT
+ADD file:7f1ff391adc6dbb769b56d7b9b75a63f84f9a76735cbbc8299cbb2bae42130be in / 
+# Tue, 16 Jan 2018 03:39:52 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 17 Nov 2017 22:08:07 GMT
+# Tue, 16 Jan 2018 03:39:57 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 17 Nov 2017 22:08:11 GMT
+# Tue, 16 Jan 2018 03:40:01 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 17 Nov 2017 22:08:17 GMT
+# Tue, 16 Jan 2018 03:40:04 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 17 Nov 2017 22:08:18 GMT
+# Tue, 16 Jan 2018 03:40:06 GMT
 CMD ["/bin/bash"]
-# Fri, 17 Nov 2017 22:30:40 GMT
+# Tue, 16 Jan 2018 04:01:14 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 17 Nov 2017 22:30:43 GMT
+# Tue, 16 Jan 2018 04:01:17 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 ```
 
 -	Layers:
-	-	`sha256:9f695ab3eb24347ec7bbe6ea32a866c9ab926b0073800c980b477698963c0394`  
-		Last Modified: Fri, 17 Nov 2017 22:10:56 GMT  
-		Size: 42.7 MB (42701940 bytes)  
+	-	`sha256:02565bbc68811a7de1b822a7ab953a27caa044ff14c7eec44c9a3b329c1a0c58`  
+		Last Modified: Tue, 16 Jan 2018 03:42:09 GMT  
+		Size: 43.1 MB (43110761 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:da92bc845a47cd5b26da9aea488a3a2a6be71d924f391fd5c3eb21cf0224b7ae`  
-		Last Modified: Fri, 17 Nov 2017 22:10:45 GMT  
-		Size: 849.0 B  
+	-	`sha256:853d1596174fe102b2761a886f595e2240cbb03378c35d483cc832c722667a00`  
+		Last Modified: Tue, 16 Jan 2018 03:41:56 GMT  
+		Size: 850.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f88ef05e038a08605f17c840b84cab4f938f466f007e78b755fc1527465df5ce`  
-		Last Modified: Fri, 17 Nov 2017 22:10:45 GMT  
-		Size: 550.0 B  
+	-	`sha256:8f2856880f1a15c2676a111356e8fbe949826d43bb84aebb40e012f8b64b06b0`  
+		Last Modified: Tue, 16 Jan 2018 03:41:56 GMT  
+		Size: 579.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:de31db6e55ddbce9af7208399950557b06c3d86f5e6e033631829df6f1ab522a`  
-		Last Modified: Fri, 17 Nov 2017 22:10:45 GMT  
-		Size: 855.0 B  
+	-	`sha256:c05b8faaf796b6ac10a1b6441a84f3fc8e9f16c837e2c9598344f4ddc8336ad0`  
+		Last Modified: Tue, 16 Jan 2018 03:41:56 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a9239be6fc4f724abd5859e3a221721dbe482ec802cc43f05bea4431836ae150`  
-		Last Modified: Fri, 17 Nov 2017 22:10:45 GMT  
-		Size: 187.0 B  
+	-	`sha256:701405981892860b2325e471f757ffb1f21402329905b310110048605ef16057`  
+		Last Modified: Tue, 16 Jan 2018 03:41:57 GMT  
+		Size: 189.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5beaab518fd8f95ba3f7f12cc6d36a0c22e9dc0268417ebde679376466eb2786`  
-		Last Modified: Fri, 17 Nov 2017 23:39:02 GMT  
-		Size: 6.1 MB (6125800 bytes)  
+	-	`sha256:4aa23a2bceef943301603494d0a9d68f39e8ada6c93902e0cbd3ecaf25bf30a1`  
+		Last Modified: Tue, 16 Jan 2018 04:56:11 GMT  
+		Size: 6.1 MB (6126256 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:artful-curl` - linux; s390x
