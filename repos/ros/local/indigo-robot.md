@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:540d70d4885fe64134615e3b1fa86d7b06e24db782ccba32ce10345b9f4c9dde`
-- Created: `2017-12-14T23:22:56.550009058Z`
+- Image ID: `sha256:f8967f8f06026da8447e5312fd3a4ac385521862195a21028a5344c21da10cb5`
+- Created: `2018-01-16T03:47:47.354629841Z`
 - Virtual Size: ~ 1.08 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1452,12 +1452,12 @@ $ apt-get source -qq --print-uris gdbm=1.8.3-12build1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdbm/gdbm_1.8.3-12build1.debian.tar.bz2' gdbm_1.8.3-12build1.debian.tar.bz2 15091 SHA256:5e511c9a6419501dd31e21af84431f41f8785e0f48d6475ebfc48fa49f20fdba
 ```
 
-### `dpkg` source package: `gdk-pixbuf=2.30.7-0ubuntu1.7`
+### `dpkg` source package: `gdk-pixbuf=2.30.7-0ubuntu1.8`
 
 Binary Packages:
 
-- `libgdk-pixbuf2.0-0:amd64=2.30.7-0ubuntu1.7`
-- `libgdk-pixbuf2.0-common=2.30.7-0ubuntu1.7`
+- `libgdk-pixbuf2.0-0:amd64=2.30.7-0ubuntu1.8`
+- `libgdk-pixbuf2.0-common=2.30.7-0ubuntu1.8`
 
 Licenses: (parsed from: `/usr/share/doc/libgdk-pixbuf2.0-0/copyright`, `/usr/share/doc/libgdk-pixbuf2.0-common/copyright`)
 
@@ -1467,10 +1467,10 @@ Licenses: (parsed from: `/usr/share/doc/libgdk-pixbuf2.0-0/copyright`, `/usr/sha
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gdk-pixbuf=2.30.7-0ubuntu1.7
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.30.7-0ubuntu1.7.dsc' gdk-pixbuf_2.30.7-0ubuntu1.7.dsc 2887 SHA256:700ffa19dd9f232ad42790dd9548f6fcafa24c8fb3299145141ce5074e5e9d7a
+$ apt-get source -qq --print-uris gdk-pixbuf=2.30.7-0ubuntu1.8
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.30.7-0ubuntu1.8.dsc' gdk-pixbuf_2.30.7-0ubuntu1.8.dsc 2887 SHA256:654f759d0279362583771082bfd6b16c0a52de108980efa708dfc3dba9b76119
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.30.7.orig.tar.xz' gdk-pixbuf_2.30.7.orig.tar.xz 1329096 SHA256:0aafc365eab1083a53f15e4828333b968219ffcb1a995ac6289c0147c9ffad06
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.30.7-0ubuntu1.7.debian.tar.gz' gdk-pixbuf_2.30.7-0ubuntu1.7.debian.tar.gz 24062 SHA256:b77950266789fedc80b3cc9c6d5e4a470f989647831a8fbd3f205a90013d0d5b
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.30.7-0ubuntu1.8.debian.tar.gz' gdk-pixbuf_2.30.7-0ubuntu1.8.debian.tar.gz 26135 SHA256:7252bb48df468005fca2dae0cad7e266e36864d45b57f7ea8b4bd4d3295eaabf
 ```
 
 ### `dpkg` source package: `git=1:1.9.1-1ubuntu0.7`
@@ -1959,20 +1959,24 @@ $ apt-get source -qq --print-uris init-system-helpers=1.14ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.14ubuntu1.tar.xz' init-system-helpers_1.14ubuntu1.tar.xz 15436 SHA256:c9f7e8c0d1ee2cdfb12b7a82ffee5a5c90e3d70478591d28803e011e8053a252
 ```
 
-### `dpkg` source package: `initramfs-tools=0.103ubuntu4.9`
+### `dpkg` source package: `initramfs-tools=0.103ubuntu4.10`
 
 Binary Packages:
 
-- `initramfs-tools=0.103ubuntu4.9`
-- `initramfs-tools-bin=0.103ubuntu4.9`
+- `initramfs-tools=0.103ubuntu4.10`
+- `initramfs-tools-bin=0.103ubuntu4.10`
 
 Licenses: (parsed from: `/usr/share/doc/initramfs-tools/copyright`, `/usr/share/doc/initramfs-tools-bin/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris initramfs-tools=0.103ubuntu4.10
+'http://archive.ubuntu.com/ubuntu/pool/main/i/initramfs-tools/initramfs-tools_0.103ubuntu4.10.dsc' initramfs-tools_0.103ubuntu4.10.dsc 1204 SHA256:a0307f3a5b8141a9e593b6554feff7d3db32b6fe43aee708b9fe2b922ec07f40
+'http://archive.ubuntu.com/ubuntu/pool/main/i/initramfs-tools/initramfs-tools_0.103ubuntu4.10.tar.xz' initramfs-tools_0.103ubuntu4.10.tar.xz 94700 SHA256:bff96166f409f5a793972f058fff1626caee0a88aacde32bdf8b5ac523f0e8cd
+```
 
 ### `dpkg` source package: `insserv=1.14.0-5ubuntu2`
 
@@ -3596,19 +3600,24 @@ $ apt-get source -qq --print-uris libyaml=0.1.4-3ubuntu3.1
 'http://archive.ubuntu.com/ubuntu/pool/main/liby/libyaml/libyaml_0.1.4-3ubuntu3.1.debian.tar.gz' libyaml_0.1.4-3ubuntu3.1.debian.tar.gz 6404 SHA256:816422e1c743180409aff9247f3a298c8f98260d91da29c7315ce8bd576d53c2
 ```
 
-### `dpkg` source package: `linux=3.13.0-137.186`
+### `dpkg` source package: `linux=3.13.0-139.188`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.13.0-137.186`
+- `linux-libc-dev:amd64=3.13.0-139.188`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=3.13.0-139.188
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-139.188.dsc' linux_3.13.0-139.188.dsc 7800 SHA256:d6ec199123ce1900c9af8ee6f547ed874341e93f687aece7467eb6a3b3cd0fed
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0.orig.tar.gz' linux_3.13.0.orig.tar.gz 116419243 SHA256:073d6a589655031564407e349c86a316941fc26ef3444bb73a092b43a48347ec
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-139.188.diff.gz' linux_3.13.0-139.188.diff.gz 9565414 SHA256:0c6638a965525345bc1441062b321980c51de3672857a725275fefcc5654ba6d
+```
 
 ### `dpkg` source package: `lksctp-tools=1.0.15+dfsg-1`
 
@@ -4958,33 +4967,43 @@ $ apt-get source -qq --print-uris python-rosdep=0.11.8-1
 'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdep/python-rosdep_0.11.8-1.debian.tar.gz' python-rosdep_0.11.8-1.debian.tar.gz 1061 SHA256:d6d10835344d2d1860781b7da6776c8481b15835e8c9af5dca126441a89aaec3
 ```
 
-### `dpkg` source package: `python-rosdistro-modules=0.6.2-1`
+### `dpkg` source package: `python-rosdistro-modules=0.6.4-1`
 
 Binary Packages:
 
-- `python-rosdistro-modules=0.6.2-1`
+- `python-rosdistro-modules=0.6.4-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python-rosdistro-modules=0.6.4-1
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro-modules/python-rosdistro-modules_0.6.4-1.dsc' python-rosdistro-modules_0.6.4-1.dsc 982 SHA256:a5b5a446b7181cac7322febff603c4ba5d4f07803321cc0a177525b68fcd8de9
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro-modules/python-rosdistro-modules_0.6.4.orig.tar.gz' python-rosdistro-modules_0.6.4.orig.tar.gz 40445 SHA256:5c8304c13d2ab6c61f539645bc5ad71df24cb4309e2f612dc2a2b246ff5a19d2
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro-modules/python-rosdistro-modules_0.6.4-1.debian.tar.xz' python-rosdistro-modules_0.6.4-1.debian.tar.xz 1116 SHA256:f69973d77f752e18499807eefc59f5939ff7114460334c20507e1e4930c22792
+```
 
-### `dpkg` source package: `python-rosdistro=0.6.2-1`
+### `dpkg` source package: `python-rosdistro=0.6.4-100`
 
 Binary Packages:
 
-- `python-rosdistro=0.6.2-1`
+- `python-rosdistro=0.6.4-100`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python-rosdistro=0.6.4-100
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro/python-rosdistro_0.6.4-100.dsc' python-rosdistro_0.6.4-100.dsc 919 SHA256:8bcaba15f8d93aa8d71bdb1e87066d23e4dbdf71577036e758ad30dddee4fd4b
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro/python-rosdistro_0.6.4.orig.tar.gz' python-rosdistro_0.6.4.orig.tar.gz 9885 SHA256:87bf70f473434ffa1a8932113ebaae630256aa82489fa1798a5638853af9751d
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro/python-rosdistro_0.6.4-100.debian.tar.xz' python-rosdistro_0.6.4-100.debian.tar.xz 1096 SHA256:679ff4b273f0a3dc91b956f2ba8f4e5643af3c0aee6add0d0365b93ba56e8438
+```
 
 ### `dpkg` source package: `python-rosinstall=0.7.8-1`
 
@@ -5063,33 +5082,43 @@ $ apt-get source -qq --print-uris python-setuptools=3.3-1ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python-setuptools/python-setuptools_3.3-1ubuntu2.debian.tar.gz' python-setuptools_3.3-1ubuntu2.debian.tar.gz 13982 SHA256:c23290ec74002d59fd6bf5a63f5a822568d02cecaedc0f1195684c56c3bf5e2a
 ```
 
-### `dpkg` source package: `python-vcstools=0.1.39-1`
+### `dpkg` source package: `python-vcstools=0.1.40-1`
 
 Binary Packages:
 
-- `python-vcstools=0.1.39-1`
+- `python-vcstools=0.1.40-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python-vcstools=0.1.40-1
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-vcstools/python-vcstools_0.1.40-1.dsc' python-vcstools_0.1.40-1.dsc 930 SHA256:c5031c0eb7a4f413c2903c1f7289f511293b5d18ecac2e58fa6b1cc6b962765e
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-vcstools/python-vcstools_0.1.40.orig.tar.gz' python-vcstools_0.1.40.orig.tar.gz 51298 SHA256:57f41f0f360d581a90f1511ef9aab62aa324e7cd251d9fd40f2275d13a8fd488
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-vcstools/python-vcstools_0.1.40-1.debian.tar.gz' python-vcstools_0.1.40-1.debian.tar.gz 1076 SHA256:5c27c1b6d815faa645f6557d40b6d5d406d1dd82b8fa1d7b6481852b40b8f325
+```
 
-### `dpkg` source package: `python-wstool=0.1.13-1`
+### `dpkg` source package: `python-wstool=0.1.17-1`
 
 Binary Packages:
 
-- `python-wstool=0.1.13-1`
+- `python-wstool=0.1.17-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python-wstool=0.1.17-1
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-wstool/python-wstool_0.1.17-1.dsc' python-wstool_0.1.17-1.dsc 888 SHA256:3c443f7f043ee81732917ed67496035cb4dc4e529231ccd05fc3421c7d900821
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-wstool/python-wstool_0.1.17.orig.tar.gz' python-wstool_0.1.17.orig.tar.gz 53327 SHA256:c7e2b5933e6a17063c5c6f12ba8419a1d8289fbdba3d12b8319f4202ce3c2562
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-wstool/python-wstool_0.1.17-1.debian.tar.gz' python-wstool_0.1.17-1.debian.tar.gz 1045 SHA256:bc632485fb7b1694cfc8e894f1d4c5dc779e23e4034b484e866546cc8d750dfe
+```
 
 ### `dpkg` source package: `python2.7=2.7.6-8ubuntu0.4`
 
@@ -5273,11 +5302,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-indigo-actionlib=1.11.9-0trusty-20170406-174022-0800`
+### `dpkg` source package: `ros-indigo-actionlib=1.11.12-0trusty-20171218-062337-0800`
 
 Binary Packages:
 
-- `ros-indigo-actionlib=1.11.9-0trusty-20170406-174022-0800`
+- `ros-indigo-actionlib=1.11.12-0trusty-20171218-062337-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5301,11 +5330,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-indigo-bond-core=1.7.19-0trusty-20170406-175714-0800`
+### `dpkg` source package: `ros-indigo-bond-core=1.7.20-0trusty-20171218-091502-0800`
 
 Binary Packages:
 
-- `ros-indigo-bond-core=1.7.19-0trusty-20170406-175714-0800`
+- `ros-indigo-bond-core=1.7.20-0trusty-20171218-091502-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5315,11 +5344,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-indigo-bond=1.7.19-0trusty-20170406-174039-0800`
+### `dpkg` source package: `ros-indigo-bond=1.7.20-0trusty-20171218-062335-0800`
 
 Binary Packages:
 
-- `ros-indigo-bond=1.7.19-0trusty-20170406-174039-0800`
+- `ros-indigo-bond=1.7.20-0trusty-20171218-062335-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5329,11 +5358,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-indigo-bondcpp=1.7.19-0trusty-20170406-174616-0800`
+### `dpkg` source package: `ros-indigo-bondcpp=1.7.20-0trusty-20171218-064058-0800`
 
 Binary Packages:
 
-- `ros-indigo-bondcpp=1.7.19-0trusty-20170406-174616-0800`
+- `ros-indigo-bondcpp=1.7.20-0trusty-20171218-064058-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5343,11 +5372,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-indigo-bondpy=1.7.19-0trusty-20170406-174826-0800`
+### `dpkg` source package: `ros-indigo-bondpy=1.7.20-0trusty-20171218-064107-0800`
 
 Binary Packages:
 
-- `ros-indigo-bondpy=1.7.19-0trusty-20170406-174826-0800`
+- `ros-indigo-bondpy=1.7.20-0trusty-20171218-064107-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5371,11 +5400,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-indigo-class-loader=0.3.6-0trusty-20161025-193258-0700`
+### `dpkg` source package: `ros-indigo-class-loader=0.3.8-0trusty-20171218-062115-0800`
 
 Binary Packages:
 
-- `ros-indigo-class-loader=0.3.6-0trusty-20161025-193258-0700`
+- `ros-indigo-class-loader=0.3.8-0trusty-20171218-062115-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5399,11 +5428,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-indigo-collada-parser=1.11.14-0trusty-20171113-140415-0800`
+### `dpkg` source package: `ros-indigo-collada-parser=1.11.14-0trusty-20171218-092415-0800`
 
 Binary Packages:
 
-- `ros-indigo-collada-parser=1.11.14-0trusty-20171113-140415-0800`
+- `ros-indigo-collada-parser=1.11.14-0trusty-20171218-092415-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5413,11 +5442,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-indigo-collada-urdf=1.11.14-0trusty-20171113-142942-0800`
+### `dpkg` source package: `ros-indigo-collada-urdf=1.11.14-0trusty-20171218-102847-0800`
 
 Binary Packages:
 
-- `ros-indigo-collada-urdf=1.11.14-0trusty-20171113-142942-0800`
+- `ros-indigo-collada-urdf=1.11.14-0trusty-20171218-102847-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5469,11 +5498,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-indigo-diagnostic-aggregator=1.9.2-0trusty-20170715-214719-0800`
+### `dpkg` source package: `ros-indigo-diagnostic-aggregator=1.9.2-0trusty-20171218-090041-0800`
 
 Binary Packages:
 
-- `ros-indigo-diagnostic-aggregator=1.9.2-0trusty-20170715-214719-0800`
+- `ros-indigo-diagnostic-aggregator=1.9.2-0trusty-20171218-090041-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5497,11 +5526,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-indigo-diagnostic-common-diagnostics=1.9.2-0trusty-20170728-013307-0800`
+### `dpkg` source package: `ros-indigo-diagnostic-common-diagnostics=1.9.2-0trusty-20171218-114152-0800`
 
 Binary Packages:
 
-- `ros-indigo-diagnostic-common-diagnostics=1.9.2-0trusty-20170728-013307-0800`
+- `ros-indigo-diagnostic-common-diagnostics=1.9.2-0trusty-20171218-114152-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5539,11 +5568,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-indigo-diagnostics=1.9.2-0trusty-20170728-033349-0800`
+### `dpkg` source package: `ros-indigo-diagnostics=1.9.2-0trusty-20171218-115015-0800`
 
 Binary Packages:
 
-- `ros-indigo-diagnostics=1.9.2-0trusty-20170728-033349-0800`
+- `ros-indigo-diagnostics=1.9.2-0trusty-20171218-115015-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5595,11 +5624,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-indigo-executive-smach=2.0.1-0trusty-20170608-135302-0800`
+### `dpkg` source package: `ros-indigo-executive-smach=2.0.1-0trusty-20171218-092348-0800`
 
 Binary Packages:
 
-- `ros-indigo-executive-smach=2.0.1-0trusty-20170608-135302-0800`
+- `ros-indigo-executive-smach=2.0.1-0trusty-20171218-092348-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5609,11 +5638,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-indigo-filters=1.7.5-0trusty-20170406-182105-0800`
+### `dpkg` source package: `ros-indigo-filters=1.7.5-0trusty-20171218-090955-0800`
 
 Binary Packages:
 
-- `ros-indigo-filters=1.7.5-0trusty-20170406-182105-0800`
+- `ros-indigo-filters=1.7.5-0trusty-20171218-090955-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5679,11 +5708,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-indigo-geometric-shapes=0.4.5-0trusty-20170411-130557-0800`
+### `dpkg` source package: `ros-indigo-geometric-shapes=0.4.6-0trusty-20171130-075948-0800`
 
 Binary Packages:
 
-- `ros-indigo-geometric-shapes=0.4.5-0trusty-20170411-130557-0800`
+- `ros-indigo-geometric-shapes=0.4.6-0trusty-20171130-075948-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5707,11 +5736,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-indigo-geometry=1.11.9-0trusty-20170728-005512-0800`
+### `dpkg` source package: `ros-indigo-geometry=1.11.9-0trusty-20171218-112539-0800`
 
 Binary Packages:
 
-- `ros-indigo-geometry=1.11.9-0trusty-20170728-005512-0800`
+- `ros-indigo-geometry=1.11.9-0trusty-20171218-112539-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5749,11 +5778,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-indigo-kdl-parser=1.11.14-0trusty-20171113-144112-0800`
+### `dpkg` source package: `ros-indigo-kdl-parser=1.11.14-0trusty-20171218-102848-0800`
 
 Binary Packages:
 
-- `ros-indigo-kdl-parser=1.11.14-0trusty-20171113-144112-0800`
+- `ros-indigo-kdl-parser=1.11.14-0trusty-20171218-102848-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5833,11 +5862,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-indigo-nodelet-core=1.9.10-0trusty-20170407-140800-0800`
+### `dpkg` source package: `ros-indigo-nodelet-core=1.9.14-0trusty-20171218-092427-0800`
 
 Binary Packages:
 
-- `ros-indigo-nodelet-core=1.9.10-0trusty-20170407-140800-0800`
+- `ros-indigo-nodelet-core=1.9.14-0trusty-20171218-092427-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5847,11 +5876,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-indigo-nodelet-topic-tools=1.9.10-0trusty-20170407-125546-0800`
+### `dpkg` source package: `ros-indigo-nodelet-topic-tools=1.9.14-0trusty-20171218-091810-0800`
 
 Binary Packages:
 
-- `ros-indigo-nodelet-topic-tools=1.9.10-0trusty-20170407-125546-0800`
+- `ros-indigo-nodelet-topic-tools=1.9.14-0trusty-20171218-091810-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5861,11 +5890,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-indigo-nodelet=1.9.10-0trusty-20170406-175728-0800`
+### `dpkg` source package: `ros-indigo-nodelet=1.9.14-0trusty-20171218-091055-0800`
 
 Binary Packages:
 
-- `ros-indigo-nodelet=1.9.10-0trusty-20170406-175728-0800`
+- `ros-indigo-nodelet=1.9.14-0trusty-20171218-091055-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5903,11 +5932,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-indigo-orocos-kdl/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-indigo-pluginlib=1.10.5-0trusty-20170406-174138-0800`
+### `dpkg` source package: `ros-indigo-pluginlib=1.10.6-0trusty-20171218-075205-0800`
 
 Binary Packages:
 
-- `ros-indigo-pluginlib=1.10.5-0trusty-20170406-174138-0800`
+- `ros-indigo-pluginlib=1.10.6-0trusty-20171218-075205-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5959,11 +5988,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-indigo-robot-model=1.11.14-0trusty-20171113-144912-0800`
+### `dpkg` source package: `ros-indigo-robot-model=1.11.14-0trusty-20171218-104441-0800`
 
 Binary Packages:
 
-- `ros-indigo-robot-model=1.11.14-0trusty-20171113-144912-0800`
+- `ros-indigo-robot-model=1.11.14-0trusty-20171218-104441-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5973,11 +6002,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-indigo-robot-state-publisher=1.11.2-0trusty-20171113-154501-0800`
+### `dpkg` source package: `ros-indigo-robot-state-publisher=1.11.2-0trusty-20171218-112502-0800`
 
 Binary Packages:
 
-- `ros-indigo-robot-state-publisher=1.11.2-0trusty-20171113-154501-0800`
+- `ros-indigo-robot-state-publisher=1.11.2-0trusty-20171218-112502-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5987,11 +6016,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-indigo-robot=1.1.5-0trusty-20171113-160313-0800`
+### `dpkg` source package: `ros-indigo-robot=1.1.5-0trusty-20171218-115127-0800`
 
 Binary Packages:
 
-- `ros-indigo-robot=1.1.5-0trusty-20171113-160313-0800`
+- `ros-indigo-robot=1.1.5-0trusty-20171218-115127-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6001,11 +6030,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-indigo-ros-base=1.1.5-0trusty-20170714-104221-0800`
+### `dpkg` source package: `ros-indigo-ros-base=1.1.5-0trusty-20171218-092804-0800`
 
 Binary Packages:
 
-- `ros-indigo-ros-base=1.1.5-0trusty-20170714-104221-0800`
+- `ros-indigo-ros-base=1.1.5-0trusty-20171218-092804-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6603,11 +6632,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-indigo-smach-ros=2.0.1-0trusty-20170608-134622-0800`
+### `dpkg` source package: `ros-indigo-smach-ros=2.0.1-0trusty-20171218-083308-0800`
 
 Binary Packages:
 
-- `ros-indigo-smach-ros=2.0.1-0trusty-20170608-134622-0800`
+- `ros-indigo-smach-ros=2.0.1-0trusty-20171218-083308-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6631,11 +6660,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-indigo-smclib=1.7.19-0trusty-20170406-174143-0800`
+### `dpkg` source package: `ros-indigo-smclib=1.7.20-0trusty-20171218-062239-0800`
 
 Binary Packages:
 
-- `ros-indigo-smclib=1.7.19-0trusty-20170406-174143-0800`
+- `ros-indigo-smclib=1.7.20-0trusty-20171218-062239-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6687,11 +6716,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-indigo-tf-conversions=1.11.9-0trusty-20170727-230300-0800`
+### `dpkg` source package: `ros-indigo-tf-conversions=1.11.9-0trusty-20171218-111408-0800`
 
 Binary Packages:
 
-- `ros-indigo-tf-conversions=1.11.9-0trusty-20170727-230300-0800`
+- `ros-indigo-tf-conversions=1.11.9-0trusty-20171218-111408-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6701,11 +6730,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-indigo-tf2-kdl=0.5.16-0trusty-20170727-225321-0800`
+### `dpkg` source package: `ros-indigo-tf2-kdl=0.5.16-0trusty-20171218-091429-0800`
 
 Binary Packages:
 
-- `ros-indigo-tf2-kdl=0.5.16-0trusty-20170727-225321-0800`
+- `ros-indigo-tf2-kdl=0.5.16-0trusty-20171218-091429-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6743,11 +6772,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-indigo-tf2-ros=0.5.16-0trusty-20170727-224753-0800`
+### `dpkg` source package: `ros-indigo-tf2-ros=0.5.16-0trusty-20171218-081500-0800`
 
 Binary Packages:
 
-- `ros-indigo-tf2-ros=0.5.16-0trusty-20170727-224753-0800`
+- `ros-indigo-tf2-ros=0.5.16-0trusty-20171218-081500-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6771,11 +6800,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-indigo-tf=1.11.9-0trusty-20170727-225357-0800`
+### `dpkg` source package: `ros-indigo-tf=1.11.9-0trusty-20171218-091836-0800`
 
 Binary Packages:
 
-- `ros-indigo-tf=1.11.9-0trusty-20170727-225357-0800`
+- `ros-indigo-tf=1.11.9-0trusty-20171218-091836-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6827,11 +6856,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-indigo-urdf=1.11.15-1trusty-20171113-112726-0800`
+### `dpkg` source package: `ros-indigo-urdf=1.11.15-1trusty-20171218-091512-0800`
 
 Binary Packages:
 
-- `ros-indigo-urdf=1.11.15-1trusty-20171113-112726-0800`
+- `ros-indigo-urdf=1.11.15-1trusty-20171218-091512-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7602,6 +7631,7 @@ Binary Packages:
 - `libwxgtk-media2.8-0:amd64=2.8.12.1+dfsg-2ubuntu2`
 - `libwxgtk2.8-0:amd64=2.8.12.1+dfsg-2ubuntu2`
 - `python-wxgtk2.8=2.8.12.1+dfsg-2ubuntu2`
+- `python-wxtools=2.8.12.1+dfsg-2ubuntu2`
 - `python-wxversion=2.8.12.1+dfsg-2ubuntu2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
