@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:60b281d36057473b8d467a371aa40debfc8ed1dc61e776fcebcf579171592f05`
-- Created: `2017-12-14T21:56:53.523816171Z`
-- Virtual Size: ~ 632.61 Mb  
+- Image ID: `sha256:1d24cdf680d0eca5a30ff6ce726659ac1295d8f2266933e12e1807a4fd9d6b17`
+- Created: `2018-01-16T02:30:14.607169482Z`
+- Virtual Size: ~ 633.59 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -1111,14 +1111,14 @@ $ apt-get source -qq --print-uris gdbm=1.8.3-13.1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdbm/gdbm_1.8.3-13.1.debian.tar.xz' gdbm_1.8.3-13.1.debian.tar.xz 14748 SHA256:251401e1f5210226f384e936b1b7ea1df40119a918d9f3dbf48b2e51d4df8983
 ```
 
-### `dpkg` source package: `gdk-pixbuf=2.32.2-1ubuntu1.3`
+### `dpkg` source package: `gdk-pixbuf=2.32.2-1ubuntu1.4`
 
 Binary Packages:
 
-- `gir1.2-gdkpixbuf-2.0:amd64=2.32.2-1ubuntu1.3`
-- `libgdk-pixbuf2.0-0:amd64=2.32.2-1ubuntu1.3`
-- `libgdk-pixbuf2.0-common=2.32.2-1ubuntu1.3`
-- `libgdk-pixbuf2.0-dev=2.32.2-1ubuntu1.3`
+- `gir1.2-gdkpixbuf-2.0:amd64=2.32.2-1ubuntu1.4`
+- `libgdk-pixbuf2.0-0:amd64=2.32.2-1ubuntu1.4`
+- `libgdk-pixbuf2.0-common=2.32.2-1ubuntu1.4`
+- `libgdk-pixbuf2.0-dev=2.32.2-1ubuntu1.4`
 
 Licenses: (parsed from: `/usr/share/doc/gir1.2-gdkpixbuf-2.0/copyright`, `/usr/share/doc/libgdk-pixbuf2.0-0/copyright`, `/usr/share/doc/libgdk-pixbuf2.0-common/copyright`, `/usr/share/doc/libgdk-pixbuf2.0-dev/copyright`)
 
@@ -1128,10 +1128,10 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-gdkpixbuf-2.0/copyright`, `/usr/s
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gdk-pixbuf=2.32.2-1ubuntu1.3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.32.2-1ubuntu1.3.dsc' gdk-pixbuf_2.32.2-1ubuntu1.3.dsc 2896 SHA256:24cffa69727e297919b5dec8d631a739142549b4ba61d20b1f45a376984c82b3
+$ apt-get source -qq --print-uris gdk-pixbuf=2.32.2-1ubuntu1.4
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.32.2-1ubuntu1.4.dsc' gdk-pixbuf_2.32.2-1ubuntu1.4.dsc 2896 SHA256:996379bf3be305ff50b76957cf71addf72c25d37f380b70267d6bc56fb4e4a86
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.32.2.orig.tar.xz' gdk-pixbuf_2.32.2.orig.tar.xz 2429268 SHA256:d3ab06fc123b13effed4c27c77cebdfad2173ff20628d82c397b7660ae926145
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.32.2-1ubuntu1.3.debian.tar.xz' gdk-pixbuf_2.32.2-1ubuntu1.3.debian.tar.xz 17324 SHA256:5dcb40fbf186756e36ecdf77ff9c6b49ed5f9663f69b842368f024c060fb92fc
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.32.2-1ubuntu1.4.debian.tar.xz' gdk-pixbuf_2.32.2-1ubuntu1.4.debian.tar.xz 19120 SHA256:94d51d3f3a7fe11e0a939637ddb40bdfcc126d7deb09bc7ab9b600f41f4aae81
 ```
 
 ### `dpkg` source package: `geoip=1.6.9-1`
@@ -1231,14 +1231,9 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.23-0ubuntu9
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23-0ubuntu9.dsc' glibc_2.23-0ubuntu9.dsc 8521 SHA256:6ef67f84ef636eab9b8570c81db761f4c24d7536e7414da7a1b8d4adb5943e5d
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23.orig.tar.xz' glibc_2.23.orig.tar.xz 13849968 SHA256:bf6c528eeebefcacc295270068b79330c1fb2b22458ff66285b4175d23442c96
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23-0ubuntu9.debian.tar.xz' glibc_2.23-0ubuntu9.debian.tar.xz 1230592 SHA256:3d8eebf05aea0c7577a668ec8210cb2e188ffa90fd5b54734a1214d7cabed034
-```
 
 ### `dpkg` source package: `gmp=2:6.1.0+dfsg-2`
 
@@ -2279,11 +2274,11 @@ $ apt-get source -qq --print-uris librsvg=2.40.13-3
 'http://archive.ubuntu.com/ubuntu/pool/main/libr/librsvg/librsvg_2.40.13-3.debian.tar.xz' librsvg_2.40.13-3.debian.tar.xz 17120 SHA256:3897c82eed5d2857a62cdf442f599c94e3c2bd89f16d26bd4c43c3d8b3c271eb
 ```
 
-### `dpkg` source package: `libseccomp=2.2.3-3ubuntu3`
+### `dpkg` source package: `libseccomp=2.3.1-2.1ubuntu2~16.04.1`
 
 Binary Packages:
 
-- `libseccomp2:amd64=2.2.3-3ubuntu3`
+- `libseccomp2:amd64=2.3.1-2.1ubuntu2~16.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libseccomp2/copyright`)
 
@@ -2293,10 +2288,10 @@ Licenses: (parsed from: `/usr/share/doc/libseccomp2/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libseccomp=2.2.3-3ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.2.3-3ubuntu3.dsc' libseccomp_2.2.3-3ubuntu3.dsc 1642 SHA256:776b1be29831e30c4752043d01623a539e3f16152b8f1b9ee5f53a83088da0c8
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.2.3.orig.tar.gz' libseccomp_2.2.3.orig.tar.gz 522755 SHA256:d9b400b703cab7bb04b84b9b6e52076a630b673819d7541757bcc16467b6d49e
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.2.3-3ubuntu3.debian.tar.xz' libseccomp_2.2.3-3ubuntu3.debian.tar.xz 25676 SHA256:780972d6c895dad6213be1031d29f34a37af8ebd60febee624f94b24bf5d2770
+$ apt-get source -qq --print-uris libseccomp=2.3.1-2.1ubuntu2~16.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.3.1-2.1ubuntu2~16.04.1.dsc' libseccomp_2.3.1-2.1ubuntu2~16.04.1.dsc 2262 SHA256:72ce2268693b51af6a4eaf164ebe1521feecb856a42e4e25eae598957f1ca6f7
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.3.1.orig.tar.gz' libseccomp_2.3.1.orig.tar.gz 552299 SHA256:ff5bdd2168790f1979e24eaa498f8606c2f2d96f08a8dc4006a2e88affa4562b
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.3.1-2.1ubuntu2~16.04.1.debian.tar.xz' libseccomp_2.3.1-2.1ubuntu2~16.04.1.debian.tar.xz 17400 SHA256:53bfdab8af41e45fbd041194abf92866b69b29d9cbfb7c1577a2c34be509fabe
 ```
 
 ### `dpkg` source package: `libselinux=2.4-3build2`
@@ -2905,20 +2900,25 @@ $ apt-get source -qq --print-uris libyaml=0.1.6-3
 'http://archive.ubuntu.com/ubuntu/pool/main/liby/libyaml/libyaml_0.1.6-3.debian.tar.xz' libyaml_0.1.6-3.debian.tar.xz 4268 SHA256:fd567e6918903833e5c4f1f87254c550eca07c2bba1ccbe6031da33243cf4297
 ```
 
-### `dpkg` source package: `linux=4.4.0-104.127`
+### `dpkg` source package: `linux=4.4.0-109.132`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.4.0-104.127`
+- `linux-libc-dev:amd64=4.4.0-109.132`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 - `redpine-signals`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=4.4.0-109.132
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-109.132.dsc' linux_4.4.0-109.132.dsc 9364 SHA256:eabc8e29043269053fa7b051db7de4f90e2efcbdce42e0b824525995da617010
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-109.132.diff.gz' linux_4.4.0-109.132.diff.gz 13783460 SHA256:a4fd9d2d69778d0203d6c1fa01721f49a816d574bb13c6229f0abc6e7ac27239
+```
 
 ### `dpkg` source package: `lsb=9.20160110ubuntu0.2`
 

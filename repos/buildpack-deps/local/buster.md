@@ -4030,19 +4030,13 @@ Licenses: (parsed from: `/usr/share/doc/default-libmysqlclient-dev/copyright`, `
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mysql-defaults=1.0.3
-'http://deb.debian.org/debian/pool/main/m/mysql-defaults/mysql-defaults_1.0.3.dsc' mysql-defaults_1.0.3.dsc 2231 SHA256:8cf20b019808e0dba0e83a59718449d4e16f732b4e7971ba9198d4e6efb79c72
-'http://deb.debian.org/debian/pool/main/m/mysql-defaults/mysql-defaults_1.0.3.tar.xz' mysql-defaults_1.0.3.tar.xz 5824 SHA256:2b396003583dea51ff451d59dab3a72bfd818bd99fa15feac384e4d978d1ae0e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mysql-defaults/1.0.3/
 
-- https://sources.debian.net/src/mysql-defaults/1.0.3/ (for browsing the source)
-- https://sources.debian.net/src/mysql-defaults/1.0.3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mysql-defaults/1.0.3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ncurses=6.0+20171125-1`
 

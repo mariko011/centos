@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ac157e5ae6cb417686d195c22648cfab66b2587df0c762fc1a7801340df3d53e`
-- Created: `2017-11-17T22:19:33.001535197Z`
-- Virtual Size: ~ 108.85 Mb  
+- Image ID: `sha256:9bf847b2eaeb1ef0421a89a56fa638239e1e8769e8a2ea1c8ac3daa35f01f74f`
+- Created: `2018-01-16T01:27:18.083402074Z`
+- Virtual Size: ~ 110.79 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -245,12 +245,12 @@ $ apt-get source -qq --print-uris coreutils=8.26-3ubuntu4
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.26-3ubuntu4.debian.tar.xz' coreutils_8.26-3ubuntu4.debian.tar.xz 29708 SHA256:e09ca24c1147538cb822a9d66388c5f24b6ae10a5b9ce4d51f2bb27a402d15c2
 ```
 
-### `dpkg` source package: `curl=7.55.1-1ubuntu2.1`
+### `dpkg` source package: `curl=7.55.1-1ubuntu2.2`
 
 Binary Packages:
 
-- `curl=7.55.1-1ubuntu2.1`
-- `libcurl3:amd64=7.55.1-1ubuntu2.1`
+- `curl=7.55.1-1ubuntu2.2`
+- `libcurl3:amd64=7.55.1-1ubuntu2.2`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`)
 
@@ -261,9 +261,14 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.55.1-1ubuntu2.2
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.55.1-1ubuntu2.2.dsc' curl_7.55.1-1ubuntu2.2.dsc 2782 SHA256:1bfdb82fe7554d6c1f8244502242b91f5e29d77226d8b57150f986beee797cca
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.55.1.orig.tar.gz' curl_7.55.1.orig.tar.gz 3736406 SHA256:09576ea5e66672648d83dce3af16d0cb294d4cba2b5d166ade39655c495f4a20
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.55.1-1ubuntu2.2.debian.tar.xz' curl_7.55.1-1ubuntu2.2.debian.tar.xz 34728 SHA256:4033de14600ee284206718d5a8d16733abfc94e7badf1db90b54dafc226280d6
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3ubuntu1`
 
@@ -1188,20 +1193,25 @@ $ apt-get source -qq --print-uris openldap=2.4.45+dfsg-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.45+dfsg-1ubuntu1.debian.tar.xz' openldap_2.4.45+dfsg-1ubuntu1.debian.tar.xz 175800 SHA256:2f6ddef561e986db9ecbf91ee89b9224c81089d2d5ad7c06cb3629539e95ec66
 ```
 
-### `dpkg` source package: `openssl=1.0.2g-1ubuntu13.2`
+### `dpkg` source package: `openssl=1.0.2g-1ubuntu13.3`
 
 Binary Packages:
 
-- `libssl1.0.0:amd64=1.0.2g-1ubuntu13.2`
-- `openssl=1.0.2g-1ubuntu13.2`
+- `libssl1.0.0:amd64=1.0.2g-1ubuntu13.3`
+- `openssl=1.0.2g-1ubuntu13.3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=1.0.2g-1ubuntu13.3
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu13.3.dsc' openssl_1.0.2g-1ubuntu13.3.dsc 2500 SHA256:9133d5d7ac9c09e34a5b4d4282572c552738a22bee515ad1939d9e69f0a66c02
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g.orig.tar.gz' openssl_1.0.2g.orig.tar.gz 5266102 SHA256:b784b1b3907ce39abf4098702dade6365522a253ad1552e267a9a0e89594aa33
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu13.3.debian.tar.xz' openssl_1.0.2g-1ubuntu13.3.debian.tar.xz 120520 SHA256:c0ed8514bb4835d6b5a5bbaa65f9e61014c5468fd1e63262a8e4f92b8418963b
+```
 
 ### `dpkg` source package: `p11-kit=0.23.7-3`
 
