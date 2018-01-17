@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:02e8eb69f9780c69703a9644aaef36f6d0a8ba0df4fd3a59e0e413c8a3aa135c`
-- Created: `2018-01-04T18:55:11.192364345Z`
-- Virtual Size: ~ 424.59 Mb  
+- Image ID: `sha256:97240fa922e7a2e3d4f10668031cbd2299ba19a6b4d570a74be3a3d6979bfb69`
+- Created: `2018-01-16T04:29:44.005600843Z`
+- Virtual Size: ~ 425.57 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/opt/files/startup.sh"]`
@@ -257,11 +257,11 @@ $ apt-get source -qq --print-uris bzip2=1.0.6-8
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.6-8.debian.tar.bz2' bzip2_1.0.6-8.debian.tar.bz2 59494 SHA256:60fe87fd3942c385e5921786255a27daf9a962ebc7301a60dfd8d1e1a5c8ce78
 ```
 
-### `dpkg` source package: `ca-certificates-java=20160321`
+### `dpkg` source package: `ca-certificates-java=20160321ubuntu1`
 
 Binary Packages:
 
-- `ca-certificates-java=20160321`
+- `ca-certificates-java=20160321ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates-java/copyright`)
 
@@ -270,9 +270,9 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates-java/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ca-certificates-java=20160321
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates-java/ca-certificates-java_20160321.dsc' ca-certificates-java_20160321.dsc 1843 SHA256:75469c1d2d4f1bbd556916cc31245db65581f67fc7c1bcbffcaf0fb3ddeeddfb
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates-java/ca-certificates-java_20160321.tar.xz' ca-certificates-java_20160321.tar.xz 15712 SHA256:3caf93b56caa98b2c06ca704d85efc1e5ef7ca14fda8dc8392b15e6fc27aa849
+$ apt-get source -qq --print-uris ca-certificates-java=20160321ubuntu1
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates-java/ca-certificates-java_20160321ubuntu1.dsc' ca-certificates-java_20160321ubuntu1.dsc 1855 SHA256:268a8579b394587144c42c3e06e0ed6fc9cb4877c7545577e389fdb639517b95
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates-java/ca-certificates-java_20160321ubuntu1.tar.xz' ca-certificates-java_20160321ubuntu1.tar.xz 15928 SHA256:1b7e1207135713d81844fe9c13e282262a1d0472901b823516d71452d63ce752
 ```
 
 ### `dpkg` source package: `ca-certificates=20170717~16.04.1`
@@ -567,11 +567,11 @@ $ apt-get source -qq --print-uris diffutils=1:3.3-3
 'http://archive.ubuntu.com/ubuntu/pool/main/d/diffutils/diffutils_3.3-3.debian.tar.xz' diffutils_3.3-3.debian.tar.xz 18356 SHA256:a0d1946979196f793a8ca55b21ab7891227de08f15bac2578ed84f4911e8b755
 ```
 
-### `dpkg` source package: `distro-info-data=0.28ubuntu0.5`
+### `dpkg` source package: `distro-info-data=0.28ubuntu0.6`
 
 Binary Packages:
 
-- `distro-info-data=0.28ubuntu0.5`
+- `distro-info-data=0.28ubuntu0.6`
 
 Licenses: (parsed from: `/usr/share/doc/distro-info-data/copyright`)
 
@@ -1489,11 +1489,11 @@ $ apt-get source -qq --print-uris libpng=1.2.54-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng/libpng_1.2.54-1ubuntu1.debian.tar.xz' libpng_1.2.54-1ubuntu1.debian.tar.xz 18612 SHA256:b0edf2c01a4dcefa88c26d0e5ddafc3bada204acce665e7a16ab0133b580cc0b
 ```
 
-### `dpkg` source package: `libseccomp=2.2.3-3ubuntu3`
+### `dpkg` source package: `libseccomp=2.3.1-2.1ubuntu2~16.04.1`
 
 Binary Packages:
 
-- `libseccomp2:amd64=2.2.3-3ubuntu3`
+- `libseccomp2:amd64=2.3.1-2.1ubuntu2~16.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libseccomp2/copyright`)
 
@@ -1503,10 +1503,10 @@ Licenses: (parsed from: `/usr/share/doc/libseccomp2/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libseccomp=2.2.3-3ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.2.3-3ubuntu3.dsc' libseccomp_2.2.3-3ubuntu3.dsc 1642 SHA256:776b1be29831e30c4752043d01623a539e3f16152b8f1b9ee5f53a83088da0c8
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.2.3.orig.tar.gz' libseccomp_2.2.3.orig.tar.gz 522755 SHA256:d9b400b703cab7bb04b84b9b6e52076a630b673819d7541757bcc16467b6d49e
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.2.3-3ubuntu3.debian.tar.xz' libseccomp_2.2.3-3ubuntu3.debian.tar.xz 25676 SHA256:780972d6c895dad6213be1031d29f34a37af8ebd60febee624f94b24bf5d2770
+$ apt-get source -qq --print-uris libseccomp=2.3.1-2.1ubuntu2~16.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.3.1-2.1ubuntu2~16.04.1.dsc' libseccomp_2.3.1-2.1ubuntu2~16.04.1.dsc 2262 SHA256:72ce2268693b51af6a4eaf164ebe1521feecb856a42e4e25eae598957f1ca6f7
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.3.1.orig.tar.gz' libseccomp_2.3.1.orig.tar.gz 552299 SHA256:ff5bdd2168790f1979e24eaa498f8606c2f2d96f08a8dc4006a2e88affa4562b
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.3.1-2.1ubuntu2~16.04.1.debian.tar.xz' libseccomp_2.3.1-2.1ubuntu2~16.04.1.debian.tar.xz 17400 SHA256:53bfdab8af41e45fbd041194abf92866b69b29d9cbfb7c1577a2c34be509fabe
 ```
 
 ### `dpkg` source package: `libselinux=2.4-3build2`
