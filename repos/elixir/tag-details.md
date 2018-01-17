@@ -20,6 +20,12 @@
 -	[`elixir:1.5.3-slim`](#elixir153-slim)
 -	[`elixir:1.5-alpine`](#elixir15-alpine)
 -	[`elixir:1.5-slim`](#elixir15-slim)
+-	[`elixir:1.6`](#elixir16)
+-	[`elixir:1.6.0`](#elixir160)
+-	[`elixir:1.6.0-alpine`](#elixir160-alpine)
+-	[`elixir:1.6.0-slim`](#elixir160-slim)
+-	[`elixir:1.6-alpine`](#elixir16-alpine)
+-	[`elixir:1.6-slim`](#elixir16-slim)
 -	[`elixir:alpine`](#elixiralpine)
 -	[`elixir:latest`](#elixirlatest)
 -	[`elixir:slim`](#elixirslim)
@@ -1319,6 +1325,30 @@ CMD ["iex"]
 		Last Modified: Wed, 20 Dec 2017 20:38:24 GMT  
 		Size: 4.4 MB (4376889 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `elixir:1.6`
+
+**does not exist** (yet?)
+
+## `elixir:1.6.0`
+
+**does not exist** (yet?)
+
+## `elixir:1.6.0-alpine`
+
+**does not exist** (yet?)
+
+## `elixir:1.6.0-slim`
+
+**does not exist** (yet?)
+
+## `elixir:1.6-alpine`
+
+**does not exist** (yet?)
+
+## `elixir:1.6-slim`
+
+**does not exist** (yet?)
 
 ## `elixir:alpine`
 
