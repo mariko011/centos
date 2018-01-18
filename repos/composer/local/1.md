@@ -1,9 +1,9 @@
-# `composer:1.6.1`
+# `composer:1.6.2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:360824b4562408673d2aeffba5e56f4d8b3ea8faccd43771beac23d2674c0ce7`
-- Created: `2018-01-10T06:22:19.185309783Z`
+- Image ID: `sha256:eec947041f4b519ccb1028a3eb83ed0bda0ef214f77c341298fa39cc54314728`
+- Created: `2018-01-15T20:54:16.84436004Z`
 - Virtual Size: ~ 145.79 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -24,4 +24,4 @@
   - `PHP_MD5=`
   - `COMPOSER_ALLOW_SUPERUSER=1`
   - `COMPOSER_HOME=/tmp`
-  - `COMPOSER_VERSION=1.6.1`
+  - `COMPOSER_VERSION=1.6.2`
