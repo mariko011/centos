@@ -1,17 +1,17 @@
-# `pypy:3-5.10.0`
+# `pypy:3-5.10.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:27c50cdaf81b2152c066c5762b976b579f92da4a1b4efd33e84b1fdcf25ea2dd`
-- Created: `2017-12-26T20:10:04.489737842Z`
-- Virtual Size: ~ 753.14 Mb  
+- Image ID: `sha256:c974866ea70c4e85d98e0b44e784e61474d0b71305590e7e09227fee423c080a`
+- Created: `2018-01-15T21:17:04.04774507Z`
+- Virtual Size: ~ 753.18 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["pypy3"]`
 - Environment:
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `PYPY_VERSION=5.10.0`
+  - `PYPY_VERSION=5.10.1`
   - `PYTHON_PIP_VERSION=9.0.1`
 
 ## `dpkg` (`.deb`-based packages)
