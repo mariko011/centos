@@ -2,6 +2,42 @@
 
 # Tags of `openjdk`
 
+-	[`openjdk:10`](#openjdk10)
+-	[`openjdk:10-ea`](#openjdk10-ea)
+-	[`openjdk:10-ea-32`](#openjdk10-ea-32)
+-	[`openjdk:10-ea-32-experimental`](#openjdk10-ea-32-experimental)
+-	[`openjdk:10-ea-32-jdk`](#openjdk10-ea-32-jdk)
+-	[`openjdk:10-ea-32-jdk-experimental`](#openjdk10-ea-32-jdk-experimental)
+-	[`openjdk:10-ea-32-jdk-slim`](#openjdk10-ea-32-jdk-slim)
+-	[`openjdk:10-ea-32-jdk-slim-experimental`](#openjdk10-ea-32-jdk-slim-experimental)
+-	[`openjdk:10-ea-32-jre`](#openjdk10-ea-32-jre)
+-	[`openjdk:10-ea-32-jre-experimental`](#openjdk10-ea-32-jre-experimental)
+-	[`openjdk:10-ea-32-jre-slim`](#openjdk10-ea-32-jre-slim)
+-	[`openjdk:10-ea-32-jre-slim-experimental`](#openjdk10-ea-32-jre-slim-experimental)
+-	[`openjdk:10-ea-32-slim`](#openjdk10-ea-32-slim)
+-	[`openjdk:10-ea-32-slim-experimental`](#openjdk10-ea-32-slim-experimental)
+-	[`openjdk:10-ea-experimental`](#openjdk10-ea-experimental)
+-	[`openjdk:10-ea-jdk`](#openjdk10-ea-jdk)
+-	[`openjdk:10-ea-jdk-experimental`](#openjdk10-ea-jdk-experimental)
+-	[`openjdk:10-ea-jdk-slim`](#openjdk10-ea-jdk-slim)
+-	[`openjdk:10-ea-jdk-slim-experimental`](#openjdk10-ea-jdk-slim-experimental)
+-	[`openjdk:10-ea-jre`](#openjdk10-ea-jre)
+-	[`openjdk:10-ea-jre-experimental`](#openjdk10-ea-jre-experimental)
+-	[`openjdk:10-ea-jre-slim`](#openjdk10-ea-jre-slim)
+-	[`openjdk:10-ea-jre-slim-experimental`](#openjdk10-ea-jre-slim-experimental)
+-	[`openjdk:10-ea-slim`](#openjdk10-ea-slim)
+-	[`openjdk:10-ea-slim-experimental`](#openjdk10-ea-slim-experimental)
+-	[`openjdk:10-experimental`](#openjdk10-experimental)
+-	[`openjdk:10-jdk`](#openjdk10-jdk)
+-	[`openjdk:10-jdk-experimental`](#openjdk10-jdk-experimental)
+-	[`openjdk:10-jdk-slim`](#openjdk10-jdk-slim)
+-	[`openjdk:10-jdk-slim-experimental`](#openjdk10-jdk-slim-experimental)
+-	[`openjdk:10-jre`](#openjdk10-jre)
+-	[`openjdk:10-jre-experimental`](#openjdk10-jre-experimental)
+-	[`openjdk:10-jre-slim`](#openjdk10-jre-slim)
+-	[`openjdk:10-jre-slim-experimental`](#openjdk10-jre-slim-experimental)
+-	[`openjdk:10-slim`](#openjdk10-slim)
+-	[`openjdk:10-slim-experimental`](#openjdk10-slim-experimental)
 -	[`openjdk:6`](#openjdk6)
 -	[`openjdk:6b38`](#openjdk6b38)
 -	[`openjdk:6b38-jdk`](#openjdk6b38-jdk)
@@ -224,6 +260,150 @@
 -	[`openjdk:windowsservercore`](#openjdkwindowsservercore)
 -	[`openjdk:windowsservercore-1709`](#openjdkwindowsservercore-1709)
 -	[`openjdk:windowsservercore-ltsc2016`](#openjdkwindowsservercore-ltsc2016)
+
+## `openjdk:10`
+
+**does not exist** (yet?)
+
+## `openjdk:10-ea`
+
+**does not exist** (yet?)
+
+## `openjdk:10-ea-32`
+
+**does not exist** (yet?)
+
+## `openjdk:10-ea-32-experimental`
+
+**does not exist** (yet?)
+
+## `openjdk:10-ea-32-jdk`
+
+**does not exist** (yet?)
+
+## `openjdk:10-ea-32-jdk-experimental`
+
+**does not exist** (yet?)
+
+## `openjdk:10-ea-32-jdk-slim`
+
+**does not exist** (yet?)
+
+## `openjdk:10-ea-32-jdk-slim-experimental`
+
+**does not exist** (yet?)
+
+## `openjdk:10-ea-32-jre`
+
+**does not exist** (yet?)
+
+## `openjdk:10-ea-32-jre-experimental`
+
+**does not exist** (yet?)
+
+## `openjdk:10-ea-32-jre-slim`
+
+**does not exist** (yet?)
+
+## `openjdk:10-ea-32-jre-slim-experimental`
+
+**does not exist** (yet?)
+
+## `openjdk:10-ea-32-slim`
+
+**does not exist** (yet?)
+
+## `openjdk:10-ea-32-slim-experimental`
+
+**does not exist** (yet?)
+
+## `openjdk:10-ea-experimental`
+
+**does not exist** (yet?)
+
+## `openjdk:10-ea-jdk`
+
+**does not exist** (yet?)
+
+## `openjdk:10-ea-jdk-experimental`
+
+**does not exist** (yet?)
+
+## `openjdk:10-ea-jdk-slim`
+
+**does not exist** (yet?)
+
+## `openjdk:10-ea-jdk-slim-experimental`
+
+**does not exist** (yet?)
+
+## `openjdk:10-ea-jre`
+
+**does not exist** (yet?)
+
+## `openjdk:10-ea-jre-experimental`
+
+**does not exist** (yet?)
+
+## `openjdk:10-ea-jre-slim`
+
+**does not exist** (yet?)
+
+## `openjdk:10-ea-jre-slim-experimental`
+
+**does not exist** (yet?)
+
+## `openjdk:10-ea-slim`
+
+**does not exist** (yet?)
+
+## `openjdk:10-ea-slim-experimental`
+
+**does not exist** (yet?)
+
+## `openjdk:10-experimental`
+
+**does not exist** (yet?)
+
+## `openjdk:10-jdk`
+
+**does not exist** (yet?)
+
+## `openjdk:10-jdk-experimental`
+
+**does not exist** (yet?)
+
+## `openjdk:10-jdk-slim`
+
+**does not exist** (yet?)
+
+## `openjdk:10-jdk-slim-experimental`
+
+**does not exist** (yet?)
+
+## `openjdk:10-jre`
+
+**does not exist** (yet?)
+
+## `openjdk:10-jre-experimental`
+
+**does not exist** (yet?)
+
+## `openjdk:10-jre-slim`
+
+**does not exist** (yet?)
+
+## `openjdk:10-jre-slim-experimental`
+
+**does not exist** (yet?)
+
+## `openjdk:10-slim`
+
+**does not exist** (yet?)
+
+## `openjdk:10-slim-experimental`
+
+**does not exist** (yet?)
 
 ## `openjdk:6`
 

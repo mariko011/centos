@@ -8,62 +8,98 @@
 -	[`tomcat:7.0.82-alpine`](#tomcat7082-alpine)
 -	[`tomcat:7.0.82-jre7`](#tomcat7082-jre7)
 -	[`tomcat:7.0.82-jre7-alpine`](#tomcat7082-jre7-alpine)
+-	[`tomcat:7.0.82-jre7-slim`](#tomcat7082-jre7-slim)
 -	[`tomcat:7.0.82-jre8`](#tomcat7082-jre8)
 -	[`tomcat:7.0.82-jre8-alpine`](#tomcat7082-jre8-alpine)
+-	[`tomcat:7.0.82-jre8-slim`](#tomcat7082-jre8-slim)
+-	[`tomcat:7.0.82-slim`](#tomcat7082-slim)
 -	[`tomcat:7.0-alpine`](#tomcat70-alpine)
 -	[`tomcat:7.0-jre7`](#tomcat70-jre7)
 -	[`tomcat:7.0-jre7-alpine`](#tomcat70-jre7-alpine)
+-	[`tomcat:7.0-jre7-slim`](#tomcat70-jre7-slim)
 -	[`tomcat:7.0-jre8`](#tomcat70-jre8)
 -	[`tomcat:7.0-jre8-alpine`](#tomcat70-jre8-alpine)
+-	[`tomcat:7.0-jre8-slim`](#tomcat70-jre8-slim)
+-	[`tomcat:7.0-slim`](#tomcat70-slim)
 -	[`tomcat:7-alpine`](#tomcat7-alpine)
 -	[`tomcat:7-jre7`](#tomcat7-jre7)
 -	[`tomcat:7-jre7-alpine`](#tomcat7-jre7-alpine)
+-	[`tomcat:7-jre7-slim`](#tomcat7-jre7-slim)
 -	[`tomcat:7-jre8`](#tomcat7-jre8)
 -	[`tomcat:7-jre8-alpine`](#tomcat7-jre8-alpine)
+-	[`tomcat:7-jre8-slim`](#tomcat7-jre8-slim)
+-	[`tomcat:7-slim`](#tomcat7-slim)
 -	[`tomcat:8`](#tomcat8)
 -	[`tomcat:8.0`](#tomcat80)
 -	[`tomcat:8.0.48`](#tomcat8048)
 -	[`tomcat:8.0.48-alpine`](#tomcat8048-alpine)
 -	[`tomcat:8.0.48-jre7`](#tomcat8048-jre7)
 -	[`tomcat:8.0.48-jre7-alpine`](#tomcat8048-jre7-alpine)
+-	[`tomcat:8.0.48-jre7-slim`](#tomcat8048-jre7-slim)
 -	[`tomcat:8.0.48-jre8`](#tomcat8048-jre8)
 -	[`tomcat:8.0.48-jre8-alpine`](#tomcat8048-jre8-alpine)
+-	[`tomcat:8.0.48-jre8-slim`](#tomcat8048-jre8-slim)
+-	[`tomcat:8.0.48-slim`](#tomcat8048-slim)
 -	[`tomcat:8.0-alpine`](#tomcat80-alpine)
 -	[`tomcat:8.0-jre7`](#tomcat80-jre7)
 -	[`tomcat:8.0-jre7-alpine`](#tomcat80-jre7-alpine)
+-	[`tomcat:8.0-jre7-slim`](#tomcat80-jre7-slim)
 -	[`tomcat:8.0-jre8`](#tomcat80-jre8)
 -	[`tomcat:8.0-jre8-alpine`](#tomcat80-jre8-alpine)
+-	[`tomcat:8.0-jre8-slim`](#tomcat80-jre8-slim)
+-	[`tomcat:8.0-slim`](#tomcat80-slim)
 -	[`tomcat:8.5`](#tomcat85)
 -	[`tomcat:8.5.24`](#tomcat8524)
 -	[`tomcat:8.5.24-alpine`](#tomcat8524-alpine)
 -	[`tomcat:8.5.24-jre8`](#tomcat8524-jre8)
 -	[`tomcat:8.5.24-jre8-alpine`](#tomcat8524-jre8-alpine)
+-	[`tomcat:8.5.24-jre8-slim`](#tomcat8524-jre8-slim)
 -	[`tomcat:8.5.24-jre9`](#tomcat8524-jre9)
+-	[`tomcat:8.5.24-jre9-slim`](#tomcat8524-jre9-slim)
+-	[`tomcat:8.5.24-slim`](#tomcat8524-slim)
 -	[`tomcat:8.5-alpine`](#tomcat85-alpine)
 -	[`tomcat:8.5-jre8`](#tomcat85-jre8)
 -	[`tomcat:8.5-jre8-alpine`](#tomcat85-jre8-alpine)
+-	[`tomcat:8.5-jre8-slim`](#tomcat85-jre8-slim)
 -	[`tomcat:8.5-jre9`](#tomcat85-jre9)
+-	[`tomcat:8.5-jre9-slim`](#tomcat85-jre9-slim)
+-	[`tomcat:8.5-slim`](#tomcat85-slim)
 -	[`tomcat:8-alpine`](#tomcat8-alpine)
 -	[`tomcat:8-jre8`](#tomcat8-jre8)
 -	[`tomcat:8-jre8-alpine`](#tomcat8-jre8-alpine)
+-	[`tomcat:8-jre8-slim`](#tomcat8-jre8-slim)
 -	[`tomcat:8-jre9`](#tomcat8-jre9)
+-	[`tomcat:8-jre9-slim`](#tomcat8-jre9-slim)
+-	[`tomcat:8-slim`](#tomcat8-slim)
 -	[`tomcat:9`](#tomcat9)
 -	[`tomcat:9.0`](#tomcat90)
 -	[`tomcat:9.0.2`](#tomcat902)
 -	[`tomcat:9.0.2-jre8`](#tomcat902-jre8)
 -	[`tomcat:9.0.2-jre8-alpine`](#tomcat902-jre8-alpine)
+-	[`tomcat:9.0.2-jre8-slim`](#tomcat902-jre8-slim)
 -	[`tomcat:9.0.2-jre9`](#tomcat902-jre9)
+-	[`tomcat:9.0.2-jre9-slim`](#tomcat902-jre9-slim)
+-	[`tomcat:9.0.2-slim`](#tomcat902-slim)
 -	[`tomcat:9.0-jre8`](#tomcat90-jre8)
 -	[`tomcat:9.0-jre8-alpine`](#tomcat90-jre8-alpine)
+-	[`tomcat:9.0-jre8-slim`](#tomcat90-jre8-slim)
 -	[`tomcat:9.0-jre9`](#tomcat90-jre9)
+-	[`tomcat:9.0-jre9-slim`](#tomcat90-jre9-slim)
+-	[`tomcat:9.0-slim`](#tomcat90-slim)
 -	[`tomcat:9-jre8`](#tomcat9-jre8)
 -	[`tomcat:9-jre8-alpine`](#tomcat9-jre8-alpine)
+-	[`tomcat:9-jre8-slim`](#tomcat9-jre8-slim)
 -	[`tomcat:9-jre9`](#tomcat9-jre9)
+-	[`tomcat:9-jre9-slim`](#tomcat9-jre9-slim)
+-	[`tomcat:9-slim`](#tomcat9-slim)
 -	[`tomcat:alpine`](#tomcatalpine)
 -	[`tomcat:jre8`](#tomcatjre8)
 -	[`tomcat:jre8-alpine`](#tomcatjre8-alpine)
+-	[`tomcat:jre8-slim`](#tomcatjre8-slim)
 -	[`tomcat:jre9`](#tomcatjre9)
+-	[`tomcat:jre9-slim`](#tomcatjre9-slim)
 -	[`tomcat:latest`](#tomcatlatest)
+-	[`tomcat:slim`](#tomcatslim)
 
 ## `tomcat:7`
 
@@ -5107,6 +5143,10 @@ CMD ["catalina.sh" "run"]
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `tomcat:7.0.82-jre7-slim`
+
+**does not exist** (yet?)
+
 ## `tomcat:7.0.82-jre8`
 
 ```console
@@ -6757,6 +6797,14 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Tue, 05 Dec 2017 18:25:35 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `tomcat:7.0.82-jre8-slim`
+
+**does not exist** (yet?)
+
+## `tomcat:7.0.82-slim`
+
+**does not exist** (yet?)
 
 ## `tomcat:7.0-alpine`
 
@@ -9022,6 +9070,10 @@ CMD ["catalina.sh" "run"]
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `tomcat:7.0-jre7-slim`
+
+**does not exist** (yet?)
+
 ## `tomcat:7.0-jre8`
 
 ```console
@@ -10672,6 +10724,14 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Tue, 05 Dec 2017 18:25:35 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `tomcat:7.0-jre8-slim`
+
+**does not exist** (yet?)
+
+## `tomcat:7.0-slim`
+
+**does not exist** (yet?)
 
 ## `tomcat:7-alpine`
 
@@ -12937,6 +12997,10 @@ CMD ["catalina.sh" "run"]
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `tomcat:7-jre7-slim`
+
+**does not exist** (yet?)
+
 ## `tomcat:7-jre8`
 
 ```console
@@ -14587,6 +14651,14 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Tue, 05 Dec 2017 18:25:35 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `tomcat:7-jre8-slim`
+
+**does not exist** (yet?)
+
+## `tomcat:7-slim`
+
+**does not exist** (yet?)
 
 ## `tomcat:8`
 
@@ -19686,6 +19758,10 @@ CMD ["catalina.sh" "run"]
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `tomcat:8.0.48-jre7-slim`
+
+**does not exist** (yet?)
+
 ## `tomcat:8.0.48-jre8`
 
 ```console
@@ -21336,6 +21412,14 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Sun, 07 Jan 2018 11:41:35 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `tomcat:8.0.48-jre8-slim`
+
+**does not exist** (yet?)
+
+## `tomcat:8.0.48-slim`
+
+**does not exist** (yet?)
 
 ## `tomcat:8.0-alpine`
 
@@ -23601,6 +23685,10 @@ CMD ["catalina.sh" "run"]
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `tomcat:8.0-jre7-slim`
+
+**does not exist** (yet?)
+
 ## `tomcat:8.0-jre8`
 
 ```console
@@ -25251,6 +25339,14 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Sun, 07 Jan 2018 11:41:35 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `tomcat:8.0-jre8-slim`
+
+**does not exist** (yet?)
+
+## `tomcat:8.0-slim`
+
+**does not exist** (yet?)
 
 ## `tomcat:8.5`
 
@@ -29536,6 +29632,10 @@ CMD ["catalina.sh" "run"]
 		Size: 132.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `tomcat:8.5.24-jre8-slim`
+
+**does not exist** (yet?)
+
 ## `tomcat:8.5.24-jre9`
 
 ```console
@@ -30461,6 +30561,14 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Thu, 11 Jan 2018 13:30:52 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `tomcat:8.5.24-jre9-slim`
+
+**does not exist** (yet?)
+
+## `tomcat:8.5.24-slim`
+
+**does not exist** (yet?)
 
 ## `tomcat:8.5-alpine`
 
@@ -32782,6 +32890,10 @@ CMD ["catalina.sh" "run"]
 		Size: 132.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `tomcat:8.5-jre8-slim`
+
+**does not exist** (yet?)
+
 ## `tomcat:8.5-jre9`
 
 ```console
@@ -33707,6 +33819,14 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Thu, 11 Jan 2018 13:30:52 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `tomcat:8.5-jre9-slim`
+
+**does not exist** (yet?)
+
+## `tomcat:8.5-slim`
+
+**does not exist** (yet?)
 
 ## `tomcat:8-alpine`
 
@@ -36028,6 +36148,10 @@ CMD ["catalina.sh" "run"]
 		Size: 132.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `tomcat:8-jre8-slim`
+
+**does not exist** (yet?)
+
 ## `tomcat:8-jre9`
 
 ```console
@@ -36953,6 +37077,14 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Thu, 11 Jan 2018 13:30:52 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `tomcat:8-jre9-slim`
+
+**does not exist** (yet?)
+
+## `tomcat:8-slim`
+
+**does not exist** (yet?)
 
 ## `tomcat:9`
 
@@ -41383,6 +41515,10 @@ CMD ["catalina.sh" "run"]
 		Size: 132.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `tomcat:9.0.2-jre8-slim`
+
+**does not exist** (yet?)
+
 ## `tomcat:9.0.2-jre9`
 
 ```console
@@ -42308,6 +42444,14 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Thu, 11 Jan 2018 13:31:16 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `tomcat:9.0.2-jre9-slim`
+
+**does not exist** (yet?)
+
+## `tomcat:9.0.2-slim`
+
+**does not exist** (yet?)
 
 ## `tomcat:9.0-jre8`
 
@@ -43960,6 +44104,10 @@ CMD ["catalina.sh" "run"]
 		Size: 132.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `tomcat:9.0-jre8-slim`
+
+**does not exist** (yet?)
+
 ## `tomcat:9.0-jre9`
 
 ```console
@@ -44885,6 +45033,14 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Thu, 11 Jan 2018 13:31:16 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `tomcat:9.0-jre9-slim`
+
+**does not exist** (yet?)
+
+## `tomcat:9.0-slim`
+
+**does not exist** (yet?)
 
 ## `tomcat:9-jre8`
 
@@ -46537,6 +46693,10 @@ CMD ["catalina.sh" "run"]
 		Size: 132.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `tomcat:9-jre8-slim`
+
+**does not exist** (yet?)
+
 ## `tomcat:9-jre9`
 
 ```console
@@ -47462,6 +47622,14 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Thu, 11 Jan 2018 13:31:16 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `tomcat:9-jre9-slim`
+
+**does not exist** (yet?)
+
+## `tomcat:9-slim`
+
+**does not exist** (yet?)
 
 ## `tomcat:alpine`
 
@@ -49783,6 +49951,10 @@ CMD ["catalina.sh" "run"]
 		Size: 132.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `tomcat:jre8-slim`
+
+**does not exist** (yet?)
+
 ## `tomcat:jre9`
 
 ```console
@@ -50708,6 +50880,10 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Thu, 11 Jan 2018 13:30:52 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `tomcat:jre9-slim`
+
+**does not exist** (yet?)
 
 ## `tomcat:latest`
 
@@ -51690,3 +51866,7 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Thu, 11 Jan 2018 13:30:32 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `tomcat:slim`
+
+**does not exist** (yet?)
