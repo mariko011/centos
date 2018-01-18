@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c74f5cecb9d9be1774678bb4ff91e79b13f25346688027fd7b572548d9fd3223`
-- Created: `2017-12-14T22:34:46.281387732Z`
-- Virtual Size: ~ 1.46 Gb  
+- Image ID: `sha256:a3b7488a0df731e0545c997a610e15eac201ef4aa8944d1783eb32098998dbe5`
+- Created: `2018-01-16T01:07:03.46374277Z`
+- Virtual Size: ~ 1.47 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/opt/run.sh"]`
@@ -282,11 +282,11 @@ $ apt-get source -qq --print-uris bzip2=1.0.6-8
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.6-8.debian.tar.bz2' bzip2_1.0.6-8.debian.tar.bz2 59494 SHA256:60fe87fd3942c385e5921786255a27daf9a962ebc7301a60dfd8d1e1a5c8ce78
 ```
 
-### `dpkg` source package: `ca-certificates-java=20160321`
+### `dpkg` source package: `ca-certificates-java=20160321ubuntu1`
 
 Binary Packages:
 
-- `ca-certificates-java=20160321`
+- `ca-certificates-java=20160321ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates-java/copyright`)
 
@@ -295,9 +295,9 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates-java/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ca-certificates-java=20160321
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates-java/ca-certificates-java_20160321.dsc' ca-certificates-java_20160321.dsc 1843 SHA256:75469c1d2d4f1bbd556916cc31245db65581f67fc7c1bcbffcaf0fb3ddeeddfb
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates-java/ca-certificates-java_20160321.tar.xz' ca-certificates-java_20160321.tar.xz 15712 SHA256:3caf93b56caa98b2c06ca704d85efc1e5ef7ca14fda8dc8392b15e6fc27aa849
+$ apt-get source -qq --print-uris ca-certificates-java=20160321ubuntu1
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates-java/ca-certificates-java_20160321ubuntu1.dsc' ca-certificates-java_20160321ubuntu1.dsc 1855 SHA256:268a8579b394587144c42c3e06e0ed6fc9cb4877c7545577e389fdb639517b95
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates-java/ca-certificates-java_20160321ubuntu1.tar.xz' ca-certificates-java_20160321ubuntu1.tar.xz 15928 SHA256:1b7e1207135713d81844fe9c13e282262a1d0472901b823516d71452d63ce752
 ```
 
 ### `dpkg` source package: `ca-certificates=20170717~16.04.1`
@@ -982,12 +982,12 @@ $ apt-get source -qq --print-uris gccgo-6=6.0.1-0ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gccgo-6/gccgo-6_6.0.1-0ubuntu1.diff.gz' gccgo-6_6.0.1-0ubuntu1.diff.gz 633954 SHA256:839eea6c2d23670f09b642864ff61e3097b47391cb508a5997538750ff8678f6
 ```
 
-### `dpkg` source package: `gdk-pixbuf=2.32.2-1ubuntu1.3`
+### `dpkg` source package: `gdk-pixbuf=2.32.2-1ubuntu1.4`
 
 Binary Packages:
 
-- `libgdk-pixbuf2.0-0:amd64=2.32.2-1ubuntu1.3`
-- `libgdk-pixbuf2.0-common=2.32.2-1ubuntu1.3`
+- `libgdk-pixbuf2.0-0:amd64=2.32.2-1ubuntu1.4`
+- `libgdk-pixbuf2.0-common=2.32.2-1ubuntu1.4`
 
 Licenses: (parsed from: `/usr/share/doc/libgdk-pixbuf2.0-0/copyright`, `/usr/share/doc/libgdk-pixbuf2.0-common/copyright`)
 
@@ -997,10 +997,10 @@ Licenses: (parsed from: `/usr/share/doc/libgdk-pixbuf2.0-0/copyright`, `/usr/sha
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gdk-pixbuf=2.32.2-1ubuntu1.3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.32.2-1ubuntu1.3.dsc' gdk-pixbuf_2.32.2-1ubuntu1.3.dsc 2896 SHA256:24cffa69727e297919b5dec8d631a739142549b4ba61d20b1f45a376984c82b3
+$ apt-get source -qq --print-uris gdk-pixbuf=2.32.2-1ubuntu1.4
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.32.2-1ubuntu1.4.dsc' gdk-pixbuf_2.32.2-1ubuntu1.4.dsc 2896 SHA256:996379bf3be305ff50b76957cf71addf72c25d37f380b70267d6bc56fb4e4a86
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.32.2.orig.tar.xz' gdk-pixbuf_2.32.2.orig.tar.xz 2429268 SHA256:d3ab06fc123b13effed4c27c77cebdfad2173ff20628d82c397b7660ae926145
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.32.2-1ubuntu1.3.debian.tar.xz' gdk-pixbuf_2.32.2-1ubuntu1.3.debian.tar.xz 17324 SHA256:5dcb40fbf186756e36ecdf77ff9c6b49ed5f9663f69b842368f024c060fb92fc
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.32.2-1ubuntu1.4.debian.tar.xz' gdk-pixbuf_2.32.2-1ubuntu1.4.debian.tar.xz 19120 SHA256:94d51d3f3a7fe11e0a939637ddb40bdfcc126d7deb09bc7ab9b600f41f4aae81
 ```
 
 ### `dpkg` source package: `ghostscript=9.18~dfsg~0-0ubuntu2.7`
@@ -1112,14 +1112,9 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.23-0ubuntu9
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23-0ubuntu9.dsc' glibc_2.23-0ubuntu9.dsc 8521 SHA256:6ef67f84ef636eab9b8570c81db761f4c24d7536e7414da7a1b8d4adb5943e5d
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23.orig.tar.xz' glibc_2.23.orig.tar.xz 13849968 SHA256:bf6c528eeebefcacc295270068b79330c1fb2b22458ff66285b4175d23442c96
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23-0ubuntu9.debian.tar.xz' glibc_2.23-0ubuntu9.debian.tar.xz 1230592 SHA256:3d8eebf05aea0c7577a668ec8210cb2e188ffa90fd5b54734a1214d7cabed034
-```
 
 ### `dpkg` source package: `gmp=2:6.1.0+dfsg-2`
 
@@ -2086,23 +2081,29 @@ $ apt-get source -qq --print-uris libdc1394-22=2.2.4-1
 'http://archive.ubuntu.com/ubuntu/pool/universe/libd/libdc1394-22/libdc1394-22_2.2.4-1.debian.tar.xz' libdc1394-22_2.2.4-1.debian.tar.xz 8196 SHA256:7421eee4b233bc71f2c9b0c7b015bec7785ec048a1e6e462ed84853740f9a15e
 ```
 
-### `dpkg` source package: `libdrm=2.4.76-1~ubuntu16.04.1`
+### `dpkg` source package: `libdrm=2.4.83-1~16.04.1`
 
 Binary Packages:
 
-- `libdrm-amdgpu1:amd64=2.4.76-1~ubuntu16.04.1`
-- `libdrm-intel1:amd64=2.4.76-1~ubuntu16.04.1`
-- `libdrm-nouveau2:amd64=2.4.76-1~ubuntu16.04.1`
-- `libdrm-radeon1:amd64=2.4.76-1~ubuntu16.04.1`
-- `libdrm2:amd64=2.4.76-1~ubuntu16.04.1`
+- `libdrm-amdgpu1:amd64=2.4.83-1~16.04.1`
+- `libdrm-common=2.4.83-1~16.04.1`
+- `libdrm-intel1:amd64=2.4.83-1~16.04.1`
+- `libdrm-nouveau2:amd64=2.4.83-1~16.04.1`
+- `libdrm-radeon1:amd64=2.4.83-1~16.04.1`
+- `libdrm2:amd64=2.4.83-1~16.04.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libdrm=2.4.83-1~16.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.83-1~16.04.1.dsc' libdrm_2.4.83-1~16.04.1.dsc 3035 SHA256:a3c4bab16ca75fb6890c42df5902969b29992d8ac5b3efd5153ad9e5b4f7dd6f
+'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.83.orig.tar.gz' libdrm_2.4.83.orig.tar.gz 1056627 SHA256:2ff5f626a14ec5bd680f7769cac9a8eb1e40c36cf5ca554d2c4e5d91bab3d81d
+'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.83-1~16.04.1.diff.gz' libdrm_2.4.83-1~16.04.1.diff.gz 51446 SHA256:a90ea7972efa8b293725dc282b90022ac92d02038d735fae3ee5bc89fcadee9e
+```
 
 ### `dpkg` source package: `libedit=3.1-20150325-1ubuntu2`
 
@@ -2575,11 +2576,11 @@ $ apt-get source -qq --print-uris libsdl1.2=1.2.15+dfsg1-3
 'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsdl1.2/libsdl1.2_1.2.15+dfsg1-3.debian.tar.xz' libsdl1.2_1.2.15+dfsg1-3.debian.tar.xz 31204 SHA256:062efcb3be2368103e161a75ded1fbdf8e90b0208e426b4151313ee3ba1ff25e
 ```
 
-### `dpkg` source package: `libseccomp=2.2.3-3ubuntu3`
+### `dpkg` source package: `libseccomp=2.3.1-2.1ubuntu2~16.04.1`
 
 Binary Packages:
 
-- `libseccomp2:amd64=2.2.3-3ubuntu3`
+- `libseccomp2:amd64=2.3.1-2.1ubuntu2~16.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libseccomp2/copyright`)
 
@@ -2589,10 +2590,10 @@ Licenses: (parsed from: `/usr/share/doc/libseccomp2/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libseccomp=2.2.3-3ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.2.3-3ubuntu3.dsc' libseccomp_2.2.3-3ubuntu3.dsc 1642 SHA256:776b1be29831e30c4752043d01623a539e3f16152b8f1b9ee5f53a83088da0c8
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.2.3.orig.tar.gz' libseccomp_2.2.3.orig.tar.gz 522755 SHA256:d9b400b703cab7bb04b84b9b6e52076a630b673819d7541757bcc16467b6d49e
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.2.3-3ubuntu3.debian.tar.xz' libseccomp_2.2.3-3ubuntu3.debian.tar.xz 25676 SHA256:780972d6c895dad6213be1031d29f34a37af8ebd60febee624f94b24bf5d2770
+$ apt-get source -qq --print-uris libseccomp=2.3.1-2.1ubuntu2~16.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.3.1-2.1ubuntu2~16.04.1.dsc' libseccomp_2.3.1-2.1ubuntu2~16.04.1.dsc 2262 SHA256:72ce2268693b51af6a4eaf164ebe1521feecb856a42e4e25eae598957f1ca6f7
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.3.1.orig.tar.gz' libseccomp_2.3.1.orig.tar.gz 552299 SHA256:ff5bdd2168790f1979e24eaa498f8606c2f2d96f08a8dc4006a2e88affa4562b
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.3.1-2.1ubuntu2~16.04.1.debian.tar.xz' libseccomp_2.3.1-2.1ubuntu2~16.04.1.debian.tar.xz 17400 SHA256:53bfdab8af41e45fbd041194abf92866b69b29d9cbfb7c1577a2c34be509fabe
 ```
 
 ### `dpkg` source package: `libselinux=2.4-3build2`
@@ -3391,13 +3392,13 @@ $ apt-get source -qq --print-uris libxxf86vm=1:1.1.4-1
 'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxxf86vm/libxxf86vm_1.1.4-1.diff.gz' libxxf86vm_1.1.4-1.diff.gz 8040 SHA256:e0f11739d28c7a4475820ebda26e6f29e6cfa80b99a3513c075471132c81725b
 ```
 
-### `dpkg` source package: `llvm-toolchain-4.0=1:4.0-1ubuntu1~16.04.2`
+### `dpkg` source package: `llvm-toolchain-5.0=1:5.0-3~16.04.1`
 
 Binary Packages:
 
-- `libllvm4.0:amd64=1:4.0-1ubuntu1~16.04.2`
+- `libllvm5.0:amd64=1:5.0-3~16.04.1`
 
-Licenses: (parsed from: `/usr/share/doc/libllvm4.0/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libllvm5.0/copyright`)
 
 - `ARM`
 - `Apple`
@@ -3415,16 +3416,16 @@ Licenses: (parsed from: `/usr/share/doc/libllvm4.0/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris llvm-toolchain-4.0=1:4.0-1ubuntu1~16.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-4.0/llvm-toolchain-4.0_4.0-1ubuntu1~16.04.2.dsc' llvm-toolchain-4.0_4.0-1ubuntu1~16.04.2.dsc 7168 SHA256:c993a99aaceb8470181703a6690c78b57dc0a7e83b78e98696e5d8a83236f161
-'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-4.0/llvm-toolchain-4.0_4.0.orig-clang-tools-extra.tar.bz2' llvm-toolchain-4.0_4.0.orig-clang-tools-extra.tar.bz2 615925 SHA256:1339b7c8d0e1ef6f55b3f1895572ce8e88031c3203da2afb789708c3f542bc7c
-'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-4.0/llvm-toolchain-4.0_4.0.orig-clang.tar.bz2' llvm-toolchain-4.0_4.0.orig-clang.tar.bz2 12019449 SHA256:122e471d80dad0d17890e58d0aefb0e890803d775a6dab1ec481e21edbb678fd
-'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-4.0/llvm-toolchain-4.0_4.0.orig-compiler-rt.tar.bz2' llvm-toolchain-4.0_4.0.orig-compiler-rt.tar.bz2 1846173 SHA256:db20ba806a188e3f30f2f4d87abeac2d90c2e3a19989e92013e5d96a48ec9ceb
-'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-4.0/llvm-toolchain-4.0_4.0.orig-lld.tar.bz2' llvm-toolchain-4.0_4.0.orig-lld.tar.bz2 619588 SHA256:c0b84f041129963b402921a128298f9c62353c44ab7fee33e38d616a68646b76
-'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-4.0/llvm-toolchain-4.0_4.0.orig-lldb.tar.bz2' llvm-toolchain-4.0_4.0.orig-lldb.tar.bz2 11087659 SHA256:58aacac22a6e97eb4e51ab83983ad59bb4895033337f0777e7a69361b0104c96
-'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-4.0/llvm-toolchain-4.0_4.0.orig-polly.tar.bz2' llvm-toolchain-4.0_4.0.orig-polly.tar.bz2 3378274 SHA256:26f6a7072b8b85e25086c0a2488558105999c702c97b3444b0681aa9ce55a301
-'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-4.0/llvm-toolchain-4.0_4.0.orig.tar.bz2' llvm-toolchain-4.0_4.0.orig.tar.bz2 24753981 SHA256:4fc55e7f1c296709930d8852315cfc0b10ce979efb9d2b0c7a051f1378f484be
-'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-4.0/llvm-toolchain-4.0_4.0-1ubuntu1~16.04.2.debian.tar.xz' llvm-toolchain-4.0_4.0-1ubuntu1~16.04.2.debian.tar.xz 62544 SHA256:7f8b86873f73fde8e4059e8e398080e16bb0f54fa1195a4755826675ae3eda39
+$ apt-get source -qq --print-uris llvm-toolchain-5.0=1:5.0-3~16.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-5.0/llvm-toolchain-5.0_5.0-3~16.04.1.dsc' llvm-toolchain-5.0_5.0-3~16.04.1.dsc 7281 SHA256:6628eabbb340e0ac8d8932ceccaf1aeb37890c1af960f7086d4bbb95f6b1f7ec
+'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-5.0/llvm-toolchain-5.0_5.0.orig-clang-tools-extra.tar.bz2' llvm-toolchain-5.0_5.0.orig-clang-tools-extra.tar.bz2 681359 SHA256:130da0173930de4e5c268d6cbdc6fe921f2989b66194a6f1983f38205ee62427
+'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-5.0/llvm-toolchain-5.0_5.0.orig-clang.tar.bz2' llvm-toolchain-5.0_5.0.orig-clang.tar.bz2 12700043 SHA256:c6157a1e2b109cb1baaec9917f2f192b3fdbd3c229a0bd1c25769e04c2ebf6d6
+'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-5.0/llvm-toolchain-5.0_5.0.orig-compiler-rt.tar.bz2' llvm-toolchain-5.0_5.0.orig-compiler-rt.tar.bz2 1986848 SHA256:bffb2aee2a4a1897b5a998727a75a37e4d92ade510a8e3edf5d2a29c119495af
+'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-5.0/llvm-toolchain-5.0_5.0.orig-lld.tar.bz2' llvm-toolchain-5.0_5.0.orig-lld.tar.bz2 714541 SHA256:f1bccd8e5a655026de7c975be1ecf3a8c3b4e3aab99330e2000812690ed4d1c0
+'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-5.0/llvm-toolchain-5.0_5.0.orig-lldb.tar.bz2' llvm-toolchain-5.0_5.0.orig-lldb.tar.bz2 11145757 SHA256:525d84a7538cae78e619cd530c00b845d379af39a358b933e95dbfbe82b1ecde
+'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-5.0/llvm-toolchain-5.0_5.0.orig-polly.tar.bz2' llvm-toolchain-5.0_5.0.orig-polly.tar.bz2 3077012 SHA256:40af40801039053e7e479fefb57651a7aa91c5cca8c874f72be319484ad671e3
+'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-5.0/llvm-toolchain-5.0_5.0.orig.tar.bz2' llvm-toolchain-5.0_5.0.orig.tar.bz2 27747434 SHA256:9788c8e44015322045407ba53d1e1a69d8a826b34bf28d62838ea504176c1f80
+'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-5.0/llvm-toolchain-5.0_5.0-3~16.04.1.debian.tar.xz' llvm-toolchain-5.0_5.0-3~16.04.1.debian.tar.xz 65432 SHA256:7c0b3a8d27613fd3c622137b1cbc15c882544be04ddda8f9743aab517d3c0678
 ```
 
 ### `dpkg` source package: `lm-sensors=1:3.4.0-2`
@@ -3545,15 +3546,15 @@ $ apt-get source -qq --print-uris mawk=1.3.3-17ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mawk/mawk_1.3.3-17ubuntu2.diff.gz' mawk_1.3.3-17ubuntu2.diff.gz 63882 SHA256:670103046767474be29e80f2143dc67e3d0b958972f5942c3df94883f978eded
 ```
 
-### `dpkg` source package: `mesa=17.0.7-0ubuntu0.16.04.2`
+### `dpkg` source package: `mesa=17.2.4-0ubuntu1~16.04.2`
 
 Binary Packages:
 
-- `libgl1-mesa-dri:amd64=17.0.7-0ubuntu0.16.04.2`
-- `libgl1-mesa-glx:amd64=17.0.7-0ubuntu0.16.04.2`
-- `libglapi-mesa:amd64=17.0.7-0ubuntu0.16.04.2`
-- `mesa-va-drivers:amd64=17.0.7-0ubuntu0.16.04.2`
-- `mesa-vdpau-drivers:amd64=17.0.7-0ubuntu0.16.04.2`
+- `libgl1-mesa-dri:amd64=17.2.4-0ubuntu1~16.04.2`
+- `libgl1-mesa-glx:amd64=17.2.4-0ubuntu1~16.04.2`
+- `libglapi-mesa:amd64=17.2.4-0ubuntu1~16.04.2`
+- `mesa-va-drivers:amd64=17.2.4-0ubuntu1~16.04.2`
+- `mesa-vdpau-drivers:amd64=17.2.4-0ubuntu1~16.04.2`
 
 Licenses: (parsed from: `/usr/share/doc/libgl1-mesa-dri/copyright`, `/usr/share/doc/libgl1-mesa-glx/copyright`, `/usr/share/doc/libglapi-mesa/copyright`, `/usr/share/doc/mesa-va-drivers/copyright`, `/usr/share/doc/mesa-vdpau-drivers/copyright`)
 
