@@ -1,10 +1,10 @@
-# `logstash:5.6.5-alpine`
+# `logstash:5.6.6-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:822146e28ee989e0c197330fa3fe08314a578e1692c624e5cf9e5c4f9d79a405`
-- Created: `2018-01-10T08:40:07.347377445Z`
-- Virtual Size: ~ 279.57 Mb  
+- Image ID: `sha256:9e80faef4980a33400f9fdc648fe21dcec829b8571a4f32e5e320d4a3fae9c57`
+- Created: `2018-01-17T17:55:00.687807478Z`
+- Virtual Size: ~ 279.74 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `JAVA_ALPINE_VERSION=8.151.12-r0`
   - `GPG_KEY=46095ACC8548582C1A2699A9D27D666CD88E42B4`
   - `LOGSTASH_PATH=/usr/share/logstash/bin`
-  - `LOGSTASH_VERSION=5.6.5`
-  - `LOGSTASH_TARBALL=https://artifacts.elastic.co/downloads/logstash/logstash-5.6.5.tar.gz`
-  - `LOGSTASH_TARBALL_ASC=https://artifacts.elastic.co/downloads/logstash/logstash-5.6.5.tar.gz.asc`
-  - `LOGSTASH_TARBALL_SHA1=9efc2ba1edac98c794c1c4346d9a98839d2eefae`
+  - `LOGSTASH_VERSION=5.6.6`
+  - `LOGSTASH_TARBALL=https://artifacts.elastic.co/downloads/logstash/logstash-5.6.6.tar.gz`
+  - `LOGSTASH_TARBALL_ASC=https://artifacts.elastic.co/downloads/logstash/logstash-5.6.6.tar.gz.asc`
+  - `LOGSTASH_TARBALL_SHA1=212bc3a2ce2cbec0be52608ad643cb41ff053d01`
