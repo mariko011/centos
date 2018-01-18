@@ -2,9 +2,31 @@
 
 # Tags of `open-liberty`
 
+-	[`open-liberty:javaee7`](#open-libertyjavaee7)
+-	[`open-liberty:javaee7-java8-ibm`](#open-libertyjavaee7-java8-ibm)
+-	[`open-liberty:javaee7-java8-ibmsfj`](#open-libertyjavaee7-java8-ibmsfj)
 -	[`open-liberty:kernel`](#open-libertykernel)
 -	[`open-liberty:kernel-java8-ibm`](#open-libertykernel-java8-ibm)
 -	[`open-liberty:kernel-java8-ibmsfj`](#open-libertykernel-java8-ibmsfj)
+-	[`open-liberty:latest`](#open-libertylatest)
+-	[`open-liberty:microProfile1`](#open-libertymicroprofile1)
+-	[`open-liberty:microProfile1-java8-ibm`](#open-libertymicroprofile1-java8-ibm)
+-	[`open-liberty:microProfile1-java8-ibmsfj`](#open-libertymicroprofile1-java8-ibmsfj)
+-	[`open-liberty:webProfile7`](#open-libertywebprofile7)
+-	[`open-liberty:webProfile7-java8-ibm`](#open-libertywebprofile7-java8-ibm)
+-	[`open-liberty:webProfile7-java8-ibmsfj`](#open-libertywebprofile7-java8-ibmsfj)
+
+## `open-liberty:javaee7`
+
+**does not exist** (yet?)
+
+## `open-liberty:javaee7-java8-ibm`
+
+**does not exist** (yet?)
+
+## `open-liberty:javaee7-java8-ibmsfj`
+
+**does not exist** (yet?)
 
 ## `open-liberty:kernel`
 
@@ -1008,3 +1030,31 @@ CMD ["/opt/ol/wlp/bin/server" "run" "defaultServer"]
 		Last Modified: Tue, 16 Jan 2018 23:42:38 GMT  
 		Size: 526.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `open-liberty:latest`
+
+**does not exist** (yet?)
+
+## `open-liberty:microProfile1`
+
+**does not exist** (yet?)
+
+## `open-liberty:microProfile1-java8-ibm`
+
+**does not exist** (yet?)
+
+## `open-liberty:microProfile1-java8-ibmsfj`
+
+**does not exist** (yet?)
+
+## `open-liberty:webProfile7`
+
+**does not exist** (yet?)
+
+## `open-liberty:webProfile7-java8-ibm`
+
+**does not exist** (yet?)
+
+## `open-liberty:webProfile7-java8-ibmsfj`
+
+**does not exist** (yet?)
