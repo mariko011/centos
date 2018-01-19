@@ -1,9 +1,9 @@
-# `mongo:3.6.1-jessie`
+# `mongo:3.6.2-jessie`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1200574c8af96f9b81952bb1131c4a3853fc5c789d73bc50d623d0c6915d1172`
-- Created: `2017-12-28T00:16:05.378365304Z`
+- Image ID: `sha256:0f57644645eb53a3d2256f460ade116ad3590252c28f63e5136c026423dc8286`
+- Created: `2018-01-15T23:15:26.670025594Z`
 - Virtual Size: ~ 365.63 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -17,4 +17,4 @@
   - `MONGO_PACKAGE=mongodb-org`
   - `MONGO_REPO=repo.mongodb.org`
   - `MONGO_MAJOR=3.6`
-  - `MONGO_VERSION=3.6.1`
+  - `MONGO_VERSION=3.6.2`
