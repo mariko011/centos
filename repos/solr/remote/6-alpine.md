@@ -1,7 +1,7 @@
 ## `solr:6-alpine`
 
 ```console
-$ docker pull solr@sha256:f564c9970031afd0503ce30f505814cd126a82771d67cbed2491a88d329382c4
+$ docker pull solr@sha256:e4e0ba5ce85eec697753be12113766cf5eac6d18c5155bca9bab4aa1d7b5e121
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -462,14 +462,14 @@ CMD ["solr-foreground"]
 ### `solr:6-alpine` - linux; ppc64le
 
 ```console
-$ docker pull solr@sha256:d0dc20cacb6edc0a41f23e94417ff1dd9a5184c78de8e8077b82d6b7b743eb39
+$ docker pull solr@sha256:a0422e927e6ab79f8eb38f4200e9ff7f736c6a996507ce9b2692c291e0ac5c8d
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **211.1 MB (211058458 bytes)**  
+-	Total Size: **211.1 MB (211058737 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:19d06a9b0e3a842ae4a0a25c2581ab72cb5300764343774170efcc6f62a127c0`
+-	Image ID: `sha256:5b3ef17c40220a58e1b3090244cf16c38e29d96a3fac4eb7d8efca95258c46e0`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["solr-foreground"]`
 
@@ -508,21 +508,21 @@ ENV SOLR_USER=solr SOLR_UID=8983 SOLR_GROUP=solr SOLR_GID=8983 SOLR_VERSION=6.6.
 RUN addgroup -S -g $SOLR_GID $SOLR_GROUP &&     adduser -S -u $SOLR_UID -G $SOLR_GROUP $SOLR_USER
 # Thu, 07 Dec 2017 15:03:29 GMT
 RUN set -e; for key in $SOLR_KEYS; do     found='';     for server in       ha.pool.sks-keyservers.net       hkp://keyserver.ubuntu.com:80       hkp://p80.pool.sks-keyservers.net:80       pgp.mit.edu     ; do       echo "  trying $server for $key";       gpg --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;     done;     test -z "$found" && echo >&2 "error: failed to fetch $key from several disparate servers -- network issues?" && exit 1;   done;   exit 0
-# Thu, 07 Dec 2017 15:04:47 GMT
-RUN mkdir -p /opt/solr &&   echo "downloading $SOLR_URL" &&   wget -q $SOLR_URL -O /opt/solr.tgz &&   echo "downloading $SOLR_URL.asc" &&   wget -q $SOLR_URL.asc -O /opt/solr.tgz.asc &&   echo "$SOLR_SHA256 */opt/solr.tgz" | sha256sum -c - &&   (>&2 ls -l /opt/solr.tgz /opt/solr.tgz.asc) &&   gpg --batch --verify /opt/solr.tgz.asc /opt/solr.tgz &&   tar -C /opt/solr --extract --file /opt/solr.tgz --strip-components=1 &&   rm /opt/solr.tgz* &&   rm -Rf /opt/solr/docs/ &&   mkdir -p /opt/solr/server/solr/lib /opt/solr/server/solr/mycores /opt/solr/server/logs /docker-entrypoint-initdb.d /opt/docker-solr &&   sed -i -e 's/"\$(whoami)" == "root"/$(id -u) == 0/' /opt/solr/bin/solr &&   sed -i -e 's/lsof -PniTCP:/lsof -t -PniTCP:/' /opt/solr/bin/solr &&   sed -i -e 's/#SOLR_PORT=8983/SOLR_PORT=8983/' /opt/solr/bin/solr.in.sh &&   sed -i -e '/-Dsolr.clustering.enabled=true/ a SOLR_OPTS="$SOLR_OPTS -Dsun.net.inetaddr.ttl=60 -Dsun.net.inetaddr.negative.ttl=60"' /opt/solr/bin/solr.in.sh &&   chown -R $SOLR_USER:$SOLR_GROUP /opt/solr
-# Fri, 22 Dec 2017 15:05:54 GMT
-COPY dir:5fd6e310972599026a88a8cba1cf0f73243ea6fab4a0bb77f6483c1dddc64d6e in /opt/docker-solr/scripts 
-# Fri, 22 Dec 2017 15:05:57 GMT
+# Fri, 19 Jan 2018 12:59:44 GMT
+RUN mkdir -p /opt/solr &&   echo "downloading $SOLR_URL" &&   wget -q $SOLR_URL -O /opt/solr.tgz &&   echo "downloading $SOLR_URL.asc" &&   wget -q $SOLR_URL.asc -O /opt/solr.tgz.asc &&   echo "$SOLR_SHA256 */opt/solr.tgz" | sha256sum -c - &&   (>&2 ls -l /opt/solr.tgz /opt/solr.tgz.asc) &&   gpg --batch --verify /opt/solr.tgz.asc /opt/solr.tgz &&   tar -C /opt/solr --extract --file /opt/solr.tgz --strip-components=1 &&   rm /opt/solr.tgz* &&   rm -Rf /opt/solr/docs/ &&   mkdir -p /opt/solr/server/solr/lib /opt/solr/server/solr/mycores /opt/solr/server/logs /docker-entrypoint-initdb.d /opt/docker-solr &&   sed -i -e 's/"\$(whoami)" == "root"/$(id -u) == 0/' /opt/solr/bin/solr &&   sed -i -e 's/lsof -PniTCP:/lsof -t -PniTCP:/' /opt/solr/bin/solr &&   sed -i -e '/-Dsolr.clustering.enabled=true/ a SOLR_OPTS="$SOLR_OPTS -Dsun.net.inetaddr.ttl=60 -Dsun.net.inetaddr.negative.ttl=60"' /opt/solr/bin/solr.in.sh &&   chown -R $SOLR_USER:$SOLR_GROUP /opt/solr
+# Fri, 19 Jan 2018 12:59:46 GMT
+COPY dir:ccd481d71dbb5316781a49f67183387866aea7b61c29d2719e1b5d8b040c48b4 in /opt/docker-solr/scripts 
+# Fri, 19 Jan 2018 12:59:49 GMT
 RUN chown -R $SOLR_USER:$SOLR_GROUP /opt/docker-solr
-# Fri, 22 Dec 2017 15:05:58 GMT
+# Fri, 19 Jan 2018 12:59:51 GMT
 EXPOSE 8983/tcp
-# Fri, 22 Dec 2017 15:05:59 GMT
+# Fri, 19 Jan 2018 12:59:52 GMT
 WORKDIR /opt/solr
-# Fri, 22 Dec 2017 15:06:00 GMT
+# Fri, 19 Jan 2018 12:59:53 GMT
 USER [solr]
-# Fri, 22 Dec 2017 15:06:01 GMT
+# Fri, 19 Jan 2018 12:59:54 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 22 Dec 2017 15:06:02 GMT
+# Fri, 19 Jan 2018 12:59:56 GMT
 CMD ["solr-foreground"]
 ```
 
@@ -559,17 +559,17 @@ CMD ["solr-foreground"]
 		Last Modified: Thu, 07 Dec 2017 15:18:41 GMT  
 		Size: 3.5 KB (3510 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6dcf9d7d65eba7a3cd43cd1b8a42cac553e7b0f18eefeb3a2a9b0d5919290bdd`  
-		Last Modified: Thu, 07 Dec 2017 15:18:55 GMT  
-		Size: 147.4 MB (147446680 bytes)  
+	-	`sha256:8b2fff8c028443a4cac963634dac32c2db36e2c967d4c6bc5af8bd24e9095776`  
+		Last Modified: Fri, 19 Jan 2018 13:11:51 GMT  
+		Size: 147.4 MB (147446751 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:233ff27bd7a88e222277eb34a6992f3ac2fd655bcffbc8e5b337ae8e1e0f2287`  
-		Last Modified: Fri, 22 Dec 2017 15:13:18 GMT  
-		Size: 4.2 KB (4156 bytes)  
+	-	`sha256:beafc46088b1c18e6a3788ba7382048c6176ca0114a76679b43e9befa3f3b075`  
+		Last Modified: Fri, 19 Jan 2018 13:11:37 GMT  
+		Size: 4.3 KB (4258 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bd3661cb507f716bffb99e0601c2e01e89afd44875bf2d2b540d8b0ae2689ec2`  
-		Last Modified: Fri, 22 Dec 2017 15:13:18 GMT  
-		Size: 4.1 KB (4132 bytes)  
+	-	`sha256:69d4361da81d2d64b821ecf7d0a24f33bf57c598018c1a393501cb24630d0114`  
+		Last Modified: Fri, 19 Jan 2018 13:11:37 GMT  
+		Size: 4.2 KB (4238 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `solr:6-alpine` - linux; s390x

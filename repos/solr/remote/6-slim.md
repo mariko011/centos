@@ -1,7 +1,7 @@
 ## `solr:6-slim`
 
 ```console
-$ docker pull solr@sha256:bb2f4ea6b2cb7d6f08f3166a68d1528a28b70059a25f8cec549583a2de5c0363
+$ docker pull solr@sha256:05911b829ff98ef57f8e0f576d54f19432091d16d23280f2666e4a97cbb15470
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -612,14 +612,14 @@ CMD ["solr-foreground"]
 ### `solr:6-slim` - linux; ppc64le
 
 ```console
-$ docker pull solr@sha256:cd97f716fde30ce7c0868e3d32cd04faf4f5541c8be654b8c5cade00aafbf7b2
+$ docker pull solr@sha256:e2b0faaca1439fd45e95067d5d51adda6536aab98138e7188916500bb0d12fe4
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **223.5 MB (223502624 bytes)**  
+-	Total Size: **223.5 MB (223502928 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e7d030f9b2d07a4cafa7940329a79077caddf9631e1ff457f111dbc829857bdc`
+-	Image ID: `sha256:7694dd3565bd912e0456ca12b76b96231423fc9157014a6a159295a5787a9a32`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["solr-foreground"]`
 
@@ -660,21 +660,21 @@ ENV SOLR_USER=solr SOLR_UID=8983 SOLR_GROUP=solr SOLR_GID=8983 SOLR_VERSION=6.6.
 RUN groupadd -r --gid $SOLR_GID $SOLR_GROUP &&   useradd -r --uid $SOLR_UID --gid $SOLR_GID $SOLR_USER
 # Tue, 12 Dec 2017 12:14:10 GMT
 RUN set -e; for key in $SOLR_KEYS; do     found='';     for server in       ha.pool.sks-keyservers.net       hkp://keyserver.ubuntu.com:80       hkp://p80.pool.sks-keyservers.net:80       pgp.mit.edu     ; do       echo "  trying $server for $key";       gpg --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;     done;     test -z "$found" && echo >&2 "error: failed to fetch $key from several disparate servers -- network issues?" && exit 1;   done;   exit 0
-# Tue, 12 Dec 2017 12:15:29 GMT
-RUN mkdir -p /opt/solr &&   echo "downloading $SOLR_URL" &&   wget -nv $SOLR_URL -O /opt/solr.tgz &&   echo "downloading $SOLR_URL.asc" &&   wget -nv $SOLR_URL.asc -O /opt/solr.tgz.asc &&   echo "$SOLR_SHA256 */opt/solr.tgz" | sha256sum -c - &&   (>&2 ls -l /opt/solr.tgz /opt/solr.tgz.asc) &&   gpg --batch --verify /opt/solr.tgz.asc /opt/solr.tgz &&   tar -C /opt/solr --extract --file /opt/solr.tgz --strip-components=1 &&   rm /opt/solr.tgz* &&   rm -Rf /opt/solr/docs/ &&   mkdir -p /opt/solr/server/solr/lib /opt/solr/server/solr/mycores /opt/solr/server/logs /docker-entrypoint-initdb.d /opt/docker-solr &&   sed -i -e 's/"\$(whoami)" == "root"/$(id -u) == 0/' /opt/solr/bin/solr &&   sed -i -e 's/lsof -PniTCP:/lsof -t -PniTCP:/' /opt/solr/bin/solr &&   sed -i -e 's/#SOLR_PORT=8983/SOLR_PORT=8983/' /opt/solr/bin/solr.in.sh &&   sed -i -e '/-Dsolr.clustering.enabled=true/ a SOLR_OPTS="$SOLR_OPTS -Dsun.net.inetaddr.ttl=60 -Dsun.net.inetaddr.negative.ttl=60"' /opt/solr/bin/solr.in.sh &&   chown -R $SOLR_USER:$SOLR_GROUP /opt/solr
-# Fri, 22 Dec 2017 15:06:08 GMT
-COPY dir:5fd6e310972599026a88a8cba1cf0f73243ea6fab4a0bb77f6483c1dddc64d6e in /opt/docker-solr/scripts 
-# Fri, 22 Dec 2017 15:06:12 GMT
+# Fri, 19 Jan 2018 13:01:21 GMT
+RUN mkdir -p /opt/solr &&   echo "downloading $SOLR_URL" &&   wget -nv $SOLR_URL -O /opt/solr.tgz &&   echo "downloading $SOLR_URL.asc" &&   wget -nv $SOLR_URL.asc -O /opt/solr.tgz.asc &&   echo "$SOLR_SHA256 */opt/solr.tgz" | sha256sum -c - &&   (>&2 ls -l /opt/solr.tgz /opt/solr.tgz.asc) &&   gpg --batch --verify /opt/solr.tgz.asc /opt/solr.tgz &&   tar -C /opt/solr --extract --file /opt/solr.tgz --strip-components=1 &&   rm /opt/solr.tgz* &&   rm -Rf /opt/solr/docs/ &&   mkdir -p /opt/solr/server/solr/lib /opt/solr/server/solr/mycores /opt/solr/server/logs /docker-entrypoint-initdb.d /opt/docker-solr &&   sed -i -e 's/"\$(whoami)" == "root"/$(id -u) == 0/' /opt/solr/bin/solr &&   sed -i -e 's/lsof -PniTCP:/lsof -t -PniTCP:/' /opt/solr/bin/solr &&   sed -i -e '/-Dsolr.clustering.enabled=true/ a SOLR_OPTS="$SOLR_OPTS -Dsun.net.inetaddr.ttl=60 -Dsun.net.inetaddr.negative.ttl=60"' /opt/solr/bin/solr.in.sh &&   chown -R $SOLR_USER:$SOLR_GROUP /opt/solr
+# Fri, 19 Jan 2018 13:01:22 GMT
+COPY dir:ccd481d71dbb5316781a49f67183387866aea7b61c29d2719e1b5d8b040c48b4 in /opt/docker-solr/scripts 
+# Fri, 19 Jan 2018 13:01:27 GMT
 RUN chown -R $SOLR_USER:$SOLR_GROUP /opt/docker-solr
-# Fri, 22 Dec 2017 15:06:13 GMT
+# Fri, 19 Jan 2018 13:01:28 GMT
 EXPOSE 8983/tcp
-# Fri, 22 Dec 2017 15:06:14 GMT
+# Fri, 19 Jan 2018 13:01:32 GMT
 WORKDIR /opt/solr
-# Fri, 22 Dec 2017 15:06:15 GMT
+# Fri, 19 Jan 2018 13:01:34 GMT
 USER [solr]
-# Fri, 22 Dec 2017 15:06:16 GMT
+# Fri, 19 Jan 2018 13:01:35 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 22 Dec 2017 15:06:17 GMT
+# Fri, 19 Jan 2018 13:01:36 GMT
 CMD ["solr-foreground"]
 ```
 
@@ -715,17 +715,17 @@ CMD ["solr-foreground"]
 		Last Modified: Tue, 12 Dec 2017 12:38:53 GMT  
 		Size: 3.5 KB (3461 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:19ef0c9aff89e70a11954dbcb7d8588c2564c25dc71480366951bec445a36548`  
-		Last Modified: Tue, 12 Dec 2017 12:39:08 GMT  
-		Size: 147.4 MB (147446737 bytes)  
+	-	`sha256:a4172dba3b12027f0df5d316694997ef323bb27dfcb5c81709540a630b98a967`  
+		Last Modified: Fri, 19 Jan 2018 13:12:28 GMT  
+		Size: 147.4 MB (147446832 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9850c3d0d14ab2c9526131818b6173f07c3faa1f0cdd3eead1a17e8e537e2d3c`  
-		Last Modified: Fri, 22 Dec 2017 15:13:35 GMT  
-		Size: 4.2 KB (4157 bytes)  
+	-	`sha256:3651a60a94d31dafcfa7a8f0f2e835f66e9fa8f9360c2c8afba07c76df6accb4`  
+		Last Modified: Fri, 19 Jan 2018 13:12:13 GMT  
+		Size: 4.3 KB (4260 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:88857381f145a329a472ab542d059f8e1f83b806b4a4ac2835c914a8cfd7ece7`  
-		Last Modified: Fri, 22 Dec 2017 15:13:36 GMT  
-		Size: 4.1 KB (4131 bytes)  
+	-	`sha256:24a930d5b9aaf1006f44986d0163c0e9fe822152e0040d2f72beed4fb4d7460d`  
+		Last Modified: Fri, 19 Jan 2018 13:12:13 GMT  
+		Size: 4.2 KB (4237 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `solr:6-slim` - linux; s390x
