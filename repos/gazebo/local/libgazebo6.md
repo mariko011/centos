@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ca986abbd6f0b3b03425aec6658eef678b67e233f9b02d7b8e02cbebf78191f9`
-- Created: `2017-12-14T22:27:37.395505527Z`
+- Image ID: `sha256:cd9e9e879b40351721c481797a6f218975ead4943a1c2f922f45d8756a235c04`
+- Created: `2018-01-15T22:53:34.903900611Z`
 - Virtual Size: ~ 1.44 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1071,14 +1071,9 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris eglibc=2.19-0ubuntu6.13
-'http://archive.ubuntu.com/ubuntu/pool/main/e/eglibc/eglibc_2.19-0ubuntu6.13.dsc' eglibc_2.19-0ubuntu6.13.dsc 5814 SHA256:f4c36f5d1d4b411002b17322a8d7e75fc9cfb427a69b977e6a7f8e0bc9fd100f
-'http://archive.ubuntu.com/ubuntu/pool/main/e/eglibc/eglibc_2.19.orig.tar.xz' eglibc_2.19.orig.tar.xz 12610800 SHA256:e5d30be72b702dffae527779af1be755f0dfbf13c171998a04f7265cd4da131f
-'http://archive.ubuntu.com/ubuntu/pool/main/e/eglibc/eglibc_2.19-0ubuntu6.13.debian.tar.xz' eglibc_2.19-0ubuntu6.13.debian.tar.xz 1046856 SHA256:03856ac5cba476c541a789a22f54d165d8a864070cc1d6161c5dd0f4bfef6271
-```
 
 ### `dpkg` source package: `eject=2.1.5+deb1+cvs20081104-13.1ubuntu0.14.04.1`
 
@@ -1528,14 +1523,14 @@ $ apt-get source -qq --print-uris gdbm=1.8.3-12build1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdbm/gdbm_1.8.3-12build1.debian.tar.bz2' gdbm_1.8.3-12build1.debian.tar.bz2 15091 SHA256:5e511c9a6419501dd31e21af84431f41f8785e0f48d6475ebfc48fa49f20fdba
 ```
 
-### `dpkg` source package: `gdk-pixbuf=2.30.7-0ubuntu1.7`
+### `dpkg` source package: `gdk-pixbuf=2.30.7-0ubuntu1.8`
 
 Binary Packages:
 
-- `gir1.2-gdkpixbuf-2.0=2.30.7-0ubuntu1.7`
-- `libgdk-pixbuf2.0-0:amd64=2.30.7-0ubuntu1.7`
-- `libgdk-pixbuf2.0-common=2.30.7-0ubuntu1.7`
-- `libgdk-pixbuf2.0-dev=2.30.7-0ubuntu1.7`
+- `gir1.2-gdkpixbuf-2.0=2.30.7-0ubuntu1.8`
+- `libgdk-pixbuf2.0-0:amd64=2.30.7-0ubuntu1.8`
+- `libgdk-pixbuf2.0-common=2.30.7-0ubuntu1.8`
+- `libgdk-pixbuf2.0-dev=2.30.7-0ubuntu1.8`
 
 Licenses: (parsed from: `/usr/share/doc/gir1.2-gdkpixbuf-2.0/copyright`, `/usr/share/doc/libgdk-pixbuf2.0-0/copyright`, `/usr/share/doc/libgdk-pixbuf2.0-common/copyright`, `/usr/share/doc/libgdk-pixbuf2.0-dev/copyright`)
 
@@ -1545,10 +1540,10 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-gdkpixbuf-2.0/copyright`, `/usr/s
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gdk-pixbuf=2.30.7-0ubuntu1.7
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.30.7-0ubuntu1.7.dsc' gdk-pixbuf_2.30.7-0ubuntu1.7.dsc 2887 SHA256:700ffa19dd9f232ad42790dd9548f6fcafa24c8fb3299145141ce5074e5e9d7a
+$ apt-get source -qq --print-uris gdk-pixbuf=2.30.7-0ubuntu1.8
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.30.7-0ubuntu1.8.dsc' gdk-pixbuf_2.30.7-0ubuntu1.8.dsc 2887 SHA256:654f759d0279362583771082bfd6b16c0a52de108980efa708dfc3dba9b76119
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.30.7.orig.tar.xz' gdk-pixbuf_2.30.7.orig.tar.xz 1329096 SHA256:0aafc365eab1083a53f15e4828333b968219ffcb1a995ac6289c0147c9ffad06
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.30.7-0ubuntu1.7.debian.tar.gz' gdk-pixbuf_2.30.7-0ubuntu1.7.debian.tar.gz 24062 SHA256:b77950266789fedc80b3cc9c6d5e4a470f989647831a8fbd3f205a90013d0d5b
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.30.7-0ubuntu1.8.debian.tar.gz' gdk-pixbuf_2.30.7-0ubuntu1.8.debian.tar.gz 26135 SHA256:7252bb48df468005fca2dae0cad7e266e36864d45b57f7ea8b4bd4d3295eaabf
 ```
 
 ### `dpkg` source package: `geos=3.4.2-4ubuntu1`
@@ -2178,20 +2173,24 @@ $ apt-get source -qq --print-uris init-system-helpers=1.14ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.14ubuntu1.tar.xz' init-system-helpers_1.14ubuntu1.tar.xz 15436 SHA256:c9f7e8c0d1ee2cdfb12b7a82ffee5a5c90e3d70478591d28803e011e8053a252
 ```
 
-### `dpkg` source package: `initramfs-tools=0.103ubuntu4.9`
+### `dpkg` source package: `initramfs-tools=0.103ubuntu4.10`
 
 Binary Packages:
 
-- `initramfs-tools=0.103ubuntu4.9`
-- `initramfs-tools-bin=0.103ubuntu4.9`
+- `initramfs-tools=0.103ubuntu4.10`
+- `initramfs-tools-bin=0.103ubuntu4.10`
 
 Licenses: (parsed from: `/usr/share/doc/initramfs-tools/copyright`, `/usr/share/doc/initramfs-tools-bin/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris initramfs-tools=0.103ubuntu4.10
+'http://archive.ubuntu.com/ubuntu/pool/main/i/initramfs-tools/initramfs-tools_0.103ubuntu4.10.dsc' initramfs-tools_0.103ubuntu4.10.dsc 1204 SHA256:a0307f3a5b8141a9e593b6554feff7d3db32b6fe43aee708b9fe2b922ec07f40
+'http://archive.ubuntu.com/ubuntu/pool/main/i/initramfs-tools/initramfs-tools_0.103ubuntu4.10.tar.xz' initramfs-tools_0.103ubuntu4.10.tar.xz 94700 SHA256:bff96166f409f5a793972f058fff1626caee0a88aacde32bdf8b5ac523f0e8cd
+```
 
 ### `dpkg` source package: `insserv=1.14.0-5ubuntu2`
 
@@ -2240,14 +2239,9 @@ Licenses: (parsed from: `/usr/share/doc/iproute2/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris iproute2=3.12.0-2ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/i/iproute2/iproute2_3.12.0-2ubuntu1.1.dsc' iproute2_3.12.0-2ubuntu1.1.dsc 2058 SHA256:ad84e8ef434620241f68a9a50781221556479275f0bdce3e5797a364eba88a87
-'http://archive.ubuntu.com/ubuntu/pool/main/i/iproute2/iproute2_3.12.0.orig.tar.xz' iproute2_3.12.0.orig.tar.xz 425192 SHA256:44f600475d27a421688cda2294efec38513473a740c24ead78eb20005f08f111
-'http://archive.ubuntu.com/ubuntu/pool/main/i/iproute2/iproute2_3.12.0-2ubuntu1.1.debian.tar.gz' iproute2_3.12.0-2ubuntu1.1.debian.tar.gz 31294 SHA256:539d5b62e30603478538ba358480abaf59e03848a000d5085f7663d703cd5072
-```
 
 ### `dpkg` source package: `iputils=3:20121221-4ubuntu1.1`
 
@@ -4473,19 +4467,24 @@ $ apt-get source -qq --print-uris libxxf86vm=1:1.1.3-1
 'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxxf86vm/libxxf86vm_1.1.3-1.diff.gz' libxxf86vm_1.1.3-1.diff.gz 5115 SHA256:5b51cc770666430c2c40e9a58395c72d7591f81bc5e7fd494397bbaf794b38e2
 ```
 
-### `dpkg` source package: `linux=3.13.0-137.186`
+### `dpkg` source package: `linux=3.13.0-139.188`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.13.0-137.186`
+- `linux-libc-dev:amd64=3.13.0-139.188`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=3.13.0-139.188
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-139.188.dsc' linux_3.13.0-139.188.dsc 7800 SHA256:d6ec199123ce1900c9af8ee6f547ed874341e93f687aece7467eb6a3b3cd0fed
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0.orig.tar.gz' linux_3.13.0.orig.tar.gz 116419243 SHA256:073d6a589655031564407e349c86a316941fc26ef3444bb73a092b43a48347ec
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-139.188.diff.gz' linux_3.13.0-139.188.diff.gz 9565414 SHA256:0c6638a965525345bc1441062b321980c51de3672857a725275fefcc5654ba6d
+```
 
 ### `dpkg` source package: `llvm-toolchain-3.4=1:3.4-1ubuntu3`
 
@@ -5640,19 +5639,24 @@ $ apt-get source -qq --print-uris po-debconf=1.0.16+nmu2ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/po-debconf/po-debconf_1.0.16+nmu2ubuntu1.tar.gz' po-debconf_1.0.16+nmu2ubuntu1.tar.gz 306550 SHA256:ff701e40d0e4ea40f0f445ea4372ed1b63c57f5e84b0dd43e4aca972845d8763
 ```
 
-### `dpkg` source package: `poppler=0.24.5-2ubuntu4.8`
+### `dpkg` source package: `poppler=0.24.5-2ubuntu4.9`
 
 Binary Packages:
 
-- `libpoppler44:amd64=0.24.5-2ubuntu4.8`
+- `libpoppler44:amd64=0.24.5-2ubuntu4.9`
 
 Licenses: (parsed from: `/usr/share/doc/libpoppler44/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris poppler=0.24.5-2ubuntu4.9
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.24.5-2ubuntu4.9.dsc' poppler_0.24.5-2ubuntu4.9.dsc 3328 SHA256:9822978bd7ec3dc2f8a7922ff0653f472961f01bb411b8599165c3053552a929
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.24.5.orig.tar.xz' poppler_0.24.5.orig.tar.xz 1512476 SHA256:a2654910100c923c44e366242495e226db2798254f2fa2781138867348759f84
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.24.5-2ubuntu4.9.debian.tar.gz' poppler_0.24.5-2ubuntu4.9.debian.tar.gz 58070 SHA256:a0044a565238817155ef2a6ad792c97fe2b31d5b4940ef6f9a55174947df858d
+```
 
 ### `dpkg` source package: `popt=1.16-8ubuntu1`
 

@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1d1719c0a96ad412c76682781faa66607b1d34f34c079d2f24920bac80d95236`
-- Created: `2017-12-14T22:24:03.953540035Z`
-- Virtual Size: ~ 605.73 Mb  
+- Image ID: `sha256:4992d253d1254cd172ac354a38a48cb312b509afe5705060fec69c0d423d970d`
+- Created: `2018-01-15T22:45:03.488824147Z`
+- Virtual Size: ~ 606.07 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/gzserver_entrypoint.sh"]`
@@ -725,14 +725,9 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris eglibc=2.19-0ubuntu6.13
-'http://archive.ubuntu.com/ubuntu/pool/main/e/eglibc/eglibc_2.19-0ubuntu6.13.dsc' eglibc_2.19-0ubuntu6.13.dsc 5814 SHA256:f4c36f5d1d4b411002b17322a8d7e75fc9cfb427a69b977e6a7f8e0bc9fd100f
-'http://archive.ubuntu.com/ubuntu/pool/main/e/eglibc/eglibc_2.19.orig.tar.xz' eglibc_2.19.orig.tar.xz 12610800 SHA256:e5d30be72b702dffae527779af1be755f0dfbf13c171998a04f7265cd4da131f
-'http://archive.ubuntu.com/ubuntu/pool/main/e/eglibc/eglibc_2.19-0ubuntu6.13.debian.tar.xz' eglibc_2.19-0ubuntu6.13.debian.tar.xz 1046856 SHA256:03856ac5cba476c541a789a22f54d165d8a864070cc1d6161c5dd0f4bfef6271
-```
 
 ### `dpkg` source package: `eject=2.1.5+deb1+cvs20081104-13.1ubuntu0.14.04.1`
 
@@ -1427,20 +1422,24 @@ $ apt-get source -qq --print-uris init-system-helpers=1.14ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.14ubuntu1.tar.xz' init-system-helpers_1.14ubuntu1.tar.xz 15436 SHA256:c9f7e8c0d1ee2cdfb12b7a82ffee5a5c90e3d70478591d28803e011e8053a252
 ```
 
-### `dpkg` source package: `initramfs-tools=0.103ubuntu4.9`
+### `dpkg` source package: `initramfs-tools=0.103ubuntu4.10`
 
 Binary Packages:
 
-- `initramfs-tools=0.103ubuntu4.9`
-- `initramfs-tools-bin=0.103ubuntu4.9`
+- `initramfs-tools=0.103ubuntu4.10`
+- `initramfs-tools-bin=0.103ubuntu4.10`
 
 Licenses: (parsed from: `/usr/share/doc/initramfs-tools/copyright`, `/usr/share/doc/initramfs-tools-bin/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris initramfs-tools=0.103ubuntu4.10
+'http://archive.ubuntu.com/ubuntu/pool/main/i/initramfs-tools/initramfs-tools_0.103ubuntu4.10.dsc' initramfs-tools_0.103ubuntu4.10.dsc 1204 SHA256:a0307f3a5b8141a9e593b6554feff7d3db32b6fe43aee708b9fe2b922ec07f40
+'http://archive.ubuntu.com/ubuntu/pool/main/i/initramfs-tools/initramfs-tools_0.103ubuntu4.10.tar.xz' initramfs-tools_0.103ubuntu4.10.tar.xz 94700 SHA256:bff96166f409f5a793972f058fff1626caee0a88aacde32bdf8b5ac523f0e8cd
+```
 
 ### `dpkg` source package: `insserv=1.14.0-5ubuntu2`
 
@@ -1471,14 +1470,9 @@ Licenses: (parsed from: `/usr/share/doc/iproute2/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris iproute2=3.12.0-2ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/i/iproute2/iproute2_3.12.0-2ubuntu1.1.dsc' iproute2_3.12.0-2ubuntu1.1.dsc 2058 SHA256:ad84e8ef434620241f68a9a50781221556479275f0bdce3e5797a364eba88a87
-'http://archive.ubuntu.com/ubuntu/pool/main/i/iproute2/iproute2_3.12.0.orig.tar.xz' iproute2_3.12.0.orig.tar.xz 425192 SHA256:44f600475d27a421688cda2294efec38513473a740c24ead78eb20005f08f111
-'http://archive.ubuntu.com/ubuntu/pool/main/i/iproute2/iproute2_3.12.0-2ubuntu1.1.debian.tar.gz' iproute2_3.12.0-2ubuntu1.1.debian.tar.gz 31294 SHA256:539d5b62e30603478538ba358480abaf59e03848a000d5085f7663d703cd5072
-```
 
 ### `dpkg` source package: `iputils=3:20121221-4ubuntu1.1`
 
@@ -3849,19 +3843,24 @@ $ apt-get source -qq --print-uris plymouth=0.8.8-0ubuntu17.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/plymouth/plymouth_0.8.8-0ubuntu17.1.debian.tar.xz' plymouth_0.8.8-0ubuntu17.1.debian.tar.xz 93684 SHA256:8fc0f5e8cdef374293836932b2edeff58a30ccf157b41a1f7ee68b08ea9af15b
 ```
 
-### `dpkg` source package: `poppler=0.24.5-2ubuntu4.8`
+### `dpkg` source package: `poppler=0.24.5-2ubuntu4.9`
 
 Binary Packages:
 
-- `libpoppler44:amd64=0.24.5-2ubuntu4.8`
+- `libpoppler44:amd64=0.24.5-2ubuntu4.9`
 
 Licenses: (parsed from: `/usr/share/doc/libpoppler44/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris poppler=0.24.5-2ubuntu4.9
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.24.5-2ubuntu4.9.dsc' poppler_0.24.5-2ubuntu4.9.dsc 3328 SHA256:9822978bd7ec3dc2f8a7922ff0653f472961f01bb411b8599165c3053552a929
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.24.5.orig.tar.xz' poppler_0.24.5.orig.tar.xz 1512476 SHA256:a2654910100c923c44e366242495e226db2798254f2fa2781138867348759f84
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.24.5-2ubuntu4.9.debian.tar.gz' poppler_0.24.5-2ubuntu4.9.debian.tar.gz 58070 SHA256:a0044a565238817155ef2a6ad792c97fe2b31d5b4940ef6f9a55174947df858d
+```
 
 ### `dpkg` source package: `popt=1.16-8ubuntu1`
 
