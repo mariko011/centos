@@ -1,7 +1,7 @@
 ## `php:fpm-alpine3.7`
 
 ```console
-$ docker pull php@sha256:b75f7d840f946c102166d4582dd69e91483def99864729409589c3ec1741e401
+$ docker pull php@sha256:37d0618503cc0adf48818dedf5a658742d2d865c31b94d6dc379ffc18538374e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -348,14 +348,14 @@ CMD ["php-fpm"]
 ### `php:fpm-alpine3.7` - linux; 386
 
 ```console
-$ docker pull php@sha256:d7334ca17b1f309f2ed5b46d8bf658af00ce8b2ec821369b56c6eef800f96598
+$ docker pull php@sha256:151873421d714a31442a936dc1c776b8afbc047590d5b19a95c86748853ab570
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **31.6 MB (31557796 bytes)**  
+-	Total Size: **31.6 MB (31557795 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:80e72839285f10877d12220e5c2696cf4dfe0dff9381075c43df4b796e76be67`
+-	Image ID: `sha256:d35d606de7a0ff9830843497c0c76d0ade1f6a3ae32086156a134c9eb18c9b44`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -404,11 +404,11 @@ COPY multi:f9544e5c6b9d1d1292fca43464fe1e77b631547ac2baa8503de318853c0536d0 in /
 ENTRYPOINT ["docker-php-entrypoint"]
 # Tue, 09 Jan 2018 11:54:23 GMT
 WORKDIR /var/www/html
-# Tue, 09 Jan 2018 11:54:24 GMT
-RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = [::]:9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Tue, 09 Jan 2018 11:54:24 GMT
+# Fri, 19 Jan 2018 09:58:21 GMT
+RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = 9000'; 	} | tee php-fpm.d/zz-docker.conf
+# Fri, 19 Jan 2018 09:58:21 GMT
 EXPOSE 9000/tcp
-# Tue, 09 Jan 2018 11:54:24 GMT
+# Fri, 19 Jan 2018 09:58:21 GMT
 CMD ["php-fpm"]
 ```
 
@@ -453,22 +453,22 @@ CMD ["php-fpm"]
 		Last Modified: Tue, 09 Jan 2018 21:24:03 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dbef201627b905f64cf177f0513343d6916ed8c01167b81ce1b10f0d0188ee6f`  
-		Last Modified: Tue, 09 Jan 2018 21:24:03 GMT  
-		Size: 7.7 KB (7698 bytes)  
+	-	`sha256:cc9655eabd47daceb33e32f654b8af70788aba66a733626401d6979a6d7f3ff4`  
+		Last Modified: Fri, 19 Jan 2018 10:39:19 GMT  
+		Size: 7.7 KB (7697 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `php:fpm-alpine3.7` - linux; ppc64le
 
 ```console
-$ docker pull php@sha256:81a31dfccc4e4ab07435b1ddf1df1e131ec8d5fc14edfe94de49218289d6e202
+$ docker pull php@sha256:9ccef831d1e2b478917b571aa2ee42fb75b50b3ec83a3f0aef9110291a409097
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **30.7 MB (30733370 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3b39262d73257d359ea919d557d389982d8d9ef4f4138089de44f5acd628ce2b`
+-	Image ID: `sha256:0ebb8e86cea381ea6eb97763e21d68e8a6bde7de38ef49f112593e9d33d9e90e`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -517,11 +517,11 @@ COPY multi:f9544e5c6b9d1d1292fca43464fe1e77b631547ac2baa8503de318853c0536d0 in /
 ENTRYPOINT ["docker-php-entrypoint"]
 # Tue, 09 Jan 2018 20:30:32 GMT
 WORKDIR /var/www/html
-# Tue, 09 Jan 2018 20:30:37 GMT
-RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = [::]:9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Tue, 09 Jan 2018 20:30:38 GMT
+# Fri, 19 Jan 2018 09:48:55 GMT
+RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = 9000'; 	} | tee php-fpm.d/zz-docker.conf
+# Fri, 19 Jan 2018 09:48:56 GMT
 EXPOSE 9000/tcp
-# Tue, 09 Jan 2018 20:30:40 GMT
+# Fri, 19 Jan 2018 09:48:57 GMT
 CMD ["php-fpm"]
 ```
 
@@ -566,7 +566,7 @@ CMD ["php-fpm"]
 		Last Modified: Tue, 09 Jan 2018 20:32:33 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3d167d7728a1afeae79a939deb3dd46bd84ca686743444e6fa773758336241f3`  
-		Last Modified: Tue, 09 Jan 2018 20:32:32 GMT  
+	-	`sha256:99a2c151ee953a2a1e1e6333c49c0617ed0484bca59530f5d3c88fa969019daf`  
+		Last Modified: Fri, 19 Jan 2018 09:52:14 GMT  
 		Size: 7.7 KB (7696 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
