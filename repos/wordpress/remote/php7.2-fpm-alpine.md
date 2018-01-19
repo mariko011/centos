@@ -1,7 +1,7 @@
 ## `wordpress:php7.2-fpm-alpine`
 
 ```console
-$ docker pull wordpress@sha256:1c3a30af2df4e664a1ee8176da1d51da8ccd25ab7a73a65acee4dcd24bc53915
+$ docker pull wordpress@sha256:07e7e194a5232d703620c0feda9860960c68182fce7e8f4097a683e89bd0c031
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13,14 +13,14 @@ $ docker pull wordpress@sha256:1c3a30af2df4e664a1ee8176da1d51da8ccd25ab7a73a65ac
 ### `wordpress:php7.2-fpm-alpine` - linux; amd64
 
 ```console
-$ docker pull wordpress@sha256:96de8cd2c6e4c76bfc146b6ad40312c526e6b8b919252bc7326fc0b48d02fed1
+$ docker pull wordpress@sha256:b48b3b24a1ce3f715b569f2a899232ff77cde9db771ded48572c17d928fbeee0
 ```
 
 -	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **41.2 MB (41185972 bytes)**  
+-	Total Size: **41.2 MB (41185995 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:df9534e3d3817e4bf96dfbeb73dde5809ab88d19707a3ae43e2dc67efe13d1e7`
+-	Image ID: `sha256:df4fe013b1b4ed07b59ec1f2004d9ebe31a11de4b75ac3bfda3e668237fd674f`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -67,31 +67,31 @@ COPY multi:f9544e5c6b9d1d1292fca43464fe1e77b631547ac2baa8503de318853c0536d0 in /
 ENTRYPOINT ["docker-php-entrypoint"]
 # Wed, 10 Jan 2018 02:38:31 GMT
 WORKDIR /var/www/html
-# Wed, 10 Jan 2018 02:38:32 GMT
-RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = [::]:9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Wed, 10 Jan 2018 02:38:32 GMT
+# Thu, 18 Jan 2018 23:24:22 GMT
+RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = 9000'; 	} | tee php-fpm.d/zz-docker.conf
+# Thu, 18 Jan 2018 23:24:23 GMT
 EXPOSE 9000/tcp
-# Wed, 10 Jan 2018 02:38:33 GMT
+# Thu, 18 Jan 2018 23:24:23 GMT
 CMD ["php-fpm"]
-# Wed, 10 Jan 2018 07:12:10 GMT
+# Fri, 19 Jan 2018 01:45:08 GMT
 RUN apk add --no-cache 		bash 		sed
-# Wed, 10 Jan 2018 07:13:00 GMT
+# Fri, 19 Jan 2018 01:45:57 GMT
 RUN set -ex; 		apk add --no-cache --virtual .build-deps 		libjpeg-turbo-dev 		libpng-dev 	; 		docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr; 	docker-php-ext-install gd mysqli opcache; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --virtual .wordpress-phpexts-rundeps $runDeps; 	apk del .build-deps
-# Wed, 10 Jan 2018 07:13:01 GMT
+# Fri, 19 Jan 2018 01:45:58 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Wed, 10 Jan 2018 07:13:01 GMT
+# Fri, 19 Jan 2018 01:45:58 GMT
 VOLUME [/var/www/html]
-# Thu, 18 Jan 2018 20:50:46 GMT
+# Fri, 19 Jan 2018 01:45:58 GMT
 ENV WORDPRESS_VERSION=4.9.2
-# Thu, 18 Jan 2018 20:50:46 GMT
+# Fri, 19 Jan 2018 01:45:59 GMT
 ENV WORDPRESS_SHA1=96e0b38028b0b2d00209290ebac20cb9f4a6d085
-# Thu, 18 Jan 2018 20:50:48 GMT
+# Fri, 19 Jan 2018 01:46:00 GMT
 RUN set -ex; 	curl -o wordpress.tar.gz -fSL "https://wordpress.org/wordpress-${WORDPRESS_VERSION}.tar.gz"; 	echo "$WORDPRESS_SHA1 *wordpress.tar.gz" | sha1sum -c -; 	tar -xzf wordpress.tar.gz -C /usr/src/; 	rm wordpress.tar.gz; 	chown -R www-data:www-data /usr/src/wordpress
-# Thu, 18 Jan 2018 20:50:49 GMT
+# Fri, 19 Jan 2018 01:46:01 GMT
 COPY file:3d3c99e98daa50fa9919315d4531e921f800fc011486bda46e9d6dcea82dd53c in /usr/local/bin/ 
-# Thu, 18 Jan 2018 20:50:49 GMT
+# Fri, 19 Jan 2018 01:46:01 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 18 Jan 2018 20:50:49 GMT
+# Fri, 19 Jan 2018 01:46:01 GMT
 CMD ["php-fpm"]
 ```
 
@@ -132,29 +132,29 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 10 Jan 2018 04:35:40 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:582c1388c63df97b223856eae011a78a1a88f5796c68898e5259c7b5edcea0db`  
-		Last Modified: Wed, 10 Jan 2018 04:35:40 GMT  
-		Size: 7.7 KB (7697 bytes)  
+	-	`sha256:b471001001615ad3acab2a24b45807cf9c1ac646d501e5b20b0bdaf98465de77`  
+		Last Modified: Thu, 18 Jan 2018 23:38:32 GMT  
+		Size: 7.7 KB (7696 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ed1a5dce24a31340e341e823cf3da6de4d32afa9b6ce474d32756fc52d74a170`  
-		Last Modified: Wed, 10 Jan 2018 07:50:18 GMT  
-		Size: 621.6 KB (621627 bytes)  
+	-	`sha256:4a24153de5d4aa774aeab1128cc40ae796485073f7b76862d3060072b075147b`  
+		Last Modified: Fri, 19 Jan 2018 02:05:33 GMT  
+		Size: 621.6 KB (621624 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a14b1f47f5e96ff3ac07318676747e0616c17f3e9cd7c91c262013e378c2a56`  
-		Last Modified: Wed, 10 Jan 2018 07:50:18 GMT  
-		Size: 846.8 KB (846808 bytes)  
+	-	`sha256:78f2ff932938ce5650eda0aaead4ecced0ebf9ca3cce6f451d1157bb9deecf6d`  
+		Last Modified: Fri, 19 Jan 2018 02:05:33 GMT  
+		Size: 846.8 KB (846827 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:87fd08e35dcc8cb8a8a4f2849c605cedc9f8c7f5db0a4c7545614c92e95e3bfd`  
-		Last Modified: Wed, 10 Jan 2018 07:50:17 GMT  
-		Size: 338.0 B  
+	-	`sha256:3e3842bc65678eb62de7315a74e65e8fb975b95f70a53ae8e839df186651b1d1`  
+		Last Modified: Fri, 19 Jan 2018 02:05:31 GMT  
+		Size: 342.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3120bc0ef22a1a77b9cfb38083d8fb4740d5e2a62918f0dbfd606dd0ae78c67c`  
-		Last Modified: Thu, 18 Jan 2018 21:16:00 GMT  
-		Size: 8.6 MB (8639279 bytes)  
+	-	`sha256:ff3b4f8ecce8de70d9a0a7a58075df6516c944979879bce0fe0e83355ed7ebdd`  
+		Last Modified: Fri, 19 Jan 2018 02:05:36 GMT  
+		Size: 8.6 MB (8639284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b54502f0829954c83e68d37c1172568d9f6f14d00a55b48129b6cc582b000128`  
-		Last Modified: Thu, 18 Jan 2018 21:15:56 GMT  
-		Size: 3.4 KB (3353 bytes)  
+	-	`sha256:82788d9f910be808bc0cf77931ec5ca257a532d25669b48439834f274eaafc94`  
+		Last Modified: Fri, 19 Jan 2018 02:05:31 GMT  
+		Size: 3.4 KB (3352 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `wordpress:php7.2-fpm-alpine` - linux; arm variant v6
