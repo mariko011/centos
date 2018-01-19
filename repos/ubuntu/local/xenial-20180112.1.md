@@ -487,14 +487,9 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.23-0ubuntu9
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23-0ubuntu9.dsc' glibc_2.23-0ubuntu9.dsc 8521 SHA256:6ef67f84ef636eab9b8570c81db761f4c24d7536e7414da7a1b8d4adb5943e5d
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23.orig.tar.xz' glibc_2.23.orig.tar.xz 13849968 SHA256:bf6c528eeebefcacc295270068b79330c1fb2b22458ff66285b4175d23442c96
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23-0ubuntu9.debian.tar.xz' glibc_2.23-0ubuntu9.debian.tar.xz 1230592 SHA256:3d8eebf05aea0c7577a668ec8210cb2e188ffa90fd5b54734a1214d7cabed034
-```
 
 ### `dpkg` source package: `gnupg=1.4.20-1ubuntu3.1`
 
