@@ -451,14 +451,9 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`)
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris binutils=2.26.1-1ubuntu1~16.04.5
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.26.1-1ubuntu1~16.04.5.dsc' binutils_2.26.1-1ubuntu1~16.04.5.dsc 4028 SHA256:1f43939e7dd381e1aee241266a194c113fd8f734262019fe60aa99fe0f747ce0
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.26.1.orig.tar.gz' binutils_2.26.1.orig.tar.gz 34868933 SHA256:dd9c3e37c266e4fefba68e444e2a00538b3c902dd31bf4912d90dca6d830a2a1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.26.1-1ubuntu1~16.04.5.diff.gz' binutils_2.26.1-1ubuntu1~16.04.5.diff.gz 236262 SHA256:d74aa8a848d0a1e472f0d71fb82eee812e6e41c3d8bb95813fc7d442e6dde13c
-```
 
 ### `dpkg` source package: `boost-defaults=1.58.0.1ubuntu1`
 
@@ -1161,13 +1156,9 @@ Licenses: (parsed from: `/usr/share/doc/distro-info-data/copyright`)
 
 - `ISC`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris distro-info-data=0.28ubuntu0.6
-'http://archive.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.28ubuntu0.6.dsc' distro-info-data_0.28ubuntu0.6.dsc 1761 SHA256:9ea3aad7390b854e80c87d3e218f337d9fb72a54fae6ed4828753d153d76214f
-'http://archive.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.28ubuntu0.6.tar.xz' distro-info-data_0.28ubuntu0.6.tar.xz 6588 SHA256:657a11eb4143e31f4faf5ecb79944044f1d00fc853097568f02c6e0df4f7374c
-```
 
 ### `dpkg` source package: `double-conversion=2.0.1-3ubuntu2`
 
@@ -1762,14 +1753,9 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.23-0ubuntu9
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23-0ubuntu9.dsc' glibc_2.23-0ubuntu9.dsc 8521 SHA256:6ef67f84ef636eab9b8570c81db761f4c24d7536e7414da7a1b8d4adb5943e5d
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23.orig.tar.xz' glibc_2.23.orig.tar.xz 13849968 SHA256:bf6c528eeebefcacc295270068b79330c1fb2b22458ff66285b4175d23442c96
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23-0ubuntu9.debian.tar.xz' glibc_2.23-0ubuntu9.debian.tar.xz 1230592 SHA256:3d8eebf05aea0c7577a668ec8210cb2e188ffa90fd5b54734a1214d7cabed034
-```
 
 ### `dpkg` source package: `gmp=2:6.1.0+dfsg-2`
 
@@ -4644,14 +4630,9 @@ Licenses: (parsed from: `/usr/share/doc/libegl1-mesa/copyright`, `/usr/share/doc
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mesa=17.2.4-0ubuntu1~16.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_17.2.4-0ubuntu1~16.04.2.dsc' mesa_17.2.4-0ubuntu1~16.04.2.dsc 4991 SHA256:686e2912dfe124f1506ca49a9e9f006a4d5f911b9c63556b35b4d08341afeac6
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_17.2.4.orig.tar.gz' mesa_17.2.4.orig.tar.gz 17737608 SHA256:cb266edc5cf7226219ebaf556ca2e03dff282e0324d20afd80423a5754d1272c
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_17.2.4-0ubuntu1~16.04.2.diff.gz' mesa_17.2.4-0ubuntu1~16.04.2.diff.gz 146923 SHA256:9bc402749295fb61b235e57a82b3e061469558d6c01e0aa6bbccf8b307a98e0c
-```
 
 ### `dpkg` source package: `mime-support=3.59ubuntu1`
 
@@ -5965,9 +5946,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris python2.7=2.7.12-1ubuntu0~16.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.12-1ubuntu0~16.04.2.dsc' python2.7_2.7.12-1ubuntu0~16.04.2.dsc 3371 SHA256:2c27c34b7e65265997aba7d1919cb06d03ddd211573fd5f01a04ca4882640fe6
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.12.orig.tar.gz' python2.7_2.7.12.orig.tar.gz 16935960 SHA256:3cb522d17463dfa69a155ab18cffa399b358c966c0363d6c8b5b3bf1384da4b6
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.12-1ubuntu0~16.04.2.diff.gz' python2.7_2.7.12-1ubuntu0~16.04.2.diff.gz 277564 SHA256:758f87cf735c0ca58d4a3703668a64c392f15fa5906ee8f4a9062de066249357
+'http://security.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.12-1ubuntu0~16.04.2.dsc' python2.7_2.7.12-1ubuntu0~16.04.2.dsc 3371 SHA256:2c27c34b7e65265997aba7d1919cb06d03ddd211573fd5f01a04ca4882640fe6
+'http://security.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.12.orig.tar.gz' python2.7_2.7.12.orig.tar.gz 16935960 SHA256:3cb522d17463dfa69a155ab18cffa399b358c966c0363d6c8b5b3bf1384da4b6
+'http://security.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.12-1ubuntu0~16.04.2.diff.gz' python2.7_2.7.12-1ubuntu0~16.04.2.diff.gz 277564 SHA256:758f87cf735c0ca58d4a3703668a64c392f15fa5906ee8f4a9062de066249357
 ```
 
 ### `dpkg` source package: `python3-defaults=3.5.1-3`

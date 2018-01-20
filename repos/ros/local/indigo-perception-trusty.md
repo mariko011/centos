@@ -1140,14 +1140,9 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris eglibc=2.19-0ubuntu6.13
-'http://archive.ubuntu.com/ubuntu/pool/main/e/eglibc/eglibc_2.19-0ubuntu6.13.dsc' eglibc_2.19-0ubuntu6.13.dsc 5814 SHA256:f4c36f5d1d4b411002b17322a8d7e75fc9cfb427a69b977e6a7f8e0bc9fd100f
-'http://archive.ubuntu.com/ubuntu/pool/main/e/eglibc/eglibc_2.19.orig.tar.xz' eglibc_2.19.orig.tar.xz 12610800 SHA256:e5d30be72b702dffae527779af1be755f0dfbf13c171998a04f7265cd4da131f
-'http://archive.ubuntu.com/ubuntu/pool/main/e/eglibc/eglibc_2.19-0ubuntu6.13.debian.tar.xz' eglibc_2.19-0ubuntu6.13.debian.tar.xz 1046856 SHA256:03856ac5cba476c541a789a22f54d165d8a864070cc1d6161c5dd0f4bfef6271
-```
 
 ### `dpkg` source package: `eigen3=3.2.0-8`
 
@@ -2314,14 +2309,9 @@ Licenses: (parsed from: `/usr/share/doc/iproute2/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris iproute2=3.12.0-2ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/i/iproute2/iproute2_3.12.0-2ubuntu1.1.dsc' iproute2_3.12.0-2ubuntu1.1.dsc 2058 SHA256:ad84e8ef434620241f68a9a50781221556479275f0bdce3e5797a364eba88a87
-'http://archive.ubuntu.com/ubuntu/pool/main/i/iproute2/iproute2_3.12.0.orig.tar.xz' iproute2_3.12.0.orig.tar.xz 425192 SHA256:44f600475d27a421688cda2294efec38513473a740c24ead78eb20005f08f111
-'http://archive.ubuntu.com/ubuntu/pool/main/i/iproute2/iproute2_3.12.0-2ubuntu1.1.debian.tar.gz' iproute2_3.12.0-2ubuntu1.1.debian.tar.gz 31294 SHA256:539d5b62e30603478538ba358480abaf59e03848a000d5085f7663d703cd5072
-```
 
 ### `dpkg` source package: `iputils=3:20121221-4ubuntu1.1`
 
