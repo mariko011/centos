@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a7e6df55e7dded892dd179075acc8204ebf425285dae134986c241a1bc071160`
-- Created: `2018-01-09T07:13:20.016022678Z`
-- Virtual Size: ~ 542.95 Mb  
+- Image ID: `sha256:e4060d43d93066a9a185b1858184d528e59718743a26ed547cec6a1ce740ab5c`
+- Created: `2018-01-19T03:47:14.877251809Z`
+- Virtual Size: ~ 544.76 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -2073,12 +2073,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libusb/2:0.1.12-25/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libusb/2:0.1.12-25/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libxml2=2.9.1+dfsg1-5+deb8u5`
+### `dpkg` source package: `libxml2=2.9.1+dfsg1-5+deb8u6`
 
 Binary Packages:
 
-- `libxml2:amd64=2.9.1+dfsg1-5+deb8u5`
-- `libxml2-dev:amd64=2.9.1+dfsg1-5+deb8u5`
+- `libxml2:amd64=2.9.1+dfsg1-5+deb8u6`
+- `libxml2-dev:amd64=2.9.1+dfsg1-5+deb8u6`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2087,17 +2087,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libxml2=2.9.1+dfsg1-5+deb8u5
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.1+dfsg1-5+deb8u5.dsc' libxml2_2.9.1+dfsg1-5+deb8u5.dsc 2760 SHA256:6fe2c4e997f1ed1520cbba4474513880a1e7450de57a0c86f73c4023396609fb
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.1+dfsg1.orig.tar.gz' libxml2_2.9.1+dfsg1.orig.tar.gz 3793894 SHA256:f3ec5256412192f74833286c4490672500b232ed1c9195214db2c641df064a28
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.1+dfsg1-5+deb8u5.debian.tar.xz' libxml2_2.9.1+dfsg1-5+deb8u5.debian.tar.xz 70784 SHA256:01247e1947e2b52c4ef0e227fdd501038aa0840b8c889c26b6503a2dcd85a5d3
+$ apt-get source -qq --print-uris libxml2=2.9.1+dfsg1-5+deb8u6
+'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.9.1+dfsg1-5+deb8u6.dsc' libxml2_2.9.1+dfsg1-5+deb8u6.dsc 2760 SHA256:d887a48f96f3953cd0ecd9e2c8b77334c9619367dc16ca658586098a0c68f8fe
+'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.9.1+dfsg1.orig.tar.gz' libxml2_2.9.1+dfsg1.orig.tar.gz 3793894 SHA256:f3ec5256412192f74833286c4490672500b232ed1c9195214db2c641df064a28
+'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.9.1+dfsg1-5+deb8u6.debian.tar.xz' libxml2_2.9.1+dfsg1-5+deb8u6.debian.tar.xz 71152 SHA256:b6f36d51b2ff810fcc29f149ba21c69656c5dea164afc93eb48ff0daf8bc568a
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libxml2/2.9.1+dfsg1-5+deb8u5/ (for browsing the source)
-- https://sources.debian.net/src/libxml2/2.9.1+dfsg1-5+deb8u5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxml2/2.9.1+dfsg1-5+deb8u5/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libxml2/2.9.1+dfsg1-5+deb8u6/ (for browsing the source)
+- https://sources.debian.net/src/libxml2/2.9.1+dfsg1-5+deb8u6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libxml2/2.9.1+dfsg1-5+deb8u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `linux=3.16.51-3`
 
@@ -2305,14 +2305,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/mpfr4/3.1.2-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/mpfr4/3.1.2-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `mysql-5.5=5.5.58-0+deb8u1`
+### `dpkg` source package: `mysql-5.5=5.5.59-0+deb8u1`
 
 Binary Packages:
 
-- `libmysqlclient18:amd64=5.5.58-0+deb8u1`
-- `mysql-client=5.5.58-0+deb8u1`
-- `mysql-client-5.5=5.5.58-0+deb8u1`
-- `mysql-common=5.5.58-0+deb8u1`
+- `libmysqlclient18:amd64=5.5.59-0+deb8u1`
+- `mysql-client=5.5.59-0+deb8u1`
+- `mysql-client-5.5=5.5.59-0+deb8u1`
+- `mysql-common=5.5.59-0+deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/libmysqlclient18/copyright`, `/usr/share/doc/mysql-client/copyright`, `/usr/share/doc/mysql-client-5.5/copyright`, `/usr/share/doc/mysql-common/copyright`)
 
@@ -2333,17 +2333,17 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient18/copyright`, `/usr/share
 Source:
 
 ```console
-$ apt-get source -qq --print-uris mysql-5.5=5.5.58-0+deb8u1
-'http://deb.debian.org/debian/pool/main/m/mysql-5.5/mysql-5.5_5.5.58-0+deb8u1.dsc' mysql-5.5_5.5.58-0+deb8u1.dsc 3262 SHA256:5759120be94cf618f8a04595f4c3f82b3d9933c403be6b8b6f567580933f0bd0
-'http://deb.debian.org/debian/pool/main/m/mysql-5.5/mysql-5.5_5.5.58.orig.tar.gz' mysql-5.5_5.5.58.orig.tar.gz 21045852 SHA256:9b6912faf261555c8975db24a987f63f36aaa28052a301e85538346ace0009b9
-'http://deb.debian.org/debian/pool/main/m/mysql-5.5/mysql-5.5_5.5.58-0+deb8u1.debian.tar.xz' mysql-5.5_5.5.58-0+deb8u1.debian.tar.xz 232788 SHA256:f1cb1bc0763628a0c076520677a5cac658b8b0b7811d0af1d99433b12a272062
+$ apt-get source -qq --print-uris mysql-5.5=5.5.59-0+deb8u1
+'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.59-0+deb8u1.dsc' mysql-5.5_5.5.59-0+deb8u1.dsc 3262 SHA256:ad390443c2763b522c8100152d634cfa66489a50a8f0aa3f08c837c566c658ee
+'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.59.orig.tar.gz' mysql-5.5_5.5.59.orig.tar.gz 21050313 SHA256:ee920177c9dec770c30b673a21143d5e92a67e8207f9b720d41d51cda05d8513
+'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.59-0+deb8u1.debian.tar.xz' mysql-5.5_5.5.59-0+deb8u1.debian.tar.xz 232832 SHA256:3e62b063a41ba537e6572d3bfc0f56f86c5c4a1b2e6dbedb070ac97a19dc2466
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/mysql-5.5/5.5.58-0+deb8u1/ (for browsing the source)
-- https://sources.debian.net/src/mysql-5.5/5.5.58-0+deb8u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mysql-5.5/5.5.58-0+deb8u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/mysql-5.5/5.5.59-0+deb8u1/ (for browsing the source)
+- https://sources.debian.net/src/mysql-5.5/5.5.59-0+deb8u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/mysql-5.5/5.5.59-0+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ncurses=5.9+20140913-1+deb8u2`
 
