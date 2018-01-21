@@ -1657,21 +1657,13 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `The MIT License (MIT)`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.5.16-1
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.16-1.dsc' gnutls28_3.5.16-1.dsc 3322 SHA256:f79c845f085aa1f6e2b1922fd4706b849e2e2c05efd4c133e9a0e0ea71d314f2
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.16.orig.tar.xz' gnutls28_3.5.16.orig.tar.xz 7559812 SHA256:0924dec90c37c05f49fec966eba3672dab4d336d879e5c06e06e13325cbfec25
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.16.orig.tar.xz.asc' gnutls28_3.5.16.orig.tar.xz.asc 534 SHA256:9a49f29d2515077fdf6cabe7c008cbcf605724f521dc4cfb7b51a903275f1f77
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.16-1.debian.tar.xz' gnutls28_3.5.16-1.debian.tar.xz 105652 SHA256:dcb6a38517fd351903f12914ce9e373be7050cea33caff0464dad97d0089db92
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnutls28/3.5.16-1/
 
-- https://sources.debian.net/src/gnutls28/3.5.16-1/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.5.16-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.5.16-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gobject-introspection=1.54.1-3`
 
@@ -5374,21 +5366,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2017c-1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017c-1.dsc' tzdata_2017c-1.dsc 2247 SHA256:624e5c2d79af706c784c375b45ea7fbba3ebf289a24a08df280fef133796ae9b
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017c.orig.tar.gz' tzdata_2017c.orig.tar.gz 335571 SHA256:d6543f92a929826318e2f44ff3a7611ce5f565a43e10250b42599d0ba4cbd90b
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017c.orig.tar.gz.asc' tzdata_2017c.orig.tar.gz.asc 801 SHA256:89b6e3d1367c2a15bf7e2aabb90fc062b89c398ef5475b00ede3a9602cc1736a
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017c-1.debian.tar.xz' tzdata_2017c-1.debian.tar.xz 103892 SHA256:beca59bfd938b660c61a5ff33e733afed7e6e18e025296724b34e62d1ee1526b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2017c-1/
 
-- https://sources.debian.net/src/tzdata/2017c-1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2017c-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2017c-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0036`
 

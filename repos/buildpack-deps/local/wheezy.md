@@ -2104,20 +2104,13 @@ Licenses: (parsed from: `/usr/share/doc/libgd2-noxpm/copyright`)
 - `HPND`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libgd2=2.0.36~rc1~dfsg-6.1+deb7u10
-'http://security.debian.org/pool/updates/main/libg/libgd2/libgd2_2.0.36~rc1~dfsg-6.1+deb7u10.dsc' libgd2_2.0.36~rc1~dfsg-6.1+deb7u10.dsc 2429 SHA256:1d4b79d6ba7351daf18c41190f7439627596a815043203a77a5b595994fef0a2
-'http://security.debian.org/pool/updates/main/libg/libgd2/libgd2_2.0.36~rc1~dfsg.orig.tar.gz' libgd2_2.0.36~rc1~dfsg.orig.tar.gz 761899 SHA256:919df21310ad4a8b6155df01411138110589cc6c50b1bc414dc62aebb0a7f41a
-'http://security.debian.org/pool/updates/main/libg/libgd2/libgd2_2.0.36~rc1~dfsg-6.1+deb7u10.debian.tar.gz' libgd2_2.0.36~rc1~dfsg-6.1+deb7u10.debian.tar.gz 35207 SHA256:7abaaf8937f4d6158593f147e1162e5d7b950dcb292cffb1bd71961c6da8b175
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libgd2/2.0.36~rc1~dfsg-6.1+deb7u10/
 
-- https://sources.debian.net/src/libgd2/2.0.36~rc1~dfsg-6.1+deb7u10/ (for browsing the source)
-- https://sources.debian.net/src/libgd2/2.0.36~rc1~dfsg-6.1+deb7u10/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libgd2/2.0.36~rc1~dfsg-6.1+deb7u10/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libgpg-error=1.10-3.1`
 
@@ -3299,20 +3292,13 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mysql-5.5=5.5.58-0+deb7u1
-'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.58-0+deb7u1.dsc' mysql-5.5_5.5.58-0+deb7u1.dsc 2971 SHA256:4ddcebf2f910a550d70ad7f9b9b3e4ff0f7a6e24e887c7f2d50c19aef94f5146
-'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.58.orig.tar.gz' mysql-5.5_5.5.58.orig.tar.gz 21045852 SHA256:9b6912faf261555c8975db24a987f63f36aaa28052a301e85538346ace0009b9
-'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.58-0+deb7u1.debian.tar.gz' mysql-5.5_5.5.58-0+deb7u1.debian.tar.gz 380206 SHA256:53f2817258530052c5c8b6edd66efa846fa2cd231170c54522c8e635d7907437
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mysql-5.5/5.5.58-0+deb7u1/
 
-- https://sources.debian.net/src/mysql-5.5/5.5.58-0+deb7u1/ (for browsing the source)
-- https://sources.debian.net/src/mysql-5.5/5.5.58-0+deb7u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mysql-5.5/5.5.58-0+deb7u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ncurses=5.9-10`
 
