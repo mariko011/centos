@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:399d655a9074026f5f5b660803b0ff63013917e791c0c0133cb7fcc659fda6ab`
-- Created: `2018-01-16T22:55:12.072036821Z`
+- Image ID: `sha256:3ebd318b992872831887eec62b30011b72c03a1149e40601cb25d5e00f8cae6b`
+- Created: `2018-01-19T20:01:32.189539527Z`
 - Virtual Size: ~ 325.27 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,4 +11,4 @@
 - Command: `["/usr/local/openresty/nginx/sbin/nginx","-c","/usr/local/kong/nginx.conf","-p","/usr/local/kong/"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `KONG_VERSION=0.12.0`
+  - `KONG_VERSION=0.12.1`
