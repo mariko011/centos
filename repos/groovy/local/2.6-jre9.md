@@ -2432,20 +2432,13 @@ Licenses: (parsed from: `/usr/share/doc/libegl1/copyright`, `/usr/share/doc/libg
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libglvnd=1.0.0-1
-'http://deb.debian.org/debian/pool/main/libg/libglvnd/libglvnd_1.0.0-1.dsc' libglvnd_1.0.0-1.dsc 2312 SHA256:a8f0ab4eb2509987d6a1aed26ee70c122ea35e39aa5afac3cea791ee541f6f7b
-'http://deb.debian.org/debian/pool/main/libg/libglvnd/libglvnd_1.0.0.orig.tar.gz' libglvnd_1.0.0.orig.tar.gz 795552 SHA256:d1cb238081f8fc708178f21e7e6b33a009c0807eae7a11b790146043f6e8eea5
-'http://deb.debian.org/debian/pool/main/libg/libglvnd/libglvnd_1.0.0-1.diff.gz' libglvnd_1.0.0-1.diff.gz 23388 SHA256:8367756df0071a42d960da2392927ff0ee4e08ae594eb73abd0bb2b95fb15bd5
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libglvnd/1.0.0-1/
 
-- https://sources.debian.net/src/libglvnd/1.0.0-1/ (for browsing the source)
-- https://sources.debian.net/src/libglvnd/1.0.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libglvnd/1.0.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libgpg-error=1.27-5`
 
@@ -4714,21 +4707,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2017c-1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017c-1.dsc' tzdata_2017c-1.dsc 2247 SHA256:624e5c2d79af706c784c375b45ea7fbba3ebf289a24a08df280fef133796ae9b
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017c.orig.tar.gz' tzdata_2017c.orig.tar.gz 335571 SHA256:d6543f92a929826318e2f44ff3a7611ce5f565a43e10250b42599d0ba4cbd90b
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017c.orig.tar.gz.asc' tzdata_2017c.orig.tar.gz.asc 801 SHA256:89b6e3d1367c2a15bf7e2aabb90fc062b89c398ef5475b00ede3a9602cc1736a
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017c-1.debian.tar.xz' tzdata_2017c-1.debian.tar.xz 103892 SHA256:beca59bfd938b660c61a5ff33e733afed7e6e18e025296724b34e62d1ee1526b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2017c-1/
 
-- https://sources.debian.net/src/tzdata/2017c-1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2017c-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2017c-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0036`
 
