@@ -1,9 +1,9 @@
-# `adminer:4.3.1-standalone`
+# `adminer:4.4.0-standalone`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a790545de2b8af706e11d853c86b14286c66d3047d8267e9f4a420fa325d8953`
-- Created: `2018-01-10T06:05:48.235351121Z`
+- Image ID: `sha256:b0877961ab414c06f57c71a22e60b60b091b7ed9e6906f972010a717596c389b`
+- Created: `2018-01-18T17:30:54.173514275Z`
 - Virtual Size: ~ 65.61 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -22,6 +22,6 @@
   - `PHP_ASC_URL=https://secure.php.net/get/php-7.2.1.tar.xz.asc/from/this/mirror`
   - `PHP_SHA256=6c6cf82fda6660ed963821eb0525214bb3547e8e29f447b9c15b2d8e6efd8822`
   - `PHP_MD5=`
-  - `ADMINER_VERSION=4.3.1`
-  - `ADMINER_DOWNLOAD_SHA256=71688c5db4d4e504c48c26ec2966ad85e721ef61e0377c5505cfb50b026d5491`
-  - `ADMINER_SRC_DOWNLOAD_SHA256=fd016c93bb3bb8e85ed9cf826064584012c4db83f30c4948d701250e29a6d953`
+  - `ADMINER_VERSION=4.4.0`
+  - `ADMINER_DOWNLOAD_SHA256=8c68ecabff07ea2207a9a8a634966cf0da8c20ab8299148329b0bff44d6174d7`
+  - `ADMINER_SRC_DOWNLOAD_SHA256=ecd89a033d8561ffa65edd305cd18eec7538d8632e82dcec32cb9e2b05572f58`
