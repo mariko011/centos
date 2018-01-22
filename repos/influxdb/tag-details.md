@@ -3,12 +3,12 @@
 # Tags of `influxdb`
 
 -	[`influxdb:1.3`](#influxdb13)
--	[`influxdb:1.3.8`](#influxdb138)
--	[`influxdb:1.3.8-alpine`](#influxdb138-alpine)
--	[`influxdb:1.3.8-data`](#influxdb138-data)
--	[`influxdb:1.3.8-data-alpine`](#influxdb138-data-alpine)
--	[`influxdb:1.3.8-meta`](#influxdb138-meta)
--	[`influxdb:1.3.8-meta-alpine`](#influxdb138-meta-alpine)
+-	[`influxdb:1.3.9`](#influxdb139)
+-	[`influxdb:1.3.9-alpine`](#influxdb139-alpine)
+-	[`influxdb:1.3.9-data`](#influxdb139-data)
+-	[`influxdb:1.3.9-data-alpine`](#influxdb139-data-alpine)
+-	[`influxdb:1.3.9-meta`](#influxdb139-meta)
+-	[`influxdb:1.3.9-meta-alpine`](#influxdb139-meta-alpine)
 -	[`influxdb:1.3-alpine`](#influxdb13-alpine)
 -	[`influxdb:1.3-data`](#influxdb13-data)
 -	[`influxdb:1.3-data-alpine`](#influxdb13-data-alpine)
@@ -274,7 +274,7 @@ CMD ["influxd"]
 		Size: 1.2 KB (1165 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `influxdb:1.3.8`
+## `influxdb:1.3.9`
 
 ```console
 $ docker pull influxdb@sha256:8c3157245ee6863203cf2f410d026b8e3683b502f9bd967728337ece4c730cc0
@@ -286,7 +286,7 @@ $ docker pull influxdb@sha256:8c3157245ee6863203cf2f410d026b8e3683b502f9bd967728
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
 
-### `influxdb:1.3.8` - linux; amd64
+### `influxdb:1.3.9` - linux; amd64
 
 ```console
 $ docker pull influxdb@sha256:f6d904821a28793e7c4dd0a39bcc19886e0629f86345bec02be3a52270760ec1
@@ -365,7 +365,7 @@ CMD ["influxd"]
 		Size: 1.2 KB (1167 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `influxdb:1.3.8` - linux; arm variant v7
+### `influxdb:1.3.9` - linux; arm variant v7
 
 ```console
 $ docker pull influxdb@sha256:7b2a44915250618e442bbd08d0f9ff90b3411b2dc41fa990db701a4d7a5753b2
@@ -444,7 +444,7 @@ CMD ["influxd"]
 		Size: 1.2 KB (1167 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `influxdb:1.3.8` - linux; arm64 variant v8
+### `influxdb:1.3.9` - linux; arm64 variant v8
 
 ```console
 $ docker pull influxdb@sha256:ad55581ff95f070c57fa52a2bc2b918f68b3f4974bb4813c3c5d5c36c4715961
@@ -523,7 +523,7 @@ CMD ["influxd"]
 		Size: 1.2 KB (1165 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `influxdb:1.3.8-alpine`
+## `influxdb:1.3.9-alpine`
 
 ```console
 $ docker pull influxdb@sha256:c21fe86b6f17c0ed47d9a15d8267f9eed75667b9d6293bf93d7367e6bae99ada
@@ -533,7 +533,7 @@ $ docker pull influxdb@sha256:c21fe86b6f17c0ed47d9a15d8267f9eed75667b9d6293bf93d
 -	Platforms:
 	-	linux; amd64
 
-### `influxdb:1.3.8-alpine` - linux; amd64
+### `influxdb:1.3.9-alpine` - linux; amd64
 
 ```console
 $ docker pull influxdb@sha256:0277feafddf063b44b55fb843a191aac3864594b6e2858d8150f97c7ad11b4c6
@@ -606,7 +606,7 @@ CMD ["influxd"]
 		Size: 1.2 KB (1165 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `influxdb:1.3.8-data`
+## `influxdb:1.3.9-data`
 
 ```console
 $ docker pull influxdb@sha256:8bc5d392ca6db3a22e8d46f8a2c58142fc355a423b4984e597772a05d411a3aa
@@ -616,7 +616,7 @@ $ docker pull influxdb@sha256:8bc5d392ca6db3a22e8d46f8a2c58142fc355a423b4984e597
 -	Platforms:
 	-	linux; amd64
 
-### `influxdb:1.3.8-data` - linux; amd64
+### `influxdb:1.3.9-data` - linux; amd64
 
 ```console
 $ docker pull influxdb@sha256:c3850ce70a93708b349abe7bf4bc1c8ceb5feac9521118a97f68295c6880bf73
@@ -695,7 +695,7 @@ CMD ["influxd"]
 		Size: 1.2 KB (1167 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `influxdb:1.3.8-data-alpine`
+## `influxdb:1.3.9-data-alpine`
 
 ```console
 $ docker pull influxdb@sha256:9fe890aaa66a8412aad3c075529d4a1847cdaadfa56caaf87a3beca7b11cf89d
@@ -705,7 +705,7 @@ $ docker pull influxdb@sha256:9fe890aaa66a8412aad3c075529d4a1847cdaadfa56caaf87a
 -	Platforms:
 	-	linux; amd64
 
-### `influxdb:1.3.8-data-alpine` - linux; amd64
+### `influxdb:1.3.9-data-alpine` - linux; amd64
 
 ```console
 $ docker pull influxdb@sha256:ec3576ee8a3c3cf59a39a21a994c3279261dd437038754ba879911eee189ffb4
@@ -778,7 +778,7 @@ CMD ["influxd"]
 		Size: 1.2 KB (1167 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `influxdb:1.3.8-meta`
+## `influxdb:1.3.9-meta`
 
 ```console
 $ docker pull influxdb@sha256:0eb4635896d66f55dcd4025345406c276cbef6e3478086bfcbcc0d8954c7da5f
@@ -788,7 +788,7 @@ $ docker pull influxdb@sha256:0eb4635896d66f55dcd4025345406c276cbef6e3478086bfcb
 -	Platforms:
 	-	linux; amd64
 
-### `influxdb:1.3.8-meta` - linux; amd64
+### `influxdb:1.3.9-meta` - linux; amd64
 
 ```console
 $ docker pull influxdb@sha256:a54943b13dc636ddae94fa6996686870bd21305e4999d1da9e7e5d9faf8a6cf6
@@ -861,7 +861,7 @@ CMD ["influxd-meta"]
 		Size: 375.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `influxdb:1.3.8-meta-alpine`
+## `influxdb:1.3.9-meta-alpine`
 
 ```console
 $ docker pull influxdb@sha256:ed8d9d94967e2abef6d9ee2a2b7f405b136e32757c008e321ddccca8cd9cfa43
@@ -871,7 +871,7 @@ $ docker pull influxdb@sha256:ed8d9d94967e2abef6d9ee2a2b7f405b136e32757c008e321d
 -	Platforms:
 	-	linux; amd64
 
-### `influxdb:1.3.8-meta-alpine` - linux; amd64
+### `influxdb:1.3.9-meta-alpine` - linux; amd64
 
 ```console
 $ docker pull influxdb@sha256:7152997ca42ed353917c1d178060c8490565129c3471305c4a81d1883bb0cede
