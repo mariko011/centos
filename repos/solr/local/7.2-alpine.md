@@ -1,9 +1,9 @@
-# `solr:7.2.0-alpine`
+# `solr:7.2.1-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c905c248d5133e434dc188b62f6f3f4bb755389e7f584abcc6804a2cfbaa6c91`
-- Created: `2018-01-10T08:45:08.560005711Z`
+- Image ID: `sha256:de08db937a953ef6edbe301a7ee72334e34aa722b8beb4ba72632bad5dfbe3dc`
+- Created: `2018-01-19T00:04:51.058816961Z`
 - Virtual Size: ~ 274.51 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -19,7 +19,7 @@
   - `SOLR_UID=8983`
   - `SOLR_GROUP=solr`
   - `SOLR_GID=8983`
-  - `SOLR_VERSION=7.2.0`
-  - `SOLR_URL=https://archive.apache.org/dist/lucene/solr/7.2.0/solr-7.2.0.tgz`
-  - `SOLR_SHA256=1b2cedf176a62c259bfa72db5bf0ba18cc3af255bc8e25187d3b58213535011f`
-  - `SOLR_KEYS=E6E21FFCDCEA14C95910EA65051A0FAF76BC6507`
+  - `SOLR_VERSION=7.2.1`
+  - `SOLR_URL=https://archive.apache.org/dist/lucene/solr/7.2.1/solr-7.2.1.tgz`
+  - `SOLR_SHA256=1dbe8dda842d2008210c0c56d56b714713444fb4e05390bb0bcdec29cf957748`
+  - `SOLR_KEYS=052C5B48A480B9CEA9E218A5F98C13CFA5A135D8`

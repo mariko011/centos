@@ -1,9 +1,9 @@
-# `solr:7.2.0-slim`
+# `solr:7.2.1-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d60dc20a87e3a791aeec07c8d4c67f32657aac95ca9d257216b132ae7430a5c7`
-- Created: `2017-12-21T20:57:50.458750872Z`
+- Image ID: `sha256:51d20c7736550b3a9ab9a6a824a05711b0b98f022e1eefdb954c4db945f416de`
+- Created: `2018-01-19T00:05:54.642053844Z`
 - Virtual Size: ~ 391.16 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -20,10 +20,10 @@
   - `SOLR_UID=8983`
   - `SOLR_GROUP=solr`
   - `SOLR_GID=8983`
-  - `SOLR_VERSION=7.2.0`
-  - `SOLR_URL=https://archive.apache.org/dist/lucene/solr/7.2.0/solr-7.2.0.tgz`
-  - `SOLR_SHA256=1b2cedf176a62c259bfa72db5bf0ba18cc3af255bc8e25187d3b58213535011f`
-  - `SOLR_KEYS=E6E21FFCDCEA14C95910EA65051A0FAF76BC6507`
+  - `SOLR_VERSION=7.2.1`
+  - `SOLR_URL=https://archive.apache.org/dist/lucene/solr/7.2.1/solr-7.2.1.tgz`
+  - `SOLR_SHA256=1dbe8dda842d2008210c0c56d56b714713444fb4e05390bb0bcdec29cf957748`
+  - `SOLR_KEYS=052C5B48A480B9CEA9E218A5F98C13CFA5A135D8`
 
 ## `dpkg` (`.deb`-based packages)
 
