@@ -3179,14 +3179,9 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient20/copyright`, `/usr/share
 - `public-domain`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mysql-5.7=5.7.20-0ubuntu0.16.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.20-0ubuntu0.16.04.1.dsc' mysql-5.7_5.7.20-0ubuntu0.16.04.1.dsc 3355 SHA256:eae2eb453b1f0611ec9e8acaa3ff8557237fed9255c7d2c69161bbf72c0c0c20
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.20.orig.tar.gz' mysql-5.7_5.7.20.orig.tar.gz 48833145 SHA256:260582844ac18222ce2826f48b6c7ca387990b19ddb88331af26738b394e42a4
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.20-0ubuntu0.16.04.1.debian.tar.xz' mysql-5.7_5.7.20-0ubuntu0.16.04.1.debian.tar.xz 249780 SHA256:00a6b9a5830fc74033632b771ff3abc07e80c66c8beabcf9167c3942d6ae9b43
-```
 
 ### `dpkg` source package: `nas=1.9.4-4`
 

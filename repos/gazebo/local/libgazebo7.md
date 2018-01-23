@@ -3745,14 +3745,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `GPL-2`
 - `redpine-signals`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=4.4.0-109.132
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-109.132.dsc' linux_4.4.0-109.132.dsc 9364 SHA256:eabc8e29043269053fa7b051db7de4f90e2efcbdce42e0b824525995da617010
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-109.132.diff.gz' linux_4.4.0-109.132.diff.gz 13783460 SHA256:a4fd9d2d69778d0203d6c1fa01721f49a816d574bb13c6229f0abc6e7ac27239
-```
 
 ### `dpkg` source package: `llvm-toolchain-5.0=1:5.0-3~16.04.1`
 
@@ -4127,14 +4122,9 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mysql-5.7=5.7.20-0ubuntu0.16.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.20-0ubuntu0.16.04.1.dsc' mysql-5.7_5.7.20-0ubuntu0.16.04.1.dsc 3355 SHA256:eae2eb453b1f0611ec9e8acaa3ff8557237fed9255c7d2c69161bbf72c0c0c20
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.20.orig.tar.gz' mysql-5.7_5.7.20.orig.tar.gz 48833145 SHA256:260582844ac18222ce2826f48b6c7ca387990b19ddb88331af26738b394e42a4
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.20-0ubuntu0.16.04.1.debian.tar.xz' mysql-5.7_5.7.20-0ubuntu0.16.04.1.debian.tar.xz 249780 SHA256:00a6b9a5830fc74033632b771ff3abc07e80c66c8beabcf9167c3942d6ae9b43
-```
 
 ### `dpkg` source package: `nas=1.9.4-4`
 
