@@ -87,20 +87,13 @@ Licenses: (parsed from: `/usr/share/doc/adwaita-icon-theme/copyright`)
 - `GPL-unspecified`
 - `LGPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris adwaita-icon-theme=3.26.1-2
-'http://deb.debian.org/debian/pool/main/a/adwaita-icon-theme/adwaita-icon-theme_3.26.1-2.dsc' adwaita-icon-theme_3.26.1-2.dsc 2222 SHA256:836fc7e148a52439eb79a93c33f1e365a81e610a3c24158ff9fecda5638550fd
-'http://deb.debian.org/debian/pool/main/a/adwaita-icon-theme/adwaita-icon-theme_3.26.1.orig.tar.xz' adwaita-icon-theme_3.26.1.orig.tar.xz 20729696 SHA256:28ba7392c7761996efd780779167ea6c940eedfb1bf37cfe9bccb7021f54d79d
-'http://deb.debian.org/debian/pool/main/a/adwaita-icon-theme/adwaita-icon-theme_3.26.1-2.debian.tar.xz' adwaita-icon-theme_3.26.1-2.debian.tar.xz 27716 SHA256:d5c0b2ab165f436452f33835113ddd4d50a61b30ce9af0213c5985bece8f8f64
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/adwaita-icon-theme/3.26.1-2/
 
-- https://sources.debian.net/src/adwaita-icon-theme/3.26.1-2/ (for browsing the source)
-- https://sources.debian.net/src/adwaita-icon-theme/3.26.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/adwaita-icon-theme/3.26.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `alsa-lib=1.1.3-5`
 
@@ -261,20 +254,13 @@ Licenses: (parsed from: `/usr/share/doc/libatk1.0-0/copyright`, `/usr/share/doc/
 
 - `LGPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris atk1.0=2.26.1-2
-'http://deb.debian.org/debian/pool/main/a/atk1.0/atk1.0_2.26.1-2.dsc' atk1.0_2.26.1-2.dsc 2732 SHA256:b6f3f835326346b4f129e82e9eb113b195fd9c4dd806ee15b658377c4f167ee4
-'http://deb.debian.org/debian/pool/main/a/atk1.0/atk1.0_2.26.1.orig.tar.xz' atk1.0_2.26.1.orig.tar.xz 711960 SHA256:ef00ff6b83851dddc8db38b4d9faeffb99572ba150b0664ee02e46f015ea97cb
-'http://deb.debian.org/debian/pool/main/a/atk1.0/atk1.0_2.26.1-2.debian.tar.xz' atk1.0_2.26.1-2.debian.tar.xz 11328 SHA256:0cea941da63e0491838568026b8d8db2a975237a8a68a10b12dd0fc17d56b3ab
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/atk1.0/2.26.1-2/
 
-- https://sources.debian.net/src/atk1.0/2.26.1-2/ (for browsing the source)
-- https://sources.debian.net/src/atk1.0/2.26.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/atk1.0/2.26.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
@@ -1676,20 +1662,13 @@ Licenses: (parsed from: `/usr/share/doc/libgail-common/copyright`, `/usr/share/d
 - `LGPL-2`
 - `other`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gtk+2.0=2.24.31-5
-'http://deb.debian.org/debian/pool/main/g/gtk+2.0/gtk+2.0_2.24.31-5.dsc' gtk+2.0_2.24.31-5.dsc 3680 SHA256:ca4e09addbc01911c7ef45c5bec06f812af28682dc3f48660c3e5ab5705bc093
-'http://deb.debian.org/debian/pool/main/g/gtk+2.0/gtk+2.0_2.24.31.orig.tar.xz' gtk+2.0_2.24.31.orig.tar.xz 12805344 SHA256:68c1922732c7efc08df4656a5366dcc3afdc8791513400dac276009b40954658
-'http://deb.debian.org/debian/pool/main/g/gtk+2.0/gtk+2.0_2.24.31-5.debian.tar.xz' gtk+2.0_2.24.31-5.debian.tar.xz 87716 SHA256:6299cbc82227e4d3984ec1d1d2c8fa161b92d7d222bcfaba8ecb24ddfb1aecef
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gtk+2.0/2.24.31-5/
 
-- https://sources.debian.net/src/gtk+2.0/2.24.31-5/ (for browsing the source)
-- https://sources.debian.net/src/gtk+2.0/2.24.31-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gtk+2.0/2.24.31-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gtk+3.0=3.22.26-2`
 
@@ -3046,20 +3025,13 @@ Licenses: (parsed from: `/usr/share/doc/libsoup-gnome2.4-1/copyright`, `/usr/sha
 - `LGPL-2`
 - `LGPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libsoup2.4=2.60.2-2
-'http://deb.debian.org/debian/pool/main/libs/libsoup2.4/libsoup2.4_2.60.2-2.dsc' libsoup2.4_2.60.2-2.dsc 2692 SHA256:b1f5ecc4b51bfad44fd1c53e50bd5022768ae37081d535fde29092025f9bde8f
-'http://deb.debian.org/debian/pool/main/libs/libsoup2.4/libsoup2.4_2.60.2.orig.tar.xz' libsoup2.4_2.60.2.orig.tar.xz 1839800 SHA256:7263cfe18872e2e652c196f5667e514616d9c97c861dfca82a65a55f45f0da01
-'http://deb.debian.org/debian/pool/main/libs/libsoup2.4/libsoup2.4_2.60.2-2.debian.tar.xz' libsoup2.4_2.60.2-2.debian.tar.xz 16624 SHA256:1487d7b51dc13528a1884ee42d46103ee87a174530da70321b2c0818a258f79f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libsoup2.4/2.60.2-2/
 
-- https://sources.debian.net/src/libsoup2.4/2.60.2-2/ (for browsing the source)
-- https://sources.debian.net/src/libsoup2.4/2.60.2-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libsoup2.4/2.60.2-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libssh2=1.8.0-1`
 
@@ -4930,21 +4902,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2017c-1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017c-1.dsc' tzdata_2017c-1.dsc 2247 SHA256:624e5c2d79af706c784c375b45ea7fbba3ebf289a24a08df280fef133796ae9b
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017c.orig.tar.gz' tzdata_2017c.orig.tar.gz 335571 SHA256:d6543f92a929826318e2f44ff3a7611ce5f565a43e10250b42599d0ba4cbd90b
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017c.orig.tar.gz.asc' tzdata_2017c.orig.tar.gz.asc 801 SHA256:89b6e3d1367c2a15bf7e2aabb90fc062b89c398ef5475b00ede3a9602cc1736a
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017c-1.debian.tar.xz' tzdata_2017c-1.debian.tar.xz 103892 SHA256:beca59bfd938b660c61a5ff33e733afed7e6e18e025296724b34e62d1ee1526b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2017c-1/
 
-- https://sources.debian.net/src/tzdata/2017c-1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2017c-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2017c-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0036`
 
