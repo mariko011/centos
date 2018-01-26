@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:94ad0846ea2a2be6d1b98892194950c51bdbab6eafcd2594c8b77252a262dad2`
-- Created: `2018-01-16T03:33:02.314110037Z`
-- Virtual Size: ~ 221.76 Mb  
+- Image ID: `sha256:61f49e333a64fc9837c773550a2a6b9ffea0129502f17db631b413aa1e377d77`
+- Created: `2018-01-25T18:50:02.92144128Z`
+- Virtual Size: ~ 221.97 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -502,22 +502,27 @@ $ apt-get source -qq --print-uris e2fsprogs=1.42.9-3ubuntu1.3
 'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.42.9-3ubuntu1.3.debian.tar.gz' e2fsprogs_1.42.9-3ubuntu1.3.debian.tar.gz 137885 SHA256:541cf9e092ef6d6e45fddd5fa0b44903f597ec045cbb1358db109e994e97fceb
 ```
 
-### `dpkg` source package: `eglibc=2.19-0ubuntu6.13`
+### `dpkg` source package: `eglibc=2.19-0ubuntu6.14`
 
 Binary Packages:
 
-- `libc-bin=2.19-0ubuntu6.13`
-- `libc6:amd64=2.19-0ubuntu6.13`
-- `multiarch-support=2.19-0ubuntu6.13`
+- `libc-bin=2.19-0ubuntu6.14`
+- `libc6:amd64=2.19-0ubuntu6.14`
+- `multiarch-support=2.19-0ubuntu6.14`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/multiarch-support/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris eglibc=2.19-0ubuntu6.14
+'http://archive.ubuntu.com/ubuntu/pool/main/e/eglibc/eglibc_2.19-0ubuntu6.14.dsc' eglibc_2.19-0ubuntu6.14.dsc 7195 SHA256:1c40e2484f78cc082d4c5e5f39001f3a9bca29575501f187940ca58fe7035244
+'http://archive.ubuntu.com/ubuntu/pool/main/e/eglibc/eglibc_2.19.orig.tar.xz' eglibc_2.19.orig.tar.xz 12610800 SHA256:e5d30be72b702dffae527779af1be755f0dfbf13c171998a04f7265cd4da131f
+'http://archive.ubuntu.com/ubuntu/pool/main/e/eglibc/eglibc_2.19-0ubuntu6.14.debian.tar.xz' eglibc_2.19-0ubuntu6.14.debian.tar.xz 1043124 SHA256:a8c1f7278e32b4148d1d0a76d213ee6b35eca51d0ed647d3a7c4d2468a02d8d6
+```
 
 ### `dpkg` source package: `eject=2.1.5+deb1+cvs20081104-13.1ubuntu0.14.04.1`
 
@@ -859,19 +864,24 @@ $ apt-get source -qq --print-uris insserv=1.14.0-5ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/i/insserv/insserv_1.14.0-5ubuntu2.debian.tar.gz' insserv_1.14.0-5ubuntu2.debian.tar.gz 55250 SHA256:d1cb4460a590864e858b21180dc24a72ba705f3eb75a27210f349b47de7a60d6
 ```
 
-### `dpkg` source package: `iproute2=3.12.0-2ubuntu1.1`
+### `dpkg` source package: `iproute2=3.12.0-2ubuntu1.2`
 
 Binary Packages:
 
-- `iproute2=3.12.0-2ubuntu1.1`
+- `iproute2=3.12.0-2ubuntu1.2`
 
 Licenses: (parsed from: `/usr/share/doc/iproute2/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris iproute2=3.12.0-2ubuntu1.2
+'http://archive.ubuntu.com/ubuntu/pool/main/i/iproute2/iproute2_3.12.0-2ubuntu1.2.dsc' iproute2_3.12.0-2ubuntu1.2.dsc 2379 SHA256:3e952f2fa4647c731afaf911f3a9aa5efc9f71a568b7c10a2a3cc1be337f3b41
+'http://archive.ubuntu.com/ubuntu/pool/main/i/iproute2/iproute2_3.12.0.orig.tar.xz' iproute2_3.12.0.orig.tar.xz 425192 SHA256:44f600475d27a421688cda2294efec38513473a740c24ead78eb20005f08f111
+'http://archive.ubuntu.com/ubuntu/pool/main/i/iproute2/iproute2_3.12.0-2ubuntu1.2.debian.tar.gz' iproute2_3.12.0-2ubuntu1.2.debian.tar.gz 32763 SHA256:178e2f0ed33f88d2d4629616cb4d2ad81ac0f6625c188e5ef12345057423f7e6
+```
 
 ### `dpkg` source package: `iputils=3:20121221-4ubuntu1.1`
 
@@ -1408,14 +1418,9 @@ Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`)
 - `LGPL`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libtasn1-6=3.4-3ubuntu0.5
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_3.4-3ubuntu0.5.dsc' libtasn1-6_3.4-3ubuntu0.5.dsc 2477 SHA256:d03e9b44cadd59ada08c0e57af62efef25f380f84f92a718fece65cf95deb5b0
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_3.4.orig.tar.gz' libtasn1-6_3.4.orig.tar.gz 1844115 SHA256:f353507a458fe2372b791016a056c95946eebfc7256b49013851f134a5e6acc8
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_3.4-3ubuntu0.5.debian.tar.gz' libtasn1-6_3.4-3ubuntu0.5.debian.tar.gz 69101 SHA256:5c87d04084f98b7fecebe5d013a2035c423f316f44e8d33b9c17785d7b47fca4
-```
 
 ### `dpkg` source package: `libterm-ui-perl=0.42-1`
 
