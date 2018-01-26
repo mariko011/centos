@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b9ae9296dbbf6cb24059c9526041143ddea5669635198166f436ccee94da45ef`
-- Created: `2018-01-16T07:44:50.445615578Z`
-- Virtual Size: ~ 399.18 Mb  
+- Image ID: `sha256:653862aa0ee840388be3cbc77edf77136eadbcb609552e7e82599a1a673da5ff`
+- Created: `2018-01-26T01:23:07.318049361Z`
+- Virtual Size: ~ 399.39 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/opt/ibm/docker/docker-server","run","defaultServer"]`
@@ -499,22 +499,27 @@ $ apt-get source -qq --print-uris gccgo-6=6.0.1-0ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gccgo-6/gccgo-6_6.0.1-0ubuntu1.diff.gz' gccgo-6_6.0.1-0ubuntu1.diff.gz 633954 SHA256:839eea6c2d23670f09b642864ff61e3097b47391cb508a5997538750ff8678f6
 ```
 
-### `dpkg` source package: `glibc=2.23-0ubuntu9`
+### `dpkg` source package: `glibc=2.23-0ubuntu10`
 
 Binary Packages:
 
-- `libc-bin=2.23-0ubuntu9`
-- `libc6:amd64=2.23-0ubuntu9`
-- `multiarch-support=2.23-0ubuntu9`
+- `libc-bin=2.23-0ubuntu10`
+- `libc6:amd64=2.23-0ubuntu10`
+- `multiarch-support=2.23-0ubuntu10`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/multiarch-support/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris glibc=2.23-0ubuntu10
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23-0ubuntu10.dsc' glibc_2.23-0ubuntu10.dsc 8231 SHA256:422c3e17758e3378474bed63e2ed140364045c671f913fa99928a6eeff64adb6
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23.orig.tar.xz' glibc_2.23.orig.tar.xz 13849968 SHA256:bf6c528eeebefcacc295270068b79330c1fb2b22458ff66285b4175d23442c96
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23-0ubuntu10.debian.tar.xz' glibc_2.23-0ubuntu10.debian.tar.xz 1226400 SHA256:4918baa16af87741a50aa349ebe12294f856d73bd052d8558f5385c0607fc05e
+```
 
 ### `dpkg` source package: `gnupg=1.4.20-1ubuntu3.1`
 
