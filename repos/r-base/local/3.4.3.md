@@ -1025,16 +1025,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris gcc-7=7.2.0-17
-'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.2.0-17.dsc' gcc-7_7.2.0-17.dsc 33199 SHA256:7133615474abfd8943cddb83fb8a77c76f1d4aef2305eab41b68716fbdbbf6c2
-'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.2.0.orig.tar.gz' gcc-7_7.2.0.orig.tar.gz 70028185 SHA256:a1050ca96c2b931ad82da3caf2868cd68b95a62151ac9af53fbe9b69b6e9b651
-'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.2.0-17.diff.gz' gcc-7_7.2.0-17.diff.gz 2889988 SHA256:2019552f74d801cf96762b02cf1436bec40cf71eff25b5fa54f2bf9636eec126
+'http://http.debian.net/debian/pool/main/g/gcc-7/gcc-7_7.2.0-17.dsc' gcc-7_7.2.0-17.dsc 33199 SHA256:7133615474abfd8943cddb83fb8a77c76f1d4aef2305eab41b68716fbdbbf6c2
+'http://http.debian.net/debian/pool/main/g/gcc-7/gcc-7_7.2.0.orig.tar.gz' gcc-7_7.2.0.orig.tar.gz 70028185 SHA256:a1050ca96c2b931ad82da3caf2868cd68b95a62151ac9af53fbe9b69b6e9b651
+'http://http.debian.net/debian/pool/main/g/gcc-7/gcc-7_7.2.0-17.diff.gz' gcc-7_7.2.0-17.diff.gz 2889988 SHA256:2019552f74d801cf96762b02cf1436bec40cf71eff25b5fa54f2bf9636eec126
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/gcc-7/7.2.0-17/ (for browsing the source)
-- https://sources.debian.net/src/gcc-7/7.2.0-17/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-7/7.2.0-17/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-defaults=1.173d1`
 
@@ -1128,16 +1122,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris glibc=2.25-3
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.25-3.dsc' glibc_2.25-3.dsc 8788 SHA256:2e201c23c968b7fad1e431c789bf0bb80675f7a2f2ea6032edb29c3ceadd114f
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.25.orig.tar.xz' glibc_2.25.orig.tar.xz 14343292 SHA256:a3dfad3d13c32dc5992031a4305cf96a7bac9ec7ec8b6b4a6ca04203f1de14e5
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.25-3.debian.tar.xz' glibc_2.25-3.debian.tar.xz 1038528 SHA256:307057c235aef50baaa464a8ef4fab71158434fa88bbeaed38581aee69f58bad
+'http://http.debian.net/debian/pool/main/g/glibc/glibc_2.25-3.dsc' glibc_2.25-3.dsc 8788 SHA256:2e201c23c968b7fad1e431c789bf0bb80675f7a2f2ea6032edb29c3ceadd114f
+'http://http.debian.net/debian/pool/main/g/glibc/glibc_2.25.orig.tar.xz' glibc_2.25.orig.tar.xz 14343292 SHA256:a3dfad3d13c32dc5992031a4305cf96a7bac9ec7ec8b6b4a6ca04203f1de14e5
+'http://http.debian.net/debian/pool/main/g/glibc/glibc_2.25-3.debian.tar.xz' glibc_2.25-3.debian.tar.xz 1038528 SHA256:307057c235aef50baaa464a8ef4fab71158434fa88bbeaed38581aee69f58bad
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/glibc/2.25-3/ (for browsing the source)
-- https://sources.debian.net/src/glibc/2.25-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glibc/2.25-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.1.2+dfsg-1.1`
 
@@ -1586,16 +1574,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris krb5=1.15.2-2
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.15.2-2.dsc' krb5_1.15.2-2.dsc 3359 SHA256:a2eef83c02667ef7d70d2a9f010eefa08a8f0a60160bee32c325c90f106348a1
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.15.2.orig.tar.gz' krb5_1.15.2.orig.tar.gz 9380755 SHA256:1639e392edf25e3b6cfec2ae68f97eb53e07c2dbe74bfeede0108465d5d1c87e
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.15.2-2.debian.tar.xz' krb5_1.15.2-2.debian.tar.xz 143632 SHA256:aab7c3c58e6851e143c740ecf4bcd84654edaa938db81f2df1667bff978ac5be
+'http://http.debian.net/debian/pool/main/k/krb5/krb5_1.15.2-2.dsc' krb5_1.15.2-2.dsc 3359 SHA256:a2eef83c02667ef7d70d2a9f010eefa08a8f0a60160bee32c325c90f106348a1
+'http://http.debian.net/debian/pool/main/k/krb5/krb5_1.15.2.orig.tar.gz' krb5_1.15.2.orig.tar.gz 9380755 SHA256:1639e392edf25e3b6cfec2ae68f97eb53e07c2dbe74bfeede0108465d5d1c87e
+'http://http.debian.net/debian/pool/main/k/krb5/krb5_1.15.2-2.debian.tar.xz' krb5_1.15.2-2.debian.tar.xz 143632 SHA256:aab7c3c58e6851e143c740ecf4bcd84654edaa938db81f2df1667bff978ac5be
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/krb5/1.15.2-2/ (for browsing the source)
-- https://sources.debian.net/src/krb5/1.15.2-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/krb5/1.15.2-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lapack=3.7.1-4`
 
@@ -2539,20 +2521,13 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `X11 Dual License`
 - `Xen-interface`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=4.14.2-1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.14.2-1.dsc' linux_4.14.2-1.dsc 134788 SHA256:74243ba499148d1b4ae17e3171c57d33c7f73799f6420edf090d32c39273507d
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.14.2.orig.tar.xz' linux_4.14.2.orig.tar.xz 103658188 SHA256:3953b980320ea155c80f00588567fc13f8135c250716d8f718df8fa264f9411d
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.14.2-1.debian.tar.xz' linux_4.14.2-1.debian.tar.xz 984964 SHA256:2e2e50fedaa623b5b02975fb555fb0eb8cb6724bb44fb6d8f7f194b1fe694c9d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/linux/4.14.2-1/
 
-- https://sources.debian.net/src/linux/4.14.2-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/4.14.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/4.14.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `littler=0.3.2-1`
 
@@ -2691,16 +2666,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris mgcv=1.8-22-1
-'http://deb.debian.org/debian/pool/main/m/mgcv/mgcv_1.8-22-1.dsc' mgcv_1.8-22-1.dsc 1643 SHA256:327cf64cde242c621efe9b2736511415df9c8f72f5473debef5e7956530ebb76
-'http://deb.debian.org/debian/pool/main/m/mgcv/mgcv_1.8-22.orig.tar.gz' mgcv_1.8-22.orig.tar.gz 859944 SHA256:5a3bb235cc798f617392ef4996f2d502233998b041db2a68377f3cea94b98694
-'http://deb.debian.org/debian/pool/main/m/mgcv/mgcv_1.8-22-1.diff.gz' mgcv_1.8-22-1.diff.gz 5312 SHA256:3dc37478710f1070315b8d321359a86a0042ef7a8e378361dffa899d0a4609c9
+'http://http.debian.net/debian/pool/main/m/mgcv/mgcv_1.8-22-1.dsc' mgcv_1.8-22-1.dsc 1643 SHA256:327cf64cde242c621efe9b2736511415df9c8f72f5473debef5e7956530ebb76
+'http://http.debian.net/debian/pool/main/m/mgcv/mgcv_1.8-22.orig.tar.gz' mgcv_1.8-22.orig.tar.gz 859944 SHA256:5a3bb235cc798f617392ef4996f2d502233998b041db2a68377f3cea94b98694
+'http://http.debian.net/debian/pool/main/m/mgcv/mgcv_1.8-22-1.diff.gz' mgcv_1.8-22-1.diff.gz 5312 SHA256:3dc37478710f1070315b8d321359a86a0042ef7a8e378361dffa899d0a4609c9
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/mgcv/1.8-22-1/ (for browsing the source)
-- https://sources.debian.net/src/mgcv/1.8-22-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mgcv/1.8-22-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mpclib3=1.0.3-2`
 
@@ -3402,16 +3371,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris rpart=4.1-11-1
-'http://deb.debian.org/debian/pool/main/r/rpart/rpart_4.1-11-1.dsc' rpart_4.1-11-1.dsc 1653 SHA256:3fab69335c71d1520b2bd2df9b0b2d2fc1763a3496d27c5b9617c5042d16a4e8
-'http://deb.debian.org/debian/pool/main/r/rpart/rpart_4.1-11.orig.tar.gz' rpart_4.1-11.orig.tar.gz 819692 SHA256:38ab80959f59bcdd2c4c72860e8dd0deab0307668cbbf24f96014d7a2496ad98
-'http://deb.debian.org/debian/pool/main/r/rpart/rpart_4.1-11-1.diff.gz' rpart_4.1-11-1.diff.gz 3753 SHA256:1806131ce814377f931c8be68ad1e7e993bbb6ed2c90a80e65023aca082e2450
+'http://http.debian.net/debian/pool/main/r/rpart/rpart_4.1-11-1.dsc' rpart_4.1-11-1.dsc 1653 SHA256:3fab69335c71d1520b2bd2df9b0b2d2fc1763a3496d27c5b9617c5042d16a4e8
+'http://http.debian.net/debian/pool/main/r/rpart/rpart_4.1-11.orig.tar.gz' rpart_4.1-11.orig.tar.gz 819692 SHA256:38ab80959f59bcdd2c4c72860e8dd0deab0307668cbbf24f96014d7a2496ad98
+'http://http.debian.net/debian/pool/main/r/rpart/rpart_4.1-11-1.diff.gz' rpart_4.1-11-1.diff.gz 3753 SHA256:1806131ce814377f931c8be68ad1e7e993bbb6ed2c90a80e65023aca082e2450
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/rpart/4.1-11-1/ (for browsing the source)
-- https://sources.debian.net/src/rpart/4.1-11-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/rpart/4.1-11-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rtmpdump=2.4+20151223.gitfa8646d.1-1`
 
@@ -3718,21 +3681,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2017c-1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017c-1.dsc' tzdata_2017c-1.dsc 2247 SHA256:624e5c2d79af706c784c375b45ea7fbba3ebf289a24a08df280fef133796ae9b
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017c.orig.tar.gz' tzdata_2017c.orig.tar.gz 335571 SHA256:d6543f92a929826318e2f44ff3a7611ce5f565a43e10250b42599d0ba4cbd90b
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017c.orig.tar.gz.asc' tzdata_2017c.orig.tar.gz.asc 801 SHA256:89b6e3d1367c2a15bf7e2aabb90fc062b89c398ef5475b00ede3a9602cc1736a
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017c-1.debian.tar.xz' tzdata_2017c-1.debian.tar.xz 103892 SHA256:beca59bfd938b660c61a5ff33e733afed7e6e18e025296724b34e62d1ee1526b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2017c-1/
 
-- https://sources.debian.net/src/tzdata/2017c-1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2017c-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2017c-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0036`
 
