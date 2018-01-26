@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d3e338b73ce37313d951ba0d19595d37c90cfcdbb75cf0f3e766f262483f8c56`
-- Created: `2018-01-16T02:08:24.850166886Z`
-- Virtual Size: ~ 586.97 Mb  
+- Image ID: `sha256:afeb36e9b4936622f455cb07d5a852d27847272ddb0e1ab367138729a1b87a71`
+- Created: `2018-01-25T23:28:48.510126257Z`
+- Virtual Size: ~ 587.27 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -902,24 +902,29 @@ $ apt-get source -qq --print-uris e2fsprogs=1.42.9-3ubuntu1.3
 'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.42.9-3ubuntu1.3.debian.tar.gz' e2fsprogs_1.42.9-3ubuntu1.3.debian.tar.gz 137885 SHA256:541cf9e092ef6d6e45fddd5fa0b44903f597ec045cbb1358db109e994e97fceb
 ```
 
-### `dpkg` source package: `eglibc=2.19-0ubuntu6.13`
+### `dpkg` source package: `eglibc=2.19-0ubuntu6.14`
 
 Binary Packages:
 
-- `libc-bin=2.19-0ubuntu6.13`
-- `libc-dev-bin=2.19-0ubuntu6.13`
-- `libc6:amd64=2.19-0ubuntu6.13`
-- `libc6-dev:amd64=2.19-0ubuntu6.13`
-- `multiarch-support=2.19-0ubuntu6.13`
+- `libc-bin=2.19-0ubuntu6.14`
+- `libc-dev-bin=2.19-0ubuntu6.14`
+- `libc6:amd64=2.19-0ubuntu6.14`
+- `libc6-dev:amd64=2.19-0ubuntu6.14`
+- `multiarch-support=2.19-0ubuntu6.14`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`, `/usr/share/doc/multiarch-support/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris eglibc=2.19-0ubuntu6.14
+'http://archive.ubuntu.com/ubuntu/pool/main/e/eglibc/eglibc_2.19-0ubuntu6.14.dsc' eglibc_2.19-0ubuntu6.14.dsc 7195 SHA256:1c40e2484f78cc082d4c5e5f39001f3a9bca29575501f187940ca58fe7035244
+'http://archive.ubuntu.com/ubuntu/pool/main/e/eglibc/eglibc_2.19.orig.tar.xz' eglibc_2.19.orig.tar.xz 12610800 SHA256:e5d30be72b702dffae527779af1be755f0dfbf13c171998a04f7265cd4da131f
+'http://archive.ubuntu.com/ubuntu/pool/main/e/eglibc/eglibc_2.19-0ubuntu6.14.debian.tar.xz' eglibc_2.19-0ubuntu6.14.debian.tar.xz 1043124 SHA256:a8c1f7278e32b4148d1d0a76d213ee6b35eca51d0ed647d3a7c4d2468a02d8d6
+```
 
 ### `dpkg` source package: `eject=2.1.5+deb1+cvs20081104-13.1ubuntu0.14.04.1`
 
@@ -1731,19 +1736,24 @@ $ apt-get source -qq --print-uris insserv=1.14.0-5ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/i/insserv/insserv_1.14.0-5ubuntu2.debian.tar.gz' insserv_1.14.0-5ubuntu2.debian.tar.gz 55250 SHA256:d1cb4460a590864e858b21180dc24a72ba705f3eb75a27210f349b47de7a60d6
 ```
 
-### `dpkg` source package: `iproute2=3.12.0-2ubuntu1.1`
+### `dpkg` source package: `iproute2=3.12.0-2ubuntu1.2`
 
 Binary Packages:
 
-- `iproute2=3.12.0-2ubuntu1.1`
+- `iproute2=3.12.0-2ubuntu1.2`
 
 Licenses: (parsed from: `/usr/share/doc/iproute2/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris iproute2=3.12.0-2ubuntu1.2
+'http://archive.ubuntu.com/ubuntu/pool/main/i/iproute2/iproute2_3.12.0-2ubuntu1.2.dsc' iproute2_3.12.0-2ubuntu1.2.dsc 2379 SHA256:3e952f2fa4647c731afaf911f3a9aa5efc9f71a568b7c10a2a3cc1be337f3b41
+'http://archive.ubuntu.com/ubuntu/pool/main/i/iproute2/iproute2_3.12.0.orig.tar.xz' iproute2_3.12.0.orig.tar.xz 425192 SHA256:44f600475d27a421688cda2294efec38513473a740c24ead78eb20005f08f111
+'http://archive.ubuntu.com/ubuntu/pool/main/i/iproute2/iproute2_3.12.0-2ubuntu1.2.debian.tar.gz' iproute2_3.12.0-2ubuntu1.2.debian.tar.gz 32763 SHA256:178e2f0ed33f88d2d4629616cb4d2ad81ac0f6625c188e5ef12345057423f7e6
+```
 
 ### `dpkg` source package: `iputils=3:20121221-4ubuntu1.1`
 
@@ -2795,12 +2805,12 @@ $ apt-get source -qq --print-uris libsm=2:1.2.1-2
 'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsm/libsm_1.2.1-2.diff.gz' libsm_1.2.1-2.diff.gz 15411 SHA256:cc8cc250f80ffefd644d3619a148bc8cc14c1bc6a5e3331266de356236950153
 ```
 
-### `dpkg` source package: `libtasn1-6=3.4-3ubuntu0.5`
+### `dpkg` source package: `libtasn1-6=3.4-3ubuntu0.6`
 
 Binary Packages:
 
-- `libtasn1-6:amd64=3.4-3ubuntu0.5`
-- `libtasn1-6-dev=3.4-3ubuntu0.5`
+- `libtasn1-6:amd64=3.4-3ubuntu0.6`
+- `libtasn1-6-dev=3.4-3ubuntu0.6`
 
 Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`, `/usr/share/doc/libtasn1-6-dev/copyright`)
 
@@ -2812,10 +2822,10 @@ Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`, `/usr/share/doc/l
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libtasn1-6=3.4-3ubuntu0.5
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_3.4-3ubuntu0.5.dsc' libtasn1-6_3.4-3ubuntu0.5.dsc 2477 SHA256:d03e9b44cadd59ada08c0e57af62efef25f380f84f92a718fece65cf95deb5b0
+$ apt-get source -qq --print-uris libtasn1-6=3.4-3ubuntu0.6
+'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_3.4-3ubuntu0.6.dsc' libtasn1-6_3.4-3ubuntu0.6.dsc 2475 SHA256:44e853613e49d71866684eebd2e50963266887cd4efe3d1e8dec09c2d0af5533
 'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_3.4.orig.tar.gz' libtasn1-6_3.4.orig.tar.gz 1844115 SHA256:f353507a458fe2372b791016a056c95946eebfc7256b49013851f134a5e6acc8
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_3.4-3ubuntu0.5.debian.tar.gz' libtasn1-6_3.4-3ubuntu0.5.debian.tar.gz 69101 SHA256:5c87d04084f98b7fecebe5d013a2035c423f316f44e8d33b9c17785d7b47fca4
+'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_3.4-3ubuntu0.6.debian.tar.gz' libtasn1-6_3.4-3ubuntu0.6.debian.tar.gz 69281 SHA256:6af2857a8a76846ab490a450f47c3c5ba86b1530064e96b1ea881c960b6ffd45
 ```
 
 ### `dpkg` source package: `libterm-ui-perl=0.42-1`
@@ -3425,11 +3435,11 @@ $ apt-get source -qq --print-uris libyaml=0.1.4-3ubuntu3.1
 'http://archive.ubuntu.com/ubuntu/pool/main/liby/libyaml/libyaml_0.1.4-3ubuntu3.1.debian.tar.gz' libyaml_0.1.4-3ubuntu3.1.debian.tar.gz 6404 SHA256:816422e1c743180409aff9247f3a298c8f98260d91da29c7315ce8bd576d53c2
 ```
 
-### `dpkg` source package: `linux=3.13.0-139.188`
+### `dpkg` source package: `linux=3.13.0-141.190`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.13.0-139.188`
+- `linux-libc-dev:amd64=3.13.0-141.190`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -3438,10 +3448,10 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=3.13.0-139.188
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-139.188.dsc' linux_3.13.0-139.188.dsc 7800 SHA256:d6ec199123ce1900c9af8ee6f547ed874341e93f687aece7467eb6a3b3cd0fed
+$ apt-get source -qq --print-uris linux=3.13.0-141.190
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-141.190.dsc' linux_3.13.0-141.190.dsc 8127 SHA256:e9c0fbfc0d963b383b78b873af4d4134e6a4c0ed91e84f741f0518ed58e385dc
 'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0.orig.tar.gz' linux_3.13.0.orig.tar.gz 116419243 SHA256:073d6a589655031564407e349c86a316941fc26ef3444bb73a092b43a48347ec
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-139.188.diff.gz' linux_3.13.0-139.188.diff.gz 9565414 SHA256:0c6638a965525345bc1441062b321980c51de3672857a725275fefcc5654ba6d
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-141.190.diff.gz' linux_3.13.0-141.190.diff.gz 9580743 SHA256:196ef5381ee36f850cc7da74f25e8f56eec6f3e5f5f83afca3fd27d36063717c
 ```
 
 ### `dpkg` source package: `lockfile-progs=0.1.17`
@@ -3737,13 +3747,13 @@ $ apt-get source -qq --print-uris mpfr4=3.1.2-1
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mpfr4/mpfr4_3.1.2-1.debian.tar.gz' mpfr4_3.1.2-1.debian.tar.gz 13473 SHA256:91967c4fe85996504574e882491527d09dad835b4ba05bd4145f3ae8a3f5db0e
 ```
 
-### `dpkg` source package: `mysql-5.5=5.5.58-0ubuntu0.14.04.1`
+### `dpkg` source package: `mysql-5.5=5.5.59-0ubuntu0.14.04.1`
 
 Binary Packages:
 
-- `libmysqlclient-dev=5.5.58-0ubuntu0.14.04.1`
-- `libmysqlclient18:amd64=5.5.58-0ubuntu0.14.04.1`
-- `mysql-common=5.5.58-0ubuntu0.14.04.1`
+- `libmysqlclient-dev=5.5.59-0ubuntu0.14.04.1`
+- `libmysqlclient18:amd64=5.5.59-0ubuntu0.14.04.1`
+- `mysql-common=5.5.59-0ubuntu0.14.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/share/doc/libmysqlclient18/copyright`, `/usr/share/doc/mysql-common/copyright`)
 
@@ -3764,10 +3774,10 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 Source:
 
 ```console
-$ apt-get source -qq --print-uris mysql-5.5=5.5.58-0ubuntu0.14.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.5/mysql-5.5_5.5.58-0ubuntu0.14.04.1.dsc' mysql-5.5_5.5.58-0ubuntu0.14.04.1.dsc 3173 SHA256:bdb16ce0faae67869b03835359153a9e7fcad78bb669217ba032bfa238406e00
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.5/mysql-5.5_5.5.58.orig.tar.gz' mysql-5.5_5.5.58.orig.tar.gz 21045852 SHA256:9b6912faf261555c8975db24a987f63f36aaa28052a301e85538346ace0009b9
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.5/mysql-5.5_5.5.58-0ubuntu0.14.04.1.debian.tar.gz' mysql-5.5_5.5.58-0ubuntu0.14.04.1.debian.tar.gz 314637 SHA256:a5cac9916bdd34cc91c3126fd4e1c8cdf83c12adf2843179a028069047c9397d
+$ apt-get source -qq --print-uris mysql-5.5=5.5.59-0ubuntu0.14.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.5/mysql-5.5_5.5.59-0ubuntu0.14.04.1.dsc' mysql-5.5_5.5.59-0ubuntu0.14.04.1.dsc 3155 SHA256:bb16ca63616e94cce65d36e323710447e802fb8adf79e22267cad124e75af79a
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.5/mysql-5.5_5.5.59.orig.tar.gz' mysql-5.5_5.5.59.orig.tar.gz 21050313 SHA256:ee920177c9dec770c30b673a21143d5e92a67e8207f9b720d41d51cda05d8513
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.5/mysql-5.5_5.5.59-0ubuntu0.14.04.1.debian.tar.gz' mysql-5.5_5.5.59-0ubuntu0.14.04.1.debian.tar.gz 316874 SHA256:cec7c52d3e4ea3a324837789abaf1595cec6a4850899dda71e4677ad4ed7835d
 ```
 
 ### `dpkg` source package: `ncurses=5.9+20140118-1ubuntu1`
@@ -3932,11 +3942,11 @@ $ apt-get source -qq --print-uris openldap=2.4.31-1+nmu2ubuntu8.4
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.31-1+nmu2ubuntu8.4.diff.gz' openldap_2.4.31-1+nmu2ubuntu8.4.diff.gz 176512 SHA256:5bbd0a7eb5123bdf875c794a48634da4b89264cd2d980422cf58e4f408753a59
 ```
 
-### `dpkg` source package: `openssh=1:6.6p1-2ubuntu2.8`
+### `dpkg` source package: `openssh=1:6.6p1-2ubuntu2.10`
 
 Binary Packages:
 
-- `openssh-client=1:6.6p1-2ubuntu2.8`
+- `openssh-client=1:6.6p1-2ubuntu2.10`
 
 Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 
@@ -3945,10 +3955,10 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssh=1:6.6p1-2ubuntu2.8
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_6.6p1-2ubuntu2.8.dsc' openssh_6.6p1-2ubuntu2.8.dsc 2722 SHA256:0b7902592142c7fe811a9206f8fab00478989a62d1ab20e67dabb54b7f203e4e
+$ apt-get source -qq --print-uris openssh=1:6.6p1-2ubuntu2.10
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_6.6p1-2ubuntu2.10.dsc' openssh_6.6p1-2ubuntu2.10.dsc 2708 SHA256:8e65cd7f7001915ce9c3574a7218aa9d1d304ecff6d93132a24fffa39c8deecf
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_6.6p1.orig.tar.gz' openssh_6.6p1.orig.tar.gz 1282502 SHA256:48c1f0664b4534875038004cc4f3555b8329c2a81c1df48db5c517800de203bb
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_6.6p1-2ubuntu2.8.debian.tar.gz' openssh_6.6p1-2ubuntu2.8.debian.tar.gz 192362 SHA256:1213292373e0cfb1d33a2cb506ba9d0f4846bd5471ebc1bf0339bb6591cf7408
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_6.6p1-2ubuntu2.10.debian.tar.gz' openssh_6.6p1-2ubuntu2.10.debian.tar.gz 198960 SHA256:1b77259775baebdc0a74e0edc7b74d3ed5d781ed0a9040b46cca55f2bc4b6b73
 ```
 
 ### `dpkg` source package: `openssl=1.0.1f-1ubuntu2.23`

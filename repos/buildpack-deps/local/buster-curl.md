@@ -650,20 +650,13 @@ Licenses: (parsed from: `/usr/share/doc/gcc-7-base/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-7=7.2.0-16
-'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.2.0-16.dsc' gcc-7_7.2.0-16.dsc 33199 SHA256:ed721d83aee764a928f082a35b3fb75e678921235852b7e96c55ed9b68fb783b
-'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.2.0.orig.tar.gz' gcc-7_7.2.0.orig.tar.gz 70028185 SHA256:a1050ca96c2b931ad82da3caf2868cd68b95a62151ac9af53fbe9b69b6e9b651
-'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.2.0-16.diff.gz' gcc-7_7.2.0-16.diff.gz 3252484 SHA256:3c4bf811de9b3a7bac203abceac1031000cbe5328b5832bd7007f0eebea7e5fd
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-7/7.2.0-16/
 
-- https://sources.debian.net/src/gcc-7/7.2.0-16/ (for browsing the source)
-- https://sources.debian.net/src/gcc-7/7.2.0-16/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-7/7.2.0-16/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.25-3`
 
@@ -678,20 +671,13 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.25-3
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.25-3.dsc' glibc_2.25-3.dsc 8788 SHA256:2e201c23c968b7fad1e431c789bf0bb80675f7a2f2ea6032edb29c3ceadd114f
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.25.orig.tar.xz' glibc_2.25.orig.tar.xz 14343292 SHA256:a3dfad3d13c32dc5992031a4305cf96a7bac9ec7ec8b6b4a6ca04203f1de14e5
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.25-3.debian.tar.xz' glibc_2.25-3.debian.tar.xz 1038528 SHA256:307057c235aef50baaa464a8ef4fab71158434fa88bbeaed38581aee69f58bad
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/glibc/2.25-3/
 
-- https://sources.debian.net/src/glibc/2.25-3/ (for browsing the source)
-- https://sources.debian.net/src/glibc/2.25-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glibc/2.25-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.1.2+dfsg-1.1`
 
@@ -977,20 +963,13 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.15.2-2
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.15.2-2.dsc' krb5_1.15.2-2.dsc 3359 SHA256:a2eef83c02667ef7d70d2a9f010eefa08a8f0a60160bee32c325c90f106348a1
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.15.2.orig.tar.gz' krb5_1.15.2.orig.tar.gz 9380755 SHA256:1639e392edf25e3b6cfec2ae68f97eb53e07c2dbe74bfeede0108465d5d1c87e
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.15.2-2.debian.tar.xz' krb5_1.15.2-2.debian.tar.xz 143632 SHA256:aab7c3c58e6851e143c740ecf4bcd84654edaa938db81f2df1667bff978ac5be
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/krb5/1.15.2-2/
 
-- https://sources.debian.net/src/krb5/1.15.2-2/ (for browsing the source)
-- https://sources.debian.net/src/krb5/1.15.2-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/krb5/1.15.2-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libassuan=2.4.5-1`
 
@@ -2127,21 +2106,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2017c-1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017c-1.dsc' tzdata_2017c-1.dsc 2247 SHA256:624e5c2d79af706c784c375b45ea7fbba3ebf289a24a08df280fef133796ae9b
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017c.orig.tar.gz' tzdata_2017c.orig.tar.gz 335571 SHA256:d6543f92a929826318e2f44ff3a7611ce5f565a43e10250b42599d0ba4cbd90b
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017c.orig.tar.gz.asc' tzdata_2017c.orig.tar.gz.asc 801 SHA256:89b6e3d1367c2a15bf7e2aabb90fc062b89c398ef5475b00ede3a9602cc1736a
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017c-1.debian.tar.xz' tzdata_2017c-1.debian.tar.xz 103892 SHA256:beca59bfd938b660c61a5ff33e733afed7e6e18e025296724b34e62d1ee1526b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2017c-1/
 
-- https://sources.debian.net/src/tzdata/2017c-1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2017c-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2017c-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `util-linux=2.30.2-0.1`
 

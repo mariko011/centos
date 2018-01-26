@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:27d28cf560c844674411f2a61c4a9d2d56ee8de45a69c94724050400ce636460`
-- Created: `2018-01-16T02:20:23.395677564Z`
-- Virtual Size: ~ 251.32 Mb  
+- Image ID: `sha256:ef948258f184ae94152739950f4f4ba0c36b1aabd1fa010c2c90d3774c06b277`
+- Created: `2018-01-25T23:31:11.062017591Z`
+- Virtual Size: ~ 251.48 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -716,22 +716,27 @@ $ apt-get source -qq --print-uris git=1:2.7.4-0ubuntu1.3
 'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.7.4-0ubuntu1.3.debian.tar.xz' git_2.7.4-0ubuntu1.3.debian.tar.xz 510072 SHA256:52c820eae29877651bfb540852c005030a533c4fd5810d7e99e269e1fb500973
 ```
 
-### `dpkg` source package: `glibc=2.23-0ubuntu9`
+### `dpkg` source package: `glibc=2.23-0ubuntu10`
 
 Binary Packages:
 
-- `libc-bin=2.23-0ubuntu9`
-- `libc6:amd64=2.23-0ubuntu9`
-- `multiarch-support=2.23-0ubuntu9`
+- `libc-bin=2.23-0ubuntu10`
+- `libc6:amd64=2.23-0ubuntu10`
+- `multiarch-support=2.23-0ubuntu10`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/multiarch-support/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris glibc=2.23-0ubuntu10
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23-0ubuntu10.dsc' glibc_2.23-0ubuntu10.dsc 8231 SHA256:422c3e17758e3378474bed63e2ed140364045c671f913fa99928a6eeff64adb6
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23.orig.tar.xz' glibc_2.23.orig.tar.xz 13849968 SHA256:bf6c528eeebefcacc295270068b79330c1fb2b22458ff66285b4175d23442c96
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23-0ubuntu10.debian.tar.xz' glibc_2.23-0ubuntu10.debian.tar.xz 1226400 SHA256:4918baa16af87741a50aa349ebe12294f856d73bd052d8558f5385c0607fc05e
+```
 
 ### `dpkg` source package: `gmp=2:6.1.0+dfsg-2`
 
@@ -1258,11 +1263,11 @@ $ apt-get source -qq --print-uris libsepol=2.4-2
 'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsepol/libsepol_2.4-2.debian.tar.xz' libsepol_2.4-2.debian.tar.xz 13188 SHA256:85e50e42c49dee9b21b5dda5fb754ce6d10482a4641e9f088da103b9178c2c1d
 ```
 
-### `dpkg` source package: `libtasn1-6=4.7-3ubuntu0.16.04.2`
+### `dpkg` source package: `libtasn1-6=4.7-3ubuntu0.16.04.3`
 
 Binary Packages:
 
-- `libtasn1-6:amd64=4.7-3ubuntu0.16.04.2`
+- `libtasn1-6:amd64=4.7-3ubuntu0.16.04.3`
 
 Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`)
 
@@ -1274,10 +1279,10 @@ Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libtasn1-6=4.7-3ubuntu0.16.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.7-3ubuntu0.16.04.2.dsc' libtasn1-6_4.7-3ubuntu0.16.04.2.dsc 2497 SHA256:a09e71bf9ca9a186cffdb514f6580831b2dc7543a60b9b12b453558372846d15
+$ apt-get source -qq --print-uris libtasn1-6=4.7-3ubuntu0.16.04.3
+'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.7-3ubuntu0.16.04.3.dsc' libtasn1-6_4.7-3ubuntu0.16.04.3.dsc 2495 SHA256:53a43e4795381eca289ba755fc806822373f31f2bbc6f12ae7f6d32c2e7c710a
 'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.7.orig.tar.gz' libtasn1-6_4.7.orig.tar.gz 1851611 SHA256:a40780dc93fc6d819170240e8ece25352058a85fd1d2347ce0f143667d8f11c9
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.7-3ubuntu0.16.04.2.debian.tar.xz' libtasn1-6_4.7-3ubuntu0.16.04.2.debian.tar.xz 58912 SHA256:a7bc21b199fcf7fe45910fdbeed4f17b152fab1aa84cde8f29d78ecb451cd837
+'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.7-3ubuntu0.16.04.3.debian.tar.xz' libtasn1-6_4.7-3ubuntu0.16.04.3.debian.tar.xz 60468 SHA256:aeed7264d288f57c858fb247f94920c1157a840c03fd27c7eaa3d6a6e36a66d7
 ```
 
 ### `dpkg` source package: `libusb=2:0.1.12-28`
@@ -1509,11 +1514,11 @@ $ apt-get source -qq --print-uris openldap=2.4.42+dfsg-2ubuntu3.2
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.42+dfsg-2ubuntu3.2.debian.tar.xz' openldap_2.4.42+dfsg-2ubuntu3.2.debian.tar.xz 176956 SHA256:b3262b8e294c9025ffafc0a0b5132ac9e4cc3faeabea3d9d2292c6dccc067d67
 ```
 
-### `dpkg` source package: `openssh=1:7.2p2-4ubuntu2.2`
+### `dpkg` source package: `openssh=1:7.2p2-4ubuntu2.4`
 
 Binary Packages:
 
-- `openssh-client=1:7.2p2-4ubuntu2.2`
+- `openssh-client=1:7.2p2-4ubuntu2.4`
 
 Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 
@@ -1522,10 +1527,10 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssh=1:7.2p2-4ubuntu2.2
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.2p2-4ubuntu2.2.dsc' openssh_7.2p2-4ubuntu2.2.dsc 2896 SHA256:1920c31b950e438c6945ffdc5f12dc4888e3f28c5a634b74615404118c7c3de7
+$ apt-get source -qq --print-uris openssh=1:7.2p2-4ubuntu2.4
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.2p2-4ubuntu2.4.dsc' openssh_7.2p2-4ubuntu2.4.dsc 2878 SHA256:4c35e06545e8e332474f5e3cb1fa4ef159e8af090c566693d34d401ef726b493
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.2p2.orig.tar.gz' openssh_7.2p2.orig.tar.gz 1499808 SHA256:a72781d1a043876a224ff1b0032daa4094d87565a68528759c1c2cab5482548c
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.2p2-4ubuntu2.2.debian.tar.xz' openssh_7.2p2-4ubuntu2.2.debian.tar.xz 154268 SHA256:d545367517e92f976628f976c6576206b1d2512c744ea61c0ea449d1b4001e52
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.2p2-4ubuntu2.4.debian.tar.xz' openssh_7.2p2-4ubuntu2.4.debian.tar.xz 166628 SHA256:00b7e94483e369ab0e098ccada7b35473694544e4498d20ff7c2a2ae8bfe8def
 ```
 
 ### `dpkg` source package: `openssl=1.0.2g-1ubuntu4.10`
@@ -1704,14 +1709,14 @@ $ apt-get source -qq --print-uris python-defaults=2.7.11-1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python-defaults/python-defaults_2.7.11-1.tar.gz' python-defaults_2.7.11-1.tar.gz 276447 SHA256:d4269585625c53a061292e44890c4960b688a47ebf3fa43202ceaa8f4bc502d9
 ```
 
-### `dpkg` source package: `python2.7=2.7.12-1ubuntu0~16.04.2`
+### `dpkg` source package: `python2.7=2.7.12-1ubuntu0~16.04.3`
 
 Binary Packages:
 
-- `libpython2.7-minimal:amd64=2.7.12-1ubuntu0~16.04.2`
-- `libpython2.7-stdlib:amd64=2.7.12-1ubuntu0~16.04.2`
-- `python2.7=2.7.12-1ubuntu0~16.04.2`
-- `python2.7-minimal=2.7.12-1ubuntu0~16.04.2`
+- `libpython2.7-minimal:amd64=2.7.12-1ubuntu0~16.04.3`
+- `libpython2.7-stdlib:amd64=2.7.12-1ubuntu0~16.04.3`
+- `python2.7=2.7.12-1ubuntu0~16.04.3`
+- `python2.7-minimal=2.7.12-1ubuntu0~16.04.3`
 
 Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/share/doc/libpython2.7-stdlib/copyright`, `/usr/share/doc/python2.7/copyright`, `/usr/share/doc/python2.7-minimal/copyright`)
 
@@ -1735,10 +1740,10 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/s
 Source:
 
 ```console
-$ apt-get source -qq --print-uris python2.7=2.7.12-1ubuntu0~16.04.2
-'http://security.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.12-1ubuntu0~16.04.2.dsc' python2.7_2.7.12-1ubuntu0~16.04.2.dsc 3371 SHA256:2c27c34b7e65265997aba7d1919cb06d03ddd211573fd5f01a04ca4882640fe6
-'http://security.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.12.orig.tar.gz' python2.7_2.7.12.orig.tar.gz 16935960 SHA256:3cb522d17463dfa69a155ab18cffa399b358c966c0363d6c8b5b3bf1384da4b6
-'http://security.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.12-1ubuntu0~16.04.2.diff.gz' python2.7_2.7.12-1ubuntu0~16.04.2.diff.gz 277564 SHA256:758f87cf735c0ca58d4a3703668a64c392f15fa5906ee8f4a9062de066249357
+$ apt-get source -qq --print-uris python2.7=2.7.12-1ubuntu0~16.04.3
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.12-1ubuntu0~16.04.3.dsc' python2.7_2.7.12-1ubuntu0~16.04.3.dsc 3379 SHA256:a4784c90f5036a12c145f6f7690c12c187866f2c9ae0263cd3527dc916a98e84
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.12.orig.tar.gz' python2.7_2.7.12.orig.tar.gz 16935960 SHA256:3cb522d17463dfa69a155ab18cffa399b358c966c0363d6c8b5b3bf1384da4b6
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.12-1ubuntu0~16.04.3.diff.gz' python2.7_2.7.12-1ubuntu0~16.04.3.diff.gz 281711 SHA256:85bc19c1f058792ff0fe7abfc0362b76b6abcbdaca890e0745d25e5f25184bf7
 ```
 
 ### `dpkg` source package: `readline6=6.3-8ubuntu2`

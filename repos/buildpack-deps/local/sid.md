@@ -616,20 +616,13 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.57.0-1
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.57.0-1.dsc' curl_7.57.0-1.dsc 2721 SHA256:d07a5a7401d8634f1335ae474114ee0e90f347fc83e3094e09ad6dadf025214f
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.57.0.orig.tar.gz' curl_7.57.0.orig.tar.gz 3828358 SHA256:7ce35f207562674e71dbada6891b37e3f043c1e7a82915cb9c2a17ad3a9d659b
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.57.0-1.debian.tar.xz' curl_7.57.0-1.debian.tar.xz 27692 SHA256:b4ff36450ce1fa1fbfc65202aa6cd6df1c59bf4db3d202ecefab38f0d81bd713
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/7.57.0-1/
 
-- https://sources.debian.net/src/curl/7.57.0-1/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.57.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.57.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3`
 
@@ -3815,20 +3808,13 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `X11 Dual License`
 - `Xen-interface`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=4.14.2-1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.14.2-1.dsc' linux_4.14.2-1.dsc 134788 SHA256:74243ba499148d1b4ae17e3171c57d33c7f73799f6420edf090d32c39273507d
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.14.2.orig.tar.xz' linux_4.14.2.orig.tar.xz 103658188 SHA256:3953b980320ea155c80f00588567fc13f8135c250716d8f718df8fa264f9411d
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.14.2-1.debian.tar.xz' linux_4.14.2-1.debian.tar.xz 984964 SHA256:2e2e50fedaa623b5b02975fb555fb0eb8cb6724bb44fb6d8f7f194b1fe694c9d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/linux/4.14.2-1/
 
-- https://sources.debian.net/src/linux/4.14.2-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/4.14.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/4.14.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=9.20170808`
 

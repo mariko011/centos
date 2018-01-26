@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:93f715dce4a64cd1929d3746dce00da38a7b70e42fb720e439ef760a8878b21e`
-- Created: `2018-01-16T01:37:28.198845252Z`
-- Virtual Size: ~ 243.78 Mb  
+- Image ID: `sha256:01c512304311446c6aa153c50e8bf8a1b8b65515774f4656f839b239cf1989f0`
+- Created: `2018-01-25T22:49:17.433301466Z`
+- Virtual Size: ~ 244.20 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -653,13 +653,13 @@ $ apt-get source -qq --print-uris git=1:2.14.1-1ubuntu4
 'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.14.1-1ubuntu4.debian.tar.xz' git_2.14.1-1ubuntu4.debian.tar.xz 549800 SHA256:0e99c7771e82f1f1500e89304549f23cbd169ab363254f12d3cd9639b91a9832
 ```
 
-### `dpkg` source package: `glibc=2.26-0ubuntu2`
+### `dpkg` source package: `glibc=2.26-0ubuntu2.1`
 
 Binary Packages:
 
-- `libc-bin=2.26-0ubuntu2`
-- `libc6:amd64=2.26-0ubuntu2`
-- `multiarch-support=2.26-0ubuntu2`
+- `libc-bin=2.26-0ubuntu2.1`
+- `libc6:amd64=2.26-0ubuntu2.1`
+- `multiarch-support=2.26-0ubuntu2.1`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/multiarch-support/copyright`)
 
@@ -669,10 +669,10 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris glibc=2.26-0ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.26-0ubuntu2.dsc' glibc_2.26-0ubuntu2.dsc 8688 SHA256:e1ae0693f1113b8bf4ef2b8721b2f104584b7b95763e1f595beb3d85c14184dd
+$ apt-get source -qq --print-uris glibc=2.26-0ubuntu2.1
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.26-0ubuntu2.1.dsc' glibc_2.26-0ubuntu2.1.dsc 8391 SHA256:d4ac88bceb3dc6ba0c4799cbeca68ca5539a3b64deeaf1e1592f19ef4bc2352a
 'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.26.orig.tar.xz' glibc_2.26.orig.tar.xz 15207960 SHA256:cdfbf4634e016f2b8f279634329baf8a721aa2549cf016e75cea7db938d2dd6e
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.26-0ubuntu2.debian.tar.xz' glibc_2.26-0ubuntu2.debian.tar.xz 996080 SHA256:25218986f8e550872ae207d00f3b3cb69548f2cbc7034a5ec961d892c7cd1c41
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.26-0ubuntu2.1.debian.tar.xz' glibc_2.26-0ubuntu2.1.debian.tar.xz 999704 SHA256:49de45a5be5e6b2519067e076e02b0b438815234277f1379237606f52860ac9b
 ```
 
 ### `dpkg` source package: `gmp=2:6.1.2+dfsg-1`
@@ -929,6 +929,42 @@ $ apt-get source -qq --print-uris libassuan=2.4.3-3
 'http://archive.ubuntu.com/ubuntu/pool/main/liba/libassuan/libassuan_2.4.3-3.dsc' libassuan_2.4.3-3.dsc 2234 SHA256:057a5a131e60fe96a88a0246a776c75632df07d13211eb58031b452a30a5910a
 'http://archive.ubuntu.com/ubuntu/pool/main/liba/libassuan/libassuan_2.4.3.orig.tar.bz2' libassuan_2.4.3.orig.tar.bz2 559867 SHA256:22843a3bdb256f59be49842abf24da76700354293a066d82ade8134bb5aa2b71
 'http://archive.ubuntu.com/ubuntu/pool/main/liba/libassuan/libassuan_2.4.3-3.debian.tar.xz' libassuan_2.4.3-3.debian.tar.xz 15040 SHA256:c3e98d63cb6cd3fe524292da3aa250c17fd09692eef81e13db826a54e7e4dd27
+```
+
+### `dpkg` source package: `libbsd=0.8.6-1`
+
+Binary Packages:
+
+- `libbsd0:amd64=0.8.6-1`
+
+Licenses: (parsed from: `/usr/share/doc/libbsd0/copyright`)
+
+- `BSD-2-clause`
+- `BSD-2-clause-NetBSD`
+- `BSD-2-clause-author`
+- `BSD-2-clause-verbatim`
+- `BSD-3-clause`
+- `BSD-3-clause-John-Birrell`
+- `BSD-3-clause-Peter-Wemm`
+- `BSD-3-clause-Regents`
+- `BSD-4-clause-Christopher-G-Demetriou`
+- `BSD-4-clause-Niels-Provos`
+- `BSD-5-clause-Peter-Wemm`
+- `Beerware`
+- `Expat`
+- `ISC`
+- `ISC-Original`
+- `public-domain`
+- `public-domain-Colin-Plumb`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris libbsd=0.8.6-1
+'http://archive.ubuntu.com/ubuntu/pool/main/libb/libbsd/libbsd_0.8.6-1.dsc' libbsd_0.8.6-1.dsc 2218 SHA256:5a946851fc41ccf8b9d4e501b1959a35937a9ae0ca0fdef22a944aa0efdf887f
+'http://archive.ubuntu.com/ubuntu/pool/main/libb/libbsd/libbsd_0.8.6.orig.tar.xz' libbsd_0.8.6.orig.tar.xz 371112 SHA256:467fbf9df1f49af11f7f686691057c8c0a7613ae5a870577bef9155de39f9687
+'http://archive.ubuntu.com/ubuntu/pool/main/libb/libbsd/libbsd_0.8.6.orig.tar.xz.asc' libbsd_0.8.6.orig.tar.xz.asc 833 SHA256:8b579470e8249b2ad24134989cc77404e3620e8ccda3d57650cfbcc7c50c26ce
+'http://archive.ubuntu.com/ubuntu/pool/main/libb/libbsd/libbsd_0.8.6-1.debian.tar.xz' libbsd_0.8.6-1.debian.tar.xz 15624 SHA256:eb1b5b2d4ef96ce6de8e97ed9169be9fdc4336e057ae3e1b5970f777773e10ad
 ```
 
 ### `dpkg` source package: `libcap-ng=0.7.7-3build1`
@@ -1449,11 +1485,11 @@ $ apt-get source -qq --print-uris openldap=2.4.45+dfsg-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.45+dfsg-1ubuntu1.debian.tar.xz' openldap_2.4.45+dfsg-1ubuntu1.debian.tar.xz 175800 SHA256:2f6ddef561e986db9ecbf91ee89b9224c81089d2d5ad7c06cb3629539e95ec66
 ```
 
-### `dpkg` source package: `openssh=1:7.5p1-10`
+### `dpkg` source package: `openssh=1:7.5p1-10ubuntu0.1`
 
 Binary Packages:
 
-- `openssh-client=1:7.5p1-10`
+- `openssh-client=1:7.5p1-10ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 
@@ -1470,10 +1506,10 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssh=1:7.5p1-10
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.5p1-10.dsc' openssh_7.5p1-10.dsc 2856 SHA256:b4782d7383b5dd7e23a71a28065fd15e6b8aa8cd052f8f45d0078f053efa81be
+$ apt-get source -qq --print-uris openssh=1:7.5p1-10ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.5p1-10ubuntu0.1.dsc' openssh_7.5p1-10ubuntu0.1.dsc 2939 SHA256:fb17e57f736683eb5c3b16cab32ca6a0e5705185e42d879ed29e125aea19d3a7
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.5p1.orig.tar.gz' openssh_7.5p1.orig.tar.gz 1510857 SHA256:9846e3c5fab9f0547400b4d2c017992f914222b3fd1f8eee6c7dc6bc5e59f9f0
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.5p1-10.debian.tar.xz' openssh_7.5p1-10.debian.tar.xz 159252 SHA256:2eda9f24b25b306cae15a8080018ee4f06679e98e2574725459be0d7e0c7db53
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.5p1-10ubuntu0.1.debian.tar.xz' openssh_7.5p1-10ubuntu0.1.debian.tar.xz 159848 SHA256:e54b87a5d9a44626d81039f525f5c6b9bd51e6cca02b0bc44c4da995fbd5af2d
 ```
 
 ### `dpkg` source package: `openssl=1.0.2g-1ubuntu13.3`

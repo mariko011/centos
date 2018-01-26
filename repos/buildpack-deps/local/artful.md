@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:70c626d99a6cff05667af0f5479fdb160ca39d072d47273f5c4ea72303bddaaa`
-- Created: `2018-01-16T01:39:56.640519786Z`
-- Virtual Size: ~ 746.05 Mb  
+- Image ID: `sha256:15aabadeaee692c9484e3b740ae901e87bbc52ba0211cede780128dd16a334c8`
+- Created: `2018-01-25T22:53:57.40986889Z`
+- Virtual Size: ~ 746.36 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -1209,15 +1209,15 @@ $ apt-get source -qq --print-uris glib2.0=2.54.1-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.54.1-1ubuntu1.debian.tar.xz' glib2.0_2.54.1-1ubuntu1.debian.tar.xz 75252 SHA256:aab799877787337ea87e03cb713f6c2a9dcef11aac9bf481ac9384a63cedcf11
 ```
 
-### `dpkg` source package: `glibc=2.26-0ubuntu2`
+### `dpkg` source package: `glibc=2.26-0ubuntu2.1`
 
 Binary Packages:
 
-- `libc-bin=2.26-0ubuntu2`
-- `libc-dev-bin=2.26-0ubuntu2`
-- `libc6:amd64=2.26-0ubuntu2`
-- `libc6-dev:amd64=2.26-0ubuntu2`
-- `multiarch-support=2.26-0ubuntu2`
+- `libc-bin=2.26-0ubuntu2.1`
+- `libc-dev-bin=2.26-0ubuntu2.1`
+- `libc6:amd64=2.26-0ubuntu2.1`
+- `libc6-dev:amd64=2.26-0ubuntu2.1`
+- `multiarch-support=2.26-0ubuntu2.1`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`, `/usr/share/doc/multiarch-support/copyright`)
 
@@ -1227,10 +1227,10 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris glibc=2.26-0ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.26-0ubuntu2.dsc' glibc_2.26-0ubuntu2.dsc 8688 SHA256:e1ae0693f1113b8bf4ef2b8721b2f104584b7b95763e1f595beb3d85c14184dd
+$ apt-get source -qq --print-uris glibc=2.26-0ubuntu2.1
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.26-0ubuntu2.1.dsc' glibc_2.26-0ubuntu2.1.dsc 8391 SHA256:d4ac88bceb3dc6ba0c4799cbeca68ca5539a3b64deeaf1e1592f19ef4bc2352a
 'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.26.orig.tar.xz' glibc_2.26.orig.tar.xz 15207960 SHA256:cdfbf4634e016f2b8f279634329baf8a721aa2549cf016e75cea7db938d2dd6e
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.26-0ubuntu2.debian.tar.xz' glibc_2.26-0ubuntu2.debian.tar.xz 996080 SHA256:25218986f8e550872ae207d00f3b3cb69548f2cbc7034a5ec961d892c7cd1c41
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.26-0ubuntu2.1.debian.tar.xz' glibc_2.26-0ubuntu2.1.debian.tar.xz 999704 SHA256:49de45a5be5e6b2519067e076e02b0b438815234277f1379237606f52860ac9b
 ```
 
 ### `dpkg` source package: `gmp=2:6.1.2+dfsg-1`
@@ -2982,11 +2982,11 @@ $ apt-get source -qq --print-uris libyaml=0.1.7-2ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/liby/libyaml/libyaml_0.1.7-2ubuntu3.debian.tar.xz' libyaml_0.1.7-2ubuntu3.debian.tar.xz 4288 SHA256:d1b9caa9e645c2c306417068bcdd85e56e6065d74771c15cc970652e52f8259b
 ```
 
-### `dpkg` source package: `linux=4.13.0-25.29`
+### `dpkg` source package: `linux=4.13.0-31.34`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.13.0-25.29`
+- `linux-libc-dev:amd64=4.13.0-31.34`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2995,10 +2995,10 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=4.13.0-25.29
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.13.0-25.29.dsc' linux_4.13.0-25.29.dsc 5858 SHA256:dd6315afd8016e5af7a3185fcb1f8fee00da7662221572eec3a4b72d4cde23eb
+$ apt-get source -qq --print-uris linux=4.13.0-31.34
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.13.0-31.34.dsc' linux_4.13.0-31.34.dsc 6206 SHA256:ee26d97d8fa99ec143ac29f90f1ec78813bd14c35f9cc93e4961d03c3d4be714
 'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.13.0.orig.tar.gz' linux_4.13.0.orig.tar.gz 155489655 SHA256:9511260e17e474183b9c3b2ea601d5af256dde783e14dba4031854eaa98d5089
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.13.0-25.29.diff.gz' linux_4.13.0-25.29.diff.gz 6923519 SHA256:f52ed7f0cf3f6fe7f68f61d6471bbf9ff532e0432a74d65e00f66942e324f654
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.13.0-31.34.diff.gz' linux_4.13.0-31.34.diff.gz 6960256 SHA256:7899e8f76135a749f701c593faa7c6e1c6058fab8a0675b37bdd81e4d7faedd2
 ```
 
 ### `dpkg` source package: `lsb=9.20160110ubuntu5`
@@ -3219,12 +3219,12 @@ $ apt-get source -qq --print-uris mpfr4=3.1.6-1
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mpfr4/mpfr4_3.1.6-1.debian.tar.xz' mpfr4_3.1.6-1.debian.tar.xz 9724 SHA256:1ce306a388ab312eb1c62f4c52dc468ae55d8205e124d19eb231ef7d42fc836a
 ```
 
-### `dpkg` source package: `mysql-5.7=5.7.20-0ubuntu0.17.10.1`
+### `dpkg` source package: `mysql-5.7=5.7.21-0ubuntu0.17.10.1`
 
 Binary Packages:
 
-- `libmysqlclient-dev=5.7.20-0ubuntu0.17.10.1`
-- `libmysqlclient20:amd64=5.7.20-0ubuntu0.17.10.1`
+- `libmysqlclient-dev=5.7.21-0ubuntu0.17.10.1`
+- `libmysqlclient20:amd64=5.7.21-0ubuntu0.17.10.1`
 
 Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/share/doc/libmysqlclient20/copyright`)
 
@@ -3245,10 +3245,10 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 Source:
 
 ```console
-$ apt-get source -qq --print-uris mysql-5.7=5.7.20-0ubuntu0.17.10.1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.20-0ubuntu0.17.10.1.dsc' mysql-5.7_5.7.20-0ubuntu0.17.10.1.dsc 3335 SHA256:85ba3db766203bd5086e8ecd0c59f6eaa69be54393ce7d92c246d318c61b267b
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.20.orig.tar.gz' mysql-5.7_5.7.20.orig.tar.gz 48833145 SHA256:260582844ac18222ce2826f48b6c7ca387990b19ddb88331af26738b394e42a4
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.20-0ubuntu0.17.10.1.debian.tar.xz' mysql-5.7_5.7.20-0ubuntu0.17.10.1.debian.tar.xz 249548 SHA256:36fc538a19fbaff5e365bdab9cd5df426cc48663a391746f7cc78463a67996ad
+$ apt-get source -qq --print-uris mysql-5.7=5.7.21-0ubuntu0.17.10.1
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.21-0ubuntu0.17.10.1.dsc' mysql-5.7_5.7.21-0ubuntu0.17.10.1.dsc 3317 SHA256:bd720318ae5dd6314389ae4cffd7d39affa32cdd008016a9bb053051dac3f66b
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.21.orig.tar.gz' mysql-5.7_5.7.21.orig.tar.gz 48931457 SHA256:ad29ecb6fb3c3571394fe231633a2d1d188d49e9eb749daa4e8799b7630daa09
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.21-0ubuntu0.17.10.1.debian.tar.xz' mysql-5.7_5.7.21-0ubuntu0.17.10.1.debian.tar.xz 249572 SHA256:d396954d3ac2310019eab5eed1d8ab3df562123c6f541b0b830c790c1b868808
 ```
 
 ### `dpkg` source package: `mysql-defaults=1.0.2ubuntu1`
@@ -3387,11 +3387,11 @@ $ apt-get source -qq --print-uris openldap=2.4.45+dfsg-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.45+dfsg-1ubuntu1.debian.tar.xz' openldap_2.4.45+dfsg-1ubuntu1.debian.tar.xz 175800 SHA256:2f6ddef561e986db9ecbf91ee89b9224c81089d2d5ad7c06cb3629539e95ec66
 ```
 
-### `dpkg` source package: `openssh=1:7.5p1-10`
+### `dpkg` source package: `openssh=1:7.5p1-10ubuntu0.1`
 
 Binary Packages:
 
-- `openssh-client=1:7.5p1-10`
+- `openssh-client=1:7.5p1-10ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 
@@ -3408,10 +3408,10 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssh=1:7.5p1-10
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.5p1-10.dsc' openssh_7.5p1-10.dsc 2856 SHA256:b4782d7383b5dd7e23a71a28065fd15e6b8aa8cd052f8f45d0078f053efa81be
+$ apt-get source -qq --print-uris openssh=1:7.5p1-10ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.5p1-10ubuntu0.1.dsc' openssh_7.5p1-10ubuntu0.1.dsc 2939 SHA256:fb17e57f736683eb5c3b16cab32ca6a0e5705185e42d879ed29e125aea19d3a7
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.5p1.orig.tar.gz' openssh_7.5p1.orig.tar.gz 1510857 SHA256:9846e3c5fab9f0547400b4d2c017992f914222b3fd1f8eee6c7dc6bc5e59f9f0
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.5p1-10.debian.tar.xz' openssh_7.5p1-10.debian.tar.xz 159252 SHA256:2eda9f24b25b306cae15a8080018ee4f06679e98e2574725459be0d7e0c7db53
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.5p1-10ubuntu0.1.debian.tar.xz' openssh_7.5p1-10ubuntu0.1.debian.tar.xz 159848 SHA256:e54b87a5d9a44626d81039f525f5c6b9bd51e6cca02b0bc44c4da995fbd5af2d
 ```
 
 ### `dpkg` source package: `openssl=1.0.2g-1ubuntu13.3`
