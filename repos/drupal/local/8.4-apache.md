@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9db6f4ae530b1e6735d5ec168ee1b5da5f46e355c38af79926a164ee78b52818`
-- Created: `2018-01-09T05:50:00.783257813Z`
-- Virtual Size: ~ 454.01 Mb  
+- Image ID: `sha256:b8d2c71ea1aa44d594ae531b60fbf04ebde2fecf01c7782ffdd9cf559abf84c7`
+- Created: `2018-01-24T23:12:21.463010992Z`
+- Virtual Size: ~ 455.03 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -1709,8 +1709,9 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `libpng12-0:amd64=1.2.50-2+deb8u3`
+- `libpng12-dev:amd64=1.2.50-2+deb8u3`
 
-Licenses: (parsed from: `/usr/share/doc/libpng12-0/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libpng12-0/copyright`, `/usr/share/doc/libpng12-dev/copyright`)
 
 - `GPL-2`
 
@@ -3134,6 +3135,7 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `zlib1g:amd64=1:1.2.8.dfsg-2+b1`
+- `zlib1g-dev:amd64=1:1.2.8.dfsg-2+b1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
