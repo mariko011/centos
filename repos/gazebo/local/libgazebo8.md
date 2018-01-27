@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b0abc77ca47995f216874dea59fac7e77db9b49ab4d8d63a82c8727efe19d5ce`
-- Created: `2018-01-15T23:47:51.685488599Z`
+- Image ID: `sha256:f05c24cf263b2a60238450bef98c7ff51b4cbac36e6b2d7afa2914aa03f0619a`
+- Created: `2018-01-25T20:46:37.21949992Z`
 - Virtual Size: ~ 1.44 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -291,26 +291,31 @@ $ apt-get source -qq --print-uris bash=4.3-14ubuntu1.2
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_4.3-14ubuntu1.2.debian.tar.xz' bash_4.3-14ubuntu1.2.debian.tar.xz 93220 SHA256:5a48a09909595cf4f88634ff54bf3bde0eaf9cfc980fd2e3637c3406d2a4d14d
 ```
 
-### `dpkg` source package: `bind9=1:9.10.3.dfsg.P4-8ubuntu1.9`
+### `dpkg` source package: `bind9=1:9.10.3.dfsg.P4-8ubuntu1.10`
 
 Binary Packages:
 
-- `libdns-export162=1:9.10.3.dfsg.P4-8ubuntu1.9`
-- `libisc-export160=1:9.10.3.dfsg.P4-8ubuntu1.9`
+- `libdns-export162=1:9.10.3.dfsg.P4-8ubuntu1.10`
+- `libisc-export160=1:9.10.3.dfsg.P4-8ubuntu1.10`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris bind9=1:9.10.3.dfsg.P4-8ubuntu1.10
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.10.3.dfsg.P4-8ubuntu1.10.dsc' bind9_9.10.3.dfsg.P4-8ubuntu1.10.dsc 3838 SHA256:5f0f9cebedb87b8b200ce9d1acd9e57c9095a9936722b5b859b410217cc603ad
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.10.3.dfsg.P4.orig.tar.gz' bind9_9.10.3.dfsg.P4.orig.tar.gz 8641072 SHA256:895077c868d06eea39c1526624f2278a3b51a3358b5aa50f48a0f1c16a7ab6e6
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.10.3.dfsg.P4-8ubuntu1.10.debian.tar.xz' bind9_9.10.3.dfsg.P4-8ubuntu1.10.debian.tar.xz 90936 SHA256:ca3885d66cd0e048af5d15d77ea73b5471b29b2c237e23b46caf363c6504e0c1
+```
 
-### `dpkg` source package: `binutils=2.26.1-1ubuntu1~16.04.5`
+### `dpkg` source package: `binutils=2.26.1-1ubuntu1~16.04.6`
 
 Binary Packages:
 
-- `binutils=2.26.1-1ubuntu1~16.04.5`
+- `binutils=2.26.1-1ubuntu1~16.04.6`
 
 Licenses: (parsed from: `/usr/share/doc/binutils/copyright`)
 
@@ -318,9 +323,14 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`)
 - `GPL`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris binutils=2.26.1-1ubuntu1~16.04.6
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.26.1-1ubuntu1~16.04.6.dsc' binutils_2.26.1-1ubuntu1~16.04.6.dsc 4046 SHA256:eff6ef396b4beb6228973c9019dc7c17f340c82daf984b3af4a94b8793806764
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.26.1.orig.tar.gz' binutils_2.26.1.orig.tar.gz 34868933 SHA256:dd9c3e37c266e4fefba68e444e2a00538b3c902dd31bf4912d90dca6d830a2a1
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.26.1-1ubuntu1~16.04.6.diff.gz' binutils_2.26.1-1ubuntu1~16.04.6.diff.gz 237840 SHA256:2810d1767117fb41d6b572c4cf7d30eaf5d4c24a3219163fd4dcba3524c710eb
+```
 
 ### `dpkg` source package: `boost-defaults=1.58.0.1ubuntu1`
 
@@ -1546,24 +1556,29 @@ $ apt-get source -qq --print-uris glib2.0=2.48.2-0ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.48.2-0ubuntu1.debian.tar.xz' glib2.0_2.48.2-0ubuntu1.debian.tar.xz 68844 SHA256:83d8527d76c025a47136f7bc146a7716049afa9f0c75b8e050e3c55636703d37
 ```
 
-### `dpkg` source package: `glibc=2.23-0ubuntu9`
+### `dpkg` source package: `glibc=2.23-0ubuntu10`
 
 Binary Packages:
 
-- `libc-bin=2.23-0ubuntu9`
-- `libc-dev-bin=2.23-0ubuntu9`
-- `libc6:amd64=2.23-0ubuntu9`
-- `libc6-dev:amd64=2.23-0ubuntu9`
-- `multiarch-support=2.23-0ubuntu9`
+- `libc-bin=2.23-0ubuntu10`
+- `libc-dev-bin=2.23-0ubuntu10`
+- `libc6:amd64=2.23-0ubuntu10`
+- `libc6-dev:amd64=2.23-0ubuntu10`
+- `multiarch-support=2.23-0ubuntu10`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`, `/usr/share/doc/multiarch-support/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris glibc=2.23-0ubuntu10
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23-0ubuntu10.dsc' glibc_2.23-0ubuntu10.dsc 8231 SHA256:422c3e17758e3378474bed63e2ed140364045c671f913fa99928a6eeff64adb6
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23.orig.tar.xz' glibc_2.23.orig.tar.xz 13849968 SHA256:bf6c528eeebefcacc295270068b79330c1fb2b22458ff66285b4175d23442c96
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23-0ubuntu10.debian.tar.xz' glibc_2.23-0ubuntu10.debian.tar.xz 1226400 SHA256:4918baa16af87741a50aa349ebe12294f856d73bd052d8558f5385c0607fc05e
+```
 
 ### `dpkg` source package: `gmp=2:6.1.0+dfsg-2`
 
@@ -1937,12 +1952,12 @@ Licenses: (parsed from: `/usr/share/doc/libignition-msgs0/copyright`, `/usr/shar
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ignition-msgs=1.0.0-1~xenial`
+### `dpkg` source package: `ignition-msgs=1.0.0-2~xenial`
 
 Binary Packages:
 
-- `libignition-msgs:amd64=1.0.0-1~xenial`
-- `libignition-msgs-dev:amd64=1.0.0-1~xenial`
+- `libignition-msgs:amd64=1.0.0-2~xenial`
+- `libignition-msgs-dev:amd64=1.0.0-2~xenial`
 
 Licenses: (parsed from: `/usr/share/doc/libignition-msgs/copyright`, `/usr/share/doc/libignition-msgs-dev/copyright`)
 
@@ -2053,19 +2068,24 @@ $ apt-get source -qq --print-uris intel-vaapi-driver=1.7.0-1
 'http://archive.ubuntu.com/ubuntu/pool/universe/i/intel-vaapi-driver/intel-vaapi-driver_1.7.0-1.debian.tar.xz' intel-vaapi-driver_1.7.0-1.debian.tar.xz 10192 SHA256:0c2903043dcfb455d77549d99bd3fbff73084f257f39c84e52e6fddbf60df640
 ```
 
-### `dpkg` source package: `iproute2=4.3.0-1ubuntu3.16.04.2`
+### `dpkg` source package: `iproute2=4.3.0-1ubuntu3.16.04.3`
 
 Binary Packages:
 
-- `iproute2=4.3.0-1ubuntu3.16.04.2`
+- `iproute2=4.3.0-1ubuntu3.16.04.3`
 
 Licenses: (parsed from: `/usr/share/doc/iproute2/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris iproute2=4.3.0-1ubuntu3.16.04.3
+'http://archive.ubuntu.com/ubuntu/pool/main/i/iproute2/iproute2_4.3.0-1ubuntu3.16.04.3.dsc' iproute2_4.3.0-1ubuntu3.16.04.3.dsc 2475 SHA256:d571731c2774778f0b287eede691d6b84b25d8234d575c2cdd6da0e45b1f526d
+'http://archive.ubuntu.com/ubuntu/pool/main/i/iproute2/iproute2_4.3.0.orig.tar.xz' iproute2_4.3.0.orig.tar.xz 525364 SHA256:f03b1188dd6c039512424de82ff7a8f3b446680bd4e908ff42a7b9b137422995
+'http://archive.ubuntu.com/ubuntu/pool/main/i/iproute2/iproute2_4.3.0-1ubuntu3.16.04.3.debian.tar.xz' iproute2_4.3.0-1ubuntu3.16.04.3.debian.tar.xz 31916 SHA256:1f9ab840a3fbda5c3a7c88acc88c05c7a108efc6faed912488b89239c484233b
+```
 
 ### `dpkg` source package: `iptables=1.6.0-2ubuntu3`
 
@@ -3710,14 +3730,9 @@ Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`)
 - `LGPL`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libtasn1-6=4.7-3ubuntu0.16.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.7-3ubuntu0.16.04.2.dsc' libtasn1-6_4.7-3ubuntu0.16.04.2.dsc 2497 SHA256:a09e71bf9ca9a186cffdb514f6580831b2dc7543a60b9b12b453558372846d15
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.7.orig.tar.gz' libtasn1-6_4.7.orig.tar.gz 1851611 SHA256:a40780dc93fc6d819170240e8ece25352058a85fd1d2347ce0f143667d8f11c9
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.7-3ubuntu0.16.04.2.debian.tar.xz' libtasn1-6_4.7-3ubuntu0.16.04.2.debian.tar.xz 58912 SHA256:a7bc21b199fcf7fe45910fdbeed4f17b152fab1aa84cde8f29d78ecb451cd837
-```
 
 ### `dpkg` source package: `libtheora=1.1.1+dfsg.1-8`
 
@@ -4330,20 +4345,25 @@ $ apt-get source -qq --print-uris linux-atm=1:2.5.1-1.5
 'http://archive.ubuntu.com/ubuntu/pool/main/l/linux-atm/linux-atm_2.5.1-1.5.debian.tar.gz' linux-atm_2.5.1-1.5.debian.tar.gz 10723 SHA256:9b2325859b3fd008b588a3897e713f52137abae08d1f5a44f5661f45a87f4d29
 ```
 
-### `dpkg` source package: `linux=4.4.0-109.132`
+### `dpkg` source package: `linux=4.4.0-112.135`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.4.0-109.132`
+- `linux-libc-dev:amd64=4.4.0-112.135`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 - `redpine-signals`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=4.4.0-112.135
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-112.135.dsc' linux_4.4.0-112.135.dsc 9712 SHA256:9804c7bd06a1ef07ff9094979d44e8fa7a25e539d5d9088f44ce6fff43d6cc15
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-112.135.diff.gz' linux_4.4.0-112.135.diff.gz 13880183 SHA256:b5b6adc87ea98ffa48d31aee2ee5ec301a01c2b4fa64fa20d1564a4e95bdd6ad
+```
 
 ### `dpkg` source package: `llvm-toolchain-5.0=1:5.0-3~16.04.1`
 
@@ -4567,31 +4587,36 @@ $ apt-get source -qq --print-uris mawk=1.3.3-17ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mawk/mawk_1.3.3-17ubuntu2.diff.gz' mawk_1.3.3-17ubuntu2.diff.gz 63882 SHA256:670103046767474be29e80f2143dc67e3d0b958972f5942c3df94883f978eded
 ```
 
-### `dpkg` source package: `mesa=17.2.4-0ubuntu1~16.04.2`
+### `dpkg` source package: `mesa=17.2.4-0ubuntu1~16.04.4`
 
 Binary Packages:
 
-- `libegl1-mesa:amd64=17.2.4-0ubuntu1~16.04.2`
-- `libegl1-mesa-dev:amd64=17.2.4-0ubuntu1~16.04.2`
-- `libgbm1:amd64=17.2.4-0ubuntu1~16.04.2`
-- `libgl1-mesa-dev:amd64=17.2.4-0ubuntu1~16.04.2`
-- `libgl1-mesa-dri:amd64=17.2.4-0ubuntu1~16.04.2`
-- `libgl1-mesa-glx:amd64=17.2.4-0ubuntu1~16.04.2`
-- `libglapi-mesa:amd64=17.2.4-0ubuntu1~16.04.2`
-- `libgles2-mesa:amd64=17.2.4-0ubuntu1~16.04.2`
-- `libgles2-mesa-dev:amd64=17.2.4-0ubuntu1~16.04.2`
-- `libwayland-egl1-mesa:amd64=17.2.4-0ubuntu1~16.04.2`
-- `mesa-common-dev:amd64=17.2.4-0ubuntu1~16.04.2`
-- `mesa-va-drivers:amd64=17.2.4-0ubuntu1~16.04.2`
+- `libegl1-mesa:amd64=17.2.4-0ubuntu1~16.04.4`
+- `libegl1-mesa-dev:amd64=17.2.4-0ubuntu1~16.04.4`
+- `libgbm1:amd64=17.2.4-0ubuntu1~16.04.4`
+- `libgl1-mesa-dev:amd64=17.2.4-0ubuntu1~16.04.4`
+- `libgl1-mesa-dri:amd64=17.2.4-0ubuntu1~16.04.4`
+- `libgl1-mesa-glx:amd64=17.2.4-0ubuntu1~16.04.4`
+- `libglapi-mesa:amd64=17.2.4-0ubuntu1~16.04.4`
+- `libgles2-mesa:amd64=17.2.4-0ubuntu1~16.04.4`
+- `libgles2-mesa-dev:amd64=17.2.4-0ubuntu1~16.04.4`
+- `libwayland-egl1-mesa:amd64=17.2.4-0ubuntu1~16.04.4`
+- `mesa-common-dev:amd64=17.2.4-0ubuntu1~16.04.4`
+- `mesa-va-drivers:amd64=17.2.4-0ubuntu1~16.04.4`
 
 Licenses: (parsed from: `/usr/share/doc/libegl1-mesa/copyright`, `/usr/share/doc/libegl1-mesa-dev/copyright`, `/usr/share/doc/libgbm1/copyright`, `/usr/share/doc/libgl1-mesa-dev/copyright`, `/usr/share/doc/libgl1-mesa-dri/copyright`, `/usr/share/doc/libgl1-mesa-glx/copyright`, `/usr/share/doc/libglapi-mesa/copyright`, `/usr/share/doc/libgles2-mesa/copyright`, `/usr/share/doc/libgles2-mesa-dev/copyright`, `/usr/share/doc/libwayland-egl1-mesa/copyright`, `/usr/share/doc/mesa-common-dev/copyright`, `/usr/share/doc/mesa-va-drivers/copyright`)
 
 - `GPL`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris mesa=17.2.4-0ubuntu1~16.04.4
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_17.2.4-0ubuntu1~16.04.4.dsc' mesa_17.2.4-0ubuntu1~16.04.4.dsc 4991 SHA256:47ec0b2966f0f8b0cab55acaa42903e6b3daeb609f03c65883583a96518ae01c
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_17.2.4.orig.tar.gz' mesa_17.2.4.orig.tar.gz 17737608 SHA256:cb266edc5cf7226219ebaf556ca2e03dff282e0324d20afd80423a5754d1272c
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_17.2.4-0ubuntu1~16.04.4.diff.gz' mesa_17.2.4-0ubuntu1~16.04.4.diff.gz 152148 SHA256:869d557b46eb71f0aa3350504c8818cf1f3c46c9ad7f1bf1513ed983165c15a2
+```
 
 ### `dpkg` source package: `mime-support=3.59ubuntu1`
 
@@ -4742,13 +4767,13 @@ $ apt-get source -qq --print-uris mtdev=1.1.5-1ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mtdev/mtdev_1.1.5-1ubuntu2.debian.tar.xz' mtdev_1.1.5-1ubuntu2.debian.tar.xz 6224 SHA256:daf836ba10f7a870df957d1b5fcdb98dca302cbdc901baae91a3d7f6a5b2dd90
 ```
 
-### `dpkg` source package: `mysql-5.7=5.7.20-0ubuntu0.16.04.1`
+### `dpkg` source package: `mysql-5.7=5.7.21-0ubuntu0.16.04.1`
 
 Binary Packages:
 
-- `libmysqlclient-dev=5.7.20-0ubuntu0.16.04.1`
-- `libmysqlclient20:amd64=5.7.20-0ubuntu0.16.04.1`
-- `mysql-common=5.7.20-0ubuntu0.16.04.1`
+- `libmysqlclient-dev=5.7.21-0ubuntu0.16.04.1`
+- `libmysqlclient20:amd64=5.7.21-0ubuntu0.16.04.1`
+- `mysql-common=5.7.21-0ubuntu0.16.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/share/doc/libmysqlclient20/copyright`, `/usr/share/doc/mysql-common/copyright`)
 
@@ -4766,9 +4791,14 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris mysql-5.7=5.7.21-0ubuntu0.16.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.21-0ubuntu0.16.04.1.dsc' mysql-5.7_5.7.21-0ubuntu0.16.04.1.dsc 3337 SHA256:f501768119b0c2770bc5694a4592b35b025b4860294836ae3b5ed0f9a831b716
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.21.orig.tar.gz' mysql-5.7_5.7.21.orig.tar.gz 48931457 SHA256:ad29ecb6fb3c3571394fe231633a2d1d188d49e9eb749daa4e8799b7630daa09
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.21-0ubuntu0.16.04.1.debian.tar.xz' mysql-5.7_5.7.21-0ubuntu0.16.04.1.debian.tar.xz 250256 SHA256:ad4b63af43d71c0b146c2ea7311830700d114ae412355487bf3111aacb127803
+```
 
 ### `dpkg` source package: `ncurses=6.0+20160213-1ubuntu1`
 
@@ -5454,8 +5484,9 @@ Binary Packages:
 - `libprotobuf9v5:amd64=2.6.1-1.3`
 - `libprotoc-dev:amd64=2.6.1-1.3`
 - `libprotoc9v5:amd64=2.6.1-1.3`
+- `protobuf-compiler=2.6.1-1.3`
 
-Licenses: (parsed from: `/usr/share/doc/libprotobuf-dev/copyright`, `/usr/share/doc/libprotobuf-lite9v5/copyright`, `/usr/share/doc/libprotobuf9v5/copyright`, `/usr/share/doc/libprotoc-dev/copyright`, `/usr/share/doc/libprotoc9v5/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libprotobuf-dev/copyright`, `/usr/share/doc/libprotobuf-lite9v5/copyright`, `/usr/share/doc/libprotobuf9v5/copyright`, `/usr/share/doc/libprotoc-dev/copyright`, `/usr/share/doc/libprotoc9v5/copyright`, `/usr/share/doc/protobuf-compiler/copyright`)
 
 - `Apache-2.0`
 - `GPL-3`
@@ -5515,17 +5546,17 @@ $ apt-get source -qq --print-uris python-defaults=2.7.11-1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python-defaults/python-defaults_2.7.11-1.tar.gz' python-defaults_2.7.11-1.tar.gz 276447 SHA256:d4269585625c53a061292e44890c4960b688a47ebf3fa43202ceaa8f4bc502d9
 ```
 
-### `dpkg` source package: `python2.7=2.7.12-1ubuntu0~16.04.2`
+### `dpkg` source package: `python2.7=2.7.12-1ubuntu0~16.04.3`
 
 Binary Packages:
 
-- `libpython2.7:amd64=2.7.12-1ubuntu0~16.04.2`
-- `libpython2.7-dev:amd64=2.7.12-1ubuntu0~16.04.2`
-- `libpython2.7-minimal:amd64=2.7.12-1ubuntu0~16.04.2`
-- `libpython2.7-stdlib:amd64=2.7.12-1ubuntu0~16.04.2`
-- `python2.7=2.7.12-1ubuntu0~16.04.2`
-- `python2.7-dev=2.7.12-1ubuntu0~16.04.2`
-- `python2.7-minimal=2.7.12-1ubuntu0~16.04.2`
+- `libpython2.7:amd64=2.7.12-1ubuntu0~16.04.3`
+- `libpython2.7-dev:amd64=2.7.12-1ubuntu0~16.04.3`
+- `libpython2.7-minimal:amd64=2.7.12-1ubuntu0~16.04.3`
+- `libpython2.7-stdlib:amd64=2.7.12-1ubuntu0~16.04.3`
+- `python2.7=2.7.12-1ubuntu0~16.04.3`
+- `python2.7-dev=2.7.12-1ubuntu0~16.04.3`
+- `python2.7-minimal=2.7.12-1ubuntu0~16.04.3`
 
 Licenses: (parsed from: `/usr/share/doc/libpython2.7/copyright`, `/usr/share/doc/libpython2.7-dev/copyright`, `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/share/doc/libpython2.7-stdlib/copyright`, `/usr/share/doc/python2.7/copyright`, `/usr/share/doc/python2.7-dev/copyright`, `/usr/share/doc/python2.7-minimal/copyright`)
 
@@ -5549,10 +5580,10 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7/copyright`, `/usr/share/doc
 Source:
 
 ```console
-$ apt-get source -qq --print-uris python2.7=2.7.12-1ubuntu0~16.04.2
-'http://security.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.12-1ubuntu0~16.04.2.dsc' python2.7_2.7.12-1ubuntu0~16.04.2.dsc 3371 SHA256:2c27c34b7e65265997aba7d1919cb06d03ddd211573fd5f01a04ca4882640fe6
-'http://security.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.12.orig.tar.gz' python2.7_2.7.12.orig.tar.gz 16935960 SHA256:3cb522d17463dfa69a155ab18cffa399b358c966c0363d6c8b5b3bf1384da4b6
-'http://security.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.12-1ubuntu0~16.04.2.diff.gz' python2.7_2.7.12-1ubuntu0~16.04.2.diff.gz 277564 SHA256:758f87cf735c0ca58d4a3703668a64c392f15fa5906ee8f4a9062de066249357
+$ apt-get source -qq --print-uris python2.7=2.7.12-1ubuntu0~16.04.3
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.12-1ubuntu0~16.04.3.dsc' python2.7_2.7.12-1ubuntu0~16.04.3.dsc 3379 SHA256:a4784c90f5036a12c145f6f7690c12c187866f2c9ae0263cd3527dc916a98e84
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.12.orig.tar.gz' python2.7_2.7.12.orig.tar.gz 16935960 SHA256:3cb522d17463dfa69a155ab18cffa399b358c966c0363d6c8b5b3bf1384da4b6
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.12-1ubuntu0~16.04.3.diff.gz' python2.7_2.7.12-1ubuntu0~16.04.3.diff.gz 281711 SHA256:85bc19c1f058792ff0fe7abfc0362b76b6abcbdaca890e0745d25e5f25184bf7
 ```
 
 ### `dpkg` source package: `qtbase-opensource-src=5.5.1+dfsg-16ubuntu7.5`

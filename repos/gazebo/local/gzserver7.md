@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1054db96e25e4718ecdc2c7efbe9af209be34187276e667f1a6f650977b97e91`
-- Created: `2018-01-15T23:14:35.378833434Z`
-- Virtual Size: ~ 571.73 Mb  
+- Image ID: `sha256:1ec8107bc650e37a9f383bf4619a9e47fc520985293d8ea2474f3486565bd23c`
+- Created: `2018-01-25T20:05:59.186448979Z`
+- Virtual Size: ~ 571.94 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/gzserver_entrypoint.sh"]`
@@ -1116,22 +1116,27 @@ $ apt-get source -qq --print-uris glib2.0=2.48.2-0ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.48.2-0ubuntu1.debian.tar.xz' glib2.0_2.48.2-0ubuntu1.debian.tar.xz 68844 SHA256:83d8527d76c025a47136f7bc146a7716049afa9f0c75b8e050e3c55636703d37
 ```
 
-### `dpkg` source package: `glibc=2.23-0ubuntu9`
+### `dpkg` source package: `glibc=2.23-0ubuntu10`
 
 Binary Packages:
 
-- `libc-bin=2.23-0ubuntu9`
-- `libc6:amd64=2.23-0ubuntu9`
-- `multiarch-support=2.23-0ubuntu9`
+- `libc-bin=2.23-0ubuntu10`
+- `libc6:amd64=2.23-0ubuntu10`
+- `multiarch-support=2.23-0ubuntu10`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/multiarch-support/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris glibc=2.23-0ubuntu10
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23-0ubuntu10.dsc' glibc_2.23-0ubuntu10.dsc 8231 SHA256:422c3e17758e3378474bed63e2ed140364045c671f913fa99928a6eeff64adb6
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23.orig.tar.xz' glibc_2.23.orig.tar.xz 13849968 SHA256:bf6c528eeebefcacc295270068b79330c1fb2b22458ff66285b4175d23442c96
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23-0ubuntu10.debian.tar.xz' glibc_2.23-0ubuntu10.debian.tar.xz 1226400 SHA256:4918baa16af87741a50aa349ebe12294f856d73bd052d8558f5385c0607fc05e
+```
 
 ### `dpkg` source package: `gmp=2:6.1.0+dfsg-2`
 
@@ -2434,14 +2439,9 @@ Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`)
 - `LGPL`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libtasn1-6=4.7-3ubuntu0.16.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.7-3ubuntu0.16.04.2.dsc' libtasn1-6_4.7-3ubuntu0.16.04.2.dsc 2497 SHA256:a09e71bf9ca9a186cffdb514f6580831b2dc7543a60b9b12b453558372846d15
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.7.orig.tar.gz' libtasn1-6_4.7.orig.tar.gz 1851611 SHA256:a40780dc93fc6d819170240e8ece25352058a85fd1d2347ce0f143667d8f11c9
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.7-3ubuntu0.16.04.2.debian.tar.xz' libtasn1-6_4.7-3ubuntu0.16.04.2.debian.tar.xz 58912 SHA256:a7bc21b199fcf7fe45910fdbeed4f17b152fab1aa84cde8f29d78ecb451cd837
-```
 
 ### `dpkg` source package: `libtheora=1.1.1+dfsg.1-8`
 
@@ -3090,25 +3090,30 @@ $ apt-get source -qq --print-uris mawk=1.3.3-17ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mawk/mawk_1.3.3-17ubuntu2.diff.gz' mawk_1.3.3-17ubuntu2.diff.gz 63882 SHA256:670103046767474be29e80f2143dc67e3d0b958972f5942c3df94883f978eded
 ```
 
-### `dpkg` source package: `mesa=17.2.4-0ubuntu1~16.04.2`
+### `dpkg` source package: `mesa=17.2.4-0ubuntu1~16.04.4`
 
 Binary Packages:
 
-- `libegl1-mesa:amd64=17.2.4-0ubuntu1~16.04.2`
-- `libgbm1:amd64=17.2.4-0ubuntu1~16.04.2`
-- `libgl1-mesa-dri:amd64=17.2.4-0ubuntu1~16.04.2`
-- `libgl1-mesa-glx:amd64=17.2.4-0ubuntu1~16.04.2`
-- `libglapi-mesa:amd64=17.2.4-0ubuntu1~16.04.2`
-- `mesa-va-drivers:amd64=17.2.4-0ubuntu1~16.04.2`
+- `libegl1-mesa:amd64=17.2.4-0ubuntu1~16.04.4`
+- `libgbm1:amd64=17.2.4-0ubuntu1~16.04.4`
+- `libgl1-mesa-dri:amd64=17.2.4-0ubuntu1~16.04.4`
+- `libgl1-mesa-glx:amd64=17.2.4-0ubuntu1~16.04.4`
+- `libglapi-mesa:amd64=17.2.4-0ubuntu1~16.04.4`
+- `mesa-va-drivers:amd64=17.2.4-0ubuntu1~16.04.4`
 
 Licenses: (parsed from: `/usr/share/doc/libegl1-mesa/copyright`, `/usr/share/doc/libgbm1/copyright`, `/usr/share/doc/libgl1-mesa-dri/copyright`, `/usr/share/doc/libgl1-mesa-glx/copyright`, `/usr/share/doc/libglapi-mesa/copyright`, `/usr/share/doc/mesa-va-drivers/copyright`)
 
 - `GPL`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris mesa=17.2.4-0ubuntu1~16.04.4
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_17.2.4-0ubuntu1~16.04.4.dsc' mesa_17.2.4-0ubuntu1~16.04.4.dsc 4991 SHA256:47ec0b2966f0f8b0cab55acaa42903e6b3daeb609f03c65883583a96518ae01c
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_17.2.4.orig.tar.gz' mesa_17.2.4.orig.tar.gz 17737608 SHA256:cb266edc5cf7226219ebaf556ca2e03dff282e0324d20afd80423a5754d1272c
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_17.2.4-0ubuntu1~16.04.4.diff.gz' mesa_17.2.4-0ubuntu1~16.04.4.diff.gz 152148 SHA256:869d557b46eb71f0aa3350504c8818cf1f3c46c9ad7f1bf1513ed983165c15a2
+```
 
 ### `dpkg` source package: `minizip=1.1-8`
 
@@ -3156,12 +3161,12 @@ $ apt-get source -qq --print-uris mir=0.26.3+16.04.20170605-0ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mir/mir_0.26.3+16.04.20170605-0ubuntu1.1.diff.gz' mir_0.26.3+16.04.20170605-0ubuntu1.1.diff.gz 74098 SHA256:4d5d29888003934f4076340e5346bda52ae57f6d34ebbc3d96f5b73dde4e80c0
 ```
 
-### `dpkg` source package: `mysql-5.7=5.7.20-0ubuntu0.16.04.1`
+### `dpkg` source package: `mysql-5.7=5.7.21-0ubuntu0.16.04.1`
 
 Binary Packages:
 
-- `libmysqlclient20:amd64=5.7.20-0ubuntu0.16.04.1`
-- `mysql-common=5.7.20-0ubuntu0.16.04.1`
+- `libmysqlclient20:amd64=5.7.21-0ubuntu0.16.04.1`
+- `mysql-common=5.7.21-0ubuntu0.16.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libmysqlclient20/copyright`, `/usr/share/doc/mysql-common/copyright`)
 
@@ -3179,9 +3184,14 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient20/copyright`, `/usr/share
 - `public-domain`
 - `zlib/libpng`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris mysql-5.7=5.7.21-0ubuntu0.16.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.21-0ubuntu0.16.04.1.dsc' mysql-5.7_5.7.21-0ubuntu0.16.04.1.dsc 3337 SHA256:f501768119b0c2770bc5694a4592b35b025b4860294836ae3b5ed0f9a831b716
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.21.orig.tar.gz' mysql-5.7_5.7.21.orig.tar.gz 48931457 SHA256:ad29ecb6fb3c3571394fe231633a2d1d188d49e9eb749daa4e8799b7630daa09
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.21-0ubuntu0.16.04.1.debian.tar.xz' mysql-5.7_5.7.21-0ubuntu0.16.04.1.debian.tar.xz 250256 SHA256:ad4b63af43d71c0b146c2ea7311830700d114ae412355487bf3111aacb127803
+```
 
 ### `dpkg` source package: `nas=1.9.4-4`
 
