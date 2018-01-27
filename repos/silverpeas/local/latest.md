@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a3b7488a0df731e0545c997a610e15eac201ef4aa8944d1783eb32098998dbe5`
-- Created: `2018-01-16T01:07:03.46374277Z`
+- Image ID: `sha256:0cc3958485b327c8bd3fb8ee6d762eccd8b64da3071aa44b3c3094b8d8cf75e7`
+- Created: `2018-01-26T00:31:09.376680652Z`
 - Virtual Size: ~ 1.47 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1098,23 +1098,28 @@ $ apt-get source -qq --print-uris glib2.0=2.48.2-0ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.48.2-0ubuntu1.debian.tar.xz' glib2.0_2.48.2-0ubuntu1.debian.tar.xz 68844 SHA256:83d8527d76c025a47136f7bc146a7716049afa9f0c75b8e050e3c55636703d37
 ```
 
-### `dpkg` source package: `glibc=2.23-0ubuntu9`
+### `dpkg` source package: `glibc=2.23-0ubuntu10`
 
 Binary Packages:
 
-- `libc-bin=2.23-0ubuntu9`
-- `libc6:amd64=2.23-0ubuntu9`
-- `locales=2.23-0ubuntu9`
-- `multiarch-support=2.23-0ubuntu9`
+- `libc-bin=2.23-0ubuntu10`
+- `libc6:amd64=2.23-0ubuntu10`
+- `locales=2.23-0ubuntu10`
+- `multiarch-support=2.23-0ubuntu10`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/locales/copyright`, `/usr/share/doc/multiarch-support/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris glibc=2.23-0ubuntu10
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23-0ubuntu10.dsc' glibc_2.23-0ubuntu10.dsc 8231 SHA256:422c3e17758e3378474bed63e2ed140364045c671f913fa99928a6eeff64adb6
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23.orig.tar.xz' glibc_2.23.orig.tar.xz 13849968 SHA256:bf6c528eeebefcacc295270068b79330c1fb2b22458ff66285b4175d23442c96
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23-0ubuntu10.debian.tar.xz' glibc_2.23-0ubuntu10.debian.tar.xz 1226400 SHA256:4918baa16af87741a50aa349ebe12294f856d73bd052d8558f5385c0607fc05e
+```
 
 ### `dpkg` source package: `gmp=2:6.1.0+dfsg-2`
 
@@ -2767,11 +2772,11 @@ $ apt-get source -qq --print-uris libssh=0.6.3-4.3
 'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.6.3-4.3.debian.tar.xz' libssh_0.6.3-4.3.debian.tar.xz 19220 SHA256:e525ed1b21b11f9506424a4d7856c8b8e94f10bf70caf5ee04ea3f91ad112a99
 ```
 
-### `dpkg` source package: `libtasn1-6=4.7-3ubuntu0.16.04.2`
+### `dpkg` source package: `libtasn1-6=4.7-3ubuntu0.16.04.3`
 
 Binary Packages:
 
-- `libtasn1-6:amd64=4.7-3ubuntu0.16.04.2`
+- `libtasn1-6:amd64=4.7-3ubuntu0.16.04.3`
 
 Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`)
 
@@ -2783,10 +2788,10 @@ Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libtasn1-6=4.7-3ubuntu0.16.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.7-3ubuntu0.16.04.2.dsc' libtasn1-6_4.7-3ubuntu0.16.04.2.dsc 2497 SHA256:a09e71bf9ca9a186cffdb514f6580831b2dc7543a60b9b12b453558372846d15
+$ apt-get source -qq --print-uris libtasn1-6=4.7-3ubuntu0.16.04.3
+'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.7-3ubuntu0.16.04.3.dsc' libtasn1-6_4.7-3ubuntu0.16.04.3.dsc 2495 SHA256:53a43e4795381eca289ba755fc806822373f31f2bbc6f12ae7f6d32c2e7c710a
 'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.7.orig.tar.gz' libtasn1-6_4.7.orig.tar.gz 1851611 SHA256:a40780dc93fc6d819170240e8ece25352058a85fd1d2347ce0f143667d8f11c9
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.7-3ubuntu0.16.04.2.debian.tar.xz' libtasn1-6_4.7-3ubuntu0.16.04.2.debian.tar.xz 58912 SHA256:a7bc21b199fcf7fe45910fdbeed4f17b152fab1aa84cde8f29d78ecb451cd837
+'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.7-3ubuntu0.16.04.3.debian.tar.xz' libtasn1-6_4.7-3ubuntu0.16.04.3.debian.tar.xz 60468 SHA256:aeed7264d288f57c858fb247f94920c1157a840c03fd27c7eaa3d6a6e36a66d7
 ```
 
 ### `dpkg` source package: `libthai=0.1.24-2`
@@ -3546,24 +3551,29 @@ $ apt-get source -qq --print-uris mawk=1.3.3-17ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mawk/mawk_1.3.3-17ubuntu2.diff.gz' mawk_1.3.3-17ubuntu2.diff.gz 63882 SHA256:670103046767474be29e80f2143dc67e3d0b958972f5942c3df94883f978eded
 ```
 
-### `dpkg` source package: `mesa=17.2.4-0ubuntu1~16.04.2`
+### `dpkg` source package: `mesa=17.2.4-0ubuntu1~16.04.4`
 
 Binary Packages:
 
-- `libgl1-mesa-dri:amd64=17.2.4-0ubuntu1~16.04.2`
-- `libgl1-mesa-glx:amd64=17.2.4-0ubuntu1~16.04.2`
-- `libglapi-mesa:amd64=17.2.4-0ubuntu1~16.04.2`
-- `mesa-va-drivers:amd64=17.2.4-0ubuntu1~16.04.2`
-- `mesa-vdpau-drivers:amd64=17.2.4-0ubuntu1~16.04.2`
+- `libgl1-mesa-dri:amd64=17.2.4-0ubuntu1~16.04.4`
+- `libgl1-mesa-glx:amd64=17.2.4-0ubuntu1~16.04.4`
+- `libglapi-mesa:amd64=17.2.4-0ubuntu1~16.04.4`
+- `mesa-va-drivers:amd64=17.2.4-0ubuntu1~16.04.4`
+- `mesa-vdpau-drivers:amd64=17.2.4-0ubuntu1~16.04.4`
 
 Licenses: (parsed from: `/usr/share/doc/libgl1-mesa-dri/copyright`, `/usr/share/doc/libgl1-mesa-glx/copyright`, `/usr/share/doc/libglapi-mesa/copyright`, `/usr/share/doc/mesa-va-drivers/copyright`, `/usr/share/doc/mesa-vdpau-drivers/copyright`)
 
 - `GPL`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris mesa=17.2.4-0ubuntu1~16.04.4
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_17.2.4-0ubuntu1~16.04.4.dsc' mesa_17.2.4-0ubuntu1~16.04.4.dsc 4991 SHA256:47ec0b2966f0f8b0cab55acaa42903e6b3daeb609f03c65883583a96518ae01c
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_17.2.4.orig.tar.gz' mesa_17.2.4.orig.tar.gz 17737608 SHA256:cb266edc5cf7226219ebaf556ca2e03dff282e0324d20afd80423a5754d1272c
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_17.2.4-0ubuntu1~16.04.4.diff.gz' mesa_17.2.4-0ubuntu1~16.04.4.diff.gz 152148 SHA256:869d557b46eb71f0aa3350504c8818cf1f3c46c9ad7f1bf1513ed983165c15a2
+```
 
 ### `dpkg` source package: `ncurses=6.0+20160213-1ubuntu1`
 
