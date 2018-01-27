@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8dcaef637b410c56a0b3714e764cd6ec3b8c36bbef0205bfb760dca28a9d6f49`
-- Created: `2018-01-15T21:00:29.273934219Z`
-- Virtual Size: ~ 85.07 Mb  
+- Image ID: `sha256:08c67959b9793ec58cd67e96fd7f55a21b294dbcb74e4f32b79a6f577a66ab43`
+- Created: `2018-01-25T18:21:30.156278106Z`
+- Virtual Size: ~ 80.99 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -225,19 +225,24 @@ $ apt-get source -qq --print-uris coreutils=8.26-3ubuntu4
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.26-3ubuntu4.debian.tar.xz' coreutils_8.26-3ubuntu4.debian.tar.xz 29708 SHA256:e09ca24c1147538cb822a9d66388c5f24b6ae10a5b9ce4d51f2bb27a402d15c2
 ```
 
-### `dpkg` source package: `dash=0.5.8-2.3ubuntu1`
+### `dpkg` source package: `dash=0.5.8-2.9ubuntu1`
 
 Binary Packages:
 
-- `dash=0.5.8-2.3ubuntu1`
+- `dash=0.5.8-2.9ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/dash/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris dash=0.5.8-2.9ubuntu1
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dash/dash_0.5.8-2.9ubuntu1.dsc' dash_0.5.8-2.9ubuntu1.dsc 1967 SHA256:a9b9945e42d6ed621782c4c1681bf69387d764b1dffa30c630500b0a7cacf0d0
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dash/dash_0.5.8.orig.tar.gz' dash_0.5.8.orig.tar.gz 223028 SHA256:c6db3a237747b02d20382a761397563d813b306c020ae28ce25a1c3915fac60f
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dash/dash_0.5.8-2.9ubuntu1.debian.tar.xz' dash_0.5.8-2.9ubuntu1.debian.tar.xz 57616 SHA256:4bccf49a1f780068d8bf8614140e7350676dd217a76dfc9271cc4acb13ccb9d1
+```
 
 ### `dpkg` source package: `db5.3=5.3.28-13.1`
 
@@ -276,23 +281,23 @@ $ apt-get source -qq --print-uris debconf=1.5.65
 'http://archive.ubuntu.com/ubuntu/pool/main/d/debconf/debconf_1.5.65.tar.xz' debconf_1.5.65.tar.xz 571760 SHA256:4e20e7469819e399629811b7fcc9b867f9ee7ea4d8a2a04d18b30e3a1a7cf8df
 ```
 
-### `dpkg` source package: `debianutils=4.8.3`
+### `dpkg` source package: `debianutils=4.8.4`
 
 Binary Packages:
 
-- `debianutils=4.8.3`
+- `debianutils=4.8.4`
 
 Licenses: (parsed from: `/usr/share/doc/debianutils/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/debianutils/4.8.3/
-
+```console
+$ apt-get source -qq --print-uris debianutils=4.8.4
+'http://archive.ubuntu.com/ubuntu/pool/main/d/debianutils/debianutils_4.8.4.dsc' debianutils_4.8.4.dsc 1764 SHA256:8b12921fe6e4f51d295bfd4213706d588a6c9b8bab659b0ee1fe525f37e9fbcc
+'http://archive.ubuntu.com/ubuntu/pool/main/d/debianutils/debianutils_4.8.4.tar.xz' debianutils_4.8.4.tar.xz 156344 SHA256:c061ab99aea61f892043b7624b021ab5b193e9c6bbfd474da0fbcdd506be1eb2
+```
 
 ### `dpkg` source package: `diffutils=1:3.6-1`
 
@@ -336,27 +341,28 @@ $ apt-get source -qq --print-uris dpkg=1.19.0.4ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.19.0.4ubuntu1.tar.xz' dpkg_1.19.0.4ubuntu1.tar.xz 4571364 SHA256:84f615657e1721cd274bfa8090cebe62fef6489b1bd9263b524dbaede0bd3014
 ```
 
-### `dpkg` source package: `e2fsprogs=1.43.7-1`
+### `dpkg` source package: `e2fsprogs=1.43.8-1ubuntu1`
 
 Binary Packages:
 
-- `e2fslibs:amd64=1.43.7-1`
-- `e2fsprogs=1.43.7-1`
-- `libcomerr2:amd64=1.43.7-1`
-- `libss2:amd64=1.43.7-1`
+- `e2fslibs:amd64=1.43.8-1ubuntu1`
+- `e2fsprogs=1.43.8-1ubuntu1`
+- `libcomerr2:amd64=1.43.8-1ubuntu1`
+- `libss2:amd64=1.43.8-1ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/e2fslibs/copyright`, `/usr/share/doc/e2fsprogs/copyright`, `/usr/share/doc/libcomerr2/copyright`, `/usr/share/doc/libss2/copyright`)
 
 - `GPL-2`
 - `LGPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/e2fsprogs/1.43.7-1/
-
+```console
+$ apt-get source -qq --print-uris e2fsprogs=1.43.8-1ubuntu1
+'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.43.8-1ubuntu1.dsc' e2fsprogs_1.43.8-1ubuntu1.dsc 2167 SHA256:f9740f9f2137b80962e5396baf86c8e88d821856df6672bd99af6e865bd17c0f
+'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.43.8.orig.tar.gz' e2fsprogs_1.43.8.orig.tar.gz 7485488 SHA256:3f32f481f408b7f248acf00ea3e423c348d2a17ff51ed0dfa892d171551ec3de
+'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.43.8-1ubuntu1.debian.tar.xz' e2fsprogs_1.43.8-1ubuntu1.debian.tar.xz 76236 SHA256:ce5b59c42fba6e11cbcd80128838efdcba184f6169bc993d7218218945a1e78c
+```
 
 ### `dpkg` source package: `findutils=4.6.0+git+20170828-2`
 
@@ -561,11 +567,11 @@ $ apt-get source -qq --print-uris hostname=3.18
 'http://archive.ubuntu.com/ubuntu/pool/main/h/hostname/hostname_3.18.tar.gz' hostname_3.18.tar.gz 13732 SHA256:5cc3ec120967b8f911e86b9561b53977bcc77191c84fe9c607177ccd09f8d207
 ```
 
-### `dpkg` source package: `init-system-helpers=1.49ubuntu1`
+### `dpkg` source package: `init-system-helpers=1.51`
 
 Binary Packages:
 
-- `init-system-helpers=1.49ubuntu1`
+- `init-system-helpers=1.51`
 
 Licenses: (parsed from: `/usr/share/doc/init-system-helpers/copyright`)
 
@@ -573,9 +579,13 @@ Licenses: (parsed from: `/usr/share/doc/init-system-helpers/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris init-system-helpers=1.51
+'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.51.dsc' init-system-helpers_1.51.dsc 1963 SHA256:82f0e30fef2ad14c65f9c7d8ccafd43549451041fdf661dca28b963a6cef02e4
+'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.51.tar.xz' init-system-helpers_1.51.tar.xz 37468 SHA256:e18b28efe8df087146d9c1e4e9c25386ee1b7312f518d48a2a38469a6c661be0
+```
 
 ### `dpkg` source package: `libassuan=2.5.1-1`
 
@@ -818,11 +828,11 @@ $ apt-get source -qq --print-uris libsepol=2.7-1
 'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsepol/libsepol_2.7-1.debian.tar.xz' libsepol_2.7-1.debian.tar.xz 13944 SHA256:56b1c2b0e492b2089f23a0d7a95a260377a0e3adefc60e90c0ff6eff6be08450
 ```
 
-### `dpkg` source package: `libtasn1-6=4.12-3`
+### `dpkg` source package: `libtasn1-6=4.13-2`
 
 Binary Packages:
 
-- `libtasn1-6:amd64=4.12-3`
+- `libtasn1-6:amd64=4.13-2`
 
 Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`)
 
@@ -831,13 +841,15 @@ Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`)
 - `LGPL`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/libtasn1-6/4.12-3/
-
+```console
+$ apt-get source -qq --print-uris libtasn1-6=4.13-2
+'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.13-2.dsc' libtasn1-6_4.13-2.dsc 2574 SHA256:8f583c0ae8568ccf7fcf66c387963ef949d644cfca56d66512a17cb91c3a44fd
+'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.13.orig.tar.gz' libtasn1-6_4.13.orig.tar.gz 1891703 SHA256:7e528e8c317ddd156230c4e31d082cd13e7ddeb7a54824be82632209550c8cca
+'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.13.orig.tar.gz.asc' libtasn1-6_4.13.orig.tar.gz.asc 774 SHA256:90261376528edf44831d1369847088cc2fb48669860d343961daca42e674b226
+'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.13-2.debian.tar.xz' libtasn1-6_4.13-2.debian.tar.xz 63332 SHA256:f36a43fb898c031b6b1a5f43b35af1aea95ac164bb2b57c7f07d1c098ed9f7eb
+```
 
 ### `dpkg` source package: `lsb=9.20170808ubuntu1`
 
@@ -1235,12 +1247,12 @@ $ apt-get source -qq --print-uris sqlite3=3.21.0-1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.21.0-1.debian.tar.xz' sqlite3_3.21.0-1.debian.tar.xz 17284 SHA256:0a44d76d4b06a75a733df6f2df319e5acf80f67551bd8b5a8eab266434e6fbe6
 ```
 
-### `dpkg` source package: `systemd=235-3ubuntu2`
+### `dpkg` source package: `systemd=235-3ubuntu3`
 
 Binary Packages:
 
-- `libsystemd0:amd64=235-3ubuntu2`
-- `libudev1:amd64=235-3ubuntu2`
+- `libsystemd0:amd64=235-3ubuntu3`
+- `libudev1:amd64=235-3ubuntu3`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -1252,9 +1264,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=235-3ubuntu3
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_235-3ubuntu3.dsc' systemd_235-3ubuntu3.dsc 4116 SHA256:619165839b2f1413a1227904efb1017752f63218eab13952700acc13c97f6e3f
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_235.orig.tar.gz' systemd_235.orig.tar.gz 6586406 SHA256:25811f96f5a027bf2a4c9383495cf5b623e385d84da31e473cf375932b3e9c52
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_235-3ubuntu3.debian.tar.xz' systemd_235-3ubuntu3.debian.tar.xz 154504 SHA256:b0e9d7201ab72cecfb8450e3799050571d165b48dd2ff381125c6cc14fa5fec3
+```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10ubuntu1`
 

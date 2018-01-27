@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:26d147d2310fedf27c763dcb3e22d719922aa215db1ecf3849a211a6511e10ff`
-- Created: `2018-01-15T20:59:01.417322913Z`
-- Virtual Size: ~ 96.55 Mb  
+- Image ID: `sha256:a8ad041f5225c51764dc85024620ce868a584f26699f75ef0d99dfa4664d449f`
+- Created: `2018-01-25T18:03:52.438564435Z`
+- Virtual Size: ~ 96.84 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -411,12 +411,12 @@ $ apt-get source -qq --print-uris gcc-7=7.2.0-8ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.2.0-8ubuntu3.diff.gz' gcc-7_7.2.0-8ubuntu3.diff.gz 2957628 SHA256:a265d5ee62403daaffa524b70454d156581ed7cda8c2e04b284ca73c214b34a8
 ```
 
-### `dpkg` source package: `glibc=2.26-0ubuntu2`
+### `dpkg` source package: `glibc=2.26-0ubuntu2.1`
 
 Binary Packages:
 
-- `libc-bin=2.26-0ubuntu2`
-- `libc6:amd64=2.26-0ubuntu2`
+- `libc-bin=2.26-0ubuntu2.1`
+- `libc6:amd64=2.26-0ubuntu2.1`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
 
@@ -426,10 +426,10 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris glibc=2.26-0ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.26-0ubuntu2.dsc' glibc_2.26-0ubuntu2.dsc 8688 SHA256:e1ae0693f1113b8bf4ef2b8721b2f104584b7b95763e1f595beb3d85c14184dd
+$ apt-get source -qq --print-uris glibc=2.26-0ubuntu2.1
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.26-0ubuntu2.1.dsc' glibc_2.26-0ubuntu2.1.dsc 8391 SHA256:d4ac88bceb3dc6ba0c4799cbeca68ca5539a3b64deeaf1e1592f19ef4bc2352a
 'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.26.orig.tar.xz' glibc_2.26.orig.tar.xz 15207960 SHA256:cdfbf4634e016f2b8f279634329baf8a721aa2549cf016e75cea7db938d2dd6e
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.26-0ubuntu2.debian.tar.xz' glibc_2.26-0ubuntu2.debian.tar.xz 996080 SHA256:25218986f8e550872ae207d00f3b3cb69548f2cbc7034a5ec961d892c7cd1c41
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.26-0ubuntu2.1.debian.tar.xz' glibc_2.26-0ubuntu2.1.debian.tar.xz 999704 SHA256:49de45a5be5e6b2519067e076e02b0b438815234277f1379237606f52860ac9b
 ```
 
 ### `dpkg` source package: `gmp=2:6.1.2+dfsg-1`
