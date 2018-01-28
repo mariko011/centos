@@ -3444,20 +3444,13 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:6.0p1-4+deb7u6
-'http://security.debian.org/pool/updates/main/o/openssh/openssh_6.0p1-4+deb7u6.dsc' openssh_6.0p1-4+deb7u6.dsc 2507 SHA256:8db1d63db2c60fd0740554a4ba69a496c026284bf6aabd83b0df455d28d12057
-'http://security.debian.org/pool/updates/main/o/openssh/openssh_6.0p1.orig.tar.gz' openssh_6.0p1.orig.tar.gz 1126034 SHA256:589d48e952d6c017e667873486b5df63222f9133d417d0002bd6429d9bd882de
-'http://security.debian.org/pool/updates/main/o/openssh/openssh_6.0p1-4+deb7u6.debian.tar.gz' openssh_6.0p1-4+deb7u6.debian.tar.gz 257424 SHA256:80d2076136c5c8f8dbc52eecd1ec6a4f188f30187db130fdeed6c23ee215333e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssh/1:6.0p1-4+deb7u6/
 
-- https://sources.debian.net/src/openssh/1:6.0p1-4+deb7u6/ (for browsing the source)
-- https://sources.debian.net/src/openssh/1:6.0p1-4+deb7u6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssh/1:6.0p1-4+deb7u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=1.0.1t-1+deb7u3`
 
@@ -4186,20 +4179,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tiff3=3.9.6-11+deb7u8
-'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6-11+deb7u8.dsc' tiff3_3.9.6-11+deb7u8.dsc 1946 SHA256:b4d0584595c6d56914242188c22097e3032a5bdc964fa13be03775aaf19aef1a
-'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6.orig.tar.gz' tiff3_3.9.6.orig.tar.gz 1454196 SHA256:0fba119156236074343a14afbd3a47907e3a5952c9c86102305d4eeb06ad6833
-'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6-11+deb7u8.debian.tar.gz' tiff3_3.9.6-11+deb7u8.debian.tar.gz 48768 SHA256:e3991b5039e7e8c0833ac7f646b116278bb9196f7107ce85d4a98ced2e1e7092
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tiff3/3.9.6-11+deb7u8/
 
-- https://sources.debian.net/src/tiff3/3.9.6-11+deb7u8/ (for browsing the source)
-- https://sources.debian.net/src/tiff3/3.9.6-11+deb7u8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tiff3/3.9.6-11+deb7u8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tk8.5=8.5.11-2`
 
