@@ -1016,14 +1016,13 @@ Licenses: (parsed from: `/usr/share/doc/geoip-bin/copyright`, `/usr/share/doc/li
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris geoip=1.6.11-3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/geoip/geoip_1.6.11-3.dsc' geoip_1.6.11-3.dsc 1860 SHA256:a7ba2d089173c9774b61a598367e8944fec78200399e84e2e4b11ec5cc793016
-'http://archive.ubuntu.com/ubuntu/pool/main/g/geoip/geoip_1.6.11.orig.tar.gz' geoip_1.6.11.orig.tar.gz 161934 SHA256:8859cb7c9cb63e77f4aedb40a4622024359b956b251aba46b255acbe190c34e0
-'http://archive.ubuntu.com/ubuntu/pool/main/g/geoip/geoip_1.6.11-3.debian.tar.xz' geoip_1.6.11-3.debian.tar.xz 22320 SHA256:c3a704cbeb83c9df2006b404de91d3a0e45d3a99c36a9f530c33747c4c59b7c8
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/geoip/1.6.11-3/
+
 
 ### `dpkg` source package: `git=1:2.15.1-1ubuntu2`
 
@@ -2896,13 +2895,13 @@ Licenses: (parsed from: `/usr/share/doc/default-libmysqlclient-dev/copyright`, `
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mysql-defaults=1.0.3
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-defaults/mysql-defaults_1.0.3.dsc' mysql-defaults_1.0.3.dsc 2231 SHA256:8cf20b019808e0dba0e83a59718449d4e16f732b4e7971ba9198d4e6efb79c72
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-defaults/mysql-defaults_1.0.3.tar.xz' mysql-defaults_1.0.3.tar.xz 5824 SHA256:2b396003583dea51ff451d59dab3a72bfd818bd99fa15feac384e4d978d1ae0e
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/mysql-defaults/1.0.3/
+
 
 ### `dpkg` source package: `ncurses=6.0+20160625-1ubuntu1`
 
@@ -3016,14 +3015,9 @@ Licenses: (parsed from: `/usr/share/doc/libopenexr-dev/copyright`, `/usr/share/d
 
 - `openexr`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openexr=2.2.0-11ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openexr/openexr_2.2.0-11ubuntu1.dsc' openexr_2.2.0-11ubuntu1.dsc 2050 SHA256:448df8691a95ea6019b01b04bf6f39ea163622f775c0c0ef7268ef96fae5b9d4
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openexr/openexr_2.2.0.orig.tar.gz' openexr_2.2.0.orig.tar.gz 14489661 SHA256:36a012f6c43213f840ce29a8b182700f6cf6b214bea0d5735594136b44914231
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openexr/openexr_2.2.0-11ubuntu1.debian.tar.xz' openexr_2.2.0-11ubuntu1.debian.tar.xz 16748 SHA256:41bb5055d5562095bda7f5477830475d4bcdab4f13388590fd267f811b0e4be3
-```
 
 ### `dpkg` source package: `openldap=2.4.45+dfsg-1ubuntu1`
 
