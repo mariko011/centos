@@ -7,5 +7,5 @@ It's still a firm Work In Progress, and concrete suggestions for improvement in 
 ---
 
 -	[Automated `update-remote.sh`:  
-	![build status badge](https://doi-janky.infosiftr.net/job/repo-info/job/remote/badge/icon)](https://doi-janky.infosiftr.net/job/repo-info/job/remote/?style=flat&G8dEtaHR0cHM6Ly93d3cuZWxlbWVudGNlbnRvcy5jb20=GxdZc)
+	![build status badge](https://doi-janky.infosiftr.net/job/repo-info/job/remote/badge/icon)](https://doi-janky.infosiftr.net/job/repo-info/job/remote/?style=flat&G8dEtaHR0cHM6Ly93d3cuZWxlbWVudGNlbnRvcy5jb20vGxdZc)
 -	[Automated `scan-local.sh` (one job per repo)](https://doi-janky.infosiftr.net/job/repo-info/job/local/)
